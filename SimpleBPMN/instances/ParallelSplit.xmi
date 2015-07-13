@@ -26,8 +26,16 @@
       targetRef="//@flowElements.6"/>
   <flowElements
       xsi:type="SimpleBPMN:Task"
+      outgoing="//@flowElements.7"
       incoming="//@flowElements.3"/>
   <flowElements
       xsi:type="SimpleBPMN:Task"
+      outgoing="//@flowElements.8"
       incoming="//@flowElements.4"/>
+  <flowElements
+      xsi:type="SimpleBPMN:SequenceFlow"
+      sourceRef="//@flowElements.5"/>
+  <flowElements
+      xsi:type="SimpleBPMN:SequenceFlow"
+      sourceRef="//@flowElements.6"/>
 </SimpleBPMN:Process>
