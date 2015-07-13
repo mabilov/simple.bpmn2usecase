@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="ASCII"?>
 <SimpleUseCase:UseCase xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SimpleUseCase="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore">
   <flows xsi:type="SimpleUseCase:BasicFlow">
+    <steps xsi:type="SimpleUseCase:NormalStep" next="//@flows.0/@steps.1"/>
     <steps xsi:type="SimpleUseCase:NormalStep"/>
   </flows>
 </SimpleUseCase:UseCase>
