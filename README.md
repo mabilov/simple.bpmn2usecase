@@ -17,3 +17,4 @@ Arguments:
 1. Sequence pattern forward tansformation test: "Sequence forward"
 2. Sequence pattern backward tansformation test: "Sequence backward"
 3. Parallel Split forward transformation test: "ParallelSplit forward"
+4. Parallel Split backward transformation test "ParallelSplit backward"
