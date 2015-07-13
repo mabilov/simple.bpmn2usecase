@@ -213,9 +213,10 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements
 		Task task = (Task) result1_bindingAndBlack[4];
 		SequenceFlow sf2 = (SequenceFlow) result1_bindingAndBlack[5];
 		SF2F _sf2f1 = (SF2F) result1_bindingAndBlack[6];
-		// CSP csp = (CSP) result1_bindingAndBlack[8];
+		CSP csp = (CSP) result1_bindingAndBlack[8];
 		Object[] result1_green = Task2NormalStepAfterPGImpl
-				.pattern_Task2NormalStepAfterPG_1_1_greenBBFFBF(flow, task, sf2);
+				.pattern_Task2NormalStepAfterPG_1_1_greenBBFFBFB(flow, task,
+						sf2, csp);
 		NormalStep step = (NormalStep) result1_green[2];
 		T2NS _t2ns = (T2NS) result1_green[3];
 		SF2F _sf2f2 = (SF2F) result1_green[5];
@@ -488,12 +489,24 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements
 		// Create literals
 
 		// Create attribute variables
+		Variable var_task_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"task.id", true, csp);
+		var_task_id.setValue(task.getId());
+		var_task_id.setType("String");
 
 		// Create unbound variables
+		Variable var_step_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"step.id", csp);
+		var_step_id.setType("String");
 
 		// Create constraints
+		Eq eq = new Eq();
+
+		csp.getConstraints().add(eq);
 
 		// Solve CSP
+		eq.setRuleName("");
+		eq.solve(var_task_id, var_step_id);
 
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("node", node);
@@ -654,10 +667,10 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements
 		SequenceFlow sf1 = (SequenceFlow) result1_bindingAndBlack[3];
 		NormalStep step = (NormalStep) result1_bindingAndBlack[4];
 		SF2F _sf2f1 = (SF2F) result1_bindingAndBlack[5];
-		// CSP csp = (CSP) result1_bindingAndBlack[7];
+		CSP csp = (CSP) result1_bindingAndBlack[7];
 		Object[] result1_green = Task2NormalStepAfterPGImpl
-				.pattern_Task2NormalStepAfterPG_11_1_greenBBBFBFFF(process,
-						flow, sf1, step);
+				.pattern_Task2NormalStepAfterPG_11_1_greenBBBFBFFFB(process,
+						flow, sf1, step, csp);
 		Task task = (Task) result1_green[3];
 		T2NS _t2ns = (T2NS) result1_green[5];
 		SequenceFlow sf2 = (SequenceFlow) result1_green[6];
@@ -919,12 +932,24 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements
 		// Create literals
 
 		// Create attribute variables
+		Variable var_step_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"step.id", true, csp);
+		var_step_id.setValue(step.getId());
+		var_step_id.setType("String");
 
 		// Create unbound variables
+		Variable var_task_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"task.id", csp);
+		var_task_id.setType("String");
 
 		// Create constraints
+		Eq eq = new Eq();
+
+		csp.getConstraints().add(eq);
 
 		// Solve CSP
+		eq.setRuleName("");
+		eq.solve(var_task_id, var_step_id);
 
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("node", node);
@@ -985,7 +1010,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_265(
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_299(
 			EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterPGImpl
@@ -1054,7 +1079,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_266(
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_300(
 			EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterPGImpl
@@ -1123,7 +1148,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_79(
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_90(
 			EMoflonEdge _edge_steps) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterPGImpl
@@ -1189,7 +1214,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_267(
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_301(
 			EMoflonEdge _edge_targetRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterPGImpl
@@ -1258,7 +1283,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_268(
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_302(
 			EMoflonEdge _edge_incoming) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterPGImpl
@@ -1327,7 +1352,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_269(
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_303(
 			EMoflonEdge _edge_sourceRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterPGImpl
@@ -1396,7 +1421,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_270(
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_304(
 			EMoflonEdge _edge_outgoing) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterPGImpl
@@ -1538,12 +1563,31 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements
 			return ruleResult;
 		}
 
+		Variable var_task_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"task", true, csp);
+		var_task_id.setValue(task.getId());
+		var_task_id.setType("String");
+
+		Variable var_step_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"step", true, csp);
+		var_step_id.setValue(step.getId());
+		var_step_id.setType("String");
+
+		Eq eq0 = new Eq();
+		csp.getConstraints().add(eq0);
+
+		eq0.setRuleName("Task2NormalStepAfterPG");
+		eq0.solve(var_task_id, var_step_id);
+
 		if (csp.check()) {
 			ruleResult.setSuccess(true);
 		} else {
+			var_step_id.setBound(false);
+			eq0.solve(var_task_id, var_step_id);
 			if (csp.check()) {
 				ruleResult.setSuccess(true);
 				ruleResult.setRequiredChange(true);
+				step.setId((String) var_step_id.getValue());
 			} else {
 				ruleResult.setSuccess(false);
 				return ruleResult;
@@ -1631,12 +1675,31 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements
 			return ruleResult;
 		}
 
+		Variable var_task_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"task", true, csp);
+		var_task_id.setValue(task.getId());
+		var_task_id.setType("String");
+
+		Variable var_step_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"step", true, csp);
+		var_step_id.setValue(step.getId());
+		var_step_id.setType("String");
+
+		Eq eq0 = new Eq();
+		csp.getConstraints().add(eq0);
+
+		eq0.setRuleName("Task2NormalStepAfterPG");
+		eq0.solve(var_task_id, var_step_id);
+
 		if (csp.check()) {
 			ruleResult.setSuccess(true);
 		} else {
+			var_task_id.setBound(false);
+			eq0.solve(var_task_id, var_step_id);
 			if (csp.check()) {
 				ruleResult.setSuccess(true);
 				ruleResult.setRequiredChange(true);
+				task.setId((String) var_task_id.getValue());
 			} else {
 				ruleResult.setSuccess(false);
 				return ruleResult;
@@ -1738,12 +1801,25 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements
 		// Create literals
 
 		// Create attribute variables
+		Variable var_task_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"task.id", true, csp);
+		var_task_id.setValue(task.getId());
+		var_task_id.setType("String");
+		Variable var_step_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"step.id", true, csp);
+		var_step_id.setValue(step.getId());
+		var_step_id.setType("String");
 
 		// Create unbound variables
 
 		// Create constraints
+		Eq eq = new Eq();
+
+		csp.getConstraints().add(eq);
 
 		// Solve CSP
+		eq.setRuleName("");
+		eq.solve(var_task_id, var_step_id);
 
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("node", node);
@@ -1898,8 +1974,8 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements
 										+ "[ruleResult] = " + ruleResult + ".");
 					}
 					Task2NormalStepAfterPGImpl
-							.pattern_Task2NormalStepAfterPG_33_6_greenBBBFFFFFB(
-									process, flow, sf1, ruleResult);
+							.pattern_Task2NormalStepAfterPG_33_6_greenBBBFFFFFBB(
+									process, flow, sf1, ruleResult, csp);
 					// Task task = (Task) result6_green[3];
 					// NormalStep step = (NormalStep) result6_green[4];
 					// T2NS _t2ns = (T2NS) result6_green[5];
@@ -1933,10 +2009,21 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements
 		// Create attribute variables
 
 		// Create unbound variables
+		Variable var_task_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"task.id", csp);
+		var_task_id.setType("String");
+		Variable var_step_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"step.id", csp);
+		var_step_id.setType("String");
 
 		// Create constraints
+		Eq eq = new Eq();
+
+		csp.getConstraints().add(eq);
 
 		// Solve CSP
+		eq.setRuleName("");
+		eq.solve(var_task_id, var_step_id);
 
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("node", node);
@@ -2045,26 +2132,26 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements
 			return null;
 		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_265__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_265((EMoflonEdge) arguments
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_299__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_299((EMoflonEdge) arguments
 					.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_266__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_266((EMoflonEdge) arguments
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_300__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_300((EMoflonEdge) arguments
 					.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_79__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_79((EMoflonEdge) arguments
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_90__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_90((EMoflonEdge) arguments
 					.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_267__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_267((EMoflonEdge) arguments
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_301__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_301((EMoflonEdge) arguments
 					.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_268__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_268((EMoflonEdge) arguments
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_302__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_302((EMoflonEdge) arguments
 					.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_269__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_269((EMoflonEdge) arguments
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_303__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_303((EMoflonEdge) arguments
 					.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_270__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_270((EMoflonEdge) arguments
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_304__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_304((EMoflonEdge) arguments
 					.get(0));
 		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
@@ -2374,17 +2461,20 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements
 		return null;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_1_1_greenBBFFBF(
-			Flow flow, Task task, SequenceFlow sf2) {
+	public static final Object[] pattern_Task2NormalStepAfterPG_1_1_greenBBFFBFB(
+			Flow flow, Task task, SequenceFlow sf2, CSP csp) {
 		NormalStep step = SimpleUseCaseFactory.eINSTANCE.createNormalStep();
 		T2NS _t2ns = Bpmn2UseCaseFactory.eINSTANCE.createT2NS();
 		SF2F _sf2f2 = Bpmn2UseCaseFactory.eINSTANCE.createSF2F();
+		Object _localVariable_0 = csp.getValue("step", "id");
 		flow.getSteps().add(step);
 		_t2ns.setSource(task);
 		_t2ns.setTarget(step);
 		_sf2f2.setSource(sf2);
 		_sf2f2.setTarget(flow);
-		return new Object[] { flow, task, step, _t2ns, sf2, _sf2f2 };
+		String step_id_prime = (String) _localVariable_0;
+		step.setId(step_id_prime);
+		return new Object[] { flow, task, step, _t2ns, sf2, _sf2f2, csp };
 	}
 
 	public static final Object[] pattern_Task2NormalStepAfterPG_1_2_blackBBBBB(
@@ -3147,13 +3237,14 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements
 		return null;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_11_1_greenBBBFBFFF(
+	public static final Object[] pattern_Task2NormalStepAfterPG_11_1_greenBBBFBFFFB(
 			SimpleBPMN.Process process, Flow flow, SequenceFlow sf1,
-			NormalStep step) {
+			NormalStep step, CSP csp) {
 		Task task = SimpleBPMNFactory.eINSTANCE.createTask();
 		T2NS _t2ns = Bpmn2UseCaseFactory.eINSTANCE.createT2NS();
 		SequenceFlow sf2 = SimpleBPMNFactory.eINSTANCE.createSequenceFlow();
 		SF2F _sf2f2 = Bpmn2UseCaseFactory.eINSTANCE.createSF2F();
+		Object _localVariable_0 = csp.getValue("task", "id");
 		process.getFlowElements().add(task);
 		sf1.setTargetRef(task);
 		_t2ns.setSource(task);
@@ -3162,8 +3253,10 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements
 		sf2.setSourceRef(task);
 		_sf2f2.setSource(sf2);
 		_sf2f2.setTarget(flow);
+		String task_id_prime = (String) _localVariable_0;
+		task.setId(task_id_prime);
 		return new Object[] { process, flow, sf1, task, step, _t2ns, sf2,
-				_sf2f2 };
+				_sf2f2, csp };
 	}
 
 	public static final Object[] pattern_Task2NormalStepAfterPG_11_2_blackBBBBB(
@@ -5271,16 +5364,18 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements
 		return null;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_33_6_greenBBBFFFFFB(
+	public static final Object[] pattern_Task2NormalStepAfterPG_33_6_greenBBBFFFFFBB(
 			SimpleBPMN.Process process, Flow flow, SequenceFlow sf1,
-			ModelgeneratorRuleResult ruleResult) {
+			ModelgeneratorRuleResult ruleResult, CSP csp) {
 		Task task = SimpleBPMNFactory.eINSTANCE.createTask();
 		NormalStep step = SimpleUseCaseFactory.eINSTANCE.createNormalStep();
 		T2NS _t2ns = Bpmn2UseCaseFactory.eINSTANCE.createT2NS();
 		SequenceFlow sf2 = SimpleBPMNFactory.eINSTANCE.createSequenceFlow();
 		SF2F _sf2f2 = Bpmn2UseCaseFactory.eINSTANCE.createSF2F();
+		Object _localVariable_0 = csp.getValue("task", "id");
+		Object _localVariable_1 = csp.getValue("step", "id");
 		boolean ruleResult_success_prime = Boolean.valueOf(true);
-		int _localVariable_0 = ruleResult.getIncrementedPerformCount();
+		int _localVariable_2 = ruleResult.getIncrementedPerformCount();
 		process.getFlowElements().add(task);
 		sf1.setTargetRef(task);
 		ruleResult.getSourceObjects().add(task);
@@ -5295,12 +5390,16 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements
 		_sf2f2.setSource(sf2);
 		_sf2f2.setTarget(flow);
 		ruleResult.getCorrObjects().add(_sf2f2);
+		String task_id_prime = (String) _localVariable_0;
+		String step_id_prime = (String) _localVariable_1;
 		ruleResult.setSuccess(Boolean.valueOf(ruleResult_success_prime));
-		int ruleResult_performCount_prime = Integer.valueOf(_localVariable_0);
+		int ruleResult_performCount_prime = Integer.valueOf(_localVariable_2);
+		task.setId(task_id_prime);
+		step.setId(step_id_prime);
 		ruleResult.setPerformCount(Integer
 				.valueOf(ruleResult_performCount_prime));
 		return new Object[] { process, flow, sf1, task, step, _t2ns, sf2,
-				_sf2f2, ruleResult };
+				_sf2f2, ruleResult, csp };
 	}
 
 	public static final ModelgeneratorRuleResult pattern_Task2NormalStepAfterPG_33_7_expressionFB(

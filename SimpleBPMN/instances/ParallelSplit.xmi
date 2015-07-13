@@ -7,35 +7,44 @@
     xsi:schemaLocation="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore ../model/SimpleBPMN.ecore">
   <flowElements
       xsi:type="SimpleBPMN:StartEvent"
-      outgoing="//@flowElements.1"/>
+      id="se1"
+      outgoing="sf1"/>
   <flowElements
       xsi:type="SimpleBPMN:SequenceFlow"
-      sourceRef="//@flowElements.0"
-      targetRef="//@flowElements.2"/>
+      id="sf1"
+      sourceRef="se1"
+      targetRef="pg1"/>
   <flowElements
       xsi:type="SimpleBPMN:ParallelGateway"
-      outgoing="//@flowElements.3 //@flowElements.4"
-      incoming="//@flowElements.1"/>
+      id="pg1"
+      outgoing="sf2 sf3"
+      incoming="sf1"/>
   <flowElements
       xsi:type="SimpleBPMN:SequenceFlow"
-      sourceRef="//@flowElements.2"
-      targetRef="//@flowElements.5"/>
+      id="sf2"
+      sourceRef="pg1"
+      targetRef="t1"/>
   <flowElements
       xsi:type="SimpleBPMN:SequenceFlow"
-      sourceRef="//@flowElements.2"
-      targetRef="//@flowElements.6"/>
+      id="sf3"
+      sourceRef="pg1"
+      targetRef="t2"/>
   <flowElements
       xsi:type="SimpleBPMN:Task"
-      outgoing="//@flowElements.7"
-      incoming="//@flowElements.3"/>
+      id="t1"
+      outgoing="sf4"
+      incoming="sf2"/>
   <flowElements
       xsi:type="SimpleBPMN:Task"
-      outgoing="//@flowElements.8"
-      incoming="//@flowElements.4"/>
+      id="t2"
+      outgoing="sf5"
+      incoming="sf3"/>
   <flowElements
       xsi:type="SimpleBPMN:SequenceFlow"
-      sourceRef="//@flowElements.5"/>
+      id="sf4"
+      sourceRef="t1"/>
   <flowElements
       xsi:type="SimpleBPMN:SequenceFlow"
-      sourceRef="//@flowElements.6"/>
+      id="sf5"
+      sourceRef="t2"/>
 </SimpleBPMN:Process>

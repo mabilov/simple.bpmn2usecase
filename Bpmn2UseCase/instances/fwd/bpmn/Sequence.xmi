@@ -7,24 +7,30 @@
     xsi:schemaLocation="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore ../model/SimpleBPMN.ecore">
   <flowElements
       xsi:type="SimpleBPMN:StartEvent"
-      outgoing="//@flowElements.1"/>
+      id="se1"
+      outgoing="sf1"/>
   <flowElements
       xsi:type="SimpleBPMN:SequenceFlow"
-      sourceRef="//@flowElements.0"
-      targetRef="//@flowElements.2"/>
+      id="sf1"
+      sourceRef="se1"
+      targetRef="t1"/>
   <flowElements
       xsi:type="SimpleBPMN:Task"
-      outgoing="//@flowElements.3"
-      incoming="//@flowElements.1"/>
+      id="t1"
+      outgoing="sf2"
+      incoming="sf1"/>
   <flowElements
       xsi:type="SimpleBPMN:SequenceFlow"
-      sourceRef="//@flowElements.2"
-      targetRef="//@flowElements.4"/>
+      id="sf2"
+      sourceRef="t1"
+      targetRef="t2"/>
   <flowElements
       xsi:type="SimpleBPMN:Task"
-      outgoing="//@flowElements.5"
-      incoming="//@flowElements.3"/>
+      id="t2"
+      outgoing="sf3"
+      incoming="sf2"/>
   <flowElements
       xsi:type="SimpleBPMN:SequenceFlow"
-      sourceRef="//@flowElements.4"/>
+      id="sf3"
+      sourceRef="t2"/>
 </SimpleBPMN:Process>

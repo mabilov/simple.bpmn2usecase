@@ -104,13 +104,22 @@ public interface SimpleBPMNPackage extends EPackage {
 	int FLOW_ELEMENT = 1;
 
 	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOW_ELEMENT__ID = 0;
+
+	/**
 	 * The number of structural features of the '<em>Flow Element</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FLOW_ELEMENT_FEATURE_COUNT = 0;
+	int FLOW_ELEMENT_FEATURE_COUNT = 1;
 
 	/**
 	 * The number of operations of the '<em>Flow Element</em>' class.
@@ -130,6 +139,15 @@ public interface SimpleBPMNPackage extends EPackage {
 	 * @generated
 	 */
 	int FLOW_NODE = 2;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOW_NODE__ID = FLOW_ELEMENT__ID;
 
 	/**
 	 * The feature id for the '<em><b>Outgoing</b></em>' reference list.
@@ -178,6 +196,15 @@ public interface SimpleBPMNPackage extends EPackage {
 	int SEQUENCE_FLOW = 3;
 
 	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEQUENCE_FLOW__ID = FLOW_ELEMENT__ID;
+
+	/**
 	 * The feature id for the '<em><b>Source Ref</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -224,6 +251,15 @@ public interface SimpleBPMNPackage extends EPackage {
 	int TASK = 4;
 
 	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TASK__ID = FLOW_NODE__ID;
+
+	/**
 	 * The feature id for the '<em><b>Outgoing</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -268,6 +304,15 @@ public interface SimpleBPMNPackage extends EPackage {
 	 * @generated
 	 */
 	int PARALLEL_GATEWAY = 5;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARALLEL_GATEWAY__ID = FLOW_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Outgoing</b></em>' reference list.
@@ -323,6 +368,15 @@ public interface SimpleBPMNPackage extends EPackage {
 	 * @generated
 	 */
 	int START_EVENT = 6;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int START_EVENT__ID = FLOW_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Outgoing</b></em>' reference list.
@@ -390,6 +444,17 @@ public interface SimpleBPMNPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getFlowElement();
+
+	/**
+	 * Returns the meta object for the attribute '{@link SimpleBPMN.FlowElement#getId <em>Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Id</em>'.
+	 * @see SimpleBPMN.FlowElement#getId()
+	 * @see #getFlowElement()
+	 * @generated
+	 */
+	EAttribute getFlowElement_Id();
 
 	/**
 	 * Returns the meta object for class '{@link SimpleBPMN.FlowNode <em>Flow Node</em>}'.
@@ -546,6 +611,14 @@ public interface SimpleBPMNPackage extends EPackage {
 		 * @generated
 		 */
 		EClass FLOW_ELEMENT = eINSTANCE.getFlowElement();
+
+		/**
+		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FLOW_ELEMENT__ID = eINSTANCE.getFlowElement_Id();
 
 		/**
 		 * The meta object literal for the '{@link SimpleBPMN.impl.FlowNodeImpl <em>Flow Node</em>}' class.

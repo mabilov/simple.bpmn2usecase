@@ -206,10 +206,10 @@ public class ParallelGateway2ParallelStepAfterSEImpl extends AbstractRuleImpl
 		SequenceFlow sf1 = (SequenceFlow) result1_bindingAndBlack[3];
 		ParallelGateway pgw = (ParallelGateway) result1_bindingAndBlack[4];
 		SF2F _sf2f1 = (SF2F) result1_bindingAndBlack[5];
-		// CSP csp = (CSP) result1_bindingAndBlack[7];
+		CSP csp = (CSP) result1_bindingAndBlack[7];
 		Object[] result1_green = ParallelGateway2ParallelStepAfterSEImpl
-				.pattern_ParallelGateway2ParallelStepAfterSE_1_1_greenBBFF(
-						flow, pgw);
+				.pattern_ParallelGateway2ParallelStepAfterSE_1_1_greenBBFFB(
+						flow, pgw, csp);
 		ParallelStep step = (ParallelStep) result1_green[2];
 		PG2PS _pg2ps = (PG2PS) result1_green[3];
 
@@ -456,12 +456,24 @@ public class ParallelGateway2ParallelStepAfterSEImpl extends AbstractRuleImpl
 		// Create literals
 
 		// Create attribute variables
+		Variable var_pgw_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"pgw.id", true, csp);
+		var_pgw_id.setValue(pgw.getId());
+		var_pgw_id.setType("String");
 
 		// Create unbound variables
+		Variable var_step_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"step.id", csp);
+		var_step_id.setType("String");
 
 		// Create constraints
+		Eq eq = new Eq();
+
+		csp.getConstraints().add(eq);
 
 		// Solve CSP
+		eq.setRuleName("");
+		eq.solve(var_pgw_id, var_step_id);
 
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("node", node);
@@ -617,10 +629,10 @@ public class ParallelGateway2ParallelStepAfterSEImpl extends AbstractRuleImpl
 		SequenceFlow sf1 = (SequenceFlow) result1_bindingAndBlack[3];
 		ParallelStep step = (ParallelStep) result1_bindingAndBlack[4];
 		SF2F _sf2f1 = (SF2F) result1_bindingAndBlack[5];
-		// CSP csp = (CSP) result1_bindingAndBlack[7];
+		CSP csp = (CSP) result1_bindingAndBlack[7];
 		Object[] result1_green = ParallelGateway2ParallelStepAfterSEImpl
-				.pattern_ParallelGateway2ParallelStepAfterSE_11_1_greenBBFBF(
-						process, sf1, step);
+				.pattern_ParallelGateway2ParallelStepAfterSE_11_1_greenBBFBFB(
+						process, sf1, step, csp);
 		ParallelGateway pgw = (ParallelGateway) result1_green[2];
 		PG2PS _pg2ps = (PG2PS) result1_green[4];
 
@@ -867,12 +879,24 @@ public class ParallelGateway2ParallelStepAfterSEImpl extends AbstractRuleImpl
 		// Create literals
 
 		// Create attribute variables
+		Variable var_step_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"step.id", true, csp);
+		var_step_id.setValue(step.getId());
+		var_step_id.setType("String");
 
 		// Create unbound variables
+		Variable var_pgw_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"pgw.id", csp);
+		var_pgw_id.setType("String");
 
 		// Create constraints
+		Eq eq = new Eq();
+
+		csp.getConstraints().add(eq);
 
 		// Solve CSP
+		eq.setRuleName("");
+		eq.solve(var_pgw_id, var_step_id);
 
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("node", node);
@@ -930,7 +954,7 @@ public class ParallelGateway2ParallelStepAfterSEImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_274(
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_308(
 			EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = ParallelGateway2ParallelStepAfterSEImpl
@@ -998,7 +1022,7 @@ public class ParallelGateway2ParallelStepAfterSEImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_82(
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_93(
 			EMoflonEdge _edge_steps) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = ParallelGateway2ParallelStepAfterSEImpl
@@ -1064,7 +1088,7 @@ public class ParallelGateway2ParallelStepAfterSEImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_275(
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_309(
 			EMoflonEdge _edge_targetRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = ParallelGateway2ParallelStepAfterSEImpl
@@ -1132,7 +1156,7 @@ public class ParallelGateway2ParallelStepAfterSEImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_276(
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_310(
 			EMoflonEdge _edge_incoming) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = ParallelGateway2ParallelStepAfterSEImpl
@@ -1262,12 +1286,31 @@ public class ParallelGateway2ParallelStepAfterSEImpl extends AbstractRuleImpl
 			return ruleResult;
 		}
 
+		Variable var_pgw_id = CSPFactoryHelper.eINSTANCE.createVariable("pgw",
+				true, csp);
+		var_pgw_id.setValue(pgw.getId());
+		var_pgw_id.setType("String");
+
+		Variable var_step_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"step", true, csp);
+		var_step_id.setValue(step.getId());
+		var_step_id.setType("String");
+
+		Eq eq0 = new Eq();
+		csp.getConstraints().add(eq0);
+
+		eq0.setRuleName("ParallelGateway2ParallelStepAfterSE");
+		eq0.solve(var_pgw_id, var_step_id);
+
 		if (csp.check()) {
 			ruleResult.setSuccess(true);
 		} else {
+			var_step_id.setBound(false);
+			eq0.solve(var_pgw_id, var_step_id);
 			if (csp.check()) {
 				ruleResult.setSuccess(true);
 				ruleResult.setRequiredChange(true);
+				step.setId((String) var_step_id.getValue());
 			} else {
 				ruleResult.setSuccess(false);
 				return ruleResult;
@@ -1344,12 +1387,31 @@ public class ParallelGateway2ParallelStepAfterSEImpl extends AbstractRuleImpl
 			return ruleResult;
 		}
 
+		Variable var_pgw_id = CSPFactoryHelper.eINSTANCE.createVariable("pgw",
+				true, csp);
+		var_pgw_id.setValue(pgw.getId());
+		var_pgw_id.setType("String");
+
+		Variable var_step_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"step", true, csp);
+		var_step_id.setValue(step.getId());
+		var_step_id.setType("String");
+
+		Eq eq0 = new Eq();
+		csp.getConstraints().add(eq0);
+
+		eq0.setRuleName("ParallelGateway2ParallelStepAfterSE");
+		eq0.solve(var_pgw_id, var_step_id);
+
 		if (csp.check()) {
 			ruleResult.setSuccess(true);
 		} else {
+			var_pgw_id.setBound(false);
+			eq0.solve(var_pgw_id, var_step_id);
 			if (csp.check()) {
 				ruleResult.setSuccess(true);
 				ruleResult.setRequiredChange(true);
+				pgw.setId((String) var_pgw_id.getValue());
 			} else {
 				ruleResult.setSuccess(false);
 				return ruleResult;
@@ -1450,12 +1512,25 @@ public class ParallelGateway2ParallelStepAfterSEImpl extends AbstractRuleImpl
 		// Create literals
 
 		// Create attribute variables
+		Variable var_pgw_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"pgw.id", true, csp);
+		var_pgw_id.setValue(pgw.getId());
+		var_pgw_id.setType("String");
+		Variable var_step_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"step.id", true, csp);
+		var_step_id.setValue(step.getId());
+		var_step_id.setType("String");
 
 		// Create unbound variables
 
 		// Create constraints
+		Eq eq = new Eq();
+
+		csp.getConstraints().add(eq);
 
 		// Solve CSP
+		eq.setRuleName("");
+		eq.solve(var_pgw_id, var_step_id);
 
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("node", node);
@@ -1607,8 +1682,8 @@ public class ParallelGateway2ParallelStepAfterSEImpl extends AbstractRuleImpl
 										+ "[ruleResult] = " + ruleResult + ".");
 					}
 					ParallelGateway2ParallelStepAfterSEImpl
-							.pattern_ParallelGateway2ParallelStepAfterSE_30_6_greenBBBFFFB(
-									process, flow, sf1, ruleResult);
+							.pattern_ParallelGateway2ParallelStepAfterSE_30_6_greenBBBFFFBB(
+									process, flow, sf1, ruleResult, csp);
 					// ParallelGateway pgw = (ParallelGateway) result6_green[3];
 					// ParallelStep step = (ParallelStep) result6_green[4];
 					// PG2PS _pg2ps = (PG2PS) result6_green[5];
@@ -1640,10 +1715,21 @@ public class ParallelGateway2ParallelStepAfterSEImpl extends AbstractRuleImpl
 		// Create attribute variables
 
 		// Create unbound variables
+		Variable var_pgw_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"pgw.id", csp);
+		var_pgw_id.setType("String");
+		Variable var_step_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"step.id", csp);
+		var_step_id.setType("String");
 
 		// Create constraints
+		Eq eq = new Eq();
+
+		csp.getConstraints().add(eq);
 
 		// Solve CSP
+		eq.setRuleName("");
+		eq.solve(var_pgw_id, var_step_id);
 
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("node", node);
@@ -1754,17 +1840,17 @@ public class ParallelGateway2ParallelStepAfterSEImpl extends AbstractRuleImpl
 			return null;
 		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_SE___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_SE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_274__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_274((EMoflonEdge) arguments
+		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_SE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_308__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_308((EMoflonEdge) arguments
 					.get(0));
-		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_SE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_82__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_82((EMoflonEdge) arguments
+		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_SE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_93__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_93((EMoflonEdge) arguments
 					.get(0));
-		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_SE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_275__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_275((EMoflonEdge) arguments
+		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_SE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_309__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_309((EMoflonEdge) arguments
 					.get(0));
-		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_SE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_276__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_276((EMoflonEdge) arguments
+		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_SE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_310__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_310((EMoflonEdge) arguments
 					.get(0));
 		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_SE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
@@ -2034,14 +2120,17 @@ public class ParallelGateway2ParallelStepAfterSEImpl extends AbstractRuleImpl
 		return null;
 	}
 
-	public static final Object[] pattern_ParallelGateway2ParallelStepAfterSE_1_1_greenBBFF(
-			BasicFlow flow, ParallelGateway pgw) {
+	public static final Object[] pattern_ParallelGateway2ParallelStepAfterSE_1_1_greenBBFFB(
+			BasicFlow flow, ParallelGateway pgw, CSP csp) {
 		ParallelStep step = SimpleUseCaseFactory.eINSTANCE.createParallelStep();
 		PG2PS _pg2ps = Bpmn2UseCaseFactory.eINSTANCE.createPG2PS();
+		Object _localVariable_0 = csp.getValue("step", "id");
 		flow.getSteps().add(step);
 		_pg2ps.setSource(pgw);
 		_pg2ps.setTarget(step);
-		return new Object[] { flow, pgw, step, _pg2ps };
+		String step_id_prime = (String) _localVariable_0;
+		step.setId(step_id_prime);
+		return new Object[] { flow, pgw, step, _pg2ps, csp };
 	}
 
 	public static final Object[] pattern_ParallelGateway2ParallelStepAfterSE_1_2_blackBBB(
@@ -2670,18 +2759,22 @@ public class ParallelGateway2ParallelStepAfterSEImpl extends AbstractRuleImpl
 		return null;
 	}
 
-	public static final Object[] pattern_ParallelGateway2ParallelStepAfterSE_11_1_greenBBFBF(
-			SimpleBPMN.Process process, SequenceFlow sf1, ParallelStep step) {
+	public static final Object[] pattern_ParallelGateway2ParallelStepAfterSE_11_1_greenBBFBFB(
+			SimpleBPMN.Process process, SequenceFlow sf1, ParallelStep step,
+			CSP csp) {
 		ParallelGateway pgw = SimpleBPMNFactory.eINSTANCE
 				.createParallelGateway();
 		PG2PS _pg2ps = Bpmn2UseCaseFactory.eINSTANCE.createPG2PS();
 		boolean pgw_isDiverging_prime = Boolean.valueOf(true);
+		Object _localVariable_0 = csp.getValue("pgw", "id");
 		process.getFlowElements().add(pgw);
 		sf1.setTargetRef(pgw);
 		_pg2ps.setSource(pgw);
 		_pg2ps.setTarget(step);
 		pgw.setIsDiverging(Boolean.valueOf(pgw_isDiverging_prime));
-		return new Object[] { process, sf1, pgw, step, _pg2ps };
+		String pgw_id_prime = (String) _localVariable_0;
+		pgw.setId(pgw_id_prime);
+		return new Object[] { process, sf1, pgw, step, _pg2ps, csp };
 	}
 
 	public static final Object[] pattern_ParallelGateway2ParallelStepAfterSE_11_2_blackBBB(
@@ -4087,16 +4180,18 @@ public class ParallelGateway2ParallelStepAfterSEImpl extends AbstractRuleImpl
 		return new Object[] { node, process, flow, sf1, _sf2f1, ruleResult };
 	}
 
-	public static final Object[] pattern_ParallelGateway2ParallelStepAfterSE_30_6_greenBBBFFFB(
+	public static final Object[] pattern_ParallelGateway2ParallelStepAfterSE_30_6_greenBBBFFFBB(
 			SimpleBPMN.Process process, BasicFlow flow, SequenceFlow sf1,
-			ModelgeneratorRuleResult ruleResult) {
+			ModelgeneratorRuleResult ruleResult, CSP csp) {
 		ParallelGateway pgw = SimpleBPMNFactory.eINSTANCE
 				.createParallelGateway();
 		ParallelStep step = SimpleUseCaseFactory.eINSTANCE.createParallelStep();
 		PG2PS _pg2ps = Bpmn2UseCaseFactory.eINSTANCE.createPG2PS();
 		boolean pgw_isDiverging_prime = Boolean.valueOf(true);
+		Object _localVariable_0 = csp.getValue("pgw", "id");
+		Object _localVariable_1 = csp.getValue("step", "id");
 		boolean ruleResult_success_prime = Boolean.valueOf(true);
-		int _localVariable_0 = ruleResult.getIncrementedPerformCount();
+		int _localVariable_2 = ruleResult.getIncrementedPerformCount();
 		process.getFlowElements().add(pgw);
 		sf1.setTargetRef(pgw);
 		ruleResult.getSourceObjects().add(pgw);
@@ -4106,11 +4201,16 @@ public class ParallelGateway2ParallelStepAfterSEImpl extends AbstractRuleImpl
 		_pg2ps.setTarget(step);
 		ruleResult.getCorrObjects().add(_pg2ps);
 		pgw.setIsDiverging(Boolean.valueOf(pgw_isDiverging_prime));
+		String pgw_id_prime = (String) _localVariable_0;
+		String step_id_prime = (String) _localVariable_1;
 		ruleResult.setSuccess(Boolean.valueOf(ruleResult_success_prime));
-		int ruleResult_performCount_prime = Integer.valueOf(_localVariable_0);
+		int ruleResult_performCount_prime = Integer.valueOf(_localVariable_2);
+		pgw.setId(pgw_id_prime);
+		step.setId(step_id_prime);
 		ruleResult.setPerformCount(Integer
 				.valueOf(ruleResult_performCount_prime));
-		return new Object[] { process, flow, sf1, pgw, step, _pg2ps, ruleResult };
+		return new Object[] { process, flow, sf1, pgw, step, _pg2ps,
+				ruleResult, csp };
 	}
 
 	public static final ModelgeneratorRuleResult pattern_ParallelGateway2ParallelStepAfterSE_30_7_expressionFB(

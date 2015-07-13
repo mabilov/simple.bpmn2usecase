@@ -12,6 +12,7 @@ import SimpleUseCase.SimpleUseCasePackage;
 import SimpleUseCase.Step;
 import SimpleUseCase.UseCase;
 
+import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -199,6 +200,15 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getParallelFlow_Id() {
+		return (EAttribute) parallelFlowEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getStep() {
 		return stepEClass;
 	}
@@ -210,6 +220,15 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements
 	 */
 	public EReference getStep_Next() {
 		return (EReference) stepEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getStep_Id() {
+		return (EAttribute) stepEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -277,9 +296,11 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements
 		basicFlowEClass = createEClass(BASIC_FLOW);
 
 		parallelFlowEClass = createEClass(PARALLEL_FLOW);
+		createEAttribute(parallelFlowEClass, PARALLEL_FLOW__ID);
 
 		stepEClass = createEClass(STEP);
 		createEReference(stepEClass, STEP__NEXT);
+		createEAttribute(stepEClass, STEP__ID);
 
 		normalStepEClass = createEClass(NORMAL_STEP);
 
@@ -341,6 +362,10 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements
 
 		initEClass(parallelFlowEClass, ParallelFlow.class, "ParallelFlow",
 				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getParallelFlow_Id(), ecorePackage.getEString(), "id",
+				null, 1, 1, ParallelFlow.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED,
+				!IS_ORDERED);
 
 		initEClass(stepEClass, Step.class, "Step", IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -348,6 +373,9 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements
 				1, Step.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getStep_Id(), ecorePackage.getEString(), "id", null, 1,
+				1, Step.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(normalStepEClass, NormalStep.class, "NormalStep",
 				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

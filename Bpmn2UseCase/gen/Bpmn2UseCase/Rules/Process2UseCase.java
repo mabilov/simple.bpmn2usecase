@@ -214,7 +214,7 @@ public interface Process2UseCase extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_249(
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_283(
 			EMoflonEdge _edge_flowElements);
 
 	/**
@@ -223,7 +223,7 @@ public interface Process2UseCase extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_250(
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_284(
 			EMoflonEdge _edge_flowElements);
 
 	/**
@@ -232,7 +232,7 @@ public interface Process2UseCase extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_75(EMoflonEdge _edge_flows);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_86(EMoflonEdge _edge_flows);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -240,7 +240,7 @@ public interface Process2UseCase extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_251(
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_285(
 			EMoflonEdge _edge_sourceRef);
 
 	/**
@@ -249,7 +249,7 @@ public interface Process2UseCase extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_252(
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_286(
 			EMoflonEdge _edge_outgoing);
 
 	/**

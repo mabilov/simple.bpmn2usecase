@@ -201,10 +201,10 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl
 		SimpleBPMN.Process process = (SimpleBPMN.Process) result1_bindingAndBlack[4];
 		UseCase useCase = (UseCase) result1_bindingAndBlack[5];
 		P2UC _p2uc = (P2UC) result1_bindingAndBlack[6];
-		// CSP csp = (CSP) result1_bindingAndBlack[8];
+		CSP csp = (CSP) result1_bindingAndBlack[8];
 		Object[] result1_green = SequenceFlowAfterPG2ParallelFlowImpl
-				.pattern_SequenceFlowAfterPG2ParallelFlow_1_1_greenBBBFF(step,
-						sf, useCase);
+				.pattern_SequenceFlowAfterPG2ParallelFlow_1_1_greenBBBFFB(step,
+						sf, useCase, csp);
 		ParallelFlow flow = (ParallelFlow) result1_green[3];
 		SF2F _sf2pf = (SF2F) result1_green[4];
 
@@ -462,12 +462,24 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl
 		// Create literals
 
 		// Create attribute variables
+		Variable var_sf_id = CSPFactoryHelper.eINSTANCE.createVariable("sf.id",
+				true, csp);
+		var_sf_id.setValue(sf.getId());
+		var_sf_id.setType("String");
 
 		// Create unbound variables
+		Variable var_flow_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"flow.id", csp);
+		var_flow_id.setType("String");
 
 		// Create constraints
+		Eq eq = new Eq();
+
+		csp.getConstraints().add(eq);
 
 		// Solve CSP
+		eq.setRuleName("");
+		eq.solve(var_sf_id, var_flow_id);
 
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("pgw", pgw);
@@ -629,10 +641,10 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl
 		UseCase useCase = (UseCase) result1_bindingAndBlack[4];
 		P2UC _p2uc = (P2UC) result1_bindingAndBlack[5];
 		ParallelFlow flow = (ParallelFlow) result1_bindingAndBlack[6];
-		// CSP csp = (CSP) result1_bindingAndBlack[8];
+		CSP csp = (CSP) result1_bindingAndBlack[8];
 		Object[] result1_green = SequenceFlowAfterPG2ParallelFlowImpl
-				.pattern_SequenceFlowAfterPG2ParallelFlow_11_1_greenBFBBF(pgw,
-						process, flow);
+				.pattern_SequenceFlowAfterPG2ParallelFlow_11_1_greenBFBBFB(pgw,
+						process, flow, csp);
 		SequenceFlow sf = (SequenceFlow) result1_green[1];
 		SF2F _sf2pf = (SF2F) result1_green[4];
 
@@ -891,12 +903,24 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl
 		// Create literals
 
 		// Create attribute variables
+		Variable var_flow_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"flow.id", true, csp);
+		var_flow_id.setValue(flow.getId());
+		var_flow_id.setType("String");
 
 		// Create unbound variables
+		Variable var_sf_id = CSPFactoryHelper.eINSTANCE.createVariable("sf.id",
+				csp);
+		var_sf_id.setType("String");
 
 		// Create constraints
+		Eq eq = new Eq();
+
+		csp.getConstraints().add(eq);
 
 		// Solve CSP
+		eq.setRuleName("");
+		eq.solve(var_sf_id, var_flow_id);
 
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("pgw", pgw);
@@ -956,7 +980,7 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_280(
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_314(
 			EMoflonEdge _edge_sourceRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SequenceFlowAfterPG2ParallelFlowImpl
@@ -1023,7 +1047,7 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_281(
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_315(
 			EMoflonEdge _edge_outgoing) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SequenceFlowAfterPG2ParallelFlowImpl
@@ -1090,7 +1114,7 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_84(
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_95(
 			EMoflonEdge _edge_invokedFlows) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SequenceFlowAfterPG2ParallelFlowImpl
@@ -1157,7 +1181,7 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_282(
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_316(
 			EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SequenceFlowAfterPG2ParallelFlowImpl
@@ -1224,7 +1248,7 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_85(
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_96(
 			EMoflonEdge _edge_flows) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SequenceFlowAfterPG2ParallelFlowImpl
@@ -1359,12 +1383,31 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl
 			return ruleResult;
 		}
 
+		Variable var_sf_id = CSPFactoryHelper.eINSTANCE.createVariable("sf",
+				true, csp);
+		var_sf_id.setValue(sf.getId());
+		var_sf_id.setType("String");
+
+		Variable var_flow_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"flow", true, csp);
+		var_flow_id.setValue(flow.getId());
+		var_flow_id.setType("String");
+
+		Eq eq0 = new Eq();
+		csp.getConstraints().add(eq0);
+
+		eq0.setRuleName("SequenceFlowAfterPG2ParallelFlow");
+		eq0.solve(var_sf_id, var_flow_id);
+
 		if (csp.check()) {
 			ruleResult.setSuccess(true);
 		} else {
+			var_flow_id.setBound(false);
+			eq0.solve(var_sf_id, var_flow_id);
 			if (csp.check()) {
 				ruleResult.setSuccess(true);
 				ruleResult.setRequiredChange(true);
+				flow.setId((String) var_flow_id.getValue());
 			} else {
 				ruleResult.setSuccess(false);
 				return ruleResult;
@@ -1447,12 +1490,31 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl
 			return ruleResult;
 		}
 
+		Variable var_sf_id = CSPFactoryHelper.eINSTANCE.createVariable("sf",
+				true, csp);
+		var_sf_id.setValue(sf.getId());
+		var_sf_id.setType("String");
+
+		Variable var_flow_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"flow", true, csp);
+		var_flow_id.setValue(flow.getId());
+		var_flow_id.setType("String");
+
+		Eq eq0 = new Eq();
+		csp.getConstraints().add(eq0);
+
+		eq0.setRuleName("SequenceFlowAfterPG2ParallelFlow");
+		eq0.solve(var_sf_id, var_flow_id);
+
 		if (csp.check()) {
 			ruleResult.setSuccess(true);
 		} else {
+			var_sf_id.setBound(false);
+			eq0.solve(var_sf_id, var_flow_id);
 			if (csp.check()) {
 				ruleResult.setSuccess(true);
 				ruleResult.setRequiredChange(true);
+				sf.setId((String) var_sf_id.getValue());
 			} else {
 				ruleResult.setSuccess(false);
 				return ruleResult;
@@ -1555,12 +1617,25 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl
 		// Create literals
 
 		// Create attribute variables
+		Variable var_sf_id = CSPFactoryHelper.eINSTANCE.createVariable("sf.id",
+				true, csp);
+		var_sf_id.setValue(sf.getId());
+		var_sf_id.setType("String");
+		Variable var_flow_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"flow.id", true, csp);
+		var_flow_id.setValue(flow.getId());
+		var_flow_id.setType("String");
 
 		// Create unbound variables
 
 		// Create constraints
+		Eq eq = new Eq();
+
+		csp.getConstraints().add(eq);
 
 		// Solve CSP
+		eq.setRuleName("");
+		eq.solve(var_sf_id, var_flow_id);
 
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("pgw", pgw);
@@ -1719,8 +1794,9 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl
 										+ "[ruleResult] = " + ruleResult + ".");
 					}
 					SequenceFlowAfterPG2ParallelFlowImpl
-							.pattern_SequenceFlowAfterPG2ParallelFlow_31_6_greenBBFBBFFB(
-									pgw, step, process, useCase, ruleResult);
+							.pattern_SequenceFlowAfterPG2ParallelFlow_31_6_greenBBFBBFFBB(
+									pgw, step, process, useCase, ruleResult,
+									csp);
 					// SequenceFlow sf = (SequenceFlow) result6_green[2];
 					// ParallelFlow flow = (ParallelFlow) result6_green[5];
 					// SF2F _sf2pf = (SF2F) result6_green[6];
@@ -1753,10 +1829,21 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl
 		// Create attribute variables
 
 		// Create unbound variables
+		Variable var_sf_id = CSPFactoryHelper.eINSTANCE.createVariable("sf.id",
+				csp);
+		var_sf_id.setType("String");
+		Variable var_flow_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"flow.id", csp);
+		var_flow_id.setType("String");
 
 		// Create constraints
+		Eq eq = new Eq();
+
+		csp.getConstraints().add(eq);
 
 		// Solve CSP
+		eq.setRuleName("");
+		eq.solve(var_sf_id, var_flow_id);
 
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("pgw", pgw);
@@ -1867,20 +1954,20 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl
 			return null;
 		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_280__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_280((EMoflonEdge) arguments
+		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_314__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_314((EMoflonEdge) arguments
 					.get(0));
-		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_281__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_281((EMoflonEdge) arguments
+		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_315__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_315((EMoflonEdge) arguments
 					.get(0));
-		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_84__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_84((EMoflonEdge) arguments
+		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_95__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_95((EMoflonEdge) arguments
 					.get(0));
-		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_282__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_282((EMoflonEdge) arguments
+		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_316__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_316((EMoflonEdge) arguments
 					.get(0));
-		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_85__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_85((EMoflonEdge) arguments
+		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_96__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_96((EMoflonEdge) arguments
 					.get(0));
 		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
@@ -2125,15 +2212,18 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl
 		return null;
 	}
 
-	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_1_1_greenBBBFF(
-			ParallelStep step, SequenceFlow sf, UseCase useCase) {
+	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_1_1_greenBBBFFB(
+			ParallelStep step, SequenceFlow sf, UseCase useCase, CSP csp) {
 		ParallelFlow flow = SimpleUseCaseFactory.eINSTANCE.createParallelFlow();
 		SF2F _sf2pf = Bpmn2UseCaseFactory.eINSTANCE.createSF2F();
+		Object _localVariable_0 = csp.getValue("flow", "id");
 		step.getInvokedFlows().add(flow);
 		useCase.getFlows().add(flow);
 		_sf2pf.setSource(sf);
 		_sf2pf.setTarget(flow);
-		return new Object[] { step, sf, useCase, flow, _sf2pf };
+		String flow_id_prime = (String) _localVariable_0;
+		flow.setId(flow_id_prime);
+		return new Object[] { step, sf, useCase, flow, _sf2pf, csp };
 	}
 
 	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_1_2_blackBBB(
@@ -2813,15 +2903,19 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl
 		return null;
 	}
 
-	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_11_1_greenBFBBF(
-			ParallelGateway pgw, SimpleBPMN.Process process, ParallelFlow flow) {
+	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_11_1_greenBFBBFB(
+			ParallelGateway pgw, SimpleBPMN.Process process, ParallelFlow flow,
+			CSP csp) {
 		SequenceFlow sf = SimpleBPMNFactory.eINSTANCE.createSequenceFlow();
 		SF2F _sf2pf = Bpmn2UseCaseFactory.eINSTANCE.createSF2F();
+		Object _localVariable_0 = csp.getValue("sf", "id");
 		sf.setSourceRef(pgw);
 		process.getFlowElements().add(sf);
 		_sf2pf.setSource(sf);
 		_sf2pf.setTarget(flow);
-		return new Object[] { pgw, sf, process, flow, _sf2pf };
+		String sf_id_prime = (String) _localVariable_0;
+		sf.setId(sf_id_prime);
+		return new Object[] { pgw, sf, process, flow, _sf2pf, csp };
 	}
 
 	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_11_2_blackBBB(
@@ -3600,10 +3694,10 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl
 
 	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_22_2_black_nac_0BB(
 			ParallelFlow flow, ParallelStep step) {
-		for (ParallelStep __DEC_flow_invokedFlows_550393 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ParallelStep __DEC_flow_invokedFlows_776234 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(flow, ParallelStep.class,
 						"invokedFlows")) {
-			if (!step.equals(__DEC_flow_invokedFlows_550393)) {
+			if (!step.equals(__DEC_flow_invokedFlows_776234)) {
 				return new Object[] { flow, step };
 			}
 		}
@@ -3853,10 +3947,10 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl
 
 	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_24_2_black_nac_0BB(
 			ParallelFlow flow, ParallelStep step) {
-		for (ParallelStep __DEC_flow_invokedFlows_82830 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ParallelStep __DEC_flow_invokedFlows_600750 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(flow, ParallelStep.class,
 						"invokedFlows")) {
-			if (!step.equals(__DEC_flow_invokedFlows_82830)) {
+			if (!step.equals(__DEC_flow_invokedFlows_600750)) {
 				return new Object[] { flow, step };
 			}
 		}
@@ -4461,14 +4555,16 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl
 		return null;
 	}
 
-	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_31_6_greenBBFBBFFB(
+	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_31_6_greenBBFBBFFBB(
 			ParallelGateway pgw, ParallelStep step, SimpleBPMN.Process process,
-			UseCase useCase, ModelgeneratorRuleResult ruleResult) {
+			UseCase useCase, ModelgeneratorRuleResult ruleResult, CSP csp) {
 		SequenceFlow sf = SimpleBPMNFactory.eINSTANCE.createSequenceFlow();
 		ParallelFlow flow = SimpleUseCaseFactory.eINSTANCE.createParallelFlow();
 		SF2F _sf2pf = Bpmn2UseCaseFactory.eINSTANCE.createSF2F();
+		Object _localVariable_0 = csp.getValue("sf", "id");
+		Object _localVariable_1 = csp.getValue("flow", "id");
 		boolean ruleResult_success_prime = Boolean.valueOf(true);
-		int _localVariable_0 = ruleResult.getIncrementedPerformCount();
+		int _localVariable_2 = ruleResult.getIncrementedPerformCount();
 		sf.setSourceRef(pgw);
 		process.getFlowElements().add(sf);
 		ruleResult.getSourceObjects().add(sf);
@@ -4478,12 +4574,16 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl
 		_sf2pf.setSource(sf);
 		_sf2pf.setTarget(flow);
 		ruleResult.getCorrObjects().add(_sf2pf);
+		String sf_id_prime = (String) _localVariable_0;
+		String flow_id_prime = (String) _localVariable_1;
 		ruleResult.setSuccess(Boolean.valueOf(ruleResult_success_prime));
-		int ruleResult_performCount_prime = Integer.valueOf(_localVariable_0);
+		int ruleResult_performCount_prime = Integer.valueOf(_localVariable_2);
+		sf.setId(sf_id_prime);
+		flow.setId(flow_id_prime);
 		ruleResult.setPerformCount(Integer
 				.valueOf(ruleResult_performCount_prime));
 		return new Object[] { pgw, step, sf, process, useCase, flow, _sf2pf,
-				ruleResult };
+				ruleResult, csp };
 	}
 
 	public static final ModelgeneratorRuleResult pattern_SequenceFlowAfterPG2ParallelFlow_31_7_expressionFB(

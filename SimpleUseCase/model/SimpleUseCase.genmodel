@@ -12,9 +12,12 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//Flow/steps"/>
     </genClasses>
     <genClasses ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//BasicFlow"/>
-    <genClasses ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//ParallelFlow"/>
+    <genClasses ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//ParallelFlow">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//ParallelFlow/id"/>
+    </genClasses>
     <genClasses image="false" ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//Step">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//Step/next"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//Step/id"/>
     </genClasses>
     <genClasses ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//NormalStep"/>
     <genClasses ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//ParallelStep">

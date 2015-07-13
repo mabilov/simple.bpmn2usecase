@@ -125,20 +125,20 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/checkTypes_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/checkTypes_BWD/match"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_249">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_249/_edge_flowElements"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_283">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_283/_edge_flowElements"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_250">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_250/_edge_flowElements"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_284">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_284/_edge_flowElements"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_BWD_EMoflonEdge_75">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_BWD_EMoflonEdge_75/_edge_flows"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_BWD_EMoflonEdge_86">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_BWD_EMoflonEdge_86/_edge_flows"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_251">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_251/_edge_sourceRef"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_285">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_285/_edge_sourceRef"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_252">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_252/_edge_outgoing"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_286">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_286/_edge_outgoing"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/checkAttributes_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/checkAttributes_FWD/tripleMatch"/>
@@ -305,29 +305,29 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/checkTypes_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/checkTypes_BWD/match"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_BWD_EMoflonEdge_76">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_BWD_EMoflonEdge_76/_edge_next"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_BWD_EMoflonEdge_87">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_BWD_EMoflonEdge_87/_edge_next"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_253">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_253/_edge_flowElements"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_287">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_287/_edge_flowElements"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_254">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_254/_edge_flowElements"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_288">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_288/_edge_flowElements"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_BWD_EMoflonEdge_77">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_BWD_EMoflonEdge_77/_edge_steps"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_BWD_EMoflonEdge_88">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_BWD_EMoflonEdge_88/_edge_steps"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_255">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_255/_edge_targetRef"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_289">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_289/_edge_targetRef"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_256">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_256/_edge_incoming"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_290">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_290/_edge_incoming"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_257">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_257/_edge_sourceRef"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_291">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_291/_edge_sourceRef"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_258">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_258/_edge_outgoing"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_292">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_292/_edge_outgoing"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/checkAttributes_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/checkAttributes_FWD/tripleMatch"/>
@@ -494,26 +494,26 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/checkTypes_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/checkTypes_BWD/match"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_259">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_259/_edge_flowElements"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_293">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_293/_edge_flowElements"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_260">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_260/_edge_flowElements"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_294">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_294/_edge_flowElements"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_BWD_EMoflonEdge_78">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_BWD_EMoflonEdge_78/_edge_steps"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_BWD_EMoflonEdge_89">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_BWD_EMoflonEdge_89/_edge_steps"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_261">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_261/_edge_targetRef"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_295">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_295/_edge_targetRef"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_262">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_262/_edge_incoming"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_296">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_296/_edge_incoming"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_263">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_263/_edge_sourceRef"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_297">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_297/_edge_sourceRef"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_264">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_264/_edge_outgoing"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_298">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_298/_edge_outgoing"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/checkAttributes_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/checkAttributes_FWD/tripleMatch"/>
@@ -676,26 +676,26 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/checkTypes_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/checkTypes_BWD/match"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_265">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_265/_edge_flowElements"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_299">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_299/_edge_flowElements"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_266">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_266/_edge_flowElements"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_300">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_300/_edge_flowElements"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_BWD_EMoflonEdge_79">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_BWD_EMoflonEdge_79/_edge_steps"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_BWD_EMoflonEdge_90">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_BWD_EMoflonEdge_90/_edge_steps"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_267">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_267/_edge_targetRef"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_301">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_301/_edge_targetRef"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_268">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_268/_edge_incoming"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_302">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_302/_edge_incoming"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_269">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_269/_edge_sourceRef"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_303">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_303/_edge_sourceRef"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_270">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_270/_edge_outgoing"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_304">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_304/_edge_outgoing"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/checkAttributes_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/checkAttributes_FWD/tripleMatch"/>
@@ -861,20 +861,20 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/checkTypes_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/checkTypes_BWD/match"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_BWD_EMoflonEdge_80">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_BWD_EMoflonEdge_80/_edge_next"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_BWD_EMoflonEdge_91">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_BWD_EMoflonEdge_91/_edge_next"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_271">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_271/_edge_flowElements"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_305">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_305/_edge_flowElements"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_BWD_EMoflonEdge_81">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_BWD_EMoflonEdge_81/_edge_steps"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_BWD_EMoflonEdge_92">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_BWD_EMoflonEdge_92/_edge_steps"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_272">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_272/_edge_targetRef"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_306">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_306/_edge_targetRef"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_273">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_273/_edge_incoming"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_307">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_307/_edge_incoming"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/checkAttributes_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/checkAttributes_FWD/tripleMatch"/>
@@ -1032,17 +1032,17 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/checkTypes_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/checkTypes_BWD/match"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_274">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_274/_edge_flowElements"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_308">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_308/_edge_flowElements"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_BWD_EMoflonEdge_82">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_BWD_EMoflonEdge_82/_edge_steps"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_BWD_EMoflonEdge_93">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_BWD_EMoflonEdge_93/_edge_steps"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_275">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_275/_edge_targetRef"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_309">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_309/_edge_targetRef"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_276">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_276/_edge_incoming"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_310">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_310/_edge_incoming"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/checkAttributes_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/checkAttributes_FWD/tripleMatch"/>
@@ -1196,17 +1196,17 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/checkTypes_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/checkTypes_BWD/match"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_277">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_277/_edge_flowElements"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_311">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_311/_edge_flowElements"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_BWD_EMoflonEdge_83">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_BWD_EMoflonEdge_83/_edge_steps"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_BWD_EMoflonEdge_94">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_BWD_EMoflonEdge_94/_edge_steps"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_278">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_278/_edge_targetRef"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_312">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_312/_edge_targetRef"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_279">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_279/_edge_incoming"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_313">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_313/_edge_incoming"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/checkAttributes_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/checkAttributes_FWD/tripleMatch"/>
@@ -1364,20 +1364,20 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/checkTypes_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/checkTypes_BWD/match"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_FWD_EMoflonEdge_280">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_FWD_EMoflonEdge_280/_edge_sourceRef"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_FWD_EMoflonEdge_314">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_FWD_EMoflonEdge_314/_edge_sourceRef"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_FWD_EMoflonEdge_281">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_FWD_EMoflonEdge_281/_edge_outgoing"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_FWD_EMoflonEdge_315">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_FWD_EMoflonEdge_315/_edge_outgoing"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_BWD_EMoflonEdge_84">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_BWD_EMoflonEdge_84/_edge_invokedFlows"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_BWD_EMoflonEdge_95">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_BWD_EMoflonEdge_95/_edge_invokedFlows"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_FWD_EMoflonEdge_282">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_FWD_EMoflonEdge_282/_edge_flowElements"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_FWD_EMoflonEdge_316">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_FWD_EMoflonEdge_316/_edge_flowElements"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_BWD_EMoflonEdge_85">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_BWD_EMoflonEdge_85/_edge_flows"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_BWD_EMoflonEdge_96">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_BWD_EMoflonEdge_96/_edge_flows"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/checkAttributes_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/checkAttributes_FWD/tripleMatch"/>

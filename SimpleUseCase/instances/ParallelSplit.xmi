@@ -7,12 +7,17 @@
     xsi:schemaLocation="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore ../model/SimpleUseCase.ecore">
   <flows xsi:type="SimpleUseCase:BasicFlow">
     <steps xsi:type="SimpleUseCase:ParallelStep"
-        invokedFlows="//@flows.1 //@flows.2"/>
+        id="pg1"
+        invokedFlows="sf2 sf3"/>
   </flows>
-  <flows xsi:type="SimpleUseCase:ParallelFlow">
-    <steps xsi:type="SimpleUseCase:NormalStep"/>
+  <flows xsi:type="SimpleUseCase:ParallelFlow"
+      id="sf2">
+    <steps xsi:type="SimpleUseCase:NormalStep"
+        id="t1"/>
   </flows>
-  <flows xsi:type="SimpleUseCase:ParallelFlow">
-    <steps xsi:type="SimpleUseCase:NormalStep"/>
+  <flows xsi:type="SimpleUseCase:ParallelFlow"
+      id="sf3">
+    <steps xsi:type="SimpleUseCase:NormalStep"
+        id="t2"/>
   </flows>
 </SimpleUseCase:UseCase>

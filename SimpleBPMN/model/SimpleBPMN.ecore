@@ -6,7 +6,10 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="flowElements" upperBound="-1"
         eType="#//FlowElement" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FlowElement" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="FlowElement" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" ordered="false" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" iD="true"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FlowNode" abstract="true" eSuperTypes="#//FlowElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="outgoing" upperBound="-1"
         eType="#//SequenceFlow" eOpposite="#//SequenceFlow/sourceRef"/>

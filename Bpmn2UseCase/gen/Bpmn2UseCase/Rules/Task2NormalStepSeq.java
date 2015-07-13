@@ -228,7 +228,7 @@ public interface Task2NormalStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_76(EMoflonEdge _edge_next);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_87(EMoflonEdge _edge_next);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -236,7 +236,7 @@ public interface Task2NormalStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_253(
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_287(
 			EMoflonEdge _edge_flowElements);
 
 	/**
@@ -245,7 +245,7 @@ public interface Task2NormalStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_254(
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_288(
 			EMoflonEdge _edge_flowElements);
 
 	/**
@@ -254,7 +254,7 @@ public interface Task2NormalStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_77(EMoflonEdge _edge_steps);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_88(EMoflonEdge _edge_steps);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -262,7 +262,7 @@ public interface Task2NormalStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_255(
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_289(
 			EMoflonEdge _edge_targetRef);
 
 	/**
@@ -271,7 +271,7 @@ public interface Task2NormalStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_256(
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_290(
 			EMoflonEdge _edge_incoming);
 
 	/**
@@ -280,7 +280,7 @@ public interface Task2NormalStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_257(
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_291(
 			EMoflonEdge _edge_sourceRef);
 
 	/**
@@ -289,7 +289,7 @@ public interface Task2NormalStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_258(
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_292(
 			EMoflonEdge _edge_outgoing);
 
 	/**

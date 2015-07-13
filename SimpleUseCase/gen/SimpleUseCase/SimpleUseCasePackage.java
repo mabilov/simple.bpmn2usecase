@@ -2,6 +2,7 @@
  */
 package SimpleUseCase;
 
+import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -187,13 +188,22 @@ public interface SimpleUseCasePackage extends EPackage {
 	int PARALLEL_FLOW__STEPS = FLOW__STEPS;
 
 	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARALLEL_FLOW__ID = FLOW_FEATURE_COUNT + 0;
+
+	/**
 	 * The number of structural features of the '<em>Parallel Flow</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PARALLEL_FLOW_FEATURE_COUNT = FLOW_FEATURE_COUNT + 0;
+	int PARALLEL_FLOW_FEATURE_COUNT = FLOW_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Parallel Flow</em>' class.
@@ -224,13 +234,22 @@ public interface SimpleUseCasePackage extends EPackage {
 	int STEP__NEXT = 0;
 
 	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STEP__ID = 1;
+
+	/**
 	 * The number of structural features of the '<em>Step</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STEP_FEATURE_COUNT = 1;
+	int STEP_FEATURE_COUNT = 2;
 
 	/**
 	 * The number of operations of the '<em>Step</em>' class.
@@ -259,6 +278,15 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @ordered
 	 */
 	int NORMAL_STEP__NEXT = STEP__NEXT;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NORMAL_STEP__ID = STEP__ID;
 
 	/**
 	 * The number of structural features of the '<em>Normal Step</em>' class.
@@ -296,6 +324,15 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @ordered
 	 */
 	int PARALLEL_STEP__NEXT = STEP__NEXT;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARALLEL_STEP__ID = STEP__ID;
 
 	/**
 	 * The feature id for the '<em><b>Invoked Flows</b></em>' reference list.
@@ -387,6 +424,17 @@ public interface SimpleUseCasePackage extends EPackage {
 	EClass getParallelFlow();
 
 	/**
+	 * Returns the meta object for the attribute '{@link SimpleUseCase.ParallelFlow#getId <em>Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Id</em>'.
+	 * @see SimpleUseCase.ParallelFlow#getId()
+	 * @see #getParallelFlow()
+	 * @generated
+	 */
+	EAttribute getParallelFlow_Id();
+
+	/**
 	 * Returns the meta object for class '{@link SimpleUseCase.Step <em>Step</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -406,6 +454,17 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getStep_Next();
+
+	/**
+	 * Returns the meta object for the attribute '{@link SimpleUseCase.Step#getId <em>Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Id</em>'.
+	 * @see SimpleUseCase.Step#getId()
+	 * @see #getStep()
+	 * @generated
+	 */
+	EAttribute getStep_Id();
 
 	/**
 	 * Returns the meta object for class '{@link SimpleUseCase.NormalStep <em>Normal Step</em>}'.
@@ -518,6 +577,14 @@ public interface SimpleUseCasePackage extends EPackage {
 		EClass PARALLEL_FLOW = eINSTANCE.getParallelFlow();
 
 		/**
+		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PARALLEL_FLOW__ID = eINSTANCE.getParallelFlow_Id();
+
+		/**
 		 * The meta object literal for the '{@link SimpleUseCase.impl.StepImpl <em>Step</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -534,6 +601,14 @@ public interface SimpleUseCasePackage extends EPackage {
 		 * @generated
 		 */
 		EReference STEP__NEXT = eINSTANCE.getStep_Next();
+
+		/**
+		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute STEP__ID = eINSTANCE.getStep_Id();
 
 		/**
 		 * The meta object literal for the '{@link SimpleUseCase.impl.NormalStepImpl <em>Normal Step</em>}' class.

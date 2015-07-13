@@ -5,40 +5,40 @@
     <target href="../usecase/ParallelSplit.xmi#/"/>
   </correspondences>
   <correspondences xsi:type="Bpmn2UseCase:SE2BF">
-    <source href="../bpmn/ParallelSplit.xmi#//@flowElements.0"/>
+    <source href="../bpmn/ParallelSplit.xmi#se1"/>
     <target href="../usecase/ParallelSplit.xmi#//@flows.0"/>
   </correspondences>
   <correspondences xsi:type="Bpmn2UseCase:SF2F">
-    <source href="../bpmn/ParallelSplit.xmi#//@flowElements.1"/>
+    <source href="../bpmn/ParallelSplit.xmi#sf1"/>
     <target xsi:type="SimpleUseCase:BasicFlow" href="../usecase/ParallelSplit.xmi#//@flows.0"/>
   </correspondences>
   <correspondences xsi:type="Bpmn2UseCase:PG2PS">
-    <source href="../bpmn/ParallelSplit.xmi#//@flowElements.2"/>
-    <target href="../usecase/ParallelSplit.xmi#//@flows.0/@steps.0"/>
+    <source href="../bpmn/ParallelSplit.xmi#pg1"/>
+    <target href="../usecase/ParallelSplit.xmi#pg1"/>
   </correspondences>
   <correspondences xsi:type="Bpmn2UseCase:SF2F">
-    <source href="../bpmn/ParallelSplit.xmi#//@flowElements.4"/>
-    <target xsi:type="SimpleUseCase:ParallelFlow" href="../usecase/ParallelSplit.xmi#//@flows.1"/>
-  </correspondences>
-  <correspondences xsi:type="Bpmn2UseCase:SF2F">
-    <source href="../bpmn/ParallelSplit.xmi#//@flowElements.3"/>
-    <target xsi:type="SimpleUseCase:ParallelFlow" href="../usecase/ParallelSplit.xmi#//@flows.2"/>
+    <source href="../bpmn/ParallelSplit.xmi#sf3"/>
+    <target xsi:type="SimpleUseCase:ParallelFlow" href="../usecase/ParallelSplit.xmi#sf3"/>
   </correspondences>
   <correspondences xsi:type="Bpmn2UseCase:T2NS">
-    <source href="../bpmn/ParallelSplit.xmi#//@flowElements.5"/>
-    <target href="../usecase/ParallelSplit.xmi#//@flows.2/@steps.0"/>
+    <source href="../bpmn/ParallelSplit.xmi#t2"/>
+    <target href="../usecase/ParallelSplit.xmi#t2"/>
   </correspondences>
   <correspondences xsi:type="Bpmn2UseCase:SF2F">
-    <source href="../bpmn/ParallelSplit.xmi#//@flowElements.7"/>
-    <target xsi:type="SimpleUseCase:ParallelFlow" href="../usecase/ParallelSplit.xmi#//@flows.2"/>
+    <source href="../bpmn/ParallelSplit.xmi#sf5"/>
+    <target xsi:type="SimpleUseCase:ParallelFlow" href="../usecase/ParallelSplit.xmi#sf3"/>
+  </correspondences>
+  <correspondences xsi:type="Bpmn2UseCase:SF2F">
+    <source href="../bpmn/ParallelSplit.xmi#sf2"/>
+    <target xsi:type="SimpleUseCase:ParallelFlow" href="../usecase/ParallelSplit.xmi#sf2"/>
   </correspondences>
   <correspondences xsi:type="Bpmn2UseCase:T2NS">
-    <source href="../bpmn/ParallelSplit.xmi#//@flowElements.6"/>
-    <target href="../usecase/ParallelSplit.xmi#//@flows.1/@steps.0"/>
+    <source href="../bpmn/ParallelSplit.xmi#t1"/>
+    <target href="../usecase/ParallelSplit.xmi#t1"/>
   </correspondences>
   <correspondences xsi:type="Bpmn2UseCase:SF2F">
-    <source href="../bpmn/ParallelSplit.xmi#//@flowElements.8"/>
-    <target xsi:type="SimpleUseCase:ParallelFlow" href="../usecase/ParallelSplit.xmi#//@flows.1"/>
+    <source href="../bpmn/ParallelSplit.xmi#sf4"/>
+    <target xsi:type="SimpleUseCase:ParallelFlow" href="../usecase/ParallelSplit.xmi#sf2"/>
   </correspondences>
   <source href="../bpmn/ParallelSplit.xmi#/"/>
   <target href="../usecase/ParallelSplit.xmi#/"/>

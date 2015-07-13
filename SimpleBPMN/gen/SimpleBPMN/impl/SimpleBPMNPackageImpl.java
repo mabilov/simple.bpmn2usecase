@@ -172,6 +172,15 @@ public class SimpleBPMNPackageImpl extends EPackageImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getFlowElement_Id() {
+		return (EAttribute) flowElementEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getFlowNode() {
 		return flowNodeEClass;
 	}
@@ -291,6 +300,7 @@ public class SimpleBPMNPackageImpl extends EPackageImpl implements
 		createEReference(processEClass, PROCESS__FLOW_ELEMENTS);
 
 		flowElementEClass = createEClass(FLOW_ELEMENT);
+		createEAttribute(flowElementEClass, FLOW_ELEMENT__ID);
 
 		flowNodeEClass = createEClass(FLOW_NODE);
 		createEReference(flowNodeEClass, FLOW_NODE__OUTGOING);
@@ -354,6 +364,10 @@ public class SimpleBPMNPackageImpl extends EPackageImpl implements
 
 		initEClass(flowElementEClass, FlowElement.class, "FlowElement",
 				IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getFlowElement_Id(), ecorePackage.getEString(), "id",
+				null, 1, 1, FlowElement.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED,
+				!IS_ORDERED);
 
 		initEClass(flowNodeEClass, FlowNode.class, "FlowNode", IS_ABSTRACT,
 				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

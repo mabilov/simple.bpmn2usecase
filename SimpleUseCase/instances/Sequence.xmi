@@ -7,7 +7,9 @@
     xsi:schemaLocation="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore ../model/SimpleUseCase.ecore">
   <flows xsi:type="SimpleUseCase:BasicFlow">
     <steps xsi:type="SimpleUseCase:NormalStep"
-        next="//@flows.0/@steps.1"/>
-    <steps xsi:type="SimpleUseCase:NormalStep"/>
+        next="t2"
+        id="t1"/>
+    <steps xsi:type="SimpleUseCase:NormalStep"
+        id="t2"/>
   </flows>
 </SimpleUseCase:UseCase>

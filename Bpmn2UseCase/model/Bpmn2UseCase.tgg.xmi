@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ASCII"?>
-<TGGLanguage:TripleGraphGrammar xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TGGLanguage="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:expressions="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//expressions" xmlns:patternExpressions="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//patterns/patternExpressions" name="Bpmn2UseCase">
+<TGGLanguage:TripleGraphGrammar xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TGGLanguage="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore" xmlns:csp="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:expressions="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//expressions" xmlns:patternExpressions="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//patterns/patternExpressions" name="Bpmn2UseCase">
   <domain name="Source" metamodel="//@metamodel.1" type="SOURCE"/>
-  <domain name="Target" metamodel="//@metamodel.2" type="TARGET"/>
-  <domain name="Correspondence" metamodel="//@metamodel.0"/>
+  <domain name="Target" metamodel="//@metamodel.0" type="TARGET"/>
+  <domain name="Correspondence" metamodel="//@metamodel.2"/>
   <tggRule name="Process2UseCase" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
     <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="process" incomingLink="//@tggRule.0/@linkVariable.3" outgoingLink="//@tggRule.0/@linkVariable.0 //@tggRule.0/@linkVariable.1" bindingOperator="CREATE" domain="//@domain.0">
       <type xsi:type="ecore:EClass" href="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//Process"/>
@@ -148,7 +148,21 @@
     <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="sourceRef" target="//@tggRule.1/@objectVariable.0" source="//@tggRule.1/@objectVariable.6" domain="//@domain.0">
       <type href="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//SequenceFlow/sourceRef"/>
     </linkVariable>
-    <csp/>
+    <csp>
+      <constraints variables="//@tggRule.1/@csp/@variables.0 //@tggRule.1/@csp/@variables.1" name="eq">
+        <signature type=""/>
+        <signature type="" index="1"/>
+        <allowedAdornments value="BB"/>
+        <allowedAdornments value="BF"/>
+        <allowedAdornments value="FB"/>
+        <modelgenAdornments value="BB"/>
+        <modelgenAdornments value="BF"/>
+        <modelgenAdornments value="FB"/>
+        <modelgenAdornments value="FF"/>
+      </constraints>
+      <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="task"/>
+      <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="step"/>
+    </csp>
   </tggRule>
   <tggRule name="Task2NormalStepAfterSE" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
     <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="node" incomingLink="//@tggRule.2/@linkVariable.2 //@tggRule.2/@linkVariable.13" domain="//@domain.0">
@@ -223,7 +237,21 @@
     <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="sourceRef" target="//@tggRule.2/@objectVariable.0" source="//@tggRule.2/@objectVariable.3" domain="//@domain.0">
       <type href="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//SequenceFlow/sourceRef"/>
     </linkVariable>
-    <csp/>
+    <csp>
+      <constraints variables="//@tggRule.2/@csp/@variables.0 //@tggRule.2/@csp/@variables.1" name="eq">
+        <signature type=""/>
+        <signature type="" index="1"/>
+        <allowedAdornments value="BB"/>
+        <allowedAdornments value="BF"/>
+        <allowedAdornments value="FB"/>
+        <modelgenAdornments value="BB"/>
+        <modelgenAdornments value="BF"/>
+        <modelgenAdornments value="FB"/>
+        <modelgenAdornments value="FF"/>
+      </constraints>
+      <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="task"/>
+      <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="step"/>
+    </csp>
   </tggRule>
   <tggRule name="Task2NormalStepAfterPG" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
     <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="node" incomingLink="//@tggRule.3/@linkVariable.2 //@tggRule.3/@linkVariable.13" domain="//@domain.0">
@@ -306,7 +334,21 @@
     <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="sourceRef" target="//@tggRule.3/@objectVariable.0" source="//@tggRule.3/@objectVariable.3" domain="//@domain.0">
       <type href="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//SequenceFlow/sourceRef"/>
     </linkVariable>
-    <csp/>
+    <csp>
+      <constraints variables="//@tggRule.3/@csp/@variables.0 //@tggRule.3/@csp/@variables.1" name="eq">
+        <signature type=""/>
+        <signature type="" index="1"/>
+        <allowedAdornments value="BB"/>
+        <allowedAdornments value="BF"/>
+        <allowedAdornments value="FB"/>
+        <modelgenAdornments value="BB"/>
+        <modelgenAdornments value="BF"/>
+        <modelgenAdornments value="FB"/>
+        <modelgenAdornments value="FF"/>
+      </constraints>
+      <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="task"/>
+      <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="step"/>
+    </csp>
   </tggRule>
   <tggRule name="ParallelGateway2ParallelStepSeq" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
     <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="node" incomingLink="//@tggRule.4/@linkVariable.1 //@tggRule.4/@linkVariable.5 //@tggRule.4/@linkVariable.12" domain="//@domain.0">
@@ -382,7 +424,21 @@
     <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="sourceRef" target="//@tggRule.4/@objectVariable.0" source="//@tggRule.4/@objectVariable.6" domain="//@domain.0">
       <type href="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//SequenceFlow/sourceRef"/>
     </linkVariable>
-    <csp/>
+    <csp>
+      <constraints variables="//@tggRule.4/@csp/@variables.0 //@tggRule.4/@csp/@variables.1" name="eq">
+        <signature type=""/>
+        <signature type="" index="1"/>
+        <allowedAdornments value="BB"/>
+        <allowedAdornments value="BF"/>
+        <allowedAdornments value="FB"/>
+        <modelgenAdornments value="BB"/>
+        <modelgenAdornments value="BF"/>
+        <modelgenAdornments value="FB"/>
+        <modelgenAdornments value="FF"/>
+      </constraints>
+      <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="pgw"/>
+      <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="step"/>
+    </csp>
   </tggRule>
   <tggRule name="ParallelGateway2ParallelStepAfterSE" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
     <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="node" incomingLink="//@tggRule.5/@linkVariable.2 //@tggRule.5/@linkVariable.9" domain="//@domain.0">
@@ -443,7 +499,21 @@
     <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="sourceRef" target="//@tggRule.5/@objectVariable.0" source="//@tggRule.5/@objectVariable.3" domain="//@domain.0">
       <type href="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//SequenceFlow/sourceRef"/>
     </linkVariable>
-    <csp/>
+    <csp>
+      <constraints variables="//@tggRule.5/@csp/@variables.0 //@tggRule.5/@csp/@variables.1" name="eq">
+        <signature type=""/>
+        <signature type="" index="1"/>
+        <allowedAdornments value="BB"/>
+        <allowedAdornments value="BF"/>
+        <allowedAdornments value="FB"/>
+        <modelgenAdornments value="BB"/>
+        <modelgenAdornments value="BF"/>
+        <modelgenAdornments value="FB"/>
+        <modelgenAdornments value="FF"/>
+      </constraints>
+      <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="pgw"/>
+      <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="step"/>
+    </csp>
   </tggRule>
   <tggRule name="ParallelGateway2ParallelStepAfterPG" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
     <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="node" incomingLink="//@tggRule.6/@linkVariable.2 //@tggRule.6/@linkVariable.9" domain="//@domain.0">
@@ -512,7 +582,21 @@
     <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="sourceRef" target="//@tggRule.6/@objectVariable.0" source="//@tggRule.6/@objectVariable.3" domain="//@domain.0">
       <type href="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//SequenceFlow/sourceRef"/>
     </linkVariable>
-    <csp/>
+    <csp>
+      <constraints variables="//@tggRule.6/@csp/@variables.0 //@tggRule.6/@csp/@variables.1" name="eq">
+        <signature type=""/>
+        <signature type="" index="1"/>
+        <allowedAdornments value="BB"/>
+        <allowedAdornments value="BF"/>
+        <allowedAdornments value="FB"/>
+        <modelgenAdornments value="BB"/>
+        <modelgenAdornments value="BF"/>
+        <modelgenAdornments value="FB"/>
+        <modelgenAdornments value="FF"/>
+      </constraints>
+      <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="pgw"/>
+      <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="step"/>
+    </csp>
   </tggRule>
   <tggRule name="SequenceFlowAfterPG2ParallelFlow" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
     <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="pgw" incomingLink="//@tggRule.7/@linkVariable.2 //@tggRule.7/@linkVariable.4 //@tggRule.7/@linkVariable.0" domain="//@domain.0">
@@ -583,15 +667,29 @@
     <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="target" target="//@tggRule.7/@objectVariable.7" source="//@tggRule.7/@objectVariable.8" bindingOperator="CREATE" domain="//@domain.2">
       <type href="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//SF2F/target"/>
     </linkVariable>
-    <csp/>
+    <csp>
+      <constraints variables="//@tggRule.7/@csp/@variables.0 //@tggRule.7/@csp/@variables.1" name="eq">
+        <signature type=""/>
+        <signature type="" index="1"/>
+        <allowedAdornments value="BB"/>
+        <allowedAdornments value="BF"/>
+        <allowedAdornments value="FB"/>
+        <modelgenAdornments value="BB"/>
+        <modelgenAdornments value="BF"/>
+        <modelgenAdornments value="FB"/>
+        <modelgenAdornments value="FF"/>
+      </constraints>
+      <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="sf"/>
+      <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="flow"/>
+    </csp>
   </tggRule>
-  <metamodel name="Bpmn2UseCase">
-    <outermostPackage href="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#/"/>
+  <metamodel name="SimpleUseCase">
+    <outermostPackage href="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#/"/>
   </metamodel>
   <metamodel name="SimpleBPMN">
     <outermostPackage href="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#/"/>
   </metamodel>
-  <metamodel name="SimpleUseCase">
-    <outermostPackage href="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#/"/>
+  <metamodel name="Bpmn2UseCase">
+    <outermostPackage href="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#/"/>
   </metamodel>
 </TGGLanguage:TripleGraphGrammar>

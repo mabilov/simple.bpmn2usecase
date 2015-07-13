@@ -15,6 +15,7 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * <ul>
  *   <li>{@link SimpleUseCase.Step#getNext <em>Next</em>}</li>
+ *   <li>{@link SimpleUseCase.Step#getId <em>Id</em>}</li>
  * </ul>
  * </p>
  *
@@ -48,6 +49,32 @@ public interface Step extends EObject {
 	 * @generated
 	 */
 	void setNext(Step value);
+
+	/**
+	 * Returns the value of the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Id</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Id</em>' attribute.
+	 * @see #setId(String)
+	 * @see SimpleUseCase.SimpleUseCasePackage#getStep_Id()
+	 * @model id="true" required="true" ordered="false"
+	 * @generated
+	 */
+	String getId();
+
+	/**
+	 * Sets the value of the '{@link SimpleUseCase.Step#getId <em>Id</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Id</em>' attribute.
+	 * @see #getId()
+	 * @generated
+	 */
+	void setId(String value);
 	// <-- [user code injected with eMoflon]
 
 	// [user code injected with eMoflon] -->

@@ -30,10 +30,10 @@ public class Bpmn2UseCaseTrafo extends DebugSynchronizationHelper {
 		helper.verbose = true;
 
 		if (direction.equalsIgnoreCase("forward")) {
-			helper.performForward("instances/bpmn/" + helper._patterName
+			helper.performForward("instances/fwd/bpmn/" + helper._patterName
 					+ ".xmi");
 		} else {
-			helper.performBackward("instances/usecase/" + helper._patterName
+			helper.performBackward("instances/bwd/usecase/" + helper._patterName
 					+ ".xmi");
 		}
 	}
@@ -43,9 +43,9 @@ public class Bpmn2UseCaseTrafo extends DebugSynchronizationHelper {
 	public void performForward() {
 		integrateForward();
 
-		saveTrg("instances/usecase/" + _patterName + ".xmi");
-		saveCorr("instances/corr/" + _patterName + ".xmi");
-		saveSynchronizationProtocol("instances/protocol/" + _patterName
+		saveTrg("instances/fwd/usecase/" + _patterName + ".xmi");
+		saveCorr("instances/fwd/corr/" + _patterName + ".xmi");
+		saveSynchronizationProtocol("instances/fwd/protocol/" + _patterName
 				+ ".xmi");
 
 		System.out.println("Completed forward transformation for pattern "
@@ -71,9 +71,9 @@ public class Bpmn2UseCaseTrafo extends DebugSynchronizationHelper {
 	public void performBackward() {
 		integrateBackward();
 
-		saveSrc("instances/bwd.trg.xmi");
-		saveCorr("instances/bwd.corr.xmi");
-		saveSynchronizationProtocol("instances/bwd.protocol.xmi");
+		saveSrc("instances/bwd/bpmn/" + _patterName + ".xmi");
+		saveCorr("instances/bwd/corr/" + _patterName + ".xmi");
+		saveSynchronizationProtocol("instances/bwd/protocol/" + _patterName + ".xmi");
 
 		System.out.println("Completed backward transformation!");
 	}

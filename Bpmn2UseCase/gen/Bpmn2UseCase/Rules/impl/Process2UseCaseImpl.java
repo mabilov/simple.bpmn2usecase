@@ -888,7 +888,7 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_249(
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_283(
 			EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Process2UseCaseImpl
@@ -953,7 +953,7 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_250(
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_284(
 			EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Process2UseCaseImpl
@@ -1018,7 +1018,7 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_75(
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_86(
 			EMoflonEdge _edge_flows) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Process2UseCaseImpl
@@ -1082,7 +1082,7 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_251(
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_285(
 			EMoflonEdge _edge_sourceRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Process2UseCaseImpl
@@ -1147,7 +1147,7 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_252(
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_286(
 			EMoflonEdge _edge_outgoing) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Process2UseCaseImpl
@@ -1696,20 +1696,20 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements
 			return null;
 		case RulesPackage.PROCESS2_USE_CASE___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.PROCESS2_USE_CASE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_249__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_249((EMoflonEdge) arguments
+		case RulesPackage.PROCESS2_USE_CASE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_283__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_283((EMoflonEdge) arguments
 					.get(0));
-		case RulesPackage.PROCESS2_USE_CASE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_250__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_250((EMoflonEdge) arguments
+		case RulesPackage.PROCESS2_USE_CASE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_284__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_284((EMoflonEdge) arguments
 					.get(0));
-		case RulesPackage.PROCESS2_USE_CASE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_75__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_75((EMoflonEdge) arguments
+		case RulesPackage.PROCESS2_USE_CASE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_86__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_86((EMoflonEdge) arguments
 					.get(0));
-		case RulesPackage.PROCESS2_USE_CASE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_251__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_251((EMoflonEdge) arguments
+		case RulesPackage.PROCESS2_USE_CASE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_285__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_285((EMoflonEdge) arguments
 					.get(0));
-		case RulesPackage.PROCESS2_USE_CASE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_252__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_252((EMoflonEdge) arguments
+		case RulesPackage.PROCESS2_USE_CASE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_286__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_286((EMoflonEdge) arguments
 					.get(0));
 		case RulesPackage.PROCESS2_USE_CASE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));

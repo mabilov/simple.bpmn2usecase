@@ -224,7 +224,7 @@ public interface Task2NormalStepAfterPG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_265(
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_299(
 			EMoflonEdge _edge_flowElements);
 
 	/**
@@ -233,7 +233,7 @@ public interface Task2NormalStepAfterPG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_266(
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_300(
 			EMoflonEdge _edge_flowElements);
 
 	/**
@@ -242,7 +242,7 @@ public interface Task2NormalStepAfterPG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_79(EMoflonEdge _edge_steps);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_90(EMoflonEdge _edge_steps);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -250,7 +250,7 @@ public interface Task2NormalStepAfterPG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_267(
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_301(
 			EMoflonEdge _edge_targetRef);
 
 	/**
@@ -259,7 +259,7 @@ public interface Task2NormalStepAfterPG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_268(
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_302(
 			EMoflonEdge _edge_incoming);
 
 	/**
@@ -268,7 +268,7 @@ public interface Task2NormalStepAfterPG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_269(
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_303(
 			EMoflonEdge _edge_sourceRef);
 
 	/**
@@ -277,7 +277,7 @@ public interface Task2NormalStepAfterPG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_270(
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_304(
 			EMoflonEdge _edge_outgoing);
 
 	/**
