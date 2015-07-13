@@ -11,11 +11,8 @@ Project: Bpmn2UseCase
 
 Main Class: org.moflon.tie.Bpmn2UseCaseTrafo
 
-### Sequence pattern forward tansformation test
-Arguments: "Sequence forward"
+Arguments:
 
-### Sequence pattern backward tansformation test
-Arguments: "Sequence backward"
-
-### Parallel Split forward transformation test
-Arguments: "ParallelSplit forward"
+1. Sequence pattern forward tansformation test: "Sequence forward"
+2. Sequence pattern backward tansformation test: "Sequence backward"
+3. Parallel Split forward transformation test: "ParallelSplit forward"
