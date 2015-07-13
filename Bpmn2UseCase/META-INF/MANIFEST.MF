@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: Bpmn2UseCase;singleton:=true
+Export-Package: Bpmn2UseCase.Rules.impl,
+ Bpmn2UseCase.util,
+ Bpmn2UseCase.impl,
+ Bpmn2UseCase,
+ Bpmn2UseCase.Rules.util,
+ Bpmn2UseCase.Rules
+Bundle-Name: Bpmn2UseCase
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.eclipse.emf.ecore,
+ org.eclipse.emf.ecore.xmi,
+ org.moflon.core.utilities,
+ SimpleBPMN,
+ SimpleUseCase,
+ org.apache.log4j;bundle-version="1.2.15",
+ MocaTree,
+ SDMLanguage,
+ TGGLanguage,
+ TGGRuntime,
+ DebugLanguage
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: TU Darmstadt

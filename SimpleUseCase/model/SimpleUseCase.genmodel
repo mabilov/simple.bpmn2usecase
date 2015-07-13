@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/SimpleUseCase/gen" modelPluginID="SimpleUseCase"
+    modelName="SimpleUseCase" updateClasspath="false" codeFormatting="true" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" operationReflection="true">
+  <foreignModel>SimpleUseCase.ecore</foreignModel>
+  <genPackages prefix="SimpleUseCase" disposableProviderFactory="true" ecorePackage="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#/">
+    <genClasses ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//UseCase">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//UseCase/flows"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//Flow">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//Flow/steps"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//BasicFlow"/>
+    <genClasses ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//ParallelFlow"/>
+    <genClasses image="false" ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//Step">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//Step/next"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//NormalStep"/>
+    <genClasses ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//ParallelStep">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//ParallelStep/invokedFlows"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/SimpleBPMN/gen" modelPluginID="SimpleBPMN" modelName="SimpleBPMN"
+    updateClasspath="false" codeFormatting="true" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" operationReflection="true">
+  <foreignModel>SimpleBPMN.ecore</foreignModel>
+  <genPackages prefix="SimpleBPMN" disposableProviderFactory="true" ecorePackage="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#/">
+    <genClasses ecoreClass="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//Process">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//Process/flowElements"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//FlowElement"/>
+    <genClasses image="false" ecoreClass="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//FlowNode">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//FlowNode/outgoing"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//FlowNode/incoming"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//SequenceFlow">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//SequenceFlow/sourceRef"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//SequenceFlow/targetRef"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//Task"/>
+    <genClasses ecoreClass="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//ParallelGateway">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//ParallelGateway/isDiverging"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//StartEvent"/>
+  </genPackages>
+</genmodel:GenModel>
