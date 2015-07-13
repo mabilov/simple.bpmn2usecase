@@ -4,5 +4,7 @@ Simple BPMN to UseCase metamodels and synchronization, created to explore differ
 ## Run Configurations:
 ### Sequence pattern forward tansformation test
 Project: Bpmn2UseCase
+
 MainClass: org.moflon.tie.Bpmn2UseCaseTrafo
+
 Arguments: "Sequence forward"
