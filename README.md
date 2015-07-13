@@ -7,6 +7,7 @@ Fwd subfolder is used for forward only transformations
 
 Bwd subfolder is user for backward only transformations
 ## Run Configurations:
+### Transformations
 Project: Bpmn2UseCase
 
 Main Class: org.moflon.tie.Bpmn2UseCaseTrafo
