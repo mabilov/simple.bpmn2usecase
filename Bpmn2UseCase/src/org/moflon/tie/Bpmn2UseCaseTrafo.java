@@ -3,41 +3,53 @@ package org.moflon.tie;
 import java.io.IOException;
 import org.apache.log4j.BasicConfigurator;
 import org.moflon.ide.debug.DebugSynchronizationHelper;
-import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.EObject;
 
 import Bpmn2UseCase.Bpmn2UseCasePackage;
 
+public class Bpmn2UseCaseTrafo extends DebugSynchronizationHelper {
 
-public class Bpmn2UseCaseTrafo extends DebugSynchronizationHelper{
-
-   public Bpmn2UseCaseTrafo()
-   {
-      super(Bpmn2UseCasePackage.eINSTANCE, ".");
-   }
+	public Bpmn2UseCaseTrafo() {
+		super(Bpmn2UseCasePackage.eINSTANCE, ".");
+	}
 
 	public static void main(String[] args) throws IOException {
 		// Set up logging
-        BasicConfigurator.configure();
+		BasicConfigurator.configure();
 
 		// Forward Transformation
-        Bpmn2UseCaseTrafo helper = new Bpmn2UseCaseTrafo();
-		helper.performForward("instances/fwd.src.xmi");
+		Bpmn2UseCaseTrafo helper = new Bpmn2UseCaseTrafo();
+
+		// Which pattern to transform?
+		helper._patterName = args[0];
+
+		// Which direction to use?
+		String direction = args[1];
 		
-		// Backward Transformation
-		helper = new Bpmn2UseCaseTrafo();
-		helper.performBackward("instances/bwd.src.xmi");
+		//Need to get exact list of ignored elements
+		helper.verbose = true;
+
+		if (direction.equalsIgnoreCase("forward")) {
+			helper.performForward("instances/bpmn/" + helper._patterName
+					+ ".xmi");
+		} else {
+			helper.performBackward("instances/usecase/" + helper._patterName
+					+ ".xmi");
+		}
 	}
+
+	private String _patterName;
 
 	public void performForward() {
 		integrateForward();
 
-		saveTrg("instances/fwd.trg.xmi");
-		saveCorr("instances/fwd.corr.xmi");
-		saveSynchronizationProtocol("instances/fwd.protocol.xmi");
+		saveTrg("instances/usecase/" + _patterName + ".xmi");
+		saveCorr("instances/corr/" + _patterName + ".xmi");
+		saveSynchronizationProtocol("instances/protocol/" + _patterName
+				+ ".xmi");
 
-		System.out.println("Completed forward transformation!");
+		System.out.println("Completed forward transformation for pattern "
+				+ _patterName + "!");
 	}
 
 	public void performForward(EObject srcModel) {
