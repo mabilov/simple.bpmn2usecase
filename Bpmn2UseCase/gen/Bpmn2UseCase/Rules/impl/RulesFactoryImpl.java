@@ -27,8 +27,7 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 */
 	public static RulesFactory init() {
 		try {
-			RulesFactory theRulesFactory = (RulesFactory) EPackage.Registry.INSTANCE
-					.getEFactory(RulesPackage.eNS_URI);
+			RulesFactory theRulesFactory = (RulesFactory) EPackage.Registry.INSTANCE.getEFactory(RulesPackage.eNS_URI);
 			if (theRulesFactory != null) {
 				return theRulesFactory;
 			}
@@ -72,9 +71,10 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 			return createParallelGateway2ParallelStepAfterPG();
 		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW:
 			return createSequenceFlowAfterPG2ParallelFlow();
+		case RulesPackage.END_EVENT2_FINAL_STATE:
+			return createEndEvent2FinalState();
 		default:
-			throw new IllegalArgumentException("The class '" + eClass.getName()
-					+ "' is not a valid classifier");
+			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
 	}
 
@@ -156,6 +156,16 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	public SequenceFlowAfterPG2ParallelFlow createSequenceFlowAfterPG2ParallelFlow() {
 		SequenceFlowAfterPG2ParallelFlowImpl sequenceFlowAfterPG2ParallelFlow = new SequenceFlowAfterPG2ParallelFlowImpl();
 		return sequenceFlowAfterPG2ParallelFlow;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EndEvent2FinalState createEndEvent2FinalState() {
+		EndEvent2FinalStateImpl endEvent2FinalState = new EndEvent2FinalStateImpl();
+		return endEvent2FinalState;
 	}
 
 	/**

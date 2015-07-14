@@ -8,8 +8,8 @@ import SimpleBPMN.ParallelGateway;
 import SimpleBPMN.SequenceFlow;
 import SimpleBPMN.Task;
 
-import SimpleUseCase.Flow;
 import SimpleUseCase.NormalStep;
+import SimpleUseCase.ParallelFlow;
 
 import TGGLanguage.csp.CSP;
 
@@ -48,9 +48,8 @@ public interface Task2NormalStepAfterPG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	boolean isAppropriate_FWD(Match match, ParallelGateway node,
-			SimpleBPMN.Process process, SequenceFlow sf1, Task task,
-			SequenceFlow sf2);
+	boolean isAppropriate_FWD(Match match, ParallelGateway node, SimpleBPMN.Process process, SequenceFlow sf1,
+			Task task, SequenceFlow sf2);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -74,9 +73,8 @@ public interface Task2NormalStepAfterPG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjectsToMatch_FWD(Match match, ParallelGateway node,
-			SimpleBPMN.Process process, SequenceFlow sf1, Task task,
-			SequenceFlow sf2);
+	void registerObjectsToMatch_FWD(Match match, ParallelGateway node, SimpleBPMN.Process process, SequenceFlow sf1,
+			Task task, SequenceFlow sf2);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -84,9 +82,8 @@ public interface Task2NormalStepAfterPG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isAppropriate_solveCsp_FWD(Match match, ParallelGateway node,
-			SimpleBPMN.Process process, SequenceFlow sf1, Task task,
-			SequenceFlow sf2);
+	CSP isAppropriate_solveCsp_FWD(Match match, ParallelGateway node, SimpleBPMN.Process process, SequenceFlow sf1,
+			Task task, SequenceFlow sf2);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -102,9 +99,8 @@ public interface Task2NormalStepAfterPG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch,
-			ParallelGateway node, SimpleBPMN.Process process, Flow flow,
-			SequenceFlow sf1, Task task, SequenceFlow sf2, SF2F _sf2f1);
+	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, ParallelGateway node, ParallelFlow flow,
+			SimpleBPMN.Process process, SequenceFlow sf1, Task task, SequenceFlow sf2, SF2F _sf2f1);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -120,10 +116,8 @@ public interface Task2NormalStepAfterPG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_FWD(PerformRuleResult ruleresult, EObject node,
-			EObject process, EObject flow, EObject sf1, EObject task,
-			EObject step, EObject _t2ns, EObject sf2, EObject _sf2f2,
-			EObject _sf2f1);
+	void registerObjects_FWD(PerformRuleResult ruleresult, EObject node, EObject flow, EObject step, EObject process,
+			EObject sf1, EObject task, EObject _t2ns, EObject sf2, EObject _sf2f2, EObject _sf2f1);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -139,7 +133,7 @@ public interface Task2NormalStepAfterPG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	boolean isAppropriate_BWD(Match match, Flow flow, NormalStep step);
+	boolean isAppropriate_BWD(Match match, ParallelFlow flow, NormalStep step);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -163,7 +157,7 @@ public interface Task2NormalStepAfterPG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjectsToMatch_BWD(Match match, Flow flow, NormalStep step);
+	void registerObjectsToMatch_BWD(Match match, ParallelFlow flow, NormalStep step);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -171,7 +165,7 @@ public interface Task2NormalStepAfterPG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isAppropriate_solveCsp_BWD(Match match, Flow flow, NormalStep step);
+	CSP isAppropriate_solveCsp_BWD(Match match, ParallelFlow flow, NormalStep step);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -187,9 +181,8 @@ public interface Task2NormalStepAfterPG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch,
-			ParallelGateway node, SimpleBPMN.Process process, Flow flow,
-			SequenceFlow sf1, NormalStep step, SF2F _sf2f1);
+	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, ParallelGateway node, ParallelFlow flow,
+			NormalStep step, SimpleBPMN.Process process, SequenceFlow sf1, SF2F _sf2f1);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -205,10 +198,8 @@ public interface Task2NormalStepAfterPG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_BWD(PerformRuleResult ruleresult, EObject node,
-			EObject process, EObject flow, EObject sf1, EObject task,
-			EObject step, EObject _t2ns, EObject sf2, EObject _sf2f2,
-			EObject _sf2f1);
+	void registerObjects_BWD(PerformRuleResult ruleresult, EObject node, EObject flow, EObject step, EObject process,
+			EObject sf1, EObject task, EObject _t2ns, EObject sf2, EObject _sf2f2, EObject _sf2f1);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -224,8 +215,7 @@ public interface Task2NormalStepAfterPG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_299(
-			EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_35(EMoflonEdge _edge_steps);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -233,8 +223,7 @@ public interface Task2NormalStepAfterPG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_300(
-			EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_36(EMoflonEdge _edge___first);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -242,7 +231,7 @@ public interface Task2NormalStepAfterPG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_90(EMoflonEdge _edge_steps);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_118(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -250,8 +239,7 @@ public interface Task2NormalStepAfterPG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_301(
-			EMoflonEdge _edge_targetRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_119(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -259,8 +247,7 @@ public interface Task2NormalStepAfterPG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_302(
-			EMoflonEdge _edge_incoming);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_120(EMoflonEdge _edge_targetRef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -268,8 +255,7 @@ public interface Task2NormalStepAfterPG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_303(
-			EMoflonEdge _edge_sourceRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_121(EMoflonEdge _edge_incoming);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -277,8 +263,15 @@ public interface Task2NormalStepAfterPG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_304(
-			EMoflonEdge _edge_outgoing);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_122(EMoflonEdge _edge_sourceRef);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_123(EMoflonEdge _edge_outgoing);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -310,10 +303,9 @@ public interface Task2NormalStepAfterPG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_CC(IsApplicableMatchCC isApplicableMatch,
-			ParallelGateway node, SimpleBPMN.Process process, Flow flow,
-			SequenceFlow sf1, Task task, NormalStep step, SequenceFlow sf2,
-			SF2F _sf2f1, Match sourceMatch, Match targetMatch);
+	CSP isApplicable_solveCsp_CC(IsApplicableMatchCC isApplicableMatch, ParallelGateway node, ParallelFlow flow,
+			NormalStep step, SimpleBPMN.Process process, SequenceFlow sf1, Task task, SequenceFlow sf2, SF2F _sf2f1,
+			Match sourceMatch, Match targetMatch);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -337,8 +329,7 @@ public interface Task2NormalStepAfterPG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	ModelgeneratorRuleResult generateModel(
-			RuleEntryContainer ruleEntryContainer, SF2F _sf2f1Parameter);
+	ModelgeneratorRuleResult generateModel(RuleEntryContainer ruleEntryContainer, SF2F _sf2f1Parameter);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -346,9 +337,8 @@ public interface Task2NormalStepAfterPG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch,
-			ParallelGateway node, SimpleBPMN.Process process, Flow flow,
-			SequenceFlow sf1, SF2F _sf2f1, ModelgeneratorRuleResult ruleResult);
+	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, ParallelGateway node, ParallelFlow flow,
+			SimpleBPMN.Process process, SequenceFlow sf1, SF2F _sf2f1, ModelgeneratorRuleResult ruleResult);
 
 	/**
 	 * <!-- begin-user-doc -->

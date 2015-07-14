@@ -85,8 +85,8 @@ public class SF2FImpl extends AbstractCorrespondenceImpl implements SF2F {
 			source = (SequenceFlow) eResolveProxy(oldSource);
 			if (source != oldSource) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE,
-							Bpmn2UseCasePackage.SF2F__SOURCE, oldSource, source));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, Bpmn2UseCasePackage.SF2F__SOURCE,
+							oldSource, source));
 			}
 		}
 		return source;
@@ -110,8 +110,7 @@ public class SF2FImpl extends AbstractCorrespondenceImpl implements SF2F {
 		SequenceFlow oldSource = source;
 		source = newSource;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					Bpmn2UseCasePackage.SF2F__SOURCE, oldSource, source));
+			eNotify(new ENotificationImpl(this, Notification.SET, Bpmn2UseCasePackage.SF2F__SOURCE, oldSource, source));
 	}
 
 	/**
@@ -125,8 +124,8 @@ public class SF2FImpl extends AbstractCorrespondenceImpl implements SF2F {
 			target = (Flow) eResolveProxy(oldTarget);
 			if (target != oldTarget) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE,
-							Bpmn2UseCasePackage.SF2F__TARGET, oldTarget, target));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, Bpmn2UseCasePackage.SF2F__TARGET,
+							oldTarget, target));
 			}
 		}
 		return target;
@@ -150,8 +149,7 @@ public class SF2FImpl extends AbstractCorrespondenceImpl implements SF2F {
 		Flow oldTarget = target;
 		target = newTarget;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					Bpmn2UseCasePackage.SF2F__TARGET, oldTarget, target));
+			eNotify(new ENotificationImpl(this, Notification.SET, Bpmn2UseCasePackage.SF2F__TARGET, oldTarget, target));
 	}
 
 	/**

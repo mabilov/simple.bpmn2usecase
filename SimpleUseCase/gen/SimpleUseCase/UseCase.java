@@ -17,6 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * <ul>
  *   <li>{@link SimpleUseCase.UseCase#getFlows <em>Flows</em>}</li>
+ *   <li>{@link SimpleUseCase.UseCase#getPrecondition <em>Precondition</em>}</li>
  * </ul>
  * </p>
  *
@@ -40,6 +41,32 @@ public interface UseCase extends EObject {
 	 * @generated
 	 */
 	EList<Flow> getFlows();
+
+	/**
+	 * Returns the value of the '<em><b>Precondition</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Precondition</em>' containment reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Precondition</em>' containment reference.
+	 * @see #setPrecondition(UCCondition)
+	 * @see SimpleUseCase.SimpleUseCasePackage#getUseCase_Precondition()
+	 * @model containment="true"
+	 * @generated
+	 */
+	UCCondition getPrecondition();
+
+	/**
+	 * Sets the value of the '{@link SimpleUseCase.UseCase#getPrecondition <em>Precondition</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Precondition</em>' containment reference.
+	 * @see #getPrecondition()
+	 * @generated
+	 */
+	void setPrecondition(UCCondition value);
 	// <-- [user code injected with eMoflon]
 
 	// [user code injected with eMoflon] -->

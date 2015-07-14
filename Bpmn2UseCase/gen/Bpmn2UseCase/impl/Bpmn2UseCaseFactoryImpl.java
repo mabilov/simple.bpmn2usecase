@@ -18,8 +18,7 @@ import org.eclipse.emf.ecore.plugin.EcorePlugin;
  * <!-- end-user-doc -->
  * @generated
  */
-public class Bpmn2UseCaseFactoryImpl extends EFactoryImpl implements
-		Bpmn2UseCaseFactory {
+public class Bpmn2UseCaseFactoryImpl extends EFactoryImpl implements Bpmn2UseCaseFactory {
 	/**
 	 * Creates the default factory implementation.
 	 * <!-- begin-user-doc -->
@@ -67,9 +66,10 @@ public class Bpmn2UseCaseFactoryImpl extends EFactoryImpl implements
 			return createSF2F();
 		case Bpmn2UseCasePackage.SE2BF:
 			return createSE2BF();
+		case Bpmn2UseCasePackage.EE2FS:
+			return createEE2FS();
 		default:
-			throw new IllegalArgumentException("The class '" + eClass.getName()
-					+ "' is not a valid classifier");
+			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
 	}
 
@@ -121,6 +121,16 @@ public class Bpmn2UseCaseFactoryImpl extends EFactoryImpl implements
 	public SE2BF createSE2BF() {
 		SE2BFImpl se2BF = new SE2BFImpl();
 		return se2BF;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EE2FS createEE2FS() {
+		EE2FSImpl ee2FS = new EE2FSImpl();
+		return ee2FS;
 	}
 
 	/**

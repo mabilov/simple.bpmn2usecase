@@ -94,6 +94,15 @@ public interface RulesFactory extends EFactory {
 	SequenceFlowAfterPG2ParallelFlow createSequenceFlowAfterPG2ParallelFlow();
 
 	/**
+	 * Returns a new object of class '<em>End Event2 Final State</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>End Event2 Final State</em>'.
+	 * @generated
+	 */
+	EndEvent2FinalState createEndEvent2FinalState();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

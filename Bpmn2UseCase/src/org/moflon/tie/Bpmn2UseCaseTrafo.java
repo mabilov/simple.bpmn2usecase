@@ -6,6 +6,10 @@ import org.moflon.ide.debug.DebugSynchronizationHelper;
 import org.eclipse.emf.ecore.EObject;
 
 import Bpmn2UseCase.Bpmn2UseCasePackage;
+import SimpleBPMN.util.PatternDiscovery;
+import SimpleUseCase.UseCase;
+import SimpleUseCase.util.FirstStepDiscovery;
+import SimpleBPMN.Process;
 
 public class Bpmn2UseCaseTrafo extends DebugSynchronizationHelper {
 
@@ -25,31 +29,28 @@ public class Bpmn2UseCaseTrafo extends DebugSynchronizationHelper {
 
 		// Which direction to use?
 		String direction = args[1];
-		
-		//Need to get exact list of ignored elements
+
+		// Need to get exact list of ignored elements
 		helper.verbose = true;
 
 		if (direction.equalsIgnoreCase("forward")) {
-			helper.performForward("instances/fwd/bpmn/" + helper._patterName
-					+ ".xmi");
+			helper.performForward("instances/fwd/bpmn/" + helper._patterName + ".xmi");
 		} else {
-			helper.performBackward("instances/bwd/usecase/" + helper._patterName
-					+ ".xmi");
+			helper.performBackward("instances/bwd/usecase/" + helper._patterName + ".xmi");
 		}
 	}
 
 	private String _patterName;
 
 	public void performForward() {
+		PatternDiscovery.discoverParallel((Process) this.src);
 		integrateForward();
 
 		saveTrg("instances/fwd/usecase/" + _patterName + ".xmi");
 		saveCorr("instances/fwd/corr/" + _patterName + ".xmi");
-		saveSynchronizationProtocol("instances/fwd/protocol/" + _patterName
-				+ ".xmi");
+		saveSynchronizationProtocol("instances/fwd/protocol/" + _patterName + ".xmi");
 
-		System.out.println("Completed forward transformation for pattern "
-				+ _patterName + "!");
+		System.out.println("Completed forward transformation for pattern " + _patterName + "!");
 	}
 
 	public void performForward(EObject srcModel) {
@@ -62,13 +63,13 @@ public class Bpmn2UseCaseTrafo extends DebugSynchronizationHelper {
 			loadSrc(source);
 			performForward();
 		} catch (IllegalArgumentException iae) {
-			System.err.println("Unable to load " + source + ", "
-					+ iae.getMessage());
+			System.err.println("Unable to load " + source + ", " + iae.getMessage());
 			return;
 		}
 	}
 
 	public void performBackward() {
+		FirstStepDiscovery.discover((UseCase) this.trg);
 		integrateBackward();
 
 		saveSrc("instances/bwd/bpmn/" + _patterName + ".xmi");
@@ -88,8 +89,7 @@ public class Bpmn2UseCaseTrafo extends DebugSynchronizationHelper {
 			loadTrg(target);
 			performBackward();
 		} catch (IllegalArgumentException iae) {
-			System.err.println("Unable to load " + target + ", "
-					+ iae.getMessage());
+			System.err.println("Unable to load " + target + ", " + iae.getMessage());
 			return;
 		}
 	}

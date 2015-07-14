@@ -7,9 +7,12 @@
   <genPackages prefix="SimpleUseCase" disposableProviderFactory="true" ecorePackage="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#/">
     <genClasses ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//UseCase">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//UseCase/flows"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//UseCase/precondition"/>
     </genClasses>
     <genClasses image="false" ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//Flow">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//Flow/steps"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//Flow/finalState"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//Flow/__first"/>
     </genClasses>
     <genClasses ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//BasicFlow"/>
     <genClasses ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//ParallelFlow">
@@ -22,6 +25,9 @@
     <genClasses ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//NormalStep"/>
     <genClasses ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//ParallelStep">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//ParallelStep/invokedFlows"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//UCCondition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//UCCondition/name"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

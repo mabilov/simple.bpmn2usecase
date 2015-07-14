@@ -28,6 +28,10 @@
     <source href="../bpmn/Sequence.xmi#sf3"/>
     <target xsi:type="SimpleUseCase:BasicFlow" href="../usecase/Sequence.xmi#//@flows.0"/>
   </correspondences>
+  <correspondences xsi:type="Bpmn2UseCase:EE2FS">
+    <source href="../bpmn/Sequence.xmi#ee1"/>
+    <target href="../usecase/Sequence.xmi#//@flows.0/@finalState.0"/>
+  </correspondences>
   <source href="../bpmn/Sequence.xmi#/"/>
   <target href="../usecase/Sequence.xmi#/"/>
 </TGGRuntime:CorrespondenceModel>

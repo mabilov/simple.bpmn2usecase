@@ -39,8 +39,7 @@ import org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl;
  * <!-- end-user-doc -->
  * @generated
  */
-public class Bpmn2UseCasePackageImpl extends EPackageImpl implements
-		Bpmn2UseCasePackage {
+public class Bpmn2UseCasePackageImpl extends EPackageImpl implements Bpmn2UseCasePackage {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -84,6 +83,13 @@ public class Bpmn2UseCasePackageImpl extends EPackageImpl implements
 	private EClass se2BFEClass = null;
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass ee2FSEClass = null;
+
+	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
 	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
 	 * package URI value.
@@ -121,13 +127,12 @@ public class Bpmn2UseCasePackageImpl extends EPackageImpl implements
 	 */
 	public static Bpmn2UseCasePackage init() {
 		if (isInited)
-			return (Bpmn2UseCasePackage) EPackage.Registry.INSTANCE
-					.getEPackage(Bpmn2UseCasePackage.eNS_URI);
+			return (Bpmn2UseCasePackage) EPackage.Registry.INSTANCE.getEPackage(Bpmn2UseCasePackage.eNS_URI);
 
 		// Obtain or create and register package
 		Bpmn2UseCasePackageImpl theBpmn2UseCasePackage = (Bpmn2UseCasePackageImpl) (EPackage.Registry.INSTANCE
-				.get(eNS_URI) instanceof Bpmn2UseCasePackageImpl ? EPackage.Registry.INSTANCE
-				.get(eNS_URI) : new Bpmn2UseCasePackageImpl());
+				.get(eNS_URI) instanceof Bpmn2UseCasePackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI)
+						: new Bpmn2UseCasePackageImpl());
 
 		isInited = true;
 
@@ -138,8 +143,8 @@ public class Bpmn2UseCasePackageImpl extends EPackageImpl implements
 
 		// Obtain or create and register interdependencies
 		RulesPackageImpl theRulesPackage = (RulesPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(RulesPackage.eNS_URI) instanceof RulesPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(RulesPackage.eNS_URI) : RulesPackage.eINSTANCE);
+				.getEPackage(RulesPackage.eNS_URI) instanceof RulesPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(RulesPackage.eNS_URI) : RulesPackage.eINSTANCE);
 
 		// Load packages
 		theBpmn2UseCasePackage.loadPackage();
@@ -152,8 +157,7 @@ public class Bpmn2UseCasePackageImpl extends EPackageImpl implements
 		theBpmn2UseCasePackage.freeze();
 
 		// Update the registry and return the package
-		EPackage.Registry.INSTANCE.put(Bpmn2UseCasePackage.eNS_URI,
-				theBpmn2UseCasePackage);
+		EPackage.Registry.INSTANCE.put(Bpmn2UseCasePackage.eNS_URI, theBpmn2UseCasePackage);
 		return theBpmn2UseCasePackage;
 	}
 
@@ -164,8 +168,7 @@ public class Bpmn2UseCasePackageImpl extends EPackageImpl implements
 	 */
 	public EClass getP2UC() {
 		if (p2UCEClass == null) {
-			p2UCEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(Bpmn2UseCasePackage.eNS_URI).getEClassifiers()
+			p2UCEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(Bpmn2UseCasePackage.eNS_URI).getEClassifiers()
 					.get(0);
 		}
 		return p2UCEClass;
@@ -196,8 +199,7 @@ public class Bpmn2UseCasePackageImpl extends EPackageImpl implements
 	 */
 	public EClass getT2NS() {
 		if (t2NSEClass == null) {
-			t2NSEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(Bpmn2UseCasePackage.eNS_URI).getEClassifiers()
+			t2NSEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(Bpmn2UseCasePackage.eNS_URI).getEClassifiers()
 					.get(1);
 		}
 		return t2NSEClass;
@@ -228,8 +230,7 @@ public class Bpmn2UseCasePackageImpl extends EPackageImpl implements
 	 */
 	public EClass getPG2PS() {
 		if (pg2PSEClass == null) {
-			pg2PSEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(Bpmn2UseCasePackage.eNS_URI).getEClassifiers()
+			pg2PSEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(Bpmn2UseCasePackage.eNS_URI).getEClassifiers()
 					.get(2);
 		}
 		return pg2PSEClass;
@@ -260,8 +261,7 @@ public class Bpmn2UseCasePackageImpl extends EPackageImpl implements
 	 */
 	public EClass getSF2F() {
 		if (sf2FEClass == null) {
-			sf2FEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(Bpmn2UseCasePackage.eNS_URI).getEClassifiers()
+			sf2FEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(Bpmn2UseCasePackage.eNS_URI).getEClassifiers()
 					.get(3);
 		}
 		return sf2FEClass;
@@ -292,8 +292,7 @@ public class Bpmn2UseCasePackageImpl extends EPackageImpl implements
 	 */
 	public EClass getSE2BF() {
 		if (se2BFEClass == null) {
-			se2BFEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(Bpmn2UseCasePackage.eNS_URI).getEClassifiers()
+			se2BFEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(Bpmn2UseCasePackage.eNS_URI).getEClassifiers()
 					.get(4);
 		}
 		return se2BFEClass;
@@ -315,6 +314,37 @@ public class Bpmn2UseCasePackageImpl extends EPackageImpl implements
 	 */
 	public EReference getSE2BF_Target() {
 		return (EReference) getSE2BF().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getEE2FS() {
+		if (ee2FSEClass == null) {
+			ee2FSEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(Bpmn2UseCasePackage.eNS_URI).getEClassifiers()
+					.get(5);
+		}
+		return ee2FSEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getEE2FS_Source() {
+		return (EReference) getEE2FS().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getEE2FS_Target() {
+		return (EReference) getEE2FS().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -346,8 +376,7 @@ public class Bpmn2UseCasePackageImpl extends EPackageImpl implements
 
 		URL url = getClass().getResource(packageFilename);
 		if (url == null) {
-			throw new RuntimeException("Missing serialized package: "
-					+ packageFilename);
+			throw new RuntimeException("Missing serialized package: " + packageFilename);
 		}
 		URI uri = URI.createURI(url.toString());
 		Resource resource = new EcoreResourceFactoryImpl().createResource(uri);
@@ -356,8 +385,7 @@ public class Bpmn2UseCasePackageImpl extends EPackageImpl implements
 		} catch (IOException exception) {
 			throw new WrappedException(exception);
 		}
-		initializeFromLoadedEPackage(this, (EPackage) resource.getContents()
-				.get(0));
+		initializeFromLoadedEPackage(this, (EPackage) resource.getContents().get(0));
 		createResource(eNS_URI);
 	}
 
@@ -390,8 +418,7 @@ public class Bpmn2UseCasePackageImpl extends EPackageImpl implements
 	@Override
 	protected void fixInstanceClass(EClassifier eClassifier) {
 		if (eClassifier.getInstanceClassName() == null) {
-			eClassifier.setInstanceClassName("Bpmn2UseCase."
-					+ eClassifier.getName());
+			eClassifier.setInstanceClassName("Bpmn2UseCase." + eClassifier.getName());
 			setGeneratedClassName(eClassifier);
 		}
 	}

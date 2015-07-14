@@ -83,8 +83,8 @@ public class P2UCImpl extends AbstractCorrespondenceImpl implements P2UC {
 			source = (SimpleBPMN.Process) eResolveProxy(oldSource);
 			if (source != oldSource) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE,
-							Bpmn2UseCasePackage.P2UC__SOURCE, oldSource, source));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, Bpmn2UseCasePackage.P2UC__SOURCE,
+							oldSource, source));
 			}
 		}
 		return source;
@@ -108,8 +108,7 @@ public class P2UCImpl extends AbstractCorrespondenceImpl implements P2UC {
 		SimpleBPMN.Process oldSource = source;
 		source = newSource;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					Bpmn2UseCasePackage.P2UC__SOURCE, oldSource, source));
+			eNotify(new ENotificationImpl(this, Notification.SET, Bpmn2UseCasePackage.P2UC__SOURCE, oldSource, source));
 	}
 
 	/**
@@ -123,8 +122,8 @@ public class P2UCImpl extends AbstractCorrespondenceImpl implements P2UC {
 			target = (UseCase) eResolveProxy(oldTarget);
 			if (target != oldTarget) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE,
-							Bpmn2UseCasePackage.P2UC__TARGET, oldTarget, target));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, Bpmn2UseCasePackage.P2UC__TARGET,
+							oldTarget, target));
 			}
 		}
 		return target;
@@ -148,8 +147,7 @@ public class P2UCImpl extends AbstractCorrespondenceImpl implements P2UC {
 		UseCase oldTarget = target;
 		target = newTarget;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					Bpmn2UseCasePackage.P2UC__TARGET, oldTarget, target));
+			eNotify(new ENotificationImpl(this, Notification.SET, Bpmn2UseCasePackage.P2UC__TARGET, oldTarget, target));
 	}
 
 	/**

@@ -123,6 +123,13 @@ public class SimpleUseCaseSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case SimpleUseCasePackage.UC_CONDITION: {
+			UCCondition ucCondition = (UCCondition) theEObject;
+			T result = caseUCCondition(ucCondition);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		default:
 			return defaultCase(theEObject);
 		}
@@ -230,6 +237,21 @@ public class SimpleUseCaseSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseParallelStep(ParallelStep object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>UC Condition</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>UC Condition</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseUCCondition(UCCondition object) {
 		return null;
 	}
 

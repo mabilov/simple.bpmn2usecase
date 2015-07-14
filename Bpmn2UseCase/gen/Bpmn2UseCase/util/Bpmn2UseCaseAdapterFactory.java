@@ -94,6 +94,11 @@ public class Bpmn2UseCaseAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseEE2FS(EE2FS object) {
+			return createEE2FSAdapter();
+		}
+
+		@Override
 		public Adapter caseAbstractCorrespondence(AbstractCorrespondence object) {
 			return createAbstractCorrespondenceAdapter();
 		}
@@ -184,6 +189,20 @@ public class Bpmn2UseCaseAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSE2BFAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.EE2FS <em>EE2FS</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Bpmn2UseCase.EE2FS
+	 * @generated
+	 */
+	public Adapter createEE2FSAdapter() {
 		return null;
 	}
 

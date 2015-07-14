@@ -158,6 +158,15 @@ public class RulesSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case RulesPackage.END_EVENT2_FINAL_STATE: {
+			EndEvent2FinalState endEvent2FinalState = (EndEvent2FinalState) theEObject;
+			T result = caseEndEvent2FinalState(endEvent2FinalState);
+			if (result == null)
+				result = caseAbstractRule(endEvent2FinalState);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		default:
 			return defaultCase(theEObject);
 		}
@@ -204,8 +213,7 @@ public class RulesSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseParallelGateway2ParallelStep(
-			ParallelGateway2ParallelStep object) {
+	public T caseParallelGateway2ParallelStep(ParallelGateway2ParallelStep object) {
 		return null;
 	}
 
@@ -265,8 +273,7 @@ public class RulesSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseParallelGateway2ParallelStepSeq(
-			ParallelGateway2ParallelStepSeq object) {
+	public T caseParallelGateway2ParallelStepSeq(ParallelGateway2ParallelStepSeq object) {
 		return null;
 	}
 
@@ -281,8 +288,7 @@ public class RulesSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseParallelGateway2ParallelStepAfterSE(
-			ParallelGateway2ParallelStepAfterSE object) {
+	public T caseParallelGateway2ParallelStepAfterSE(ParallelGateway2ParallelStepAfterSE object) {
 		return null;
 	}
 
@@ -297,8 +303,7 @@ public class RulesSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseParallelGateway2ParallelStepAfterPG(
-			ParallelGateway2ParallelStepAfterPG object) {
+	public T caseParallelGateway2ParallelStepAfterPG(ParallelGateway2ParallelStepAfterPG object) {
 		return null;
 	}
 
@@ -313,8 +318,22 @@ public class RulesSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSequenceFlowAfterPG2ParallelFlow(
-			SequenceFlowAfterPG2ParallelFlow object) {
+	public T caseSequenceFlowAfterPG2ParallelFlow(SequenceFlowAfterPG2ParallelFlow object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>End Event2 Final State</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>End Event2 Final State</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEndEvent2FinalState(EndEvent2FinalState object) {
 		return null;
 	}
 

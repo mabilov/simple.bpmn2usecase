@@ -113,6 +113,15 @@ public class Bpmn2UseCaseSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case Bpmn2UseCasePackage.EE2FS: {
+			EE2FS ee2FS = (EE2FS) theEObject;
+			T result = caseEE2FS(ee2FS);
+			if (result == null)
+				result = caseAbstractCorrespondence(ee2FS);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		default:
 			return defaultCase(theEObject);
 		}
@@ -190,6 +199,21 @@ public class Bpmn2UseCaseSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseSE2BF(SE2BF object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>EE2FS</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>EE2FS</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEE2FS(EE2FS object) {
 		return null;
 	}
 

@@ -19,8 +19,7 @@ public interface Bpmn2UseCaseFactory extends EFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	Bpmn2UseCaseFactory eINSTANCE = Bpmn2UseCase.impl.Bpmn2UseCaseFactoryImpl
-			.init();
+	Bpmn2UseCaseFactory eINSTANCE = Bpmn2UseCase.impl.Bpmn2UseCaseFactoryImpl.init();
 
 	/**
 	 * Returns a new object of class '<em>P2UC</em>'.
@@ -66,6 +65,15 @@ public interface Bpmn2UseCaseFactory extends EFactory {
 	 * @generated
 	 */
 	SE2BF createSE2BF();
+
+	/**
+	 * Returns a new object of class '<em>EE2FS</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>EE2FS</em>'.
+	 * @generated
+	 */
+	EE2FS createEE2FS();
 
 	/**
 	 * Returns the package supported by this factory.

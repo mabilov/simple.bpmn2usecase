@@ -6,6 +6,7 @@ import SimpleBPMN.SequenceFlow;
 import SimpleBPMN.StartEvent;
 
 import SimpleUseCase.BasicFlow;
+import SimpleUseCase.UCCondition;
 import SimpleUseCase.UseCase;
 
 import TGGLanguage.csp.CSP;
@@ -45,8 +46,7 @@ public interface Process2UseCase extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	boolean isAppropriate_FWD(Match match, SimpleBPMN.Process process,
-			StartEvent start, SequenceFlow sf);
+	boolean isAppropriate_FWD(Match match, SimpleBPMN.Process process, StartEvent start, SequenceFlow sf);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -70,8 +70,7 @@ public interface Process2UseCase extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjectsToMatch_FWD(Match match, SimpleBPMN.Process process,
-			StartEvent start, SequenceFlow sf);
+	void registerObjectsToMatch_FWD(Match match, SimpleBPMN.Process process, StartEvent start, SequenceFlow sf);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -79,8 +78,7 @@ public interface Process2UseCase extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isAppropriate_solveCsp_FWD(Match match, SimpleBPMN.Process process,
-			StartEvent start, SequenceFlow sf);
+	CSP isAppropriate_solveCsp_FWD(Match match, SimpleBPMN.Process process, StartEvent start, SequenceFlow sf);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -96,8 +94,8 @@ public interface Process2UseCase extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch,
-			SimpleBPMN.Process process, StartEvent start, SequenceFlow sf);
+	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, SimpleBPMN.Process process, StartEvent start,
+			SequenceFlow sf);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -113,9 +111,8 @@ public interface Process2UseCase extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_FWD(PerformRuleResult ruleresult, EObject process,
-			EObject useCase, EObject _p2uc, EObject flow, EObject _se2bf,
-			EObject start, EObject sf, EObject _sf2f);
+	void registerObjects_FWD(PerformRuleResult ruleresult, EObject process, EObject useCase, EObject _p2uc,
+			EObject flow, EObject _se2bf, EObject start, EObject sf, EObject _sf2f, EObject cond);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -131,7 +128,7 @@ public interface Process2UseCase extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	boolean isAppropriate_BWD(Match match, UseCase useCase, BasicFlow flow);
+	boolean isAppropriate_BWD(Match match, UseCase useCase, BasicFlow flow, UCCondition cond);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -155,7 +152,7 @@ public interface Process2UseCase extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjectsToMatch_BWD(Match match, UseCase useCase, BasicFlow flow);
+	void registerObjectsToMatch_BWD(Match match, UseCase useCase, BasicFlow flow, UCCondition cond);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -163,7 +160,7 @@ public interface Process2UseCase extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isAppropriate_solveCsp_BWD(Match match, UseCase useCase, BasicFlow flow);
+	CSP isAppropriate_solveCsp_BWD(Match match, UseCase useCase, BasicFlow flow, UCCondition cond);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -179,8 +176,8 @@ public interface Process2UseCase extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch,
-			UseCase useCase, BasicFlow flow);
+	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, UseCase useCase, BasicFlow flow,
+			UCCondition cond);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -196,9 +193,8 @@ public interface Process2UseCase extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_BWD(PerformRuleResult ruleresult, EObject process,
-			EObject useCase, EObject _p2uc, EObject flow, EObject _se2bf,
-			EObject start, EObject sf, EObject _sf2f);
+	void registerObjects_BWD(PerformRuleResult ruleresult, EObject process, EObject useCase, EObject _p2uc,
+			EObject flow, EObject _se2bf, EObject start, EObject sf, EObject _sf2f, EObject cond);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -214,8 +210,7 @@ public interface Process2UseCase extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_283(
-			EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_102(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -223,8 +218,7 @@ public interface Process2UseCase extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_284(
-			EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_103(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -232,7 +226,7 @@ public interface Process2UseCase extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_86(EMoflonEdge _edge_flows);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_29(EMoflonEdge _edge_flows);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -240,8 +234,7 @@ public interface Process2UseCase extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_285(
-			EMoflonEdge _edge_sourceRef);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_30(EMoflonEdge _edge_precondition);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -249,8 +242,15 @@ public interface Process2UseCase extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_286(
-			EMoflonEdge _edge_outgoing);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_104(EMoflonEdge _edge_sourceRef);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_105(EMoflonEdge _edge_outgoing);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -282,10 +282,8 @@ public interface Process2UseCase extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_CC(IsApplicableMatchCC isApplicableMatch,
-			SimpleBPMN.Process process, UseCase useCase, BasicFlow flow,
-			StartEvent start, SequenceFlow sf, Match sourceMatch,
-			Match targetMatch);
+	CSP isApplicable_solveCsp_CC(IsApplicableMatchCC isApplicableMatch, SimpleBPMN.Process process, UseCase useCase,
+			BasicFlow flow, StartEvent start, SequenceFlow sf, UCCondition cond, Match sourceMatch, Match targetMatch);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -317,8 +315,7 @@ public interface Process2UseCase extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch,
-			ModelgeneratorRuleResult ruleResult);
+	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, ModelgeneratorRuleResult ruleResult);
 
 	/**
 	 * <!-- begin-user-doc -->

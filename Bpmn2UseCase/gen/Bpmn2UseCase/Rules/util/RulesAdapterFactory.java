@@ -79,8 +79,7 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseParallelGateway2ParallelStep(
-				ParallelGateway2ParallelStep object) {
+		public Adapter caseParallelGateway2ParallelStep(ParallelGateway2ParallelStep object) {
 			return createParallelGateway2ParallelStepAdapter();
 		}
 
@@ -100,27 +99,28 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseParallelGateway2ParallelStepSeq(
-				ParallelGateway2ParallelStepSeq object) {
+		public Adapter caseParallelGateway2ParallelStepSeq(ParallelGateway2ParallelStepSeq object) {
 			return createParallelGateway2ParallelStepSeqAdapter();
 		}
 
 		@Override
-		public Adapter caseParallelGateway2ParallelStepAfterSE(
-				ParallelGateway2ParallelStepAfterSE object) {
+		public Adapter caseParallelGateway2ParallelStepAfterSE(ParallelGateway2ParallelStepAfterSE object) {
 			return createParallelGateway2ParallelStepAfterSEAdapter();
 		}
 
 		@Override
-		public Adapter caseParallelGateway2ParallelStepAfterPG(
-				ParallelGateway2ParallelStepAfterPG object) {
+		public Adapter caseParallelGateway2ParallelStepAfterPG(ParallelGateway2ParallelStepAfterPG object) {
 			return createParallelGateway2ParallelStepAfterPGAdapter();
 		}
 
 		@Override
-		public Adapter caseSequenceFlowAfterPG2ParallelFlow(
-				SequenceFlowAfterPG2ParallelFlow object) {
+		public Adapter caseSequenceFlowAfterPG2ParallelFlow(SequenceFlowAfterPG2ParallelFlow object) {
 			return createSequenceFlowAfterPG2ParallelFlowAdapter();
+		}
+
+		@Override
+		public Adapter caseEndEvent2FinalState(EndEvent2FinalState object) {
+			return createEndEvent2FinalStateAdapter();
 		}
 
 		@Override
@@ -284,6 +284,20 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSequenceFlowAfterPG2ParallelFlowAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.EndEvent2FinalState <em>End Event2 Final State</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Bpmn2UseCase.Rules.EndEvent2FinalState
+	 * @generated
+	 */
+	public Adapter createEndEvent2FinalStateAdapter() {
 		return null;
 	}
 

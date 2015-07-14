@@ -5,7 +5,7 @@
     <target href="../usecase/Sequence.xmi#/"/>
   </correspondences>
   <correspondences xsi:type="Bpmn2UseCase:SE2BF">
-    <source href="../bpmn/Sequence.xmi#//@flowElements.0"/>
+    <source href="../bpmn/Sequence.xmi#se1"/>
     <target href="../usecase/Sequence.xmi#//@flows.0"/>
   </correspondences>
   <correspondences xsi:type="Bpmn2UseCase:SF2F">
@@ -20,12 +20,16 @@
     <source href="../bpmn/Sequence.xmi#//@flowElements.3"/>
     <target xsi:type="SimpleUseCase:BasicFlow" href="../usecase/Sequence.xmi#//@flows.0"/>
   </correspondences>
+  <correspondences xsi:type="Bpmn2UseCase:EE2FS">
+    <source href="../bpmn/Sequence.xmi#ee1"/>
+    <target href="../usecase/Sequence.xmi#//@flows.0/@finalState.0"/>
+  </correspondences>
   <correspondences xsi:type="Bpmn2UseCase:T2NS">
     <source href="../bpmn/Sequence.xmi#t2"/>
     <target href="../usecase/Sequence.xmi#t2"/>
   </correspondences>
   <correspondences xsi:type="Bpmn2UseCase:SF2F">
-    <source href="../bpmn/Sequence.xmi#//@flowElements.5"/>
+    <source href="../bpmn/Sequence.xmi#//@flowElements.6"/>
     <target xsi:type="SimpleUseCase:BasicFlow" href="../usecase/Sequence.xmi#//@flows.0"/>
   </correspondences>
   <source href="../bpmn/Sequence.xmi#/"/>

@@ -85,9 +85,8 @@ public class SE2BFImpl extends AbstractCorrespondenceImpl implements SE2BF {
 			source = (StartEvent) eResolveProxy(oldSource);
 			if (source != oldSource) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE,
-							Bpmn2UseCasePackage.SE2BF__SOURCE, oldSource,
-							source));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, Bpmn2UseCasePackage.SE2BF__SOURCE,
+							oldSource, source));
 			}
 		}
 		return source;
@@ -111,8 +110,8 @@ public class SE2BFImpl extends AbstractCorrespondenceImpl implements SE2BF {
 		StartEvent oldSource = source;
 		source = newSource;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					Bpmn2UseCasePackage.SE2BF__SOURCE, oldSource, source));
+			eNotify(new ENotificationImpl(this, Notification.SET, Bpmn2UseCasePackage.SE2BF__SOURCE, oldSource,
+					source));
 	}
 
 	/**
@@ -126,9 +125,8 @@ public class SE2BFImpl extends AbstractCorrespondenceImpl implements SE2BF {
 			target = (BasicFlow) eResolveProxy(oldTarget);
 			if (target != oldTarget) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE,
-							Bpmn2UseCasePackage.SE2BF__TARGET, oldTarget,
-							target));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, Bpmn2UseCasePackage.SE2BF__TARGET,
+							oldTarget, target));
 			}
 		}
 		return target;
@@ -152,8 +150,8 @@ public class SE2BFImpl extends AbstractCorrespondenceImpl implements SE2BF {
 		BasicFlow oldTarget = target;
 		target = newTarget;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					Bpmn2UseCasePackage.SE2BF__TARGET, oldTarget, target));
+			eNotify(new ENotificationImpl(this, Notification.SET, Bpmn2UseCasePackage.SE2BF__TARGET, oldTarget,
+					target));
 	}
 
 	/**

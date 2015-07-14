@@ -85,8 +85,8 @@ public class T2NSImpl extends AbstractCorrespondenceImpl implements T2NS {
 			source = (Task) eResolveProxy(oldSource);
 			if (source != oldSource) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE,
-							Bpmn2UseCasePackage.T2NS__SOURCE, oldSource, source));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, Bpmn2UseCasePackage.T2NS__SOURCE,
+							oldSource, source));
 			}
 		}
 		return source;
@@ -110,8 +110,7 @@ public class T2NSImpl extends AbstractCorrespondenceImpl implements T2NS {
 		Task oldSource = source;
 		source = newSource;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					Bpmn2UseCasePackage.T2NS__SOURCE, oldSource, source));
+			eNotify(new ENotificationImpl(this, Notification.SET, Bpmn2UseCasePackage.T2NS__SOURCE, oldSource, source));
 	}
 
 	/**
@@ -125,8 +124,8 @@ public class T2NSImpl extends AbstractCorrespondenceImpl implements T2NS {
 			target = (NormalStep) eResolveProxy(oldTarget);
 			if (target != oldTarget) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE,
-							Bpmn2UseCasePackage.T2NS__TARGET, oldTarget, target));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, Bpmn2UseCasePackage.T2NS__TARGET,
+							oldTarget, target));
 			}
 		}
 		return target;
@@ -150,8 +149,7 @@ public class T2NSImpl extends AbstractCorrespondenceImpl implements T2NS {
 		NormalStep oldTarget = target;
 		target = newTarget;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					Bpmn2UseCasePackage.T2NS__TARGET, oldTarget, target));
+			eNotify(new ENotificationImpl(this, Notification.SET, Bpmn2UseCasePackage.T2NS__TARGET, oldTarget, target));
 	}
 
 	/**

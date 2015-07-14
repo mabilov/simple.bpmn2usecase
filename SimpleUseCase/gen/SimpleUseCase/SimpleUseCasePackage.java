@@ -76,13 +76,22 @@ public interface SimpleUseCasePackage extends EPackage {
 	int USE_CASE__FLOWS = 0;
 
 	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USE_CASE__PRECONDITION = 1;
+
+	/**
 	 * The number of structural features of the '<em>Use Case</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int USE_CASE_FEATURE_COUNT = 1;
+	int USE_CASE_FEATURE_COUNT = 2;
 
 	/**
 	 * The number of operations of the '<em>Use Case</em>' class.
@@ -113,13 +122,31 @@ public interface SimpleUseCasePackage extends EPackage {
 	int FLOW__STEPS = 0;
 
 	/**
+	 * The feature id for the '<em><b>Final State</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOW__FINAL_STATE = 1;
+
+	/**
+	 * The feature id for the '<em><b>first</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOW__FIRST = 2;
+
+	/**
 	 * The number of structural features of the '<em>Flow</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FLOW_FEATURE_COUNT = 1;
+	int FLOW_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Flow</em>' class.
@@ -148,6 +175,24 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @ordered
 	 */
 	int BASIC_FLOW__STEPS = FLOW__STEPS;
+
+	/**
+	 * The feature id for the '<em><b>Final State</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BASIC_FLOW__FINAL_STATE = FLOW__FINAL_STATE;
+
+	/**
+	 * The feature id for the '<em><b>first</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BASIC_FLOW__FIRST = FLOW__FIRST;
 
 	/**
 	 * The number of structural features of the '<em>Basic Flow</em>' class.
@@ -185,6 +230,24 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @ordered
 	 */
 	int PARALLEL_FLOW__STEPS = FLOW__STEPS;
+
+	/**
+	 * The feature id for the '<em><b>Final State</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARALLEL_FLOW__FINAL_STATE = FLOW__FINAL_STATE;
+
+	/**
+	 * The feature id for the '<em><b>first</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARALLEL_FLOW__FIRST = FLOW__FIRST;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -361,6 +424,43 @@ public interface SimpleUseCasePackage extends EPackage {
 	int PARALLEL_STEP_OPERATION_COUNT = STEP_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link SimpleUseCase.impl.UCConditionImpl <em>UC Condition</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see SimpleUseCase.impl.UCConditionImpl
+	 * @see SimpleUseCase.impl.SimpleUseCasePackageImpl#getUCCondition()
+	 * @generated
+	 */
+	int UC_CONDITION = 7;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_CONDITION__NAME = 0;
+
+	/**
+	 * The number of structural features of the '<em>UC Condition</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_CONDITION_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>UC Condition</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_CONDITION_OPERATION_COUNT = 0;
+
+	/**
 	 * Returns the meta object for class '{@link SimpleUseCase.UseCase <em>Use Case</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -382,6 +482,17 @@ public interface SimpleUseCasePackage extends EPackage {
 	EReference getUseCase_Flows();
 
 	/**
+	 * Returns the meta object for the containment reference '{@link SimpleUseCase.UseCase#getPrecondition <em>Precondition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Precondition</em>'.
+	 * @see SimpleUseCase.UseCase#getPrecondition()
+	 * @see #getUseCase()
+	 * @generated
+	 */
+	EReference getUseCase_Precondition();
+
+	/**
 	 * Returns the meta object for class '{@link SimpleUseCase.Flow <em>Flow</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -401,6 +512,28 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getFlow_Steps();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link SimpleUseCase.Flow#getFinalState <em>Final State</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Final State</em>'.
+	 * @see SimpleUseCase.Flow#getFinalState()
+	 * @see #getFlow()
+	 * @generated
+	 */
+	EReference getFlow_FinalState();
+
+	/**
+	 * Returns the meta object for the reference '{@link SimpleUseCase.Flow#get__first <em>first</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>first</em>'.
+	 * @see SimpleUseCase.Flow#get__first()
+	 * @see #getFlow()
+	 * @generated
+	 */
+	EReference getFlow___first();
 
 	/**
 	 * Returns the meta object for class '{@link SimpleUseCase.BasicFlow <em>Basic Flow</em>}'.
@@ -497,6 +630,27 @@ public interface SimpleUseCasePackage extends EPackage {
 	EReference getParallelStep_InvokedFlows();
 
 	/**
+	 * Returns the meta object for class '{@link SimpleUseCase.UCCondition <em>UC Condition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>UC Condition</em>'.
+	 * @see SimpleUseCase.UCCondition
+	 * @generated
+	 */
+	EClass getUCCondition();
+
+	/**
+	 * Returns the meta object for the attribute '{@link SimpleUseCase.UCCondition#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see SimpleUseCase.UCCondition#getName()
+	 * @see #getUCCondition()
+	 * @generated
+	 */
+	EAttribute getUCCondition_Name();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -538,6 +692,14 @@ public interface SimpleUseCasePackage extends EPackage {
 		EReference USE_CASE__FLOWS = eINSTANCE.getUseCase_Flows();
 
 		/**
+		 * The meta object literal for the '<em><b>Precondition</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference USE_CASE__PRECONDITION = eINSTANCE.getUseCase_Precondition();
+
+		/**
 		 * The meta object literal for the '{@link SimpleUseCase.impl.FlowImpl <em>Flow</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -554,6 +716,22 @@ public interface SimpleUseCasePackage extends EPackage {
 		 * @generated
 		 */
 		EReference FLOW__STEPS = eINSTANCE.getFlow_Steps();
+
+		/**
+		 * The meta object literal for the '<em><b>Final State</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FLOW__FINAL_STATE = eINSTANCE.getFlow_FinalState();
+
+		/**
+		 * The meta object literal for the '<em><b>first</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FLOW__FIRST = eINSTANCE.getFlow___first();
 
 		/**
 		 * The meta object literal for the '{@link SimpleUseCase.impl.BasicFlowImpl <em>Basic Flow</em>}' class.
@@ -636,6 +814,24 @@ public interface SimpleUseCasePackage extends EPackage {
 		 * @generated
 		 */
 		EReference PARALLEL_STEP__INVOKED_FLOWS = eINSTANCE.getParallelStep_InvokedFlows();
+
+		/**
+		 * The meta object literal for the '{@link SimpleUseCase.impl.UCConditionImpl <em>UC Condition</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see SimpleUseCase.impl.UCConditionImpl
+		 * @see SimpleUseCase.impl.SimpleUseCasePackageImpl#getUCCondition()
+		 * @generated
+		 */
+		EClass UC_CONDITION = eINSTANCE.getUCCondition();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute UC_CONDITION__NAME = eINSTANCE.getUCCondition_Name();
 
 	}
 

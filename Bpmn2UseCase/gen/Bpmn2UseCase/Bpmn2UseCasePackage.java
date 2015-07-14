@@ -55,8 +55,7 @@ public interface Bpmn2UseCasePackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	Bpmn2UseCasePackage eINSTANCE = Bpmn2UseCase.impl.Bpmn2UseCasePackageImpl
-			.init();
+	Bpmn2UseCasePackage eINSTANCE = Bpmn2UseCase.impl.Bpmn2UseCasePackageImpl.init();
 
 	/**
 	 * The meta object id for the '{@link Bpmn2UseCase.impl.P2UCImpl <em>P2UC</em>}' class.
@@ -289,6 +288,52 @@ public interface Bpmn2UseCasePackage extends EPackage {
 	int SE2BF_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link Bpmn2UseCase.impl.EE2FSImpl <em>EE2FS</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Bpmn2UseCase.impl.EE2FSImpl
+	 * @see Bpmn2UseCase.impl.Bpmn2UseCasePackageImpl#getEE2FS()
+	 * @generated
+	 */
+	int EE2FS = 5;
+
+	/**
+	 * The feature id for the '<em><b>Source</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EE2FS__SOURCE = TGGRuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Target</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EE2FS__TARGET = TGGRuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>EE2FS</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EE2FS_FEATURE_COUNT = TGGRuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of operations of the '<em>EE2FS</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EE2FS_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
+
+	/**
 	 * Returns the meta object for class '{@link Bpmn2UseCase.P2UC <em>P2UC</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -449,6 +494,38 @@ public interface Bpmn2UseCasePackage extends EPackage {
 	EReference getSE2BF_Target();
 
 	/**
+	 * Returns the meta object for class '{@link Bpmn2UseCase.EE2FS <em>EE2FS</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>EE2FS</em>'.
+	 * @see Bpmn2UseCase.EE2FS
+	 * @generated
+	 */
+	EClass getEE2FS();
+
+	/**
+	 * Returns the meta object for the reference '{@link Bpmn2UseCase.EE2FS#getSource <em>Source</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Source</em>'.
+	 * @see Bpmn2UseCase.EE2FS#getSource()
+	 * @see #getEE2FS()
+	 * @generated
+	 */
+	EReference getEE2FS_Source();
+
+	/**
+	 * Returns the meta object for the reference '{@link Bpmn2UseCase.EE2FS#getTarget <em>Target</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Target</em>'.
+	 * @see Bpmn2UseCase.EE2FS#getTarget()
+	 * @see #getEE2FS()
+	 * @generated
+	 */
+	EReference getEE2FS_Target();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -600,6 +677,32 @@ public interface Bpmn2UseCasePackage extends EPackage {
 		 * @generated
 		 */
 		EReference SE2BF__TARGET = eINSTANCE.getSE2BF_Target();
+
+		/**
+		 * The meta object literal for the '{@link Bpmn2UseCase.impl.EE2FSImpl <em>EE2FS</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Bpmn2UseCase.impl.EE2FSImpl
+		 * @see Bpmn2UseCase.impl.Bpmn2UseCasePackageImpl#getEE2FS()
+		 * @generated
+		 */
+		EClass EE2FS = eINSTANCE.getEE2FS();
+
+		/**
+		 * The meta object literal for the '<em><b>Source</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference EE2FS__SOURCE = eINSTANCE.getEE2FS_Source();
+
+		/**
+		 * The meta object literal for the '<em><b>Target</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference EE2FS__TARGET = eINSTANCE.getEE2FS_Target();
 
 	}
 

@@ -66,6 +66,8 @@ public class SimpleUseCaseFactoryImpl extends EFactoryImpl implements SimpleUseC
 			return createNormalStep();
 		case SimpleUseCasePackage.PARALLEL_STEP:
 			return createParallelStep();
+		case SimpleUseCasePackage.UC_CONDITION:
+			return createUCCondition();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -119,6 +121,16 @@ public class SimpleUseCaseFactoryImpl extends EFactoryImpl implements SimpleUseC
 	public ParallelStep createParallelStep() {
 		ParallelStepImpl parallelStep = new ParallelStepImpl();
 		return parallelStep;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public UCCondition createUCCondition() {
+		UCConditionImpl ucCondition = new UCConditionImpl();
+		return ucCondition;
 	}
 
 	/**

@@ -85,9 +85,8 @@ public class PG2PSImpl extends AbstractCorrespondenceImpl implements PG2PS {
 			source = (ParallelGateway) eResolveProxy(oldSource);
 			if (source != oldSource) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE,
-							Bpmn2UseCasePackage.PG2PS__SOURCE, oldSource,
-							source));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, Bpmn2UseCasePackage.PG2PS__SOURCE,
+							oldSource, source));
 			}
 		}
 		return source;
@@ -111,8 +110,8 @@ public class PG2PSImpl extends AbstractCorrespondenceImpl implements PG2PS {
 		ParallelGateway oldSource = source;
 		source = newSource;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					Bpmn2UseCasePackage.PG2PS__SOURCE, oldSource, source));
+			eNotify(new ENotificationImpl(this, Notification.SET, Bpmn2UseCasePackage.PG2PS__SOURCE, oldSource,
+					source));
 	}
 
 	/**
@@ -126,9 +125,8 @@ public class PG2PSImpl extends AbstractCorrespondenceImpl implements PG2PS {
 			target = (ParallelStep) eResolveProxy(oldTarget);
 			if (target != oldTarget) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE,
-							Bpmn2UseCasePackage.PG2PS__TARGET, oldTarget,
-							target));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, Bpmn2UseCasePackage.PG2PS__TARGET,
+							oldTarget, target));
 			}
 		}
 		return target;
@@ -152,8 +150,8 @@ public class PG2PSImpl extends AbstractCorrespondenceImpl implements PG2PS {
 		ParallelStep oldTarget = target;
 		target = newTarget;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					Bpmn2UseCasePackage.PG2PS__TARGET, oldTarget, target));
+			eNotify(new ENotificationImpl(this, Notification.SET, Bpmn2UseCasePackage.PG2PS__TARGET, oldTarget,
+					target));
 	}
 
 	/**

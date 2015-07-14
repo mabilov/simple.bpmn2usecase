@@ -10,6 +10,7 @@ import SimpleUseCase.ParallelStep;
 import SimpleUseCase.SimpleUseCaseFactory;
 import SimpleUseCase.SimpleUseCasePackage;
 import SimpleUseCase.Step;
+import SimpleUseCase.UCCondition;
 import SimpleUseCase.UseCase;
 
 import org.eclipse.emf.ecore.EAttribute;
@@ -74,6 +75,13 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements SimpleUseC
 	 * @generated
 	 */
 	private EClass parallelStepEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass ucConditionEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -161,6 +169,15 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements SimpleUseC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getUseCase_Precondition() {
+		return (EReference) useCaseEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getFlow() {
 		return flowEClass;
 	}
@@ -172,6 +189,24 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements SimpleUseC
 	 */
 	public EReference getFlow_Steps() {
 		return (EReference) flowEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getFlow_FinalState() {
+		return (EReference) flowEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getFlow___first() {
+		return (EReference) flowEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -260,6 +295,24 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements SimpleUseC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getUCCondition() {
+		return ucConditionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getUCCondition_Name() {
+		return (EAttribute) ucConditionEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public SimpleUseCaseFactory getSimpleUseCaseFactory() {
 		return (SimpleUseCaseFactory) getEFactoryInstance();
 	}
@@ -286,9 +339,12 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements SimpleUseC
 		// Create classes and their features
 		useCaseEClass = createEClass(USE_CASE);
 		createEReference(useCaseEClass, USE_CASE__FLOWS);
+		createEReference(useCaseEClass, USE_CASE__PRECONDITION);
 
 		flowEClass = createEClass(FLOW);
 		createEReference(flowEClass, FLOW__STEPS);
+		createEReference(flowEClass, FLOW__FINAL_STATE);
+		createEReference(flowEClass, FLOW__FIRST);
 
 		basicFlowEClass = createEClass(BASIC_FLOW);
 
@@ -303,6 +359,9 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements SimpleUseC
 
 		parallelStepEClass = createEClass(PARALLEL_STEP);
 		createEReference(parallelStepEClass, PARALLEL_STEP__INVOKED_FLOWS);
+
+		ucConditionEClass = createEClass(UC_CONDITION);
+		createEAttribute(ucConditionEClass, UC_CONDITION__NAME);
 	}
 
 	/**
@@ -344,10 +403,19 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements SimpleUseC
 		initEReference(getUseCase_Flows(), this.getFlow(), null, "flows", null, 0, -1, UseCase.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
 				IS_ORDERED);
+		initEReference(getUseCase_Precondition(), this.getUCCondition(), null, "precondition", null, 0, 1,
+				UseCase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(flowEClass, Flow.class, "Flow", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getFlow_Steps(), this.getStep(), null, "steps", null, 0, -1, Flow.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getFlow_FinalState(), this.getUCCondition(), null, "finalState", null, 0, -1, Flow.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getFlow___first(), this.getStep(), null, "__first", null, 0, 1, Flow.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
 				IS_ORDERED);
 
 		initEClass(basicFlowEClass, BasicFlow.class, "BasicFlow", !IS_ABSTRACT, !IS_INTERFACE,
@@ -373,6 +441,12 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements SimpleUseC
 		initEReference(getParallelStep_InvokedFlows(), this.getParallelFlow(), null, "invokedFlows", null, 0, -1,
 				ParallelStep.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(ucConditionEClass, UCCondition.class, "UCCondition", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getUCCondition_Name(), ecorePackage.getEString(), "name", null, 1, 1, UCCondition.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED,
+				!IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

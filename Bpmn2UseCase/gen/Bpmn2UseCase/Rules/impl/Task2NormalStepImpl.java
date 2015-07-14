@@ -20,8 +20,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public abstract class Task2NormalStepImpl extends AbstractRuleImpl implements
-		Task2NormalStep {
+public abstract class Task2NormalStepImpl extends AbstractRuleImpl implements Task2NormalStep {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

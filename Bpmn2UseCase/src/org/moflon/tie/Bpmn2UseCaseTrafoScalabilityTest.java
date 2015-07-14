@@ -127,6 +127,6 @@ public class Bpmn2UseCaseTrafoScalabilityTest extends DebugSynchronizationHelper
             return DomainType.TARGET;
          }
       }
-      return DomainType.SOURCE;
-   }
+		return DomainType.SOURCE;
+	}
 }

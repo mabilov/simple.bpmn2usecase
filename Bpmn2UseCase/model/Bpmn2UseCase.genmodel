@@ -26,6 +26,10 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//SE2BF/source"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//SE2BF/target"/>
     </genClasses>
+    <genClasses ecoreClass="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//EE2FS">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//EE2FS/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//EE2FS/target"/>
+    </genClasses>
     <nestedGenPackages prefix="Rules" disposableProviderFactory="true" loadInitialization="true"
         literalsInterface="false" ecorePackage="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules">
       <genClasses ecoreClass="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase">
@@ -75,6 +79,7 @@
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/registerObjects_FWD/start"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/registerObjects_FWD/sf"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/registerObjects_FWD/_sf2f"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/registerObjects_FWD/cond"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/checkTypes_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/checkTypes_FWD/match"/>
@@ -83,6 +88,7 @@
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_BWD/match"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_BWD/useCase"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_BWD/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_BWD/cond"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/perform_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/perform_BWD/isApplicableMatch"/>
@@ -94,11 +100,13 @@
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/registerObjectsToMatch_BWD/match"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/registerObjectsToMatch_BWD/useCase"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/registerObjectsToMatch_BWD/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/registerObjectsToMatch_BWD/cond"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_solveCsp_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_solveCsp_BWD/match"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_solveCsp_BWD/useCase"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_solveCsp_BWD/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_solveCsp_BWD/cond"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_checkCsp_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_checkCsp_BWD/csp"/>
@@ -107,6 +115,7 @@
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isApplicable_solveCsp_BWD/isApplicableMatch"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isApplicable_solveCsp_BWD/useCase"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isApplicable_solveCsp_BWD/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isApplicable_solveCsp_BWD/cond"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isApplicable_checkCsp_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isApplicable_checkCsp_BWD/csp"/>
@@ -121,24 +130,28 @@
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/registerObjects_BWD/start"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/registerObjects_BWD/sf"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/registerObjects_BWD/_sf2f"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/registerObjects_BWD/cond"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/checkTypes_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/checkTypes_BWD/match"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_283">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_283/_edge_flowElements"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_102">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_102/_edge_flowElements"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_284">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_284/_edge_flowElements"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_103">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_103/_edge_flowElements"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_BWD_EMoflonEdge_86">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_BWD_EMoflonEdge_86/_edge_flows"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_BWD_EMoflonEdge_29">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_BWD_EMoflonEdge_29/_edge_flows"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_285">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_285/_edge_sourceRef"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_BWD_EMoflonEdge_30">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_BWD_EMoflonEdge_30/_edge_precondition"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_286">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_286/_edge_outgoing"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_104">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_104/_edge_sourceRef"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_105">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_105/_edge_outgoing"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/checkAttributes_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/checkAttributes_FWD/tripleMatch"/>
@@ -157,6 +170,7 @@
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isApplicable_solveCsp_CC/flow"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isApplicable_solveCsp_CC/start"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isApplicable_solveCsp_CC/sf"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isApplicable_solveCsp_CC/cond"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isApplicable_solveCsp_CC/sourceMatch"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Process2UseCase/isApplicable_solveCsp_CC/targetMatch"/>
         </genOperations>
@@ -305,29 +319,29 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/checkTypes_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/checkTypes_BWD/match"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_BWD_EMoflonEdge_87">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_BWD_EMoflonEdge_87/_edge_next"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_BWD_EMoflonEdge_31">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_BWD_EMoflonEdge_31/_edge_next"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_287">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_287/_edge_flowElements"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_106">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_106/_edge_flowElements"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_288">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_288/_edge_flowElements"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_107">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_107/_edge_flowElements"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_BWD_EMoflonEdge_88">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_BWD_EMoflonEdge_88/_edge_steps"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_BWD_EMoflonEdge_32">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_BWD_EMoflonEdge_32/_edge_steps"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_289">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_289/_edge_targetRef"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_108">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_108/_edge_targetRef"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_290">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_290/_edge_incoming"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_109">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_109/_edge_incoming"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_291">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_291/_edge_sourceRef"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_110">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_110/_edge_sourceRef"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_292">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_292/_edge_outgoing"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_111">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/isAppropriate_FWD_EMoflonEdge_111/_edge_outgoing"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/checkAttributes_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepSeq/checkAttributes_FWD/tripleMatch"/>
@@ -416,8 +430,8 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_FWD/isApplicableMatch"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_FWD/node"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_FWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_FWD/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_FWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_FWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_FWD/task"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_FWD/sf2"/>
@@ -429,11 +443,11 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/registerObjects_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/registerObjects_FWD/ruleresult"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/registerObjects_FWD/node"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/registerObjects_FWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/registerObjects_FWD/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/registerObjects_FWD/step"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/registerObjects_FWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/registerObjects_FWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/registerObjects_FWD/task"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/registerObjects_FWD/step"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/registerObjects_FWD/_t2ns"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/registerObjects_FWD/sf2"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/registerObjects_FWD/_sf2f2"/>
@@ -469,10 +483,10 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_BWD/isApplicableMatch"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_BWD/node"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_BWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_BWD/flow"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_BWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_BWD/step"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_BWD/process"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_BWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_BWD/_sf2f1"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_checkCsp_BWD">
@@ -481,11 +495,11 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/registerObjects_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/registerObjects_BWD/ruleresult"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/registerObjects_BWD/node"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/registerObjects_BWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/registerObjects_BWD/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/registerObjects_BWD/step"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/registerObjects_BWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/registerObjects_BWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/registerObjects_BWD/task"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/registerObjects_BWD/step"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/registerObjects_BWD/_t2ns"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/registerObjects_BWD/sf2"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/registerObjects_BWD/_sf2f2"/>
@@ -494,26 +508,29 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/checkTypes_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/checkTypes_BWD/match"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_293">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_293/_edge_flowElements"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_BWD_EMoflonEdge_33">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_BWD_EMoflonEdge_33/_edge_steps"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_294">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_294/_edge_flowElements"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_BWD_EMoflonEdge_34">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_BWD_EMoflonEdge_34/_edge___first"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_BWD_EMoflonEdge_89">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_BWD_EMoflonEdge_89/_edge_steps"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_112">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_112/_edge_flowElements"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_295">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_295/_edge_targetRef"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_113">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_113/_edge_flowElements"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_296">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_296/_edge_incoming"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_114">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_114/_edge_targetRef"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_297">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_297/_edge_sourceRef"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_115">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_115/_edge_incoming"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_298">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_298/_edge_outgoing"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_116">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_116/_edge_sourceRef"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_117">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isAppropriate_FWD_EMoflonEdge_117/_edge_outgoing"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/checkAttributes_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/checkAttributes_FWD/tripleMatch"/>
@@ -528,11 +545,11 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_CC">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_CC/isApplicableMatch"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_CC/node"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_CC/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_CC/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_CC/step"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_CC/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_CC/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_CC/task"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_CC/step"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_CC/sf2"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_CC/_sf2f1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/isApplicable_solveCsp_CC/sourceMatch"/>
@@ -551,8 +568,8 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/generateModel_solveCsp_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/generateModel_solveCsp_BWD/isApplicableMatch"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/generateModel_solveCsp_BWD/node"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/generateModel_solveCsp_BWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/generateModel_solveCsp_BWD/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/generateModel_solveCsp_BWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/generateModel_solveCsp_BWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/generateModel_solveCsp_BWD/_sf2f1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterSE/generateModel_solveCsp_BWD/ruleResult"/>
@@ -598,8 +615,8 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_FWD/isApplicableMatch"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_FWD/node"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_FWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_FWD/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_FWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_FWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_FWD/task"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_FWD/sf2"/>
@@ -611,11 +628,11 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/registerObjects_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/registerObjects_FWD/ruleresult"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/registerObjects_FWD/node"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/registerObjects_FWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/registerObjects_FWD/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/registerObjects_FWD/step"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/registerObjects_FWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/registerObjects_FWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/registerObjects_FWD/task"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/registerObjects_FWD/step"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/registerObjects_FWD/_t2ns"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/registerObjects_FWD/sf2"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/registerObjects_FWD/_sf2f2"/>
@@ -651,10 +668,10 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_BWD/isApplicableMatch"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_BWD/node"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_BWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_BWD/flow"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_BWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_BWD/step"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_BWD/process"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_BWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_BWD/_sf2f1"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_checkCsp_BWD">
@@ -663,11 +680,11 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/registerObjects_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/registerObjects_BWD/ruleresult"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/registerObjects_BWD/node"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/registerObjects_BWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/registerObjects_BWD/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/registerObjects_BWD/step"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/registerObjects_BWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/registerObjects_BWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/registerObjects_BWD/task"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/registerObjects_BWD/step"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/registerObjects_BWD/_t2ns"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/registerObjects_BWD/sf2"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/registerObjects_BWD/_sf2f2"/>
@@ -676,26 +693,29 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/checkTypes_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/checkTypes_BWD/match"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_299">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_299/_edge_flowElements"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_BWD_EMoflonEdge_35">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_BWD_EMoflonEdge_35/_edge_steps"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_300">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_300/_edge_flowElements"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_BWD_EMoflonEdge_36">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_BWD_EMoflonEdge_36/_edge___first"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_BWD_EMoflonEdge_90">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_BWD_EMoflonEdge_90/_edge_steps"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_118">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_118/_edge_flowElements"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_301">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_301/_edge_targetRef"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_119">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_119/_edge_flowElements"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_302">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_302/_edge_incoming"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_120">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_120/_edge_targetRef"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_303">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_303/_edge_sourceRef"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_121">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_121/_edge_incoming"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_304">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_304/_edge_outgoing"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_122">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_122/_edge_sourceRef"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_123">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isAppropriate_FWD_EMoflonEdge_123/_edge_outgoing"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/checkAttributes_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/checkAttributes_FWD/tripleMatch"/>
@@ -710,11 +730,11 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_CC">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_CC/isApplicableMatch"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_CC/node"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_CC/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_CC/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_CC/step"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_CC/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_CC/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_CC/task"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_CC/step"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_CC/sf2"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_CC/_sf2f1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/isApplicable_solveCsp_CC/sourceMatch"/>
@@ -733,8 +753,8 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/generateModel_solveCsp_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/generateModel_solveCsp_BWD/isApplicableMatch"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/generateModel_solveCsp_BWD/node"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/generateModel_solveCsp_BWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/generateModel_solveCsp_BWD/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/generateModel_solveCsp_BWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/generateModel_solveCsp_BWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/generateModel_solveCsp_BWD/_sf2f1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/Task2NormalStepAfterPG/generateModel_solveCsp_BWD/ruleResult"/>
@@ -750,6 +770,8 @@
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD/pgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD/pcgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD/sf2"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/perform_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/perform_FWD/isApplicableMatch"/>
@@ -763,6 +785,8 @@
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/registerObjectsToMatch_FWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/registerObjectsToMatch_FWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/registerObjectsToMatch_FWD/pgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/registerObjectsToMatch_FWD/pcgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/registerObjectsToMatch_FWD/sf2"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_solveCsp_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_solveCsp_FWD/match"/>
@@ -770,6 +794,8 @@
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_solveCsp_FWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_solveCsp_FWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_solveCsp_FWD/pgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_solveCsp_FWD/pcgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_solveCsp_FWD/sf2"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_checkCsp_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_checkCsp_FWD/csp"/>
@@ -784,6 +810,8 @@
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isApplicable_solveCsp_FWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isApplicable_solveCsp_FWD/pgw"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isApplicable_solveCsp_FWD/_sf2f1"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isApplicable_solveCsp_FWD/pcgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isApplicable_solveCsp_FWD/sf2"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isApplicable_checkCsp_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isApplicable_checkCsp_FWD/csp"/>
@@ -800,6 +828,9 @@
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/registerObjects_FWD/pgw"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/registerObjects_FWD/_pg2ps"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/registerObjects_FWD/_sf2f1"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/registerObjects_FWD/pcgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/registerObjects_FWD/sf2"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/registerObjects_FWD/_sf22f2"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/checkTypes_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/checkTypes_FWD/match"/>
@@ -857,24 +888,42 @@
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/registerObjects_BWD/pgw"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/registerObjects_BWD/_pg2ps"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/registerObjects_BWD/_sf2f1"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/registerObjects_BWD/pcgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/registerObjects_BWD/sf2"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/registerObjects_BWD/_sf22f2"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/checkTypes_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/checkTypes_BWD/match"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_BWD_EMoflonEdge_91">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_BWD_EMoflonEdge_91/_edge_next"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_BWD_EMoflonEdge_37">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_BWD_EMoflonEdge_37/_edge_next"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_305">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_305/_edge_flowElements"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_124">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_124/_edge_flowElements"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_BWD_EMoflonEdge_92">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_BWD_EMoflonEdge_92/_edge_steps"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_125">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_125/_edge_flowElements"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_306">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_306/_edge_targetRef"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_126">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_126/_edge_flowElements"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_307">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_307/_edge_incoming"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_BWD_EMoflonEdge_38">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_BWD_EMoflonEdge_38/_edge_steps"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_127">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_127/_edge_targetRef"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_128">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_128/_edge_incoming"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_129">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_129/_edge___conv"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_130">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_130/_edge_sourceRef"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_131">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isAppropriate_FWD_EMoflonEdge_131/_edge_outgoing"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/checkAttributes_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/checkAttributes_FWD/tripleMatch"/>
@@ -897,6 +946,8 @@
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isApplicable_solveCsp_CC/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isApplicable_solveCsp_CC/pgw"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isApplicable_solveCsp_CC/_sf2f1"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isApplicable_solveCsp_CC/pcgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isApplicable_solveCsp_CC/sf2"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isApplicable_solveCsp_CC/sourceMatch"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepSeq/isApplicable_solveCsp_CC/targetMatch"/>
         </genOperations>
@@ -932,6 +983,8 @@
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD/pgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD/pcgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD/sf2"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/perform_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/perform_FWD/isApplicableMatch"/>
@@ -945,6 +998,8 @@
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjectsToMatch_FWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjectsToMatch_FWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjectsToMatch_FWD/pgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjectsToMatch_FWD/pcgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjectsToMatch_FWD/sf2"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_solveCsp_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_solveCsp_FWD/match"/>
@@ -952,6 +1007,8 @@
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_solveCsp_FWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_solveCsp_FWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_solveCsp_FWD/pgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_solveCsp_FWD/pcgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_solveCsp_FWD/sf2"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_checkCsp_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_checkCsp_FWD/csp"/>
@@ -959,11 +1016,13 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_FWD/isApplicableMatch"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_FWD/node"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_FWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_FWD/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_FWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_FWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_FWD/pgw"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_FWD/_sf2f1"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_FWD/pcgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_FWD/sf2"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_checkCsp_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_checkCsp_FWD/csp"/>
@@ -971,13 +1030,16 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_FWD/ruleresult"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_FWD/node"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_FWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_FWD/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_FWD/step"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_FWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_FWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_FWD/pgw"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_FWD/step"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_FWD/_pg2ps"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_FWD/_sf2f1"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_FWD/pcgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_FWD/sf2"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_FWD/_sf22f2"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/checkTypes_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/checkTypes_FWD/match"/>
@@ -1009,10 +1071,10 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_BWD/isApplicableMatch"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_BWD/node"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_BWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_BWD/flow"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_BWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_BWD/step"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_BWD/process"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_BWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_BWD/_sf2f1"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_checkCsp_BWD">
@@ -1021,28 +1083,49 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_BWD/ruleresult"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_BWD/node"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_BWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_BWD/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_BWD/step"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_BWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_BWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_BWD/pgw"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_BWD/step"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_BWD/_pg2ps"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_BWD/_sf2f1"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_BWD/pcgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_BWD/sf2"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/registerObjects_BWD/_sf22f2"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/checkTypes_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/checkTypes_BWD/match"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_308">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_308/_edge_flowElements"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_BWD_EMoflonEdge_39">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_BWD_EMoflonEdge_39/_edge_steps"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_BWD_EMoflonEdge_93">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_BWD_EMoflonEdge_93/_edge_steps"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_BWD_EMoflonEdge_40">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_BWD_EMoflonEdge_40/_edge___first"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_309">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_309/_edge_targetRef"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_132">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_132/_edge_flowElements"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_310">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_310/_edge_incoming"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_133">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_133/_edge_flowElements"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_134">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_134/_edge_flowElements"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_135">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_135/_edge_targetRef"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_136">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_136/_edge_incoming"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_137">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_137/_edge___conv"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_138">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_138/_edge_sourceRef"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_139">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isAppropriate_FWD_EMoflonEdge_139/_edge_outgoing"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/checkAttributes_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/checkAttributes_FWD/tripleMatch"/>
@@ -1057,12 +1140,14 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_CC">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_CC/isApplicableMatch"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_CC/node"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_CC/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_CC/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_CC/step"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_CC/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_CC/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_CC/pgw"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_CC/step"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_CC/_sf2f1"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_CC/pcgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_CC/sf2"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_CC/sourceMatch"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/isApplicable_solveCsp_CC/targetMatch"/>
         </genOperations>
@@ -1079,8 +1164,8 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/generateModel_solveCsp_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/generateModel_solveCsp_BWD/isApplicableMatch"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/generateModel_solveCsp_BWD/node"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/generateModel_solveCsp_BWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/generateModel_solveCsp_BWD/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/generateModel_solveCsp_BWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/generateModel_solveCsp_BWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/generateModel_solveCsp_BWD/_sf2f1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterSE/generateModel_solveCsp_BWD/ruleResult"/>
@@ -1096,6 +1181,8 @@
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD/pgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD/pcgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD/sf2"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/perform_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/perform_FWD/isApplicableMatch"/>
@@ -1109,6 +1196,8 @@
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjectsToMatch_FWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjectsToMatch_FWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjectsToMatch_FWD/pgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjectsToMatch_FWD/pcgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjectsToMatch_FWD/sf2"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_solveCsp_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_solveCsp_FWD/match"/>
@@ -1116,6 +1205,8 @@
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_solveCsp_FWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_solveCsp_FWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_solveCsp_FWD/pgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_solveCsp_FWD/pcgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_solveCsp_FWD/sf2"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_checkCsp_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_checkCsp_FWD/csp"/>
@@ -1123,11 +1214,13 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_FWD/isApplicableMatch"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_FWD/node"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_FWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_FWD/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_FWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_FWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_FWD/pgw"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_FWD/_sf2f1"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_FWD/pcgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_FWD/sf2"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_checkCsp_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_checkCsp_FWD/csp"/>
@@ -1135,13 +1228,16 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_FWD/ruleresult"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_FWD/node"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_FWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_FWD/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_FWD/step"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_FWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_FWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_FWD/pgw"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_FWD/step"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_FWD/_pg2ps"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_FWD/_sf2f1"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_FWD/pcgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_FWD/sf2"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_FWD/_sf22f2"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/checkTypes_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/checkTypes_FWD/match"/>
@@ -1173,10 +1269,10 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_BWD/isApplicableMatch"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_BWD/node"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_BWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_BWD/flow"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_BWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_BWD/step"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_BWD/process"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_BWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_BWD/_sf2f1"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_checkCsp_BWD">
@@ -1185,28 +1281,49 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_BWD/ruleresult"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_BWD/node"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_BWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_BWD/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_BWD/step"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_BWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_BWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_BWD/pgw"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_BWD/step"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_BWD/_pg2ps"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_BWD/_sf2f1"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_BWD/pcgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_BWD/sf2"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/registerObjects_BWD/_sf22f2"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/checkTypes_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/checkTypes_BWD/match"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_311">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_311/_edge_flowElements"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_BWD_EMoflonEdge_41">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_BWD_EMoflonEdge_41/_edge_steps"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_BWD_EMoflonEdge_94">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_BWD_EMoflonEdge_94/_edge_steps"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_BWD_EMoflonEdge_42">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_BWD_EMoflonEdge_42/_edge___first"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_312">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_312/_edge_targetRef"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_140">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_140/_edge_flowElements"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_313">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_313/_edge_incoming"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_141">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_141/_edge_flowElements"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_142">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_142/_edge_flowElements"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_143">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_143/_edge_targetRef"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_144">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_144/_edge_incoming"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_145">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_145/_edge___conv"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_146">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_146/_edge_sourceRef"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_147">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isAppropriate_FWD_EMoflonEdge_147/_edge_outgoing"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/checkAttributes_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/checkAttributes_FWD/tripleMatch"/>
@@ -1221,12 +1338,14 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_CC">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_CC/isApplicableMatch"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_CC/node"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_CC/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_CC/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_CC/step"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_CC/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_CC/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_CC/pgw"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_CC/step"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_CC/_sf2f1"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_CC/pcgw"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_CC/sf2"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_CC/sourceMatch"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/isApplicable_solveCsp_CC/targetMatch"/>
         </genOperations>
@@ -1243,8 +1362,8 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/generateModel_solveCsp_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/generateModel_solveCsp_BWD/isApplicableMatch"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/generateModel_solveCsp_BWD/node"/>
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/generateModel_solveCsp_BWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/generateModel_solveCsp_BWD/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/generateModel_solveCsp_BWD/process"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/generateModel_solveCsp_BWD/sf1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/generateModel_solveCsp_BWD/_sf2f1"/>
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/ParallelGateway2ParallelStepAfterPG/generateModel_solveCsp_BWD/ruleResult"/>
@@ -1364,20 +1483,20 @@
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/checkTypes_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/checkTypes_BWD/match"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_FWD_EMoflonEdge_314">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_FWD_EMoflonEdge_314/_edge_sourceRef"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_FWD_EMoflonEdge_148">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_FWD_EMoflonEdge_148/_edge_sourceRef"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_FWD_EMoflonEdge_315">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_FWD_EMoflonEdge_315/_edge_outgoing"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_FWD_EMoflonEdge_149">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_FWD_EMoflonEdge_149/_edge_outgoing"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_BWD_EMoflonEdge_95">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_BWD_EMoflonEdge_95/_edge_invokedFlows"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_BWD_EMoflonEdge_43">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_BWD_EMoflonEdge_43/_edge_invokedFlows"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_FWD_EMoflonEdge_316">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_FWD_EMoflonEdge_316/_edge_flowElements"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_FWD_EMoflonEdge_150">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_FWD_EMoflonEdge_150/_edge_flowElements"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_BWD_EMoflonEdge_96">
-          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_BWD_EMoflonEdge_96/_edge_flows"/>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_BWD_EMoflonEdge_44">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/isAppropriate_BWD_EMoflonEdge_44/_edge_flows"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/checkAttributes_FWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/checkAttributes_FWD/tripleMatch"/>
@@ -1424,6 +1543,176 @@
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/generateModel_checkCsp_BWD">
           <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/SequenceFlowAfterPG2ParallelFlow/generateModel_checkCsp_BWD/csp"/>
+        </genOperations>
+      </genClasses>
+      <genClasses ecoreClass="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState">
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_FWD">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_FWD/process"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_FWD/inFlow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_FWD/event"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/perform_FWD">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/perform_FWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_FWD">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjectsToMatch_FWD">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjectsToMatch_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjectsToMatch_FWD/process"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjectsToMatch_FWD/inFlow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjectsToMatch_FWD/event"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_solveCsp_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_solveCsp_FWD/process"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_solveCsp_FWD/inFlow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_solveCsp_FWD/event"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_FWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_FWD/process"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_FWD/useCase"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_FWD/_p2uc"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_FWD/inFlow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_FWD/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_FWD/_if2f"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_FWD/event"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjects_FWD">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjects_FWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjects_FWD/process"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjects_FWD/useCase"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjects_FWD/_p2uc"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjects_FWD/inFlow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjects_FWD/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjects_FWD/_if2f"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjects_FWD/event"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjects_FWD/state"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjects_FWD/_e2s"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/checkTypes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/checkTypes_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_BWD">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_BWD/useCase"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_BWD/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_BWD/state"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/perform_BWD">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/perform_BWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_BWD">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjectsToMatch_BWD">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjectsToMatch_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjectsToMatch_BWD/useCase"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjectsToMatch_BWD/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjectsToMatch_BWD/state"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_solveCsp_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_solveCsp_BWD/useCase"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_solveCsp_BWD/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_solveCsp_BWD/state"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_BWD/process"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_BWD/useCase"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_BWD/_p2uc"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_BWD/inFlow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_BWD/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_BWD/_if2f"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_BWD/state"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjects_BWD">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjects_BWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjects_BWD/process"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjects_BWD/useCase"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjects_BWD/_p2uc"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjects_BWD/inFlow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjects_BWD/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjects_BWD/_if2f"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjects_BWD/event"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjects_BWD/state"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/registerObjects_BWD/_e2s"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/checkTypes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/checkTypes_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_FWD_EMoflonEdge_151">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_FWD_EMoflonEdge_151/_edge_flowElements"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_FWD_EMoflonEdge_152">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_FWD_EMoflonEdge_152/_edge_targetRef"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_FWD_EMoflonEdge_153">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_FWD_EMoflonEdge_153/_edge_incoming"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_BWD_EMoflonEdge_45">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isAppropriate_BWD_EMoflonEdge_45/_edge_finalState"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/checkAttributes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/checkAttributes_FWD/tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/checkAttributes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/checkAttributes_BWD/tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_CC">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_CC/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_CC/process"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_CC/useCase"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_CC/_p2uc"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_CC/inFlow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_CC/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_CC/_if2f"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_CC/event"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_CC/state"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_solveCsp_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_checkCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/isApplicable_checkCsp_CC/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/perform_CC">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/perform_CC/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/generateModel">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/generateModel/ruleEntryContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/generateModel/_if2fParameter"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/generateModel_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/generateModel_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/generateModel_solveCsp_BWD/process"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/generateModel_solveCsp_BWD/useCase"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/generateModel_solveCsp_BWD/_p2uc"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/generateModel_solveCsp_BWD/inFlow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/generateModel_solveCsp_BWD/flow"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/generateModel_solveCsp_BWD/_if2f"/>
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/generateModel_solveCsp_BWD/ruleResult"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/generateModel_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules/EndEvent2FinalState/generateModel_checkCsp_BWD/csp"/>
         </genOperations>
       </genClasses>
     </nestedGenPackages>

@@ -3,5 +3,7 @@
   <flows xsi:type="SimpleUseCase:BasicFlow">
     <steps xsi:type="SimpleUseCase:NormalStep" next="t2" id="t1"/>
     <steps xsi:type="SimpleUseCase:NormalStep" id="t2"/>
+    <finalState name="ee1"/>
   </flows>
+  <precondition name="se1"/>
 </SimpleUseCase:UseCase>
