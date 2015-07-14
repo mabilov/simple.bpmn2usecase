@@ -18,8 +18,7 @@ import org.eclipse.emf.ecore.plugin.EcorePlugin;
  * <!-- end-user-doc -->
  * @generated
  */
-public class SimpleUseCaseFactoryImpl extends EFactoryImpl implements
-		SimpleUseCaseFactory {
+public class SimpleUseCaseFactoryImpl extends EFactoryImpl implements SimpleUseCaseFactory {
 	/**
 	 * Creates the default factory implementation.
 	 * <!-- begin-user-doc -->
@@ -68,8 +67,7 @@ public class SimpleUseCaseFactoryImpl extends EFactoryImpl implements
 		case SimpleUseCasePackage.PARALLEL_STEP:
 			return createParallelStep();
 		default:
-			throw new IllegalArgumentException("The class '" + eClass.getName()
-					+ "' is not a valid classifier");
+			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
 	}
 

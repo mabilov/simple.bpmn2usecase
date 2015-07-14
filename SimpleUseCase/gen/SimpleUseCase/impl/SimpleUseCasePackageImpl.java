@@ -25,8 +25,7 @@ import org.eclipse.emf.ecore.impl.EPackageImpl;
  * <!-- end-user-doc -->
  * @generated
  */
-public class SimpleUseCasePackageImpl extends EPackageImpl implements
-		SimpleUseCasePackage {
+public class SimpleUseCasePackageImpl extends EPackageImpl implements SimpleUseCasePackage {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -116,13 +115,12 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements
 	 */
 	public static SimpleUseCasePackage init() {
 		if (isInited)
-			return (SimpleUseCasePackage) EPackage.Registry.INSTANCE
-					.getEPackage(SimpleUseCasePackage.eNS_URI);
+			return (SimpleUseCasePackage) EPackage.Registry.INSTANCE.getEPackage(SimpleUseCasePackage.eNS_URI);
 
 		// Obtain or create and register package
 		SimpleUseCasePackageImpl theSimpleUseCasePackage = (SimpleUseCasePackageImpl) (EPackage.Registry.INSTANCE
-				.get(eNS_URI) instanceof SimpleUseCasePackageImpl ? EPackage.Registry.INSTANCE
-				.get(eNS_URI) : new SimpleUseCasePackageImpl());
+				.get(eNS_URI) instanceof SimpleUseCasePackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI)
+						: new SimpleUseCasePackageImpl());
 
 		isInited = true;
 
@@ -136,8 +134,7 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements
 		theSimpleUseCasePackage.freeze();
 
 		// Update the registry and return the package
-		EPackage.Registry.INSTANCE.put(SimpleUseCasePackage.eNS_URI,
-				theSimpleUseCasePackage);
+		EPackage.Registry.INSTANCE.put(SimpleUseCasePackage.eNS_URI, theSimpleUseCasePackage);
 		return theSimpleUseCasePackage;
 	}
 
@@ -343,50 +340,39 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements
 		parallelStepEClass.getESuperTypes().add(this.getStep());
 
 		// Initialize classes, features, and operations; add parameters
-		initEClass(useCaseEClass, UseCase.class, "UseCase", !IS_ABSTRACT,
-				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getUseCase_Flows(), this.getFlow(), null, "flows", null,
-				0, -1, UseCase.class, !IS_TRANSIENT, !IS_VOLATILE,
-				IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
-				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(flowEClass, Flow.class, "Flow", IS_ABSTRACT, !IS_INTERFACE,
-				IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getFlow_Steps(), this.getStep(), null, "steps", null, 0,
-				-1, Flow.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-				IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE,
-				!IS_DERIVED, IS_ORDERED);
-
-		initEClass(basicFlowEClass, BasicFlow.class, "BasicFlow", !IS_ABSTRACT,
-				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(parallelFlowEClass, ParallelFlow.class, "ParallelFlow",
-				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getParallelFlow_Id(), ecorePackage.getEString(), "id",
-				null, 1, 1, ParallelFlow.class, !IS_TRANSIENT, !IS_VOLATILE,
-				IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED,
-				!IS_ORDERED);
-
-		initEClass(stepEClass, Step.class, "Step", IS_ABSTRACT, !IS_INTERFACE,
-				IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getStep_Next(), this.getStep(), null, "next", null, 0,
-				1, Step.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-				!IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE,
-				!IS_DERIVED, IS_ORDERED);
-		initEAttribute(getStep_Id(), ecorePackage.getEString(), "id", null, 1,
-				1, Step.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-				!IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-
-		initEClass(normalStepEClass, NormalStep.class, "NormalStep",
-				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(parallelStepEClass, ParallelStep.class, "ParallelStep",
-				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getParallelStep_InvokedFlows(), this.getParallelFlow(),
-				null, "invokedFlows", null, 0, -1, ParallelStep.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
-				IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+		initEClass(useCaseEClass, UseCase.class, "UseCase", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getUseCase_Flows(), this.getFlow(), null, "flows", null, 0, -1, UseCase.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
 				IS_ORDERED);
+
+		initEClass(flowEClass, Flow.class, "Flow", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getFlow_Steps(), this.getStep(), null, "steps", null, 0, -1, Flow.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+
+		initEClass(basicFlowEClass, BasicFlow.class, "BasicFlow", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(parallelFlowEClass, ParallelFlow.class, "ParallelFlow", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getParallelFlow_Id(), ecorePackage.getEString(), "id", null, 1, 1, ParallelFlow.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(stepEClass, Step.class, "Step", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getStep_Next(), this.getStep(), null, "next", null, 0, 1, Step.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEAttribute(getStep_Id(), ecorePackage.getEString(), "id", null, 1, 1, Step.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(normalStepEClass, NormalStep.class, "NormalStep", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(parallelStepEClass, ParallelStep.class, "ParallelStep", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getParallelStep_InvokedFlows(), this.getParallelFlow(), null, "invokedFlows", null, 0, -1,
+				ParallelStep.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

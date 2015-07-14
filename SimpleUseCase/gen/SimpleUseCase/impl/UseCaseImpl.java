@@ -72,8 +72,7 @@ public class UseCaseImpl extends EObjectImpl implements UseCase {
 	 */
 	public EList<Flow> getFlows() {
 		if (flows == null) {
-			flows = new EObjectContainmentEList<Flow>(Flow.class, this,
-					SimpleUseCasePackage.USE_CASE__FLOWS);
+			flows = new EObjectContainmentEList<Flow>(Flow.class, this, SimpleUseCasePackage.USE_CASE__FLOWS);
 		}
 		return flows;
 	}
@@ -84,8 +83,7 @@ public class UseCaseImpl extends EObjectImpl implements UseCase {
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd,
-			int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case SimpleUseCasePackage.USE_CASE__FLOWS:
 			return ((InternalEList<?>) getFlows()).basicRemove(otherEnd, msgs);

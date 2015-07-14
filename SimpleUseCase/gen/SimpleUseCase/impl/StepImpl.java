@@ -90,8 +90,8 @@ public abstract class StepImpl extends EObjectImpl implements Step {
 			next = (Step) eResolveProxy(oldNext);
 			if (next != oldNext) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE,
-							SimpleUseCasePackage.STEP__NEXT, oldNext, next));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, SimpleUseCasePackage.STEP__NEXT, oldNext,
+							next));
 			}
 		}
 		return next;
@@ -115,8 +115,7 @@ public abstract class StepImpl extends EObjectImpl implements Step {
 		Step oldNext = next;
 		next = newNext;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					SimpleUseCasePackage.STEP__NEXT, oldNext, next));
+			eNotify(new ENotificationImpl(this, Notification.SET, SimpleUseCasePackage.STEP__NEXT, oldNext, next));
 	}
 
 	/**
@@ -137,8 +136,7 @@ public abstract class StepImpl extends EObjectImpl implements Step {
 		String oldId = id;
 		id = newId;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					SimpleUseCasePackage.STEP__ID, oldId, id));
+			eNotify(new ENotificationImpl(this, Notification.SET, SimpleUseCasePackage.STEP__ID, oldId, id));
 	}
 
 	/**

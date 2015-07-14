@@ -84,8 +84,7 @@ public class ParallelFlowImpl extends FlowImpl implements ParallelFlow {
 		String oldId = id;
 		id = newId;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					SimpleUseCasePackage.PARALLEL_FLOW__ID, oldId, id));
+			eNotify(new ENotificationImpl(this, Notification.SET, SimpleUseCasePackage.PARALLEL_FLOW__ID, oldId, id));
 	}
 
 	/**

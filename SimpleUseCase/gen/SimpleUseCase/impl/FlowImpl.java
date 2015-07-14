@@ -72,8 +72,7 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 	 */
 	public EList<Step> getSteps() {
 		if (steps == null) {
-			steps = new EObjectContainmentEList<Step>(Step.class, this,
-					SimpleUseCasePackage.FLOW__STEPS);
+			steps = new EObjectContainmentEList<Step>(Step.class, this, SimpleUseCasePackage.FLOW__STEPS);
 		}
 		return steps;
 	}
@@ -84,8 +83,7 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd,
-			int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case SimpleUseCasePackage.FLOW__STEPS:
 			return ((InternalEList<?>) getSteps()).basicRemove(otherEnd, msgs);

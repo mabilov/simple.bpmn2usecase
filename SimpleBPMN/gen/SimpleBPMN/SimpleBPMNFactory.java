@@ -67,6 +67,15 @@ public interface SimpleBPMNFactory extends EFactory {
 	StartEvent createStartEvent();
 
 	/**
+	 * Returns a new object of class '<em>End Event</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>End Event</em>'.
+	 * @generated
+	 */
+	EndEvent createEndEvent();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

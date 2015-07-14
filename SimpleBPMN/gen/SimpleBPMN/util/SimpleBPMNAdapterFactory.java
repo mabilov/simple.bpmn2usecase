@@ -2,6 +2,8 @@
  */
 package SimpleBPMN.util;
 
+import SimpleBPMN.EndEvent;
+import SimpleBPMN.Event;
 import SimpleBPMN.FlowElement;
 import SimpleBPMN.FlowNode;
 import SimpleBPMN.ParallelGateway;
@@ -105,6 +107,16 @@ public class SimpleBPMNAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseStartEvent(StartEvent object) {
 			return createStartEventAdapter();
+		}
+
+		@Override
+		public Adapter caseEndEvent(EndEvent object) {
+			return createEndEventAdapter();
+		}
+
+		@Override
+		public Adapter caseEvent(Event object) {
+			return createEventAdapter();
 		}
 
 		@Override
@@ -221,6 +233,34 @@ public class SimpleBPMNAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createStartEventAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link SimpleBPMN.EndEvent <em>End Event</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see SimpleBPMN.EndEvent
+	 * @generated
+	 */
+	public Adapter createEndEventAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link SimpleBPMN.Event <em>Event</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see SimpleBPMN.Event
+	 * @generated
+	 */
+	public Adapter createEventAdapter() {
 		return null;
 	}
 

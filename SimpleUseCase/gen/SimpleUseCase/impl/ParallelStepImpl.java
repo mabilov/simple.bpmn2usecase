@@ -66,8 +66,7 @@ public class ParallelStepImpl extends StepImpl implements ParallelStep {
 	 */
 	public EList<ParallelFlow> getInvokedFlows() {
 		if (invokedFlows == null) {
-			invokedFlows = new EObjectResolvingEList<ParallelFlow>(
-					ParallelFlow.class, this,
+			invokedFlows = new EObjectResolvingEList<ParallelFlow>(ParallelFlow.class, this,
 					SimpleUseCasePackage.PARALLEL_STEP__INVOKED_FLOWS);
 		}
 		return invokedFlows;
@@ -98,8 +97,7 @@ public class ParallelStepImpl extends StepImpl implements ParallelStep {
 		switch (featureID) {
 		case SimpleUseCasePackage.PARALLEL_STEP__INVOKED_FLOWS:
 			getInvokedFlows().clear();
-			getInvokedFlows().addAll(
-					(Collection<? extends ParallelFlow>) newValue);
+			getInvokedFlows().addAll((Collection<? extends ParallelFlow>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);

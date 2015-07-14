@@ -25,5 +25,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//ParallelGateway/isDiverging"/>
     </genClasses>
     <genClasses ecoreClass="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//StartEvent"/>
+    <genClasses ecoreClass="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//EndEvent"/>
+    <genClasses image="false" ecoreClass="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//Event"/>
   </genPackages>
 </genmodel:GenModel>

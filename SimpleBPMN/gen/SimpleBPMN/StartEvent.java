@@ -15,7 +15,7 @@ package SimpleBPMN;
  * @model
  * @generated
  */
-public interface StartEvent extends FlowNode { // <-- [user code injected with eMoflon]
+public interface StartEvent extends Event { // <-- [user code injected with eMoflon]
 
 	// [user code injected with eMoflon] -->
 } // StartEvent

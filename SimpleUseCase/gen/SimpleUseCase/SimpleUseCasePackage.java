@@ -54,8 +54,7 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	SimpleUseCasePackage eINSTANCE = SimpleUseCase.impl.SimpleUseCasePackageImpl
-			.init();
+	SimpleUseCasePackage eINSTANCE = SimpleUseCase.impl.SimpleUseCasePackageImpl.init();
 
 	/**
 	 * The meta object id for the '{@link SimpleUseCase.impl.UseCaseImpl <em>Use Case</em>}' class.
@@ -636,8 +635,7 @@ public interface SimpleUseCasePackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PARALLEL_STEP__INVOKED_FLOWS = eINSTANCE
-				.getParallelStep_InvokedFlows();
+		EReference PARALLEL_STEP__INVOKED_FLOWS = eINSTANCE.getParallelStep_InvokedFlows();
 
 	}
 

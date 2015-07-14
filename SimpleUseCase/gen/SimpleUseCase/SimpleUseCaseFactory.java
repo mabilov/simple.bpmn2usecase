@@ -19,8 +19,7 @@ public interface SimpleUseCaseFactory extends EFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	SimpleUseCaseFactory eINSTANCE = SimpleUseCase.impl.SimpleUseCaseFactoryImpl
-			.init();
+	SimpleUseCaseFactory eINSTANCE = SimpleUseCase.impl.SimpleUseCaseFactoryImpl.init();
 
 	/**
 	 * Returns a new object of class '<em>Use Case</em>'.

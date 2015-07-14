@@ -2,8 +2,8 @@
  */
 package SimpleBPMN.impl;
 
+import SimpleBPMN.Event;
 import SimpleBPMN.SimpleBPMNPackage;
-import SimpleBPMN.StartEvent;
 
 import org.eclipse.emf.ecore.EClass;
 // <-- [user defined imports]
@@ -11,20 +11,20 @@ import org.eclipse.emf.ecore.EClass;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Start Event</b></em>'.
+ * An implementation of the model object '<em><b>Event</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * </p>
  *
  * @generated
  */
-public class StartEventImpl extends EventImpl implements StartEvent {
+public abstract class EventImpl extends FlowNodeImpl implements Event {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected StartEventImpl() {
+	protected EventImpl() {
 		super();
 	}
 
@@ -35,9 +35,9 @@ public class StartEventImpl extends EventImpl implements StartEvent {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return SimpleBPMNPackage.Literals.START_EVENT;
+		return SimpleBPMNPackage.Literals.EVENT;
 	}
 	// <-- [user code injected with eMoflon]
 
 	// [user code injected with eMoflon] -->
-} //StartEventImpl
+} //EventImpl

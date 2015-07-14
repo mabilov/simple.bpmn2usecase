@@ -369,6 +369,61 @@ public interface SimpleBPMNPackage extends EPackage {
 	int PARALLEL_GATEWAY_OPERATION_COUNT = FLOW_NODE_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link SimpleBPMN.impl.EventImpl <em>Event</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see SimpleBPMN.impl.EventImpl
+	 * @see SimpleBPMN.impl.SimpleBPMNPackageImpl#getEvent()
+	 * @generated
+	 */
+	int EVENT = 8;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EVENT__ID = FLOW_NODE__ID;
+
+	/**
+	 * The feature id for the '<em><b>Outgoing</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EVENT__OUTGOING = FLOW_NODE__OUTGOING;
+
+	/**
+	 * The feature id for the '<em><b>Incoming</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EVENT__INCOMING = FLOW_NODE__INCOMING;
+
+	/**
+	 * The number of structural features of the '<em>Event</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EVENT_FEATURE_COUNT = FLOW_NODE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Event</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EVENT_OPERATION_COUNT = FLOW_NODE_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link SimpleBPMN.impl.StartEventImpl <em>Start Event</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -385,7 +440,7 @@ public interface SimpleBPMNPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int START_EVENT__ID = FLOW_NODE__ID;
+	int START_EVENT__ID = EVENT__ID;
 
 	/**
 	 * The feature id for the '<em><b>Outgoing</b></em>' reference list.
@@ -394,7 +449,7 @@ public interface SimpleBPMNPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int START_EVENT__OUTGOING = FLOW_NODE__OUTGOING;
+	int START_EVENT__OUTGOING = EVENT__OUTGOING;
 
 	/**
 	 * The feature id for the '<em><b>Incoming</b></em>' reference list.
@@ -403,7 +458,7 @@ public interface SimpleBPMNPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int START_EVENT__INCOMING = FLOW_NODE__INCOMING;
+	int START_EVENT__INCOMING = EVENT__INCOMING;
 
 	/**
 	 * The number of structural features of the '<em>Start Event</em>' class.
@@ -412,7 +467,7 @@ public interface SimpleBPMNPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int START_EVENT_FEATURE_COUNT = FLOW_NODE_FEATURE_COUNT + 0;
+	int START_EVENT_FEATURE_COUNT = EVENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of operations of the '<em>Start Event</em>' class.
@@ -421,7 +476,62 @@ public interface SimpleBPMNPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int START_EVENT_OPERATION_COUNT = FLOW_NODE_OPERATION_COUNT + 0;
+	int START_EVENT_OPERATION_COUNT = EVENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link SimpleBPMN.impl.EndEventImpl <em>End Event</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see SimpleBPMN.impl.EndEventImpl
+	 * @see SimpleBPMN.impl.SimpleBPMNPackageImpl#getEndEvent()
+	 * @generated
+	 */
+	int END_EVENT = 7;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int END_EVENT__ID = EVENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Outgoing</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int END_EVENT__OUTGOING = EVENT__OUTGOING;
+
+	/**
+	 * The feature id for the '<em><b>Incoming</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int END_EVENT__INCOMING = EVENT__INCOMING;
+
+	/**
+	 * The number of structural features of the '<em>End Event</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int END_EVENT_FEATURE_COUNT = EVENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>End Event</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int END_EVENT_OPERATION_COUNT = EVENT_OPERATION_COUNT + 0;
 
 	/**
 	 * Returns the meta object for class '{@link SimpleBPMN.Process <em>Process</em>}'.
@@ -582,6 +692,26 @@ public interface SimpleBPMNPackage extends EPackage {
 	EClass getStartEvent();
 
 	/**
+	 * Returns the meta object for class '{@link SimpleBPMN.EndEvent <em>End Event</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>End Event</em>'.
+	 * @see SimpleBPMN.EndEvent
+	 * @generated
+	 */
+	EClass getEndEvent();
+
+	/**
+	 * Returns the meta object for class '{@link SimpleBPMN.Event <em>Event</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Event</em>'.
+	 * @see SimpleBPMN.Event
+	 * @generated
+	 */
+	EClass getEvent();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -737,6 +867,26 @@ public interface SimpleBPMNPackage extends EPackage {
 		 * @generated
 		 */
 		EClass START_EVENT = eINSTANCE.getStartEvent();
+
+		/**
+		 * The meta object literal for the '{@link SimpleBPMN.impl.EndEventImpl <em>End Event</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see SimpleBPMN.impl.EndEventImpl
+		 * @see SimpleBPMN.impl.SimpleBPMNPackageImpl#getEndEvent()
+		 * @generated
+		 */
+		EClass END_EVENT = eINSTANCE.getEndEvent();
+
+		/**
+		 * The meta object literal for the '{@link SimpleBPMN.impl.EventImpl <em>Event</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see SimpleBPMN.impl.EventImpl
+		 * @see SimpleBPMN.impl.SimpleBPMNPackageImpl#getEvent()
+		 * @generated
+		 */
+		EClass EVENT = eINSTANCE.getEvent();
 
 	}
 

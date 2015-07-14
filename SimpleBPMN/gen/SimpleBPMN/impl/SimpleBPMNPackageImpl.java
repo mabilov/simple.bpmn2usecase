@@ -2,6 +2,8 @@
  */
 package SimpleBPMN.impl;
 
+import SimpleBPMN.EndEvent;
+import SimpleBPMN.Event;
 import SimpleBPMN.FlowElement;
 import SimpleBPMN.FlowNode;
 import SimpleBPMN.ParallelGateway;
@@ -73,6 +75,20 @@ public class SimpleBPMNPackageImpl extends EPackageImpl implements SimpleBPMNPac
 	 * @generated
 	 */
 	private EClass startEventEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass endEventEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass eventEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -277,6 +293,24 @@ public class SimpleBPMNPackageImpl extends EPackageImpl implements SimpleBPMNPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getEndEvent() {
+		return endEventEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getEvent() {
+		return eventEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public SimpleBPMNFactory getSimpleBPMNFactory() {
 		return (SimpleBPMNFactory) getEFactoryInstance();
 	}
@@ -322,6 +356,10 @@ public class SimpleBPMNPackageImpl extends EPackageImpl implements SimpleBPMNPac
 		createEAttribute(parallelGatewayEClass, PARALLEL_GATEWAY__IS_DIVERGING);
 
 		startEventEClass = createEClass(START_EVENT);
+
+		endEventEClass = createEClass(END_EVENT);
+
+		eventEClass = createEClass(EVENT);
 	}
 
 	/**
@@ -357,7 +395,9 @@ public class SimpleBPMNPackageImpl extends EPackageImpl implements SimpleBPMNPac
 		sequenceFlowEClass.getESuperTypes().add(this.getFlowElement());
 		taskEClass.getESuperTypes().add(this.getFlowNode());
 		parallelGatewayEClass.getESuperTypes().add(this.getFlowNode());
-		startEventEClass.getESuperTypes().add(this.getFlowNode());
+		startEventEClass.getESuperTypes().add(this.getEvent());
+		endEventEClass.getESuperTypes().add(this.getEvent());
+		eventEClass.getESuperTypes().add(this.getFlowNode());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(processEClass, SimpleBPMN.Process.class, "Process", !IS_ABSTRACT, !IS_INTERFACE,
@@ -401,6 +441,11 @@ public class SimpleBPMNPackageImpl extends EPackageImpl implements SimpleBPMNPac
 
 		initEClass(startEventEClass, StartEvent.class, "StartEvent", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(endEventEClass, EndEvent.class, "EndEvent", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(eventEClass, Event.class, "Event", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);
