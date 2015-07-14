@@ -71,8 +71,7 @@ public class ProcessImpl extends EObjectImpl implements SimpleBPMN.Process {
 	 */
 	public EList<FlowElement> getFlowElements() {
 		if (flowElements == null) {
-			flowElements = new EObjectContainmentEList<FlowElement>(
-					FlowElement.class, this,
+			flowElements = new EObjectContainmentEList<FlowElement>(FlowElement.class, this,
 					SimpleBPMNPackage.PROCESS__FLOW_ELEMENTS);
 		}
 		return flowElements;
@@ -84,12 +83,10 @@ public class ProcessImpl extends EObjectImpl implements SimpleBPMN.Process {
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd,
-			int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case SimpleBPMNPackage.PROCESS__FLOW_ELEMENTS:
-			return ((InternalEList<?>) getFlowElements()).basicRemove(otherEnd,
-					msgs);
+			return ((InternalEList<?>) getFlowElements()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -119,8 +116,7 @@ public class ProcessImpl extends EObjectImpl implements SimpleBPMN.Process {
 		switch (featureID) {
 		case SimpleBPMNPackage.PROCESS__FLOW_ELEMENTS:
 			getFlowElements().clear();
-			getFlowElements().addAll(
-					(Collection<? extends FlowElement>) newValue);
+			getFlowElements().addAll((Collection<? extends FlowElement>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);

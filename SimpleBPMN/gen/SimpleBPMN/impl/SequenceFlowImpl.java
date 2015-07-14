@@ -82,8 +82,7 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 			if (sourceRef != oldSourceRef) {
 				if (eNotificationRequired())
 					eNotify(new ENotificationImpl(this, Notification.RESOLVE,
-							SimpleBPMNPackage.SEQUENCE_FLOW__SOURCE_REF,
-							oldSourceRef, sourceRef));
+							SimpleBPMNPackage.SEQUENCE_FLOW__SOURCE_REF, oldSourceRef, sourceRef));
 			}
 		}
 		return sourceRef;
@@ -103,15 +102,12 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSourceRef(FlowNode newSourceRef,
-			NotificationChain msgs) {
+	public NotificationChain basicSetSourceRef(FlowNode newSourceRef, NotificationChain msgs) {
 		FlowNode oldSourceRef = sourceRef;
 		sourceRef = newSourceRef;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this,
-					Notification.SET,
-					SimpleBPMNPackage.SEQUENCE_FLOW__SOURCE_REF, oldSourceRef,
-					newSourceRef);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					SimpleBPMNPackage.SEQUENCE_FLOW__SOURCE_REF, oldSourceRef, newSourceRef);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -129,20 +125,17 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 		if (newSourceRef != sourceRef) {
 			NotificationChain msgs = null;
 			if (sourceRef != null)
-				msgs = ((InternalEObject) sourceRef).eInverseRemove(this,
-						SimpleBPMNPackage.FLOW_NODE__OUTGOING, FlowNode.class,
-						msgs);
+				msgs = ((InternalEObject) sourceRef).eInverseRemove(this, SimpleBPMNPackage.FLOW_NODE__OUTGOING,
+						FlowNode.class, msgs);
 			if (newSourceRef != null)
-				msgs = ((InternalEObject) newSourceRef).eInverseAdd(this,
-						SimpleBPMNPackage.FLOW_NODE__OUTGOING, FlowNode.class,
-						msgs);
+				msgs = ((InternalEObject) newSourceRef).eInverseAdd(this, SimpleBPMNPackage.FLOW_NODE__OUTGOING,
+						FlowNode.class, msgs);
 			msgs = basicSetSourceRef(newSourceRef, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					SimpleBPMNPackage.SEQUENCE_FLOW__SOURCE_REF, newSourceRef,
-					newSourceRef));
+			eNotify(new ENotificationImpl(this, Notification.SET, SimpleBPMNPackage.SEQUENCE_FLOW__SOURCE_REF,
+					newSourceRef, newSourceRef));
 	}
 
 	/**
@@ -157,8 +150,7 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 			if (targetRef != oldTargetRef) {
 				if (eNotificationRequired())
 					eNotify(new ENotificationImpl(this, Notification.RESOLVE,
-							SimpleBPMNPackage.SEQUENCE_FLOW__TARGET_REF,
-							oldTargetRef, targetRef));
+							SimpleBPMNPackage.SEQUENCE_FLOW__TARGET_REF, oldTargetRef, targetRef));
 			}
 		}
 		return targetRef;
@@ -178,15 +170,12 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTargetRef(FlowNode newTargetRef,
-			NotificationChain msgs) {
+	public NotificationChain basicSetTargetRef(FlowNode newTargetRef, NotificationChain msgs) {
 		FlowNode oldTargetRef = targetRef;
 		targetRef = newTargetRef;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this,
-					Notification.SET,
-					SimpleBPMNPackage.SEQUENCE_FLOW__TARGET_REF, oldTargetRef,
-					newTargetRef);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					SimpleBPMNPackage.SEQUENCE_FLOW__TARGET_REF, oldTargetRef, newTargetRef);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -204,20 +193,17 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 		if (newTargetRef != targetRef) {
 			NotificationChain msgs = null;
 			if (targetRef != null)
-				msgs = ((InternalEObject) targetRef).eInverseRemove(this,
-						SimpleBPMNPackage.FLOW_NODE__INCOMING, FlowNode.class,
-						msgs);
+				msgs = ((InternalEObject) targetRef).eInverseRemove(this, SimpleBPMNPackage.FLOW_NODE__INCOMING,
+						FlowNode.class, msgs);
 			if (newTargetRef != null)
-				msgs = ((InternalEObject) newTargetRef).eInverseAdd(this,
-						SimpleBPMNPackage.FLOW_NODE__INCOMING, FlowNode.class,
-						msgs);
+				msgs = ((InternalEObject) newTargetRef).eInverseAdd(this, SimpleBPMNPackage.FLOW_NODE__INCOMING,
+						FlowNode.class, msgs);
 			msgs = basicSetTargetRef(newTargetRef, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					SimpleBPMNPackage.SEQUENCE_FLOW__TARGET_REF, newTargetRef,
-					newTargetRef));
+			eNotify(new ENotificationImpl(this, Notification.SET, SimpleBPMNPackage.SEQUENCE_FLOW__TARGET_REF,
+					newTargetRef, newTargetRef));
 	}
 
 	/**
@@ -226,20 +212,17 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseAdd(InternalEObject otherEnd,
-			int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case SimpleBPMNPackage.SEQUENCE_FLOW__SOURCE_REF:
 			if (sourceRef != null)
-				msgs = ((InternalEObject) sourceRef).eInverseRemove(this,
-						SimpleBPMNPackage.FLOW_NODE__OUTGOING, FlowNode.class,
-						msgs);
+				msgs = ((InternalEObject) sourceRef).eInverseRemove(this, SimpleBPMNPackage.FLOW_NODE__OUTGOING,
+						FlowNode.class, msgs);
 			return basicSetSourceRef((FlowNode) otherEnd, msgs);
 		case SimpleBPMNPackage.SEQUENCE_FLOW__TARGET_REF:
 			if (targetRef != null)
-				msgs = ((InternalEObject) targetRef).eInverseRemove(this,
-						SimpleBPMNPackage.FLOW_NODE__INCOMING, FlowNode.class,
-						msgs);
+				msgs = ((InternalEObject) targetRef).eInverseRemove(this, SimpleBPMNPackage.FLOW_NODE__INCOMING,
+						FlowNode.class, msgs);
 			return basicSetTargetRef((FlowNode) otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
@@ -251,8 +234,7 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd,
-			int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case SimpleBPMNPackage.SEQUENCE_FLOW__SOURCE_REF:
 			return basicSetSourceRef(null, msgs);

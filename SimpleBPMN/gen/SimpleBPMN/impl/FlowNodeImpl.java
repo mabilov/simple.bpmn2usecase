@@ -81,10 +81,8 @@ public abstract class FlowNodeImpl extends FlowElementImpl implements FlowNode {
 	 */
 	public EList<SequenceFlow> getOutgoing() {
 		if (outgoing == null) {
-			outgoing = new EObjectWithInverseResolvingEList<SequenceFlow>(
-					SequenceFlow.class, this,
-					SimpleBPMNPackage.FLOW_NODE__OUTGOING,
-					SimpleBPMNPackage.SEQUENCE_FLOW__SOURCE_REF);
+			outgoing = new EObjectWithInverseResolvingEList<SequenceFlow>(SequenceFlow.class, this,
+					SimpleBPMNPackage.FLOW_NODE__OUTGOING, SimpleBPMNPackage.SEQUENCE_FLOW__SOURCE_REF);
 		}
 		return outgoing;
 	}
@@ -96,10 +94,8 @@ public abstract class FlowNodeImpl extends FlowElementImpl implements FlowNode {
 	 */
 	public EList<SequenceFlow> getIncoming() {
 		if (incoming == null) {
-			incoming = new EObjectWithInverseResolvingEList<SequenceFlow>(
-					SequenceFlow.class, this,
-					SimpleBPMNPackage.FLOW_NODE__INCOMING,
-					SimpleBPMNPackage.SEQUENCE_FLOW__TARGET_REF);
+			incoming = new EObjectWithInverseResolvingEList<SequenceFlow>(SequenceFlow.class, this,
+					SimpleBPMNPackage.FLOW_NODE__INCOMING, SimpleBPMNPackage.SEQUENCE_FLOW__TARGET_REF);
 		}
 		return incoming;
 	}
@@ -111,15 +107,12 @@ public abstract class FlowNodeImpl extends FlowElementImpl implements FlowNode {
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public NotificationChain eInverseAdd(InternalEObject otherEnd,
-			int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case SimpleBPMNPackage.FLOW_NODE__OUTGOING:
-			return ((InternalEList<InternalEObject>) (InternalEList<?>) getOutgoing())
-					.basicAdd(otherEnd, msgs);
+			return ((InternalEList<InternalEObject>) (InternalEList<?>) getOutgoing()).basicAdd(otherEnd, msgs);
 		case SimpleBPMNPackage.FLOW_NODE__INCOMING:
-			return ((InternalEList<InternalEObject>) (InternalEList<?>) getIncoming())
-					.basicAdd(otherEnd, msgs);
+			return ((InternalEList<InternalEObject>) (InternalEList<?>) getIncoming()).basicAdd(otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
@@ -130,15 +123,12 @@ public abstract class FlowNodeImpl extends FlowElementImpl implements FlowNode {
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd,
-			int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case SimpleBPMNPackage.FLOW_NODE__OUTGOING:
-			return ((InternalEList<?>) getOutgoing()).basicRemove(otherEnd,
-					msgs);
+			return ((InternalEList<?>) getOutgoing()).basicRemove(otherEnd, msgs);
 		case SimpleBPMNPackage.FLOW_NODE__INCOMING:
-			return ((InternalEList<?>) getIncoming()).basicRemove(otherEnd,
-					msgs);
+			return ((InternalEList<?>) getIncoming()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}

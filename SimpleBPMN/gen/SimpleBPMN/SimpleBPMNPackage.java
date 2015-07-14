@@ -333,13 +333,22 @@ public interface SimpleBPMNPackage extends EPackage {
 	int PARALLEL_GATEWAY__INCOMING = FLOW_NODE__INCOMING;
 
 	/**
+	 * The feature id for the '<em><b>conv</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARALLEL_GATEWAY__CONV = FLOW_NODE_FEATURE_COUNT + 0;
+
+	/**
 	 * The feature id for the '<em><b>Is Diverging</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PARALLEL_GATEWAY__IS_DIVERGING = FLOW_NODE_FEATURE_COUNT + 0;
+	int PARALLEL_GATEWAY__IS_DIVERGING = FLOW_NODE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Parallel Gateway</em>' class.
@@ -348,7 +357,7 @@ public interface SimpleBPMNPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARALLEL_GATEWAY_FEATURE_COUNT = FLOW_NODE_FEATURE_COUNT + 1;
+	int PARALLEL_GATEWAY_FEATURE_COUNT = FLOW_NODE_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Parallel Gateway</em>' class.
@@ -541,6 +550,17 @@ public interface SimpleBPMNPackage extends EPackage {
 	EClass getParallelGateway();
 
 	/**
+	 * Returns the meta object for the reference '{@link SimpleBPMN.ParallelGateway#get__conv <em>conv</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>conv</em>'.
+	 * @see SimpleBPMN.ParallelGateway#get__conv()
+	 * @see #getParallelGateway()
+	 * @generated
+	 */
+	EReference getParallelGateway___conv();
+
+	/**
 	 * Returns the meta object for the attribute '{@link SimpleBPMN.ParallelGateway#isIsDiverging <em>Is Diverging</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -662,8 +682,7 @@ public interface SimpleBPMNPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SEQUENCE_FLOW__SOURCE_REF = eINSTANCE
-				.getSequenceFlow_SourceRef();
+		EReference SEQUENCE_FLOW__SOURCE_REF = eINSTANCE.getSequenceFlow_SourceRef();
 
 		/**
 		 * The meta object literal for the '<em><b>Target Ref</b></em>' reference feature.
@@ -671,8 +690,7 @@ public interface SimpleBPMNPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SEQUENCE_FLOW__TARGET_REF = eINSTANCE
-				.getSequenceFlow_TargetRef();
+		EReference SEQUENCE_FLOW__TARGET_REF = eINSTANCE.getSequenceFlow_TargetRef();
 
 		/**
 		 * The meta object literal for the '{@link SimpleBPMN.impl.TaskImpl <em>Task</em>}' class.
@@ -695,13 +713,20 @@ public interface SimpleBPMNPackage extends EPackage {
 		EClass PARALLEL_GATEWAY = eINSTANCE.getParallelGateway();
 
 		/**
+		 * The meta object literal for the '<em><b>conv</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PARALLEL_GATEWAY__CONV = eINSTANCE.getParallelGateway___conv();
+
+		/**
 		 * The meta object literal for the '<em><b>Is Diverging</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute PARALLEL_GATEWAY__IS_DIVERGING = eINSTANCE
-				.getParallelGateway_IsDiverging();
+		EAttribute PARALLEL_GATEWAY__IS_DIVERGING = eINSTANCE.getParallelGateway_IsDiverging();
 
 		/**
 		 * The meta object literal for the '{@link SimpleBPMN.impl.StartEventImpl <em>Start Event</em>}' class.

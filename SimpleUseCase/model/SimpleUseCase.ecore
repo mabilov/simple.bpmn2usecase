@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="ASCII"?>
-<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="SimpleUseCase" nsURI="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore"
-    nsPrefix="SimpleUseCase">
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="SimpleUseCase" nsURI="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore" nsPrefix="SimpleUseCase">
   <eClassifiers xsi:type="ecore:EClass" name="UseCase">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="flows" upperBound="-1"
-        eType="#//Flow" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="flows" upperBound="-1" eType="//Flow" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Flow" abstract="true">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="steps" upperBound="-1"
-        eType="#//Step" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="steps" upperBound="-1" eType="//Step" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BasicFlow" eSuperTypes="#//Flow"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ParallelFlow" eSuperTypes="#//Flow">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" ordered="false" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" iD="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BasicFlow" eSuperTypes="//Flow"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ParallelFlow" eSuperTypes="//Flow">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" ordered="false" lowerBound="1" iD="true">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Step" abstract="true">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="next" eType="#//Step"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" ordered="false" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="next" eType="//Step"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" ordered="false" lowerBound="1" iD="true">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="NormalStep" eSuperTypes="#//Step"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ParallelStep" eSuperTypes="#//Step">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="invokedFlows" upperBound="-1"
-        eType="#//ParallelFlow"/>
+  <eClassifiers xsi:type="ecore:EClass" name="NormalStep" eSuperTypes="//Step"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ParallelStep" eSuperTypes="//Step">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="invokedFlows" upperBound="-1" eType="//ParallelFlow"/>
   </eClassifiers>
 </ecore:EPackage>

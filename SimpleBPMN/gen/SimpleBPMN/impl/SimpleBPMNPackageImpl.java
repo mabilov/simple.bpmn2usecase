@@ -24,8 +24,7 @@ import org.eclipse.emf.ecore.impl.EPackageImpl;
  * <!-- end-user-doc -->
  * @generated
  */
-public class SimpleBPMNPackageImpl extends EPackageImpl implements
-		SimpleBPMNPackage {
+public class SimpleBPMNPackageImpl extends EPackageImpl implements SimpleBPMNPackage {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -115,13 +114,12 @@ public class SimpleBPMNPackageImpl extends EPackageImpl implements
 	 */
 	public static SimpleBPMNPackage init() {
 		if (isInited)
-			return (SimpleBPMNPackage) EPackage.Registry.INSTANCE
-					.getEPackage(SimpleBPMNPackage.eNS_URI);
+			return (SimpleBPMNPackage) EPackage.Registry.INSTANCE.getEPackage(SimpleBPMNPackage.eNS_URI);
 
 		// Obtain or create and register package
 		SimpleBPMNPackageImpl theSimpleBPMNPackage = (SimpleBPMNPackageImpl) (EPackage.Registry.INSTANCE
-				.get(eNS_URI) instanceof SimpleBPMNPackageImpl ? EPackage.Registry.INSTANCE
-				.get(eNS_URI) : new SimpleBPMNPackageImpl());
+				.get(eNS_URI) instanceof SimpleBPMNPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI)
+						: new SimpleBPMNPackageImpl());
 
 		isInited = true;
 
@@ -135,8 +133,7 @@ public class SimpleBPMNPackageImpl extends EPackageImpl implements
 		theSimpleBPMNPackage.freeze();
 
 		// Update the registry and return the package
-		EPackage.Registry.INSTANCE.put(SimpleBPMNPackage.eNS_URI,
-				theSimpleBPMNPackage);
+		EPackage.Registry.INSTANCE.put(SimpleBPMNPackage.eNS_URI, theSimpleBPMNPackage);
 		return theSimpleBPMNPackage;
 	}
 
@@ -253,9 +250,17 @@ public class SimpleBPMNPackageImpl extends EPackageImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getParallelGateway___conv() {
+		return (EReference) parallelGatewayEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EAttribute getParallelGateway_IsDiverging() {
-		return (EAttribute) parallelGatewayEClass.getEStructuralFeatures().get(
-				0);
+		return (EAttribute) parallelGatewayEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -313,6 +318,7 @@ public class SimpleBPMNPackageImpl extends EPackageImpl implements
 		taskEClass = createEClass(TASK);
 
 		parallelGatewayEClass = createEClass(PARALLEL_GATEWAY);
+		createEReference(parallelGatewayEClass, PARALLEL_GATEWAY__CONV);
 		createEAttribute(parallelGatewayEClass, PARALLEL_GATEWAY__IS_DIVERGING);
 
 		startEventEClass = createEClass(START_EVENT);
@@ -354,61 +360,47 @@ public class SimpleBPMNPackageImpl extends EPackageImpl implements
 		startEventEClass.getESuperTypes().add(this.getFlowNode());
 
 		// Initialize classes, features, and operations; add parameters
-		initEClass(processEClass, SimpleBPMN.Process.class, "Process",
-				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getProcess_FlowElements(), this.getFlowElement(), null,
-				"flowElements", null, 0, -1, SimpleBPMN.Process.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
-				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
-				IS_ORDERED);
-
-		initEClass(flowElementEClass, FlowElement.class, "FlowElement",
-				IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getFlowElement_Id(), ecorePackage.getEString(), "id",
-				null, 1, 1, FlowElement.class, !IS_TRANSIENT, !IS_VOLATILE,
-				IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED,
-				!IS_ORDERED);
-
-		initEClass(flowNodeEClass, FlowNode.class, "FlowNode", IS_ABSTRACT,
-				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getFlowNode_Outgoing(), this.getSequenceFlow(),
-				this.getSequenceFlow_SourceRef(), "outgoing", null, 0, -1,
-				FlowNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-				!IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE,
-				!IS_DERIVED, IS_ORDERED);
-		initEReference(getFlowNode_Incoming(), this.getSequenceFlow(),
-				this.getSequenceFlow_TargetRef(), "incoming", null, 0, -1,
-				FlowNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-				!IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE,
-				!IS_DERIVED, IS_ORDERED);
-
-		initEClass(sequenceFlowEClass, SequenceFlow.class, "SequenceFlow",
-				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getSequenceFlow_SourceRef(), this.getFlowNode(),
-				this.getFlowNode_Outgoing(), "sourceRef", null, 1, 1,
-				SequenceFlow.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-				!IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE,
-				!IS_DERIVED, IS_ORDERED);
-		initEReference(getSequenceFlow_TargetRef(), this.getFlowNode(),
-				this.getFlowNode_Incoming(), "targetRef", null, 1, 1,
-				SequenceFlow.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-				!IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE,
-				!IS_DERIVED, IS_ORDERED);
-
-		initEClass(taskEClass, Task.class, "Task", !IS_ABSTRACT, !IS_INTERFACE,
+		initEClass(processEClass, SimpleBPMN.Process.class, "Process", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getProcess_FlowElements(), this.getFlowElement(), null, "flowElements", null, 0, -1,
+				SimpleBPMN.Process.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(parallelGatewayEClass, ParallelGateway.class,
-				"ParallelGateway", !IS_ABSTRACT, !IS_INTERFACE,
+		initEClass(flowElementEClass, FlowElement.class, "FlowElement", IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getParallelGateway_IsDiverging(),
-				ecorePackage.getEBoolean(), "isDiverging", "true", 1, 1,
-				ParallelGateway.class, !IS_TRANSIENT, !IS_VOLATILE,
-				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED,
-				!IS_ORDERED);
+		initEAttribute(getFlowElement_Id(), ecorePackage.getEString(), "id", null, 1, 1, FlowElement.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(startEventEClass, StartEvent.class, "StartEvent",
-				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(flowNodeEClass, FlowNode.class, "FlowNode", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getFlowNode_Outgoing(), this.getSequenceFlow(), this.getSequenceFlow_SourceRef(), "outgoing",
+				null, 0, -1, FlowNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
+				IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getFlowNode_Incoming(), this.getSequenceFlow(), this.getSequenceFlow_TargetRef(), "incoming",
+				null, 0, -1, FlowNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
+				IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(sequenceFlowEClass, SequenceFlow.class, "SequenceFlow", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getSequenceFlow_SourceRef(), this.getFlowNode(), this.getFlowNode_Outgoing(), "sourceRef", null,
+				1, 1, SequenceFlow.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSequenceFlow_TargetRef(), this.getFlowNode(), this.getFlowNode_Incoming(), "targetRef", null,
+				1, 1, SequenceFlow.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(taskEClass, Task.class, "Task", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(parallelGatewayEClass, ParallelGateway.class, "ParallelGateway", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getParallelGateway___conv(), this.getParallelGateway(), null, "__conv", null, 0, 1,
+				ParallelGateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getParallelGateway_IsDiverging(), ecorePackage.getEBoolean(), "isDiverging", "true", 1, 1,
+				ParallelGateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, !IS_ORDERED);
+
+		initEClass(startEventEClass, StartEvent.class, "StartEvent", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

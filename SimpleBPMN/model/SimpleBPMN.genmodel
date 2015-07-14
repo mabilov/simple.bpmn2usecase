@@ -21,6 +21,7 @@
     </genClasses>
     <genClasses ecoreClass="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//Task"/>
     <genClasses ecoreClass="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//ParallelGateway">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//ParallelGateway/__conv"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//ParallelGateway/isDiverging"/>
     </genClasses>
     <genClasses ecoreClass="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//StartEvent"/>

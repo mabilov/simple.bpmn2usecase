@@ -23,8 +23,7 @@ import org.eclipse.emf.ecore.plugin.EcorePlugin;
  * <!-- end-user-doc -->
  * @generated
  */
-public class SimpleBPMNFactoryImpl extends EFactoryImpl implements
-		SimpleBPMNFactory {
+public class SimpleBPMNFactoryImpl extends EFactoryImpl implements SimpleBPMNFactory {
 	/**
 	 * Creates the default factory implementation.
 	 * <!-- begin-user-doc -->
@@ -73,8 +72,7 @@ public class SimpleBPMNFactoryImpl extends EFactoryImpl implements
 		case SimpleBPMNPackage.START_EVENT:
 			return createStartEvent();
 		default:
-			throw new IllegalArgumentException("The class '" + eClass.getName()
-					+ "' is not a valid classifier");
+			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
 	}
 

@@ -27,8 +27,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *
  * @generated
  */
-public abstract class FlowElementImpl extends EObjectImpl implements
-		FlowElement {
+public abstract class FlowElementImpl extends EObjectImpl implements FlowElement {
 	/**
 	 * The default value of the '{@link #getId() <em>Id</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -86,8 +85,7 @@ public abstract class FlowElementImpl extends EObjectImpl implements
 		String oldId = id;
 		id = newId;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					SimpleBPMNPackage.FLOW_ELEMENT__ID, oldId, id));
+			eNotify(new ENotificationImpl(this, Notification.SET, SimpleBPMNPackage.FLOW_ELEMENT__ID, oldId, id));
 	}
 
 	/**
