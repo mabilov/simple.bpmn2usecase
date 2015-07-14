@@ -58,16 +58,14 @@ public class Bpmn2UseCaseFactoryImpl extends EFactoryImpl implements Bpmn2UseCas
 		switch (eClass.getClassifierID()) {
 		case Bpmn2UseCasePackage.P2UC:
 			return createP2UC();
-		case Bpmn2UseCasePackage.T2NS:
-			return createT2NS();
-		case Bpmn2UseCasePackage.PG2PS:
-			return createPG2PS();
 		case Bpmn2UseCasePackage.SF2F:
 			return createSF2F();
 		case Bpmn2UseCasePackage.SE2BF:
 			return createSE2BF();
 		case Bpmn2UseCasePackage.EE2FS:
 			return createEE2FS();
+		case Bpmn2UseCasePackage.FN2S:
+			return createFN2S();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -81,26 +79,6 @@ public class Bpmn2UseCaseFactoryImpl extends EFactoryImpl implements Bpmn2UseCas
 	public P2UC createP2UC() {
 		P2UCImpl p2UC = new P2UCImpl();
 		return p2UC;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public T2NS createT2NS() {
-		T2NSImpl t2NS = new T2NSImpl();
-		return t2NS;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PG2PS createPG2PS() {
-		PG2PSImpl pg2PS = new PG2PSImpl();
-		return pg2PS;
 	}
 
 	/**
@@ -131,6 +109,16 @@ public class Bpmn2UseCaseFactoryImpl extends EFactoryImpl implements Bpmn2UseCas
 	public EE2FS createEE2FS() {
 		EE2FSImpl ee2FS = new EE2FSImpl();
 		return ee2FS;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FN2S createFN2S() {
+		FN2SImpl fn2S = new FN2SImpl();
+		return fn2S;
 	}
 
 	/**

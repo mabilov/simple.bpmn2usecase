@@ -1,15 +1,15 @@
 package org.moflon.tie;
 
 import java.io.IOException;
+
 import org.apache.log4j.BasicConfigurator;
-import org.moflon.ide.debug.DebugSynchronizationHelper;
 import org.eclipse.emf.ecore.EObject;
+import org.moflon.ide.debug.DebugSynchronizationHelper;
 
 import Bpmn2UseCase.Bpmn2UseCasePackage;
+import SimpleBPMN.Process;
 import SimpleBPMN.util.PatternDiscovery;
 import SimpleUseCase.UseCase;
-import SimpleUseCase.util.FirstStepDiscovery;
-import SimpleBPMN.Process;
 
 public class Bpmn2UseCaseTrafo extends DebugSynchronizationHelper {
 
@@ -69,9 +69,12 @@ public class Bpmn2UseCaseTrafo extends DebugSynchronizationHelper {
 	}
 
 	public void performBackward() {
-		FirstStepDiscovery.discover((UseCase) this.trg);
+		SimpleUseCase.util.PreProcessor.process((UseCase) this.trg);
+		
 		integrateBackward();
-
+		
+		SimpleBPMN.util.PostProcessor.process((Process) this.src);
+		
 		saveSrc("instances/bwd/bpmn/" + _patterName + ".xmi");
 		saveCorr("instances/bwd/corr/" + _patterName + ".xmi");
 		saveSynchronizationProtocol("instances/bwd/protocol/" + _patterName + ".xmi");

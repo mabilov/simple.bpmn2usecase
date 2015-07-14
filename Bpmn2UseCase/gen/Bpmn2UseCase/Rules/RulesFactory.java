@@ -76,6 +76,15 @@ public interface RulesFactory extends EFactory {
 	ParallelGateway2ParallelStepAfterSE createParallelGateway2ParallelStepAfterSE();
 
 	/**
+	 * Returns a new object of class '<em>End Event2 Final State First</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>End Event2 Final State First</em>'.
+	 * @generated
+	 */
+	EndEvent2FinalStateFirst createEndEvent2FinalStateFirst();
+
+	/**
 	 * Returns a new object of class '<em>Parallel Gateway2 Parallel Step After PG</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -94,13 +103,13 @@ public interface RulesFactory extends EFactory {
 	SequenceFlowAfterPG2ParallelFlow createSequenceFlowAfterPG2ParallelFlow();
 
 	/**
-	 * Returns a new object of class '<em>End Event2 Final State</em>'.
+	 * Returns a new object of class '<em>End Event2 Final State Seq</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>End Event2 Final State</em>'.
+	 * @return a new object of class '<em>End Event2 Final State Seq</em>'.
 	 * @generated
 	 */
-	EndEvent2FinalState createEndEvent2FinalState();
+	EndEvent2FinalStateSeq createEndEvent2FinalStateSeq();
 
 	/**
 	 * Returns the package supported by this factory.

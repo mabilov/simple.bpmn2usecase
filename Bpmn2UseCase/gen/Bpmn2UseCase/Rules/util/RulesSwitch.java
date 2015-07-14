@@ -140,6 +140,15 @@ public class RulesSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST: {
+			EndEvent2FinalStateFirst endEvent2FinalStateFirst = (EndEvent2FinalStateFirst) theEObject;
+			T result = caseEndEvent2FinalStateFirst(endEvent2FinalStateFirst);
+			if (result == null)
+				result = caseAbstractRule(endEvent2FinalStateFirst);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG: {
 			ParallelGateway2ParallelStepAfterPG parallelGateway2ParallelStepAfterPG = (ParallelGateway2ParallelStepAfterPG) theEObject;
 			T result = caseParallelGateway2ParallelStepAfterPG(parallelGateway2ParallelStepAfterPG);
@@ -163,6 +172,15 @@ public class RulesSwitch<T> extends Switch<T> {
 			T result = caseEndEvent2FinalState(endEvent2FinalState);
 			if (result == null)
 				result = caseAbstractRule(endEvent2FinalState);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case RulesPackage.END_EVENT2_FINAL_STATE_SEQ: {
+			EndEvent2FinalStateSeq endEvent2FinalStateSeq = (EndEvent2FinalStateSeq) theEObject;
+			T result = caseEndEvent2FinalStateSeq(endEvent2FinalStateSeq);
+			if (result == null)
+				result = caseAbstractRule(endEvent2FinalStateSeq);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -293,6 +311,21 @@ public class RulesSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>End Event2 Final State First</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>End Event2 Final State First</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEndEvent2FinalStateFirst(EndEvent2FinalStateFirst object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Parallel Gateway2 Parallel Step After PG</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -334,6 +367,21 @@ public class RulesSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseEndEvent2FinalState(EndEvent2FinalState object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>End Event2 Final State Seq</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>End Event2 Final State Seq</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEndEvent2FinalStateSeq(EndEvent2FinalStateSeq object) {
 		return null;
 	}
 

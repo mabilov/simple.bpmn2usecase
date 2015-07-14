@@ -3,8 +3,8 @@
 package Bpmn2UseCase.Rules.impl;
 
 import Bpmn2UseCase.Bpmn2UseCaseFactory;
+import Bpmn2UseCase.FN2S;
 import Bpmn2UseCase.P2UC;
-import Bpmn2UseCase.PG2PS;
 
 import Bpmn2UseCase.Rules.RulesPackage;
 import Bpmn2UseCase.Rules.SequenceFlowAfterPG2ParallelFlow;
@@ -19,6 +19,7 @@ import SimpleBPMN.SimpleBPMNFactory;
 import SimpleUseCase.ParallelFlow;
 import SimpleUseCase.ParallelStep;
 import SimpleUseCase.SimpleUseCaseFactory;
+import SimpleUseCase.Step;
 import SimpleUseCase.UseCase;
 
 import TGGLanguage.csp.CSP;
@@ -167,9 +168,9 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 			throw new RuntimeException("Pattern matching in node [perform transformation] failed." + " Variables: "
 					+ "[this] = " + this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ".");
 		}
-		ParallelGateway pgw = (ParallelGateway) result1_bindingAndBlack[0];
-		ParallelStep step = (ParallelStep) result1_bindingAndBlack[1];
-		PG2PS _pg2ps = (PG2PS) result1_bindingAndBlack[2];
+		FN2S _pg2ps = (FN2S) result1_bindingAndBlack[0];
+		ParallelGateway pgw = (ParallelGateway) result1_bindingAndBlack[1];
+		ParallelStep step = (ParallelStep) result1_bindingAndBlack[2];
 		SequenceFlow sf = (SequenceFlow) result1_bindingAndBlack[3];
 		SimpleBPMN.Process process = (SimpleBPMN.Process) result1_bindingAndBlack[4];
 		UseCase useCase = (UseCase) result1_bindingAndBlack[5];
@@ -193,12 +194,12 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 
 		// bookkeeping for edges
 		Object[] result3_black = SequenceFlowAfterPG2ParallelFlowImpl
-				.pattern_SequenceFlowAfterPG2ParallelFlow_1_3_blackBBBBBBBBBB(ruleresult, pgw, step, _pg2ps, sf,
+				.pattern_SequenceFlowAfterPG2ParallelFlow_1_3_blackBBBBBBBBBB(ruleresult, _pg2ps, pgw, step, sf,
 						process, useCase, _p2uc, flow, _sf2pf);
 		if (result3_black == null) {
 			throw new RuntimeException("Pattern matching in node [bookkeeping for edges] failed." + " Variables: "
-					+ "[ruleresult] = " + ruleresult + ", " + "[pgw] = " + pgw + ", " + "[step] = " + step + ", "
-					+ "[_pg2ps] = " + _pg2ps + ", " + "[sf] = " + sf + ", " + "[process] = " + process + ", "
+					+ "[ruleresult] = " + ruleresult + ", " + "[_pg2ps] = " + _pg2ps + ", " + "[pgw] = " + pgw + ", "
+					+ "[step] = " + step + ", " + "[sf] = " + sf + ", " + "[process] = " + process + ", "
 					+ "[useCase] = " + useCase + ", " + "[_p2uc] = " + _p2uc + ", " + "[flow] = " + flow + ", "
 					+ "[_sf2pf] = " + _sf2pf + ".");
 		}
@@ -215,7 +216,7 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		// perform postprocessing story node is empty
 		// register objects
 		SequenceFlowAfterPG2ParallelFlowImpl.pattern_SequenceFlowAfterPG2ParallelFlow_1_5_expressionBBBBBBBBBBB(this,
-				ruleresult, pgw, step, _pg2ps, sf, process, useCase, _p2uc, flow, _sf2pf);
+				ruleresult, _pg2ps, pgw, step, sf, process, useCase, _p2uc, flow, _sf2pf);
 		return SequenceFlowAfterPG2ParallelFlowImpl
 				.pattern_SequenceFlowAfterPG2ParallelFlow_1_6_expressionFB(ruleresult);
 	}
@@ -250,23 +251,23 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		SequenceFlow sf = (SequenceFlow) result2_binding[1];
 		SimpleBPMN.Process process = (SimpleBPMN.Process) result2_binding[2];
 		for (Object[] result2_black : SequenceFlowAfterPG2ParallelFlowImpl
-				.pattern_SequenceFlowAfterPG2ParallelFlow_2_2_blackBFFBBFFB(pgw, sf, process, match)) {
-			ParallelStep step = (ParallelStep) result2_black[1];
-			PG2PS _pg2ps = (PG2PS) result2_black[2];
+				.pattern_SequenceFlowAfterPG2ParallelFlow_2_2_blackFBFBBFFB(pgw, sf, process, match)) {
+			FN2S _pg2ps = (FN2S) result2_black[0];
+			ParallelStep step = (ParallelStep) result2_black[2];
 			UseCase useCase = (UseCase) result2_black[5];
 			P2UC _p2uc = (P2UC) result2_black[6];
 			// ForEach find context
 			for (Object[] result3_black : SequenceFlowAfterPG2ParallelFlowImpl
-					.pattern_SequenceFlowAfterPG2ParallelFlow_2_3_blackBBBBBBB(pgw, step, _pg2ps, sf, process, useCase,
+					.pattern_SequenceFlowAfterPG2ParallelFlow_2_3_blackBBBBBBB(_pg2ps, pgw, step, sf, process, useCase,
 							_p2uc)) {
 				Object[] result3_green = SequenceFlowAfterPG2ParallelFlowImpl
-						.pattern_SequenceFlowAfterPG2ParallelFlow_2_3_greenBBBBBBBFFFFFFFFF(pgw, step, _pg2ps, sf,
+						.pattern_SequenceFlowAfterPG2ParallelFlow_2_3_greenBBBBBBBFFFFFFFFF(_pg2ps, pgw, step, sf,
 								process, useCase, _p2uc);
 				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[7];
-				// EMoflonEdge sf__pgw____sourceRef = (EMoflonEdge) result3_green[8];
-				// EMoflonEdge pgw__sf____outgoing = (EMoflonEdge) result3_green[9];
-				// EMoflonEdge _pg2ps__pgw____source = (EMoflonEdge) result3_green[10];
-				// EMoflonEdge _pg2ps__step____target = (EMoflonEdge) result3_green[11];
+				// EMoflonEdge _pg2ps__step____target = (EMoflonEdge) result3_green[8];
+				// EMoflonEdge _pg2ps__pgw____source = (EMoflonEdge) result3_green[9];
+				// EMoflonEdge sf__pgw____sourceRef = (EMoflonEdge) result3_green[10];
+				// EMoflonEdge pgw__sf____outgoing = (EMoflonEdge) result3_green[11];
 				// EMoflonEdge process__pgw____flowElements = (EMoflonEdge) result3_green[12];
 				// EMoflonEdge process__sf____flowElements = (EMoflonEdge) result3_green[13];
 				// EMoflonEdge _p2uc__process____source = (EMoflonEdge) result3_green[14];
@@ -275,11 +276,11 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 				// solve CSP
 				Object[] result4_bindingAndBlack = SequenceFlowAfterPG2ParallelFlowImpl
 						.pattern_SequenceFlowAfterPG2ParallelFlow_2_4_bindingAndBlackFBBBBBBBBB(this, isApplicableMatch,
-								pgw, step, _pg2ps, sf, process, useCase, _p2uc);
+								_pg2ps, pgw, step, sf, process, useCase, _p2uc);
 				if (result4_bindingAndBlack == null) {
 					throw new RuntimeException("Pattern matching in node [solve CSP] failed." + " Variables: "
 							+ "[this] = " + this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ", "
-							+ "[pgw] = " + pgw + ", " + "[step] = " + step + ", " + "[_pg2ps] = " + _pg2ps + ", "
+							+ "[_pg2ps] = " + _pg2ps + ", " + "[pgw] = " + pgw + ", " + "[step] = " + step + ", "
 							+ "[sf] = " + sf + ", " + "[process] = " + process + ", " + "[useCase] = " + useCase + ", "
 							+ "[_p2uc] = " + _p2uc + ".");
 				}
@@ -357,8 +358,8 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, ParallelGateway pgw, ParallelStep step,
-			PG2PS _pg2ps, SequenceFlow sf, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc) {// Create CSP
+	public CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, FN2S _pg2ps, ParallelGateway pgw,
+			ParallelStep step, SequenceFlow sf, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
 
@@ -383,9 +384,9 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		eq.solve(var_sf_id, var_flow_id);
 
 		// Snapshot pattern match on which CSP is solved
+		isApplicableMatch.registerObject("_pg2ps", _pg2ps);
 		isApplicableMatch.registerObject("pgw", pgw);
 		isApplicableMatch.registerObject("step", step);
-		isApplicableMatch.registerObject("_pg2ps", _pg2ps);
 		isApplicableMatch.registerObject("sf", sf);
 		isApplicableMatch.registerObject("process", process);
 		isApplicableMatch.registerObject("useCase", useCase);
@@ -407,11 +408,11 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void registerObjects_FWD(PerformRuleResult ruleresult, EObject pgw, EObject step, EObject _pg2ps, EObject sf,
+	public void registerObjects_FWD(PerformRuleResult ruleresult, EObject _pg2ps, EObject pgw, EObject step, EObject sf,
 			EObject process, EObject useCase, EObject _p2uc, EObject flow, EObject _sf2pf) {
+		ruleresult.registerObject("_pg2ps", _pg2ps);
 		ruleresult.registerObject("pgw", pgw);
 		ruleresult.registerObject("step", step);
-		ruleresult.registerObject("_pg2ps", _pg2ps);
 		ruleresult.registerObject("sf", sf);
 		ruleresult.registerObject("process", process);
 		ruleresult.registerObject("useCase", useCase);
@@ -505,9 +506,9 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 			throw new RuntimeException("Pattern matching in node [perform transformation] failed." + " Variables: "
 					+ "[this] = " + this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ".");
 		}
-		ParallelGateway pgw = (ParallelGateway) result1_bindingAndBlack[0];
-		ParallelStep step = (ParallelStep) result1_bindingAndBlack[1];
-		PG2PS _pg2ps = (PG2PS) result1_bindingAndBlack[2];
+		FN2S _pg2ps = (FN2S) result1_bindingAndBlack[0];
+		ParallelGateway pgw = (ParallelGateway) result1_bindingAndBlack[1];
+		ParallelStep step = (ParallelStep) result1_bindingAndBlack[2];
 		SimpleBPMN.Process process = (SimpleBPMN.Process) result1_bindingAndBlack[3];
 		UseCase useCase = (UseCase) result1_bindingAndBlack[4];
 		P2UC _p2uc = (P2UC) result1_bindingAndBlack[5];
@@ -531,12 +532,12 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 
 		// bookkeeping for edges
 		Object[] result3_black = SequenceFlowAfterPG2ParallelFlowImpl
-				.pattern_SequenceFlowAfterPG2ParallelFlow_11_3_blackBBBBBBBBBB(ruleresult, pgw, step, _pg2ps, sf,
+				.pattern_SequenceFlowAfterPG2ParallelFlow_11_3_blackBBBBBBBBBB(ruleresult, _pg2ps, pgw, step, sf,
 						process, useCase, _p2uc, flow, _sf2pf);
 		if (result3_black == null) {
 			throw new RuntimeException("Pattern matching in node [bookkeeping for edges] failed." + " Variables: "
-					+ "[ruleresult] = " + ruleresult + ", " + "[pgw] = " + pgw + ", " + "[step] = " + step + ", "
-					+ "[_pg2ps] = " + _pg2ps + ", " + "[sf] = " + sf + ", " + "[process] = " + process + ", "
+					+ "[ruleresult] = " + ruleresult + ", " + "[_pg2ps] = " + _pg2ps + ", " + "[pgw] = " + pgw + ", "
+					+ "[step] = " + step + ", " + "[sf] = " + sf + ", " + "[process] = " + process + ", "
 					+ "[useCase] = " + useCase + ", " + "[_p2uc] = " + _p2uc + ", " + "[flow] = " + flow + ", "
 					+ "[_sf2pf] = " + _sf2pf + ".");
 		}
@@ -553,7 +554,7 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		// perform postprocessing story node is empty
 		// register objects
 		SequenceFlowAfterPG2ParallelFlowImpl.pattern_SequenceFlowAfterPG2ParallelFlow_11_5_expressionBBBBBBBBBBB(this,
-				ruleresult, pgw, step, _pg2ps, sf, process, useCase, _p2uc, flow, _sf2pf);
+				ruleresult, _pg2ps, pgw, step, sf, process, useCase, _p2uc, flow, _sf2pf);
 		return SequenceFlowAfterPG2ParallelFlowImpl
 				.pattern_SequenceFlowAfterPG2ParallelFlow_11_6_expressionFB(ruleresult);
 	}
@@ -588,22 +589,22 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		UseCase useCase = (UseCase) result2_binding[1];
 		ParallelFlow flow = (ParallelFlow) result2_binding[2];
 		for (Object[] result2_black : SequenceFlowAfterPG2ParallelFlowImpl
-				.pattern_SequenceFlowAfterPG2ParallelFlow_12_2_blackFBFFBFBB(step, useCase, flow, match)) {
-			ParallelGateway pgw = (ParallelGateway) result2_black[0];
-			PG2PS _pg2ps = (PG2PS) result2_black[2];
+				.pattern_SequenceFlowAfterPG2ParallelFlow_12_2_blackFFBFBFBB(step, useCase, flow, match)) {
+			FN2S _pg2ps = (FN2S) result2_black[0];
+			ParallelGateway pgw = (ParallelGateway) result2_black[1];
 			SimpleBPMN.Process process = (SimpleBPMN.Process) result2_black[3];
 			P2UC _p2uc = (P2UC) result2_black[5];
 			// ForEach find context
 			for (Object[] result3_black : SequenceFlowAfterPG2ParallelFlowImpl
-					.pattern_SequenceFlowAfterPG2ParallelFlow_12_3_blackBBBBBBB(pgw, step, _pg2ps, process, useCase,
+					.pattern_SequenceFlowAfterPG2ParallelFlow_12_3_blackBBBBBBB(_pg2ps, pgw, step, process, useCase,
 							_p2uc, flow)) {
 				Object[] result3_green = SequenceFlowAfterPG2ParallelFlowImpl
-						.pattern_SequenceFlowAfterPG2ParallelFlow_12_3_greenBBBBBBBFFFFFFFF(pgw, step, _pg2ps, process,
+						.pattern_SequenceFlowAfterPG2ParallelFlow_12_3_greenBBBBBBBFFFFFFFF(_pg2ps, pgw, step, process,
 								useCase, _p2uc, flow);
 				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[7];
-				// EMoflonEdge step__flow____invokedFlows = (EMoflonEdge) result3_green[8];
+				// EMoflonEdge _pg2ps__step____target = (EMoflonEdge) result3_green[8];
 				// EMoflonEdge _pg2ps__pgw____source = (EMoflonEdge) result3_green[9];
-				// EMoflonEdge _pg2ps__step____target = (EMoflonEdge) result3_green[10];
+				// EMoflonEdge step__flow____invokedFlows = (EMoflonEdge) result3_green[10];
 				// EMoflonEdge process__pgw____flowElements = (EMoflonEdge) result3_green[11];
 				// EMoflonEdge useCase__flow____flows = (EMoflonEdge) result3_green[12];
 				// EMoflonEdge _p2uc__process____source = (EMoflonEdge) result3_green[13];
@@ -612,11 +613,11 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 				// solve CSP
 				Object[] result4_bindingAndBlack = SequenceFlowAfterPG2ParallelFlowImpl
 						.pattern_SequenceFlowAfterPG2ParallelFlow_12_4_bindingAndBlackFBBBBBBBBB(this,
-								isApplicableMatch, pgw, step, _pg2ps, process, useCase, _p2uc, flow);
+								isApplicableMatch, _pg2ps, pgw, step, process, useCase, _p2uc, flow);
 				if (result4_bindingAndBlack == null) {
 					throw new RuntimeException("Pattern matching in node [solve CSP] failed." + " Variables: "
 							+ "[this] = " + this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ", "
-							+ "[pgw] = " + pgw + ", " + "[step] = " + step + ", " + "[_pg2ps] = " + _pg2ps + ", "
+							+ "[_pg2ps] = " + _pg2ps + ", " + "[pgw] = " + pgw + ", " + "[step] = " + step + ", "
 							+ "[process] = " + process + ", " + "[useCase] = " + useCase + ", " + "[_p2uc] = " + _p2uc
 							+ ", " + "[flow] = " + flow + ".");
 				}
@@ -692,8 +693,8 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, ParallelGateway pgw, ParallelStep step,
-			PG2PS _pg2ps, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc, ParallelFlow flow) {// Create CSP
+	public CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, FN2S _pg2ps, ParallelGateway pgw,
+			ParallelStep step, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc, ParallelFlow flow) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
 
@@ -718,9 +719,9 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		eq.solve(var_sf_id, var_flow_id);
 
 		// Snapshot pattern match on which CSP is solved
+		isApplicableMatch.registerObject("_pg2ps", _pg2ps);
 		isApplicableMatch.registerObject("pgw", pgw);
 		isApplicableMatch.registerObject("step", step);
-		isApplicableMatch.registerObject("_pg2ps", _pg2ps);
 		isApplicableMatch.registerObject("process", process);
 		isApplicableMatch.registerObject("useCase", useCase);
 		isApplicableMatch.registerObject("_p2uc", _p2uc);
@@ -742,11 +743,11 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void registerObjects_BWD(PerformRuleResult ruleresult, EObject pgw, EObject step, EObject _pg2ps, EObject sf,
+	public void registerObjects_BWD(PerformRuleResult ruleresult, EObject _pg2ps, EObject pgw, EObject step, EObject sf,
 			EObject process, EObject useCase, EObject _p2uc, EObject flow, EObject _sf2pf) {
+		ruleresult.registerObject("_pg2ps", _pg2ps);
 		ruleresult.registerObject("pgw", pgw);
 		ruleresult.registerObject("step", step);
-		ruleresult.registerObject("_pg2ps", _pg2ps);
 		ruleresult.registerObject("sf", sf);
 		ruleresult.registerObject("process", process);
 		ruleresult.registerObject("useCase", useCase);
@@ -771,7 +772,7 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_148(EMoflonEdge _edge_sourceRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_371(EMoflonEdge _edge_sourceRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SequenceFlowAfterPG2ParallelFlowImpl
 				.pattern_SequenceFlowAfterPG2ParallelFlow_20_1_bindingAndBlackFFB(this);
@@ -830,7 +831,7 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_149(EMoflonEdge _edge_outgoing) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_372(EMoflonEdge _edge_outgoing) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SequenceFlowAfterPG2ParallelFlowImpl
 				.pattern_SequenceFlowAfterPG2ParallelFlow_21_1_bindingAndBlackFFB(this);
@@ -889,7 +890,7 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_43(EMoflonEdge _edge_invokedFlows) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_116(EMoflonEdge _edge_invokedFlows) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SequenceFlowAfterPG2ParallelFlowImpl
 				.pattern_SequenceFlowAfterPG2ParallelFlow_22_1_bindingAndBlackFFB(this);
@@ -948,7 +949,7 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_150(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_373(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SequenceFlowAfterPG2ParallelFlowImpl
 				.pattern_SequenceFlowAfterPG2ParallelFlow_23_1_bindingAndBlackFFB(this);
@@ -1007,7 +1008,7 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_44(EMoflonEdge _edge_flows) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_117(EMoflonEdge _edge_flows) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SequenceFlowAfterPG2ParallelFlowImpl
 				.pattern_SequenceFlowAfterPG2ParallelFlow_24_1_bindingAndBlackFFB(this);
@@ -1073,6 +1074,10 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 
+		Optional<TripleMatchNodeMapping> matchFor_pg2ps = tripleMatch.getNodeMappings().stream()
+				.filter(nm -> nm.getNodeName().equals("_pg2ps")).findAny();
+		Bpmn2UseCase.FN2S _pg2ps = (Bpmn2UseCase.FN2S) matchFor_pg2ps.get().getNode();
+
 		Optional<TripleMatchNodeMapping> matchForPgw = tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("pgw")).findAny();
 		SimpleBPMN.ParallelGateway pgw = (SimpleBPMN.ParallelGateway) matchForPgw.get().getNode();
@@ -1080,10 +1085,6 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		Optional<TripleMatchNodeMapping> matchForStep = tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("step")).findAny();
 		SimpleUseCase.ParallelStep step = (SimpleUseCase.ParallelStep) matchForStep.get().getNode();
-
-		Optional<TripleMatchNodeMapping> matchFor_pg2ps = tripleMatch.getNodeMappings().stream()
-				.filter(nm -> nm.getNodeName().equals("_pg2ps")).findAny();
-		Bpmn2UseCase.PG2PS _pg2ps = (Bpmn2UseCase.PG2PS) matchFor_pg2ps.get().getNode();
 
 		Optional<TripleMatchNodeMapping> matchForSf = tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("sf")).findAny();
@@ -1158,6 +1159,10 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 
+		Optional<TripleMatchNodeMapping> matchFor_pg2ps = tripleMatch.getNodeMappings().stream()
+				.filter(nm -> nm.getNodeName().equals("_pg2ps")).findAny();
+		Bpmn2UseCase.FN2S _pg2ps = (Bpmn2UseCase.FN2S) matchFor_pg2ps.get().getNode();
+
 		Optional<TripleMatchNodeMapping> matchForPgw = tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("pgw")).findAny();
 		SimpleBPMN.ParallelGateway pgw = (SimpleBPMN.ParallelGateway) matchForPgw.get().getNode();
@@ -1165,10 +1170,6 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		Optional<TripleMatchNodeMapping> matchForStep = tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("step")).findAny();
 		SimpleUseCase.ParallelStep step = (SimpleUseCase.ParallelStep) matchForStep.get().getNode();
-
-		Optional<TripleMatchNodeMapping> matchFor_pg2ps = tripleMatch.getNodeMappings().stream()
-				.filter(nm -> nm.getNodeName().equals("_pg2ps")).findAny();
-		Bpmn2UseCase.PG2PS _pg2ps = (Bpmn2UseCase.PG2PS) matchFor_pg2ps.get().getNode();
 
 		Optional<TripleMatchNodeMapping> matchForSf = tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("sf")).findAny();
@@ -1262,19 +1263,19 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		UseCase useCase = (UseCase) result2_binding[4];
 		ParallelFlow flow = (ParallelFlow) result2_binding[5];
 		for (Object[] result2_black : SequenceFlowAfterPG2ParallelFlowImpl
-				.pattern_SequenceFlowAfterPG2ParallelFlow_27_2_blackBBFBBBFBBB(pgw, step, sf, process, useCase, flow,
+				.pattern_SequenceFlowAfterPG2ParallelFlow_27_2_blackFBBBBBFBBB(pgw, step, sf, process, useCase, flow,
 						sourceMatch, targetMatch)) {
-			PG2PS _pg2ps = (PG2PS) result2_black[2];
+			FN2S _pg2ps = (FN2S) result2_black[0];
 			P2UC _p2uc = (P2UC) result2_black[6];
 			Object[] result2_green = SequenceFlowAfterPG2ParallelFlowImpl
-					.pattern_SequenceFlowAfterPG2ParallelFlow_27_2_greenBBBBBBBBBFB(pgw, step, _pg2ps, sf, process,
+					.pattern_SequenceFlowAfterPG2ParallelFlow_27_2_greenBBBBBBBBBFB(_pg2ps, pgw, step, sf, process,
 							useCase, _p2uc, flow, sourceMatch, targetMatch);
 			IsApplicableMatchCC isApplicableMatch = (IsApplicableMatchCC) result2_green[9];
 
 			// check csp
 			Object[] result3_bindingAndBlack = SequenceFlowAfterPG2ParallelFlowImpl
 					.pattern_SequenceFlowAfterPG2ParallelFlow_27_3_bindingAndBlackFBBBBBBBBBBBB(this, isApplicableMatch,
-							pgw, step, _pg2ps, sf, process, useCase, _p2uc, flow, sourceMatch, targetMatch);
+							_pg2ps, pgw, step, sf, process, useCase, _p2uc, flow, sourceMatch, targetMatch);
 			if (result3_bindingAndBlack != null) {
 				// CSP csp = (CSP) result3_bindingAndBlack[0];
 
@@ -1301,9 +1302,9 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP isApplicable_solveCsp_CC(IsApplicableMatchCC isApplicableMatch, ParallelGateway pgw, ParallelStep step,
-			PG2PS _pg2ps, SequenceFlow sf, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc, ParallelFlow flow,
-			Match sourceMatch, Match targetMatch) {// Create CSP
+	public CSP isApplicable_solveCsp_CC(IsApplicableMatchCC isApplicableMatch, FN2S _pg2ps, ParallelGateway pgw,
+			ParallelStep step, SequenceFlow sf, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc,
+			ParallelFlow flow, Match sourceMatch, Match targetMatch) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
 
@@ -1329,9 +1330,9 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		eq.solve(var_sf_id, var_flow_id);
 
 		// Snapshot pattern match on which CSP is solved
+		isApplicableMatch.registerObject("_pg2ps", _pg2ps);
 		isApplicableMatch.registerObject("pgw", pgw);
 		isApplicableMatch.registerObject("step", step);
-		isApplicableMatch.registerObject("_pg2ps", _pg2ps);
 		isApplicableMatch.registerObject("sf", sf);
 		isApplicableMatch.registerObject("process", process);
 		isApplicableMatch.registerObject("useCase", useCase);
@@ -1370,9 +1371,9 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 			throw new RuntimeException("Pattern matching in node [create correspondence links] failed." + " Variables: "
 					+ "[isApplicableMatch] = " + isApplicableMatch + ".");
 		}
-		// ParallelGateway pgw = (ParallelGateway) result2_bindingAndBlack[0];
-		// ParallelStep step = (ParallelStep) result2_bindingAndBlack[1];
-		// PG2PS _pg2ps = (PG2PS) result2_bindingAndBlack[2];
+		// FN2S _pg2ps = (FN2S) result2_bindingAndBlack[0];
+		// ParallelGateway pgw = (ParallelGateway) result2_bindingAndBlack[1];
+		// ParallelStep step = (ParallelStep) result2_bindingAndBlack[2];
 		SequenceFlow sf = (SequenceFlow) result2_bindingAndBlack[3];
 		// SimpleBPMN.Process process = (SimpleBPMN.Process) result2_bindingAndBlack[4];
 		// UseCase useCase = (UseCase) result2_bindingAndBlack[5];
@@ -1391,7 +1392,7 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ModelgeneratorRuleResult generateModel(RuleEntryContainer ruleEntryContainer, PG2PS _pg2psParameter) {
+	public ModelgeneratorRuleResult generateModel(RuleEntryContainer ruleEntryContainer, FN2S _pg2psParameter) {
 		// create result
 		Object[] result1_black = SequenceFlowAfterPG2ParallelFlowImpl
 				.pattern_SequenceFlowAfterPG2ParallelFlow_31_1_blackB(this);
@@ -1408,9 +1409,9 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		for (Object[] result2_black : SequenceFlowAfterPG2ParallelFlowImpl
 				.pattern_SequenceFlowAfterPG2ParallelFlow_31_2_blackFFFFFFFBB(ruleEntryContainer, ruleResult)) {
 			// RuleEntryList _pg2psList = (RuleEntryList) result2_black[0];
-			ParallelGateway pgw = (ParallelGateway) result2_black[1];
-			PG2PS _pg2ps = (PG2PS) result2_black[2];
-			ParallelStep step = (ParallelStep) result2_black[3];
+			FN2S _pg2ps = (FN2S) result2_black[1];
+			ParallelStep step = (ParallelStep) result2_black[2];
+			ParallelGateway pgw = (ParallelGateway) result2_black[3];
 			SimpleBPMN.Process process = (SimpleBPMN.Process) result2_black[4];
 			P2UC _p2uc = (P2UC) result2_black[5];
 			UseCase useCase = (UseCase) result2_black[6];
@@ -1418,11 +1419,11 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 			// solve CSP
 			Object[] result3_bindingAndBlack = SequenceFlowAfterPG2ParallelFlowImpl
 					.pattern_SequenceFlowAfterPG2ParallelFlow_31_3_bindingAndBlackFBBBBBBBBB(this, isApplicableMatch,
-							pgw, step, _pg2ps, process, useCase, _p2uc, ruleResult);
+							_pg2ps, pgw, step, process, useCase, _p2uc, ruleResult);
 			if (result3_bindingAndBlack == null) {
 				throw new RuntimeException("Pattern matching in node [solve CSP] failed." + " Variables: " + "[this] = "
-						+ this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ", " + "[pgw] = " + pgw + ", "
-						+ "[step] = " + step + ", " + "[_pg2ps] = " + _pg2ps + ", " + "[process] = " + process + ", "
+						+ this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ", " + "[_pg2ps] = " + _pg2ps
+						+ ", " + "[pgw] = " + pgw + ", " + "[step] = " + step + ", " + "[process] = " + process + ", "
 						+ "[useCase] = " + useCase + ", " + "[_p2uc] = " + _p2uc + ", " + "[ruleResult] = " + ruleResult
 						+ ".");
 			}
@@ -1432,17 +1433,17 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 					csp)) {
 				// check nacs
 				Object[] result5_black = SequenceFlowAfterPG2ParallelFlowImpl
-						.pattern_SequenceFlowAfterPG2ParallelFlow_31_5_blackBBBBBB(pgw, step, _pg2ps, process, useCase,
+						.pattern_SequenceFlowAfterPG2ParallelFlow_31_5_blackBBBBBB(_pg2ps, pgw, step, process, useCase,
 								_p2uc);
 				if (result5_black != null) {
 
 					// perform
 					Object[] result6_black = SequenceFlowAfterPG2ParallelFlowImpl
-							.pattern_SequenceFlowAfterPG2ParallelFlow_31_6_blackBBBBBBB(pgw, step, _pg2ps, process,
+							.pattern_SequenceFlowAfterPG2ParallelFlow_31_6_blackBBBBBBB(_pg2ps, pgw, step, process,
 									useCase, _p2uc, ruleResult);
 					if (result6_black == null) {
 						throw new RuntimeException("Pattern matching in node [perform] failed." + " Variables: "
-								+ "[pgw] = " + pgw + ", " + "[step] = " + step + ", " + "[_pg2ps] = " + _pg2ps + ", "
+								+ "[_pg2ps] = " + _pg2ps + ", " + "[pgw] = " + pgw + ", " + "[step] = " + step + ", "
 								+ "[process] = " + process + ", " + "[useCase] = " + useCase + ", " + "[_p2uc] = "
 								+ _p2uc + ", " + "[ruleResult] = " + ruleResult + ".");
 					}
@@ -1468,8 +1469,8 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, ParallelGateway pgw, ParallelStep step,
-			PG2PS _pg2ps, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc,
+	public CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, FN2S _pg2ps, ParallelGateway pgw,
+			ParallelStep step, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc,
 			ModelgeneratorRuleResult ruleResult) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
@@ -1494,9 +1495,9 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		eq.solve(var_sf_id, var_flow_id);
 
 		// Snapshot pattern match on which CSP is solved
+		isApplicableMatch.registerObject("_pg2ps", _pg2ps);
 		isApplicableMatch.registerObject("pgw", pgw);
 		isApplicableMatch.registerObject("step", step);
-		isApplicableMatch.registerObject("_pg2ps", _pg2ps);
 		isApplicableMatch.registerObject("process", process);
 		isApplicableMatch.registerObject("useCase", useCase);
 		isApplicableMatch.registerObject("_p2uc", _p2uc);
@@ -1536,10 +1537,11 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 					(SequenceFlow) arguments.get(2), (SimpleBPMN.Process) arguments.get(3));
 		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_CHECK_CSP_FWD__CSP:
 			return isAppropriate_checkCsp_FWD((CSP) arguments.get(0));
-		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_PARALLELGATEWAY_PARALLELSTEP_PG2PS_SEQUENCEFLOW_PROCESS_USECASE_P2UC:
-			return isApplicable_solveCsp_FWD((IsApplicableMatch) arguments.get(0), (ParallelGateway) arguments.get(1),
-					(ParallelStep) arguments.get(2), (PG2PS) arguments.get(3), (SequenceFlow) arguments.get(4),
-					(SimpleBPMN.Process) arguments.get(5), (UseCase) arguments.get(6), (P2UC) arguments.get(7));
+		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_FN2S_PARALLELGATEWAY_PARALLELSTEP_SEQUENCEFLOW_PROCESS_USECASE_P2UC:
+			return isApplicable_solveCsp_FWD((IsApplicableMatch) arguments.get(0), (FN2S) arguments.get(1),
+					(ParallelGateway) arguments.get(2), (ParallelStep) arguments.get(3),
+					(SequenceFlow) arguments.get(4), (SimpleBPMN.Process) arguments.get(5), (UseCase) arguments.get(6),
+					(P2UC) arguments.get(7));
 		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPLICABLE_CHECK_CSP_FWD__CSP:
 			return isApplicable_checkCsp_FWD((CSP) arguments.get(0));
 		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
@@ -1566,10 +1568,11 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 					(UseCase) arguments.get(2), (ParallelFlow) arguments.get(3));
 		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_CHECK_CSP_BWD__CSP:
 			return isAppropriate_checkCsp_BWD((CSP) arguments.get(0));
-		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_PARALLELGATEWAY_PARALLELSTEP_PG2PS_PROCESS_USECASE_P2UC_PARALLELFLOW:
-			return isApplicable_solveCsp_BWD((IsApplicableMatch) arguments.get(0), (ParallelGateway) arguments.get(1),
-					(ParallelStep) arguments.get(2), (PG2PS) arguments.get(3), (SimpleBPMN.Process) arguments.get(4),
-					(UseCase) arguments.get(5), (P2UC) arguments.get(6), (ParallelFlow) arguments.get(7));
+		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_FN2S_PARALLELGATEWAY_PARALLELSTEP_PROCESS_USECASE_P2UC_PARALLELFLOW:
+			return isApplicable_solveCsp_BWD((IsApplicableMatch) arguments.get(0), (FN2S) arguments.get(1),
+					(ParallelGateway) arguments.get(2), (ParallelStep) arguments.get(3),
+					(SimpleBPMN.Process) arguments.get(4), (UseCase) arguments.get(5), (P2UC) arguments.get(6),
+					(ParallelFlow) arguments.get(7));
 		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPLICABLE_CHECK_CSP_BWD__CSP:
 			return isApplicable_checkCsp_BWD((CSP) arguments.get(0));
 		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
@@ -1580,37 +1583,39 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 			return null;
 		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_148__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_148((EMoflonEdge) arguments.get(0));
-		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_149__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_149((EMoflonEdge) arguments.get(0));
-		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_43__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_43((EMoflonEdge) arguments.get(0));
-		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_150__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_150((EMoflonEdge) arguments.get(0));
-		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_44__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_44((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_371__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_371((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_372__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_372((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_116__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_116((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_373__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_373((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_117__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_117((EMoflonEdge) arguments.get(0));
 		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
 			return checkAttributes_BWD((TripleMatch) arguments.get(0));
 		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPLICABLE_CC__MATCH_MATCH:
 			return isApplicable_CC((Match) arguments.get(0), (Match) arguments.get(1));
-		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPLICABLE_SOLVE_CSP_CC__ISAPPLICABLEMATCHCC_PARALLELGATEWAY_PARALLELSTEP_PG2PS_SEQUENCEFLOW_PROCESS_USECASE_P2UC_PARALLELFLOW_MATCH_MATCH:
-			return isApplicable_solveCsp_CC((IsApplicableMatchCC) arguments.get(0), (ParallelGateway) arguments.get(1),
-					(ParallelStep) arguments.get(2), (PG2PS) arguments.get(3), (SequenceFlow) arguments.get(4),
-					(SimpleBPMN.Process) arguments.get(5), (UseCase) arguments.get(6), (P2UC) arguments.get(7),
-					(ParallelFlow) arguments.get(8), (Match) arguments.get(9), (Match) arguments.get(10));
+		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPLICABLE_SOLVE_CSP_CC__ISAPPLICABLEMATCHCC_FN2S_PARALLELGATEWAY_PARALLELSTEP_SEQUENCEFLOW_PROCESS_USECASE_P2UC_PARALLELFLOW_MATCH_MATCH:
+			return isApplicable_solveCsp_CC((IsApplicableMatchCC) arguments.get(0), (FN2S) arguments.get(1),
+					(ParallelGateway) arguments.get(2), (ParallelStep) arguments.get(3),
+					(SequenceFlow) arguments.get(4), (SimpleBPMN.Process) arguments.get(5), (UseCase) arguments.get(6),
+					(P2UC) arguments.get(7), (ParallelFlow) arguments.get(8), (Match) arguments.get(9),
+					(Match) arguments.get(10));
 		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPLICABLE_CHECK_CSP_CC__CSP:
 			return isApplicable_checkCsp_CC((CSP) arguments.get(0));
 		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___PERFORM_CC__ISAPPLICABLEMATCHCC:
 			return perform_CC((IsApplicableMatchCC) arguments.get(0));
-		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___GENERATE_MODEL__RULEENTRYCONTAINER_PG2PS:
-			return generateModel((RuleEntryContainer) arguments.get(0), (PG2PS) arguments.get(1));
-		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_PARALLELGATEWAY_PARALLELSTEP_PG2PS_PROCESS_USECASE_P2UC_MODELGENERATORRULERESULT:
-			return generateModel_solveCsp_BWD((IsApplicableMatch) arguments.get(0), (ParallelGateway) arguments.get(1),
-					(ParallelStep) arguments.get(2), (PG2PS) arguments.get(3), (SimpleBPMN.Process) arguments.get(4),
-					(UseCase) arguments.get(5), (P2UC) arguments.get(6), (ModelgeneratorRuleResult) arguments.get(7));
+		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___GENERATE_MODEL__RULEENTRYCONTAINER_FN2S:
+			return generateModel((RuleEntryContainer) arguments.get(0), (FN2S) arguments.get(1));
+		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_FN2S_PARALLELGATEWAY_PARALLELSTEP_PROCESS_USECASE_P2UC_MODELGENERATORRULERESULT:
+			return generateModel_solveCsp_BWD((IsApplicableMatch) arguments.get(0), (FN2S) arguments.get(1),
+					(ParallelGateway) arguments.get(2), (ParallelStep) arguments.get(3),
+					(SimpleBPMN.Process) arguments.get(4), (UseCase) arguments.get(5), (P2UC) arguments.get(6),
+					(ModelgeneratorRuleResult) arguments.get(7));
 		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___GENERATE_MODEL_CHECK_CSP_BWD__CSP:
 			return generateModel_checkCsp_BWD((CSP) arguments.get(0));
 		}
@@ -1730,26 +1735,26 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 
 	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_1_1_bindingFFFFFFFB(
 			IsApplicableMatch isApplicableMatch) {
-		EObject _localVariable_0 = isApplicableMatch.getObject("pgw");
-		EObject _localVariable_1 = isApplicableMatch.getObject("step");
-		EObject _localVariable_2 = isApplicableMatch.getObject("_pg2ps");
+		EObject _localVariable_0 = isApplicableMatch.getObject("_pg2ps");
+		EObject _localVariable_1 = isApplicableMatch.getObject("pgw");
+		EObject _localVariable_2 = isApplicableMatch.getObject("step");
 		EObject _localVariable_3 = isApplicableMatch.getObject("sf");
 		EObject _localVariable_4 = isApplicableMatch.getObject("process");
 		EObject _localVariable_5 = isApplicableMatch.getObject("useCase");
 		EObject _localVariable_6 = isApplicableMatch.getObject("_p2uc");
-		EObject tmpPgw = _localVariable_0;
-		EObject tmpStep = _localVariable_1;
-		EObject tmp_pg2ps = _localVariable_2;
+		EObject tmp_pg2ps = _localVariable_0;
+		EObject tmpPgw = _localVariable_1;
+		EObject tmpStep = _localVariable_2;
 		EObject tmpSf = _localVariable_3;
 		EObject tmpProcess = _localVariable_4;
 		EObject tmpUseCase = _localVariable_5;
 		EObject tmp_p2uc = _localVariable_6;
-		if (tmpPgw instanceof ParallelGateway) {
-			ParallelGateway pgw = (ParallelGateway) tmpPgw;
-			if (tmpStep instanceof ParallelStep) {
-				ParallelStep step = (ParallelStep) tmpStep;
-				if (tmp_pg2ps instanceof PG2PS) {
-					PG2PS _pg2ps = (PG2PS) tmp_pg2ps;
+		if (tmp_pg2ps instanceof FN2S) {
+			FN2S _pg2ps = (FN2S) tmp_pg2ps;
+			if (tmpPgw instanceof ParallelGateway) {
+				ParallelGateway pgw = (ParallelGateway) tmpPgw;
+				if (tmpStep instanceof ParallelStep) {
+					ParallelStep step = (ParallelStep) tmpStep;
 					if (tmpSf instanceof SequenceFlow) {
 						SequenceFlow sf = (SequenceFlow) tmpSf;
 						if (tmpProcess instanceof SimpleBPMN.Process) {
@@ -1758,7 +1763,7 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 								UseCase useCase = (UseCase) tmpUseCase;
 								if (tmp_p2uc instanceof P2UC) {
 									P2UC _p2uc = (P2UC) tmp_p2uc;
-									return new Object[] { pgw, step, _pg2ps, sf, process, useCase, _p2uc,
+									return new Object[] { _pg2ps, pgw, step, sf, process, useCase, _p2uc,
 											isApplicableMatch };
 								}
 							}
@@ -1770,13 +1775,13 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		return null;
 	}
 
-	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_1_1_blackBBBBBBBBFB(ParallelGateway pgw,
-			ParallelStep step, PG2PS _pg2ps, SequenceFlow sf, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc,
-			SequenceFlowAfterPG2ParallelFlow _this, IsApplicableMatch isApplicableMatch) {
+	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_1_1_blackBBBBBBBBFB(FN2S _pg2ps,
+			ParallelGateway pgw, ParallelStep step, SequenceFlow sf, SimpleBPMN.Process process, UseCase useCase,
+			P2UC _p2uc, SequenceFlowAfterPG2ParallelFlow _this, IsApplicableMatch isApplicableMatch) {
 		for (EObject tmpCsp : isApplicableMatch.getAttributeInfo()) {
 			if (tmpCsp instanceof CSP) {
 				CSP csp = (CSP) tmpCsp;
-				return new Object[] { pgw, step, _pg2ps, sf, process, useCase, _p2uc, _this, csp, isApplicableMatch };
+				return new Object[] { _pg2ps, pgw, step, sf, process, useCase, _p2uc, _this, csp, isApplicableMatch };
 			}
 		}
 		return null;
@@ -1787,20 +1792,20 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		Object[] result_pattern_SequenceFlowAfterPG2ParallelFlow_1_1_binding = pattern_SequenceFlowAfterPG2ParallelFlow_1_1_bindingFFFFFFFB(
 				isApplicableMatch);
 		if (result_pattern_SequenceFlowAfterPG2ParallelFlow_1_1_binding != null) {
-			ParallelGateway pgw = (ParallelGateway) result_pattern_SequenceFlowAfterPG2ParallelFlow_1_1_binding[0];
-			ParallelStep step = (ParallelStep) result_pattern_SequenceFlowAfterPG2ParallelFlow_1_1_binding[1];
-			PG2PS _pg2ps = (PG2PS) result_pattern_SequenceFlowAfterPG2ParallelFlow_1_1_binding[2];
+			FN2S _pg2ps = (FN2S) result_pattern_SequenceFlowAfterPG2ParallelFlow_1_1_binding[0];
+			ParallelGateway pgw = (ParallelGateway) result_pattern_SequenceFlowAfterPG2ParallelFlow_1_1_binding[1];
+			ParallelStep step = (ParallelStep) result_pattern_SequenceFlowAfterPG2ParallelFlow_1_1_binding[2];
 			SequenceFlow sf = (SequenceFlow) result_pattern_SequenceFlowAfterPG2ParallelFlow_1_1_binding[3];
 			SimpleBPMN.Process process = (SimpleBPMN.Process) result_pattern_SequenceFlowAfterPG2ParallelFlow_1_1_binding[4];
 			UseCase useCase = (UseCase) result_pattern_SequenceFlowAfterPG2ParallelFlow_1_1_binding[5];
 			P2UC _p2uc = (P2UC) result_pattern_SequenceFlowAfterPG2ParallelFlow_1_1_binding[6];
 
 			Object[] result_pattern_SequenceFlowAfterPG2ParallelFlow_1_1_black = pattern_SequenceFlowAfterPG2ParallelFlow_1_1_blackBBBBBBBBFB(
-					pgw, step, _pg2ps, sf, process, useCase, _p2uc, _this, isApplicableMatch);
+					_pg2ps, pgw, step, sf, process, useCase, _p2uc, _this, isApplicableMatch);
 			if (result_pattern_SequenceFlowAfterPG2ParallelFlow_1_1_black != null) {
 				CSP csp = (CSP) result_pattern_SequenceFlowAfterPG2ParallelFlow_1_1_black[8];
 
-				return new Object[] { pgw, step, _pg2ps, sf, process, useCase, _p2uc, _this, csp, isApplicableMatch };
+				return new Object[] { _pg2ps, pgw, step, sf, process, useCase, _p2uc, _this, csp, isApplicableMatch };
 			}
 		}
 		return null;
@@ -1835,28 +1840,28 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 	}
 
 	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_1_3_blackBBBBBBBBBB(
-			PerformRuleResult ruleresult, EObject pgw, EObject step, EObject _pg2ps, EObject sf, EObject process,
+			PerformRuleResult ruleresult, EObject _pg2ps, EObject pgw, EObject step, EObject sf, EObject process,
 			EObject useCase, EObject _p2uc, EObject flow, EObject _sf2pf) {
-		if (!pgw.equals(step)) {
-			if (!pgw.equals(sf)) {
-				if (!pgw.equals(process)) {
-					if (!pgw.equals(useCase)) {
-						if (!step.equals(useCase)) {
-							if (!_pg2ps.equals(pgw)) {
-								if (!_pg2ps.equals(step)) {
-									if (!_pg2ps.equals(sf)) {
-										if (!_pg2ps.equals(process)) {
-											if (!_pg2ps.equals(useCase)) {
-												if (!_pg2ps.equals(flow)) {
-													if (!_pg2ps.equals(_sf2pf)) {
+		if (!_pg2ps.equals(pgw)) {
+			if (!_pg2ps.equals(step)) {
+				if (!_pg2ps.equals(sf)) {
+					if (!_pg2ps.equals(process)) {
+						if (!_pg2ps.equals(useCase)) {
+							if (!_pg2ps.equals(flow)) {
+								if (!_pg2ps.equals(_sf2pf)) {
+									if (!pgw.equals(step)) {
+										if (!pgw.equals(sf)) {
+											if (!pgw.equals(process)) {
+												if (!pgw.equals(useCase)) {
+													if (!step.equals(useCase)) {
 														if (!sf.equals(step)) {
 															if (!sf.equals(useCase)) {
 																if (!process.equals(step)) {
 																	if (!process.equals(sf)) {
 																		if (!process.equals(useCase)) {
-																			if (!_p2uc.equals(pgw)) {
-																				if (!_p2uc.equals(step)) {
-																					if (!_p2uc.equals(_pg2ps)) {
+																			if (!_p2uc.equals(_pg2ps)) {
+																				if (!_p2uc.equals(pgw)) {
+																					if (!_p2uc.equals(step)) {
 																						if (!_p2uc.equals(sf)) {
 																							if (!_p2uc
 																									.equals(process)) {
@@ -1890,9 +1895,9 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 																																							.equals(flow)) {
 																																						return new Object[] {
 																																								ruleresult,
+																																								_pg2ps,
 																																								pgw,
 																																								step,
-																																								_pg2ps,
 																																								sf,
 																																								process,
 																																								useCase,
@@ -1991,9 +1996,9 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 	}
 
 	public static final void pattern_SequenceFlowAfterPG2ParallelFlow_1_5_expressionBBBBBBBBBBB(
-			SequenceFlowAfterPG2ParallelFlow _this, PerformRuleResult ruleresult, EObject pgw, EObject step,
-			EObject _pg2ps, EObject sf, EObject process, EObject useCase, EObject _p2uc, EObject flow, EObject _sf2pf) {
-		_this.registerObjects_FWD(ruleresult, pgw, step, _pg2ps, sf, process, useCase, _p2uc, flow, _sf2pf);
+			SequenceFlowAfterPG2ParallelFlow _this, PerformRuleResult ruleresult, EObject _pg2ps, EObject pgw,
+			EObject step, EObject sf, EObject process, EObject useCase, EObject _p2uc, EObject flow, EObject _sf2pf) {
+		_this.registerObjects_FWD(ruleresult, _pg2ps, pgw, step, sf, process, useCase, _p2uc, flow, _sf2pf);
 
 	}
 
@@ -2073,20 +2078,21 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_SequenceFlowAfterPG2ParallelFlow_2_2_blackBFFBBFFB(
+	public static final Iterable<Object[]> pattern_SequenceFlowAfterPG2ParallelFlow_2_2_blackFBFBBFFB(
 			ParallelGateway pgw, SequenceFlow sf, SimpleBPMN.Process process, Match match) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		boolean pgwisDiverging = pgw.isIsDiverging();
 		if (Boolean.valueOf(pgwisDiverging).equals(Boolean.valueOf(true))) {
-			for (PG2PS _pg2ps : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(pgw, PG2PS.class,
+			for (FN2S _pg2ps : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(pgw, FN2S.class,
 					"source")) {
-				ParallelStep step = _pg2ps.getTarget();
-				if (step != null) {
+				Step tmpStep = _pg2ps.getTarget();
+				if (tmpStep instanceof ParallelStep) {
+					ParallelStep step = (ParallelStep) tmpStep;
 					for (P2UC _p2uc : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(process,
 							P2UC.class, "source")) {
 						UseCase useCase = _p2uc.getTarget();
 						if (useCase != null) {
-							_result.add(new Object[] { pgw, step, _pg2ps, sf, process, useCase, _p2uc, match });
+							_result.add(new Object[] { _pg2ps, pgw, step, sf, process, useCase, _p2uc, match });
 						}
 
 					}
@@ -2098,20 +2104,20 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		return _result;
 	}
 
-	public static final Iterable<Object[]> pattern_SequenceFlowAfterPG2ParallelFlow_2_3_blackBBBBBBB(
-			ParallelGateway pgw, ParallelStep step, PG2PS _pg2ps, SequenceFlow sf, SimpleBPMN.Process process,
-			UseCase useCase, P2UC _p2uc) {
+	public static final Iterable<Object[]> pattern_SequenceFlowAfterPG2ParallelFlow_2_3_blackBBBBBBB(FN2S _pg2ps,
+			ParallelGateway pgw, ParallelStep step, SequenceFlow sf, SimpleBPMN.Process process, UseCase useCase,
+			P2UC _p2uc) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
-		if (pgw.equals(sf.getSourceRef())) {
+		if (step.equals(_pg2ps.getTarget())) {
 			if (pgw.equals(_pg2ps.getSource())) {
-				if (step.equals(_pg2ps.getTarget())) {
+				if (pgw.equals(sf.getSourceRef())) {
 					if (process.getFlowElements().contains(pgw)) {
 						if (process.getFlowElements().contains(sf)) {
 							if (process.equals(_p2uc.getSource())) {
 								if (useCase.equals(_p2uc.getTarget())) {
 									boolean pgwisDiverging = pgw.isIsDiverging();
 									if (Boolean.valueOf(pgwisDiverging).equals(Boolean.valueOf(true))) {
-										_result.add(new Object[] { pgw, step, _pg2ps, sf, process, useCase, _p2uc });
+										_result.add(new Object[] { _pg2ps, pgw, step, sf, process, useCase, _p2uc });
 									}
 
 								}
@@ -2124,44 +2130,45 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		return _result;
 	}
 
-	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_2_3_greenBBBBBBBFFFFFFFFF(ParallelGateway pgw,
-			ParallelStep step, PG2PS _pg2ps, SequenceFlow sf, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc) {
+	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_2_3_greenBBBBBBBFFFFFFFFF(FN2S _pg2ps,
+			ParallelGateway pgw, ParallelStep step, SequenceFlow sf, SimpleBPMN.Process process, UseCase useCase,
+			P2UC _p2uc) {
 		IsApplicableMatch isApplicableMatch = TGGRuntimeFactory.eINSTANCE.createIsApplicableMatch();
+		EMoflonEdge _pg2ps__step____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge _pg2ps__pgw____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge sf__pgw____sourceRef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge pgw__sf____outgoing = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge _pg2ps__pgw____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge _pg2ps__step____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge process__pgw____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge process__sf____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge _p2uc__process____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge _p2uc__useCase____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		String _pg2ps__step____target_name_prime = "target";
+		String _pg2ps__pgw____source_name_prime = "source";
 		String sf__pgw____sourceRef_name_prime = "sourceRef";
 		String pgw__sf____outgoing_name_prime = "outgoing";
-		String _pg2ps__pgw____source_name_prime = "source";
-		String _pg2ps__step____target_name_prime = "target";
 		String process__pgw____flowElements_name_prime = "flowElements";
 		String process__sf____flowElements_name_prime = "flowElements";
 		String _p2uc__process____source_name_prime = "source";
 		String _p2uc__useCase____target_name_prime = "target";
+		isApplicableMatch.getAllContextElements().add(_pg2ps);
 		isApplicableMatch.getAllContextElements().add(pgw);
 		isApplicableMatch.getAllContextElements().add(step);
-		isApplicableMatch.getAllContextElements().add(_pg2ps);
 		isApplicableMatch.getAllContextElements().add(sf);
 		isApplicableMatch.getAllContextElements().add(process);
 		isApplicableMatch.getAllContextElements().add(useCase);
 		isApplicableMatch.getAllContextElements().add(_p2uc);
+		_pg2ps__step____target.setSrc(_pg2ps);
+		_pg2ps__step____target.setTrg(step);
+		isApplicableMatch.getAllContextElements().add(_pg2ps__step____target);
+		_pg2ps__pgw____source.setSrc(_pg2ps);
+		_pg2ps__pgw____source.setTrg(pgw);
+		isApplicableMatch.getAllContextElements().add(_pg2ps__pgw____source);
 		sf__pgw____sourceRef.setSrc(sf);
 		sf__pgw____sourceRef.setTrg(pgw);
 		isApplicableMatch.getAllContextElements().add(sf__pgw____sourceRef);
 		pgw__sf____outgoing.setSrc(pgw);
 		pgw__sf____outgoing.setTrg(sf);
 		isApplicableMatch.getAllContextElements().add(pgw__sf____outgoing);
-		_pg2ps__pgw____source.setSrc(_pg2ps);
-		_pg2ps__pgw____source.setTrg(pgw);
-		isApplicableMatch.getAllContextElements().add(_pg2ps__pgw____source);
-		_pg2ps__step____target.setSrc(_pg2ps);
-		_pg2ps__step____target.setTrg(step);
-		isApplicableMatch.getAllContextElements().add(_pg2ps__step____target);
 		process__pgw____flowElements.setSrc(process);
 		process__pgw____flowElements.setTrg(pgw);
 		isApplicableMatch.getAllContextElements().add(process__pgw____flowElements);
@@ -2174,27 +2181,28 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		_p2uc__useCase____target.setSrc(_p2uc);
 		_p2uc__useCase____target.setTrg(useCase);
 		isApplicableMatch.getAllContextElements().add(_p2uc__useCase____target);
+		_pg2ps__step____target.setName(_pg2ps__step____target_name_prime);
+		_pg2ps__pgw____source.setName(_pg2ps__pgw____source_name_prime);
 		sf__pgw____sourceRef.setName(sf__pgw____sourceRef_name_prime);
 		pgw__sf____outgoing.setName(pgw__sf____outgoing_name_prime);
-		_pg2ps__pgw____source.setName(_pg2ps__pgw____source_name_prime);
-		_pg2ps__step____target.setName(_pg2ps__step____target_name_prime);
 		process__pgw____flowElements.setName(process__pgw____flowElements_name_prime);
 		process__sf____flowElements.setName(process__sf____flowElements_name_prime);
 		_p2uc__process____source.setName(_p2uc__process____source_name_prime);
 		_p2uc__useCase____target.setName(_p2uc__useCase____target_name_prime);
-		return new Object[] { pgw, step, _pg2ps, sf, process, useCase, _p2uc, isApplicableMatch, sf__pgw____sourceRef,
-				pgw__sf____outgoing, _pg2ps__pgw____source, _pg2ps__step____target, process__pgw____flowElements,
+		return new Object[] { _pg2ps, pgw, step, sf, process, useCase, _p2uc, isApplicableMatch, _pg2ps__step____target,
+				_pg2ps__pgw____source, sf__pgw____sourceRef, pgw__sf____outgoing, process__pgw____flowElements,
 				process__sf____flowElements, _p2uc__process____source, _p2uc__useCase____target };
 	}
 
 	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_2_4_bindingFBBBBBBBBB(
-			SequenceFlowAfterPG2ParallelFlow _this, IsApplicableMatch isApplicableMatch, ParallelGateway pgw,
-			ParallelStep step, PG2PS _pg2ps, SequenceFlow sf, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc) {
-		CSP _localVariable_0 = _this.isApplicable_solveCsp_FWD(isApplicableMatch, pgw, step, _pg2ps, sf, process,
+			SequenceFlowAfterPG2ParallelFlow _this, IsApplicableMatch isApplicableMatch, FN2S _pg2ps,
+			ParallelGateway pgw, ParallelStep step, SequenceFlow sf, SimpleBPMN.Process process, UseCase useCase,
+			P2UC _p2uc) {
+		CSP _localVariable_0 = _this.isApplicable_solveCsp_FWD(isApplicableMatch, _pg2ps, pgw, step, sf, process,
 				useCase, _p2uc);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, isApplicableMatch, pgw, step, _pg2ps, sf, process, useCase, _p2uc };
+			return new Object[] { csp, _this, isApplicableMatch, _pg2ps, pgw, step, sf, process, useCase, _p2uc };
 		}
 		return null;
 	}
@@ -2204,10 +2212,11 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 	}
 
 	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_2_4_bindingAndBlackFBBBBBBBBB(
-			SequenceFlowAfterPG2ParallelFlow _this, IsApplicableMatch isApplicableMatch, ParallelGateway pgw,
-			ParallelStep step, PG2PS _pg2ps, SequenceFlow sf, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc) {
+			SequenceFlowAfterPG2ParallelFlow _this, IsApplicableMatch isApplicableMatch, FN2S _pg2ps,
+			ParallelGateway pgw, ParallelStep step, SequenceFlow sf, SimpleBPMN.Process process, UseCase useCase,
+			P2UC _p2uc) {
 		Object[] result_pattern_SequenceFlowAfterPG2ParallelFlow_2_4_binding = pattern_SequenceFlowAfterPG2ParallelFlow_2_4_bindingFBBBBBBBBB(
-				_this, isApplicableMatch, pgw, step, _pg2ps, sf, process, useCase, _p2uc);
+				_this, isApplicableMatch, _pg2ps, pgw, step, sf, process, useCase, _p2uc);
 		if (result_pattern_SequenceFlowAfterPG2ParallelFlow_2_4_binding != null) {
 			CSP csp = (CSP) result_pattern_SequenceFlowAfterPG2ParallelFlow_2_4_binding[0];
 
@@ -2215,7 +2224,7 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 					csp);
 			if (result_pattern_SequenceFlowAfterPG2ParallelFlow_2_4_black != null) {
 
-				return new Object[] { csp, _this, isApplicableMatch, pgw, step, _pg2ps, sf, process, useCase, _p2uc };
+				return new Object[] { csp, _this, isApplicableMatch, _pg2ps, pgw, step, sf, process, useCase, _p2uc };
 			}
 		}
 		return null;
@@ -2349,26 +2358,26 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 
 	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_11_1_bindingFFFFFFFB(
 			IsApplicableMatch isApplicableMatch) {
-		EObject _localVariable_0 = isApplicableMatch.getObject("pgw");
-		EObject _localVariable_1 = isApplicableMatch.getObject("step");
-		EObject _localVariable_2 = isApplicableMatch.getObject("_pg2ps");
+		EObject _localVariable_0 = isApplicableMatch.getObject("_pg2ps");
+		EObject _localVariable_1 = isApplicableMatch.getObject("pgw");
+		EObject _localVariable_2 = isApplicableMatch.getObject("step");
 		EObject _localVariable_3 = isApplicableMatch.getObject("process");
 		EObject _localVariable_4 = isApplicableMatch.getObject("useCase");
 		EObject _localVariable_5 = isApplicableMatch.getObject("_p2uc");
 		EObject _localVariable_6 = isApplicableMatch.getObject("flow");
-		EObject tmpPgw = _localVariable_0;
-		EObject tmpStep = _localVariable_1;
-		EObject tmp_pg2ps = _localVariable_2;
+		EObject tmp_pg2ps = _localVariable_0;
+		EObject tmpPgw = _localVariable_1;
+		EObject tmpStep = _localVariable_2;
 		EObject tmpProcess = _localVariable_3;
 		EObject tmpUseCase = _localVariable_4;
 		EObject tmp_p2uc = _localVariable_5;
 		EObject tmpFlow = _localVariable_6;
-		if (tmpPgw instanceof ParallelGateway) {
-			ParallelGateway pgw = (ParallelGateway) tmpPgw;
-			if (tmpStep instanceof ParallelStep) {
-				ParallelStep step = (ParallelStep) tmpStep;
-				if (tmp_pg2ps instanceof PG2PS) {
-					PG2PS _pg2ps = (PG2PS) tmp_pg2ps;
+		if (tmp_pg2ps instanceof FN2S) {
+			FN2S _pg2ps = (FN2S) tmp_pg2ps;
+			if (tmpPgw instanceof ParallelGateway) {
+				ParallelGateway pgw = (ParallelGateway) tmpPgw;
+				if (tmpStep instanceof ParallelStep) {
+					ParallelStep step = (ParallelStep) tmpStep;
 					if (tmpProcess instanceof SimpleBPMN.Process) {
 						SimpleBPMN.Process process = (SimpleBPMN.Process) tmpProcess;
 						if (tmpUseCase instanceof UseCase) {
@@ -2377,7 +2386,7 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 								P2UC _p2uc = (P2UC) tmp_p2uc;
 								if (tmpFlow instanceof ParallelFlow) {
 									ParallelFlow flow = (ParallelFlow) tmpFlow;
-									return new Object[] { pgw, step, _pg2ps, process, useCase, _p2uc, flow,
+									return new Object[] { _pg2ps, pgw, step, process, useCase, _p2uc, flow,
 											isApplicableMatch };
 								}
 							}
@@ -2389,13 +2398,13 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		return null;
 	}
 
-	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_11_1_blackBBBBBBBBFB(ParallelGateway pgw,
-			ParallelStep step, PG2PS _pg2ps, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc, ParallelFlow flow,
-			SequenceFlowAfterPG2ParallelFlow _this, IsApplicableMatch isApplicableMatch) {
+	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_11_1_blackBBBBBBBBFB(FN2S _pg2ps,
+			ParallelGateway pgw, ParallelStep step, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc,
+			ParallelFlow flow, SequenceFlowAfterPG2ParallelFlow _this, IsApplicableMatch isApplicableMatch) {
 		for (EObject tmpCsp : isApplicableMatch.getAttributeInfo()) {
 			if (tmpCsp instanceof CSP) {
 				CSP csp = (CSP) tmpCsp;
-				return new Object[] { pgw, step, _pg2ps, process, useCase, _p2uc, flow, _this, csp, isApplicableMatch };
+				return new Object[] { _pg2ps, pgw, step, process, useCase, _p2uc, flow, _this, csp, isApplicableMatch };
 			}
 		}
 		return null;
@@ -2406,20 +2415,20 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		Object[] result_pattern_SequenceFlowAfterPG2ParallelFlow_11_1_binding = pattern_SequenceFlowAfterPG2ParallelFlow_11_1_bindingFFFFFFFB(
 				isApplicableMatch);
 		if (result_pattern_SequenceFlowAfterPG2ParallelFlow_11_1_binding != null) {
-			ParallelGateway pgw = (ParallelGateway) result_pattern_SequenceFlowAfterPG2ParallelFlow_11_1_binding[0];
-			ParallelStep step = (ParallelStep) result_pattern_SequenceFlowAfterPG2ParallelFlow_11_1_binding[1];
-			PG2PS _pg2ps = (PG2PS) result_pattern_SequenceFlowAfterPG2ParallelFlow_11_1_binding[2];
+			FN2S _pg2ps = (FN2S) result_pattern_SequenceFlowAfterPG2ParallelFlow_11_1_binding[0];
+			ParallelGateway pgw = (ParallelGateway) result_pattern_SequenceFlowAfterPG2ParallelFlow_11_1_binding[1];
+			ParallelStep step = (ParallelStep) result_pattern_SequenceFlowAfterPG2ParallelFlow_11_1_binding[2];
 			SimpleBPMN.Process process = (SimpleBPMN.Process) result_pattern_SequenceFlowAfterPG2ParallelFlow_11_1_binding[3];
 			UseCase useCase = (UseCase) result_pattern_SequenceFlowAfterPG2ParallelFlow_11_1_binding[4];
 			P2UC _p2uc = (P2UC) result_pattern_SequenceFlowAfterPG2ParallelFlow_11_1_binding[5];
 			ParallelFlow flow = (ParallelFlow) result_pattern_SequenceFlowAfterPG2ParallelFlow_11_1_binding[6];
 
 			Object[] result_pattern_SequenceFlowAfterPG2ParallelFlow_11_1_black = pattern_SequenceFlowAfterPG2ParallelFlow_11_1_blackBBBBBBBBFB(
-					pgw, step, _pg2ps, process, useCase, _p2uc, flow, _this, isApplicableMatch);
+					_pg2ps, pgw, step, process, useCase, _p2uc, flow, _this, isApplicableMatch);
 			if (result_pattern_SequenceFlowAfterPG2ParallelFlow_11_1_black != null) {
 				CSP csp = (CSP) result_pattern_SequenceFlowAfterPG2ParallelFlow_11_1_black[8];
 
-				return new Object[] { pgw, step, _pg2ps, process, useCase, _p2uc, flow, _this, csp, isApplicableMatch };
+				return new Object[] { _pg2ps, pgw, step, process, useCase, _p2uc, flow, _this, csp, isApplicableMatch };
 			}
 		}
 		return null;
@@ -2454,28 +2463,28 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 	}
 
 	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_11_3_blackBBBBBBBBBB(
-			PerformRuleResult ruleresult, EObject pgw, EObject step, EObject _pg2ps, EObject sf, EObject process,
+			PerformRuleResult ruleresult, EObject _pg2ps, EObject pgw, EObject step, EObject sf, EObject process,
 			EObject useCase, EObject _p2uc, EObject flow, EObject _sf2pf) {
-		if (!pgw.equals(step)) {
-			if (!pgw.equals(sf)) {
-				if (!pgw.equals(process)) {
-					if (!pgw.equals(useCase)) {
-						if (!step.equals(useCase)) {
-							if (!_pg2ps.equals(pgw)) {
-								if (!_pg2ps.equals(step)) {
-									if (!_pg2ps.equals(sf)) {
-										if (!_pg2ps.equals(process)) {
-											if (!_pg2ps.equals(useCase)) {
-												if (!_pg2ps.equals(flow)) {
-													if (!_pg2ps.equals(_sf2pf)) {
+		if (!_pg2ps.equals(pgw)) {
+			if (!_pg2ps.equals(step)) {
+				if (!_pg2ps.equals(sf)) {
+					if (!_pg2ps.equals(process)) {
+						if (!_pg2ps.equals(useCase)) {
+							if (!_pg2ps.equals(flow)) {
+								if (!_pg2ps.equals(_sf2pf)) {
+									if (!pgw.equals(step)) {
+										if (!pgw.equals(sf)) {
+											if (!pgw.equals(process)) {
+												if (!pgw.equals(useCase)) {
+													if (!step.equals(useCase)) {
 														if (!sf.equals(step)) {
 															if (!sf.equals(useCase)) {
 																if (!process.equals(step)) {
 																	if (!process.equals(sf)) {
 																		if (!process.equals(useCase)) {
-																			if (!_p2uc.equals(pgw)) {
-																				if (!_p2uc.equals(step)) {
-																					if (!_p2uc.equals(_pg2ps)) {
+																			if (!_p2uc.equals(_pg2ps)) {
+																				if (!_p2uc.equals(pgw)) {
+																					if (!_p2uc.equals(step)) {
 																						if (!_p2uc.equals(sf)) {
 																							if (!_p2uc
 																									.equals(process)) {
@@ -2509,9 +2518,9 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 																																							.equals(flow)) {
 																																						return new Object[] {
 																																								ruleresult,
+																																								_pg2ps,
 																																								pgw,
 																																								step,
-																																								_pg2ps,
 																																								sf,
 																																								process,
 																																								useCase,
@@ -2610,9 +2619,9 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 	}
 
 	public static final void pattern_SequenceFlowAfterPG2ParallelFlow_11_5_expressionBBBBBBBBBBB(
-			SequenceFlowAfterPG2ParallelFlow _this, PerformRuleResult ruleresult, EObject pgw, EObject step,
-			EObject _pg2ps, EObject sf, EObject process, EObject useCase, EObject _p2uc, EObject flow, EObject _sf2pf) {
-		_this.registerObjects_BWD(ruleresult, pgw, step, _pg2ps, sf, process, useCase, _p2uc, flow, _sf2pf);
+			SequenceFlowAfterPG2ParallelFlow _this, PerformRuleResult ruleresult, EObject _pg2ps, EObject pgw,
+			EObject step, EObject sf, EObject process, EObject useCase, EObject _p2uc, EObject flow, EObject _sf2pf) {
+		_this.registerObjects_BWD(ruleresult, _pg2ps, pgw, step, sf, process, useCase, _p2uc, flow, _sf2pf);
 
 	}
 
@@ -2692,20 +2701,21 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_SequenceFlowAfterPG2ParallelFlow_12_2_blackFBFFBFBB(
+	public static final Iterable<Object[]> pattern_SequenceFlowAfterPG2ParallelFlow_12_2_blackFFBFBFBB(
 			ParallelStep step, UseCase useCase, ParallelFlow flow, Match match) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
-		for (PG2PS _pg2ps : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step, PG2PS.class,
+		for (FN2S _pg2ps : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step, FN2S.class,
 				"target")) {
-			ParallelGateway pgw = _pg2ps.getSource();
-			if (pgw != null) {
+			FlowNode tmpPgw = _pg2ps.getSource();
+			if (tmpPgw instanceof ParallelGateway) {
+				ParallelGateway pgw = (ParallelGateway) tmpPgw;
 				boolean pgwisDiverging = pgw.isIsDiverging();
 				if (Boolean.valueOf(pgwisDiverging).equals(Boolean.valueOf(true))) {
 					for (P2UC _p2uc : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(useCase,
 							P2UC.class, "target")) {
 						SimpleBPMN.Process process = _p2uc.getSource();
 						if (process != null) {
-							_result.add(new Object[] { pgw, step, _pg2ps, process, useCase, _p2uc, flow, match });
+							_result.add(new Object[] { _pg2ps, pgw, step, process, useCase, _p2uc, flow, match });
 						}
 
 					}
@@ -2717,20 +2727,20 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		return _result;
 	}
 
-	public static final Iterable<Object[]> pattern_SequenceFlowAfterPG2ParallelFlow_12_3_blackBBBBBBB(
-			ParallelGateway pgw, ParallelStep step, PG2PS _pg2ps, SimpleBPMN.Process process, UseCase useCase,
-			P2UC _p2uc, ParallelFlow flow) {
+	public static final Iterable<Object[]> pattern_SequenceFlowAfterPG2ParallelFlow_12_3_blackBBBBBBB(FN2S _pg2ps,
+			ParallelGateway pgw, ParallelStep step, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc,
+			ParallelFlow flow) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
-		if (step.getInvokedFlows().contains(flow)) {
+		if (step.equals(_pg2ps.getTarget())) {
 			if (pgw.equals(_pg2ps.getSource())) {
-				if (step.equals(_pg2ps.getTarget())) {
+				if (step.getInvokedFlows().contains(flow)) {
 					if (process.getFlowElements().contains(pgw)) {
 						if (useCase.getFlows().contains(flow)) {
 							if (process.equals(_p2uc.getSource())) {
 								if (useCase.equals(_p2uc.getTarget())) {
 									boolean pgwisDiverging = pgw.isIsDiverging();
 									if (Boolean.valueOf(pgwisDiverging).equals(Boolean.valueOf(true))) {
-										_result.add(new Object[] { pgw, step, _pg2ps, process, useCase, _p2uc, flow });
+										_result.add(new Object[] { _pg2ps, pgw, step, process, useCase, _p2uc, flow });
 									}
 
 								}
@@ -2743,40 +2753,40 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		return _result;
 	}
 
-	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_12_3_greenBBBBBBBFFFFFFFF(ParallelGateway pgw,
-			ParallelStep step, PG2PS _pg2ps, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc,
+	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_12_3_greenBBBBBBBFFFFFFFF(FN2S _pg2ps,
+			ParallelGateway pgw, ParallelStep step, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc,
 			ParallelFlow flow) {
 		IsApplicableMatch isApplicableMatch = TGGRuntimeFactory.eINSTANCE.createIsApplicableMatch();
-		EMoflonEdge step__flow____invokedFlows = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge _pg2ps__pgw____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge _pg2ps__step____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge _pg2ps__pgw____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge step__flow____invokedFlows = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge process__pgw____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge useCase__flow____flows = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge _p2uc__process____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge _p2uc__useCase____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
-		String step__flow____invokedFlows_name_prime = "invokedFlows";
-		String _pg2ps__pgw____source_name_prime = "source";
 		String _pg2ps__step____target_name_prime = "target";
+		String _pg2ps__pgw____source_name_prime = "source";
+		String step__flow____invokedFlows_name_prime = "invokedFlows";
 		String process__pgw____flowElements_name_prime = "flowElements";
 		String useCase__flow____flows_name_prime = "flows";
 		String _p2uc__process____source_name_prime = "source";
 		String _p2uc__useCase____target_name_prime = "target";
+		isApplicableMatch.getAllContextElements().add(_pg2ps);
 		isApplicableMatch.getAllContextElements().add(pgw);
 		isApplicableMatch.getAllContextElements().add(step);
-		isApplicableMatch.getAllContextElements().add(_pg2ps);
 		isApplicableMatch.getAllContextElements().add(process);
 		isApplicableMatch.getAllContextElements().add(useCase);
 		isApplicableMatch.getAllContextElements().add(_p2uc);
 		isApplicableMatch.getAllContextElements().add(flow);
-		step__flow____invokedFlows.setSrc(step);
-		step__flow____invokedFlows.setTrg(flow);
-		isApplicableMatch.getAllContextElements().add(step__flow____invokedFlows);
-		_pg2ps__pgw____source.setSrc(_pg2ps);
-		_pg2ps__pgw____source.setTrg(pgw);
-		isApplicableMatch.getAllContextElements().add(_pg2ps__pgw____source);
 		_pg2ps__step____target.setSrc(_pg2ps);
 		_pg2ps__step____target.setTrg(step);
 		isApplicableMatch.getAllContextElements().add(_pg2ps__step____target);
+		_pg2ps__pgw____source.setSrc(_pg2ps);
+		_pg2ps__pgw____source.setTrg(pgw);
+		isApplicableMatch.getAllContextElements().add(_pg2ps__pgw____source);
+		step__flow____invokedFlows.setSrc(step);
+		step__flow____invokedFlows.setTrg(flow);
+		isApplicableMatch.getAllContextElements().add(step__flow____invokedFlows);
 		process__pgw____flowElements.setSrc(process);
 		process__pgw____flowElements.setTrg(pgw);
 		isApplicableMatch.getAllContextElements().add(process__pgw____flowElements);
@@ -2789,27 +2799,27 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		_p2uc__useCase____target.setSrc(_p2uc);
 		_p2uc__useCase____target.setTrg(useCase);
 		isApplicableMatch.getAllContextElements().add(_p2uc__useCase____target);
-		step__flow____invokedFlows.setName(step__flow____invokedFlows_name_prime);
-		_pg2ps__pgw____source.setName(_pg2ps__pgw____source_name_prime);
 		_pg2ps__step____target.setName(_pg2ps__step____target_name_prime);
+		_pg2ps__pgw____source.setName(_pg2ps__pgw____source_name_prime);
+		step__flow____invokedFlows.setName(step__flow____invokedFlows_name_prime);
 		process__pgw____flowElements.setName(process__pgw____flowElements_name_prime);
 		useCase__flow____flows.setName(useCase__flow____flows_name_prime);
 		_p2uc__process____source.setName(_p2uc__process____source_name_prime);
 		_p2uc__useCase____target.setName(_p2uc__useCase____target_name_prime);
-		return new Object[] { pgw, step, _pg2ps, process, useCase, _p2uc, flow, isApplicableMatch,
-				step__flow____invokedFlows, _pg2ps__pgw____source, _pg2ps__step____target, process__pgw____flowElements,
+		return new Object[] { _pg2ps, pgw, step, process, useCase, _p2uc, flow, isApplicableMatch,
+				_pg2ps__step____target, _pg2ps__pgw____source, step__flow____invokedFlows, process__pgw____flowElements,
 				useCase__flow____flows, _p2uc__process____source, _p2uc__useCase____target };
 	}
 
 	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_12_4_bindingFBBBBBBBBB(
-			SequenceFlowAfterPG2ParallelFlow _this, IsApplicableMatch isApplicableMatch, ParallelGateway pgw,
-			ParallelStep step, PG2PS _pg2ps, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc,
+			SequenceFlowAfterPG2ParallelFlow _this, IsApplicableMatch isApplicableMatch, FN2S _pg2ps,
+			ParallelGateway pgw, ParallelStep step, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc,
 			ParallelFlow flow) {
-		CSP _localVariable_0 = _this.isApplicable_solveCsp_BWD(isApplicableMatch, pgw, step, _pg2ps, process, useCase,
+		CSP _localVariable_0 = _this.isApplicable_solveCsp_BWD(isApplicableMatch, _pg2ps, pgw, step, process, useCase,
 				_p2uc, flow);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, isApplicableMatch, pgw, step, _pg2ps, process, useCase, _p2uc, flow };
+			return new Object[] { csp, _this, isApplicableMatch, _pg2ps, pgw, step, process, useCase, _p2uc, flow };
 		}
 		return null;
 	}
@@ -2819,11 +2829,11 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 	}
 
 	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_12_4_bindingAndBlackFBBBBBBBBB(
-			SequenceFlowAfterPG2ParallelFlow _this, IsApplicableMatch isApplicableMatch, ParallelGateway pgw,
-			ParallelStep step, PG2PS _pg2ps, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc,
+			SequenceFlowAfterPG2ParallelFlow _this, IsApplicableMatch isApplicableMatch, FN2S _pg2ps,
+			ParallelGateway pgw, ParallelStep step, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc,
 			ParallelFlow flow) {
 		Object[] result_pattern_SequenceFlowAfterPG2ParallelFlow_12_4_binding = pattern_SequenceFlowAfterPG2ParallelFlow_12_4_bindingFBBBBBBBBB(
-				_this, isApplicableMatch, pgw, step, _pg2ps, process, useCase, _p2uc, flow);
+				_this, isApplicableMatch, _pg2ps, pgw, step, process, useCase, _p2uc, flow);
 		if (result_pattern_SequenceFlowAfterPG2ParallelFlow_12_4_binding != null) {
 			CSP csp = (CSP) result_pattern_SequenceFlowAfterPG2ParallelFlow_12_4_binding[0];
 
@@ -2831,7 +2841,7 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 					csp);
 			if (result_pattern_SequenceFlowAfterPG2ParallelFlow_12_4_black != null) {
 
-				return new Object[] { csp, _this, isApplicableMatch, pgw, step, _pg2ps, process, useCase, _p2uc, flow };
+				return new Object[] { csp, _this, isApplicableMatch, _pg2ps, pgw, step, process, useCase, _p2uc, flow };
 			}
 		}
 		return null;
@@ -3142,9 +3152,9 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 
 	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_22_2_black_nac_0BB(ParallelFlow flow,
 			ParallelStep step) {
-		for (ParallelStep __DEC_flow_invokedFlows_17185 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ParallelStep __DEC_flow_invokedFlows_455700 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(flow, ParallelStep.class, "invokedFlows")) {
-			if (!step.equals(__DEC_flow_invokedFlows_17185)) {
+			if (!step.equals(__DEC_flow_invokedFlows_455700)) {
 				return new Object[] { flow, step };
 			}
 		}
@@ -3381,9 +3391,9 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 
 	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_24_2_black_nac_0BB(ParallelFlow flow,
 			ParallelStep step) {
-		for (ParallelStep __DEC_flow_invokedFlows_803241 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ParallelStep __DEC_flow_invokedFlows_395232 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(flow, ParallelStep.class, "invokedFlows")) {
-			if (!step.equals(__DEC_flow_invokedFlows_803241)) {
+			if (!step.equals(__DEC_flow_invokedFlows_395232)) {
 				return new Object[] { flow, step };
 			}
 		}
@@ -3502,7 +3512,7 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_SequenceFlowAfterPG2ParallelFlow_27_2_blackBBFBBBFBBB(
+	public static final Iterable<Object[]> pattern_SequenceFlowAfterPG2ParallelFlow_27_2_blackFBBBBBFBBB(
 			ParallelGateway pgw, ParallelStep step, SequenceFlow sf, SimpleBPMN.Process process, UseCase useCase,
 			ParallelFlow flow, Match sourceMatch, Match targetMatch) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
@@ -3514,13 +3524,13 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 							if (useCase.getFlows().contains(flow)) {
 								boolean pgwisDiverging = pgw.isIsDiverging();
 								if (Boolean.valueOf(pgwisDiverging).equals(Boolean.valueOf(true))) {
-									for (PG2PS _pg2ps : org.moflon.core.utilities.eMoflonEMFUtil
-											.getOppositeReferenceTyped(pgw, PG2PS.class, "source")) {
-										if (step.equals(_pg2ps.getTarget())) {
+									for (FN2S _pg2ps : org.moflon.core.utilities.eMoflonEMFUtil
+											.getOppositeReferenceTyped(step, FN2S.class, "target")) {
+										if (pgw.equals(_pg2ps.getSource())) {
 											for (P2UC _p2uc : org.moflon.core.utilities.eMoflonEMFUtil
 													.getOppositeReferenceTyped(process, P2UC.class, "source")) {
 												if (useCase.equals(_p2uc.getTarget())) {
-													_result.add(new Object[] { pgw, step, _pg2ps, sf, process, useCase,
+													_result.add(new Object[] { _pg2ps, pgw, step, sf, process, useCase,
 															_p2uc, flow, sourceMatch, targetMatch });
 												}
 											}
@@ -3537,9 +3547,9 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		return _result;
 	}
 
-	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_27_2_greenBBBBBBBBBFB(ParallelGateway pgw,
-			ParallelStep step, PG2PS _pg2ps, SequenceFlow sf, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc,
-			ParallelFlow flow, Match sourceMatch, Match targetMatch) {
+	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_27_2_greenBBBBBBBBBFB(FN2S _pg2ps,
+			ParallelGateway pgw, ParallelStep step, SequenceFlow sf, SimpleBPMN.Process process, UseCase useCase,
+			P2UC _p2uc, ParallelFlow flow, Match sourceMatch, Match targetMatch) {
 		IsApplicableMatchCC isApplicableMatch = TGGRuntimeFactory.eINSTANCE.createIsApplicableMatchCC();
 		String isApplicableMatch_ruleName_prime = "SequenceFlowAfterPG2ParallelFlow";
 		isApplicableMatch.setSourceMatch(sourceMatch);
@@ -3553,19 +3563,19 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		isApplicableMatch.getAllContextElements().add(_pg2ps);
 		isApplicableMatch.getAllContextElements().add(_p2uc);
 		isApplicableMatch.setRuleName(isApplicableMatch_ruleName_prime);
-		return new Object[] { pgw, step, _pg2ps, sf, process, useCase, _p2uc, flow, sourceMatch, isApplicableMatch,
+		return new Object[] { _pg2ps, pgw, step, sf, process, useCase, _p2uc, flow, sourceMatch, isApplicableMatch,
 				targetMatch };
 	}
 
 	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_27_3_bindingFBBBBBBBBBBBB(
-			SequenceFlowAfterPG2ParallelFlow _this, IsApplicableMatchCC isApplicableMatch, ParallelGateway pgw,
-			ParallelStep step, PG2PS _pg2ps, SequenceFlow sf, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc,
-			ParallelFlow flow, Match sourceMatch, Match targetMatch) {
-		CSP _localVariable_0 = _this.isApplicable_solveCsp_CC(isApplicableMatch, pgw, step, _pg2ps, sf, process,
+			SequenceFlowAfterPG2ParallelFlow _this, IsApplicableMatchCC isApplicableMatch, FN2S _pg2ps,
+			ParallelGateway pgw, ParallelStep step, SequenceFlow sf, SimpleBPMN.Process process, UseCase useCase,
+			P2UC _p2uc, ParallelFlow flow, Match sourceMatch, Match targetMatch) {
+		CSP _localVariable_0 = _this.isApplicable_solveCsp_CC(isApplicableMatch, _pg2ps, pgw, step, sf, process,
 				useCase, _p2uc, flow, sourceMatch, targetMatch);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, isApplicableMatch, pgw, step, _pg2ps, sf, process, useCase, _p2uc, flow,
+			return new Object[] { csp, _this, isApplicableMatch, _pg2ps, pgw, step, sf, process, useCase, _p2uc, flow,
 					sourceMatch, targetMatch };
 		}
 		return null;
@@ -3576,11 +3586,11 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 	}
 
 	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_27_3_bindingAndBlackFBBBBBBBBBBBB(
-			SequenceFlowAfterPG2ParallelFlow _this, IsApplicableMatchCC isApplicableMatch, ParallelGateway pgw,
-			ParallelStep step, PG2PS _pg2ps, SequenceFlow sf, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc,
-			ParallelFlow flow, Match sourceMatch, Match targetMatch) {
+			SequenceFlowAfterPG2ParallelFlow _this, IsApplicableMatchCC isApplicableMatch, FN2S _pg2ps,
+			ParallelGateway pgw, ParallelStep step, SequenceFlow sf, SimpleBPMN.Process process, UseCase useCase,
+			P2UC _p2uc, ParallelFlow flow, Match sourceMatch, Match targetMatch) {
 		Object[] result_pattern_SequenceFlowAfterPG2ParallelFlow_27_3_binding = pattern_SequenceFlowAfterPG2ParallelFlow_27_3_bindingFBBBBBBBBBBBB(
-				_this, isApplicableMatch, pgw, step, _pg2ps, sf, process, useCase, _p2uc, flow, sourceMatch,
+				_this, isApplicableMatch, _pg2ps, pgw, step, sf, process, useCase, _p2uc, flow, sourceMatch,
 				targetMatch);
 		if (result_pattern_SequenceFlowAfterPG2ParallelFlow_27_3_binding != null) {
 			CSP csp = (CSP) result_pattern_SequenceFlowAfterPG2ParallelFlow_27_3_binding[0];
@@ -3589,7 +3599,7 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 					csp);
 			if (result_pattern_SequenceFlowAfterPG2ParallelFlow_27_3_black != null) {
 
-				return new Object[] { csp, _this, isApplicableMatch, pgw, step, _pg2ps, sf, process, useCase, _p2uc,
+				return new Object[] { csp, _this, isApplicableMatch, _pg2ps, pgw, step, sf, process, useCase, _p2uc,
 						flow, sourceMatch, targetMatch };
 			}
 		}
@@ -3624,28 +3634,28 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 
 	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_30_2_bindingFFFFFFFFB(
 			IsApplicableMatchCC isApplicableMatch) {
-		EObject _localVariable_0 = isApplicableMatch.getObject("pgw");
-		EObject _localVariable_1 = isApplicableMatch.getObject("step");
-		EObject _localVariable_2 = isApplicableMatch.getObject("_pg2ps");
+		EObject _localVariable_0 = isApplicableMatch.getObject("_pg2ps");
+		EObject _localVariable_1 = isApplicableMatch.getObject("pgw");
+		EObject _localVariable_2 = isApplicableMatch.getObject("step");
 		EObject _localVariable_3 = isApplicableMatch.getObject("sf");
 		EObject _localVariable_4 = isApplicableMatch.getObject("process");
 		EObject _localVariable_5 = isApplicableMatch.getObject("useCase");
 		EObject _localVariable_6 = isApplicableMatch.getObject("_p2uc");
 		EObject _localVariable_7 = isApplicableMatch.getObject("flow");
-		EObject tmpPgw = _localVariable_0;
-		EObject tmpStep = _localVariable_1;
-		EObject tmp_pg2ps = _localVariable_2;
+		EObject tmp_pg2ps = _localVariable_0;
+		EObject tmpPgw = _localVariable_1;
+		EObject tmpStep = _localVariable_2;
 		EObject tmpSf = _localVariable_3;
 		EObject tmpProcess = _localVariable_4;
 		EObject tmpUseCase = _localVariable_5;
 		EObject tmp_p2uc = _localVariable_6;
 		EObject tmpFlow = _localVariable_7;
-		if (tmpPgw instanceof ParallelGateway) {
-			ParallelGateway pgw = (ParallelGateway) tmpPgw;
-			if (tmpStep instanceof ParallelStep) {
-				ParallelStep step = (ParallelStep) tmpStep;
-				if (tmp_pg2ps instanceof PG2PS) {
-					PG2PS _pg2ps = (PG2PS) tmp_pg2ps;
+		if (tmp_pg2ps instanceof FN2S) {
+			FN2S _pg2ps = (FN2S) tmp_pg2ps;
+			if (tmpPgw instanceof ParallelGateway) {
+				ParallelGateway pgw = (ParallelGateway) tmpPgw;
+				if (tmpStep instanceof ParallelStep) {
+					ParallelStep step = (ParallelStep) tmpStep;
 					if (tmpSf instanceof SequenceFlow) {
 						SequenceFlow sf = (SequenceFlow) tmpSf;
 						if (tmpProcess instanceof SimpleBPMN.Process) {
@@ -3656,7 +3666,7 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 									P2UC _p2uc = (P2UC) tmp_p2uc;
 									if (tmpFlow instanceof ParallelFlow) {
 										ParallelFlow flow = (ParallelFlow) tmpFlow;
-										return new Object[] { pgw, step, _pg2ps, sf, process, useCase, _p2uc, flow,
+										return new Object[] { _pg2ps, pgw, step, sf, process, useCase, _p2uc, flow,
 												isApplicableMatch };
 									}
 								}
@@ -3669,13 +3679,13 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		return null;
 	}
 
-	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_30_2_blackBBBBBBBBB(ParallelGateway pgw,
-			ParallelStep step, PG2PS _pg2ps, SequenceFlow sf, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc,
-			ParallelFlow flow, IsApplicableMatchCC isApplicableMatch) {
-		if (pgw.equals(sf.getSourceRef())) {
-			if (step.getInvokedFlows().contains(flow)) {
-				if (pgw.equals(_pg2ps.getSource())) {
-					if (step.equals(_pg2ps.getTarget())) {
+	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_30_2_blackBBBBBBBBB(FN2S _pg2ps,
+			ParallelGateway pgw, ParallelStep step, SequenceFlow sf, SimpleBPMN.Process process, UseCase useCase,
+			P2UC _p2uc, ParallelFlow flow, IsApplicableMatchCC isApplicableMatch) {
+		if (step.equals(_pg2ps.getTarget())) {
+			if (pgw.equals(_pg2ps.getSource())) {
+				if (pgw.equals(sf.getSourceRef())) {
+					if (step.getInvokedFlows().contains(flow)) {
 						if (process.getFlowElements().contains(pgw)) {
 							if (process.getFlowElements().contains(sf)) {
 								if (useCase.getFlows().contains(flow)) {
@@ -3683,7 +3693,7 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 										if (useCase.equals(_p2uc.getTarget())) {
 											boolean pgwisDiverging = pgw.isIsDiverging();
 											if (Boolean.valueOf(pgwisDiverging).equals(Boolean.valueOf(true))) {
-												return new Object[] { pgw, step, _pg2ps, sf, process, useCase, _p2uc,
+												return new Object[] { _pg2ps, pgw, step, sf, process, useCase, _p2uc,
 														flow, isApplicableMatch };
 											}
 
@@ -3704,9 +3714,9 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		Object[] result_pattern_SequenceFlowAfterPG2ParallelFlow_30_2_binding = pattern_SequenceFlowAfterPG2ParallelFlow_30_2_bindingFFFFFFFFB(
 				isApplicableMatch);
 		if (result_pattern_SequenceFlowAfterPG2ParallelFlow_30_2_binding != null) {
-			ParallelGateway pgw = (ParallelGateway) result_pattern_SequenceFlowAfterPG2ParallelFlow_30_2_binding[0];
-			ParallelStep step = (ParallelStep) result_pattern_SequenceFlowAfterPG2ParallelFlow_30_2_binding[1];
-			PG2PS _pg2ps = (PG2PS) result_pattern_SequenceFlowAfterPG2ParallelFlow_30_2_binding[2];
+			FN2S _pg2ps = (FN2S) result_pattern_SequenceFlowAfterPG2ParallelFlow_30_2_binding[0];
+			ParallelGateway pgw = (ParallelGateway) result_pattern_SequenceFlowAfterPG2ParallelFlow_30_2_binding[1];
+			ParallelStep step = (ParallelStep) result_pattern_SequenceFlowAfterPG2ParallelFlow_30_2_binding[2];
 			SequenceFlow sf = (SequenceFlow) result_pattern_SequenceFlowAfterPG2ParallelFlow_30_2_binding[3];
 			SimpleBPMN.Process process = (SimpleBPMN.Process) result_pattern_SequenceFlowAfterPG2ParallelFlow_30_2_binding[4];
 			UseCase useCase = (UseCase) result_pattern_SequenceFlowAfterPG2ParallelFlow_30_2_binding[5];
@@ -3714,10 +3724,10 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 			ParallelFlow flow = (ParallelFlow) result_pattern_SequenceFlowAfterPG2ParallelFlow_30_2_binding[7];
 
 			Object[] result_pattern_SequenceFlowAfterPG2ParallelFlow_30_2_black = pattern_SequenceFlowAfterPG2ParallelFlow_30_2_blackBBBBBBBBB(
-					pgw, step, _pg2ps, sf, process, useCase, _p2uc, flow, isApplicableMatch);
+					_pg2ps, pgw, step, sf, process, useCase, _p2uc, flow, isApplicableMatch);
 			if (result_pattern_SequenceFlowAfterPG2ParallelFlow_30_2_black != null) {
 
-				return new Object[] { pgw, step, _pg2ps, sf, process, useCase, _p2uc, flow, isApplicableMatch };
+				return new Object[] { _pg2ps, pgw, step, sf, process, useCase, _p2uc, flow, isApplicableMatch };
 			}
 		}
 		return null;
@@ -3753,25 +3763,25 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 	}
 
 	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_31_2_black_nac_0BB(
-			ModelgeneratorRuleResult ruleResult, ParallelGateway pgw) {
-		if (ruleResult.getSourceObjects().contains(pgw)) {
-			return new Object[] { ruleResult, pgw };
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_31_2_black_nac_1BB(
-			ModelgeneratorRuleResult ruleResult, PG2PS _pg2ps) {
+			ModelgeneratorRuleResult ruleResult, FN2S _pg2ps) {
 		if (ruleResult.getCorrObjects().contains(_pg2ps)) {
 			return new Object[] { ruleResult, _pg2ps };
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_31_2_black_nac_2BB(
+	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_31_2_black_nac_1BB(
 			ModelgeneratorRuleResult ruleResult, ParallelStep step) {
 		if (ruleResult.getTargetObjects().contains(step)) {
 			return new Object[] { ruleResult, step };
+		}
+		return null;
+	}
+
+	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_31_2_black_nac_2BB(
+			ModelgeneratorRuleResult ruleResult, ParallelGateway pgw) {
+		if (ruleResult.getSourceObjects().contains(pgw)) {
+			return new Object[] { ruleResult, pgw };
 		}
 		return null;
 	}
@@ -3805,20 +3815,22 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		for (RuleEntryList _pg2psList : ruleEntryContainer.getRuleEntryList()) {
 			for (EObject tmp_pg2ps : _pg2psList.getEntryObjects()) {
-				if (tmp_pg2ps instanceof PG2PS) {
-					PG2PS _pg2ps = (PG2PS) tmp_pg2ps;
-					ParallelGateway pgw = _pg2ps.getSource();
-					if (pgw != null) {
-						ParallelStep step = _pg2ps.getTarget();
-						if (step != null) {
+				if (tmp_pg2ps instanceof FN2S) {
+					FN2S _pg2ps = (FN2S) tmp_pg2ps;
+					Step tmpStep = _pg2ps.getTarget();
+					if (tmpStep instanceof ParallelStep) {
+						ParallelStep step = (ParallelStep) tmpStep;
+						FlowNode tmpPgw = _pg2ps.getSource();
+						if (tmpPgw instanceof ParallelGateway) {
+							ParallelGateway pgw = (ParallelGateway) tmpPgw;
 							boolean pgwisDiverging = pgw.isIsDiverging();
 							if (Boolean.valueOf(pgwisDiverging).equals(Boolean.valueOf(true))) {
-								if (pattern_SequenceFlowAfterPG2ParallelFlow_31_2_black_nac_1BB(ruleResult,
+								if (pattern_SequenceFlowAfterPG2ParallelFlow_31_2_black_nac_0BB(ruleResult,
 										_pg2ps) == null) {
-									if (pattern_SequenceFlowAfterPG2ParallelFlow_31_2_black_nac_0BB(ruleResult,
-											pgw) == null) {
+									if (pattern_SequenceFlowAfterPG2ParallelFlow_31_2_black_nac_1BB(ruleResult,
+											step) == null) {
 										if (pattern_SequenceFlowAfterPG2ParallelFlow_31_2_black_nac_2BB(ruleResult,
-												step) == null) {
+												pgw) == null) {
 											for (SimpleBPMN.Process process : org.moflon.core.utilities.eMoflonEMFUtil
 													.getOppositeReferenceTyped(pgw, SimpleBPMN.Process.class,
 															"flowElements")) {
@@ -3832,8 +3844,8 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 																	ruleResult, _p2uc) == null) {
 																if (pattern_SequenceFlowAfterPG2ParallelFlow_31_2_black_nac_5BB(
 																		ruleResult, useCase) == null) {
-																	_result.add(new Object[] { _pg2psList, pgw, _pg2ps,
-																			step, process, _p2uc, useCase,
+																	_result.add(new Object[] { _pg2psList, _pg2ps, step,
+																			pgw, process, _p2uc, useCase,
 																			ruleEntryContainer, ruleResult });
 																}
 															}
@@ -3858,14 +3870,14 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 	}
 
 	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_31_3_bindingFBBBBBBBBB(
-			SequenceFlowAfterPG2ParallelFlow _this, IsApplicableMatch isApplicableMatch, ParallelGateway pgw,
-			ParallelStep step, PG2PS _pg2ps, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc,
+			SequenceFlowAfterPG2ParallelFlow _this, IsApplicableMatch isApplicableMatch, FN2S _pg2ps,
+			ParallelGateway pgw, ParallelStep step, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc,
 			ModelgeneratorRuleResult ruleResult) {
-		CSP _localVariable_0 = _this.generateModel_solveCsp_BWD(isApplicableMatch, pgw, step, _pg2ps, process, useCase,
+		CSP _localVariable_0 = _this.generateModel_solveCsp_BWD(isApplicableMatch, _pg2ps, pgw, step, process, useCase,
 				_p2uc, ruleResult);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, isApplicableMatch, pgw, step, _pg2ps, process, useCase, _p2uc,
+			return new Object[] { csp, _this, isApplicableMatch, _pg2ps, pgw, step, process, useCase, _p2uc,
 					ruleResult };
 		}
 		return null;
@@ -3876,11 +3888,11 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 	}
 
 	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_31_3_bindingAndBlackFBBBBBBBBB(
-			SequenceFlowAfterPG2ParallelFlow _this, IsApplicableMatch isApplicableMatch, ParallelGateway pgw,
-			ParallelStep step, PG2PS _pg2ps, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc,
+			SequenceFlowAfterPG2ParallelFlow _this, IsApplicableMatch isApplicableMatch, FN2S _pg2ps,
+			ParallelGateway pgw, ParallelStep step, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc,
 			ModelgeneratorRuleResult ruleResult) {
 		Object[] result_pattern_SequenceFlowAfterPG2ParallelFlow_31_3_binding = pattern_SequenceFlowAfterPG2ParallelFlow_31_3_bindingFBBBBBBBBB(
-				_this, isApplicableMatch, pgw, step, _pg2ps, process, useCase, _p2uc, ruleResult);
+				_this, isApplicableMatch, _pg2ps, pgw, step, process, useCase, _p2uc, ruleResult);
 		if (result_pattern_SequenceFlowAfterPG2ParallelFlow_31_3_binding != null) {
 			CSP csp = (CSP) result_pattern_SequenceFlowAfterPG2ParallelFlow_31_3_binding[0];
 
@@ -3888,7 +3900,7 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 					csp);
 			if (result_pattern_SequenceFlowAfterPG2ParallelFlow_31_3_black != null) {
 
-				return new Object[] { csp, _this, isApplicableMatch, pgw, step, _pg2ps, process, useCase, _p2uc,
+				return new Object[] { csp, _this, isApplicableMatch, _pg2ps, pgw, step, process, useCase, _p2uc,
 						ruleResult };
 			}
 		}
@@ -3902,22 +3914,22 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 		return _result;
 	}
 
-	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_31_5_blackBBBBBB(ParallelGateway pgw,
-			ParallelStep step, PG2PS _pg2ps, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc) {
+	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_31_5_blackBBBBBB(FN2S _pg2ps,
+			ParallelGateway pgw, ParallelStep step, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc) {
 		boolean pgwisDiverging = pgw.isIsDiverging();
 		if (Boolean.valueOf(pgwisDiverging).equals(Boolean.valueOf(true))) {
-			return new Object[] { pgw, step, _pg2ps, process, useCase, _p2uc };
+			return new Object[] { _pg2ps, pgw, step, process, useCase, _p2uc };
 		}
 
 		return null;
 	}
 
-	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_31_6_blackBBBBBBB(ParallelGateway pgw,
-			ParallelStep step, PG2PS _pg2ps, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc,
+	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_31_6_blackBBBBBBB(FN2S _pg2ps,
+			ParallelGateway pgw, ParallelStep step, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc,
 			ModelgeneratorRuleResult ruleResult) {
 		boolean pgwisDiverging = pgw.isIsDiverging();
 		if (Boolean.valueOf(pgwisDiverging).equals(Boolean.valueOf(true))) {
-			return new Object[] { pgw, step, _pg2ps, process, useCase, _p2uc, ruleResult };
+			return new Object[] { _pg2ps, pgw, step, process, useCase, _p2uc, ruleResult };
 		}
 
 		return null;

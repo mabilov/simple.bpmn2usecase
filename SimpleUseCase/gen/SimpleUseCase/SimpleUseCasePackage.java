@@ -140,13 +140,31 @@ public interface SimpleUseCasePackage extends EPackage {
 	int FLOW__FIRST = 2;
 
 	/**
+	 * The feature id for the '<em><b>last</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOW__LAST = 3;
+
+	/**
+	 * The feature id for the '<em><b>empty</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOW__EMPTY = 4;
+
+	/**
 	 * The number of structural features of the '<em>Flow</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FLOW_FEATURE_COUNT = 3;
+	int FLOW_FEATURE_COUNT = 5;
 
 	/**
 	 * The number of operations of the '<em>Flow</em>' class.
@@ -193,6 +211,24 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @ordered
 	 */
 	int BASIC_FLOW__FIRST = FLOW__FIRST;
+
+	/**
+	 * The feature id for the '<em><b>last</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BASIC_FLOW__LAST = FLOW__LAST;
+
+	/**
+	 * The feature id for the '<em><b>empty</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BASIC_FLOW__EMPTY = FLOW__EMPTY;
 
 	/**
 	 * The number of structural features of the '<em>Basic Flow</em>' class.
@@ -248,6 +284,24 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @ordered
 	 */
 	int PARALLEL_FLOW__FIRST = FLOW__FIRST;
+
+	/**
+	 * The feature id for the '<em><b>last</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARALLEL_FLOW__LAST = FLOW__LAST;
+
+	/**
+	 * The feature id for the '<em><b>empty</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARALLEL_FLOW__EMPTY = FLOW__EMPTY;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -536,6 +590,28 @@ public interface SimpleUseCasePackage extends EPackage {
 	EReference getFlow___first();
 
 	/**
+	 * Returns the meta object for the reference '{@link SimpleUseCase.Flow#get__last <em>last</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>last</em>'.
+	 * @see SimpleUseCase.Flow#get__last()
+	 * @see #getFlow()
+	 * @generated
+	 */
+	EReference getFlow___last();
+
+	/**
+	 * Returns the meta object for the attribute '{@link SimpleUseCase.Flow#is__empty <em>empty</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>empty</em>'.
+	 * @see SimpleUseCase.Flow#is__empty()
+	 * @see #getFlow()
+	 * @generated
+	 */
+	EAttribute getFlow___empty();
+
+	/**
 	 * Returns the meta object for class '{@link SimpleUseCase.BasicFlow <em>Basic Flow</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -732,6 +808,22 @@ public interface SimpleUseCasePackage extends EPackage {
 		 * @generated
 		 */
 		EReference FLOW__FIRST = eINSTANCE.getFlow___first();
+
+		/**
+		 * The meta object literal for the '<em><b>last</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FLOW__LAST = eINSTANCE.getFlow___last();
+
+		/**
+		 * The meta object literal for the '<em><b>empty</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FLOW__EMPTY = eINSTANCE.getFlow___empty();
 
 		/**
 		 * The meta object literal for the '{@link SimpleUseCase.impl.BasicFlowImpl <em>Basic Flow</em>}' class.

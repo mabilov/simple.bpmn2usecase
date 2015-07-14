@@ -67,12 +67,14 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 			return createParallelGateway2ParallelStepSeq();
 		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_SE:
 			return createParallelGateway2ParallelStepAfterSE();
+		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST:
+			return createEndEvent2FinalStateFirst();
 		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG:
 			return createParallelGateway2ParallelStepAfterPG();
 		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW:
 			return createSequenceFlowAfterPG2ParallelFlow();
-		case RulesPackage.END_EVENT2_FINAL_STATE:
-			return createEndEvent2FinalState();
+		case RulesPackage.END_EVENT2_FINAL_STATE_SEQ:
+			return createEndEvent2FinalStateSeq();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -143,6 +145,16 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EndEvent2FinalStateFirst createEndEvent2FinalStateFirst() {
+		EndEvent2FinalStateFirstImpl endEvent2FinalStateFirst = new EndEvent2FinalStateFirstImpl();
+		return endEvent2FinalStateFirst;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ParallelGateway2ParallelStepAfterPG createParallelGateway2ParallelStepAfterPG() {
 		ParallelGateway2ParallelStepAfterPGImpl parallelGateway2ParallelStepAfterPG = new ParallelGateway2ParallelStepAfterPGImpl();
 		return parallelGateway2ParallelStepAfterPG;
@@ -163,9 +175,9 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EndEvent2FinalState createEndEvent2FinalState() {
-		EndEvent2FinalStateImpl endEvent2FinalState = new EndEvent2FinalStateImpl();
-		return endEvent2FinalState;
+	public EndEvent2FinalStateSeq createEndEvent2FinalStateSeq() {
+		EndEvent2FinalStateSeqImpl endEvent2FinalStateSeq = new EndEvent2FinalStateSeqImpl();
+		return endEvent2FinalStateSeq;
 	}
 
 	/**

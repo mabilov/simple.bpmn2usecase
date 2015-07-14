@@ -3,12 +3,12 @@
 package Bpmn2UseCase.Rules.impl;
 
 import Bpmn2UseCase.Bpmn2UseCaseFactory;
+import Bpmn2UseCase.FN2S;
 
 import Bpmn2UseCase.Rules.RulesPackage;
 import Bpmn2UseCase.Rules.Task2NormalStepAfterPG;
 
 import Bpmn2UseCase.SF2F;
-import Bpmn2UseCase.T2NS;
 
 import SimpleBPMN.FlowElement;
 import SimpleBPMN.FlowNode;
@@ -184,53 +184,53 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		SequenceFlow sf2 = (SequenceFlow) result1_bindingAndBlack[5];
 		SF2F _sf2f1 = (SF2F) result1_bindingAndBlack[6];
 		CSP csp = (CSP) result1_bindingAndBlack[8];
-		Object[] result1_green = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_1_1_greenBFBFBFB(flow, task,
+		Object[] result1_green = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_1_1_greenBFFBBFB(flow, task,
 				sf2, csp);
 		NormalStep step = (NormalStep) result1_green[1];
-		T2NS _t2ns = (T2NS) result1_green[3];
+		FN2S _t2ns = (FN2S) result1_green[2];
 		SF2F _sf2f2 = (SF2F) result1_green[5];
 
 		// collect translated elements
-		Object[] result2_black = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_1_2_blackBBBBB(step, task,
-				_t2ns, sf2, _sf2f2);
+		Object[] result2_black = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_1_2_blackBBBBB(step, _t2ns,
+				task, sf2, _sf2f2);
 		if (result2_black == null) {
 			throw new RuntimeException("Pattern matching in node [collect translated elements] failed." + " Variables: "
-					+ "[step] = " + step + ", " + "[task] = " + task + ", " + "[_t2ns] = " + _t2ns + ", " + "[sf2] = "
+					+ "[step] = " + step + ", " + "[_t2ns] = " + _t2ns + ", " + "[task] = " + task + ", " + "[sf2] = "
 					+ sf2 + ", " + "[_sf2f2] = " + _sf2f2 + ".");
 		}
-		Object[] result2_green = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_1_2_greenFBBBBB(step, task,
-				_t2ns, sf2, _sf2f2);
+		Object[] result2_green = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_1_2_greenFBBBBB(step, _t2ns,
+				task, sf2, _sf2f2);
 		PerformRuleResult ruleresult = (PerformRuleResult) result2_green[0];
 
 		// bookkeeping for edges
 		Object[] result3_black = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_1_3_blackBBBBBBBBBBB(
-				ruleresult, node, flow, step, process, sf1, task, _t2ns, sf2, _sf2f2, _sf2f1);
+				ruleresult, node, flow, step, _t2ns, process, sf1, task, sf2, _sf2f2, _sf2f1);
 		if (result3_black == null) {
 			throw new RuntimeException("Pattern matching in node [bookkeeping for edges] failed." + " Variables: "
 					+ "[ruleresult] = " + ruleresult + ", " + "[node] = " + node + ", " + "[flow] = " + flow + ", "
-					+ "[step] = " + step + ", " + "[process] = " + process + ", " + "[sf1] = " + sf1 + ", "
-					+ "[task] = " + task + ", " + "[_t2ns] = " + _t2ns + ", " + "[sf2] = " + sf2 + ", " + "[_sf2f2] = "
+					+ "[step] = " + step + ", " + "[_t2ns] = " + _t2ns + ", " + "[process] = " + process + ", "
+					+ "[sf1] = " + sf1 + ", " + "[task] = " + task + ", " + "[sf2] = " + sf2 + ", " + "[_sf2f2] = "
 					+ _sf2f2 + ", " + "[_sf2f1] = " + _sf2f1 + ".");
 		}
 		Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_1_3_greenBBBBBBBBBFFFFFFFFFFFF(ruleresult, flow, step,
-				process, sf1, task, _t2ns, sf2, _sf2f2);
+				_t2ns, process, sf1, task, sf2, _sf2f2);
 				// EMoflonEdge flow__step____steps = (EMoflonEdge) result3_green[9];
 				// EMoflonEdge flow__step______first = (EMoflonEdge) result3_green[10];
-				// EMoflonEdge process__task____flowElements = (EMoflonEdge) result3_green[11];
-				// EMoflonEdge process__sf2____flowElements = (EMoflonEdge) result3_green[12];
-				// EMoflonEdge sf1__task____targetRef = (EMoflonEdge) result3_green[13];
-				// EMoflonEdge task__sf1____incoming = (EMoflonEdge) result3_green[14];
-				// EMoflonEdge sf2__task____sourceRef = (EMoflonEdge) result3_green[15];
-				// EMoflonEdge task__sf2____outgoing = (EMoflonEdge) result3_green[16];
-				// EMoflonEdge _t2ns__task____source = (EMoflonEdge) result3_green[17];
-				// EMoflonEdge _t2ns__step____target = (EMoflonEdge) result3_green[18];
+				// EMoflonEdge _t2ns__task____source = (EMoflonEdge) result3_green[11];
+				// EMoflonEdge _t2ns__step____target = (EMoflonEdge) result3_green[12];
+				// EMoflonEdge process__task____flowElements = (EMoflonEdge) result3_green[13];
+				// EMoflonEdge process__sf2____flowElements = (EMoflonEdge) result3_green[14];
+				// EMoflonEdge sf1__task____targetRef = (EMoflonEdge) result3_green[15];
+				// EMoflonEdge task__sf1____incoming = (EMoflonEdge) result3_green[16];
+				// EMoflonEdge sf2__task____sourceRef = (EMoflonEdge) result3_green[17];
+				// EMoflonEdge task__sf2____outgoing = (EMoflonEdge) result3_green[18];
 				// EMoflonEdge _sf2f2__sf2____source = (EMoflonEdge) result3_green[19];
 				// EMoflonEdge _sf2f2__flow____target = (EMoflonEdge) result3_green[20];
 
 		// perform postprocessing story node is empty
 		// register objects
 		Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_1_5_expressionBBBBBBBBBBBB(this, ruleresult, node,
-				flow, step, process, sf1, task, _t2ns, sf2, _sf2f2, _sf2f1);
+				flow, step, _t2ns, process, sf1, task, sf2, _sf2f2, _sf2f1);
 		return Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_1_6_expressionFB(ruleresult);
 	}
 
@@ -424,14 +424,14 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	 * @generated
 	 */
 	public void registerObjects_FWD(PerformRuleResult ruleresult, EObject node, EObject flow, EObject step,
-			EObject process, EObject sf1, EObject task, EObject _t2ns, EObject sf2, EObject _sf2f2, EObject _sf2f1) {
+			EObject _t2ns, EObject process, EObject sf1, EObject task, EObject sf2, EObject _sf2f2, EObject _sf2f1) {
 		ruleresult.registerObject("node", node);
 		ruleresult.registerObject("flow", flow);
 		ruleresult.registerObject("step", step);
+		ruleresult.registerObject("_t2ns", _t2ns);
 		ruleresult.registerObject("process", process);
 		ruleresult.registerObject("sf1", sf1);
 		ruleresult.registerObject("task", task);
-		ruleresult.registerObject("_t2ns", _t2ns);
 		ruleresult.registerObject("sf2", sf2);
 		ruleresult.registerObject("_sf2f2", _sf2f2);
 		ruleresult.registerObject("_sf2f1", _sf2f1);
@@ -525,54 +525,54 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		SequenceFlow sf1 = (SequenceFlow) result1_bindingAndBlack[4];
 		SF2F _sf2f1 = (SF2F) result1_bindingAndBlack[5];
 		CSP csp = (CSP) result1_bindingAndBlack[7];
-		Object[] result1_green = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_11_1_greenBBBBFFFFB(flow,
+		Object[] result1_green = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_11_1_greenBBFBBFFFB(flow,
 				step, process, sf1, csp);
-		Task task = (Task) result1_green[4];
-		T2NS _t2ns = (T2NS) result1_green[5];
+		FN2S _t2ns = (FN2S) result1_green[2];
+		Task task = (Task) result1_green[5];
 		SequenceFlow sf2 = (SequenceFlow) result1_green[6];
 		SF2F _sf2f2 = (SF2F) result1_green[7];
 
 		// collect translated elements
-		Object[] result2_black = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_11_2_blackBBBBB(step, task,
-				_t2ns, sf2, _sf2f2);
+		Object[] result2_black = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_11_2_blackBBBBB(step, _t2ns,
+				task, sf2, _sf2f2);
 		if (result2_black == null) {
 			throw new RuntimeException("Pattern matching in node [collect translated elements] failed." + " Variables: "
-					+ "[step] = " + step + ", " + "[task] = " + task + ", " + "[_t2ns] = " + _t2ns + ", " + "[sf2] = "
+					+ "[step] = " + step + ", " + "[_t2ns] = " + _t2ns + ", " + "[task] = " + task + ", " + "[sf2] = "
 					+ sf2 + ", " + "[_sf2f2] = " + _sf2f2 + ".");
 		}
-		Object[] result2_green = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_11_2_greenFBBBBB(step, task,
-				_t2ns, sf2, _sf2f2);
+		Object[] result2_green = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_11_2_greenFBBBBB(step, _t2ns,
+				task, sf2, _sf2f2);
 		PerformRuleResult ruleresult = (PerformRuleResult) result2_green[0];
 
 		// bookkeeping for edges
 		Object[] result3_black = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_11_3_blackBBBBBBBBBBB(
-				ruleresult, node, flow, step, process, sf1, task, _t2ns, sf2, _sf2f2, _sf2f1);
+				ruleresult, node, flow, step, _t2ns, process, sf1, task, sf2, _sf2f2, _sf2f1);
 		if (result3_black == null) {
 			throw new RuntimeException("Pattern matching in node [bookkeeping for edges] failed." + " Variables: "
 					+ "[ruleresult] = " + ruleresult + ", " + "[node] = " + node + ", " + "[flow] = " + flow + ", "
-					+ "[step] = " + step + ", " + "[process] = " + process + ", " + "[sf1] = " + sf1 + ", "
-					+ "[task] = " + task + ", " + "[_t2ns] = " + _t2ns + ", " + "[sf2] = " + sf2 + ", " + "[_sf2f2] = "
+					+ "[step] = " + step + ", " + "[_t2ns] = " + _t2ns + ", " + "[process] = " + process + ", "
+					+ "[sf1] = " + sf1 + ", " + "[task] = " + task + ", " + "[sf2] = " + sf2 + ", " + "[_sf2f2] = "
 					+ _sf2f2 + ", " + "[_sf2f1] = " + _sf2f1 + ".");
 		}
 		Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_11_3_greenBBBBBBBBBFFFFFFFFFFFF(ruleresult, flow,
-				step, process, sf1, task, _t2ns, sf2, _sf2f2);
+				step, _t2ns, process, sf1, task, sf2, _sf2f2);
 				// EMoflonEdge flow__step____steps = (EMoflonEdge) result3_green[9];
 				// EMoflonEdge flow__step______first = (EMoflonEdge) result3_green[10];
-				// EMoflonEdge process__task____flowElements = (EMoflonEdge) result3_green[11];
-				// EMoflonEdge process__sf2____flowElements = (EMoflonEdge) result3_green[12];
-				// EMoflonEdge sf1__task____targetRef = (EMoflonEdge) result3_green[13];
-				// EMoflonEdge task__sf1____incoming = (EMoflonEdge) result3_green[14];
-				// EMoflonEdge sf2__task____sourceRef = (EMoflonEdge) result3_green[15];
-				// EMoflonEdge task__sf2____outgoing = (EMoflonEdge) result3_green[16];
-				// EMoflonEdge _t2ns__task____source = (EMoflonEdge) result3_green[17];
-				// EMoflonEdge _t2ns__step____target = (EMoflonEdge) result3_green[18];
+				// EMoflonEdge _t2ns__task____source = (EMoflonEdge) result3_green[11];
+				// EMoflonEdge _t2ns__step____target = (EMoflonEdge) result3_green[12];
+				// EMoflonEdge process__task____flowElements = (EMoflonEdge) result3_green[13];
+				// EMoflonEdge process__sf2____flowElements = (EMoflonEdge) result3_green[14];
+				// EMoflonEdge sf1__task____targetRef = (EMoflonEdge) result3_green[15];
+				// EMoflonEdge task__sf1____incoming = (EMoflonEdge) result3_green[16];
+				// EMoflonEdge sf2__task____sourceRef = (EMoflonEdge) result3_green[17];
+				// EMoflonEdge task__sf2____outgoing = (EMoflonEdge) result3_green[18];
 				// EMoflonEdge _sf2f2__sf2____source = (EMoflonEdge) result3_green[19];
 				// EMoflonEdge _sf2f2__flow____target = (EMoflonEdge) result3_green[20];
 
 		// perform postprocessing story node is empty
 		// register objects
 		Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_11_5_expressionBBBBBBBBBBBB(this, ruleresult, node,
-				flow, step, process, sf1, task, _t2ns, sf2, _sf2f2, _sf2f1);
+				flow, step, _t2ns, process, sf1, task, sf2, _sf2f2, _sf2f1);
 		return Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_11_6_expressionFB(ruleresult);
 	}
 
@@ -754,14 +754,14 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	 * @generated
 	 */
 	public void registerObjects_BWD(PerformRuleResult ruleresult, EObject node, EObject flow, EObject step,
-			EObject process, EObject sf1, EObject task, EObject _t2ns, EObject sf2, EObject _sf2f2, EObject _sf2f1) {
+			EObject _t2ns, EObject process, EObject sf1, EObject task, EObject sf2, EObject _sf2f2, EObject _sf2f1) {
 		ruleresult.registerObject("node", node);
 		ruleresult.registerObject("flow", flow);
 		ruleresult.registerObject("step", step);
+		ruleresult.registerObject("_t2ns", _t2ns);
 		ruleresult.registerObject("process", process);
 		ruleresult.registerObject("sf1", sf1);
 		ruleresult.registerObject("task", task);
-		ruleresult.registerObject("_t2ns", _t2ns);
 		ruleresult.registerObject("sf2", sf2);
 		ruleresult.registerObject("_sf2f2", _sf2f2);
 		ruleresult.registerObject("_sf2f1", _sf2f1);
@@ -783,7 +783,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_35(EMoflonEdge _edge_steps) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_107(EMoflonEdge _edge_steps) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterPGImpl
 				.pattern_Task2NormalStepAfterPG_20_1_bindingAndBlackFFB(this);
@@ -836,7 +836,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_36(EMoflonEdge _edge___first) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_108(EMoflonEdge _edge___first) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterPGImpl
 				.pattern_Task2NormalStepAfterPG_21_1_bindingAndBlackFFB(this);
@@ -889,7 +889,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_118(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_338(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterPGImpl
 				.pattern_Task2NormalStepAfterPG_22_1_bindingAndBlackFFB(this);
@@ -945,7 +945,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_119(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_339(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterPGImpl
 				.pattern_Task2NormalStepAfterPG_23_1_bindingAndBlackFFB(this);
@@ -1001,7 +1001,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_120(EMoflonEdge _edge_targetRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_340(EMoflonEdge _edge_targetRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterPGImpl
 				.pattern_Task2NormalStepAfterPG_24_1_bindingAndBlackFFB(this);
@@ -1057,7 +1057,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_121(EMoflonEdge _edge_incoming) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_341(EMoflonEdge _edge_incoming) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterPGImpl
 				.pattern_Task2NormalStepAfterPG_25_1_bindingAndBlackFFB(this);
@@ -1113,7 +1113,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_122(EMoflonEdge _edge_sourceRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_342(EMoflonEdge _edge_sourceRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterPGImpl
 				.pattern_Task2NormalStepAfterPG_26_1_bindingAndBlackFFB(this);
@@ -1169,7 +1169,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_123(EMoflonEdge _edge_outgoing) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_343(EMoflonEdge _edge_outgoing) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterPGImpl
 				.pattern_Task2NormalStepAfterPG_27_1_bindingAndBlackFFB(this);
@@ -1244,6 +1244,10 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 				.filter(nm -> nm.getNodeName().equals("step")).findAny();
 		SimpleUseCase.NormalStep step = (SimpleUseCase.NormalStep) matchForStep.get().getNode();
 
+		Optional<TripleMatchNodeMapping> matchFor_t2ns = tripleMatch.getNodeMappings().stream()
+				.filter(nm -> nm.getNodeName().equals("_t2ns")).findAny();
+		Bpmn2UseCase.FN2S _t2ns = (Bpmn2UseCase.FN2S) matchFor_t2ns.get().getNode();
+
 		Optional<TripleMatchNodeMapping> matchForProcess = tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("process")).findAny();
 		SimpleBPMN.Process process = (SimpleBPMN.Process) matchForProcess.get().getNode();
@@ -1255,10 +1259,6 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		Optional<TripleMatchNodeMapping> matchForTask = tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("task")).findAny();
 		SimpleBPMN.Task task = (SimpleBPMN.Task) matchForTask.get().getNode();
-
-		Optional<TripleMatchNodeMapping> matchFor_t2ns = tripleMatch.getNodeMappings().stream()
-				.filter(nm -> nm.getNodeName().equals("_t2ns")).findAny();
-		Bpmn2UseCase.T2NS _t2ns = (Bpmn2UseCase.T2NS) matchFor_t2ns.get().getNode();
 
 		Optional<TripleMatchNodeMapping> matchForSf2 = tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("sf2")).findAny();
@@ -1333,6 +1333,10 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 				.filter(nm -> nm.getNodeName().equals("step")).findAny();
 		SimpleUseCase.NormalStep step = (SimpleUseCase.NormalStep) matchForStep.get().getNode();
 
+		Optional<TripleMatchNodeMapping> matchFor_t2ns = tripleMatch.getNodeMappings().stream()
+				.filter(nm -> nm.getNodeName().equals("_t2ns")).findAny();
+		Bpmn2UseCase.FN2S _t2ns = (Bpmn2UseCase.FN2S) matchFor_t2ns.get().getNode();
+
 		Optional<TripleMatchNodeMapping> matchForProcess = tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("process")).findAny();
 		SimpleBPMN.Process process = (SimpleBPMN.Process) matchForProcess.get().getNode();
@@ -1344,10 +1348,6 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		Optional<TripleMatchNodeMapping> matchForTask = tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("task")).findAny();
 		SimpleBPMN.Task task = (SimpleBPMN.Task) matchForTask.get().getNode();
-
-		Optional<TripleMatchNodeMapping> matchFor_t2ns = tripleMatch.getNodeMappings().stream()
-				.filter(nm -> nm.getNodeName().equals("_t2ns")).findAny();
-		Bpmn2UseCase.T2NS _t2ns = (Bpmn2UseCase.T2NS) matchFor_t2ns.get().getNode();
 
 		Optional<TripleMatchNodeMapping> matchForSf2 = tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("sf2")).findAny();
@@ -1542,7 +1542,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		Object[] result2_green = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_33_2_greenBBBBFFF(flow, step,
 				task, sf2);
 		PerformRuleResult result = (PerformRuleResult) result2_green[4];
-		// T2NS _t2ns = (T2NS) result2_green[5];
+		// FN2S _t2ns = (FN2S) result2_green[5];
 		// SF2F _sf2f2 = (SF2F) result2_green[6];
 
 		return Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_33_3_expressionFB(result);
@@ -1601,11 +1601,11 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 								+ ", " + "[sf1] = " + sf1 + ", " + "[_sf2f1] = " + _sf2f1 + ", " + "[ruleResult] = "
 								+ ruleResult + ".");
 					}
-					Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_34_6_greenBFBBFFFFBB(flow, process, sf1,
+					Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_34_6_greenBFFBBFFFBB(flow, process, sf1,
 							ruleResult, csp);
 					// NormalStep step = (NormalStep) result6_green[1];
-					// Task task = (Task) result6_green[4];
-					// T2NS _t2ns = (T2NS) result6_green[5];
+					// FN2S _t2ns = (FN2S) result6_green[2];
+					// Task task = (Task) result6_green[5];
 					// SequenceFlow sf2 = (SequenceFlow) result6_green[6];
 					// SF2F _sf2f2 = (SF2F) result6_green[7];
 
@@ -1738,22 +1738,22 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 			return null;
 		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_35__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_35((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_36__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_36((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_118__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_118((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_119__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_119((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_120__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_120((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_121__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_121((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_122__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_122((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_123__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_123((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_107__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_107((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_108__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_108((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_338__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_338((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_339__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_339((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_340__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_340((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_341__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_341((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_342__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_342((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_343__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_343((EMoflonEdge) arguments.get(0));
 		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
@@ -2022,10 +2022,10 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return null;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_1_1_greenBFBFBFB(ParallelFlow flow, Task task,
+	public static final Object[] pattern_Task2NormalStepAfterPG_1_1_greenBFFBBFB(ParallelFlow flow, Task task,
 			SequenceFlow sf2, CSP csp) {
 		NormalStep step = SimpleUseCaseFactory.eINSTANCE.createNormalStep();
-		T2NS _t2ns = Bpmn2UseCaseFactory.eINSTANCE.createT2NS();
+		FN2S _t2ns = Bpmn2UseCaseFactory.eINSTANCE.createFN2S();
 		SF2F _sf2f2 = Bpmn2UseCaseFactory.eINSTANCE.createSF2F();
 		Object _localVariable_0 = csp.getValue("step", "id");
 		flow.getSteps().add(step);
@@ -2036,27 +2036,27 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		_sf2f2.setTarget(flow);
 		String step_id_prime = (String) _localVariable_0;
 		step.setId(step_id_prime);
-		return new Object[] { flow, step, task, _t2ns, sf2, _sf2f2, csp };
+		return new Object[] { flow, step, _t2ns, task, sf2, _sf2f2, csp };
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_1_2_blackBBBBB(NormalStep step, Task task, T2NS _t2ns,
+	public static final Object[] pattern_Task2NormalStepAfterPG_1_2_blackBBBBB(NormalStep step, FN2S _t2ns, Task task,
 			SequenceFlow sf2, SF2F _sf2f2) {
-		return new Object[] { step, task, _t2ns, sf2, _sf2f2 };
+		return new Object[] { step, _t2ns, task, sf2, _sf2f2 };
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_1_2_greenFBBBBB(NormalStep step, Task task, T2NS _t2ns,
+	public static final Object[] pattern_Task2NormalStepAfterPG_1_2_greenFBBBBB(NormalStep step, FN2S _t2ns, Task task,
 			SequenceFlow sf2, SF2F _sf2f2) {
 		PerformRuleResult ruleresult = TGGRuntimeFactory.eINSTANCE.createPerformRuleResult();
 		ruleresult.getCreatedElements().add(step);
-		ruleresult.getTranslatedElements().add(task);
 		ruleresult.getCreatedLinkElements().add(_t2ns);
+		ruleresult.getTranslatedElements().add(task);
 		ruleresult.getTranslatedElements().add(sf2);
 		ruleresult.getCreatedLinkElements().add(_sf2f2);
-		return new Object[] { ruleresult, step, task, _t2ns, sf2, _sf2f2 };
+		return new Object[] { ruleresult, step, _t2ns, task, sf2, _sf2f2 };
 	}
 
 	public static final Object[] pattern_Task2NormalStepAfterPG_1_3_blackBBBBBBBBBBB(PerformRuleResult ruleresult,
-			EObject node, EObject flow, EObject step, EObject process, EObject sf1, EObject task, EObject _t2ns,
+			EObject node, EObject flow, EObject step, EObject _t2ns, EObject process, EObject sf1, EObject task,
 			EObject sf2, EObject _sf2f2, EObject _sf2f1) {
 		if (!node.equals(step)) {
 			if (!node.equals(process)) {
@@ -2070,24 +2070,24 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 											if (!flow.equals(task)) {
 												if (!flow.equals(sf2)) {
 													if (!step.equals(task)) {
-														if (!process.equals(step)) {
-															if (!process.equals(sf1)) {
-																if (!process.equals(task)) {
-																	if (!process.equals(sf2)) {
-																		if (!sf1.equals(step)) {
-																			if (!sf1.equals(task)) {
-																				if (!sf1.equals(sf2)) {
-																					if (!_t2ns.equals(node)) {
-																						if (!_t2ns.equals(flow)) {
-																							if (!_t2ns.equals(step)) {
-																								if (!_t2ns.equals(
-																										process)) {
-																									if (!_t2ns.equals(
-																											sf1)) {
-																										if (!_t2ns
-																												.equals(task)) {
-																											if (!_t2ns
-																													.equals(sf2)) {
+														if (!_t2ns.equals(node)) {
+															if (!_t2ns.equals(flow)) {
+																if (!_t2ns.equals(step)) {
+																	if (!_t2ns.equals(process)) {
+																		if (!_t2ns.equals(sf1)) {
+																			if (!_t2ns.equals(task)) {
+																				if (!_t2ns.equals(sf2)) {
+																					if (!process.equals(step)) {
+																						if (!process.equals(sf1)) {
+																							if (!process.equals(task)) {
+																								if (!process
+																										.equals(sf2)) {
+																									if (!sf1.equals(
+																											step)) {
+																										if (!sf1.equals(
+																												task)) {
+																											if (!sf1.equals(
+																													sf2)) {
 																												if (!sf2.equals(
 																														step)) {
 																													if (!sf2.equals(
@@ -2099,13 +2099,13 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 																																if (!_sf2f2
 																																		.equals(step)) {
 																																	if (!_sf2f2
-																																			.equals(process)) {
+																																			.equals(_t2ns)) {
 																																		if (!_sf2f2
-																																				.equals(sf1)) {
+																																				.equals(process)) {
 																																			if (!_sf2f2
-																																					.equals(task)) {
+																																					.equals(sf1)) {
 																																				if (!_sf2f2
-																																						.equals(_t2ns)) {
+																																						.equals(task)) {
 																																					if (!_sf2f2
 																																							.equals(sf2)) {
 																																						if (!_sf2f1
@@ -2115,13 +2115,13 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 																																								if (!_sf2f1
 																																										.equals(step)) {
 																																									if (!_sf2f1
-																																											.equals(process)) {
+																																											.equals(_t2ns)) {
 																																										if (!_sf2f1
-																																												.equals(sf1)) {
+																																												.equals(process)) {
 																																											if (!_sf2f1
-																																													.equals(task)) {
+																																													.equals(sf1)) {
 																																												if (!_sf2f1
-																																														.equals(_t2ns)) {
+																																														.equals(task)) {
 																																													if (!_sf2f1
 																																															.equals(sf2)) {
 																																														if (!_sf2f1
@@ -2131,10 +2131,10 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 																																																	node,
 																																																	flow,
 																																																	step,
+																																																	_t2ns,
 																																																	process,
 																																																	sf1,
 																																																	task,
-																																																	_t2ns,
 																																																	sf2,
 																																																	_sf2f2,
 																																																	_sf2f1 };
@@ -2187,31 +2187,31 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	}
 
 	public static final Object[] pattern_Task2NormalStepAfterPG_1_3_greenBBBBBBBBBFFFFFFFFFFFF(
-			PerformRuleResult ruleresult, EObject flow, EObject step, EObject process, EObject sf1, EObject task,
-			EObject _t2ns, EObject sf2, EObject _sf2f2) {
+			PerformRuleResult ruleresult, EObject flow, EObject step, EObject _t2ns, EObject process, EObject sf1,
+			EObject task, EObject sf2, EObject _sf2f2) {
 		EMoflonEdge flow__step____steps = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge flow__step______first = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge _t2ns__task____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge _t2ns__step____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge process__task____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge process__sf2____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge sf1__task____targetRef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge task__sf1____incoming = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge sf2__task____sourceRef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge task__sf2____outgoing = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge _t2ns__task____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge _t2ns__step____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge _sf2f2__sf2____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge _sf2f2__flow____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		String ruleresult_ruleName_prime = "Task2NormalStepAfterPG";
 		String flow__step____steps_name_prime = "steps";
 		String flow__step______first_name_prime = "__first";
+		String _t2ns__task____source_name_prime = "source";
+		String _t2ns__step____target_name_prime = "target";
 		String process__task____flowElements_name_prime = "flowElements";
 		String process__sf2____flowElements_name_prime = "flowElements";
 		String sf1__task____targetRef_name_prime = "targetRef";
 		String task__sf1____incoming_name_prime = "incoming";
 		String sf2__task____sourceRef_name_prime = "sourceRef";
 		String task__sf2____outgoing_name_prime = "outgoing";
-		String _t2ns__task____source_name_prime = "source";
-		String _t2ns__step____target_name_prime = "target";
 		String _sf2f2__sf2____source_name_prime = "source";
 		String _sf2f2__flow____target_name_prime = "target";
 		flow__step____steps.setSrc(flow);
@@ -2220,6 +2220,12 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		flow__step______first.setSrc(flow);
 		flow__step______first.setTrg(step);
 		ruleresult.getCreatedEdges().add(flow__step______first);
+		_t2ns__task____source.setSrc(_t2ns);
+		_t2ns__task____source.setTrg(task);
+		ruleresult.getCreatedEdges().add(_t2ns__task____source);
+		_t2ns__step____target.setSrc(_t2ns);
+		_t2ns__step____target.setTrg(step);
+		ruleresult.getCreatedEdges().add(_t2ns__step____target);
 		process__task____flowElements.setSrc(process);
 		process__task____flowElements.setTrg(task);
 		ruleresult.getTranslatedEdges().add(process__task____flowElements);
@@ -2238,12 +2244,6 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		task__sf2____outgoing.setSrc(task);
 		task__sf2____outgoing.setTrg(sf2);
 		ruleresult.getTranslatedEdges().add(task__sf2____outgoing);
-		_t2ns__task____source.setSrc(_t2ns);
-		_t2ns__task____source.setTrg(task);
-		ruleresult.getCreatedEdges().add(_t2ns__task____source);
-		_t2ns__step____target.setSrc(_t2ns);
-		_t2ns__step____target.setTrg(step);
-		ruleresult.getCreatedEdges().add(_t2ns__step____target);
 		_sf2f2__sf2____source.setSrc(_sf2f2);
 		_sf2f2__sf2____source.setTrg(sf2);
 		ruleresult.getCreatedEdges().add(_sf2f2__sf2____source);
@@ -2253,26 +2253,26 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		ruleresult.setRuleName(ruleresult_ruleName_prime);
 		flow__step____steps.setName(flow__step____steps_name_prime);
 		flow__step______first.setName(flow__step______first_name_prime);
+		_t2ns__task____source.setName(_t2ns__task____source_name_prime);
+		_t2ns__step____target.setName(_t2ns__step____target_name_prime);
 		process__task____flowElements.setName(process__task____flowElements_name_prime);
 		process__sf2____flowElements.setName(process__sf2____flowElements_name_prime);
 		sf1__task____targetRef.setName(sf1__task____targetRef_name_prime);
 		task__sf1____incoming.setName(task__sf1____incoming_name_prime);
 		sf2__task____sourceRef.setName(sf2__task____sourceRef_name_prime);
 		task__sf2____outgoing.setName(task__sf2____outgoing_name_prime);
-		_t2ns__task____source.setName(_t2ns__task____source_name_prime);
-		_t2ns__step____target.setName(_t2ns__step____target_name_prime);
 		_sf2f2__sf2____source.setName(_sf2f2__sf2____source_name_prime);
 		_sf2f2__flow____target.setName(_sf2f2__flow____target_name_prime);
-		return new Object[] { ruleresult, flow, step, process, sf1, task, _t2ns, sf2, _sf2f2, flow__step____steps,
-				flow__step______first, process__task____flowElements, process__sf2____flowElements,
-				sf1__task____targetRef, task__sf1____incoming, sf2__task____sourceRef, task__sf2____outgoing,
-				_t2ns__task____source, _t2ns__step____target, _sf2f2__sf2____source, _sf2f2__flow____target };
+		return new Object[] { ruleresult, flow, step, _t2ns, process, sf1, task, sf2, _sf2f2, flow__step____steps,
+				flow__step______first, _t2ns__task____source, _t2ns__step____target, process__task____flowElements,
+				process__sf2____flowElements, sf1__task____targetRef, task__sf1____incoming, sf2__task____sourceRef,
+				task__sf2____outgoing, _sf2f2__sf2____source, _sf2f2__flow____target };
 	}
 
 	public static final void pattern_Task2NormalStepAfterPG_1_5_expressionBBBBBBBBBBBB(Task2NormalStepAfterPG _this,
-			PerformRuleResult ruleresult, EObject node, EObject flow, EObject step, EObject process, EObject sf1,
-			EObject task, EObject _t2ns, EObject sf2, EObject _sf2f2, EObject _sf2f1) {
-		_this.registerObjects_FWD(ruleresult, node, flow, step, process, sf1, task, _t2ns, sf2, _sf2f2, _sf2f1);
+			PerformRuleResult ruleresult, EObject node, EObject flow, EObject step, EObject _t2ns, EObject process,
+			EObject sf1, EObject task, EObject sf2, EObject _sf2f2, EObject _sf2f1) {
+		_this.registerObjects_FWD(ruleresult, node, flow, step, _t2ns, process, sf1, task, sf2, _sf2f2, _sf2f1);
 
 	}
 
@@ -2725,44 +2725,44 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return null;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_11_1_greenBBBBFFFFB(ParallelFlow flow, NormalStep step,
+	public static final Object[] pattern_Task2NormalStepAfterPG_11_1_greenBBFBBFFFB(ParallelFlow flow, NormalStep step,
 			SimpleBPMN.Process process, SequenceFlow sf1, CSP csp) {
+		FN2S _t2ns = Bpmn2UseCaseFactory.eINSTANCE.createFN2S();
 		Task task = SimpleBPMNFactory.eINSTANCE.createTask();
-		T2NS _t2ns = Bpmn2UseCaseFactory.eINSTANCE.createT2NS();
 		SequenceFlow sf2 = SimpleBPMNFactory.eINSTANCE.createSequenceFlow();
 		SF2F _sf2f2 = Bpmn2UseCaseFactory.eINSTANCE.createSF2F();
 		Object _localVariable_0 = csp.getValue("task", "id");
+		_t2ns.setTarget(step);
+		_t2ns.setSource(task);
 		process.getFlowElements().add(task);
 		sf1.setTargetRef(task);
-		_t2ns.setSource(task);
-		_t2ns.setTarget(step);
 		process.getFlowElements().add(sf2);
 		sf2.setSourceRef(task);
 		_sf2f2.setSource(sf2);
 		_sf2f2.setTarget(flow);
 		String task_id_prime = (String) _localVariable_0;
 		task.setId(task_id_prime);
-		return new Object[] { flow, step, process, sf1, task, _t2ns, sf2, _sf2f2, csp };
+		return new Object[] { flow, step, _t2ns, process, sf1, task, sf2, _sf2f2, csp };
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_11_2_blackBBBBB(NormalStep step, Task task, T2NS _t2ns,
+	public static final Object[] pattern_Task2NormalStepAfterPG_11_2_blackBBBBB(NormalStep step, FN2S _t2ns, Task task,
 			SequenceFlow sf2, SF2F _sf2f2) {
-		return new Object[] { step, task, _t2ns, sf2, _sf2f2 };
+		return new Object[] { step, _t2ns, task, sf2, _sf2f2 };
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_11_2_greenFBBBBB(NormalStep step, Task task, T2NS _t2ns,
+	public static final Object[] pattern_Task2NormalStepAfterPG_11_2_greenFBBBBB(NormalStep step, FN2S _t2ns, Task task,
 			SequenceFlow sf2, SF2F _sf2f2) {
 		PerformRuleResult ruleresult = TGGRuntimeFactory.eINSTANCE.createPerformRuleResult();
 		ruleresult.getTranslatedElements().add(step);
-		ruleresult.getCreatedElements().add(task);
 		ruleresult.getCreatedLinkElements().add(_t2ns);
+		ruleresult.getCreatedElements().add(task);
 		ruleresult.getCreatedElements().add(sf2);
 		ruleresult.getCreatedLinkElements().add(_sf2f2);
-		return new Object[] { ruleresult, step, task, _t2ns, sf2, _sf2f2 };
+		return new Object[] { ruleresult, step, _t2ns, task, sf2, _sf2f2 };
 	}
 
 	public static final Object[] pattern_Task2NormalStepAfterPG_11_3_blackBBBBBBBBBBB(PerformRuleResult ruleresult,
-			EObject node, EObject flow, EObject step, EObject process, EObject sf1, EObject task, EObject _t2ns,
+			EObject node, EObject flow, EObject step, EObject _t2ns, EObject process, EObject sf1, EObject task,
 			EObject sf2, EObject _sf2f2, EObject _sf2f1) {
 		if (!node.equals(step)) {
 			if (!node.equals(process)) {
@@ -2776,24 +2776,24 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 											if (!flow.equals(task)) {
 												if (!flow.equals(sf2)) {
 													if (!step.equals(task)) {
-														if (!process.equals(step)) {
-															if (!process.equals(sf1)) {
-																if (!process.equals(task)) {
-																	if (!process.equals(sf2)) {
-																		if (!sf1.equals(step)) {
-																			if (!sf1.equals(task)) {
-																				if (!sf1.equals(sf2)) {
-																					if (!_t2ns.equals(node)) {
-																						if (!_t2ns.equals(flow)) {
-																							if (!_t2ns.equals(step)) {
-																								if (!_t2ns.equals(
-																										process)) {
-																									if (!_t2ns.equals(
-																											sf1)) {
-																										if (!_t2ns
-																												.equals(task)) {
-																											if (!_t2ns
-																													.equals(sf2)) {
+														if (!_t2ns.equals(node)) {
+															if (!_t2ns.equals(flow)) {
+																if (!_t2ns.equals(step)) {
+																	if (!_t2ns.equals(process)) {
+																		if (!_t2ns.equals(sf1)) {
+																			if (!_t2ns.equals(task)) {
+																				if (!_t2ns.equals(sf2)) {
+																					if (!process.equals(step)) {
+																						if (!process.equals(sf1)) {
+																							if (!process.equals(task)) {
+																								if (!process
+																										.equals(sf2)) {
+																									if (!sf1.equals(
+																											step)) {
+																										if (!sf1.equals(
+																												task)) {
+																											if (!sf1.equals(
+																													sf2)) {
 																												if (!sf2.equals(
 																														step)) {
 																													if (!sf2.equals(
@@ -2805,13 +2805,13 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 																																if (!_sf2f2
 																																		.equals(step)) {
 																																	if (!_sf2f2
-																																			.equals(process)) {
+																																			.equals(_t2ns)) {
 																																		if (!_sf2f2
-																																				.equals(sf1)) {
+																																				.equals(process)) {
 																																			if (!_sf2f2
-																																					.equals(task)) {
+																																					.equals(sf1)) {
 																																				if (!_sf2f2
-																																						.equals(_t2ns)) {
+																																						.equals(task)) {
 																																					if (!_sf2f2
 																																							.equals(sf2)) {
 																																						if (!_sf2f1
@@ -2821,13 +2821,13 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 																																								if (!_sf2f1
 																																										.equals(step)) {
 																																									if (!_sf2f1
-																																											.equals(process)) {
+																																											.equals(_t2ns)) {
 																																										if (!_sf2f1
-																																												.equals(sf1)) {
+																																												.equals(process)) {
 																																											if (!_sf2f1
-																																													.equals(task)) {
+																																													.equals(sf1)) {
 																																												if (!_sf2f1
-																																														.equals(_t2ns)) {
+																																														.equals(task)) {
 																																													if (!_sf2f1
 																																															.equals(sf2)) {
 																																														if (!_sf2f1
@@ -2837,10 +2837,10 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 																																																	node,
 																																																	flow,
 																																																	step,
+																																																	_t2ns,
 																																																	process,
 																																																	sf1,
 																																																	task,
-																																																	_t2ns,
 																																																	sf2,
 																																																	_sf2f2,
 																																																	_sf2f1 };
@@ -2893,31 +2893,31 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	}
 
 	public static final Object[] pattern_Task2NormalStepAfterPG_11_3_greenBBBBBBBBBFFFFFFFFFFFF(
-			PerformRuleResult ruleresult, EObject flow, EObject step, EObject process, EObject sf1, EObject task,
-			EObject _t2ns, EObject sf2, EObject _sf2f2) {
+			PerformRuleResult ruleresult, EObject flow, EObject step, EObject _t2ns, EObject process, EObject sf1,
+			EObject task, EObject sf2, EObject _sf2f2) {
 		EMoflonEdge flow__step____steps = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge flow__step______first = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge _t2ns__task____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge _t2ns__step____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge process__task____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge process__sf2____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge sf1__task____targetRef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge task__sf1____incoming = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge sf2__task____sourceRef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge task__sf2____outgoing = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge _t2ns__task____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge _t2ns__step____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge _sf2f2__sf2____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge _sf2f2__flow____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		String ruleresult_ruleName_prime = "Task2NormalStepAfterPG";
 		String flow__step____steps_name_prime = "steps";
 		String flow__step______first_name_prime = "__first";
+		String _t2ns__task____source_name_prime = "source";
+		String _t2ns__step____target_name_prime = "target";
 		String process__task____flowElements_name_prime = "flowElements";
 		String process__sf2____flowElements_name_prime = "flowElements";
 		String sf1__task____targetRef_name_prime = "targetRef";
 		String task__sf1____incoming_name_prime = "incoming";
 		String sf2__task____sourceRef_name_prime = "sourceRef";
 		String task__sf2____outgoing_name_prime = "outgoing";
-		String _t2ns__task____source_name_prime = "source";
-		String _t2ns__step____target_name_prime = "target";
 		String _sf2f2__sf2____source_name_prime = "source";
 		String _sf2f2__flow____target_name_prime = "target";
 		flow__step____steps.setSrc(flow);
@@ -2926,6 +2926,12 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		flow__step______first.setSrc(flow);
 		flow__step______first.setTrg(step);
 		ruleresult.getTranslatedEdges().add(flow__step______first);
+		_t2ns__task____source.setSrc(_t2ns);
+		_t2ns__task____source.setTrg(task);
+		ruleresult.getCreatedEdges().add(_t2ns__task____source);
+		_t2ns__step____target.setSrc(_t2ns);
+		_t2ns__step____target.setTrg(step);
+		ruleresult.getCreatedEdges().add(_t2ns__step____target);
 		process__task____flowElements.setSrc(process);
 		process__task____flowElements.setTrg(task);
 		ruleresult.getCreatedEdges().add(process__task____flowElements);
@@ -2944,12 +2950,6 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		task__sf2____outgoing.setSrc(task);
 		task__sf2____outgoing.setTrg(sf2);
 		ruleresult.getCreatedEdges().add(task__sf2____outgoing);
-		_t2ns__task____source.setSrc(_t2ns);
-		_t2ns__task____source.setTrg(task);
-		ruleresult.getCreatedEdges().add(_t2ns__task____source);
-		_t2ns__step____target.setSrc(_t2ns);
-		_t2ns__step____target.setTrg(step);
-		ruleresult.getCreatedEdges().add(_t2ns__step____target);
 		_sf2f2__sf2____source.setSrc(_sf2f2);
 		_sf2f2__sf2____source.setTrg(sf2);
 		ruleresult.getCreatedEdges().add(_sf2f2__sf2____source);
@@ -2959,26 +2959,26 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		ruleresult.setRuleName(ruleresult_ruleName_prime);
 		flow__step____steps.setName(flow__step____steps_name_prime);
 		flow__step______first.setName(flow__step______first_name_prime);
+		_t2ns__task____source.setName(_t2ns__task____source_name_prime);
+		_t2ns__step____target.setName(_t2ns__step____target_name_prime);
 		process__task____flowElements.setName(process__task____flowElements_name_prime);
 		process__sf2____flowElements.setName(process__sf2____flowElements_name_prime);
 		sf1__task____targetRef.setName(sf1__task____targetRef_name_prime);
 		task__sf1____incoming.setName(task__sf1____incoming_name_prime);
 		sf2__task____sourceRef.setName(sf2__task____sourceRef_name_prime);
 		task__sf2____outgoing.setName(task__sf2____outgoing_name_prime);
-		_t2ns__task____source.setName(_t2ns__task____source_name_prime);
-		_t2ns__step____target.setName(_t2ns__step____target_name_prime);
 		_sf2f2__sf2____source.setName(_sf2f2__sf2____source_name_prime);
 		_sf2f2__flow____target.setName(_sf2f2__flow____target_name_prime);
-		return new Object[] { ruleresult, flow, step, process, sf1, task, _t2ns, sf2, _sf2f2, flow__step____steps,
-				flow__step______first, process__task____flowElements, process__sf2____flowElements,
-				sf1__task____targetRef, task__sf1____incoming, sf2__task____sourceRef, task__sf2____outgoing,
-				_t2ns__task____source, _t2ns__step____target, _sf2f2__sf2____source, _sf2f2__flow____target };
+		return new Object[] { ruleresult, flow, step, _t2ns, process, sf1, task, sf2, _sf2f2, flow__step____steps,
+				flow__step______first, _t2ns__task____source, _t2ns__step____target, process__task____flowElements,
+				process__sf2____flowElements, sf1__task____targetRef, task__sf1____incoming, sf2__task____sourceRef,
+				task__sf2____outgoing, _sf2f2__sf2____source, _sf2f2__flow____target };
 	}
 
 	public static final void pattern_Task2NormalStepAfterPG_11_5_expressionBBBBBBBBBBBB(Task2NormalStepAfterPG _this,
-			PerformRuleResult ruleresult, EObject node, EObject flow, EObject step, EObject process, EObject sf1,
-			EObject task, EObject _t2ns, EObject sf2, EObject _sf2f2, EObject _sf2f1) {
-		_this.registerObjects_BWD(ruleresult, node, flow, step, process, sf1, task, _t2ns, sf2, _sf2f2, _sf2f1);
+			PerformRuleResult ruleresult, EObject node, EObject flow, EObject step, EObject _t2ns, EObject process,
+			EObject sf1, EObject task, EObject sf2, EObject _sf2f2, EObject _sf2f1) {
+		_this.registerObjects_BWD(ruleresult, node, flow, step, _t2ns, process, sf1, task, sf2, _sf2f2, _sf2f1);
 
 	}
 
@@ -4533,7 +4533,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	public static final Object[] pattern_Task2NormalStepAfterPG_33_2_greenBBBBFFF(ParallelFlow flow, NormalStep step,
 			Task task, SequenceFlow sf2) {
 		PerformRuleResult result = TGGRuntimeFactory.eINSTANCE.createPerformRuleResult();
-		T2NS _t2ns = Bpmn2UseCaseFactory.eINSTANCE.createT2NS();
+		FN2S _t2ns = Bpmn2UseCaseFactory.eINSTANCE.createFN2S();
 		SF2F _sf2f2 = Bpmn2UseCaseFactory.eINSTANCE.createSF2F();
 		result.getCreatedElements().add(_t2ns);
 		_t2ns.setSource(task);
@@ -4716,11 +4716,11 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return null;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_34_6_greenBFBBFFFFBB(ParallelFlow flow,
+	public static final Object[] pattern_Task2NormalStepAfterPG_34_6_greenBFFBBFFFBB(ParallelFlow flow,
 			SimpleBPMN.Process process, SequenceFlow sf1, ModelgeneratorRuleResult ruleResult, CSP csp) {
 		NormalStep step = SimpleUseCaseFactory.eINSTANCE.createNormalStep();
+		FN2S _t2ns = Bpmn2UseCaseFactory.eINSTANCE.createFN2S();
 		Task task = SimpleBPMNFactory.eINSTANCE.createTask();
-		T2NS _t2ns = Bpmn2UseCaseFactory.eINSTANCE.createT2NS();
 		SequenceFlow sf2 = SimpleBPMNFactory.eINSTANCE.createSequenceFlow();
 		SF2F _sf2f2 = Bpmn2UseCaseFactory.eINSTANCE.createSF2F();
 		Object _localVariable_0 = csp.getValue("step", "id");
@@ -4730,12 +4730,12 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		flow.getSteps().add(step);
 		flow.set__first(step);
 		ruleResult.getTargetObjects().add(step);
+		_t2ns.setTarget(step);
+		ruleResult.getCorrObjects().add(_t2ns);
+		_t2ns.setSource(task);
 		process.getFlowElements().add(task);
 		sf1.setTargetRef(task);
 		ruleResult.getSourceObjects().add(task);
-		_t2ns.setSource(task);
-		_t2ns.setTarget(step);
-		ruleResult.getCorrObjects().add(_t2ns);
 		process.getFlowElements().add(sf2);
 		sf2.setSourceRef(task);
 		ruleResult.getSourceObjects().add(sf2);
@@ -4749,7 +4749,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		step.setId(step_id_prime);
 		task.setId(task_id_prime);
 		ruleResult.setPerformCount(Integer.valueOf(ruleResult_performCount_prime));
-		return new Object[] { flow, step, process, sf1, task, _t2ns, sf2, _sf2f2, ruleResult, csp };
+		return new Object[] { flow, step, _t2ns, process, sf1, task, sf2, _sf2f2, ruleResult, csp };
 	}
 
 	public static final ModelgeneratorRuleResult pattern_Task2NormalStepAfterPG_34_7_expressionFB(

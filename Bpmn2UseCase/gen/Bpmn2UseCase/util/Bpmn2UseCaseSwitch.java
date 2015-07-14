@@ -77,24 +77,6 @@ public class Bpmn2UseCaseSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case Bpmn2UseCasePackage.T2NS: {
-			T2NS t2NS = (T2NS) theEObject;
-			T result = caseT2NS(t2NS);
-			if (result == null)
-				result = caseAbstractCorrespondence(t2NS);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case Bpmn2UseCasePackage.PG2PS: {
-			PG2PS pg2PS = (PG2PS) theEObject;
-			T result = casePG2PS(pg2PS);
-			if (result == null)
-				result = caseAbstractCorrespondence(pg2PS);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
 		case Bpmn2UseCasePackage.SF2F: {
 			SF2F sf2F = (SF2F) theEObject;
 			T result = caseSF2F(sf2F);
@@ -122,6 +104,15 @@ public class Bpmn2UseCaseSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case Bpmn2UseCasePackage.FN2S: {
+			FN2S fn2S = (FN2S) theEObject;
+			T result = caseFN2S(fn2S);
+			if (result == null)
+				result = caseAbstractCorrespondence(fn2S);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		default:
 			return defaultCase(theEObject);
 		}
@@ -139,36 +130,6 @@ public class Bpmn2UseCaseSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseP2UC(P2UC object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>T2NS</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>T2NS</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseT2NS(T2NS object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>PG2PS</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>PG2PS</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T casePG2PS(PG2PS object) {
 		return null;
 	}
 
@@ -214,6 +175,21 @@ public class Bpmn2UseCaseSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseEE2FS(EE2FS object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>FN2S</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>FN2S</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFN2S(FN2S object) {
 		return null;
 	}
 

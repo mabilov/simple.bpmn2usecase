@@ -104,98 +104,6 @@ public interface Bpmn2UseCasePackage extends EPackage {
 	int P2UC_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link Bpmn2UseCase.impl.T2NSImpl <em>T2NS</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see Bpmn2UseCase.impl.T2NSImpl
-	 * @see Bpmn2UseCase.impl.Bpmn2UseCasePackageImpl#getT2NS()
-	 * @generated
-	 */
-	int T2NS = 1;
-
-	/**
-	 * The feature id for the '<em><b>Source</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int T2NS__SOURCE = TGGRuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Target</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int T2NS__TARGET = TGGRuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of structural features of the '<em>T2NS</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int T2NS_FEATURE_COUNT = TGGRuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 2;
-
-	/**
-	 * The number of operations of the '<em>T2NS</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int T2NS_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link Bpmn2UseCase.impl.PG2PSImpl <em>PG2PS</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see Bpmn2UseCase.impl.PG2PSImpl
-	 * @see Bpmn2UseCase.impl.Bpmn2UseCasePackageImpl#getPG2PS()
-	 * @generated
-	 */
-	int PG2PS = 2;
-
-	/**
-	 * The feature id for the '<em><b>Source</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PG2PS__SOURCE = TGGRuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Target</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PG2PS__TARGET = TGGRuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of structural features of the '<em>PG2PS</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PG2PS_FEATURE_COUNT = TGGRuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 2;
-
-	/**
-	 * The number of operations of the '<em>PG2PS</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PG2PS_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link Bpmn2UseCase.impl.SF2FImpl <em>SF2F</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -203,7 +111,7 @@ public interface Bpmn2UseCasePackage extends EPackage {
 	 * @see Bpmn2UseCase.impl.Bpmn2UseCasePackageImpl#getSF2F()
 	 * @generated
 	 */
-	int SF2F = 3;
+	int SF2F = 1;
 
 	/**
 	 * The feature id for the '<em><b>Source</b></em>' reference.
@@ -249,7 +157,7 @@ public interface Bpmn2UseCasePackage extends EPackage {
 	 * @see Bpmn2UseCase.impl.Bpmn2UseCasePackageImpl#getSE2BF()
 	 * @generated
 	 */
-	int SE2BF = 4;
+	int SE2BF = 2;
 
 	/**
 	 * The feature id for the '<em><b>Source</b></em>' reference.
@@ -295,7 +203,7 @@ public interface Bpmn2UseCasePackage extends EPackage {
 	 * @see Bpmn2UseCase.impl.Bpmn2UseCasePackageImpl#getEE2FS()
 	 * @generated
 	 */
-	int EE2FS = 5;
+	int EE2FS = 3;
 
 	/**
 	 * The feature id for the '<em><b>Source</b></em>' reference.
@@ -334,6 +242,52 @@ public interface Bpmn2UseCasePackage extends EPackage {
 	int EE2FS_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link Bpmn2UseCase.impl.FN2SImpl <em>FN2S</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Bpmn2UseCase.impl.FN2SImpl
+	 * @see Bpmn2UseCase.impl.Bpmn2UseCasePackageImpl#getFN2S()
+	 * @generated
+	 */
+	int FN2S = 4;
+
+	/**
+	 * The feature id for the '<em><b>Source</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FN2S__SOURCE = TGGRuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Target</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FN2S__TARGET = TGGRuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>FN2S</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FN2S_FEATURE_COUNT = TGGRuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of operations of the '<em>FN2S</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FN2S_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
+
+	/**
 	 * Returns the meta object for class '{@link Bpmn2UseCase.P2UC <em>P2UC</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -364,70 +318,6 @@ public interface Bpmn2UseCasePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getP2UC_Target();
-
-	/**
-	 * Returns the meta object for class '{@link Bpmn2UseCase.T2NS <em>T2NS</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>T2NS</em>'.
-	 * @see Bpmn2UseCase.T2NS
-	 * @generated
-	 */
-	EClass getT2NS();
-
-	/**
-	 * Returns the meta object for the reference '{@link Bpmn2UseCase.T2NS#getSource <em>Source</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Source</em>'.
-	 * @see Bpmn2UseCase.T2NS#getSource()
-	 * @see #getT2NS()
-	 * @generated
-	 */
-	EReference getT2NS_Source();
-
-	/**
-	 * Returns the meta object for the reference '{@link Bpmn2UseCase.T2NS#getTarget <em>Target</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Target</em>'.
-	 * @see Bpmn2UseCase.T2NS#getTarget()
-	 * @see #getT2NS()
-	 * @generated
-	 */
-	EReference getT2NS_Target();
-
-	/**
-	 * Returns the meta object for class '{@link Bpmn2UseCase.PG2PS <em>PG2PS</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>PG2PS</em>'.
-	 * @see Bpmn2UseCase.PG2PS
-	 * @generated
-	 */
-	EClass getPG2PS();
-
-	/**
-	 * Returns the meta object for the reference '{@link Bpmn2UseCase.PG2PS#getSource <em>Source</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Source</em>'.
-	 * @see Bpmn2UseCase.PG2PS#getSource()
-	 * @see #getPG2PS()
-	 * @generated
-	 */
-	EReference getPG2PS_Source();
-
-	/**
-	 * Returns the meta object for the reference '{@link Bpmn2UseCase.PG2PS#getTarget <em>Target</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Target</em>'.
-	 * @see Bpmn2UseCase.PG2PS#getTarget()
-	 * @see #getPG2PS()
-	 * @generated
-	 */
-	EReference getPG2PS_Target();
 
 	/**
 	 * Returns the meta object for class '{@link Bpmn2UseCase.SF2F <em>SF2F</em>}'.
@@ -526,6 +416,38 @@ public interface Bpmn2UseCasePackage extends EPackage {
 	EReference getEE2FS_Target();
 
 	/**
+	 * Returns the meta object for class '{@link Bpmn2UseCase.FN2S <em>FN2S</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>FN2S</em>'.
+	 * @see Bpmn2UseCase.FN2S
+	 * @generated
+	 */
+	EClass getFN2S();
+
+	/**
+	 * Returns the meta object for the reference '{@link Bpmn2UseCase.FN2S#getSource <em>Source</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Source</em>'.
+	 * @see Bpmn2UseCase.FN2S#getSource()
+	 * @see #getFN2S()
+	 * @generated
+	 */
+	EReference getFN2S_Source();
+
+	/**
+	 * Returns the meta object for the reference '{@link Bpmn2UseCase.FN2S#getTarget <em>Target</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Target</em>'.
+	 * @see Bpmn2UseCase.FN2S#getTarget()
+	 * @see #getFN2S()
+	 * @generated
+	 */
+	EReference getFN2S_Target();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -573,58 +495,6 @@ public interface Bpmn2UseCasePackage extends EPackage {
 		 * @generated
 		 */
 		EReference P2UC__TARGET = eINSTANCE.getP2UC_Target();
-
-		/**
-		 * The meta object literal for the '{@link Bpmn2UseCase.impl.T2NSImpl <em>T2NS</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see Bpmn2UseCase.impl.T2NSImpl
-		 * @see Bpmn2UseCase.impl.Bpmn2UseCasePackageImpl#getT2NS()
-		 * @generated
-		 */
-		EClass T2NS = eINSTANCE.getT2NS();
-
-		/**
-		 * The meta object literal for the '<em><b>Source</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference T2NS__SOURCE = eINSTANCE.getT2NS_Source();
-
-		/**
-		 * The meta object literal for the '<em><b>Target</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference T2NS__TARGET = eINSTANCE.getT2NS_Target();
-
-		/**
-		 * The meta object literal for the '{@link Bpmn2UseCase.impl.PG2PSImpl <em>PG2PS</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see Bpmn2UseCase.impl.PG2PSImpl
-		 * @see Bpmn2UseCase.impl.Bpmn2UseCasePackageImpl#getPG2PS()
-		 * @generated
-		 */
-		EClass PG2PS = eINSTANCE.getPG2PS();
-
-		/**
-		 * The meta object literal for the '<em><b>Source</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference PG2PS__SOURCE = eINSTANCE.getPG2PS_Source();
-
-		/**
-		 * The meta object literal for the '<em><b>Target</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference PG2PS__TARGET = eINSTANCE.getPG2PS_Target();
 
 		/**
 		 * The meta object literal for the '{@link Bpmn2UseCase.impl.SF2FImpl <em>SF2F</em>}' class.
@@ -703,6 +573,32 @@ public interface Bpmn2UseCasePackage extends EPackage {
 		 * @generated
 		 */
 		EReference EE2FS__TARGET = eINSTANCE.getEE2FS_Target();
+
+		/**
+		 * The meta object literal for the '{@link Bpmn2UseCase.impl.FN2SImpl <em>FN2S</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Bpmn2UseCase.impl.FN2SImpl
+		 * @see Bpmn2UseCase.impl.Bpmn2UseCasePackageImpl#getFN2S()
+		 * @generated
+		 */
+		EClass FN2S = eINSTANCE.getFN2S();
+
+		/**
+		 * The meta object literal for the '<em><b>Source</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FN2S__SOURCE = eINSTANCE.getFN2S_Source();
+
+		/**
+		 * The meta object literal for the '<em><b>Target</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FN2S__TARGET = eINSTANCE.getFN2S_Target();
 
 	}
 

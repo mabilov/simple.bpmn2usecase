@@ -2,8 +2,8 @@
  */
 package Bpmn2UseCase.Rules;
 
+import Bpmn2UseCase.FN2S;
 import Bpmn2UseCase.SF2F;
-import Bpmn2UseCase.T2NS;
 
 import SimpleBPMN.ParallelGateway;
 import SimpleBPMN.SequenceFlow;
@@ -101,7 +101,7 @@ public interface ParallelGateway2ParallelStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, Task node, NormalStep prevStep, T2NS _t2ns1,
+	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, FN2S _t2ns, Task node, NormalStep prevStep,
 			SimpleBPMN.Process process, Flow flow, SequenceFlow sf1, ParallelGateway pgw, SF2F _sf2f1,
 			ParallelGateway pcgw, SequenceFlow sf2);
 
@@ -119,8 +119,8 @@ public interface ParallelGateway2ParallelStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_FWD(PerformRuleResult ruleresult, EObject node, EObject prevStep, EObject _t2ns1, EObject step,
-			EObject process, EObject flow, EObject sf1, EObject pgw, EObject _pg2ps, EObject _sf2f1, EObject pcgw,
+	void registerObjects_FWD(PerformRuleResult ruleresult, EObject _t2ns, EObject node, EObject prevStep, EObject step,
+			EObject _pgw2s, EObject process, EObject flow, EObject sf1, EObject pgw, EObject _sf2f1, EObject pcgw,
 			EObject sf2, EObject _sf22f2);
 
 	/**
@@ -185,7 +185,7 @@ public interface ParallelGateway2ParallelStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, Task node, NormalStep prevStep, T2NS _t2ns1,
+	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, FN2S _t2ns, Task node, NormalStep prevStep,
 			ParallelStep step, SimpleBPMN.Process process, Flow flow, SequenceFlow sf1, SF2F _sf2f1);
 
 	/**
@@ -202,8 +202,8 @@ public interface ParallelGateway2ParallelStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_BWD(PerformRuleResult ruleresult, EObject node, EObject prevStep, EObject _t2ns1, EObject step,
-			EObject process, EObject flow, EObject sf1, EObject pgw, EObject _pg2ps, EObject _sf2f1, EObject pcgw,
+	void registerObjects_BWD(PerformRuleResult ruleresult, EObject _t2ns, EObject node, EObject prevStep, EObject step,
+			EObject _pgw2s, EObject process, EObject flow, EObject sf1, EObject pgw, EObject _sf2f1, EObject pcgw,
 			EObject sf2, EObject _sf22f2);
 
 	/**
@@ -220,7 +220,7 @@ public interface ParallelGateway2ParallelStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_37(EMoflonEdge _edge_next);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_109(EMoflonEdge _edge_next);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -228,7 +228,7 @@ public interface ParallelGateway2ParallelStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_124(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_344(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -236,7 +236,7 @@ public interface ParallelGateway2ParallelStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_125(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_345(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -244,7 +244,7 @@ public interface ParallelGateway2ParallelStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_126(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_346(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -252,7 +252,7 @@ public interface ParallelGateway2ParallelStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_38(EMoflonEdge _edge_steps);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_110(EMoflonEdge _edge_steps);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -260,7 +260,7 @@ public interface ParallelGateway2ParallelStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_127(EMoflonEdge _edge_targetRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_347(EMoflonEdge _edge_targetRef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -268,7 +268,7 @@ public interface ParallelGateway2ParallelStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_128(EMoflonEdge _edge_incoming);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_348(EMoflonEdge _edge_incoming);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -276,7 +276,7 @@ public interface ParallelGateway2ParallelStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_129(EMoflonEdge _edge___conv);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_349(EMoflonEdge _edge___conv);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -284,7 +284,7 @@ public interface ParallelGateway2ParallelStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_130(EMoflonEdge _edge_sourceRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_350(EMoflonEdge _edge_sourceRef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -292,7 +292,7 @@ public interface ParallelGateway2ParallelStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_131(EMoflonEdge _edge_outgoing);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_351(EMoflonEdge _edge_outgoing);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -324,7 +324,7 @@ public interface ParallelGateway2ParallelStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_CC(IsApplicableMatchCC isApplicableMatch, Task node, NormalStep prevStep, T2NS _t2ns1,
+	CSP isApplicable_solveCsp_CC(IsApplicableMatchCC isApplicableMatch, FN2S _t2ns, Task node, NormalStep prevStep,
 			ParallelStep step, SimpleBPMN.Process process, Flow flow, SequenceFlow sf1, ParallelGateway pgw,
 			SF2F _sf2f1, ParallelGateway pcgw, SequenceFlow sf2, Match sourceMatch, Match targetMatch);
 
@@ -350,7 +350,7 @@ public interface ParallelGateway2ParallelStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	ModelgeneratorRuleResult generateModel(RuleEntryContainer ruleEntryContainer, T2NS _t2ns1Parameter);
+	ModelgeneratorRuleResult generateModel(RuleEntryContainer ruleEntryContainer, FN2S _t2nsParameter);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -358,7 +358,7 @@ public interface ParallelGateway2ParallelStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, Task node, NormalStep prevStep, T2NS _t2ns1,
+	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, FN2S _t2ns, Task node, NormalStep prevStep,
 			SimpleBPMN.Process process, Flow flow, SequenceFlow sf1, SF2F _sf2f1, ModelgeneratorRuleResult ruleResult);
 
 	/**

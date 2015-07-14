@@ -116,8 +116,8 @@ public interface ParallelGateway2ParallelStepAfterPG extends EObject, AbstractRu
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_FWD(PerformRuleResult ruleresult, EObject node, EObject flow, EObject step, EObject process,
-			EObject sf1, EObject pgw, EObject _pg2ps, EObject _sf2f1, EObject pcgw, EObject sf2, EObject _sf22f2);
+	void registerObjects_FWD(PerformRuleResult ruleresult, EObject node, EObject flow, EObject step, EObject _pgw2s,
+			EObject process, EObject sf1, EObject pgw, EObject _sf2f1, EObject pcgw, EObject sf2, EObject _sf22f2);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -198,8 +198,8 @@ public interface ParallelGateway2ParallelStepAfterPG extends EObject, AbstractRu
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_BWD(PerformRuleResult ruleresult, EObject node, EObject flow, EObject step, EObject process,
-			EObject sf1, EObject pgw, EObject _pg2ps, EObject _sf2f1, EObject pcgw, EObject sf2, EObject _sf22f2);
+	void registerObjects_BWD(PerformRuleResult ruleresult, EObject node, EObject flow, EObject step, EObject _pgw2s,
+			EObject process, EObject sf1, EObject pgw, EObject _sf2f1, EObject pcgw, EObject sf2, EObject _sf22f2);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -215,7 +215,7 @@ public interface ParallelGateway2ParallelStepAfterPG extends EObject, AbstractRu
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_41(EMoflonEdge _edge_steps);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_114(EMoflonEdge _edge_steps);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -223,7 +223,7 @@ public interface ParallelGateway2ParallelStepAfterPG extends EObject, AbstractRu
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_42(EMoflonEdge _edge___first);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_115(EMoflonEdge _edge___first);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -231,7 +231,7 @@ public interface ParallelGateway2ParallelStepAfterPG extends EObject, AbstractRu
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_140(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_363(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -239,7 +239,7 @@ public interface ParallelGateway2ParallelStepAfterPG extends EObject, AbstractRu
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_141(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_364(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -247,7 +247,7 @@ public interface ParallelGateway2ParallelStepAfterPG extends EObject, AbstractRu
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_142(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_365(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -255,7 +255,7 @@ public interface ParallelGateway2ParallelStepAfterPG extends EObject, AbstractRu
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_143(EMoflonEdge _edge_targetRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_366(EMoflonEdge _edge_targetRef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -263,7 +263,7 @@ public interface ParallelGateway2ParallelStepAfterPG extends EObject, AbstractRu
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_144(EMoflonEdge _edge_incoming);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_367(EMoflonEdge _edge_incoming);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -271,7 +271,7 @@ public interface ParallelGateway2ParallelStepAfterPG extends EObject, AbstractRu
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_145(EMoflonEdge _edge___conv);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_368(EMoflonEdge _edge___conv);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -279,7 +279,7 @@ public interface ParallelGateway2ParallelStepAfterPG extends EObject, AbstractRu
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_146(EMoflonEdge _edge_sourceRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_369(EMoflonEdge _edge_sourceRef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -287,7 +287,7 @@ public interface ParallelGateway2ParallelStepAfterPG extends EObject, AbstractRu
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_147(EMoflonEdge _edge_outgoing);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_370(EMoflonEdge _edge_outgoing);
 
 	/**
 	 * <!-- begin-user-doc -->

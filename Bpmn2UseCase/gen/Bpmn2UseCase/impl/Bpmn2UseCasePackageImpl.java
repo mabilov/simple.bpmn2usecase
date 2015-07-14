@@ -59,20 +59,6 @@ public class Bpmn2UseCasePackageImpl extends EPackageImpl implements Bpmn2UseCas
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass t2NSEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass pg2PSEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass sf2FEClass = null;
 
 	/**
@@ -88,6 +74,13 @@ public class Bpmn2UseCasePackageImpl extends EPackageImpl implements Bpmn2UseCas
 	 * @generated
 	 */
 	private EClass ee2FSEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass fn2SEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -197,72 +190,10 @@ public class Bpmn2UseCasePackageImpl extends EPackageImpl implements Bpmn2UseCas
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getT2NS() {
-		if (t2NSEClass == null) {
-			t2NSEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(Bpmn2UseCasePackage.eNS_URI).getEClassifiers()
-					.get(1);
-		}
-		return t2NSEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getT2NS_Source() {
-		return (EReference) getT2NS().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getT2NS_Target() {
-		return (EReference) getT2NS().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getPG2PS() {
-		if (pg2PSEClass == null) {
-			pg2PSEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(Bpmn2UseCasePackage.eNS_URI).getEClassifiers()
-					.get(2);
-		}
-		return pg2PSEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getPG2PS_Source() {
-		return (EReference) getPG2PS().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getPG2PS_Target() {
-		return (EReference) getPG2PS().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getSF2F() {
 		if (sf2FEClass == null) {
 			sf2FEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(Bpmn2UseCasePackage.eNS_URI).getEClassifiers()
-					.get(3);
+					.get(1);
 		}
 		return sf2FEClass;
 	}
@@ -293,7 +224,7 @@ public class Bpmn2UseCasePackageImpl extends EPackageImpl implements Bpmn2UseCas
 	public EClass getSE2BF() {
 		if (se2BFEClass == null) {
 			se2BFEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(Bpmn2UseCasePackage.eNS_URI).getEClassifiers()
-					.get(4);
+					.get(2);
 		}
 		return se2BFEClass;
 	}
@@ -324,7 +255,7 @@ public class Bpmn2UseCasePackageImpl extends EPackageImpl implements Bpmn2UseCas
 	public EClass getEE2FS() {
 		if (ee2FSEClass == null) {
 			ee2FSEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(Bpmn2UseCasePackage.eNS_URI).getEClassifiers()
-					.get(5);
+					.get(3);
 		}
 		return ee2FSEClass;
 	}
@@ -345,6 +276,37 @@ public class Bpmn2UseCasePackageImpl extends EPackageImpl implements Bpmn2UseCas
 	 */
 	public EReference getEE2FS_Target() {
 		return (EReference) getEE2FS().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getFN2S() {
+		if (fn2SEClass == null) {
+			fn2SEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(Bpmn2UseCasePackage.eNS_URI).getEClassifiers()
+					.get(4);
+		}
+		return fn2SEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getFN2S_Source() {
+		return (EReference) getFN2S().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getFN2S_Target() {
+		return (EReference) getFN2S().getEStructuralFeatures().get(1);
 	}
 
 	/**

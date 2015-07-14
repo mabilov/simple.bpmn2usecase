@@ -109,6 +109,11 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseEndEvent2FinalStateFirst(EndEvent2FinalStateFirst object) {
+			return createEndEvent2FinalStateFirstAdapter();
+		}
+
+		@Override
 		public Adapter caseParallelGateway2ParallelStepAfterPG(ParallelGateway2ParallelStepAfterPG object) {
 			return createParallelGateway2ParallelStepAfterPGAdapter();
 		}
@@ -121,6 +126,11 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseEndEvent2FinalState(EndEvent2FinalState object) {
 			return createEndEvent2FinalStateAdapter();
+		}
+
+		@Override
+		public Adapter caseEndEvent2FinalStateSeq(EndEvent2FinalStateSeq object) {
+			return createEndEvent2FinalStateSeqAdapter();
 		}
 
 		@Override
@@ -260,6 +270,20 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.EndEvent2FinalStateFirst <em>End Event2 Final State First</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Bpmn2UseCase.Rules.EndEvent2FinalStateFirst
+	 * @generated
+	 */
+	public Adapter createEndEvent2FinalStateFirstAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.ParallelGateway2ParallelStepAfterPG <em>Parallel Gateway2 Parallel Step After PG</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -298,6 +322,20 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createEndEvent2FinalStateAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.EndEvent2FinalStateSeq <em>End Event2 Final State Seq</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Bpmn2UseCase.Rules.EndEvent2FinalStateSeq
+	 * @generated
+	 */
+	public Adapter createEndEvent2FinalStateSeqAdapter() {
 		return null;
 	}
 

@@ -31,24 +31,6 @@ public interface Bpmn2UseCaseFactory extends EFactory {
 	P2UC createP2UC();
 
 	/**
-	 * Returns a new object of class '<em>T2NS</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>T2NS</em>'.
-	 * @generated
-	 */
-	T2NS createT2NS();
-
-	/**
-	 * Returns a new object of class '<em>PG2PS</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>PG2PS</em>'.
-	 * @generated
-	 */
-	PG2PS createPG2PS();
-
-	/**
 	 * Returns a new object of class '<em>SF2F</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -74,6 +56,15 @@ public interface Bpmn2UseCaseFactory extends EFactory {
 	 * @generated
 	 */
 	EE2FS createEE2FS();
+
+	/**
+	 * Returns a new object of class '<em>FN2S</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>FN2S</em>'.
+	 * @generated
+	 */
+	FN2S createFN2S();
 
 	/**
 	 * Returns the package supported by this factory.

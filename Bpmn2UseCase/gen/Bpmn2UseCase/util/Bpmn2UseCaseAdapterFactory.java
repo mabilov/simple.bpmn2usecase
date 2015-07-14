@@ -74,16 +74,6 @@ public class Bpmn2UseCaseAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseT2NS(T2NS object) {
-			return createT2NSAdapter();
-		}
-
-		@Override
-		public Adapter casePG2PS(PG2PS object) {
-			return createPG2PSAdapter();
-		}
-
-		@Override
 		public Adapter caseSF2F(SF2F object) {
 			return createSF2FAdapter();
 		}
@@ -96,6 +86,11 @@ public class Bpmn2UseCaseAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseEE2FS(EE2FS object) {
 			return createEE2FSAdapter();
+		}
+
+		@Override
+		public Adapter caseFN2S(FN2S object) {
+			return createFN2SAdapter();
 		}
 
 		@Override
@@ -133,34 +128,6 @@ public class Bpmn2UseCaseAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createP2UCAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.T2NS <em>T2NS</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Bpmn2UseCase.T2NS
-	 * @generated
-	 */
-	public Adapter createT2NSAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.PG2PS <em>PG2PS</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Bpmn2UseCase.PG2PS
-	 * @generated
-	 */
-	public Adapter createPG2PSAdapter() {
 		return null;
 	}
 
@@ -203,6 +170,20 @@ public class Bpmn2UseCaseAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createEE2FSAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.FN2S <em>FN2S</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Bpmn2UseCase.FN2S
+	 * @generated
+	 */
+	public Adapter createFN2SAdapter() {
 		return null;
 	}
 

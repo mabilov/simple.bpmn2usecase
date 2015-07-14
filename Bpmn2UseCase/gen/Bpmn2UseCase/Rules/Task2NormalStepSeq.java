@@ -2,8 +2,8 @@
  */
 package Bpmn2UseCase.Rules;
 
+import Bpmn2UseCase.FN2S;
 import Bpmn2UseCase.SF2F;
-import Bpmn2UseCase.T2NS;
 
 import SimpleBPMN.SequenceFlow;
 import SimpleBPMN.Task;
@@ -99,7 +99,7 @@ public interface Task2NormalStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, Task node, NormalStep prevStep, T2NS _t2ps1,
+	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, FN2S _t2ps, Task node, NormalStep prevStep,
 			SimpleBPMN.Process process, Flow flow, SequenceFlow sf1, Task task, SequenceFlow sf2, SF2F _sf2f1);
 
 	/**
@@ -116,8 +116,8 @@ public interface Task2NormalStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_FWD(PerformRuleResult ruleresult, EObject node, EObject prevStep, EObject _t2ps1, EObject step,
-			EObject process, EObject flow, EObject sf1, EObject task, EObject _t2ns, EObject sf2, EObject _sf2f2,
+	void registerObjects_FWD(PerformRuleResult ruleresult, EObject _t2ps, EObject node, EObject prevStep, EObject step,
+			EObject _t2ns, EObject process, EObject flow, EObject sf1, EObject task, EObject sf2, EObject _sf2f2,
 			EObject _sf2f1);
 
 	/**
@@ -182,7 +182,7 @@ public interface Task2NormalStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, Task node, NormalStep prevStep, T2NS _t2ps1,
+	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, FN2S _t2ps, Task node, NormalStep prevStep,
 			NormalStep step, SimpleBPMN.Process process, Flow flow, SequenceFlow sf1, SF2F _sf2f1);
 
 	/**
@@ -199,8 +199,8 @@ public interface Task2NormalStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_BWD(PerformRuleResult ruleresult, EObject node, EObject prevStep, EObject _t2ps1, EObject step,
-			EObject process, EObject flow, EObject sf1, EObject task, EObject _t2ns, EObject sf2, EObject _sf2f2,
+	void registerObjects_BWD(PerformRuleResult ruleresult, EObject _t2ps, EObject node, EObject prevStep, EObject step,
+			EObject _t2ns, EObject process, EObject flow, EObject sf1, EObject task, EObject sf2, EObject _sf2f2,
 			EObject _sf2f1);
 
 	/**
@@ -217,7 +217,7 @@ public interface Task2NormalStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_31(EMoflonEdge _edge_next);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_103(EMoflonEdge _edge_next);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -225,7 +225,7 @@ public interface Task2NormalStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_106(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_326(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -233,7 +233,7 @@ public interface Task2NormalStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_107(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_327(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -241,7 +241,7 @@ public interface Task2NormalStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_32(EMoflonEdge _edge_steps);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_104(EMoflonEdge _edge_steps);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -249,7 +249,7 @@ public interface Task2NormalStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_108(EMoflonEdge _edge_targetRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_328(EMoflonEdge _edge_targetRef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -257,7 +257,7 @@ public interface Task2NormalStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_109(EMoflonEdge _edge_incoming);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_329(EMoflonEdge _edge_incoming);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -265,7 +265,7 @@ public interface Task2NormalStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_110(EMoflonEdge _edge_sourceRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_330(EMoflonEdge _edge_sourceRef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -273,7 +273,7 @@ public interface Task2NormalStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_111(EMoflonEdge _edge_outgoing);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_331(EMoflonEdge _edge_outgoing);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -305,7 +305,7 @@ public interface Task2NormalStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_CC(IsApplicableMatchCC isApplicableMatch, Task node, NormalStep prevStep, T2NS _t2ps1,
+	CSP isApplicable_solveCsp_CC(IsApplicableMatchCC isApplicableMatch, FN2S _t2ps, Task node, NormalStep prevStep,
 			NormalStep step, SimpleBPMN.Process process, Flow flow, SequenceFlow sf1, Task task, SequenceFlow sf2,
 			SF2F _sf2f1, Match sourceMatch, Match targetMatch);
 
@@ -331,7 +331,7 @@ public interface Task2NormalStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	ModelgeneratorRuleResult generateModel(RuleEntryContainer ruleEntryContainer, T2NS _t2ps1Parameter);
+	ModelgeneratorRuleResult generateModel(RuleEntryContainer ruleEntryContainer, FN2S _t2psParameter);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -339,7 +339,7 @@ public interface Task2NormalStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, Task node, NormalStep prevStep, T2NS _t2ps1,
+	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, FN2S _t2ps, Task node, NormalStep prevStep,
 			SimpleBPMN.Process process, Flow flow, SequenceFlow sf1, SF2F _sf2f1, ModelgeneratorRuleResult ruleResult);
 
 	/**

@@ -2,8 +2,8 @@
  */
 package Bpmn2UseCase.Rules;
 
+import Bpmn2UseCase.FN2S;
 import Bpmn2UseCase.P2UC;
-import Bpmn2UseCase.PG2PS;
 
 import SimpleBPMN.ParallelGateway;
 import SimpleBPMN.SequenceFlow;
@@ -97,8 +97,8 @@ public interface SequenceFlowAfterPG2ParallelFlow extends EObject, AbstractRule 
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, ParallelGateway pgw, ParallelStep step,
-			PG2PS _pg2ps, SequenceFlow sf, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc);
+	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, FN2S _pg2ps, ParallelGateway pgw,
+			ParallelStep step, SequenceFlow sf, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -114,7 +114,7 @@ public interface SequenceFlowAfterPG2ParallelFlow extends EObject, AbstractRule 
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_FWD(PerformRuleResult ruleresult, EObject pgw, EObject step, EObject _pg2ps, EObject sf,
+	void registerObjects_FWD(PerformRuleResult ruleresult, EObject _pg2ps, EObject pgw, EObject step, EObject sf,
 			EObject process, EObject useCase, EObject _p2uc, EObject flow, EObject _sf2pf);
 
 	/**
@@ -179,8 +179,8 @@ public interface SequenceFlowAfterPG2ParallelFlow extends EObject, AbstractRule 
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, ParallelGateway pgw, ParallelStep step,
-			PG2PS _pg2ps, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc, ParallelFlow flow);
+	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, FN2S _pg2ps, ParallelGateway pgw,
+			ParallelStep step, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc, ParallelFlow flow);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -196,7 +196,7 @@ public interface SequenceFlowAfterPG2ParallelFlow extends EObject, AbstractRule 
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_BWD(PerformRuleResult ruleresult, EObject pgw, EObject step, EObject _pg2ps, EObject sf,
+	void registerObjects_BWD(PerformRuleResult ruleresult, EObject _pg2ps, EObject pgw, EObject step, EObject sf,
 			EObject process, EObject useCase, EObject _p2uc, EObject flow, EObject _sf2pf);
 
 	/**
@@ -213,7 +213,7 @@ public interface SequenceFlowAfterPG2ParallelFlow extends EObject, AbstractRule 
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_148(EMoflonEdge _edge_sourceRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_371(EMoflonEdge _edge_sourceRef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -221,7 +221,7 @@ public interface SequenceFlowAfterPG2ParallelFlow extends EObject, AbstractRule 
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_149(EMoflonEdge _edge_outgoing);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_372(EMoflonEdge _edge_outgoing);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -229,7 +229,7 @@ public interface SequenceFlowAfterPG2ParallelFlow extends EObject, AbstractRule 
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_43(EMoflonEdge _edge_invokedFlows);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_116(EMoflonEdge _edge_invokedFlows);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -237,7 +237,7 @@ public interface SequenceFlowAfterPG2ParallelFlow extends EObject, AbstractRule 
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_150(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_373(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -245,7 +245,7 @@ public interface SequenceFlowAfterPG2ParallelFlow extends EObject, AbstractRule 
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_44(EMoflonEdge _edge_flows);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_117(EMoflonEdge _edge_flows);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -277,9 +277,9 @@ public interface SequenceFlowAfterPG2ParallelFlow extends EObject, AbstractRule 
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_CC(IsApplicableMatchCC isApplicableMatch, ParallelGateway pgw, ParallelStep step,
-			PG2PS _pg2ps, SequenceFlow sf, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc, ParallelFlow flow,
-			Match sourceMatch, Match targetMatch);
+	CSP isApplicable_solveCsp_CC(IsApplicableMatchCC isApplicableMatch, FN2S _pg2ps, ParallelGateway pgw,
+			ParallelStep step, SequenceFlow sf, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc,
+			ParallelFlow flow, Match sourceMatch, Match targetMatch);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -303,7 +303,7 @@ public interface SequenceFlowAfterPG2ParallelFlow extends EObject, AbstractRule 
 	 * @model
 	 * @generated
 	 */
-	ModelgeneratorRuleResult generateModel(RuleEntryContainer ruleEntryContainer, PG2PS _pg2psParameter);
+	ModelgeneratorRuleResult generateModel(RuleEntryContainer ruleEntryContainer, FN2S _pg2psParameter);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -311,8 +311,9 @@ public interface SequenceFlowAfterPG2ParallelFlow extends EObject, AbstractRule 
 	 * @model
 	 * @generated
 	 */
-	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, ParallelGateway pgw, ParallelStep step,
-			PG2PS _pg2ps, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc, ModelgeneratorRuleResult ruleResult);
+	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, FN2S _pg2ps, ParallelGateway pgw,
+			ParallelStep step, SimpleBPMN.Process process, UseCase useCase, P2UC _p2uc,
+			ModelgeneratorRuleResult ruleResult);
 
 	/**
 	 * <!-- begin-user-doc -->
