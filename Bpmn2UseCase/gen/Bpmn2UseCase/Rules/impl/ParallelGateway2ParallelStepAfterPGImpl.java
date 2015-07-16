@@ -197,56 +197,64 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		SequenceFlow sf2 = (SequenceFlow) result1_bindingAndBlack[7];
 		CSP csp = (CSP) result1_bindingAndBlack[9];
 		Object[] result1_green = ParallelGateway2ParallelStepAfterPGImpl
-				.pattern_ParallelGateway2ParallelStepAfterPG_1_1_greenBFFBBFB(flow, pgw, sf2, csp);
+				.pattern_ParallelGateway2ParallelStepAfterPG_1_1_greenBFFBBBFFB(flow, pgw, pcgw, sf2, csp);
 		ParallelStep step = (ParallelStep) result1_green[1];
 		FN2S _pgw2s = (FN2S) result1_green[2];
-		SF2F _sf22f2 = (SF2F) result1_green[5];
+		SF2F _sf22f2 = (SF2F) result1_green[6];
+		FN2S _pcgw2s = (FN2S) result1_green[7];
 
 		// collect translated elements
 		Object[] result2_black = ParallelGateway2ParallelStepAfterPGImpl
-				.pattern_ParallelGateway2ParallelStepAfterPG_1_2_blackBBBBBB(step, _pgw2s, pgw, pcgw, sf2, _sf22f2);
+				.pattern_ParallelGateway2ParallelStepAfterPG_1_2_blackBBBBBBB(step, _pgw2s, pgw, pcgw, sf2, _sf22f2,
+						_pcgw2s);
 		if (result2_black == null) {
 			throw new RuntimeException("Pattern matching in node [collect translated elements] failed." + " Variables: "
 					+ "[step] = " + step + ", " + "[_pgw2s] = " + _pgw2s + ", " + "[pgw] = " + pgw + ", " + "[pcgw] = "
-					+ pcgw + ", " + "[sf2] = " + sf2 + ", " + "[_sf22f2] = " + _sf22f2 + ".");
+					+ pcgw + ", " + "[sf2] = " + sf2 + ", " + "[_sf22f2] = " + _sf22f2 + ", " + "[_pcgw2s] = " + _pcgw2s
+					+ ".");
 		}
 		Object[] result2_green = ParallelGateway2ParallelStepAfterPGImpl
-				.pattern_ParallelGateway2ParallelStepAfterPG_1_2_greenFBBBBBB(step, _pgw2s, pgw, pcgw, sf2, _sf22f2);
+				.pattern_ParallelGateway2ParallelStepAfterPG_1_2_greenFBBBBBBB(step, _pgw2s, pgw, pcgw, sf2, _sf22f2,
+						_pcgw2s);
 		PerformRuleResult ruleresult = (PerformRuleResult) result2_green[0];
 
 		// bookkeeping for edges
 		Object[] result3_black = ParallelGateway2ParallelStepAfterPGImpl
-				.pattern_ParallelGateway2ParallelStepAfterPG_1_3_blackBBBBBBBBBBBB(ruleresult, node, flow, step, _pgw2s,
-						process, sf1, pgw, _sf2f1, pcgw, sf2, _sf22f2);
+				.pattern_ParallelGateway2ParallelStepAfterPG_1_3_blackBBBBBBBBBBBBB(ruleresult, node, flow, step,
+						_pgw2s, process, sf1, pgw, _sf2f1, pcgw, sf2, _sf22f2, _pcgw2s);
 		if (result3_black == null) {
 			throw new RuntimeException("Pattern matching in node [bookkeeping for edges] failed." + " Variables: "
 					+ "[ruleresult] = " + ruleresult + ", " + "[node] = " + node + ", " + "[flow] = " + flow + ", "
 					+ "[step] = " + step + ", " + "[_pgw2s] = " + _pgw2s + ", " + "[process] = " + process + ", "
 					+ "[sf1] = " + sf1 + ", " + "[pgw] = " + pgw + ", " + "[_sf2f1] = " + _sf2f1 + ", " + "[pcgw] = "
-					+ pcgw + ", " + "[sf2] = " + sf2 + ", " + "[_sf22f2] = " + _sf22f2 + ".");
+					+ pcgw + ", " + "[sf2] = " + sf2 + ", " + "[_sf22f2] = " + _sf22f2 + ", " + "[_pcgw2s] = " + _pcgw2s
+					+ ".");
 		}
 		ParallelGateway2ParallelStepAfterPGImpl
-				.pattern_ParallelGateway2ParallelStepAfterPG_1_3_greenBBBBBBBBBBFFFFFFFFFFFFFF(ruleresult, flow, step,
-						_pgw2s, process, sf1, pgw, pcgw, sf2, _sf22f2);
-						// EMoflonEdge flow__step____steps = (EMoflonEdge) result3_green[10];
-						// EMoflonEdge flow__step______first = (EMoflonEdge) result3_green[11];
-						// EMoflonEdge _pgw2s__pgw____source = (EMoflonEdge) result3_green[12];
-						// EMoflonEdge _pgw2s__step____target = (EMoflonEdge) result3_green[13];
-						// EMoflonEdge process__pgw____flowElements = (EMoflonEdge) result3_green[14];
-						// EMoflonEdge process__pcgw____flowElements = (EMoflonEdge) result3_green[15];
-						// EMoflonEdge process__sf2____flowElements = (EMoflonEdge) result3_green[16];
-						// EMoflonEdge sf1__pgw____targetRef = (EMoflonEdge) result3_green[17];
-						// EMoflonEdge pgw__sf1____incoming = (EMoflonEdge) result3_green[18];
-						// EMoflonEdge pgw__pcgw______conv = (EMoflonEdge) result3_green[19];
-						// EMoflonEdge sf2__pcgw____sourceRef = (EMoflonEdge) result3_green[20];
-						// EMoflonEdge pcgw__sf2____outgoing = (EMoflonEdge) result3_green[21];
-						// EMoflonEdge _sf22f2__sf2____source = (EMoflonEdge) result3_green[22];
-						// EMoflonEdge _sf22f2__flow____target = (EMoflonEdge) result3_green[23];
+				.pattern_ParallelGateway2ParallelStepAfterPG_1_3_greenBBBBBBBBBBBFFFFFFFFFFFFFFFF(ruleresult, flow,
+						step, _pgw2s, process, sf1, pgw, pcgw, sf2, _sf22f2, _pcgw2s);
+						// EMoflonEdge flow__step____steps = (EMoflonEdge) result3_green[11];
+						// EMoflonEdge flow__step______first = (EMoflonEdge) result3_green[12];
+						// EMoflonEdge _pgw2s__pgw____source = (EMoflonEdge) result3_green[13];
+						// EMoflonEdge _pgw2s__step____target = (EMoflonEdge) result3_green[14];
+						// EMoflonEdge process__pgw____flowElements = (EMoflonEdge) result3_green[15];
+						// EMoflonEdge process__pcgw____flowElements = (EMoflonEdge) result3_green[16];
+						// EMoflonEdge process__sf2____flowElements = (EMoflonEdge) result3_green[17];
+						// EMoflonEdge sf1__pgw____targetRef = (EMoflonEdge) result3_green[18];
+						// EMoflonEdge pgw__sf1____incoming = (EMoflonEdge) result3_green[19];
+						// EMoflonEdge pgw__pcgw______conv = (EMoflonEdge) result3_green[20];
+						// EMoflonEdge sf2__pcgw____sourceRef = (EMoflonEdge) result3_green[21];
+						// EMoflonEdge pcgw__sf2____outgoing = (EMoflonEdge) result3_green[22];
+						// EMoflonEdge _sf22f2__sf2____source = (EMoflonEdge) result3_green[23];
+						// EMoflonEdge _sf22f2__flow____target = (EMoflonEdge) result3_green[24];
+						// EMoflonEdge _pcgw2s__pcgw____source = (EMoflonEdge) result3_green[25];
+						// EMoflonEdge _pcgw2s__step____target = (EMoflonEdge) result3_green[26];
 
 		// perform postprocessing story node is empty
 		// register objects
-		ParallelGateway2ParallelStepAfterPGImpl.pattern_ParallelGateway2ParallelStepAfterPG_1_5_expressionBBBBBBBBBBBBB(
-				this, ruleresult, node, flow, step, _pgw2s, process, sf1, pgw, _sf2f1, pcgw, sf2, _sf22f2);
+		ParallelGateway2ParallelStepAfterPGImpl
+				.pattern_ParallelGateway2ParallelStepAfterPG_1_5_expressionBBBBBBBBBBBBBB(this, ruleresult, node, flow,
+						step, _pgw2s, process, sf1, pgw, _sf2f1, pcgw, sf2, _sf22f2, _pcgw2s);
 		return ParallelGateway2ParallelStepAfterPGImpl
 				.pattern_ParallelGateway2ParallelStepAfterPG_1_6_expressionFB(ruleresult);
 	}
@@ -453,7 +461,7 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 	 */
 	public void registerObjects_FWD(PerformRuleResult ruleresult, EObject node, EObject flow, EObject step,
 			EObject _pgw2s, EObject process, EObject sf1, EObject pgw, EObject _sf2f1, EObject pcgw, EObject sf2,
-			EObject _sf22f2) {
+			EObject _sf22f2, EObject _pcgw2s) {
 		ruleresult.registerObject("node", node);
 		ruleresult.registerObject("flow", flow);
 		ruleresult.registerObject("step", step);
@@ -465,6 +473,7 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		ruleresult.registerObject("pcgw", pcgw);
 		ruleresult.registerObject("sf2", sf2);
 		ruleresult.registerObject("_sf22f2", _sf22f2);
+		ruleresult.registerObject("_pcgw2s", _pcgw2s);
 
 	}
 
@@ -564,59 +573,66 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		SF2F _sf2f1 = (SF2F) result1_bindingAndBlack[5];
 		CSP csp = (CSP) result1_bindingAndBlack[7];
 		Object[] result1_green = ParallelGateway2ParallelStepAfterPGImpl
-				.pattern_ParallelGateway2ParallelStepAfterPG_11_1_greenBBFBBFFFFB(flow, step, process, sf1, csp);
+				.pattern_ParallelGateway2ParallelStepAfterPG_11_1_greenBBFBBFFFFFB(flow, step, process, sf1, csp);
 		FN2S _pgw2s = (FN2S) result1_green[2];
 		ParallelGateway pgw = (ParallelGateway) result1_green[5];
 		ParallelGateway pcgw = (ParallelGateway) result1_green[6];
 		SequenceFlow sf2 = (SequenceFlow) result1_green[7];
 		SF2F _sf22f2 = (SF2F) result1_green[8];
+		FN2S _pcgw2s = (FN2S) result1_green[9];
 
 		// collect translated elements
 		Object[] result2_black = ParallelGateway2ParallelStepAfterPGImpl
-				.pattern_ParallelGateway2ParallelStepAfterPG_11_2_blackBBBBBB(step, _pgw2s, pgw, pcgw, sf2, _sf22f2);
+				.pattern_ParallelGateway2ParallelStepAfterPG_11_2_blackBBBBBBB(step, _pgw2s, pgw, pcgw, sf2, _sf22f2,
+						_pcgw2s);
 		if (result2_black == null) {
 			throw new RuntimeException("Pattern matching in node [collect translated elements] failed." + " Variables: "
 					+ "[step] = " + step + ", " + "[_pgw2s] = " + _pgw2s + ", " + "[pgw] = " + pgw + ", " + "[pcgw] = "
-					+ pcgw + ", " + "[sf2] = " + sf2 + ", " + "[_sf22f2] = " + _sf22f2 + ".");
+					+ pcgw + ", " + "[sf2] = " + sf2 + ", " + "[_sf22f2] = " + _sf22f2 + ", " + "[_pcgw2s] = " + _pcgw2s
+					+ ".");
 		}
 		Object[] result2_green = ParallelGateway2ParallelStepAfterPGImpl
-				.pattern_ParallelGateway2ParallelStepAfterPG_11_2_greenFBBBBBB(step, _pgw2s, pgw, pcgw, sf2, _sf22f2);
+				.pattern_ParallelGateway2ParallelStepAfterPG_11_2_greenFBBBBBBB(step, _pgw2s, pgw, pcgw, sf2, _sf22f2,
+						_pcgw2s);
 		PerformRuleResult ruleresult = (PerformRuleResult) result2_green[0];
 
 		// bookkeeping for edges
 		Object[] result3_black = ParallelGateway2ParallelStepAfterPGImpl
-				.pattern_ParallelGateway2ParallelStepAfterPG_11_3_blackBBBBBBBBBBBB(ruleresult, node, flow, step,
-						_pgw2s, process, sf1, pgw, _sf2f1, pcgw, sf2, _sf22f2);
+				.pattern_ParallelGateway2ParallelStepAfterPG_11_3_blackBBBBBBBBBBBBB(ruleresult, node, flow, step,
+						_pgw2s, process, sf1, pgw, _sf2f1, pcgw, sf2, _sf22f2, _pcgw2s);
 		if (result3_black == null) {
 			throw new RuntimeException("Pattern matching in node [bookkeeping for edges] failed." + " Variables: "
 					+ "[ruleresult] = " + ruleresult + ", " + "[node] = " + node + ", " + "[flow] = " + flow + ", "
 					+ "[step] = " + step + ", " + "[_pgw2s] = " + _pgw2s + ", " + "[process] = " + process + ", "
 					+ "[sf1] = " + sf1 + ", " + "[pgw] = " + pgw + ", " + "[_sf2f1] = " + _sf2f1 + ", " + "[pcgw] = "
-					+ pcgw + ", " + "[sf2] = " + sf2 + ", " + "[_sf22f2] = " + _sf22f2 + ".");
+					+ pcgw + ", " + "[sf2] = " + sf2 + ", " + "[_sf22f2] = " + _sf22f2 + ", " + "[_pcgw2s] = " + _pcgw2s
+					+ ".");
 		}
 		ParallelGateway2ParallelStepAfterPGImpl
-				.pattern_ParallelGateway2ParallelStepAfterPG_11_3_greenBBBBBBBBBBFFFFFFFFFFFFFF(ruleresult, flow, step,
-						_pgw2s, process, sf1, pgw, pcgw, sf2, _sf22f2);
-						// EMoflonEdge flow__step____steps = (EMoflonEdge) result3_green[10];
-						// EMoflonEdge flow__step______first = (EMoflonEdge) result3_green[11];
-						// EMoflonEdge _pgw2s__pgw____source = (EMoflonEdge) result3_green[12];
-						// EMoflonEdge _pgw2s__step____target = (EMoflonEdge) result3_green[13];
-						// EMoflonEdge process__pgw____flowElements = (EMoflonEdge) result3_green[14];
-						// EMoflonEdge process__pcgw____flowElements = (EMoflonEdge) result3_green[15];
-						// EMoflonEdge process__sf2____flowElements = (EMoflonEdge) result3_green[16];
-						// EMoflonEdge sf1__pgw____targetRef = (EMoflonEdge) result3_green[17];
-						// EMoflonEdge pgw__sf1____incoming = (EMoflonEdge) result3_green[18];
-						// EMoflonEdge pgw__pcgw______conv = (EMoflonEdge) result3_green[19];
-						// EMoflonEdge sf2__pcgw____sourceRef = (EMoflonEdge) result3_green[20];
-						// EMoflonEdge pcgw__sf2____outgoing = (EMoflonEdge) result3_green[21];
-						// EMoflonEdge _sf22f2__sf2____source = (EMoflonEdge) result3_green[22];
-						// EMoflonEdge _sf22f2__flow____target = (EMoflonEdge) result3_green[23];
+				.pattern_ParallelGateway2ParallelStepAfterPG_11_3_greenBBBBBBBBBBBFFFFFFFFFFFFFFFF(ruleresult, flow,
+						step, _pgw2s, process, sf1, pgw, pcgw, sf2, _sf22f2, _pcgw2s);
+						// EMoflonEdge flow__step____steps = (EMoflonEdge) result3_green[11];
+						// EMoflonEdge flow__step______first = (EMoflonEdge) result3_green[12];
+						// EMoflonEdge _pgw2s__pgw____source = (EMoflonEdge) result3_green[13];
+						// EMoflonEdge _pgw2s__step____target = (EMoflonEdge) result3_green[14];
+						// EMoflonEdge process__pgw____flowElements = (EMoflonEdge) result3_green[15];
+						// EMoflonEdge process__pcgw____flowElements = (EMoflonEdge) result3_green[16];
+						// EMoflonEdge process__sf2____flowElements = (EMoflonEdge) result3_green[17];
+						// EMoflonEdge sf1__pgw____targetRef = (EMoflonEdge) result3_green[18];
+						// EMoflonEdge pgw__sf1____incoming = (EMoflonEdge) result3_green[19];
+						// EMoflonEdge pgw__pcgw______conv = (EMoflonEdge) result3_green[20];
+						// EMoflonEdge sf2__pcgw____sourceRef = (EMoflonEdge) result3_green[21];
+						// EMoflonEdge pcgw__sf2____outgoing = (EMoflonEdge) result3_green[22];
+						// EMoflonEdge _sf22f2__sf2____source = (EMoflonEdge) result3_green[23];
+						// EMoflonEdge _sf22f2__flow____target = (EMoflonEdge) result3_green[24];
+						// EMoflonEdge _pcgw2s__pcgw____source = (EMoflonEdge) result3_green[25];
+						// EMoflonEdge _pcgw2s__step____target = (EMoflonEdge) result3_green[26];
 
 		// perform postprocessing story node is empty
 		// register objects
 		ParallelGateway2ParallelStepAfterPGImpl
-				.pattern_ParallelGateway2ParallelStepAfterPG_11_5_expressionBBBBBBBBBBBBB(this, ruleresult, node, flow,
-						step, _pgw2s, process, sf1, pgw, _sf2f1, pcgw, sf2, _sf22f2);
+				.pattern_ParallelGateway2ParallelStepAfterPG_11_5_expressionBBBBBBBBBBBBBB(this, ruleresult, node, flow,
+						step, _pgw2s, process, sf1, pgw, _sf2f1, pcgw, sf2, _sf22f2, _pcgw2s);
 		return ParallelGateway2ParallelStepAfterPGImpl
 				.pattern_ParallelGateway2ParallelStepAfterPG_11_6_expressionFB(ruleresult);
 	}
@@ -803,7 +819,7 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 	 */
 	public void registerObjects_BWD(PerformRuleResult ruleresult, EObject node, EObject flow, EObject step,
 			EObject _pgw2s, EObject process, EObject sf1, EObject pgw, EObject _sf2f1, EObject pcgw, EObject sf2,
-			EObject _sf22f2) {
+			EObject _sf22f2, EObject _pcgw2s) {
 		ruleresult.registerObject("node", node);
 		ruleresult.registerObject("flow", flow);
 		ruleresult.registerObject("step", step);
@@ -815,6 +831,7 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		ruleresult.registerObject("pcgw", pcgw);
 		ruleresult.registerObject("sf2", sf2);
 		ruleresult.registerObject("_sf22f2", _sf22f2);
+		ruleresult.registerObject("_pcgw2s", _pcgw2s);
 
 	}
 
@@ -833,7 +850,7 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_114(EMoflonEdge _edge_steps) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_103(EMoflonEdge _edge_steps) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = ParallelGateway2ParallelStepAfterPGImpl
 				.pattern_ParallelGateway2ParallelStepAfterPG_20_1_bindingAndBlackFFB(this);
@@ -891,7 +908,7 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_115(EMoflonEdge _edge___first) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_104(EMoflonEdge _edge___first) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = ParallelGateway2ParallelStepAfterPGImpl
 				.pattern_ParallelGateway2ParallelStepAfterPG_21_1_bindingAndBlackFFB(this);
@@ -949,7 +966,7 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_363(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_316(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = ParallelGateway2ParallelStepAfterPGImpl
 				.pattern_ParallelGateway2ParallelStepAfterPG_22_1_bindingAndBlackFFB(this);
@@ -1012,7 +1029,7 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_364(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_317(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = ParallelGateway2ParallelStepAfterPGImpl
 				.pattern_ParallelGateway2ParallelStepAfterPG_23_1_bindingAndBlackFFB(this);
@@ -1075,7 +1092,7 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_365(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_318(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = ParallelGateway2ParallelStepAfterPGImpl
 				.pattern_ParallelGateway2ParallelStepAfterPG_24_1_bindingAndBlackFFB(this);
@@ -1138,7 +1155,7 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_366(EMoflonEdge _edge_targetRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_319(EMoflonEdge _edge_targetRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = ParallelGateway2ParallelStepAfterPGImpl
 				.pattern_ParallelGateway2ParallelStepAfterPG_25_1_bindingAndBlackFFB(this);
@@ -1201,7 +1218,7 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_367(EMoflonEdge _edge_incoming) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_320(EMoflonEdge _edge_incoming) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = ParallelGateway2ParallelStepAfterPGImpl
 				.pattern_ParallelGateway2ParallelStepAfterPG_26_1_bindingAndBlackFFB(this);
@@ -1264,7 +1281,7 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_368(EMoflonEdge _edge___conv) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_321(EMoflonEdge _edge___conv) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = ParallelGateway2ParallelStepAfterPGImpl
 				.pattern_ParallelGateway2ParallelStepAfterPG_27_1_bindingAndBlackFFB(this);
@@ -1327,7 +1344,7 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_369(EMoflonEdge _edge_sourceRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_322(EMoflonEdge _edge_sourceRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = ParallelGateway2ParallelStepAfterPGImpl
 				.pattern_ParallelGateway2ParallelStepAfterPG_28_1_bindingAndBlackFFB(this);
@@ -1390,7 +1407,7 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_370(EMoflonEdge _edge_outgoing) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_323(EMoflonEdge _edge_outgoing) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = ParallelGateway2ParallelStepAfterPGImpl
 				.pattern_ParallelGateway2ParallelStepAfterPG_29_1_bindingAndBlackFFB(this);
@@ -1504,6 +1521,10 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 				.filter(nm -> nm.getNodeName().equals("_sf22f2")).findAny();
 		Bpmn2UseCase.SF2F _sf22f2 = (Bpmn2UseCase.SF2F) matchFor_sf22f2.get().getNode();
 
+		Optional<TripleMatchNodeMapping> matchFor_pcgw2s = tripleMatch.getNodeMappings().stream()
+				.filter(nm -> nm.getNodeName().equals("_pcgw2s")).findAny();
+		Bpmn2UseCase.FN2S _pcgw2s = (Bpmn2UseCase.FN2S) matchFor_pcgw2s.get().getNode();
+
 		if (!(node.isIsDiverging() == true)) {
 			ruleResult.setSuccess(false);
 			return ruleResult;
@@ -1606,6 +1627,10 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		Optional<TripleMatchNodeMapping> matchFor_sf22f2 = tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("_sf22f2")).findAny();
 		Bpmn2UseCase.SF2F _sf22f2 = (Bpmn2UseCase.SF2F) matchFor_sf22f2.get().getNode();
+
+		Optional<TripleMatchNodeMapping> matchFor_pcgw2s = tripleMatch.getNodeMappings().stream()
+				.filter(nm -> nm.getNodeName().equals("_pcgw2s")).findAny();
+		Bpmn2UseCase.FN2S _pcgw2s = (Bpmn2UseCase.FN2S) matchFor_pcgw2s.get().getNode();
 
 		if (!(node.isIsDiverging() == true)) {
 			ruleResult.setSuccess(false);
@@ -1804,13 +1829,14 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		// SequenceFlow sf1 = (SequenceFlow) result2_bindingAndBlack[4];
 		ParallelGateway pgw = (ParallelGateway) result2_bindingAndBlack[5];
 		// SF2F _sf2f1 = (SF2F) result2_bindingAndBlack[6];
-		// ParallelGateway pcgw = (ParallelGateway) result2_bindingAndBlack[7];
+		ParallelGateway pcgw = (ParallelGateway) result2_bindingAndBlack[7];
 		SequenceFlow sf2 = (SequenceFlow) result2_bindingAndBlack[8];
 		Object[] result2_green = ParallelGateway2ParallelStepAfterPGImpl
-				.pattern_ParallelGateway2ParallelStepAfterPG_35_2_greenBBBBFFF(flow, step, pgw, sf2);
-		PerformRuleResult result = (PerformRuleResult) result2_green[4];
-		// FN2S _pgw2s = (FN2S) result2_green[5];
-		// SF2F _sf22f2 = (SF2F) result2_green[6];
+				.pattern_ParallelGateway2ParallelStepAfterPG_35_2_greenBBBBBFFFF(flow, step, pgw, pcgw, sf2);
+		PerformRuleResult result = (PerformRuleResult) result2_green[5];
+		// FN2S _pgw2s = (FN2S) result2_green[6];
+		// SF2F _sf22f2 = (SF2F) result2_green[7];
+		// FN2S _pcgw2s = (FN2S) result2_green[8];
 
 		return ParallelGateway2ParallelStepAfterPGImpl
 				.pattern_ParallelGateway2ParallelStepAfterPG_35_3_expressionFB(result);
@@ -1874,7 +1900,7 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 								+ ruleResult + ".");
 					}
 					ParallelGateway2ParallelStepAfterPGImpl
-							.pattern_ParallelGateway2ParallelStepAfterPG_36_6_greenBFFBBFFFFBB(flow, process, sf1,
+							.pattern_ParallelGateway2ParallelStepAfterPG_36_6_greenBFFBBFFFFFBB(flow, process, sf1,
 									ruleResult, csp);
 					// ParallelStep step = (ParallelStep) result6_green[1];
 					// FN2S _pgw2s = (FN2S) result6_green[2];
@@ -1882,6 +1908,7 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 					// ParallelGateway pcgw = (ParallelGateway) result6_green[6];
 					// SequenceFlow sf2 = (SequenceFlow) result6_green[7];
 					// SF2F _sf22f2 = (SF2F) result6_green[8];
+					// FN2S _pcgw2s = (FN2S) result6_green[9];
 
 				} else {
 				}
@@ -1978,12 +2005,12 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 					(ParallelGateway) arguments.get(7), (SequenceFlow) arguments.get(8));
 		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___IS_APPLICABLE_CHECK_CSP_FWD__CSP:
 			return isApplicable_checkCsp_FWD((CSP) arguments.get(0));
-		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
+		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
 			registerObjects_FWD((PerformRuleResult) arguments.get(0), (EObject) arguments.get(1),
 					(EObject) arguments.get(2), (EObject) arguments.get(3), (EObject) arguments.get(4),
 					(EObject) arguments.get(5), (EObject) arguments.get(6), (EObject) arguments.get(7),
 					(EObject) arguments.get(8), (EObject) arguments.get(9), (EObject) arguments.get(10),
-					(EObject) arguments.get(11));
+					(EObject) arguments.get(11), (EObject) arguments.get(12));
 			return null;
 		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___CHECK_TYPES_FWD__MATCH:
 			return checkTypes_FWD((Match) arguments.get(0));
@@ -2009,35 +2036,35 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 					(SimpleBPMN.Process) arguments.get(4), (SequenceFlow) arguments.get(5), (SF2F) arguments.get(6));
 		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___IS_APPLICABLE_CHECK_CSP_BWD__CSP:
 			return isApplicable_checkCsp_BWD((CSP) arguments.get(0));
-		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
+		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
 			registerObjects_BWD((PerformRuleResult) arguments.get(0), (EObject) arguments.get(1),
 					(EObject) arguments.get(2), (EObject) arguments.get(3), (EObject) arguments.get(4),
 					(EObject) arguments.get(5), (EObject) arguments.get(6), (EObject) arguments.get(7),
 					(EObject) arguments.get(8), (EObject) arguments.get(9), (EObject) arguments.get(10),
-					(EObject) arguments.get(11));
+					(EObject) arguments.get(11), (EObject) arguments.get(12));
 			return null;
 		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_114__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_114((EMoflonEdge) arguments.get(0));
-		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_115__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_115((EMoflonEdge) arguments.get(0));
-		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_363__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_363((EMoflonEdge) arguments.get(0));
-		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_364__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_364((EMoflonEdge) arguments.get(0));
-		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_365__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_365((EMoflonEdge) arguments.get(0));
-		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_366__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_366((EMoflonEdge) arguments.get(0));
-		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_367__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_367((EMoflonEdge) arguments.get(0));
-		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_368__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_368((EMoflonEdge) arguments.get(0));
-		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_369__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_369((EMoflonEdge) arguments.get(0));
-		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_370__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_370((EMoflonEdge) arguments.get(0));
+		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_103__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_103((EMoflonEdge) arguments.get(0));
+		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_104__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_104((EMoflonEdge) arguments.get(0));
+		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_316__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_316((EMoflonEdge) arguments.get(0));
+		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_317__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_317((EMoflonEdge) arguments.get(0));
+		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_318__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_318((EMoflonEdge) arguments.get(0));
+		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_319__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_319((EMoflonEdge) arguments.get(0));
+		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_320__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_320((EMoflonEdge) arguments.get(0));
+		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_321__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_321((EMoflonEdge) arguments.get(0));
+		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_322__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_322((EMoflonEdge) arguments.get(0));
+		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_323__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_323((EMoflonEdge) arguments.get(0));
 		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.PARALLEL_GATEWAY2_PARALLEL_STEP_AFTER_PG___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
@@ -2354,11 +2381,12 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		return null;
 	}
 
-	public static final Object[] pattern_ParallelGateway2ParallelStepAfterPG_1_1_greenBFFBBFB(ParallelFlow flow,
-			ParallelGateway pgw, SequenceFlow sf2, CSP csp) {
+	public static final Object[] pattern_ParallelGateway2ParallelStepAfterPG_1_1_greenBFFBBBFFB(ParallelFlow flow,
+			ParallelGateway pgw, ParallelGateway pcgw, SequenceFlow sf2, CSP csp) {
 		ParallelStep step = SimpleUseCaseFactory.eINSTANCE.createParallelStep();
 		FN2S _pgw2s = Bpmn2UseCaseFactory.eINSTANCE.createFN2S();
 		SF2F _sf22f2 = Bpmn2UseCaseFactory.eINSTANCE.createSF2F();
+		FN2S _pcgw2s = Bpmn2UseCaseFactory.eINSTANCE.createFN2S();
 		Object _localVariable_0 = csp.getValue("step", "id");
 		flow.getSteps().add(step);
 		flow.set__first(step);
@@ -2366,21 +2394,25 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		_pgw2s.setTarget(step);
 		_sf22f2.setSource(sf2);
 		_sf22f2.setTarget(flow);
+		_pcgw2s.setSource(pcgw);
+		_pcgw2s.setTarget(step);
 		String step_id_prime = (String) _localVariable_0;
 		step.setId(step_id_prime);
-		return new Object[] { flow, step, _pgw2s, pgw, sf2, _sf22f2, csp };
+		return new Object[] { flow, step, _pgw2s, pgw, pcgw, sf2, _sf22f2, _pcgw2s, csp };
 	}
 
-	public static final Object[] pattern_ParallelGateway2ParallelStepAfterPG_1_2_blackBBBBBB(ParallelStep step,
-			FN2S _pgw2s, ParallelGateway pgw, ParallelGateway pcgw, SequenceFlow sf2, SF2F _sf22f2) {
+	public static final Object[] pattern_ParallelGateway2ParallelStepAfterPG_1_2_blackBBBBBBB(ParallelStep step,
+			FN2S _pgw2s, ParallelGateway pgw, ParallelGateway pcgw, SequenceFlow sf2, SF2F _sf22f2, FN2S _pcgw2s) {
 		if (!pcgw.equals(pgw)) {
-			return new Object[] { step, _pgw2s, pgw, pcgw, sf2, _sf22f2 };
+			if (!_pcgw2s.equals(_pgw2s)) {
+				return new Object[] { step, _pgw2s, pgw, pcgw, sf2, _sf22f2, _pcgw2s };
+			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_ParallelGateway2ParallelStepAfterPG_1_2_greenFBBBBBB(ParallelStep step,
-			FN2S _pgw2s, ParallelGateway pgw, ParallelGateway pcgw, SequenceFlow sf2, SF2F _sf22f2) {
+	public static final Object[] pattern_ParallelGateway2ParallelStepAfterPG_1_2_greenFBBBBBBB(ParallelStep step,
+			FN2S _pgw2s, ParallelGateway pgw, ParallelGateway pcgw, SequenceFlow sf2, SF2F _sf22f2, FN2S _pcgw2s) {
 		PerformRuleResult ruleresult = TGGRuntimeFactory.eINSTANCE.createPerformRuleResult();
 		ruleresult.getCreatedElements().add(step);
 		ruleresult.getCreatedLinkElements().add(_pgw2s);
@@ -2388,12 +2420,13 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		ruleresult.getTranslatedElements().add(pcgw);
 		ruleresult.getTranslatedElements().add(sf2);
 		ruleresult.getCreatedLinkElements().add(_sf22f2);
-		return new Object[] { ruleresult, step, _pgw2s, pgw, pcgw, sf2, _sf22f2 };
+		ruleresult.getCreatedLinkElements().add(_pcgw2s);
+		return new Object[] { ruleresult, step, _pgw2s, pgw, pcgw, sf2, _sf22f2, _pcgw2s };
 	}
 
-	public static final Object[] pattern_ParallelGateway2ParallelStepAfterPG_1_3_blackBBBBBBBBBBBB(
+	public static final Object[] pattern_ParallelGateway2ParallelStepAfterPG_1_3_blackBBBBBBBBBBBBB(
 			PerformRuleResult ruleresult, EObject node, EObject flow, EObject step, EObject _pgw2s, EObject process,
-			EObject sf1, EObject pgw, EObject _sf2f1, EObject pcgw, EObject sf2, EObject _sf22f2) {
+			EObject sf1, EObject pgw, EObject _sf2f1, EObject pcgw, EObject sf2, EObject _sf22f2, EObject _pcgw2s) {
 		if (!node.equals(step)) {
 			if (!node.equals(process)) {
 				if (!node.equals(sf1)) {
@@ -2482,19 +2515,53 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 																																																									.equals(pcgw)) {
 																																																								if (!_sf22f2
 																																																										.equals(sf2)) {
-																																																									return new Object[] {
-																																																											ruleresult,
-																																																											node,
-																																																											flow,
-																																																											step,
-																																																											_pgw2s,
-																																																											process,
-																																																											sf1,
-																																																											pgw,
-																																																											_sf2f1,
-																																																											pcgw,
-																																																											sf2,
-																																																											_sf22f2 };
+																																																									if (!_pcgw2s
+																																																											.equals(node)) {
+																																																										if (!_pcgw2s
+																																																												.equals(flow)) {
+																																																											if (!_pcgw2s
+																																																													.equals(step)) {
+																																																												if (!_pcgw2s
+																																																														.equals(_pgw2s)) {
+																																																													if (!_pcgw2s
+																																																															.equals(process)) {
+																																																														if (!_pcgw2s
+																																																																.equals(sf1)) {
+																																																															if (!_pcgw2s
+																																																																	.equals(pgw)) {
+																																																																if (!_pcgw2s
+																																																																		.equals(_sf2f1)) {
+																																																																	if (!_pcgw2s
+																																																																			.equals(pcgw)) {
+																																																																		if (!_pcgw2s
+																																																																				.equals(sf2)) {
+																																																																			if (!_pcgw2s
+																																																																					.equals(_sf22f2)) {
+																																																																				return new Object[] {
+																																																																						ruleresult,
+																																																																						node,
+																																																																						flow,
+																																																																						step,
+																																																																						_pgw2s,
+																																																																						process,
+																																																																						sf1,
+																																																																						pgw,
+																																																																						_sf2f1,
+																																																																						pcgw,
+																																																																						sf2,
+																																																																						_sf22f2,
+																																																																						_pcgw2s };
+																																																																			}
+																																																																		}
+																																																																	}
+																																																																}
+																																																															}
+																																																														}
+																																																													}
+																																																												}
+																																																											}
+																																																										}
+																																																									}
 																																																								}
 																																																							}
 																																																						}
@@ -2553,9 +2620,9 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		return null;
 	}
 
-	public static final Object[] pattern_ParallelGateway2ParallelStepAfterPG_1_3_greenBBBBBBBBBBFFFFFFFFFFFFFF(
+	public static final Object[] pattern_ParallelGateway2ParallelStepAfterPG_1_3_greenBBBBBBBBBBBFFFFFFFFFFFFFFFF(
 			PerformRuleResult ruleresult, EObject flow, EObject step, EObject _pgw2s, EObject process, EObject sf1,
-			EObject pgw, EObject pcgw, EObject sf2, EObject _sf22f2) {
+			EObject pgw, EObject pcgw, EObject sf2, EObject _sf22f2, EObject _pcgw2s) {
 		EMoflonEdge flow__step____steps = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge flow__step______first = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge _pgw2s__pgw____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
@@ -2570,6 +2637,8 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		EMoflonEdge pcgw__sf2____outgoing = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge _sf22f2__sf2____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge _sf22f2__flow____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge _pcgw2s__pcgw____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge _pcgw2s__step____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		String ruleresult_ruleName_prime = "ParallelGateway2ParallelStepAfterPG";
 		String flow__step____steps_name_prime = "steps";
 		String flow__step______first_name_prime = "__first";
@@ -2585,6 +2654,8 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		String pcgw__sf2____outgoing_name_prime = "outgoing";
 		String _sf22f2__sf2____source_name_prime = "source";
 		String _sf22f2__flow____target_name_prime = "target";
+		String _pcgw2s__pcgw____source_name_prime = "source";
+		String _pcgw2s__step____target_name_prime = "target";
 		flow__step____steps.setSrc(flow);
 		flow__step____steps.setTrg(step);
 		ruleresult.getCreatedEdges().add(flow__step____steps);
@@ -2627,6 +2698,12 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		_sf22f2__flow____target.setSrc(_sf22f2);
 		_sf22f2__flow____target.setTrg(flow);
 		ruleresult.getCreatedEdges().add(_sf22f2__flow____target);
+		_pcgw2s__pcgw____source.setSrc(_pcgw2s);
+		_pcgw2s__pcgw____source.setTrg(pcgw);
+		ruleresult.getCreatedEdges().add(_pcgw2s__pcgw____source);
+		_pcgw2s__step____target.setSrc(_pcgw2s);
+		_pcgw2s__step____target.setTrg(step);
+		ruleresult.getCreatedEdges().add(_pcgw2s__step____target);
 		ruleresult.setRuleName(ruleresult_ruleName_prime);
 		flow__step____steps.setName(flow__step____steps_name_prime);
 		flow__step______first.setName(flow__step______first_name_prime);
@@ -2642,18 +2719,22 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		pcgw__sf2____outgoing.setName(pcgw__sf2____outgoing_name_prime);
 		_sf22f2__sf2____source.setName(_sf22f2__sf2____source_name_prime);
 		_sf22f2__flow____target.setName(_sf22f2__flow____target_name_prime);
-		return new Object[] { ruleresult, flow, step, _pgw2s, process, sf1, pgw, pcgw, sf2, _sf22f2,
+		_pcgw2s__pcgw____source.setName(_pcgw2s__pcgw____source_name_prime);
+		_pcgw2s__step____target.setName(_pcgw2s__step____target_name_prime);
+		return new Object[] { ruleresult, flow, step, _pgw2s, process, sf1, pgw, pcgw, sf2, _sf22f2, _pcgw2s,
 				flow__step____steps, flow__step______first, _pgw2s__pgw____source, _pgw2s__step____target,
 				process__pgw____flowElements, process__pcgw____flowElements, process__sf2____flowElements,
 				sf1__pgw____targetRef, pgw__sf1____incoming, pgw__pcgw______conv, sf2__pcgw____sourceRef,
-				pcgw__sf2____outgoing, _sf22f2__sf2____source, _sf22f2__flow____target };
+				pcgw__sf2____outgoing, _sf22f2__sf2____source, _sf22f2__flow____target, _pcgw2s__pcgw____source,
+				_pcgw2s__step____target };
 	}
 
-	public static final void pattern_ParallelGateway2ParallelStepAfterPG_1_5_expressionBBBBBBBBBBBBB(
+	public static final void pattern_ParallelGateway2ParallelStepAfterPG_1_5_expressionBBBBBBBBBBBBBB(
 			ParallelGateway2ParallelStepAfterPG _this, PerformRuleResult ruleresult, EObject node, EObject flow,
 			EObject step, EObject _pgw2s, EObject process, EObject sf1, EObject pgw, EObject _sf2f1, EObject pcgw,
-			EObject sf2, EObject _sf22f2) {
-		_this.registerObjects_FWD(ruleresult, node, flow, step, _pgw2s, process, sf1, pgw, _sf2f1, pcgw, sf2, _sf22f2);
+			EObject sf2, EObject _sf22f2, EObject _pcgw2s) {
+		_this.registerObjects_FWD(ruleresult, node, flow, step, _pgw2s, process, sf1, pgw, _sf2f1, pcgw, sf2, _sf22f2,
+				_pcgw2s);
 
 	}
 
@@ -3172,13 +3253,14 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		return null;
 	}
 
-	public static final Object[] pattern_ParallelGateway2ParallelStepAfterPG_11_1_greenBBFBBFFFFB(ParallelFlow flow,
+	public static final Object[] pattern_ParallelGateway2ParallelStepAfterPG_11_1_greenBBFBBFFFFFB(ParallelFlow flow,
 			ParallelStep step, SimpleBPMN.Process process, SequenceFlow sf1, CSP csp) {
 		FN2S _pgw2s = Bpmn2UseCaseFactory.eINSTANCE.createFN2S();
 		ParallelGateway pgw = SimpleBPMNFactory.eINSTANCE.createParallelGateway();
 		ParallelGateway pcgw = SimpleBPMNFactory.eINSTANCE.createParallelGateway();
 		SequenceFlow sf2 = SimpleBPMNFactory.eINSTANCE.createSequenceFlow();
 		SF2F _sf22f2 = Bpmn2UseCaseFactory.eINSTANCE.createSF2F();
+		FN2S _pcgw2s = Bpmn2UseCaseFactory.eINSTANCE.createFN2S();
 		boolean pgw_isDiverging_prime = Boolean.valueOf(true);
 		Object _localVariable_0 = csp.getValue("pgw", "id");
 		boolean pcgw_isDiverging_prime = false;
@@ -3192,23 +3274,27 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		sf2.setSourceRef(pcgw);
 		_sf22f2.setSource(sf2);
 		_sf22f2.setTarget(flow);
+		_pcgw2s.setSource(pcgw);
+		_pcgw2s.setTarget(step);
 		pgw.setIsDiverging(Boolean.valueOf(pgw_isDiverging_prime));
 		String pgw_id_prime = (String) _localVariable_0;
 		pcgw.setIsDiverging(Boolean.valueOf(pcgw_isDiverging_prime));
 		pgw.setId(pgw_id_prime);
-		return new Object[] { flow, step, _pgw2s, process, sf1, pgw, pcgw, sf2, _sf22f2, csp };
+		return new Object[] { flow, step, _pgw2s, process, sf1, pgw, pcgw, sf2, _sf22f2, _pcgw2s, csp };
 	}
 
-	public static final Object[] pattern_ParallelGateway2ParallelStepAfterPG_11_2_blackBBBBBB(ParallelStep step,
-			FN2S _pgw2s, ParallelGateway pgw, ParallelGateway pcgw, SequenceFlow sf2, SF2F _sf22f2) {
+	public static final Object[] pattern_ParallelGateway2ParallelStepAfterPG_11_2_blackBBBBBBB(ParallelStep step,
+			FN2S _pgw2s, ParallelGateway pgw, ParallelGateway pcgw, SequenceFlow sf2, SF2F _sf22f2, FN2S _pcgw2s) {
 		if (!pcgw.equals(pgw)) {
-			return new Object[] { step, _pgw2s, pgw, pcgw, sf2, _sf22f2 };
+			if (!_pcgw2s.equals(_pgw2s)) {
+				return new Object[] { step, _pgw2s, pgw, pcgw, sf2, _sf22f2, _pcgw2s };
+			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_ParallelGateway2ParallelStepAfterPG_11_2_greenFBBBBBB(ParallelStep step,
-			FN2S _pgw2s, ParallelGateway pgw, ParallelGateway pcgw, SequenceFlow sf2, SF2F _sf22f2) {
+	public static final Object[] pattern_ParallelGateway2ParallelStepAfterPG_11_2_greenFBBBBBBB(ParallelStep step,
+			FN2S _pgw2s, ParallelGateway pgw, ParallelGateway pcgw, SequenceFlow sf2, SF2F _sf22f2, FN2S _pcgw2s) {
 		PerformRuleResult ruleresult = TGGRuntimeFactory.eINSTANCE.createPerformRuleResult();
 		ruleresult.getTranslatedElements().add(step);
 		ruleresult.getCreatedLinkElements().add(_pgw2s);
@@ -3216,12 +3302,13 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		ruleresult.getCreatedElements().add(pcgw);
 		ruleresult.getCreatedElements().add(sf2);
 		ruleresult.getCreatedLinkElements().add(_sf22f2);
-		return new Object[] { ruleresult, step, _pgw2s, pgw, pcgw, sf2, _sf22f2 };
+		ruleresult.getCreatedLinkElements().add(_pcgw2s);
+		return new Object[] { ruleresult, step, _pgw2s, pgw, pcgw, sf2, _sf22f2, _pcgw2s };
 	}
 
-	public static final Object[] pattern_ParallelGateway2ParallelStepAfterPG_11_3_blackBBBBBBBBBBBB(
+	public static final Object[] pattern_ParallelGateway2ParallelStepAfterPG_11_3_blackBBBBBBBBBBBBB(
 			PerformRuleResult ruleresult, EObject node, EObject flow, EObject step, EObject _pgw2s, EObject process,
-			EObject sf1, EObject pgw, EObject _sf2f1, EObject pcgw, EObject sf2, EObject _sf22f2) {
+			EObject sf1, EObject pgw, EObject _sf2f1, EObject pcgw, EObject sf2, EObject _sf22f2, EObject _pcgw2s) {
 		if (!node.equals(step)) {
 			if (!node.equals(process)) {
 				if (!node.equals(sf1)) {
@@ -3310,19 +3397,53 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 																																																									.equals(pcgw)) {
 																																																								if (!_sf22f2
 																																																										.equals(sf2)) {
-																																																									return new Object[] {
-																																																											ruleresult,
-																																																											node,
-																																																											flow,
-																																																											step,
-																																																											_pgw2s,
-																																																											process,
-																																																											sf1,
-																																																											pgw,
-																																																											_sf2f1,
-																																																											pcgw,
-																																																											sf2,
-																																																											_sf22f2 };
+																																																									if (!_pcgw2s
+																																																											.equals(node)) {
+																																																										if (!_pcgw2s
+																																																												.equals(flow)) {
+																																																											if (!_pcgw2s
+																																																													.equals(step)) {
+																																																												if (!_pcgw2s
+																																																														.equals(_pgw2s)) {
+																																																													if (!_pcgw2s
+																																																															.equals(process)) {
+																																																														if (!_pcgw2s
+																																																																.equals(sf1)) {
+																																																															if (!_pcgw2s
+																																																																	.equals(pgw)) {
+																																																																if (!_pcgw2s
+																																																																		.equals(_sf2f1)) {
+																																																																	if (!_pcgw2s
+																																																																			.equals(pcgw)) {
+																																																																		if (!_pcgw2s
+																																																																				.equals(sf2)) {
+																																																																			if (!_pcgw2s
+																																																																					.equals(_sf22f2)) {
+																																																																				return new Object[] {
+																																																																						ruleresult,
+																																																																						node,
+																																																																						flow,
+																																																																						step,
+																																																																						_pgw2s,
+																																																																						process,
+																																																																						sf1,
+																																																																						pgw,
+																																																																						_sf2f1,
+																																																																						pcgw,
+																																																																						sf2,
+																																																																						_sf22f2,
+																																																																						_pcgw2s };
+																																																																			}
+																																																																		}
+																																																																	}
+																																																																}
+																																																															}
+																																																														}
+																																																													}
+																																																												}
+																																																											}
+																																																										}
+																																																									}
 																																																								}
 																																																							}
 																																																						}
@@ -3381,9 +3502,9 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		return null;
 	}
 
-	public static final Object[] pattern_ParallelGateway2ParallelStepAfterPG_11_3_greenBBBBBBBBBBFFFFFFFFFFFFFF(
+	public static final Object[] pattern_ParallelGateway2ParallelStepAfterPG_11_3_greenBBBBBBBBBBBFFFFFFFFFFFFFFFF(
 			PerformRuleResult ruleresult, EObject flow, EObject step, EObject _pgw2s, EObject process, EObject sf1,
-			EObject pgw, EObject pcgw, EObject sf2, EObject _sf22f2) {
+			EObject pgw, EObject pcgw, EObject sf2, EObject _sf22f2, EObject _pcgw2s) {
 		EMoflonEdge flow__step____steps = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge flow__step______first = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge _pgw2s__pgw____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
@@ -3398,6 +3519,8 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		EMoflonEdge pcgw__sf2____outgoing = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge _sf22f2__sf2____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge _sf22f2__flow____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge _pcgw2s__pcgw____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge _pcgw2s__step____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		String ruleresult_ruleName_prime = "ParallelGateway2ParallelStepAfterPG";
 		String flow__step____steps_name_prime = "steps";
 		String flow__step______first_name_prime = "__first";
@@ -3413,6 +3536,8 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		String pcgw__sf2____outgoing_name_prime = "outgoing";
 		String _sf22f2__sf2____source_name_prime = "source";
 		String _sf22f2__flow____target_name_prime = "target";
+		String _pcgw2s__pcgw____source_name_prime = "source";
+		String _pcgw2s__step____target_name_prime = "target";
 		flow__step____steps.setSrc(flow);
 		flow__step____steps.setTrg(step);
 		ruleresult.getTranslatedEdges().add(flow__step____steps);
@@ -3455,6 +3580,12 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		_sf22f2__flow____target.setSrc(_sf22f2);
 		_sf22f2__flow____target.setTrg(flow);
 		ruleresult.getCreatedEdges().add(_sf22f2__flow____target);
+		_pcgw2s__pcgw____source.setSrc(_pcgw2s);
+		_pcgw2s__pcgw____source.setTrg(pcgw);
+		ruleresult.getCreatedEdges().add(_pcgw2s__pcgw____source);
+		_pcgw2s__step____target.setSrc(_pcgw2s);
+		_pcgw2s__step____target.setTrg(step);
+		ruleresult.getCreatedEdges().add(_pcgw2s__step____target);
 		ruleresult.setRuleName(ruleresult_ruleName_prime);
 		flow__step____steps.setName(flow__step____steps_name_prime);
 		flow__step______first.setName(flow__step______first_name_prime);
@@ -3470,18 +3601,22 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		pcgw__sf2____outgoing.setName(pcgw__sf2____outgoing_name_prime);
 		_sf22f2__sf2____source.setName(_sf22f2__sf2____source_name_prime);
 		_sf22f2__flow____target.setName(_sf22f2__flow____target_name_prime);
-		return new Object[] { ruleresult, flow, step, _pgw2s, process, sf1, pgw, pcgw, sf2, _sf22f2,
+		_pcgw2s__pcgw____source.setName(_pcgw2s__pcgw____source_name_prime);
+		_pcgw2s__step____target.setName(_pcgw2s__step____target_name_prime);
+		return new Object[] { ruleresult, flow, step, _pgw2s, process, sf1, pgw, pcgw, sf2, _sf22f2, _pcgw2s,
 				flow__step____steps, flow__step______first, _pgw2s__pgw____source, _pgw2s__step____target,
 				process__pgw____flowElements, process__pcgw____flowElements, process__sf2____flowElements,
 				sf1__pgw____targetRef, pgw__sf1____incoming, pgw__pcgw______conv, sf2__pcgw____sourceRef,
-				pcgw__sf2____outgoing, _sf22f2__sf2____source, _sf22f2__flow____target };
+				pcgw__sf2____outgoing, _sf22f2__sf2____source, _sf22f2__flow____target, _pcgw2s__pcgw____source,
+				_pcgw2s__step____target };
 	}
 
-	public static final void pattern_ParallelGateway2ParallelStepAfterPG_11_5_expressionBBBBBBBBBBBBB(
+	public static final void pattern_ParallelGateway2ParallelStepAfterPG_11_5_expressionBBBBBBBBBBBBBB(
 			ParallelGateway2ParallelStepAfterPG _this, PerformRuleResult ruleresult, EObject node, EObject flow,
 			EObject step, EObject _pgw2s, EObject process, EObject sf1, EObject pgw, EObject _sf2f1, EObject pcgw,
-			EObject sf2, EObject _sf22f2) {
-		_this.registerObjects_BWD(ruleresult, node, flow, step, _pgw2s, process, sf1, pgw, _sf2f1, pcgw, sf2, _sf22f2);
+			EObject sf2, EObject _sf22f2, EObject _pcgw2s) {
+		_this.registerObjects_BWD(ruleresult, node, flow, step, _pgw2s, process, sf1, pgw, _sf2f1, pcgw, sf2, _sf22f2,
+				_pcgw2s);
 
 	}
 
@@ -3988,11 +4123,11 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		if (!node.equals(pgw)) {
 			if (!node.equals(pcgw)) {
 				if (!pcgw.equals(pgw)) {
-					for (ParallelGateway __DEC_pgw___conv_52977 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ParallelGateway __DEC_pgw___conv_661413 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pgw, ParallelGateway.class, "__conv")) {
-						if (!pgw.equals(__DEC_pgw___conv_52977)) {
-							if (!node.equals(__DEC_pgw___conv_52977)) {
-								if (!pcgw.equals(__DEC_pgw___conv_52977)) {
+						if (!pgw.equals(__DEC_pgw___conv_661413)) {
+							if (!node.equals(__DEC_pgw___conv_661413)) {
+								if (!pcgw.equals(__DEC_pgw___conv_661413)) {
 									return new Object[] { pgw, node, pcgw };
 								}
 							}
@@ -4009,11 +4144,11 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		if (!pcgw.equals(pgw)) {
 			if (!node.equals(pcgw)) {
 				if (!node.equals(pgw)) {
-					ParallelGateway __DEC_pcgw___conv_269020 = pcgw.get__conv();
-					if (__DEC_pcgw___conv_269020 != null) {
-						if (!pcgw.equals(__DEC_pcgw___conv_269020)) {
-							if (!node.equals(__DEC_pcgw___conv_269020)) {
-								if (!pgw.equals(__DEC_pcgw___conv_269020)) {
+					ParallelGateway __DEC_pcgw___conv_15829 = pcgw.get__conv();
+					if (__DEC_pcgw___conv_15829 != null) {
+						if (!pcgw.equals(__DEC_pcgw___conv_15829)) {
+							if (!node.equals(__DEC_pcgw___conv_15829)) {
+								if (!pgw.equals(__DEC_pcgw___conv_15829)) {
 									return new Object[] { pcgw, node, pgw };
 								}
 							}
@@ -4031,11 +4166,11 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		if (!pcgw.equals(pgw)) {
 			if (!node.equals(pcgw)) {
 				if (!node.equals(pgw)) {
-					for (ParallelGateway __DEC_pcgw___conv_832247 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ParallelGateway __DEC_pcgw___conv_815077 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pcgw, ParallelGateway.class, "__conv")) {
-						if (!pcgw.equals(__DEC_pcgw___conv_832247)) {
-							if (!node.equals(__DEC_pcgw___conv_832247)) {
-								if (!pgw.equals(__DEC_pcgw___conv_832247)) {
+						if (!pcgw.equals(__DEC_pcgw___conv_815077)) {
+							if (!node.equals(__DEC_pcgw___conv_815077)) {
+								if (!pgw.equals(__DEC_pcgw___conv_815077)) {
 									return new Object[] { pcgw, node, pgw };
 								}
 							}
@@ -4284,11 +4419,11 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		if (!node.equals(pgw)) {
 			if (!node.equals(pcgw)) {
 				if (!pcgw.equals(pgw)) {
-					for (ParallelGateway __DEC_pgw___conv_206154 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ParallelGateway __DEC_pgw___conv_437385 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pgw, ParallelGateway.class, "__conv")) {
-						if (!pgw.equals(__DEC_pgw___conv_206154)) {
-							if (!node.equals(__DEC_pgw___conv_206154)) {
-								if (!pcgw.equals(__DEC_pgw___conv_206154)) {
+						if (!pgw.equals(__DEC_pgw___conv_437385)) {
+							if (!node.equals(__DEC_pgw___conv_437385)) {
+								if (!pcgw.equals(__DEC_pgw___conv_437385)) {
 									return new Object[] { pgw, node, pcgw };
 								}
 							}
@@ -4305,11 +4440,11 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		if (!pcgw.equals(pgw)) {
 			if (!node.equals(pcgw)) {
 				if (!node.equals(pgw)) {
-					ParallelGateway __DEC_pcgw___conv_60274 = pcgw.get__conv();
-					if (__DEC_pcgw___conv_60274 != null) {
-						if (!pcgw.equals(__DEC_pcgw___conv_60274)) {
-							if (!node.equals(__DEC_pcgw___conv_60274)) {
-								if (!pgw.equals(__DEC_pcgw___conv_60274)) {
+					ParallelGateway __DEC_pcgw___conv_154253 = pcgw.get__conv();
+					if (__DEC_pcgw___conv_154253 != null) {
+						if (!pcgw.equals(__DEC_pcgw___conv_154253)) {
+							if (!node.equals(__DEC_pcgw___conv_154253)) {
+								if (!pgw.equals(__DEC_pcgw___conv_154253)) {
 									return new Object[] { pcgw, node, pgw };
 								}
 							}
@@ -4327,11 +4462,11 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		if (!pcgw.equals(pgw)) {
 			if (!node.equals(pcgw)) {
 				if (!node.equals(pgw)) {
-					for (ParallelGateway __DEC_pcgw___conv_321686 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ParallelGateway __DEC_pcgw___conv_211129 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pcgw, ParallelGateway.class, "__conv")) {
-						if (!pcgw.equals(__DEC_pcgw___conv_321686)) {
-							if (!node.equals(__DEC_pcgw___conv_321686)) {
-								if (!pgw.equals(__DEC_pcgw___conv_321686)) {
+						if (!pcgw.equals(__DEC_pcgw___conv_211129)) {
+							if (!node.equals(__DEC_pcgw___conv_211129)) {
+								if (!pgw.equals(__DEC_pcgw___conv_211129)) {
 									return new Object[] { pcgw, node, pgw };
 								}
 							}
@@ -4583,11 +4718,11 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		if (!node.equals(pgw)) {
 			if (!node.equals(pcgw)) {
 				if (!pcgw.equals(pgw)) {
-					for (ParallelGateway __DEC_pgw___conv_593635 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ParallelGateway __DEC_pgw___conv_568861 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pgw, ParallelGateway.class, "__conv")) {
-						if (!pgw.equals(__DEC_pgw___conv_593635)) {
-							if (!node.equals(__DEC_pgw___conv_593635)) {
-								if (!pcgw.equals(__DEC_pgw___conv_593635)) {
+						if (!pgw.equals(__DEC_pgw___conv_568861)) {
+							if (!node.equals(__DEC_pgw___conv_568861)) {
+								if (!pcgw.equals(__DEC_pgw___conv_568861)) {
 									return new Object[] { pgw, node, pcgw };
 								}
 							}
@@ -4604,11 +4739,11 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		if (!pcgw.equals(pgw)) {
 			if (!node.equals(pcgw)) {
 				if (!node.equals(pgw)) {
-					ParallelGateway __DEC_pcgw___conv_187053 = pcgw.get__conv();
-					if (__DEC_pcgw___conv_187053 != null) {
-						if (!pcgw.equals(__DEC_pcgw___conv_187053)) {
-							if (!node.equals(__DEC_pcgw___conv_187053)) {
-								if (!pgw.equals(__DEC_pcgw___conv_187053)) {
+					ParallelGateway __DEC_pcgw___conv_691999 = pcgw.get__conv();
+					if (__DEC_pcgw___conv_691999 != null) {
+						if (!pcgw.equals(__DEC_pcgw___conv_691999)) {
+							if (!node.equals(__DEC_pcgw___conv_691999)) {
+								if (!pgw.equals(__DEC_pcgw___conv_691999)) {
 									return new Object[] { pcgw, node, pgw };
 								}
 							}
@@ -4626,11 +4761,11 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		if (!pcgw.equals(pgw)) {
 			if (!node.equals(pcgw)) {
 				if (!node.equals(pgw)) {
-					for (ParallelGateway __DEC_pcgw___conv_47096 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ParallelGateway __DEC_pcgw___conv_341611 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pcgw, ParallelGateway.class, "__conv")) {
-						if (!pcgw.equals(__DEC_pcgw___conv_47096)) {
-							if (!node.equals(__DEC_pcgw___conv_47096)) {
-								if (!pgw.equals(__DEC_pcgw___conv_47096)) {
+						if (!pcgw.equals(__DEC_pcgw___conv_341611)) {
+							if (!node.equals(__DEC_pcgw___conv_341611)) {
+								if (!pgw.equals(__DEC_pcgw___conv_341611)) {
 									return new Object[] { pcgw, node, pgw };
 								}
 							}
@@ -4887,11 +5022,11 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		if (!node.equals(pgw)) {
 			if (!node.equals(pcgw)) {
 				if (!pcgw.equals(pgw)) {
-					for (ParallelGateway __DEC_pgw___conv_270483 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ParallelGateway __DEC_pgw___conv_199949 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pgw, ParallelGateway.class, "__conv")) {
-						if (!pgw.equals(__DEC_pgw___conv_270483)) {
-							if (!node.equals(__DEC_pgw___conv_270483)) {
-								if (!pcgw.equals(__DEC_pgw___conv_270483)) {
+						if (!pgw.equals(__DEC_pgw___conv_199949)) {
+							if (!node.equals(__DEC_pgw___conv_199949)) {
+								if (!pcgw.equals(__DEC_pgw___conv_199949)) {
 									return new Object[] { pgw, node, pcgw };
 								}
 							}
@@ -4908,11 +5043,11 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		if (!pcgw.equals(pgw)) {
 			if (!node.equals(pcgw)) {
 				if (!node.equals(pgw)) {
-					ParallelGateway __DEC_pcgw___conv_456597 = pcgw.get__conv();
-					if (__DEC_pcgw___conv_456597 != null) {
-						if (!pcgw.equals(__DEC_pcgw___conv_456597)) {
-							if (!node.equals(__DEC_pcgw___conv_456597)) {
-								if (!pgw.equals(__DEC_pcgw___conv_456597)) {
+					ParallelGateway __DEC_pcgw___conv_112241 = pcgw.get__conv();
+					if (__DEC_pcgw___conv_112241 != null) {
+						if (!pcgw.equals(__DEC_pcgw___conv_112241)) {
+							if (!node.equals(__DEC_pcgw___conv_112241)) {
+								if (!pgw.equals(__DEC_pcgw___conv_112241)) {
 									return new Object[] { pcgw, node, pgw };
 								}
 							}
@@ -4930,11 +5065,11 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		if (!pcgw.equals(pgw)) {
 			if (!node.equals(pcgw)) {
 				if (!node.equals(pgw)) {
-					for (ParallelGateway __DEC_pcgw___conv_449062 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ParallelGateway __DEC_pcgw___conv_723477 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pcgw, ParallelGateway.class, "__conv")) {
-						if (!pcgw.equals(__DEC_pcgw___conv_449062)) {
-							if (!node.equals(__DEC_pcgw___conv_449062)) {
-								if (!pgw.equals(__DEC_pcgw___conv_449062)) {
+						if (!pcgw.equals(__DEC_pcgw___conv_723477)) {
+							if (!node.equals(__DEC_pcgw___conv_723477)) {
+								if (!pgw.equals(__DEC_pcgw___conv_723477)) {
 									return new Object[] { pcgw, node, pgw };
 								}
 							}
@@ -5187,11 +5322,11 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		if (!node.equals(pgw)) {
 			if (!node.equals(pcgw)) {
 				if (!pcgw.equals(pgw)) {
-					for (ParallelGateway __DEC_pgw___conv_918743 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ParallelGateway __DEC_pgw___conv_900657 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pgw, ParallelGateway.class, "__conv")) {
-						if (!pgw.equals(__DEC_pgw___conv_918743)) {
-							if (!node.equals(__DEC_pgw___conv_918743)) {
-								if (!pcgw.equals(__DEC_pgw___conv_918743)) {
+						if (!pgw.equals(__DEC_pgw___conv_900657)) {
+							if (!node.equals(__DEC_pgw___conv_900657)) {
+								if (!pcgw.equals(__DEC_pgw___conv_900657)) {
 									return new Object[] { pgw, node, pcgw };
 								}
 							}
@@ -5208,11 +5343,11 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		if (!pcgw.equals(pgw)) {
 			if (!node.equals(pcgw)) {
 				if (!node.equals(pgw)) {
-					ParallelGateway __DEC_pcgw___conv_404143 = pcgw.get__conv();
-					if (__DEC_pcgw___conv_404143 != null) {
-						if (!pcgw.equals(__DEC_pcgw___conv_404143)) {
-							if (!node.equals(__DEC_pcgw___conv_404143)) {
-								if (!pgw.equals(__DEC_pcgw___conv_404143)) {
+					ParallelGateway __DEC_pcgw___conv_890512 = pcgw.get__conv();
+					if (__DEC_pcgw___conv_890512 != null) {
+						if (!pcgw.equals(__DEC_pcgw___conv_890512)) {
+							if (!node.equals(__DEC_pcgw___conv_890512)) {
+								if (!pgw.equals(__DEC_pcgw___conv_890512)) {
 									return new Object[] { pcgw, node, pgw };
 								}
 							}
@@ -5230,11 +5365,11 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		if (!pcgw.equals(pgw)) {
 			if (!node.equals(pcgw)) {
 				if (!node.equals(pgw)) {
-					for (ParallelGateway __DEC_pcgw___conv_430811 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ParallelGateway __DEC_pcgw___conv_482971 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pcgw, ParallelGateway.class, "__conv")) {
-						if (!pcgw.equals(__DEC_pcgw___conv_430811)) {
-							if (!node.equals(__DEC_pcgw___conv_430811)) {
-								if (!pgw.equals(__DEC_pcgw___conv_430811)) {
+						if (!pcgw.equals(__DEC_pcgw___conv_482971)) {
+							if (!node.equals(__DEC_pcgw___conv_482971)) {
+								if (!pgw.equals(__DEC_pcgw___conv_482971)) {
 									return new Object[] { pcgw, node, pgw };
 								}
 							}
@@ -5487,11 +5622,11 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		if (!node.equals(pgw)) {
 			if (!node.equals(pcgw)) {
 				if (!pcgw.equals(pgw)) {
-					for (ParallelGateway __DEC_pgw___conv_850559 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ParallelGateway __DEC_pgw___conv_895689 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pgw, ParallelGateway.class, "__conv")) {
-						if (!pgw.equals(__DEC_pgw___conv_850559)) {
-							if (!node.equals(__DEC_pgw___conv_850559)) {
-								if (!pcgw.equals(__DEC_pgw___conv_850559)) {
+						if (!pgw.equals(__DEC_pgw___conv_895689)) {
+							if (!node.equals(__DEC_pgw___conv_895689)) {
+								if (!pcgw.equals(__DEC_pgw___conv_895689)) {
 									return new Object[] { pgw, node, pcgw };
 								}
 							}
@@ -5508,11 +5643,11 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		if (!pcgw.equals(pgw)) {
 			if (!node.equals(pcgw)) {
 				if (!node.equals(pgw)) {
-					ParallelGateway __DEC_pcgw___conv_577721 = pcgw.get__conv();
-					if (__DEC_pcgw___conv_577721 != null) {
-						if (!pcgw.equals(__DEC_pcgw___conv_577721)) {
-							if (!node.equals(__DEC_pcgw___conv_577721)) {
-								if (!pgw.equals(__DEC_pcgw___conv_577721)) {
+					ParallelGateway __DEC_pcgw___conv_723216 = pcgw.get__conv();
+					if (__DEC_pcgw___conv_723216 != null) {
+						if (!pcgw.equals(__DEC_pcgw___conv_723216)) {
+							if (!node.equals(__DEC_pcgw___conv_723216)) {
+								if (!pgw.equals(__DEC_pcgw___conv_723216)) {
 									return new Object[] { pcgw, node, pgw };
 								}
 							}
@@ -5530,11 +5665,11 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		if (!pcgw.equals(pgw)) {
 			if (!node.equals(pcgw)) {
 				if (!node.equals(pgw)) {
-					for (ParallelGateway __DEC_pcgw___conv_326200 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ParallelGateway __DEC_pcgw___conv_342144 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pcgw, ParallelGateway.class, "__conv")) {
-						if (!pcgw.equals(__DEC_pcgw___conv_326200)) {
-							if (!node.equals(__DEC_pcgw___conv_326200)) {
-								if (!pgw.equals(__DEC_pcgw___conv_326200)) {
+						if (!pcgw.equals(__DEC_pcgw___conv_342144)) {
+							if (!node.equals(__DEC_pcgw___conv_342144)) {
+								if (!pgw.equals(__DEC_pcgw___conv_342144)) {
 									return new Object[] { pcgw, node, pgw };
 								}
 							}
@@ -5785,11 +5920,11 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		if (!node.equals(pgw)) {
 			if (!node.equals(pcgw)) {
 				if (!pcgw.equals(pgw)) {
-					for (ParallelGateway __DEC_pgw___conv_59210 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ParallelGateway __DEC_pgw___conv_329187 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pgw, ParallelGateway.class, "__conv")) {
-						if (!pgw.equals(__DEC_pgw___conv_59210)) {
-							if (!node.equals(__DEC_pgw___conv_59210)) {
-								if (!pcgw.equals(__DEC_pgw___conv_59210)) {
+						if (!pgw.equals(__DEC_pgw___conv_329187)) {
+							if (!node.equals(__DEC_pgw___conv_329187)) {
+								if (!pcgw.equals(__DEC_pgw___conv_329187)) {
 									return new Object[] { pgw, node, pcgw };
 								}
 							}
@@ -5806,11 +5941,11 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		if (!pcgw.equals(pgw)) {
 			if (!node.equals(pcgw)) {
 				if (!node.equals(pgw)) {
-					ParallelGateway __DEC_pcgw___conv_112552 = pcgw.get__conv();
-					if (__DEC_pcgw___conv_112552 != null) {
-						if (!pcgw.equals(__DEC_pcgw___conv_112552)) {
-							if (!node.equals(__DEC_pcgw___conv_112552)) {
-								if (!pgw.equals(__DEC_pcgw___conv_112552)) {
+					ParallelGateway __DEC_pcgw___conv_629499 = pcgw.get__conv();
+					if (__DEC_pcgw___conv_629499 != null) {
+						if (!pcgw.equals(__DEC_pcgw___conv_629499)) {
+							if (!node.equals(__DEC_pcgw___conv_629499)) {
+								if (!pgw.equals(__DEC_pcgw___conv_629499)) {
 									return new Object[] { pcgw, node, pgw };
 								}
 							}
@@ -5828,11 +5963,11 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		if (!pcgw.equals(pgw)) {
 			if (!node.equals(pcgw)) {
 				if (!node.equals(pgw)) {
-					for (ParallelGateway __DEC_pcgw___conv_683208 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ParallelGateway __DEC_pcgw___conv_88585 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pcgw, ParallelGateway.class, "__conv")) {
-						if (!pcgw.equals(__DEC_pcgw___conv_683208)) {
-							if (!node.equals(__DEC_pcgw___conv_683208)) {
-								if (!pgw.equals(__DEC_pcgw___conv_683208)) {
+						if (!pcgw.equals(__DEC_pcgw___conv_88585)) {
+							if (!node.equals(__DEC_pcgw___conv_88585)) {
+								if (!pgw.equals(__DEC_pcgw___conv_88585)) {
 									return new Object[] { pcgw, node, pgw };
 								}
 							}
@@ -6087,11 +6222,11 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		if (!node.equals(pgw)) {
 			if (!node.equals(pcgw)) {
 				if (!pcgw.equals(pgw)) {
-					for (ParallelGateway __DEC_pgw___conv_915711 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ParallelGateway __DEC_pgw___conv_272461 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pgw, ParallelGateway.class, "__conv")) {
-						if (!pgw.equals(__DEC_pgw___conv_915711)) {
-							if (!node.equals(__DEC_pgw___conv_915711)) {
-								if (!pcgw.equals(__DEC_pgw___conv_915711)) {
+						if (!pgw.equals(__DEC_pgw___conv_272461)) {
+							if (!node.equals(__DEC_pgw___conv_272461)) {
+								if (!pcgw.equals(__DEC_pgw___conv_272461)) {
 									return new Object[] { pgw, node, pcgw };
 								}
 							}
@@ -6108,11 +6243,11 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		if (!pcgw.equals(pgw)) {
 			if (!node.equals(pcgw)) {
 				if (!node.equals(pgw)) {
-					ParallelGateway __DEC_pcgw___conv_411473 = pcgw.get__conv();
-					if (__DEC_pcgw___conv_411473 != null) {
-						if (!pcgw.equals(__DEC_pcgw___conv_411473)) {
-							if (!node.equals(__DEC_pcgw___conv_411473)) {
-								if (!pgw.equals(__DEC_pcgw___conv_411473)) {
+					ParallelGateway __DEC_pcgw___conv_977240 = pcgw.get__conv();
+					if (__DEC_pcgw___conv_977240 != null) {
+						if (!pcgw.equals(__DEC_pcgw___conv_977240)) {
+							if (!node.equals(__DEC_pcgw___conv_977240)) {
+								if (!pgw.equals(__DEC_pcgw___conv_977240)) {
 									return new Object[] { pcgw, node, pgw };
 								}
 							}
@@ -6130,11 +6265,11 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		if (!pcgw.equals(pgw)) {
 			if (!node.equals(pcgw)) {
 				if (!node.equals(pgw)) {
-					for (ParallelGateway __DEC_pcgw___conv_585569 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ParallelGateway __DEC_pcgw___conv_860400 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pcgw, ParallelGateway.class, "__conv")) {
-						if (!pcgw.equals(__DEC_pcgw___conv_585569)) {
-							if (!node.equals(__DEC_pcgw___conv_585569)) {
-								if (!pgw.equals(__DEC_pcgw___conv_585569)) {
+						if (!pcgw.equals(__DEC_pcgw___conv_860400)) {
+							if (!node.equals(__DEC_pcgw___conv_860400)) {
+								if (!pgw.equals(__DEC_pcgw___conv_860400)) {
 									return new Object[] { pcgw, node, pgw };
 								}
 							}
@@ -6694,18 +6829,22 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		return null;
 	}
 
-	public static final Object[] pattern_ParallelGateway2ParallelStepAfterPG_35_2_greenBBBBFFF(ParallelFlow flow,
-			ParallelStep step, ParallelGateway pgw, SequenceFlow sf2) {
+	public static final Object[] pattern_ParallelGateway2ParallelStepAfterPG_35_2_greenBBBBBFFFF(ParallelFlow flow,
+			ParallelStep step, ParallelGateway pgw, ParallelGateway pcgw, SequenceFlow sf2) {
 		PerformRuleResult result = TGGRuntimeFactory.eINSTANCE.createPerformRuleResult();
 		FN2S _pgw2s = Bpmn2UseCaseFactory.eINSTANCE.createFN2S();
 		SF2F _sf22f2 = Bpmn2UseCaseFactory.eINSTANCE.createSF2F();
+		FN2S _pcgw2s = Bpmn2UseCaseFactory.eINSTANCE.createFN2S();
 		result.getCreatedElements().add(_pgw2s);
 		_pgw2s.setSource(pgw);
 		_pgw2s.setTarget(step);
 		result.getCreatedElements().add(_sf22f2);
 		_sf22f2.setSource(sf2);
 		_sf22f2.setTarget(flow);
-		return new Object[] { flow, step, pgw, sf2, result, _pgw2s, _sf22f2 };
+		result.getCreatedElements().add(_pcgw2s);
+		_pcgw2s.setSource(pcgw);
+		_pcgw2s.setTarget(step);
+		return new Object[] { flow, step, pgw, pcgw, sf2, result, _pgw2s, _sf22f2, _pcgw2s };
 	}
 
 	public static final PerformRuleResult pattern_ParallelGateway2ParallelStepAfterPG_35_3_expressionFB(
@@ -6886,7 +7025,7 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		return null;
 	}
 
-	public static final Object[] pattern_ParallelGateway2ParallelStepAfterPG_36_6_greenBFFBBFFFFBB(ParallelFlow flow,
+	public static final Object[] pattern_ParallelGateway2ParallelStepAfterPG_36_6_greenBFFBBFFFFFBB(ParallelFlow flow,
 			SimpleBPMN.Process process, SequenceFlow sf1, ModelgeneratorRuleResult ruleResult, CSP csp) {
 		ParallelStep step = SimpleUseCaseFactory.eINSTANCE.createParallelStep();
 		FN2S _pgw2s = Bpmn2UseCaseFactory.eINSTANCE.createFN2S();
@@ -6894,6 +7033,7 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		ParallelGateway pcgw = SimpleBPMNFactory.eINSTANCE.createParallelGateway();
 		SequenceFlow sf2 = SimpleBPMNFactory.eINSTANCE.createSequenceFlow();
 		SF2F _sf22f2 = Bpmn2UseCaseFactory.eINSTANCE.createSF2F();
+		FN2S _pcgw2s = Bpmn2UseCaseFactory.eINSTANCE.createFN2S();
 		Object _localVariable_0 = csp.getValue("step", "id");
 		boolean pgw_isDiverging_prime = Boolean.valueOf(true);
 		Object _localVariable_1 = csp.getValue("pgw", "id");
@@ -6918,6 +7058,9 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		_sf22f2.setSource(sf2);
 		_sf22f2.setTarget(flow);
 		ruleResult.getCorrObjects().add(_sf22f2);
+		_pcgw2s.setSource(pcgw);
+		_pcgw2s.setTarget(step);
+		ruleResult.getCorrObjects().add(_pcgw2s);
 		String step_id_prime = (String) _localVariable_0;
 		pgw.setIsDiverging(Boolean.valueOf(pgw_isDiverging_prime));
 		String pgw_id_prime = (String) _localVariable_1;
@@ -6927,7 +7070,7 @@ public class ParallelGateway2ParallelStepAfterPGImpl extends AbstractRuleImpl
 		step.setId(step_id_prime);
 		pgw.setId(pgw_id_prime);
 		ruleResult.setPerformCount(Integer.valueOf(ruleResult_performCount_prime));
-		return new Object[] { flow, step, _pgw2s, process, sf1, pgw, pcgw, sf2, _sf22f2, ruleResult, csp };
+		return new Object[] { flow, step, _pgw2s, process, sf1, pgw, pcgw, sf2, _sf22f2, _pcgw2s, ruleResult, csp };
 	}
 
 	public static final ModelgeneratorRuleResult pattern_ParallelGateway2ParallelStepAfterPG_36_7_expressionFB(

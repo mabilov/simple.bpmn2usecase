@@ -12,8 +12,10 @@ import Bpmn2UseCase.SF2F;
 
 import SimpleBPMN.EndEvent;
 import SimpleBPMN.FlowElement;
+import SimpleBPMN.FlowNode;
 import SimpleBPMN.SequenceFlow;
 import SimpleBPMN.SimpleBPMNFactory;
+import SimpleBPMN.StartEvent;
 
 import SimpleUseCase.Flow;
 import SimpleUseCase.SimpleUseCaseFactory;
@@ -94,35 +96,36 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isAppropriate_FWD(Match match, SimpleBPMN.Process process, SequenceFlow inFlow, EndEvent event) {
+	public boolean isAppropriate_FWD(Match match, StartEvent node, SimpleBPMN.Process process, SequenceFlow inFlow,
+			EndEvent event) {
 		// initial bindings
-		Object[] result1_black = EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_0_1_blackBBBBB(this,
-				match, process, inFlow, event);
+		Object[] result1_black = EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_0_1_blackBBBBBB(this,
+				match, node, process, inFlow, event);
 		if (result1_black == null) {
 			throw new RuntimeException("Pattern matching in node [initial bindings] failed." + " Variables: "
-					+ "[this] = " + this + ", " + "[match] = " + match + ", " + "[process] = " + process + ", "
-					+ "[inFlow] = " + inFlow + ", " + "[event] = " + event + ".");
+					+ "[this] = " + this + ", " + "[match] = " + match + ", " + "[node] = " + node + ", "
+					+ "[process] = " + process + ", " + "[inFlow] = " + inFlow + ", " + "[event] = " + event + ".");
 		}
 
 		// Solve CSP
 		Object[] result2_bindingAndBlack = EndEvent2FinalStateFirstImpl
-				.pattern_EndEvent2FinalStateFirst_0_2_bindingAndBlackFBBBBB(this, match, process, inFlow, event);
+				.pattern_EndEvent2FinalStateFirst_0_2_bindingAndBlackFBBBBBB(this, match, node, process, inFlow, event);
 		if (result2_bindingAndBlack == null) {
 			throw new RuntimeException("Pattern matching in node [Solve CSP] failed." + " Variables: " + "[this] = "
-					+ this + ", " + "[match] = " + match + ", " + "[process] = " + process + ", " + "[inFlow] = "
-					+ inFlow + ", " + "[event] = " + event + ".");
+					+ this + ", " + "[match] = " + match + ", " + "[node] = " + node + ", " + "[process] = " + process
+					+ ", " + "[inFlow] = " + inFlow + ", " + "[event] = " + event + ".");
 		}
 		CSP csp = (CSP) result2_bindingAndBlack[0];
 		// Check CSP
 		if (EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_0_3_expressionFBB(this, csp)) {
 
 			// collect elements to be translated
-			Object[] result4_black = EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_0_4_blackBBBB(match,
-					process, inFlow, event);
+			Object[] result4_black = EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_0_4_blackBBBBB(match,
+					node, process, inFlow, event);
 			if (result4_black == null) {
 				throw new RuntimeException("Pattern matching in node [collect elements to be translated] failed."
-						+ " Variables: " + "[match] = " + match + ", " + "[process] = " + process + ", " + "[inFlow] = "
-						+ inFlow + ", " + "[event] = " + event + ".");
+						+ " Variables: " + "[match] = " + match + ", " + "[node] = " + node + ", " + "[process] = "
+						+ process + ", " + "[inFlow] = " + inFlow + ", " + "[event] = " + event + ".");
 			}
 			EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_0_4_greenBBBBFFF(match, process, inFlow,
 					event);
@@ -131,19 +134,23 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 					// EMoflonEdge event__inFlow____incoming = (EMoflonEdge) result4_green[6];
 
 			// collect context elements
-			Object[] result5_black = EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_0_5_blackBBBB(match,
-					process, inFlow, event);
+			Object[] result5_black = EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_0_5_blackBBBBB(match,
+					node, process, inFlow, event);
 			if (result5_black == null) {
 				throw new RuntimeException("Pattern matching in node [collect context elements] failed."
-						+ " Variables: " + "[match] = " + match + ", " + "[process] = " + process + ", " + "[inFlow] = "
-						+ inFlow + ", " + "[event] = " + event + ".");
+						+ " Variables: " + "[match] = " + match + ", " + "[node] = " + node + ", " + "[process] = "
+						+ process + ", " + "[inFlow] = " + inFlow + ", " + "[event] = " + event + ".");
 			}
-			EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_0_5_greenBBBF(match, process, inFlow);
-			// EMoflonEdge process__inFlow____flowElements = (EMoflonEdge) result5_green[3];
+			EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_0_5_greenBBBBFFFF(match, node, process,
+					inFlow);
+					// EMoflonEdge process__inFlow____flowElements = (EMoflonEdge) result5_green[4];
+					// EMoflonEdge process__node____flowElements = (EMoflonEdge) result5_green[5];
+					// EMoflonEdge inFlow__node____sourceRef = (EMoflonEdge) result5_green[6];
+					// EMoflonEdge node__inFlow____outgoing = (EMoflonEdge) result5_green[7];
 
 			// register objects to match
-			EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_0_6_expressionBBBBB(this, match, process,
-					inFlow, event);
+			EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_0_6_expressionBBBBBB(this, match, node,
+					process, inFlow, event);
 			return EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_0_7_expressionF();
 		} else {
 			return EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_0_8_expressionF();
@@ -159,17 +166,18 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 	public PerformRuleResult perform_FWD(IsApplicableMatch isApplicableMatch) {
 		// perform transformation
 		Object[] result1_bindingAndBlack = EndEvent2FinalStateFirstImpl
-				.pattern_EndEvent2FinalStateFirst_1_1_bindingAndBlackFFFFFBFB(this, isApplicableMatch);
+				.pattern_EndEvent2FinalStateFirst_1_1_bindingAndBlackFFFFFFBFB(this, isApplicableMatch);
 		if (result1_bindingAndBlack == null) {
 			throw new RuntimeException("Pattern matching in node [perform transformation] failed." + " Variables: "
 					+ "[this] = " + this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ".");
 		}
 		Flow flow = (Flow) result1_bindingAndBlack[0];
-		SimpleBPMN.Process process = (SimpleBPMN.Process) result1_bindingAndBlack[1];
-		SequenceFlow inFlow = (SequenceFlow) result1_bindingAndBlack[2];
-		SF2F _if2f = (SF2F) result1_bindingAndBlack[3];
-		EndEvent event = (EndEvent) result1_bindingAndBlack[4];
-		CSP csp = (CSP) result1_bindingAndBlack[6];
+		StartEvent node = (StartEvent) result1_bindingAndBlack[1];
+		SimpleBPMN.Process process = (SimpleBPMN.Process) result1_bindingAndBlack[2];
+		SequenceFlow inFlow = (SequenceFlow) result1_bindingAndBlack[3];
+		SF2F _if2f = (SF2F) result1_bindingAndBlack[4];
+		EndEvent event = (EndEvent) result1_bindingAndBlack[5];
+		CSP csp = (CSP) result1_bindingAndBlack[7];
 		Object[] result1_green = EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_1_1_greenBBFFB(flow,
 				event, csp);
 		UCCondition state = (UCCondition) result1_green[2];
@@ -187,13 +195,13 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		PerformRuleResult ruleresult = (PerformRuleResult) result2_green[0];
 
 		// bookkeeping for edges
-		Object[] result3_black = EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_1_3_blackBBBBBBBB(
-				ruleresult, flow, process, inFlow, _if2f, event, state, _e2s);
+		Object[] result3_black = EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_1_3_blackBBBBBBBBB(
+				ruleresult, flow, node, process, inFlow, _if2f, event, state, _e2s);
 		if (result3_black == null) {
 			throw new RuntimeException("Pattern matching in node [bookkeeping for edges] failed." + " Variables: "
-					+ "[ruleresult] = " + ruleresult + ", " + "[flow] = " + flow + ", " + "[process] = " + process
-					+ ", " + "[inFlow] = " + inFlow + ", " + "[_if2f] = " + _if2f + ", " + "[event] = " + event + ", "
-					+ "[state] = " + state + ", " + "[_e2s] = " + _e2s + ".");
+					+ "[ruleresult] = " + ruleresult + ", " + "[flow] = " + flow + ", " + "[node] = " + node + ", "
+					+ "[process] = " + process + ", " + "[inFlow] = " + inFlow + ", " + "[_if2f] = " + _if2f + ", "
+					+ "[event] = " + event + ", " + "[state] = " + state + ", " + "[_e2s] = " + _e2s + ".");
 		}
 		EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_1_3_greenBBBBBBBFFFFFF(ruleresult, flow, process,
 				inFlow, event, state, _e2s);
@@ -206,8 +214,8 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 
 		// perform postprocessing story node is empty
 		// register objects
-		EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_1_5_expressionBBBBBBBBB(this, ruleresult, flow,
-				process, inFlow, _if2f, event, state, _e2s);
+		EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_1_5_expressionBBBBBBBBBB(this, ruleresult, flow,
+				node, process, inFlow, _if2f, event, state, _e2s);
 		return EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_1_6_expressionFB(ruleresult);
 	}
 
@@ -231,40 +239,46 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		IsApplicableRuleResult ruleresult = (IsApplicableRuleResult) result1_green[1];
 
 		// ForEach core match
-		Object[] result2_binding = EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_2_2_bindingFFFB(match);
+		Object[] result2_binding = EndEvent2FinalStateFirstImpl
+				.pattern_EndEvent2FinalStateFirst_2_2_bindingFFFFB(match);
 		if (result2_binding == null) {
 			throw new RuntimeException(
 					"Binding in node core match failed." + " Variables: " + "[match] = " + match + ".");
 		}
-		SimpleBPMN.Process process = (SimpleBPMN.Process) result2_binding[0];
-		SequenceFlow inFlow = (SequenceFlow) result2_binding[1];
-		EndEvent event = (EndEvent) result2_binding[2];
+		StartEvent node = (StartEvent) result2_binding[0];
+		SimpleBPMN.Process process = (SimpleBPMN.Process) result2_binding[1];
+		SequenceFlow inFlow = (SequenceFlow) result2_binding[2];
+		EndEvent event = (EndEvent) result2_binding[3];
 		for (Object[] result2_black : EndEvent2FinalStateFirstImpl
-				.pattern_EndEvent2FinalStateFirst_2_2_blackFBBFBB(process, inFlow, event, match)) {
+				.pattern_EndEvent2FinalStateFirst_2_2_blackFBBBFBB(node, process, inFlow, event, match)) {
 			Flow flow = (Flow) result2_black[0];
-			SF2F _if2f = (SF2F) result2_black[3];
+			SF2F _if2f = (SF2F) result2_black[4];
 			// ForEach find context
 			for (Object[] result3_black : EndEvent2FinalStateFirstImpl
-					.pattern_EndEvent2FinalStateFirst_2_3_blackBBBBB(flow, process, inFlow, _if2f, event)) {
+					.pattern_EndEvent2FinalStateFirst_2_3_blackBBBBBB(flow, node, process, inFlow, _if2f, event)) {
 				Object[] result3_green = EndEvent2FinalStateFirstImpl
-						.pattern_EndEvent2FinalStateFirst_2_3_greenBBBBBFFFFFFF(flow, process, inFlow, _if2f, event);
-				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[5];
-				// EMoflonEdge process__inFlow____flowElements = (EMoflonEdge) result3_green[6];
-				// EMoflonEdge process__event____flowElements = (EMoflonEdge) result3_green[7];
-				// EMoflonEdge inFlow__event____targetRef = (EMoflonEdge) result3_green[8];
-				// EMoflonEdge event__inFlow____incoming = (EMoflonEdge) result3_green[9];
-				// EMoflonEdge _if2f__inFlow____source = (EMoflonEdge) result3_green[10];
-				// EMoflonEdge _if2f__flow____target = (EMoflonEdge) result3_green[11];
+						.pattern_EndEvent2FinalStateFirst_2_3_greenBBBBBBFFFFFFFFFF(flow, node, process, inFlow, _if2f,
+								event);
+				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[6];
+				// EMoflonEdge process__inFlow____flowElements = (EMoflonEdge) result3_green[7];
+				// EMoflonEdge process__event____flowElements = (EMoflonEdge) result3_green[8];
+				// EMoflonEdge process__node____flowElements = (EMoflonEdge) result3_green[9];
+				// EMoflonEdge inFlow__event____targetRef = (EMoflonEdge) result3_green[10];
+				// EMoflonEdge event__inFlow____incoming = (EMoflonEdge) result3_green[11];
+				// EMoflonEdge _if2f__inFlow____source = (EMoflonEdge) result3_green[12];
+				// EMoflonEdge _if2f__flow____target = (EMoflonEdge) result3_green[13];
+				// EMoflonEdge inFlow__node____sourceRef = (EMoflonEdge) result3_green[14];
+				// EMoflonEdge node__inFlow____outgoing = (EMoflonEdge) result3_green[15];
 
 				// solve CSP
 				Object[] result4_bindingAndBlack = EndEvent2FinalStateFirstImpl
-						.pattern_EndEvent2FinalStateFirst_2_4_bindingAndBlackFBBBBBBB(this, isApplicableMatch, flow,
-								process, inFlow, _if2f, event);
+						.pattern_EndEvent2FinalStateFirst_2_4_bindingAndBlackFBBBBBBBB(this, isApplicableMatch, flow,
+								node, process, inFlow, _if2f, event);
 				if (result4_bindingAndBlack == null) {
 					throw new RuntimeException("Pattern matching in node [solve CSP] failed." + " Variables: "
 							+ "[this] = " + this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ", "
-							+ "[flow] = " + flow + ", " + "[process] = " + process + ", " + "[inFlow] = " + inFlow
-							+ ", " + "[_if2f] = " + _if2f + ", " + "[event] = " + event + ".");
+							+ "[flow] = " + flow + ", " + "[node] = " + node + ", " + "[process] = " + process + ", "
+							+ "[inFlow] = " + inFlow + ", " + "[_if2f] = " + _if2f + ", " + "[event] = " + event + ".");
 				}
 				CSP csp = (CSP) result4_bindingAndBlack[0];
 				// check CSP
@@ -295,8 +309,9 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void registerObjectsToMatch_FWD(Match match, SimpleBPMN.Process process, SequenceFlow inFlow,
-			EndEvent event) {
+	public void registerObjectsToMatch_FWD(Match match, StartEvent node, SimpleBPMN.Process process,
+			SequenceFlow inFlow, EndEvent event) {
+		match.registerObject("node", node);
 		match.registerObject("process", process);
 		match.registerObject("inFlow", inFlow);
 		match.registerObject("event", event);
@@ -308,7 +323,7 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP isAppropriate_solveCsp_FWD(Match match, SimpleBPMN.Process process, SequenceFlow inFlow,
+	public CSP isAppropriate_solveCsp_FWD(Match match, StartEvent node, SimpleBPMN.Process process, SequenceFlow inFlow,
 			EndEvent event) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 
@@ -338,8 +353,8 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, Flow flow, SimpleBPMN.Process process,
-			SequenceFlow inFlow, SF2F _if2f, EndEvent event) {// Create CSP
+	public CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, Flow flow, StartEvent node,
+			SimpleBPMN.Process process, SequenceFlow inFlow, SF2F _if2f, EndEvent event) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
 
@@ -365,6 +380,7 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("flow", flow);
+		isApplicableMatch.registerObject("node", node);
 		isApplicableMatch.registerObject("process", process);
 		isApplicableMatch.registerObject("inFlow", inFlow);
 		isApplicableMatch.registerObject("_if2f", _if2f);
@@ -386,9 +402,10 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void registerObjects_FWD(PerformRuleResult ruleresult, EObject flow, EObject process, EObject inFlow,
-			EObject _if2f, EObject event, EObject state, EObject _e2s) {
+	public void registerObjects_FWD(PerformRuleResult ruleresult, EObject flow, EObject node, EObject process,
+			EObject inFlow, EObject _if2f, EObject event, EObject state, EObject _e2s) {
 		ruleresult.registerObject("flow", flow);
+		ruleresult.registerObject("node", node);
 		ruleresult.registerObject("process", process);
 		ruleresult.registerObject("inFlow", inFlow);
 		ruleresult.registerObject("_if2f", _if2f);
@@ -472,17 +489,18 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 	public PerformRuleResult perform_BWD(IsApplicableMatch isApplicableMatch) {
 		// perform transformation
 		Object[] result1_bindingAndBlack = EndEvent2FinalStateFirstImpl
-				.pattern_EndEvent2FinalStateFirst_11_1_bindingAndBlackFFFFFBFB(this, isApplicableMatch);
+				.pattern_EndEvent2FinalStateFirst_11_1_bindingAndBlackFFFFFFBFB(this, isApplicableMatch);
 		if (result1_bindingAndBlack == null) {
 			throw new RuntimeException("Pattern matching in node [perform transformation] failed." + " Variables: "
 					+ "[this] = " + this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ".");
 		}
 		Flow flow = (Flow) result1_bindingAndBlack[0];
-		SimpleBPMN.Process process = (SimpleBPMN.Process) result1_bindingAndBlack[1];
-		SequenceFlow inFlow = (SequenceFlow) result1_bindingAndBlack[2];
-		SF2F _if2f = (SF2F) result1_bindingAndBlack[3];
-		UCCondition state = (UCCondition) result1_bindingAndBlack[4];
-		CSP csp = (CSP) result1_bindingAndBlack[6];
+		StartEvent node = (StartEvent) result1_bindingAndBlack[1];
+		SimpleBPMN.Process process = (SimpleBPMN.Process) result1_bindingAndBlack[2];
+		SequenceFlow inFlow = (SequenceFlow) result1_bindingAndBlack[3];
+		SF2F _if2f = (SF2F) result1_bindingAndBlack[4];
+		UCCondition state = (UCCondition) result1_bindingAndBlack[5];
+		CSP csp = (CSP) result1_bindingAndBlack[7];
 		Object[] result1_green = EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_11_1_greenBBFBFB(process,
 				inFlow, state, csp);
 		EndEvent event = (EndEvent) result1_green[2];
@@ -500,13 +518,13 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		PerformRuleResult ruleresult = (PerformRuleResult) result2_green[0];
 
 		// bookkeeping for edges
-		Object[] result3_black = EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_11_3_blackBBBBBBBB(
-				ruleresult, flow, process, inFlow, _if2f, event, state, _e2s);
+		Object[] result3_black = EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_11_3_blackBBBBBBBBB(
+				ruleresult, flow, node, process, inFlow, _if2f, event, state, _e2s);
 		if (result3_black == null) {
 			throw new RuntimeException("Pattern matching in node [bookkeeping for edges] failed." + " Variables: "
-					+ "[ruleresult] = " + ruleresult + ", " + "[flow] = " + flow + ", " + "[process] = " + process
-					+ ", " + "[inFlow] = " + inFlow + ", " + "[_if2f] = " + _if2f + ", " + "[event] = " + event + ", "
-					+ "[state] = " + state + ", " + "[_e2s] = " + _e2s + ".");
+					+ "[ruleresult] = " + ruleresult + ", " + "[flow] = " + flow + ", " + "[node] = " + node + ", "
+					+ "[process] = " + process + ", " + "[inFlow] = " + inFlow + ", " + "[_if2f] = " + _if2f + ", "
+					+ "[event] = " + event + ", " + "[state] = " + state + ", " + "[_e2s] = " + _e2s + ".");
 		}
 		EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_11_3_greenBBBBBBBFFFFFF(ruleresult, flow, process,
 				inFlow, event, state, _e2s);
@@ -519,8 +537,8 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 
 		// perform postprocessing story node is empty
 		// register objects
-		EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_11_5_expressionBBBBBBBBB(this, ruleresult, flow,
-				process, inFlow, _if2f, event, state, _e2s);
+		EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_11_5_expressionBBBBBBBBBB(this, ruleresult, flow,
+				node, process, inFlow, _if2f, event, state, _e2s);
 		return EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_11_6_expressionFB(ruleresult);
 	}
 
@@ -557,25 +575,30 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 			SF2F _if2f = (SF2F) result2_black[2];
 			// ForEach find context
 			for (Object[] result3_black : EndEvent2FinalStateFirstImpl
-					.pattern_EndEvent2FinalStateFirst_12_3_blackBFBBB(flow, inFlow, _if2f, state)) {
-				SimpleBPMN.Process process = (SimpleBPMN.Process) result3_black[1];
+					.pattern_EndEvent2FinalStateFirst_12_3_blackBFFBBB(flow, inFlow, _if2f, state)) {
+				StartEvent node = (StartEvent) result3_black[1];
+				SimpleBPMN.Process process = (SimpleBPMN.Process) result3_black[2];
 				Object[] result3_green = EndEvent2FinalStateFirstImpl
-						.pattern_EndEvent2FinalStateFirst_12_3_greenBBBBBFFFFF(flow, process, inFlow, _if2f, state);
-				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[5];
-				// EMoflonEdge process__inFlow____flowElements = (EMoflonEdge) result3_green[6];
-				// EMoflonEdge flow__state____finalState = (EMoflonEdge) result3_green[7];
-				// EMoflonEdge _if2f__inFlow____source = (EMoflonEdge) result3_green[8];
-				// EMoflonEdge _if2f__flow____target = (EMoflonEdge) result3_green[9];
+						.pattern_EndEvent2FinalStateFirst_12_3_greenBBBBBBFFFFFFFF(flow, node, process, inFlow, _if2f,
+								state);
+				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[6];
+				// EMoflonEdge process__inFlow____flowElements = (EMoflonEdge) result3_green[7];
+				// EMoflonEdge process__node____flowElements = (EMoflonEdge) result3_green[8];
+				// EMoflonEdge flow__state____finalState = (EMoflonEdge) result3_green[9];
+				// EMoflonEdge _if2f__inFlow____source = (EMoflonEdge) result3_green[10];
+				// EMoflonEdge _if2f__flow____target = (EMoflonEdge) result3_green[11];
+				// EMoflonEdge inFlow__node____sourceRef = (EMoflonEdge) result3_green[12];
+				// EMoflonEdge node__inFlow____outgoing = (EMoflonEdge) result3_green[13];
 
 				// solve CSP
 				Object[] result4_bindingAndBlack = EndEvent2FinalStateFirstImpl
-						.pattern_EndEvent2FinalStateFirst_12_4_bindingAndBlackFBBBBBBB(this, isApplicableMatch, flow,
-								process, inFlow, _if2f, state);
+						.pattern_EndEvent2FinalStateFirst_12_4_bindingAndBlackFBBBBBBBB(this, isApplicableMatch, flow,
+								node, process, inFlow, _if2f, state);
 				if (result4_bindingAndBlack == null) {
 					throw new RuntimeException("Pattern matching in node [solve CSP] failed." + " Variables: "
 							+ "[this] = " + this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ", "
-							+ "[flow] = " + flow + ", " + "[process] = " + process + ", " + "[inFlow] = " + inFlow
-							+ ", " + "[_if2f] = " + _if2f + ", " + "[state] = " + state + ".");
+							+ "[flow] = " + flow + ", " + "[node] = " + node + ", " + "[process] = " + process + ", "
+							+ "[inFlow] = " + inFlow + ", " + "[_if2f] = " + _if2f + ", " + "[state] = " + state + ".");
 				}
 				CSP csp = (CSP) result4_bindingAndBlack[0];
 				// check CSP
@@ -646,8 +669,8 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, Flow flow, SimpleBPMN.Process process,
-			SequenceFlow inFlow, SF2F _if2f, UCCondition state) {// Create CSP
+	public CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, Flow flow, StartEvent node,
+			SimpleBPMN.Process process, SequenceFlow inFlow, SF2F _if2f, UCCondition state) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
 
@@ -673,6 +696,7 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("flow", flow);
+		isApplicableMatch.registerObject("node", node);
 		isApplicableMatch.registerObject("process", process);
 		isApplicableMatch.registerObject("inFlow", inFlow);
 		isApplicableMatch.registerObject("_if2f", _if2f);
@@ -694,9 +718,10 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void registerObjects_BWD(PerformRuleResult ruleresult, EObject flow, EObject process, EObject inFlow,
-			EObject _if2f, EObject event, EObject state, EObject _e2s) {
+	public void registerObjects_BWD(PerformRuleResult ruleresult, EObject flow, EObject node, EObject process,
+			EObject inFlow, EObject _if2f, EObject event, EObject state, EObject _e2s) {
 		ruleresult.registerObject("flow", flow);
+		ruleresult.registerObject("node", node);
 		ruleresult.registerObject("process", process);
 		ruleresult.registerObject("inFlow", inFlow);
 		ruleresult.registerObject("_if2f", _if2f);
@@ -721,7 +746,7 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_360(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_313(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = EndEvent2FinalStateFirstImpl
 				.pattern_EndEvent2FinalStateFirst_20_1_bindingAndBlackFFB(this);
@@ -736,16 +761,17 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 
 		// ForEach test core match and DECs
 		for (Object[] result2_black : EndEvent2FinalStateFirstImpl
-				.pattern_EndEvent2FinalStateFirst_20_2_blackFFFB(_edge_flowElements)) {
-			SimpleBPMN.Process process = (SimpleBPMN.Process) result2_black[0];
-			SequenceFlow inFlow = (SequenceFlow) result2_black[1];
-			EndEvent event = (EndEvent) result2_black[2];
+				.pattern_EndEvent2FinalStateFirst_20_2_blackFFFFB(_edge_flowElements)) {
+			StartEvent node = (StartEvent) result2_black[0];
+			SimpleBPMN.Process process = (SimpleBPMN.Process) result2_black[1];
+			SequenceFlow inFlow = (SequenceFlow) result2_black[2];
+			EndEvent event = (EndEvent) result2_black[3];
 			Object[] result2_green = EndEvent2FinalStateFirstImpl
 					.pattern_EndEvent2FinalStateFirst_20_2_greenFB(__eClass);
 			Match match = (Match) result2_green[0];
 
 			// bookkeeping with generic isAppropriate method
-			if (EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_20_3_expressionFBBBBB(this, match,
+			if (EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_20_3_expressionFBBBBBB(this, match, node,
 					process, inFlow, event)) {
 				// Ensure that the correct types of elements are matched
 				if (EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_20_4_expressionFBB(this, match)) {
@@ -776,7 +802,7 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_361(EMoflonEdge _edge_targetRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_314(EMoflonEdge _edge_targetRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = EndEvent2FinalStateFirstImpl
 				.pattern_EndEvent2FinalStateFirst_21_1_bindingAndBlackFFB(this);
@@ -791,16 +817,17 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 
 		// ForEach test core match and DECs
 		for (Object[] result2_black : EndEvent2FinalStateFirstImpl
-				.pattern_EndEvent2FinalStateFirst_21_2_blackFFFB(_edge_targetRef)) {
-			SimpleBPMN.Process process = (SimpleBPMN.Process) result2_black[0];
-			SequenceFlow inFlow = (SequenceFlow) result2_black[1];
-			EndEvent event = (EndEvent) result2_black[2];
+				.pattern_EndEvent2FinalStateFirst_21_2_blackFFFFB(_edge_targetRef)) {
+			StartEvent node = (StartEvent) result2_black[0];
+			SimpleBPMN.Process process = (SimpleBPMN.Process) result2_black[1];
+			SequenceFlow inFlow = (SequenceFlow) result2_black[2];
+			EndEvent event = (EndEvent) result2_black[3];
 			Object[] result2_green = EndEvent2FinalStateFirstImpl
 					.pattern_EndEvent2FinalStateFirst_21_2_greenFB(__eClass);
 			Match match = (Match) result2_green[0];
 
 			// bookkeeping with generic isAppropriate method
-			if (EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_21_3_expressionFBBBBB(this, match,
+			if (EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_21_3_expressionFBBBBBB(this, match, node,
 					process, inFlow, event)) {
 				// Ensure that the correct types of elements are matched
 				if (EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_21_4_expressionFBB(this, match)) {
@@ -831,7 +858,7 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_362(EMoflonEdge _edge_incoming) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_315(EMoflonEdge _edge_incoming) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = EndEvent2FinalStateFirstImpl
 				.pattern_EndEvent2FinalStateFirst_22_1_bindingAndBlackFFB(this);
@@ -846,16 +873,17 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 
 		// ForEach test core match and DECs
 		for (Object[] result2_black : EndEvent2FinalStateFirstImpl
-				.pattern_EndEvent2FinalStateFirst_22_2_blackFFFB(_edge_incoming)) {
-			SimpleBPMN.Process process = (SimpleBPMN.Process) result2_black[0];
-			SequenceFlow inFlow = (SequenceFlow) result2_black[1];
-			EndEvent event = (EndEvent) result2_black[2];
+				.pattern_EndEvent2FinalStateFirst_22_2_blackFFFFB(_edge_incoming)) {
+			StartEvent node = (StartEvent) result2_black[0];
+			SimpleBPMN.Process process = (SimpleBPMN.Process) result2_black[1];
+			SequenceFlow inFlow = (SequenceFlow) result2_black[2];
+			EndEvent event = (EndEvent) result2_black[3];
 			Object[] result2_green = EndEvent2FinalStateFirstImpl
 					.pattern_EndEvent2FinalStateFirst_22_2_greenFB(__eClass);
 			Match match = (Match) result2_green[0];
 
 			// bookkeeping with generic isAppropriate method
-			if (EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_22_3_expressionFBBBBB(this, match,
+			if (EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_22_3_expressionFBBBBBB(this, match, node,
 					process, inFlow, event)) {
 				// Ensure that the correct types of elements are matched
 				if (EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_22_4_expressionFBB(this, match)) {
@@ -886,7 +914,7 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_113(EMoflonEdge _edge_finalState) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_102(EMoflonEdge _edge_finalState) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = EndEvent2FinalStateFirstImpl
 				.pattern_EndEvent2FinalStateFirst_23_1_bindingAndBlackFFB(this);
@@ -950,6 +978,10 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		Optional<TripleMatchNodeMapping> matchForFlow = tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("flow")).findAny();
 		SimpleUseCase.Flow flow = (SimpleUseCase.Flow) matchForFlow.get().getNode();
+
+		Optional<TripleMatchNodeMapping> matchForNode = tripleMatch.getNodeMappings().stream()
+				.filter(nm -> nm.getNodeName().equals("node")).findAny();
+		SimpleBPMN.StartEvent node = (SimpleBPMN.StartEvent) matchForNode.get().getNode();
 
 		Optional<TripleMatchNodeMapping> matchForProcess = tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("process")).findAny();
@@ -1027,6 +1059,10 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		Optional<TripleMatchNodeMapping> matchForFlow = tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("flow")).findAny();
 		SimpleUseCase.Flow flow = (SimpleUseCase.Flow) matchForFlow.get().getNode();
+
+		Optional<TripleMatchNodeMapping> matchForNode = tripleMatch.getNodeMappings().stream()
+				.filter(nm -> nm.getNodeName().equals("node")).findAny();
+		SimpleBPMN.StartEvent node = (SimpleBPMN.StartEvent) matchForNode.get().getNode();
 
 		Optional<TripleMatchNodeMapping> matchForProcess = tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("process")).findAny();
@@ -1106,27 +1142,28 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 
 		// ForEach match context
 		Object[] result2_binding = EndEvent2FinalStateFirstImpl
-				.pattern_EndEvent2FinalStateFirst_26_2_bindingFFFFFBB(targetMatch, sourceMatch);
+				.pattern_EndEvent2FinalStateFirst_26_2_bindingFFFFFFBB(targetMatch, sourceMatch);
 		if (result2_binding == null) {
 			throw new RuntimeException("Binding in node match context failed." + " Variables: " + "[targetMatch] = "
 					+ targetMatch + ", " + "[sourceMatch] = " + sourceMatch + ".");
 		}
 		Flow flow = (Flow) result2_binding[0];
-		SimpleBPMN.Process process = (SimpleBPMN.Process) result2_binding[1];
-		SequenceFlow inFlow = (SequenceFlow) result2_binding[2];
-		EndEvent event = (EndEvent) result2_binding[3];
-		UCCondition state = (UCCondition) result2_binding[4];
-		for (Object[] result2_black : EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_26_2_blackBBBFBBBB(
-				flow, process, inFlow, event, state, sourceMatch, targetMatch)) {
-			SF2F _if2f = (SF2F) result2_black[3];
-			Object[] result2_green = EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_26_2_greenBBBBBBBFB(
-					flow, process, inFlow, _if2f, event, state, sourceMatch, targetMatch);
-			IsApplicableMatchCC isApplicableMatch = (IsApplicableMatchCC) result2_green[7];
+		StartEvent node = (StartEvent) result2_binding[1];
+		SimpleBPMN.Process process = (SimpleBPMN.Process) result2_binding[2];
+		SequenceFlow inFlow = (SequenceFlow) result2_binding[3];
+		EndEvent event = (EndEvent) result2_binding[4];
+		UCCondition state = (UCCondition) result2_binding[5];
+		for (Object[] result2_black : EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_26_2_blackBBBBFBBBB(
+				flow, node, process, inFlow, event, state, sourceMatch, targetMatch)) {
+			SF2F _if2f = (SF2F) result2_black[4];
+			Object[] result2_green = EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_26_2_greenBBBBBBBBFB(
+					flow, node, process, inFlow, _if2f, event, state, sourceMatch, targetMatch);
+			IsApplicableMatchCC isApplicableMatch = (IsApplicableMatchCC) result2_green[8];
 
 			// check csp
 			Object[] result3_bindingAndBlack = EndEvent2FinalStateFirstImpl
-					.pattern_EndEvent2FinalStateFirst_26_3_bindingAndBlackFBBBBBBBBBB(this, isApplicableMatch, flow,
-							process, inFlow, _if2f, event, state, sourceMatch, targetMatch);
+					.pattern_EndEvent2FinalStateFirst_26_3_bindingAndBlackFBBBBBBBBBBB(this, isApplicableMatch, flow,
+							node, process, inFlow, _if2f, event, state, sourceMatch, targetMatch);
 			if (result3_bindingAndBlack != null) {
 				// CSP csp = (CSP) result3_bindingAndBlack[0];
 
@@ -1152,8 +1189,9 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP isApplicable_solveCsp_CC(IsApplicableMatchCC isApplicableMatch, Flow flow, SimpleBPMN.Process process,
-			SequenceFlow inFlow, SF2F _if2f, EndEvent event, UCCondition state, Match sourceMatch, Match targetMatch) {// Create CSP
+	public CSP isApplicable_solveCsp_CC(IsApplicableMatchCC isApplicableMatch, Flow flow, StartEvent node,
+			SimpleBPMN.Process process, SequenceFlow inFlow, SF2F _if2f, EndEvent event, UCCondition state,
+			Match sourceMatch, Match targetMatch) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
 
@@ -1180,6 +1218,7 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("flow", flow);
+		isApplicableMatch.registerObject("node", node);
 		isApplicableMatch.registerObject("process", process);
 		isApplicableMatch.registerObject("inFlow", inFlow);
 		isApplicableMatch.registerObject("_if2f", _if2f);
@@ -1212,17 +1251,18 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 
 		// create correspondence links
 		Object[] result2_bindingAndBlack = EndEvent2FinalStateFirstImpl
-				.pattern_EndEvent2FinalStateFirst_29_2_bindingAndBlackFFFFFFB(isApplicableMatch);
+				.pattern_EndEvent2FinalStateFirst_29_2_bindingAndBlackFFFFFFFB(isApplicableMatch);
 		if (result2_bindingAndBlack == null) {
 			throw new RuntimeException("Pattern matching in node [create correspondence links] failed." + " Variables: "
 					+ "[isApplicableMatch] = " + isApplicableMatch + ".");
 		}
 		// Flow flow = (Flow) result2_bindingAndBlack[0];
-		// SimpleBPMN.Process process = (SimpleBPMN.Process) result2_bindingAndBlack[1];
-		// SequenceFlow inFlow = (SequenceFlow) result2_bindingAndBlack[2];
-		// SF2F _if2f = (SF2F) result2_bindingAndBlack[3];
-		EndEvent event = (EndEvent) result2_bindingAndBlack[4];
-		UCCondition state = (UCCondition) result2_bindingAndBlack[5];
+		// StartEvent node = (StartEvent) result2_bindingAndBlack[1];
+		// SimpleBPMN.Process process = (SimpleBPMN.Process) result2_bindingAndBlack[2];
+		// SequenceFlow inFlow = (SequenceFlow) result2_bindingAndBlack[3];
+		// SF2F _if2f = (SF2F) result2_bindingAndBlack[4];
+		EndEvent event = (EndEvent) result2_bindingAndBlack[5];
+		UCCondition state = (UCCondition) result2_bindingAndBlack[6];
 		Object[] result2_green = EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_29_2_greenBBFF(event,
 				state);
 		PerformRuleResult result = (PerformRuleResult) result2_green[2];
@@ -1249,38 +1289,41 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 
 		// ForEach is applicable core
 		for (Object[] result2_black : EndEvent2FinalStateFirstImpl
-				.pattern_EndEvent2FinalStateFirst_30_2_blackFFFFFBB(ruleEntryContainer, ruleResult)) {
+				.pattern_EndEvent2FinalStateFirst_30_2_blackFFFFFFBB(ruleEntryContainer, ruleResult)) {
 			// RuleEntryList _if2fList = (RuleEntryList) result2_black[0];
 			Flow flow = (Flow) result2_black[1];
 			SF2F _if2f = (SF2F) result2_black[2];
 			SequenceFlow inFlow = (SequenceFlow) result2_black[3];
-			SimpleBPMN.Process process = (SimpleBPMN.Process) result2_black[4];
+			StartEvent node = (StartEvent) result2_black[4];
+			SimpleBPMN.Process process = (SimpleBPMN.Process) result2_black[5];
 
 			// solve CSP
 			Object[] result3_bindingAndBlack = EndEvent2FinalStateFirstImpl
-					.pattern_EndEvent2FinalStateFirst_30_3_bindingAndBlackFBBBBBBB(this, isApplicableMatch, flow,
+					.pattern_EndEvent2FinalStateFirst_30_3_bindingAndBlackFBBBBBBBB(this, isApplicableMatch, flow, node,
 							process, inFlow, _if2f, ruleResult);
 			if (result3_bindingAndBlack == null) {
 				throw new RuntimeException("Pattern matching in node [solve CSP] failed." + " Variables: " + "[this] = "
 						+ this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ", " + "[flow] = " + flow + ", "
-						+ "[process] = " + process + ", " + "[inFlow] = " + inFlow + ", " + "[_if2f] = " + _if2f + ", "
-						+ "[ruleResult] = " + ruleResult + ".");
+						+ "[node] = " + node + ", " + "[process] = " + process + ", " + "[inFlow] = " + inFlow + ", "
+						+ "[_if2f] = " + _if2f + ", " + "[ruleResult] = " + ruleResult + ".");
 			}
 			CSP csp = (CSP) result3_bindingAndBlack[0];
 			// check CSP
 			if (EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_30_4_expressionFBB(this, csp)) {
 				// check nacs
 				Object[] result5_black = EndEvent2FinalStateFirstImpl
-						.pattern_EndEvent2FinalStateFirst_30_5_blackBBBB(flow, process, inFlow, _if2f);
+						.pattern_EndEvent2FinalStateFirst_30_5_blackBBBBB(flow, node, process, inFlow, _if2f);
 				if (result5_black != null) {
 
 					// perform
 					Object[] result6_black = EndEvent2FinalStateFirstImpl
-							.pattern_EndEvent2FinalStateFirst_30_6_blackBBBBB(flow, process, inFlow, _if2f, ruleResult);
+							.pattern_EndEvent2FinalStateFirst_30_6_blackBBBBBB(flow, node, process, inFlow, _if2f,
+									ruleResult);
 					if (result6_black == null) {
 						throw new RuntimeException("Pattern matching in node [perform] failed." + " Variables: "
-								+ "[flow] = " + flow + ", " + "[process] = " + process + ", " + "[inFlow] = " + inFlow
-								+ ", " + "[_if2f] = " + _if2f + ", " + "[ruleResult] = " + ruleResult + ".");
+								+ "[flow] = " + flow + ", " + "[node] = " + node + ", " + "[process] = " + process
+								+ ", " + "[inFlow] = " + inFlow + ", " + "[_if2f] = " + _if2f + ", " + "[ruleResult] = "
+								+ ruleResult + ".");
 					}
 					EndEvent2FinalStateFirstImpl.pattern_EndEvent2FinalStateFirst_30_6_greenBBBFFFBB(flow, process,
 							inFlow, ruleResult, csp);
@@ -1303,8 +1346,8 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, Flow flow, SimpleBPMN.Process process,
-			SequenceFlow inFlow, SF2F _if2f, ModelgeneratorRuleResult ruleResult) {// Create CSP
+	public CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, Flow flow, StartEvent node,
+			SimpleBPMN.Process process, SequenceFlow inFlow, SF2F _if2f, ModelgeneratorRuleResult ruleResult) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
 
@@ -1329,6 +1372,7 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("flow", flow);
+		isApplicableMatch.registerObject("node", node);
 		isApplicableMatch.registerObject("process", process);
 		isApplicableMatch.registerObject("inFlow", inFlow);
 		isApplicableMatch.registerObject("_if2f", _if2f);
@@ -1352,32 +1396,36 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
-		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___IS_APPROPRIATE_FWD__MATCH_PROCESS_SEQUENCEFLOW_ENDEVENT:
-			return isAppropriate_FWD((Match) arguments.get(0), (SimpleBPMN.Process) arguments.get(1),
-					(SequenceFlow) arguments.get(2), (EndEvent) arguments.get(3));
+		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___IS_APPROPRIATE_FWD__MATCH_STARTEVENT_PROCESS_SEQUENCEFLOW_ENDEVENT:
+			return isAppropriate_FWD((Match) arguments.get(0), (StartEvent) arguments.get(1),
+					(SimpleBPMN.Process) arguments.get(2), (SequenceFlow) arguments.get(3),
+					(EndEvent) arguments.get(4));
 		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___PERFORM_FWD__ISAPPLICABLEMATCH:
 			return perform_FWD((IsApplicableMatch) arguments.get(0));
 		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___IS_APPLICABLE_FWD__MATCH:
 			return isApplicable_FWD((Match) arguments.get(0));
-		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_PROCESS_SEQUENCEFLOW_ENDEVENT:
-			registerObjectsToMatch_FWD((Match) arguments.get(0), (SimpleBPMN.Process) arguments.get(1),
-					(SequenceFlow) arguments.get(2), (EndEvent) arguments.get(3));
+		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_STARTEVENT_PROCESS_SEQUENCEFLOW_ENDEVENT:
+			registerObjectsToMatch_FWD((Match) arguments.get(0), (StartEvent) arguments.get(1),
+					(SimpleBPMN.Process) arguments.get(2), (SequenceFlow) arguments.get(3),
+					(EndEvent) arguments.get(4));
 			return null;
-		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_PROCESS_SEQUENCEFLOW_ENDEVENT:
-			return isAppropriate_solveCsp_FWD((Match) arguments.get(0), (SimpleBPMN.Process) arguments.get(1),
-					(SequenceFlow) arguments.get(2), (EndEvent) arguments.get(3));
+		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_STARTEVENT_PROCESS_SEQUENCEFLOW_ENDEVENT:
+			return isAppropriate_solveCsp_FWD((Match) arguments.get(0), (StartEvent) arguments.get(1),
+					(SimpleBPMN.Process) arguments.get(2), (SequenceFlow) arguments.get(3),
+					(EndEvent) arguments.get(4));
 		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___IS_APPROPRIATE_CHECK_CSP_FWD__CSP:
 			return isAppropriate_checkCsp_FWD((CSP) arguments.get(0));
-		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_FLOW_PROCESS_SEQUENCEFLOW_SF2F_ENDEVENT:
+		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_FLOW_STARTEVENT_PROCESS_SEQUENCEFLOW_SF2F_ENDEVENT:
 			return isApplicable_solveCsp_FWD((IsApplicableMatch) arguments.get(0), (Flow) arguments.get(1),
-					(SimpleBPMN.Process) arguments.get(2), (SequenceFlow) arguments.get(3), (SF2F) arguments.get(4),
-					(EndEvent) arguments.get(5));
+					(StartEvent) arguments.get(2), (SimpleBPMN.Process) arguments.get(3),
+					(SequenceFlow) arguments.get(4), (SF2F) arguments.get(5), (EndEvent) arguments.get(6));
 		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___IS_APPLICABLE_CHECK_CSP_FWD__CSP:
 			return isApplicable_checkCsp_FWD((CSP) arguments.get(0));
-		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
+		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
 			registerObjects_FWD((PerformRuleResult) arguments.get(0), (EObject) arguments.get(1),
 					(EObject) arguments.get(2), (EObject) arguments.get(3), (EObject) arguments.get(4),
-					(EObject) arguments.get(5), (EObject) arguments.get(6), (EObject) arguments.get(7));
+					(EObject) arguments.get(5), (EObject) arguments.get(6), (EObject) arguments.get(7),
+					(EObject) arguments.get(8));
 			return null;
 		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___CHECK_TYPES_FWD__MATCH:
 			return checkTypes_FWD((Match) arguments.get(0));
@@ -1396,65 +1444,67 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 					(UCCondition) arguments.get(2));
 		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___IS_APPROPRIATE_CHECK_CSP_BWD__CSP:
 			return isAppropriate_checkCsp_BWD((CSP) arguments.get(0));
-		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_FLOW_PROCESS_SEQUENCEFLOW_SF2F_UCCONDITION:
+		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_FLOW_STARTEVENT_PROCESS_SEQUENCEFLOW_SF2F_UCCONDITION:
 			return isApplicable_solveCsp_BWD((IsApplicableMatch) arguments.get(0), (Flow) arguments.get(1),
-					(SimpleBPMN.Process) arguments.get(2), (SequenceFlow) arguments.get(3), (SF2F) arguments.get(4),
-					(UCCondition) arguments.get(5));
+					(StartEvent) arguments.get(2), (SimpleBPMN.Process) arguments.get(3),
+					(SequenceFlow) arguments.get(4), (SF2F) arguments.get(5), (UCCondition) arguments.get(6));
 		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___IS_APPLICABLE_CHECK_CSP_BWD__CSP:
 			return isApplicable_checkCsp_BWD((CSP) arguments.get(0));
-		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
+		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
 			registerObjects_BWD((PerformRuleResult) arguments.get(0), (EObject) arguments.get(1),
 					(EObject) arguments.get(2), (EObject) arguments.get(3), (EObject) arguments.get(4),
-					(EObject) arguments.get(5), (EObject) arguments.get(6), (EObject) arguments.get(7));
+					(EObject) arguments.get(5), (EObject) arguments.get(6), (EObject) arguments.get(7),
+					(EObject) arguments.get(8));
 			return null;
 		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_360__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_360((EMoflonEdge) arguments.get(0));
-		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_361__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_361((EMoflonEdge) arguments.get(0));
-		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_362__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_362((EMoflonEdge) arguments.get(0));
-		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___IS_APPROPRIATE_BWD_EMOFLON_EDGE_113__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_113((EMoflonEdge) arguments.get(0));
+		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_313__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_313((EMoflonEdge) arguments.get(0));
+		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_314__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_314((EMoflonEdge) arguments.get(0));
+		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_315__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_315((EMoflonEdge) arguments.get(0));
+		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___IS_APPROPRIATE_BWD_EMOFLON_EDGE_102__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_102((EMoflonEdge) arguments.get(0));
 		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
 			return checkAttributes_BWD((TripleMatch) arguments.get(0));
 		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___IS_APPLICABLE_CC__MATCH_MATCH:
 			return isApplicable_CC((Match) arguments.get(0), (Match) arguments.get(1));
-		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___IS_APPLICABLE_SOLVE_CSP_CC__ISAPPLICABLEMATCHCC_FLOW_PROCESS_SEQUENCEFLOW_SF2F_ENDEVENT_UCCONDITION_MATCH_MATCH:
+		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___IS_APPLICABLE_SOLVE_CSP_CC__ISAPPLICABLEMATCHCC_FLOW_STARTEVENT_PROCESS_SEQUENCEFLOW_SF2F_ENDEVENT_UCCONDITION_MATCH_MATCH:
 			return isApplicable_solveCsp_CC((IsApplicableMatchCC) arguments.get(0), (Flow) arguments.get(1),
-					(SimpleBPMN.Process) arguments.get(2), (SequenceFlow) arguments.get(3), (SF2F) arguments.get(4),
-					(EndEvent) arguments.get(5), (UCCondition) arguments.get(6), (Match) arguments.get(7),
-					(Match) arguments.get(8));
+					(StartEvent) arguments.get(2), (SimpleBPMN.Process) arguments.get(3),
+					(SequenceFlow) arguments.get(4), (SF2F) arguments.get(5), (EndEvent) arguments.get(6),
+					(UCCondition) arguments.get(7), (Match) arguments.get(8), (Match) arguments.get(9));
 		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___IS_APPLICABLE_CHECK_CSP_CC__CSP:
 			return isApplicable_checkCsp_CC((CSP) arguments.get(0));
 		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___PERFORM_CC__ISAPPLICABLEMATCHCC:
 			return perform_CC((IsApplicableMatchCC) arguments.get(0));
 		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___GENERATE_MODEL__RULEENTRYCONTAINER_SF2F:
 			return generateModel((RuleEntryContainer) arguments.get(0), (SF2F) arguments.get(1));
-		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_FLOW_PROCESS_SEQUENCEFLOW_SF2F_MODELGENERATORRULERESULT:
+		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_FLOW_STARTEVENT_PROCESS_SEQUENCEFLOW_SF2F_MODELGENERATORRULERESULT:
 			return generateModel_solveCsp_BWD((IsApplicableMatch) arguments.get(0), (Flow) arguments.get(1),
-					(SimpleBPMN.Process) arguments.get(2), (SequenceFlow) arguments.get(3), (SF2F) arguments.get(4),
-					(ModelgeneratorRuleResult) arguments.get(5));
+					(StartEvent) arguments.get(2), (SimpleBPMN.Process) arguments.get(3),
+					(SequenceFlow) arguments.get(4), (SF2F) arguments.get(5),
+					(ModelgeneratorRuleResult) arguments.get(6));
 		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST___GENERATE_MODEL_CHECK_CSP_BWD__CSP:
 			return generateModel_checkCsp_BWD((CSP) arguments.get(0));
 		}
 		return super.eInvoke(operationID, arguments);
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_0_1_blackBBBBB(EndEvent2FinalStateFirst _this,
-			Match match, SimpleBPMN.Process process, SequenceFlow inFlow, EndEvent event) {
-		return new Object[] { _this, match, process, inFlow, event };
+	public static final Object[] pattern_EndEvent2FinalStateFirst_0_1_blackBBBBBB(EndEvent2FinalStateFirst _this,
+			Match match, StartEvent node, SimpleBPMN.Process process, SequenceFlow inFlow, EndEvent event) {
+		return new Object[] { _this, match, node, process, inFlow, event };
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_0_2_bindingFBBBBB(EndEvent2FinalStateFirst _this,
-			Match match, SimpleBPMN.Process process, SequenceFlow inFlow, EndEvent event) {
-		CSP _localVariable_0 = _this.isAppropriate_solveCsp_FWD(match, process, inFlow, event);
+	public static final Object[] pattern_EndEvent2FinalStateFirst_0_2_bindingFBBBBBB(EndEvent2FinalStateFirst _this,
+			Match match, StartEvent node, SimpleBPMN.Process process, SequenceFlow inFlow, EndEvent event) {
+		CSP _localVariable_0 = _this.isAppropriate_solveCsp_FWD(match, node, process, inFlow, event);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, match, process, inFlow, event };
+			return new Object[] { csp, _this, match, node, process, inFlow, event };
 		}
 		return null;
 	}
@@ -1463,11 +1513,11 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		return new Object[] { csp };
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_0_2_bindingAndBlackFBBBBB(
-			EndEvent2FinalStateFirst _this, Match match, SimpleBPMN.Process process, SequenceFlow inFlow,
-			EndEvent event) {
-		Object[] result_pattern_EndEvent2FinalStateFirst_0_2_binding = pattern_EndEvent2FinalStateFirst_0_2_bindingFBBBBB(
-				_this, match, process, inFlow, event);
+	public static final Object[] pattern_EndEvent2FinalStateFirst_0_2_bindingAndBlackFBBBBBB(
+			EndEvent2FinalStateFirst _this, Match match, StartEvent node, SimpleBPMN.Process process,
+			SequenceFlow inFlow, EndEvent event) {
+		Object[] result_pattern_EndEvent2FinalStateFirst_0_2_binding = pattern_EndEvent2FinalStateFirst_0_2_bindingFBBBBBB(
+				_this, match, node, process, inFlow, event);
 		if (result_pattern_EndEvent2FinalStateFirst_0_2_binding != null) {
 			CSP csp = (CSP) result_pattern_EndEvent2FinalStateFirst_0_2_binding[0];
 
@@ -1475,7 +1525,7 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 					csp);
 			if (result_pattern_EndEvent2FinalStateFirst_0_2_black != null) {
 
-				return new Object[] { csp, _this, match, process, inFlow, event };
+				return new Object[] { csp, _this, match, node, process, inFlow, event };
 			}
 		}
 		return null;
@@ -1488,9 +1538,9 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		return _result;
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_0_4_blackBBBB(Match match, SimpleBPMN.Process process,
-			SequenceFlow inFlow, EndEvent event) {
-		return new Object[] { match, process, inFlow, event };
+	public static final Object[] pattern_EndEvent2FinalStateFirst_0_4_blackBBBBB(Match match, StartEvent node,
+			SimpleBPMN.Process process, SequenceFlow inFlow, EndEvent event) {
+		return new Object[] { match, node, process, inFlow, event };
 	}
 
 	public static final Object[] pattern_EndEvent2FinalStateFirst_0_4_greenBBBBFFF(Match match,
@@ -1518,27 +1568,47 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 				event__inFlow____incoming };
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_0_5_blackBBBB(Match match, SimpleBPMN.Process process,
-			SequenceFlow inFlow, EndEvent event) {
-		return new Object[] { match, process, inFlow, event };
+	public static final Object[] pattern_EndEvent2FinalStateFirst_0_5_blackBBBBB(Match match, StartEvent node,
+			SimpleBPMN.Process process, SequenceFlow inFlow, EndEvent event) {
+		return new Object[] { match, node, process, inFlow, event };
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_0_5_greenBBBF(Match match, SimpleBPMN.Process process,
-			SequenceFlow inFlow) {
+	public static final Object[] pattern_EndEvent2FinalStateFirst_0_5_greenBBBBFFFF(Match match, StartEvent node,
+			SimpleBPMN.Process process, SequenceFlow inFlow) {
 		EMoflonEdge process__inFlow____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge process__node____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge inFlow__node____sourceRef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge node__inFlow____outgoing = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		match.getContextNodes().add(node);
 		match.getContextNodes().add(process);
 		match.getContextNodes().add(inFlow);
 		String process__inFlow____flowElements_name_prime = "flowElements";
+		String process__node____flowElements_name_prime = "flowElements";
+		String inFlow__node____sourceRef_name_prime = "sourceRef";
+		String node__inFlow____outgoing_name_prime = "outgoing";
 		process__inFlow____flowElements.setSrc(process);
 		process__inFlow____flowElements.setTrg(inFlow);
 		match.getContextEdges().add(process__inFlow____flowElements);
+		process__node____flowElements.setSrc(process);
+		process__node____flowElements.setTrg(node);
+		match.getContextEdges().add(process__node____flowElements);
+		inFlow__node____sourceRef.setSrc(inFlow);
+		inFlow__node____sourceRef.setTrg(node);
+		match.getContextEdges().add(inFlow__node____sourceRef);
+		node__inFlow____outgoing.setSrc(node);
+		node__inFlow____outgoing.setTrg(inFlow);
+		match.getContextEdges().add(node__inFlow____outgoing);
 		process__inFlow____flowElements.setName(process__inFlow____flowElements_name_prime);
-		return new Object[] { match, process, inFlow, process__inFlow____flowElements };
+		process__node____flowElements.setName(process__node____flowElements_name_prime);
+		inFlow__node____sourceRef.setName(inFlow__node____sourceRef_name_prime);
+		node__inFlow____outgoing.setName(node__inFlow____outgoing_name_prime);
+		return new Object[] { match, node, process, inFlow, process__inFlow____flowElements,
+				process__node____flowElements, inFlow__node____sourceRef, node__inFlow____outgoing };
 	}
 
-	public static final void pattern_EndEvent2FinalStateFirst_0_6_expressionBBBBB(EndEvent2FinalStateFirst _this,
-			Match match, SimpleBPMN.Process process, SequenceFlow inFlow, EndEvent event) {
-		_this.registerObjectsToMatch_FWD(match, process, inFlow, event);
+	public static final void pattern_EndEvent2FinalStateFirst_0_6_expressionBBBBBB(EndEvent2FinalStateFirst _this,
+			Match match, StartEvent node, SimpleBPMN.Process process, SequenceFlow inFlow, EndEvent event) {
+		_this.registerObjectsToMatch_FWD(match, node, process, inFlow, event);
 
 	}
 
@@ -1552,29 +1622,34 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		return _result;
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_1_1_bindingFFFFFB(
+	public static final Object[] pattern_EndEvent2FinalStateFirst_1_1_bindingFFFFFFB(
 			IsApplicableMatch isApplicableMatch) {
 		EObject _localVariable_0 = isApplicableMatch.getObject("flow");
-		EObject _localVariable_1 = isApplicableMatch.getObject("process");
-		EObject _localVariable_2 = isApplicableMatch.getObject("inFlow");
-		EObject _localVariable_3 = isApplicableMatch.getObject("_if2f");
-		EObject _localVariable_4 = isApplicableMatch.getObject("event");
+		EObject _localVariable_1 = isApplicableMatch.getObject("node");
+		EObject _localVariable_2 = isApplicableMatch.getObject("process");
+		EObject _localVariable_3 = isApplicableMatch.getObject("inFlow");
+		EObject _localVariable_4 = isApplicableMatch.getObject("_if2f");
+		EObject _localVariable_5 = isApplicableMatch.getObject("event");
 		EObject tmpFlow = _localVariable_0;
-		EObject tmpProcess = _localVariable_1;
-		EObject tmpInFlow = _localVariable_2;
-		EObject tmp_if2f = _localVariable_3;
-		EObject tmpEvent = _localVariable_4;
+		EObject tmpNode = _localVariable_1;
+		EObject tmpProcess = _localVariable_2;
+		EObject tmpInFlow = _localVariable_3;
+		EObject tmp_if2f = _localVariable_4;
+		EObject tmpEvent = _localVariable_5;
 		if (tmpFlow instanceof Flow) {
 			Flow flow = (Flow) tmpFlow;
-			if (tmpProcess instanceof SimpleBPMN.Process) {
-				SimpleBPMN.Process process = (SimpleBPMN.Process) tmpProcess;
-				if (tmpInFlow instanceof SequenceFlow) {
-					SequenceFlow inFlow = (SequenceFlow) tmpInFlow;
-					if (tmp_if2f instanceof SF2F) {
-						SF2F _if2f = (SF2F) tmp_if2f;
-						if (tmpEvent instanceof EndEvent) {
-							EndEvent event = (EndEvent) tmpEvent;
-							return new Object[] { flow, process, inFlow, _if2f, event, isApplicableMatch };
+			if (tmpNode instanceof StartEvent) {
+				StartEvent node = (StartEvent) tmpNode;
+				if (tmpProcess instanceof SimpleBPMN.Process) {
+					SimpleBPMN.Process process = (SimpleBPMN.Process) tmpProcess;
+					if (tmpInFlow instanceof SequenceFlow) {
+						SequenceFlow inFlow = (SequenceFlow) tmpInFlow;
+						if (tmp_if2f instanceof SF2F) {
+							SF2F _if2f = (SF2F) tmp_if2f;
+							if (tmpEvent instanceof EndEvent) {
+								EndEvent event = (EndEvent) tmpEvent;
+								return new Object[] { flow, node, process, inFlow, _if2f, event, isApplicableMatch };
+							}
 						}
 					}
 				}
@@ -1583,35 +1658,36 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		return null;
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_1_1_blackBBBBBBFB(Flow flow,
+	public static final Object[] pattern_EndEvent2FinalStateFirst_1_1_blackBBBBBBBFB(Flow flow, StartEvent node,
 			SimpleBPMN.Process process, SequenceFlow inFlow, SF2F _if2f, EndEvent event, EndEvent2FinalStateFirst _this,
 			IsApplicableMatch isApplicableMatch) {
 		for (EObject tmpCsp : isApplicableMatch.getAttributeInfo()) {
 			if (tmpCsp instanceof CSP) {
 				CSP csp = (CSP) tmpCsp;
-				return new Object[] { flow, process, inFlow, _if2f, event, _this, csp, isApplicableMatch };
+				return new Object[] { flow, node, process, inFlow, _if2f, event, _this, csp, isApplicableMatch };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_1_1_bindingAndBlackFFFFFBFB(
+	public static final Object[] pattern_EndEvent2FinalStateFirst_1_1_bindingAndBlackFFFFFFBFB(
 			EndEvent2FinalStateFirst _this, IsApplicableMatch isApplicableMatch) {
-		Object[] result_pattern_EndEvent2FinalStateFirst_1_1_binding = pattern_EndEvent2FinalStateFirst_1_1_bindingFFFFFB(
+		Object[] result_pattern_EndEvent2FinalStateFirst_1_1_binding = pattern_EndEvent2FinalStateFirst_1_1_bindingFFFFFFB(
 				isApplicableMatch);
 		if (result_pattern_EndEvent2FinalStateFirst_1_1_binding != null) {
 			Flow flow = (Flow) result_pattern_EndEvent2FinalStateFirst_1_1_binding[0];
-			SimpleBPMN.Process process = (SimpleBPMN.Process) result_pattern_EndEvent2FinalStateFirst_1_1_binding[1];
-			SequenceFlow inFlow = (SequenceFlow) result_pattern_EndEvent2FinalStateFirst_1_1_binding[2];
-			SF2F _if2f = (SF2F) result_pattern_EndEvent2FinalStateFirst_1_1_binding[3];
-			EndEvent event = (EndEvent) result_pattern_EndEvent2FinalStateFirst_1_1_binding[4];
+			StartEvent node = (StartEvent) result_pattern_EndEvent2FinalStateFirst_1_1_binding[1];
+			SimpleBPMN.Process process = (SimpleBPMN.Process) result_pattern_EndEvent2FinalStateFirst_1_1_binding[2];
+			SequenceFlow inFlow = (SequenceFlow) result_pattern_EndEvent2FinalStateFirst_1_1_binding[3];
+			SF2F _if2f = (SF2F) result_pattern_EndEvent2FinalStateFirst_1_1_binding[4];
+			EndEvent event = (EndEvent) result_pattern_EndEvent2FinalStateFirst_1_1_binding[5];
 
-			Object[] result_pattern_EndEvent2FinalStateFirst_1_1_black = pattern_EndEvent2FinalStateFirst_1_1_blackBBBBBBFB(
-					flow, process, inFlow, _if2f, event, _this, isApplicableMatch);
+			Object[] result_pattern_EndEvent2FinalStateFirst_1_1_black = pattern_EndEvent2FinalStateFirst_1_1_blackBBBBBBBFB(
+					flow, node, process, inFlow, _if2f, event, _this, isApplicableMatch);
 			if (result_pattern_EndEvent2FinalStateFirst_1_1_black != null) {
-				CSP csp = (CSP) result_pattern_EndEvent2FinalStateFirst_1_1_black[6];
+				CSP csp = (CSP) result_pattern_EndEvent2FinalStateFirst_1_1_black[7];
 
-				return new Object[] { flow, process, inFlow, _if2f, event, _this, csp, isApplicableMatch };
+				return new Object[] { flow, node, process, inFlow, _if2f, event, _this, csp, isApplicableMatch };
 			}
 		}
 		return null;
@@ -1643,34 +1719,60 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		return new Object[] { ruleresult, event, state, _e2s };
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_1_3_blackBBBBBBBB(PerformRuleResult ruleresult,
-			EObject flow, EObject process, EObject inFlow, EObject _if2f, EObject event, EObject state, EObject _e2s) {
-		if (!flow.equals(process)) {
-			if (!flow.equals(inFlow)) {
-				if (!flow.equals(state)) {
-					if (!process.equals(state)) {
-						if (!inFlow.equals(process)) {
-							if (!inFlow.equals(state)) {
-								if (!_if2f.equals(flow)) {
-									if (!_if2f.equals(process)) {
-										if (!_if2f.equals(inFlow)) {
-											if (!_if2f.equals(event)) {
-												if (!_if2f.equals(state)) {
-													if (!event.equals(flow)) {
-														if (!event.equals(process)) {
-															if (!event.equals(inFlow)) {
-																if (!event.equals(state)) {
-																	if (!_e2s.equals(flow)) {
-																		if (!_e2s.equals(process)) {
-																			if (!_e2s.equals(inFlow)) {
-																				if (!_e2s.equals(_if2f)) {
-																					if (!_e2s.equals(event)) {
-																						if (!_e2s.equals(state)) {
-																							return new Object[] {
-																									ruleresult, flow,
-																									process, inFlow,
-																									_if2f, event, state,
-																									_e2s };
+	public static final Object[] pattern_EndEvent2FinalStateFirst_1_3_blackBBBBBBBBB(PerformRuleResult ruleresult,
+			EObject flow, EObject node, EObject process, EObject inFlow, EObject _if2f, EObject event, EObject state,
+			EObject _e2s) {
+		if (!flow.equals(node)) {
+			if (!flow.equals(process)) {
+				if (!flow.equals(inFlow)) {
+					if (!flow.equals(state)) {
+						if (!node.equals(process)) {
+							if (!node.equals(state)) {
+								if (!process.equals(state)) {
+									if (!inFlow.equals(node)) {
+										if (!inFlow.equals(process)) {
+											if (!inFlow.equals(state)) {
+												if (!_if2f.equals(flow)) {
+													if (!_if2f.equals(node)) {
+														if (!_if2f.equals(process)) {
+															if (!_if2f.equals(inFlow)) {
+																if (!_if2f.equals(event)) {
+																	if (!_if2f.equals(state)) {
+																		if (!event.equals(flow)) {
+																			if (!event.equals(node)) {
+																				if (!event.equals(process)) {
+																					if (!event.equals(inFlow)) {
+																						if (!event.equals(state)) {
+																							if (!_e2s.equals(flow)) {
+																								if (!_e2s
+																										.equals(node)) {
+																									if (!_e2s.equals(
+																											process)) {
+																										if (!_e2s
+																												.equals(inFlow)) {
+																											if (!_e2s
+																													.equals(_if2f)) {
+																												if (!_e2s
+																														.equals(event)) {
+																													if (!_e2s
+																															.equals(state)) {
+																														return new Object[] {
+																																ruleresult,
+																																flow,
+																																node,
+																																process,
+																																inFlow,
+																																_if2f,
+																																event,
+																																state,
+																																_e2s };
+																													}
+																												}
+																											}
+																										}
+																									}
+																								}
+																							}
 																						}
 																					}
 																				}
@@ -1740,10 +1842,10 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 				_e2s__state____target };
 	}
 
-	public static final void pattern_EndEvent2FinalStateFirst_1_5_expressionBBBBBBBBB(EndEvent2FinalStateFirst _this,
-			PerformRuleResult ruleresult, EObject flow, EObject process, EObject inFlow, EObject _if2f, EObject event,
-			EObject state, EObject _e2s) {
-		_this.registerObjects_FWD(ruleresult, flow, process, inFlow, _if2f, event, state, _e2s);
+	public static final void pattern_EndEvent2FinalStateFirst_1_5_expressionBBBBBBBBBB(EndEvent2FinalStateFirst _this,
+			PerformRuleResult ruleresult, EObject flow, EObject node, EObject process, EObject inFlow, EObject _if2f,
+			EObject event, EObject state, EObject _e2s) {
+		_this.registerObjects_FWD(ruleresult, flow, node, process, inFlow, _if2f, event, state, _e2s);
 
 	}
 
@@ -1802,28 +1904,33 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		return new Object[] { performOperation, ruleresult };
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_2_2_bindingFFFB(Match match) {
-		EObject _localVariable_0 = match.getObject("process");
-		EObject _localVariable_1 = match.getObject("inFlow");
-		EObject _localVariable_2 = match.getObject("event");
-		EObject tmpProcess = _localVariable_0;
-		EObject tmpInFlow = _localVariable_1;
-		EObject tmpEvent = _localVariable_2;
-		if (tmpProcess instanceof SimpleBPMN.Process) {
-			SimpleBPMN.Process process = (SimpleBPMN.Process) tmpProcess;
-			if (tmpInFlow instanceof SequenceFlow) {
-				SequenceFlow inFlow = (SequenceFlow) tmpInFlow;
-				if (tmpEvent instanceof EndEvent) {
-					EndEvent event = (EndEvent) tmpEvent;
-					return new Object[] { process, inFlow, event, match };
+	public static final Object[] pattern_EndEvent2FinalStateFirst_2_2_bindingFFFFB(Match match) {
+		EObject _localVariable_0 = match.getObject("node");
+		EObject _localVariable_1 = match.getObject("process");
+		EObject _localVariable_2 = match.getObject("inFlow");
+		EObject _localVariable_3 = match.getObject("event");
+		EObject tmpNode = _localVariable_0;
+		EObject tmpProcess = _localVariable_1;
+		EObject tmpInFlow = _localVariable_2;
+		EObject tmpEvent = _localVariable_3;
+		if (tmpNode instanceof StartEvent) {
+			StartEvent node = (StartEvent) tmpNode;
+			if (tmpProcess instanceof SimpleBPMN.Process) {
+				SimpleBPMN.Process process = (SimpleBPMN.Process) tmpProcess;
+				if (tmpInFlow instanceof SequenceFlow) {
+					SequenceFlow inFlow = (SequenceFlow) tmpInFlow;
+					if (tmpEvent instanceof EndEvent) {
+						EndEvent event = (EndEvent) tmpEvent;
+						return new Object[] { node, process, inFlow, event, match };
+					}
 				}
 			}
 		}
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_EndEvent2FinalStateFirst_2_2_blackFBBFBB(SimpleBPMN.Process process,
-			SequenceFlow inFlow, EndEvent event, Match match) {
+	public static final Iterable<Object[]> pattern_EndEvent2FinalStateFirst_2_2_blackFBBBFBB(StartEvent node,
+			SimpleBPMN.Process process, SequenceFlow inFlow, EndEvent event, Match match) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		for (SF2F _if2f : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(inFlow, SF2F.class,
 				"source")) {
@@ -1831,7 +1938,7 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 			if (flow != null) {
 				boolean flow__empty = flow.is__empty();
 				if (Boolean.valueOf(flow__empty).equals(Boolean.valueOf(true))) {
-					_result.add(new Object[] { flow, process, inFlow, _if2f, event, match });
+					_result.add(new Object[] { flow, node, process, inFlow, _if2f, event, match });
 				}
 
 			}
@@ -1840,19 +1947,23 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		return _result;
 	}
 
-	public static final Iterable<Object[]> pattern_EndEvent2FinalStateFirst_2_3_blackBBBBB(Flow flow,
+	public static final Iterable<Object[]> pattern_EndEvent2FinalStateFirst_2_3_blackBBBBBB(Flow flow, StartEvent node,
 			SimpleBPMN.Process process, SequenceFlow inFlow, SF2F _if2f, EndEvent event) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		if (process.getFlowElements().contains(inFlow)) {
 			if (process.getFlowElements().contains(event)) {
-				if (event.equals(inFlow.getTargetRef())) {
-					if (inFlow.equals(_if2f.getSource())) {
-						if (flow.equals(_if2f.getTarget())) {
-							boolean flow__empty = flow.is__empty();
-							if (Boolean.valueOf(flow__empty).equals(Boolean.valueOf(true))) {
-								_result.add(new Object[] { flow, process, inFlow, _if2f, event });
-							}
+				if (process.getFlowElements().contains(node)) {
+					if (event.equals(inFlow.getTargetRef())) {
+						if (inFlow.equals(_if2f.getSource())) {
+							if (flow.equals(_if2f.getTarget())) {
+								if (node.equals(inFlow.getSourceRef())) {
+									boolean flow__empty = flow.is__empty();
+									if (Boolean.valueOf(flow__empty).equals(Boolean.valueOf(true))) {
+										_result.add(new Object[] { flow, node, process, inFlow, _if2f, event });
+									}
 
+								}
+							}
 						}
 					}
 				}
@@ -1861,22 +1972,29 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		return _result;
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_2_3_greenBBBBBFFFFFFF(Flow flow,
+	public static final Object[] pattern_EndEvent2FinalStateFirst_2_3_greenBBBBBBFFFFFFFFFF(Flow flow, StartEvent node,
 			SimpleBPMN.Process process, SequenceFlow inFlow, SF2F _if2f, EndEvent event) {
 		IsApplicableMatch isApplicableMatch = TGGRuntimeFactory.eINSTANCE.createIsApplicableMatch();
 		EMoflonEdge process__inFlow____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge process__event____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge process__node____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge inFlow__event____targetRef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge event__inFlow____incoming = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge _if2f__inFlow____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge _if2f__flow____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge inFlow__node____sourceRef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge node__inFlow____outgoing = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		String process__inFlow____flowElements_name_prime = "flowElements";
 		String process__event____flowElements_name_prime = "flowElements";
+		String process__node____flowElements_name_prime = "flowElements";
 		String inFlow__event____targetRef_name_prime = "targetRef";
 		String event__inFlow____incoming_name_prime = "incoming";
 		String _if2f__inFlow____source_name_prime = "source";
 		String _if2f__flow____target_name_prime = "target";
+		String inFlow__node____sourceRef_name_prime = "sourceRef";
+		String node__inFlow____outgoing_name_prime = "outgoing";
 		isApplicableMatch.getAllContextElements().add(flow);
+		isApplicableMatch.getAllContextElements().add(node);
 		isApplicableMatch.getAllContextElements().add(process);
 		isApplicableMatch.getAllContextElements().add(inFlow);
 		isApplicableMatch.getAllContextElements().add(_if2f);
@@ -1887,6 +2005,9 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		process__event____flowElements.setSrc(process);
 		process__event____flowElements.setTrg(event);
 		isApplicableMatch.getAllContextElements().add(process__event____flowElements);
+		process__node____flowElements.setSrc(process);
+		process__node____flowElements.setTrg(node);
+		isApplicableMatch.getAllContextElements().add(process__node____flowElements);
 		inFlow__event____targetRef.setSrc(inFlow);
 		inFlow__event____targetRef.setTrg(event);
 		isApplicableMatch.getAllContextElements().add(inFlow__event____targetRef);
@@ -1899,24 +2020,35 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		_if2f__flow____target.setSrc(_if2f);
 		_if2f__flow____target.setTrg(flow);
 		isApplicableMatch.getAllContextElements().add(_if2f__flow____target);
+		inFlow__node____sourceRef.setSrc(inFlow);
+		inFlow__node____sourceRef.setTrg(node);
+		isApplicableMatch.getAllContextElements().add(inFlow__node____sourceRef);
+		node__inFlow____outgoing.setSrc(node);
+		node__inFlow____outgoing.setTrg(inFlow);
+		isApplicableMatch.getAllContextElements().add(node__inFlow____outgoing);
 		process__inFlow____flowElements.setName(process__inFlow____flowElements_name_prime);
 		process__event____flowElements.setName(process__event____flowElements_name_prime);
+		process__node____flowElements.setName(process__node____flowElements_name_prime);
 		inFlow__event____targetRef.setName(inFlow__event____targetRef_name_prime);
 		event__inFlow____incoming.setName(event__inFlow____incoming_name_prime);
 		_if2f__inFlow____source.setName(_if2f__inFlow____source_name_prime);
 		_if2f__flow____target.setName(_if2f__flow____target_name_prime);
-		return new Object[] { flow, process, inFlow, _if2f, event, isApplicableMatch, process__inFlow____flowElements,
-				process__event____flowElements, inFlow__event____targetRef, event__inFlow____incoming,
-				_if2f__inFlow____source, _if2f__flow____target };
+		inFlow__node____sourceRef.setName(inFlow__node____sourceRef_name_prime);
+		node__inFlow____outgoing.setName(node__inFlow____outgoing_name_prime);
+		return new Object[] { flow, node, process, inFlow, _if2f, event, isApplicableMatch,
+				process__inFlow____flowElements, process__event____flowElements, process__node____flowElements,
+				inFlow__event____targetRef, event__inFlow____incoming, _if2f__inFlow____source, _if2f__flow____target,
+				inFlow__node____sourceRef, node__inFlow____outgoing };
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_2_4_bindingFBBBBBBB(EndEvent2FinalStateFirst _this,
-			IsApplicableMatch isApplicableMatch, Flow flow, SimpleBPMN.Process process, SequenceFlow inFlow, SF2F _if2f,
-			EndEvent event) {
-		CSP _localVariable_0 = _this.isApplicable_solveCsp_FWD(isApplicableMatch, flow, process, inFlow, _if2f, event);
+	public static final Object[] pattern_EndEvent2FinalStateFirst_2_4_bindingFBBBBBBBB(EndEvent2FinalStateFirst _this,
+			IsApplicableMatch isApplicableMatch, Flow flow, StartEvent node, SimpleBPMN.Process process,
+			SequenceFlow inFlow, SF2F _if2f, EndEvent event) {
+		CSP _localVariable_0 = _this.isApplicable_solveCsp_FWD(isApplicableMatch, flow, node, process, inFlow, _if2f,
+				event);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, isApplicableMatch, flow, process, inFlow, _if2f, event };
+			return new Object[] { csp, _this, isApplicableMatch, flow, node, process, inFlow, _if2f, event };
 		}
 		return null;
 	}
@@ -1925,11 +2057,11 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		return new Object[] { csp };
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_2_4_bindingAndBlackFBBBBBBB(
-			EndEvent2FinalStateFirst _this, IsApplicableMatch isApplicableMatch, Flow flow, SimpleBPMN.Process process,
-			SequenceFlow inFlow, SF2F _if2f, EndEvent event) {
-		Object[] result_pattern_EndEvent2FinalStateFirst_2_4_binding = pattern_EndEvent2FinalStateFirst_2_4_bindingFBBBBBBB(
-				_this, isApplicableMatch, flow, process, inFlow, _if2f, event);
+	public static final Object[] pattern_EndEvent2FinalStateFirst_2_4_bindingAndBlackFBBBBBBBB(
+			EndEvent2FinalStateFirst _this, IsApplicableMatch isApplicableMatch, Flow flow, StartEvent node,
+			SimpleBPMN.Process process, SequenceFlow inFlow, SF2F _if2f, EndEvent event) {
+		Object[] result_pattern_EndEvent2FinalStateFirst_2_4_binding = pattern_EndEvent2FinalStateFirst_2_4_bindingFBBBBBBBB(
+				_this, isApplicableMatch, flow, node, process, inFlow, _if2f, event);
 		if (result_pattern_EndEvent2FinalStateFirst_2_4_binding != null) {
 			CSP csp = (CSP) result_pattern_EndEvent2FinalStateFirst_2_4_binding[0];
 
@@ -1937,7 +2069,7 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 					csp);
 			if (result_pattern_EndEvent2FinalStateFirst_2_4_black != null) {
 
-				return new Object[] { csp, _this, isApplicableMatch, flow, process, inFlow, _if2f, event };
+				return new Object[] { csp, _this, isApplicableMatch, flow, node, process, inFlow, _if2f, event };
 			}
 		}
 		return null;
@@ -2057,29 +2189,34 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		return _result;
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_11_1_bindingFFFFFB(
+	public static final Object[] pattern_EndEvent2FinalStateFirst_11_1_bindingFFFFFFB(
 			IsApplicableMatch isApplicableMatch) {
 		EObject _localVariable_0 = isApplicableMatch.getObject("flow");
-		EObject _localVariable_1 = isApplicableMatch.getObject("process");
-		EObject _localVariable_2 = isApplicableMatch.getObject("inFlow");
-		EObject _localVariable_3 = isApplicableMatch.getObject("_if2f");
-		EObject _localVariable_4 = isApplicableMatch.getObject("state");
+		EObject _localVariable_1 = isApplicableMatch.getObject("node");
+		EObject _localVariable_2 = isApplicableMatch.getObject("process");
+		EObject _localVariable_3 = isApplicableMatch.getObject("inFlow");
+		EObject _localVariable_4 = isApplicableMatch.getObject("_if2f");
+		EObject _localVariable_5 = isApplicableMatch.getObject("state");
 		EObject tmpFlow = _localVariable_0;
-		EObject tmpProcess = _localVariable_1;
-		EObject tmpInFlow = _localVariable_2;
-		EObject tmp_if2f = _localVariable_3;
-		EObject tmpState = _localVariable_4;
+		EObject tmpNode = _localVariable_1;
+		EObject tmpProcess = _localVariable_2;
+		EObject tmpInFlow = _localVariable_3;
+		EObject tmp_if2f = _localVariable_4;
+		EObject tmpState = _localVariable_5;
 		if (tmpFlow instanceof Flow) {
 			Flow flow = (Flow) tmpFlow;
-			if (tmpProcess instanceof SimpleBPMN.Process) {
-				SimpleBPMN.Process process = (SimpleBPMN.Process) tmpProcess;
-				if (tmpInFlow instanceof SequenceFlow) {
-					SequenceFlow inFlow = (SequenceFlow) tmpInFlow;
-					if (tmp_if2f instanceof SF2F) {
-						SF2F _if2f = (SF2F) tmp_if2f;
-						if (tmpState instanceof UCCondition) {
-							UCCondition state = (UCCondition) tmpState;
-							return new Object[] { flow, process, inFlow, _if2f, state, isApplicableMatch };
+			if (tmpNode instanceof StartEvent) {
+				StartEvent node = (StartEvent) tmpNode;
+				if (tmpProcess instanceof SimpleBPMN.Process) {
+					SimpleBPMN.Process process = (SimpleBPMN.Process) tmpProcess;
+					if (tmpInFlow instanceof SequenceFlow) {
+						SequenceFlow inFlow = (SequenceFlow) tmpInFlow;
+						if (tmp_if2f instanceof SF2F) {
+							SF2F _if2f = (SF2F) tmp_if2f;
+							if (tmpState instanceof UCCondition) {
+								UCCondition state = (UCCondition) tmpState;
+								return new Object[] { flow, node, process, inFlow, _if2f, state, isApplicableMatch };
+							}
 						}
 					}
 				}
@@ -2088,35 +2225,36 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		return null;
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_11_1_blackBBBBBBFB(Flow flow,
+	public static final Object[] pattern_EndEvent2FinalStateFirst_11_1_blackBBBBBBBFB(Flow flow, StartEvent node,
 			SimpleBPMN.Process process, SequenceFlow inFlow, SF2F _if2f, UCCondition state,
 			EndEvent2FinalStateFirst _this, IsApplicableMatch isApplicableMatch) {
 		for (EObject tmpCsp : isApplicableMatch.getAttributeInfo()) {
 			if (tmpCsp instanceof CSP) {
 				CSP csp = (CSP) tmpCsp;
-				return new Object[] { flow, process, inFlow, _if2f, state, _this, csp, isApplicableMatch };
+				return new Object[] { flow, node, process, inFlow, _if2f, state, _this, csp, isApplicableMatch };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_11_1_bindingAndBlackFFFFFBFB(
+	public static final Object[] pattern_EndEvent2FinalStateFirst_11_1_bindingAndBlackFFFFFFBFB(
 			EndEvent2FinalStateFirst _this, IsApplicableMatch isApplicableMatch) {
-		Object[] result_pattern_EndEvent2FinalStateFirst_11_1_binding = pattern_EndEvent2FinalStateFirst_11_1_bindingFFFFFB(
+		Object[] result_pattern_EndEvent2FinalStateFirst_11_1_binding = pattern_EndEvent2FinalStateFirst_11_1_bindingFFFFFFB(
 				isApplicableMatch);
 		if (result_pattern_EndEvent2FinalStateFirst_11_1_binding != null) {
 			Flow flow = (Flow) result_pattern_EndEvent2FinalStateFirst_11_1_binding[0];
-			SimpleBPMN.Process process = (SimpleBPMN.Process) result_pattern_EndEvent2FinalStateFirst_11_1_binding[1];
-			SequenceFlow inFlow = (SequenceFlow) result_pattern_EndEvent2FinalStateFirst_11_1_binding[2];
-			SF2F _if2f = (SF2F) result_pattern_EndEvent2FinalStateFirst_11_1_binding[3];
-			UCCondition state = (UCCondition) result_pattern_EndEvent2FinalStateFirst_11_1_binding[4];
+			StartEvent node = (StartEvent) result_pattern_EndEvent2FinalStateFirst_11_1_binding[1];
+			SimpleBPMN.Process process = (SimpleBPMN.Process) result_pattern_EndEvent2FinalStateFirst_11_1_binding[2];
+			SequenceFlow inFlow = (SequenceFlow) result_pattern_EndEvent2FinalStateFirst_11_1_binding[3];
+			SF2F _if2f = (SF2F) result_pattern_EndEvent2FinalStateFirst_11_1_binding[4];
+			UCCondition state = (UCCondition) result_pattern_EndEvent2FinalStateFirst_11_1_binding[5];
 
-			Object[] result_pattern_EndEvent2FinalStateFirst_11_1_black = pattern_EndEvent2FinalStateFirst_11_1_blackBBBBBBFB(
-					flow, process, inFlow, _if2f, state, _this, isApplicableMatch);
+			Object[] result_pattern_EndEvent2FinalStateFirst_11_1_black = pattern_EndEvent2FinalStateFirst_11_1_blackBBBBBBBFB(
+					flow, node, process, inFlow, _if2f, state, _this, isApplicableMatch);
 			if (result_pattern_EndEvent2FinalStateFirst_11_1_black != null) {
-				CSP csp = (CSP) result_pattern_EndEvent2FinalStateFirst_11_1_black[6];
+				CSP csp = (CSP) result_pattern_EndEvent2FinalStateFirst_11_1_black[7];
 
-				return new Object[] { flow, process, inFlow, _if2f, state, _this, csp, isApplicableMatch };
+				return new Object[] { flow, node, process, inFlow, _if2f, state, _this, csp, isApplicableMatch };
 			}
 		}
 		return null;
@@ -2150,34 +2288,60 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		return new Object[] { ruleresult, event, state, _e2s };
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_11_3_blackBBBBBBBB(PerformRuleResult ruleresult,
-			EObject flow, EObject process, EObject inFlow, EObject _if2f, EObject event, EObject state, EObject _e2s) {
-		if (!flow.equals(process)) {
-			if (!flow.equals(inFlow)) {
-				if (!flow.equals(state)) {
-					if (!process.equals(state)) {
-						if (!inFlow.equals(process)) {
-							if (!inFlow.equals(state)) {
-								if (!_if2f.equals(flow)) {
-									if (!_if2f.equals(process)) {
-										if (!_if2f.equals(inFlow)) {
-											if (!_if2f.equals(event)) {
-												if (!_if2f.equals(state)) {
-													if (!event.equals(flow)) {
-														if (!event.equals(process)) {
-															if (!event.equals(inFlow)) {
-																if (!event.equals(state)) {
-																	if (!_e2s.equals(flow)) {
-																		if (!_e2s.equals(process)) {
-																			if (!_e2s.equals(inFlow)) {
-																				if (!_e2s.equals(_if2f)) {
-																					if (!_e2s.equals(event)) {
-																						if (!_e2s.equals(state)) {
-																							return new Object[] {
-																									ruleresult, flow,
-																									process, inFlow,
-																									_if2f, event, state,
-																									_e2s };
+	public static final Object[] pattern_EndEvent2FinalStateFirst_11_3_blackBBBBBBBBB(PerformRuleResult ruleresult,
+			EObject flow, EObject node, EObject process, EObject inFlow, EObject _if2f, EObject event, EObject state,
+			EObject _e2s) {
+		if (!flow.equals(node)) {
+			if (!flow.equals(process)) {
+				if (!flow.equals(inFlow)) {
+					if (!flow.equals(state)) {
+						if (!node.equals(process)) {
+							if (!node.equals(state)) {
+								if (!process.equals(state)) {
+									if (!inFlow.equals(node)) {
+										if (!inFlow.equals(process)) {
+											if (!inFlow.equals(state)) {
+												if (!_if2f.equals(flow)) {
+													if (!_if2f.equals(node)) {
+														if (!_if2f.equals(process)) {
+															if (!_if2f.equals(inFlow)) {
+																if (!_if2f.equals(event)) {
+																	if (!_if2f.equals(state)) {
+																		if (!event.equals(flow)) {
+																			if (!event.equals(node)) {
+																				if (!event.equals(process)) {
+																					if (!event.equals(inFlow)) {
+																						if (!event.equals(state)) {
+																							if (!_e2s.equals(flow)) {
+																								if (!_e2s
+																										.equals(node)) {
+																									if (!_e2s.equals(
+																											process)) {
+																										if (!_e2s
+																												.equals(inFlow)) {
+																											if (!_e2s
+																													.equals(_if2f)) {
+																												if (!_e2s
+																														.equals(event)) {
+																													if (!_e2s
+																															.equals(state)) {
+																														return new Object[] {
+																																ruleresult,
+																																flow,
+																																node,
+																																process,
+																																inFlow,
+																																_if2f,
+																																event,
+																																state,
+																																_e2s };
+																													}
+																												}
+																											}
+																										}
+																									}
+																								}
+																							}
 																						}
 																					}
 																				}
@@ -2247,10 +2411,10 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 				_e2s__state____target };
 	}
 
-	public static final void pattern_EndEvent2FinalStateFirst_11_5_expressionBBBBBBBBB(EndEvent2FinalStateFirst _this,
-			PerformRuleResult ruleresult, EObject flow, EObject process, EObject inFlow, EObject _if2f, EObject event,
-			EObject state, EObject _e2s) {
-		_this.registerObjects_BWD(ruleresult, flow, process, inFlow, _if2f, event, state, _e2s);
+	public static final void pattern_EndEvent2FinalStateFirst_11_5_expressionBBBBBBBBBB(EndEvent2FinalStateFirst _this,
+			PerformRuleResult ruleresult, EObject flow, EObject node, EObject process, EObject inFlow, EObject _if2f,
+			EObject event, EObject state, EObject _e2s) {
+		_this.registerObjects_BWD(ruleresult, flow, node, process, inFlow, _if2f, event, state, _e2s);
 
 	}
 
@@ -2342,18 +2506,25 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		return _result;
 	}
 
-	public static final Iterable<Object[]> pattern_EndEvent2FinalStateFirst_12_3_blackBFBBB(Flow flow,
+	public static final Iterable<Object[]> pattern_EndEvent2FinalStateFirst_12_3_blackBFFBBB(Flow flow,
 			SequenceFlow inFlow, SF2F _if2f, UCCondition state) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		if (flow.getFinalState().contains(state)) {
 			if (inFlow.equals(_if2f.getSource())) {
 				if (flow.equals(_if2f.getTarget())) {
-					boolean flow__empty = flow.is__empty();
-					if (Boolean.valueOf(flow__empty).equals(Boolean.valueOf(true))) {
-						for (SimpleBPMN.Process process : org.moflon.core.utilities.eMoflonEMFUtil
-								.getOppositeReferenceTyped(inFlow, SimpleBPMN.Process.class, "flowElements")) {
-							_result.add(new Object[] { flow, process, inFlow, _if2f, state });
+					FlowNode tmpNode = inFlow.getSourceRef();
+					if (tmpNode instanceof StartEvent) {
+						StartEvent node = (StartEvent) tmpNode;
+						boolean flow__empty = flow.is__empty();
+						if (Boolean.valueOf(flow__empty).equals(Boolean.valueOf(true))) {
+							for (SimpleBPMN.Process process : org.moflon.core.utilities.eMoflonEMFUtil
+									.getOppositeReferenceTyped(inFlow, SimpleBPMN.Process.class, "flowElements")) {
+								if (process.getFlowElements().contains(node)) {
+									_result.add(new Object[] { flow, node, process, inFlow, _if2f, state });
+								}
+							}
 						}
+
 					}
 
 				}
@@ -2362,18 +2533,25 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		return _result;
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_12_3_greenBBBBBFFFFF(Flow flow,
+	public static final Object[] pattern_EndEvent2FinalStateFirst_12_3_greenBBBBBBFFFFFFFF(Flow flow, StartEvent node,
 			SimpleBPMN.Process process, SequenceFlow inFlow, SF2F _if2f, UCCondition state) {
 		IsApplicableMatch isApplicableMatch = TGGRuntimeFactory.eINSTANCE.createIsApplicableMatch();
 		EMoflonEdge process__inFlow____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge process__node____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge flow__state____finalState = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge _if2f__inFlow____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge _if2f__flow____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge inFlow__node____sourceRef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge node__inFlow____outgoing = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		String process__inFlow____flowElements_name_prime = "flowElements";
+		String process__node____flowElements_name_prime = "flowElements";
 		String flow__state____finalState_name_prime = "finalState";
 		String _if2f__inFlow____source_name_prime = "source";
 		String _if2f__flow____target_name_prime = "target";
+		String inFlow__node____sourceRef_name_prime = "sourceRef";
+		String node__inFlow____outgoing_name_prime = "outgoing";
 		isApplicableMatch.getAllContextElements().add(flow);
+		isApplicableMatch.getAllContextElements().add(node);
 		isApplicableMatch.getAllContextElements().add(process);
 		isApplicableMatch.getAllContextElements().add(inFlow);
 		isApplicableMatch.getAllContextElements().add(_if2f);
@@ -2381,6 +2559,9 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		process__inFlow____flowElements.setSrc(process);
 		process__inFlow____flowElements.setTrg(inFlow);
 		isApplicableMatch.getAllContextElements().add(process__inFlow____flowElements);
+		process__node____flowElements.setSrc(process);
+		process__node____flowElements.setTrg(node);
+		isApplicableMatch.getAllContextElements().add(process__node____flowElements);
 		flow__state____finalState.setSrc(flow);
 		flow__state____finalState.setTrg(state);
 		isApplicableMatch.getAllContextElements().add(flow__state____finalState);
@@ -2390,21 +2571,32 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		_if2f__flow____target.setSrc(_if2f);
 		_if2f__flow____target.setTrg(flow);
 		isApplicableMatch.getAllContextElements().add(_if2f__flow____target);
+		inFlow__node____sourceRef.setSrc(inFlow);
+		inFlow__node____sourceRef.setTrg(node);
+		isApplicableMatch.getAllContextElements().add(inFlow__node____sourceRef);
+		node__inFlow____outgoing.setSrc(node);
+		node__inFlow____outgoing.setTrg(inFlow);
+		isApplicableMatch.getAllContextElements().add(node__inFlow____outgoing);
 		process__inFlow____flowElements.setName(process__inFlow____flowElements_name_prime);
+		process__node____flowElements.setName(process__node____flowElements_name_prime);
 		flow__state____finalState.setName(flow__state____finalState_name_prime);
 		_if2f__inFlow____source.setName(_if2f__inFlow____source_name_prime);
 		_if2f__flow____target.setName(_if2f__flow____target_name_prime);
-		return new Object[] { flow, process, inFlow, _if2f, state, isApplicableMatch, process__inFlow____flowElements,
-				flow__state____finalState, _if2f__inFlow____source, _if2f__flow____target };
+		inFlow__node____sourceRef.setName(inFlow__node____sourceRef_name_prime);
+		node__inFlow____outgoing.setName(node__inFlow____outgoing_name_prime);
+		return new Object[] { flow, node, process, inFlow, _if2f, state, isApplicableMatch,
+				process__inFlow____flowElements, process__node____flowElements, flow__state____finalState,
+				_if2f__inFlow____source, _if2f__flow____target, inFlow__node____sourceRef, node__inFlow____outgoing };
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_12_4_bindingFBBBBBBB(EndEvent2FinalStateFirst _this,
-			IsApplicableMatch isApplicableMatch, Flow flow, SimpleBPMN.Process process, SequenceFlow inFlow, SF2F _if2f,
-			UCCondition state) {
-		CSP _localVariable_0 = _this.isApplicable_solveCsp_BWD(isApplicableMatch, flow, process, inFlow, _if2f, state);
+	public static final Object[] pattern_EndEvent2FinalStateFirst_12_4_bindingFBBBBBBBB(EndEvent2FinalStateFirst _this,
+			IsApplicableMatch isApplicableMatch, Flow flow, StartEvent node, SimpleBPMN.Process process,
+			SequenceFlow inFlow, SF2F _if2f, UCCondition state) {
+		CSP _localVariable_0 = _this.isApplicable_solveCsp_BWD(isApplicableMatch, flow, node, process, inFlow, _if2f,
+				state);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, isApplicableMatch, flow, process, inFlow, _if2f, state };
+			return new Object[] { csp, _this, isApplicableMatch, flow, node, process, inFlow, _if2f, state };
 		}
 		return null;
 	}
@@ -2413,11 +2605,11 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		return new Object[] { csp };
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_12_4_bindingAndBlackFBBBBBBB(
-			EndEvent2FinalStateFirst _this, IsApplicableMatch isApplicableMatch, Flow flow, SimpleBPMN.Process process,
-			SequenceFlow inFlow, SF2F _if2f, UCCondition state) {
-		Object[] result_pattern_EndEvent2FinalStateFirst_12_4_binding = pattern_EndEvent2FinalStateFirst_12_4_bindingFBBBBBBB(
-				_this, isApplicableMatch, flow, process, inFlow, _if2f, state);
+	public static final Object[] pattern_EndEvent2FinalStateFirst_12_4_bindingAndBlackFBBBBBBBB(
+			EndEvent2FinalStateFirst _this, IsApplicableMatch isApplicableMatch, Flow flow, StartEvent node,
+			SimpleBPMN.Process process, SequenceFlow inFlow, SF2F _if2f, UCCondition state) {
+		Object[] result_pattern_EndEvent2FinalStateFirst_12_4_binding = pattern_EndEvent2FinalStateFirst_12_4_bindingFBBBBBBBB(
+				_this, isApplicableMatch, flow, node, process, inFlow, _if2f, state);
 		if (result_pattern_EndEvent2FinalStateFirst_12_4_binding != null) {
 			CSP csp = (CSP) result_pattern_EndEvent2FinalStateFirst_12_4_binding[0];
 
@@ -2425,7 +2617,7 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 					csp);
 			if (result_pattern_EndEvent2FinalStateFirst_12_4_black != null) {
 
-				return new Object[] { csp, _this, isApplicableMatch, flow, process, inFlow, _if2f, state };
+				return new Object[] { csp, _this, isApplicableMatch, flow, node, process, inFlow, _if2f, state };
 			}
 		}
 		return null;
@@ -2503,7 +2695,7 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		return new Object[] { __result };
 	}
 
-	public static final Iterable<Object[]> pattern_EndEvent2FinalStateFirst_20_2_blackFFFB(
+	public static final Iterable<Object[]> pattern_EndEvent2FinalStateFirst_20_2_blackFFFFB(
 			EMoflonEdge _edge_flowElements) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		EObject tmpProcess = _edge_flowElements.getSrc();
@@ -2517,7 +2709,14 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 						if (tmpInFlow instanceof SequenceFlow) {
 							SequenceFlow inFlow = (SequenceFlow) tmpInFlow;
 							if (event.equals(inFlow.getTargetRef())) {
-								_result.add(new Object[] { process, inFlow, event, _edge_flowElements });
+								FlowNode tmpNode = inFlow.getSourceRef();
+								if (tmpNode instanceof StartEvent) {
+									StartEvent node = (StartEvent) tmpNode;
+									if (process.getFlowElements().contains(node)) {
+										_result.add(new Object[] { node, process, inFlow, event, _edge_flowElements });
+									}
+								}
+
 							}
 						}
 					}
@@ -2538,9 +2737,9 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 
 	}
 
-	public static final boolean pattern_EndEvent2FinalStateFirst_20_3_expressionFBBBBB(EndEvent2FinalStateFirst _this,
-			Match match, SimpleBPMN.Process process, SequenceFlow inFlow, EndEvent event) {
-		boolean _localVariable_0 = _this.isAppropriate_FWD(match, process, inFlow, event);
+	public static final boolean pattern_EndEvent2FinalStateFirst_20_3_expressionFBBBBBB(EndEvent2FinalStateFirst _this,
+			Match match, StartEvent node, SimpleBPMN.Process process, SequenceFlow inFlow, EndEvent event) {
+		boolean _localVariable_0 = _this.isAppropriate_FWD(match, node, process, inFlow, event);
 		boolean _result = Boolean.valueOf(_localVariable_0);
 		return _result;
 	}
@@ -2613,7 +2812,7 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		return new Object[] { __result };
 	}
 
-	public static final Iterable<Object[]> pattern_EndEvent2FinalStateFirst_21_2_blackFFFB(
+	public static final Iterable<Object[]> pattern_EndEvent2FinalStateFirst_21_2_blackFFFFB(
 			EMoflonEdge _edge_targetRef) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		EObject tmpInFlow = _edge_targetRef.getSrc();
@@ -2623,12 +2822,19 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 			if (tmpEvent instanceof EndEvent) {
 				EndEvent event = (EndEvent) tmpEvent;
 				if (event.equals(inFlow.getTargetRef())) {
-					for (SimpleBPMN.Process process : org.moflon.core.utilities.eMoflonEMFUtil
-							.getOppositeReferenceTyped(inFlow, SimpleBPMN.Process.class, "flowElements")) {
-						if (process.getFlowElements().contains(event)) {
-							_result.add(new Object[] { process, inFlow, event, _edge_targetRef });
+					FlowNode tmpNode = inFlow.getSourceRef();
+					if (tmpNode instanceof StartEvent) {
+						StartEvent node = (StartEvent) tmpNode;
+						for (SimpleBPMN.Process process : org.moflon.core.utilities.eMoflonEMFUtil
+								.getOppositeReferenceTyped(inFlow, SimpleBPMN.Process.class, "flowElements")) {
+							if (process.getFlowElements().contains(event)) {
+								if (process.getFlowElements().contains(node)) {
+									_result.add(new Object[] { node, process, inFlow, event, _edge_targetRef });
+								}
+							}
 						}
 					}
+
 				}
 			}
 
@@ -2646,9 +2852,9 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 
 	}
 
-	public static final boolean pattern_EndEvent2FinalStateFirst_21_3_expressionFBBBBB(EndEvent2FinalStateFirst _this,
-			Match match, SimpleBPMN.Process process, SequenceFlow inFlow, EndEvent event) {
-		boolean _localVariable_0 = _this.isAppropriate_FWD(match, process, inFlow, event);
+	public static final boolean pattern_EndEvent2FinalStateFirst_21_3_expressionFBBBBBB(EndEvent2FinalStateFirst _this,
+			Match match, StartEvent node, SimpleBPMN.Process process, SequenceFlow inFlow, EndEvent event) {
+		boolean _localVariable_0 = _this.isAppropriate_FWD(match, node, process, inFlow, event);
 		boolean _result = Boolean.valueOf(_localVariable_0);
 		return _result;
 	}
@@ -2721,7 +2927,8 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		return new Object[] { __result };
 	}
 
-	public static final Iterable<Object[]> pattern_EndEvent2FinalStateFirst_22_2_blackFFFB(EMoflonEdge _edge_incoming) {
+	public static final Iterable<Object[]> pattern_EndEvent2FinalStateFirst_22_2_blackFFFFB(
+			EMoflonEdge _edge_incoming) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		EObject tmpEvent = _edge_incoming.getSrc();
 		if (tmpEvent instanceof EndEvent) {
@@ -2730,12 +2937,19 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 			if (tmpInFlow instanceof SequenceFlow) {
 				SequenceFlow inFlow = (SequenceFlow) tmpInFlow;
 				if (event.equals(inFlow.getTargetRef())) {
-					for (SimpleBPMN.Process process : org.moflon.core.utilities.eMoflonEMFUtil
-							.getOppositeReferenceTyped(event, SimpleBPMN.Process.class, "flowElements")) {
-						if (process.getFlowElements().contains(inFlow)) {
-							_result.add(new Object[] { process, inFlow, event, _edge_incoming });
+					FlowNode tmpNode = inFlow.getSourceRef();
+					if (tmpNode instanceof StartEvent) {
+						StartEvent node = (StartEvent) tmpNode;
+						for (SimpleBPMN.Process process : org.moflon.core.utilities.eMoflonEMFUtil
+								.getOppositeReferenceTyped(event, SimpleBPMN.Process.class, "flowElements")) {
+							if (process.getFlowElements().contains(inFlow)) {
+								if (process.getFlowElements().contains(node)) {
+									_result.add(new Object[] { node, process, inFlow, event, _edge_incoming });
+								}
+							}
 						}
 					}
+
 				}
 			}
 
@@ -2753,9 +2967,9 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 
 	}
 
-	public static final boolean pattern_EndEvent2FinalStateFirst_22_3_expressionFBBBBB(EndEvent2FinalStateFirst _this,
-			Match match, SimpleBPMN.Process process, SequenceFlow inFlow, EndEvent event) {
-		boolean _localVariable_0 = _this.isAppropriate_FWD(match, process, inFlow, event);
+	public static final boolean pattern_EndEvent2FinalStateFirst_22_3_expressionFBBBBBB(EndEvent2FinalStateFirst _this,
+			Match match, StartEvent node, SimpleBPMN.Process process, SequenceFlow inFlow, EndEvent event) {
+		boolean _localVariable_0 = _this.isAppropriate_FWD(match, node, process, inFlow, event);
 		boolean _result = Boolean.valueOf(_localVariable_0);
 		return _result;
 	}
@@ -2829,7 +3043,7 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 	}
 
 	public static final Object[] pattern_EndEvent2FinalStateFirst_23_2_black_nac_0B(UCCondition state) {
-		for (UseCase __DEC_state_precondition_403151 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (UseCase __DEC_state_precondition_872862 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(state, UseCase.class, "precondition")) {
 			return new Object[] { state };
 		}
@@ -2837,9 +3051,9 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 	}
 
 	public static final Object[] pattern_EndEvent2FinalStateFirst_23_2_black_nac_1BB(UCCondition state, Flow flow) {
-		for (Flow __DEC_state_finalState_384471 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (Flow __DEC_state_finalState_129190 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(state, Flow.class, "finalState")) {
-			if (!flow.equals(__DEC_state_finalState_384471)) {
+			if (!flow.equals(__DEC_state_finalState_129190)) {
 				return new Object[] { state, flow };
 			}
 		}
@@ -2922,29 +3136,35 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		return new Object[] { result };
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_26_2_bindingFFFFFBB(Match targetMatch,
+	public static final Object[] pattern_EndEvent2FinalStateFirst_26_2_bindingFFFFFFBB(Match targetMatch,
 			Match sourceMatch) {
 		EObject _localVariable_0 = targetMatch.getObject("flow");
-		EObject _localVariable_1 = sourceMatch.getObject("process");
-		EObject _localVariable_2 = sourceMatch.getObject("inFlow");
-		EObject _localVariable_3 = sourceMatch.getObject("event");
-		EObject _localVariable_4 = targetMatch.getObject("state");
+		EObject _localVariable_1 = sourceMatch.getObject("node");
+		EObject _localVariable_2 = sourceMatch.getObject("process");
+		EObject _localVariable_3 = sourceMatch.getObject("inFlow");
+		EObject _localVariable_4 = sourceMatch.getObject("event");
+		EObject _localVariable_5 = targetMatch.getObject("state");
 		EObject tmpFlow = _localVariable_0;
-		EObject tmpProcess = _localVariable_1;
-		EObject tmpInFlow = _localVariable_2;
-		EObject tmpEvent = _localVariable_3;
-		EObject tmpState = _localVariable_4;
+		EObject tmpNode = _localVariable_1;
+		EObject tmpProcess = _localVariable_2;
+		EObject tmpInFlow = _localVariable_3;
+		EObject tmpEvent = _localVariable_4;
+		EObject tmpState = _localVariable_5;
 		if (tmpFlow instanceof Flow) {
 			Flow flow = (Flow) tmpFlow;
-			if (tmpProcess instanceof SimpleBPMN.Process) {
-				SimpleBPMN.Process process = (SimpleBPMN.Process) tmpProcess;
-				if (tmpInFlow instanceof SequenceFlow) {
-					SequenceFlow inFlow = (SequenceFlow) tmpInFlow;
-					if (tmpEvent instanceof EndEvent) {
-						EndEvent event = (EndEvent) tmpEvent;
-						if (tmpState instanceof UCCondition) {
-							UCCondition state = (UCCondition) tmpState;
-							return new Object[] { flow, process, inFlow, event, state, targetMatch, sourceMatch };
+			if (tmpNode instanceof StartEvent) {
+				StartEvent node = (StartEvent) tmpNode;
+				if (tmpProcess instanceof SimpleBPMN.Process) {
+					SimpleBPMN.Process process = (SimpleBPMN.Process) tmpProcess;
+					if (tmpInFlow instanceof SequenceFlow) {
+						SequenceFlow inFlow = (SequenceFlow) tmpInFlow;
+						if (tmpEvent instanceof EndEvent) {
+							EndEvent event = (EndEvent) tmpEvent;
+							if (tmpState instanceof UCCondition) {
+								UCCondition state = (UCCondition) tmpState;
+								return new Object[] { flow, node, process, inFlow, event, state, targetMatch,
+										sourceMatch };
+							}
 						}
 					}
 				}
@@ -2953,26 +3173,30 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_EndEvent2FinalStateFirst_26_2_blackBBBFBBBB(Flow flow,
-			SimpleBPMN.Process process, SequenceFlow inFlow, EndEvent event, UCCondition state, Match sourceMatch,
-			Match targetMatch) {
+	public static final Iterable<Object[]> pattern_EndEvent2FinalStateFirst_26_2_blackBBBBFBBBB(Flow flow,
+			StartEvent node, SimpleBPMN.Process process, SequenceFlow inFlow, EndEvent event, UCCondition state,
+			Match sourceMatch, Match targetMatch) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		if (!sourceMatch.equals(targetMatch)) {
 			if (process.getFlowElements().contains(inFlow)) {
 				if (process.getFlowElements().contains(event)) {
-					if (event.equals(inFlow.getTargetRef())) {
-						if (flow.getFinalState().contains(state)) {
-							boolean flow__empty = flow.is__empty();
-							if (Boolean.valueOf(flow__empty).equals(Boolean.valueOf(true))) {
-								for (SF2F _if2f : org.moflon.core.utilities.eMoflonEMFUtil
-										.getOppositeReferenceTyped(inFlow, SF2F.class, "source")) {
-									if (flow.equals(_if2f.getTarget())) {
-										_result.add(new Object[] { flow, process, inFlow, _if2f, event, state,
-												sourceMatch, targetMatch });
+					if (process.getFlowElements().contains(node)) {
+						if (event.equals(inFlow.getTargetRef())) {
+							if (flow.getFinalState().contains(state)) {
+								if (node.equals(inFlow.getSourceRef())) {
+									boolean flow__empty = flow.is__empty();
+									if (Boolean.valueOf(flow__empty).equals(Boolean.valueOf(true))) {
+										for (SF2F _if2f : org.moflon.core.utilities.eMoflonEMFUtil
+												.getOppositeReferenceTyped(inFlow, SF2F.class, "source")) {
+											if (flow.equals(_if2f.getTarget())) {
+												_result.add(new Object[] { flow, node, process, inFlow, _if2f, event,
+														state, sourceMatch, targetMatch });
+											}
+										}
 									}
+
 								}
 							}
-
 						}
 					}
 				}
@@ -2981,13 +3205,14 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		return _result;
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_26_2_greenBBBBBBBFB(Flow flow,
+	public static final Object[] pattern_EndEvent2FinalStateFirst_26_2_greenBBBBBBBBFB(Flow flow, StartEvent node,
 			SimpleBPMN.Process process, SequenceFlow inFlow, SF2F _if2f, EndEvent event, UCCondition state,
 			Match sourceMatch, Match targetMatch) {
 		IsApplicableMatchCC isApplicableMatch = TGGRuntimeFactory.eINSTANCE.createIsApplicableMatchCC();
 		String isApplicableMatch_ruleName_prime = "EndEvent2FinalStateFirst";
 		isApplicableMatch.setSourceMatch(sourceMatch);
 		isApplicableMatch.setTargetMatch(targetMatch);
+		isApplicableMatch.getAllContextElements().add(node);
 		isApplicableMatch.getAllContextElements().add(process);
 		isApplicableMatch.getAllContextElements().add(inFlow);
 		isApplicableMatch.getAllContextElements().add(event);
@@ -2995,18 +3220,19 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		isApplicableMatch.getAllContextElements().add(state);
 		isApplicableMatch.getAllContextElements().add(_if2f);
 		isApplicableMatch.setRuleName(isApplicableMatch_ruleName_prime);
-		return new Object[] { flow, process, inFlow, _if2f, event, state, sourceMatch, isApplicableMatch, targetMatch };
+		return new Object[] { flow, node, process, inFlow, _if2f, event, state, sourceMatch, isApplicableMatch,
+				targetMatch };
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_26_3_bindingFBBBBBBBBBB(
-			EndEvent2FinalStateFirst _this, IsApplicableMatchCC isApplicableMatch, Flow flow,
+	public static final Object[] pattern_EndEvent2FinalStateFirst_26_3_bindingFBBBBBBBBBBB(
+			EndEvent2FinalStateFirst _this, IsApplicableMatchCC isApplicableMatch, Flow flow, StartEvent node,
 			SimpleBPMN.Process process, SequenceFlow inFlow, SF2F _if2f, EndEvent event, UCCondition state,
 			Match sourceMatch, Match targetMatch) {
-		CSP _localVariable_0 = _this.isApplicable_solveCsp_CC(isApplicableMatch, flow, process, inFlow, _if2f, event,
-				state, sourceMatch, targetMatch);
+		CSP _localVariable_0 = _this.isApplicable_solveCsp_CC(isApplicableMatch, flow, node, process, inFlow, _if2f,
+				event, state, sourceMatch, targetMatch);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, isApplicableMatch, flow, process, inFlow, _if2f, event, state,
+			return new Object[] { csp, _this, isApplicableMatch, flow, node, process, inFlow, _if2f, event, state,
 					sourceMatch, targetMatch };
 		}
 		return null;
@@ -3016,12 +3242,12 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		return new Object[] { csp };
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_26_3_bindingAndBlackFBBBBBBBBBB(
-			EndEvent2FinalStateFirst _this, IsApplicableMatchCC isApplicableMatch, Flow flow,
+	public static final Object[] pattern_EndEvent2FinalStateFirst_26_3_bindingAndBlackFBBBBBBBBBBB(
+			EndEvent2FinalStateFirst _this, IsApplicableMatchCC isApplicableMatch, Flow flow, StartEvent node,
 			SimpleBPMN.Process process, SequenceFlow inFlow, SF2F _if2f, EndEvent event, UCCondition state,
 			Match sourceMatch, Match targetMatch) {
-		Object[] result_pattern_EndEvent2FinalStateFirst_26_3_binding = pattern_EndEvent2FinalStateFirst_26_3_bindingFBBBBBBBBBB(
-				_this, isApplicableMatch, flow, process, inFlow, _if2f, event, state, sourceMatch, targetMatch);
+		Object[] result_pattern_EndEvent2FinalStateFirst_26_3_binding = pattern_EndEvent2FinalStateFirst_26_3_bindingFBBBBBBBBBBB(
+				_this, isApplicableMatch, flow, node, process, inFlow, _if2f, event, state, sourceMatch, targetMatch);
 		if (result_pattern_EndEvent2FinalStateFirst_26_3_binding != null) {
 			CSP csp = (CSP) result_pattern_EndEvent2FinalStateFirst_26_3_binding[0];
 
@@ -3029,7 +3255,7 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 					csp);
 			if (result_pattern_EndEvent2FinalStateFirst_26_3_black != null) {
 
-				return new Object[] { csp, _this, isApplicableMatch, flow, process, inFlow, _if2f, event, state,
+				return new Object[] { csp, _this, isApplicableMatch, flow, node, process, inFlow, _if2f, event, state,
 						sourceMatch, targetMatch };
 			}
 		}
@@ -3061,33 +3287,39 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		return new Object[] { _this };
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_29_2_bindingFFFFFFB(
+	public static final Object[] pattern_EndEvent2FinalStateFirst_29_2_bindingFFFFFFFB(
 			IsApplicableMatchCC isApplicableMatch) {
 		EObject _localVariable_0 = isApplicableMatch.getObject("flow");
-		EObject _localVariable_1 = isApplicableMatch.getObject("process");
-		EObject _localVariable_2 = isApplicableMatch.getObject("inFlow");
-		EObject _localVariable_3 = isApplicableMatch.getObject("_if2f");
-		EObject _localVariable_4 = isApplicableMatch.getObject("event");
-		EObject _localVariable_5 = isApplicableMatch.getObject("state");
+		EObject _localVariable_1 = isApplicableMatch.getObject("node");
+		EObject _localVariable_2 = isApplicableMatch.getObject("process");
+		EObject _localVariable_3 = isApplicableMatch.getObject("inFlow");
+		EObject _localVariable_4 = isApplicableMatch.getObject("_if2f");
+		EObject _localVariable_5 = isApplicableMatch.getObject("event");
+		EObject _localVariable_6 = isApplicableMatch.getObject("state");
 		EObject tmpFlow = _localVariable_0;
-		EObject tmpProcess = _localVariable_1;
-		EObject tmpInFlow = _localVariable_2;
-		EObject tmp_if2f = _localVariable_3;
-		EObject tmpEvent = _localVariable_4;
-		EObject tmpState = _localVariable_5;
+		EObject tmpNode = _localVariable_1;
+		EObject tmpProcess = _localVariable_2;
+		EObject tmpInFlow = _localVariable_3;
+		EObject tmp_if2f = _localVariable_4;
+		EObject tmpEvent = _localVariable_5;
+		EObject tmpState = _localVariable_6;
 		if (tmpFlow instanceof Flow) {
 			Flow flow = (Flow) tmpFlow;
-			if (tmpProcess instanceof SimpleBPMN.Process) {
-				SimpleBPMN.Process process = (SimpleBPMN.Process) tmpProcess;
-				if (tmpInFlow instanceof SequenceFlow) {
-					SequenceFlow inFlow = (SequenceFlow) tmpInFlow;
-					if (tmp_if2f instanceof SF2F) {
-						SF2F _if2f = (SF2F) tmp_if2f;
-						if (tmpEvent instanceof EndEvent) {
-							EndEvent event = (EndEvent) tmpEvent;
-							if (tmpState instanceof UCCondition) {
-								UCCondition state = (UCCondition) tmpState;
-								return new Object[] { flow, process, inFlow, _if2f, event, state, isApplicableMatch };
+			if (tmpNode instanceof StartEvent) {
+				StartEvent node = (StartEvent) tmpNode;
+				if (tmpProcess instanceof SimpleBPMN.Process) {
+					SimpleBPMN.Process process = (SimpleBPMN.Process) tmpProcess;
+					if (tmpInFlow instanceof SequenceFlow) {
+						SequenceFlow inFlow = (SequenceFlow) tmpInFlow;
+						if (tmp_if2f instanceof SF2F) {
+							SF2F _if2f = (SF2F) tmp_if2f;
+							if (tmpEvent instanceof EndEvent) {
+								EndEvent event = (EndEvent) tmpEvent;
+								if (tmpState instanceof UCCondition) {
+									UCCondition state = (UCCondition) tmpState;
+									return new Object[] { flow, node, process, inFlow, _if2f, event, state,
+											isApplicableMatch };
+								}
 							}
 						}
 					}
@@ -3097,21 +3329,25 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		return null;
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_29_2_blackBBBBBBB(Flow flow,
+	public static final Object[] pattern_EndEvent2FinalStateFirst_29_2_blackBBBBBBBB(Flow flow, StartEvent node,
 			SimpleBPMN.Process process, SequenceFlow inFlow, SF2F _if2f, EndEvent event, UCCondition state,
 			IsApplicableMatchCC isApplicableMatch) {
 		if (process.getFlowElements().contains(inFlow)) {
 			if (process.getFlowElements().contains(event)) {
-				if (event.equals(inFlow.getTargetRef())) {
-					if (flow.getFinalState().contains(state)) {
-						if (inFlow.equals(_if2f.getSource())) {
-							if (flow.equals(_if2f.getTarget())) {
-								boolean flow__empty = flow.is__empty();
-								if (Boolean.valueOf(flow__empty).equals(Boolean.valueOf(true))) {
-									return new Object[] { flow, process, inFlow, _if2f, event, state,
-											isApplicableMatch };
-								}
+				if (process.getFlowElements().contains(node)) {
+					if (event.equals(inFlow.getTargetRef())) {
+						if (flow.getFinalState().contains(state)) {
+							if (inFlow.equals(_if2f.getSource())) {
+								if (flow.equals(_if2f.getTarget())) {
+									if (node.equals(inFlow.getSourceRef())) {
+										boolean flow__empty = flow.is__empty();
+										if (Boolean.valueOf(flow__empty).equals(Boolean.valueOf(true))) {
+											return new Object[] { flow, node, process, inFlow, _if2f, event, state,
+													isApplicableMatch };
+										}
 
+									}
+								}
 							}
 						}
 					}
@@ -3121,23 +3357,24 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		return null;
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_29_2_bindingAndBlackFFFFFFB(
+	public static final Object[] pattern_EndEvent2FinalStateFirst_29_2_bindingAndBlackFFFFFFFB(
 			IsApplicableMatchCC isApplicableMatch) {
-		Object[] result_pattern_EndEvent2FinalStateFirst_29_2_binding = pattern_EndEvent2FinalStateFirst_29_2_bindingFFFFFFB(
+		Object[] result_pattern_EndEvent2FinalStateFirst_29_2_binding = pattern_EndEvent2FinalStateFirst_29_2_bindingFFFFFFFB(
 				isApplicableMatch);
 		if (result_pattern_EndEvent2FinalStateFirst_29_2_binding != null) {
 			Flow flow = (Flow) result_pattern_EndEvent2FinalStateFirst_29_2_binding[0];
-			SimpleBPMN.Process process = (SimpleBPMN.Process) result_pattern_EndEvent2FinalStateFirst_29_2_binding[1];
-			SequenceFlow inFlow = (SequenceFlow) result_pattern_EndEvent2FinalStateFirst_29_2_binding[2];
-			SF2F _if2f = (SF2F) result_pattern_EndEvent2FinalStateFirst_29_2_binding[3];
-			EndEvent event = (EndEvent) result_pattern_EndEvent2FinalStateFirst_29_2_binding[4];
-			UCCondition state = (UCCondition) result_pattern_EndEvent2FinalStateFirst_29_2_binding[5];
+			StartEvent node = (StartEvent) result_pattern_EndEvent2FinalStateFirst_29_2_binding[1];
+			SimpleBPMN.Process process = (SimpleBPMN.Process) result_pattern_EndEvent2FinalStateFirst_29_2_binding[2];
+			SequenceFlow inFlow = (SequenceFlow) result_pattern_EndEvent2FinalStateFirst_29_2_binding[3];
+			SF2F _if2f = (SF2F) result_pattern_EndEvent2FinalStateFirst_29_2_binding[4];
+			EndEvent event = (EndEvent) result_pattern_EndEvent2FinalStateFirst_29_2_binding[5];
+			UCCondition state = (UCCondition) result_pattern_EndEvent2FinalStateFirst_29_2_binding[6];
 
-			Object[] result_pattern_EndEvent2FinalStateFirst_29_2_black = pattern_EndEvent2FinalStateFirst_29_2_blackBBBBBBB(
-					flow, process, inFlow, _if2f, event, state, isApplicableMatch);
+			Object[] result_pattern_EndEvent2FinalStateFirst_29_2_black = pattern_EndEvent2FinalStateFirst_29_2_blackBBBBBBBB(
+					flow, node, process, inFlow, _if2f, event, state, isApplicableMatch);
 			if (result_pattern_EndEvent2FinalStateFirst_29_2_black != null) {
 
-				return new Object[] { flow, process, inFlow, _if2f, event, state, isApplicableMatch };
+				return new Object[] { flow, node, process, inFlow, _if2f, event, state, isApplicableMatch };
 			}
 		}
 		return null;
@@ -3194,6 +3431,14 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 	}
 
 	public static final Object[] pattern_EndEvent2FinalStateFirst_30_2_black_nac_3BB(
+			ModelgeneratorRuleResult ruleResult, StartEvent node) {
+		if (ruleResult.getSourceObjects().contains(node)) {
+			return new Object[] { ruleResult, node };
+		}
+		return null;
+	}
+
+	public static final Object[] pattern_EndEvent2FinalStateFirst_30_2_black_nac_4BB(
 			ModelgeneratorRuleResult ruleResult, SimpleBPMN.Process process) {
 		if (ruleResult.getSourceObjects().contains(process)) {
 			return new Object[] { ruleResult, process };
@@ -3201,7 +3446,7 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_EndEvent2FinalStateFirst_30_2_blackFFFFFBB(
+	public static final Iterable<Object[]> pattern_EndEvent2FinalStateFirst_30_2_blackFFFFFFBB(
 			RuleEntryContainer ruleEntryContainer, ModelgeneratorRuleResult ruleResult) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		for (RuleEntryList _if2fList : ruleEntryContainer.getRuleEntryList()) {
@@ -3214,22 +3459,35 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 						if (inFlow != null) {
 							boolean flow__empty = flow.is__empty();
 							if (Boolean.valueOf(flow__empty).equals(Boolean.valueOf(true))) {
-								if (pattern_EndEvent2FinalStateFirst_30_2_black_nac_1BB(ruleResult, _if2f) == null) {
-									if (pattern_EndEvent2FinalStateFirst_30_2_black_nac_0BB(ruleResult, flow) == null) {
-										if (pattern_EndEvent2FinalStateFirst_30_2_black_nac_2BB(ruleResult,
-												inFlow) == null) {
-											for (SimpleBPMN.Process process : org.moflon.core.utilities.eMoflonEMFUtil
-													.getOppositeReferenceTyped(inFlow, SimpleBPMN.Process.class,
-															"flowElements")) {
+								FlowNode tmpNode = inFlow.getSourceRef();
+								if (tmpNode instanceof StartEvent) {
+									StartEvent node = (StartEvent) tmpNode;
+									if (pattern_EndEvent2FinalStateFirst_30_2_black_nac_1BB(ruleResult,
+											_if2f) == null) {
+										if (pattern_EndEvent2FinalStateFirst_30_2_black_nac_0BB(ruleResult,
+												flow) == null) {
+											if (pattern_EndEvent2FinalStateFirst_30_2_black_nac_2BB(ruleResult,
+													inFlow) == null) {
 												if (pattern_EndEvent2FinalStateFirst_30_2_black_nac_3BB(ruleResult,
-														process) == null) {
-													_result.add(new Object[] { _if2fList, flow, _if2f, inFlow, process,
-															ruleEntryContainer, ruleResult });
+														node) == null) {
+													for (SimpleBPMN.Process process : org.moflon.core.utilities.eMoflonEMFUtil
+															.getOppositeReferenceTyped(inFlow, SimpleBPMN.Process.class,
+																	"flowElements")) {
+														if (process.getFlowElements().contains(node)) {
+															if (pattern_EndEvent2FinalStateFirst_30_2_black_nac_4BB(
+																	ruleResult, process) == null) {
+																_result.add(new Object[] { _if2fList, flow, _if2f,
+																		inFlow, node, process, ruleEntryContainer,
+																		ruleResult });
+															}
+														}
+													}
 												}
 											}
 										}
 									}
 								}
+
 							}
 
 						}
@@ -3242,14 +3500,14 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		return _result;
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_30_3_bindingFBBBBBBB(EndEvent2FinalStateFirst _this,
-			IsApplicableMatch isApplicableMatch, Flow flow, SimpleBPMN.Process process, SequenceFlow inFlow, SF2F _if2f,
-			ModelgeneratorRuleResult ruleResult) {
-		CSP _localVariable_0 = _this.generateModel_solveCsp_BWD(isApplicableMatch, flow, process, inFlow, _if2f,
+	public static final Object[] pattern_EndEvent2FinalStateFirst_30_3_bindingFBBBBBBBB(EndEvent2FinalStateFirst _this,
+			IsApplicableMatch isApplicableMatch, Flow flow, StartEvent node, SimpleBPMN.Process process,
+			SequenceFlow inFlow, SF2F _if2f, ModelgeneratorRuleResult ruleResult) {
+		CSP _localVariable_0 = _this.generateModel_solveCsp_BWD(isApplicableMatch, flow, node, process, inFlow, _if2f,
 				ruleResult);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, isApplicableMatch, flow, process, inFlow, _if2f, ruleResult };
+			return new Object[] { csp, _this, isApplicableMatch, flow, node, process, inFlow, _if2f, ruleResult };
 		}
 		return null;
 	}
@@ -3258,11 +3516,11 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		return new Object[] { csp };
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_30_3_bindingAndBlackFBBBBBBB(
-			EndEvent2FinalStateFirst _this, IsApplicableMatch isApplicableMatch, Flow flow, SimpleBPMN.Process process,
-			SequenceFlow inFlow, SF2F _if2f, ModelgeneratorRuleResult ruleResult) {
-		Object[] result_pattern_EndEvent2FinalStateFirst_30_3_binding = pattern_EndEvent2FinalStateFirst_30_3_bindingFBBBBBBB(
-				_this, isApplicableMatch, flow, process, inFlow, _if2f, ruleResult);
+	public static final Object[] pattern_EndEvent2FinalStateFirst_30_3_bindingAndBlackFBBBBBBBB(
+			EndEvent2FinalStateFirst _this, IsApplicableMatch isApplicableMatch, Flow flow, StartEvent node,
+			SimpleBPMN.Process process, SequenceFlow inFlow, SF2F _if2f, ModelgeneratorRuleResult ruleResult) {
+		Object[] result_pattern_EndEvent2FinalStateFirst_30_3_binding = pattern_EndEvent2FinalStateFirst_30_3_bindingFBBBBBBBB(
+				_this, isApplicableMatch, flow, node, process, inFlow, _if2f, ruleResult);
 		if (result_pattern_EndEvent2FinalStateFirst_30_3_binding != null) {
 			CSP csp = (CSP) result_pattern_EndEvent2FinalStateFirst_30_3_binding[0];
 
@@ -3270,7 +3528,7 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 					csp);
 			if (result_pattern_EndEvent2FinalStateFirst_30_3_black != null) {
 
-				return new Object[] { csp, _this, isApplicableMatch, flow, process, inFlow, _if2f, ruleResult };
+				return new Object[] { csp, _this, isApplicableMatch, flow, node, process, inFlow, _if2f, ruleResult };
 			}
 		}
 		return null;
@@ -3283,21 +3541,21 @@ public class EndEvent2FinalStateFirstImpl extends AbstractRuleImpl implements En
 		return _result;
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_30_5_blackBBBB(Flow flow, SimpleBPMN.Process process,
-			SequenceFlow inFlow, SF2F _if2f) {
+	public static final Object[] pattern_EndEvent2FinalStateFirst_30_5_blackBBBBB(Flow flow, StartEvent node,
+			SimpleBPMN.Process process, SequenceFlow inFlow, SF2F _if2f) {
 		boolean flow__empty = flow.is__empty();
 		if (Boolean.valueOf(flow__empty).equals(Boolean.valueOf(true))) {
-			return new Object[] { flow, process, inFlow, _if2f };
+			return new Object[] { flow, node, process, inFlow, _if2f };
 		}
 
 		return null;
 	}
 
-	public static final Object[] pattern_EndEvent2FinalStateFirst_30_6_blackBBBBB(Flow flow, SimpleBPMN.Process process,
-			SequenceFlow inFlow, SF2F _if2f, ModelgeneratorRuleResult ruleResult) {
+	public static final Object[] pattern_EndEvent2FinalStateFirst_30_6_blackBBBBBB(Flow flow, StartEvent node,
+			SimpleBPMN.Process process, SequenceFlow inFlow, SF2F _if2f, ModelgeneratorRuleResult ruleResult) {
 		boolean flow__empty = flow.is__empty();
 		if (Boolean.valueOf(flow__empty).equals(Boolean.valueOf(true))) {
-			return new Object[] { flow, process, inFlow, _if2f, ruleResult };
+			return new Object[] { flow, node, process, inFlow, _if2f, ruleResult };
 		}
 
 		return null;

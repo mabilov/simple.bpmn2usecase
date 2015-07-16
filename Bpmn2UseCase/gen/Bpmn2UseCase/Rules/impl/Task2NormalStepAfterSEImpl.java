@@ -783,7 +783,7 @@ public class Task2NormalStepAfterSEImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_105(EMoflonEdge _edge_steps) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_94(EMoflonEdge _edge_steps) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterSEImpl
 				.pattern_Task2NormalStepAfterSE_20_1_bindingAndBlackFFB(this);
@@ -836,7 +836,7 @@ public class Task2NormalStepAfterSEImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_106(EMoflonEdge _edge___first) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_95(EMoflonEdge _edge___first) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterSEImpl
 				.pattern_Task2NormalStepAfterSE_21_1_bindingAndBlackFFB(this);
@@ -889,7 +889,7 @@ public class Task2NormalStepAfterSEImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_332(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_285(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterSEImpl
 				.pattern_Task2NormalStepAfterSE_22_1_bindingAndBlackFFB(this);
@@ -945,7 +945,7 @@ public class Task2NormalStepAfterSEImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_333(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_286(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterSEImpl
 				.pattern_Task2NormalStepAfterSE_23_1_bindingAndBlackFFB(this);
@@ -1001,7 +1001,7 @@ public class Task2NormalStepAfterSEImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_334(EMoflonEdge _edge_targetRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_287(EMoflonEdge _edge_targetRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterSEImpl
 				.pattern_Task2NormalStepAfterSE_24_1_bindingAndBlackFFB(this);
@@ -1057,7 +1057,7 @@ public class Task2NormalStepAfterSEImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_335(EMoflonEdge _edge_incoming) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_288(EMoflonEdge _edge_incoming) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterSEImpl
 				.pattern_Task2NormalStepAfterSE_25_1_bindingAndBlackFFB(this);
@@ -1113,7 +1113,7 @@ public class Task2NormalStepAfterSEImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_336(EMoflonEdge _edge_sourceRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_289(EMoflonEdge _edge_sourceRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterSEImpl
 				.pattern_Task2NormalStepAfterSE_26_1_bindingAndBlackFFB(this);
@@ -1169,7 +1169,7 @@ public class Task2NormalStepAfterSEImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_337(EMoflonEdge _edge_outgoing) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_290(EMoflonEdge _edge_outgoing) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterSEImpl
 				.pattern_Task2NormalStepAfterSE_27_1_bindingAndBlackFFB(this);
@@ -1728,22 +1728,22 @@ public class Task2NormalStepAfterSEImpl extends AbstractRuleImpl implements Task
 			return null;
 		case RulesPackage.TASK2_NORMAL_STEP_AFTER_SE___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_SE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_105__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_105((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_SE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_106__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_106((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_SE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_332__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_332((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_SE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_333__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_333((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_SE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_334__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_334((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_SE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_335__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_335((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_SE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_336__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_336((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_SE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_337__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_337((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_SE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_94__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_94((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_SE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_95__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_95((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_SE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_285__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_285((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_SE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_286__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_286((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_SE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_287__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_287((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_SE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_288__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_288((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_SE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_289__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_289((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_SE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_290__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_290((EMoflonEdge) arguments.get(0));
 		case RulesPackage.TASK2_NORMAL_STEP_AFTER_SE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.TASK2_NORMAL_STEP_AFTER_SE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:

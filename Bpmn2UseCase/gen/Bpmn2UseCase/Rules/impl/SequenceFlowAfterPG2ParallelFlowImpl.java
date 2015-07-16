@@ -772,7 +772,7 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_371(EMoflonEdge _edge_sourceRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_324(EMoflonEdge _edge_sourceRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SequenceFlowAfterPG2ParallelFlowImpl
 				.pattern_SequenceFlowAfterPG2ParallelFlow_20_1_bindingAndBlackFFB(this);
@@ -831,7 +831,7 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_372(EMoflonEdge _edge_outgoing) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_325(EMoflonEdge _edge_outgoing) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SequenceFlowAfterPG2ParallelFlowImpl
 				.pattern_SequenceFlowAfterPG2ParallelFlow_21_1_bindingAndBlackFFB(this);
@@ -890,7 +890,7 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_116(EMoflonEdge _edge_invokedFlows) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_105(EMoflonEdge _edge_invokedFlows) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SequenceFlowAfterPG2ParallelFlowImpl
 				.pattern_SequenceFlowAfterPG2ParallelFlow_22_1_bindingAndBlackFFB(this);
@@ -949,7 +949,7 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_373(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_326(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SequenceFlowAfterPG2ParallelFlowImpl
 				.pattern_SequenceFlowAfterPG2ParallelFlow_23_1_bindingAndBlackFFB(this);
@@ -1008,7 +1008,7 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_117(EMoflonEdge _edge_flows) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_106(EMoflonEdge _edge_flows) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SequenceFlowAfterPG2ParallelFlowImpl
 				.pattern_SequenceFlowAfterPG2ParallelFlow_24_1_bindingAndBlackFFB(this);
@@ -1583,16 +1583,16 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 			return null;
 		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_371__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_371((EMoflonEdge) arguments.get(0));
-		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_372__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_372((EMoflonEdge) arguments.get(0));
-		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_116__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_116((EMoflonEdge) arguments.get(0));
-		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_373__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_373((EMoflonEdge) arguments.get(0));
-		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_117__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_117((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_324__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_324((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_325__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_325((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_105__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_105((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_326__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_326((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_106__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_106((EMoflonEdge) arguments.get(0));
 		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.SEQUENCE_FLOW_AFTER_PG2_PARALLEL_FLOW___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
@@ -3152,9 +3152,9 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 
 	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_22_2_black_nac_0BB(ParallelFlow flow,
 			ParallelStep step) {
-		for (ParallelStep __DEC_flow_invokedFlows_455700 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ParallelStep __DEC_flow_invokedFlows_436970 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(flow, ParallelStep.class, "invokedFlows")) {
-			if (!step.equals(__DEC_flow_invokedFlows_455700)) {
+			if (!step.equals(__DEC_flow_invokedFlows_436970)) {
 				return new Object[] { flow, step };
 			}
 		}
@@ -3391,9 +3391,9 @@ public class SequenceFlowAfterPG2ParallelFlowImpl extends AbstractRuleImpl imple
 
 	public static final Object[] pattern_SequenceFlowAfterPG2ParallelFlow_24_2_black_nac_0BB(ParallelFlow flow,
 			ParallelStep step) {
-		for (ParallelStep __DEC_flow_invokedFlows_395232 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ParallelStep __DEC_flow_invokedFlows_405152 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(flow, ParallelStep.class, "invokedFlows")) {
-			if (!step.equals(__DEC_flow_invokedFlows_395232)) {
+			if (!step.equals(__DEC_flow_invokedFlows_405152)) {
 				return new Object[] { flow, step };
 			}
 		}

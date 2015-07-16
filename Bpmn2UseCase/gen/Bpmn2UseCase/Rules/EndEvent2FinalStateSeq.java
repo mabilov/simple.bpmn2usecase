@@ -50,7 +50,7 @@ public interface EndEvent2FinalStateSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	boolean isAppropriate_FWD(Match match, FlowNode node, SequenceFlow inFlow, SimpleBPMN.Process process,
+	boolean isAppropriate_FWD(Match match, FlowNode node, SimpleBPMN.Process process, SequenceFlow inFlow,
 			EndEvent event);
 
 	/**
@@ -75,7 +75,7 @@ public interface EndEvent2FinalStateSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjectsToMatch_FWD(Match match, FlowNode node, SequenceFlow inFlow, SimpleBPMN.Process process,
+	void registerObjectsToMatch_FWD(Match match, FlowNode node, SimpleBPMN.Process process, SequenceFlow inFlow,
 			EndEvent event);
 
 	/**
@@ -84,7 +84,7 @@ public interface EndEvent2FinalStateSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isAppropriate_solveCsp_FWD(Match match, FlowNode node, SequenceFlow inFlow, SimpleBPMN.Process process,
+	CSP isAppropriate_solveCsp_FWD(Match match, FlowNode node, SimpleBPMN.Process process, SequenceFlow inFlow,
 			EndEvent event);
 
 	/**
@@ -101,8 +101,8 @@ public interface EndEvent2FinalStateSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, Step step, FlowNode node, Flow flow,
-			SequenceFlow inFlow, SimpleBPMN.Process process, SF2F _if2f, FN2S _n2s, EndEvent event);
+	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, Step step, FlowNode node, Flow flow, FN2S _n2s,
+			SimpleBPMN.Process process, SequenceFlow inFlow, SF2F _if2f, EndEvent event);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -118,8 +118,8 @@ public interface EndEvent2FinalStateSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_FWD(PerformRuleResult ruleresult, EObject step, EObject node, EObject flow, EObject inFlow,
-			EObject process, EObject _if2f, EObject _n2s, EObject event, EObject state, EObject _e2s);
+	void registerObjects_FWD(PerformRuleResult ruleresult, EObject step, EObject node, EObject flow, EObject _n2s,
+			EObject process, EObject inFlow, EObject _if2f, EObject event, EObject state, EObject _e2s);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -183,8 +183,8 @@ public interface EndEvent2FinalStateSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, Step step, FlowNode node, Flow flow,
-			SequenceFlow inFlow, SimpleBPMN.Process process, SF2F _if2f, FN2S _n2s, UCCondition state);
+	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, Step step, FlowNode node, Flow flow, FN2S _n2s,
+			SimpleBPMN.Process process, SequenceFlow inFlow, SF2F _if2f, UCCondition state);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -200,8 +200,8 @@ public interface EndEvent2FinalStateSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_BWD(PerformRuleResult ruleresult, EObject step, EObject node, EObject flow, EObject inFlow,
-			EObject process, EObject _if2f, EObject _n2s, EObject event, EObject state, EObject _e2s);
+	void registerObjects_BWD(PerformRuleResult ruleresult, EObject step, EObject node, EObject flow, EObject _n2s,
+			EObject process, EObject inFlow, EObject _if2f, EObject event, EObject state, EObject _e2s);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -217,7 +217,7 @@ public interface EndEvent2FinalStateSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_374(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_327(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -225,7 +225,7 @@ public interface EndEvent2FinalStateSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_375(EMoflonEdge _edge_targetRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_328(EMoflonEdge _edge_targetRef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -233,7 +233,7 @@ public interface EndEvent2FinalStateSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_376(EMoflonEdge _edge_incoming);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_329(EMoflonEdge _edge_incoming);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -241,7 +241,7 @@ public interface EndEvent2FinalStateSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_118(EMoflonEdge _edge_finalState);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_107(EMoflonEdge _edge_finalState);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -273,8 +273,8 @@ public interface EndEvent2FinalStateSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_CC(IsApplicableMatchCC isApplicableMatch, Step step, FlowNode node, Flow flow,
-			SequenceFlow inFlow, SimpleBPMN.Process process, SF2F _if2f, FN2S _n2s, EndEvent event, UCCondition state,
+	CSP isApplicable_solveCsp_CC(IsApplicableMatchCC isApplicableMatch, Step step, FlowNode node, Flow flow, FN2S _n2s,
+			SimpleBPMN.Process process, SequenceFlow inFlow, SF2F _if2f, EndEvent event, UCCondition state,
 			Match sourceMatch, Match targetMatch);
 
 	/**
@@ -307,9 +307,8 @@ public interface EndEvent2FinalStateSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, Step step, FlowNode node, Flow flow,
-			SequenceFlow inFlow, SimpleBPMN.Process process, SF2F _if2f, FN2S _n2s,
-			ModelgeneratorRuleResult ruleResult);
+	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, Step step, FlowNode node, Flow flow, FN2S _n2s,
+			SimpleBPMN.Process process, SequenceFlow inFlow, SF2F _if2f, ModelgeneratorRuleResult ruleResult);
 
 	/**
 	 * <!-- begin-user-doc -->

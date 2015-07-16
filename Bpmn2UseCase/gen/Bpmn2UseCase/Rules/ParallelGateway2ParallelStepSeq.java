@@ -121,7 +121,7 @@ public interface ParallelGateway2ParallelStepSeq extends EObject, AbstractRule {
 	 */
 	void registerObjects_FWD(PerformRuleResult ruleresult, EObject _t2ns, EObject node, EObject prevStep, EObject step,
 			EObject _pgw2s, EObject process, EObject flow, EObject sf1, EObject pgw, EObject _sf2f1, EObject pcgw,
-			EObject sf2, EObject _sf22f2);
+			EObject sf2, EObject _sf22f2, EObject _pcgw2s);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -204,7 +204,7 @@ public interface ParallelGateway2ParallelStepSeq extends EObject, AbstractRule {
 	 */
 	void registerObjects_BWD(PerformRuleResult ruleresult, EObject _t2ns, EObject node, EObject prevStep, EObject step,
 			EObject _pgw2s, EObject process, EObject flow, EObject sf1, EObject pgw, EObject _sf2f1, EObject pcgw,
-			EObject sf2, EObject _sf22f2);
+			EObject sf2, EObject _sf22f2, EObject _pcgw2s);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -220,7 +220,7 @@ public interface ParallelGateway2ParallelStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_109(EMoflonEdge _edge_next);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_98(EMoflonEdge _edge_next);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -228,7 +228,7 @@ public interface ParallelGateway2ParallelStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_344(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_297(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -236,7 +236,7 @@ public interface ParallelGateway2ParallelStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_345(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_298(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -244,7 +244,7 @@ public interface ParallelGateway2ParallelStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_346(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_299(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -252,7 +252,7 @@ public interface ParallelGateway2ParallelStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_110(EMoflonEdge _edge_steps);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_99(EMoflonEdge _edge_steps);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -260,7 +260,7 @@ public interface ParallelGateway2ParallelStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_347(EMoflonEdge _edge_targetRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_300(EMoflonEdge _edge_targetRef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -268,7 +268,7 @@ public interface ParallelGateway2ParallelStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_348(EMoflonEdge _edge_incoming);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_301(EMoflonEdge _edge_incoming);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -276,7 +276,7 @@ public interface ParallelGateway2ParallelStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_349(EMoflonEdge _edge___conv);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_302(EMoflonEdge _edge___conv);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -284,7 +284,7 @@ public interface ParallelGateway2ParallelStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_350(EMoflonEdge _edge_sourceRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_303(EMoflonEdge _edge_sourceRef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -292,7 +292,7 @@ public interface ParallelGateway2ParallelStepSeq extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_351(EMoflonEdge _edge_outgoing);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_304(EMoflonEdge _edge_outgoing);
 
 	/**
 	 * <!-- begin-user-doc -->

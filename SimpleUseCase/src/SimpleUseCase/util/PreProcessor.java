@@ -1,7 +1,5 @@
 package SimpleUseCase.util;
 
-import java.util.Optional;
-
 import org.eclipse.emf.common.util.EList;
 
 import SimpleUseCase.Flow;
@@ -26,24 +24,10 @@ public class PreProcessor {
 		return null;
 	}
 
-	private static Step _findLast(Flow flow) {
-		Optional<Step> step = flow.getSteps().stream().filter(s -> s.getNext() == null).findAny();
-		if (step.isPresent())
-			return step.get();
-		else
-			return null;
-	}
-
 	public static void process(UseCase model) {
 		for (Flow flow : model.getFlows()) {
-			if (flow.getSteps().isEmpty()) {
-				flow.set__empty(true);
-				continue;
-			}
 			Step first = _findFirst(flow);
-			Step last = _findLast(flow);
 			flow.set__first(first);
-			flow.set__last(last);
 		}
 	}
 }
