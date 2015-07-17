@@ -107,6 +107,21 @@ public class SimpleUseCaseAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseNamedFlow(NamedFlow object) {
+			return createNamedFlowAdapter();
+		}
+
+		@Override
+		public Adapter caseAlternativeFlow(AlternativeFlow object) {
+			return createAlternativeFlowAdapter();
+		}
+
+		@Override
+		public Adapter caseChoiceStep(ChoiceStep object) {
+			return createChoiceStepAdapter();
+		}
+
+		@Override
 		public Adapter defaultCase(EObject object) {
 			return createEObjectAdapter();
 		}
@@ -234,6 +249,48 @@ public class SimpleUseCaseAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createUCConditionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link SimpleUseCase.NamedFlow <em>Named Flow</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see SimpleUseCase.NamedFlow
+	 * @generated
+	 */
+	public Adapter createNamedFlowAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link SimpleUseCase.AlternativeFlow <em>Alternative Flow</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see SimpleUseCase.AlternativeFlow
+	 * @generated
+	 */
+	public Adapter createAlternativeFlowAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link SimpleUseCase.ChoiceStep <em>Choice Step</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see SimpleUseCase.ChoiceStep
+	 * @generated
+	 */
+	public Adapter createChoiceStepAdapter() {
 		return null;
 	}
 

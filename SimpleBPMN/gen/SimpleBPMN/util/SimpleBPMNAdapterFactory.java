@@ -4,8 +4,10 @@ package SimpleBPMN.util;
 
 import SimpleBPMN.EndEvent;
 import SimpleBPMN.Event;
+import SimpleBPMN.ExclusiveGateway;
 import SimpleBPMN.FlowElement;
 import SimpleBPMN.FlowNode;
+import SimpleBPMN.Gateway;
 import SimpleBPMN.ParallelGateway;
 import SimpleBPMN.SequenceFlow;
 import SimpleBPMN.SimpleBPMNPackage;
@@ -117,6 +119,16 @@ public class SimpleBPMNAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseEvent(Event object) {
 			return createEventAdapter();
+		}
+
+		@Override
+		public Adapter caseGateway(Gateway object) {
+			return createGatewayAdapter();
+		}
+
+		@Override
+		public Adapter caseExclusiveGateway(ExclusiveGateway object) {
+			return createExclusiveGatewayAdapter();
 		}
 
 		@Override
@@ -261,6 +273,34 @@ public class SimpleBPMNAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createEventAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link SimpleBPMN.Gateway <em>Gateway</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see SimpleBPMN.Gateway
+	 * @generated
+	 */
+	public Adapter createGatewayAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link SimpleBPMN.ExclusiveGateway <em>Exclusive Gateway</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see SimpleBPMN.ExclusiveGateway
+	 * @generated
+	 */
+	public Adapter createExclusiveGatewayAdapter() {
 		return null;
 	}
 

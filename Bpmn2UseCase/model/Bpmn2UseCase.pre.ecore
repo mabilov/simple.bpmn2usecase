@@ -27,19 +27,19 @@
       <eType xsi:type="ecore:EClass" href="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//BasicFlow"/>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="EE2FS">
+  <eClassifiers xsi:type="ecore:EClass" name="PG2PS">
     <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractCorrespondence"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1">
-      <eType xsi:type="ecore:EClass" href="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//EndEvent"/>
+      <eType xsi:type="ecore:EClass" href="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//ParallelGateway"/>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1">
-      <eType xsi:type="ecore:EClass" href="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//UCCondition"/>
+      <eType xsi:type="ecore:EClass" href="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//ParallelStep"/>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FN2S">
+  <eClassifiers xsi:type="ecore:EClass" name="SF2S">
     <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractCorrespondence"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1">
-      <eType xsi:type="ecore:EClass" href="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//FlowNode"/>
+      <eType xsi:type="ecore:EClass" href="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//SequenceFlow"/>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1">
       <eType xsi:type="ecore:EClass" href="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//Step"/>
@@ -58,22 +58,16 @@
     <eClassifiers xsi:type="ecore:EClass" name="Task2NormalStepSeq">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Task2NormalStepAfterSE">
-      <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Task2NormalStepAfterPG">
+    <eClassifiers xsi:type="ecore:EClass" name="Task2NormalStepFirst">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="ParallelGateway2ParallelStepSeq">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="ParallelGateway2ParallelStepAfterSE">
+    <eClassifiers xsi:type="ecore:EClass" name="ParallelGateway2ParallelStepFirst">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="EndEvent2FinalStateFirst">
-      <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="ParallelGateway2ParallelStepAfterPG">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="SequenceFlowAfterPG2ParallelFlow">

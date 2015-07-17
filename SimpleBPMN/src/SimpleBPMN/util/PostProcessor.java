@@ -5,6 +5,7 @@ import java.util.Random;
 
 import SimpleBPMN.FlowElement;
 import SimpleBPMN.FlowNode;
+import SimpleBPMN.Gateway;
 import SimpleBPMN.ParallelGateway;
 import SimpleBPMN.Process;
 import SimpleBPMN.SequenceFlow;
@@ -39,7 +40,7 @@ public class PostProcessor {
 	 * @param split
 	 */
 	private static void _connect(ParallelGateway split) {
-		ParallelGateway join = split.get__conv();
+		Gateway join = split.get__conv();
 		if (join == null)
 			// basically should not happen, but the method can be called for
 			// unprocessed BP
@@ -67,7 +68,7 @@ public class PostProcessor {
 					&& ((ParallelGateway) sf.getTargetRef()).isIsDiverging()) {
 				// one more split inside - need to process it through recursion
 				ParallelGateway newSplit = (ParallelGateway) sf.getTargetRef();
-				ParallelGateway newJoin = newSplit.get__conv();
+				Gateway newJoin = newSplit.get__conv();
 				if (newJoin != null) { // if there is a join
 					// skip all sequence flow after it, because they will be
 					// processed by the recursion

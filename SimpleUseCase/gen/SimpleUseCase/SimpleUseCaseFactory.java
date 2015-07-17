@@ -76,6 +76,24 @@ public interface SimpleUseCaseFactory extends EFactory {
 	UCCondition createUCCondition();
 
 	/**
+	 * Returns a new object of class '<em>Alternative Flow</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Alternative Flow</em>'.
+	 * @generated
+	 */
+	AlternativeFlow createAlternativeFlow();
+
+	/**
+	 * Returns a new object of class '<em>Choice Step</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Choice Step</em>'.
+	 * @generated
+	 */
+	ChoiceStep createChoiceStep();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

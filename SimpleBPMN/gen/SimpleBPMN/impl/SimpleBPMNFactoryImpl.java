@@ -3,6 +3,7 @@
 package SimpleBPMN.impl;
 
 import SimpleBPMN.EndEvent;
+import SimpleBPMN.ExclusiveGateway;
 import SimpleBPMN.ParallelGateway;
 import SimpleBPMN.SequenceFlow;
 import SimpleBPMN.SimpleBPMNFactory;
@@ -74,6 +75,8 @@ public class SimpleBPMNFactoryImpl extends EFactoryImpl implements SimpleBPMNFac
 			return createStartEvent();
 		case SimpleBPMNPackage.END_EVENT:
 			return createEndEvent();
+		case SimpleBPMNPackage.EXCLUSIVE_GATEWAY:
+			return createExclusiveGateway();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -137,6 +140,16 @@ public class SimpleBPMNFactoryImpl extends EFactoryImpl implements SimpleBPMNFac
 	public EndEvent createEndEvent() {
 		EndEventImpl endEvent = new EndEventImpl();
 		return endEvent;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ExclusiveGateway createExclusiveGateway() {
+		ExclusiveGatewayImpl exclusiveGateway = new ExclusiveGatewayImpl();
+		return exclusiveGateway;
 	}
 
 	/**

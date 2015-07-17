@@ -76,6 +76,15 @@ public interface SimpleBPMNFactory extends EFactory {
 	EndEvent createEndEvent();
 
 	/**
+	 * Returns a new object of class '<em>Exclusive Gateway</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Exclusive Gateway</em>'.
+	 * @generated
+	 */
+	ExclusiveGateway createExclusiveGateway();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

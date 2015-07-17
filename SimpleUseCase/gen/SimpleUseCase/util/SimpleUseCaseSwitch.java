@@ -93,6 +93,8 @@ public class SimpleUseCaseSwitch<T> extends Switch<T> {
 			ParallelFlow parallelFlow = (ParallelFlow) theEObject;
 			T result = caseParallelFlow(parallelFlow);
 			if (result == null)
+				result = caseNamedFlow(parallelFlow);
+			if (result == null)
 				result = caseFlow(parallelFlow);
 			if (result == null)
 				result = defaultCase(theEObject);
@@ -126,6 +128,35 @@ public class SimpleUseCaseSwitch<T> extends Switch<T> {
 		case SimpleUseCasePackage.UC_CONDITION: {
 			UCCondition ucCondition = (UCCondition) theEObject;
 			T result = caseUCCondition(ucCondition);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case SimpleUseCasePackage.NAMED_FLOW: {
+			NamedFlow namedFlow = (NamedFlow) theEObject;
+			T result = caseNamedFlow(namedFlow);
+			if (result == null)
+				result = caseFlow(namedFlow);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case SimpleUseCasePackage.ALTERNATIVE_FLOW: {
+			AlternativeFlow alternativeFlow = (AlternativeFlow) theEObject;
+			T result = caseAlternativeFlow(alternativeFlow);
+			if (result == null)
+				result = caseNamedFlow(alternativeFlow);
+			if (result == null)
+				result = caseFlow(alternativeFlow);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case SimpleUseCasePackage.CHOICE_STEP: {
+			ChoiceStep choiceStep = (ChoiceStep) theEObject;
+			T result = caseChoiceStep(choiceStep);
+			if (result == null)
+				result = caseStep(choiceStep);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -252,6 +283,51 @@ public class SimpleUseCaseSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseUCCondition(UCCondition object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Named Flow</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Named Flow</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNamedFlow(NamedFlow object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Alternative Flow</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Alternative Flow</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAlternativeFlow(AlternativeFlow object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Choice Step</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Choice Step</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseChoiceStep(ChoiceStep object) {
 		return null;
 	}
 

@@ -296,6 +296,79 @@ public interface SimpleBPMNPackage extends EPackage {
 	int TASK_OPERATION_COUNT = FLOW_NODE_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link SimpleBPMN.impl.GatewayImpl <em>Gateway</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see SimpleBPMN.impl.GatewayImpl
+	 * @see SimpleBPMN.impl.SimpleBPMNPackageImpl#getGateway()
+	 * @generated
+	 */
+	int GATEWAY = 9;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GATEWAY__ID = FLOW_NODE__ID;
+
+	/**
+	 * The feature id for the '<em><b>Outgoing</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GATEWAY__OUTGOING = FLOW_NODE__OUTGOING;
+
+	/**
+	 * The feature id for the '<em><b>Incoming</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GATEWAY__INCOMING = FLOW_NODE__INCOMING;
+
+	/**
+	 * The feature id for the '<em><b>conv</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GATEWAY__CONV = FLOW_NODE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Is Diverging</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GATEWAY__IS_DIVERGING = FLOW_NODE_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Gateway</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GATEWAY_FEATURE_COUNT = FLOW_NODE_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of operations of the '<em>Gateway</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GATEWAY_OPERATION_COUNT = FLOW_NODE_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link SimpleBPMN.impl.ParallelGatewayImpl <em>Parallel Gateway</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -312,7 +385,7 @@ public interface SimpleBPMNPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARALLEL_GATEWAY__ID = FLOW_NODE__ID;
+	int PARALLEL_GATEWAY__ID = GATEWAY__ID;
 
 	/**
 	 * The feature id for the '<em><b>Outgoing</b></em>' reference list.
@@ -321,7 +394,7 @@ public interface SimpleBPMNPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARALLEL_GATEWAY__OUTGOING = FLOW_NODE__OUTGOING;
+	int PARALLEL_GATEWAY__OUTGOING = GATEWAY__OUTGOING;
 
 	/**
 	 * The feature id for the '<em><b>Incoming</b></em>' reference list.
@@ -330,7 +403,7 @@ public interface SimpleBPMNPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARALLEL_GATEWAY__INCOMING = FLOW_NODE__INCOMING;
+	int PARALLEL_GATEWAY__INCOMING = GATEWAY__INCOMING;
 
 	/**
 	 * The feature id for the '<em><b>conv</b></em>' reference.
@@ -339,7 +412,7 @@ public interface SimpleBPMNPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARALLEL_GATEWAY__CONV = FLOW_NODE_FEATURE_COUNT + 0;
+	int PARALLEL_GATEWAY__CONV = GATEWAY__CONV;
 
 	/**
 	 * The feature id for the '<em><b>Is Diverging</b></em>' attribute.
@@ -348,7 +421,7 @@ public interface SimpleBPMNPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARALLEL_GATEWAY__IS_DIVERGING = FLOW_NODE_FEATURE_COUNT + 1;
+	int PARALLEL_GATEWAY__IS_DIVERGING = GATEWAY__IS_DIVERGING;
 
 	/**
 	 * The number of structural features of the '<em>Parallel Gateway</em>' class.
@@ -357,7 +430,7 @@ public interface SimpleBPMNPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARALLEL_GATEWAY_FEATURE_COUNT = FLOW_NODE_FEATURE_COUNT + 2;
+	int PARALLEL_GATEWAY_FEATURE_COUNT = GATEWAY_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of operations of the '<em>Parallel Gateway</em>' class.
@@ -366,7 +439,7 @@ public interface SimpleBPMNPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARALLEL_GATEWAY_OPERATION_COUNT = FLOW_NODE_OPERATION_COUNT + 0;
+	int PARALLEL_GATEWAY_OPERATION_COUNT = GATEWAY_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link SimpleBPMN.impl.EventImpl <em>Event</em>}' class.
@@ -534,6 +607,88 @@ public interface SimpleBPMNPackage extends EPackage {
 	int END_EVENT_OPERATION_COUNT = EVENT_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link SimpleBPMN.impl.ExclusiveGatewayImpl <em>Exclusive Gateway</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see SimpleBPMN.impl.ExclusiveGatewayImpl
+	 * @see SimpleBPMN.impl.SimpleBPMNPackageImpl#getExclusiveGateway()
+	 * @generated
+	 */
+	int EXCLUSIVE_GATEWAY = 10;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXCLUSIVE_GATEWAY__ID = GATEWAY__ID;
+
+	/**
+	 * The feature id for the '<em><b>Outgoing</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXCLUSIVE_GATEWAY__OUTGOING = GATEWAY__OUTGOING;
+
+	/**
+	 * The feature id for the '<em><b>Incoming</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXCLUSIVE_GATEWAY__INCOMING = GATEWAY__INCOMING;
+
+	/**
+	 * The feature id for the '<em><b>conv</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXCLUSIVE_GATEWAY__CONV = GATEWAY__CONV;
+
+	/**
+	 * The feature id for the '<em><b>Is Diverging</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXCLUSIVE_GATEWAY__IS_DIVERGING = GATEWAY__IS_DIVERGING;
+
+	/**
+	 * The feature id for the '<em><b>Default</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXCLUSIVE_GATEWAY__DEFAULT = GATEWAY_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Exclusive Gateway</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXCLUSIVE_GATEWAY_FEATURE_COUNT = GATEWAY_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Exclusive Gateway</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXCLUSIVE_GATEWAY_OPERATION_COUNT = GATEWAY_OPERATION_COUNT + 0;
+
+	/**
 	 * Returns the meta object for class '{@link SimpleBPMN.Process <em>Process</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -660,28 +815,6 @@ public interface SimpleBPMNPackage extends EPackage {
 	EClass getParallelGateway();
 
 	/**
-	 * Returns the meta object for the reference '{@link SimpleBPMN.ParallelGateway#get__conv <em>conv</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>conv</em>'.
-	 * @see SimpleBPMN.ParallelGateway#get__conv()
-	 * @see #getParallelGateway()
-	 * @generated
-	 */
-	EReference getParallelGateway___conv();
-
-	/**
-	 * Returns the meta object for the attribute '{@link SimpleBPMN.ParallelGateway#isIsDiverging <em>Is Diverging</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Is Diverging</em>'.
-	 * @see SimpleBPMN.ParallelGateway#isIsDiverging()
-	 * @see #getParallelGateway()
-	 * @generated
-	 */
-	EAttribute getParallelGateway_IsDiverging();
-
-	/**
 	 * Returns the meta object for class '{@link SimpleBPMN.StartEvent <em>Start Event</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -710,6 +843,59 @@ public interface SimpleBPMNPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getEvent();
+
+	/**
+	 * Returns the meta object for class '{@link SimpleBPMN.Gateway <em>Gateway</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Gateway</em>'.
+	 * @see SimpleBPMN.Gateway
+	 * @generated
+	 */
+	EClass getGateway();
+
+	/**
+	 * Returns the meta object for the reference '{@link SimpleBPMN.Gateway#get__conv <em>conv</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>conv</em>'.
+	 * @see SimpleBPMN.Gateway#get__conv()
+	 * @see #getGateway()
+	 * @generated
+	 */
+	EReference getGateway___conv();
+
+	/**
+	 * Returns the meta object for the attribute '{@link SimpleBPMN.Gateway#isIsDiverging <em>Is Diverging</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Is Diverging</em>'.
+	 * @see SimpleBPMN.Gateway#isIsDiverging()
+	 * @see #getGateway()
+	 * @generated
+	 */
+	EAttribute getGateway_IsDiverging();
+
+	/**
+	 * Returns the meta object for class '{@link SimpleBPMN.ExclusiveGateway <em>Exclusive Gateway</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Exclusive Gateway</em>'.
+	 * @see SimpleBPMN.ExclusiveGateway
+	 * @generated
+	 */
+	EClass getExclusiveGateway();
+
+	/**
+	 * Returns the meta object for the reference '{@link SimpleBPMN.ExclusiveGateway#getDefault <em>Default</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Default</em>'.
+	 * @see SimpleBPMN.ExclusiveGateway#getDefault()
+	 * @see #getExclusiveGateway()
+	 * @generated
+	 */
+	EReference getExclusiveGateway_Default();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -843,22 +1029,6 @@ public interface SimpleBPMNPackage extends EPackage {
 		EClass PARALLEL_GATEWAY = eINSTANCE.getParallelGateway();
 
 		/**
-		 * The meta object literal for the '<em><b>conv</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference PARALLEL_GATEWAY__CONV = eINSTANCE.getParallelGateway___conv();
-
-		/**
-		 * The meta object literal for the '<em><b>Is Diverging</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute PARALLEL_GATEWAY__IS_DIVERGING = eINSTANCE.getParallelGateway_IsDiverging();
-
-		/**
 		 * The meta object literal for the '{@link SimpleBPMN.impl.StartEventImpl <em>Start Event</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -887,6 +1057,50 @@ public interface SimpleBPMNPackage extends EPackage {
 		 * @generated
 		 */
 		EClass EVENT = eINSTANCE.getEvent();
+
+		/**
+		 * The meta object literal for the '{@link SimpleBPMN.impl.GatewayImpl <em>Gateway</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see SimpleBPMN.impl.GatewayImpl
+		 * @see SimpleBPMN.impl.SimpleBPMNPackageImpl#getGateway()
+		 * @generated
+		 */
+		EClass GATEWAY = eINSTANCE.getGateway();
+
+		/**
+		 * The meta object literal for the '<em><b>conv</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GATEWAY__CONV = eINSTANCE.getGateway___conv();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Diverging</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GATEWAY__IS_DIVERGING = eINSTANCE.getGateway_IsDiverging();
+
+		/**
+		 * The meta object literal for the '{@link SimpleBPMN.impl.ExclusiveGatewayImpl <em>Exclusive Gateway</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see SimpleBPMN.impl.ExclusiveGatewayImpl
+		 * @see SimpleBPMN.impl.SimpleBPMNPackageImpl#getExclusiveGateway()
+		 * @generated
+		 */
+		EClass EXCLUSIVE_GATEWAY = eINSTANCE.getExclusiveGateway();
+
+		/**
+		 * The meta object literal for the '<em><b>Default</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference EXCLUSIVE_GATEWAY__DEFAULT = eINSTANCE.getExclusiveGateway_Default();
 
 	}
 

@@ -4,8 +4,10 @@ package SimpleBPMN.util;
 
 import SimpleBPMN.EndEvent;
 import SimpleBPMN.Event;
+import SimpleBPMN.ExclusiveGateway;
 import SimpleBPMN.FlowElement;
 import SimpleBPMN.FlowNode;
+import SimpleBPMN.Gateway;
 import SimpleBPMN.ParallelGateway;
 import SimpleBPMN.SequenceFlow;
 import SimpleBPMN.SimpleBPMNPackage;
@@ -121,6 +123,8 @@ public class SimpleBPMNSwitch<T> extends Switch<T> {
 			ParallelGateway parallelGateway = (ParallelGateway) theEObject;
 			T result = caseParallelGateway(parallelGateway);
 			if (result == null)
+				result = caseGateway(parallelGateway);
+			if (result == null)
 				result = caseFlowNode(parallelGateway);
 			if (result == null)
 				result = caseFlowElement(parallelGateway);
@@ -161,6 +165,30 @@ public class SimpleBPMNSwitch<T> extends Switch<T> {
 				result = caseFlowNode(event);
 			if (result == null)
 				result = caseFlowElement(event);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case SimpleBPMNPackage.GATEWAY: {
+			Gateway gateway = (Gateway) theEObject;
+			T result = caseGateway(gateway);
+			if (result == null)
+				result = caseFlowNode(gateway);
+			if (result == null)
+				result = caseFlowElement(gateway);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case SimpleBPMNPackage.EXCLUSIVE_GATEWAY: {
+			ExclusiveGateway exclusiveGateway = (ExclusiveGateway) theEObject;
+			T result = caseExclusiveGateway(exclusiveGateway);
+			if (result == null)
+				result = caseGateway(exclusiveGateway);
+			if (result == null)
+				result = caseFlowNode(exclusiveGateway);
+			if (result == null)
+				result = caseFlowElement(exclusiveGateway);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -302,6 +330,36 @@ public class SimpleBPMNSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseEvent(Event object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Gateway</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Gateway</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGateway(Gateway object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Exclusive Gateway</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Exclusive Gateway</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseExclusiveGateway(ExclusiveGateway object) {
 		return null;
 	}
 

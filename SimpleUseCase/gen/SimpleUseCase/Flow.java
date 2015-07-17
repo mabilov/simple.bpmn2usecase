@@ -18,7 +18,6 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link SimpleUseCase.Flow#getSteps <em>Steps</em>}</li>
  *   <li>{@link SimpleUseCase.Flow#getFinalState <em>Final State</em>}</li>
- *   <li>{@link SimpleUseCase.Flow#get__first <em>first</em>}</li>
  *   <li>{@link SimpleUseCase.Flow#get__last <em>last</em>}</li>
  *   <li>{@link SimpleUseCase.Flow#is__empty <em>empty</em>}</li>
  * </ul>
@@ -60,32 +59,6 @@ public interface Flow extends EObject {
 	 * @generated
 	 */
 	EList<UCCondition> getFinalState();
-
-	/**
-	 * Returns the value of the '<em><b>first</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>first</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>first</em>' reference.
-	 * @see #set__first(Step)
-	 * @see SimpleUseCase.SimpleUseCasePackage#getFlow___first()
-	 * @model
-	 * @generated
-	 */
-	Step get__first();
-
-	/**
-	 * Sets the value of the '{@link SimpleUseCase.Flow#get__first <em>first</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>first</em>' reference.
-	 * @see #get__first()
-	 * @generated
-	 */
-	void set__first(Step value);
 
 	/**
 	 * Returns the value of the '<em><b>last</b></em>' reference.

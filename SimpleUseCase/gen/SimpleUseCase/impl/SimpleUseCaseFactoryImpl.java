@@ -68,6 +68,10 @@ public class SimpleUseCaseFactoryImpl extends EFactoryImpl implements SimpleUseC
 			return createParallelStep();
 		case SimpleUseCasePackage.UC_CONDITION:
 			return createUCCondition();
+		case SimpleUseCasePackage.ALTERNATIVE_FLOW:
+			return createAlternativeFlow();
+		case SimpleUseCasePackage.CHOICE_STEP:
+			return createChoiceStep();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -131,6 +135,26 @@ public class SimpleUseCaseFactoryImpl extends EFactoryImpl implements SimpleUseC
 	public UCCondition createUCCondition() {
 		UCConditionImpl ucCondition = new UCConditionImpl();
 		return ucCondition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AlternativeFlow createAlternativeFlow() {
+		AlternativeFlowImpl alternativeFlow = new AlternativeFlowImpl();
+		return alternativeFlow;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ChoiceStep createChoiceStep() {
+		ChoiceStepImpl choiceStep = new ChoiceStepImpl();
+		return choiceStep;
 	}
 
 	/**

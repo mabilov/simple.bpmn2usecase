@@ -12,14 +12,11 @@
     <genClasses image="false" ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//Flow">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//Flow/steps"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//Flow/finalState"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//Flow/__first"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//Flow/__last"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//Flow/__empty"/>
     </genClasses>
     <genClasses ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//BasicFlow"/>
-    <genClasses ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//ParallelFlow">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//ParallelFlow/id"/>
-    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//ParallelFlow"/>
     <genClasses image="false" ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//Step">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//Step/next"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//Step/id"/>
@@ -30,6 +27,13 @@
     </genClasses>
     <genClasses ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//UCCondition">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//UCCondition/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//NamedFlow">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//NamedFlow/id"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//AlternativeFlow"/>
+    <genClasses ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//ChoiceStep">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//ChoiceStep/alternativeFlows"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

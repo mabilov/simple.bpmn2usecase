@@ -34,7 +34,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link SimpleUseCase.impl.FlowImpl#getSteps <em>Steps</em>}</li>
  *   <li>{@link SimpleUseCase.impl.FlowImpl#getFinalState <em>Final State</em>}</li>
- *   <li>{@link SimpleUseCase.impl.FlowImpl#get__first <em>first</em>}</li>
  *   <li>{@link SimpleUseCase.impl.FlowImpl#get__last <em>last</em>}</li>
  *   <li>{@link SimpleUseCase.impl.FlowImpl#is__empty <em>empty</em>}</li>
  * </ul>
@@ -62,16 +61,6 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 	 * @ordered
 	 */
 	protected EList<UCCondition> finalState;
-
-	/**
-	 * The cached value of the '{@link #get__first() <em>first</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #get__first()
-	 * @generated
-	 * @ordered
-	 */
-	protected Step __first;
 
 	/**
 	 * The cached value of the '{@link #get__last() <em>last</em>}' reference.
@@ -145,46 +134,6 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 					SimpleUseCasePackage.FLOW__FINAL_STATE);
 		}
 		return finalState;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Step get__first() {
-		if (__first != null && __first.eIsProxy()) {
-			InternalEObject old__first = (InternalEObject) __first;
-			__first = (Step) eResolveProxy(old__first);
-			if (__first != old__first) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, SimpleUseCasePackage.FLOW__FIRST,
-							old__first, __first));
-			}
-		}
-		return __first;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Step basicGet__first() {
-		return __first;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void set__first(Step new__first) {
-		Step old__first = __first;
-		__first = new__first;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SimpleUseCasePackage.FLOW__FIRST, old__first,
-					__first));
 	}
 
 	/**
@@ -276,10 +225,6 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 			return getSteps();
 		case SimpleUseCasePackage.FLOW__FINAL_STATE:
 			return getFinalState();
-		case SimpleUseCasePackage.FLOW__FIRST:
-			if (resolve)
-				return get__first();
-			return basicGet__first();
 		case SimpleUseCasePackage.FLOW__LAST:
 			if (resolve)
 				return get__last();
@@ -307,9 +252,6 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 			getFinalState().clear();
 			getFinalState().addAll((Collection<? extends UCCondition>) newValue);
 			return;
-		case SimpleUseCasePackage.FLOW__FIRST:
-			set__first((Step) newValue);
-			return;
 		case SimpleUseCasePackage.FLOW__LAST:
 			set__last((Step) newValue);
 			return;
@@ -334,9 +276,6 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 		case SimpleUseCasePackage.FLOW__FINAL_STATE:
 			getFinalState().clear();
 			return;
-		case SimpleUseCasePackage.FLOW__FIRST:
-			set__first((Step) null);
-			return;
 		case SimpleUseCasePackage.FLOW__LAST:
 			set__last((Step) null);
 			return;
@@ -359,8 +298,6 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 			return steps != null && !steps.isEmpty();
 		case SimpleUseCasePackage.FLOW__FINAL_STATE:
 			return finalState != null && !finalState.isEmpty();
-		case SimpleUseCasePackage.FLOW__FIRST:
-			return __first != null;
 		case SimpleUseCasePackage.FLOW__LAST:
 			return __last != null;
 		case SimpleUseCasePackage.FLOW__EMPTY:

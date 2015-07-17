@@ -54,8 +54,8 @@ public class PreProcessor {
 	 */
 	public static void process(UseCase model) {
 		for (Flow flow : model.getFlows()) {
-			Step first = _findFirst(flow);
-			flow.set__first(first);
+			// Step first = _findFirst(flow);
+			// flow.set__first(first);
 			Step last = _findLast(flow);
 			flow.set__last(last);
 		}

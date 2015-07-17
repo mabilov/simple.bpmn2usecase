@@ -17,13 +17,17 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="targetRef" lowerBound="1" eType="//FlowNode" eOpposite="//FlowNode/incoming"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Task" eSuperTypes="//FlowNode"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ParallelGateway" eSuperTypes="//FlowNode">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="__conv" eType="//ParallelGateway"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ParallelGateway" eSuperTypes="//Gateway"/>
+  <eClassifiers xsi:type="ecore:EClass" name="StartEvent" eSuperTypes="//Event"/>
+  <eClassifiers xsi:type="ecore:EClass" name="EndEvent" eSuperTypes="//Event"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Event" abstract="true" eSuperTypes="//FlowNode"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Gateway" abstract="true" eSuperTypes="//FlowNode">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="__conv" eType="//Gateway"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="isDiverging" ordered="false" lowerBound="1" defaultValueLiteral="true">
       <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="StartEvent" eSuperTypes="//Event"/>
-  <eClassifiers xsi:type="ecore:EClass" name="EndEvent" eSuperTypes="//Event"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Event" abstract="true" eSuperTypes="//FlowNode"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ExclusiveGateway" eSuperTypes="//Gateway">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="default" eType="//SequenceFlow"/>
+  </eClassifiers>
 </ecore:EPackage>

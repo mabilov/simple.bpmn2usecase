@@ -7,18 +7,13 @@
   <eClassifiers xsi:type="ecore:EClass" name="Flow" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EReference" name="steps" upperBound="-1" eType="//Step" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="finalState" upperBound="-1" eType="//UCCondition" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="__first" eType="//Step"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="__last" eType="//Step"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="__empty" ordered="false" lowerBound="1">
       <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="BasicFlow" eSuperTypes="//Flow"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ParallelFlow" eSuperTypes="//Flow">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" ordered="false" lowerBound="1" iD="true">
-      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    </eStructuralFeatures>
-  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ParallelFlow" eSuperTypes="//NamedFlow"/>
   <eClassifiers xsi:type="ecore:EClass" name="Step" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EReference" name="next" eType="//Step"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" ordered="false" lowerBound="1" iD="true">
@@ -33,5 +28,14 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" lowerBound="1">
       <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NamedFlow" abstract="true" eSuperTypes="//Flow">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" ordered="false" lowerBound="1" iD="true">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AlternativeFlow" eSuperTypes="//NamedFlow"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ChoiceStep" eSuperTypes="//Step">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="alternativeFlows" upperBound="-1" eType="//AlternativeFlow"/>
   </eClassifiers>
 </ecore:EPackage>

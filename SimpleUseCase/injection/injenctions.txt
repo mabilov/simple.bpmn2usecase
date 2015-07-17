@@ -1,9 +1,3 @@
-StepImpl.java
-
-public boolean is__last() {
-    return getNext() == null;
-}
-
 FlowImpl.java
 
 public boolean is__empty() {

@@ -131,22 +131,13 @@ public interface SimpleUseCasePackage extends EPackage {
 	int FLOW__FINAL_STATE = 1;
 
 	/**
-	 * The feature id for the '<em><b>first</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLOW__FIRST = 2;
-
-	/**
 	 * The feature id for the '<em><b>last</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FLOW__LAST = 3;
+	int FLOW__LAST = 2;
 
 	/**
 	 * The feature id for the '<em><b>empty</b></em>' attribute.
@@ -155,7 +146,7 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FLOW__EMPTY = 4;
+	int FLOW__EMPTY = 3;
 
 	/**
 	 * The number of structural features of the '<em>Flow</em>' class.
@@ -164,7 +155,7 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FLOW_FEATURE_COUNT = 5;
+	int FLOW_FEATURE_COUNT = 4;
 
 	/**
 	 * The number of operations of the '<em>Flow</em>' class.
@@ -204,15 +195,6 @@ public interface SimpleUseCasePackage extends EPackage {
 	int BASIC_FLOW__FINAL_STATE = FLOW__FINAL_STATE;
 
 	/**
-	 * The feature id for the '<em><b>first</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BASIC_FLOW__FIRST = FLOW__FIRST;
-
-	/**
 	 * The feature id for the '<em><b>last</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -249,6 +231,79 @@ public interface SimpleUseCasePackage extends EPackage {
 	int BASIC_FLOW_OPERATION_COUNT = FLOW_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link SimpleUseCase.impl.NamedFlowImpl <em>Named Flow</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see SimpleUseCase.impl.NamedFlowImpl
+	 * @see SimpleUseCase.impl.SimpleUseCasePackageImpl#getNamedFlow()
+	 * @generated
+	 */
+	int NAMED_FLOW = 8;
+
+	/**
+	 * The feature id for the '<em><b>Steps</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAMED_FLOW__STEPS = FLOW__STEPS;
+
+	/**
+	 * The feature id for the '<em><b>Final State</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAMED_FLOW__FINAL_STATE = FLOW__FINAL_STATE;
+
+	/**
+	 * The feature id for the '<em><b>last</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAMED_FLOW__LAST = FLOW__LAST;
+
+	/**
+	 * The feature id for the '<em><b>empty</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAMED_FLOW__EMPTY = FLOW__EMPTY;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAMED_FLOW__ID = FLOW_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Named Flow</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAMED_FLOW_FEATURE_COUNT = FLOW_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Named Flow</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAMED_FLOW_OPERATION_COUNT = FLOW_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link SimpleUseCase.impl.ParallelFlowImpl <em>Parallel Flow</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -265,7 +320,7 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARALLEL_FLOW__STEPS = FLOW__STEPS;
+	int PARALLEL_FLOW__STEPS = NAMED_FLOW__STEPS;
 
 	/**
 	 * The feature id for the '<em><b>Final State</b></em>' containment reference list.
@@ -274,16 +329,7 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARALLEL_FLOW__FINAL_STATE = FLOW__FINAL_STATE;
-
-	/**
-	 * The feature id for the '<em><b>first</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARALLEL_FLOW__FIRST = FLOW__FIRST;
+	int PARALLEL_FLOW__FINAL_STATE = NAMED_FLOW__FINAL_STATE;
 
 	/**
 	 * The feature id for the '<em><b>last</b></em>' reference.
@@ -292,7 +338,7 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARALLEL_FLOW__LAST = FLOW__LAST;
+	int PARALLEL_FLOW__LAST = NAMED_FLOW__LAST;
 
 	/**
 	 * The feature id for the '<em><b>empty</b></em>' attribute.
@@ -301,7 +347,7 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARALLEL_FLOW__EMPTY = FLOW__EMPTY;
+	int PARALLEL_FLOW__EMPTY = NAMED_FLOW__EMPTY;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -310,7 +356,7 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARALLEL_FLOW__ID = FLOW_FEATURE_COUNT + 0;
+	int PARALLEL_FLOW__ID = NAMED_FLOW__ID;
 
 	/**
 	 * The number of structural features of the '<em>Parallel Flow</em>' class.
@@ -319,7 +365,7 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARALLEL_FLOW_FEATURE_COUNT = FLOW_FEATURE_COUNT + 1;
+	int PARALLEL_FLOW_FEATURE_COUNT = NAMED_FLOW_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of operations of the '<em>Parallel Flow</em>' class.
@@ -328,7 +374,7 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARALLEL_FLOW_OPERATION_COUNT = FLOW_OPERATION_COUNT + 0;
+	int PARALLEL_FLOW_OPERATION_COUNT = NAMED_FLOW_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link SimpleUseCase.impl.StepImpl <em>Step</em>}' class.
@@ -515,6 +561,134 @@ public interface SimpleUseCasePackage extends EPackage {
 	int UC_CONDITION_OPERATION_COUNT = 0;
 
 	/**
+	 * The meta object id for the '{@link SimpleUseCase.impl.AlternativeFlowImpl <em>Alternative Flow</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see SimpleUseCase.impl.AlternativeFlowImpl
+	 * @see SimpleUseCase.impl.SimpleUseCasePackageImpl#getAlternativeFlow()
+	 * @generated
+	 */
+	int ALTERNATIVE_FLOW = 9;
+
+	/**
+	 * The feature id for the '<em><b>Steps</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALTERNATIVE_FLOW__STEPS = NAMED_FLOW__STEPS;
+
+	/**
+	 * The feature id for the '<em><b>Final State</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALTERNATIVE_FLOW__FINAL_STATE = NAMED_FLOW__FINAL_STATE;
+
+	/**
+	 * The feature id for the '<em><b>last</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALTERNATIVE_FLOW__LAST = NAMED_FLOW__LAST;
+
+	/**
+	 * The feature id for the '<em><b>empty</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALTERNATIVE_FLOW__EMPTY = NAMED_FLOW__EMPTY;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALTERNATIVE_FLOW__ID = NAMED_FLOW__ID;
+
+	/**
+	 * The number of structural features of the '<em>Alternative Flow</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALTERNATIVE_FLOW_FEATURE_COUNT = NAMED_FLOW_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Alternative Flow</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALTERNATIVE_FLOW_OPERATION_COUNT = NAMED_FLOW_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link SimpleUseCase.impl.ChoiceStepImpl <em>Choice Step</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see SimpleUseCase.impl.ChoiceStepImpl
+	 * @see SimpleUseCase.impl.SimpleUseCasePackageImpl#getChoiceStep()
+	 * @generated
+	 */
+	int CHOICE_STEP = 10;
+
+	/**
+	 * The feature id for the '<em><b>Next</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHOICE_STEP__NEXT = STEP__NEXT;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHOICE_STEP__ID = STEP__ID;
+
+	/**
+	 * The feature id for the '<em><b>Alternative Flows</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHOICE_STEP__ALTERNATIVE_FLOWS = STEP_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Choice Step</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHOICE_STEP_FEATURE_COUNT = STEP_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Choice Step</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHOICE_STEP_OPERATION_COUNT = STEP_OPERATION_COUNT + 0;
+
+	/**
 	 * Returns the meta object for class '{@link SimpleUseCase.UseCase <em>Use Case</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -579,17 +753,6 @@ public interface SimpleUseCasePackage extends EPackage {
 	EReference getFlow_FinalState();
 
 	/**
-	 * Returns the meta object for the reference '{@link SimpleUseCase.Flow#get__first <em>first</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>first</em>'.
-	 * @see SimpleUseCase.Flow#get__first()
-	 * @see #getFlow()
-	 * @generated
-	 */
-	EReference getFlow___first();
-
-	/**
 	 * Returns the meta object for the reference '{@link SimpleUseCase.Flow#get__last <em>last</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -630,17 +793,6 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @generated
 	 */
 	EClass getParallelFlow();
-
-	/**
-	 * Returns the meta object for the attribute '{@link SimpleUseCase.ParallelFlow#getId <em>Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Id</em>'.
-	 * @see SimpleUseCase.ParallelFlow#getId()
-	 * @see #getParallelFlow()
-	 * @generated
-	 */
-	EAttribute getParallelFlow_Id();
 
 	/**
 	 * Returns the meta object for class '{@link SimpleUseCase.Step <em>Step</em>}'.
@@ -727,6 +879,58 @@ public interface SimpleUseCasePackage extends EPackage {
 	EAttribute getUCCondition_Name();
 
 	/**
+	 * Returns the meta object for class '{@link SimpleUseCase.NamedFlow <em>Named Flow</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Named Flow</em>'.
+	 * @see SimpleUseCase.NamedFlow
+	 * @generated
+	 */
+	EClass getNamedFlow();
+
+	/**
+	 * Returns the meta object for the attribute '{@link SimpleUseCase.NamedFlow#getId <em>Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Id</em>'.
+	 * @see SimpleUseCase.NamedFlow#getId()
+	 * @see #getNamedFlow()
+	 * @generated
+	 */
+	EAttribute getNamedFlow_Id();
+
+	/**
+	 * Returns the meta object for class '{@link SimpleUseCase.AlternativeFlow <em>Alternative Flow</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Alternative Flow</em>'.
+	 * @see SimpleUseCase.AlternativeFlow
+	 * @generated
+	 */
+	EClass getAlternativeFlow();
+
+	/**
+	 * Returns the meta object for class '{@link SimpleUseCase.ChoiceStep <em>Choice Step</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Choice Step</em>'.
+	 * @see SimpleUseCase.ChoiceStep
+	 * @generated
+	 */
+	EClass getChoiceStep();
+
+	/**
+	 * Returns the meta object for the reference list '{@link SimpleUseCase.ChoiceStep#getAlternativeFlows <em>Alternative Flows</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Alternative Flows</em>'.
+	 * @see SimpleUseCase.ChoiceStep#getAlternativeFlows()
+	 * @see #getChoiceStep()
+	 * @generated
+	 */
+	EReference getChoiceStep_AlternativeFlows();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -802,14 +1006,6 @@ public interface SimpleUseCasePackage extends EPackage {
 		EReference FLOW__FINAL_STATE = eINSTANCE.getFlow_FinalState();
 
 		/**
-		 * The meta object literal for the '<em><b>first</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference FLOW__FIRST = eINSTANCE.getFlow___first();
-
-		/**
 		 * The meta object literal for the '<em><b>last</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -844,14 +1040,6 @@ public interface SimpleUseCasePackage extends EPackage {
 		 * @generated
 		 */
 		EClass PARALLEL_FLOW = eINSTANCE.getParallelFlow();
-
-		/**
-		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute PARALLEL_FLOW__ID = eINSTANCE.getParallelFlow_Id();
 
 		/**
 		 * The meta object literal for the '{@link SimpleUseCase.impl.StepImpl <em>Step</em>}' class.
@@ -924,6 +1112,52 @@ public interface SimpleUseCasePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute UC_CONDITION__NAME = eINSTANCE.getUCCondition_Name();
+
+		/**
+		 * The meta object literal for the '{@link SimpleUseCase.impl.NamedFlowImpl <em>Named Flow</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see SimpleUseCase.impl.NamedFlowImpl
+		 * @see SimpleUseCase.impl.SimpleUseCasePackageImpl#getNamedFlow()
+		 * @generated
+		 */
+		EClass NAMED_FLOW = eINSTANCE.getNamedFlow();
+
+		/**
+		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NAMED_FLOW__ID = eINSTANCE.getNamedFlow_Id();
+
+		/**
+		 * The meta object literal for the '{@link SimpleUseCase.impl.AlternativeFlowImpl <em>Alternative Flow</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see SimpleUseCase.impl.AlternativeFlowImpl
+		 * @see SimpleUseCase.impl.SimpleUseCasePackageImpl#getAlternativeFlow()
+		 * @generated
+		 */
+		EClass ALTERNATIVE_FLOW = eINSTANCE.getAlternativeFlow();
+
+		/**
+		 * The meta object literal for the '{@link SimpleUseCase.impl.ChoiceStepImpl <em>Choice Step</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see SimpleUseCase.impl.ChoiceStepImpl
+		 * @see SimpleUseCase.impl.SimpleUseCasePackageImpl#getChoiceStep()
+		 * @generated
+		 */
+		EClass CHOICE_STEP = eINSTANCE.getChoiceStep();
+
+		/**
+		 * The meta object literal for the '<em><b>Alternative Flows</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CHOICE_STEP__ALTERNATIVE_FLOWS = eINSTANCE.getChoiceStep_AlternativeFlows();
 
 	}
 

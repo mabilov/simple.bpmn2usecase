@@ -4,8 +4,10 @@ package SimpleBPMN.impl;
 
 import SimpleBPMN.EndEvent;
 import SimpleBPMN.Event;
+import SimpleBPMN.ExclusiveGateway;
 import SimpleBPMN.FlowElement;
 import SimpleBPMN.FlowNode;
+import SimpleBPMN.Gateway;
 import SimpleBPMN.ParallelGateway;
 import SimpleBPMN.SequenceFlow;
 import SimpleBPMN.SimpleBPMNFactory;
@@ -89,6 +91,20 @@ public class SimpleBPMNPackageImpl extends EPackageImpl implements SimpleBPMNPac
 	 * @generated
 	 */
 	private EClass eventEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass gatewayEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass exclusiveGatewayEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -266,24 +282,6 @@ public class SimpleBPMNPackageImpl extends EPackageImpl implements SimpleBPMNPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getParallelGateway___conv() {
-		return (EReference) parallelGatewayEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getParallelGateway_IsDiverging() {
-		return (EAttribute) parallelGatewayEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getStartEvent() {
 		return startEventEClass;
 	}
@@ -304,6 +302,51 @@ public class SimpleBPMNPackageImpl extends EPackageImpl implements SimpleBPMNPac
 	 */
 	public EClass getEvent() {
 		return eventEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getGateway() {
+		return gatewayEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getGateway___conv() {
+		return (EReference) gatewayEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getGateway_IsDiverging() {
+		return (EAttribute) gatewayEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getExclusiveGateway() {
+		return exclusiveGatewayEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getExclusiveGateway_Default() {
+		return (EReference) exclusiveGatewayEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -352,14 +395,19 @@ public class SimpleBPMNPackageImpl extends EPackageImpl implements SimpleBPMNPac
 		taskEClass = createEClass(TASK);
 
 		parallelGatewayEClass = createEClass(PARALLEL_GATEWAY);
-		createEReference(parallelGatewayEClass, PARALLEL_GATEWAY__CONV);
-		createEAttribute(parallelGatewayEClass, PARALLEL_GATEWAY__IS_DIVERGING);
 
 		startEventEClass = createEClass(START_EVENT);
 
 		endEventEClass = createEClass(END_EVENT);
 
 		eventEClass = createEClass(EVENT);
+
+		gatewayEClass = createEClass(GATEWAY);
+		createEReference(gatewayEClass, GATEWAY__CONV);
+		createEAttribute(gatewayEClass, GATEWAY__IS_DIVERGING);
+
+		exclusiveGatewayEClass = createEClass(EXCLUSIVE_GATEWAY);
+		createEReference(exclusiveGatewayEClass, EXCLUSIVE_GATEWAY__DEFAULT);
 	}
 
 	/**
@@ -394,10 +442,12 @@ public class SimpleBPMNPackageImpl extends EPackageImpl implements SimpleBPMNPac
 		flowNodeEClass.getESuperTypes().add(this.getFlowElement());
 		sequenceFlowEClass.getESuperTypes().add(this.getFlowElement());
 		taskEClass.getESuperTypes().add(this.getFlowNode());
-		parallelGatewayEClass.getESuperTypes().add(this.getFlowNode());
+		parallelGatewayEClass.getESuperTypes().add(this.getGateway());
 		startEventEClass.getESuperTypes().add(this.getEvent());
 		endEventEClass.getESuperTypes().add(this.getEvent());
 		eventEClass.getESuperTypes().add(this.getFlowNode());
+		gatewayEClass.getESuperTypes().add(this.getFlowNode());
+		exclusiveGatewayEClass.getESuperTypes().add(this.getGateway());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(processEClass, SimpleBPMN.Process.class, "Process", !IS_ABSTRACT, !IS_INTERFACE,
@@ -432,12 +482,6 @@ public class SimpleBPMNPackageImpl extends EPackageImpl implements SimpleBPMNPac
 
 		initEClass(parallelGatewayEClass, ParallelGateway.class, "ParallelGateway", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getParallelGateway___conv(), this.getParallelGateway(), null, "__conv", null, 0, 1,
-				ParallelGateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
-				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getParallelGateway_IsDiverging(), ecorePackage.getEBoolean(), "isDiverging", "true", 1, 1,
-				ParallelGateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-				!IS_DERIVED, !IS_ORDERED);
 
 		initEClass(startEventEClass, StartEvent.class, "StartEvent", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -446,6 +490,20 @@ public class SimpleBPMNPackageImpl extends EPackageImpl implements SimpleBPMNPac
 				IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(eventEClass, Event.class, "Event", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(gatewayEClass, Gateway.class, "Gateway", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getGateway___conv(), this.getGateway(), null, "__conv", null, 0, 1, Gateway.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEAttribute(getGateway_IsDiverging(), ecorePackage.getEBoolean(), "isDiverging", "true", 1, 1, Gateway.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED,
+				!IS_ORDERED);
+
+		initEClass(exclusiveGatewayEClass, ExclusiveGateway.class, "ExclusiveGateway", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getExclusiveGateway_Default(), this.getSequenceFlow(), null, "default", null, 0, 1,
+				ExclusiveGateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);
