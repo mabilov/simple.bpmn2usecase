@@ -1,14 +1,13 @@
 package org.moflon.tie;
 
 import java.io.IOException;
-import org.apache.log4j.BasicConfigurator;
-import org.moflon.ide.debug.DebugSynchronizationHelper;
-import org.eclipse.emf.ecore.EPackage;
 
+import org.apache.log4j.BasicConfigurator;
 import org.eclipse.emf.common.util.URI;
-import TGGRuntime.CorrespondenceModel;
+import org.moflon.ide.debug.DebugSynchronizationHelper;
 
 import Bpmn2UseCase.Bpmn2UseCasePackage;
+import TGGRuntime.CorrespondenceModel;
 
 public class Bpmn2UseCaseSync extends DebugSynchronizationHelper {
 

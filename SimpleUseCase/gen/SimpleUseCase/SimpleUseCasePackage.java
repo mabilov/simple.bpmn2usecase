@@ -140,13 +140,22 @@ public interface SimpleUseCasePackage extends EPackage {
 	int FLOW__FIRST = 2;
 
 	/**
+	 * The feature id for the '<em><b>last</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOW__LAST = 3;
+
+	/**
 	 * The feature id for the '<em><b>empty</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FLOW__EMPTY = 3;
+	int FLOW__EMPTY = 4;
 
 	/**
 	 * The number of structural features of the '<em>Flow</em>' class.
@@ -155,7 +164,7 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FLOW_FEATURE_COUNT = 4;
+	int FLOW_FEATURE_COUNT = 5;
 
 	/**
 	 * The number of operations of the '<em>Flow</em>' class.
@@ -202,6 +211,15 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @ordered
 	 */
 	int BASIC_FLOW__FIRST = FLOW__FIRST;
+
+	/**
+	 * The feature id for the '<em><b>last</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BASIC_FLOW__LAST = FLOW__LAST;
 
 	/**
 	 * The feature id for the '<em><b>empty</b></em>' attribute.
@@ -268,6 +286,15 @@ public interface SimpleUseCasePackage extends EPackage {
 	int PARALLEL_FLOW__FIRST = FLOW__FIRST;
 
 	/**
+	 * The feature id for the '<em><b>last</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARALLEL_FLOW__LAST = FLOW__LAST;
+
+	/**
 	 * The feature id for the '<em><b>empty</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -332,22 +359,13 @@ public interface SimpleUseCasePackage extends EPackage {
 	int STEP__ID = 1;
 
 	/**
-	 * The feature id for the '<em><b>last</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STEP__LAST = 2;
-
-	/**
 	 * The number of structural features of the '<em>Step</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STEP_FEATURE_COUNT = 3;
+	int STEP_FEATURE_COUNT = 2;
 
 	/**
 	 * The number of operations of the '<em>Step</em>' class.
@@ -385,15 +403,6 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @ordered
 	 */
 	int NORMAL_STEP__ID = STEP__ID;
-
-	/**
-	 * The feature id for the '<em><b>last</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NORMAL_STEP__LAST = STEP__LAST;
 
 	/**
 	 * The number of structural features of the '<em>Normal Step</em>' class.
@@ -440,15 +449,6 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @ordered
 	 */
 	int PARALLEL_STEP__ID = STEP__ID;
-
-	/**
-	 * The feature id for the '<em><b>last</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARALLEL_STEP__LAST = STEP__LAST;
 
 	/**
 	 * The feature id for the '<em><b>Invoked Flows</b></em>' reference list.
@@ -590,6 +590,17 @@ public interface SimpleUseCasePackage extends EPackage {
 	EReference getFlow___first();
 
 	/**
+	 * Returns the meta object for the reference '{@link SimpleUseCase.Flow#get__last <em>last</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>last</em>'.
+	 * @see SimpleUseCase.Flow#get__last()
+	 * @see #getFlow()
+	 * @generated
+	 */
+	EReference getFlow___last();
+
+	/**
 	 * Returns the meta object for the attribute '{@link SimpleUseCase.Flow#is__empty <em>empty</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -662,17 +673,6 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getStep_Id();
-
-	/**
-	 * Returns the meta object for the attribute '{@link SimpleUseCase.Step#is__last <em>last</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>last</em>'.
-	 * @see SimpleUseCase.Step#is__last()
-	 * @see #getStep()
-	 * @generated
-	 */
-	EAttribute getStep___last();
 
 	/**
 	 * Returns the meta object for class '{@link SimpleUseCase.NormalStep <em>Normal Step</em>}'.
@@ -810,6 +810,14 @@ public interface SimpleUseCasePackage extends EPackage {
 		EReference FLOW__FIRST = eINSTANCE.getFlow___first();
 
 		/**
+		 * The meta object literal for the '<em><b>last</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FLOW__LAST = eINSTANCE.getFlow___last();
+
+		/**
 		 * The meta object literal for the '<em><b>empty</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -870,14 +878,6 @@ public interface SimpleUseCasePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute STEP__ID = eINSTANCE.getStep_Id();
-
-		/**
-		 * The meta object literal for the '<em><b>last</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute STEP__LAST = eINSTANCE.getStep___last();
 
 		/**
 		 * The meta object literal for the '{@link SimpleUseCase.impl.NormalStepImpl <em>Normal Step</em>}' class.

@@ -214,8 +214,17 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements SimpleUseC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getFlow___last() {
+		return (EReference) flowEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EAttribute getFlow___empty() {
-		return (EAttribute) flowEClass.getEStructuralFeatures().get(3);
+		return (EAttribute) flowEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -270,15 +279,6 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements SimpleUseC
 	 */
 	public EAttribute getStep_Id() {
 		return (EAttribute) stepEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getStep___last() {
-		return (EAttribute) stepEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -363,6 +363,7 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements SimpleUseC
 		createEReference(flowEClass, FLOW__STEPS);
 		createEReference(flowEClass, FLOW__FINAL_STATE);
 		createEReference(flowEClass, FLOW__FIRST);
+		createEReference(flowEClass, FLOW__LAST);
 		createEAttribute(flowEClass, FLOW__EMPTY);
 
 		basicFlowEClass = createEClass(BASIC_FLOW);
@@ -373,7 +374,6 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements SimpleUseC
 		stepEClass = createEClass(STEP);
 		createEReference(stepEClass, STEP__NEXT);
 		createEAttribute(stepEClass, STEP__ID);
-		createEAttribute(stepEClass, STEP__LAST);
 
 		normalStepEClass = createEClass(NORMAL_STEP);
 
@@ -437,6 +437,9 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements SimpleUseC
 		initEReference(getFlow___first(), this.getStep(), null, "__first", null, 0, 1, Flow.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
 				IS_ORDERED);
+		initEReference(getFlow___last(), this.getStep(), null, "__last", null, 0, 1, Flow.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
 		initEAttribute(getFlow___empty(), ecorePackage.getEBoolean(), "__empty", null, 1, 1, Flow.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
@@ -454,8 +457,6 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements SimpleUseC
 				IS_ORDERED);
 		initEAttribute(getStep_Id(), ecorePackage.getEString(), "id", null, 1, 1, Step.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getStep___last(), ecorePackage.getEBoolean(), "__last", null, 1, 1, Step.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(normalStepEClass, NormalStep.class, "NormalStep", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ASCII"?>
 <TGGLanguage:TripleGraphGrammar xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TGGLanguage="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore" xmlns:csp="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:expressions="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//expressions" xmlns:patternExpressions="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//patterns/patternExpressions" name="Bpmn2UseCase">
   <domain name="Source" metamodel="//@metamodel.0" type="SOURCE"/>
-  <domain name="Target" metamodel="//@metamodel.1" type="TARGET"/>
-  <domain name="Correspondence" metamodel="//@metamodel.2"/>
+  <domain name="Target" metamodel="//@metamodel.2" type="TARGET"/>
+  <domain name="Correspondence" metamodel="//@metamodel.1"/>
   <tggRule name="Process2UseCase" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
     <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="process" incomingLink="//@tggRule.0/@linkVariable.4" outgoingLink="//@tggRule.0/@linkVariable.0 //@tggRule.0/@linkVariable.1" bindingOperator="CREATE" domain="//@domain.0">
       <type xsi:type="ecore:EClass" href="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//Process"/>
@@ -594,26 +594,21 @@
     </csp>
   </tggRule>
   <tggRule name="EndEvent2FinalStateSeq" refines="//@tggRule.11" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="step" incomingLink="//@tggRule.12/@linkVariable.0 //@tggRule.12/@linkVariable.2" domain="//@domain.1">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="step" incomingLink="//@tggRule.12/@linkVariable.0 //@tggRule.12/@linkVariable.1 //@tggRule.12/@linkVariable.3" domain="//@domain.1">
       <type xsi:type="ecore:EClass" href="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//Step"/>
-      <constraint>
-        <constraintExpression xsi:type="expressions:ComparisonExpression" operator="EQUAL">
-          <rightExpression xsi:type="expressions:LiteralExpression" value="true"/>
-          <leftExpression xsi:type="patternExpressions:AttributeValueExpression" object="//@tggRule.12/@objectVariable.0">
-            <attribute href="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//Step/__last"/>
-          </leftExpression>
-        </constraintExpression>
-      </constraint>
     </objectVariable>
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="node" incomingLink="//@tggRule.12/@linkVariable.1" domain="//@domain.0">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="node" incomingLink="//@tggRule.12/@linkVariable.2" domain="//@domain.0">
       <type xsi:type="ecore:EClass" href="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//FlowNode"/>
     </objectVariable>
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="flow" outgoingLink="//@tggRule.12/@linkVariable.0" domain="//@domain.1">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="flow" outgoingLink="//@tggRule.12/@linkVariable.0 //@tggRule.12/@linkVariable.1" domain="//@domain.1">
       <type xsi:type="ecore:EClass" href="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//Flow"/>
     </objectVariable>
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="_n2s" outgoingLink="//@tggRule.12/@linkVariable.1 //@tggRule.12/@linkVariable.2" domain="//@domain.2">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="_n2s" outgoingLink="//@tggRule.12/@linkVariable.2 //@tggRule.12/@linkVariable.3" domain="//@domain.2">
       <type xsi:type="ecore:EClass" href="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//FN2S"/>
     </objectVariable>
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="__last" target="//@tggRule.12/@objectVariable.0" source="//@tggRule.12/@objectVariable.2" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//Flow/__last"/>
+    </linkVariable>
     <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="steps" target="//@tggRule.12/@objectVariable.0" source="//@tggRule.12/@objectVariable.2" domain="//@domain.1">
       <type href="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//Flow/steps"/>
     </linkVariable>
@@ -628,10 +623,10 @@
   <metamodel name="SimpleBPMN">
     <outermostPackage href="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#/"/>
   </metamodel>
-  <metamodel name="SimpleUseCase">
-    <outermostPackage href="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#/"/>
-  </metamodel>
   <metamodel name="Bpmn2UseCase">
     <outermostPackage href="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#/"/>
+  </metamodel>
+  <metamodel name="SimpleUseCase">
+    <outermostPackage href="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#/"/>
   </metamodel>
 </TGGLanguage:TripleGraphGrammar>

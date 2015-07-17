@@ -28,6 +28,14 @@
     <source href="../bpmn/ParallelSplitSynchronization.xmi#sf3"/>
     <target xsi:type="SimpleUseCase:ParallelFlow" href="../usecase/ParallelSplitSynchronization.xmi#sf3"/>
   </correspondences>
+  <correspondences xsi:type="Bpmn2UseCase:EE2FS">
+    <source href="../bpmn/ParallelSplitSynchronization.xmi#ee1"/>
+    <target href="../usecase/ParallelSplitSynchronization.xmi#//@flows.0/@finalState.0"/>
+  </correspondences>
+  <correspondences xsi:type="Bpmn2UseCase:SF2F">
+    <source href="../bpmn/ParallelSplitSynchronization.xmi#sf2"/>
+    <target xsi:type="SimpleUseCase:ParallelFlow" href="../usecase/ParallelSplitSynchronization.xmi#sf2"/>
+  </correspondences>
   <correspondences xsi:type="Bpmn2UseCase:FN2S">
     <source xsi:type="SimpleBPMN:Task" href="../bpmn/ParallelSplitSynchronization.xmi#t2"/>
     <target xsi:type="SimpleUseCase:NormalStep" href="../usecase/ParallelSplitSynchronization.xmi#t2"/>
@@ -36,10 +44,6 @@
     <source href="../bpmn/ParallelSplitSynchronization.xmi#sf5"/>
     <target xsi:type="SimpleUseCase:ParallelFlow" href="../usecase/ParallelSplitSynchronization.xmi#sf3"/>
   </correspondences>
-  <correspondences xsi:type="Bpmn2UseCase:SF2F">
-    <source href="../bpmn/ParallelSplitSynchronization.xmi#sf2"/>
-    <target xsi:type="SimpleUseCase:ParallelFlow" href="../usecase/ParallelSplitSynchronization.xmi#sf2"/>
-  </correspondences>
   <correspondences xsi:type="Bpmn2UseCase:FN2S">
     <source xsi:type="SimpleBPMN:Task" href="../bpmn/ParallelSplitSynchronization.xmi#t1"/>
     <target xsi:type="SimpleUseCase:NormalStep" href="../usecase/ParallelSplitSynchronization.xmi#t1"/>
@@ -47,10 +51,6 @@
   <correspondences xsi:type="Bpmn2UseCase:SF2F">
     <source href="../bpmn/ParallelSplitSynchronization.xmi#sf4"/>
     <target xsi:type="SimpleUseCase:ParallelFlow" href="../usecase/ParallelSplitSynchronization.xmi#sf2"/>
-  </correspondences>
-  <correspondences xsi:type="Bpmn2UseCase:EE2FS">
-    <source href="../bpmn/ParallelSplitSynchronization.xmi#ee1"/>
-    <target href="../usecase/ParallelSplitSynchronization.xmi#//@flows.0/@finalState.0"/>
   </correspondences>
   <source href="../bpmn/ParallelSplitSynchronization.xmi#/"/>
   <target href="../usecase/ParallelSplitSynchronization.xmi#/"/>

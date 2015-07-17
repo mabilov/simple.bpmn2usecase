@@ -16,7 +16,6 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link SimpleUseCase.Step#getNext <em>Next</em>}</li>
  *   <li>{@link SimpleUseCase.Step#getId <em>Id</em>}</li>
- *   <li>{@link SimpleUseCase.Step#is__last <em>last</em>}</li>
  * </ul>
  * </p>
  *
@@ -76,32 +75,6 @@ public interface Step extends EObject {
 	 * @generated
 	 */
 	void setId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>last</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>last</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>last</em>' attribute.
-	 * @see #set__last(boolean)
-	 * @see SimpleUseCase.SimpleUseCasePackage#getStep___last()
-	 * @model required="true" ordered="false"
-	 * @generated
-	 */
-	boolean is__last();
-
-	/**
-	 * Sets the value of the '{@link SimpleUseCase.Step#is__last <em>last</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>last</em>' attribute.
-	 * @see #is__last()
-	 * @generated
-	 */
-	void set__last(boolean value);
 	// <-- [user code injected with eMoflon]
 
 	// [user code injected with eMoflon] -->

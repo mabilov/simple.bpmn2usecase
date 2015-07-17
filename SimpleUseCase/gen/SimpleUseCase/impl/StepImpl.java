@@ -24,7 +24,6 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * <ul>
  *   <li>{@link SimpleUseCase.impl.StepImpl#getNext <em>Next</em>}</li>
  *   <li>{@link SimpleUseCase.impl.StepImpl#getId <em>Id</em>}</li>
- *   <li>{@link SimpleUseCase.impl.StepImpl#is__last <em>last</em>}</li>
  * </ul>
  * </p>
  *
@@ -60,26 +59,6 @@ public abstract class StepImpl extends EObjectImpl implements Step {
 	 * @ordered
 	 */
 	protected String id = ID_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #is__last() <em>last</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #is__last()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final boolean _LAST_EDEFAULT = false;
-
-	/**
-	 * The cached value of the '{@link #is__last() <em>last</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #is__last()
-	 * @generated
-	 * @ordered
-	 */
-	protected boolean __last = _LAST_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -163,27 +142,6 @@ public abstract class StepImpl extends EObjectImpl implements Step {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated NOT
-	 */
-	public boolean is__last() {
-		return getNext() == null;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void set__last(boolean new__last) {
-		boolean old__last = __last;
-		__last = new__last;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SimpleUseCasePackage.STEP__LAST, old__last, __last));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -195,8 +153,6 @@ public abstract class StepImpl extends EObjectImpl implements Step {
 			return basicGetNext();
 		case SimpleUseCasePackage.STEP__ID:
 			return getId();
-		case SimpleUseCasePackage.STEP__LAST:
-			return is__last();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -214,9 +170,6 @@ public abstract class StepImpl extends EObjectImpl implements Step {
 			return;
 		case SimpleUseCasePackage.STEP__ID:
 			setId((String) newValue);
-			return;
-		case SimpleUseCasePackage.STEP__LAST:
-			set__last((Boolean) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -236,9 +189,6 @@ public abstract class StepImpl extends EObjectImpl implements Step {
 		case SimpleUseCasePackage.STEP__ID:
 			setId(ID_EDEFAULT);
 			return;
-		case SimpleUseCasePackage.STEP__LAST:
-			set__last(_LAST_EDEFAULT);
-			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -255,8 +205,6 @@ public abstract class StepImpl extends EObjectImpl implements Step {
 			return next != null;
 		case SimpleUseCasePackage.STEP__ID:
 			return ID_EDEFAULT == null ? id != null : !ID_EDEFAULT.equals(id);
-		case SimpleUseCasePackage.STEP__LAST:
-			return __last != _LAST_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -274,8 +222,6 @@ public abstract class StepImpl extends EObjectImpl implements Step {
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (id: ");
 		result.append(id);
-		result.append(", __last: ");
-		result.append(__last);
 		result.append(')');
 		return result.toString();
 	}

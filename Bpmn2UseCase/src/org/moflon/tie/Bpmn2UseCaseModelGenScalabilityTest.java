@@ -1,43 +1,40 @@
 package org.moflon.tie;
 
-import java.io.IOException;
-import org.apache.log4j.BasicConfigurator;
-import org.moflon.ide.debug.DebugSynchronizationHelper;
-import org.eclipse.emf.ecore.EPackage;
-
-
-import org.moflon.tgg.algorithm.modelgenerator.*;
-import org.moflon.tgg.algorithm.modelgenerator.controller.*;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
+import org.apache.log4j.BasicConfigurator;
+import org.moflon.ide.debug.DebugSynchronizationHelper;
+import org.moflon.tgg.algorithm.modelgenerator.GenerationResult;
+import org.moflon.tgg.algorithm.modelgenerator.ModelGenerator;
+import org.moflon.tgg.algorithm.modelgenerator.controller.AbstractModelGenerationController;
+import org.moflon.tgg.algorithm.modelgenerator.controller.DefaultModelGenController;
+import org.moflon.tgg.algorithm.modelgenerator.controller.LimitedRandomRuleSelector;
+import org.moflon.tgg.algorithm.modelgenerator.controller.TimeoutController;
 
 import Bpmn2UseCase.Bpmn2UseCasePackage;
 
+public class Bpmn2UseCaseModelGenScalabilityTest extends DebugSynchronizationHelper {
 
-public class Bpmn2UseCaseModelGenScalabilityTest extends DebugSynchronizationHelper{
-
-   public Bpmn2UseCaseModelGenScalabilityTest()
-   {
-      super(Bpmn2UseCasePackage.eINSTANCE, ".");
-   }
+	public Bpmn2UseCaseModelGenScalabilityTest() {
+		super(Bpmn2UseCasePackage.eINSTANCE, ".");
+	}
 
 	private BufferedWriter writer;
-	
-	public static void main(String[] args) throws IOException
-	{
+
+	public static void main(String[] args) throws IOException {
 		// Set up logging
 		BasicConfigurator.configure();
 
 		Bpmn2UseCaseModelGenScalabilityTest test = new Bpmn2UseCaseModelGenScalabilityTest();
-      	test.initWriter();
+		test.initWriter();
 
 		int[] durations = new int[] { 100, 250, 500, 750, 1000, 2000, 5000, 10000 };
-		for (int duration : durations)
-		{
+		for (int duration : durations) {
 			AbstractModelGenerationController controller = new DefaultModelGenController();
 			controller.addContinuationController(new TimeoutController(duration));
 			controller.setRuleSelector(new LimitedRandomRuleSelector().addRuleLimit("<enter rule name>", 1));
@@ -51,31 +48,28 @@ public class Bpmn2UseCaseModelGenScalabilityTest extends DebugSynchronizationHel
 		test.closeWriter();
 	}
 
-	protected void initWriter() throws IOException
-	{
+	protected void initWriter() throws IOException {
 		long timestamp = System.currentTimeMillis();
 		File resultFolder = new File("scalability_results/modelgen");
 		resultFolder.mkdirs();
-		writer = new BufferedWriter(new FileWriter(new File(resultFolder.getPath() + "/" + timestamp + "_results.csv")));
+		writer = new BufferedWriter(
+				new FileWriter(new File(resultFolder.getPath() + "/" + timestamp + "_results.csv")));
 		writer.write("sep=;");
 		writer.newLine();
 		writer.write("Modelgen duration; Modelgen performs; performs/ms");
 		writer.newLine();
 	}
 
-	protected void appendLine(int modelgenDuration, int currentPerformCount, double ratio) throws IOException
-	{
-		writer.append(modelgenDuration + "; " + currentPerformCount + "; " + round(ratio,2));
+	protected void appendLine(int modelgenDuration, int currentPerformCount, double ratio) throws IOException {
+		writer.append(modelgenDuration + "; " + currentPerformCount + "; " + round(ratio, 2));
 		writer.newLine();
 	}
 
-	protected void closeWriter() throws IOException
-	{
+	protected void closeWriter() throws IOException {
 		writer.close();
 	}
 
-	public static double round(double value, int places)
-	{
+	public static double round(double value, int places) {
 		if (places < 0)
 			throw new IllegalArgumentException();
 		BigDecimal bd = new BigDecimal(value);

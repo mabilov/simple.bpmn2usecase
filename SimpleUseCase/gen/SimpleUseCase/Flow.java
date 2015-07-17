@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link SimpleUseCase.Flow#getSteps <em>Steps</em>}</li>
  *   <li>{@link SimpleUseCase.Flow#getFinalState <em>Final State</em>}</li>
  *   <li>{@link SimpleUseCase.Flow#get__first <em>first</em>}</li>
+ *   <li>{@link SimpleUseCase.Flow#get__last <em>last</em>}</li>
  *   <li>{@link SimpleUseCase.Flow#is__empty <em>empty</em>}</li>
  * </ul>
  * </p>
@@ -85,6 +86,32 @@ public interface Flow extends EObject {
 	 * @generated
 	 */
 	void set__first(Step value);
+
+	/**
+	 * Returns the value of the '<em><b>last</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>last</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>last</em>' reference.
+	 * @see #set__last(Step)
+	 * @see SimpleUseCase.SimpleUseCasePackage#getFlow___last()
+	 * @model
+	 * @generated
+	 */
+	Step get__last();
+
+	/**
+	 * Sets the value of the '{@link SimpleUseCase.Flow#get__last <em>last</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>last</em>' reference.
+	 * @see #get__last()
+	 * @generated
+	 */
+	void set__last(Step value);
 
 	/**
 	 * Returns the value of the '<em><b>empty</b></em>' attribute.
