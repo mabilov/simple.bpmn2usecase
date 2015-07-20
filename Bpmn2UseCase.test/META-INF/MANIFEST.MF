@@ -17,4 +17,5 @@ Require-Bundle: org.eclipse.emf.ecore.xmi;bundle-version="2.10.1",
  SimpleBPMN,
  SimpleUseCase,
  Bpmn2UseCase,
- org.apache.log4j
+ org.apache.log4j,
+ org.moflon.core.utilities

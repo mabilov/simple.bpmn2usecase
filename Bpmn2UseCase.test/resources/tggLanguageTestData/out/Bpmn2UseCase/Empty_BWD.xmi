@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<SimpleBPMN:Process xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SimpleBPMN="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore">
+  <flowElements xsi:type="SimpleBPMN:StartEvent" id="se1" outgoing="fe-1924057898"/>
+  <flowElements xsi:type="SimpleBPMN:SequenceFlow" id="fe-1924057898" sourceRef="se1" targetRef="ee1"/>
+  <flowElements xsi:type="SimpleBPMN:EndEvent" id="ee1" incoming="fe-1924057898"/>
+</SimpleBPMN:Process>
