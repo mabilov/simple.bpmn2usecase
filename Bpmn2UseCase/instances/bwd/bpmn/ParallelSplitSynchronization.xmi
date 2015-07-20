@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="ASCII"?>
 <SimpleBPMN:Process xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SimpleBPMN="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore">
-  <flowElements xsi:type="SimpleBPMN:StartEvent" id="se1" outgoing="fe-820764031"/>
-  <flowElements xsi:type="SimpleBPMN:SequenceFlow" id="fe-820764031" sourceRef="se1" targetRef="pg1"/>
-  <flowElements xsi:type="SimpleBPMN:ParallelGateway" id="pg1" outgoing="sf2 sf3" incoming="fe-820764031" __conv="fe1225081910"/>
-  <flowElements xsi:type="SimpleBPMN:ParallelGateway" id="fe1225081910" outgoing="fe1012915533" incoming="fe243889145 fe1488482645" isDiverging="false"/>
-  <flowElements xsi:type="SimpleBPMN:SequenceFlow" id="fe1012915533" sourceRef="fe1225081910" targetRef="ee1"/>
-  <flowElements xsi:type="SimpleBPMN:EndEvent" id="ee1" incoming="fe1012915533"/>
+  <flowElements xsi:type="SimpleBPMN:StartEvent" id="se1" outgoing="fe-340378323"/>
+  <flowElements xsi:type="SimpleBPMN:SequenceFlow" id="fe-340378323" sourceRef="se1" targetRef="pg1"/>
+  <flowElements xsi:type="SimpleBPMN:ParallelGateway" id="pg1" outgoing="sf2 sf3" incoming="fe-340378323" __conv="fe-374775336"/>
+  <flowElements xsi:type="SimpleBPMN:ParallelGateway" id="fe-374775336" outgoing="fe-1571170288" incoming="fe-1594382695 fe-2077959495" isDiverging="false"/>
+  <flowElements xsi:type="SimpleBPMN:SequenceFlow" id="fe-1571170288" sourceRef="fe-374775336" targetRef="ee1"/>
+  <flowElements xsi:type="SimpleBPMN:EndEvent" id="ee1" incoming="fe-1571170288"/>
   <flowElements xsi:type="SimpleBPMN:SequenceFlow" id="sf2" sourceRef="pg1" targetRef="t1"/>
+  <flowElements xsi:type="SimpleBPMN:Task" id="t1" outgoing="fe-1594382695" incoming="sf2"/>
+  <flowElements xsi:type="SimpleBPMN:SequenceFlow" id="fe-1594382695" sourceRef="t1" targetRef="fe-374775336"/>
   <flowElements xsi:type="SimpleBPMN:SequenceFlow" id="sf3" sourceRef="pg1" targetRef="t2"/>
-  <flowElements xsi:type="SimpleBPMN:Task" id="t2" outgoing="fe243889145" incoming="sf3"/>
-  <flowElements xsi:type="SimpleBPMN:SequenceFlow" id="fe243889145" sourceRef="t2" targetRef="fe1225081910"/>
-  <flowElements xsi:type="SimpleBPMN:Task" id="t1" outgoing="fe1488482645" incoming="sf2"/>
-  <flowElements xsi:type="SimpleBPMN:SequenceFlow" id="fe1488482645" sourceRef="t1" targetRef="fe1225081910"/>
+  <flowElements xsi:type="SimpleBPMN:Task" id="t2" outgoing="fe-2077959495" incoming="sf3"/>
+  <flowElements xsi:type="SimpleBPMN:SequenceFlow" id="fe-2077959495" sourceRef="t2" targetRef="fe-374775336"/>
 </SimpleBPMN:Process>

@@ -24,18 +24,33 @@ public class Batch extends IntegratorTest {
 	}
 	
 	@Test
-	public void testEmpty() {
+	public void emptyFwd() {
 		integrate("Empty_FWD");
+	}
+	
+	@Test
+	public void emptyBwd() {
+		integrate("Empty_BWD");
 	}
 
 	@Test
-	public void testSequenceFwd() {
+	public void sequenceFwd() {
 		integrate("Sequence_FWD");
 	}
 	
 	@Test
-	public void testParallelSplitFwd() {
+	public void sequenceBwd() {
+		integrate("Sequence_BWD");
+	}
+	
+	@Test
+	public void parallelSplitFwd() {
 		integrate("ParallelSplitSynchronization_FWD");
+	}
+	
+	@Test
+	public void parallelSplitBwd() {
+		integrate("ParallelSplitSynchronization_BWD");
 	}
 
 	@Override
