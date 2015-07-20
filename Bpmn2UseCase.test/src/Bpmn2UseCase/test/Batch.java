@@ -81,6 +81,16 @@ public class Batch extends IntegratorTest {
 	public void parallelSplitBwd() {
 		integrate("ParallelSplitSynchronization_BWD");
 	}
+	
+	@Test
+	public void recursicve1ParallelFwd() {
+		integrate("Recursive1Parallel_FWD");
+	}
+	
+	@Test
+	public void recursicve1ParallelBwd() {
+		integrate("Recursive1Parallel_BWD");
+	}
 
 	@Override
 	protected void setInputModel(ApplicationTypes direction, String testCaseName) {
