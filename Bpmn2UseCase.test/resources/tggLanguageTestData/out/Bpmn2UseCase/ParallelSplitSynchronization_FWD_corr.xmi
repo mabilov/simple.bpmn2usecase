@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ASCII"?>
+<TGGRuntime:CorrespondenceModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Bpmn2UseCase="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore" xmlns:SimpleBPMN="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore" xmlns:SimpleUseCase="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore" xmlns:TGGRuntime="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore">
+  <correspondences xsi:type="Bpmn2UseCase:P2UC">
+    <source href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_FWD.xmi#/"/>
+    <target href="../../../../targetModel#/"/>
+  </correspondences>
+  <correspondences xsi:type="Bpmn2UseCase:FN2F">
+    <source xsi:type="SimpleBPMN:StartEvent" href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_FWD.xmi#se1"/>
+    <target xsi:type="SimpleUseCase:BasicFlow" href="../../../../targetModel#//@flows.0"/>
+  </correspondences>
+  <correspondences xsi:type="Bpmn2UseCase:FN2S">
+    <source xsi:type="SimpleBPMN:ParallelGateway" href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_FWD.xmi#pg2"/>
+    <target xsi:type="SimpleUseCase:ParallelStep" href="../../../../targetModel#pg1"/>
+  </correspondences>
+  <correspondences xsi:type="Bpmn2UseCase:GW2S">
+    <source xsi:type="SimpleBPMN:ParallelGateway" href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_FWD.xmi#pg1"/>
+    <target xsi:type="SimpleUseCase:ParallelStep" href="../../../../targetModel#pg1"/>
+  </correspondences>
+  <correspondences xsi:type="Bpmn2UseCase:FN2S">
+    <source xsi:type="SimpleBPMN:Task" href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_FWD.xmi#t2"/>
+    <target xsi:type="SimpleUseCase:NormalStep" href="../../../../targetModel#t2"/>
+  </correspondences>
+  <correspondences xsi:type="Bpmn2UseCase:FN2S">
+    <source xsi:type="SimpleBPMN:Task" href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_FWD.xmi#t1"/>
+    <target xsi:type="SimpleUseCase:NormalStep" href="../../../../targetModel#t1"/>
+  </correspondences>
+  <source href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_FWD.xmi#/"/>
+  <target href="../../../../targetModel#/"/>
+</TGGRuntime:CorrespondenceModel>

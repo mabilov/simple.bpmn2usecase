@@ -4,6 +4,7 @@ Bundle-Name: Bpmn2UseCase.test
 Bundle-SymbolicName: Bpmn2UseCase.test
 Bundle-Version: 1.0.0.qualifier
 Export-Package: Bpmn2UseCase.test
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Require-Bundle: org.eclipse.emf.ecore.xmi;bundle-version="2.10.1",
  org.eclipse.emf.compare;bundle-version="1.2.0",
  com.google.guava;bundle-version="10.0.1",
@@ -15,5 +16,5 @@ Require-Bundle: org.eclipse.emf.ecore.xmi;bundle-version="2.10.1",
  SDMLanguage;bundle-version="1.0.0",
  SimpleBPMN,
  SimpleUseCase,
- Bpmn2UseCase
-Import-Package: org.apache.log4j
+ Bpmn2UseCase,
+ org.apache.log4j
