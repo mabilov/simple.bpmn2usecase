@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimpleBPMN:Process
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:SimpleBPMN="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore"
+    xsi:schemaLocation="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore ../../../../SimpleBPMN/model/SimpleBPMN.ecore">
+  <flowElements
+      xsi:type="SimpleBPMN:StartEvent"
+      id="se1"
+      outgoing="sf1"/>
+  <flowElements
+      xsi:type="SimpleBPMN:SequenceFlow"
+      id="sf1"
+      sourceRef="se1"
+      targetRef="pg1"/>
+  <flowElements
+      xsi:type="SimpleBPMN:ParallelGateway"
+      id="pg1"
+      outgoing="sf2 sf3"
+      incoming="sf1"/>
+  <flowElements
+      xsi:type="SimpleBPMN:SequenceFlow"
+      id="sf2"
+      sourceRef="pg1"
+      targetRef="t1"/>
+  <flowElements
+      xsi:type="SimpleBPMN:SequenceFlow"
+      id="sf3"
+      sourceRef="pg1"
+      targetRef="t2"/>
+  <flowElements
+      xsi:type="SimpleBPMN:Task"
+      id="t1"
+      outgoing="sf4"
+      incoming="sf2"/>
+  <flowElements
+      xsi:type="SimpleBPMN:Task"
+      id="t2"
+      outgoing="sf5"
+      incoming="sf3"/>
+  <flowElements
+      xsi:type="SimpleBPMN:SequenceFlow"
+      id="sf4"
+      sourceRef="t1"
+      targetRef="pcg1"/>
+  <flowElements
+      xsi:type="SimpleBPMN:SequenceFlow"
+      id="sf5"
+      sourceRef="t2"
+      targetRef="pcg1"/>
+  <flowElements
+      xsi:type="SimpleBPMN:ParallelGateway"
+      id="pcg1"
+      outgoing="sf6"
+      incoming="sf4 sf5"
+      isDiverging="false"/>
+  <flowElements
+      xsi:type="SimpleBPMN:SequenceFlow"
+      id="sf6"
+      sourceRef="pcg1"
+      targetRef="t3"/>
+  <flowElements
+      xsi:type="SimpleBPMN:Task"
+      id="t3"
+      outgoing="sf7"
+      incoming="sf6"/>
+  <flowElements
+      xsi:type="SimpleBPMN:SequenceFlow"
+      id="sf7"
+      sourceRef="t3"
+      targetRef="ee1"/>
+  <flowElements
+      xsi:type="SimpleBPMN:EndEvent"
+      id="ee1"
+      incoming="sf7"/>
+</SimpleBPMN:Process>
