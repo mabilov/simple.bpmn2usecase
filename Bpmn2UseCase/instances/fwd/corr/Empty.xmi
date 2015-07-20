@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<TGGRuntime:CorrespondenceModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Bpmn2UseCase="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore" xmlns:SimpleBPMN="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore" xmlns:SimpleUseCase="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore" xmlns:TGGRuntime="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore">
+  <correspondences xsi:type="Bpmn2UseCase:P2UC">
+    <source href="../bpmn/Empty.xmi#/"/>
+    <target href="../usecase/Empty.xmi#/"/>
+  </correspondences>
+  <correspondences xsi:type="Bpmn2UseCase:FN2F">
+    <source xsi:type="SimpleBPMN:StartEvent" href="../bpmn/Empty.xmi#se1"/>
+    <target xsi:type="SimpleUseCase:BasicFlow" href="../usecase/Empty.xmi#//@flows.0"/>
+  </correspondences>
+  <source href="../bpmn/Empty.xmi#/"/>
+  <target href="../usecase/Empty.xmi#/"/>
+</TGGRuntime:CorrespondenceModel>

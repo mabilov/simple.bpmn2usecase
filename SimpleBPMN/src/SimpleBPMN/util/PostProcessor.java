@@ -14,7 +14,7 @@ import SimpleBPMN.StartEvent;
 public class PostProcessor {
 	public static void process(Process model) {
 		_setRandomIDs(model);
-		_conectSFToSynchronization(model);
+		//_conectSFToSynchronization(model);
 	}
 
 	/**

@@ -122,7 +122,7 @@ public interface SimpleUseCasePackage extends EPackage {
 	int FLOW__STEPS = 0;
 
 	/**
-	 * The feature id for the '<em><b>Final State</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Final State</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -186,7 +186,7 @@ public interface SimpleUseCasePackage extends EPackage {
 	int BASIC_FLOW__STEPS = FLOW__STEPS;
 
 	/**
-	 * The feature id for the '<em><b>Final State</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Final State</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -250,7 +250,7 @@ public interface SimpleUseCasePackage extends EPackage {
 	int NAMED_FLOW__STEPS = FLOW__STEPS;
 
 	/**
-	 * The feature id for the '<em><b>Final State</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Final State</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -323,7 +323,7 @@ public interface SimpleUseCasePackage extends EPackage {
 	int PARALLEL_FLOW__STEPS = NAMED_FLOW__STEPS;
 
 	/**
-	 * The feature id for the '<em><b>Final State</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Final State</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -396,13 +396,22 @@ public interface SimpleUseCasePackage extends EPackage {
 	int STEP__NEXT = 0;
 
 	/**
+	 * The feature id for the '<em><b>last</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STEP__LAST = 1;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STEP__ID = 1;
+	int STEP__ID = 2;
 
 	/**
 	 * The number of structural features of the '<em>Step</em>' class.
@@ -411,7 +420,7 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STEP_FEATURE_COUNT = 2;
+	int STEP_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Step</em>' class.
@@ -440,6 +449,15 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @ordered
 	 */
 	int NORMAL_STEP__NEXT = STEP__NEXT;
+
+	/**
+	 * The feature id for the '<em><b>last</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NORMAL_STEP__LAST = STEP__LAST;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -486,6 +504,15 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @ordered
 	 */
 	int PARALLEL_STEP__NEXT = STEP__NEXT;
+
+	/**
+	 * The feature id for the '<em><b>last</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARALLEL_STEP__LAST = STEP__LAST;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -580,7 +607,7 @@ public interface SimpleUseCasePackage extends EPackage {
 	int ALTERNATIVE_FLOW__STEPS = NAMED_FLOW__STEPS;
 
 	/**
-	 * The feature id for the '<em><b>Final State</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Final State</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -651,6 +678,15 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @ordered
 	 */
 	int CHOICE_STEP__NEXT = STEP__NEXT;
+
+	/**
+	 * The feature id for the '<em><b>last</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHOICE_STEP__LAST = STEP__LAST;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -742,10 +778,10 @@ public interface SimpleUseCasePackage extends EPackage {
 	EReference getFlow_Steps();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link SimpleUseCase.Flow#getFinalState <em>Final State</em>}'.
+	 * Returns the meta object for the containment reference '{@link SimpleUseCase.Flow#getFinalState <em>Final State</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Final State</em>'.
+	 * @return the meta object for the containment reference '<em>Final State</em>'.
 	 * @see SimpleUseCase.Flow#getFinalState()
 	 * @see #getFlow()
 	 * @generated
@@ -814,6 +850,17 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getStep_Next();
+
+	/**
+	 * Returns the meta object for the reference '{@link SimpleUseCase.Step#get__last <em>last</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>last</em>'.
+	 * @see SimpleUseCase.Step#get__last()
+	 * @see #getStep()
+	 * @generated
+	 */
+	EReference getStep___last();
 
 	/**
 	 * Returns the meta object for the attribute '{@link SimpleUseCase.Step#getId <em>Id</em>}'.
@@ -998,7 +1045,7 @@ public interface SimpleUseCasePackage extends EPackage {
 		EReference FLOW__STEPS = eINSTANCE.getFlow_Steps();
 
 		/**
-		 * The meta object literal for the '<em><b>Final State</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Final State</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1058,6 +1105,14 @@ public interface SimpleUseCasePackage extends EPackage {
 		 * @generated
 		 */
 		EReference STEP__NEXT = eINSTANCE.getStep_Next();
+
+		/**
+		 * The meta object literal for the '<em><b>last</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STEP__LAST = eINSTANCE.getStep___last();
 
 		/**
 		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.

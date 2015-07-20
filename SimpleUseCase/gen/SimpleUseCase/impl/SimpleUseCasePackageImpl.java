@@ -283,8 +283,17 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements SimpleUseC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getStep___last() {
+		return (EReference) stepEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EAttribute getStep_Id() {
-		return (EAttribute) stepEClass.getEStructuralFeatures().get(1);
+		return (EAttribute) stepEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -422,6 +431,7 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements SimpleUseC
 
 		stepEClass = createEClass(STEP);
 		createEReference(stepEClass, STEP__NEXT);
+		createEReference(stepEClass, STEP__LAST);
 		createEAttribute(stepEClass, STEP__ID);
 
 		normalStepEClass = createEClass(NORMAL_STEP);
@@ -491,7 +501,7 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements SimpleUseC
 		initEReference(getFlow_Steps(), this.getStep(), null, "steps", null, 0, -1, Flow.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
 				IS_ORDERED);
-		initEReference(getFlow_FinalState(), this.getUCCondition(), null, "finalState", null, 0, -1, Flow.class,
+		initEReference(getFlow_FinalState(), this.getUCCondition(), null, "finalState", null, 0, 1, Flow.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFlow___last(), this.getStep(), null, "__last", null, 0, 1, Flow.class, !IS_TRANSIENT,
@@ -508,6 +518,9 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements SimpleUseC
 
 		initEClass(stepEClass, Step.class, "Step", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getStep_Next(), this.getStep(), null, "next", null, 0, 1, Step.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getStep___last(), this.getUCCondition(), null, "__last", null, 0, 1, Step.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
 				IS_ORDERED);
 		initEAttribute(getStep_Id(), ecorePackage.getEString(), "id", null, 1, 1, Step.class, !IS_TRANSIENT,

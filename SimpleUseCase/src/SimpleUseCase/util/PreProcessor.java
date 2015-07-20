@@ -58,6 +58,7 @@ public class PreProcessor {
 			// flow.set__first(first);
 			Step last = _findLast(flow);
 			flow.set__last(last);
+			last.set__last(flow.getFinalState());
 		}
 	}
 }

@@ -6,7 +6,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Flow" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EReference" name="steps" upperBound="-1" eType="//Step" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="finalState" upperBound="-1" eType="//UCCondition" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="finalState" eType="//UCCondition" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="__last" eType="//Step"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="__empty" ordered="false" lowerBound="1">
       <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
@@ -16,6 +16,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="ParallelFlow" eSuperTypes="//NamedFlow"/>
   <eClassifiers xsi:type="ecore:EClass" name="Step" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EReference" name="next" eType="//Step"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="__last" eType="//UCCondition"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" ordered="false" lowerBound="1" iD="true">
       <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>

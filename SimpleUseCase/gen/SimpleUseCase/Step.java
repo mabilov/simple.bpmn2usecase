@@ -15,6 +15,7 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * <ul>
  *   <li>{@link SimpleUseCase.Step#getNext <em>Next</em>}</li>
+ *   <li>{@link SimpleUseCase.Step#get__last <em>last</em>}</li>
  *   <li>{@link SimpleUseCase.Step#getId <em>Id</em>}</li>
  * </ul>
  * </p>
@@ -49,6 +50,32 @@ public interface Step extends EObject {
 	 * @generated
 	 */
 	void setNext(Step value);
+
+	/**
+	 * Returns the value of the '<em><b>last</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>last</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>last</em>' reference.
+	 * @see #set__last(UCCondition)
+	 * @see SimpleUseCase.SimpleUseCasePackage#getStep___last()
+	 * @model
+	 * @generated
+	 */
+	UCCondition get__last();
+
+	/**
+	 * Sets the value of the '{@link SimpleUseCase.Step#get__last <em>last</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>last</em>' reference.
+	 * @see #get__last()
+	 * @generated
+	 */
+	void set__last(UCCondition value);
 
 	/**
 	 * Returns the value of the '<em><b>Id</b></em>' attribute.

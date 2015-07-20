@@ -53,14 +53,14 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 	protected EList<Step> steps;
 
 	/**
-	 * The cached value of the '{@link #getFinalState() <em>Final State</em>}' containment reference list.
+	 * The cached value of the '{@link #getFinalState() <em>Final State</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getFinalState()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<UCCondition> finalState;
+	protected UCCondition finalState;
 
 	/**
 	 * The cached value of the '{@link #get__last() <em>last</em>}' reference.
@@ -128,12 +128,49 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<UCCondition> getFinalState() {
-		if (finalState == null) {
-			finalState = new EObjectContainmentEList<UCCondition>(UCCondition.class, this,
-					SimpleUseCasePackage.FLOW__FINAL_STATE);
-		}
+	public UCCondition getFinalState() {
 		return finalState;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetFinalState(UCCondition newFinalState, NotificationChain msgs) {
+		UCCondition oldFinalState = finalState;
+		finalState = newFinalState;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					SimpleUseCasePackage.FLOW__FINAL_STATE, oldFinalState, newFinalState);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setFinalState(UCCondition newFinalState) {
+		if (newFinalState != finalState) {
+			NotificationChain msgs = null;
+			if (finalState != null)
+				msgs = ((InternalEObject) finalState).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - SimpleUseCasePackage.FLOW__FINAL_STATE, null, msgs);
+			if (newFinalState != null)
+				msgs = ((InternalEObject) newFinalState).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - SimpleUseCasePackage.FLOW__FINAL_STATE, null, msgs);
+			msgs = basicSetFinalState(newFinalState, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SimpleUseCasePackage.FLOW__FINAL_STATE, newFinalState,
+					newFinalState));
 	}
 
 	/**
@@ -181,7 +218,7 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 	 * @generated
 	 */
 	public boolean is__empty() {
-		return getSteps() == null || getSteps().isEmpty();
+		return __empty;
 	}
 
 	/**
@@ -208,7 +245,7 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 		case SimpleUseCasePackage.FLOW__STEPS:
 			return ((InternalEList<?>) getSteps()).basicRemove(otherEnd, msgs);
 		case SimpleUseCasePackage.FLOW__FINAL_STATE:
-			return ((InternalEList<?>) getFinalState()).basicRemove(otherEnd, msgs);
+			return basicSetFinalState(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -249,8 +286,7 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 			getSteps().addAll((Collection<? extends Step>) newValue);
 			return;
 		case SimpleUseCasePackage.FLOW__FINAL_STATE:
-			getFinalState().clear();
-			getFinalState().addAll((Collection<? extends UCCondition>) newValue);
+			setFinalState((UCCondition) newValue);
 			return;
 		case SimpleUseCasePackage.FLOW__LAST:
 			set__last((Step) newValue);
@@ -274,7 +310,7 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 			getSteps().clear();
 			return;
 		case SimpleUseCasePackage.FLOW__FINAL_STATE:
-			getFinalState().clear();
+			setFinalState((UCCondition) null);
 			return;
 		case SimpleUseCasePackage.FLOW__LAST:
 			set__last((Step) null);
@@ -297,7 +333,7 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 		case SimpleUseCasePackage.FLOW__STEPS:
 			return steps != null && !steps.isEmpty();
 		case SimpleUseCasePackage.FLOW__FINAL_STATE:
-			return finalState != null && !finalState.isEmpty();
+			return finalState != null;
 		case SimpleUseCasePackage.FLOW__LAST:
 			return __last != null;
 		case SimpleUseCasePackage.FLOW__EMPTY:

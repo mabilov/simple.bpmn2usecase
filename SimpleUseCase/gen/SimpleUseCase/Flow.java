@@ -45,20 +45,30 @@ public interface Flow extends EObject {
 	EList<Step> getSteps();
 
 	/**
-	 * Returns the value of the '<em><b>Final State</b></em>' containment reference list.
-	 * The list contents are of type {@link SimpleUseCase.UCCondition}.
+	 * Returns the value of the '<em><b>Final State</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Final State</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Final State</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Final State</em>' containment reference list.
+	 * @return the value of the '<em>Final State</em>' containment reference.
+	 * @see #setFinalState(UCCondition)
 	 * @see SimpleUseCase.SimpleUseCasePackage#getFlow_FinalState()
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<UCCondition> getFinalState();
+	UCCondition getFinalState();
+
+	/**
+	 * Sets the value of the '{@link SimpleUseCase.Flow#getFinalState <em>Final State</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Final State</em>' containment reference.
+	 * @see #getFinalState()
+	 * @generated
+	 */
+	void setFinalState(UCCondition value);
 
 	/**
 	 * Returns the value of the '<em><b>last</b></em>' reference.

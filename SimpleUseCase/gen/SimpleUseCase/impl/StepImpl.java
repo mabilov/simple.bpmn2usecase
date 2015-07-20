@@ -4,6 +4,7 @@ package SimpleUseCase.impl;
 
 import SimpleUseCase.SimpleUseCasePackage;
 import SimpleUseCase.Step;
+import SimpleUseCase.UCCondition;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -23,6 +24,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * The following features are implemented:
  * <ul>
  *   <li>{@link SimpleUseCase.impl.StepImpl#getNext <em>Next</em>}</li>
+ *   <li>{@link SimpleUseCase.impl.StepImpl#get__last <em>last</em>}</li>
  *   <li>{@link SimpleUseCase.impl.StepImpl#getId <em>Id</em>}</li>
  * </ul>
  * </p>
@@ -39,6 +41,16 @@ public abstract class StepImpl extends EObjectImpl implements Step {
 	 * @ordered
 	 */
 	protected Step next;
+
+	/**
+	 * The cached value of the '{@link #get__last() <em>last</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #get__last()
+	 * @generated
+	 * @ordered
+	 */
+	protected UCCondition __last;
 
 	/**
 	 * The default value of the '{@link #getId() <em>Id</em>}' attribute.
@@ -123,6 +135,45 @@ public abstract class StepImpl extends EObjectImpl implements Step {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public UCCondition get__last() {
+		if (__last != null && __last.eIsProxy()) {
+			InternalEObject old__last = (InternalEObject) __last;
+			__last = (UCCondition) eResolveProxy(old__last);
+			if (__last != old__last) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, SimpleUseCasePackage.STEP__LAST,
+							old__last, __last));
+			}
+		}
+		return __last;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public UCCondition basicGet__last() {
+		return __last;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void set__last(UCCondition new__last) {
+		UCCondition old__last = __last;
+		__last = new__last;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SimpleUseCasePackage.STEP__LAST, old__last, __last));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public String getId() {
 		return id;
 	}
@@ -151,6 +202,10 @@ public abstract class StepImpl extends EObjectImpl implements Step {
 			if (resolve)
 				return getNext();
 			return basicGetNext();
+		case SimpleUseCasePackage.STEP__LAST:
+			if (resolve)
+				return get__last();
+			return basicGet__last();
 		case SimpleUseCasePackage.STEP__ID:
 			return getId();
 		}
@@ -167,6 +222,9 @@ public abstract class StepImpl extends EObjectImpl implements Step {
 		switch (featureID) {
 		case SimpleUseCasePackage.STEP__NEXT:
 			setNext((Step) newValue);
+			return;
+		case SimpleUseCasePackage.STEP__LAST:
+			set__last((UCCondition) newValue);
 			return;
 		case SimpleUseCasePackage.STEP__ID:
 			setId((String) newValue);
@@ -186,6 +244,9 @@ public abstract class StepImpl extends EObjectImpl implements Step {
 		case SimpleUseCasePackage.STEP__NEXT:
 			setNext((Step) null);
 			return;
+		case SimpleUseCasePackage.STEP__LAST:
+			set__last((UCCondition) null);
+			return;
 		case SimpleUseCasePackage.STEP__ID:
 			setId(ID_EDEFAULT);
 			return;
@@ -203,6 +264,8 @@ public abstract class StepImpl extends EObjectImpl implements Step {
 		switch (featureID) {
 		case SimpleUseCasePackage.STEP__NEXT:
 			return next != null;
+		case SimpleUseCasePackage.STEP__LAST:
+			return __last != null;
 		case SimpleUseCasePackage.STEP__ID:
 			return ID_EDEFAULT == null ? id != null : !ID_EDEFAULT.equals(id);
 		}

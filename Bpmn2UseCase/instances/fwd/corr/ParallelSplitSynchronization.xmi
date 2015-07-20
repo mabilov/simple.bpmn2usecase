@@ -4,53 +4,25 @@
     <source href="../bpmn/ParallelSplitSynchronization.xmi#/"/>
     <target href="../usecase/ParallelSplitSynchronization.xmi#/"/>
   </correspondences>
-  <correspondences xsi:type="Bpmn2UseCase:SE2BF">
-    <source href="../bpmn/ParallelSplitSynchronization.xmi#se1"/>
-    <target href="../usecase/ParallelSplitSynchronization.xmi#//@flows.0"/>
-  </correspondences>
-  <correspondences xsi:type="Bpmn2UseCase:SF2F">
-    <source href="../bpmn/ParallelSplitSynchronization.xmi#sf1"/>
-    <target xsi:type="SimpleUseCase:BasicFlow" href="../usecase/ParallelSplitSynchronization.xmi#//@flows.0"/>
-  </correspondences>
-  <correspondences xsi:type="Bpmn2UseCase:FN2S">
-    <source xsi:type="SimpleBPMN:ParallelGateway" href="../bpmn/ParallelSplitSynchronization.xmi#pg1"/>
-    <target xsi:type="SimpleUseCase:ParallelStep" href="../usecase/ParallelSplitSynchronization.xmi#pg1"/>
-  </correspondences>
-  <correspondences xsi:type="Bpmn2UseCase:SF2F">
-    <source href="../bpmn/ParallelSplitSynchronization.xmi#sf6"/>
+  <correspondences xsi:type="Bpmn2UseCase:FN2F">
+    <source xsi:type="SimpleBPMN:StartEvent" href="../bpmn/ParallelSplitSynchronization.xmi#se1"/>
     <target xsi:type="SimpleUseCase:BasicFlow" href="../usecase/ParallelSplitSynchronization.xmi#//@flows.0"/>
   </correspondences>
   <correspondences xsi:type="Bpmn2UseCase:FN2S">
     <source xsi:type="SimpleBPMN:ParallelGateway" href="../bpmn/ParallelSplitSynchronization.xmi#pg2"/>
     <target xsi:type="SimpleUseCase:ParallelStep" href="../usecase/ParallelSplitSynchronization.xmi#pg1"/>
   </correspondences>
-  <correspondences xsi:type="Bpmn2UseCase:SF2F">
-    <source href="../bpmn/ParallelSplitSynchronization.xmi#sf3"/>
-    <target xsi:type="SimpleUseCase:ParallelFlow" href="../usecase/ParallelSplitSynchronization.xmi#sf3"/>
-  </correspondences>
-  <correspondences xsi:type="Bpmn2UseCase:EE2FS">
-    <source href="../bpmn/ParallelSplitSynchronization.xmi#ee1"/>
-    <target href="../usecase/ParallelSplitSynchronization.xmi#//@flows.0/@finalState.0"/>
-  </correspondences>
-  <correspondences xsi:type="Bpmn2UseCase:SF2F">
-    <source href="../bpmn/ParallelSplitSynchronization.xmi#sf2"/>
-    <target xsi:type="SimpleUseCase:ParallelFlow" href="../usecase/ParallelSplitSynchronization.xmi#sf2"/>
-  </correspondences>
-  <correspondences xsi:type="Bpmn2UseCase:FN2S">
-    <source xsi:type="SimpleBPMN:Task" href="../bpmn/ParallelSplitSynchronization.xmi#t2"/>
-    <target xsi:type="SimpleUseCase:NormalStep" href="../usecase/ParallelSplitSynchronization.xmi#t2"/>
-  </correspondences>
-  <correspondences xsi:type="Bpmn2UseCase:SF2F">
-    <source href="../bpmn/ParallelSplitSynchronization.xmi#sf5"/>
-    <target xsi:type="SimpleUseCase:ParallelFlow" href="../usecase/ParallelSplitSynchronization.xmi#sf3"/>
+  <correspondences xsi:type="Bpmn2UseCase:GW2S">
+    <source xsi:type="SimpleBPMN:ParallelGateway" href="../bpmn/ParallelSplitSynchronization.xmi#pg1"/>
+    <target xsi:type="SimpleUseCase:ParallelStep" href="../usecase/ParallelSplitSynchronization.xmi#pg1"/>
   </correspondences>
   <correspondences xsi:type="Bpmn2UseCase:FN2S">
     <source xsi:type="SimpleBPMN:Task" href="../bpmn/ParallelSplitSynchronization.xmi#t1"/>
     <target xsi:type="SimpleUseCase:NormalStep" href="../usecase/ParallelSplitSynchronization.xmi#t1"/>
   </correspondences>
-  <correspondences xsi:type="Bpmn2UseCase:SF2F">
-    <source href="../bpmn/ParallelSplitSynchronization.xmi#sf4"/>
-    <target xsi:type="SimpleUseCase:ParallelFlow" href="../usecase/ParallelSplitSynchronization.xmi#sf2"/>
+  <correspondences xsi:type="Bpmn2UseCase:FN2S">
+    <source xsi:type="SimpleBPMN:Task" href="../bpmn/ParallelSplitSynchronization.xmi#t2"/>
+    <target xsi:type="SimpleUseCase:NormalStep" href="../usecase/ParallelSplitSynchronization.xmi#t2"/>
   </correspondences>
   <source href="../bpmn/ParallelSplitSynchronization.xmi#/"/>
   <target href="../usecase/ParallelSplitSynchronization.xmi#/"/>
