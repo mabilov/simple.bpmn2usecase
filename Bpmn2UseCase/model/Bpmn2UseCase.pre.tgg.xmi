@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ASCII"?>
 <TGGLanguage:TripleGraphGrammar xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TGGLanguage="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore" xmlns:csp="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:expressions="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//expressions" xmlns:patternExpressions="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//patterns/patternExpressions" name="Bpmn2UseCase">
-  <domain name="Source" metamodel="//@metamodel.0" type="SOURCE"/>
-  <domain name="Target" metamodel="//@metamodel.1" type="TARGET"/>
+  <domain name="Source" metamodel="//@metamodel.1" type="SOURCE"/>
+  <domain name="Target" metamodel="//@metamodel.0" type="TARGET"/>
   <domain name="Correspondence" metamodel="//@metamodel.2"/>
   <tggRule name="Process2UseCase" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
     <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="process" incomingLink="//@tggRule.0/@linkVariable.3" outgoingLink="//@tggRule.0/@linkVariable.0" bindingOperator="CREATE" domain="//@domain.0">
@@ -58,8 +58,21 @@
         <modelgenAdornments value="FB"/>
         <modelgenAdornments value="FF"/>
       </constraints>
+      <constraints variables="//@tggRule.0/@csp/@variables.2 //@tggRule.0/@csp/@variables.3" name="eq">
+        <signature type=""/>
+        <signature type="" index="1"/>
+        <allowedAdornments value="BB"/>
+        <allowedAdornments value="BF"/>
+        <allowedAdornments value="FB"/>
+        <modelgenAdornments value="BB"/>
+        <modelgenAdornments value="BF"/>
+        <modelgenAdornments value="FB"/>
+        <modelgenAdornments value="FF"/>
+      </constraints>
       <variables xsi:type="csp:AttributeVariable" attribute="id" objectVariable="start"/>
       <variables xsi:type="csp:AttributeVariable" attribute="name" objectVariable="cond"/>
+      <variables xsi:type="csp:AttributeVariable" attribute="id" objectVariable="process"/>
+      <variables xsi:type="csp:AttributeVariable" attribute="id" objectVariable="useCase"/>
     </csp>
   </tggRule>
   <tggRule name="Task2NormalStep" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1" abstractRule="true">
@@ -694,11 +707,11 @@
     </linkVariable>
     <csp/>
   </tggRule>
-  <metamodel name="SimpleBPMN">
-    <outermostPackage href="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#/"/>
-  </metamodel>
   <metamodel name="SimpleUseCase">
     <outermostPackage href="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#/"/>
+  </metamodel>
+  <metamodel name="SimpleBPMN">
+    <outermostPackage href="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#/"/>
   </metamodel>
   <metamodel name="Bpmn2UseCase">
     <outermostPackage href="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#/"/>

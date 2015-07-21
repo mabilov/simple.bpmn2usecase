@@ -34,6 +34,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link SimpleUseCase.impl.UseCaseImpl#getFlows <em>Flows</em>}</li>
  *   <li>{@link SimpleUseCase.impl.UseCaseImpl#getPrecondition <em>Precondition</em>}</li>
+ *   <li>{@link SimpleUseCase.impl.UseCaseImpl#getId <em>Id</em>}</li>
  * </ul>
  * </p>
  *
@@ -59,6 +60,26 @@ public class UseCaseImpl extends EObjectImpl implements UseCase {
 	 * @ordered
 	 */
 	protected UCCondition precondition;
+
+	/**
+	 * The default value of the '{@link #getId() <em>Id</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getId()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String ID_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getId()
+	 * @generated
+	 * @ordered
+	 */
+	protected String id = ID_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -146,6 +167,27 @@ public class UseCaseImpl extends EObjectImpl implements UseCase {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getId() {
+		return id;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setId(String newId) {
+		String oldId = id;
+		id = newId;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SimpleUseCasePackage.USE_CASE__ID, oldId, id));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -169,6 +211,8 @@ public class UseCaseImpl extends EObjectImpl implements UseCase {
 			return getFlows();
 		case SimpleUseCasePackage.USE_CASE__PRECONDITION:
 			return getPrecondition();
+		case SimpleUseCasePackage.USE_CASE__ID:
+			return getId();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -189,6 +233,9 @@ public class UseCaseImpl extends EObjectImpl implements UseCase {
 		case SimpleUseCasePackage.USE_CASE__PRECONDITION:
 			setPrecondition((UCCondition) newValue);
 			return;
+		case SimpleUseCasePackage.USE_CASE__ID:
+			setId((String) newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -207,6 +254,9 @@ public class UseCaseImpl extends EObjectImpl implements UseCase {
 		case SimpleUseCasePackage.USE_CASE__PRECONDITION:
 			setPrecondition((UCCondition) null);
 			return;
+		case SimpleUseCasePackage.USE_CASE__ID:
+			setId(ID_EDEFAULT);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -223,8 +273,27 @@ public class UseCaseImpl extends EObjectImpl implements UseCase {
 			return flows != null && !flows.isEmpty();
 		case SimpleUseCasePackage.USE_CASE__PRECONDITION:
 			return precondition != null;
+		case SimpleUseCasePackage.USE_CASE__ID:
+			return ID_EDEFAULT == null ? id != null : !ID_EDEFAULT.equals(id);
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy())
+			return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (id: ");
+		result.append(id);
+		result.append(')');
+		return result.toString();
 	}
 	// <-- [user code injected with eMoflon]
 

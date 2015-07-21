@@ -35,7 +35,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link SimpleUseCase.impl.FlowImpl#getSteps <em>Steps</em>}</li>
  *   <li>{@link SimpleUseCase.impl.FlowImpl#getFinalState <em>Final State</em>}</li>
  *   <li>{@link SimpleUseCase.impl.FlowImpl#get__last <em>last</em>}</li>
- *   <li>{@link SimpleUseCase.impl.FlowImpl#is__empty <em>empty</em>}</li>
  * </ul>
  * </p>
  *
@@ -71,26 +70,6 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 	 * @ordered
 	 */
 	protected Step __last;
-
-	/**
-	 * The default value of the '{@link #is__empty() <em>empty</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #is__empty()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final boolean _EMPTY_EDEFAULT = false;
-
-	/**
-	 * The cached value of the '{@link #is__empty() <em>empty</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #is__empty()
-	 * @generated
-	 * @ordered
-	 */
-	protected boolean __empty = _EMPTY_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -217,28 +196,6 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean is__empty() {
-		return __empty;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void set__empty(boolean new__empty) {
-		boolean old__empty = __empty;
-		__empty = new__empty;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SimpleUseCasePackage.FLOW__EMPTY, old__empty,
-					__empty));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -266,8 +223,6 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 			if (resolve)
 				return get__last();
 			return basicGet__last();
-		case SimpleUseCasePackage.FLOW__EMPTY:
-			return is__empty();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -291,9 +246,6 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 		case SimpleUseCasePackage.FLOW__LAST:
 			set__last((Step) newValue);
 			return;
-		case SimpleUseCasePackage.FLOW__EMPTY:
-			set__empty((Boolean) newValue);
-			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -315,9 +267,6 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 		case SimpleUseCasePackage.FLOW__LAST:
 			set__last((Step) null);
 			return;
-		case SimpleUseCasePackage.FLOW__EMPTY:
-			set__empty(_EMPTY_EDEFAULT);
-			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -336,27 +285,8 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 			return finalState != null;
 		case SimpleUseCasePackage.FLOW__LAST:
 			return __last != null;
-		case SimpleUseCasePackage.FLOW__EMPTY:
-			return __empty != _EMPTY_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy())
-			return super.toString();
-
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (__empty: ");
-		result.append(__empty);
-		result.append(')');
-		return result.toString();
 	}
 	// <-- [user code injected with eMoflon]
 

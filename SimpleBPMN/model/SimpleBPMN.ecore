@@ -1,39 +1,36 @@
 <?xml version="1.0" encoding="ASCII"?>
-<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="SimpleBPMN" nsURI="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore"
-    nsPrefix="SimpleBPMN">
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="SimpleBPMN" nsURI="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore" nsPrefix="SimpleBPMN">
   <eClassifiers xsi:type="ecore:EClass" name="Process">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="flowElements" upperBound="-1"
-        eType="#//FlowElement" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="flowElements" upperBound="-1" eType="//FlowElement" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" ordered="false" lowerBound="1" iD="true">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FlowElement" abstract="true">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" ordered="false" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" ordered="false" lowerBound="1" iD="true">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FlowNode" abstract="true" eSuperTypes="#//FlowElement">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="outgoing" upperBound="-1"
-        eType="#//SequenceFlow" eOpposite="#//SequenceFlow/sourceRef"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="incoming" upperBound="-1"
-        eType="#//SequenceFlow" eOpposite="#//SequenceFlow/targetRef"/>
+  <eClassifiers xsi:type="ecore:EClass" name="FlowNode" abstract="true" eSuperTypes="//FlowElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="outgoing" upperBound="-1" eType="//SequenceFlow" eOpposite="//SequenceFlow/sourceRef"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="incoming" upperBound="-1" eType="//SequenceFlow" eOpposite="//SequenceFlow/targetRef"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="SequenceFlow" eSuperTypes="#//FlowElement">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceRef" lowerBound="1"
-        eType="#//FlowNode" eOpposite="#//FlowNode/outgoing"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="targetRef" lowerBound="1"
-        eType="#//FlowNode" eOpposite="#//FlowNode/incoming"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SequenceFlow" eSuperTypes="//FlowElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceRef" lowerBound="1" eType="//FlowNode" eOpposite="//FlowNode/outgoing"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetRef" lowerBound="1" eType="//FlowNode" eOpposite="//FlowNode/incoming"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Task" eSuperTypes="#//FlowNode"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ParallelGateway" eSuperTypes="#//Gateway"/>
-  <eClassifiers xsi:type="ecore:EClass" name="StartEvent" eSuperTypes="#//Event"/>
-  <eClassifiers xsi:type="ecore:EClass" name="EndEvent" eSuperTypes="#//Event"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Event" abstract="true" eSuperTypes="#//FlowNode"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Gateway" abstract="true" eSuperTypes="#//FlowNode">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="__conv" eType="#//Gateway"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isDiverging" ordered="false"
-        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
-        defaultValueLiteral="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Task" eSuperTypes="//FlowNode"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ParallelGateway" eSuperTypes="//Gateway"/>
+  <eClassifiers xsi:type="ecore:EClass" name="StartEvent" eSuperTypes="//Event"/>
+  <eClassifiers xsi:type="ecore:EClass" name="EndEvent" eSuperTypes="//Event"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Event" abstract="true" eSuperTypes="//FlowNode"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Gateway" abstract="true" eSuperTypes="//FlowNode">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="__conv" eType="//Gateway"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isDiverging" ordered="false" lowerBound="1" defaultValueLiteral="true">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ExclusiveGateway" eSuperTypes="#//Gateway">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="default" eType="#//SequenceFlow"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ExclusiveGateway" eSuperTypes="//Gateway">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="default" eType="//SequenceFlow"/>
   </eClassifiers>
 </ecore:EPackage>

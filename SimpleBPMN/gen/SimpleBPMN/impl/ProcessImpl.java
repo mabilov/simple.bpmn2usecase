@@ -7,6 +7,7 @@ import SimpleBPMN.SimpleBPMNPackage;
 
 import java.util.Collection;
 
+import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
@@ -14,6 +15,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
@@ -29,6 +31,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * <ul>
  *   <li>{@link SimpleBPMN.impl.ProcessImpl#getFlowElements <em>Flow Elements</em>}</li>
+ *   <li>{@link SimpleBPMN.impl.ProcessImpl#getId <em>Id</em>}</li>
  * </ul>
  * </p>
  *
@@ -44,6 +47,26 @@ public class ProcessImpl extends EObjectImpl implements SimpleBPMN.Process {
 	 * @ordered
 	 */
 	protected EList<FlowElement> flowElements;
+
+	/**
+	 * The default value of the '{@link #getId() <em>Id</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getId()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String ID_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getId()
+	 * @generated
+	 * @ordered
+	 */
+	protected String id = ID_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -82,6 +105,27 @@ public class ProcessImpl extends EObjectImpl implements SimpleBPMN.Process {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getId() {
+		return id;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setId(String newId) {
+		String oldId = id;
+		id = newId;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SimpleBPMNPackage.PROCESS__ID, oldId, id));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -101,6 +145,8 @@ public class ProcessImpl extends EObjectImpl implements SimpleBPMN.Process {
 		switch (featureID) {
 		case SimpleBPMNPackage.PROCESS__FLOW_ELEMENTS:
 			return getFlowElements();
+		case SimpleBPMNPackage.PROCESS__ID:
+			return getId();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -118,6 +164,9 @@ public class ProcessImpl extends EObjectImpl implements SimpleBPMN.Process {
 			getFlowElements().clear();
 			getFlowElements().addAll((Collection<? extends FlowElement>) newValue);
 			return;
+		case SimpleBPMNPackage.PROCESS__ID:
+			setId((String) newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -133,6 +182,9 @@ public class ProcessImpl extends EObjectImpl implements SimpleBPMN.Process {
 		case SimpleBPMNPackage.PROCESS__FLOW_ELEMENTS:
 			getFlowElements().clear();
 			return;
+		case SimpleBPMNPackage.PROCESS__ID:
+			setId(ID_EDEFAULT);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -147,8 +199,27 @@ public class ProcessImpl extends EObjectImpl implements SimpleBPMN.Process {
 		switch (featureID) {
 		case SimpleBPMNPackage.PROCESS__FLOW_ELEMENTS:
 			return flowElements != null && !flowElements.isEmpty();
+		case SimpleBPMNPackage.PROCESS__ID:
+			return ID_EDEFAULT == null ? id != null : !ID_EDEFAULT.equals(id);
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy())
+			return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (id: ");
+		result.append(id);
+		result.append(')');
+		return result.toString();
 	}
 	// <-- [user code injected with eMoflon]
 

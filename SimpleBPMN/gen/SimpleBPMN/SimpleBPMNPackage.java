@@ -76,13 +76,22 @@ public interface SimpleBPMNPackage extends EPackage {
 	int PROCESS__FLOW_ELEMENTS = 0;
 
 	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS__ID = 1;
+
+	/**
 	 * The number of structural features of the '<em>Process</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PROCESS_FEATURE_COUNT = 1;
+	int PROCESS_FEATURE_COUNT = 2;
 
 	/**
 	 * The number of operations of the '<em>Process</em>' class.
@@ -710,6 +719,17 @@ public interface SimpleBPMNPackage extends EPackage {
 	EReference getProcess_FlowElements();
 
 	/**
+	 * Returns the meta object for the attribute '{@link SimpleBPMN.Process#getId <em>Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Id</em>'.
+	 * @see SimpleBPMN.Process#getId()
+	 * @see #getProcess()
+	 * @generated
+	 */
+	EAttribute getProcess_Id();
+
+	/**
 	 * Returns the meta object for class '{@link SimpleBPMN.FlowElement <em>Flow Element</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -937,6 +957,14 @@ public interface SimpleBPMNPackage extends EPackage {
 		 * @generated
 		 */
 		EReference PROCESS__FLOW_ELEMENTS = eINSTANCE.getProcess_FlowElements();
+
+		/**
+		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PROCESS__ID = eINSTANCE.getProcess_Id();
 
 		/**
 		 * The meta object literal for the '{@link SimpleBPMN.impl.FlowElementImpl <em>Flow Element</em>}' class.

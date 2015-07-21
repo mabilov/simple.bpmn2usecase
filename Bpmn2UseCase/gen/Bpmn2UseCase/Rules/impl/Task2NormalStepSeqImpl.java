@@ -755,7 +755,7 @@ public class Task2NormalStepSeqImpl extends AbstractRuleImpl implements Task2Nor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_5(EMoflonEdge _edge_steps) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_23(EMoflonEdge _edge_steps) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepSeqImpl
 				.pattern_Task2NormalStepSeq_20_1_bindingAndBlackFFB(this);
@@ -808,7 +808,7 @@ public class Task2NormalStepSeqImpl extends AbstractRuleImpl implements Task2Nor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_6(EMoflonEdge _edge_next) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_24(EMoflonEdge _edge_next) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepSeqImpl
 				.pattern_Task2NormalStepSeq_21_1_bindingAndBlackFFB(this);
@@ -861,7 +861,7 @@ public class Task2NormalStepSeqImpl extends AbstractRuleImpl implements Task2Nor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_9(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_69(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepSeqImpl
 				.pattern_Task2NormalStepSeq_22_1_bindingAndBlackFFB(this);
@@ -916,7 +916,7 @@ public class Task2NormalStepSeqImpl extends AbstractRuleImpl implements Task2Nor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_10(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_70(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepSeqImpl
 				.pattern_Task2NormalStepSeq_23_1_bindingAndBlackFFB(this);
@@ -971,7 +971,7 @@ public class Task2NormalStepSeqImpl extends AbstractRuleImpl implements Task2Nor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_11(EMoflonEdge _edge_targetRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_71(EMoflonEdge _edge_targetRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepSeqImpl
 				.pattern_Task2NormalStepSeq_24_1_bindingAndBlackFFB(this);
@@ -1026,7 +1026,7 @@ public class Task2NormalStepSeqImpl extends AbstractRuleImpl implements Task2Nor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_12(EMoflonEdge _edge_incoming) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_72(EMoflonEdge _edge_incoming) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepSeqImpl
 				.pattern_Task2NormalStepSeq_25_1_bindingAndBlackFFB(this);
@@ -1081,7 +1081,7 @@ public class Task2NormalStepSeqImpl extends AbstractRuleImpl implements Task2Nor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_13(EMoflonEdge _edge_sourceRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_73(EMoflonEdge _edge_sourceRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepSeqImpl
 				.pattern_Task2NormalStepSeq_26_1_bindingAndBlackFFB(this);
@@ -1136,7 +1136,7 @@ public class Task2NormalStepSeqImpl extends AbstractRuleImpl implements Task2Nor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_14(EMoflonEdge _edge_outgoing) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_74(EMoflonEdge _edge_outgoing) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepSeqImpl
 				.pattern_Task2NormalStepSeq_27_1_bindingAndBlackFFB(this);
@@ -1679,22 +1679,22 @@ public class Task2NormalStepSeqImpl extends AbstractRuleImpl implements Task2Nor
 			return null;
 		case RulesPackage.TASK2_NORMAL_STEP_SEQ___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_SEQ___IS_APPROPRIATE_BWD_EMOFLON_EDGE_5__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_5((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_SEQ___IS_APPROPRIATE_BWD_EMOFLON_EDGE_6__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_6((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_9__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_9((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_10__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_10((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_11__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_11((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_12__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_12((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_13__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_13((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_14__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_14((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_SEQ___IS_APPROPRIATE_BWD_EMOFLON_EDGE_23__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_23((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_SEQ___IS_APPROPRIATE_BWD_EMOFLON_EDGE_24__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_24((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_69__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_69((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_70__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_70((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_71__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_71((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_72__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_72((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_73__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_73((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_74__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_74((EMoflonEdge) arguments.get(0));
 		case RulesPackage.TASK2_NORMAL_STEP_SEQ___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.TASK2_NORMAL_STEP_SEQ___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
@@ -3061,9 +3061,9 @@ public class Task2NormalStepSeqImpl extends AbstractRuleImpl implements Task2Nor
 	}
 
 	public static final Object[] pattern_Task2NormalStepSeq_20_2_black_nac_0BB(NormalStep step, Flow flow) {
-		for (Flow __DEC_step_steps_28803 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+		for (Flow __DEC_step_steps_416284 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 				Flow.class, "steps")) {
-			if (!flow.equals(__DEC_step_steps_28803)) {
+			if (!flow.equals(__DEC_step_steps_416284)) {
 				return new Object[] { step, flow };
 			}
 		}
@@ -3072,10 +3072,10 @@ public class Task2NormalStepSeqImpl extends AbstractRuleImpl implements Task2Nor
 
 	public static final Object[] pattern_Task2NormalStepSeq_20_2_black_nac_1BB(NormalStep step, Step prevStep) {
 		if (!prevStep.equals(step)) {
-			for (Step __DEC_step_next_453680 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+			for (Step __DEC_step_next_87874 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 					Step.class, "next")) {
-				if (!step.equals(__DEC_step_next_453680)) {
-					if (!prevStep.equals(__DEC_step_next_453680)) {
+				if (!step.equals(__DEC_step_next_87874)) {
+					if (!prevStep.equals(__DEC_step_next_87874)) {
 						return new Object[] { step, prevStep };
 					}
 				}
@@ -3193,9 +3193,9 @@ public class Task2NormalStepSeqImpl extends AbstractRuleImpl implements Task2Nor
 	}
 
 	public static final Object[] pattern_Task2NormalStepSeq_21_2_black_nac_0BB(NormalStep step, Flow flow) {
-		for (Flow __DEC_step_steps_929265 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+		for (Flow __DEC_step_steps_425938 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 				Flow.class, "steps")) {
-			if (!flow.equals(__DEC_step_steps_929265)) {
+			if (!flow.equals(__DEC_step_steps_425938)) {
 				return new Object[] { step, flow };
 			}
 		}
@@ -3204,10 +3204,10 @@ public class Task2NormalStepSeqImpl extends AbstractRuleImpl implements Task2Nor
 
 	public static final Object[] pattern_Task2NormalStepSeq_21_2_black_nac_1BB(NormalStep step, Step prevStep) {
 		if (!prevStep.equals(step)) {
-			for (Step __DEC_step_next_108435 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+			for (Step __DEC_step_next_137996 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 					Step.class, "next")) {
-				if (!step.equals(__DEC_step_next_108435)) {
-					if (!prevStep.equals(__DEC_step_next_108435)) {
+				if (!step.equals(__DEC_step_next_137996)) {
+					if (!prevStep.equals(__DEC_step_next_137996)) {
 						return new Object[] { step, prevStep };
 					}
 				}
@@ -3327,9 +3327,9 @@ public class Task2NormalStepSeqImpl extends AbstractRuleImpl implements Task2Nor
 
 	public static final Object[] pattern_Task2NormalStepSeq_22_2_black_nac_0BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_467259 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_144232 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_467259)) {
+			if (!process.equals(__DEC_sf1_flowElements_144232)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -3337,9 +3337,9 @@ public class Task2NormalStepSeqImpl extends AbstractRuleImpl implements Task2Nor
 	}
 
 	public static final Object[] pattern_Task2NormalStepSeq_22_2_black_nac_1BB(Task task, SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_task_flowElements_792603 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_task_flowElements_553321 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(task, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_task_flowElements_792603)) {
+			if (!process.equals(__DEC_task_flowElements_553321)) {
 				return new Object[] { task, process };
 			}
 		}
@@ -3467,9 +3467,9 @@ public class Task2NormalStepSeqImpl extends AbstractRuleImpl implements Task2Nor
 
 	public static final Object[] pattern_Task2NormalStepSeq_23_2_black_nac_0BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_229184 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_669413 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_229184)) {
+			if (!process.equals(__DEC_sf1_flowElements_669413)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -3477,9 +3477,9 @@ public class Task2NormalStepSeqImpl extends AbstractRuleImpl implements Task2Nor
 	}
 
 	public static final Object[] pattern_Task2NormalStepSeq_23_2_black_nac_1BB(Task task, SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_task_flowElements_765184 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_task_flowElements_41169 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(task, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_task_flowElements_765184)) {
+			if (!process.equals(__DEC_task_flowElements_41169)) {
 				return new Object[] { task, process };
 			}
 		}
@@ -3606,9 +3606,9 @@ public class Task2NormalStepSeqImpl extends AbstractRuleImpl implements Task2Nor
 
 	public static final Object[] pattern_Task2NormalStepSeq_24_2_black_nac_0BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_18465 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_714028 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_18465)) {
+			if (!process.equals(__DEC_sf1_flowElements_714028)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -3616,9 +3616,9 @@ public class Task2NormalStepSeqImpl extends AbstractRuleImpl implements Task2Nor
 	}
 
 	public static final Object[] pattern_Task2NormalStepSeq_24_2_black_nac_1BB(Task task, SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_task_flowElements_915809 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_task_flowElements_932409 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(task, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_task_flowElements_915809)) {
+			if (!process.equals(__DEC_task_flowElements_932409)) {
 				return new Object[] { task, process };
 			}
 		}
@@ -3743,9 +3743,9 @@ public class Task2NormalStepSeqImpl extends AbstractRuleImpl implements Task2Nor
 
 	public static final Object[] pattern_Task2NormalStepSeq_25_2_black_nac_0BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_512123 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_843116 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_512123)) {
+			if (!process.equals(__DEC_sf1_flowElements_843116)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -3753,9 +3753,9 @@ public class Task2NormalStepSeqImpl extends AbstractRuleImpl implements Task2Nor
 	}
 
 	public static final Object[] pattern_Task2NormalStepSeq_25_2_black_nac_1BB(Task task, SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_task_flowElements_267909 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_task_flowElements_457224 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(task, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_task_flowElements_267909)) {
+			if (!process.equals(__DEC_task_flowElements_457224)) {
 				return new Object[] { task, process };
 			}
 		}
@@ -3880,9 +3880,9 @@ public class Task2NormalStepSeqImpl extends AbstractRuleImpl implements Task2Nor
 
 	public static final Object[] pattern_Task2NormalStepSeq_26_2_black_nac_0BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_920731 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_505894 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_920731)) {
+			if (!process.equals(__DEC_sf1_flowElements_505894)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -3890,9 +3890,9 @@ public class Task2NormalStepSeqImpl extends AbstractRuleImpl implements Task2Nor
 	}
 
 	public static final Object[] pattern_Task2NormalStepSeq_26_2_black_nac_1BB(Task task, SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_task_flowElements_830033 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_task_flowElements_290126 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(task, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_task_flowElements_830033)) {
+			if (!process.equals(__DEC_task_flowElements_290126)) {
 				return new Object[] { task, process };
 			}
 		}
@@ -4018,9 +4018,9 @@ public class Task2NormalStepSeqImpl extends AbstractRuleImpl implements Task2Nor
 
 	public static final Object[] pattern_Task2NormalStepSeq_27_2_black_nac_0BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_576549 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_939066 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_576549)) {
+			if (!process.equals(__DEC_sf1_flowElements_939066)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -4028,9 +4028,9 @@ public class Task2NormalStepSeqImpl extends AbstractRuleImpl implements Task2Nor
 	}
 
 	public static final Object[] pattern_Task2NormalStepSeq_27_2_black_nac_1BB(Task task, SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_task_flowElements_925864 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_task_flowElements_67953 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(task, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_task_flowElements_925864)) {
+			if (!process.equals(__DEC_task_flowElements_67953)) {
 				return new Object[] { task, process };
 			}
 		}

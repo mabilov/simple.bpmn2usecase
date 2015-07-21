@@ -1,6 +1,7 @@
 package Bpmn2UseCase.test;
 
 import java.util.Optional;
+import java.util.function.Consumer;
 
 import org.apache.log4j.BasicConfigurator;
 import org.eclipse.emf.ecore.EObject;
@@ -33,13 +34,14 @@ public class Incremental extends IncrementalIntegratorTest {
 		BasicConfigurator.configure();
 	}
 
-	@Test
-	public void empty2Task() throws InterruptedException {
-		String testCaseName = "Empty2Task";
-		setInputModel(ApplicationTypes.BACKWARD, testCaseName);
+	@Override
+	public void compare(EObject expected, EObject actual) throws InterruptedException {
+		CompareHelper.compare(expected, actual);
+	}
 
-		helper.integrateBackward();
-		helper.setChangeSrc(root -> {
+	@Test
+	public void deltaTask() throws InterruptedException {
+		delta("DeltaTask", root -> {
 			Process proc = (Process) root;
 			Optional<FlowElement> fe = proc.getFlowElements().stream().filter(f -> f instanceof StartEvent).findAny();
 			if (!fe.isPresent())
@@ -61,18 +63,11 @@ public class Incremental extends IncrementalIntegratorTest {
 
 			sf1.setTargetRef(t1);
 		});
-		helper.integrateForward();
-		compareWithExpected(testCaseName, ApplicationTypes.FORWARD, helper.getTrg());
 	}
 
 	@Test
-	public void task2Parallel() throws InterruptedException {
-		String testCaseName = "Task2Parallel";
-		setInputModel(ApplicationTypes.BACKWARD, testCaseName);
-		SimpleUseCase.util.PreProcessor.process((UseCase) helper.getTrg());
-
-		helper.integrateBackward();
-		helper.setChangeSrc(root -> {
+	public void deltaParallel() throws InterruptedException {
+		delta("DeltaParallel", root -> {
 			Process proc = (Process) root;
 			Optional<FlowElement> fe = proc.getFlowElements().stream().filter(f -> f instanceof Task).findAny();
 			if (!fe.isPresent())
@@ -118,16 +113,53 @@ public class Incremental extends IncrementalIntegratorTest {
 			// pre-process
 			PatternDiscovery.discoverParallel(proc);
 		});
+	}
+
+	@Test
+	public void deltaThread() throws InterruptedException {
+		delta("DeltaThread", root -> {
+			Process proc = (Process) root;
+			Optional<FlowElement> fe1 = proc.getFlowElements().stream()
+					.filter(f -> f instanceof ParallelGateway && ((ParallelGateway) f).isIsDiverging()).findAny();
+			Optional<FlowElement> fe2 = proc.getFlowElements().stream()
+					.filter(f -> f instanceof ParallelGateway && !((ParallelGateway) f).isIsDiverging()).findAny();
+			if (!fe1.isPresent() || !fe2.isPresent())
+				return;
+			ParallelGateway pg = (ParallelGateway) fe1.get();
+			ParallelGateway pcg = (ParallelGateway) fe2.get();
+
+			SequenceFlow sf6 = SimpleBPMNFactory.eINSTANCE.createSequenceFlow();
+			sf6.setId("sf6");
+			sf6.setSourceRef(pg);
+			proc.getFlowElements().add(sf6);
+
+			Task t3 = SimpleBPMNFactory.eINSTANCE.createTask();
+			t3.setId("t3");
+			proc.getFlowElements().add(t3);
+			sf6.setTargetRef(t3);
+
+			SequenceFlow sf7 = SimpleBPMNFactory.eINSTANCE.createSequenceFlow();
+			sf7.setId("sf7");
+			sf7.setSourceRef(t3);
+			sf7.setTargetRef(pcg);
+			proc.getFlowElements().add(sf7);
+
+			// pre-process
+			PatternDiscovery.discoverParallel(proc);
+		});
+	}
+
+	private void delta(String testCaseName, final Consumer<EObject> changeSrc) throws InterruptedException {
+		setInputModel(ApplicationTypes.BACKWARD, testCaseName);
+		SimpleUseCase.util.PreProcessor.process((UseCase) helper.getTrg());
+
+		helper.integrateBackward();
+		helper.setChangeSrc(changeSrc);
 		helper.integrateForward();
 
 		saveOutput(testCaseName, helper.getTrg());
 		reportOutputModelSaved();
 
 		compareWithExpected(testCaseName, ApplicationTypes.FORWARD, helper.getTrg());
-	}
-
-	@Override
-	public void compare(EObject expected, EObject actual) throws InterruptedException {
-		CompareHelper.compare(expected, actual);
 	}
 }

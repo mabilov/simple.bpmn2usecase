@@ -320,19 +320,28 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 		Variable var_start_id = CSPFactoryHelper.eINSTANCE.createVariable("start.id", true, csp);
 		var_start_id.setValue(start.getId());
 		var_start_id.setType("String");
+		Variable var_process_id = CSPFactoryHelper.eINSTANCE.createVariable("process.id", true, csp);
+		var_process_id.setValue(process.getId());
+		var_process_id.setType("String");
 
 		// Create unbound variables
 		Variable var_cond_name = CSPFactoryHelper.eINSTANCE.createVariable("cond.name", csp);
 		var_cond_name.setType("String");
+		Variable var_useCase_id = CSPFactoryHelper.eINSTANCE.createVariable("useCase.id", csp);
+		var_useCase_id.setType("String");
 
 		// Create constraints
 		Eq eq = new Eq();
+		Eq eq_0 = new Eq();
 
 		csp.getConstraints().add(eq);
+		csp.getConstraints().add(eq_0);
 
 		// Solve CSP
 		eq.setRuleName("");
 		eq.solve(var_start_id, var_cond_name);
+		eq_0.setRuleName("");
+		eq_0.solve(var_process_id, var_useCase_id);
 
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("process", process);
@@ -620,19 +629,28 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 		Variable var_cond_name = CSPFactoryHelper.eINSTANCE.createVariable("cond.name", true, csp);
 		var_cond_name.setValue(cond.getName());
 		var_cond_name.setType("String");
+		Variable var_useCase_id = CSPFactoryHelper.eINSTANCE.createVariable("useCase.id", true, csp);
+		var_useCase_id.setValue(useCase.getId());
+		var_useCase_id.setType("String");
 
 		// Create unbound variables
 		Variable var_start_id = CSPFactoryHelper.eINSTANCE.createVariable("start.id", csp);
 		var_start_id.setType("String");
+		Variable var_process_id = CSPFactoryHelper.eINSTANCE.createVariable("process.id", csp);
+		var_process_id.setType("String");
 
 		// Create constraints
 		Eq eq = new Eq();
+		Eq eq_0 = new Eq();
 
 		csp.getConstraints().add(eq);
+		csp.getConstraints().add(eq_0);
 
 		// Solve CSP
 		eq.setRuleName("");
 		eq.solve(var_start_id, var_cond_name);
+		eq_0.setRuleName("");
+		eq_0.solve(var_process_id, var_useCase_id);
 
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("useCase", useCase);
@@ -685,7 +703,7 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_0(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_60(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Process2UseCaseImpl.pattern_Process2UseCase_20_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -734,7 +752,7 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_0(EMoflonEdge _edge_flows) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_18(EMoflonEdge _edge_flows) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Process2UseCaseImpl.pattern_Process2UseCase_21_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -784,7 +802,7 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_1(EMoflonEdge _edge_precondition) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_19(EMoflonEdge _edge_precondition) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Process2UseCaseImpl.pattern_Process2UseCase_22_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -877,21 +895,38 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 		var_cond_name.setValue(cond.getName());
 		var_cond_name.setType("String");
 
+		Variable var_process_id = CSPFactoryHelper.eINSTANCE.createVariable("process", true, csp);
+		var_process_id.setValue(process.getId());
+		var_process_id.setType("String");
+
+		Variable var_useCase_id = CSPFactoryHelper.eINSTANCE.createVariable("useCase", true, csp);
+		var_useCase_id.setValue(useCase.getId());
+		var_useCase_id.setType("String");
+
 		Eq eq0 = new Eq();
 		csp.getConstraints().add(eq0);
 
+		Eq eq1 = new Eq();
+		csp.getConstraints().add(eq1);
+
 		eq0.setRuleName("Process2UseCase");
 		eq0.solve(var_start_id, var_cond_name);
+
+		eq1.setRuleName("Process2UseCase");
+		eq1.solve(var_process_id, var_useCase_id);
 
 		if (csp.check()) {
 			ruleResult.setSuccess(true);
 		} else {
 			var_cond_name.setBound(false);
+			var_useCase_id.setBound(false);
 			eq0.solve(var_start_id, var_cond_name);
+			eq1.solve(var_process_id, var_useCase_id);
 			if (csp.check()) {
 				ruleResult.setSuccess(true);
 				ruleResult.setRequiredChange(true);
 				cond.setName((String) var_cond_name.getValue());
+				useCase.setId((String) var_useCase_id.getValue());
 			} else {
 				ruleResult.setSuccess(false);
 				return ruleResult;
@@ -949,21 +984,38 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 		var_cond_name.setValue(cond.getName());
 		var_cond_name.setType("String");
 
+		Variable var_process_id = CSPFactoryHelper.eINSTANCE.createVariable("process", true, csp);
+		var_process_id.setValue(process.getId());
+		var_process_id.setType("String");
+
+		Variable var_useCase_id = CSPFactoryHelper.eINSTANCE.createVariable("useCase", true, csp);
+		var_useCase_id.setValue(useCase.getId());
+		var_useCase_id.setType("String");
+
 		Eq eq0 = new Eq();
 		csp.getConstraints().add(eq0);
 
+		Eq eq1 = new Eq();
+		csp.getConstraints().add(eq1);
+
 		eq0.setRuleName("Process2UseCase");
 		eq0.solve(var_start_id, var_cond_name);
+
+		eq1.setRuleName("Process2UseCase");
+		eq1.solve(var_process_id, var_useCase_id);
 
 		if (csp.check()) {
 			ruleResult.setSuccess(true);
 		} else {
 			var_start_id.setBound(false);
+			var_process_id.setBound(false);
 			eq0.solve(var_start_id, var_cond_name);
+			eq1.solve(var_process_id, var_useCase_id);
 			if (csp.check()) {
 				ruleResult.setSuccess(true);
 				ruleResult.setRequiredChange(true);
 				start.setId((String) var_start_id.getValue());
+				process.setId((String) var_process_id.getValue());
 			} else {
 				ruleResult.setSuccess(false);
 				return ruleResult;
@@ -1049,17 +1101,27 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 		Variable var_cond_name = CSPFactoryHelper.eINSTANCE.createVariable("cond.name", true, csp);
 		var_cond_name.setValue(cond.getName());
 		var_cond_name.setType("String");
+		Variable var_process_id = CSPFactoryHelper.eINSTANCE.createVariable("process.id", true, csp);
+		var_process_id.setValue(process.getId());
+		var_process_id.setType("String");
+		Variable var_useCase_id = CSPFactoryHelper.eINSTANCE.createVariable("useCase.id", true, csp);
+		var_useCase_id.setValue(useCase.getId());
+		var_useCase_id.setType("String");
 
 		// Create unbound variables
 
 		// Create constraints
 		Eq eq = new Eq();
+		Eq eq_0 = new Eq();
 
 		csp.getConstraints().add(eq);
+		csp.getConstraints().add(eq_0);
 
 		// Solve CSP
 		eq.setRuleName("");
 		eq.solve(var_start_id, var_cond_name);
+		eq_0.setRuleName("");
+		eq_0.solve(var_process_id, var_useCase_id);
 
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("process", process);
@@ -1187,15 +1249,23 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 		var_start_id.setType("String");
 		Variable var_cond_name = CSPFactoryHelper.eINSTANCE.createVariable("cond.name", csp);
 		var_cond_name.setType("String");
+		Variable var_process_id = CSPFactoryHelper.eINSTANCE.createVariable("process.id", csp);
+		var_process_id.setType("String");
+		Variable var_useCase_id = CSPFactoryHelper.eINSTANCE.createVariable("useCase.id", csp);
+		var_useCase_id.setType("String");
 
 		// Create constraints
 		Eq eq = new Eq();
+		Eq eq_0 = new Eq();
 
 		csp.getConstraints().add(eq);
+		csp.getConstraints().add(eq_0);
 
 		// Solve CSP
 		eq.setRuleName("");
 		eq.solve(var_start_id, var_cond_name);
+		eq_0.setRuleName("");
+		eq_0.solve(var_process_id, var_useCase_id);
 
 		// Snapshot pattern match on which CSP is solved
 		return csp;
@@ -1274,12 +1344,12 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 			return null;
 		case RulesPackage.PROCESS2_USE_CASE___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.PROCESS2_USE_CASE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_0__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_0((EMoflonEdge) arguments.get(0));
-		case RulesPackage.PROCESS2_USE_CASE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_0__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_0((EMoflonEdge) arguments.get(0));
-		case RulesPackage.PROCESS2_USE_CASE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_1__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_1((EMoflonEdge) arguments.get(0));
+		case RulesPackage.PROCESS2_USE_CASE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_60__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_60((EMoflonEdge) arguments.get(0));
+		case RulesPackage.PROCESS2_USE_CASE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_18__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_18((EMoflonEdge) arguments.get(0));
+		case RulesPackage.PROCESS2_USE_CASE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_19__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_19((EMoflonEdge) arguments.get(0));
 		case RulesPackage.PROCESS2_USE_CASE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.PROCESS2_USE_CASE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
@@ -1437,14 +1507,17 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 		BasicFlow flow = SimpleUseCaseFactory.eINSTANCE.createBasicFlow();
 		FN2F s2f = Bpmn2UseCaseFactory.eINSTANCE.createFN2F();
 		UCCondition cond = SimpleUseCaseFactory.eINSTANCE.createUCCondition();
-		Object _localVariable_0 = csp.getValue("cond", "name");
+		Object _localVariable_0 = csp.getValue("useCase", "id");
+		Object _localVariable_1 = csp.getValue("cond", "name");
 		_p2uc.setSource(process);
 		_p2uc.setTarget(useCase);
 		useCase.getFlows().add(flow);
 		s2f.setSource(start);
 		s2f.setTarget(flow);
 		useCase.setPrecondition(cond);
-		String cond_name_prime = (String) _localVariable_0;
+		String useCase_id_prime = (String) _localVariable_0;
+		String cond_name_prime = (String) _localVariable_1;
+		useCase.setId(useCase_id_prime);
 		cond.setName(cond_name_prime);
 		return new Object[] { process, useCase, _p2uc, flow, s2f, start, cond, csp };
 	}
@@ -1871,13 +1944,16 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 		P2UC _p2uc = Bpmn2UseCaseFactory.eINSTANCE.createP2UC();
 		FN2F s2f = Bpmn2UseCaseFactory.eINSTANCE.createFN2F();
 		StartEvent start = SimpleBPMNFactory.eINSTANCE.createStartEvent();
-		Object _localVariable_0 = csp.getValue("start", "id");
+		Object _localVariable_0 = csp.getValue("process", "id");
+		Object _localVariable_1 = csp.getValue("start", "id");
 		_p2uc.setSource(process);
 		_p2uc.setTarget(useCase);
 		s2f.setTarget(flow);
 		process.getFlowElements().add(start);
 		s2f.setSource(start);
-		String start_id_prime = (String) _localVariable_0;
+		String process_id_prime = (String) _localVariable_0;
+		String start_id_prime = (String) _localVariable_1;
+		process.setId(process_id_prime);
 		start.setId(start_id_prime);
 		return new Object[] { process, useCase, _p2uc, flow, s2f, start, csp };
 	}
@@ -2219,9 +2295,9 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 
 	public static final Object[] pattern_Process2UseCase_20_2_black_nac_0BB(StartEvent start,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_start_flowElements_846235 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_start_flowElements_420344 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(start, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_start_flowElements_846235)) {
+			if (!process.equals(__DEC_start_flowElements_420344)) {
 				return new Object[] { start, process };
 			}
 		}
@@ -2328,9 +2404,9 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	}
 
 	public static final Object[] pattern_Process2UseCase_21_2_black_nac_0BB(BasicFlow flow, UseCase useCase) {
-		for (UseCase __DEC_flow_flows_247142 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(flow,
+		for (UseCase __DEC_flow_flows_53526 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(flow,
 				UseCase.class, "flows")) {
-			if (!useCase.equals(__DEC_flow_flows_247142)) {
+			if (!useCase.equals(__DEC_flow_flows_53526)) {
 				return new Object[] { flow, useCase };
 			}
 		}
@@ -2338,9 +2414,9 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	}
 
 	public static final Object[] pattern_Process2UseCase_21_2_black_nac_1BB(UCCondition cond, UseCase useCase) {
-		for (UseCase __DEC_cond_precondition_75785 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (UseCase __DEC_cond_precondition_916551 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(cond, UseCase.class, "precondition")) {
-			if (!useCase.equals(__DEC_cond_precondition_75785)) {
+			if (!useCase.equals(__DEC_cond_precondition_916551)) {
 				return new Object[] { cond, useCase };
 			}
 		}
@@ -2348,9 +2424,9 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	}
 
 	public static final Object[] pattern_Process2UseCase_21_2_black_nac_2BB(UCCondition cond, BasicFlow flow) {
-		for (Flow __DEC_cond_finalState_593861 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (Flow __DEC_cond_finalState_945124 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(cond, Flow.class, "finalState")) {
-			if (!flow.equals(__DEC_cond_finalState_593861)) {
+			if (!flow.equals(__DEC_cond_finalState_945124)) {
 				return new Object[] { cond, flow };
 			}
 		}
@@ -2358,7 +2434,7 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	}
 
 	public static final Object[] pattern_Process2UseCase_21_2_black_nac_3B(UCCondition cond) {
-		for (Step __DEC_cond___last_49092 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(cond,
+		for (Step __DEC_cond___last_69828 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(cond,
 				Step.class, "__last")) {
 			return new Object[] { cond };
 		}
@@ -2484,9 +2560,9 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	}
 
 	public static final Object[] pattern_Process2UseCase_22_2_black_nac_0BB(BasicFlow flow, UseCase useCase) {
-		for (UseCase __DEC_flow_flows_802524 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(flow,
+		for (UseCase __DEC_flow_flows_163492 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(flow,
 				UseCase.class, "flows")) {
-			if (!useCase.equals(__DEC_flow_flows_802524)) {
+			if (!useCase.equals(__DEC_flow_flows_163492)) {
 				return new Object[] { flow, useCase };
 			}
 		}
@@ -2494,9 +2570,9 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	}
 
 	public static final Object[] pattern_Process2UseCase_22_2_black_nac_1BB(UCCondition cond, UseCase useCase) {
-		for (UseCase __DEC_cond_precondition_420154 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (UseCase __DEC_cond_precondition_450797 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(cond, UseCase.class, "precondition")) {
-			if (!useCase.equals(__DEC_cond_precondition_420154)) {
+			if (!useCase.equals(__DEC_cond_precondition_450797)) {
 				return new Object[] { cond, useCase };
 			}
 		}
@@ -2504,9 +2580,9 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	}
 
 	public static final Object[] pattern_Process2UseCase_22_2_black_nac_2BB(UCCondition cond, BasicFlow flow) {
-		for (Flow __DEC_cond_finalState_560374 : org.moflon.core.utilities.eMoflonEMFUtil
-				.getOppositeReferenceTyped(cond, Flow.class, "finalState")) {
-			if (!flow.equals(__DEC_cond_finalState_560374)) {
+		for (Flow __DEC_cond_finalState_91483 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(cond,
+				Flow.class, "finalState")) {
+			if (!flow.equals(__DEC_cond_finalState_91483)) {
 				return new Object[] { cond, flow };
 			}
 		}
@@ -2514,7 +2590,7 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	}
 
 	public static final Object[] pattern_Process2UseCase_22_2_black_nac_3B(UCCondition cond) {
-		for (Step __DEC_cond___last_87570 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(cond,
+		for (Step __DEC_cond___last_139810 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(cond,
 				Step.class, "__last")) {
 			return new Object[] { cond };
 		}
@@ -2876,10 +2952,12 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 		FN2F s2f = Bpmn2UseCaseFactory.eINSTANCE.createFN2F();
 		StartEvent start = SimpleBPMNFactory.eINSTANCE.createStartEvent();
 		UCCondition cond = SimpleUseCaseFactory.eINSTANCE.createUCCondition();
-		Object _localVariable_0 = csp.getValue("start", "id");
-		Object _localVariable_1 = csp.getValue("cond", "name");
+		Object _localVariable_0 = csp.getValue("process", "id");
+		Object _localVariable_1 = csp.getValue("useCase", "id");
+		Object _localVariable_2 = csp.getValue("start", "id");
+		Object _localVariable_3 = csp.getValue("cond", "name");
 		boolean ruleResult_success_prime = Boolean.valueOf(true);
-		int _localVariable_2 = ruleResult.getIncrementedPerformCount();
+		int _localVariable_4 = ruleResult.getIncrementedPerformCount();
 		ruleResult.getSourceObjects().add(process);
 		ruleResult.getTargetObjects().add(useCase);
 		_p2uc.setSource(process);
@@ -2894,10 +2972,14 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 		ruleResult.getSourceObjects().add(start);
 		useCase.setPrecondition(cond);
 		ruleResult.getTargetObjects().add(cond);
-		String start_id_prime = (String) _localVariable_0;
-		String cond_name_prime = (String) _localVariable_1;
+		String process_id_prime = (String) _localVariable_0;
+		String useCase_id_prime = (String) _localVariable_1;
+		String start_id_prime = (String) _localVariable_2;
+		String cond_name_prime = (String) _localVariable_3;
 		ruleResult.setSuccess(Boolean.valueOf(ruleResult_success_prime));
-		int ruleResult_performCount_prime = Integer.valueOf(_localVariable_2);
+		int ruleResult_performCount_prime = Integer.valueOf(_localVariable_4);
+		process.setId(process_id_prime);
+		useCase.setId(useCase_id_prime);
 		start.setId(start_id_prime);
 		cond.setName(cond_name_prime);
 		ruleResult.setPerformCount(Integer.valueOf(ruleResult_performCount_prime));

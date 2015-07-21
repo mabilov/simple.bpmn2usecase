@@ -1,6 +1,0 @@
-FlowImpl.java
-
-public boolean is__empty() {
-    return getSteps() == null || getSteps().isEmpty();
-}    
-    

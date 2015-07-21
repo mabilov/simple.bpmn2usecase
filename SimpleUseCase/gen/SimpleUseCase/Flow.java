@@ -19,7 +19,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link SimpleUseCase.Flow#getSteps <em>Steps</em>}</li>
  *   <li>{@link SimpleUseCase.Flow#getFinalState <em>Final State</em>}</li>
  *   <li>{@link SimpleUseCase.Flow#get__last <em>last</em>}</li>
- *   <li>{@link SimpleUseCase.Flow#is__empty <em>empty</em>}</li>
  * </ul>
  * </p>
  *
@@ -95,32 +94,6 @@ public interface Flow extends EObject {
 	 * @generated
 	 */
 	void set__last(Step value);
-
-	/**
-	 * Returns the value of the '<em><b>empty</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>empty</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>empty</em>' attribute.
-	 * @see #set__empty(boolean)
-	 * @see SimpleUseCase.SimpleUseCasePackage#getFlow___empty()
-	 * @model required="true" ordered="false"
-	 * @generated
-	 */
-	boolean is__empty();
-
-	/**
-	 * Sets the value of the '{@link SimpleUseCase.Flow#is__empty <em>empty</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>empty</em>' attribute.
-	 * @see #is__empty()
-	 * @generated
-	 */
-	void set__empty(boolean value);
 	// <-- [user code injected with eMoflon]
 
 	// [user code injected with eMoflon] -->

@@ -7,6 +7,7 @@
   <genPackages prefix="SimpleBPMN" disposableProviderFactory="true" ecorePackage="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#/">
     <genClasses ecoreClass="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//Process">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//Process/flowElements"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//Process/id"/>
     </genClasses>
     <genClasses image="false" ecoreClass="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//FlowElement">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore#//FlowElement/id"/>

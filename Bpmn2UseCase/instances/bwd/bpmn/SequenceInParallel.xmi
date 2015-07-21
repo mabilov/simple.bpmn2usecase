@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
-<SimpleBPMN:Process xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SimpleBPMN="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore">
-  <flowElements xsi:type="SimpleBPMN:StartEvent" id="se1" outgoing="fe-1792144556"/>
-  <flowElements xsi:type="SimpleBPMN:SequenceFlow" id="fe-1792144556" sourceRef="se1" targetRef="pg1"/>
-  <flowElements xsi:type="SimpleBPMN:ParallelGateway" id="pg1" outgoing="sf2 sf3" incoming="fe-1792144556" __conv="fe226692558"/>
-  <flowElements xsi:type="SimpleBPMN:ParallelGateway" id="fe226692558" outgoing="fe1394501425" incoming="fe904439576 fe-1536430934" isDiverging="false"/>
-  <flowElements xsi:type="SimpleBPMN:SequenceFlow" id="fe1394501425" sourceRef="fe226692558" targetRef="ee1"/>
-  <flowElements xsi:type="SimpleBPMN:EndEvent" id="ee1" incoming="fe1394501425"/>
-  <flowElements xsi:type="SimpleBPMN:SequenceFlow" id="sf2" sourceRef="pg1" targetRef="t1"/>
-  <flowElements xsi:type="SimpleBPMN:Task" id="t1" outgoing="fe-1618926610" incoming="sf2"/>
-  <flowElements xsi:type="SimpleBPMN:SequenceFlow" id="fe-1618926610" sourceRef="t1" targetRef="t3"/>
-  <flowElements xsi:type="SimpleBPMN:Task" id="t3" outgoing="fe904439576" incoming="fe-1618926610"/>
-  <flowElements xsi:type="SimpleBPMN:SequenceFlow" id="fe904439576" sourceRef="t3" targetRef="fe226692558"/>
-  <flowElements xsi:type="SimpleBPMN:SequenceFlow" id="sf3" sourceRef="pg1" targetRef="t2"/>
-  <flowElements xsi:type="SimpleBPMN:Task" id="t2" outgoing="fe-1938934302" incoming="sf3"/>
-  <flowElements xsi:type="SimpleBPMN:SequenceFlow" id="fe-1938934302" sourceRef="t2" targetRef="t4"/>
-  <flowElements xsi:type="SimpleBPMN:Task" id="t4" outgoing="fe-1536430934" incoming="fe-1938934302"/>
-  <flowElements xsi:type="SimpleBPMN:SequenceFlow" id="fe-1536430934" sourceRef="t4" targetRef="fe226692558"/>
+<SimpleBPMN:Process xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SimpleBPMN="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore" id="Empty">
+  <flowElements xsi:type="SimpleBPMN:StartEvent" id="se1" outgoing="fe1626837291"/>
+  <flowElements xsi:type="SimpleBPMN:SequenceFlow" id="fe1626837291" sourceRef="se1" targetRef="ee1"/>
+  <flowElements xsi:type="SimpleBPMN:EndEvent" id="ee1" incoming="fe1626837291"/>
 </SimpleBPMN:Process>

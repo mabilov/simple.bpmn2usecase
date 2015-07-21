@@ -4,7 +4,8 @@
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:SimpleBPMN="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore"
-    xsi:schemaLocation="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore ../../../../SimpleBPMN/model/SimpleBPMN.ecore">
+    xsi:schemaLocation="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore ../../../../SimpleBPMN/model/SimpleBPMN.ecore"
+    id="Empty">
   <flowElements
       xsi:type="SimpleBPMN:StartEvent"
       id="se1"

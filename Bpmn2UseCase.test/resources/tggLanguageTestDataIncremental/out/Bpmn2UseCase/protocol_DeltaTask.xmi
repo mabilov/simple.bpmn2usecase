@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="ASCII"?>
+<TGGRuntime:PrecedenceStructure xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TGGRuntime="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore">
+  <tripleMatches children="//@tripleMatches.1 //@tripleMatches.2" ruleName="Process2UseCase" number="12">
+    <sourceElements href="#//@tripleMatches.0/@containedEdges.1"/>
+    <sourceElements href="../../../../sourceModel#DeltaTask"/>
+    <sourceElements href="../../../../sourceModel#se1"/>
+    <nodeMappings nodeName="_p2uc">
+      <node href="DeltaTask_corr.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="process">
+      <node href="../../../../sourceModel#DeltaTask"/>
+    </nodeMappings>
+    <nodeMappings nodeName="useCase">
+      <node href="../../in/Bpmn2UseCase/DeltaTask.xmi#DeltaTask"/>
+    </nodeMappings>
+    <nodeMappings nodeName="s2f">
+      <node href="DeltaTask_corr.xmi#//@correspondences.1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="start">
+      <node href="../../../../sourceModel#se1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cond">
+      <node href="../../in/Bpmn2UseCase/DeltaTask.xmi#//@precondition"/>
+    </nodeMappings>
+    <nodeMappings nodeName="flow">
+      <node href="../../in/Bpmn2UseCase/DeltaTask.xmi#//@flows.0"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="precondition">
+      <src href="../../in/Bpmn2UseCase/DeltaTask.xmi#DeltaTask"/>
+      <trg href="../../in/Bpmn2UseCase/DeltaTask.xmi#//@precondition"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../../../sourceModel#DeltaTask"/>
+      <trg href="../../../../sourceModel#se1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="DeltaTask_corr.xmi#//@correspondences.0"/>
+      <trg href="../../../../sourceModel#DeltaTask"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="DeltaTask_corr.xmi#//@correspondences.0"/>
+      <trg href="../../in/Bpmn2UseCase/DeltaTask.xmi#DeltaTask"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="DeltaTask_corr.xmi#//@correspondences.1"/>
+      <trg href="../../../../sourceModel#se1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="DeltaTask_corr.xmi#//@correspondences.1"/>
+      <trg href="../../in/Bpmn2UseCase/DeltaTask.xmi#//@flows.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
+      <src href="../../in/Bpmn2UseCase/DeltaTask.xmi#DeltaTask"/>
+      <trg href="../../in/Bpmn2UseCase/DeltaTask.xmi#//@flows.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="precondition">
+      <src href="../../in/Bpmn2UseCase/DeltaTask.xmi#DeltaTask"/>
+      <trg href="../../in/Bpmn2UseCase/DeltaTask.xmi#//@precondition"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
+      <src href="../../in/Bpmn2UseCase/DeltaTask.xmi#DeltaTask"/>
+      <trg href="../../in/Bpmn2UseCase/DeltaTask.xmi#//@flows.0"/>
+    </containedEdges>
+    <targetElements href="#//@tripleMatches.0/@containedEdges.7"/>
+    <targetElements href="../../in/Bpmn2UseCase/DeltaTask.xmi#//@precondition"/>
+    <targetElements href="../../in/Bpmn2UseCase/DeltaTask.xmi#//@flows.0"/>
+    <targetElements href="#//@tripleMatches.0/@containedEdges.8"/>
+    <targetElements href="../../in/Bpmn2UseCase/DeltaTask.xmi#DeltaTask"/>
+    <correspondenceElements href="DeltaTask_corr.xmi#//@correspondences.1"/>
+    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.2"/>
+    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.5"/>
+    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.3"/>
+    <correspondenceElements href="DeltaTask_corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.0"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.1"/>
+    <createdElements href="DeltaTask_corr.xmi#//@correspondences.1"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.2"/>
+    <createdElements href="../../in/Bpmn2UseCase/DeltaTask.xmi#//@precondition"/>
+    <createdElements href="../../in/Bpmn2UseCase/DeltaTask.xmi#//@flows.0"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.3"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.5"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.6"/>
+    <createdElements href="../../../../sourceModel#DeltaTask"/>
+    <createdElements href="../../../../sourceModel#se1"/>
+    <createdElements href="../../in/Bpmn2UseCase/DeltaTask.xmi#DeltaTask"/>
+    <createdElements href="DeltaTask_corr.xmi#//@correspondences.0"/>
+  </tripleMatches>
+  <tripleMatches children="//@tripleMatches.2" ruleName="Task2NormalStepFirst" number="14">
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.12"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.13"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.14"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.15"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.16"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.17"/>
+    <sourceElements href="../../../../sourceModel#t1"/>
+    <sourceElements href="../../../../sourceModel#se1"/>
+    <sourceElements href="../../../../sourceModel#DeltaTask"/>
+    <sourceElements href="../../../../sourceModel#//@flowElements.1"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.18"/>
+    <contextElements href="#//@tripleMatches.1/@containedEdges.0"/>
+    <contextElements href="DeltaTask_corr.xmi#//@correspondences.1"/>
+    <contextElements href="#//@tripleMatches.1/@containedEdges.1"/>
+    <contextElements href="../../in/Bpmn2UseCase/DeltaTask.xmi#//@flows.0"/>
+    <contextElements href="../../../../sourceModel#se1"/>
+    <contextElements href="../../../../sourceModel#DeltaTask"/>
+    <contextElements href="#//@tripleMatches.1/@containedEdges.2"/>
+    <nodeMappings nodeName="pnToFlow">
+      <node href="DeltaTask_corr.xmi#//@correspondences.1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="prevNode">
+      <node href="../../../../sourceModel#se1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="process">
+      <node href="../../../../sourceModel#DeltaTask"/>
+    </nodeMappings>
+    <nodeMappings nodeName="task">
+      <node href="../../../../sourceModel#t1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="t2s">
+      <node href="DeltaTask_corr.xmi#//@correspondences.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="step">
+      <node href="../../in/Bpmn2UseCase/DeltaTask.xmi#t1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="flow">
+      <node href="../../in/Bpmn2UseCase/DeltaTask.xmi#//@flows.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="sf1">
+      <node href="../../../../sourceModel#//@flowElements.1"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../../../sourceModel#DeltaTask"/>
+      <trg href="../../../../sourceModel#se1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="DeltaTask_corr.xmi#//@correspondences.1"/>
+      <trg href="../../in/Bpmn2UseCase/DeltaTask.xmi#//@flows.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="DeltaTask_corr.xmi#//@correspondences.1"/>
+      <trg href="../../../../sourceModel#se1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../../../../sourceModel#//@flowElements.1"/>
+      <trg href="../../../../sourceModel#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../../../sourceModel#DeltaTask"/>
+      <trg href="../../../../sourceModel#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="DeltaTask_corr.xmi#//@correspondences.2"/>
+      <trg href="../../../../sourceModel#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../../../../sourceModel#se1"/>
+      <trg href="../../../../sourceModel#//@flowElements.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../../in/Bpmn2UseCase/DeltaTask.xmi#//@flows.0"/>
+      <trg href="../../in/Bpmn2UseCase/DeltaTask.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../../../sourceModel#DeltaTask"/>
+      <trg href="../../../../sourceModel#//@flowElements.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../../../../sourceModel#//@flowElements.1"/>
+      <trg href="../../../../sourceModel#se1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="DeltaTask_corr.xmi#//@correspondences.2"/>
+      <trg href="../../in/Bpmn2UseCase/DeltaTask.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../../../../sourceModel#t1"/>
+      <trg href="../../../../sourceModel#//@flowElements.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../../../sourceModel#DeltaTask"/>
+      <trg href="../../../../sourceModel#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../../../sourceModel#DeltaTask"/>
+      <trg href="../../../../sourceModel#se1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../../../../sourceModel#//@flowElements.1"/>
+      <trg href="../../../../sourceModel#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../../../../sourceModel#se1"/>
+      <trg href="../../../../sourceModel#//@flowElements.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../../../sourceModel#DeltaTask"/>
+      <trg href="../../../../sourceModel#//@flowElements.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../../../../sourceModel#//@flowElements.1"/>
+      <trg href="../../../../sourceModel#se1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../../../../sourceModel#t1"/>
+      <trg href="../../../../sourceModel#//@flowElements.1"/>
+    </containedEdges>
+    <targetElements href="../../in/Bpmn2UseCase/DeltaTask.xmi#t1"/>
+    <targetElements href="#//@tripleMatches.1/@containedEdges.7"/>
+    <targetElements href="../../in/Bpmn2UseCase/DeltaTask.xmi#//@flows.0"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.5"/>
+    <correspondenceElements href="DeltaTask_corr.xmi#//@correspondences.1"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.1"/>
+    <correspondenceElements href="DeltaTask_corr.xmi#//@correspondences.2"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.10"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.2"/>
+    <createdElements href="../../in/Bpmn2UseCase/DeltaTask.xmi#t1"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.3"/>
+    <createdElements href="DeltaTask_corr.xmi#//@correspondences.2"/>
+    <createdElements href="../../../../sourceModel#//@flowElements.1"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.5"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.6"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.7"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.8"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.9"/>
+    <createdElements href="../../../../sourceModel#t1"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.10"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.11"/>
+  </tripleMatches>
+  <tripleMatches ruleName="EndEvent2FinalStateSeq" number="15">
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.12"/>
+    <sourceElements href="../../../../sourceModel#sf2"/>
+    <sourceElements href="../../../../sourceModel#ee1"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.13"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.14"/>
+    <sourceElements href="../../../../sourceModel#t1"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.15"/>
+    <sourceElements href="../../../../sourceModel#DeltaTask"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.16"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.17"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.18"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.0"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.1"/>
+    <contextElements href="../../in/Bpmn2UseCase/DeltaTask.xmi#t1"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.2"/>
+    <contextElements href="../../in/Bpmn2UseCase/DeltaTask.xmi#//@flows.0"/>
+    <contextElements href="../../../../sourceModel#t1"/>
+    <contextElements href="DeltaTask_corr.xmi#//@correspondences.2"/>
+    <contextElements href="../../../../sourceModel#DeltaTask"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.3"/>
+    <nodeMappings nodeName="lastStep">
+      <node href="../../in/Bpmn2UseCase/DeltaTask.xmi#t1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="prevNode">
+      <node href="../../../../sourceModel#t1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="process">
+      <node href="../../../../sourceModel#DeltaTask"/>
+    </nodeMappings>
+    <nodeMappings nodeName="state">
+      <node href="../../in/Bpmn2UseCase/DeltaTask.xmi#//@flows.0/@finalState"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pn2s">
+      <node href="DeltaTask_corr.xmi#//@correspondences.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="event">
+      <node href="../../../../sourceModel#ee1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="flow">
+      <node href="../../in/Bpmn2UseCase/DeltaTask.xmi#//@flows.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="inFlow">
+      <node href="../../../../sourceModel#sf2"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../../../sourceModel#DeltaTask"/>
+      <trg href="../../../../sourceModel#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="DeltaTask_corr.xmi#//@correspondences.2"/>
+      <trg href="../../../../sourceModel#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../../in/Bpmn2UseCase/DeltaTask.xmi#//@flows.0"/>
+      <trg href="../../in/Bpmn2UseCase/DeltaTask.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="DeltaTask_corr.xmi#//@correspondences.2"/>
+      <trg href="../../in/Bpmn2UseCase/DeltaTask.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="finalState">
+      <src href="../../in/Bpmn2UseCase/DeltaTask.xmi#//@flows.0"/>
+      <trg href="../../in/Bpmn2UseCase/DeltaTask.xmi#//@flows.0/@finalState"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../../../../sourceModel#ee1"/>
+      <trg href="../../../../sourceModel#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__last">
+      <src href="../../in/Bpmn2UseCase/DeltaTask.xmi#t1"/>
+      <trg href="../../in/Bpmn2UseCase/DeltaTask.xmi#//@flows.0/@finalState"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../../../sourceModel#DeltaTask"/>
+      <trg href="../../../../sourceModel#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../../../../sourceModel#sf2"/>
+      <trg href="../../../../sourceModel#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../../../sourceModel#DeltaTask"/>
+      <trg href="../../../../sourceModel#ee1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../../../../sourceModel#sf2"/>
+      <trg href="../../../../sourceModel#ee1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../../../../sourceModel#t1"/>
+      <trg href="../../../../sourceModel#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../../../sourceModel#DeltaTask"/>
+      <trg href="../../../../sourceModel#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../../../../sourceModel#ee1"/>
+      <trg href="../../../../sourceModel#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../../../sourceModel#DeltaTask"/>
+      <trg href="../../../../sourceModel#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../../../../sourceModel#sf2"/>
+      <trg href="../../../../sourceModel#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../../../sourceModel#DeltaTask"/>
+      <trg href="../../../../sourceModel#ee1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../../../../sourceModel#sf2"/>
+      <trg href="../../../../sourceModel#ee1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../../../../sourceModel#t1"/>
+      <trg href="../../../../sourceModel#sf2"/>
+    </containedEdges>
+    <targetElements href="../../in/Bpmn2UseCase/DeltaTask.xmi#//@flows.0/@finalState"/>
+    <targetElements href="../../in/Bpmn2UseCase/DeltaTask.xmi#t1"/>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.4"/>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.2"/>
+    <targetElements href="../../in/Bpmn2UseCase/DeltaTask.xmi#//@flows.0"/>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.6"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.1"/>
+    <correspondenceElements href="DeltaTask_corr.xmi#//@correspondences.2"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.3"/>
+    <createdElements href="../../in/Bpmn2UseCase/DeltaTask.xmi#//@flows.0/@finalState"/>
+    <createdElements href="../../../../sourceModel#sf2"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.4"/>
+    <createdElements href="../../../../sourceModel#ee1"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.5"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.6"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.7"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.8"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.9"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.10"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.11"/>
+  </tripleMatches>
+</TGGRuntime:PrecedenceStructure>

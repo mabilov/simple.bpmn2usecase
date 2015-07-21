@@ -192,6 +192,15 @@ public class SimpleBPMNPackageImpl extends EPackageImpl implements SimpleBPMNPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getProcess_Id() {
+		return (EAttribute) processEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getFlowElement() {
 		return flowElementEClass;
 	}
@@ -380,6 +389,7 @@ public class SimpleBPMNPackageImpl extends EPackageImpl implements SimpleBPMNPac
 		// Create classes and their features
 		processEClass = createEClass(PROCESS);
 		createEReference(processEClass, PROCESS__FLOW_ELEMENTS);
+		createEAttribute(processEClass, PROCESS__ID);
 
 		flowElementEClass = createEClass(FLOW_ELEMENT);
 		createEAttribute(flowElementEClass, FLOW_ELEMENT__ID);
@@ -455,6 +465,8 @@ public class SimpleBPMNPackageImpl extends EPackageImpl implements SimpleBPMNPac
 		initEReference(getProcess_FlowElements(), this.getFlowElement(), null, "flowElements", null, 0, -1,
 				SimpleBPMN.Process.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProcess_Id(), ecorePackage.getEString(), "id", null, 1, 1, SimpleBPMN.Process.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(flowElementEClass, FlowElement.class, "FlowElement", IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);

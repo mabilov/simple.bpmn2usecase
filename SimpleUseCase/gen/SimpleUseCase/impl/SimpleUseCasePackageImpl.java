@@ -202,6 +202,15 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements SimpleUseC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getUseCase_Id() {
+		return (EAttribute) useCaseEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getFlow() {
 		return flowEClass;
 	}
@@ -231,15 +240,6 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements SimpleUseC
 	 */
 	public EReference getFlow___last() {
 		return (EReference) flowEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getFlow___empty() {
-		return (EAttribute) flowEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -418,12 +418,12 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements SimpleUseC
 		useCaseEClass = createEClass(USE_CASE);
 		createEReference(useCaseEClass, USE_CASE__FLOWS);
 		createEReference(useCaseEClass, USE_CASE__PRECONDITION);
+		createEAttribute(useCaseEClass, USE_CASE__ID);
 
 		flowEClass = createEClass(FLOW);
 		createEReference(flowEClass, FLOW__STEPS);
 		createEReference(flowEClass, FLOW__FINAL_STATE);
 		createEReference(flowEClass, FLOW__LAST);
-		createEAttribute(flowEClass, FLOW__EMPTY);
 
 		basicFlowEClass = createEClass(BASIC_FLOW);
 
@@ -496,6 +496,8 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements SimpleUseC
 		initEReference(getUseCase_Precondition(), this.getUCCondition(), null, "precondition", null, 0, 1,
 				UseCase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUseCase_Id(), ecorePackage.getEString(), "id", null, 1, 1, UseCase.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(flowEClass, Flow.class, "Flow", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getFlow_Steps(), this.getStep(), null, "steps", null, 0, -1, Flow.class, !IS_TRANSIENT,
@@ -507,8 +509,6 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements SimpleUseC
 		initEReference(getFlow___last(), this.getStep(), null, "__last", null, 0, 1, Flow.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
 				IS_ORDERED);
-		initEAttribute(getFlow___empty(), ecorePackage.getEBoolean(), "__empty", null, 1, 1, Flow.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(basicFlowEClass, BasicFlow.class, "BasicFlow", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);

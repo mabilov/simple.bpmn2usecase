@@ -13,30 +13,39 @@ import SimpleUseCase.UseCase;
 
 public class Bpmn2UseCaseTrafo extends DebugSynchronizationHelper {
 
+	private static String FORWARD_FOLDER = "instances/fwd/bpmn/";
+
+	private static String BACKWARD_FOLDER = "instances/bwd/usecase/";
+
 	public Bpmn2UseCaseTrafo() {
 		super(Bpmn2UseCasePackage.eINSTANCE, ".");
+		// Set up logging
+		BasicConfigurator.configure();
+
+		// Need to get exact list of ignored elements
+		this.verbose = true;
 	}
 
 	public static void main(String[] args) throws IOException {
-		// Set up logging
-		BasicConfigurator.configure();
 
 		// Forward Transformation
 		Bpmn2UseCaseTrafo helper = new Bpmn2UseCaseTrafo();
 
 		// Which pattern to transform?
-		helper._patterName = args[0];
+		String patternName = args[0];
 
 		// Which direction to use?
 		String direction = args[1];
 
-		// Need to get exact list of ignored elements
-		helper.verbose = true;
-
-		if (direction.equalsIgnoreCase("forward")) {
-			helper.performForward("instances/fwd/bpmn/" + helper._patterName + ".xmi");
+		if (patternName.equalsIgnoreCase("all")) {
+			helper.perform(direction, "Empty");
+			helper.perform(direction, "Sequence");
+			helper.perform(direction, "ParallelSplitSynchronization");
+			helper.perform(direction, "SequenceInParallel");
+			helper.perform(direction, "ParallelConvTask");
+			helper.perform(direction, "Recursive1Parallel");
 		} else {
-			helper.performBackward("instances/bwd/usecase/" + helper._patterName + ".xmi");
+			helper.perform(direction, patternName);
 		}
 	}
 
@@ -58,6 +67,15 @@ public class Bpmn2UseCaseTrafo extends DebugSynchronizationHelper {
 		performForward();
 	}
 
+	public void perform(String direction, String patterName) {
+		this._patterName = patterName;
+		if (direction.equalsIgnoreCase("forward")) {
+			this.performForward(FORWARD_FOLDER + patterName + ".xmi");
+		} else {
+			this.performBackward(BACKWARD_FOLDER + patterName + ".xmi");
+		}
+	}
+
 	public void performForward(String source) {
 		try {
 			loadSrc(source);
@@ -70,16 +88,16 @@ public class Bpmn2UseCaseTrafo extends DebugSynchronizationHelper {
 
 	public void performBackward() {
 		SimpleUseCase.util.PreProcessor.process((UseCase) this.trg);
-		
+
 		integrateBackward();
-		
+
 		SimpleBPMN.util.PostProcessor.process((Process) this.src);
-		
+
 		saveSrc("instances/bwd/bpmn/" + _patterName + ".xmi");
 		saveCorr("instances/bwd/corr/" + _patterName + ".xmi");
 		saveSynchronizationProtocol("instances/bwd/protocol/" + _patterName + ".xmi");
 
-		System.out.println("Completed backward transformation!");
+		System.out.println("Completed backward transformation for pattern " + _patterName + "!");
 	}
 
 	public void performBackward(EObject targetModel) {

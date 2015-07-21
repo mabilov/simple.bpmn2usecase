@@ -1,22 +1,23 @@
 package Bpmn2UseCase.test;
 
 import java.util.Iterator;
-import java.util.List;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.compare.Comparison;
-import org.eclipse.emf.compare.Diff;
 import org.eclipse.emf.compare.EMFCompare;
 import org.eclipse.emf.compare.Match;
 import org.eclipse.emf.compare.diff.DefaultDiffEngine;
 import org.eclipse.emf.compare.diff.DiffBuilder;
 import org.eclipse.emf.compare.diff.FeatureFilter;
 import org.eclipse.emf.compare.diff.IDiffEngine;
-import org.eclipse.emf.compare.diff.IDiffProcessor;
+import org.eclipse.emf.compare.match.DefaultComparisonFactory;
+import org.eclipse.emf.compare.match.DefaultEqualityHelperFactory;
+import org.eclipse.emf.compare.match.DefaultMatchEngine;
 import org.eclipse.emf.compare.match.IMatchEngine;
 import org.eclipse.emf.compare.match.impl.MatchEngineFactoryImpl;
 import org.eclipse.emf.compare.match.impl.MatchEngineFactoryRegistryImpl;
 import org.eclipse.emf.compare.scope.DefaultComparisonScope;
-import org.eclipse.emf.compare.scope.IComparisonScope;
+import org.eclipse.emf.compare.utils.EqualityHelper;
 import org.eclipse.emf.compare.utils.UseIdentifiers;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -31,6 +32,10 @@ import com.google.common.collect.Iterators;
 import SimpleBPMN.Gateway;
 import SimpleBPMN.SequenceFlow;
 import SimpleBPMN.SimpleBPMNPackage;
+import SimpleUseCase.BasicFlow;
+import SimpleUseCase.Flow;
+import SimpleUseCase.Step;
+import SimpleUseCase.UseCase;
 
 public class CompareHelper {
 	/**
@@ -38,12 +43,14 @@ public class CompareHelper {
 	 * enough results
 	 */
 	public static void compare(EObject expected, EObject actual) throws InterruptedException {
-		IDiffProcessor diffProcessor = new DiffBuilder();
-		IDiffEngine diffEngine = new DefaultDiffEngine(diffProcessor) {
+		IDiffEngine diffEngine = new DefaultDiffEngine(new DiffBuilder()) {
 			@Override
 			protected FeatureFilter createFeatureFilter() {
 				return new FeatureFilter() {
 					@Override
+					/**
+					 * Don't consider ordering
+					 */
 					public boolean checkForOrderingChanges(final EStructuralFeature feature) {
 						return false;
 					}
@@ -66,6 +73,8 @@ public class CompareHelper {
 							public boolean apply(EAttribute attribute) {
 								if (clazz.getInstanceClass() == SequenceFlow.class
 										&& attribute == SimpleBPMNPackage.Literals.FLOW_ELEMENT__ID) {
+									// Consider only id attributes of sequence
+									// flows
 									SequenceFlow sf = (SequenceFlow) obj;
 									if (sf.getSourceRef() instanceof Gateway) {
 										Gateway gw = (Gateway) sf.getSourceRef();
@@ -82,7 +91,7 @@ public class CompareHelper {
 								else if (attribute.getName().contains("__"))
 									// Don't check auxiliary attributes
 									return false;
-								return true;
+								return !isIgnoredAttribute(attribute);
 							}
 						});
 					}
@@ -101,16 +110,51 @@ public class CompareHelper {
 			}
 		};
 
-		IComparisonScope scope = new DefaultComparisonScope(actual, expected, null);
 		IMatchEngine.Factory.Registry registry = MatchEngineFactoryRegistryImpl.createStandaloneInstance();
-
-		final MatchEngineFactoryImpl matchEngineFactory = new MatchEngineFactoryImpl(UseIdentifiers.NEVER);
-		registry.add(matchEngineFactory);
+		registry.add(new MatchEngineFactoryImpl(
+				DefaultMatchEngine.createDefaultEObjectMatcher(UseIdentifiers.WHEN_AVAILABLE),
+				new DefaultComparisonFactory(new DefaultEqualityHelperFactory() {
+					@Override
+					public org.eclipse.emf.compare.utils.IEqualityHelper createEqualityHelper() {
+						return new EqualityHelper(EqualityHelper.createDefaultCache(getCacheBuilder())) {
+							@Override
+							public boolean matchingValues(Object object1, Object object2) {
+								if (object1 instanceof BasicFlow && object2 instanceof BasicFlow) {
+									// Very simple comparison of two basic flows
+									// just by number of their steps
+									EList<Step> flow1Steps = ((BasicFlow) object1).getSteps();
+									EList<Step> flow2Steps = ((BasicFlow) object2).getSteps();
+									if (flow1Steps != null && flow2Steps != null
+											&& flow1Steps.size() != flow2Steps.size())
+										return false;
+									else if (flow1Steps != null && flow2Steps == null)
+										return false;
+									else if (flow1Steps == null && flow2Steps != null)
+										return false;
+									return true;
+								} else if (object1 instanceof UseCase && object2 instanceof UseCase) {
+									// Very simple comparison of two use cases
+									// just by number its flows
+									EList<Flow> useCase1Flows = ((UseCase) object1).getFlows();
+									EList<Flow> useCase2Flows = ((UseCase) object2).getFlows();
+									if (useCase1Flows != null && useCase2Flows != null
+											&& useCase1Flows.size() != useCase2Flows.size())
+										return false;
+									else if (useCase1Flows != null && useCase2Flows == null)
+										return false;
+									else if (useCase1Flows == null && useCase2Flows != null)
+										return false;
+									return true;
+								}
+								return super.matchingValues(object1, object2);
+							}
+						};
+					}
+				})));
 
 		Comparison comparison = EMFCompare.builder().setMatchEngineFactoryRegistry(registry).setDiffEngine(diffEngine)
-				.build().compare(scope);
+				.build().compare(new DefaultComparisonScope(actual, expected, null));
 
-		List<Diff> differences = comparison.getDifferences();
-		Assert.assertEquals(0, differences.size());
+		Assert.assertEquals(0, comparison.getDifferences().size());
 	}
 }
