@@ -1,30 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<SimpleBPMN:Process
+<?xml version="1.0" encoding="ASCII"?>
+<SimpleUseCase:UseCase
     xmi:version="2.0"
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:SimpleBPMN="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore">
-  <flowElements
-      xsi:type="SimpleBPMN:StartEvent"
-      id="se1"
-      outgoing="sf1"/>
-  <flowElements
-      xsi:type="SimpleBPMN:SequenceFlow"
-      id="sf1"
-      sourceRef="se1"
-      targetRef="t1"/>
-  <flowElements
-      xsi:type="SimpleBPMN:Task"
-      id="t1"
-      outgoing="sf2"
-      incoming="sf1"/>
-  <flowElements
-      xsi:type="SimpleBPMN:SequenceFlow"
-      id="sf2"
-      sourceRef="t1"
-      targetRef="ee1"/>
-  <flowElements
-      xsi:type="SimpleBPMN:EndEvent"
-      id="ee1"
-      incoming="sf2"/>
-</SimpleBPMN:Process>
+    xmlns:SimpleUseCase="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore">
+  <flows xsi:type="SimpleUseCase:BasicFlow">
+    <steps xsi:type="SimpleUseCase:NormalStep"
+        id="t1"/>
+    <finalState
+        name="ee1"/>
+  </flows>
+  <precondition
+      name="se1"/>
+</SimpleUseCase:UseCase>

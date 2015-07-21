@@ -20,6 +20,7 @@ import SimpleBPMN.FlowElement;
 import SimpleBPMN.ParallelGateway;
 import SimpleBPMN.Process;
 import SimpleUseCase.SimpleUseCasePackage;
+import SimpleUseCase.UseCase;
 import TGGLanguage.algorithm.ApplicationTypes;
 
 public class Incremental extends IncrementalIntegratorTest {
@@ -35,9 +36,9 @@ public class Incremental extends IncrementalIntegratorTest {
 	@Test
 	public void empty2Task() throws InterruptedException {
 		String testCaseName = "Empty2Task";
-		setInputModel(ApplicationTypes.FORWARD, testCaseName);
+		setInputModel(ApplicationTypes.BACKWARD, testCaseName);
 
-		helper.integrateForward();
+		helper.integrateBackward();
 		helper.setChangeSrc(root -> {
 			Process proc = (Process) root;
 			Optional<FlowElement> fe = proc.getFlowElements().stream().filter(f -> f instanceof StartEvent).findAny();
@@ -67,9 +68,10 @@ public class Incremental extends IncrementalIntegratorTest {
 	@Test
 	public void task2Parallel() throws InterruptedException {
 		String testCaseName = "Task2Parallel";
-		setInputModel(ApplicationTypes.FORWARD, testCaseName);
+		setInputModel(ApplicationTypes.BACKWARD, testCaseName);
+		SimpleUseCase.util.PreProcessor.process((UseCase) helper.getTrg());
 
-		helper.integrateForward();
+		helper.integrateBackward();
 		helper.setChangeSrc(root -> {
 			Process proc = (Process) root;
 			Optional<FlowElement> fe = proc.getFlowElements().stream().filter(f -> f instanceof Task).findAny();
@@ -125,10 +127,6 @@ public class Incremental extends IncrementalIntegratorTest {
 	}
 
 	@Override
-	/**
-	 * My best try with EMF Compare, unfortunately still unable to get good
-	 * enough results
-	 */
 	public void compare(EObject expected, EObject actual) throws InterruptedException {
 		CompareHelper.compare(expected, actual);
 	}

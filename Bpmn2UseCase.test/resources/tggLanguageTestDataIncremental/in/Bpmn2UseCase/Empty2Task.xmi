@@ -1,21 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<SimpleBPMN:Process
-    xmi:version="2.0"
-    xmlns:xmi="http://www.omg.org/XMI"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:SimpleBPMN="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore"
-    xsi:schemaLocation="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore ../../../../SimpleBPMN/model/SimpleBPMN.ecore">
-  <flowElements
-      xsi:type="SimpleBPMN:StartEvent"
-      id="se1"
-      outgoing="sf1"/>
-  <flowElements
-      xsi:type="SimpleBPMN:SequenceFlow"
-      id="sf1"
-      sourceRef="se1"
-      targetRef="ee1"/>
-  <flowElements
-      xsi:type="SimpleBPMN:EndEvent"
-      id="ee1"
-      incoming="sf1"/>
-</SimpleBPMN:Process>
+<?xml version="1.0" encoding="ASCII"?>
+<SimpleUseCase:UseCase xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SimpleUseCase="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore">
+  <flows xsi:type="SimpleUseCase:BasicFlow">
+    <finalState name="ee1"/>
+  </flows>
+  <precondition name="se1"/>
+</SimpleUseCase:UseCase>

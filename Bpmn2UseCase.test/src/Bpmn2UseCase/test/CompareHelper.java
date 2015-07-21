@@ -33,6 +33,10 @@ import SimpleBPMN.SequenceFlow;
 import SimpleBPMN.SimpleBPMNPackage;
 
 public class CompareHelper {
+	/**
+	 * My best try with EMF Compare, unfortunately still unable to get good
+	 * enough results
+	 */
 	public static void compare(EObject expected, EObject actual) throws InterruptedException {
 		IDiffProcessor diffProcessor = new DiffBuilder();
 		IDiffEngine diffEngine = new DefaultDiffEngine(diffProcessor) {
@@ -84,10 +88,13 @@ public class CompareHelper {
 					}
 
 					@Override
+					/**
+					 * Ignore auxiliary references
+					 */
 					protected boolean isIgnoredReference(Match match, EReference reference) {
 						if (reference.getName().contains("__"))
 							return true;
-						return false;
+						return super.isIgnoredReference(match, reference);
 
 					}
 				};
