@@ -149,6 +149,55 @@ public class Incremental extends IncrementalIntegratorTest {
 		});
 	}
 
+	@Test
+	public void deltaTaskInThread() throws InterruptedException {
+		delta("DeltaTaskInThread", root -> {
+			Process proc = (Process) root;
+			Optional<FlowElement> feSF7 = proc.getFlowElements().stream()
+					.filter(f -> f instanceof SequenceFlow
+							&& ((SequenceFlow) f).getTargetRef() instanceof ParallelGateway
+							&& !((ParallelGateway) ((SequenceFlow) f).getTargetRef()).isIsDiverging()
+							&& ((SequenceFlow) f).getSourceRef() instanceof Task
+							&& ((Task) ((SequenceFlow) f).getSourceRef()).getId().equalsIgnoreCase("t3"))
+					.findAny();
+			Optional<FlowElement> feSF5 = proc.getFlowElements().stream()
+					.filter(f -> f instanceof SequenceFlow && ((SequenceFlow) f).getTargetRef() instanceof EndEvent)
+					.findAny();
+			if (!feSF7.isPresent() || !feSF5.isPresent())
+				return;
+			SequenceFlow sf7 = (SequenceFlow) feSF7.get();
+			ParallelGateway pcgw = (ParallelGateway) sf7.getTargetRef();
+
+			SequenceFlow sf5 = (SequenceFlow) feSF5.get();
+			EndEvent ee = (EndEvent) sf5.getTargetRef();
+
+			Task t4 = SimpleBPMNFactory.eINSTANCE.createTask();
+			t4.setId("t4");
+			sf7.setTargetRef(t4);
+			proc.getFlowElements().add(t4);
+
+			SequenceFlow sf8 = SimpleBPMNFactory.eINSTANCE.createSequenceFlow();
+			sf8.setId("sf8");
+			sf8.setSourceRef(t4);
+			sf8.setTargetRef(pcgw);
+			proc.getFlowElements().add(sf8);
+
+			Task t5 = SimpleBPMNFactory.eINSTANCE.createTask();
+			t5.setId("t5");
+			sf5.setTargetRef(t5);
+			proc.getFlowElements().add(t5);
+
+			SequenceFlow sf9 = SimpleBPMNFactory.eINSTANCE.createSequenceFlow();
+			sf9.setId("sf9");
+			sf9.setSourceRef(t5);
+			sf9.setTargetRef(ee);
+			proc.getFlowElements().add(sf9);
+
+			// pre-process
+			PatternDiscovery.discoverParallel(proc);
+		});
+	}
+
 	private void delta(String testCaseName, final Consumer<EObject> changeSrc) throws InterruptedException {
 		setInputModel(ApplicationTypes.BACKWARD, testCaseName);
 		SimpleUseCase.util.PreProcessor.process((UseCase) helper.getTrg());
