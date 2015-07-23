@@ -1,4 +1,4 @@
-package bpmn2useCase.test;
+package de.abilov.bpmn2useCase.test;
 
 import java.util.Optional;
 import java.util.function.Consumer;

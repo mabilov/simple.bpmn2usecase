@@ -1,4 +1,4 @@
-package bpmn2useCase.test;
+package de.abilov.bpmn2useCase.test;
 
 import org.apache.log4j.BasicConfigurator;
 import org.eclipse.emf.ecore.EObject;
