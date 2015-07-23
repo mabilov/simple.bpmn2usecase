@@ -95,6 +95,6 @@ public interface UseCase extends EObject {
 	 */
 	void setId(String value);
 	// <-- [user code injected with eMoflon]
-
+	String export();
 	// [user code injected with eMoflon] -->
 } // UseCase

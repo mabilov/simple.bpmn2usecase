@@ -95,6 +95,22 @@ public interface Flow extends EObject {
 	 */
 	void set__last(Step value);
 	// <-- [user code injected with eMoflon]
-
+	/**
+	 * Export flow to string, so it can be compared to another
+	 * @return string representation of the flow
+	 */
+	String export();
+	
+	/**
+	 * Find first step in the flow, this is the one that doesn't have the precedence
+	 * @return first step
+	 */
+	Step findFirst();
+	
+	/**
+	 * Find last step in the flow, this is one that doesn't have the next
+	 * @return last step
+	 */
+	Step findLast();
 	// [user code injected with eMoflon] -->
 } // Flow

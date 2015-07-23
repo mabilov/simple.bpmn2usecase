@@ -1,0 +1,25 @@
+
+partial class GatewayImpl {
+
+@members <--
+
+	public String export() {
+		if (!this.isIsDiverging() && this.getIncoming().stream().filter(sf -> !sf.isExported()).findAny().isPresent()) {
+			// if not all incoming sequence flows haven't yet been processes,
+			// wait until they do
+			return "";
+		}
+		
+		StringBuffer sb = new StringBuffer();
+		sb.append(this.getClass().toString());
+		sb.append(" ");
+		if (this.isIsDiverging()) {
+			sb.append(this.getId());
+		}
+		sb.append(this.exportOutgoing());
+		return sb.toString();
+	}
+	
+-->
+
+}

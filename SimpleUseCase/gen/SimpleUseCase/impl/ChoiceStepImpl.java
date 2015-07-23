@@ -5,8 +5,10 @@ package SimpleUseCase.impl;
 import SimpleUseCase.AlternativeFlow;
 import SimpleUseCase.ChoiceStep;
 import SimpleUseCase.SimpleUseCasePackage;
+import SimpleUseCase.util.NamedFlowComparator;
 
 import java.util.Collection;
+import java.util.Iterator;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -132,6 +134,27 @@ public class ChoiceStepImpl extends StepImpl implements ChoiceStep {
 		return super.eIsSet(featureID);
 	}
 	// <-- [user code injected with eMoflon]
+	public String export() {
+		StringBuffer sb = new StringBuffer();
+		sb.append(" choice step ");
+		sb.append(this.getId());
+		String comma = "";
 
+		Iterator<AlternativeFlow> altFlows = this.getAlternativeFlows().stream().sorted(new NamedFlowComparator())
+				.iterator();
+		while (altFlows.hasNext()) {
+			AlternativeFlow flow = altFlows.next();
+			sb.append(comma);
+			sb.append(flow.getId());
+			comma = ", ";
+		}
+		
+		if (this.getNext() != null) {
+			sb.append(" next ");
+			sb.append(this.getNext().getId());
+		}
+		
+		return sb.toString();
+	}
 	// [user code injected with eMoflon] -->
 } //ChoiceStepImpl

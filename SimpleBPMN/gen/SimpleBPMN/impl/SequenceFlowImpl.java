@@ -17,14 +17,15 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 // [user defined imports] -->
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Sequence Flow</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '
+ * <em><b>Sequence Flow</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link SimpleBPMN.impl.SequenceFlowImpl#getSourceRef <em>Source Ref</em>}</li>
- *   <li>{@link SimpleBPMN.impl.SequenceFlowImpl#getTargetRef <em>Target Ref</em>}</li>
+ * <li>{@link SimpleBPMN.impl.SequenceFlowImpl#getSourceRef <em>Source Ref</em>}
+ * </li>
+ * <li>{@link SimpleBPMN.impl.SequenceFlowImpl#getTargetRef <em>Target Ref</em>}
+ * </li>
  * </ul>
  * </p>
  *
@@ -32,9 +33,9 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	/**
-	 * The cached value of the '{@link #getSourceRef() <em>Source Ref</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getSourceRef() <em>Source Ref</em>}'
+	 * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getSourceRef()
 	 * @generated
 	 * @ordered
@@ -42,9 +43,9 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	protected FlowNode sourceRef;
 
 	/**
-	 * The cached value of the '{@link #getTargetRef() <em>Target Ref</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getTargetRef() <em>Target Ref</em>}'
+	 * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getTargetRef()
 	 * @generated
 	 * @ordered
@@ -52,8 +53,8 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	protected FlowNode targetRef;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected SequenceFlowImpl() {
@@ -61,8 +62,8 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -71,8 +72,8 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public FlowNode getSourceRef() {
@@ -89,8 +90,8 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public FlowNode basicGetSourceRef() {
@@ -98,8 +99,8 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetSourceRef(FlowNode newSourceRef, NotificationChain msgs) {
@@ -117,8 +118,8 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public void setSourceRef(FlowNode newSourceRef) {
@@ -139,8 +140,8 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public FlowNode getTargetRef() {
@@ -157,8 +158,8 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public FlowNode basicGetTargetRef() {
@@ -166,8 +167,8 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetTargetRef(FlowNode newTargetRef, NotificationChain msgs) {
@@ -185,8 +186,8 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public void setTargetRef(FlowNode newTargetRef) {
@@ -207,8 +208,8 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -229,8 +230,8 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -245,8 +246,8 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -265,8 +266,8 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -283,8 +284,8 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -301,8 +302,8 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -315,7 +316,23 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 		}
 		return super.eIsSet(featureID);
 	}
-	// <-- [user code injected with eMoflon]
 
+	// <-- [user code injected with eMoflon]
+	private boolean _exported = false;
+
+	public String export() {
+		StringBuffer sb = new StringBuffer();
+		sb.append(" sequence flow ");
+		sb.append(this.getId());
+		if (this.getTargetRef() != null) {
+			sb.append(this.getTargetRef().export());
+		}
+		this._exported = true;
+		return sb.toString();
+	}
+
+	public boolean isExported() {
+		return this._exported;
+	}
 	// [user code injected with eMoflon] -->
-} //SequenceFlowImpl
+} // SequenceFlowImpl

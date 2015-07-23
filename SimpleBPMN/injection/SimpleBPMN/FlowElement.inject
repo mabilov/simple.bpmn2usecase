@@ -1,0 +1,10 @@
+
+partial class FlowElement {
+
+@members <--
+
+	String export();
+	
+-->
+
+}

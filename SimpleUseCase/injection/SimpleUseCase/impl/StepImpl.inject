@@ -1,0 +1,10 @@
+
+partial class StepImpl {
+
+@members <--
+
+	public abstract String export();
+	
+-->
+
+}

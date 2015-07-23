@@ -1,0 +1,25 @@
+
+partial class SequenceFlowImpl {
+
+@members <--
+
+	private boolean _exported = false;
+
+	public String export() {
+		StringBuffer sb = new StringBuffer();
+		sb.append(" sequence flow ");
+		sb.append(this.getId());
+		if (this.getTargetRef() != null) {
+			sb.append(this.getTargetRef().export());
+		}
+		this._exported = true;
+		return sb.toString();
+	}
+
+	public boolean isExported() {
+		return this._exported;
+	}
+	
+-->
+
+}

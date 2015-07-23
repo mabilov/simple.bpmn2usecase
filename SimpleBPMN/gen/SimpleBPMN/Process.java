@@ -68,6 +68,16 @@ public interface Process extends EObject {
 	 */
 	void setId(String value);
 	// <-- [user code injected with eMoflon]
-
+	/**
+	 * Export process to string so it can be compared with the another
+	 * @return string representation of the process
+	 */
+	String export();
+	
+	/**
+	 * Find first node in the process, which is usually a start event
+	 * @return
+	 */
+	SimpleBPMN.FlowNode findFirst();
 	// [user code injected with eMoflon] -->
 } // Process

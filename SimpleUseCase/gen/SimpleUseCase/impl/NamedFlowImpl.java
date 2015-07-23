@@ -162,6 +162,13 @@ public abstract class NamedFlowImpl extends FlowImpl implements NamedFlow {
 		return result.toString();
 	}
 	// <-- [user code injected with eMoflon]
-
+	@Override
+	public String export() {
+		StringBuffer sb = new StringBuffer();
+		sb.append(" id ");
+		sb.append(this.getId());
+		sb.append(super.export());
+		return sb.toString();
+	}
 	// [user code injected with eMoflon] -->
 } //NamedFlowImpl

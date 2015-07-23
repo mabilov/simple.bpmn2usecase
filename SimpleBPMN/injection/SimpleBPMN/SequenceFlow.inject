@@ -1,0 +1,15 @@
+
+partial class SequenceFlow {
+
+@members <--
+
+	/**
+	 * Check if the sequence flow has already been exported
+	 * 
+	 * @return
+	 */
+	boolean isExported();
+	
+-->
+
+}

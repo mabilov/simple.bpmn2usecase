@@ -38,6 +38,16 @@ public class NormalStepImpl extends StepImpl implements NormalStep {
 		return SimpleUseCasePackage.Literals.NORMAL_STEP;
 	}
 	// <-- [user code injected with eMoflon]
-
+	@Override
+	public String export() {
+		StringBuffer sb = new StringBuffer();
+		sb.append(" step ");
+		sb.append(this.getId());
+		if (this.getNext() != null) {
+			sb.append(" next ");
+			sb.append(this.getNext().getId());
+		}
+		return sb.toString();
+	}
 	// [user code injected with eMoflon] -->
 } //NormalStepImpl

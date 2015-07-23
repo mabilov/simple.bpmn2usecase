@@ -1,30 +1,14 @@
 package SimpleBPMN.util;
 
 import java.util.LinkedList;
-import java.util.Optional;
 import java.util.Stack;
 
-import SimpleBPMN.FlowElement;
 import SimpleBPMN.FlowNode;
 import SimpleBPMN.ParallelGateway;
 import SimpleBPMN.Process;
 import SimpleBPMN.SequenceFlow;
-import SimpleBPMN.StartEvent;
 
 public class PatternDiscovery {
-	/**
-	 * Find first flow node in the process, which is the start event
-	 * 
-	 * @param model
-	 * @return start event
-	 */
-	public static StartEvent findFirst(Process model) {
-		Optional<FlowElement> el = model.getFlowElements().stream().filter(fe -> fe instanceof StartEvent).findAny();
-		if (el.isPresent())
-			return (StartEvent) el.get();
-		else
-			return null;
-	}
 
 	/**
 	 * Discover parallel split and synchronization pattern and connect them to
@@ -33,7 +17,7 @@ public class PatternDiscovery {
 	 * @param model
 	 */
 	public static void discoverParallel(Process model) {
-		StartEvent firstEl = findFirst(model);
+		FlowNode firstEl = model.findFirst();
 		LinkedList<FlowNode> nodes = new LinkedList<FlowNode>();
 		nodes.add(firstEl);
 		Stack<ParallelGateway> splits = new Stack<ParallelGateway>();

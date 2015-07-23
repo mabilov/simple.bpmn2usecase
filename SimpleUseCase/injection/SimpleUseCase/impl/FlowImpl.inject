@@ -1,0 +1,60 @@
+
+partial class FlowImpl {
+
+@members <--
+
+	public String export() {
+		StringBuffer sb = new StringBuffer();
+		if (this.getFinalState() != null) {
+			sb.append(" final state ");
+			sb.append(this.getFinalState().getName());
+		}
+
+		Step first = null;
+		for (Step step : this.getSteps()) {
+			java.util.Optional<Step> prev = this.getSteps().stream().filter(s -> s.getNext() == step).findAny();
+			if (!prev.isPresent()) {
+				first = step;
+				break;
+			}
+		}
+		if (first != null) {
+			sb.append(first.export());
+			Step current = first;
+			while (current.getNext() != null) {
+				current = current.getNext();
+				sb.append(current.export());
+			}
+		}
+		return sb.toString();
+	}
+
+	public Step findFirst() {
+		org.eclipse.emf.common.util.EList<Step> els = this.getSteps();
+		for (Step el : els) {
+			boolean first = true;
+			for (Step el1 : els) {
+				if (el1.getNext() == el) {
+					first = false;
+					break;
+				}
+			}
+			if (first) {
+				return el;
+			}
+		}
+		return null;
+	}
+
+	public Step findLast() {
+		java.util.Optional<Step> step = this.getSteps().stream().filter(s -> s.getNext() == null).findAny();
+
+		if (step.isPresent())
+			return step.get();
+		else
+			return null;
+	}
+	
+-->
+
+}

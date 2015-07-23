@@ -1,0 +1,17 @@
+
+partial class NamedFlowImpl {
+
+@members <--
+
+	@Override
+	public String export() {
+		StringBuffer sb = new StringBuffer();
+		sb.append(" id ");
+		sb.append(this.getId());
+		sb.append(super.export());
+		return sb.toString();
+	}
+	
+-->
+
+}

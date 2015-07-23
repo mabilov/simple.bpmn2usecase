@@ -1,0 +1,31 @@
+
+partial class ChoiceStepImpl {
+
+@members <--
+
+	public String export() {
+		StringBuffer sb = new StringBuffer();
+		sb.append(" choice step ");
+		sb.append(this.getId());
+		String comma = "";
+
+		Iterator<AlternativeFlow> altFlows = this.getAlternativeFlows().stream().sorted(new NamedFlowComparator())
+				.iterator();
+		while (altFlows.hasNext()) {
+			AlternativeFlow flow = altFlows.next();
+			sb.append(comma);
+			sb.append(flow.getId());
+			comma = ", ";
+		}
+		
+		if (this.getNext() != null) {
+			sb.append(" next ");
+			sb.append(this.getNext().getId());
+		}
+		
+		return sb.toString();
+	}
+	
+-->
+
+}

@@ -60,6 +60,6 @@ public interface FlowNode extends FlowElement {
 	 */
 	EList<SequenceFlow> getIncoming();
 	// <-- [user code injected with eMoflon]
-
+	String exportOutgoing();
 	// [user code injected with eMoflon] -->
 } // FlowNode

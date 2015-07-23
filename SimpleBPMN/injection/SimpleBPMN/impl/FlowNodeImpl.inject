@@ -1,0 +1,31 @@
+
+partial class FlowNodeImpl {
+
+@members <--
+
+	public String export() {
+		StringBuffer sb = new StringBuffer();
+		sb.append(this.getClass().toString());
+		sb.append(" ");
+		sb.append(this.getId());
+		sb.append(this.exportOutgoing());
+		return sb.toString();
+	}
+
+	public String exportOutgoing() {
+		StringBuffer sb = new StringBuffer();
+		Iterator<SequenceFlow> sflows = this.getOutgoing().stream().sorted(new Comparator<SequenceFlow>() {
+			@Override
+			public int compare(SequenceFlow arg0, SequenceFlow arg1) {
+				return arg0.getId().compareTo(arg1.getId());
+			}
+		}).iterator();
+		while (sflows.hasNext()) {
+			sb.append(sflows.next().export());
+		}
+		return sb.toString();
+	}
+	
+-->
+
+}

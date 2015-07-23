@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<SimpleUseCase:UseCase xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SimpleUseCase="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore" id="DeltaThread">
+  <flows xsi:type="SimpleUseCase:BasicFlow" __last="pg1">
+    <steps xsi:type="SimpleUseCase:NormalStep" next="pg1" id="t1"/>
+    <steps xsi:type="SimpleUseCase:ParallelStep" next="t5" id="pg1" invokedFlows="sf3 sf6"/>
+    <steps xsi:type="SimpleUseCase:NormalStep" __last="//@flows.0/@finalState" id="t5"/>
+    <finalState name="ee1"/>
+  </flows>
+  <flows xsi:type="SimpleUseCase:ParallelFlow" __last="t2" id="sf3">
+    <steps xsi:type="SimpleUseCase:NormalStep" id="t2"/>
+  </flows>
+  <flows xsi:type="SimpleUseCase:ParallelFlow" __last="t4" id="sf6">
+    <steps xsi:type="SimpleUseCase:NormalStep" next="t4" id="t3"/>
+    <steps xsi:type="SimpleUseCase:NormalStep" id="t4"/>
+  </flows>
+  <precondition name="se1"/>
+</SimpleUseCase:UseCase>
