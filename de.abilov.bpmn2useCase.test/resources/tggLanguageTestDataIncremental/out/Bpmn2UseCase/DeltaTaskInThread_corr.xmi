@@ -21,20 +21,20 @@
     <target xsi:type="SimpleUseCase:ParallelStep" href="../../in/Bpmn2UseCase/DeltaTaskInThread.xmi#pg1"/>
   </correspondences>
   <correspondences xsi:type="Bpmn2UseCase:FN2S">
-    <source xsi:type="SimpleBPMN:Task" href="../../../../sourceModel#t5"/>
-    <target xsi:type="SimpleUseCase:NormalStep" href="../../in/Bpmn2UseCase/DeltaTaskInThread.xmi#t5"/>
-  </correspondences>
-  <correspondences xsi:type="Bpmn2UseCase:FN2S">
-    <source xsi:type="SimpleBPMN:Task" href="../../../../sourceModel#t2"/>
-    <target xsi:type="SimpleUseCase:NormalStep" href="../../in/Bpmn2UseCase/DeltaTaskInThread.xmi#t2"/>
-  </correspondences>
-  <correspondences xsi:type="Bpmn2UseCase:FN2S">
     <source xsi:type="SimpleBPMN:Task" href="../../../../sourceModel#t3"/>
     <target xsi:type="SimpleUseCase:NormalStep" href="../../in/Bpmn2UseCase/DeltaTaskInThread.xmi#t3"/>
   </correspondences>
   <correspondences xsi:type="Bpmn2UseCase:FN2S">
+    <source xsi:type="SimpleBPMN:Task" href="../../../../sourceModel#t5"/>
+    <target xsi:type="SimpleUseCase:NormalStep" href="../../in/Bpmn2UseCase/DeltaTaskInThread.xmi#t5"/>
+  </correspondences>
+  <correspondences xsi:type="Bpmn2UseCase:FN2S">
     <source xsi:type="SimpleBPMN:Task" href="../../../../sourceModel#t4"/>
     <target xsi:type="SimpleUseCase:NormalStep" href="../../in/Bpmn2UseCase/DeltaTaskInThread.xmi#t4"/>
+  </correspondences>
+  <correspondences xsi:type="Bpmn2UseCase:FN2S">
+    <source xsi:type="SimpleBPMN:Task" href="../../../../sourceModel#t2"/>
+    <target xsi:type="SimpleUseCase:NormalStep" href="../../in/Bpmn2UseCase/DeltaTaskInThread.xmi#t2"/>
   </correspondences>
   <source href="../../../../sourceModel#DeltaThread"/>
   <target href="../../in/Bpmn2UseCase/DeltaTaskInThread.xmi#DeltaThread"/>

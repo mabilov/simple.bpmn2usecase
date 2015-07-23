@@ -323,7 +323,7 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	public String export() {
 		StringBuffer sb = new StringBuffer();
 		sb.append(" sequence flow ");
-		sb.append(this.getId());
+		//sb.append(this.getId());
 		if (this.getTargetRef() != null) {
 			sb.append(this.getTargetRef().export());
 		}

@@ -1,0 +1,1914 @@
+<?xml version="1.0" encoding="ASCII"?>
+<TGGRuntime:PrecedenceStructure xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TGGRuntime="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore">
+  <tripleMatches children="//@tripleMatches.10 //@tripleMatches.5 //@tripleMatches.6 //@tripleMatches.2 //@tripleMatches.3 //@tripleMatches.4 //@tripleMatches.1 //@tripleMatches.9 //@tripleMatches.8 //@tripleMatches.7" ruleName="Process2UseCase" number="11">
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    <sourceElements href="#//@tripleMatches.0/@containedEdges.7"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#se1"/>
+    <nodeMappings nodeName="_p2uc">
+      <node href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="process">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="useCase">
+      <node href="../../../../targetModel#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="s2f">
+      <node href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="start">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#se1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cond">
+      <node href="../../../../targetModel#//@precondition"/>
+    </nodeMappings>
+    <nodeMappings nodeName="flow">
+      <node href="../../../../targetModel#//@flows.0"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.1"/>
+      <trg href="../../../../targetModel#//@flows.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#se1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="precondition">
+      <src href="../../../../targetModel#/"/>
+      <trg href="../../../../targetModel#//@precondition"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.0"/>
+      <trg href="../../../../targetModel#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.0"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#se1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
+      <src href="../../../../targetModel#/"/>
+      <trg href="../../../../targetModel#//@flows.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#se1"/>
+    </containedEdges>
+    <targetElements href="../../../../targetModel#/"/>
+    <targetElements href="../../../../targetModel#//@precondition"/>
+    <targetElements href="#//@tripleMatches.0/@containedEdges.6"/>
+    <targetElements href="../../../../targetModel#//@flows.0"/>
+    <targetElements href="#//@tripleMatches.0/@containedEdges.2"/>
+    <correspondenceElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.1"/>
+    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.5"/>
+    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.0"/>
+    <correspondenceElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.3"/>
+    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.4"/>
+    <createdElements href="../../../../targetModel#/"/>
+    <createdElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.0"/>
+    <createdElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.0"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.1"/>
+    <createdElements href="../../../../targetModel#//@precondition"/>
+    <createdElements href="../../../../targetModel#//@flows.0"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.2"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.3"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.4"/>
+    <createdElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.1"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.5"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.6"/>
+    <createdElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#se1"/>
+  </tripleMatches>
+  <tripleMatches children="//@tripleMatches.10 //@tripleMatches.5 //@tripleMatches.6 //@tripleMatches.2 //@tripleMatches.7" ruleName="PG2ParallelStepFirst" number="12">
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.16"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.17"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.18"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.19"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.20"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.21"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf1"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.22"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.23"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.24"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#se1"/>
+    <contextElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.1"/>
+    <contextElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    <contextElements href="#//@tripleMatches.1/@containedEdges.0"/>
+    <contextElements href="#//@tripleMatches.1/@containedEdges.1"/>
+    <contextElements href="#//@tripleMatches.1/@containedEdges.2"/>
+    <contextElements href="../../../../targetModel#//@flows.0"/>
+    <contextElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#se1"/>
+    <nodeMappings nodeName="pgw">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pnToFlow">
+      <node href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="prevNode">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#se1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="process">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pcgw">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="step">
+      <node href="../../../../targetModel#pg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pcgwToStep">
+      <node href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="flow">
+      <node href="../../../../targetModel#//@flows.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pgwToStep">
+      <node href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="sf1">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf1"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#se1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.1"/>
+      <trg href="../../../../targetModel#//@flows.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#se1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#se1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../../../../targetModel#//@flows.0"/>
+      <trg href="../../../../targetModel#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__conv">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.3"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.2"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#se1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.2"/>
+      <trg href="../../../../targetModel#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.3"/>
+      <trg href="../../../../targetModel#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#se1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#se1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__conv">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#se1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf1"/>
+    </containedEdges>
+    <targetElements href="../../../../targetModel#//@flows.0"/>
+    <targetElements href="../../../../targetModel#pg1"/>
+    <targetElements href="#//@tripleMatches.1/@containedEdges.6"/>
+    <correspondenceElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.1"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.0"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.1"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.9"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.10"/>
+    <correspondenceElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.2"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.14"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.15"/>
+    <correspondenceElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.3"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.3"/>
+    <createdElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.5"/>
+    <createdElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    <createdElements href="../../../../targetModel#pg1"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.6"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.7"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.8"/>
+    <createdElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf1"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.9"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.10"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.11"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.12"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.13"/>
+    <createdElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.2"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.14"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.15"/>
+    <createdElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.3"/>
+  </tripleMatches>
+  <tripleMatches children="//@tripleMatches.5 //@tripleMatches.3 //@tripleMatches.4 //@tripleMatches.9 //@tripleMatches.8" ruleName="PG2ParallelStepAfterPG" number="13">
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.20"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.21"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.22"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.23"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.24"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.25"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.26"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.27"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf2"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.28"/>
+    <contextElements href="../../../../targetModel#/"/>
+    <contextElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.0"/>
+    <contextElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.0"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.1"/>
+    <contextElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.2"/>
+    <contextElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.3"/>
+    <contextElements href="../../../../targetModel#pg1"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.3"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.4"/>
+    <nodeMappings nodeName="pgw">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="process">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="p2uc">
+      <node href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pgwToStep">
+      <node href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.5"/>
+    </nodeMappings>
+    <nodeMappings nodeName="prevNode">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="useCase">
+      <node href="../../../../targetModel#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pgw2ps">
+      <node href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pcgw">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="step">
+      <node href="../../../../targetModel#pg2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pcgwToStep">
+      <node href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.4"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pstep">
+      <node href="../../../../targetModel#pg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="flow">
+      <node href="../../../../targetModel#sf2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="sf1">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf2"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.3"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.3"/>
+      <trg href="../../../../targetModel#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.0"/>
+      <trg href="../../../../targetModel#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.0"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.4"/>
+      <trg href="../../../../targetModel#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__conv">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.5"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf2"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf2"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="invokedFlows">
+      <src href="../../../../targetModel#pg1"/>
+      <trg href="../../../../targetModel#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.4"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.5"/>
+      <trg href="../../../../targetModel#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
+      <src href="../../../../targetModel#/"/>
+      <trg href="../../../../targetModel#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../../../../targetModel#sf2"/>
+      <trg href="../../../../targetModel#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__conv">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf2"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf2"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf2"/>
+    </containedEdges>
+    <targetElements href="../../../../targetModel#/"/>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.17"/>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.18"/>
+    <targetElements href="../../../../targetModel#sf2"/>
+    <targetElements href="../../../../targetModel#pg2"/>
+    <targetElements href="../../../../targetModel#pg1"/>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.13"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.5"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.9"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.0"/>
+    <correspondenceElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.4"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.2"/>
+    <correspondenceElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.5"/>
+    <correspondenceElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.3"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.3"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.14"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.15"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.4"/>
+    <createdElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.5"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.6"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.7"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.8"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.9"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.10"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.11"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.12"/>
+    <createdElements href="../../../../targetModel#pg2"/>
+    <createdElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.5"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.13"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.14"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.15"/>
+    <createdElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.16"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.17"/>
+    <createdElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.4"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.18"/>
+    <createdElements href="../../../../targetModel#sf2"/>
+    <createdElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf2"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.19"/>
+  </tripleMatches>
+  <tripleMatches children="//@tripleMatches.4" ruleName="Task2NormalStepAfterPG" number="14">
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.16"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.17"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.18"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.19"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t2"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.20"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf5"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.21"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.22"/>
+    <contextElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    <contextElements href="../../../../targetModel#/"/>
+    <contextElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.0"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.1"/>
+    <contextElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.0"/>
+    <contextElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.5"/>
+    <contextElements href="../../../../targetModel#pg2"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.2"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.3"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.4"/>
+    <nodeMappings nodeName="prevNode">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="process">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="useCase">
+      <node href="../../../../targetModel#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="p2uc">
+      <node href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="task">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pgw2ps">
+      <node href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.5"/>
+    </nodeMappings>
+    <nodeMappings nodeName="t2s">
+      <node href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.6"/>
+    </nodeMappings>
+    <nodeMappings nodeName="step">
+      <node href="../../../../targetModel#t2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pstep">
+      <node href="../../../../targetModel#pg2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="flow">
+      <node href="../../../../targetModel#sf5"/>
+    </nodeMappings>
+    <nodeMappings nodeName="sf1">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf5"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.5"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.0"/>
+      <trg href="../../../../targetModel#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.5"/>
+      <trg href="../../../../targetModel#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.0"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
+      <src href="../../../../targetModel#/"/>
+      <trg href="../../../../targetModel#sf5"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.6"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf5"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t2"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf5"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf5"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf5"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../../../../targetModel#sf5"/>
+      <trg href="../../../../targetModel#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf5"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="invokedFlows">
+      <src href="../../../../targetModel#pg2"/>
+      <trg href="../../../../targetModel#sf5"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.6"/>
+      <trg href="../../../../targetModel#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf5"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t2"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf5"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf5"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf5"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf5"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t2"/>
+    </containedEdges>
+    <targetElements href="../../../../targetModel#/"/>
+    <targetElements href="#//@tripleMatches.3/@containedEdges.5"/>
+    <targetElements href="#//@tripleMatches.3/@containedEdges.11"/>
+    <targetElements href="../../../../targetModel#t2"/>
+    <targetElements href="../../../../targetModel#sf5"/>
+    <targetElements href="../../../../targetModel#pg2"/>
+    <targetElements href="#//@tripleMatches.3/@containedEdges.14"/>
+    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.6"/>
+    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.1"/>
+    <correspondenceElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.6"/>
+    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.15"/>
+    <correspondenceElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.5"/>
+    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.2"/>
+    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.3"/>
+    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.5"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.6"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.7"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.8"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.9"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.10"/>
+    <createdElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t2"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.11"/>
+    <createdElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf5"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.12"/>
+    <createdElements href="../../../../targetModel#t2"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.13"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.14"/>
+    <createdElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.6"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.15"/>
+    <createdElements href="../../../../targetModel#sf5"/>
+  </tripleMatches>
+  <tripleMatches ruleName="LastStepInPFlow" number="15">
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.16"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t2"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.17"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf7"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.18"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.19"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.20"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.21"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.22"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.23"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.24"/>
+    <contextElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.0"/>
+    <contextElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.1"/>
+    <contextElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t2"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.2"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.3"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.4"/>
+    <contextElements href="../../../../targetModel#t2"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.5"/>
+    <contextElements href="../../../../targetModel#pg2"/>
+    <contextElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.5"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.6"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.7"/>
+    <contextElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.8"/>
+    <contextElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.6"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.9"/>
+    <contextElements href="../../../../targetModel#sf5"/>
+    <nodeMappings nodeName="gw">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="node">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="process">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="sf">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf7"/>
+    </nodeMappings>
+    <nodeMappings nodeName="gcw">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="step">
+      <node href="../../../../targetModel#t2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="gwStep">
+      <node href="../../../../targetModel#pg2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="gw2gs">
+      <node href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.5"/>
+    </nodeMappings>
+    <nodeMappings nodeName="flow">
+      <node href="../../../../targetModel#sf5"/>
+    </nodeMappings>
+    <nodeMappings nodeName="n2s">
+      <node href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.6"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.6"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__conv">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../../../../targetModel#sf5"/>
+      <trg href="../../../../targetModel#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.5"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="invokedFlows">
+      <src href="../../../../targetModel#pg2"/>
+      <trg href="../../../../targetModel#sf5"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.5"/>
+      <trg href="../../../../targetModel#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.6"/>
+      <trg href="../../../../targetModel#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf7"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf7"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf7"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf7"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__last">
+      <src href="../../../../targetModel#sf5"/>
+      <trg href="../../../../targetModel#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t2"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf7"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__conv">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf7"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf7"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t2"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf7"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf7"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf7"/>
+    </containedEdges>
+    <targetElements href="#//@tripleMatches.4/@containedEdges.3"/>
+    <targetElements href="../../../../targetModel#t2"/>
+    <targetElements href="../../../../targetModel#sf5"/>
+    <targetElements href="../../../../targetModel#pg2"/>
+    <targetElements href="#//@tripleMatches.4/@containedEdges.14"/>
+    <targetElements href="#//@tripleMatches.4/@containedEdges.6"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.0"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.4"/>
+    <correspondenceElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.6"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.9"/>
+    <correspondenceElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.5"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.7"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.10"/>
+    <createdElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf7"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.11"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.12"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.13"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.14"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.15"/>
+  </tripleMatches>
+  <tripleMatches ruleName="LastStepInPFlow" number="16">
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.16"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.17"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.18"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.19"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.20"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf8"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.21"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.22"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.23"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.24"/>
+    <contextElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.0"/>
+    <contextElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.1"/>
+    <contextElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    <contextElements href="../../../../targetModel#pg2"/>
+    <contextElements href="../../../../targetModel#pg1"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.2"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.3"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.4"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.5"/>
+    <contextElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.6"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.7"/>
+    <contextElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.4"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.8"/>
+    <contextElements href="../../../../targetModel#sf2"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.9"/>
+    <contextElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.3"/>
+    <nodeMappings nodeName="gw">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="node">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="process">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="sf">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf8"/>
+    </nodeMappings>
+    <nodeMappings nodeName="gcw">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="step">
+      <node href="../../../../targetModel#pg2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="gwStep">
+      <node href="../../../../targetModel#pg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="gw2gs">
+      <node href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="flow">
+      <node href="../../../../targetModel#sf2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="n2s">
+      <node href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.4"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.4"/>
+      <trg href="../../../../targetModel#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__conv">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="invokedFlows">
+      <src href="../../../../targetModel#pg1"/>
+      <trg href="../../../../targetModel#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.4"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.3"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../../../../targetModel#sf2"/>
+      <trg href="../../../../targetModel#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.3"/>
+      <trg href="../../../../targetModel#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf8"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf8"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__last">
+      <src href="../../../../targetModel#sf2"/>
+      <trg href="../../../../targetModel#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf8"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf8"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf8"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf8"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__conv">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf8"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf8"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf8"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf8"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    </containedEdges>
+    <targetElements href="#//@tripleMatches.5/@containedEdges.12"/>
+    <targetElements href="#//@tripleMatches.5/@containedEdges.8"/>
+    <targetElements href="../../../../targetModel#sf2"/>
+    <targetElements href="../../../../targetModel#pg2"/>
+    <targetElements href="../../../../targetModel#pg1"/>
+    <targetElements href="#//@tripleMatches.5/@containedEdges.3"/>
+    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.0"/>
+    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.7"/>
+    <correspondenceElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.4"/>
+    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.9"/>
+    <correspondenceElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.3"/>
+    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.5"/>
+    <createdElements href="#//@tripleMatches.5/@containedEdges.10"/>
+    <createdElements href="#//@tripleMatches.5/@containedEdges.11"/>
+    <createdElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf8"/>
+    <createdElements href="#//@tripleMatches.5/@containedEdges.12"/>
+    <createdElements href="#//@tripleMatches.5/@containedEdges.13"/>
+    <createdElements href="#//@tripleMatches.5/@containedEdges.14"/>
+    <createdElements href="#//@tripleMatches.5/@containedEdges.15"/>
+  </tripleMatches>
+  <tripleMatches children="//@tripleMatches.10" ruleName="Task2NormalStepAfterPG" number="17">
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.16"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf3"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t3"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.17"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.18"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.19"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.20"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.21"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.22"/>
+    <contextElements href="../../../../targetModel#/"/>
+    <contextElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    <contextElements href="#//@tripleMatches.6/@containedEdges.0"/>
+    <contextElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.0"/>
+    <contextElements href="#//@tripleMatches.6/@containedEdges.1"/>
+    <contextElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    <contextElements href="#//@tripleMatches.6/@containedEdges.2"/>
+    <contextElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.3"/>
+    <contextElements href="../../../../targetModel#pg1"/>
+    <contextElements href="#//@tripleMatches.6/@containedEdges.3"/>
+    <contextElements href="#//@tripleMatches.6/@containedEdges.4"/>
+    <nodeMappings nodeName="prevNode">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="process">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="useCase">
+      <node href="../../../../targetModel#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="p2uc">
+      <node href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="task">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pgw2ps">
+      <node href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="t2s">
+      <node href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.7"/>
+    </nodeMappings>
+    <nodeMappings nodeName="step">
+      <node href="../../../../targetModel#t3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pstep">
+      <node href="../../../../targetModel#pg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="flow">
+      <node href="../../../../targetModel#sf3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="sf1">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf3"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.3"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.3"/>
+      <trg href="../../../../targetModel#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.0"/>
+      <trg href="../../../../targetModel#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.0"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t3"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.7"/>
+      <trg href="../../../../targetModel#t3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf3"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.7"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="invokedFlows">
+      <src href="../../../../targetModel#pg1"/>
+      <trg href="../../../../targetModel#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
+      <src href="../../../../targetModel#/"/>
+      <trg href="../../../../targetModel#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../../../../targetModel#sf3"/>
+      <trg href="../../../../targetModel#t3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf3"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t3"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf3"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf3"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    </containedEdges>
+    <targetElements href="../../../../targetModel#/"/>
+    <targetElements href="#//@tripleMatches.6/@containedEdges.10"/>
+    <targetElements href="#//@tripleMatches.6/@containedEdges.12"/>
+    <targetElements href="../../../../targetModel#t3"/>
+    <targetElements href="../../../../targetModel#pg1"/>
+    <targetElements href="#//@tripleMatches.6/@containedEdges.14"/>
+    <targetElements href="../../../../targetModel#sf3"/>
+    <correspondenceElements href="#//@tripleMatches.6/@containedEdges.9"/>
+    <correspondenceElements href="#//@tripleMatches.6/@containedEdges.0"/>
+    <correspondenceElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.7"/>
+    <correspondenceElements href="#//@tripleMatches.6/@containedEdges.6"/>
+    <correspondenceElements href="#//@tripleMatches.6/@containedEdges.2"/>
+    <correspondenceElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.3"/>
+    <correspondenceElements href="#//@tripleMatches.6/@containedEdges.3"/>
+    <correspondenceElements href="#//@tripleMatches.6/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.5"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.6"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.7"/>
+    <createdElements href="../../../../targetModel#sf3"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.8"/>
+    <createdElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf3"/>
+    <createdElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t3"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.9"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.10"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.11"/>
+    <createdElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.7"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.12"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.13"/>
+    <createdElements href="../../../../targetModel#t3"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.14"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.15"/>
+  </tripleMatches>
+  <tripleMatches ruleName="EndEvent2FinalStateSeq" number="18">
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf10"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#ee1"/>
+    <sourceElements href="#//@tripleMatches.7/@containedEdges.12"/>
+    <sourceElements href="#//@tripleMatches.7/@containedEdges.13"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    <sourceElements href="#//@tripleMatches.7/@containedEdges.14"/>
+    <sourceElements href="#//@tripleMatches.7/@containedEdges.15"/>
+    <sourceElements href="#//@tripleMatches.7/@containedEdges.16"/>
+    <sourceElements href="#//@tripleMatches.7/@containedEdges.17"/>
+    <sourceElements href="#//@tripleMatches.7/@containedEdges.18"/>
+    <contextElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    <contextElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    <contextElements href="#//@tripleMatches.7/@containedEdges.0"/>
+    <contextElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.2"/>
+    <contextElements href="#//@tripleMatches.7/@containedEdges.1"/>
+    <contextElements href="../../../../targetModel#//@flows.0"/>
+    <contextElements href="../../../../targetModel#pg1"/>
+    <contextElements href="#//@tripleMatches.7/@containedEdges.2"/>
+    <contextElements href="#//@tripleMatches.7/@containedEdges.3"/>
+    <nodeMappings nodeName="lastStep">
+      <node href="../../../../targetModel#pg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="prevNode">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="process">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="state">
+      <node href="../../../../targetModel#//@flows.0/@finalState"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pn2s">
+      <node href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="event">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#ee1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="flow">
+      <node href="../../../../targetModel#//@flows.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="inFlow">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf10"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.2"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.2"/>
+      <trg href="../../../../targetModel#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../../../../targetModel#//@flows.0"/>
+      <trg href="../../../../targetModel#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf10"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf10"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__last">
+      <src href="../../../../targetModel#pg1"/>
+      <trg href="../../../../targetModel#//@flows.0/@finalState"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#ee1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf10"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf10"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="finalState">
+      <src href="../../../../targetModel#//@flows.0"/>
+      <trg href="../../../../targetModel#//@flows.0/@finalState"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf10"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#ee1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#ee1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf10"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf10"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#ee1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf10"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf10"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf10"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#ee1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#ee1"/>
+    </containedEdges>
+    <targetElements href="../../../../targetModel#//@flows.0/@finalState"/>
+    <targetElements href="#//@tripleMatches.7/@containedEdges.6"/>
+    <targetElements href="../../../../targetModel#//@flows.0"/>
+    <targetElements href="#//@tripleMatches.7/@containedEdges.9"/>
+    <targetElements href="../../../../targetModel#pg1"/>
+    <targetElements href="#//@tripleMatches.7/@containedEdges.2"/>
+    <correspondenceElements href="#//@tripleMatches.7/@containedEdges.0"/>
+    <correspondenceElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.2"/>
+    <correspondenceElements href="#//@tripleMatches.7/@containedEdges.1"/>
+    <createdElements href="../../../../targetModel#//@flows.0/@finalState"/>
+    <createdElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf10"/>
+    <createdElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#ee1"/>
+    <createdElements href="#//@tripleMatches.7/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.7/@containedEdges.5"/>
+    <createdElements href="#//@tripleMatches.7/@containedEdges.6"/>
+    <createdElements href="#//@tripleMatches.7/@containedEdges.7"/>
+    <createdElements href="#//@tripleMatches.7/@containedEdges.8"/>
+    <createdElements href="#//@tripleMatches.7/@containedEdges.9"/>
+    <createdElements href="#//@tripleMatches.7/@containedEdges.10"/>
+    <createdElements href="#//@tripleMatches.7/@containedEdges.11"/>
+  </tripleMatches>
+  <tripleMatches children="//@tripleMatches.9" ruleName="Task2NormalStepAfterPG" number="19">
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf4"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t1"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    <sourceElements href="#//@tripleMatches.8/@containedEdges.16"/>
+    <sourceElements href="#//@tripleMatches.8/@containedEdges.17"/>
+    <sourceElements href="#//@tripleMatches.8/@containedEdges.18"/>
+    <sourceElements href="#//@tripleMatches.8/@containedEdges.19"/>
+    <sourceElements href="#//@tripleMatches.8/@containedEdges.20"/>
+    <sourceElements href="#//@tripleMatches.8/@containedEdges.21"/>
+    <sourceElements href="#//@tripleMatches.8/@containedEdges.22"/>
+    <contextElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    <contextElements href="../../../../targetModel#/"/>
+    <contextElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    <contextElements href="#//@tripleMatches.8/@containedEdges.0"/>
+    <contextElements href="#//@tripleMatches.8/@containedEdges.1"/>
+    <contextElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.0"/>
+    <contextElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.5"/>
+    <contextElements href="../../../../targetModel#pg2"/>
+    <contextElements href="#//@tripleMatches.8/@containedEdges.2"/>
+    <contextElements href="#//@tripleMatches.8/@containedEdges.3"/>
+    <contextElements href="#//@tripleMatches.8/@containedEdges.4"/>
+    <nodeMappings nodeName="prevNode">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="process">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="useCase">
+      <node href="../../../../targetModel#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="p2uc">
+      <node href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="task">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pgw2ps">
+      <node href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.5"/>
+    </nodeMappings>
+    <nodeMappings nodeName="t2s">
+      <node href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.8"/>
+    </nodeMappings>
+    <nodeMappings nodeName="step">
+      <node href="../../../../targetModel#t1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pstep">
+      <node href="../../../../targetModel#pg2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="flow">
+      <node href="../../../../targetModel#sf4"/>
+    </nodeMappings>
+    <nodeMappings nodeName="sf1">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf4"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.5"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.0"/>
+      <trg href="../../../../targetModel#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.5"/>
+      <trg href="../../../../targetModel#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.0"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="invokedFlows">
+      <src href="../../../../targetModel#pg2"/>
+      <trg href="../../../../targetModel#sf4"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf4"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.8"/>
+      <trg href="../../../../targetModel#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf4"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../../../../targetModel#sf4"/>
+      <trg href="../../../../targetModel#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
+      <src href="../../../../targetModel#/"/>
+      <trg href="../../../../targetModel#sf4"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf4"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.8"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf4"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf4"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf4"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf4"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf4"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf4"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf4"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t1"/>
+    </containedEdges>
+    <targetElements href="../../../../targetModel#/"/>
+    <targetElements href="../../../../targetModel#t1"/>
+    <targetElements href="#//@tripleMatches.8/@containedEdges.5"/>
+    <targetElements href="#//@tripleMatches.8/@containedEdges.10"/>
+    <targetElements href="../../../../targetModel#sf4"/>
+    <targetElements href="#//@tripleMatches.8/@containedEdges.11"/>
+    <targetElements href="../../../../targetModel#pg2"/>
+    <correspondenceElements href="#//@tripleMatches.8/@containedEdges.1"/>
+    <correspondenceElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="#//@tripleMatches.8/@containedEdges.8"/>
+    <correspondenceElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.8"/>
+    <correspondenceElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.5"/>
+    <correspondenceElements href="#//@tripleMatches.8/@containedEdges.2"/>
+    <correspondenceElements href="#//@tripleMatches.8/@containedEdges.13"/>
+    <correspondenceElements href="#//@tripleMatches.8/@containedEdges.3"/>
+    <correspondenceElements href="#//@tripleMatches.8/@containedEdges.4"/>
+    <createdElements href="../../../../targetModel#t1"/>
+    <createdElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf4"/>
+    <createdElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t1"/>
+    <createdElements href="#//@tripleMatches.8/@containedEdges.5"/>
+    <createdElements href="#//@tripleMatches.8/@containedEdges.6"/>
+    <createdElements href="#//@tripleMatches.8/@containedEdges.7"/>
+    <createdElements href="#//@tripleMatches.8/@containedEdges.8"/>
+    <createdElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.8"/>
+    <createdElements href="#//@tripleMatches.8/@containedEdges.9"/>
+    <createdElements href="#//@tripleMatches.8/@containedEdges.10"/>
+    <createdElements href="../../../../targetModel#sf4"/>
+    <createdElements href="#//@tripleMatches.8/@containedEdges.11"/>
+    <createdElements href="#//@tripleMatches.8/@containedEdges.12"/>
+    <createdElements href="#//@tripleMatches.8/@containedEdges.13"/>
+    <createdElements href="#//@tripleMatches.8/@containedEdges.14"/>
+    <createdElements href="#//@tripleMatches.8/@containedEdges.15"/>
+  </tripleMatches>
+  <tripleMatches ruleName="LastStepInPFlow" number="20">
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    <sourceElements href="#//@tripleMatches.9/@containedEdges.16"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t1"/>
+    <sourceElements href="#//@tripleMatches.9/@containedEdges.17"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf6"/>
+    <sourceElements href="#//@tripleMatches.9/@containedEdges.18"/>
+    <sourceElements href="#//@tripleMatches.9/@containedEdges.19"/>
+    <sourceElements href="#//@tripleMatches.9/@containedEdges.20"/>
+    <sourceElements href="#//@tripleMatches.9/@containedEdges.21"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    <sourceElements href="#//@tripleMatches.9/@containedEdges.22"/>
+    <sourceElements href="#//@tripleMatches.9/@containedEdges.23"/>
+    <sourceElements href="#//@tripleMatches.9/@containedEdges.24"/>
+    <contextElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    <contextElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t1"/>
+    <contextElements href="../../../../targetModel#t1"/>
+    <contextElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    <contextElements href="#//@tripleMatches.9/@containedEdges.0"/>
+    <contextElements href="#//@tripleMatches.9/@containedEdges.1"/>
+    <contextElements href="#//@tripleMatches.9/@containedEdges.2"/>
+    <contextElements href="#//@tripleMatches.9/@containedEdges.3"/>
+    <contextElements href="#//@tripleMatches.9/@containedEdges.4"/>
+    <contextElements href="#//@tripleMatches.9/@containedEdges.5"/>
+    <contextElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.8"/>
+    <contextElements href="../../../../targetModel#pg2"/>
+    <contextElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.5"/>
+    <contextElements href="#//@tripleMatches.9/@containedEdges.6"/>
+    <contextElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    <contextElements href="#//@tripleMatches.9/@containedEdges.7"/>
+    <contextElements href="#//@tripleMatches.9/@containedEdges.8"/>
+    <contextElements href="../../../../targetModel#sf4"/>
+    <contextElements href="#//@tripleMatches.9/@containedEdges.9"/>
+    <nodeMappings nodeName="gw">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="node">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="process">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="sf">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf6"/>
+    </nodeMappings>
+    <nodeMappings nodeName="gcw">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="step">
+      <node href="../../../../targetModel#t1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="gwStep">
+      <node href="../../../../targetModel#pg2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="gw2gs">
+      <node href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.5"/>
+    </nodeMappings>
+    <nodeMappings nodeName="flow">
+      <node href="../../../../targetModel#sf4"/>
+    </nodeMappings>
+    <nodeMappings nodeName="n2s">
+      <node href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.8"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__conv">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="invokedFlows">
+      <src href="../../../../targetModel#pg2"/>
+      <trg href="../../../../targetModel#sf4"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.5"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.8"/>
+      <trg href="../../../../targetModel#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.5"/>
+      <trg href="../../../../targetModel#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../../../../targetModel#sf4"/>
+      <trg href="../../../../targetModel#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.8"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf6"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf6"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__last">
+      <src href="../../../../targetModel#sf4"/>
+      <trg href="../../../../targetModel#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf6"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf6"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf6"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf6"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf6"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__conv">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf6"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf6"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf6"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
+    </containedEdges>
+    <targetElements href="../../../../targetModel#t1"/>
+    <targetElements href="#//@tripleMatches.9/@containedEdges.12"/>
+    <targetElements href="#//@tripleMatches.9/@containedEdges.1"/>
+    <targetElements href="#//@tripleMatches.9/@containedEdges.8"/>
+    <targetElements href="../../../../targetModel#sf4"/>
+    <targetElements href="../../../../targetModel#pg2"/>
+    <correspondenceElements href="#//@tripleMatches.9/@containedEdges.4"/>
+    <correspondenceElements href="#//@tripleMatches.9/@containedEdges.5"/>
+    <correspondenceElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.8"/>
+    <correspondenceElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.5"/>
+    <correspondenceElements href="#//@tripleMatches.9/@containedEdges.9"/>
+    <correspondenceElements href="#//@tripleMatches.9/@containedEdges.6"/>
+    <createdElements href="#//@tripleMatches.9/@containedEdges.10"/>
+    <createdElements href="#//@tripleMatches.9/@containedEdges.11"/>
+    <createdElements href="#//@tripleMatches.9/@containedEdges.12"/>
+    <createdElements href="#//@tripleMatches.9/@containedEdges.13"/>
+    <createdElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf6"/>
+    <createdElements href="#//@tripleMatches.9/@containedEdges.14"/>
+    <createdElements href="#//@tripleMatches.9/@containedEdges.15"/>
+  </tripleMatches>
+  <tripleMatches ruleName="LastStepInPFlow" number="21">
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    <sourceElements href="#//@tripleMatches.10/@containedEdges.16"/>
+    <sourceElements href="#//@tripleMatches.10/@containedEdges.17"/>
+    <sourceElements href="#//@tripleMatches.10/@containedEdges.18"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    <sourceElements href="#//@tripleMatches.10/@containedEdges.19"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf9"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    <sourceElements href="#//@tripleMatches.10/@containedEdges.20"/>
+    <sourceElements href="#//@tripleMatches.10/@containedEdges.21"/>
+    <sourceElements href="#//@tripleMatches.10/@containedEdges.22"/>
+    <sourceElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t3"/>
+    <sourceElements href="#//@tripleMatches.10/@containedEdges.23"/>
+    <sourceElements href="#//@tripleMatches.10/@containedEdges.24"/>
+    <contextElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    <contextElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    <contextElements href="#//@tripleMatches.10/@containedEdges.0"/>
+    <contextElements href="#//@tripleMatches.10/@containedEdges.1"/>
+    <contextElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    <contextElements href="../../../../targetModel#pg1"/>
+    <contextElements href="#//@tripleMatches.10/@containedEdges.2"/>
+    <contextElements href="../../../../targetModel#sf3"/>
+    <contextElements href="#//@tripleMatches.10/@containedEdges.3"/>
+    <contextElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t3"/>
+    <contextElements href="#//@tripleMatches.10/@containedEdges.4"/>
+    <contextElements href="#//@tripleMatches.10/@containedEdges.5"/>
+    <contextElements href="#//@tripleMatches.10/@containedEdges.6"/>
+    <contextElements href="#//@tripleMatches.10/@containedEdges.7"/>
+    <contextElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.7"/>
+    <contextElements href="#//@tripleMatches.10/@containedEdges.8"/>
+    <contextElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.3"/>
+    <contextElements href="../../../../targetModel#t3"/>
+    <contextElements href="#//@tripleMatches.10/@containedEdges.9"/>
+    <nodeMappings nodeName="gw">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="node">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="process">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="sf">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf9"/>
+    </nodeMappings>
+    <nodeMappings nodeName="gcw">
+      <node href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="step">
+      <node href="../../../../targetModel#t3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="gwStep">
+      <node href="../../../../targetModel#pg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="gw2gs">
+      <node href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="flow">
+      <node href="../../../../targetModel#sf3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="n2s">
+      <node href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.7"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.7"/>
+      <trg href="../../../../targetModel#t3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__conv">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.7"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="invokedFlows">
+      <src href="../../../../targetModel#pg1"/>
+      <trg href="../../../../targetModel#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.3"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.3"/>
+      <trg href="../../../../targetModel#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../../../../targetModel#sf3"/>
+      <trg href="../../../../targetModel#t3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t3"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf9"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf9"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf9"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf9"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__last">
+      <src href="../../../../targetModel#sf3"/>
+      <trg href="../../../../targetModel#t3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf9"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf9"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf9"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf9"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__conv">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pg1"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t3"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf9"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf9"/>
+      <trg href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t3"/>
+    </containedEdges>
+    <targetElements href="#//@tripleMatches.10/@containedEdges.5"/>
+    <targetElements href="../../../../targetModel#pg1"/>
+    <targetElements href="../../../../targetModel#t3"/>
+    <targetElements href="#//@tripleMatches.10/@containedEdges.14"/>
+    <targetElements href="#//@tripleMatches.10/@containedEdges.9"/>
+    <targetElements href="../../../../targetModel#sf3"/>
+    <correspondenceElements href="#//@tripleMatches.10/@containedEdges.4"/>
+    <correspondenceElements href="#//@tripleMatches.10/@containedEdges.6"/>
+    <correspondenceElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.7"/>
+    <correspondenceElements href="#//@tripleMatches.10/@containedEdges.1"/>
+    <correspondenceElements href="#//@tripleMatches.10/@containedEdges.8"/>
+    <correspondenceElements href="Recursive1Parallel_FWD_corr.xmi#//@correspondences.3"/>
+    <createdElements href="#//@tripleMatches.10/@containedEdges.10"/>
+    <createdElements href="#//@tripleMatches.10/@containedEdges.11"/>
+    <createdElements href="#//@tripleMatches.10/@containedEdges.12"/>
+    <createdElements href="#//@tripleMatches.10/@containedEdges.13"/>
+    <createdElements href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#sf9"/>
+    <createdElements href="#//@tripleMatches.10/@containedEdges.14"/>
+    <createdElements href="#//@tripleMatches.10/@containedEdges.15"/>
+  </tripleMatches>
+</TGGRuntime:PrecedenceStructure>
