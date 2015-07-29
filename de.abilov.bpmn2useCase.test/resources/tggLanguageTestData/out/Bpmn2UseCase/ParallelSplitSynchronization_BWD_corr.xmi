@@ -17,12 +17,12 @@
     <target xsi:type="SimpleUseCase:ParallelStep" href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
   </correspondences>
   <correspondences xsi:type="Bpmn2UseCase:FN2S">
-    <source xsi:type="SimpleBPMN:Task" href="../../../../sourceModel#t1"/>
-    <target xsi:type="SimpleUseCase:NormalStep" href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t1"/>
-  </correspondences>
-  <correspondences xsi:type="Bpmn2UseCase:FN2S">
     <source xsi:type="SimpleBPMN:Task" href="../../../../sourceModel#t2"/>
     <target xsi:type="SimpleUseCase:NormalStep" href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t2"/>
+  </correspondences>
+  <correspondences xsi:type="Bpmn2UseCase:FN2S">
+    <source xsi:type="SimpleBPMN:Task" href="../../../../sourceModel#t1"/>
+    <target xsi:type="SimpleUseCase:NormalStep" href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t1"/>
   </correspondences>
   <source href="../../../../sourceModel#/"/>
   <target href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>

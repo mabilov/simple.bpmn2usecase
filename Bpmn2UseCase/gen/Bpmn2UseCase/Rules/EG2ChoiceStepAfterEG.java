@@ -51,8 +51,8 @@ public interface EG2ChoiceStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	boolean isAppropriate_FWD(Match match, SimpleBPMN.Process process, ExclusiveGateway prevNode, SequenceFlow def,
-			SequenceFlow sf1, ExclusiveGateway egw, ExclusiveGateway ecgw);
+	boolean isAppropriate_FWD(Match match, SimpleBPMN.Process process, ExclusiveGateway prevNode, SequenceFlow sf1,
+			ExclusiveGateway egw, ExclusiveGateway ecgw);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -77,7 +77,7 @@ public interface EG2ChoiceStepAfterEG extends EObject, AbstractRule {
 	 * @generated
 	 */
 	void registerObjectsToMatch_FWD(Match match, SimpleBPMN.Process process, ExclusiveGateway prevNode,
-			SequenceFlow def, SequenceFlow sf1, ExclusiveGateway egw, ExclusiveGateway ecgw);
+			SequenceFlow sf1, ExclusiveGateway egw, ExclusiveGateway ecgw);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,8 +85,8 @@ public interface EG2ChoiceStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isAppropriate_solveCsp_FWD(Match match, SimpleBPMN.Process process, ExclusiveGateway prevNode, SequenceFlow def,
-			SequenceFlow sf1, ExclusiveGateway egw, ExclusiveGateway ecgw);
+	CSP isAppropriate_solveCsp_FWD(Match match, SimpleBPMN.Process process, ExclusiveGateway prevNode, SequenceFlow sf1,
+			ExclusiveGateway egw, ExclusiveGateway ecgw);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -103,8 +103,8 @@ public interface EG2ChoiceStepAfterEG extends EObject, AbstractRule {
 	 * @generated
 	 */
 	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, SimpleBPMN.Process process, UseCase useCase,
-			P2UC p2uc, Flow flow, ChoiceStep cStep, ExclusiveGateway prevNode, GW2S eg2cs, SequenceFlow def,
-			SequenceFlow sf1, ExclusiveGateway egw, ExclusiveGateway ecgw);
+			P2UC p2uc, Flow flow, ChoiceStep cStep, ExclusiveGateway prevNode, GW2S eg2cs, SequenceFlow sf1,
+			ExclusiveGateway egw, ExclusiveGateway ecgw);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -121,8 +121,8 @@ public interface EG2ChoiceStepAfterEG extends EObject, AbstractRule {
 	 * @generated
 	 */
 	void registerObjects_FWD(PerformRuleResult ruleresult, EObject alt, EObject process, EObject useCase, EObject p2uc,
-			EObject flow, EObject cStep, EObject prevNode, EObject eg2cs, EObject def, EObject sf1, EObject altFlow,
-			EObject step, EObject egw, EObject egwToStep, EObject ecgw, EObject ecgwToStep);
+			EObject flow, EObject cStep, EObject prevNode, EObject eg2cs, EObject sf1, EObject altFlow, EObject step,
+			EObject egw, EObject egwToStep, EObject ecgw, EObject ecgwToStep);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -191,7 +191,7 @@ public interface EG2ChoiceStepAfterEG extends EObject, AbstractRule {
 	 */
 	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, StepAlternative alt, SimpleBPMN.Process process,
 			UseCase useCase, P2UC p2uc, Flow flow, ChoiceStep cStep, ExclusiveGateway prevNode, GW2S eg2cs,
-			SequenceFlow def, AlternativeFlow altFlow, ChoiceStep step);
+			AlternativeFlow altFlow, ChoiceStep step);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -208,8 +208,8 @@ public interface EG2ChoiceStepAfterEG extends EObject, AbstractRule {
 	 * @generated
 	 */
 	void registerObjects_BWD(PerformRuleResult ruleresult, EObject alt, EObject process, EObject useCase, EObject p2uc,
-			EObject flow, EObject cStep, EObject prevNode, EObject eg2cs, EObject def, EObject sf1, EObject altFlow,
-			EObject step, EObject egw, EObject egwToStep, EObject ecgw, EObject ecgwToStep);
+			EObject flow, EObject cStep, EObject prevNode, EObject eg2cs, EObject sf1, EObject altFlow, EObject step,
+			EObject egw, EObject egwToStep, EObject ecgw, EObject ecgwToStep);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -225,7 +225,7 @@ public interface EG2ChoiceStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_88(EMoflonEdge _edge_ref);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_135(EMoflonEdge _edge_ref);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -233,7 +233,7 @@ public interface EG2ChoiceStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_280(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_427(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -241,7 +241,7 @@ public interface EG2ChoiceStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_89(EMoflonEdge _edge_flows);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_136(EMoflonEdge _edge_flows);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -249,7 +249,7 @@ public interface EG2ChoiceStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_90(EMoflonEdge _edge_stepAlternatives);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_137(EMoflonEdge _edge_stepAlternatives);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -257,7 +257,7 @@ public interface EG2ChoiceStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_281(EMoflonEdge _edge_sourceRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_428(EMoflonEdge _edge_sourceRef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -265,7 +265,7 @@ public interface EG2ChoiceStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_282(EMoflonEdge _edge_outgoing);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_429(EMoflonEdge _edge_outgoing);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -273,7 +273,7 @@ public interface EG2ChoiceStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_91(EMoflonEdge _edge_steps);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_138(EMoflonEdge _edge_steps);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -281,7 +281,7 @@ public interface EG2ChoiceStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_283(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_430(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -289,7 +289,7 @@ public interface EG2ChoiceStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_284(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_431(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -297,7 +297,7 @@ public interface EG2ChoiceStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_285(EMoflonEdge _edge_targetRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_432(EMoflonEdge _edge_targetRef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -305,7 +305,7 @@ public interface EG2ChoiceStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_286(EMoflonEdge _edge_incoming);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_433(EMoflonEdge _edge_incoming);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -313,7 +313,7 @@ public interface EG2ChoiceStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_287(EMoflonEdge _edge___conv);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_434(EMoflonEdge _edge___conv);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -347,8 +347,8 @@ public interface EG2ChoiceStepAfterEG extends EObject, AbstractRule {
 	 */
 	CSP isApplicable_solveCsp_CC(IsApplicableMatchCC isApplicableMatch, StepAlternative alt, SimpleBPMN.Process process,
 			UseCase useCase, P2UC p2uc, Flow flow, ChoiceStep cStep, ExclusiveGateway prevNode, GW2S eg2cs,
-			SequenceFlow def, SequenceFlow sf1, AlternativeFlow altFlow, ChoiceStep step, ExclusiveGateway egw,
-			ExclusiveGateway ecgw, Match sourceMatch, Match targetMatch);
+			SequenceFlow sf1, AlternativeFlow altFlow, ChoiceStep step, ExclusiveGateway egw, ExclusiveGateway ecgw,
+			Match sourceMatch, Match targetMatch);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -381,7 +381,7 @@ public interface EG2ChoiceStepAfterEG extends EObject, AbstractRule {
 	 * @generated
 	 */
 	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, SimpleBPMN.Process process, UseCase useCase,
-			P2UC p2uc, Flow flow, ChoiceStep cStep, ExclusiveGateway prevNode, GW2S eg2cs, SequenceFlow def,
+			P2UC p2uc, Flow flow, ChoiceStep cStep, ExclusiveGateway prevNode, GW2S eg2cs,
 			ModelgeneratorRuleResult ruleResult);
 
 	/**

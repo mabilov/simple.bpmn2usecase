@@ -794,7 +794,7 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_55(EMoflonEdge _edge_steps) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_102(EMoflonEdge _edge_steps) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = PG2ParallelStepSeqImpl
 				.pattern_PG2ParallelStepSeq_20_1_bindingAndBlackFFB(this);
@@ -847,7 +847,7 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_56(EMoflonEdge _edge_next) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_103(EMoflonEdge _edge_next) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = PG2ParallelStepSeqImpl
 				.pattern_PG2ParallelStepSeq_21_1_bindingAndBlackFFB(this);
@@ -900,7 +900,7 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_168(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_315(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = PG2ParallelStepSeqImpl
 				.pattern_PG2ParallelStepSeq_22_1_bindingAndBlackFFB(this);
@@ -956,7 +956,7 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_169(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_316(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = PG2ParallelStepSeqImpl
 				.pattern_PG2ParallelStepSeq_23_1_bindingAndBlackFFB(this);
@@ -1012,7 +1012,7 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_170(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_317(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = PG2ParallelStepSeqImpl
 				.pattern_PG2ParallelStepSeq_24_1_bindingAndBlackFFB(this);
@@ -1068,7 +1068,7 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_171(EMoflonEdge _edge_targetRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_318(EMoflonEdge _edge_targetRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = PG2ParallelStepSeqImpl
 				.pattern_PG2ParallelStepSeq_25_1_bindingAndBlackFFB(this);
@@ -1124,7 +1124,7 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_172(EMoflonEdge _edge_incoming) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_319(EMoflonEdge _edge_incoming) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = PG2ParallelStepSeqImpl
 				.pattern_PG2ParallelStepSeq_26_1_bindingAndBlackFFB(this);
@@ -1180,7 +1180,7 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_173(EMoflonEdge _edge___conv) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_320(EMoflonEdge _edge___conv) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = PG2ParallelStepSeqImpl
 				.pattern_PG2ParallelStepSeq_27_1_bindingAndBlackFFB(this);
@@ -1236,7 +1236,7 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_174(EMoflonEdge _edge_sourceRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_321(EMoflonEdge _edge_sourceRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = PG2ParallelStepSeqImpl
 				.pattern_PG2ParallelStepSeq_28_1_bindingAndBlackFFB(this);
@@ -1292,7 +1292,7 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_175(EMoflonEdge _edge_outgoing) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_322(EMoflonEdge _edge_outgoing) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = PG2ParallelStepSeqImpl
 				.pattern_PG2ParallelStepSeq_29_1_bindingAndBlackFFB(this);
@@ -1884,26 +1884,26 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 			return null;
 		case RulesPackage.PG2_PARALLEL_STEP_SEQ___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.PG2_PARALLEL_STEP_SEQ___IS_APPROPRIATE_BWD_EMOFLON_EDGE_55__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_55((EMoflonEdge) arguments.get(0));
-		case RulesPackage.PG2_PARALLEL_STEP_SEQ___IS_APPROPRIATE_BWD_EMOFLON_EDGE_56__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_56((EMoflonEdge) arguments.get(0));
-		case RulesPackage.PG2_PARALLEL_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_168__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_168((EMoflonEdge) arguments.get(0));
-		case RulesPackage.PG2_PARALLEL_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_169__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_169((EMoflonEdge) arguments.get(0));
-		case RulesPackage.PG2_PARALLEL_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_170__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_170((EMoflonEdge) arguments.get(0));
-		case RulesPackage.PG2_PARALLEL_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_171__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_171((EMoflonEdge) arguments.get(0));
-		case RulesPackage.PG2_PARALLEL_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_172__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_172((EMoflonEdge) arguments.get(0));
-		case RulesPackage.PG2_PARALLEL_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_173__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_173((EMoflonEdge) arguments.get(0));
-		case RulesPackage.PG2_PARALLEL_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_174__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_174((EMoflonEdge) arguments.get(0));
-		case RulesPackage.PG2_PARALLEL_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_175__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_175((EMoflonEdge) arguments.get(0));
+		case RulesPackage.PG2_PARALLEL_STEP_SEQ___IS_APPROPRIATE_BWD_EMOFLON_EDGE_102__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_102((EMoflonEdge) arguments.get(0));
+		case RulesPackage.PG2_PARALLEL_STEP_SEQ___IS_APPROPRIATE_BWD_EMOFLON_EDGE_103__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_103((EMoflonEdge) arguments.get(0));
+		case RulesPackage.PG2_PARALLEL_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_315__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_315((EMoflonEdge) arguments.get(0));
+		case RulesPackage.PG2_PARALLEL_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_316__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_316((EMoflonEdge) arguments.get(0));
+		case RulesPackage.PG2_PARALLEL_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_317__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_317((EMoflonEdge) arguments.get(0));
+		case RulesPackage.PG2_PARALLEL_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_318__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_318((EMoflonEdge) arguments.get(0));
+		case RulesPackage.PG2_PARALLEL_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_319__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_319((EMoflonEdge) arguments.get(0));
+		case RulesPackage.PG2_PARALLEL_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_320__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_320((EMoflonEdge) arguments.get(0));
+		case RulesPackage.PG2_PARALLEL_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_321__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_321((EMoflonEdge) arguments.get(0));
+		case RulesPackage.PG2_PARALLEL_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_322__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_322((EMoflonEdge) arguments.get(0));
 		case RulesPackage.PG2_PARALLEL_STEP_SEQ___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.PG2_PARALLEL_STEP_SEQ___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
@@ -3554,9 +3554,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 	}
 
 	public static final Object[] pattern_PG2ParallelStepSeq_20_2_black_nac_0BB(ParallelStep step, Flow flow) {
-		for (Flow __DEC_step_steps_654235 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+		for (Flow __DEC_step_steps_156414 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 				Flow.class, "steps")) {
-			if (!flow.equals(__DEC_step_steps_654235)) {
+			if (!flow.equals(__DEC_step_steps_156414)) {
 				return new Object[] { step, flow };
 			}
 		}
@@ -3565,10 +3565,10 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 
 	public static final Object[] pattern_PG2ParallelStepSeq_20_2_black_nac_1BB(ParallelStep step, Step prevStep) {
 		if (!prevStep.equals(step)) {
-			for (Step __DEC_step_next_733968 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+			for (Step __DEC_step_next_444081 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 					Step.class, "next")) {
-				if (!step.equals(__DEC_step_next_733968)) {
-					if (!prevStep.equals(__DEC_step_next_733968)) {
+				if (!step.equals(__DEC_step_next_444081)) {
+					if (!prevStep.equals(__DEC_step_next_444081)) {
 						return new Object[] { step, prevStep };
 					}
 				}
@@ -3686,9 +3686,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 	}
 
 	public static final Object[] pattern_PG2ParallelStepSeq_21_2_black_nac_0BB(ParallelStep step, Flow flow) {
-		for (Flow __DEC_step_steps_77007 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+		for (Flow __DEC_step_steps_715861 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 				Flow.class, "steps")) {
-			if (!flow.equals(__DEC_step_steps_77007)) {
+			if (!flow.equals(__DEC_step_steps_715861)) {
 				return new Object[] { step, flow };
 			}
 		}
@@ -3697,10 +3697,10 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 
 	public static final Object[] pattern_PG2ParallelStepSeq_21_2_black_nac_1BB(ParallelStep step, Step prevStep) {
 		if (!prevStep.equals(step)) {
-			for (Step __DEC_step_next_276951 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+			for (Step __DEC_step_next_839630 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 					Step.class, "next")) {
-				if (!step.equals(__DEC_step_next_276951)) {
-					if (!prevStep.equals(__DEC_step_next_276951)) {
+				if (!step.equals(__DEC_step_next_839630)) {
+					if (!prevStep.equals(__DEC_step_next_839630)) {
 						return new Object[] { step, prevStep };
 					}
 				}
@@ -3819,9 +3819,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 	}
 
 	public static final Object[] pattern_PG2ParallelStepSeq_22_2_black_nac_0BB(SequenceFlow sf1, FlowNode prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_978979 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_sf1_default_867862 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_978979)) {
+			if (!prevNode.equals(__DEC_sf1_default_867862)) {
 				return new Object[] { sf1, prevNode };
 			}
 		}
@@ -3830,9 +3830,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 
 	public static final Object[] pattern_PG2ParallelStepSeq_22_2_black_nac_1BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_196242 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_34647 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_196242)) {
+			if (!process.equals(__DEC_sf1_flowElements_34647)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -3841,9 +3841,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 
 	public static final Object[] pattern_PG2ParallelStepSeq_22_2_black_nac_2BB(ParallelGateway pgw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_pgw_flowElements_432816 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_pgw_flowElements_302055 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pgw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pgw_flowElements_432816)) {
+			if (!process.equals(__DEC_pgw_flowElements_302055)) {
 				return new Object[] { pgw, process };
 			}
 		}
@@ -3855,11 +3855,11 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 		if (!pgw.equals(prevNode)) {
 			if (!pcgw.equals(pgw)) {
 				if (!pcgw.equals(prevNode)) {
-					for (Gateway __DEC_pgw___conv_98416 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (Gateway __DEC_pgw___conv_318316 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
-						if (!pgw.equals(__DEC_pgw___conv_98416)) {
-							if (!prevNode.equals(__DEC_pgw___conv_98416)) {
-								if (!pcgw.equals(__DEC_pgw___conv_98416)) {
+						if (!pgw.equals(__DEC_pgw___conv_318316)) {
+							if (!prevNode.equals(__DEC_pgw___conv_318316)) {
+								if (!pcgw.equals(__DEC_pgw___conv_318316)) {
 									return new Object[] { pgw, prevNode, pcgw };
 								}
 							}
@@ -3876,11 +3876,11 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 		if (!pcgw.equals(prevNode)) {
 			if (!pcgw.equals(pgw)) {
 				if (!pgw.equals(prevNode)) {
-					Gateway __DEC_pcgw___conv_247790 = pcgw.get__conv();
-					if (__DEC_pcgw___conv_247790 != null) {
-						if (!pcgw.equals(__DEC_pcgw___conv_247790)) {
-							if (!prevNode.equals(__DEC_pcgw___conv_247790)) {
-								if (!pgw.equals(__DEC_pcgw___conv_247790)) {
+					Gateway __DEC_pcgw___conv_574101 = pcgw.get__conv();
+					if (__DEC_pcgw___conv_574101 != null) {
+						if (!pcgw.equals(__DEC_pcgw___conv_574101)) {
+							if (!prevNode.equals(__DEC_pcgw___conv_574101)) {
+								if (!pgw.equals(__DEC_pcgw___conv_574101)) {
 									return new Object[] { pcgw, prevNode, pgw };
 								}
 							}
@@ -3895,9 +3895,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 
 	public static final Object[] pattern_PG2ParallelStepSeq_22_2_black_nac_5BB(ParallelGateway pcgw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_pcgw_flowElements_329886 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_pcgw_flowElements_249789 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pcgw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pcgw_flowElements_329886)) {
+			if (!process.equals(__DEC_pcgw_flowElements_249789)) {
 				return new Object[] { pcgw, process };
 			}
 		}
@@ -3909,11 +3909,11 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 		if (!pcgw.equals(prevNode)) {
 			if (!pcgw.equals(pgw)) {
 				if (!pgw.equals(prevNode)) {
-					for (Gateway __DEC_pcgw___conv_358605 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (Gateway __DEC_pcgw___conv_819047 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
-						if (!pcgw.equals(__DEC_pcgw___conv_358605)) {
-							if (!prevNode.equals(__DEC_pcgw___conv_358605)) {
-								if (!pgw.equals(__DEC_pcgw___conv_358605)) {
+						if (!pcgw.equals(__DEC_pcgw___conv_819047)) {
+							if (!prevNode.equals(__DEC_pcgw___conv_819047)) {
+								if (!pgw.equals(__DEC_pcgw___conv_819047)) {
 									return new Object[] { pcgw, prevNode, pgw };
 								}
 							}
@@ -4089,9 +4089,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 	}
 
 	public static final Object[] pattern_PG2ParallelStepSeq_23_2_black_nac_0BB(SequenceFlow sf1, FlowNode prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_170601 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_sf1_default_222159 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_170601)) {
+			if (!prevNode.equals(__DEC_sf1_default_222159)) {
 				return new Object[] { sf1, prevNode };
 			}
 		}
@@ -4100,9 +4100,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 
 	public static final Object[] pattern_PG2ParallelStepSeq_23_2_black_nac_1BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_529635 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_116223 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_529635)) {
+			if (!process.equals(__DEC_sf1_flowElements_116223)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -4111,9 +4111,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 
 	public static final Object[] pattern_PG2ParallelStepSeq_23_2_black_nac_2BB(ParallelGateway pgw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_pgw_flowElements_544999 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_pgw_flowElements_97369 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pgw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pgw_flowElements_544999)) {
+			if (!process.equals(__DEC_pgw_flowElements_97369)) {
 				return new Object[] { pgw, process };
 			}
 		}
@@ -4125,11 +4125,11 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 		if (!pgw.equals(prevNode)) {
 			if (!pcgw.equals(pgw)) {
 				if (!pcgw.equals(prevNode)) {
-					for (Gateway __DEC_pgw___conv_294938 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (Gateway __DEC_pgw___conv_361727 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
-						if (!pgw.equals(__DEC_pgw___conv_294938)) {
-							if (!prevNode.equals(__DEC_pgw___conv_294938)) {
-								if (!pcgw.equals(__DEC_pgw___conv_294938)) {
+						if (!pgw.equals(__DEC_pgw___conv_361727)) {
+							if (!prevNode.equals(__DEC_pgw___conv_361727)) {
+								if (!pcgw.equals(__DEC_pgw___conv_361727)) {
 									return new Object[] { pgw, prevNode, pcgw };
 								}
 							}
@@ -4146,11 +4146,11 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 		if (!pcgw.equals(prevNode)) {
 			if (!pcgw.equals(pgw)) {
 				if (!pgw.equals(prevNode)) {
-					Gateway __DEC_pcgw___conv_585487 = pcgw.get__conv();
-					if (__DEC_pcgw___conv_585487 != null) {
-						if (!pcgw.equals(__DEC_pcgw___conv_585487)) {
-							if (!prevNode.equals(__DEC_pcgw___conv_585487)) {
-								if (!pgw.equals(__DEC_pcgw___conv_585487)) {
+					Gateway __DEC_pcgw___conv_749129 = pcgw.get__conv();
+					if (__DEC_pcgw___conv_749129 != null) {
+						if (!pcgw.equals(__DEC_pcgw___conv_749129)) {
+							if (!prevNode.equals(__DEC_pcgw___conv_749129)) {
+								if (!pgw.equals(__DEC_pcgw___conv_749129)) {
 									return new Object[] { pcgw, prevNode, pgw };
 								}
 							}
@@ -4165,9 +4165,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 
 	public static final Object[] pattern_PG2ParallelStepSeq_23_2_black_nac_5BB(ParallelGateway pcgw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_pcgw_flowElements_65530 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_pcgw_flowElements_944443 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pcgw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pcgw_flowElements_65530)) {
+			if (!process.equals(__DEC_pcgw_flowElements_944443)) {
 				return new Object[] { pcgw, process };
 			}
 		}
@@ -4179,11 +4179,11 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 		if (!pcgw.equals(prevNode)) {
 			if (!pcgw.equals(pgw)) {
 				if (!pgw.equals(prevNode)) {
-					for (Gateway __DEC_pcgw___conv_875721 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (Gateway __DEC_pcgw___conv_764251 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
-						if (!pcgw.equals(__DEC_pcgw___conv_875721)) {
-							if (!prevNode.equals(__DEC_pcgw___conv_875721)) {
-								if (!pgw.equals(__DEC_pcgw___conv_875721)) {
+						if (!pcgw.equals(__DEC_pcgw___conv_764251)) {
+							if (!prevNode.equals(__DEC_pcgw___conv_764251)) {
+								if (!pgw.equals(__DEC_pcgw___conv_764251)) {
 									return new Object[] { pcgw, prevNode, pgw };
 								}
 							}
@@ -4355,9 +4355,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 	}
 
 	public static final Object[] pattern_PG2ParallelStepSeq_24_2_black_nac_0BB(SequenceFlow sf1, FlowNode prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_659223 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_sf1_default_97055 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_659223)) {
+			if (!prevNode.equals(__DEC_sf1_default_97055)) {
 				return new Object[] { sf1, prevNode };
 			}
 		}
@@ -4366,9 +4366,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 
 	public static final Object[] pattern_PG2ParallelStepSeq_24_2_black_nac_1BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_318859 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_231144 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_318859)) {
+			if (!process.equals(__DEC_sf1_flowElements_231144)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -4377,9 +4377,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 
 	public static final Object[] pattern_PG2ParallelStepSeq_24_2_black_nac_2BB(ParallelGateway pgw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_pgw_flowElements_571802 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_pgw_flowElements_470391 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pgw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pgw_flowElements_571802)) {
+			if (!process.equals(__DEC_pgw_flowElements_470391)) {
 				return new Object[] { pgw, process };
 			}
 		}
@@ -4391,11 +4391,11 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 		if (!pgw.equals(prevNode)) {
 			if (!pcgw.equals(pgw)) {
 				if (!pcgw.equals(prevNode)) {
-					for (Gateway __DEC_pgw___conv_629129 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (Gateway __DEC_pgw___conv_398563 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
-						if (!pgw.equals(__DEC_pgw___conv_629129)) {
-							if (!prevNode.equals(__DEC_pgw___conv_629129)) {
-								if (!pcgw.equals(__DEC_pgw___conv_629129)) {
+						if (!pgw.equals(__DEC_pgw___conv_398563)) {
+							if (!prevNode.equals(__DEC_pgw___conv_398563)) {
+								if (!pcgw.equals(__DEC_pgw___conv_398563)) {
 									return new Object[] { pgw, prevNode, pcgw };
 								}
 							}
@@ -4412,11 +4412,11 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 		if (!pcgw.equals(prevNode)) {
 			if (!pcgw.equals(pgw)) {
 				if (!pgw.equals(prevNode)) {
-					Gateway __DEC_pcgw___conv_116174 = pcgw.get__conv();
-					if (__DEC_pcgw___conv_116174 != null) {
-						if (!pcgw.equals(__DEC_pcgw___conv_116174)) {
-							if (!prevNode.equals(__DEC_pcgw___conv_116174)) {
-								if (!pgw.equals(__DEC_pcgw___conv_116174)) {
+					Gateway __DEC_pcgw___conv_426599 = pcgw.get__conv();
+					if (__DEC_pcgw___conv_426599 != null) {
+						if (!pcgw.equals(__DEC_pcgw___conv_426599)) {
+							if (!prevNode.equals(__DEC_pcgw___conv_426599)) {
+								if (!pgw.equals(__DEC_pcgw___conv_426599)) {
 									return new Object[] { pcgw, prevNode, pgw };
 								}
 							}
@@ -4431,9 +4431,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 
 	public static final Object[] pattern_PG2ParallelStepSeq_24_2_black_nac_5BB(ParallelGateway pcgw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_pcgw_flowElements_446350 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_pcgw_flowElements_257473 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pcgw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pcgw_flowElements_446350)) {
+			if (!process.equals(__DEC_pcgw_flowElements_257473)) {
 				return new Object[] { pcgw, process };
 			}
 		}
@@ -4445,11 +4445,11 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 		if (!pcgw.equals(prevNode)) {
 			if (!pcgw.equals(pgw)) {
 				if (!pgw.equals(prevNode)) {
-					for (Gateway __DEC_pcgw___conv_941469 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (Gateway __DEC_pcgw___conv_386267 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
-						if (!pcgw.equals(__DEC_pcgw___conv_941469)) {
-							if (!prevNode.equals(__DEC_pcgw___conv_941469)) {
-								if (!pgw.equals(__DEC_pcgw___conv_941469)) {
+						if (!pcgw.equals(__DEC_pcgw___conv_386267)) {
+							if (!prevNode.equals(__DEC_pcgw___conv_386267)) {
+								if (!pgw.equals(__DEC_pcgw___conv_386267)) {
 									return new Object[] { pcgw, prevNode, pgw };
 								}
 							}
@@ -4626,9 +4626,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 	}
 
 	public static final Object[] pattern_PG2ParallelStepSeq_25_2_black_nac_0BB(SequenceFlow sf1, FlowNode prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_988175 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_sf1_default_601327 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_988175)) {
+			if (!prevNode.equals(__DEC_sf1_default_601327)) {
 				return new Object[] { sf1, prevNode };
 			}
 		}
@@ -4637,9 +4637,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 
 	public static final Object[] pattern_PG2ParallelStepSeq_25_2_black_nac_1BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_317988 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_621773 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_317988)) {
+			if (!process.equals(__DEC_sf1_flowElements_621773)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -4648,9 +4648,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 
 	public static final Object[] pattern_PG2ParallelStepSeq_25_2_black_nac_2BB(ParallelGateway pgw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_pgw_flowElements_152824 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_pgw_flowElements_500758 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pgw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pgw_flowElements_152824)) {
+			if (!process.equals(__DEC_pgw_flowElements_500758)) {
 				return new Object[] { pgw, process };
 			}
 		}
@@ -4662,11 +4662,11 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 		if (!pgw.equals(prevNode)) {
 			if (!pcgw.equals(pgw)) {
 				if (!pcgw.equals(prevNode)) {
-					for (Gateway __DEC_pgw___conv_175660 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (Gateway __DEC_pgw___conv_442232 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
-						if (!pgw.equals(__DEC_pgw___conv_175660)) {
-							if (!prevNode.equals(__DEC_pgw___conv_175660)) {
-								if (!pcgw.equals(__DEC_pgw___conv_175660)) {
+						if (!pgw.equals(__DEC_pgw___conv_442232)) {
+							if (!prevNode.equals(__DEC_pgw___conv_442232)) {
+								if (!pcgw.equals(__DEC_pgw___conv_442232)) {
 									return new Object[] { pgw, prevNode, pcgw };
 								}
 							}
@@ -4683,11 +4683,11 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 		if (!pcgw.equals(prevNode)) {
 			if (!pcgw.equals(pgw)) {
 				if (!pgw.equals(prevNode)) {
-					Gateway __DEC_pcgw___conv_687918 = pcgw.get__conv();
-					if (__DEC_pcgw___conv_687918 != null) {
-						if (!pcgw.equals(__DEC_pcgw___conv_687918)) {
-							if (!prevNode.equals(__DEC_pcgw___conv_687918)) {
-								if (!pgw.equals(__DEC_pcgw___conv_687918)) {
+					Gateway __DEC_pcgw___conv_111260 = pcgw.get__conv();
+					if (__DEC_pcgw___conv_111260 != null) {
+						if (!pcgw.equals(__DEC_pcgw___conv_111260)) {
+							if (!prevNode.equals(__DEC_pcgw___conv_111260)) {
+								if (!pgw.equals(__DEC_pcgw___conv_111260)) {
 									return new Object[] { pcgw, prevNode, pgw };
 								}
 							}
@@ -4702,9 +4702,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 
 	public static final Object[] pattern_PG2ParallelStepSeq_25_2_black_nac_5BB(ParallelGateway pcgw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_pcgw_flowElements_30653 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_pcgw_flowElements_245866 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pcgw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pcgw_flowElements_30653)) {
+			if (!process.equals(__DEC_pcgw_flowElements_245866)) {
 				return new Object[] { pcgw, process };
 			}
 		}
@@ -4716,11 +4716,11 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 		if (!pcgw.equals(prevNode)) {
 			if (!pcgw.equals(pgw)) {
 				if (!pgw.equals(prevNode)) {
-					for (Gateway __DEC_pcgw___conv_774004 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (Gateway __DEC_pcgw___conv_368597 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
-						if (!pcgw.equals(__DEC_pcgw___conv_774004)) {
-							if (!prevNode.equals(__DEC_pcgw___conv_774004)) {
-								if (!pgw.equals(__DEC_pcgw___conv_774004)) {
+						if (!pcgw.equals(__DEC_pcgw___conv_368597)) {
+							if (!prevNode.equals(__DEC_pcgw___conv_368597)) {
+								if (!pgw.equals(__DEC_pcgw___conv_368597)) {
 									return new Object[] { pcgw, prevNode, pgw };
 								}
 							}
@@ -4893,9 +4893,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 	}
 
 	public static final Object[] pattern_PG2ParallelStepSeq_26_2_black_nac_0BB(SequenceFlow sf1, FlowNode prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_272531 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_sf1_default_357970 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_272531)) {
+			if (!prevNode.equals(__DEC_sf1_default_357970)) {
 				return new Object[] { sf1, prevNode };
 			}
 		}
@@ -4904,9 +4904,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 
 	public static final Object[] pattern_PG2ParallelStepSeq_26_2_black_nac_1BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_412709 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_46408 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_412709)) {
+			if (!process.equals(__DEC_sf1_flowElements_46408)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -4915,9 +4915,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 
 	public static final Object[] pattern_PG2ParallelStepSeq_26_2_black_nac_2BB(ParallelGateway pgw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_pgw_flowElements_536421 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_pgw_flowElements_564686 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pgw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pgw_flowElements_536421)) {
+			if (!process.equals(__DEC_pgw_flowElements_564686)) {
 				return new Object[] { pgw, process };
 			}
 		}
@@ -4929,11 +4929,11 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 		if (!pgw.equals(prevNode)) {
 			if (!pcgw.equals(pgw)) {
 				if (!pcgw.equals(prevNode)) {
-					for (Gateway __DEC_pgw___conv_840731 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (Gateway __DEC_pgw___conv_311657 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
-						if (!pgw.equals(__DEC_pgw___conv_840731)) {
-							if (!prevNode.equals(__DEC_pgw___conv_840731)) {
-								if (!pcgw.equals(__DEC_pgw___conv_840731)) {
+						if (!pgw.equals(__DEC_pgw___conv_311657)) {
+							if (!prevNode.equals(__DEC_pgw___conv_311657)) {
+								if (!pcgw.equals(__DEC_pgw___conv_311657)) {
 									return new Object[] { pgw, prevNode, pcgw };
 								}
 							}
@@ -4950,11 +4950,11 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 		if (!pcgw.equals(prevNode)) {
 			if (!pcgw.equals(pgw)) {
 				if (!pgw.equals(prevNode)) {
-					Gateway __DEC_pcgw___conv_102879 = pcgw.get__conv();
-					if (__DEC_pcgw___conv_102879 != null) {
-						if (!pcgw.equals(__DEC_pcgw___conv_102879)) {
-							if (!prevNode.equals(__DEC_pcgw___conv_102879)) {
-								if (!pgw.equals(__DEC_pcgw___conv_102879)) {
+					Gateway __DEC_pcgw___conv_385164 = pcgw.get__conv();
+					if (__DEC_pcgw___conv_385164 != null) {
+						if (!pcgw.equals(__DEC_pcgw___conv_385164)) {
+							if (!prevNode.equals(__DEC_pcgw___conv_385164)) {
+								if (!pgw.equals(__DEC_pcgw___conv_385164)) {
 									return new Object[] { pcgw, prevNode, pgw };
 								}
 							}
@@ -4969,9 +4969,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 
 	public static final Object[] pattern_PG2ParallelStepSeq_26_2_black_nac_5BB(ParallelGateway pcgw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_pcgw_flowElements_746465 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_pcgw_flowElements_852451 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pcgw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pcgw_flowElements_746465)) {
+			if (!process.equals(__DEC_pcgw_flowElements_852451)) {
 				return new Object[] { pcgw, process };
 			}
 		}
@@ -4983,11 +4983,11 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 		if (!pcgw.equals(prevNode)) {
 			if (!pcgw.equals(pgw)) {
 				if (!pgw.equals(prevNode)) {
-					for (Gateway __DEC_pcgw___conv_82394 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (Gateway __DEC_pcgw___conv_191581 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
-						if (!pcgw.equals(__DEC_pcgw___conv_82394)) {
-							if (!prevNode.equals(__DEC_pcgw___conv_82394)) {
-								if (!pgw.equals(__DEC_pcgw___conv_82394)) {
+						if (!pcgw.equals(__DEC_pcgw___conv_191581)) {
+							if (!prevNode.equals(__DEC_pcgw___conv_191581)) {
+								if (!pgw.equals(__DEC_pcgw___conv_191581)) {
 									return new Object[] { pcgw, prevNode, pgw };
 								}
 							}
@@ -5160,9 +5160,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 	}
 
 	public static final Object[] pattern_PG2ParallelStepSeq_27_2_black_nac_0BB(SequenceFlow sf1, FlowNode prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_983900 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_sf1_default_733542 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_983900)) {
+			if (!prevNode.equals(__DEC_sf1_default_733542)) {
 				return new Object[] { sf1, prevNode };
 			}
 		}
@@ -5171,9 +5171,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 
 	public static final Object[] pattern_PG2ParallelStepSeq_27_2_black_nac_1BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_9670 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_534723 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_9670)) {
+			if (!process.equals(__DEC_sf1_flowElements_534723)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -5182,9 +5182,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 
 	public static final Object[] pattern_PG2ParallelStepSeq_27_2_black_nac_2BB(ParallelGateway pgw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_pgw_flowElements_349081 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_pgw_flowElements_799837 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pgw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pgw_flowElements_349081)) {
+			if (!process.equals(__DEC_pgw_flowElements_799837)) {
 				return new Object[] { pgw, process };
 			}
 		}
@@ -5196,11 +5196,11 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 		if (!pgw.equals(prevNode)) {
 			if (!pcgw.equals(pgw)) {
 				if (!pcgw.equals(prevNode)) {
-					for (Gateway __DEC_pgw___conv_931267 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (Gateway __DEC_pgw___conv_412779 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
-						if (!pgw.equals(__DEC_pgw___conv_931267)) {
-							if (!prevNode.equals(__DEC_pgw___conv_931267)) {
-								if (!pcgw.equals(__DEC_pgw___conv_931267)) {
+						if (!pgw.equals(__DEC_pgw___conv_412779)) {
+							if (!prevNode.equals(__DEC_pgw___conv_412779)) {
+								if (!pcgw.equals(__DEC_pgw___conv_412779)) {
 									return new Object[] { pgw, prevNode, pcgw };
 								}
 							}
@@ -5217,11 +5217,11 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 		if (!pcgw.equals(prevNode)) {
 			if (!pcgw.equals(pgw)) {
 				if (!pgw.equals(prevNode)) {
-					Gateway __DEC_pcgw___conv_602091 = pcgw.get__conv();
-					if (__DEC_pcgw___conv_602091 != null) {
-						if (!pcgw.equals(__DEC_pcgw___conv_602091)) {
-							if (!prevNode.equals(__DEC_pcgw___conv_602091)) {
-								if (!pgw.equals(__DEC_pcgw___conv_602091)) {
+					Gateway __DEC_pcgw___conv_968138 = pcgw.get__conv();
+					if (__DEC_pcgw___conv_968138 != null) {
+						if (!pcgw.equals(__DEC_pcgw___conv_968138)) {
+							if (!prevNode.equals(__DEC_pcgw___conv_968138)) {
+								if (!pgw.equals(__DEC_pcgw___conv_968138)) {
 									return new Object[] { pcgw, prevNode, pgw };
 								}
 							}
@@ -5236,9 +5236,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 
 	public static final Object[] pattern_PG2ParallelStepSeq_27_2_black_nac_5BB(ParallelGateway pcgw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_pcgw_flowElements_982947 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_pcgw_flowElements_635906 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pcgw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pcgw_flowElements_982947)) {
+			if (!process.equals(__DEC_pcgw_flowElements_635906)) {
 				return new Object[] { pcgw, process };
 			}
 		}
@@ -5250,11 +5250,11 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 		if (!pcgw.equals(prevNode)) {
 			if (!pcgw.equals(pgw)) {
 				if (!pgw.equals(prevNode)) {
-					for (Gateway __DEC_pcgw___conv_529016 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (Gateway __DEC_pcgw___conv_470607 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
-						if (!pcgw.equals(__DEC_pcgw___conv_529016)) {
-							if (!prevNode.equals(__DEC_pcgw___conv_529016)) {
-								if (!pgw.equals(__DEC_pcgw___conv_529016)) {
+						if (!pcgw.equals(__DEC_pcgw___conv_470607)) {
+							if (!prevNode.equals(__DEC_pcgw___conv_470607)) {
+								if (!pgw.equals(__DEC_pcgw___conv_470607)) {
 									return new Object[] { pcgw, prevNode, pgw };
 								}
 							}
@@ -5424,9 +5424,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 	}
 
 	public static final Object[] pattern_PG2ParallelStepSeq_28_2_black_nac_0BB(SequenceFlow sf1, FlowNode prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_262672 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_sf1_default_995457 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_262672)) {
+			if (!prevNode.equals(__DEC_sf1_default_995457)) {
 				return new Object[] { sf1, prevNode };
 			}
 		}
@@ -5435,9 +5435,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 
 	public static final Object[] pattern_PG2ParallelStepSeq_28_2_black_nac_1BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_394100 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_716916 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_394100)) {
+			if (!process.equals(__DEC_sf1_flowElements_716916)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -5446,9 +5446,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 
 	public static final Object[] pattern_PG2ParallelStepSeq_28_2_black_nac_2BB(ParallelGateway pgw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_pgw_flowElements_782102 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_pgw_flowElements_204039 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pgw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pgw_flowElements_782102)) {
+			if (!process.equals(__DEC_pgw_flowElements_204039)) {
 				return new Object[] { pgw, process };
 			}
 		}
@@ -5460,11 +5460,11 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 		if (!pgw.equals(prevNode)) {
 			if (!pcgw.equals(pgw)) {
 				if (!pcgw.equals(prevNode)) {
-					for (Gateway __DEC_pgw___conv_535483 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (Gateway __DEC_pgw___conv_180595 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
-						if (!pgw.equals(__DEC_pgw___conv_535483)) {
-							if (!prevNode.equals(__DEC_pgw___conv_535483)) {
-								if (!pcgw.equals(__DEC_pgw___conv_535483)) {
+						if (!pgw.equals(__DEC_pgw___conv_180595)) {
+							if (!prevNode.equals(__DEC_pgw___conv_180595)) {
+								if (!pcgw.equals(__DEC_pgw___conv_180595)) {
 									return new Object[] { pgw, prevNode, pcgw };
 								}
 							}
@@ -5481,11 +5481,11 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 		if (!pcgw.equals(prevNode)) {
 			if (!pcgw.equals(pgw)) {
 				if (!pgw.equals(prevNode)) {
-					Gateway __DEC_pcgw___conv_772216 = pcgw.get__conv();
-					if (__DEC_pcgw___conv_772216 != null) {
-						if (!pcgw.equals(__DEC_pcgw___conv_772216)) {
-							if (!prevNode.equals(__DEC_pcgw___conv_772216)) {
-								if (!pgw.equals(__DEC_pcgw___conv_772216)) {
+					Gateway __DEC_pcgw___conv_793627 = pcgw.get__conv();
+					if (__DEC_pcgw___conv_793627 != null) {
+						if (!pcgw.equals(__DEC_pcgw___conv_793627)) {
+							if (!prevNode.equals(__DEC_pcgw___conv_793627)) {
+								if (!pgw.equals(__DEC_pcgw___conv_793627)) {
 									return new Object[] { pcgw, prevNode, pgw };
 								}
 							}
@@ -5500,9 +5500,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 
 	public static final Object[] pattern_PG2ParallelStepSeq_28_2_black_nac_5BB(ParallelGateway pcgw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_pcgw_flowElements_215006 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_pcgw_flowElements_671710 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pcgw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pcgw_flowElements_215006)) {
+			if (!process.equals(__DEC_pcgw_flowElements_671710)) {
 				return new Object[] { pcgw, process };
 			}
 		}
@@ -5514,11 +5514,11 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 		if (!pcgw.equals(prevNode)) {
 			if (!pcgw.equals(pgw)) {
 				if (!pgw.equals(prevNode)) {
-					for (Gateway __DEC_pcgw___conv_304249 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (Gateway __DEC_pcgw___conv_559385 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
-						if (!pcgw.equals(__DEC_pcgw___conv_304249)) {
-							if (!prevNode.equals(__DEC_pcgw___conv_304249)) {
-								if (!pgw.equals(__DEC_pcgw___conv_304249)) {
+						if (!pcgw.equals(__DEC_pcgw___conv_559385)) {
+							if (!prevNode.equals(__DEC_pcgw___conv_559385)) {
+								if (!pgw.equals(__DEC_pcgw___conv_559385)) {
 									return new Object[] { pcgw, prevNode, pgw };
 								}
 							}
@@ -5692,9 +5692,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 	}
 
 	public static final Object[] pattern_PG2ParallelStepSeq_29_2_black_nac_0BB(SequenceFlow sf1, FlowNode prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_703172 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_sf1_default_693853 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_703172)) {
+			if (!prevNode.equals(__DEC_sf1_default_693853)) {
 				return new Object[] { sf1, prevNode };
 			}
 		}
@@ -5703,9 +5703,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 
 	public static final Object[] pattern_PG2ParallelStepSeq_29_2_black_nac_1BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_320147 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_135879 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_320147)) {
+			if (!process.equals(__DEC_sf1_flowElements_135879)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -5714,9 +5714,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 
 	public static final Object[] pattern_PG2ParallelStepSeq_29_2_black_nac_2BB(ParallelGateway pgw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_pgw_flowElements_227131 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_pgw_flowElements_787692 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pgw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pgw_flowElements_227131)) {
+			if (!process.equals(__DEC_pgw_flowElements_787692)) {
 				return new Object[] { pgw, process };
 			}
 		}
@@ -5728,11 +5728,11 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 		if (!pgw.equals(prevNode)) {
 			if (!pcgw.equals(pgw)) {
 				if (!pcgw.equals(prevNode)) {
-					for (Gateway __DEC_pgw___conv_830437 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (Gateway __DEC_pgw___conv_761755 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
-						if (!pgw.equals(__DEC_pgw___conv_830437)) {
-							if (!prevNode.equals(__DEC_pgw___conv_830437)) {
-								if (!pcgw.equals(__DEC_pgw___conv_830437)) {
+						if (!pgw.equals(__DEC_pgw___conv_761755)) {
+							if (!prevNode.equals(__DEC_pgw___conv_761755)) {
+								if (!pcgw.equals(__DEC_pgw___conv_761755)) {
 									return new Object[] { pgw, prevNode, pcgw };
 								}
 							}
@@ -5749,11 +5749,11 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 		if (!pcgw.equals(prevNode)) {
 			if (!pcgw.equals(pgw)) {
 				if (!pgw.equals(prevNode)) {
-					Gateway __DEC_pcgw___conv_48326 = pcgw.get__conv();
-					if (__DEC_pcgw___conv_48326 != null) {
-						if (!pcgw.equals(__DEC_pcgw___conv_48326)) {
-							if (!prevNode.equals(__DEC_pcgw___conv_48326)) {
-								if (!pgw.equals(__DEC_pcgw___conv_48326)) {
+					Gateway __DEC_pcgw___conv_903535 = pcgw.get__conv();
+					if (__DEC_pcgw___conv_903535 != null) {
+						if (!pcgw.equals(__DEC_pcgw___conv_903535)) {
+							if (!prevNode.equals(__DEC_pcgw___conv_903535)) {
+								if (!pgw.equals(__DEC_pcgw___conv_903535)) {
 									return new Object[] { pcgw, prevNode, pgw };
 								}
 							}
@@ -5768,9 +5768,9 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 
 	public static final Object[] pattern_PG2ParallelStepSeq_29_2_black_nac_5BB(ParallelGateway pcgw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_pcgw_flowElements_392768 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_pcgw_flowElements_804216 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pcgw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pcgw_flowElements_392768)) {
+			if (!process.equals(__DEC_pcgw_flowElements_804216)) {
 				return new Object[] { pcgw, process };
 			}
 		}
@@ -5782,11 +5782,11 @@ public class PG2ParallelStepSeqImpl extends AbstractRuleImpl implements PG2Paral
 		if (!pcgw.equals(prevNode)) {
 			if (!pcgw.equals(pgw)) {
 				if (!pgw.equals(prevNode)) {
-					for (Gateway __DEC_pcgw___conv_986184 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (Gateway __DEC_pcgw___conv_816831 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
-						if (!pcgw.equals(__DEC_pcgw___conv_986184)) {
-							if (!prevNode.equals(__DEC_pcgw___conv_986184)) {
-								if (!pgw.equals(__DEC_pcgw___conv_986184)) {
+						if (!pcgw.equals(__DEC_pcgw___conv_816831)) {
+							if (!prevNode.equals(__DEC_pcgw___conv_816831)) {
+								if (!pgw.equals(__DEC_pcgw___conv_816831)) {
 									return new Object[] { pcgw, prevNode, pgw };
 								}
 							}

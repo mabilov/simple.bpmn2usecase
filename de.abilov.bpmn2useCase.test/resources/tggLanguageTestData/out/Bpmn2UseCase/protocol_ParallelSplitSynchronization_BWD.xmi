@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ASCII"?>
 <TGGRuntime:PrecedenceStructure xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TGGRuntime="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore">
-  <tripleMatches children="//@tripleMatches.2 //@tripleMatches.4 //@tripleMatches.5 //@tripleMatches.6 //@tripleMatches.1 //@tripleMatches.3" ruleName="Process2UseCase" number="30">
-    <sourceElements href="#//@tripleMatches.0/@containedEdges.2"/>
+  <tripleMatches children="//@tripleMatches.2 //@tripleMatches.3 //@tripleMatches.6 //@tripleMatches.5 //@tripleMatches.1 //@tripleMatches.4" ruleName="Process2UseCase" number="62">
     <sourceElements href="../../../../sourceModel#/"/>
     <sourceElements href="../../../../sourceModel#se1"/>
+    <sourceElements href="#//@tripleMatches.0/@containedEdges.5"/>
     <nodeMappings nodeName="_p2uc">
       <node href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.0"/>
     </nodeMappings>
@@ -25,29 +25,29 @@
     <nodeMappings nodeName="flow">
       <node href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
     </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
+      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
+    </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
       <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.0"/>
       <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
     </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="precondition">
+      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@precondition"/>
+    </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
       <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.1"/>
       <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
-      <src href="../../../../sourceModel#/"/>
-      <trg href="../../../../sourceModel#se1"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
       <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.1"/>
       <trg href="../../../../sourceModel#se1"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
-      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
-      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="precondition">
-      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
-      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@precondition"/>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../../../sourceModel#/"/>
+      <trg href="../../../../sourceModel#se1"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
       <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.0"/>
@@ -61,54 +61,54 @@
       <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
       <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@precondition"/>
     </containedEdges>
-    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
-    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
     <targetElements href="#//@tripleMatches.0/@containedEdges.7"/>
     <targetElements href="#//@tripleMatches.0/@containedEdges.8"/>
     <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@precondition"/>
+    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
+    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
     <correspondenceElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.0"/>
-    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.0"/>
     <correspondenceElements href="#//@tripleMatches.0/@containedEdges.1"/>
     <correspondenceElements href="#//@tripleMatches.0/@containedEdges.3"/>
-    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.6"/>
     <correspondenceElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.1"/>
-    <createdElements href="#//@tripleMatches.0/@containedEdges.0"/>
+    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.4"/>
+    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.6"/>
+    <createdElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.0"/>
     <createdElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
+    <createdElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.1"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.0"/>
+    <createdElements href="../../../../sourceModel#/"/>
     <createdElements href="#//@tripleMatches.0/@containedEdges.1"/>
     <createdElements href="#//@tripleMatches.0/@containedEdges.2"/>
-    <createdElements href="../../../../sourceModel#/"/>
+    <createdElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@precondition"/>
+    <createdElements href="../../../../sourceModel#se1"/>
+    <createdElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
     <createdElements href="#//@tripleMatches.0/@containedEdges.3"/>
     <createdElements href="#//@tripleMatches.0/@containedEdges.4"/>
     <createdElements href="#//@tripleMatches.0/@containedEdges.5"/>
-    <createdElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.0"/>
-    <createdElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
-    <createdElements href="../../../../sourceModel#se1"/>
-    <createdElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@precondition"/>
     <createdElements href="#//@tripleMatches.0/@containedEdges.6"/>
-    <createdElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.1"/>
   </tripleMatches>
-  <tripleMatches children="//@tripleMatches.2 //@tripleMatches.4 //@tripleMatches.5 //@tripleMatches.6 //@tripleMatches.3" ruleName="PG2ParallelStepFirst" number="31">
-    <sourceElements href="#//@tripleMatches.1/@containedEdges.3"/>
+  <tripleMatches children="//@tripleMatches.2 //@tripleMatches.3 //@tripleMatches.6 //@tripleMatches.5 //@tripleMatches.4" ruleName="PG2ParallelStepFirst" number="63">
     <sourceElements href="#//@tripleMatches.1/@containedEdges.4"/>
-    <sourceElements href="../../../../sourceModel#//@flowElements.3"/>
     <sourceElements href="#//@tripleMatches.1/@containedEdges.5"/>
-    <sourceElements href="#//@tripleMatches.1/@containedEdges.1"/>
-    <sourceElements href="../../../../sourceModel#/"/>
-    <sourceElements href="../../../../sourceModel#pg1"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.6"/>
     <sourceElements href="#//@tripleMatches.1/@containedEdges.7"/>
     <sourceElements href="#//@tripleMatches.1/@containedEdges.10"/>
-    <sourceElements href="#//@tripleMatches.1/@containedEdges.11"/>
-    <sourceElements href="#//@tripleMatches.1/@containedEdges.13"/>
+    <sourceElements href="../../../../sourceModel#/"/>
     <sourceElements href="../../../../sourceModel#//@flowElements.1"/>
-    <sourceElements href="#//@tripleMatches.1/@containedEdges.15"/>
     <sourceElements href="../../../../sourceModel#se1"/>
-    <contextElements href="#//@tripleMatches.1/@containedEdges.0"/>
-    <contextElements href="#//@tripleMatches.1/@containedEdges.1"/>
-    <contextElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
+    <sourceElements href="../../../../sourceModel#pg1"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.13"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.14"/>
+    <sourceElements href="../../../../sourceModel#//@flowElements.3"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.15"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.2"/>
     <contextElements href="../../../../sourceModel#/"/>
-    <contextElements href="#//@tripleMatches.1/@containedEdges.2"/>
     <contextElements href="../../../../sourceModel#se1"/>
+    <contextElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
+    <contextElements href="#//@tripleMatches.1/@containedEdges.0"/>
     <contextElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.1"/>
+    <contextElements href="#//@tripleMatches.1/@containedEdges.1"/>
+    <contextElements href="#//@tripleMatches.1/@containedEdges.2"/>
     <nodeMappings nodeName="pgw">
       <node href="../../../../sourceModel#pg1"/>
     </nodeMappings>
@@ -143,123 +143,313 @@
       <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.1"/>
       <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
-      <src href="../../../../sourceModel#/"/>
-      <trg href="../../../../sourceModel#se1"/>
-    </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
       <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.1"/>
       <trg href="../../../../sourceModel#se1"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
-      <src href="../../../../sourceModel#//@flowElements.1"/>
-      <trg href="../../../../sourceModel#pg1"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
-      <src href="../../../../sourceModel#pg1"/>
-      <trg href="../../../../sourceModel#//@flowElements.1"/>
-    </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
       <src href="../../../../sourceModel#/"/>
-      <trg href="../../../../sourceModel#//@flowElements.1"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
-      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
-      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
-      <src href="../../../../sourceModel#/"/>
-      <trg href="../../../../sourceModel#//@flowElements.3"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
-      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.2"/>
-      <trg href="../../../../sourceModel#//@flowElements.3"/>
+      <trg href="../../../../sourceModel#se1"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
       <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
       <trg href="../../../../sourceModel#pg1"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
-      <src href="../../../../sourceModel#/"/>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../../../../sourceModel#//@flowElements.1"/>
       <trg href="../../../../sourceModel#pg1"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
       <src href="../../../../sourceModel#se1"/>
       <trg href="../../../../sourceModel#//@flowElements.1"/>
     </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../../../sourceModel#/"/>
+      <trg href="../../../../sourceModel#//@flowElements.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../../../../sourceModel#pg1"/>
+      <trg href="../../../../sourceModel#//@flowElements.1"/>
+    </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
       <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
       <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__conv">
-      <src href="../../../../sourceModel#pg1"/>
-      <trg href="../../../../sourceModel#//@flowElements.3"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
-      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.2"/>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
       <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
       <src href="../../../../sourceModel#//@flowElements.1"/>
       <trg href="../../../../sourceModel#se1"/>
     </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.2"/>
+      <trg href="../../../../sourceModel#//@flowElements.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.2"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../../../sourceModel#/"/>
+      <trg href="../../../../sourceModel#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__conv">
+      <src href="../../../../sourceModel#pg1"/>
+      <trg href="../../../../sourceModel#//@flowElements.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../../../sourceModel#/"/>
+      <trg href="../../../../sourceModel#//@flowElements.3"/>
+    </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
       <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
       <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
     </containedEdges>
-    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
     <targetElements href="#//@tripleMatches.1/@containedEdges.16"/>
     <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
-    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.12"/>
+    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.3"/>
     <correspondenceElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
-    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.0"/>
-    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.14"/>
-    <correspondenceElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.2"/>
-    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.2"/>
     <correspondenceElements href="#//@tripleMatches.1/@containedEdges.8"/>
-    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.9"/>
+    <correspondenceElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.2"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.0"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.11"/>
     <correspondenceElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.1"/>
-    <createdElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.1"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.12"/>
     <createdElements href="#//@tripleMatches.1/@containedEdges.3"/>
     <createdElements href="#//@tripleMatches.1/@containedEdges.4"/>
-    <createdElements href="../../../../sourceModel#//@flowElements.3"/>
     <createdElements href="#//@tripleMatches.1/@containedEdges.5"/>
-    <createdElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
     <createdElements href="#//@tripleMatches.1/@containedEdges.6"/>
-    <createdElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.2"/>
-    <createdElements href="../../../../sourceModel#pg1"/>
+    <createdElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
     <createdElements href="#//@tripleMatches.1/@containedEdges.7"/>
     <createdElements href="#//@tripleMatches.1/@containedEdges.8"/>
     <createdElements href="#//@tripleMatches.1/@containedEdges.9"/>
     <createdElements href="#//@tripleMatches.1/@containedEdges.10"/>
     <createdElements href="#//@tripleMatches.1/@containedEdges.11"/>
     <createdElements href="#//@tripleMatches.1/@containedEdges.12"/>
+    <createdElements href="../../../../sourceModel#//@flowElements.1"/>
+    <createdElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.2"/>
+    <createdElements href="../../../../sourceModel#pg1"/>
     <createdElements href="#//@tripleMatches.1/@containedEdges.13"/>
     <createdElements href="#//@tripleMatches.1/@containedEdges.14"/>
-    <createdElements href="../../../../sourceModel#//@flowElements.1"/>
+    <createdElements href="../../../../sourceModel#//@flowElements.3"/>
+    <createdElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
     <createdElements href="#//@tripleMatches.1/@containedEdges.15"/>
   </tripleMatches>
-  <tripleMatches ruleName="EndEvent2FinalStateSeq" number="32">
-    <sourceElements href="#//@tripleMatches.2/@containedEdges.4"/>
-    <sourceElements href="../../../../sourceModel#ee1"/>
-    <sourceElements href="../../../../sourceModel#//@flowElements.3"/>
+  <tripleMatches children="//@tripleMatches.6" ruleName="Task2NormalStepAfterPG" number="64">
     <sourceElements href="../../../../sourceModel#/"/>
-    <sourceElements href="#//@tripleMatches.2/@containedEdges.5"/>
-    <sourceElements href="#//@tripleMatches.2/@containedEdges.6"/>
-    <sourceElements href="#//@tripleMatches.2/@containedEdges.2"/>
-    <sourceElements href="#//@tripleMatches.2/@containedEdges.7"/>
-    <sourceElements href="#//@tripleMatches.2/@containedEdges.8"/>
-    <sourceElements href="../../../../sourceModel#//@flowElements.4"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.13"/>
     <sourceElements href="#//@tripleMatches.2/@containedEdges.10"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.14"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.15"/>
+    <sourceElements href="../../../../sourceModel#sf3"/>
+    <sourceElements href="../../../../sourceModel#pg1"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.16"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.5"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.17"/>
+    <sourceElements href="../../../../sourceModel#t2"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.0"/>
+    <contextElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.0"/>
+    <contextElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.1"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.2"/>
+    <contextElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.3"/>
+    <contextElements href="../../../../sourceModel#/"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.4"/>
+    <contextElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
+    <contextElements href="../../../../sourceModel#pg1"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.5"/>
+    <contextElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.6"/>
+    <nodeMappings nodeName="prevNode">
+      <node href="../../../../sourceModel#pg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="process">
+      <node href="../../../../sourceModel#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="useCase">
+      <node href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="p2uc">
+      <node href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="task">
+      <node href="../../../../sourceModel#t2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pgw2ps">
+      <node href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pflow">
+      <node href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="t2s">
+      <node href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.4"/>
+    </nodeMappings>
+    <nodeMappings nodeName="step">
+      <node href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pstep">
+      <node href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="flow">
+      <node href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="sf1">
+      <node href="../../../../sourceModel#sf3"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
+      <trg href="../../../../sourceModel#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
+      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.0"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../../../sourceModel#/"/>
+      <trg href="../../../../sourceModel#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.0"/>
+      <trg href="../../../../sourceModel#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.4"/>
+      <trg href="../../../../sourceModel#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
+      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.4"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../../../../sourceModel#t2"/>
+      <trg href="../../../../sourceModel#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="invokedFlows">
+      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../../../../sourceModel#pg1"/>
+      <trg href="../../../../sourceModel#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../../../sourceModel#/"/>
+      <trg href="../../../../sourceModel#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../../../../sourceModel#sf3"/>
+      <trg href="../../../../sourceModel#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../../../sourceModel#/"/>
+      <trg href="../../../../sourceModel#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../../../../sourceModel#sf3"/>
+      <trg href="../../../../sourceModel#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
+      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
+      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="invokedFlows">
+      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
+    </containedEdges>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.18"/>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.19"/>
+    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t2"/>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.20"/>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.21"/>
+    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
+    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
+    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
+    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.22"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.0"/>
+    <correspondenceElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.7"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.4"/>
+    <correspondenceElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.4"/>
+    <correspondenceElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.1"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.9"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.6"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.7"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.8"/>
+    <createdElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.4"/>
+    <createdElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t2"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.9"/>
+    <createdElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.10"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.11"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.12"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.13"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.14"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.15"/>
+    <createdElements href="../../../../sourceModel#sf3"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.16"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.17"/>
+    <createdElements href="../../../../sourceModel#t2"/>
+  </tripleMatches>
+  <tripleMatches ruleName="EndEvent2FinalStateSeq" number="65">
+    <sourceElements href="../../../../sourceModel#/"/>
+    <sourceElements href="../../../../sourceModel#//@flowElements.6"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.4"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.6"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.8"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.9"/>
+    <sourceElements href="../../../../sourceModel#//@flowElements.3"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.10"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.11"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.2"/>
+    <sourceElements href="../../../../sourceModel#ee1"/>
+    <contextElements href="../../../../sourceModel#/"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.0"/>
+    <contextElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.2"/>
+    <contextElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.1"/>
     <contextElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
     <contextElements href="../../../../sourceModel#//@flowElements.3"/>
-    <contextElements href="#//@tripleMatches.2/@containedEdges.0"/>
-    <contextElements href="#//@tripleMatches.2/@containedEdges.1"/>
-    <contextElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
-    <contextElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.2"/>
-    <contextElements href="../../../../sourceModel#/"/>
-    <contextElements href="#//@tripleMatches.2/@containedEdges.2"/>
-    <contextElements href="#//@tripleMatches.2/@containedEdges.3"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.2"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.3"/>
     <nodeMappings nodeName="lastStep">
       <node href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
     </nodeMappings>
@@ -282,19 +472,11 @@
       <node href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
     </nodeMappings>
     <nodeMappings nodeName="inFlow">
-      <node href="../../../../sourceModel#//@flowElements.4"/>
+      <node href="../../../../sourceModel#//@flowElements.6"/>
     </nodeMappings>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
       <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
       <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
-      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.2"/>
-      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
-      <src href="../../../../sourceModel#/"/>
-      <trg href="../../../../sourceModel#//@flowElements.3"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
       <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.2"/>
@@ -302,92 +484,103 @@
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
       <src href="../../../../sourceModel#/"/>
-      <trg href="../../../../sourceModel#//@flowElements.4"/>
+      <trg href="../../../../sourceModel#//@flowElements.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.2"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../../../../sourceModel#//@flowElements.6"/>
+      <trg href="../../../../sourceModel#ee1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__last">
+      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0/@finalState"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../../../../sourceModel#//@flowElements.3"/>
+      <trg href="../../../../sourceModel#//@flowElements.6"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="finalState">
+      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0/@finalState"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
       <src href="../../../../sourceModel#ee1"/>
-      <trg href="../../../../sourceModel#//@flowElements.4"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
-      <src href="../../../../sourceModel#//@flowElements.4"/>
-      <trg href="../../../../sourceModel#ee1"/>
+      <trg href="../../../../sourceModel#//@flowElements.6"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
       <src href="../../../../sourceModel#/"/>
       <trg href="../../../../sourceModel#ee1"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
-      <src href="../../../../sourceModel#//@flowElements.3"/>
-      <trg href="../../../../sourceModel#//@flowElements.4"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="finalState">
-      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
-      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0/@finalState"/>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../../../sourceModel#/"/>
+      <trg href="../../../../sourceModel#//@flowElements.6"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
-      <src href="../../../../sourceModel#//@flowElements.4"/>
+      <src href="../../../../sourceModel#//@flowElements.6"/>
       <trg href="../../../../sourceModel#//@flowElements.3"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__last">
-      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
-      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0/@finalState"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
       <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
       <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="finalState">
-      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
-      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0/@finalState"/>
-    </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__last">
       <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
       <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0/@finalState"/>
     </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="finalState">
+      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0/@finalState"/>
+    </containedEdges>
+    <targetElements href="#//@tripleMatches.3/@containedEdges.12"/>
+    <targetElements href="#//@tripleMatches.3/@containedEdges.13"/>
+    <targetElements href="#//@tripleMatches.3/@containedEdges.14"/>
+    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
     <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0/@finalState"/>
     <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
-    <targetElements href="#//@tripleMatches.2/@containedEdges.12"/>
-    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
-    <targetElements href="#//@tripleMatches.2/@containedEdges.13"/>
-    <targetElements href="#//@tripleMatches.2/@containedEdges.14"/>
-    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.1"/>
     <correspondenceElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.2"/>
-    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.3"/>
+    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.1"/>
+    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.3"/>
+    <createdElements href="../../../../sourceModel#//@flowElements.6"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.5"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.6"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.7"/>
     <createdElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0/@finalState"/>
-    <createdElements href="#//@tripleMatches.2/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.8"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.9"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.10"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.11"/>
     <createdElements href="../../../../sourceModel#ee1"/>
-    <createdElements href="#//@tripleMatches.2/@containedEdges.5"/>
-    <createdElements href="#//@tripleMatches.2/@containedEdges.6"/>
-    <createdElements href="#//@tripleMatches.2/@containedEdges.7"/>
-    <createdElements href="#//@tripleMatches.2/@containedEdges.8"/>
-    <createdElements href="#//@tripleMatches.2/@containedEdges.9"/>
-    <createdElements href="../../../../sourceModel#//@flowElements.4"/>
-    <createdElements href="#//@tripleMatches.2/@containedEdges.10"/>
-    <createdElements href="#//@tripleMatches.2/@containedEdges.11"/>
   </tripleMatches>
-  <tripleMatches children="//@tripleMatches.4" ruleName="Task2NormalStepAfterPG" number="33">
-    <sourceElements href="#//@tripleMatches.3/@containedEdges.0"/>
+  <tripleMatches children="//@tripleMatches.5" ruleName="Task2NormalStepAfterPG" number="66">
     <sourceElements href="../../../../sourceModel#sf2"/>
-    <sourceElements href="#//@tripleMatches.3/@containedEdges.5"/>
-    <sourceElements href="#//@tripleMatches.3/@containedEdges.6"/>
-    <sourceElements href="#//@tripleMatches.3/@containedEdges.7"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.7"/>
     <sourceElements href="../../../../sourceModel#/"/>
-    <sourceElements href="#//@tripleMatches.3/@containedEdges.12"/>
-    <sourceElements href="../../../../sourceModel#pg1"/>
-    <sourceElements href="#//@tripleMatches.3/@containedEdges.8"/>
-    <sourceElements href="#//@tripleMatches.3/@containedEdges.10"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.8"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.11"/>
     <sourceElements href="../../../../sourceModel#t1"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.12"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.13"/>
+    <sourceElements href="../../../../sourceModel#pg1"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.5"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.15"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.0"/>
     <contextElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.0"/>
-    <contextElements href="#//@tripleMatches.3/@containedEdges.0"/>
-    <contextElements href="#//@tripleMatches.3/@containedEdges.1"/>
-    <contextElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
-    <contextElements href="#//@tripleMatches.3/@containedEdges.2"/>
     <contextElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.1"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.2"/>
     <contextElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.3"/>
     <contextElements href="../../../../sourceModel#/"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.4"/>
+    <contextElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
     <contextElements href="../../../../sourceModel#pg1"/>
-    <contextElements href="#//@tripleMatches.3/@containedEdges.3"/>
-    <contextElements href="#//@tripleMatches.3/@containedEdges.4"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.5"/>
+    <contextElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.6"/>
     <nodeMappings nodeName="prevNode">
       <node href="../../../../sourceModel#pg1"/>
     </nodeMappings>
@@ -406,8 +599,11 @@
     <nodeMappings nodeName="pgw2ps">
       <node href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
     </nodeMappings>
+    <nodeMappings nodeName="pflow">
+      <node href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf2"/>
+    </nodeMappings>
     <nodeMappings nodeName="t2s">
-      <node href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.4"/>
+      <node href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.5"/>
     </nodeMappings>
     <nodeMappings nodeName="step">
       <node href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t1"/>
@@ -416,154 +612,173 @@
       <node href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
     </nodeMappings>
     <nodeMappings nodeName="flow">
-      <node href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf2"/>
+      <node href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
     </nodeMappings>
     <nodeMappings nodeName="sf1">
       <node href="../../../../sourceModel#sf2"/>
     </nodeMappings>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
-      <src href="../../../../sourceModel#/"/>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
       <trg href="../../../../sourceModel#pg1"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
-      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.0"/>
-      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
       <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
       <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
-      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
+      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.0"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../../../sourceModel#/"/>
       <trg href="../../../../sourceModel#pg1"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
       <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.0"/>
       <trg href="../../../../sourceModel#/"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
-      <src href="../../../../sourceModel#sf2"/>
-      <trg href="../../../../sourceModel#pg1"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
-      <src href="../../../../sourceModel#t1"/>
-      <trg href="../../../../sourceModel#sf2"/>
-    </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
       <src href="../../../../sourceModel#/"/>
+      <trg href="../../../../sourceModel#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../../../../sourceModel#pg1"/>
+      <trg href="../../../../sourceModel#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf2"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.5"/>
       <trg href="../../../../sourceModel#t1"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
       <src href="../../../../sourceModel#sf2"/>
       <trg href="../../../../sourceModel#t1"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
-      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf2"/>
-      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t1"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
-      <src href="../../../../sourceModel#pg1"/>
-      <trg href="../../../../sourceModel#sf2"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="invokedFlows">
-      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
-      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf2"/>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../../../../sourceModel#sf2"/>
+      <trg href="../../../../sourceModel#pg1"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
       <src href="../../../../sourceModel#/"/>
-      <trg href="../../../../sourceModel#sf2"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
-      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.4"/>
-      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t1"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
-      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
-      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf2"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
-      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.4"/>
       <trg href="../../../../sourceModel#t1"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="invokedFlows">
       <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
       <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf2"/>
     </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../../../../sourceModel#t1"/>
+      <trg href="../../../../sourceModel#sf2"/>
+    </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
       <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
       <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.5"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
+      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
       <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf2"/>
       <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t1"/>
     </containedEdges>
-    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="invokedFlows">
+      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
+      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf2"/>
+    </containedEdges>
+    <targetElements href="#//@tripleMatches.4/@containedEdges.18"/>
+    <targetElements href="#//@tripleMatches.4/@containedEdges.19"/>
+    <targetElements href="#//@tripleMatches.4/@containedEdges.20"/>
+    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#//@flows.0"/>
     <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf2"/>
     <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t1"/>
-    <targetElements href="#//@tripleMatches.3/@containedEdges.16"/>
+    <targetElements href="#//@tripleMatches.4/@containedEdges.21"/>
     <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
-    <targetElements href="#//@tripleMatches.3/@containedEdges.17"/>
-    <targetElements href="#//@tripleMatches.3/@containedEdges.18"/>
+    <targetElements href="#//@tripleMatches.4/@containedEdges.22"/>
+    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.0"/>
     <correspondenceElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.0"/>
-    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.1"/>
-    <correspondenceElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.4"/>
-    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.2"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.4"/>
     <correspondenceElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
-    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.13"/>
-    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.15"/>
-    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.4"/>
-    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.3"/>
-    <createdElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf2"/>
-    <createdElements href="#//@tripleMatches.3/@containedEdges.5"/>
-    <createdElements href="#//@tripleMatches.3/@containedEdges.6"/>
-    <createdElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t1"/>
-    <createdElements href="#//@tripleMatches.3/@containedEdges.7"/>
-    <createdElements href="#//@tripleMatches.3/@containedEdges.8"/>
-    <createdElements href="#//@tripleMatches.3/@containedEdges.9"/>
-    <createdElements href="#//@tripleMatches.3/@containedEdges.10"/>
-    <createdElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.4"/>
-    <createdElements href="../../../../sourceModel#sf2"/>
-    <createdElements href="#//@tripleMatches.3/@containedEdges.11"/>
-    <createdElements href="#//@tripleMatches.3/@containedEdges.12"/>
-    <createdElements href="#//@tripleMatches.3/@containedEdges.13"/>
-    <createdElements href="#//@tripleMatches.3/@containedEdges.14"/>
-    <createdElements href="#//@tripleMatches.3/@containedEdges.15"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.1"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.10"/>
+    <correspondenceElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.5"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.17"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.6"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.7"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.8"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.9"/>
     <createdElements href="../../../../sourceModel#t1"/>
+    <createdElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t1"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.10"/>
+    <createdElements href="../../../../sourceModel#sf2"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.11"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.12"/>
+    <createdElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf2"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.13"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.14"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.15"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.16"/>
+    <createdElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.5"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.17"/>
   </tripleMatches>
-  <tripleMatches ruleName="LastStepInPFlow" number="34">
-    <sourceElements href="#//@tripleMatches.4/@containedEdges.10"/>
-    <sourceElements href="../../../../sourceModel#//@flowElements.3"/>
-    <sourceElements href="#//@tripleMatches.4/@containedEdges.0"/>
-    <sourceElements href="../../../../sourceModel#/"/>
-    <sourceElements href="../../../../sourceModel#pg1"/>
-    <sourceElements href="#//@tripleMatches.4/@containedEdges.1"/>
-    <sourceElements href="#//@tripleMatches.4/@containedEdges.4"/>
-    <sourceElements href="#//@tripleMatches.4/@containedEdges.12"/>
-    <sourceElements href="#//@tripleMatches.4/@containedEdges.6"/>
-    <sourceElements href="#//@tripleMatches.4/@containedEdges.13"/>
-    <sourceElements href="#//@tripleMatches.4/@containedEdges.14"/>
-    <sourceElements href="#//@tripleMatches.4/@containedEdges.15"/>
-    <sourceElements href="../../../../sourceModel#//@flowElements.8"/>
+  <tripleMatches ruleName="LastStepInPFlow" number="67">
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.10"/>
     <sourceElements href="../../../../sourceModel#t1"/>
-    <contextElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
-    <contextElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf2"/>
-    <contextElements href="../../../../sourceModel#//@flowElements.3"/>
-    <contextElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t1"/>
-    <contextElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
-    <contextElements href="#//@tripleMatches.4/@containedEdges.0"/>
-    <contextElements href="../../../../sourceModel#/"/>
-    <contextElements href="../../../../sourceModel#pg1"/>
-    <contextElements href="#//@tripleMatches.4/@containedEdges.1"/>
-    <contextElements href="#//@tripleMatches.4/@containedEdges.2"/>
-    <contextElements href="#//@tripleMatches.4/@containedEdges.3"/>
-    <contextElements href="#//@tripleMatches.4/@containedEdges.4"/>
-    <contextElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.4"/>
-    <contextElements href="#//@tripleMatches.4/@containedEdges.5"/>
-    <contextElements href="#//@tripleMatches.4/@containedEdges.6"/>
-    <contextElements href="#//@tripleMatches.4/@containedEdges.7"/>
-    <contextElements href="#//@tripleMatches.4/@containedEdges.8"/>
-    <contextElements href="#//@tripleMatches.4/@containedEdges.9"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.15"/>
+    <sourceElements href="../../../../sourceModel#//@flowElements.10"/>
+    <sourceElements href="../../../../sourceModel#/"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.12"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.13"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.4"/>
+    <sourceElements href="../../../../sourceModel#pg1"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.6"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.14"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.7"/>
+    <sourceElements href="../../../../sourceModel#//@flowElements.3"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.8"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.0"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.1"/>
     <contextElements href="../../../../sourceModel#t1"/>
+    <contextElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.2"/>
+    <contextElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t1"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.3"/>
+    <contextElements href="../../../../sourceModel#/"/>
+    <contextElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf2"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.4"/>
+    <contextElements href="../../../../sourceModel#pg1"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.5"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.6"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.7"/>
+    <contextElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
+    <contextElements href="../../../../sourceModel#//@flowElements.3"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.8"/>
+    <contextElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.5"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.9"/>
     <nodeMappings nodeName="gw">
       <node href="../../../../sourceModel#pg1"/>
     </nodeMappings>
@@ -574,7 +789,7 @@
       <node href="../../../../sourceModel#/"/>
     </nodeMappings>
     <nodeMappings nodeName="sf">
-      <node href="../../../../sourceModel#//@flowElements.8"/>
+      <node href="../../../../sourceModel#//@flowElements.10"/>
     </nodeMappings>
     <nodeMappings nodeName="gcw">
       <node href="../../../../sourceModel#//@flowElements.3"/>
@@ -592,71 +807,75 @@
       <node href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf2"/>
     </nodeMappings>
     <nodeMappings nodeName="n2s">
-      <node href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.4"/>
+      <node href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.5"/>
     </nodeMappings>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
-      <src href="../../../../sourceModel#/"/>
-      <trg href="../../../../sourceModel#t1"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
-      <src href="../../../../sourceModel#/"/>
-      <trg href="../../../../sourceModel#//@flowElements.3"/>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
+      <trg href="../../../../sourceModel#pg1"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
       <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf2"/>
       <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t1"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
       <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
-      <trg href="../../../../sourceModel#pg1"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.5"/>
+      <trg href="../../../../sourceModel#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../../../sourceModel#/"/>
+      <trg href="../../../../sourceModel#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="invokedFlows">
+      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf2"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
       <src href="../../../../sourceModel#/"/>
       <trg href="../../../../sourceModel#pg1"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
-      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
-      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__conv">
       <src href="../../../../sourceModel#pg1"/>
       <trg href="../../../../sourceModel#//@flowElements.3"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="invokedFlows">
-      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
-      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf2"/>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../../../sourceModel#/"/>
+      <trg href="../../../../sourceModel#//@flowElements.3"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
-      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.4"/>
+      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.5"/>
       <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t1"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
-      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.4"/>
-      <trg href="../../../../sourceModel#t1"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
       <src href="../../../../sourceModel#/"/>
-      <trg href="../../../../sourceModel#//@flowElements.8"/>
+      <trg href="../../../../sourceModel#//@flowElements.10"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__last">
       <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf2"/>
       <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t1"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
-      <src href="../../../../sourceModel#//@flowElements.8"/>
+      <src href="../../../../sourceModel#//@flowElements.10"/>
       <trg href="../../../../sourceModel#//@flowElements.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../../../../sourceModel#//@flowElements.10"/>
+      <trg href="../../../../sourceModel#t1"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
       <src href="../../../../sourceModel#t1"/>
-      <trg href="../../../../sourceModel#//@flowElements.8"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
-      <src href="../../../../sourceModel#//@flowElements.8"/>
-      <trg href="../../../../sourceModel#t1"/>
+      <trg href="../../../../sourceModel#//@flowElements.10"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
       <src href="../../../../sourceModel#//@flowElements.3"/>
-      <trg href="../../../../sourceModel#//@flowElements.8"/>
+      <trg href="../../../../sourceModel#//@flowElements.10"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf2"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t1"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__last">
       <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf2"/>
@@ -666,229 +885,60 @@
       <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
       <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf2"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
-      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf2"/>
-      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t1"/>
-    </containedEdges>
-    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
-    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf2"/>
-    <targetElements href="#//@tripleMatches.4/@containedEdges.16"/>
-    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t1"/>
-    <targetElements href="#//@tripleMatches.4/@containedEdges.17"/>
-    <targetElements href="#//@tripleMatches.4/@containedEdges.18"/>
-    <correspondenceElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.4"/>
-    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.5"/>
-    <correspondenceElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
-    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.8"/>
-    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.9"/>
-    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.3"/>
-    <createdElements href="#//@tripleMatches.4/@containedEdges.10"/>
-    <createdElements href="#//@tripleMatches.4/@containedEdges.11"/>
-    <createdElements href="#//@tripleMatches.4/@containedEdges.12"/>
-    <createdElements href="#//@tripleMatches.4/@containedEdges.13"/>
-    <createdElements href="#//@tripleMatches.4/@containedEdges.14"/>
-    <createdElements href="#//@tripleMatches.4/@containedEdges.15"/>
-    <createdElements href="../../../../sourceModel#//@flowElements.8"/>
-  </tripleMatches>
-  <tripleMatches children="//@tripleMatches.6" ruleName="Task2NormalStepAfterPG" number="35">
-    <sourceElements href="#//@tripleMatches.5/@containedEdges.8"/>
-    <sourceElements href="#//@tripleMatches.5/@containedEdges.0"/>
-    <sourceElements href="#//@tripleMatches.5/@containedEdges.9"/>
-    <sourceElements href="#//@tripleMatches.5/@containedEdges.10"/>
-    <sourceElements href="#//@tripleMatches.5/@containedEdges.5"/>
-    <sourceElements href="#//@tripleMatches.5/@containedEdges.11"/>
-    <sourceElements href="../../../../sourceModel#t2"/>
-    <sourceElements href="../../../../sourceModel#/"/>
-    <sourceElements href="../../../../sourceModel#pg1"/>
-    <sourceElements href="../../../../sourceModel#sf3"/>
-    <sourceElements href="#//@tripleMatches.5/@containedEdges.7"/>
-    <contextElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.0"/>
-    <contextElements href="#//@tripleMatches.5/@containedEdges.0"/>
-    <contextElements href="#//@tripleMatches.5/@containedEdges.1"/>
-    <contextElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
-    <contextElements href="#//@tripleMatches.5/@containedEdges.2"/>
-    <contextElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
-    <contextElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
-    <contextElements href="../../../../sourceModel#/"/>
-    <contextElements href="../../../../sourceModel#pg1"/>
-    <contextElements href="#//@tripleMatches.5/@containedEdges.3"/>
-    <contextElements href="#//@tripleMatches.5/@containedEdges.4"/>
-    <nodeMappings nodeName="prevNode">
-      <node href="../../../../sourceModel#pg1"/>
-    </nodeMappings>
-    <nodeMappings nodeName="process">
-      <node href="../../../../sourceModel#/"/>
-    </nodeMappings>
-    <nodeMappings nodeName="useCase">
-      <node href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
-    </nodeMappings>
-    <nodeMappings nodeName="p2uc">
-      <node href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.0"/>
-    </nodeMappings>
-    <nodeMappings nodeName="task">
-      <node href="../../../../sourceModel#t2"/>
-    </nodeMappings>
-    <nodeMappings nodeName="pgw2ps">
-      <node href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
-    </nodeMappings>
-    <nodeMappings nodeName="t2s">
-      <node href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.5"/>
-    </nodeMappings>
-    <nodeMappings nodeName="step">
-      <node href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t2"/>
-    </nodeMappings>
-    <nodeMappings nodeName="pstep">
-      <node href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
-    </nodeMappings>
-    <nodeMappings nodeName="flow">
-      <node href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
-    </nodeMappings>
-    <nodeMappings nodeName="sf1">
-      <node href="../../../../sourceModel#sf3"/>
-    </nodeMappings>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
-      <src href="../../../../sourceModel#/"/>
-      <trg href="../../../../sourceModel#pg1"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
-      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.0"/>
-      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
-      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
-      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
-      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
-      <trg href="../../../../sourceModel#pg1"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
-      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.0"/>
-      <trg href="../../../../sourceModel#/"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
-      <src href="../../../../sourceModel#sf3"/>
-      <trg href="../../../../sourceModel#pg1"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
-      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.5"/>
-      <trg href="../../../../sourceModel#t2"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
-      <src href="../../../../sourceModel#sf3"/>
-      <trg href="../../../../sourceModel#t2"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
-      <src href="../../../../sourceModel#pg1"/>
-      <trg href="../../../../sourceModel#sf3"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
-      <src href="../../../../sourceModel#/"/>
-      <trg href="../../../../sourceModel#t2"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
-      <src href="../../../../sourceModel#t2"/>
-      <trg href="../../../../sourceModel#sf3"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
-      <src href="../../../../sourceModel#/"/>
-      <trg href="../../../../sourceModel#sf3"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
-      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
-      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
-      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
-      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t2"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="invokedFlows">
-      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
-      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
-      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.5"/>
-      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t2"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
-      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
-      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
-      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
-      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t2"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="invokedFlows">
-      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
-      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
-    </containedEdges>
-    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
-    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#/"/>
     <targetElements href="#//@tripleMatches.5/@containedEdges.16"/>
-    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t2"/>
-    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
     <targetElements href="#//@tripleMatches.5/@containedEdges.17"/>
+    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf2"/>
+    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t1"/>
     <targetElements href="#//@tripleMatches.5/@containedEdges.18"/>
-    <correspondenceElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.0"/>
-    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.1"/>
-    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.2"/>
+    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
+    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.0"/>
     <correspondenceElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
-    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.6"/>
-    <correspondenceElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.5"/>
-    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.4"/>
+    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.2"/>
     <correspondenceElements href="#//@tripleMatches.5/@containedEdges.3"/>
-    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.15"/>
-    <createdElements href="#//@tripleMatches.5/@containedEdges.5"/>
-    <createdElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t2"/>
-    <createdElements href="#//@tripleMatches.5/@containedEdges.6"/>
-    <createdElements href="#//@tripleMatches.5/@containedEdges.7"/>
-    <createdElements href="#//@tripleMatches.5/@containedEdges.8"/>
-    <createdElements href="#//@tripleMatches.5/@containedEdges.9"/>
+    <correspondenceElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.5"/>
+    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.9"/>
     <createdElements href="#//@tripleMatches.5/@containedEdges.10"/>
+    <createdElements href="../../../../sourceModel#//@flowElements.10"/>
     <createdElements href="#//@tripleMatches.5/@containedEdges.11"/>
     <createdElements href="#//@tripleMatches.5/@containedEdges.12"/>
-    <createdElements href="../../../../sourceModel#t2"/>
-    <createdElements href="../../../../sourceModel#sf3"/>
-    <createdElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
-    <createdElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.5"/>
     <createdElements href="#//@tripleMatches.5/@containedEdges.13"/>
     <createdElements href="#//@tripleMatches.5/@containedEdges.14"/>
     <createdElements href="#//@tripleMatches.5/@containedEdges.15"/>
   </tripleMatches>
-  <tripleMatches ruleName="LastStepInPFlow" number="36">
-    <sourceElements href="../../../../sourceModel#//@flowElements.3"/>
+  <tripleMatches ruleName="LastStepInPFlow" number="68">
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.10"/>
     <sourceElements href="#//@tripleMatches.6/@containedEdges.11"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.12"/>
+    <sourceElements href="../../../../sourceModel#//@flowElements.11"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.13"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.15"/>
     <sourceElements href="../../../../sourceModel#/"/>
     <sourceElements href="../../../../sourceModel#pg1"/>
-    <sourceElements href="#//@tripleMatches.6/@containedEdges.0"/>
-    <sourceElements href="#//@tripleMatches.6/@containedEdges.3"/>
-    <sourceElements href="#//@tripleMatches.6/@containedEdges.5"/>
-    <sourceElements href="#//@tripleMatches.6/@containedEdges.10"/>
     <sourceElements href="#//@tripleMatches.6/@containedEdges.6"/>
-    <sourceElements href="../../../../sourceModel#//@flowElements.11"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.7"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.8"/>
+    <sourceElements href="../../../../sourceModel#//@flowElements.3"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.9"/>
     <sourceElements href="../../../../sourceModel#t2"/>
-    <sourceElements href="#//@tripleMatches.6/@containedEdges.12"/>
-    <sourceElements href="#//@tripleMatches.6/@containedEdges.13"/>
-    <sourceElements href="#//@tripleMatches.6/@containedEdges.14"/>
-    <contextElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
-    <contextElements href="../../../../sourceModel#//@flowElements.3"/>
-    <contextElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
-    <contextElements href="../../../../sourceModel#/"/>
-    <contextElements href="../../../../sourceModel#pg1"/>
     <contextElements href="#//@tripleMatches.6/@containedEdges.0"/>
-    <contextElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t2"/>
     <contextElements href="#//@tripleMatches.6/@containedEdges.1"/>
+    <contextElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.4"/>
+    <contextElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t2"/>
+    <contextElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
     <contextElements href="#//@tripleMatches.6/@containedEdges.2"/>
     <contextElements href="#//@tripleMatches.6/@containedEdges.3"/>
-    <contextElements href="#//@tripleMatches.6/@containedEdges.4"/>
-    <contextElements href="#//@tripleMatches.6/@containedEdges.5"/>
-    <contextElements href="#//@tripleMatches.6/@containedEdges.6"/>
-    <contextElements href="../../../../sourceModel#t2"/>
     <contextElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
-    <contextElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.5"/>
+    <contextElements href="#//@tripleMatches.6/@containedEdges.4"/>
+    <contextElements href="../../../../sourceModel#/"/>
+    <contextElements href="#//@tripleMatches.6/@containedEdges.5"/>
+    <contextElements href="../../../../sourceModel#pg1"/>
+    <contextElements href="#//@tripleMatches.6/@containedEdges.6"/>
     <contextElements href="#//@tripleMatches.6/@containedEdges.7"/>
     <contextElements href="#//@tripleMatches.6/@containedEdges.8"/>
+    <contextElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
+    <contextElements href="../../../../sourceModel#//@flowElements.3"/>
     <contextElements href="#//@tripleMatches.6/@containedEdges.9"/>
+    <contextElements href="../../../../sourceModel#t2"/>
     <nodeMappings nodeName="gw">
       <node href="../../../../sourceModel#pg1"/>
     </nodeMappings>
@@ -917,27 +967,35 @@
       <node href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
     </nodeMappings>
     <nodeMappings nodeName="n2s">
-      <node href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.5"/>
+      <node href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.4"/>
     </nodeMappings>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
-      <src href="../../../../sourceModel#/"/>
-      <trg href="../../../../sourceModel#//@flowElements.3"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
-      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.5"/>
-      <trg href="../../../../sourceModel#t2"/>
-    </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
       <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
       <trg href="../../../../sourceModel#pg1"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
-      <src href="../../../../sourceModel#/"/>
-      <trg href="../../../../sourceModel#pg1"/>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.4"/>
+      <trg href="../../../../sourceModel#t2"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
       <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
       <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.4"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="invokedFlows">
+      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../../../sourceModel#/"/>
+      <trg href="../../../../sourceModel#pg1"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
       <src href="../../../../sourceModel#/"/>
@@ -947,21 +1005,17 @@
       <src href="../../../../sourceModel#pg1"/>
       <trg href="../../../../sourceModel#//@flowElements.3"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
-      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
-      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t2"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="invokedFlows">
-      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
-      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
-      <src href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.5"/>
-      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t2"/>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../../../../sourceModel#/"/>
+      <trg href="../../../../sourceModel#//@flowElements.3"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
       <src href="../../../../sourceModel#//@flowElements.3"/>
       <trg href="../../../../sourceModel#//@flowElements.11"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../../../../sourceModel#//@flowElements.11"/>
+      <trg href="../../../../sourceModel#//@flowElements.3"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
       <src href="../../../../sourceModel#//@flowElements.11"/>
@@ -971,19 +1025,19 @@
       <src href="../../../../sourceModel#/"/>
       <trg href="../../../../sourceModel#//@flowElements.11"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
-      <src href="../../../../sourceModel#t2"/>
-      <trg href="../../../../sourceModel#//@flowElements.11"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
-      <src href="../../../../sourceModel#//@flowElements.11"/>
-      <trg href="../../../../sourceModel#//@flowElements.3"/>
-    </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__last">
       <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
       <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t2"/>
     </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../../../../sourceModel#t2"/>
+      <trg href="../../../../sourceModel#//@flowElements.11"/>
+    </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
+      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__last">
       <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
       <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t2"/>
     </containedEdges>
@@ -991,26 +1045,22 @@
       <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
       <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__last">
-      <src href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
-      <trg href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t2"/>
-    </containedEdges>
-    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
     <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#t2"/>
-    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
     <targetElements href="#//@tripleMatches.6/@containedEdges.16"/>
     <targetElements href="#//@tripleMatches.6/@containedEdges.17"/>
+    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#sf3"/>
+    <targetElements href="../../in/Bpmn2UseCase/ParallelSplitSynchronization_BWD.xmi#pg1"/>
     <targetElements href="#//@tripleMatches.6/@containedEdges.18"/>
-    <correspondenceElements href="#//@tripleMatches.6/@containedEdges.4"/>
-    <correspondenceElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
+    <correspondenceElements href="#//@tripleMatches.6/@containedEdges.0"/>
     <correspondenceElements href="#//@tripleMatches.6/@containedEdges.1"/>
-    <correspondenceElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.5"/>
+    <correspondenceElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.4"/>
+    <correspondenceElements href="ParallelSplitSynchronization_BWD_corr.xmi#//@correspondences.3"/>
     <correspondenceElements href="#//@tripleMatches.6/@containedEdges.2"/>
-    <correspondenceElements href="#//@tripleMatches.6/@containedEdges.9"/>
+    <correspondenceElements href="#//@tripleMatches.6/@containedEdges.3"/>
     <createdElements href="#//@tripleMatches.6/@containedEdges.10"/>
-    <createdElements href="../../../../sourceModel#//@flowElements.11"/>
     <createdElements href="#//@tripleMatches.6/@containedEdges.11"/>
     <createdElements href="#//@tripleMatches.6/@containedEdges.12"/>
+    <createdElements href="../../../../sourceModel#//@flowElements.11"/>
     <createdElements href="#//@tripleMatches.6/@containedEdges.13"/>
     <createdElements href="#//@tripleMatches.6/@containedEdges.14"/>
     <createdElements href="#//@tripleMatches.6/@containedEdges.15"/>

@@ -65,6 +65,26 @@ public class Batch extends IntegratorTest {
 		integrate("Recursive1Parallel_BWD");
 	}
 
+	@Test
+	public void choiceMergeFwd() {
+		integrate("ChoiceMerge_FWD");
+	}
+
+	@Test
+	public void choiceMergeBwd() {
+		integrate("ChoiceMerge_BWD");
+	}
+
+	@Test
+	public void sequenceInAlternativeFwd() {
+		integrate("SequenceInAlternative_FWD");
+	}
+
+	@Test
+	public void sequenceInAlternativeBwd() {
+		integrate("SequenceInAlternative_BWD");
+	}
+
 	@Override
 	protected void setInputModel(ApplicationTypes direction, String testCaseName) {
 		super.setInputModel(direction, testCaseName);

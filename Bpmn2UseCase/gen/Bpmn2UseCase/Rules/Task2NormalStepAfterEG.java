@@ -53,8 +53,8 @@ public interface Task2NormalStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	boolean isAppropriate_FWD(Match match, ExclusiveGateway prevNode, SequenceFlow def, SequenceFlow sf1,
-			SimpleBPMN.Process process, Task task);
+	boolean isAppropriate_FWD(Match match, ExclusiveGateway prevNode, SequenceFlow sf1, SimpleBPMN.Process process,
+			Task task);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -78,7 +78,7 @@ public interface Task2NormalStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjectsToMatch_FWD(Match match, ExclusiveGateway prevNode, SequenceFlow def, SequenceFlow sf1,
+	void registerObjectsToMatch_FWD(Match match, ExclusiveGateway prevNode, SequenceFlow sf1,
 			SimpleBPMN.Process process, Task task);
 
 	/**
@@ -87,8 +87,8 @@ public interface Task2NormalStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isAppropriate_solveCsp_FWD(Match match, ExclusiveGateway prevNode, SequenceFlow def, SequenceFlow sf1,
-			SimpleBPMN.Process process, Task task);
+	CSP isAppropriate_solveCsp_FWD(Match match, ExclusiveGateway prevNode, SequenceFlow sf1, SimpleBPMN.Process process,
+			Task task);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -105,8 +105,7 @@ public interface Task2NormalStepAfterEG extends EObject, AbstractRule {
 	 * @generated
 	 */
 	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, ExclusiveGateway prevNode, ChoiceStep cStep,
-			GW2S eg2cs, SequenceFlow def, SequenceFlow sf1, SimpleBPMN.Process process, UseCase useCase, P2UC p2uc,
-			Flow flow, Task task);
+			GW2S eg2cs, SequenceFlow sf1, SimpleBPMN.Process process, UseCase useCase, P2UC p2uc, Flow flow, Task task);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -122,9 +121,9 @@ public interface Task2NormalStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_FWD(PerformRuleResult ruleresult, EObject prevNode, EObject cStep, EObject eg2cs, EObject def,
-			EObject sf1, EObject step, EObject altFlow, EObject process, EObject useCase, EObject p2uc, EObject alt,
-			EObject flow, EObject t2s, EObject task);
+	void registerObjects_FWD(PerformRuleResult ruleresult, EObject prevNode, EObject cStep, EObject eg2cs, EObject sf1,
+			EObject step, EObject altFlow, EObject process, EObject useCase, EObject p2uc, EObject alt, EObject flow,
+			EObject t2s, EObject task);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -192,8 +191,8 @@ public interface Task2NormalStepAfterEG extends EObject, AbstractRule {
 	 * @generated
 	 */
 	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, ExclusiveGateway prevNode, ChoiceStep cStep,
-			GW2S eg2cs, SequenceFlow def, NormalStep step, AlternativeFlow altFlow, SimpleBPMN.Process process,
-			UseCase useCase, P2UC p2uc, StepAlternative alt, Flow flow);
+			GW2S eg2cs, NormalStep step, AlternativeFlow altFlow, SimpleBPMN.Process process, UseCase useCase,
+			P2UC p2uc, StepAlternative alt, Flow flow);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -209,9 +208,9 @@ public interface Task2NormalStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_BWD(PerformRuleResult ruleresult, EObject prevNode, EObject cStep, EObject eg2cs, EObject def,
-			EObject sf1, EObject step, EObject altFlow, EObject process, EObject useCase, EObject p2uc, EObject alt,
-			EObject flow, EObject t2s, EObject task);
+	void registerObjects_BWD(PerformRuleResult ruleresult, EObject prevNode, EObject cStep, EObject eg2cs, EObject sf1,
+			EObject step, EObject altFlow, EObject process, EObject useCase, EObject p2uc, EObject alt, EObject flow,
+			EObject t2s, EObject task);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -227,7 +226,7 @@ public interface Task2NormalStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_238(EMoflonEdge _edge_sourceRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_385(EMoflonEdge _edge_sourceRef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -235,7 +234,7 @@ public interface Task2NormalStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_239(EMoflonEdge _edge_outgoing);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_386(EMoflonEdge _edge_outgoing);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -243,7 +242,7 @@ public interface Task2NormalStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_73(EMoflonEdge _edge_stepAlternatives);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_120(EMoflonEdge _edge_stepAlternatives);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -251,7 +250,7 @@ public interface Task2NormalStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_74(EMoflonEdge _edge_steps);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_121(EMoflonEdge _edge_steps);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -259,7 +258,7 @@ public interface Task2NormalStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_240(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_387(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -267,7 +266,7 @@ public interface Task2NormalStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_75(EMoflonEdge _edge_flows);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_122(EMoflonEdge _edge_flows);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -275,7 +274,7 @@ public interface Task2NormalStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_76(EMoflonEdge _edge_ref);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_123(EMoflonEdge _edge_ref);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -283,7 +282,7 @@ public interface Task2NormalStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_241(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_388(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -291,7 +290,7 @@ public interface Task2NormalStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_242(EMoflonEdge _edge_targetRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_389(EMoflonEdge _edge_targetRef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -299,7 +298,7 @@ public interface Task2NormalStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_243(EMoflonEdge _edge_incoming);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_390(EMoflonEdge _edge_incoming);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -332,9 +331,9 @@ public interface Task2NormalStepAfterEG extends EObject, AbstractRule {
 	 * @generated
 	 */
 	CSP isApplicable_solveCsp_CC(IsApplicableMatchCC isApplicableMatch, ExclusiveGateway prevNode, ChoiceStep cStep,
-			GW2S eg2cs, SequenceFlow def, SequenceFlow sf1, NormalStep step, AlternativeFlow altFlow,
-			SimpleBPMN.Process process, UseCase useCase, P2UC p2uc, StepAlternative alt, Flow flow, Task task,
-			Match sourceMatch, Match targetMatch);
+			GW2S eg2cs, SequenceFlow sf1, NormalStep step, AlternativeFlow altFlow, SimpleBPMN.Process process,
+			UseCase useCase, P2UC p2uc, StepAlternative alt, Flow flow, Task task, Match sourceMatch,
+			Match targetMatch);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -367,7 +366,7 @@ public interface Task2NormalStepAfterEG extends EObject, AbstractRule {
 	 * @generated
 	 */
 	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, ExclusiveGateway prevNode, ChoiceStep cStep,
-			GW2S eg2cs, SequenceFlow def, SimpleBPMN.Process process, UseCase useCase, P2UC p2uc, Flow flow,
+			GW2S eg2cs, SimpleBPMN.Process process, UseCase useCase, P2UC p2uc, Flow flow,
 			ModelgeneratorRuleResult ruleResult);
 
 	/**

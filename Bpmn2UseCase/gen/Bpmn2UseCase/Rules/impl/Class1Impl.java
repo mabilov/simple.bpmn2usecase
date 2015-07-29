@@ -735,7 +735,7 @@ public class Class1Impl extends AbstractRuleImpl implements Class1 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_77(EMoflonEdge _edge___lastInDef) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_124(EMoflonEdge _edge___lastInDef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Class1Impl.pattern_Class1_20_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -785,7 +785,7 @@ public class Class1Impl extends AbstractRuleImpl implements Class1 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_244(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_391(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Class1Impl.pattern_Class1_21_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -837,7 +837,7 @@ public class Class1Impl extends AbstractRuleImpl implements Class1 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_245(EMoflonEdge _edge_sourceRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_392(EMoflonEdge _edge_sourceRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Class1Impl.pattern_Class1_22_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -889,7 +889,7 @@ public class Class1Impl extends AbstractRuleImpl implements Class1 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_246(EMoflonEdge _edge_outgoing) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_393(EMoflonEdge _edge_outgoing) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Class1Impl.pattern_Class1_23_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -941,7 +941,7 @@ public class Class1Impl extends AbstractRuleImpl implements Class1 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_247(EMoflonEdge _edge_targetRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_394(EMoflonEdge _edge_targetRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Class1Impl.pattern_Class1_24_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -993,7 +993,7 @@ public class Class1Impl extends AbstractRuleImpl implements Class1 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_248(EMoflonEdge _edge_incoming) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_395(EMoflonEdge _edge_incoming) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Class1Impl.pattern_Class1_25_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -1540,18 +1540,18 @@ public class Class1Impl extends AbstractRuleImpl implements Class1 {
 			return null;
 		case RulesPackage.CLASS1___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.CLASS1___IS_APPROPRIATE_BWD_EMOFLON_EDGE_77__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_77((EMoflonEdge) arguments.get(0));
-		case RulesPackage.CLASS1___IS_APPROPRIATE_FWD_EMOFLON_EDGE_244__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_244((EMoflonEdge) arguments.get(0));
-		case RulesPackage.CLASS1___IS_APPROPRIATE_FWD_EMOFLON_EDGE_245__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_245((EMoflonEdge) arguments.get(0));
-		case RulesPackage.CLASS1___IS_APPROPRIATE_FWD_EMOFLON_EDGE_246__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_246((EMoflonEdge) arguments.get(0));
-		case RulesPackage.CLASS1___IS_APPROPRIATE_FWD_EMOFLON_EDGE_247__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_247((EMoflonEdge) arguments.get(0));
-		case RulesPackage.CLASS1___IS_APPROPRIATE_FWD_EMOFLON_EDGE_248__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_248((EMoflonEdge) arguments.get(0));
+		case RulesPackage.CLASS1___IS_APPROPRIATE_BWD_EMOFLON_EDGE_124__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_124((EMoflonEdge) arguments.get(0));
+		case RulesPackage.CLASS1___IS_APPROPRIATE_FWD_EMOFLON_EDGE_391__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_391((EMoflonEdge) arguments.get(0));
+		case RulesPackage.CLASS1___IS_APPROPRIATE_FWD_EMOFLON_EDGE_392__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_392((EMoflonEdge) arguments.get(0));
+		case RulesPackage.CLASS1___IS_APPROPRIATE_FWD_EMOFLON_EDGE_393__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_393((EMoflonEdge) arguments.get(0));
+		case RulesPackage.CLASS1___IS_APPROPRIATE_FWD_EMOFLON_EDGE_394__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_394((EMoflonEdge) arguments.get(0));
+		case RulesPackage.CLASS1___IS_APPROPRIATE_FWD_EMOFLON_EDGE_395__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_395((EMoflonEdge) arguments.get(0));
 		case RulesPackage.CLASS1___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.CLASS1___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
@@ -3258,11 +3258,11 @@ public class Class1Impl extends AbstractRuleImpl implements Class1 {
 		if (!gw.equals(node)) {
 			if (!gcw.equals(gw)) {
 				if (!gcw.equals(node)) {
-					for (ExclusiveGateway __DEC_sf_default_356775 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ExclusiveGateway __DEC_sf_default_379287 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
-						if (!gw.equals(__DEC_sf_default_356775)) {
-							if (!gcw.equals(__DEC_sf_default_356775)) {
-								if (!node.equals(__DEC_sf_default_356775)) {
+						if (!gw.equals(__DEC_sf_default_379287)) {
+							if (!gcw.equals(__DEC_sf_default_379287)) {
+								if (!node.equals(__DEC_sf_default_379287)) {
 									return new Object[] { sf, gw, gcw, node };
 								}
 							}
@@ -3275,9 +3275,9 @@ public class Class1Impl extends AbstractRuleImpl implements Class1 {
 	}
 
 	public static final Object[] pattern_Class1_21_2_black_nac_1BB(SequenceFlow sf, SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf_flowElements_209437 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf_flowElements_103351 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_209437)) {
+			if (!process.equals(__DEC_sf_flowElements_103351)) {
 				return new Object[] { sf, process };
 			}
 		}
@@ -3433,11 +3433,11 @@ public class Class1Impl extends AbstractRuleImpl implements Class1 {
 		if (!gw.equals(node)) {
 			if (!gcw.equals(gw)) {
 				if (!gcw.equals(node)) {
-					for (ExclusiveGateway __DEC_sf_default_622323 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ExclusiveGateway __DEC_sf_default_339314 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
-						if (!gw.equals(__DEC_sf_default_622323)) {
-							if (!gcw.equals(__DEC_sf_default_622323)) {
-								if (!node.equals(__DEC_sf_default_622323)) {
+						if (!gw.equals(__DEC_sf_default_339314)) {
+							if (!gcw.equals(__DEC_sf_default_339314)) {
+								if (!node.equals(__DEC_sf_default_339314)) {
 									return new Object[] { sf, gw, gcw, node };
 								}
 							}
@@ -3450,9 +3450,9 @@ public class Class1Impl extends AbstractRuleImpl implements Class1 {
 	}
 
 	public static final Object[] pattern_Class1_22_2_black_nac_1BB(SequenceFlow sf, SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf_flowElements_545378 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf_flowElements_812422 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_545378)) {
+			if (!process.equals(__DEC_sf_flowElements_812422)) {
 				return new Object[] { sf, process };
 			}
 		}
@@ -3607,11 +3607,11 @@ public class Class1Impl extends AbstractRuleImpl implements Class1 {
 		if (!gw.equals(node)) {
 			if (!gcw.equals(gw)) {
 				if (!gcw.equals(node)) {
-					for (ExclusiveGateway __DEC_sf_default_497941 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ExclusiveGateway __DEC_sf_default_525651 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
-						if (!gw.equals(__DEC_sf_default_497941)) {
-							if (!gcw.equals(__DEC_sf_default_497941)) {
-								if (!node.equals(__DEC_sf_default_497941)) {
+						if (!gw.equals(__DEC_sf_default_525651)) {
+							if (!gcw.equals(__DEC_sf_default_525651)) {
+								if (!node.equals(__DEC_sf_default_525651)) {
 									return new Object[] { sf, gw, gcw, node };
 								}
 							}
@@ -3624,9 +3624,9 @@ public class Class1Impl extends AbstractRuleImpl implements Class1 {
 	}
 
 	public static final Object[] pattern_Class1_23_2_black_nac_1BB(SequenceFlow sf, SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf_flowElements_493149 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf_flowElements_939211 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_493149)) {
+			if (!process.equals(__DEC_sf_flowElements_939211)) {
 				return new Object[] { sf, process };
 			}
 		}
@@ -3782,11 +3782,11 @@ public class Class1Impl extends AbstractRuleImpl implements Class1 {
 		if (!gw.equals(node)) {
 			if (!gcw.equals(gw)) {
 				if (!gcw.equals(node)) {
-					for (ExclusiveGateway __DEC_sf_default_144860 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ExclusiveGateway __DEC_sf_default_143545 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
-						if (!gw.equals(__DEC_sf_default_144860)) {
-							if (!gcw.equals(__DEC_sf_default_144860)) {
-								if (!node.equals(__DEC_sf_default_144860)) {
+						if (!gw.equals(__DEC_sf_default_143545)) {
+							if (!gcw.equals(__DEC_sf_default_143545)) {
+								if (!node.equals(__DEC_sf_default_143545)) {
 									return new Object[] { sf, gw, gcw, node };
 								}
 							}
@@ -3799,9 +3799,9 @@ public class Class1Impl extends AbstractRuleImpl implements Class1 {
 	}
 
 	public static final Object[] pattern_Class1_24_2_black_nac_1BB(SequenceFlow sf, SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf_flowElements_963226 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf_flowElements_937078 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_963226)) {
+			if (!process.equals(__DEC_sf_flowElements_937078)) {
 				return new Object[] { sf, process };
 			}
 		}
@@ -3955,11 +3955,11 @@ public class Class1Impl extends AbstractRuleImpl implements Class1 {
 		if (!gw.equals(node)) {
 			if (!gcw.equals(gw)) {
 				if (!gcw.equals(node)) {
-					for (ExclusiveGateway __DEC_sf_default_536380 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ExclusiveGateway __DEC_sf_default_14515 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
-						if (!gw.equals(__DEC_sf_default_536380)) {
-							if (!gcw.equals(__DEC_sf_default_536380)) {
-								if (!node.equals(__DEC_sf_default_536380)) {
+						if (!gw.equals(__DEC_sf_default_14515)) {
+							if (!gcw.equals(__DEC_sf_default_14515)) {
+								if (!node.equals(__DEC_sf_default_14515)) {
 									return new Object[] { sf, gw, gcw, node };
 								}
 							}
@@ -3972,9 +3972,9 @@ public class Class1Impl extends AbstractRuleImpl implements Class1 {
 	}
 
 	public static final Object[] pattern_Class1_25_2_black_nac_1BB(SequenceFlow sf, SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf_flowElements_679961 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf_flowElements_132668 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_679961)) {
+			if (!process.equals(__DEC_sf_flowElements_132668)) {
 				return new Object[] { sf, process };
 			}
 		}

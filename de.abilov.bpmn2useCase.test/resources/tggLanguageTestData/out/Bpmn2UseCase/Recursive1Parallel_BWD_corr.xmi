@@ -17,11 +17,7 @@
     <target xsi:type="SimpleUseCase:ParallelStep" href="../../in/Bpmn2UseCase/Recursive1Parallel_BWD.xmi#pg1"/>
   </correspondences>
   <correspondences xsi:type="Bpmn2UseCase:FN2S">
-    <source xsi:type="SimpleBPMN:Task" href="../../../../sourceModel#t3"/>
-    <target xsi:type="SimpleUseCase:NormalStep" href="../../in/Bpmn2UseCase/Recursive1Parallel_BWD.xmi#t3"/>
-  </correspondences>
-  <correspondences xsi:type="Bpmn2UseCase:FN2S">
-    <source xsi:type="SimpleBPMN:ParallelGateway" href="../../../../sourceModel#//@flowElements.11"/>
+    <source xsi:type="SimpleBPMN:ParallelGateway" href="../../../../sourceModel#//@flowElements.6"/>
     <target xsi:type="SimpleUseCase:ParallelStep" href="../../in/Bpmn2UseCase/Recursive1Parallel_BWD.xmi#pg2"/>
   </correspondences>
   <correspondences xsi:type="Bpmn2UseCase:GW2S">
@@ -29,12 +25,16 @@
     <target xsi:type="SimpleUseCase:ParallelStep" href="../../in/Bpmn2UseCase/Recursive1Parallel_BWD.xmi#pg2"/>
   </correspondences>
   <correspondences xsi:type="Bpmn2UseCase:FN2S">
+    <source xsi:type="SimpleBPMN:Task" href="../../../../sourceModel#t1"/>
+    <target xsi:type="SimpleUseCase:NormalStep" href="../../in/Bpmn2UseCase/Recursive1Parallel_BWD.xmi#t1"/>
+  </correspondences>
+  <correspondences xsi:type="Bpmn2UseCase:FN2S">
     <source xsi:type="SimpleBPMN:Task" href="../../../../sourceModel#t2"/>
     <target xsi:type="SimpleUseCase:NormalStep" href="../../in/Bpmn2UseCase/Recursive1Parallel_BWD.xmi#t2"/>
   </correspondences>
   <correspondences xsi:type="Bpmn2UseCase:FN2S">
-    <source xsi:type="SimpleBPMN:Task" href="../../../../sourceModel#t1"/>
-    <target xsi:type="SimpleUseCase:NormalStep" href="../../in/Bpmn2UseCase/Recursive1Parallel_BWD.xmi#t1"/>
+    <source xsi:type="SimpleBPMN:Task" href="../../../../sourceModel#t3"/>
+    <target xsi:type="SimpleUseCase:NormalStep" href="../../in/Bpmn2UseCase/Recursive1Parallel_BWD.xmi#t3"/>
   </correspondences>
   <source href="../../../../sourceModel#/"/>
   <target href="../../in/Bpmn2UseCase/Recursive1Parallel_BWD.xmi#/"/>

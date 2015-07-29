@@ -53,8 +53,8 @@ public interface PG2ParallelStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	boolean isAppropriate_FWD(Match match, SimpleBPMN.Process process, ExclusiveGateway prevNode, SequenceFlow def,
-			SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw);
+	boolean isAppropriate_FWD(Match match, SimpleBPMN.Process process, ExclusiveGateway prevNode, SequenceFlow sf1,
+			ParallelGateway pgw, ParallelGateway pcgw);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -79,7 +79,7 @@ public interface PG2ParallelStepAfterEG extends EObject, AbstractRule {
 	 * @generated
 	 */
 	void registerObjectsToMatch_FWD(Match match, SimpleBPMN.Process process, ExclusiveGateway prevNode,
-			SequenceFlow def, SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw);
+			SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,8 +87,8 @@ public interface PG2ParallelStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isAppropriate_solveCsp_FWD(Match match, SimpleBPMN.Process process, ExclusiveGateway prevNode, SequenceFlow def,
-			SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw);
+	CSP isAppropriate_solveCsp_FWD(Match match, SimpleBPMN.Process process, ExclusiveGateway prevNode, SequenceFlow sf1,
+			ParallelGateway pgw, ParallelGateway pcgw);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -105,8 +105,8 @@ public interface PG2ParallelStepAfterEG extends EObject, AbstractRule {
 	 * @generated
 	 */
 	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, SimpleBPMN.Process process, UseCase useCase,
-			P2UC p2uc, Flow flow, ExclusiveGateway prevNode, ChoiceStep cStep, GW2S eg2cs, SequenceFlow def,
-			SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw);
+			P2UC p2uc, Flow flow, ExclusiveGateway prevNode, ChoiceStep cStep, GW2S eg2cs, SequenceFlow sf1,
+			ParallelGateway pgw, ParallelGateway pcgw);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -123,8 +123,8 @@ public interface PG2ParallelStepAfterEG extends EObject, AbstractRule {
 	 * @generated
 	 */
 	void registerObjects_FWD(PerformRuleResult ruleresult, EObject alt, EObject process, EObject useCase, EObject p2uc,
-			EObject flow, EObject prevNode, EObject cStep, EObject eg2cs, EObject def, EObject sf1, EObject altFlow,
-			EObject step, EObject pgw, EObject pcgwToStep, EObject pgwToStep, EObject pcgw);
+			EObject flow, EObject prevNode, EObject cStep, EObject eg2cs, EObject sf1, EObject altFlow, EObject step,
+			EObject pgw, EObject pcgwToStep, EObject pgwToStep, EObject pcgw);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -193,7 +193,7 @@ public interface PG2ParallelStepAfterEG extends EObject, AbstractRule {
 	 */
 	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, StepAlternative alt, SimpleBPMN.Process process,
 			UseCase useCase, P2UC p2uc, Flow flow, ExclusiveGateway prevNode, ChoiceStep cStep, GW2S eg2cs,
-			SequenceFlow def, AlternativeFlow altFlow, ParallelStep step);
+			AlternativeFlow altFlow, ParallelStep step);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -210,8 +210,8 @@ public interface PG2ParallelStepAfterEG extends EObject, AbstractRule {
 	 * @generated
 	 */
 	void registerObjects_BWD(PerformRuleResult ruleresult, EObject alt, EObject process, EObject useCase, EObject p2uc,
-			EObject flow, EObject prevNode, EObject cStep, EObject eg2cs, EObject def, EObject sf1, EObject altFlow,
-			EObject step, EObject pgw, EObject pcgwToStep, EObject pgwToStep, EObject pcgw);
+			EObject flow, EObject prevNode, EObject cStep, EObject eg2cs, EObject sf1, EObject altFlow, EObject step,
+			EObject pgw, EObject pcgwToStep, EObject pgwToStep, EObject pcgw);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -227,7 +227,7 @@ public interface PG2ParallelStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_82(EMoflonEdge _edge_ref);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_129(EMoflonEdge _edge_ref);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -235,7 +235,7 @@ public interface PG2ParallelStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_263(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_410(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -243,7 +243,7 @@ public interface PG2ParallelStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_83(EMoflonEdge _edge_flows);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_130(EMoflonEdge _edge_flows);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -251,7 +251,7 @@ public interface PG2ParallelStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_264(EMoflonEdge _edge_sourceRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_411(EMoflonEdge _edge_sourceRef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -259,7 +259,7 @@ public interface PG2ParallelStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_265(EMoflonEdge _edge_outgoing);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_412(EMoflonEdge _edge_outgoing);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -267,7 +267,7 @@ public interface PG2ParallelStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_84(EMoflonEdge _edge_stepAlternatives);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_131(EMoflonEdge _edge_stepAlternatives);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -275,7 +275,7 @@ public interface PG2ParallelStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_85(EMoflonEdge _edge_steps);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_132(EMoflonEdge _edge_steps);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -283,7 +283,7 @@ public interface PG2ParallelStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_266(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_413(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -291,7 +291,7 @@ public interface PG2ParallelStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_267(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_414(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -299,7 +299,7 @@ public interface PG2ParallelStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_268(EMoflonEdge _edge_targetRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_415(EMoflonEdge _edge_targetRef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -307,7 +307,7 @@ public interface PG2ParallelStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_269(EMoflonEdge _edge_incoming);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_416(EMoflonEdge _edge_incoming);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -315,7 +315,7 @@ public interface PG2ParallelStepAfterEG extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_270(EMoflonEdge _edge___conv);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_417(EMoflonEdge _edge___conv);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -349,8 +349,8 @@ public interface PG2ParallelStepAfterEG extends EObject, AbstractRule {
 	 */
 	CSP isApplicable_solveCsp_CC(IsApplicableMatchCC isApplicableMatch, StepAlternative alt, SimpleBPMN.Process process,
 			UseCase useCase, P2UC p2uc, Flow flow, ExclusiveGateway prevNode, ChoiceStep cStep, GW2S eg2cs,
-			SequenceFlow def, SequenceFlow sf1, AlternativeFlow altFlow, ParallelStep step, ParallelGateway pgw,
-			ParallelGateway pcgw, Match sourceMatch, Match targetMatch);
+			SequenceFlow sf1, AlternativeFlow altFlow, ParallelStep step, ParallelGateway pgw, ParallelGateway pcgw,
+			Match sourceMatch, Match targetMatch);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -383,7 +383,7 @@ public interface PG2ParallelStepAfterEG extends EObject, AbstractRule {
 	 * @generated
 	 */
 	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, SimpleBPMN.Process process, UseCase useCase,
-			P2UC p2uc, Flow flow, ExclusiveGateway prevNode, ChoiceStep cStep, GW2S eg2cs, SequenceFlow def,
+			P2UC p2uc, Flow flow, ExclusiveGateway prevNode, ChoiceStep cStep, GW2S eg2cs,
 			ModelgeneratorRuleResult ruleResult);
 
 	/**

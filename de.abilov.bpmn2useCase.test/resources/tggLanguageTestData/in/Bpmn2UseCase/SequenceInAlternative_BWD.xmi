@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ASCII"?>
+<SimpleUseCase:UseCase
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:SimpleUseCase="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore"
+    id="SequenceInAlternative">
+  <flows xsi:type="SimpleUseCase:BasicFlow">
+    <steps xsi:type="SimpleUseCase:ChoiceStep"
+        next="t3"
+        id="eg1">
+      <stepAlternatives
+          ref="sf2"/>
+    </steps>
+    <steps xsi:type="SimpleUseCase:NormalStep"
+        next="t4"
+        id="t3"/>
+    <steps xsi:type="SimpleUseCase:NormalStep"
+        id="t4"/>
+    <finalState
+        name="ee1"/>
+  </flows>
+  <flows xsi:type="SimpleUseCase:AlternativeFlow"
+      id="sf2">
+    <steps xsi:type="SimpleUseCase:NormalStep"
+        next="t2"
+        id="t1"/>
+    <steps xsi:type="SimpleUseCase:NormalStep"
+        id="t2"/>
+  </flows>
+  <precondition
+      name="se1"/>
+</SimpleUseCase:UseCase>

@@ -867,7 +867,7 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_223(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_370(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = EG2ChoiceAfterPGImpl.pattern_EG2ChoiceAfterPG_20_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -921,7 +921,7 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_68(EMoflonEdge _edge_flows) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_115(EMoflonEdge _edge_flows) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = EG2ChoiceAfterPGImpl.pattern_EG2ChoiceAfterPG_21_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -974,7 +974,7 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_224(EMoflonEdge _edge_sourceRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_371(EMoflonEdge _edge_sourceRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = EG2ChoiceAfterPGImpl.pattern_EG2ChoiceAfterPG_22_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -1027,7 +1027,7 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_225(EMoflonEdge _edge_outgoing) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_372(EMoflonEdge _edge_outgoing) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = EG2ChoiceAfterPGImpl.pattern_EG2ChoiceAfterPG_23_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -1080,7 +1080,7 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_69(EMoflonEdge _edge_invokedFlows) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_116(EMoflonEdge _edge_invokedFlows) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = EG2ChoiceAfterPGImpl.pattern_EG2ChoiceAfterPG_24_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -1134,7 +1134,7 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_70(EMoflonEdge _edge_steps) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_117(EMoflonEdge _edge_steps) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = EG2ChoiceAfterPGImpl.pattern_EG2ChoiceAfterPG_25_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -1187,7 +1187,7 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_226(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_373(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = EG2ChoiceAfterPGImpl.pattern_EG2ChoiceAfterPG_26_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -1241,7 +1241,7 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_227(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_374(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = EG2ChoiceAfterPGImpl.pattern_EG2ChoiceAfterPG_27_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -1295,7 +1295,7 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_228(EMoflonEdge _edge_targetRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_375(EMoflonEdge _edge_targetRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = EG2ChoiceAfterPGImpl.pattern_EG2ChoiceAfterPG_28_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -1348,7 +1348,7 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_229(EMoflonEdge _edge_incoming) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_376(EMoflonEdge _edge_incoming) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = EG2ChoiceAfterPGImpl.pattern_EG2ChoiceAfterPG_29_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -1401,7 +1401,7 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_230(EMoflonEdge _edge___conv) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_377(EMoflonEdge _edge___conv) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = EG2ChoiceAfterPGImpl.pattern_EG2ChoiceAfterPG_30_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -2101,28 +2101,28 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 			return null;
 		case RulesPackage.EG2_CHOICE_AFTER_PG___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.EG2_CHOICE_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_223__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_223((EMoflonEdge) arguments.get(0));
-		case RulesPackage.EG2_CHOICE_AFTER_PG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_68__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_68((EMoflonEdge) arguments.get(0));
-		case RulesPackage.EG2_CHOICE_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_224__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_224((EMoflonEdge) arguments.get(0));
-		case RulesPackage.EG2_CHOICE_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_225__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_225((EMoflonEdge) arguments.get(0));
-		case RulesPackage.EG2_CHOICE_AFTER_PG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_69__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_69((EMoflonEdge) arguments.get(0));
-		case RulesPackage.EG2_CHOICE_AFTER_PG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_70__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_70((EMoflonEdge) arguments.get(0));
-		case RulesPackage.EG2_CHOICE_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_226__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_226((EMoflonEdge) arguments.get(0));
-		case RulesPackage.EG2_CHOICE_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_227__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_227((EMoflonEdge) arguments.get(0));
-		case RulesPackage.EG2_CHOICE_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_228__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_228((EMoflonEdge) arguments.get(0));
-		case RulesPackage.EG2_CHOICE_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_229__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_229((EMoflonEdge) arguments.get(0));
-		case RulesPackage.EG2_CHOICE_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_230__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_230((EMoflonEdge) arguments.get(0));
+		case RulesPackage.EG2_CHOICE_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_370__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_370((EMoflonEdge) arguments.get(0));
+		case RulesPackage.EG2_CHOICE_AFTER_PG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_115__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_115((EMoflonEdge) arguments.get(0));
+		case RulesPackage.EG2_CHOICE_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_371__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_371((EMoflonEdge) arguments.get(0));
+		case RulesPackage.EG2_CHOICE_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_372__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_372((EMoflonEdge) arguments.get(0));
+		case RulesPackage.EG2_CHOICE_AFTER_PG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_116__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_116((EMoflonEdge) arguments.get(0));
+		case RulesPackage.EG2_CHOICE_AFTER_PG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_117__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_117((EMoflonEdge) arguments.get(0));
+		case RulesPackage.EG2_CHOICE_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_373__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_373((EMoflonEdge) arguments.get(0));
+		case RulesPackage.EG2_CHOICE_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_374__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_374((EMoflonEdge) arguments.get(0));
+		case RulesPackage.EG2_CHOICE_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_375__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_375((EMoflonEdge) arguments.get(0));
+		case RulesPackage.EG2_CHOICE_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_376__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_376((EMoflonEdge) arguments.get(0));
+		case RulesPackage.EG2_CHOICE_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_377__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_377((EMoflonEdge) arguments.get(0));
 		case RulesPackage.EG2_CHOICE_AFTER_PG___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.EG2_CHOICE_AFTER_PG___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
@@ -4168,10 +4168,10 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_20_2_black_nac_0BBB(SequenceFlow sf1, ExclusiveGateway egw,
 			ExclusiveGateway ecgw) {
 		if (!ecgw.equals(egw)) {
-			for (ExclusiveGateway __DEC_sf1_default_698299 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (ExclusiveGateway __DEC_sf1_default_654227 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-				if (!egw.equals(__DEC_sf1_default_698299)) {
-					if (!ecgw.equals(__DEC_sf1_default_698299)) {
+				if (!egw.equals(__DEC_sf1_default_654227)) {
+					if (!ecgw.equals(__DEC_sf1_default_654227)) {
 						return new Object[] { sf1, egw, ecgw };
 					}
 				}
@@ -4182,9 +4182,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_20_2_black_nac_1BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_9965 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_778916 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_9965)) {
+			if (!process.equals(__DEC_sf1_flowElements_778916)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -4193,9 +4193,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_20_2_black_nac_2BB(ExclusiveGateway egw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_egw_flowElements_75550 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_egw_flowElements_431147 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(egw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_egw_flowElements_75550)) {
+			if (!process.equals(__DEC_egw_flowElements_431147)) {
 				return new Object[] { egw, process };
 			}
 		}
@@ -4205,11 +4205,11 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_20_2_black_nac_3BBB(ExclusiveGateway egw,
 			ParallelGateway prevNode, ExclusiveGateway ecgw) {
 		if (!ecgw.equals(egw)) {
-			for (Gateway __DEC_egw___conv_452927 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_egw___conv_722553 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(egw, Gateway.class, "__conv")) {
-				if (!egw.equals(__DEC_egw___conv_452927)) {
-					if (!prevNode.equals(__DEC_egw___conv_452927)) {
-						if (!ecgw.equals(__DEC_egw___conv_452927)) {
+				if (!egw.equals(__DEC_egw___conv_722553)) {
+					if (!prevNode.equals(__DEC_egw___conv_722553)) {
+						if (!ecgw.equals(__DEC_egw___conv_722553)) {
 							return new Object[] { egw, prevNode, ecgw };
 						}
 					}
@@ -4222,11 +4222,11 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_20_2_black_nac_4BBB(ExclusiveGateway ecgw,
 			ParallelGateway prevNode, ExclusiveGateway egw) {
 		if (!ecgw.equals(egw)) {
-			Gateway __DEC_ecgw___conv_595572 = ecgw.get__conv();
-			if (__DEC_ecgw___conv_595572 != null) {
-				if (!ecgw.equals(__DEC_ecgw___conv_595572)) {
-					if (!prevNode.equals(__DEC_ecgw___conv_595572)) {
-						if (!egw.equals(__DEC_ecgw___conv_595572)) {
+			Gateway __DEC_ecgw___conv_746135 = ecgw.get__conv();
+			if (__DEC_ecgw___conv_746135 != null) {
+				if (!ecgw.equals(__DEC_ecgw___conv_746135)) {
+					if (!prevNode.equals(__DEC_ecgw___conv_746135)) {
+						if (!egw.equals(__DEC_ecgw___conv_746135)) {
 							return new Object[] { ecgw, prevNode, egw };
 						}
 					}
@@ -4239,9 +4239,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_20_2_black_nac_5BB(ExclusiveGateway ecgw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_ecgw_flowElements_66084 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_ecgw_flowElements_489426 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(ecgw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_ecgw_flowElements_66084)) {
+			if (!process.equals(__DEC_ecgw_flowElements_489426)) {
 				return new Object[] { ecgw, process };
 			}
 		}
@@ -4251,11 +4251,11 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_20_2_black_nac_6BBB(ExclusiveGateway ecgw,
 			ParallelGateway prevNode, ExclusiveGateway egw) {
 		if (!ecgw.equals(egw)) {
-			for (Gateway __DEC_ecgw___conv_284382 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_ecgw___conv_30313 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(ecgw, Gateway.class, "__conv")) {
-				if (!ecgw.equals(__DEC_ecgw___conv_284382)) {
-					if (!prevNode.equals(__DEC_ecgw___conv_284382)) {
-						if (!egw.equals(__DEC_ecgw___conv_284382)) {
+				if (!ecgw.equals(__DEC_ecgw___conv_30313)) {
+					if (!prevNode.equals(__DEC_ecgw___conv_30313)) {
+						if (!egw.equals(__DEC_ecgw___conv_30313)) {
 							return new Object[] { ecgw, prevNode, egw };
 						}
 					}
@@ -4475,9 +4475,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	}
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_21_2_black_nac_0BB(ParallelFlow pflow, ParallelStep pstep) {
-		for (ParallelStep __DEC_pflow_invokedFlows_707070 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ParallelStep __DEC_pflow_invokedFlows_472605 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pflow, ParallelStep.class, "invokedFlows")) {
-			if (!pstep.equals(__DEC_pflow_invokedFlows_707070)) {
+			if (!pstep.equals(__DEC_pflow_invokedFlows_472605)) {
 				return new Object[] { pflow, pstep };
 			}
 		}
@@ -4485,9 +4485,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	}
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_21_2_black_nac_1BB(ParallelFlow pflow, UseCase useCase) {
-		for (UseCase __DEC_pflow_flows_573269 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (UseCase __DEC_pflow_flows_827307 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pflow, UseCase.class, "flows")) {
-			if (!useCase.equals(__DEC_pflow_flows_573269)) {
+			if (!useCase.equals(__DEC_pflow_flows_827307)) {
 				return new Object[] { pflow, useCase };
 			}
 		}
@@ -4497,10 +4497,10 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_21_2_black_nac_2BBB(ChoiceStep step, ParallelFlow pflow,
 			Flow flow) {
 		if (!flow.equals(pflow)) {
-			for (Flow __DEC_step_steps_411948 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+			for (Flow __DEC_step_steps_198112 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 					Flow.class, "steps")) {
-				if (!pflow.equals(__DEC_step_steps_411948)) {
-					if (!flow.equals(__DEC_step_steps_411948)) {
+				if (!pflow.equals(__DEC_step_steps_198112)) {
+					if (!flow.equals(__DEC_step_steps_198112)) {
 						return new Object[] { step, pflow, flow };
 					}
 				}
@@ -4510,10 +4510,10 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	}
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_21_2_black_nac_3BB(ChoiceStep step, ParallelStep pstep) {
-		for (Step __DEC_step_next_245579 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+		for (Step __DEC_step_next_468945 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 				Step.class, "next")) {
-			if (!step.equals(__DEC_step_next_245579)) {
-				if (!pstep.equals(__DEC_step_next_245579)) {
+			if (!step.equals(__DEC_step_next_468945)) {
+				if (!pstep.equals(__DEC_step_next_468945)) {
 					return new Object[] { step, pstep };
 				}
 			}
@@ -4668,10 +4668,10 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_22_2_black_nac_0BBB(SequenceFlow sf1, ExclusiveGateway egw,
 			ExclusiveGateway ecgw) {
 		if (!ecgw.equals(egw)) {
-			for (ExclusiveGateway __DEC_sf1_default_115806 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (ExclusiveGateway __DEC_sf1_default_417503 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-				if (!egw.equals(__DEC_sf1_default_115806)) {
-					if (!ecgw.equals(__DEC_sf1_default_115806)) {
+				if (!egw.equals(__DEC_sf1_default_417503)) {
+					if (!ecgw.equals(__DEC_sf1_default_417503)) {
 						return new Object[] { sf1, egw, ecgw };
 					}
 				}
@@ -4682,9 +4682,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_22_2_black_nac_1BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_761818 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_958847 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_761818)) {
+			if (!process.equals(__DEC_sf1_flowElements_958847)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -4693,9 +4693,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_22_2_black_nac_2BB(ExclusiveGateway egw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_egw_flowElements_255640 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_egw_flowElements_734452 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(egw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_egw_flowElements_255640)) {
+			if (!process.equals(__DEC_egw_flowElements_734452)) {
 				return new Object[] { egw, process };
 			}
 		}
@@ -4705,11 +4705,11 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_22_2_black_nac_3BBB(ExclusiveGateway egw,
 			ParallelGateway prevNode, ExclusiveGateway ecgw) {
 		if (!ecgw.equals(egw)) {
-			for (Gateway __DEC_egw___conv_338439 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_egw___conv_215579 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(egw, Gateway.class, "__conv")) {
-				if (!egw.equals(__DEC_egw___conv_338439)) {
-					if (!prevNode.equals(__DEC_egw___conv_338439)) {
-						if (!ecgw.equals(__DEC_egw___conv_338439)) {
+				if (!egw.equals(__DEC_egw___conv_215579)) {
+					if (!prevNode.equals(__DEC_egw___conv_215579)) {
+						if (!ecgw.equals(__DEC_egw___conv_215579)) {
 							return new Object[] { egw, prevNode, ecgw };
 						}
 					}
@@ -4722,11 +4722,11 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_22_2_black_nac_4BBB(ExclusiveGateway ecgw,
 			ParallelGateway prevNode, ExclusiveGateway egw) {
 		if (!ecgw.equals(egw)) {
-			Gateway __DEC_ecgw___conv_216385 = ecgw.get__conv();
-			if (__DEC_ecgw___conv_216385 != null) {
-				if (!ecgw.equals(__DEC_ecgw___conv_216385)) {
-					if (!prevNode.equals(__DEC_ecgw___conv_216385)) {
-						if (!egw.equals(__DEC_ecgw___conv_216385)) {
+			Gateway __DEC_ecgw___conv_404208 = ecgw.get__conv();
+			if (__DEC_ecgw___conv_404208 != null) {
+				if (!ecgw.equals(__DEC_ecgw___conv_404208)) {
+					if (!prevNode.equals(__DEC_ecgw___conv_404208)) {
+						if (!egw.equals(__DEC_ecgw___conv_404208)) {
 							return new Object[] { ecgw, prevNode, egw };
 						}
 					}
@@ -4739,9 +4739,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_22_2_black_nac_5BB(ExclusiveGateway ecgw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_ecgw_flowElements_9142 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_ecgw_flowElements_742297 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(ecgw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_ecgw_flowElements_9142)) {
+			if (!process.equals(__DEC_ecgw_flowElements_742297)) {
 				return new Object[] { ecgw, process };
 			}
 		}
@@ -4751,11 +4751,11 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_22_2_black_nac_6BBB(ExclusiveGateway ecgw,
 			ParallelGateway prevNode, ExclusiveGateway egw) {
 		if (!ecgw.equals(egw)) {
-			for (Gateway __DEC_ecgw___conv_844315 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_ecgw___conv_225367 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(ecgw, Gateway.class, "__conv")) {
-				if (!ecgw.equals(__DEC_ecgw___conv_844315)) {
-					if (!prevNode.equals(__DEC_ecgw___conv_844315)) {
-						if (!egw.equals(__DEC_ecgw___conv_844315)) {
+				if (!ecgw.equals(__DEC_ecgw___conv_225367)) {
+					if (!prevNode.equals(__DEC_ecgw___conv_225367)) {
+						if (!egw.equals(__DEC_ecgw___conv_225367)) {
 							return new Object[] { ecgw, prevNode, egw };
 						}
 					}
@@ -4977,10 +4977,10 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_23_2_black_nac_0BBB(SequenceFlow sf1, ExclusiveGateway egw,
 			ExclusiveGateway ecgw) {
 		if (!ecgw.equals(egw)) {
-			for (ExclusiveGateway __DEC_sf1_default_657871 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (ExclusiveGateway __DEC_sf1_default_501352 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-				if (!egw.equals(__DEC_sf1_default_657871)) {
-					if (!ecgw.equals(__DEC_sf1_default_657871)) {
+				if (!egw.equals(__DEC_sf1_default_501352)) {
+					if (!ecgw.equals(__DEC_sf1_default_501352)) {
 						return new Object[] { sf1, egw, ecgw };
 					}
 				}
@@ -4991,9 +4991,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_23_2_black_nac_1BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_786121 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_606553 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_786121)) {
+			if (!process.equals(__DEC_sf1_flowElements_606553)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -5002,9 +5002,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_23_2_black_nac_2BB(ExclusiveGateway egw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_egw_flowElements_489783 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_egw_flowElements_691146 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(egw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_egw_flowElements_489783)) {
+			if (!process.equals(__DEC_egw_flowElements_691146)) {
 				return new Object[] { egw, process };
 			}
 		}
@@ -5014,11 +5014,11 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_23_2_black_nac_3BBB(ExclusiveGateway egw,
 			ParallelGateway prevNode, ExclusiveGateway ecgw) {
 		if (!ecgw.equals(egw)) {
-			for (Gateway __DEC_egw___conv_721859 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_egw___conv_605441 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(egw, Gateway.class, "__conv")) {
-				if (!egw.equals(__DEC_egw___conv_721859)) {
-					if (!prevNode.equals(__DEC_egw___conv_721859)) {
-						if (!ecgw.equals(__DEC_egw___conv_721859)) {
+				if (!egw.equals(__DEC_egw___conv_605441)) {
+					if (!prevNode.equals(__DEC_egw___conv_605441)) {
+						if (!ecgw.equals(__DEC_egw___conv_605441)) {
 							return new Object[] { egw, prevNode, ecgw };
 						}
 					}
@@ -5031,11 +5031,11 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_23_2_black_nac_4BBB(ExclusiveGateway ecgw,
 			ParallelGateway prevNode, ExclusiveGateway egw) {
 		if (!ecgw.equals(egw)) {
-			Gateway __DEC_ecgw___conv_112780 = ecgw.get__conv();
-			if (__DEC_ecgw___conv_112780 != null) {
-				if (!ecgw.equals(__DEC_ecgw___conv_112780)) {
-					if (!prevNode.equals(__DEC_ecgw___conv_112780)) {
-						if (!egw.equals(__DEC_ecgw___conv_112780)) {
+			Gateway __DEC_ecgw___conv_987977 = ecgw.get__conv();
+			if (__DEC_ecgw___conv_987977 != null) {
+				if (!ecgw.equals(__DEC_ecgw___conv_987977)) {
+					if (!prevNode.equals(__DEC_ecgw___conv_987977)) {
+						if (!egw.equals(__DEC_ecgw___conv_987977)) {
 							return new Object[] { ecgw, prevNode, egw };
 						}
 					}
@@ -5048,9 +5048,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_23_2_black_nac_5BB(ExclusiveGateway ecgw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_ecgw_flowElements_978470 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_ecgw_flowElements_125910 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(ecgw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_ecgw_flowElements_978470)) {
+			if (!process.equals(__DEC_ecgw_flowElements_125910)) {
 				return new Object[] { ecgw, process };
 			}
 		}
@@ -5060,11 +5060,11 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_23_2_black_nac_6BBB(ExclusiveGateway ecgw,
 			ParallelGateway prevNode, ExclusiveGateway egw) {
 		if (!ecgw.equals(egw)) {
-			for (Gateway __DEC_ecgw___conv_803693 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_ecgw___conv_945012 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(ecgw, Gateway.class, "__conv")) {
-				if (!ecgw.equals(__DEC_ecgw___conv_803693)) {
-					if (!prevNode.equals(__DEC_ecgw___conv_803693)) {
-						if (!egw.equals(__DEC_ecgw___conv_803693)) {
+				if (!ecgw.equals(__DEC_ecgw___conv_945012)) {
+					if (!prevNode.equals(__DEC_ecgw___conv_945012)) {
+						if (!egw.equals(__DEC_ecgw___conv_945012)) {
 							return new Object[] { ecgw, prevNode, egw };
 						}
 					}
@@ -5284,9 +5284,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	}
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_24_2_black_nac_0BB(ParallelFlow pflow, ParallelStep pstep) {
-		for (ParallelStep __DEC_pflow_invokedFlows_948937 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ParallelStep __DEC_pflow_invokedFlows_346402 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pflow, ParallelStep.class, "invokedFlows")) {
-			if (!pstep.equals(__DEC_pflow_invokedFlows_948937)) {
+			if (!pstep.equals(__DEC_pflow_invokedFlows_346402)) {
 				return new Object[] { pflow, pstep };
 			}
 		}
@@ -5294,9 +5294,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	}
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_24_2_black_nac_1BB(ParallelFlow pflow, UseCase useCase) {
-		for (UseCase __DEC_pflow_flows_298742 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (UseCase __DEC_pflow_flows_779450 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pflow, UseCase.class, "flows")) {
-			if (!useCase.equals(__DEC_pflow_flows_298742)) {
+			if (!useCase.equals(__DEC_pflow_flows_779450)) {
 				return new Object[] { pflow, useCase };
 			}
 		}
@@ -5306,10 +5306,10 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_24_2_black_nac_2BBB(ChoiceStep step, ParallelFlow pflow,
 			Flow flow) {
 		if (!flow.equals(pflow)) {
-			for (Flow __DEC_step_steps_939654 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+			for (Flow __DEC_step_steps_616986 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 					Flow.class, "steps")) {
-				if (!pflow.equals(__DEC_step_steps_939654)) {
-					if (!flow.equals(__DEC_step_steps_939654)) {
+				if (!pflow.equals(__DEC_step_steps_616986)) {
+					if (!flow.equals(__DEC_step_steps_616986)) {
 						return new Object[] { step, pflow, flow };
 					}
 				}
@@ -5319,10 +5319,10 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	}
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_24_2_black_nac_3BB(ChoiceStep step, ParallelStep pstep) {
-		for (Step __DEC_step_next_699614 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+		for (Step __DEC_step_next_950916 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 				Step.class, "next")) {
-			if (!step.equals(__DEC_step_next_699614)) {
-				if (!pstep.equals(__DEC_step_next_699614)) {
+			if (!step.equals(__DEC_step_next_950916)) {
+				if (!pstep.equals(__DEC_step_next_950916)) {
 					return new Object[] { step, pstep };
 				}
 			}
@@ -5475,9 +5475,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	}
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_25_2_black_nac_0BB(ParallelFlow pflow, ParallelStep pstep) {
-		for (ParallelStep __DEC_pflow_invokedFlows_842475 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ParallelStep __DEC_pflow_invokedFlows_485615 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pflow, ParallelStep.class, "invokedFlows")) {
-			if (!pstep.equals(__DEC_pflow_invokedFlows_842475)) {
+			if (!pstep.equals(__DEC_pflow_invokedFlows_485615)) {
 				return new Object[] { pflow, pstep };
 			}
 		}
@@ -5485,9 +5485,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	}
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_25_2_black_nac_1BB(ParallelFlow pflow, UseCase useCase) {
-		for (UseCase __DEC_pflow_flows_649516 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (UseCase __DEC_pflow_flows_291058 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pflow, UseCase.class, "flows")) {
-			if (!useCase.equals(__DEC_pflow_flows_649516)) {
+			if (!useCase.equals(__DEC_pflow_flows_291058)) {
 				return new Object[] { pflow, useCase };
 			}
 		}
@@ -5497,10 +5497,10 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_25_2_black_nac_2BBB(ChoiceStep step, ParallelFlow pflow,
 			Flow flow) {
 		if (!flow.equals(pflow)) {
-			for (Flow __DEC_step_steps_523882 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+			for (Flow __DEC_step_steps_630307 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 					Flow.class, "steps")) {
-				if (!pflow.equals(__DEC_step_steps_523882)) {
-					if (!flow.equals(__DEC_step_steps_523882)) {
+				if (!pflow.equals(__DEC_step_steps_630307)) {
+					if (!flow.equals(__DEC_step_steps_630307)) {
 						return new Object[] { step, pflow, flow };
 					}
 				}
@@ -5510,10 +5510,10 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	}
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_25_2_black_nac_3BB(ChoiceStep step, ParallelStep pstep) {
-		for (Step __DEC_step_next_586280 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+		for (Step __DEC_step_next_115943 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 				Step.class, "next")) {
-			if (!step.equals(__DEC_step_next_586280)) {
-				if (!pstep.equals(__DEC_step_next_586280)) {
+			if (!step.equals(__DEC_step_next_115943)) {
+				if (!pstep.equals(__DEC_step_next_115943)) {
 					return new Object[] { step, pstep };
 				}
 			}
@@ -5666,10 +5666,10 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_26_2_black_nac_0BBB(SequenceFlow sf1, ExclusiveGateway egw,
 			ExclusiveGateway ecgw) {
 		if (!ecgw.equals(egw)) {
-			for (ExclusiveGateway __DEC_sf1_default_265238 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (ExclusiveGateway __DEC_sf1_default_421019 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-				if (!egw.equals(__DEC_sf1_default_265238)) {
-					if (!ecgw.equals(__DEC_sf1_default_265238)) {
+				if (!egw.equals(__DEC_sf1_default_421019)) {
+					if (!ecgw.equals(__DEC_sf1_default_421019)) {
 						return new Object[] { sf1, egw, ecgw };
 					}
 				}
@@ -5680,9 +5680,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_26_2_black_nac_1BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_603383 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_697273 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_603383)) {
+			if (!process.equals(__DEC_sf1_flowElements_697273)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -5691,9 +5691,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_26_2_black_nac_2BB(ExclusiveGateway egw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_egw_flowElements_527012 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_egw_flowElements_703762 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(egw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_egw_flowElements_527012)) {
+			if (!process.equals(__DEC_egw_flowElements_703762)) {
 				return new Object[] { egw, process };
 			}
 		}
@@ -5703,11 +5703,11 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_26_2_black_nac_3BBB(ExclusiveGateway egw,
 			ParallelGateway prevNode, ExclusiveGateway ecgw) {
 		if (!ecgw.equals(egw)) {
-			for (Gateway __DEC_egw___conv_679248 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_egw___conv_721748 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(egw, Gateway.class, "__conv")) {
-				if (!egw.equals(__DEC_egw___conv_679248)) {
-					if (!prevNode.equals(__DEC_egw___conv_679248)) {
-						if (!ecgw.equals(__DEC_egw___conv_679248)) {
+				if (!egw.equals(__DEC_egw___conv_721748)) {
+					if (!prevNode.equals(__DEC_egw___conv_721748)) {
+						if (!ecgw.equals(__DEC_egw___conv_721748)) {
 							return new Object[] { egw, prevNode, ecgw };
 						}
 					}
@@ -5720,11 +5720,11 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_26_2_black_nac_4BBB(ExclusiveGateway ecgw,
 			ParallelGateway prevNode, ExclusiveGateway egw) {
 		if (!ecgw.equals(egw)) {
-			Gateway __DEC_ecgw___conv_876063 = ecgw.get__conv();
-			if (__DEC_ecgw___conv_876063 != null) {
-				if (!ecgw.equals(__DEC_ecgw___conv_876063)) {
-					if (!prevNode.equals(__DEC_ecgw___conv_876063)) {
-						if (!egw.equals(__DEC_ecgw___conv_876063)) {
+			Gateway __DEC_ecgw___conv_483898 = ecgw.get__conv();
+			if (__DEC_ecgw___conv_483898 != null) {
+				if (!ecgw.equals(__DEC_ecgw___conv_483898)) {
+					if (!prevNode.equals(__DEC_ecgw___conv_483898)) {
+						if (!egw.equals(__DEC_ecgw___conv_483898)) {
 							return new Object[] { ecgw, prevNode, egw };
 						}
 					}
@@ -5737,9 +5737,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_26_2_black_nac_5BB(ExclusiveGateway ecgw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_ecgw_flowElements_908005 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_ecgw_flowElements_294399 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(ecgw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_ecgw_flowElements_908005)) {
+			if (!process.equals(__DEC_ecgw_flowElements_294399)) {
 				return new Object[] { ecgw, process };
 			}
 		}
@@ -5749,11 +5749,11 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_26_2_black_nac_6BBB(ExclusiveGateway ecgw,
 			ParallelGateway prevNode, ExclusiveGateway egw) {
 		if (!ecgw.equals(egw)) {
-			for (Gateway __DEC_ecgw___conv_66489 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_ecgw___conv_232674 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(ecgw, Gateway.class, "__conv")) {
-				if (!ecgw.equals(__DEC_ecgw___conv_66489)) {
-					if (!prevNode.equals(__DEC_ecgw___conv_66489)) {
-						if (!egw.equals(__DEC_ecgw___conv_66489)) {
+				if (!ecgw.equals(__DEC_ecgw___conv_232674)) {
+					if (!prevNode.equals(__DEC_ecgw___conv_232674)) {
+						if (!egw.equals(__DEC_ecgw___conv_232674)) {
 							return new Object[] { ecgw, prevNode, egw };
 						}
 					}
@@ -5976,10 +5976,10 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_27_2_black_nac_0BBB(SequenceFlow sf1, ExclusiveGateway egw,
 			ExclusiveGateway ecgw) {
 		if (!ecgw.equals(egw)) {
-			for (ExclusiveGateway __DEC_sf1_default_971997 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (ExclusiveGateway __DEC_sf1_default_583693 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-				if (!egw.equals(__DEC_sf1_default_971997)) {
-					if (!ecgw.equals(__DEC_sf1_default_971997)) {
+				if (!egw.equals(__DEC_sf1_default_583693)) {
+					if (!ecgw.equals(__DEC_sf1_default_583693)) {
 						return new Object[] { sf1, egw, ecgw };
 					}
 				}
@@ -5990,9 +5990,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_27_2_black_nac_1BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_37427 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_1052 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_37427)) {
+			if (!process.equals(__DEC_sf1_flowElements_1052)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -6001,9 +6001,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_27_2_black_nac_2BB(ExclusiveGateway egw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_egw_flowElements_731427 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_egw_flowElements_134296 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(egw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_egw_flowElements_731427)) {
+			if (!process.equals(__DEC_egw_flowElements_134296)) {
 				return new Object[] { egw, process };
 			}
 		}
@@ -6013,11 +6013,11 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_27_2_black_nac_3BBB(ExclusiveGateway egw,
 			ParallelGateway prevNode, ExclusiveGateway ecgw) {
 		if (!ecgw.equals(egw)) {
-			for (Gateway __DEC_egw___conv_349655 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_egw___conv_801141 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(egw, Gateway.class, "__conv")) {
-				if (!egw.equals(__DEC_egw___conv_349655)) {
-					if (!prevNode.equals(__DEC_egw___conv_349655)) {
-						if (!ecgw.equals(__DEC_egw___conv_349655)) {
+				if (!egw.equals(__DEC_egw___conv_801141)) {
+					if (!prevNode.equals(__DEC_egw___conv_801141)) {
+						if (!ecgw.equals(__DEC_egw___conv_801141)) {
 							return new Object[] { egw, prevNode, ecgw };
 						}
 					}
@@ -6030,11 +6030,11 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_27_2_black_nac_4BBB(ExclusiveGateway ecgw,
 			ParallelGateway prevNode, ExclusiveGateway egw) {
 		if (!ecgw.equals(egw)) {
-			Gateway __DEC_ecgw___conv_216985 = ecgw.get__conv();
-			if (__DEC_ecgw___conv_216985 != null) {
-				if (!ecgw.equals(__DEC_ecgw___conv_216985)) {
-					if (!prevNode.equals(__DEC_ecgw___conv_216985)) {
-						if (!egw.equals(__DEC_ecgw___conv_216985)) {
+			Gateway __DEC_ecgw___conv_36102 = ecgw.get__conv();
+			if (__DEC_ecgw___conv_36102 != null) {
+				if (!ecgw.equals(__DEC_ecgw___conv_36102)) {
+					if (!prevNode.equals(__DEC_ecgw___conv_36102)) {
+						if (!egw.equals(__DEC_ecgw___conv_36102)) {
 							return new Object[] { ecgw, prevNode, egw };
 						}
 					}
@@ -6047,9 +6047,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_27_2_black_nac_5BB(ExclusiveGateway ecgw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_ecgw_flowElements_269427 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_ecgw_flowElements_414405 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(ecgw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_ecgw_flowElements_269427)) {
+			if (!process.equals(__DEC_ecgw_flowElements_414405)) {
 				return new Object[] { ecgw, process };
 			}
 		}
@@ -6059,11 +6059,11 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_27_2_black_nac_6BBB(ExclusiveGateway ecgw,
 			ParallelGateway prevNode, ExclusiveGateway egw) {
 		if (!ecgw.equals(egw)) {
-			for (Gateway __DEC_ecgw___conv_947064 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_ecgw___conv_712323 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(ecgw, Gateway.class, "__conv")) {
-				if (!ecgw.equals(__DEC_ecgw___conv_947064)) {
-					if (!prevNode.equals(__DEC_ecgw___conv_947064)) {
-						if (!egw.equals(__DEC_ecgw___conv_947064)) {
+				if (!ecgw.equals(__DEC_ecgw___conv_712323)) {
+					if (!prevNode.equals(__DEC_ecgw___conv_712323)) {
+						if (!egw.equals(__DEC_ecgw___conv_712323)) {
 							return new Object[] { ecgw, prevNode, egw };
 						}
 					}
@@ -6285,10 +6285,10 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_28_2_black_nac_0BBB(SequenceFlow sf1, ExclusiveGateway egw,
 			ExclusiveGateway ecgw) {
 		if (!ecgw.equals(egw)) {
-			for (ExclusiveGateway __DEC_sf1_default_93032 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (ExclusiveGateway __DEC_sf1_default_967020 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-				if (!egw.equals(__DEC_sf1_default_93032)) {
-					if (!ecgw.equals(__DEC_sf1_default_93032)) {
+				if (!egw.equals(__DEC_sf1_default_967020)) {
+					if (!ecgw.equals(__DEC_sf1_default_967020)) {
 						return new Object[] { sf1, egw, ecgw };
 					}
 				}
@@ -6299,9 +6299,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_28_2_black_nac_1BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_755683 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_829935 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_755683)) {
+			if (!process.equals(__DEC_sf1_flowElements_829935)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -6310,9 +6310,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_28_2_black_nac_2BB(ExclusiveGateway egw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_egw_flowElements_237860 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_egw_flowElements_38762 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(egw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_egw_flowElements_237860)) {
+			if (!process.equals(__DEC_egw_flowElements_38762)) {
 				return new Object[] { egw, process };
 			}
 		}
@@ -6322,11 +6322,11 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_28_2_black_nac_3BBB(ExclusiveGateway egw,
 			ParallelGateway prevNode, ExclusiveGateway ecgw) {
 		if (!ecgw.equals(egw)) {
-			for (Gateway __DEC_egw___conv_816935 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_egw___conv_325587 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(egw, Gateway.class, "__conv")) {
-				if (!egw.equals(__DEC_egw___conv_816935)) {
-					if (!prevNode.equals(__DEC_egw___conv_816935)) {
-						if (!ecgw.equals(__DEC_egw___conv_816935)) {
+				if (!egw.equals(__DEC_egw___conv_325587)) {
+					if (!prevNode.equals(__DEC_egw___conv_325587)) {
+						if (!ecgw.equals(__DEC_egw___conv_325587)) {
 							return new Object[] { egw, prevNode, ecgw };
 						}
 					}
@@ -6339,11 +6339,11 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_28_2_black_nac_4BBB(ExclusiveGateway ecgw,
 			ParallelGateway prevNode, ExclusiveGateway egw) {
 		if (!ecgw.equals(egw)) {
-			Gateway __DEC_ecgw___conv_281944 = ecgw.get__conv();
-			if (__DEC_ecgw___conv_281944 != null) {
-				if (!ecgw.equals(__DEC_ecgw___conv_281944)) {
-					if (!prevNode.equals(__DEC_ecgw___conv_281944)) {
-						if (!egw.equals(__DEC_ecgw___conv_281944)) {
+			Gateway __DEC_ecgw___conv_458687 = ecgw.get__conv();
+			if (__DEC_ecgw___conv_458687 != null) {
+				if (!ecgw.equals(__DEC_ecgw___conv_458687)) {
+					if (!prevNode.equals(__DEC_ecgw___conv_458687)) {
+						if (!egw.equals(__DEC_ecgw___conv_458687)) {
 							return new Object[] { ecgw, prevNode, egw };
 						}
 					}
@@ -6356,9 +6356,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_28_2_black_nac_5BB(ExclusiveGateway ecgw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_ecgw_flowElements_346187 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_ecgw_flowElements_440377 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(ecgw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_ecgw_flowElements_346187)) {
+			if (!process.equals(__DEC_ecgw_flowElements_440377)) {
 				return new Object[] { ecgw, process };
 			}
 		}
@@ -6368,11 +6368,11 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_28_2_black_nac_6BBB(ExclusiveGateway ecgw,
 			ParallelGateway prevNode, ExclusiveGateway egw) {
 		if (!ecgw.equals(egw)) {
-			for (Gateway __DEC_ecgw___conv_269004 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_ecgw___conv_207377 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(ecgw, Gateway.class, "__conv")) {
-				if (!ecgw.equals(__DEC_ecgw___conv_269004)) {
-					if (!prevNode.equals(__DEC_ecgw___conv_269004)) {
-						if (!egw.equals(__DEC_ecgw___conv_269004)) {
+				if (!ecgw.equals(__DEC_ecgw___conv_207377)) {
+					if (!prevNode.equals(__DEC_ecgw___conv_207377)) {
+						if (!egw.equals(__DEC_ecgw___conv_207377)) {
 							return new Object[] { ecgw, prevNode, egw };
 						}
 					}
@@ -6594,10 +6594,10 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_29_2_black_nac_0BBB(SequenceFlow sf1, ExclusiveGateway egw,
 			ExclusiveGateway ecgw) {
 		if (!ecgw.equals(egw)) {
-			for (ExclusiveGateway __DEC_sf1_default_310118 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (ExclusiveGateway __DEC_sf1_default_956912 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-				if (!egw.equals(__DEC_sf1_default_310118)) {
-					if (!ecgw.equals(__DEC_sf1_default_310118)) {
+				if (!egw.equals(__DEC_sf1_default_956912)) {
+					if (!ecgw.equals(__DEC_sf1_default_956912)) {
 						return new Object[] { sf1, egw, ecgw };
 					}
 				}
@@ -6608,9 +6608,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_29_2_black_nac_1BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_792843 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_363810 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_792843)) {
+			if (!process.equals(__DEC_sf1_flowElements_363810)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -6619,9 +6619,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_29_2_black_nac_2BB(ExclusiveGateway egw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_egw_flowElements_102806 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_egw_flowElements_99167 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(egw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_egw_flowElements_102806)) {
+			if (!process.equals(__DEC_egw_flowElements_99167)) {
 				return new Object[] { egw, process };
 			}
 		}
@@ -6631,11 +6631,11 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_29_2_black_nac_3BBB(ExclusiveGateway egw,
 			ParallelGateway prevNode, ExclusiveGateway ecgw) {
 		if (!ecgw.equals(egw)) {
-			for (Gateway __DEC_egw___conv_294801 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_egw___conv_880202 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(egw, Gateway.class, "__conv")) {
-				if (!egw.equals(__DEC_egw___conv_294801)) {
-					if (!prevNode.equals(__DEC_egw___conv_294801)) {
-						if (!ecgw.equals(__DEC_egw___conv_294801)) {
+				if (!egw.equals(__DEC_egw___conv_880202)) {
+					if (!prevNode.equals(__DEC_egw___conv_880202)) {
+						if (!ecgw.equals(__DEC_egw___conv_880202)) {
 							return new Object[] { egw, prevNode, ecgw };
 						}
 					}
@@ -6648,11 +6648,11 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_29_2_black_nac_4BBB(ExclusiveGateway ecgw,
 			ParallelGateway prevNode, ExclusiveGateway egw) {
 		if (!ecgw.equals(egw)) {
-			Gateway __DEC_ecgw___conv_462344 = ecgw.get__conv();
-			if (__DEC_ecgw___conv_462344 != null) {
-				if (!ecgw.equals(__DEC_ecgw___conv_462344)) {
-					if (!prevNode.equals(__DEC_ecgw___conv_462344)) {
-						if (!egw.equals(__DEC_ecgw___conv_462344)) {
+			Gateway __DEC_ecgw___conv_185377 = ecgw.get__conv();
+			if (__DEC_ecgw___conv_185377 != null) {
+				if (!ecgw.equals(__DEC_ecgw___conv_185377)) {
+					if (!prevNode.equals(__DEC_ecgw___conv_185377)) {
+						if (!egw.equals(__DEC_ecgw___conv_185377)) {
 							return new Object[] { ecgw, prevNode, egw };
 						}
 					}
@@ -6665,9 +6665,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_29_2_black_nac_5BB(ExclusiveGateway ecgw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_ecgw_flowElements_639971 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_ecgw_flowElements_168702 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(ecgw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_ecgw_flowElements_639971)) {
+			if (!process.equals(__DEC_ecgw_flowElements_168702)) {
 				return new Object[] { ecgw, process };
 			}
 		}
@@ -6677,11 +6677,11 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_29_2_black_nac_6BBB(ExclusiveGateway ecgw,
 			ParallelGateway prevNode, ExclusiveGateway egw) {
 		if (!ecgw.equals(egw)) {
-			for (Gateway __DEC_ecgw___conv_284117 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_ecgw___conv_590169 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(ecgw, Gateway.class, "__conv")) {
-				if (!ecgw.equals(__DEC_ecgw___conv_284117)) {
-					if (!prevNode.equals(__DEC_ecgw___conv_284117)) {
-						if (!egw.equals(__DEC_ecgw___conv_284117)) {
+				if (!ecgw.equals(__DEC_ecgw___conv_590169)) {
+					if (!prevNode.equals(__DEC_ecgw___conv_590169)) {
+						if (!egw.equals(__DEC_ecgw___conv_590169)) {
 							return new Object[] { ecgw, prevNode, egw };
 						}
 					}
@@ -6903,10 +6903,10 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_30_2_black_nac_0BBB(SequenceFlow sf1, ExclusiveGateway egw,
 			ExclusiveGateway ecgw) {
 		if (!ecgw.equals(egw)) {
-			for (ExclusiveGateway __DEC_sf1_default_949558 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (ExclusiveGateway __DEC_sf1_default_271109 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-				if (!egw.equals(__DEC_sf1_default_949558)) {
-					if (!ecgw.equals(__DEC_sf1_default_949558)) {
+				if (!egw.equals(__DEC_sf1_default_271109)) {
+					if (!ecgw.equals(__DEC_sf1_default_271109)) {
 						return new Object[] { sf1, egw, ecgw };
 					}
 				}
@@ -6917,9 +6917,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_30_2_black_nac_1BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_507828 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_676091 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_507828)) {
+			if (!process.equals(__DEC_sf1_flowElements_676091)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -6928,9 +6928,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_30_2_black_nac_2BB(ExclusiveGateway egw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_egw_flowElements_253489 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_egw_flowElements_441355 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(egw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_egw_flowElements_253489)) {
+			if (!process.equals(__DEC_egw_flowElements_441355)) {
 				return new Object[] { egw, process };
 			}
 		}
@@ -6940,11 +6940,11 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_30_2_black_nac_3BBB(ExclusiveGateway egw,
 			ParallelGateway prevNode, ExclusiveGateway ecgw) {
 		if (!ecgw.equals(egw)) {
-			for (Gateway __DEC_egw___conv_944278 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_egw___conv_476541 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(egw, Gateway.class, "__conv")) {
-				if (!egw.equals(__DEC_egw___conv_944278)) {
-					if (!prevNode.equals(__DEC_egw___conv_944278)) {
-						if (!ecgw.equals(__DEC_egw___conv_944278)) {
+				if (!egw.equals(__DEC_egw___conv_476541)) {
+					if (!prevNode.equals(__DEC_egw___conv_476541)) {
+						if (!ecgw.equals(__DEC_egw___conv_476541)) {
 							return new Object[] { egw, prevNode, ecgw };
 						}
 					}
@@ -6957,11 +6957,11 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_30_2_black_nac_4BBB(ExclusiveGateway ecgw,
 			ParallelGateway prevNode, ExclusiveGateway egw) {
 		if (!ecgw.equals(egw)) {
-			Gateway __DEC_ecgw___conv_262879 = ecgw.get__conv();
-			if (__DEC_ecgw___conv_262879 != null) {
-				if (!ecgw.equals(__DEC_ecgw___conv_262879)) {
-					if (!prevNode.equals(__DEC_ecgw___conv_262879)) {
-						if (!egw.equals(__DEC_ecgw___conv_262879)) {
+			Gateway __DEC_ecgw___conv_688093 = ecgw.get__conv();
+			if (__DEC_ecgw___conv_688093 != null) {
+				if (!ecgw.equals(__DEC_ecgw___conv_688093)) {
+					if (!prevNode.equals(__DEC_ecgw___conv_688093)) {
+						if (!egw.equals(__DEC_ecgw___conv_688093)) {
 							return new Object[] { ecgw, prevNode, egw };
 						}
 					}
@@ -6974,9 +6974,9 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 
 	public static final Object[] pattern_EG2ChoiceAfterPG_30_2_black_nac_5BB(ExclusiveGateway ecgw,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_ecgw_flowElements_995905 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_ecgw_flowElements_259847 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(ecgw, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_ecgw_flowElements_995905)) {
+			if (!process.equals(__DEC_ecgw_flowElements_259847)) {
 				return new Object[] { ecgw, process };
 			}
 		}
@@ -6986,11 +6986,11 @@ public class EG2ChoiceAfterPGImpl extends AbstractRuleImpl implements EG2ChoiceA
 	public static final Object[] pattern_EG2ChoiceAfterPG_30_2_black_nac_6BBB(ExclusiveGateway ecgw,
 			ParallelGateway prevNode, ExclusiveGateway egw) {
 		if (!ecgw.equals(egw)) {
-			for (Gateway __DEC_ecgw___conv_247964 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_ecgw___conv_542103 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(ecgw, Gateway.class, "__conv")) {
-				if (!ecgw.equals(__DEC_ecgw___conv_247964)) {
-					if (!prevNode.equals(__DEC_ecgw___conv_247964)) {
-						if (!egw.equals(__DEC_ecgw___conv_247964)) {
+				if (!ecgw.equals(__DEC_ecgw___conv_542103)) {
+					if (!prevNode.equals(__DEC_ecgw___conv_542103)) {
+						if (!egw.equals(__DEC_ecgw___conv_542103)) {
 							return new Object[] { ecgw, prevNode, egw };
 						}
 					}

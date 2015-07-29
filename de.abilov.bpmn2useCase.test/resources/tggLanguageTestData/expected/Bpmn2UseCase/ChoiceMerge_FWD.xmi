@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<SimpleUseCase:UseCase xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SimpleUseCase="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore" id="ChoiceMerge">
+  <flows xsi:type="SimpleUseCase:BasicFlow">
+    <steps xsi:type="SimpleUseCase:ChoiceStep" next="t1" __last="//@flows.0/@finalState" id="eg1" __lastInDef="t1">
+      <stepAlternatives ref="sf3" __hasContinue="eg1"/>
+    </steps>
+    <steps xsi:type="SimpleUseCase:NormalStep" id="t1"/>
+    <finalState name="ee1"/>
+  </flows>
+  <flows xsi:type="SimpleUseCase:AlternativeFlow" __last="t2" id="sf3">
+    <steps xsi:type="SimpleUseCase:NormalStep" id="t2"/>
+  </flows>
+  <precondition name="se1"/>
+</SimpleUseCase:UseCase>
