@@ -15,14 +15,14 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 // [user defined imports] -->
 
 /**
- * <!-- begin-user-doc --> An implementation of the model object '
- * <em><b>Gateway</b></em>'. <!-- end-user-doc -->
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Gateway</b></em>'.
+ * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- * <li>{@link SimpleBPMN.impl.GatewayImpl#get__conv <em>conv</em>}</li>
- * <li>{@link SimpleBPMN.impl.GatewayImpl#isIsDiverging <em>Is Diverging</em>}
- * </li>
+ *   <li>{@link SimpleBPMN.impl.GatewayImpl#get__conv <em>conv</em>}</li>
+ *   <li>{@link SimpleBPMN.impl.GatewayImpl#isIsDiverging <em>Is Diverging</em>}</li>
  * </ul>
  * </p>
  *
@@ -31,8 +31,8 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 public abstract class GatewayImpl extends FlowNodeImpl implements Gateway {
 	/**
 	 * The cached value of the '{@link #get__conv() <em>conv</em>}' reference.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #get__conv()
 	 * @generated
 	 * @ordered
@@ -40,9 +40,9 @@ public abstract class GatewayImpl extends FlowNodeImpl implements Gateway {
 	protected Gateway __conv;
 
 	/**
-	 * The default value of the '{@link #isIsDiverging() <em>Is Diverging</em>}'
-	 * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The default value of the '{@link #isIsDiverging() <em>Is Diverging</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #isIsDiverging()
 	 * @generated
 	 * @ordered
@@ -50,9 +50,9 @@ public abstract class GatewayImpl extends FlowNodeImpl implements Gateway {
 	protected static final boolean IS_DIVERGING_EDEFAULT = true;
 
 	/**
-	 * The cached value of the '{@link #isIsDiverging() <em>Is Diverging</em>}'
-	 * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The cached value of the '{@link #isIsDiverging() <em>Is Diverging</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #isIsDiverging()
 	 * @generated
 	 * @ordered
@@ -60,8 +60,8 @@ public abstract class GatewayImpl extends FlowNodeImpl implements Gateway {
 	protected boolean isDiverging = IS_DIVERGING_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected GatewayImpl() {
@@ -69,8 +69,8 @@ public abstract class GatewayImpl extends FlowNodeImpl implements Gateway {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -79,8 +79,8 @@ public abstract class GatewayImpl extends FlowNodeImpl implements Gateway {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public Gateway get__conv() {
@@ -97,8 +97,8 @@ public abstract class GatewayImpl extends FlowNodeImpl implements Gateway {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public Gateway basicGet__conv() {
@@ -106,8 +106,8 @@ public abstract class GatewayImpl extends FlowNodeImpl implements Gateway {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public void set__conv(Gateway new__conv) {
@@ -118,8 +118,8 @@ public abstract class GatewayImpl extends FlowNodeImpl implements Gateway {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean isIsDiverging() {
@@ -127,8 +127,8 @@ public abstract class GatewayImpl extends FlowNodeImpl implements Gateway {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public void setIsDiverging(boolean newIsDiverging) {
@@ -140,8 +140,8 @@ public abstract class GatewayImpl extends FlowNodeImpl implements Gateway {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -158,8 +158,8 @@ public abstract class GatewayImpl extends FlowNodeImpl implements Gateway {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -176,8 +176,8 @@ public abstract class GatewayImpl extends FlowNodeImpl implements Gateway {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -194,8 +194,8 @@ public abstract class GatewayImpl extends FlowNodeImpl implements Gateway {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -210,8 +210,8 @@ public abstract class GatewayImpl extends FlowNodeImpl implements Gateway {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -233,7 +233,7 @@ public abstract class GatewayImpl extends FlowNodeImpl implements Gateway {
 			// wait until they do
 			return "";
 		}
-		
+
 		StringBuffer sb = new StringBuffer();
 		sb.append(this.getClass().toString());
 		sb.append(" ");
@@ -244,4 +244,4 @@ public abstract class GatewayImpl extends FlowNodeImpl implements Gateway {
 		return sb.toString();
 	}
 	// [user code injected with eMoflon] -->
-} // GatewayImpl
+} //GatewayImpl

@@ -7,8 +7,6 @@ import SimpleBPMN.SequenceFlow;
 import SimpleBPMN.SimpleBPMNPackage;
 
 import java.util.Collection;
-import java.util.Comparator;
-import java.util.Iterator;
 
 import org.eclipse.emf.common.notify.NotificationChain;
 
@@ -23,13 +21,14 @@ import org.eclipse.emf.ecore.util.InternalEList;
 // [user defined imports] -->
 
 /**
- * <!-- begin-user-doc --> An implementation of the model object '
- * <em><b>Flow Node</b></em>'. <!-- end-user-doc -->
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Flow Node</b></em>'.
+ * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- * <li>{@link SimpleBPMN.impl.FlowNodeImpl#getOutgoing <em>Outgoing</em>}</li>
- * <li>{@link SimpleBPMN.impl.FlowNodeImpl#getIncoming <em>Incoming</em>}</li>
+ *   <li>{@link SimpleBPMN.impl.FlowNodeImpl#getOutgoing <em>Outgoing</em>}</li>
+ *   <li>{@link SimpleBPMN.impl.FlowNodeImpl#getIncoming <em>Incoming</em>}</li>
  * </ul>
  * </p>
  *
@@ -37,9 +36,9 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public abstract class FlowNodeImpl extends FlowElementImpl implements FlowNode {
 	/**
-	 * The cached value of the '{@link #getOutgoing() <em>Outgoing</em>}'
-	 * reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The cached value of the '{@link #getOutgoing() <em>Outgoing</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getOutgoing()
 	 * @generated
 	 * @ordered
@@ -47,9 +46,9 @@ public abstract class FlowNodeImpl extends FlowElementImpl implements FlowNode {
 	protected EList<SequenceFlow> outgoing;
 
 	/**
-	 * The cached value of the '{@link #getIncoming() <em>Incoming</em>}'
-	 * reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The cached value of the '{@link #getIncoming() <em>Incoming</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getIncoming()
 	 * @generated
 	 * @ordered
@@ -57,8 +56,8 @@ public abstract class FlowNodeImpl extends FlowElementImpl implements FlowNode {
 	protected EList<SequenceFlow> incoming;
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected FlowNodeImpl() {
@@ -66,8 +65,8 @@ public abstract class FlowNodeImpl extends FlowElementImpl implements FlowNode {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -76,8 +75,8 @@ public abstract class FlowNodeImpl extends FlowElementImpl implements FlowNode {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public EList<SequenceFlow> getOutgoing() {
@@ -89,8 +88,8 @@ public abstract class FlowNodeImpl extends FlowElementImpl implements FlowNode {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public EList<SequenceFlow> getIncoming() {
@@ -102,8 +101,8 @@ public abstract class FlowNodeImpl extends FlowElementImpl implements FlowNode {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -119,8 +118,8 @@ public abstract class FlowNodeImpl extends FlowElementImpl implements FlowNode {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -135,8 +134,8 @@ public abstract class FlowNodeImpl extends FlowElementImpl implements FlowNode {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -151,8 +150,8 @@ public abstract class FlowNodeImpl extends FlowElementImpl implements FlowNode {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -172,8 +171,8 @@ public abstract class FlowNodeImpl extends FlowElementImpl implements FlowNode {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -190,8 +189,8 @@ public abstract class FlowNodeImpl extends FlowElementImpl implements FlowNode {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -217,16 +216,17 @@ public abstract class FlowNodeImpl extends FlowElementImpl implements FlowNode {
 
 	public String exportOutgoing() {
 		StringBuffer sb = new StringBuffer();
-		Iterator<SequenceFlow> sflows = this.getOutgoing().stream().sorted(new Comparator<SequenceFlow>() {
-			@Override
-			public int compare(SequenceFlow arg0, SequenceFlow arg1) {
-				return arg0.getId().compareTo(arg1.getId());
-			}
-		}).iterator();
+		java.util.Iterator<SequenceFlow> sflows = this.getOutgoing().stream()
+				.sorted(new java.util.Comparator<SequenceFlow>() {
+					@Override
+					public int compare(SequenceFlow arg0, SequenceFlow arg1) {
+						return arg0.getId().compareTo(arg1.getId());
+					}
+				}).iterator();
 		while (sflows.hasNext()) {
 			sb.append(sflows.next().export());
 		}
 		return sb.toString();
 	}
 	// [user code injected with eMoflon] -->
-} // FlowNodeImpl
+} //FlowNodeImpl

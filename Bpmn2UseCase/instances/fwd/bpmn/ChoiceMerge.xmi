@@ -54,7 +54,8 @@
       xsi:type="SimpleBPMN:ExclusiveGateway"
       id="ecg1"
       outgoing="sf6"
-      incoming="sf4 sf5"/>
+      incoming="sf4 sf5"
+      isDiverging="false"/>
   <flowElements
       xsi:type="SimpleBPMN:SequenceFlow"
       id="sf6"

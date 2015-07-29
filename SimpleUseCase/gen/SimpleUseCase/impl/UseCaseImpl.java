@@ -2,20 +2,12 @@
  */
 package SimpleUseCase.impl;
 
-import SimpleUseCase.AlternativeFlow;
-import SimpleUseCase.BasicFlow;
 import SimpleUseCase.Flow;
-import SimpleUseCase.NamedFlow;
-import SimpleUseCase.ParallelFlow;
 import SimpleUseCase.SimpleUseCasePackage;
 import SimpleUseCase.UCCondition;
 import SimpleUseCase.UseCase;
-import SimpleUseCase.util.NamedFlowComparator;
 
 import java.util.Collection;
-import java.util.Iterator;
-import java.util.Optional;
-import java.util.function.Function;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -290,7 +282,7 @@ public class UseCaseImpl extends EObjectImpl implements UseCase {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated NOT
+	 * @generated
 	 */
 	@Override
 	public String toString() {
@@ -303,6 +295,7 @@ public class UseCaseImpl extends EObjectImpl implements UseCase {
 		result.append(')');
 		return result.toString();
 	}
+
 	// <-- [user code injected with eMoflon]
 	public String export() {
 		StringBuffer sb = new StringBuffer();
@@ -312,29 +305,31 @@ public class UseCaseImpl extends EObjectImpl implements UseCase {
 			sb.append(" precondition ");
 			sb.append(this.getPrecondition().getName());
 		}
-		Optional<Flow> basicFlowOptional = this.getFlows().stream().filter(f -> f instanceof BasicFlow).findAny();
+		java.util.Optional<Flow> basicFlowOptional = this.getFlows().stream()
+				.filter(f -> f instanceof SimpleUseCase.BasicFlow).findAny();
 		if (basicFlowOptional.isPresent()) {
-			BasicFlow bFlow = (BasicFlow) basicFlowOptional.get();
+			SimpleUseCase.BasicFlow bFlow = (SimpleUseCase.BasicFlow) basicFlowOptional.get();
 			sb.append(" basic flow");
 			sb.append(bFlow.export());
 		}
 
-		Iterator<NamedFlow> sortedFlows = this.getFlows().stream().filter(f -> f instanceof NamedFlow)
-				.map(new Function<Flow, NamedFlow>() {
+		java.util.Iterator<SimpleUseCase.NamedFlow> sortedFlows = this.getFlows().stream()
+				.filter(f -> f instanceof SimpleUseCase.NamedFlow)
+				.map(new java.util.function.Function<SimpleUseCase.Flow, SimpleUseCase.NamedFlow>() {
 					@Override
-					public NamedFlow apply(Flow t) {
-						return (NamedFlow) t;
+					public SimpleUseCase.NamedFlow apply(Flow t) {
+						return (SimpleUseCase.NamedFlow) t;
 					}
-				}).sorted(new NamedFlowComparator()).iterator();
+				}).sorted(new SimpleUseCase.util.NamedFlowComparator()).iterator();
 
 		while (sortedFlows.hasNext()) {
 			Flow flow = sortedFlows.next();
-			if (flow instanceof BasicFlow)
+			if (flow instanceof SimpleUseCase.BasicFlow)
 				continue;
-			else if (flow instanceof ParallelFlow) {
+			else if (flow instanceof SimpleUseCase.ParallelFlow) {
 				sb.append(" parallel flow ");
 				sb.append(flow.export());
-			} else if (flow instanceof AlternativeFlow) {
+			} else if (flow instanceof SimpleUseCase.AlternativeFlow) {
 				sb.append(" alternative flow ");
 				sb.append(flow.export());
 			}

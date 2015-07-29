@@ -122,6 +122,11 @@ public class SimpleUseCaseAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseStepAlternative(StepAlternative object) {
+			return createStepAlternativeAdapter();
+		}
+
+		@Override
 		public Adapter defaultCase(EObject object) {
 			return createEObjectAdapter();
 		}
@@ -291,6 +296,20 @@ public class SimpleUseCaseAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createChoiceStepAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link SimpleUseCase.StepAlternative <em>Step Alternative</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see SimpleUseCase.StepAlternative
+	 * @generated
+	 */
+	public Adapter createStepAlternativeAdapter() {
 		return null;
 	}
 

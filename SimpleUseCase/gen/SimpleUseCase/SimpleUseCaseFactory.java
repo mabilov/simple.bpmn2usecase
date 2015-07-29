@@ -94,6 +94,15 @@ public interface SimpleUseCaseFactory extends EFactory {
 	ChoiceStep createChoiceStep();
 
 	/**
+	 * Returns a new object of class '<em>Step Alternative</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Step Alternative</em>'.
+	 * @generated
+	 */
+	StepAlternative createStepAlternative();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

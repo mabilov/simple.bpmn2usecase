@@ -1,0 +1,1190 @@
+<?xml version="1.0" encoding="ASCII"?>
+<TGGRuntime:PrecedenceStructure xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TGGRuntime="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore">
+  <tripleMatches children="//@tripleMatches.2 //@tripleMatches.6 //@tripleMatches.4 //@tripleMatches.5 //@tripleMatches.1 //@tripleMatches.3" ruleName="Process2UseCase">
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+    <sourceElements href="#//@tripleMatches.0/@containedEdges.7"/>
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#se1"/>
+    <nodeMappings nodeName="_p2uc">
+      <node href="../corr/ChoiceMerge.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="process">
+      <node href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+    </nodeMappings>
+    <nodeMappings nodeName="useCase">
+      <node href="../usecase/ChoiceMerge.xmi#ChoiceMerge"/>
+    </nodeMappings>
+    <nodeMappings nodeName="s2f">
+      <node href="../corr/ChoiceMerge.xmi#//@correspondences.1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="start">
+      <node href="../bpmn/ChoiceMerge.xmi#se1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cond">
+      <node href="../usecase/ChoiceMerge.xmi#//@precondition"/>
+    </nodeMappings>
+    <nodeMappings nodeName="flow">
+      <node href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
+      <src href="../usecase/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="precondition">
+      <src href="../usecase/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../usecase/ChoiceMerge.xmi#//@precondition"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.0"/>
+      <trg href="../usecase/ChoiceMerge.xmi#ChoiceMerge"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#se1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.0"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.1"/>
+      <trg href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#se1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#se1"/>
+    </containedEdges>
+    <targetElements href="#//@tripleMatches.0/@containedEdges.0"/>
+    <targetElements href="#//@tripleMatches.0/@containedEdges.1"/>
+    <targetElements href="../usecase/ChoiceMerge.xmi#//@precondition"/>
+    <targetElements href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+    <targetElements href="../usecase/ChoiceMerge.xmi#ChoiceMerge"/>
+    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.2"/>
+    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.3"/>
+    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.4"/>
+    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.5"/>
+    <correspondenceElements href="../corr/ChoiceMerge.xmi#//@correspondences.0"/>
+    <correspondenceElements href="../corr/ChoiceMerge.xmi#//@correspondences.1"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.0"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.1"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.2"/>
+    <createdElements href="../usecase/ChoiceMerge.xmi#//@precondition"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.3"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.5"/>
+    <createdElements href="../usecase/ChoiceMerge.xmi#ChoiceMerge"/>
+    <createdElements href="../bpmn/ChoiceMerge.xmi#se1"/>
+    <createdElements href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+    <createdElements href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.6"/>
+    <createdElements href="../corr/ChoiceMerge.xmi#//@correspondences.0"/>
+    <createdElements href="../corr/ChoiceMerge.xmi#//@correspondences.1"/>
+  </tripleMatches>
+  <tripleMatches children="//@tripleMatches.2 //@tripleMatches.6 //@tripleMatches.4 //@tripleMatches.5 //@tripleMatches.3" ruleName="EG2ChoiceFirst" number="1">
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.16"/>
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.17"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.18"/>
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#se1"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.19"/>
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#sf1"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.20"/>
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.21"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.22"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.23"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.24"/>
+    <contextElements href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+    <contextElements href="#//@tripleMatches.1/@containedEdges.0"/>
+    <contextElements href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+    <contextElements href="#//@tripleMatches.1/@containedEdges.1"/>
+    <contextElements href="#//@tripleMatches.1/@containedEdges.2"/>
+    <contextElements href="../corr/ChoiceMerge.xmi#//@correspondences.1"/>
+    <contextElements href="../bpmn/ChoiceMerge.xmi#se1"/>
+    <nodeMappings nodeName="ecgw">
+      <node href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="prevNode">
+      <node href="../bpmn/ChoiceMerge.xmi#se1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pnToFlow">
+      <node href="../corr/ChoiceMerge.xmi#//@correspondences.1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="process">
+      <node href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+    </nodeMappings>
+    <nodeMappings nodeName="egw">
+      <node href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="egwToStep">
+      <node href="../corr/ChoiceMerge.xmi#//@correspondences.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="step">
+      <node href="../usecase/ChoiceMerge.xmi#eg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="ecgwToStep">
+      <node href="../corr/ChoiceMerge.xmi#//@correspondences.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="flow">
+      <node href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="sf1">
+      <node href="../bpmn/ChoiceMerge.xmi#sf1"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#se1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.1"/>
+      <trg href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#se1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../bpmn/ChoiceMerge.xmi#se1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.3"/>
+      <trg href="../usecase/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/ChoiceMerge.xmi#eg1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.2"/>
+      <trg href="../usecase/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__conv">
+      <src href="../bpmn/ChoiceMerge.xmi#eg1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+      <trg href="../usecase/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../bpmn/ChoiceMerge.xmi#sf1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../bpmn/ChoiceMerge.xmi#sf1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#se1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.2"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.3"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../bpmn/ChoiceMerge.xmi#se1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/ChoiceMerge.xmi#eg1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__conv">
+      <src href="../bpmn/ChoiceMerge.xmi#eg1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#se1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../bpmn/ChoiceMerge.xmi#sf1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../bpmn/ChoiceMerge.xmi#sf1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#se1"/>
+    </containedEdges>
+    <targetElements href="#//@tripleMatches.1/@containedEdges.10"/>
+    <targetElements href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+    <targetElements href="../usecase/ChoiceMerge.xmi#eg1"/>
+    <correspondenceElements href="../corr/ChoiceMerge.xmi#//@correspondences.3"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.5"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.0"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.1"/>
+    <correspondenceElements href="../corr/ChoiceMerge.xmi#//@correspondences.1"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.14"/>
+    <correspondenceElements href="../corr/ChoiceMerge.xmi#//@correspondences.2"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.7"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.15"/>
+    <createdElements href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.3"/>
+    <createdElements href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    <createdElements href="../corr/ChoiceMerge.xmi#//@correspondences.3"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.5"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.6"/>
+    <createdElements href="../corr/ChoiceMerge.xmi#//@correspondences.2"/>
+    <createdElements href="../usecase/ChoiceMerge.xmi#eg1"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.7"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.8"/>
+    <createdElements href="../bpmn/ChoiceMerge.xmi#sf1"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.9"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.10"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.11"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.12"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.13"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.14"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.15"/>
+  </tripleMatches>
+  <tripleMatches children="//@tripleMatches.6 //@tripleMatches.4" ruleName="Task2NormalStepAfterDefEG" number="2">
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.15"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.16"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.17"/>
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.18"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.19"/>
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.20"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.21"/>
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#sf2"/>
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#t1"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.22"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.0"/>
+    <contextElements href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    <contextElements href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.1"/>
+    <contextElements href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.2"/>
+    <contextElements href="../corr/ChoiceMerge.xmi#//@correspondences.2"/>
+    <contextElements href="../usecase/ChoiceMerge.xmi#eg1"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.3"/>
+    <nodeMappings nodeName="prevNode">
+      <node href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="process">
+      <node href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+    </nodeMappings>
+    <nodeMappings nodeName="task">
+      <node href="../bpmn/ChoiceMerge.xmi#t1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="t2s">
+      <node href="../corr/ChoiceMerge.xmi#//@correspondences.4"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cStep">
+      <node href="../usecase/ChoiceMerge.xmi#eg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="step">
+      <node href="../usecase/ChoiceMerge.xmi#t1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="flow">
+      <node href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="eg2cs">
+      <node href="../corr/ChoiceMerge.xmi#//@correspondences.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="sf1">
+      <node href="../bpmn/ChoiceMerge.xmi#sf2"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+      <trg href="../usecase/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.2"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.2"/>
+      <trg href="../usecase/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="default">
+      <src href="../bpmn/ChoiceMerge.xmi#eg1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../bpmn/ChoiceMerge.xmi#sf2"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/ChoiceMerge.xmi#t1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+      <trg href="../usecase/ChoiceMerge.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../bpmn/ChoiceMerge.xmi#sf2"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="next">
+      <src href="../usecase/ChoiceMerge.xmi#eg1"/>
+      <trg href="../usecase/ChoiceMerge.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.4"/>
+      <trg href="../usecase/ChoiceMerge.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../bpmn/ChoiceMerge.xmi#eg1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.4"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="default">
+      <src href="../bpmn/ChoiceMerge.xmi#eg1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../bpmn/ChoiceMerge.xmi#sf2"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../bpmn/ChoiceMerge.xmi#eg1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/ChoiceMerge.xmi#t1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../bpmn/ChoiceMerge.xmi#sf2"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#t1"/>
+    </containedEdges>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.7"/>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.1"/>
+    <targetElements href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+    <targetElements href="../usecase/ChoiceMerge.xmi#t1"/>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.9"/>
+    <targetElements href="../usecase/ChoiceMerge.xmi#eg1"/>
+    <correspondenceElements href="../corr/ChoiceMerge.xmi#//@correspondences.4"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.10"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.2"/>
+    <correspondenceElements href="../corr/ChoiceMerge.xmi#//@correspondences.2"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.3"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.13"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.5"/>
+    <createdElements href="../corr/ChoiceMerge.xmi#//@correspondences.4"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.6"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.7"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.8"/>
+    <createdElements href="../bpmn/ChoiceMerge.xmi#sf2"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.9"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.10"/>
+    <createdElements href="../bpmn/ChoiceMerge.xmi#t1"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.11"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.12"/>
+    <createdElements href="../usecase/ChoiceMerge.xmi#t1"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.13"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.14"/>
+  </tripleMatches>
+  <tripleMatches ruleName="EndEvent2FinalStateGWSeq" number="3">
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.12"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.13"/>
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.14"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.15"/>
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#ee1"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.16"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.17"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.18"/>
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#sf6"/>
+    <contextElements href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    <contextElements href="../corr/ChoiceMerge.xmi#//@correspondences.3"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.0"/>
+    <contextElements href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.1"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.2"/>
+    <contextElements href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+    <contextElements href="../usecase/ChoiceMerge.xmi#eg1"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.3"/>
+    <nodeMappings nodeName="lastStep">
+      <node href="../usecase/ChoiceMerge.xmi#eg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="prevNode">
+      <node href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="process">
+      <node href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+    </nodeMappings>
+    <nodeMappings nodeName="state">
+      <node href="../usecase/ChoiceMerge.xmi#//@flows.0/@finalState"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pn2s">
+      <node href="../corr/ChoiceMerge.xmi#//@correspondences.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="event">
+      <node href="../bpmn/ChoiceMerge.xmi#ee1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="flow">
+      <node href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="inFlow">
+      <node href="../bpmn/ChoiceMerge.xmi#sf6"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.3"/>
+      <trg href="../usecase/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+      <trg href="../usecase/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.3"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../bpmn/ChoiceMerge.xmi#sf6"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#ee1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="finalState">
+      <src href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+      <trg href="../usecase/ChoiceMerge.xmi#//@flows.0/@finalState"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/ChoiceMerge.xmi#ee1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf6"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__last">
+      <src href="../usecase/ChoiceMerge.xmi#eg1"/>
+      <trg href="../usecase/ChoiceMerge.xmi#//@flows.0/@finalState"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../bpmn/ChoiceMerge.xmi#sf6"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf6"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#ee1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf6"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../bpmn/ChoiceMerge.xmi#sf6"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#ee1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/ChoiceMerge.xmi#ee1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf6"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../bpmn/ChoiceMerge.xmi#sf6"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf6"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#ee1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf6"/>
+    </containedEdges>
+    <targetElements href="../usecase/ChoiceMerge.xmi#//@flows.0/@finalState"/>
+    <targetElements href="#//@tripleMatches.3/@containedEdges.5"/>
+    <targetElements href="#//@tripleMatches.3/@containedEdges.7"/>
+    <targetElements href="#//@tripleMatches.3/@containedEdges.1"/>
+    <targetElements href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+    <targetElements href="../usecase/ChoiceMerge.xmi#eg1"/>
+    <correspondenceElements href="../corr/ChoiceMerge.xmi#//@correspondences.3"/>
+    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.0"/>
+    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.3"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.4"/>
+    <createdElements href="../usecase/ChoiceMerge.xmi#//@flows.0/@finalState"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.5"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.6"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.7"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.8"/>
+    <createdElements href="../bpmn/ChoiceMerge.xmi#ee1"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.9"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.10"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.11"/>
+    <createdElements href="../bpmn/ChoiceMerge.xmi#sf6"/>
+  </tripleMatches>
+  <tripleMatches children="//@tripleMatches.5" ruleName="Task2NormalStepAfterEG" number="4">
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.20"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.21"/>
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#t2"/>
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#sf2"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.22"/>
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#sf3"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.23"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.24"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.25"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.26"/>
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.27"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.0"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.1"/>
+    <contextElements href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.2"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.3"/>
+    <contextElements href="../bpmn/ChoiceMerge.xmi#sf2"/>
+    <contextElements href="../corr/ChoiceMerge.xmi#//@correspondences.2"/>
+    <contextElements href="../usecase/ChoiceMerge.xmi#ChoiceMerge"/>
+    <contextElements href="../usecase/ChoiceMerge.xmi#eg1"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.4"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.5"/>
+    <contextElements href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.6"/>
+    <contextElements href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+    <contextElements href="../corr/ChoiceMerge.xmi#//@correspondences.0"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.7"/>
+    <nodeMappings nodeName="process">
+      <node href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+    </nodeMappings>
+    <nodeMappings nodeName="p2uc">
+      <node href="../corr/ChoiceMerge.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="def">
+      <node href="../bpmn/ChoiceMerge.xmi#sf2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="alt">
+      <node href="../usecase/ChoiceMerge.xmi#//@flows.0/@steps.0/@stepAlternatives.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="prevNode">
+      <node href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="useCase">
+      <node href="../usecase/ChoiceMerge.xmi#ChoiceMerge"/>
+    </nodeMappings>
+    <nodeMappings nodeName="task">
+      <node href="../bpmn/ChoiceMerge.xmi#t2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="t2s">
+      <node href="../corr/ChoiceMerge.xmi#//@correspondences.5"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cStep">
+      <node href="../usecase/ChoiceMerge.xmi#eg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="step">
+      <node href="../usecase/ChoiceMerge.xmi#t2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="altFlow">
+      <node href="../usecase/ChoiceMerge.xmi#sf3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="eg2cs">
+      <node href="../corr/ChoiceMerge.xmi#//@correspondences.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="flow">
+      <node href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="sf1">
+      <node href="../bpmn/ChoiceMerge.xmi#sf3"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="default">
+      <src href="../bpmn/ChoiceMerge.xmi#eg1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
+      <src href="../usecase/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.0"/>
+      <trg href="../usecase/ChoiceMerge.xmi#ChoiceMerge"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.0"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.2"/>
+      <trg href="../usecase/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+      <trg href="../usecase/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.2"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="stepAlternatives">
+      <src href="../usecase/ChoiceMerge.xmi#eg1"/>
+      <trg href="../usecase/ChoiceMerge.xmi#//@flows.0/@steps.0/@stepAlternatives.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
+      <src href="../usecase/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../usecase/ChoiceMerge.xmi#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.5"/>
+      <trg href="../usecase/ChoiceMerge.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../bpmn/ChoiceMerge.xmi#eg1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../usecase/ChoiceMerge.xmi#sf3"/>
+      <trg href="../usecase/ChoiceMerge.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../bpmn/ChoiceMerge.xmi#sf3"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../bpmn/ChoiceMerge.xmi#sf3"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/ChoiceMerge.xmi#t2"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.5"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="ref">
+      <src href="../usecase/ChoiceMerge.xmi#//@flows.0/@steps.0/@stepAlternatives.0"/>
+      <trg href="../usecase/ChoiceMerge.xmi#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="default">
+      <src href="../bpmn/ChoiceMerge.xmi#eg1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../bpmn/ChoiceMerge.xmi#eg1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../bpmn/ChoiceMerge.xmi#sf3"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../bpmn/ChoiceMerge.xmi#sf3"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/ChoiceMerge.xmi#t2"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#t2"/>
+    </containedEdges>
+    <targetElements href="#//@tripleMatches.4/@containedEdges.1"/>
+    <targetElements href="../usecase/ChoiceMerge.xmi#//@flows.0/@steps.0/@stepAlternatives.0"/>
+    <targetElements href="#//@tripleMatches.4/@containedEdges.6"/>
+    <targetElements href="#//@tripleMatches.4/@containedEdges.9"/>
+    <targetElements href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+    <targetElements href="#//@tripleMatches.4/@containedEdges.10"/>
+    <targetElements href="../usecase/ChoiceMerge.xmi#t2"/>
+    <targetElements href="#//@tripleMatches.4/@containedEdges.19"/>
+    <targetElements href="../usecase/ChoiceMerge.xmi#sf3"/>
+    <targetElements href="#//@tripleMatches.4/@containedEdges.13"/>
+    <targetElements href="../usecase/ChoiceMerge.xmi#ChoiceMerge"/>
+    <targetElements href="../usecase/ChoiceMerge.xmi#eg1"/>
+    <correspondenceElements href="../corr/ChoiceMerge.xmi#//@correspondences.5"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.2"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.18"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.3"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.11"/>
+    <correspondenceElements href="../corr/ChoiceMerge.xmi#//@correspondences.0"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.7"/>
+    <correspondenceElements href="../corr/ChoiceMerge.xmi#//@correspondences.2"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.8"/>
+    <createdElements href="../corr/ChoiceMerge.xmi#//@correspondences.5"/>
+    <createdElements href="../bpmn/ChoiceMerge.xmi#t2"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.9"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.10"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.11"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.12"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.13"/>
+    <createdElements href="../bpmn/ChoiceMerge.xmi#sf3"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.14"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.15"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.16"/>
+    <createdElements href="../usecase/ChoiceMerge.xmi#//@flows.0/@steps.0/@stepAlternatives.0"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.17"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.18"/>
+    <createdElements href="../usecase/ChoiceMerge.xmi#t2"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.19"/>
+    <createdElements href="../usecase/ChoiceMerge.xmi#sf3"/>
+  </tripleMatches>
+  <tripleMatches ruleName="LastStepInAltFlow" number="5">
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#t2"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.18"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.19"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.20"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.21"/>
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.22"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.23"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.24"/>
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#sf5"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.25"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.26"/>
+    <contextElements href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    <contextElements href="../corr/ChoiceMerge.xmi#//@correspondences.5"/>
+    <contextElements href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    <contextElements href="../bpmn/ChoiceMerge.xmi#t2"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.0"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.1"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.2"/>
+    <contextElements href="../corr/ChoiceMerge.xmi#//@correspondences.2"/>
+    <contextElements href="../usecase/ChoiceMerge.xmi#eg1"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.3"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.4"/>
+    <contextElements href="../usecase/ChoiceMerge.xmi#//@flows.0/@steps.0/@stepAlternatives.0"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.5"/>
+    <contextElements href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.6"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.7"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.8"/>
+    <contextElements href="../usecase/ChoiceMerge.xmi#t2"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.9"/>
+    <contextElements href="../usecase/ChoiceMerge.xmi#sf3"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.10"/>
+    <nodeMappings nodeName="gw">
+      <node href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="node">
+      <node href="../bpmn/ChoiceMerge.xmi#t2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="process">
+      <node href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+    </nodeMappings>
+    <nodeMappings nodeName="sf">
+      <node href="../bpmn/ChoiceMerge.xmi#sf5"/>
+    </nodeMappings>
+    <nodeMappings nodeName="alt">
+      <node href="../usecase/ChoiceMerge.xmi#//@flows.0/@steps.0/@stepAlternatives.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="gcw">
+      <node href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="step">
+      <node href="../usecase/ChoiceMerge.xmi#t2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="gwStep">
+      <node href="../usecase/ChoiceMerge.xmi#eg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="gw2gs">
+      <node href="../corr/ChoiceMerge.xmi#//@correspondences.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="flow">
+      <node href="../usecase/ChoiceMerge.xmi#sf3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="n2s">
+      <node href="../corr/ChoiceMerge.xmi#//@correspondences.5"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="stepAlternatives">
+      <src href="../usecase/ChoiceMerge.xmi#eg1"/>
+      <trg href="../usecase/ChoiceMerge.xmi#//@flows.0/@steps.0/@stepAlternatives.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.5"/>
+      <trg href="../usecase/ChoiceMerge.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../usecase/ChoiceMerge.xmi#sf3"/>
+      <trg href="../usecase/ChoiceMerge.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.2"/>
+      <trg href="../usecase/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__conv">
+      <src href="../bpmn/ChoiceMerge.xmi#eg1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.5"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="ref">
+      <src href="../usecase/ChoiceMerge.xmi#//@flows.0/@steps.0/@stepAlternatives.0"/>
+      <trg href="../usecase/ChoiceMerge.xmi#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.2"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__hasContinue">
+      <src href="../usecase/ChoiceMerge.xmi#//@flows.0/@steps.0/@stepAlternatives.0"/>
+      <trg href="../usecase/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../bpmn/ChoiceMerge.xmi#sf5"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../bpmn/ChoiceMerge.xmi#sf5"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf5"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf5"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../bpmn/ChoiceMerge.xmi#t2"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf5"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__last">
+      <src href="../usecase/ChoiceMerge.xmi#sf3"/>
+      <trg href="../usecase/ChoiceMerge.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../bpmn/ChoiceMerge.xmi#sf5"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf5"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__conv">
+      <src href="../bpmn/ChoiceMerge.xmi#eg1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../bpmn/ChoiceMerge.xmi#sf5"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf5"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../bpmn/ChoiceMerge.xmi#t2"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf5"/>
+    </containedEdges>
+    <targetElements href="../usecase/ChoiceMerge.xmi#//@flows.0/@steps.0/@stepAlternatives.0"/>
+    <targetElements href="#//@tripleMatches.5/@containedEdges.11"/>
+    <targetElements href="#//@tripleMatches.5/@containedEdges.0"/>
+    <targetElements href="../usecase/ChoiceMerge.xmi#t2"/>
+    <targetElements href="#//@tripleMatches.5/@containedEdges.9"/>
+    <targetElements href="../usecase/ChoiceMerge.xmi#sf3"/>
+    <targetElements href="#//@tripleMatches.5/@containedEdges.2"/>
+    <targetElements href="#//@tripleMatches.5/@containedEdges.17"/>
+    <targetElements href="../usecase/ChoiceMerge.xmi#eg1"/>
+    <correspondenceElements href="../corr/ChoiceMerge.xmi#//@correspondences.5"/>
+    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.8"/>
+    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.1"/>
+    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.10"/>
+    <correspondenceElements href="../corr/ChoiceMerge.xmi#//@correspondences.2"/>
+    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.3"/>
+    <createdElements href="#//@tripleMatches.5/@containedEdges.11"/>
+    <createdElements href="#//@tripleMatches.5/@containedEdges.12"/>
+    <createdElements href="../bpmn/ChoiceMerge.xmi#sf5"/>
+    <createdElements href="#//@tripleMatches.5/@containedEdges.13"/>
+    <createdElements href="#//@tripleMatches.5/@containedEdges.14"/>
+    <createdElements href="#//@tripleMatches.5/@containedEdges.15"/>
+    <createdElements href="#//@tripleMatches.5/@containedEdges.16"/>
+    <createdElements href="#//@tripleMatches.5/@containedEdges.17"/>
+  </tripleMatches>
+  <tripleMatches ruleName="Class1" number="6">
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.16"/>
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.17"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.18"/>
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#t1"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.19"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.20"/>
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#sf4"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.21"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.22"/>
+    <sourceElements href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.23"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.24"/>
+    <contextElements href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    <contextElements href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    <contextElements href="../corr/ChoiceMerge.xmi#//@correspondences.4"/>
+    <contextElements href="#//@tripleMatches.6/@containedEdges.0"/>
+    <contextElements href="#//@tripleMatches.6/@containedEdges.1"/>
+    <contextElements href="../corr/ChoiceMerge.xmi#//@correspondences.2"/>
+    <contextElements href="../usecase/ChoiceMerge.xmi#eg1"/>
+    <contextElements href="../bpmn/ChoiceMerge.xmi#t1"/>
+    <contextElements href="#//@tripleMatches.6/@containedEdges.2"/>
+    <contextElements href="#//@tripleMatches.6/@containedEdges.3"/>
+    <contextElements href="#//@tripleMatches.6/@containedEdges.4"/>
+    <contextElements href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+    <contextElements href="#//@tripleMatches.6/@containedEdges.5"/>
+    <contextElements href="#//@tripleMatches.6/@containedEdges.6"/>
+    <contextElements href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+    <contextElements href="../usecase/ChoiceMerge.xmi#t1"/>
+    <contextElements href="#//@tripleMatches.6/@containedEdges.7"/>
+    <contextElements href="#//@tripleMatches.6/@containedEdges.8"/>
+    <contextElements href="#//@tripleMatches.6/@containedEdges.9"/>
+    <nodeMappings nodeName="gw">
+      <node href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="node">
+      <node href="../bpmn/ChoiceMerge.xmi#t1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="process">
+      <node href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+    </nodeMappings>
+    <nodeMappings nodeName="sf">
+      <node href="../bpmn/ChoiceMerge.xmi#sf4"/>
+    </nodeMappings>
+    <nodeMappings nodeName="step">
+      <node href="../usecase/ChoiceMerge.xmi#t1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="gcw">
+      <node href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="gwStep">
+      <node href="../usecase/ChoiceMerge.xmi#eg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="gw2gs">
+      <node href="../corr/ChoiceMerge.xmi#//@correspondences.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="flow">
+      <node href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="n2s">
+      <node href="../corr/ChoiceMerge.xmi#//@correspondences.4"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+      <trg href="../usecase/ChoiceMerge.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.4"/>
+      <trg href="../usecase/ChoiceMerge.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.2"/>
+      <trg href="../usecase/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__conv">
+      <src href="../bpmn/ChoiceMerge.xmi#eg1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+      <trg href="../usecase/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.2"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ChoiceMerge.xmi#//@correspondences.4"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf4"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf4"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../bpmn/ChoiceMerge.xmi#t1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf4"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__lastInDef">
+      <src href="../usecase/ChoiceMerge.xmi#eg1"/>
+      <trg href="../usecase/ChoiceMerge.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../bpmn/ChoiceMerge.xmi#sf4"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../bpmn/ChoiceMerge.xmi#sf4"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf4"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../bpmn/ChoiceMerge.xmi#t1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf4"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../bpmn/ChoiceMerge.xmi#sf4"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../bpmn/ChoiceMerge.xmi#sf4"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#eg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__conv">
+      <src href="../bpmn/ChoiceMerge.xmi#eg1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#sf4"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#ecg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ChoiceMerge.xmi#ChoiceMerge"/>
+      <trg href="../bpmn/ChoiceMerge.xmi#t1"/>
+    </containedEdges>
+    <targetElements href="#//@tripleMatches.6/@containedEdges.0"/>
+    <targetElements href="#//@tripleMatches.6/@containedEdges.5"/>
+    <targetElements href="../usecase/ChoiceMerge.xmi#//@flows.0"/>
+    <targetElements href="../usecase/ChoiceMerge.xmi#t1"/>
+    <targetElements href="#//@tripleMatches.6/@containedEdges.13"/>
+    <targetElements href="../usecase/ChoiceMerge.xmi#eg1"/>
+    <correspondenceElements href="../corr/ChoiceMerge.xmi#//@correspondences.4"/>
+    <correspondenceElements href="#//@tripleMatches.6/@containedEdges.1"/>
+    <correspondenceElements href="#//@tripleMatches.6/@containedEdges.7"/>
+    <correspondenceElements href="../corr/ChoiceMerge.xmi#//@correspondences.2"/>
+    <correspondenceElements href="#//@tripleMatches.6/@containedEdges.2"/>
+    <correspondenceElements href="#//@tripleMatches.6/@containedEdges.9"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.10"/>
+    <createdElements href="../bpmn/ChoiceMerge.xmi#sf4"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.11"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.12"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.13"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.14"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.15"/>
+  </tripleMatches>
+</TGGRuntime:PrecedenceStructure>

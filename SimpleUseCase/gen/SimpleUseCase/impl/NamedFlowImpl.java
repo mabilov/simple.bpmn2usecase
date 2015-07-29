@@ -161,6 +161,7 @@ public abstract class NamedFlowImpl extends FlowImpl implements NamedFlow {
 		result.append(')');
 		return result.toString();
 	}
+
 	// <-- [user code injected with eMoflon]
 	@Override
 	public String export() {

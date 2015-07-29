@@ -16,7 +16,7 @@ import SimpleBPMN.SimpleBPMNFactory;
 import SimpleBPMN.SimpleBPMNPackage;
 import SimpleBPMN.StartEvent;
 import SimpleBPMN.Task;
-import SimpleBPMN.util.PatternDiscovery;
+import SimpleBPMN.util.SynchronizationHelper;
 import SimpleBPMN.EndEvent;
 import SimpleBPMN.FlowElement;
 import SimpleBPMN.ParallelGateway;
@@ -114,7 +114,7 @@ public class Incremental extends IncrementalIntegratorTest {
 			sf5.setTargetRef(ee1);
 
 			// pre-process
-			PatternDiscovery.discoverParallel(proc);
+			SynchronizationHelper.discoverConverging(proc);
 		});
 	}
 
@@ -148,7 +148,7 @@ public class Incremental extends IncrementalIntegratorTest {
 			proc.getFlowElements().add(sf7);
 
 			// pre-process
-			PatternDiscovery.discoverParallel(proc);
+			SynchronizationHelper.discoverConverging(proc);
 		});
 	}
 
@@ -197,13 +197,13 @@ public class Incremental extends IncrementalIntegratorTest {
 			proc.getFlowElements().add(sf9);
 
 			// pre-process
-			PatternDiscovery.discoverParallel(proc);
+			SynchronizationHelper.discoverConverging(proc);
 		});
 	}
 
 	private void delta(String testCaseName, final Consumer<EObject> changeSrc) throws InterruptedException {
 		setInputModel(ApplicationTypes.BACKWARD, testCaseName);
-		SimpleUseCase.util.PreProcessor.process((UseCase) helper.getTrg());
+		SimpleUseCase.util.SynchronizationHelper.preprocess((UseCase) helper.getTrg());
 
 		helper.integrateBackward();
 		helper.setChangeSrc(changeSrc);

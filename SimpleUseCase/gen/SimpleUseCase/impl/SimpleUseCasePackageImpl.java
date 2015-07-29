@@ -13,6 +13,7 @@ import SimpleUseCase.ParallelStep;
 import SimpleUseCase.SimpleUseCaseFactory;
 import SimpleUseCase.SimpleUseCasePackage;
 import SimpleUseCase.Step;
+import SimpleUseCase.StepAlternative;
 import SimpleUseCase.UCCondition;
 import SimpleUseCase.UseCase;
 
@@ -106,6 +107,13 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements SimpleUseC
 	 * @generated
 	 */
 	private EClass choiceStepEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass stepAlternativeEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -382,8 +390,62 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements SimpleUseC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getChoiceStep_AlternativeFlows() {
+	public EReference getChoiceStep_StepAlternatives() {
 		return (EReference) choiceStepEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getChoiceStep___lastInDef() {
+		return (EReference) choiceStepEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getStepAlternative() {
+		return stepAlternativeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getStepAlternative_Ref() {
+		return (EReference) stepAlternativeEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getStepAlternative_Continuation() {
+		return (EReference) stepAlternativeEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getStepAlternative___hasContinue() {
+		return (EReference) stepAlternativeEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getStepAlternative_Condition() {
+		return (EAttribute) stepAlternativeEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -448,7 +510,14 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements SimpleUseC
 		alternativeFlowEClass = createEClass(ALTERNATIVE_FLOW);
 
 		choiceStepEClass = createEClass(CHOICE_STEP);
-		createEReference(choiceStepEClass, CHOICE_STEP__ALTERNATIVE_FLOWS);
+		createEReference(choiceStepEClass, CHOICE_STEP__STEP_ALTERNATIVES);
+		createEReference(choiceStepEClass, CHOICE_STEP__LAST_IN_DEF);
+
+		stepAlternativeEClass = createEClass(STEP_ALTERNATIVE);
+		createEReference(stepAlternativeEClass, STEP_ALTERNATIVE__REF);
+		createEReference(stepAlternativeEClass, STEP_ALTERNATIVE__CONTINUATION);
+		createEReference(stepAlternativeEClass, STEP_ALTERNATIVE__HAS_CONTINUE);
+		createEAttribute(stepAlternativeEClass, STEP_ALTERNATIVE__CONDITION);
 	}
 
 	/**
@@ -551,9 +620,27 @@ public class SimpleUseCasePackageImpl extends EPackageImpl implements SimpleUseC
 
 		initEClass(choiceStepEClass, ChoiceStep.class, "ChoiceStep", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getChoiceStep_AlternativeFlows(), this.getAlternativeFlow(), null, "alternativeFlows", null, 0,
-				-1, ChoiceStep.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
+		initEReference(getChoiceStep_StepAlternatives(), this.getStepAlternative(), null, "stepAlternatives", null, 0,
+				-1, ChoiceStep.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getChoiceStep___lastInDef(), this.getStep(), null, "__lastInDef", null, 0, 1, ChoiceStep.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(stepAlternativeEClass, StepAlternative.class, "StepAlternative", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getStepAlternative_Ref(), this.getAlternativeFlow(), null, "ref", null, 0, 1,
+				StepAlternative.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getStepAlternative_Continuation(), this.getStep(), null, "continuation", null, 0, 1,
+				StepAlternative.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getStepAlternative___hasContinue(), this.getChoiceStep(), null, "__hasContinue", null, 0, 1,
+				StepAlternative.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getStepAlternative_Condition(), ecorePackage.getEString(), "condition", null, 1, 1,
+				StepAlternative.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, !IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

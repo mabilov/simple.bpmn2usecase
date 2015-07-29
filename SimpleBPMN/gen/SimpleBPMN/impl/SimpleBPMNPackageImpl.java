@@ -273,6 +273,15 @@ public class SimpleBPMNPackageImpl extends EPackageImpl implements SimpleBPMNPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getSequenceFlow_ConditionExpression() {
+		return (EAttribute) sequenceFlowEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getTask() {
 		return taskEClass;
 	}
@@ -401,6 +410,7 @@ public class SimpleBPMNPackageImpl extends EPackageImpl implements SimpleBPMNPac
 		sequenceFlowEClass = createEClass(SEQUENCE_FLOW);
 		createEReference(sequenceFlowEClass, SEQUENCE_FLOW__SOURCE_REF);
 		createEReference(sequenceFlowEClass, SEQUENCE_FLOW__TARGET_REF);
+		createEAttribute(sequenceFlowEClass, SEQUENCE_FLOW__CONDITION_EXPRESSION);
 
 		taskEClass = createEClass(TASK);
 
@@ -489,6 +499,9 @@ public class SimpleBPMNPackageImpl extends EPackageImpl implements SimpleBPMNPac
 		initEReference(getSequenceFlow_TargetRef(), this.getFlowNode(), this.getFlowNode_Incoming(), "targetRef", null,
 				1, 1, SequenceFlow.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSequenceFlow_ConditionExpression(), ecorePackage.getEString(), "conditionExpression", null, 1,
+				1, SequenceFlow.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, !IS_ORDERED);
 
 		initEClass(taskEClass, Task.class, "Task", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

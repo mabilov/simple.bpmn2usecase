@@ -34,7 +34,14 @@
     </genClasses>
     <genClasses ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//AlternativeFlow"/>
     <genClasses ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//ChoiceStep">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//ChoiceStep/alternativeFlows"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//ChoiceStep/stepAlternatives"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//ChoiceStep/__lastInDef"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//StepAlternative">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//StepAlternative/ref"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//StepAlternative/continuation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//StepAlternative/__hasContinue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//StepAlternative/condition"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

@@ -232,13 +232,22 @@ public interface SimpleBPMNPackage extends EPackage {
 	int SEQUENCE_FLOW__TARGET_REF = FLOW_ELEMENT_FEATURE_COUNT + 1;
 
 	/**
+	 * The feature id for the '<em><b>Condition Expression</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEQUENCE_FLOW__CONDITION_EXPRESSION = FLOW_ELEMENT_FEATURE_COUNT + 2;
+
+	/**
 	 * The number of structural features of the '<em>Sequence Flow</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SEQUENCE_FLOW_FEATURE_COUNT = FLOW_ELEMENT_FEATURE_COUNT + 2;
+	int SEQUENCE_FLOW_FEATURE_COUNT = FLOW_ELEMENT_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of operations of the '<em>Sequence Flow</em>' class.
@@ -815,6 +824,17 @@ public interface SimpleBPMNPackage extends EPackage {
 	EReference getSequenceFlow_TargetRef();
 
 	/**
+	 * Returns the meta object for the attribute '{@link SimpleBPMN.SequenceFlow#getConditionExpression <em>Condition Expression</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Condition Expression</em>'.
+	 * @see SimpleBPMN.SequenceFlow#getConditionExpression()
+	 * @see #getSequenceFlow()
+	 * @generated
+	 */
+	EAttribute getSequenceFlow_ConditionExpression();
+
+	/**
 	 * Returns the meta object for class '{@link SimpleBPMN.Task <em>Task</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1035,6 +1055,14 @@ public interface SimpleBPMNPackage extends EPackage {
 		 * @generated
 		 */
 		EReference SEQUENCE_FLOW__TARGET_REF = eINSTANCE.getSequenceFlow_TargetRef();
+
+		/**
+		 * The meta object literal for the '<em><b>Condition Expression</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SEQUENCE_FLOW__CONDITION_EXPRESSION = eINSTANCE.getSequenceFlow_ConditionExpression();
 
 		/**
 		 * The meta object literal for the '{@link SimpleBPMN.impl.TaskImpl <em>Task</em>}' class.

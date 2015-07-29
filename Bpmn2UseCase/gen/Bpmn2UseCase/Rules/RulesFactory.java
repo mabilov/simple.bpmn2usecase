@@ -112,6 +112,114 @@ public interface RulesFactory extends EFactory {
 	LastStepInPFlow createLastStepInPFlow();
 
 	/**
+	 * Returns a new object of class '<em>EG2 Choice Seq</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>EG2 Choice Seq</em>'.
+	 * @generated
+	 */
+	EG2ChoiceSeq createEG2ChoiceSeq();
+
+	/**
+	 * Returns a new object of class '<em>EG2 Choice First</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>EG2 Choice First</em>'.
+	 * @generated
+	 */
+	EG2ChoiceFirst createEG2ChoiceFirst();
+
+	/**
+	 * Returns a new object of class '<em>EG2 Choice After PG</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>EG2 Choice After PG</em>'.
+	 * @generated
+	 */
+	EG2ChoiceAfterPG createEG2ChoiceAfterPG();
+
+	/**
+	 * Returns a new object of class '<em>Task2 Normal Step After Def EG</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Task2 Normal Step After Def EG</em>'.
+	 * @generated
+	 */
+	Task2NormalStepAfterDefEG createTask2NormalStepAfterDefEG();
+
+	/**
+	 * Returns a new object of class '<em>Task2 Normal Step After EG</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Task2 Normal Step After EG</em>'.
+	 * @generated
+	 */
+	Task2NormalStepAfterEG createTask2NormalStepAfterEG();
+
+	/**
+	 * Returns a new object of class '<em>Class1</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Class1</em>'.
+	 * @generated
+	 */
+	Class1 createClass1();
+
+	/**
+	 * Returns a new object of class '<em>Last Step In Alt Flow</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Last Step In Alt Flow</em>'.
+	 * @generated
+	 */
+	LastStepInAltFlow createLastStepInAltFlow();
+
+	/**
+	 * Returns a new object of class '<em>PG2 Parallel Step After Def EG</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>PG2 Parallel Step After Def EG</em>'.
+	 * @generated
+	 */
+	PG2ParallelStepAfterDefEG createPG2ParallelStepAfterDefEG();
+
+	/**
+	 * Returns a new object of class '<em>PG2 Parallel Step After EG</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>PG2 Parallel Step After EG</em>'.
+	 * @generated
+	 */
+	PG2ParallelStepAfterEG createPG2ParallelStepAfterEG();
+
+	/**
+	 * Returns a new object of class '<em>EG2 Choice Step After Def EG</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>EG2 Choice Step After Def EG</em>'.
+	 * @generated
+	 */
+	EG2ChoiceStepAfterDefEG createEG2ChoiceStepAfterDefEG();
+
+	/**
+	 * Returns a new object of class '<em>EG2 Choice Step After EG</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>EG2 Choice Step After EG</em>'.
+	 * @generated
+	 */
+	EG2ChoiceStepAfterEG createEG2ChoiceStepAfterEG();
+
+	/**
+	 * Returns a new object of class '<em>End Event2 Final State GW Seq</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>End Event2 Final State GW Seq</em>'.
+	 * @generated
+	 */
+	EndEvent2FinalStateGWSeq createEndEvent2FinalStateGWSeq();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

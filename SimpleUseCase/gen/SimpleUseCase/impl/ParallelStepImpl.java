@@ -5,10 +5,8 @@ package SimpleUseCase.impl;
 import SimpleUseCase.ParallelFlow;
 import SimpleUseCase.ParallelStep;
 import SimpleUseCase.SimpleUseCasePackage;
-import SimpleUseCase.util.NamedFlowComparator;
 
 import java.util.Collection;
-import java.util.Iterator;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -133,6 +131,7 @@ public class ParallelStepImpl extends StepImpl implements ParallelStep {
 		}
 		return super.eIsSet(featureID);
 	}
+
 	// <-- [user code injected with eMoflon]
 	public String export() {
 		StringBuffer sb = new StringBuffer();
@@ -140,8 +139,8 @@ public class ParallelStepImpl extends StepImpl implements ParallelStep {
 		sb.append(this.getId());
 		String comma = "";
 
-		Iterator<ParallelFlow> invokedFlows = this.getInvokedFlows().stream().sorted(new NamedFlowComparator())
-				.iterator();
+		java.util.Iterator<SimpleUseCase.ParallelFlow> invokedFlows = this.getInvokedFlows().stream()
+				.sorted(new SimpleUseCase.util.NamedFlowComparator()).iterator();
 		while (invokedFlows.hasNext()) {
 			ParallelFlow flow = invokedFlows.next();
 			sb.append(comma);

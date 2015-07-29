@@ -10,6 +10,7 @@ import Bpmn2UseCase.P2UC;
 import Bpmn2UseCase.Rules.RulesPackage;
 import Bpmn2UseCase.Rules.Task2NormalStepAfterPG;
 
+import SimpleBPMN.ExclusiveGateway;
 import SimpleBPMN.FlowElement;
 import SimpleBPMN.FlowNode;
 import SimpleBPMN.Gateway;
@@ -169,7 +170,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	public PerformRuleResult perform_FWD(IsApplicableMatch isApplicableMatch) {
 		// perform transformation
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterPGImpl
-				.pattern_Task2NormalStepAfterPG_1_1_bindingAndBlackFFFFFFFFBFB(this, isApplicableMatch);
+				.pattern_Task2NormalStepAfterPG_1_1_bindingAndBlackFFFFFFFFFBFB(this, isApplicableMatch);
 		if (result1_bindingAndBlack == null) {
 			throw new RuntimeException("Pattern matching in node [perform transformation] failed." + " Variables: "
 					+ "[this] = " + this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ".");
@@ -181,44 +182,46 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		SimpleBPMN.Process process = (SimpleBPMN.Process) result1_bindingAndBlack[4];
 		UseCase useCase = (UseCase) result1_bindingAndBlack[5];
 		P2UC p2uc = (P2UC) result1_bindingAndBlack[6];
-		Task task = (Task) result1_bindingAndBlack[7];
-		CSP csp = (CSP) result1_bindingAndBlack[9];
+		Flow flow = (Flow) result1_bindingAndBlack[7];
+		Task task = (Task) result1_bindingAndBlack[8];
+		CSP csp = (CSP) result1_bindingAndBlack[10];
 		Object[] result1_green = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_1_1_greenFBBFFBB(pstep,
 				useCase, task, csp);
 		NormalStep step = (NormalStep) result1_green[0];
-		ParallelFlow flow = (ParallelFlow) result1_green[3];
+		ParallelFlow pflow = (ParallelFlow) result1_green[3];
 		FN2S t2s = (FN2S) result1_green[4];
 
 		// collect translated elements
 		Object[] result2_black = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_1_2_blackBBBBB(step, sf1,
-				flow, t2s, task);
+				pflow, t2s, task);
 		if (result2_black == null) {
 			throw new RuntimeException("Pattern matching in node [collect translated elements] failed." + " Variables: "
-					+ "[step] = " + step + ", " + "[sf1] = " + sf1 + ", " + "[flow] = " + flow + ", " + "[t2s] = " + t2s
-					+ ", " + "[task] = " + task + ".");
+					+ "[step] = " + step + ", " + "[sf1] = " + sf1 + ", " + "[pflow] = " + pflow + ", " + "[t2s] = "
+					+ t2s + ", " + "[task] = " + task + ".");
 		}
 		Object[] result2_green = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_1_2_greenFBBBBB(step, sf1,
-				flow, t2s, task);
+				pflow, t2s, task);
 		PerformRuleResult ruleresult = (PerformRuleResult) result2_green[0];
 
 		// bookkeeping for edges
-		Object[] result3_black = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_1_3_blackBBBBBBBBBBBB(
-				ruleresult, step, pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, flow, t2s, task);
+		Object[] result3_black = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_1_3_blackBBBBBBBBBBBBB(
+				ruleresult, step, pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, pflow, flow, t2s, task);
 		if (result3_black == null) {
 			throw new RuntimeException("Pattern matching in node [bookkeeping for edges] failed." + " Variables: "
 					+ "[ruleresult] = " + ruleresult + ", " + "[step] = " + step + ", " + "[pgw2ps] = " + pgw2ps + ", "
 					+ "[prevNode] = " + prevNode + ", " + "[pstep] = " + pstep + ", " + "[sf1] = " + sf1 + ", "
 					+ "[process] = " + process + ", " + "[useCase] = " + useCase + ", " + "[p2uc] = " + p2uc + ", "
-					+ "[flow] = " + flow + ", " + "[t2s] = " + t2s + ", " + "[task] = " + task + ".");
+					+ "[pflow] = " + pflow + ", " + "[flow] = " + flow + ", " + "[t2s] = " + t2s + ", " + "[task] = "
+					+ task + ".");
 		}
 		Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_1_3_greenBBBBBBBBBBFFFFFFFFFFF(ruleresult, step,
-				prevNode, pstep, sf1, process, useCase, flow, t2s, task);
+				prevNode, pstep, sf1, process, useCase, pflow, t2s, task);
 				// EMoflonEdge sf1__prevNode____sourceRef = (EMoflonEdge) result3_green[10];
 				// EMoflonEdge prevNode__sf1____outgoing = (EMoflonEdge) result3_green[11];
-				// EMoflonEdge pstep__flow____invokedFlows = (EMoflonEdge) result3_green[12];
+				// EMoflonEdge pstep__pflow____invokedFlows = (EMoflonEdge) result3_green[12];
 				// EMoflonEdge process__sf1____flowElements = (EMoflonEdge) result3_green[13];
-				// EMoflonEdge useCase__flow____flows = (EMoflonEdge) result3_green[14];
-				// EMoflonEdge flow__step____steps = (EMoflonEdge) result3_green[15];
+				// EMoflonEdge useCase__pflow____flows = (EMoflonEdge) result3_green[14];
+				// EMoflonEdge pflow__step____steps = (EMoflonEdge) result3_green[15];
 				// EMoflonEdge t2s__step____target = (EMoflonEdge) result3_green[16];
 				// EMoflonEdge t2s__task____source = (EMoflonEdge) result3_green[17];
 				// EMoflonEdge process__task____flowElements = (EMoflonEdge) result3_green[18];
@@ -227,8 +230,8 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 
 		// perform postprocessing story node is empty
 		// register objects
-		Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_1_5_expressionBBBBBBBBBBBBB(this, ruleresult, step,
-				pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, flow, t2s, task);
+		Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_1_5_expressionBBBBBBBBBBBBBB(this, ruleresult, step,
+				pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, pflow, flow, t2s, task);
 		return Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_1_6_expressionFB(ruleresult);
 	}
 
@@ -268,34 +271,38 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 			UseCase useCase = (UseCase) result2_black[5];
 			P2UC p2uc = (P2UC) result2_black[6];
 			// ForEach find context
-			for (Object[] result3_black : Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_2_3_blackBBBBBBBB(
+			for (Object[] result3_black : Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_2_3_blackBBBBBBBFB(
 					pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, task)) {
+				Flow flow = (Flow) result3_black[7];
 				Object[] result3_green = Task2NormalStepAfterPGImpl
-						.pattern_Task2NormalStepAfterPG_2_3_greenBBBBBBBBFFFFFFFFFFFF(pgw2ps, prevNode, pstep, sf1,
-								process, useCase, p2uc, task);
-				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[8];
-				// EMoflonEdge pgw2ps__prevNode____source = (EMoflonEdge) result3_green[9];
-				// EMoflonEdge pgw2ps__pstep____target = (EMoflonEdge) result3_green[10];
-				// EMoflonEdge sf1__prevNode____sourceRef = (EMoflonEdge) result3_green[11];
-				// EMoflonEdge prevNode__sf1____outgoing = (EMoflonEdge) result3_green[12];
-				// EMoflonEdge process__prevNode____flowElements = (EMoflonEdge) result3_green[13];
-				// EMoflonEdge process__sf1____flowElements = (EMoflonEdge) result3_green[14];
-				// EMoflonEdge p2uc__process____source = (EMoflonEdge) result3_green[15];
-				// EMoflonEdge p2uc__useCase____target = (EMoflonEdge) result3_green[16];
-				// EMoflonEdge process__task____flowElements = (EMoflonEdge) result3_green[17];
-				// EMoflonEdge sf1__task____targetRef = (EMoflonEdge) result3_green[18];
-				// EMoflonEdge task__sf1____incoming = (EMoflonEdge) result3_green[19];
+						.pattern_Task2NormalStepAfterPG_2_3_greenBBBBBBBBBFFFFFFFFFFFFFF(pgw2ps, prevNode, pstep, sf1,
+								process, useCase, p2uc, flow, task);
+				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[9];
+				// EMoflonEdge pgw2ps__prevNode____source = (EMoflonEdge) result3_green[10];
+				// EMoflonEdge pgw2ps__pstep____target = (EMoflonEdge) result3_green[11];
+				// EMoflonEdge sf1__prevNode____sourceRef = (EMoflonEdge) result3_green[12];
+				// EMoflonEdge prevNode__sf1____outgoing = (EMoflonEdge) result3_green[13];
+				// EMoflonEdge process__prevNode____flowElements = (EMoflonEdge) result3_green[14];
+				// EMoflonEdge process__sf1____flowElements = (EMoflonEdge) result3_green[15];
+				// EMoflonEdge useCase__flow____flows = (EMoflonEdge) result3_green[16];
+				// EMoflonEdge p2uc__process____source = (EMoflonEdge) result3_green[17];
+				// EMoflonEdge p2uc__useCase____target = (EMoflonEdge) result3_green[18];
+				// EMoflonEdge flow__pstep____steps = (EMoflonEdge) result3_green[19];
+				// EMoflonEdge process__task____flowElements = (EMoflonEdge) result3_green[20];
+				// EMoflonEdge sf1__task____targetRef = (EMoflonEdge) result3_green[21];
+				// EMoflonEdge task__sf1____incoming = (EMoflonEdge) result3_green[22];
 
 				// solve CSP
 				Object[] result4_bindingAndBlack = Task2NormalStepAfterPGImpl
-						.pattern_Task2NormalStepAfterPG_2_4_bindingAndBlackFBBBBBBBBBB(this, isApplicableMatch, pgw2ps,
-								prevNode, pstep, sf1, process, useCase, p2uc, task);
+						.pattern_Task2NormalStepAfterPG_2_4_bindingAndBlackFBBBBBBBBBBB(this, isApplicableMatch, pgw2ps,
+								prevNode, pstep, sf1, process, useCase, p2uc, flow, task);
 				if (result4_bindingAndBlack == null) {
 					throw new RuntimeException("Pattern matching in node [solve CSP] failed." + " Variables: "
 							+ "[this] = " + this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ", "
 							+ "[pgw2ps] = " + pgw2ps + ", " + "[prevNode] = " + prevNode + ", " + "[pstep] = " + pstep
 							+ ", " + "[sf1] = " + sf1 + ", " + "[process] = " + process + ", " + "[useCase] = "
-							+ useCase + ", " + "[p2uc] = " + p2uc + ", " + "[task] = " + task + ".");
+							+ useCase + ", " + "[p2uc] = " + p2uc + ", " + "[flow] = " + flow + ", " + "[task] = "
+							+ task + ".");
 				}
 				CSP csp = (CSP) result4_bindingAndBlack[0];
 				// check CSP
@@ -371,7 +378,8 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	 * @generated
 	 */
 	public CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, GW2S pgw2ps, ParallelGateway prevNode,
-			ParallelStep pstep, SequenceFlow sf1, SimpleBPMN.Process process, UseCase useCase, P2UC p2uc, Task task) {// Create CSP
+			ParallelStep pstep, SequenceFlow sf1, SimpleBPMN.Process process, UseCase useCase, P2UC p2uc, Flow flow,
+			Task task) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
 
@@ -386,8 +394,8 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		var_task_id.setType("String");
 
 		// Create unbound variables
-		Variable var_flow_id = CSPFactoryHelper.eINSTANCE.createVariable("flow.id", csp);
-		var_flow_id.setType("String");
+		Variable var_pflow_id = CSPFactoryHelper.eINSTANCE.createVariable("pflow.id", csp);
+		var_pflow_id.setType("String");
 		Variable var_step_id = CSPFactoryHelper.eINSTANCE.createVariable("step.id", csp);
 		var_step_id.setType("String");
 
@@ -400,7 +408,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 
 		// Solve CSP
 		eq.setRuleName("");
-		eq.solve(var_sf1_id, var_flow_id);
+		eq.solve(var_sf1_id, var_pflow_id);
 		eq_0.setRuleName("");
 		eq_0.solve(var_task_id, var_step_id);
 
@@ -412,6 +420,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		isApplicableMatch.registerObject("process", process);
 		isApplicableMatch.registerObject("useCase", useCase);
 		isApplicableMatch.registerObject("p2uc", p2uc);
+		isApplicableMatch.registerObject("flow", flow);
 		isApplicableMatch.registerObject("task", task);
 		return csp;
 	}
@@ -431,8 +440,8 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	 * @generated
 	 */
 	public void registerObjects_FWD(PerformRuleResult ruleresult, EObject step, EObject pgw2ps, EObject prevNode,
-			EObject pstep, EObject sf1, EObject process, EObject useCase, EObject p2uc, EObject flow, EObject t2s,
-			EObject task) {
+			EObject pstep, EObject sf1, EObject process, EObject useCase, EObject p2uc, EObject pflow, EObject flow,
+			EObject t2s, EObject task) {
 		ruleresult.registerObject("step", step);
 		ruleresult.registerObject("pgw2ps", pgw2ps);
 		ruleresult.registerObject("prevNode", prevNode);
@@ -441,6 +450,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		ruleresult.registerObject("process", process);
 		ruleresult.registerObject("useCase", useCase);
 		ruleresult.registerObject("p2uc", p2uc);
+		ruleresult.registerObject("pflow", pflow);
 		ruleresult.registerObject("flow", flow);
 		ruleresult.registerObject("t2s", t2s);
 		ruleresult.registerObject("task", task);
@@ -463,55 +473,61 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	 * @generated
 	 */
 	public boolean isAppropriate_BWD(Match match, NormalStep step, ParallelStep pstep, UseCase useCase,
-			ParallelFlow flow) {
+			ParallelFlow pflow, Flow flow) {
 		// initial bindings
-		Object[] result1_black = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_10_1_blackBBBBBB(this, match,
-				step, pstep, useCase, flow);
+		Object[] result1_black = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_10_1_blackBBBBBBB(this,
+				match, step, pstep, useCase, pflow, flow);
 		if (result1_black == null) {
-			throw new RuntimeException("Pattern matching in node [initial bindings] failed." + " Variables: "
-					+ "[this] = " + this + ", " + "[match] = " + match + ", " + "[step] = " + step + ", " + "[pstep] = "
-					+ pstep + ", " + "[useCase] = " + useCase + ", " + "[flow] = " + flow + ".");
+			throw new RuntimeException(
+					"Pattern matching in node [initial bindings] failed." + " Variables: " + "[this] = " + this + ", "
+							+ "[match] = " + match + ", " + "[step] = " + step + ", " + "[pstep] = " + pstep + ", "
+							+ "[useCase] = " + useCase + ", " + "[pflow] = " + pflow + ", " + "[flow] = " + flow + ".");
 		}
 
 		// Solve CSP
 		Object[] result2_bindingAndBlack = Task2NormalStepAfterPGImpl
-				.pattern_Task2NormalStepAfterPG_10_2_bindingAndBlackFBBBBBB(this, match, step, pstep, useCase, flow);
+				.pattern_Task2NormalStepAfterPG_10_2_bindingAndBlackFBBBBBBB(this, match, step, pstep, useCase, pflow,
+						flow);
 		if (result2_bindingAndBlack == null) {
 			throw new RuntimeException("Pattern matching in node [Solve CSP] failed." + " Variables: " + "[this] = "
 					+ this + ", " + "[match] = " + match + ", " + "[step] = " + step + ", " + "[pstep] = " + pstep
-					+ ", " + "[useCase] = " + useCase + ", " + "[flow] = " + flow + ".");
+					+ ", " + "[useCase] = " + useCase + ", " + "[pflow] = " + pflow + ", " + "[flow] = " + flow + ".");
 		}
 		CSP csp = (CSP) result2_bindingAndBlack[0];
 		// Check CSP
 		if (Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_10_3_expressionFBB(this, csp)) {
 
 			// collect elements to be translated
-			Object[] result4_black = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_10_4_blackBBBBB(match,
-					step, pstep, useCase, flow);
+			Object[] result4_black = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_10_4_blackBBBBBB(match,
+					step, pstep, useCase, pflow, flow);
 			if (result4_black == null) {
 				throw new RuntimeException("Pattern matching in node [collect elements to be translated] failed."
 						+ " Variables: " + "[match] = " + match + ", " + "[step] = " + step + ", " + "[pstep] = "
-						+ pstep + ", " + "[useCase] = " + useCase + ", " + "[flow] = " + flow + ".");
+						+ pstep + ", " + "[useCase] = " + useCase + ", " + "[pflow] = " + pflow + ", " + "[flow] = "
+						+ flow + ".");
 			}
 			Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_10_4_greenBBBBBFFF(match, step, pstep, useCase,
-					flow);
-					// EMoflonEdge pstep__flow____invokedFlows = (EMoflonEdge) result4_green[5];
-					// EMoflonEdge useCase__flow____flows = (EMoflonEdge) result4_green[6];
-					// EMoflonEdge flow__step____steps = (EMoflonEdge) result4_green[7];
+					pflow);
+					// EMoflonEdge pstep__pflow____invokedFlows = (EMoflonEdge) result4_green[5];
+					// EMoflonEdge useCase__pflow____flows = (EMoflonEdge) result4_green[6];
+					// EMoflonEdge pflow__step____steps = (EMoflonEdge) result4_green[7];
 
 			// collect context elements
-			Object[] result5_black = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_10_5_blackBBBBB(match,
-					step, pstep, useCase, flow);
+			Object[] result5_black = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_10_5_blackBBBBBB(match,
+					step, pstep, useCase, pflow, flow);
 			if (result5_black == null) {
 				throw new RuntimeException("Pattern matching in node [collect context elements] failed."
 						+ " Variables: " + "[match] = " + match + ", " + "[step] = " + step + ", " + "[pstep] = "
-						+ pstep + ", " + "[useCase] = " + useCase + ", " + "[flow] = " + flow + ".");
+						+ pstep + ", " + "[useCase] = " + useCase + ", " + "[pflow] = " + pflow + ", " + "[flow] = "
+						+ flow + ".");
 			}
-			Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_10_5_greenBBB(match, pstep, useCase);
+			Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_10_5_greenBBBBFF(match, pstep, useCase, flow);
+			// EMoflonEdge useCase__flow____flows = (EMoflonEdge) result5_green[4];
+			// EMoflonEdge flow__pstep____steps = (EMoflonEdge) result5_green[5];
 
 			// register objects to match
-			Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_10_6_expressionBBBBBB(this, match, step, pstep,
-					useCase, flow);
+			Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_10_6_expressionBBBBBBB(this, match, step, pstep,
+					useCase, pflow, flow);
 			return Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_10_7_expressionF();
 		} else {
 			return Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_10_8_expressionF();
@@ -527,7 +543,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	public PerformRuleResult perform_BWD(IsApplicableMatch isApplicableMatch) {
 		// perform transformation
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterPGImpl
-				.pattern_Task2NormalStepAfterPG_11_1_bindingAndBlackFFFFFFFFBFB(this, isApplicableMatch);
+				.pattern_Task2NormalStepAfterPG_11_1_bindingAndBlackFFFFFFFFFBFB(this, isApplicableMatch);
 		if (result1_bindingAndBlack == null) {
 			throw new RuntimeException("Pattern matching in node [perform transformation] failed." + " Variables: "
 					+ "[this] = " + this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ".");
@@ -539,8 +555,9 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		SimpleBPMN.Process process = (SimpleBPMN.Process) result1_bindingAndBlack[4];
 		UseCase useCase = (UseCase) result1_bindingAndBlack[5];
 		P2UC p2uc = (P2UC) result1_bindingAndBlack[6];
-		ParallelFlow flow = (ParallelFlow) result1_bindingAndBlack[7];
-		CSP csp = (CSP) result1_bindingAndBlack[9];
+		ParallelFlow pflow = (ParallelFlow) result1_bindingAndBlack[7];
+		Flow flow = (Flow) result1_bindingAndBlack[8];
+		CSP csp = (CSP) result1_bindingAndBlack[10];
 		Object[] result1_green = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_11_1_greenBBFBFFB(step,
 				prevNode, process, csp);
 		SequenceFlow sf1 = (SequenceFlow) result1_green[2];
@@ -549,34 +566,35 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 
 		// collect translated elements
 		Object[] result2_black = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_11_2_blackBBBBB(step, sf1,
-				flow, t2s, task);
+				pflow, t2s, task);
 		if (result2_black == null) {
 			throw new RuntimeException("Pattern matching in node [collect translated elements] failed." + " Variables: "
-					+ "[step] = " + step + ", " + "[sf1] = " + sf1 + ", " + "[flow] = " + flow + ", " + "[t2s] = " + t2s
-					+ ", " + "[task] = " + task + ".");
+					+ "[step] = " + step + ", " + "[sf1] = " + sf1 + ", " + "[pflow] = " + pflow + ", " + "[t2s] = "
+					+ t2s + ", " + "[task] = " + task + ".");
 		}
 		Object[] result2_green = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_11_2_greenFBBBBB(step, sf1,
-				flow, t2s, task);
+				pflow, t2s, task);
 		PerformRuleResult ruleresult = (PerformRuleResult) result2_green[0];
 
 		// bookkeeping for edges
-		Object[] result3_black = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_11_3_blackBBBBBBBBBBBB(
-				ruleresult, step, pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, flow, t2s, task);
+		Object[] result3_black = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_11_3_blackBBBBBBBBBBBBB(
+				ruleresult, step, pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, pflow, flow, t2s, task);
 		if (result3_black == null) {
 			throw new RuntimeException("Pattern matching in node [bookkeeping for edges] failed." + " Variables: "
 					+ "[ruleresult] = " + ruleresult + ", " + "[step] = " + step + ", " + "[pgw2ps] = " + pgw2ps + ", "
 					+ "[prevNode] = " + prevNode + ", " + "[pstep] = " + pstep + ", " + "[sf1] = " + sf1 + ", "
 					+ "[process] = " + process + ", " + "[useCase] = " + useCase + ", " + "[p2uc] = " + p2uc + ", "
-					+ "[flow] = " + flow + ", " + "[t2s] = " + t2s + ", " + "[task] = " + task + ".");
+					+ "[pflow] = " + pflow + ", " + "[flow] = " + flow + ", " + "[t2s] = " + t2s + ", " + "[task] = "
+					+ task + ".");
 		}
 		Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_11_3_greenBBBBBBBBBBFFFFFFFFFFF(ruleresult, step,
-				prevNode, pstep, sf1, process, useCase, flow, t2s, task);
+				prevNode, pstep, sf1, process, useCase, pflow, t2s, task);
 				// EMoflonEdge sf1__prevNode____sourceRef = (EMoflonEdge) result3_green[10];
 				// EMoflonEdge prevNode__sf1____outgoing = (EMoflonEdge) result3_green[11];
-				// EMoflonEdge pstep__flow____invokedFlows = (EMoflonEdge) result3_green[12];
+				// EMoflonEdge pstep__pflow____invokedFlows = (EMoflonEdge) result3_green[12];
 				// EMoflonEdge process__sf1____flowElements = (EMoflonEdge) result3_green[13];
-				// EMoflonEdge useCase__flow____flows = (EMoflonEdge) result3_green[14];
-				// EMoflonEdge flow__step____steps = (EMoflonEdge) result3_green[15];
+				// EMoflonEdge useCase__pflow____flows = (EMoflonEdge) result3_green[14];
+				// EMoflonEdge pflow__step____steps = (EMoflonEdge) result3_green[15];
 				// EMoflonEdge t2s__step____target = (EMoflonEdge) result3_green[16];
 				// EMoflonEdge t2s__task____source = (EMoflonEdge) result3_green[17];
 				// EMoflonEdge process__task____flowElements = (EMoflonEdge) result3_green[18];
@@ -585,8 +603,8 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 
 		// perform postprocessing story node is empty
 		// register objects
-		Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_11_5_expressionBBBBBBBBBBBBB(this, ruleresult, step,
-				pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, flow, t2s, task);
+		Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_11_5_expressionBBBBBBBBBBBBBB(this, ruleresult, step,
+				pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, pflow, flow, t2s, task);
 		return Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_11_6_expressionFB(ruleresult);
 	}
 
@@ -610,7 +628,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		IsApplicableRuleResult ruleresult = (IsApplicableRuleResult) result1_green[1];
 
 		// ForEach core match
-		Object[] result2_binding = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_12_2_bindingFFFFB(match);
+		Object[] result2_binding = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_12_2_bindingFFFFFB(match);
 		if (result2_binding == null) {
 			throw new RuntimeException(
 					"Binding in node core match failed." + " Variables: " + "[match] = " + match + ".");
@@ -618,39 +636,43 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		NormalStep step = (NormalStep) result2_binding[0];
 		ParallelStep pstep = (ParallelStep) result2_binding[1];
 		UseCase useCase = (UseCase) result2_binding[2];
-		ParallelFlow flow = (ParallelFlow) result2_binding[3];
+		ParallelFlow pflow = (ParallelFlow) result2_binding[3];
+		Flow flow = (Flow) result2_binding[4];
 		for (Object[] result2_black : Task2NormalStepAfterPGImpl
-				.pattern_Task2NormalStepAfterPG_12_2_blackBFFBFBFBB(step, pstep, useCase, flow, match)) {
+				.pattern_Task2NormalStepAfterPG_12_2_blackBFFBFBFBBB(step, pstep, useCase, pflow, flow, match)) {
 			GW2S pgw2ps = (GW2S) result2_black[1];
 			ParallelGateway prevNode = (ParallelGateway) result2_black[2];
 			SimpleBPMN.Process process = (SimpleBPMN.Process) result2_black[4];
 			P2UC p2uc = (P2UC) result2_black[6];
 			// ForEach find context
-			for (Object[] result3_black : Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_12_3_blackBBBBBBBB(
-					step, pgw2ps, prevNode, pstep, process, useCase, p2uc, flow)) {
+			for (Object[] result3_black : Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_12_3_blackBBBBBBBBB(
+					step, pgw2ps, prevNode, pstep, process, useCase, p2uc, pflow, flow)) {
 				Object[] result3_green = Task2NormalStepAfterPGImpl
-						.pattern_Task2NormalStepAfterPG_12_3_greenBBBBBBBBFFFFFFFFF(step, pgw2ps, prevNode, pstep,
-								process, useCase, p2uc, flow);
-				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[8];
-				// EMoflonEdge pgw2ps__prevNode____source = (EMoflonEdge) result3_green[9];
-				// EMoflonEdge pgw2ps__pstep____target = (EMoflonEdge) result3_green[10];
-				// EMoflonEdge pstep__flow____invokedFlows = (EMoflonEdge) result3_green[11];
-				// EMoflonEdge process__prevNode____flowElements = (EMoflonEdge) result3_green[12];
-				// EMoflonEdge useCase__flow____flows = (EMoflonEdge) result3_green[13];
-				// EMoflonEdge p2uc__process____source = (EMoflonEdge) result3_green[14];
-				// EMoflonEdge p2uc__useCase____target = (EMoflonEdge) result3_green[15];
-				// EMoflonEdge flow__step____steps = (EMoflonEdge) result3_green[16];
+						.pattern_Task2NormalStepAfterPG_12_3_greenBBBBBBBBBFFFFFFFFFFF(step, pgw2ps, prevNode, pstep,
+								process, useCase, p2uc, pflow, flow);
+				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[9];
+				// EMoflonEdge pgw2ps__prevNode____source = (EMoflonEdge) result3_green[10];
+				// EMoflonEdge pgw2ps__pstep____target = (EMoflonEdge) result3_green[11];
+				// EMoflonEdge pstep__pflow____invokedFlows = (EMoflonEdge) result3_green[12];
+				// EMoflonEdge process__prevNode____flowElements = (EMoflonEdge) result3_green[13];
+				// EMoflonEdge useCase__pflow____flows = (EMoflonEdge) result3_green[14];
+				// EMoflonEdge useCase__flow____flows = (EMoflonEdge) result3_green[15];
+				// EMoflonEdge p2uc__process____source = (EMoflonEdge) result3_green[16];
+				// EMoflonEdge p2uc__useCase____target = (EMoflonEdge) result3_green[17];
+				// EMoflonEdge pflow__step____steps = (EMoflonEdge) result3_green[18];
+				// EMoflonEdge flow__pstep____steps = (EMoflonEdge) result3_green[19];
 
 				// solve CSP
 				Object[] result4_bindingAndBlack = Task2NormalStepAfterPGImpl
-						.pattern_Task2NormalStepAfterPG_12_4_bindingAndBlackFBBBBBBBBBB(this, isApplicableMatch, step,
-								pgw2ps, prevNode, pstep, process, useCase, p2uc, flow);
+						.pattern_Task2NormalStepAfterPG_12_4_bindingAndBlackFBBBBBBBBBBB(this, isApplicableMatch, step,
+								pgw2ps, prevNode, pstep, process, useCase, p2uc, pflow, flow);
 				if (result4_bindingAndBlack == null) {
 					throw new RuntimeException("Pattern matching in node [solve CSP] failed." + " Variables: "
 							+ "[this] = " + this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ", "
 							+ "[step] = " + step + ", " + "[pgw2ps] = " + pgw2ps + ", " + "[prevNode] = " + prevNode
 							+ ", " + "[pstep] = " + pstep + ", " + "[process] = " + process + ", " + "[useCase] = "
-							+ useCase + ", " + "[p2uc] = " + p2uc + ", " + "[flow] = " + flow + ".");
+							+ useCase + ", " + "[p2uc] = " + p2uc + ", " + "[pflow] = " + pflow + ", " + "[flow] = "
+							+ flow + ".");
 				}
 				CSP csp = (CSP) result4_bindingAndBlack[0];
 				// check CSP
@@ -682,10 +704,11 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	 * @generated
 	 */
 	public void registerObjectsToMatch_BWD(Match match, NormalStep step, ParallelStep pstep, UseCase useCase,
-			ParallelFlow flow) {
+			ParallelFlow pflow, Flow flow) {
 		match.registerObject("step", step);
 		match.registerObject("pstep", pstep);
 		match.registerObject("useCase", useCase);
+		match.registerObject("pflow", pflow);
 		match.registerObject("flow", flow);
 
 	}
@@ -696,7 +719,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	 * @generated
 	 */
 	public CSP isAppropriate_solveCsp_BWD(Match match, NormalStep step, ParallelStep pstep, UseCase useCase,
-			ParallelFlow flow) {// Create CSP
+			ParallelFlow pflow, Flow flow) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 
 		// Create literals
@@ -727,16 +750,16 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	 */
 	public CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, NormalStep step, GW2S pgw2ps,
 			ParallelGateway prevNode, ParallelStep pstep, SimpleBPMN.Process process, UseCase useCase, P2UC p2uc,
-			ParallelFlow flow) {// Create CSP
+			ParallelFlow pflow, Flow flow) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
 
 		// Create literals
 
 		// Create attribute variables
-		Variable var_flow_id = CSPFactoryHelper.eINSTANCE.createVariable("flow.id", true, csp);
-		var_flow_id.setValue(flow.getId());
-		var_flow_id.setType("String");
+		Variable var_pflow_id = CSPFactoryHelper.eINSTANCE.createVariable("pflow.id", true, csp);
+		var_pflow_id.setValue(pflow.getId());
+		var_pflow_id.setType("String");
 		Variable var_step_id = CSPFactoryHelper.eINSTANCE.createVariable("step.id", true, csp);
 		var_step_id.setValue(step.getId());
 		var_step_id.setType("String");
@@ -756,7 +779,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 
 		// Solve CSP
 		eq.setRuleName("");
-		eq.solve(var_sf1_id, var_flow_id);
+		eq.solve(var_sf1_id, var_pflow_id);
 		eq_0.setRuleName("");
 		eq_0.solve(var_task_id, var_step_id);
 
@@ -768,6 +791,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		isApplicableMatch.registerObject("process", process);
 		isApplicableMatch.registerObject("useCase", useCase);
 		isApplicableMatch.registerObject("p2uc", p2uc);
+		isApplicableMatch.registerObject("pflow", pflow);
 		isApplicableMatch.registerObject("flow", flow);
 		return csp;
 	}
@@ -787,8 +811,8 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	 * @generated
 	 */
 	public void registerObjects_BWD(PerformRuleResult ruleresult, EObject step, EObject pgw2ps, EObject prevNode,
-			EObject pstep, EObject sf1, EObject process, EObject useCase, EObject p2uc, EObject flow, EObject t2s,
-			EObject task) {
+			EObject pstep, EObject sf1, EObject process, EObject useCase, EObject p2uc, EObject pflow, EObject flow,
+			EObject t2s, EObject task) {
 		ruleresult.registerObject("step", step);
 		ruleresult.registerObject("pgw2ps", pgw2ps);
 		ruleresult.registerObject("prevNode", prevNode);
@@ -797,6 +821,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		ruleresult.registerObject("process", process);
 		ruleresult.registerObject("useCase", useCase);
 		ruleresult.registerObject("p2uc", p2uc);
+		ruleresult.registerObject("pflow", pflow);
 		ruleresult.registerObject("flow", flow);
 		ruleresult.registerObject("t2s", t2s);
 		ruleresult.registerObject("task", task);
@@ -811,7 +836,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	public boolean checkTypes_BWD(Match match) {
 		return true
 				&& match.getObject("step").eClass().equals(SimpleUseCase.SimpleUseCasePackage.eINSTANCE.getNormalStep())
-				&& match.getObject("flow").eClass()
+				&& match.getObject("pflow").eClass()
 						.equals(SimpleUseCase.SimpleUseCasePackage.eINSTANCE.getParallelFlow());
 	}
 
@@ -820,7 +845,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_103(EMoflonEdge _edge_sourceRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_190(EMoflonEdge _edge_sourceRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterPGImpl
 				.pattern_Task2NormalStepAfterPG_20_1_bindingAndBlackFFB(this);
@@ -875,7 +900,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_104(EMoflonEdge _edge_outgoing) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_191(EMoflonEdge _edge_outgoing) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterPGImpl
 				.pattern_Task2NormalStepAfterPG_21_1_bindingAndBlackFFB(this);
@@ -930,7 +955,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_30(EMoflonEdge _edge_invokedFlows) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_59(EMoflonEdge _edge_invokedFlows) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterPGImpl
 				.pattern_Task2NormalStepAfterPG_22_1_bindingAndBlackFFB(this);
@@ -945,17 +970,18 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 
 		// ForEach test core match and DECs
 		for (Object[] result2_black : Task2NormalStepAfterPGImpl
-				.pattern_Task2NormalStepAfterPG_22_2_blackFFFFB(_edge_invokedFlows)) {
+				.pattern_Task2NormalStepAfterPG_22_2_blackFFFFFB(_edge_invokedFlows)) {
 			NormalStep step = (NormalStep) result2_black[0];
 			ParallelStep pstep = (ParallelStep) result2_black[1];
 			UseCase useCase = (UseCase) result2_black[2];
-			ParallelFlow flow = (ParallelFlow) result2_black[3];
+			ParallelFlow pflow = (ParallelFlow) result2_black[3];
+			Flow flow = (Flow) result2_black[4];
 			Object[] result2_green = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_22_2_greenFB(__eClass);
 			Match match = (Match) result2_green[0];
 
 			// bookkeeping with generic isAppropriate method
-			if (Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_22_3_expressionFBBBBBB(this, match, step,
-					pstep, useCase, flow)) {
+			if (Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_22_3_expressionFBBBBBBB(this, match, step,
+					pstep, useCase, pflow, flow)) {
 				// Ensure that the correct types of elements are matched
 				if (Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_22_4_expressionFBB(this, match)) {
 
@@ -985,7 +1011,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_105(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_192(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterPGImpl
 				.pattern_Task2NormalStepAfterPG_23_1_bindingAndBlackFFB(this);
@@ -1040,7 +1066,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_31(EMoflonEdge _edge_flows) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_60(EMoflonEdge _edge_flows) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterPGImpl
 				.pattern_Task2NormalStepAfterPG_24_1_bindingAndBlackFFB(this);
@@ -1055,17 +1081,18 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 
 		// ForEach test core match and DECs
 		for (Object[] result2_black : Task2NormalStepAfterPGImpl
-				.pattern_Task2NormalStepAfterPG_24_2_blackFFFFB(_edge_flows)) {
+				.pattern_Task2NormalStepAfterPG_24_2_blackFFFFFB(_edge_flows)) {
 			NormalStep step = (NormalStep) result2_black[0];
 			ParallelStep pstep = (ParallelStep) result2_black[1];
 			UseCase useCase = (UseCase) result2_black[2];
-			ParallelFlow flow = (ParallelFlow) result2_black[3];
+			ParallelFlow pflow = (ParallelFlow) result2_black[3];
+			Flow flow = (Flow) result2_black[4];
 			Object[] result2_green = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_24_2_greenFB(__eClass);
 			Match match = (Match) result2_green[0];
 
 			// bookkeeping with generic isAppropriate method
-			if (Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_24_3_expressionFBBBBBB(this, match, step,
-					pstep, useCase, flow)) {
+			if (Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_24_3_expressionFBBBBBBB(this, match, step,
+					pstep, useCase, pflow, flow)) {
 				// Ensure that the correct types of elements are matched
 				if (Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_24_4_expressionFBB(this, match)) {
 
@@ -1095,7 +1122,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_32(EMoflonEdge _edge_steps) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_61(EMoflonEdge _edge_steps) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterPGImpl
 				.pattern_Task2NormalStepAfterPG_25_1_bindingAndBlackFFB(this);
@@ -1110,17 +1137,18 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 
 		// ForEach test core match and DECs
 		for (Object[] result2_black : Task2NormalStepAfterPGImpl
-				.pattern_Task2NormalStepAfterPG_25_2_blackFFFFB(_edge_steps)) {
+				.pattern_Task2NormalStepAfterPG_25_2_blackFFFFFB(_edge_steps)) {
 			NormalStep step = (NormalStep) result2_black[0];
 			ParallelStep pstep = (ParallelStep) result2_black[1];
 			UseCase useCase = (UseCase) result2_black[2];
-			ParallelFlow flow = (ParallelFlow) result2_black[3];
+			ParallelFlow pflow = (ParallelFlow) result2_black[3];
+			Flow flow = (Flow) result2_black[4];
 			Object[] result2_green = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_25_2_greenFB(__eClass);
 			Match match = (Match) result2_green[0];
 
 			// bookkeeping with generic isAppropriate method
-			if (Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_25_3_expressionFBBBBBB(this, match, step,
-					pstep, useCase, flow)) {
+			if (Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_25_3_expressionFBBBBBBB(this, match, step,
+					pstep, useCase, pflow, flow)) {
 				// Ensure that the correct types of elements are matched
 				if (Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_25_4_expressionFBB(this, match)) {
 
@@ -1150,7 +1178,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_106(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_193(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterPGImpl
 				.pattern_Task2NormalStepAfterPG_26_1_bindingAndBlackFFB(this);
@@ -1205,7 +1233,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_107(EMoflonEdge _edge_targetRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_194(EMoflonEdge _edge_targetRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterPGImpl
 				.pattern_Task2NormalStepAfterPG_27_1_bindingAndBlackFFB(this);
@@ -1260,7 +1288,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_108(EMoflonEdge _edge_incoming) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_195(EMoflonEdge _edge_incoming) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterPGImpl
 				.pattern_Task2NormalStepAfterPG_28_1_bindingAndBlackFFB(this);
@@ -1354,9 +1382,13 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 				.filter(nm -> nm.getNodeName().equals("p2uc")).findAny();
 		Bpmn2UseCase.P2UC p2uc = (Bpmn2UseCase.P2UC) matchForP2uc.get().getNode();
 
+		Optional<TripleMatchNodeMapping> matchForPflow = __tripleMatch.getNodeMappings().stream()
+				.filter(nm -> nm.getNodeName().equals("pflow")).findAny();
+		SimpleUseCase.ParallelFlow pflow = (SimpleUseCase.ParallelFlow) matchForPflow.get().getNode();
+
 		Optional<TripleMatchNodeMapping> matchForFlow = __tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("flow")).findAny();
-		SimpleUseCase.ParallelFlow flow = (SimpleUseCase.ParallelFlow) matchForFlow.get().getNode();
+		SimpleUseCase.Flow flow = (SimpleUseCase.Flow) matchForFlow.get().getNode();
 
 		Optional<TripleMatchNodeMapping> matchForT2s = __tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("t2s")).findAny();
@@ -1375,9 +1407,9 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		var_sf1_id.setValue(sf1.getId());
 		var_sf1_id.setType("String");
 
-		Variable var_flow_id = CSPFactoryHelper.eINSTANCE.createVariable("flow", true, csp);
-		var_flow_id.setValue(flow.getId());
-		var_flow_id.setType("String");
+		Variable var_pflow_id = CSPFactoryHelper.eINSTANCE.createVariable("pflow", true, csp);
+		var_pflow_id.setValue(pflow.getId());
+		var_pflow_id.setType("String");
 
 		Variable var_task_id = CSPFactoryHelper.eINSTANCE.createVariable("task", true, csp);
 		var_task_id.setValue(task.getId());
@@ -1394,7 +1426,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		csp.getConstraints().add(eq1);
 
 		eq0.setRuleName("Task2NormalStepAfterPG");
-		eq0.solve(var_sf1_id, var_flow_id);
+		eq0.solve(var_sf1_id, var_pflow_id);
 
 		eq1.setRuleName("Task2NormalStepAfterPG");
 		eq1.solve(var_task_id, var_step_id);
@@ -1402,14 +1434,14 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		if (csp.check()) {
 			ruleResult.setSuccess(true);
 		} else {
-			var_flow_id.setBound(false);
+			var_pflow_id.setBound(false);
 			var_step_id.setBound(false);
-			eq0.solve(var_sf1_id, var_flow_id);
+			eq0.solve(var_sf1_id, var_pflow_id);
 			eq1.solve(var_task_id, var_step_id);
 			if (csp.check()) {
 				ruleResult.setSuccess(true);
 				ruleResult.setRequiredChange(true);
-				flow.setId((String) var_flow_id.getValue());
+				pflow.setId((String) var_pflow_id.getValue());
 				step.setId((String) var_step_id.getValue());
 			} else {
 				ruleResult.setSuccess(false);
@@ -1464,9 +1496,13 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 				.filter(nm -> nm.getNodeName().equals("p2uc")).findAny();
 		Bpmn2UseCase.P2UC p2uc = (Bpmn2UseCase.P2UC) matchForP2uc.get().getNode();
 
+		Optional<TripleMatchNodeMapping> matchForPflow = __tripleMatch.getNodeMappings().stream()
+				.filter(nm -> nm.getNodeName().equals("pflow")).findAny();
+		SimpleUseCase.ParallelFlow pflow = (SimpleUseCase.ParallelFlow) matchForPflow.get().getNode();
+
 		Optional<TripleMatchNodeMapping> matchForFlow = __tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("flow")).findAny();
-		SimpleUseCase.ParallelFlow flow = (SimpleUseCase.ParallelFlow) matchForFlow.get().getNode();
+		SimpleUseCase.Flow flow = (SimpleUseCase.Flow) matchForFlow.get().getNode();
 
 		Optional<TripleMatchNodeMapping> matchForT2s = __tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("t2s")).findAny();
@@ -1485,9 +1521,9 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		var_sf1_id.setValue(sf1.getId());
 		var_sf1_id.setType("String");
 
-		Variable var_flow_id = CSPFactoryHelper.eINSTANCE.createVariable("flow", true, csp);
-		var_flow_id.setValue(flow.getId());
-		var_flow_id.setType("String");
+		Variable var_pflow_id = CSPFactoryHelper.eINSTANCE.createVariable("pflow", true, csp);
+		var_pflow_id.setValue(pflow.getId());
+		var_pflow_id.setType("String");
 
 		Variable var_task_id = CSPFactoryHelper.eINSTANCE.createVariable("task", true, csp);
 		var_task_id.setValue(task.getId());
@@ -1504,7 +1540,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		csp.getConstraints().add(eq1);
 
 		eq0.setRuleName("Task2NormalStepAfterPG");
-		eq0.solve(var_sf1_id, var_flow_id);
+		eq0.solve(var_sf1_id, var_pflow_id);
 
 		eq1.setRuleName("Task2NormalStepAfterPG");
 		eq1.solve(var_task_id, var_step_id);
@@ -1514,7 +1550,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		} else {
 			var_sf1_id.setBound(false);
 			var_task_id.setBound(false);
-			eq0.solve(var_sf1_id, var_flow_id);
+			eq0.solve(var_sf1_id, var_pflow_id);
 			eq1.solve(var_task_id, var_step_id);
 			if (csp.check()) {
 				ruleResult.setSuccess(true);
@@ -1547,7 +1583,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 
 		// ForEach match context
 		Object[] result2_binding = Task2NormalStepAfterPGImpl
-				.pattern_Task2NormalStepAfterPG_31_2_bindingFFFFFFFFBB(targetMatch, sourceMatch);
+				.pattern_Task2NormalStepAfterPG_31_2_bindingFFFFFFFFFBB(targetMatch, sourceMatch);
 		if (result2_binding == null) {
 			throw new RuntimeException("Binding in node match context failed." + " Variables: " + "[targetMatch] = "
 					+ targetMatch + ", " + "[sourceMatch] = " + sourceMatch + ".");
@@ -1558,20 +1594,23 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		SequenceFlow sf1 = (SequenceFlow) result2_binding[3];
 		SimpleBPMN.Process process = (SimpleBPMN.Process) result2_binding[4];
 		UseCase useCase = (UseCase) result2_binding[5];
-		ParallelFlow flow = (ParallelFlow) result2_binding[6];
-		Task task = (Task) result2_binding[7];
-		for (Object[] result2_black : Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_31_2_blackBFBBBBBFBBBB(
-				step, prevNode, pstep, sf1, process, useCase, flow, task, sourceMatch, targetMatch)) {
+		ParallelFlow pflow = (ParallelFlow) result2_binding[6];
+		Flow flow = (Flow) result2_binding[7];
+		Task task = (Task) result2_binding[8];
+		for (Object[] result2_black : Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_31_2_blackBFBBBBBFBBBBB(
+				step, prevNode, pstep, sf1, process, useCase, pflow, flow, task, sourceMatch, targetMatch)) {
 			GW2S pgw2ps = (GW2S) result2_black[1];
 			P2UC p2uc = (P2UC) result2_black[7];
-			Object[] result2_green = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_31_2_greenBBBBBBBBBBBBF(
-					step, pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, flow, task, sourceMatch, targetMatch);
-			IsApplicableMatchCC isApplicableMatch = (IsApplicableMatchCC) result2_green[12];
+			Object[] result2_green = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_31_2_greenBBBBBBBBBBBBBF(
+					step, pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, pflow, flow, task, sourceMatch,
+					targetMatch);
+			IsApplicableMatchCC isApplicableMatch = (IsApplicableMatchCC) result2_green[13];
 
 			// check csp
 			Object[] result3_bindingAndBlack = Task2NormalStepAfterPGImpl
-					.pattern_Task2NormalStepAfterPG_31_3_bindingAndBlackFBBBBBBBBBBBBBB(this, isApplicableMatch, step,
-							pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, flow, task, sourceMatch, targetMatch);
+					.pattern_Task2NormalStepAfterPG_31_3_bindingAndBlackFBBBBBBBBBBBBBBB(this, isApplicableMatch, step,
+							pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, pflow, flow, task, sourceMatch,
+							targetMatch);
 			if (result3_bindingAndBlack != null) {
 				// CSP csp = (CSP) result3_bindingAndBlack[0];
 
@@ -1599,7 +1638,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	 */
 	public CSP isApplicable_solveCsp_CC(IsApplicableMatchCC isApplicableMatch, NormalStep step, GW2S pgw2ps,
 			ParallelGateway prevNode, ParallelStep pstep, SequenceFlow sf1, SimpleBPMN.Process process, UseCase useCase,
-			P2UC p2uc, ParallelFlow flow, Task task, Match sourceMatch, Match targetMatch) {// Create CSP
+			P2UC p2uc, ParallelFlow pflow, Flow flow, Task task, Match sourceMatch, Match targetMatch) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
 
@@ -1609,9 +1648,9 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		Variable var_sf1_id = CSPFactoryHelper.eINSTANCE.createVariable("sf1.id", true, csp);
 		var_sf1_id.setValue(sf1.getId());
 		var_sf1_id.setType("String");
-		Variable var_flow_id = CSPFactoryHelper.eINSTANCE.createVariable("flow.id", true, csp);
-		var_flow_id.setValue(flow.getId());
-		var_flow_id.setType("String");
+		Variable var_pflow_id = CSPFactoryHelper.eINSTANCE.createVariable("pflow.id", true, csp);
+		var_pflow_id.setValue(pflow.getId());
+		var_pflow_id.setType("String");
 		Variable var_task_id = CSPFactoryHelper.eINSTANCE.createVariable("task.id", true, csp);
 		var_task_id.setValue(task.getId());
 		var_task_id.setType("String");
@@ -1630,7 +1669,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 
 		// Solve CSP
 		eq.setRuleName("");
-		eq.solve(var_sf1_id, var_flow_id);
+		eq.solve(var_sf1_id, var_pflow_id);
 		eq_0.setRuleName("");
 		eq_0.solve(var_task_id, var_step_id);
 
@@ -1643,6 +1682,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		isApplicableMatch.registerObject("process", process);
 		isApplicableMatch.registerObject("useCase", useCase);
 		isApplicableMatch.registerObject("p2uc", p2uc);
+		isApplicableMatch.registerObject("pflow", pflow);
 		isApplicableMatch.registerObject("flow", flow);
 		isApplicableMatch.registerObject("task", task);
 		return csp;
@@ -1672,7 +1712,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 
 		// create correspondence links
 		Object[] result2_bindingAndBlack = Task2NormalStepAfterPGImpl
-				.pattern_Task2NormalStepAfterPG_34_2_bindingAndBlackFFFFFFFFFFB(isApplicableMatch);
+				.pattern_Task2NormalStepAfterPG_34_2_bindingAndBlackFFFFFFFFFFFB(isApplicableMatch);
 		if (result2_bindingAndBlack == null) {
 			throw new RuntimeException("Pattern matching in node [create correspondence links] failed." + " Variables: "
 					+ "[isApplicableMatch] = " + isApplicableMatch + ".");
@@ -1685,8 +1725,9 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		// SimpleBPMN.Process process = (SimpleBPMN.Process) result2_bindingAndBlack[5];
 		// UseCase useCase = (UseCase) result2_bindingAndBlack[6];
 		// P2UC p2uc = (P2UC) result2_bindingAndBlack[7];
-		// ParallelFlow flow = (ParallelFlow) result2_bindingAndBlack[8];
-		Task task = (Task) result2_bindingAndBlack[9];
+		// ParallelFlow pflow = (ParallelFlow) result2_bindingAndBlack[8];
+		// Flow flow = (Flow) result2_bindingAndBlack[9];
+		Task task = (Task) result2_bindingAndBlack[10];
 		Object[] result2_green = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_34_2_greenBBFF(step, task);
 		PerformRuleResult result = (PerformRuleResult) result2_green[2];
 		// FN2S t2s = (FN2S) result2_green[3];
@@ -1712,49 +1753,51 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 
 		// ForEach is applicable core
 		for (Object[] result2_black : Task2NormalStepAfterPGImpl
-				.pattern_Task2NormalStepAfterPG_35_2_blackFFFFFFFBB(ruleEntryContainer, ruleResult)) {
+				.pattern_Task2NormalStepAfterPG_35_2_blackFFFFFFFFBB(ruleEntryContainer, ruleResult)) {
 			// RuleEntryList pgw2psList = (RuleEntryList) result2_black[0];
 			GW2S pgw2ps = (GW2S) result2_black[1];
 			ParallelGateway prevNode = (ParallelGateway) result2_black[2];
 			SimpleBPMN.Process process = (SimpleBPMN.Process) result2_black[3];
 			P2UC p2uc = (P2UC) result2_black[4];
 			UseCase useCase = (UseCase) result2_black[5];
-			ParallelStep pstep = (ParallelStep) result2_black[6];
+			Flow flow = (Flow) result2_black[6];
+			ParallelStep pstep = (ParallelStep) result2_black[7];
 
 			// solve CSP
 			Object[] result3_bindingAndBlack = Task2NormalStepAfterPGImpl
-					.pattern_Task2NormalStepAfterPG_35_3_bindingAndBlackFBBBBBBBBB(this, isApplicableMatch, pgw2ps,
-							prevNode, pstep, process, useCase, p2uc, ruleResult);
+					.pattern_Task2NormalStepAfterPG_35_3_bindingAndBlackFBBBBBBBBBB(this, isApplicableMatch, pgw2ps,
+							prevNode, pstep, process, useCase, p2uc, flow, ruleResult);
 			if (result3_bindingAndBlack == null) {
 				throw new RuntimeException("Pattern matching in node [solve CSP] failed." + " Variables: " + "[this] = "
 						+ this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ", " + "[pgw2ps] = " + pgw2ps
 						+ ", " + "[prevNode] = " + prevNode + ", " + "[pstep] = " + pstep + ", " + "[process] = "
-						+ process + ", " + "[useCase] = " + useCase + ", " + "[p2uc] = " + p2uc + ", "
-						+ "[ruleResult] = " + ruleResult + ".");
+						+ process + ", " + "[useCase] = " + useCase + ", " + "[p2uc] = " + p2uc + ", " + "[flow] = "
+						+ flow + ", " + "[ruleResult] = " + ruleResult + ".");
 			}
 			CSP csp = (CSP) result3_bindingAndBlack[0];
 			// check CSP
 			if (Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_35_4_expressionFBB(this, csp)) {
 				// check nacs
-				Object[] result5_black = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_35_5_blackBBBBBB(
-						pgw2ps, prevNode, pstep, process, useCase, p2uc);
+				Object[] result5_black = Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_35_5_blackBBBBBBB(
+						pgw2ps, prevNode, pstep, process, useCase, p2uc, flow);
 				if (result5_black != null) {
 
 					// perform
 					Object[] result6_black = Task2NormalStepAfterPGImpl
-							.pattern_Task2NormalStepAfterPG_35_6_blackBBBBBBB(pgw2ps, prevNode, pstep, process, useCase,
-									p2uc, ruleResult);
+							.pattern_Task2NormalStepAfterPG_35_6_blackBBBBBBBB(pgw2ps, prevNode, pstep, process,
+									useCase, p2uc, flow, ruleResult);
 					if (result6_black == null) {
 						throw new RuntimeException("Pattern matching in node [perform] failed." + " Variables: "
 								+ "[pgw2ps] = " + pgw2ps + ", " + "[prevNode] = " + prevNode + ", " + "[pstep] = "
 								+ pstep + ", " + "[process] = " + process + ", " + "[useCase] = " + useCase + ", "
-								+ "[p2uc] = " + p2uc + ", " + "[ruleResult] = " + ruleResult + ".");
+								+ "[p2uc] = " + p2uc + ", " + "[flow] = " + flow + ", " + "[ruleResult] = " + ruleResult
+								+ ".");
 					}
 					Task2NormalStepAfterPGImpl.pattern_Task2NormalStepAfterPG_35_6_greenFBBFBBFFFBB(prevNode, pstep,
 							process, useCase, ruleResult, csp);
 					// NormalStep step = (NormalStep) result6_green[0];
 					// SequenceFlow sf1 = (SequenceFlow) result6_green[3];
-					// ParallelFlow flow = (ParallelFlow) result6_green[6];
+					// ParallelFlow pflow = (ParallelFlow) result6_green[6];
 					// FN2S t2s = (FN2S) result6_green[7];
 					// Task task = (Task) result6_green[8];
 
@@ -1774,7 +1817,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	 * @generated
 	 */
 	public CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, GW2S pgw2ps, ParallelGateway prevNode,
-			ParallelStep pstep, SimpleBPMN.Process process, UseCase useCase, P2UC p2uc,
+			ParallelStep pstep, SimpleBPMN.Process process, UseCase useCase, P2UC p2uc, Flow flow,
 			ModelgeneratorRuleResult ruleResult) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
@@ -1786,8 +1829,8 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		// Create unbound variables
 		Variable var_sf1_id = CSPFactoryHelper.eINSTANCE.createVariable("sf1.id", csp);
 		var_sf1_id.setType("String");
-		Variable var_flow_id = CSPFactoryHelper.eINSTANCE.createVariable("flow.id", csp);
-		var_flow_id.setType("String");
+		Variable var_pflow_id = CSPFactoryHelper.eINSTANCE.createVariable("pflow.id", csp);
+		var_pflow_id.setType("String");
 		Variable var_task_id = CSPFactoryHelper.eINSTANCE.createVariable("task.id", csp);
 		var_task_id.setType("String");
 		Variable var_step_id = CSPFactoryHelper.eINSTANCE.createVariable("step.id", csp);
@@ -1802,7 +1845,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 
 		// Solve CSP
 		eq.setRuleName("");
-		eq.solve(var_sf1_id, var_flow_id);
+		eq.solve(var_sf1_id, var_pflow_id);
 		eq_0.setRuleName("");
 		eq_0.solve(var_task_id, var_step_id);
 
@@ -1813,6 +1856,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		isApplicableMatch.registerObject("process", process);
 		isApplicableMatch.registerObject("useCase", useCase);
 		isApplicableMatch.registerObject("p2uc", p2uc);
+		isApplicableMatch.registerObject("flow", flow);
 		return csp;
 	}
 
@@ -1849,95 +1893,98 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 					(SequenceFlow) arguments.get(2), (SimpleBPMN.Process) arguments.get(3), (Task) arguments.get(4));
 		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_CHECK_CSP_FWD__CSP:
 			return isAppropriate_checkCsp_FWD((CSP) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_GW2S_PARALLELGATEWAY_PARALLELSTEP_SEQUENCEFLOW_PROCESS_USECASE_P2UC_TASK:
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_GW2S_PARALLELGATEWAY_PARALLELSTEP_SEQUENCEFLOW_PROCESS_USECASE_P2UC_FLOW_TASK:
 			return isApplicable_solveCsp_FWD((IsApplicableMatch) arguments.get(0), (GW2S) arguments.get(1),
 					(ParallelGateway) arguments.get(2), (ParallelStep) arguments.get(3),
 					(SequenceFlow) arguments.get(4), (SimpleBPMN.Process) arguments.get(5), (UseCase) arguments.get(6),
-					(P2UC) arguments.get(7), (Task) arguments.get(8));
+					(P2UC) arguments.get(7), (Flow) arguments.get(8), (Task) arguments.get(9));
 		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPLICABLE_CHECK_CSP_FWD__CSP:
 			return isApplicable_checkCsp_FWD((CSP) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
 			registerObjects_FWD((PerformRuleResult) arguments.get(0), (EObject) arguments.get(1),
 					(EObject) arguments.get(2), (EObject) arguments.get(3), (EObject) arguments.get(4),
 					(EObject) arguments.get(5), (EObject) arguments.get(6), (EObject) arguments.get(7),
 					(EObject) arguments.get(8), (EObject) arguments.get(9), (EObject) arguments.get(10),
-					(EObject) arguments.get(11));
+					(EObject) arguments.get(11), (EObject) arguments.get(12));
 			return null;
 		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___CHECK_TYPES_FWD__MATCH:
 			return checkTypes_FWD((Match) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_BWD__MATCH_NORMALSTEP_PARALLELSTEP_USECASE_PARALLELFLOW:
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_BWD__MATCH_NORMALSTEP_PARALLELSTEP_USECASE_PARALLELFLOW_FLOW:
 			return isAppropriate_BWD((Match) arguments.get(0), (NormalStep) arguments.get(1),
-					(ParallelStep) arguments.get(2), (UseCase) arguments.get(3), (ParallelFlow) arguments.get(4));
+					(ParallelStep) arguments.get(2), (UseCase) arguments.get(3), (ParallelFlow) arguments.get(4),
+					(Flow) arguments.get(5));
 		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___PERFORM_BWD__ISAPPLICABLEMATCH:
 			return perform_BWD((IsApplicableMatch) arguments.get(0));
 		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPLICABLE_BWD__MATCH:
 			return isApplicable_BWD((Match) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_NORMALSTEP_PARALLELSTEP_USECASE_PARALLELFLOW:
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_NORMALSTEP_PARALLELSTEP_USECASE_PARALLELFLOW_FLOW:
 			registerObjectsToMatch_BWD((Match) arguments.get(0), (NormalStep) arguments.get(1),
-					(ParallelStep) arguments.get(2), (UseCase) arguments.get(3), (ParallelFlow) arguments.get(4));
+					(ParallelStep) arguments.get(2), (UseCase) arguments.get(3), (ParallelFlow) arguments.get(4),
+					(Flow) arguments.get(5));
 			return null;
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_NORMALSTEP_PARALLELSTEP_USECASE_PARALLELFLOW:
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_NORMALSTEP_PARALLELSTEP_USECASE_PARALLELFLOW_FLOW:
 			return isAppropriate_solveCsp_BWD((Match) arguments.get(0), (NormalStep) arguments.get(1),
-					(ParallelStep) arguments.get(2), (UseCase) arguments.get(3), (ParallelFlow) arguments.get(4));
+					(ParallelStep) arguments.get(2), (UseCase) arguments.get(3), (ParallelFlow) arguments.get(4),
+					(Flow) arguments.get(5));
 		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_CHECK_CSP_BWD__CSP:
 			return isAppropriate_checkCsp_BWD((CSP) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_NORMALSTEP_GW2S_PARALLELGATEWAY_PARALLELSTEP_PROCESS_USECASE_P2UC_PARALLELFLOW:
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_NORMALSTEP_GW2S_PARALLELGATEWAY_PARALLELSTEP_PROCESS_USECASE_P2UC_PARALLELFLOW_FLOW:
 			return isApplicable_solveCsp_BWD((IsApplicableMatch) arguments.get(0), (NormalStep) arguments.get(1),
 					(GW2S) arguments.get(2), (ParallelGateway) arguments.get(3), (ParallelStep) arguments.get(4),
 					(SimpleBPMN.Process) arguments.get(5), (UseCase) arguments.get(6), (P2UC) arguments.get(7),
-					(ParallelFlow) arguments.get(8));
+					(ParallelFlow) arguments.get(8), (Flow) arguments.get(9));
 		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPLICABLE_CHECK_CSP_BWD__CSP:
 			return isApplicable_checkCsp_BWD((CSP) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
 			registerObjects_BWD((PerformRuleResult) arguments.get(0), (EObject) arguments.get(1),
 					(EObject) arguments.get(2), (EObject) arguments.get(3), (EObject) arguments.get(4),
 					(EObject) arguments.get(5), (EObject) arguments.get(6), (EObject) arguments.get(7),
 					(EObject) arguments.get(8), (EObject) arguments.get(9), (EObject) arguments.get(10),
-					(EObject) arguments.get(11));
+					(EObject) arguments.get(11), (EObject) arguments.get(12));
 			return null;
 		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_103__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_103((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_104__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_104((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_30__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_30((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_105__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_105((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_31__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_31((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_32__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_32((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_106__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_106((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_107__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_107((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_108__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_108((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_190__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_190((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_191__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_191((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_59__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_59((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_192__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_192((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_60__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_60((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_61__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_61((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_193__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_193((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_194__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_194((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_195__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_195((EMoflonEdge) arguments.get(0));
 		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
 			return checkAttributes_BWD((TripleMatch) arguments.get(0));
 		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPLICABLE_CC__MATCH_MATCH:
 			return isApplicable_CC((Match) arguments.get(0), (Match) arguments.get(1));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPLICABLE_SOLVE_CSP_CC__ISAPPLICABLEMATCHCC_NORMALSTEP_GW2S_PARALLELGATEWAY_PARALLELSTEP_SEQUENCEFLOW_PROCESS_USECASE_P2UC_PARALLELFLOW_TASK_MATCH_MATCH:
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPLICABLE_SOLVE_CSP_CC__ISAPPLICABLEMATCHCC_NORMALSTEP_GW2S_PARALLELGATEWAY_PARALLELSTEP_SEQUENCEFLOW_PROCESS_USECASE_P2UC_PARALLELFLOW_FLOW_TASK_MATCH_MATCH:
 			return isApplicable_solveCsp_CC((IsApplicableMatchCC) arguments.get(0), (NormalStep) arguments.get(1),
 					(GW2S) arguments.get(2), (ParallelGateway) arguments.get(3), (ParallelStep) arguments.get(4),
 					(SequenceFlow) arguments.get(5), (SimpleBPMN.Process) arguments.get(6), (UseCase) arguments.get(7),
-					(P2UC) arguments.get(8), (ParallelFlow) arguments.get(9), (Task) arguments.get(10),
-					(Match) arguments.get(11), (Match) arguments.get(12));
+					(P2UC) arguments.get(8), (ParallelFlow) arguments.get(9), (Flow) arguments.get(10),
+					(Task) arguments.get(11), (Match) arguments.get(12), (Match) arguments.get(13));
 		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___IS_APPLICABLE_CHECK_CSP_CC__CSP:
 			return isApplicable_checkCsp_CC((CSP) arguments.get(0));
 		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___PERFORM_CC__ISAPPLICABLEMATCHCC:
 			return perform_CC((IsApplicableMatchCC) arguments.get(0));
 		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___GENERATE_MODEL__RULEENTRYCONTAINER_GW2S:
 			return generateModel((RuleEntryContainer) arguments.get(0), (GW2S) arguments.get(1));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_GW2S_PARALLELGATEWAY_PARALLELSTEP_PROCESS_USECASE_P2UC_MODELGENERATORRULERESULT:
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_GW2S_PARALLELGATEWAY_PARALLELSTEP_PROCESS_USECASE_P2UC_FLOW_MODELGENERATORRULERESULT:
 			return generateModel_solveCsp_BWD((IsApplicableMatch) arguments.get(0), (GW2S) arguments.get(1),
 					(ParallelGateway) arguments.get(2), (ParallelStep) arguments.get(3),
 					(SimpleBPMN.Process) arguments.get(4), (UseCase) arguments.get(5), (P2UC) arguments.get(6),
-					(ModelgeneratorRuleResult) arguments.get(7));
+					(Flow) arguments.get(7), (ModelgeneratorRuleResult) arguments.get(8));
 		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG___GENERATE_MODEL_CHECK_CSP_BWD__CSP:
 			return generateModel_checkCsp_BWD((CSP) arguments.get(0));
 		}
@@ -2070,7 +2117,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return _result;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_1_1_bindingFFFFFFFFB(
+	public static final Object[] pattern_Task2NormalStepAfterPG_1_1_bindingFFFFFFFFFB(
 			IsApplicableMatch isApplicableMatch) {
 		EObject _localVariable_0 = isApplicableMatch.getObject("pgw2ps");
 		EObject _localVariable_1 = isApplicableMatch.getObject("prevNode");
@@ -2079,7 +2126,8 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		EObject _localVariable_4 = isApplicableMatch.getObject("process");
 		EObject _localVariable_5 = isApplicableMatch.getObject("useCase");
 		EObject _localVariable_6 = isApplicableMatch.getObject("p2uc");
-		EObject _localVariable_7 = isApplicableMatch.getObject("task");
+		EObject _localVariable_7 = isApplicableMatch.getObject("flow");
+		EObject _localVariable_8 = isApplicableMatch.getObject("task");
 		EObject tmpPgw2ps = _localVariable_0;
 		EObject tmpPrevNode = _localVariable_1;
 		EObject tmpPstep = _localVariable_2;
@@ -2087,7 +2135,8 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		EObject tmpProcess = _localVariable_4;
 		EObject tmpUseCase = _localVariable_5;
 		EObject tmpP2uc = _localVariable_6;
-		EObject tmpTask = _localVariable_7;
+		EObject tmpFlow = _localVariable_7;
+		EObject tmpTask = _localVariable_8;
 		if (tmpPgw2ps instanceof GW2S) {
 			GW2S pgw2ps = (GW2S) tmpPgw2ps;
 			if (tmpPrevNode instanceof ParallelGateway) {
@@ -2102,10 +2151,13 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 								UseCase useCase = (UseCase) tmpUseCase;
 								if (tmpP2uc instanceof P2UC) {
 									P2UC p2uc = (P2UC) tmpP2uc;
-									if (tmpTask instanceof Task) {
-										Task task = (Task) tmpTask;
-										return new Object[] { pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc,
-												task, isApplicableMatch };
+									if (tmpFlow instanceof Flow) {
+										Flow flow = (Flow) tmpFlow;
+										if (tmpTask instanceof Task) {
+											Task task = (Task) tmpTask;
+											return new Object[] { pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc,
+													flow, task, isApplicableMatch };
+										}
 									}
 								}
 							}
@@ -2117,22 +2169,22 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return null;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_1_1_blackBBBBBBBBBFB(GW2S pgw2ps,
+	public static final Object[] pattern_Task2NormalStepAfterPG_1_1_blackBBBBBBBBBBFB(GW2S pgw2ps,
 			ParallelGateway prevNode, ParallelStep pstep, SequenceFlow sf1, SimpleBPMN.Process process, UseCase useCase,
-			P2UC p2uc, Task task, Task2NormalStepAfterPG _this, IsApplicableMatch isApplicableMatch) {
+			P2UC p2uc, Flow flow, Task task, Task2NormalStepAfterPG _this, IsApplicableMatch isApplicableMatch) {
 		for (EObject tmpCsp : isApplicableMatch.getAttributeInfo()) {
 			if (tmpCsp instanceof CSP) {
 				CSP csp = (CSP) tmpCsp;
-				return new Object[] { pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, task, _this, csp,
+				return new Object[] { pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, flow, task, _this, csp,
 						isApplicableMatch };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_1_1_bindingAndBlackFFFFFFFFBFB(
+	public static final Object[] pattern_Task2NormalStepAfterPG_1_1_bindingAndBlackFFFFFFFFFBFB(
 			Task2NormalStepAfterPG _this, IsApplicableMatch isApplicableMatch) {
-		Object[] result_pattern_Task2NormalStepAfterPG_1_1_binding = pattern_Task2NormalStepAfterPG_1_1_bindingFFFFFFFFB(
+		Object[] result_pattern_Task2NormalStepAfterPG_1_1_binding = pattern_Task2NormalStepAfterPG_1_1_bindingFFFFFFFFFB(
 				isApplicableMatch);
 		if (result_pattern_Task2NormalStepAfterPG_1_1_binding != null) {
 			GW2S pgw2ps = (GW2S) result_pattern_Task2NormalStepAfterPG_1_1_binding[0];
@@ -2142,14 +2194,15 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 			SimpleBPMN.Process process = (SimpleBPMN.Process) result_pattern_Task2NormalStepAfterPG_1_1_binding[4];
 			UseCase useCase = (UseCase) result_pattern_Task2NormalStepAfterPG_1_1_binding[5];
 			P2UC p2uc = (P2UC) result_pattern_Task2NormalStepAfterPG_1_1_binding[6];
-			Task task = (Task) result_pattern_Task2NormalStepAfterPG_1_1_binding[7];
+			Flow flow = (Flow) result_pattern_Task2NormalStepAfterPG_1_1_binding[7];
+			Task task = (Task) result_pattern_Task2NormalStepAfterPG_1_1_binding[8];
 
-			Object[] result_pattern_Task2NormalStepAfterPG_1_1_black = pattern_Task2NormalStepAfterPG_1_1_blackBBBBBBBBBFB(
-					pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, task, _this, isApplicableMatch);
+			Object[] result_pattern_Task2NormalStepAfterPG_1_1_black = pattern_Task2NormalStepAfterPG_1_1_blackBBBBBBBBBBFB(
+					pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, flow, task, _this, isApplicableMatch);
 			if (result_pattern_Task2NormalStepAfterPG_1_1_black != null) {
-				CSP csp = (CSP) result_pattern_Task2NormalStepAfterPG_1_1_black[9];
+				CSP csp = (CSP) result_pattern_Task2NormalStepAfterPG_1_1_black[10];
 
-				return new Object[] { pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, task, _this, csp,
+				return new Object[] { pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, flow, task, _this, csp,
 						isApplicableMatch };
 			}
 		}
@@ -2159,41 +2212,41 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	public static final Object[] pattern_Task2NormalStepAfterPG_1_1_greenFBBFFBB(ParallelStep pstep, UseCase useCase,
 			Task task, CSP csp) {
 		NormalStep step = SimpleUseCaseFactory.eINSTANCE.createNormalStep();
-		ParallelFlow flow = SimpleUseCaseFactory.eINSTANCE.createParallelFlow();
+		ParallelFlow pflow = SimpleUseCaseFactory.eINSTANCE.createParallelFlow();
 		FN2S t2s = Bpmn2UseCaseFactory.eINSTANCE.createFN2S();
 		Object _localVariable_0 = csp.getValue("step", "id");
-		Object _localVariable_1 = csp.getValue("flow", "id");
-		pstep.getInvokedFlows().add(flow);
-		useCase.getFlows().add(flow);
-		flow.getSteps().add(step);
+		Object _localVariable_1 = csp.getValue("pflow", "id");
+		pstep.getInvokedFlows().add(pflow);
+		useCase.getFlows().add(pflow);
+		pflow.getSteps().add(step);
 		t2s.setTarget(step);
 		t2s.setSource(task);
 		String step_id_prime = (String) _localVariable_0;
-		String flow_id_prime = (String) _localVariable_1;
+		String pflow_id_prime = (String) _localVariable_1;
 		step.setId(step_id_prime);
-		flow.setId(flow_id_prime);
-		return new Object[] { step, pstep, useCase, flow, t2s, task, csp };
+		pflow.setId(pflow_id_prime);
+		return new Object[] { step, pstep, useCase, pflow, t2s, task, csp };
 	}
 
 	public static final Object[] pattern_Task2NormalStepAfterPG_1_2_blackBBBBB(NormalStep step, SequenceFlow sf1,
-			ParallelFlow flow, FN2S t2s, Task task) {
-		return new Object[] { step, sf1, flow, t2s, task };
+			ParallelFlow pflow, FN2S t2s, Task task) {
+		return new Object[] { step, sf1, pflow, t2s, task };
 	}
 
 	public static final Object[] pattern_Task2NormalStepAfterPG_1_2_greenFBBBBB(NormalStep step, SequenceFlow sf1,
-			ParallelFlow flow, FN2S t2s, Task task) {
+			ParallelFlow pflow, FN2S t2s, Task task) {
 		PerformRuleResult ruleresult = TGGRuntimeFactory.eINSTANCE.createPerformRuleResult();
 		ruleresult.getCreatedElements().add(step);
 		ruleresult.getTranslatedElements().add(sf1);
-		ruleresult.getCreatedElements().add(flow);
+		ruleresult.getCreatedElements().add(pflow);
 		ruleresult.getCreatedLinkElements().add(t2s);
 		ruleresult.getTranslatedElements().add(task);
-		return new Object[] { ruleresult, step, sf1, flow, t2s, task };
+		return new Object[] { ruleresult, step, sf1, pflow, t2s, task };
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_1_3_blackBBBBBBBBBBBB(PerformRuleResult ruleresult,
+	public static final Object[] pattern_Task2NormalStepAfterPG_1_3_blackBBBBBBBBBBBBB(PerformRuleResult ruleresult,
 			EObject step, EObject pgw2ps, EObject prevNode, EObject pstep, EObject sf1, EObject process,
-			EObject useCase, EObject p2uc, EObject flow, EObject t2s, EObject task) {
+			EObject useCase, EObject p2uc, EObject pflow, EObject flow, EObject t2s, EObject task) {
 		if (!step.equals(useCase)) {
 			if (!step.equals(t2s)) {
 				if (!step.equals(task)) {
@@ -2253,48 +2306,82 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 																																									if (!p2uc
 																																											.equals(useCase)) {
 																																										if (!p2uc
-																																												.equals(t2s)) {
+																																												.equals(pflow)) {
 																																											if (!p2uc
-																																													.equals(task)) {
-																																												if (!flow
-																																														.equals(step)) {
-																																													if (!flow
-																																															.equals(pgw2ps)) {
-																																														if (!flow
-																																																.equals(prevNode)) {
-																																															if (!flow
-																																																	.equals(pstep)) {
-																																																if (!flow
-																																																		.equals(sf1)) {
-																																																	if (!flow
-																																																			.equals(process)) {
-																																																		if (!flow
-																																																				.equals(useCase)) {
-																																																			if (!flow
-																																																					.equals(p2uc)) {
-																																																				if (!flow
+																																													.equals(t2s)) {
+																																												if (!p2uc
+																																														.equals(task)) {
+																																													if (!pflow
+																																															.equals(step)) {
+																																														if (!pflow
+																																																.equals(pgw2ps)) {
+																																															if (!pflow
+																																																	.equals(prevNode)) {
+																																																if (!pflow
+																																																		.equals(pstep)) {
+																																																	if (!pflow
+																																																			.equals(sf1)) {
+																																																		if (!pflow
+																																																				.equals(process)) {
+																																																			if (!pflow
+																																																					.equals(useCase)) {
+																																																				if (!pflow
 																																																						.equals(t2s)) {
-																																																					if (!flow
+																																																					if (!pflow
 																																																							.equals(task)) {
-																																																						if (!t2s.equals(
-																																																								useCase)) {
-																																																							if (!t2s.equals(
-																																																									task)) {
-																																																								if (!task
-																																																										.equals(useCase)) {
-																																																									return new Object[] {
-																																																											ruleresult,
-																																																											step,
-																																																											pgw2ps,
-																																																											prevNode,
-																																																											pstep,
-																																																											sf1,
-																																																											process,
-																																																											useCase,
-																																																											p2uc,
-																																																											flow,
-																																																											t2s,
-																																																											task };
+																																																						if (!flow
+																																																								.equals(step)) {
+																																																							if (!flow
+																																																									.equals(pgw2ps)) {
+																																																								if (!flow
+																																																										.equals(prevNode)) {
+																																																									if (!flow
+																																																											.equals(pstep)) {
+																																																										if (!flow
+																																																												.equals(sf1)) {
+																																																											if (!flow
+																																																													.equals(process)) {
+																																																												if (!flow
+																																																														.equals(useCase)) {
+																																																													if (!flow
+																																																															.equals(p2uc)) {
+																																																														if (!flow
+																																																																.equals(pflow)) {
+																																																															if (!flow
+																																																																	.equals(t2s)) {
+																																																																if (!flow
+																																																																		.equals(task)) {
+																																																																	if (!t2s.equals(
+																																																																			useCase)) {
+																																																																		if (!t2s.equals(
+																																																																				task)) {
+																																																																			if (!task
+																																																																					.equals(useCase)) {
+																																																																				return new Object[] {
+																																																																						ruleresult,
+																																																																						step,
+																																																																						pgw2ps,
+																																																																						prevNode,
+																																																																						pstep,
+																																																																						sf1,
+																																																																						process,
+																																																																						useCase,
+																																																																						p2uc,
+																																																																						pflow,
+																																																																						flow,
+																																																																						t2s,
+																																																																						task };
+																																																																			}
+																																																																		}
+																																																																	}
+																																																																}
+																																																															}
+																																																														}
+																																																													}
+																																																												}
+																																																											}
+																																																										}
+																																																									}
 																																																								}
 																																																							}
 																																																						}
@@ -2355,13 +2442,13 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterPG_1_3_greenBBBBBBBBBBFFFFFFFFFFF(
 			PerformRuleResult ruleresult, EObject step, EObject prevNode, EObject pstep, EObject sf1, EObject process,
-			EObject useCase, EObject flow, EObject t2s, EObject task) {
+			EObject useCase, EObject pflow, EObject t2s, EObject task) {
 		EMoflonEdge sf1__prevNode____sourceRef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge prevNode__sf1____outgoing = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge pstep__flow____invokedFlows = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge pstep__pflow____invokedFlows = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge process__sf1____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge useCase__flow____flows = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge flow__step____steps = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge useCase__pflow____flows = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge pflow__step____steps = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge t2s__step____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge t2s__task____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge process__task____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
@@ -2370,10 +2457,10 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		String ruleresult_ruleName_prime = "Task2NormalStepAfterPG";
 		String sf1__prevNode____sourceRef_name_prime = "sourceRef";
 		String prevNode__sf1____outgoing_name_prime = "outgoing";
-		String pstep__flow____invokedFlows_name_prime = "invokedFlows";
+		String pstep__pflow____invokedFlows_name_prime = "invokedFlows";
 		String process__sf1____flowElements_name_prime = "flowElements";
-		String useCase__flow____flows_name_prime = "flows";
-		String flow__step____steps_name_prime = "steps";
+		String useCase__pflow____flows_name_prime = "flows";
+		String pflow__step____steps_name_prime = "steps";
 		String t2s__step____target_name_prime = "target";
 		String t2s__task____source_name_prime = "source";
 		String process__task____flowElements_name_prime = "flowElements";
@@ -2385,18 +2472,18 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		prevNode__sf1____outgoing.setSrc(prevNode);
 		prevNode__sf1____outgoing.setTrg(sf1);
 		ruleresult.getTranslatedEdges().add(prevNode__sf1____outgoing);
-		pstep__flow____invokedFlows.setSrc(pstep);
-		pstep__flow____invokedFlows.setTrg(flow);
-		ruleresult.getCreatedEdges().add(pstep__flow____invokedFlows);
+		pstep__pflow____invokedFlows.setSrc(pstep);
+		pstep__pflow____invokedFlows.setTrg(pflow);
+		ruleresult.getCreatedEdges().add(pstep__pflow____invokedFlows);
 		process__sf1____flowElements.setSrc(process);
 		process__sf1____flowElements.setTrg(sf1);
 		ruleresult.getTranslatedEdges().add(process__sf1____flowElements);
-		useCase__flow____flows.setSrc(useCase);
-		useCase__flow____flows.setTrg(flow);
-		ruleresult.getCreatedEdges().add(useCase__flow____flows);
-		flow__step____steps.setSrc(flow);
-		flow__step____steps.setTrg(step);
-		ruleresult.getCreatedEdges().add(flow__step____steps);
+		useCase__pflow____flows.setSrc(useCase);
+		useCase__pflow____flows.setTrg(pflow);
+		ruleresult.getCreatedEdges().add(useCase__pflow____flows);
+		pflow__step____steps.setSrc(pflow);
+		pflow__step____steps.setTrg(step);
+		ruleresult.getCreatedEdges().add(pflow__step____steps);
 		t2s__step____target.setSrc(t2s);
 		t2s__step____target.setTrg(step);
 		ruleresult.getCreatedEdges().add(t2s__step____target);
@@ -2415,26 +2502,26 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		ruleresult.setRuleName(ruleresult_ruleName_prime);
 		sf1__prevNode____sourceRef.setName(sf1__prevNode____sourceRef_name_prime);
 		prevNode__sf1____outgoing.setName(prevNode__sf1____outgoing_name_prime);
-		pstep__flow____invokedFlows.setName(pstep__flow____invokedFlows_name_prime);
+		pstep__pflow____invokedFlows.setName(pstep__pflow____invokedFlows_name_prime);
 		process__sf1____flowElements.setName(process__sf1____flowElements_name_prime);
-		useCase__flow____flows.setName(useCase__flow____flows_name_prime);
-		flow__step____steps.setName(flow__step____steps_name_prime);
+		useCase__pflow____flows.setName(useCase__pflow____flows_name_prime);
+		pflow__step____steps.setName(pflow__step____steps_name_prime);
 		t2s__step____target.setName(t2s__step____target_name_prime);
 		t2s__task____source.setName(t2s__task____source_name_prime);
 		process__task____flowElements.setName(process__task____flowElements_name_prime);
 		sf1__task____targetRef.setName(sf1__task____targetRef_name_prime);
 		task__sf1____incoming.setName(task__sf1____incoming_name_prime);
-		return new Object[] { ruleresult, step, prevNode, pstep, sf1, process, useCase, flow, t2s, task,
-				sf1__prevNode____sourceRef, prevNode__sf1____outgoing, pstep__flow____invokedFlows,
-				process__sf1____flowElements, useCase__flow____flows, flow__step____steps, t2s__step____target,
+		return new Object[] { ruleresult, step, prevNode, pstep, sf1, process, useCase, pflow, t2s, task,
+				sf1__prevNode____sourceRef, prevNode__sf1____outgoing, pstep__pflow____invokedFlows,
+				process__sf1____flowElements, useCase__pflow____flows, pflow__step____steps, t2s__step____target,
 				t2s__task____source, process__task____flowElements, sf1__task____targetRef, task__sf1____incoming };
 	}
 
-	public static final void pattern_Task2NormalStepAfterPG_1_5_expressionBBBBBBBBBBBBB(Task2NormalStepAfterPG _this,
+	public static final void pattern_Task2NormalStepAfterPG_1_5_expressionBBBBBBBBBBBBBB(Task2NormalStepAfterPG _this,
 			PerformRuleResult ruleresult, EObject step, EObject pgw2ps, EObject prevNode, EObject pstep, EObject sf1,
-			EObject process, EObject useCase, EObject p2uc, EObject flow, EObject t2s, EObject task) {
-		_this.registerObjects_FWD(ruleresult, step, pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, flow, t2s,
-				task);
+			EObject process, EObject useCase, EObject p2uc, EObject pflow, EObject flow, EObject t2s, EObject task) {
+		_this.registerObjects_FWD(ruleresult, step, pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, pflow, flow,
+				t2s, task);
 
 	}
 
@@ -2544,7 +2631,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return _result;
 	}
 
-	public static final Iterable<Object[]> pattern_Task2NormalStepAfterPG_2_3_blackBBBBBBBB(GW2S pgw2ps,
+	public static final Iterable<Object[]> pattern_Task2NormalStepAfterPG_2_3_blackBBBBBBBFB(GW2S pgw2ps,
 			ParallelGateway prevNode, ParallelStep pstep, SequenceFlow sf1, SimpleBPMN.Process process, UseCase useCase,
 			P2UC p2uc, Task task) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
@@ -2559,8 +2646,12 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 										if (task.equals(sf1.getTargetRef())) {
 											boolean prevNodeisDiverging = prevNode.isIsDiverging();
 											if (Boolean.valueOf(prevNodeisDiverging).equals(Boolean.valueOf(true))) {
-												_result.add(new Object[] { pgw2ps, prevNode, pstep, sf1, process,
-														useCase, p2uc, task });
+												for (Flow flow : useCase.getFlows()) {
+													if (flow.getSteps().contains(pstep)) {
+														_result.add(new Object[] { pgw2ps, prevNode, pstep, sf1,
+																process, useCase, p2uc, flow, task });
+													}
+												}
 											}
 
 										}
@@ -2575,9 +2666,9 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return _result;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_2_3_greenBBBBBBBBFFFFFFFFFFFF(GW2S pgw2ps,
+	public static final Object[] pattern_Task2NormalStepAfterPG_2_3_greenBBBBBBBBBFFFFFFFFFFFFFF(GW2S pgw2ps,
 			ParallelGateway prevNode, ParallelStep pstep, SequenceFlow sf1, SimpleBPMN.Process process, UseCase useCase,
-			P2UC p2uc, Task task) {
+			P2UC p2uc, Flow flow, Task task) {
 		IsApplicableMatch isApplicableMatch = TGGRuntimeFactory.eINSTANCE.createIsApplicableMatch();
 		EMoflonEdge pgw2ps__prevNode____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge pgw2ps__pstep____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
@@ -2585,8 +2676,10 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		EMoflonEdge prevNode__sf1____outgoing = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge process__prevNode____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge process__sf1____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge useCase__flow____flows = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge p2uc__process____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge p2uc__useCase____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge flow__pstep____steps = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge process__task____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge sf1__task____targetRef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge task__sf1____incoming = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
@@ -2596,8 +2689,10 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		String prevNode__sf1____outgoing_name_prime = "outgoing";
 		String process__prevNode____flowElements_name_prime = "flowElements";
 		String process__sf1____flowElements_name_prime = "flowElements";
+		String useCase__flow____flows_name_prime = "flows";
 		String p2uc__process____source_name_prime = "source";
 		String p2uc__useCase____target_name_prime = "target";
+		String flow__pstep____steps_name_prime = "steps";
 		String process__task____flowElements_name_prime = "flowElements";
 		String sf1__task____targetRef_name_prime = "targetRef";
 		String task__sf1____incoming_name_prime = "incoming";
@@ -2608,6 +2703,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		isApplicableMatch.getAllContextElements().add(process);
 		isApplicableMatch.getAllContextElements().add(useCase);
 		isApplicableMatch.getAllContextElements().add(p2uc);
+		isApplicableMatch.getAllContextElements().add(flow);
 		isApplicableMatch.getAllContextElements().add(task);
 		pgw2ps__prevNode____source.setSrc(pgw2ps);
 		pgw2ps__prevNode____source.setTrg(prevNode);
@@ -2627,12 +2723,18 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		process__sf1____flowElements.setSrc(process);
 		process__sf1____flowElements.setTrg(sf1);
 		isApplicableMatch.getAllContextElements().add(process__sf1____flowElements);
+		useCase__flow____flows.setSrc(useCase);
+		useCase__flow____flows.setTrg(flow);
+		isApplicableMatch.getAllContextElements().add(useCase__flow____flows);
 		p2uc__process____source.setSrc(p2uc);
 		p2uc__process____source.setTrg(process);
 		isApplicableMatch.getAllContextElements().add(p2uc__process____source);
 		p2uc__useCase____target.setSrc(p2uc);
 		p2uc__useCase____target.setTrg(useCase);
 		isApplicableMatch.getAllContextElements().add(p2uc__useCase____target);
+		flow__pstep____steps.setSrc(flow);
+		flow__pstep____steps.setTrg(pstep);
+		isApplicableMatch.getAllContextElements().add(flow__pstep____steps);
 		process__task____flowElements.setSrc(process);
 		process__task____flowElements.setTrg(task);
 		isApplicableMatch.getAllContextElements().add(process__task____flowElements);
@@ -2648,27 +2750,29 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		prevNode__sf1____outgoing.setName(prevNode__sf1____outgoing_name_prime);
 		process__prevNode____flowElements.setName(process__prevNode____flowElements_name_prime);
 		process__sf1____flowElements.setName(process__sf1____flowElements_name_prime);
+		useCase__flow____flows.setName(useCase__flow____flows_name_prime);
 		p2uc__process____source.setName(p2uc__process____source_name_prime);
 		p2uc__useCase____target.setName(p2uc__useCase____target_name_prime);
+		flow__pstep____steps.setName(flow__pstep____steps_name_prime);
 		process__task____flowElements.setName(process__task____flowElements_name_prime);
 		sf1__task____targetRef.setName(sf1__task____targetRef_name_prime);
 		task__sf1____incoming.setName(task__sf1____incoming_name_prime);
-		return new Object[] { pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, task, isApplicableMatch,
+		return new Object[] { pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, flow, task, isApplicableMatch,
 				pgw2ps__prevNode____source, pgw2ps__pstep____target, sf1__prevNode____sourceRef,
 				prevNode__sf1____outgoing, process__prevNode____flowElements, process__sf1____flowElements,
-				p2uc__process____source, p2uc__useCase____target, process__task____flowElements, sf1__task____targetRef,
-				task__sf1____incoming };
+				useCase__flow____flows, p2uc__process____source, p2uc__useCase____target, flow__pstep____steps,
+				process__task____flowElements, sf1__task____targetRef, task__sf1____incoming };
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_2_4_bindingFBBBBBBBBBB(Task2NormalStepAfterPG _this,
+	public static final Object[] pattern_Task2NormalStepAfterPG_2_4_bindingFBBBBBBBBBBB(Task2NormalStepAfterPG _this,
 			IsApplicableMatch isApplicableMatch, GW2S pgw2ps, ParallelGateway prevNode, ParallelStep pstep,
-			SequenceFlow sf1, SimpleBPMN.Process process, UseCase useCase, P2UC p2uc, Task task) {
+			SequenceFlow sf1, SimpleBPMN.Process process, UseCase useCase, P2UC p2uc, Flow flow, Task task) {
 		CSP _localVariable_0 = _this.isApplicable_solveCsp_FWD(isApplicableMatch, pgw2ps, prevNode, pstep, sf1, process,
-				useCase, p2uc, task);
+				useCase, p2uc, flow, task);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
 			return new Object[] { csp, _this, isApplicableMatch, pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc,
-					task };
+					flow, task };
 		}
 		return null;
 	}
@@ -2677,11 +2781,12 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return new Object[] { csp };
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_2_4_bindingAndBlackFBBBBBBBBBB(
+	public static final Object[] pattern_Task2NormalStepAfterPG_2_4_bindingAndBlackFBBBBBBBBBBB(
 			Task2NormalStepAfterPG _this, IsApplicableMatch isApplicableMatch, GW2S pgw2ps, ParallelGateway prevNode,
-			ParallelStep pstep, SequenceFlow sf1, SimpleBPMN.Process process, UseCase useCase, P2UC p2uc, Task task) {
-		Object[] result_pattern_Task2NormalStepAfterPG_2_4_binding = pattern_Task2NormalStepAfterPG_2_4_bindingFBBBBBBBBBB(
-				_this, isApplicableMatch, pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, task);
+			ParallelStep pstep, SequenceFlow sf1, SimpleBPMN.Process process, UseCase useCase, P2UC p2uc, Flow flow,
+			Task task) {
+		Object[] result_pattern_Task2NormalStepAfterPG_2_4_binding = pattern_Task2NormalStepAfterPG_2_4_bindingFBBBBBBBBBBB(
+				_this, isApplicableMatch, pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, flow, task);
 		if (result_pattern_Task2NormalStepAfterPG_2_4_binding != null) {
 			CSP csp = (CSP) result_pattern_Task2NormalStepAfterPG_2_4_binding[0];
 
@@ -2689,7 +2794,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 			if (result_pattern_Task2NormalStepAfterPG_2_4_black != null) {
 
 				return new Object[] { csp, _this, isApplicableMatch, pgw2ps, prevNode, pstep, sf1, process, useCase,
-						p2uc, task };
+						p2uc, flow, task };
 			}
 		}
 		return null;
@@ -2723,17 +2828,20 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return _result;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_10_1_blackBBBBBB(Task2NormalStepAfterPG _this,
-			Match match, NormalStep step, ParallelStep pstep, UseCase useCase, ParallelFlow flow) {
-		return new Object[] { _this, match, step, pstep, useCase, flow };
+	public static final Object[] pattern_Task2NormalStepAfterPG_10_1_blackBBBBBBB(Task2NormalStepAfterPG _this,
+			Match match, NormalStep step, ParallelStep pstep, UseCase useCase, ParallelFlow pflow, Flow flow) {
+		if (!flow.equals(pflow)) {
+			return new Object[] { _this, match, step, pstep, useCase, pflow, flow };
+		}
+		return null;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_10_2_bindingFBBBBBB(Task2NormalStepAfterPG _this,
-			Match match, NormalStep step, ParallelStep pstep, UseCase useCase, ParallelFlow flow) {
-		CSP _localVariable_0 = _this.isAppropriate_solveCsp_BWD(match, step, pstep, useCase, flow);
+	public static final Object[] pattern_Task2NormalStepAfterPG_10_2_bindingFBBBBBBB(Task2NormalStepAfterPG _this,
+			Match match, NormalStep step, ParallelStep pstep, UseCase useCase, ParallelFlow pflow, Flow flow) {
+		CSP _localVariable_0 = _this.isAppropriate_solveCsp_BWD(match, step, pstep, useCase, pflow, flow);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, match, step, pstep, useCase, flow };
+			return new Object[] { csp, _this, match, step, pstep, useCase, pflow, flow };
 		}
 		return null;
 	}
@@ -2742,18 +2850,18 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return new Object[] { csp };
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_10_2_bindingAndBlackFBBBBBB(
+	public static final Object[] pattern_Task2NormalStepAfterPG_10_2_bindingAndBlackFBBBBBBB(
 			Task2NormalStepAfterPG _this, Match match, NormalStep step, ParallelStep pstep, UseCase useCase,
-			ParallelFlow flow) {
-		Object[] result_pattern_Task2NormalStepAfterPG_10_2_binding = pattern_Task2NormalStepAfterPG_10_2_bindingFBBBBBB(
-				_this, match, step, pstep, useCase, flow);
+			ParallelFlow pflow, Flow flow) {
+		Object[] result_pattern_Task2NormalStepAfterPG_10_2_binding = pattern_Task2NormalStepAfterPG_10_2_bindingFBBBBBBB(
+				_this, match, step, pstep, useCase, pflow, flow);
 		if (result_pattern_Task2NormalStepAfterPG_10_2_binding != null) {
 			CSP csp = (CSP) result_pattern_Task2NormalStepAfterPG_10_2_binding[0];
 
 			Object[] result_pattern_Task2NormalStepAfterPG_10_2_black = pattern_Task2NormalStepAfterPG_10_2_blackB(csp);
 			if (result_pattern_Task2NormalStepAfterPG_10_2_black != null) {
 
-				return new Object[] { csp, _this, match, step, pstep, useCase, flow };
+				return new Object[] { csp, _this, match, step, pstep, useCase, pflow, flow };
 			}
 		}
 		return null;
@@ -2766,52 +2874,71 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return _result;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_10_4_blackBBBBB(Match match, NormalStep step,
-			ParallelStep pstep, UseCase useCase, ParallelFlow flow) {
-		return new Object[] { match, step, pstep, useCase, flow };
+	public static final Object[] pattern_Task2NormalStepAfterPG_10_4_blackBBBBBB(Match match, NormalStep step,
+			ParallelStep pstep, UseCase useCase, ParallelFlow pflow, Flow flow) {
+		if (!flow.equals(pflow)) {
+			return new Object[] { match, step, pstep, useCase, pflow, flow };
+		}
+		return null;
 	}
 
 	public static final Object[] pattern_Task2NormalStepAfterPG_10_4_greenBBBBBFFF(Match match, NormalStep step,
-			ParallelStep pstep, UseCase useCase, ParallelFlow flow) {
-		EMoflonEdge pstep__flow____invokedFlows = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge useCase__flow____flows = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge flow__step____steps = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+			ParallelStep pstep, UseCase useCase, ParallelFlow pflow) {
+		EMoflonEdge pstep__pflow____invokedFlows = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge useCase__pflow____flows = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge pflow__step____steps = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		match.getToBeTranslatedNodes().add(step);
-		match.getToBeTranslatedNodes().add(flow);
-		String pstep__flow____invokedFlows_name_prime = "invokedFlows";
-		String useCase__flow____flows_name_prime = "flows";
-		String flow__step____steps_name_prime = "steps";
-		pstep__flow____invokedFlows.setSrc(pstep);
-		pstep__flow____invokedFlows.setTrg(flow);
-		match.getToBeTranslatedEdges().add(pstep__flow____invokedFlows);
-		useCase__flow____flows.setSrc(useCase);
-		useCase__flow____flows.setTrg(flow);
-		match.getToBeTranslatedEdges().add(useCase__flow____flows);
-		flow__step____steps.setSrc(flow);
-		flow__step____steps.setTrg(step);
-		match.getToBeTranslatedEdges().add(flow__step____steps);
-		pstep__flow____invokedFlows.setName(pstep__flow____invokedFlows_name_prime);
-		useCase__flow____flows.setName(useCase__flow____flows_name_prime);
-		flow__step____steps.setName(flow__step____steps_name_prime);
-		return new Object[] { match, step, pstep, useCase, flow, pstep__flow____invokedFlows, useCase__flow____flows,
-				flow__step____steps };
+		match.getToBeTranslatedNodes().add(pflow);
+		String pstep__pflow____invokedFlows_name_prime = "invokedFlows";
+		String useCase__pflow____flows_name_prime = "flows";
+		String pflow__step____steps_name_prime = "steps";
+		pstep__pflow____invokedFlows.setSrc(pstep);
+		pstep__pflow____invokedFlows.setTrg(pflow);
+		match.getToBeTranslatedEdges().add(pstep__pflow____invokedFlows);
+		useCase__pflow____flows.setSrc(useCase);
+		useCase__pflow____flows.setTrg(pflow);
+		match.getToBeTranslatedEdges().add(useCase__pflow____flows);
+		pflow__step____steps.setSrc(pflow);
+		pflow__step____steps.setTrg(step);
+		match.getToBeTranslatedEdges().add(pflow__step____steps);
+		pstep__pflow____invokedFlows.setName(pstep__pflow____invokedFlows_name_prime);
+		useCase__pflow____flows.setName(useCase__pflow____flows_name_prime);
+		pflow__step____steps.setName(pflow__step____steps_name_prime);
+		return new Object[] { match, step, pstep, useCase, pflow, pstep__pflow____invokedFlows, useCase__pflow____flows,
+				pflow__step____steps };
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_10_5_blackBBBBB(Match match, NormalStep step,
-			ParallelStep pstep, UseCase useCase, ParallelFlow flow) {
-		return new Object[] { match, step, pstep, useCase, flow };
+	public static final Object[] pattern_Task2NormalStepAfterPG_10_5_blackBBBBBB(Match match, NormalStep step,
+			ParallelStep pstep, UseCase useCase, ParallelFlow pflow, Flow flow) {
+		if (!flow.equals(pflow)) {
+			return new Object[] { match, step, pstep, useCase, pflow, flow };
+		}
+		return null;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_10_5_greenBBB(Match match, ParallelStep pstep,
-			UseCase useCase) {
+	public static final Object[] pattern_Task2NormalStepAfterPG_10_5_greenBBBBFF(Match match, ParallelStep pstep,
+			UseCase useCase, Flow flow) {
+		EMoflonEdge useCase__flow____flows = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge flow__pstep____steps = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		match.getContextNodes().add(pstep);
 		match.getContextNodes().add(useCase);
-		return new Object[] { match, pstep, useCase };
+		match.getContextNodes().add(flow);
+		String useCase__flow____flows_name_prime = "flows";
+		String flow__pstep____steps_name_prime = "steps";
+		useCase__flow____flows.setSrc(useCase);
+		useCase__flow____flows.setTrg(flow);
+		match.getContextEdges().add(useCase__flow____flows);
+		flow__pstep____steps.setSrc(flow);
+		flow__pstep____steps.setTrg(pstep);
+		match.getContextEdges().add(flow__pstep____steps);
+		useCase__flow____flows.setName(useCase__flow____flows_name_prime);
+		flow__pstep____steps.setName(flow__pstep____steps_name_prime);
+		return new Object[] { match, pstep, useCase, flow, useCase__flow____flows, flow__pstep____steps };
 	}
 
-	public static final void pattern_Task2NormalStepAfterPG_10_6_expressionBBBBBB(Task2NormalStepAfterPG _this,
-			Match match, NormalStep step, ParallelStep pstep, UseCase useCase, ParallelFlow flow) {
-		_this.registerObjectsToMatch_BWD(match, step, pstep, useCase, flow);
+	public static final void pattern_Task2NormalStepAfterPG_10_6_expressionBBBBBBB(Task2NormalStepAfterPG _this,
+			Match match, NormalStep step, ParallelStep pstep, UseCase useCase, ParallelFlow pflow, Flow flow) {
+		_this.registerObjectsToMatch_BWD(match, step, pstep, useCase, pflow, flow);
 
 	}
 
@@ -2825,7 +2952,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return _result;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_11_1_bindingFFFFFFFFB(
+	public static final Object[] pattern_Task2NormalStepAfterPG_11_1_bindingFFFFFFFFFB(
 			IsApplicableMatch isApplicableMatch) {
 		EObject _localVariable_0 = isApplicableMatch.getObject("step");
 		EObject _localVariable_1 = isApplicableMatch.getObject("pgw2ps");
@@ -2834,7 +2961,8 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		EObject _localVariable_4 = isApplicableMatch.getObject("process");
 		EObject _localVariable_5 = isApplicableMatch.getObject("useCase");
 		EObject _localVariable_6 = isApplicableMatch.getObject("p2uc");
-		EObject _localVariable_7 = isApplicableMatch.getObject("flow");
+		EObject _localVariable_7 = isApplicableMatch.getObject("pflow");
+		EObject _localVariable_8 = isApplicableMatch.getObject("flow");
 		EObject tmpStep = _localVariable_0;
 		EObject tmpPgw2ps = _localVariable_1;
 		EObject tmpPrevNode = _localVariable_2;
@@ -2842,7 +2970,8 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		EObject tmpProcess = _localVariable_4;
 		EObject tmpUseCase = _localVariable_5;
 		EObject tmpP2uc = _localVariable_6;
-		EObject tmpFlow = _localVariable_7;
+		EObject tmpPflow = _localVariable_7;
+		EObject tmpFlow = _localVariable_8;
 		if (tmpStep instanceof NormalStep) {
 			NormalStep step = (NormalStep) tmpStep;
 			if (tmpPgw2ps instanceof GW2S) {
@@ -2857,10 +2986,13 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 								UseCase useCase = (UseCase) tmpUseCase;
 								if (tmpP2uc instanceof P2UC) {
 									P2UC p2uc = (P2UC) tmpP2uc;
-									if (tmpFlow instanceof ParallelFlow) {
-										ParallelFlow flow = (ParallelFlow) tmpFlow;
-										return new Object[] { step, pgw2ps, prevNode, pstep, process, useCase, p2uc,
-												flow, isApplicableMatch };
+									if (tmpPflow instanceof ParallelFlow) {
+										ParallelFlow pflow = (ParallelFlow) tmpPflow;
+										if (tmpFlow instanceof Flow) {
+											Flow flow = (Flow) tmpFlow;
+											return new Object[] { step, pgw2ps, prevNode, pstep, process, useCase, p2uc,
+													pflow, flow, isApplicableMatch };
+										}
 									}
 								}
 							}
@@ -2872,22 +3004,24 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return null;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_11_1_blackBBBBBBBBBFB(NormalStep step, GW2S pgw2ps,
+	public static final Object[] pattern_Task2NormalStepAfterPG_11_1_blackBBBBBBBBBBFB(NormalStep step, GW2S pgw2ps,
 			ParallelGateway prevNode, ParallelStep pstep, SimpleBPMN.Process process, UseCase useCase, P2UC p2uc,
-			ParallelFlow flow, Task2NormalStepAfterPG _this, IsApplicableMatch isApplicableMatch) {
-		for (EObject tmpCsp : isApplicableMatch.getAttributeInfo()) {
-			if (tmpCsp instanceof CSP) {
-				CSP csp = (CSP) tmpCsp;
-				return new Object[] { step, pgw2ps, prevNode, pstep, process, useCase, p2uc, flow, _this, csp,
-						isApplicableMatch };
+			ParallelFlow pflow, Flow flow, Task2NormalStepAfterPG _this, IsApplicableMatch isApplicableMatch) {
+		if (!flow.equals(pflow)) {
+			for (EObject tmpCsp : isApplicableMatch.getAttributeInfo()) {
+				if (tmpCsp instanceof CSP) {
+					CSP csp = (CSP) tmpCsp;
+					return new Object[] { step, pgw2ps, prevNode, pstep, process, useCase, p2uc, pflow, flow, _this,
+							csp, isApplicableMatch };
+				}
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_11_1_bindingAndBlackFFFFFFFFBFB(
+	public static final Object[] pattern_Task2NormalStepAfterPG_11_1_bindingAndBlackFFFFFFFFFBFB(
 			Task2NormalStepAfterPG _this, IsApplicableMatch isApplicableMatch) {
-		Object[] result_pattern_Task2NormalStepAfterPG_11_1_binding = pattern_Task2NormalStepAfterPG_11_1_bindingFFFFFFFFB(
+		Object[] result_pattern_Task2NormalStepAfterPG_11_1_binding = pattern_Task2NormalStepAfterPG_11_1_bindingFFFFFFFFFB(
 				isApplicableMatch);
 		if (result_pattern_Task2NormalStepAfterPG_11_1_binding != null) {
 			NormalStep step = (NormalStep) result_pattern_Task2NormalStepAfterPG_11_1_binding[0];
@@ -2897,14 +3031,15 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 			SimpleBPMN.Process process = (SimpleBPMN.Process) result_pattern_Task2NormalStepAfterPG_11_1_binding[4];
 			UseCase useCase = (UseCase) result_pattern_Task2NormalStepAfterPG_11_1_binding[5];
 			P2UC p2uc = (P2UC) result_pattern_Task2NormalStepAfterPG_11_1_binding[6];
-			ParallelFlow flow = (ParallelFlow) result_pattern_Task2NormalStepAfterPG_11_1_binding[7];
+			ParallelFlow pflow = (ParallelFlow) result_pattern_Task2NormalStepAfterPG_11_1_binding[7];
+			Flow flow = (Flow) result_pattern_Task2NormalStepAfterPG_11_1_binding[8];
 
-			Object[] result_pattern_Task2NormalStepAfterPG_11_1_black = pattern_Task2NormalStepAfterPG_11_1_blackBBBBBBBBBFB(
-					step, pgw2ps, prevNode, pstep, process, useCase, p2uc, flow, _this, isApplicableMatch);
+			Object[] result_pattern_Task2NormalStepAfterPG_11_1_black = pattern_Task2NormalStepAfterPG_11_1_blackBBBBBBBBBBFB(
+					step, pgw2ps, prevNode, pstep, process, useCase, p2uc, pflow, flow, _this, isApplicableMatch);
 			if (result_pattern_Task2NormalStepAfterPG_11_1_black != null) {
-				CSP csp = (CSP) result_pattern_Task2NormalStepAfterPG_11_1_black[9];
+				CSP csp = (CSP) result_pattern_Task2NormalStepAfterPG_11_1_black[10];
 
-				return new Object[] { step, pgw2ps, prevNode, pstep, process, useCase, p2uc, flow, _this, csp,
+				return new Object[] { step, pgw2ps, prevNode, pstep, process, useCase, p2uc, pflow, flow, _this, csp,
 						isApplicableMatch };
 			}
 		}
@@ -2932,24 +3067,24 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	}
 
 	public static final Object[] pattern_Task2NormalStepAfterPG_11_2_blackBBBBB(NormalStep step, SequenceFlow sf1,
-			ParallelFlow flow, FN2S t2s, Task task) {
-		return new Object[] { step, sf1, flow, t2s, task };
+			ParallelFlow pflow, FN2S t2s, Task task) {
+		return new Object[] { step, sf1, pflow, t2s, task };
 	}
 
 	public static final Object[] pattern_Task2NormalStepAfterPG_11_2_greenFBBBBB(NormalStep step, SequenceFlow sf1,
-			ParallelFlow flow, FN2S t2s, Task task) {
+			ParallelFlow pflow, FN2S t2s, Task task) {
 		PerformRuleResult ruleresult = TGGRuntimeFactory.eINSTANCE.createPerformRuleResult();
 		ruleresult.getTranslatedElements().add(step);
 		ruleresult.getCreatedElements().add(sf1);
-		ruleresult.getTranslatedElements().add(flow);
+		ruleresult.getTranslatedElements().add(pflow);
 		ruleresult.getCreatedLinkElements().add(t2s);
 		ruleresult.getCreatedElements().add(task);
-		return new Object[] { ruleresult, step, sf1, flow, t2s, task };
+		return new Object[] { ruleresult, step, sf1, pflow, t2s, task };
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_11_3_blackBBBBBBBBBBBB(PerformRuleResult ruleresult,
+	public static final Object[] pattern_Task2NormalStepAfterPG_11_3_blackBBBBBBBBBBBBB(PerformRuleResult ruleresult,
 			EObject step, EObject pgw2ps, EObject prevNode, EObject pstep, EObject sf1, EObject process,
-			EObject useCase, EObject p2uc, EObject flow, EObject t2s, EObject task) {
+			EObject useCase, EObject p2uc, EObject pflow, EObject flow, EObject t2s, EObject task) {
 		if (!step.equals(useCase)) {
 			if (!step.equals(t2s)) {
 				if (!step.equals(task)) {
@@ -3009,48 +3144,82 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 																																									if (!p2uc
 																																											.equals(useCase)) {
 																																										if (!p2uc
-																																												.equals(t2s)) {
+																																												.equals(pflow)) {
 																																											if (!p2uc
-																																													.equals(task)) {
-																																												if (!flow
-																																														.equals(step)) {
-																																													if (!flow
-																																															.equals(pgw2ps)) {
-																																														if (!flow
-																																																.equals(prevNode)) {
-																																															if (!flow
-																																																	.equals(pstep)) {
-																																																if (!flow
-																																																		.equals(sf1)) {
-																																																	if (!flow
-																																																			.equals(process)) {
-																																																		if (!flow
-																																																				.equals(useCase)) {
-																																																			if (!flow
-																																																					.equals(p2uc)) {
-																																																				if (!flow
+																																													.equals(t2s)) {
+																																												if (!p2uc
+																																														.equals(task)) {
+																																													if (!pflow
+																																															.equals(step)) {
+																																														if (!pflow
+																																																.equals(pgw2ps)) {
+																																															if (!pflow
+																																																	.equals(prevNode)) {
+																																																if (!pflow
+																																																		.equals(pstep)) {
+																																																	if (!pflow
+																																																			.equals(sf1)) {
+																																																		if (!pflow
+																																																				.equals(process)) {
+																																																			if (!pflow
+																																																					.equals(useCase)) {
+																																																				if (!pflow
 																																																						.equals(t2s)) {
-																																																					if (!flow
+																																																					if (!pflow
 																																																							.equals(task)) {
-																																																						if (!t2s.equals(
-																																																								useCase)) {
-																																																							if (!t2s.equals(
-																																																									task)) {
-																																																								if (!task
-																																																										.equals(useCase)) {
-																																																									return new Object[] {
-																																																											ruleresult,
-																																																											step,
-																																																											pgw2ps,
-																																																											prevNode,
-																																																											pstep,
-																																																											sf1,
-																																																											process,
-																																																											useCase,
-																																																											p2uc,
-																																																											flow,
-																																																											t2s,
-																																																											task };
+																																																						if (!flow
+																																																								.equals(step)) {
+																																																							if (!flow
+																																																									.equals(pgw2ps)) {
+																																																								if (!flow
+																																																										.equals(prevNode)) {
+																																																									if (!flow
+																																																											.equals(pstep)) {
+																																																										if (!flow
+																																																												.equals(sf1)) {
+																																																											if (!flow
+																																																													.equals(process)) {
+																																																												if (!flow
+																																																														.equals(useCase)) {
+																																																													if (!flow
+																																																															.equals(p2uc)) {
+																																																														if (!flow
+																																																																.equals(pflow)) {
+																																																															if (!flow
+																																																																	.equals(t2s)) {
+																																																																if (!flow
+																																																																		.equals(task)) {
+																																																																	if (!t2s.equals(
+																																																																			useCase)) {
+																																																																		if (!t2s.equals(
+																																																																				task)) {
+																																																																			if (!task
+																																																																					.equals(useCase)) {
+																																																																				return new Object[] {
+																																																																						ruleresult,
+																																																																						step,
+																																																																						pgw2ps,
+																																																																						prevNode,
+																																																																						pstep,
+																																																																						sf1,
+																																																																						process,
+																																																																						useCase,
+																																																																						p2uc,
+																																																																						pflow,
+																																																																						flow,
+																																																																						t2s,
+																																																																						task };
+																																																																			}
+																																																																		}
+																																																																	}
+																																																																}
+																																																															}
+																																																														}
+																																																													}
+																																																												}
+																																																											}
+																																																										}
+																																																									}
 																																																								}
 																																																							}
 																																																						}
@@ -3111,13 +3280,13 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterPG_11_3_greenBBBBBBBBBBFFFFFFFFFFF(
 			PerformRuleResult ruleresult, EObject step, EObject prevNode, EObject pstep, EObject sf1, EObject process,
-			EObject useCase, EObject flow, EObject t2s, EObject task) {
+			EObject useCase, EObject pflow, EObject t2s, EObject task) {
 		EMoflonEdge sf1__prevNode____sourceRef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge prevNode__sf1____outgoing = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge pstep__flow____invokedFlows = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge pstep__pflow____invokedFlows = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge process__sf1____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge useCase__flow____flows = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge flow__step____steps = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge useCase__pflow____flows = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge pflow__step____steps = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge t2s__step____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge t2s__task____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge process__task____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
@@ -3126,10 +3295,10 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		String ruleresult_ruleName_prime = "Task2NormalStepAfterPG";
 		String sf1__prevNode____sourceRef_name_prime = "sourceRef";
 		String prevNode__sf1____outgoing_name_prime = "outgoing";
-		String pstep__flow____invokedFlows_name_prime = "invokedFlows";
+		String pstep__pflow____invokedFlows_name_prime = "invokedFlows";
 		String process__sf1____flowElements_name_prime = "flowElements";
-		String useCase__flow____flows_name_prime = "flows";
-		String flow__step____steps_name_prime = "steps";
+		String useCase__pflow____flows_name_prime = "flows";
+		String pflow__step____steps_name_prime = "steps";
 		String t2s__step____target_name_prime = "target";
 		String t2s__task____source_name_prime = "source";
 		String process__task____flowElements_name_prime = "flowElements";
@@ -3141,18 +3310,18 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		prevNode__sf1____outgoing.setSrc(prevNode);
 		prevNode__sf1____outgoing.setTrg(sf1);
 		ruleresult.getCreatedEdges().add(prevNode__sf1____outgoing);
-		pstep__flow____invokedFlows.setSrc(pstep);
-		pstep__flow____invokedFlows.setTrg(flow);
-		ruleresult.getTranslatedEdges().add(pstep__flow____invokedFlows);
+		pstep__pflow____invokedFlows.setSrc(pstep);
+		pstep__pflow____invokedFlows.setTrg(pflow);
+		ruleresult.getTranslatedEdges().add(pstep__pflow____invokedFlows);
 		process__sf1____flowElements.setSrc(process);
 		process__sf1____flowElements.setTrg(sf1);
 		ruleresult.getCreatedEdges().add(process__sf1____flowElements);
-		useCase__flow____flows.setSrc(useCase);
-		useCase__flow____flows.setTrg(flow);
-		ruleresult.getTranslatedEdges().add(useCase__flow____flows);
-		flow__step____steps.setSrc(flow);
-		flow__step____steps.setTrg(step);
-		ruleresult.getTranslatedEdges().add(flow__step____steps);
+		useCase__pflow____flows.setSrc(useCase);
+		useCase__pflow____flows.setTrg(pflow);
+		ruleresult.getTranslatedEdges().add(useCase__pflow____flows);
+		pflow__step____steps.setSrc(pflow);
+		pflow__step____steps.setTrg(step);
+		ruleresult.getTranslatedEdges().add(pflow__step____steps);
 		t2s__step____target.setSrc(t2s);
 		t2s__step____target.setTrg(step);
 		ruleresult.getCreatedEdges().add(t2s__step____target);
@@ -3171,26 +3340,26 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		ruleresult.setRuleName(ruleresult_ruleName_prime);
 		sf1__prevNode____sourceRef.setName(sf1__prevNode____sourceRef_name_prime);
 		prevNode__sf1____outgoing.setName(prevNode__sf1____outgoing_name_prime);
-		pstep__flow____invokedFlows.setName(pstep__flow____invokedFlows_name_prime);
+		pstep__pflow____invokedFlows.setName(pstep__pflow____invokedFlows_name_prime);
 		process__sf1____flowElements.setName(process__sf1____flowElements_name_prime);
-		useCase__flow____flows.setName(useCase__flow____flows_name_prime);
-		flow__step____steps.setName(flow__step____steps_name_prime);
+		useCase__pflow____flows.setName(useCase__pflow____flows_name_prime);
+		pflow__step____steps.setName(pflow__step____steps_name_prime);
 		t2s__step____target.setName(t2s__step____target_name_prime);
 		t2s__task____source.setName(t2s__task____source_name_prime);
 		process__task____flowElements.setName(process__task____flowElements_name_prime);
 		sf1__task____targetRef.setName(sf1__task____targetRef_name_prime);
 		task__sf1____incoming.setName(task__sf1____incoming_name_prime);
-		return new Object[] { ruleresult, step, prevNode, pstep, sf1, process, useCase, flow, t2s, task,
-				sf1__prevNode____sourceRef, prevNode__sf1____outgoing, pstep__flow____invokedFlows,
-				process__sf1____flowElements, useCase__flow____flows, flow__step____steps, t2s__step____target,
+		return new Object[] { ruleresult, step, prevNode, pstep, sf1, process, useCase, pflow, t2s, task,
+				sf1__prevNode____sourceRef, prevNode__sf1____outgoing, pstep__pflow____invokedFlows,
+				process__sf1____flowElements, useCase__pflow____flows, pflow__step____steps, t2s__step____target,
 				t2s__task____source, process__task____flowElements, sf1__task____targetRef, task__sf1____incoming };
 	}
 
-	public static final void pattern_Task2NormalStepAfterPG_11_5_expressionBBBBBBBBBBBBB(Task2NormalStepAfterPG _this,
+	public static final void pattern_Task2NormalStepAfterPG_11_5_expressionBBBBBBBBBBBBBB(Task2NormalStepAfterPG _this,
 			PerformRuleResult ruleresult, EObject step, EObject pgw2ps, EObject prevNode, EObject pstep, EObject sf1,
-			EObject process, EObject useCase, EObject p2uc, EObject flow, EObject t2s, EObject task) {
-		_this.registerObjects_BWD(ruleresult, step, pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, flow, t2s,
-				task);
+			EObject process, EObject useCase, EObject p2uc, EObject pflow, EObject flow, EObject t2s, EObject task) {
+		_this.registerObjects_BWD(ruleresult, step, pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, pflow, flow,
+				t2s, task);
 
 	}
 
@@ -3248,24 +3417,29 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return new Object[] { performOperation, ruleresult };
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_12_2_bindingFFFFB(Match match) {
+	public static final Object[] pattern_Task2NormalStepAfterPG_12_2_bindingFFFFFB(Match match) {
 		EObject _localVariable_0 = match.getObject("step");
 		EObject _localVariable_1 = match.getObject("pstep");
 		EObject _localVariable_2 = match.getObject("useCase");
-		EObject _localVariable_3 = match.getObject("flow");
+		EObject _localVariable_3 = match.getObject("pflow");
+		EObject _localVariable_4 = match.getObject("flow");
 		EObject tmpStep = _localVariable_0;
 		EObject tmpPstep = _localVariable_1;
 		EObject tmpUseCase = _localVariable_2;
-		EObject tmpFlow = _localVariable_3;
+		EObject tmpPflow = _localVariable_3;
+		EObject tmpFlow = _localVariable_4;
 		if (tmpStep instanceof NormalStep) {
 			NormalStep step = (NormalStep) tmpStep;
 			if (tmpPstep instanceof ParallelStep) {
 				ParallelStep pstep = (ParallelStep) tmpPstep;
 				if (tmpUseCase instanceof UseCase) {
 					UseCase useCase = (UseCase) tmpUseCase;
-					if (tmpFlow instanceof ParallelFlow) {
-						ParallelFlow flow = (ParallelFlow) tmpFlow;
-						return new Object[] { step, pstep, useCase, flow, match };
+					if (tmpPflow instanceof ParallelFlow) {
+						ParallelFlow pflow = (ParallelFlow) tmpPflow;
+						if (tmpFlow instanceof Flow) {
+							Flow flow = (Flow) tmpFlow;
+							return new Object[] { step, pstep, useCase, pflow, flow, match };
+						}
 					}
 				}
 			}
@@ -3273,51 +3447,60 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_Task2NormalStepAfterPG_12_2_blackBFFBFBFBB(NormalStep step,
-			ParallelStep pstep, UseCase useCase, ParallelFlow flow, Match match) {
+	public static final Iterable<Object[]> pattern_Task2NormalStepAfterPG_12_2_blackBFFBFBFBBB(NormalStep step,
+			ParallelStep pstep, UseCase useCase, ParallelFlow pflow, Flow flow, Match match) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
-		for (GW2S pgw2ps : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(pstep, GW2S.class,
-				"target")) {
-			Gateway tmpPrevNode = pgw2ps.getSource();
-			if (tmpPrevNode instanceof ParallelGateway) {
-				ParallelGateway prevNode = (ParallelGateway) tmpPrevNode;
-				boolean prevNodeisDiverging = prevNode.isIsDiverging();
-				if (Boolean.valueOf(prevNodeisDiverging).equals(Boolean.valueOf(true))) {
-					for (P2UC p2uc : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(useCase,
-							P2UC.class, "target")) {
-						SimpleBPMN.Process process = p2uc.getSource();
-						if (process != null) {
-							_result.add(new Object[] { step, pgw2ps, prevNode, pstep, process, useCase, p2uc, flow,
-									match });
-						}
+		if (!flow.equals(pflow)) {
+			for (GW2S pgw2ps : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(pstep, GW2S.class,
+					"target")) {
+				Gateway tmpPrevNode = pgw2ps.getSource();
+				if (tmpPrevNode instanceof ParallelGateway) {
+					ParallelGateway prevNode = (ParallelGateway) tmpPrevNode;
+					boolean prevNodeisDiverging = prevNode.isIsDiverging();
+					if (Boolean.valueOf(prevNodeisDiverging).equals(Boolean.valueOf(true))) {
+						for (P2UC p2uc : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(useCase,
+								P2UC.class, "target")) {
+							SimpleBPMN.Process process = p2uc.getSource();
+							if (process != null) {
+								_result.add(new Object[] { step, pgw2ps, prevNode, pstep, process, useCase, p2uc, pflow,
+										flow, match });
+							}
 
+						}
 					}
+
 				}
 
 			}
-
 		}
 		return _result;
 	}
 
-	public static final Iterable<Object[]> pattern_Task2NormalStepAfterPG_12_3_blackBBBBBBBB(NormalStep step,
+	public static final Iterable<Object[]> pattern_Task2NormalStepAfterPG_12_3_blackBBBBBBBBB(NormalStep step,
 			GW2S pgw2ps, ParallelGateway prevNode, ParallelStep pstep, SimpleBPMN.Process process, UseCase useCase,
-			P2UC p2uc, ParallelFlow flow) {
+			P2UC p2uc, ParallelFlow pflow, Flow flow) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
-		if (prevNode.equals(pgw2ps.getSource())) {
-			if (pstep.equals(pgw2ps.getTarget())) {
-				if (pstep.getInvokedFlows().contains(flow)) {
-					if (process.getFlowElements().contains(prevNode)) {
-						if (useCase.getFlows().contains(flow)) {
-							if (process.equals(p2uc.getSource())) {
-								if (useCase.equals(p2uc.getTarget())) {
-									if (flow.getSteps().contains(step)) {
-										boolean prevNodeisDiverging = prevNode.isIsDiverging();
-										if (Boolean.valueOf(prevNodeisDiverging).equals(Boolean.valueOf(true))) {
-											_result.add(new Object[] { step, pgw2ps, prevNode, pstep, process, useCase,
-													p2uc, flow });
-										}
+		if (!flow.equals(pflow)) {
+			if (prevNode.equals(pgw2ps.getSource())) {
+				if (pstep.equals(pgw2ps.getTarget())) {
+					if (pstep.getInvokedFlows().contains(pflow)) {
+						if (process.getFlowElements().contains(prevNode)) {
+							if (useCase.getFlows().contains(pflow)) {
+								if (useCase.getFlows().contains(flow)) {
+									if (process.equals(p2uc.getSource())) {
+										if (useCase.equals(p2uc.getTarget())) {
+											if (pflow.getSteps().contains(step)) {
+												if (flow.getSteps().contains(pstep)) {
+													boolean prevNodeisDiverging = prevNode.isIsDiverging();
+													if (Boolean.valueOf(prevNodeisDiverging)
+															.equals(Boolean.valueOf(true))) {
+														_result.add(new Object[] { step, pgw2ps, prevNode, pstep,
+																process, useCase, p2uc, pflow, flow });
+													}
 
+												}
+											}
+										}
 									}
 								}
 							}
@@ -3329,26 +3512,30 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return _result;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_12_3_greenBBBBBBBBFFFFFFFFF(NormalStep step,
+	public static final Object[] pattern_Task2NormalStepAfterPG_12_3_greenBBBBBBBBBFFFFFFFFFFF(NormalStep step,
 			GW2S pgw2ps, ParallelGateway prevNode, ParallelStep pstep, SimpleBPMN.Process process, UseCase useCase,
-			P2UC p2uc, ParallelFlow flow) {
+			P2UC p2uc, ParallelFlow pflow, Flow flow) {
 		IsApplicableMatch isApplicableMatch = TGGRuntimeFactory.eINSTANCE.createIsApplicableMatch();
 		EMoflonEdge pgw2ps__prevNode____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge pgw2ps__pstep____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge pstep__flow____invokedFlows = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge pstep__pflow____invokedFlows = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge process__prevNode____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge useCase__pflow____flows = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge useCase__flow____flows = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge p2uc__process____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge p2uc__useCase____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge flow__step____steps = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge pflow__step____steps = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge flow__pstep____steps = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		String pgw2ps__prevNode____source_name_prime = "source";
 		String pgw2ps__pstep____target_name_prime = "target";
-		String pstep__flow____invokedFlows_name_prime = "invokedFlows";
+		String pstep__pflow____invokedFlows_name_prime = "invokedFlows";
 		String process__prevNode____flowElements_name_prime = "flowElements";
+		String useCase__pflow____flows_name_prime = "flows";
 		String useCase__flow____flows_name_prime = "flows";
 		String p2uc__process____source_name_prime = "source";
 		String p2uc__useCase____target_name_prime = "target";
-		String flow__step____steps_name_prime = "steps";
+		String pflow__step____steps_name_prime = "steps";
+		String flow__pstep____steps_name_prime = "steps";
 		isApplicableMatch.getAllContextElements().add(step);
 		isApplicableMatch.getAllContextElements().add(pgw2ps);
 		isApplicableMatch.getAllContextElements().add(prevNode);
@@ -3356,6 +3543,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		isApplicableMatch.getAllContextElements().add(process);
 		isApplicableMatch.getAllContextElements().add(useCase);
 		isApplicableMatch.getAllContextElements().add(p2uc);
+		isApplicableMatch.getAllContextElements().add(pflow);
 		isApplicableMatch.getAllContextElements().add(flow);
 		pgw2ps__prevNode____source.setSrc(pgw2ps);
 		pgw2ps__prevNode____source.setTrg(prevNode);
@@ -3363,12 +3551,15 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		pgw2ps__pstep____target.setSrc(pgw2ps);
 		pgw2ps__pstep____target.setTrg(pstep);
 		isApplicableMatch.getAllContextElements().add(pgw2ps__pstep____target);
-		pstep__flow____invokedFlows.setSrc(pstep);
-		pstep__flow____invokedFlows.setTrg(flow);
-		isApplicableMatch.getAllContextElements().add(pstep__flow____invokedFlows);
+		pstep__pflow____invokedFlows.setSrc(pstep);
+		pstep__pflow____invokedFlows.setTrg(pflow);
+		isApplicableMatch.getAllContextElements().add(pstep__pflow____invokedFlows);
 		process__prevNode____flowElements.setSrc(process);
 		process__prevNode____flowElements.setTrg(prevNode);
 		isApplicableMatch.getAllContextElements().add(process__prevNode____flowElements);
+		useCase__pflow____flows.setSrc(useCase);
+		useCase__pflow____flows.setTrg(pflow);
+		isApplicableMatch.getAllContextElements().add(useCase__pflow____flows);
 		useCase__flow____flows.setSrc(useCase);
 		useCase__flow____flows.setTrg(flow);
 		isApplicableMatch.getAllContextElements().add(useCase__flow____flows);
@@ -3378,32 +3569,37 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		p2uc__useCase____target.setSrc(p2uc);
 		p2uc__useCase____target.setTrg(useCase);
 		isApplicableMatch.getAllContextElements().add(p2uc__useCase____target);
-		flow__step____steps.setSrc(flow);
-		flow__step____steps.setTrg(step);
-		isApplicableMatch.getAllContextElements().add(flow__step____steps);
+		pflow__step____steps.setSrc(pflow);
+		pflow__step____steps.setTrg(step);
+		isApplicableMatch.getAllContextElements().add(pflow__step____steps);
+		flow__pstep____steps.setSrc(flow);
+		flow__pstep____steps.setTrg(pstep);
+		isApplicableMatch.getAllContextElements().add(flow__pstep____steps);
 		pgw2ps__prevNode____source.setName(pgw2ps__prevNode____source_name_prime);
 		pgw2ps__pstep____target.setName(pgw2ps__pstep____target_name_prime);
-		pstep__flow____invokedFlows.setName(pstep__flow____invokedFlows_name_prime);
+		pstep__pflow____invokedFlows.setName(pstep__pflow____invokedFlows_name_prime);
 		process__prevNode____flowElements.setName(process__prevNode____flowElements_name_prime);
+		useCase__pflow____flows.setName(useCase__pflow____flows_name_prime);
 		useCase__flow____flows.setName(useCase__flow____flows_name_prime);
 		p2uc__process____source.setName(p2uc__process____source_name_prime);
 		p2uc__useCase____target.setName(p2uc__useCase____target_name_prime);
-		flow__step____steps.setName(flow__step____steps_name_prime);
-		return new Object[] { step, pgw2ps, prevNode, pstep, process, useCase, p2uc, flow, isApplicableMatch,
-				pgw2ps__prevNode____source, pgw2ps__pstep____target, pstep__flow____invokedFlows,
-				process__prevNode____flowElements, useCase__flow____flows, p2uc__process____source,
-				p2uc__useCase____target, flow__step____steps };
+		pflow__step____steps.setName(pflow__step____steps_name_prime);
+		flow__pstep____steps.setName(flow__pstep____steps_name_prime);
+		return new Object[] { step, pgw2ps, prevNode, pstep, process, useCase, p2uc, pflow, flow, isApplicableMatch,
+				pgw2ps__prevNode____source, pgw2ps__pstep____target, pstep__pflow____invokedFlows,
+				process__prevNode____flowElements, useCase__pflow____flows, useCase__flow____flows,
+				p2uc__process____source, p2uc__useCase____target, pflow__step____steps, flow__pstep____steps };
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_12_4_bindingFBBBBBBBBBB(Task2NormalStepAfterPG _this,
+	public static final Object[] pattern_Task2NormalStepAfterPG_12_4_bindingFBBBBBBBBBBB(Task2NormalStepAfterPG _this,
 			IsApplicableMatch isApplicableMatch, NormalStep step, GW2S pgw2ps, ParallelGateway prevNode,
-			ParallelStep pstep, SimpleBPMN.Process process, UseCase useCase, P2UC p2uc, ParallelFlow flow) {
+			ParallelStep pstep, SimpleBPMN.Process process, UseCase useCase, P2UC p2uc, ParallelFlow pflow, Flow flow) {
 		CSP _localVariable_0 = _this.isApplicable_solveCsp_BWD(isApplicableMatch, step, pgw2ps, prevNode, pstep,
-				process, useCase, p2uc, flow);
+				process, useCase, p2uc, pflow, flow);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
 			return new Object[] { csp, _this, isApplicableMatch, step, pgw2ps, prevNode, pstep, process, useCase, p2uc,
-					flow };
+					pflow, flow };
 		}
 		return null;
 	}
@@ -3412,12 +3608,12 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return new Object[] { csp };
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_12_4_bindingAndBlackFBBBBBBBBBB(
+	public static final Object[] pattern_Task2NormalStepAfterPG_12_4_bindingAndBlackFBBBBBBBBBBB(
 			Task2NormalStepAfterPG _this, IsApplicableMatch isApplicableMatch, NormalStep step, GW2S pgw2ps,
 			ParallelGateway prevNode, ParallelStep pstep, SimpleBPMN.Process process, UseCase useCase, P2UC p2uc,
-			ParallelFlow flow) {
-		Object[] result_pattern_Task2NormalStepAfterPG_12_4_binding = pattern_Task2NormalStepAfterPG_12_4_bindingFBBBBBBBBBB(
-				_this, isApplicableMatch, step, pgw2ps, prevNode, pstep, process, useCase, p2uc, flow);
+			ParallelFlow pflow, Flow flow) {
+		Object[] result_pattern_Task2NormalStepAfterPG_12_4_binding = pattern_Task2NormalStepAfterPG_12_4_bindingFBBBBBBBBBBB(
+				_this, isApplicableMatch, step, pgw2ps, prevNode, pstep, process, useCase, p2uc, pflow, flow);
 		if (result_pattern_Task2NormalStepAfterPG_12_4_binding != null) {
 			CSP csp = (CSP) result_pattern_Task2NormalStepAfterPG_12_4_binding[0];
 
@@ -3425,7 +3621,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 			if (result_pattern_Task2NormalStepAfterPG_12_4_black != null) {
 
 				return new Object[] { csp, _this, isApplicableMatch, step, pgw2ps, prevNode, pstep, process, useCase,
-						p2uc, flow };
+						p2uc, pflow, flow };
 			}
 		}
 		return null;
@@ -3502,22 +3698,30 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return new Object[] { __result };
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_20_2_black_nac_0BB(SequenceFlow sf1,
+	public static final Object[] pattern_Task2NormalStepAfterPG_20_2_black_nac_0B(SequenceFlow sf1) {
+		for (ExclusiveGateway __DEC_sf1_default_606506 : org.moflon.core.utilities.eMoflonEMFUtil
+				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
+			return new Object[] { sf1 };
+		}
+		return null;
+	}
+
+	public static final Object[] pattern_Task2NormalStepAfterPG_20_2_black_nac_1BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_299918 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_309882 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_299918)) {
+			if (!process.equals(__DEC_sf1_flowElements_309882)) {
 				return new Object[] { sf1, process };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_20_2_black_nac_1BB(Task task,
+	public static final Object[] pattern_Task2NormalStepAfterPG_20_2_black_nac_2BB(Task task,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_task_flowElements_721761 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_task_flowElements_511273 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(task, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_task_flowElements_721761)) {
+			if (!process.equals(__DEC_task_flowElements_511273)) {
 				return new Object[] { task, process };
 			}
 		}
@@ -3538,15 +3742,18 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 						Task task = (Task) tmpTask;
 						boolean prevNodeisDiverging = prevNode.isIsDiverging();
 						if (Boolean.valueOf(prevNodeisDiverging).equals(Boolean.valueOf(true))) {
-							for (SimpleBPMN.Process process : org.moflon.core.utilities.eMoflonEMFUtil
-									.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-								if (process.getFlowElements().contains(prevNode)) {
-									if (process.getFlowElements().contains(task)) {
-										if (pattern_Task2NormalStepAfterPG_20_2_black_nac_0BB(sf1, process) == null) {
-											if (pattern_Task2NormalStepAfterPG_20_2_black_nac_1BB(task,
+							if (pattern_Task2NormalStepAfterPG_20_2_black_nac_0B(sf1) == null) {
+								for (SimpleBPMN.Process process : org.moflon.core.utilities.eMoflonEMFUtil
+										.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
+									if (process.getFlowElements().contains(prevNode)) {
+										if (process.getFlowElements().contains(task)) {
+											if (pattern_Task2NormalStepAfterPG_20_2_black_nac_1BB(sf1,
 													process) == null) {
-												_result.add(
-														new Object[] { prevNode, sf1, process, task, _edge_sourceRef });
+												if (pattern_Task2NormalStepAfterPG_20_2_black_nac_2BB(task,
+														process) == null) {
+													_result.add(new Object[] { prevNode, sf1, process, task,
+															_edge_sourceRef });
+												}
 											}
 										}
 									}
@@ -3647,22 +3854,30 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return new Object[] { __result };
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_21_2_black_nac_0BB(SequenceFlow sf1,
+	public static final Object[] pattern_Task2NormalStepAfterPG_21_2_black_nac_0B(SequenceFlow sf1) {
+		for (ExclusiveGateway __DEC_sf1_default_839642 : org.moflon.core.utilities.eMoflonEMFUtil
+				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
+			return new Object[] { sf1 };
+		}
+		return null;
+	}
+
+	public static final Object[] pattern_Task2NormalStepAfterPG_21_2_black_nac_1BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_960654 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_117772 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_960654)) {
+			if (!process.equals(__DEC_sf1_flowElements_117772)) {
 				return new Object[] { sf1, process };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_21_2_black_nac_1BB(Task task,
+	public static final Object[] pattern_Task2NormalStepAfterPG_21_2_black_nac_2BB(Task task,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_task_flowElements_41103 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_task_flowElements_348803 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(task, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_task_flowElements_41103)) {
+			if (!process.equals(__DEC_task_flowElements_348803)) {
 				return new Object[] { task, process };
 			}
 		}
@@ -3683,15 +3898,19 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 						FlowNode tmpTask = sf1.getTargetRef();
 						if (tmpTask instanceof Task) {
 							Task task = (Task) tmpTask;
-							for (SimpleBPMN.Process process : org.moflon.core.utilities.eMoflonEMFUtil
-									.getOppositeReferenceTyped(prevNode, SimpleBPMN.Process.class, "flowElements")) {
-								if (process.getFlowElements().contains(sf1)) {
-									if (process.getFlowElements().contains(task)) {
-										if (pattern_Task2NormalStepAfterPG_21_2_black_nac_0BB(sf1, process) == null) {
-											if (pattern_Task2NormalStepAfterPG_21_2_black_nac_1BB(task,
+							if (pattern_Task2NormalStepAfterPG_21_2_black_nac_0B(sf1) == null) {
+								for (SimpleBPMN.Process process : org.moflon.core.utilities.eMoflonEMFUtil
+										.getOppositeReferenceTyped(prevNode, SimpleBPMN.Process.class,
+												"flowElements")) {
+									if (process.getFlowElements().contains(sf1)) {
+										if (process.getFlowElements().contains(task)) {
+											if (pattern_Task2NormalStepAfterPG_21_2_black_nac_1BB(sf1,
 													process) == null) {
-												_result.add(
-														new Object[] { prevNode, sf1, process, task, _edge_outgoing });
+												if (pattern_Task2NormalStepAfterPG_21_2_black_nac_2BB(task,
+														process) == null) {
+													_result.add(new Object[] { prevNode, sf1, process, task,
+															_edge_outgoing });
+												}
 											}
 										}
 									}
@@ -3792,11 +4011,16 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return new Object[] { __result };
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_22_2_black_nac_0BB(NormalStep step, ParallelFlow flow) {
-		for (Flow __DEC_step_steps_953429 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
-				Flow.class, "steps")) {
-			if (!flow.equals(__DEC_step_steps_953429)) {
-				return new Object[] { step, flow };
+	public static final Object[] pattern_Task2NormalStepAfterPG_22_2_black_nac_0BBB(NormalStep step, ParallelFlow pflow,
+			Flow flow) {
+		if (!flow.equals(pflow)) {
+			for (Flow __DEC_step_steps_44364 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+					Flow.class, "steps")) {
+				if (!pflow.equals(__DEC_step_steps_44364)) {
+					if (!flow.equals(__DEC_step_steps_44364)) {
+						return new Object[] { step, pflow, flow };
+					}
+				}
 			}
 		}
 		return null;
@@ -3804,10 +4028,10 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterPG_22_2_black_nac_1BB(NormalStep step,
 			ParallelStep pstep) {
-		for (Step __DEC_step_next_49838 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+		for (Step __DEC_step_next_7226 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 				Step.class, "next")) {
-			if (!step.equals(__DEC_step_next_49838)) {
-				if (!pstep.equals(__DEC_step_next_49838)) {
+			if (!step.equals(__DEC_step_next_7226)) {
+				if (!pstep.equals(__DEC_step_next_7226)) {
 					return new Object[] { step, pstep };
 				}
 			}
@@ -3815,49 +4039,68 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return null;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_22_2_black_nac_2BB(ParallelFlow flow,
+	public static final Object[] pattern_Task2NormalStepAfterPG_22_2_black_nac_2BB(ParallelFlow pflow,
 			ParallelStep pstep) {
-		for (ParallelStep __DEC_flow_invokedFlows_728148 : org.moflon.core.utilities.eMoflonEMFUtil
-				.getOppositeReferenceTyped(flow, ParallelStep.class, "invokedFlows")) {
-			if (!pstep.equals(__DEC_flow_invokedFlows_728148)) {
-				return new Object[] { flow, pstep };
+		for (ParallelStep __DEC_pflow_invokedFlows_452284 : org.moflon.core.utilities.eMoflonEMFUtil
+				.getOppositeReferenceTyped(pflow, ParallelStep.class, "invokedFlows")) {
+			if (!pstep.equals(__DEC_pflow_invokedFlows_452284)) {
+				return new Object[] { pflow, pstep };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_22_2_black_nac_3BB(ParallelFlow flow, UseCase useCase) {
-		for (UseCase __DEC_flow_flows_821523 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(flow,
-				UseCase.class, "flows")) {
-			if (!useCase.equals(__DEC_flow_flows_821523)) {
-				return new Object[] { flow, useCase };
+	public static final Object[] pattern_Task2NormalStepAfterPG_22_2_black_nac_3BB(ParallelFlow pflow,
+			UseCase useCase) {
+		for (UseCase __DEC_pflow_flows_826140 : org.moflon.core.utilities.eMoflonEMFUtil
+				.getOppositeReferenceTyped(pflow, UseCase.class, "flows")) {
+			if (!useCase.equals(__DEC_pflow_flows_826140)) {
+				return new Object[] { pflow, useCase };
 			}
 		}
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_Task2NormalStepAfterPG_22_2_blackFFFFB(
+	public static final Object[] pattern_Task2NormalStepAfterPG_22_2_black_nac_4BB(Flow flow, NormalStep step) {
+		if (flow.getSteps().contains(step)) {
+			return new Object[] { flow, step };
+		}
+		return null;
+	}
+
+	public static final Iterable<Object[]> pattern_Task2NormalStepAfterPG_22_2_blackFFFFFB(
 			EMoflonEdge _edge_invokedFlows) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		EObject tmpPstep = _edge_invokedFlows.getSrc();
 		if (tmpPstep instanceof ParallelStep) {
 			ParallelStep pstep = (ParallelStep) tmpPstep;
-			EObject tmpFlow = _edge_invokedFlows.getTrg();
-			if (tmpFlow instanceof ParallelFlow) {
-				ParallelFlow flow = (ParallelFlow) tmpFlow;
-				if (pstep.getInvokedFlows().contains(flow)) {
-					if (pattern_Task2NormalStepAfterPG_22_2_black_nac_2BB(flow, pstep) == null) {
-						for (Step tmpStep : flow.getSteps()) {
+			EObject tmpPflow = _edge_invokedFlows.getTrg();
+			if (tmpPflow instanceof ParallelFlow) {
+				ParallelFlow pflow = (ParallelFlow) tmpPflow;
+				if (pstep.getInvokedFlows().contains(pflow)) {
+					if (pattern_Task2NormalStepAfterPG_22_2_black_nac_2BB(pflow, pstep) == null) {
+						for (Step tmpStep : pflow.getSteps()) {
 							if (tmpStep instanceof NormalStep) {
 								NormalStep step = (NormalStep) tmpStep;
-								if (pattern_Task2NormalStepAfterPG_22_2_black_nac_0BB(step, flow) == null) {
-									if (pattern_Task2NormalStepAfterPG_22_2_black_nac_1BB(step, pstep) == null) {
-										for (UseCase useCase : org.moflon.core.utilities.eMoflonEMFUtil
-												.getOppositeReferenceTyped(flow, UseCase.class, "flows")) {
-											if (pattern_Task2NormalStepAfterPG_22_2_black_nac_3BB(flow,
-													useCase) == null) {
-												_result.add(new Object[] { step, pstep, useCase, flow,
-														_edge_invokedFlows });
+								if (pattern_Task2NormalStepAfterPG_22_2_black_nac_1BB(step, pstep) == null) {
+									for (Flow flow : org.moflon.core.utilities.eMoflonEMFUtil
+											.getOppositeReferenceTyped(pstep, Flow.class, "steps")) {
+										if (!flow.equals(pflow)) {
+											if (pattern_Task2NormalStepAfterPG_22_2_black_nac_0BBB(step, pflow,
+													flow) == null) {
+												if (pattern_Task2NormalStepAfterPG_22_2_black_nac_4BB(flow,
+														step) == null) {
+													for (UseCase useCase : org.moflon.core.utilities.eMoflonEMFUtil
+															.getOppositeReferenceTyped(pflow, UseCase.class, "flows")) {
+														if (useCase.getFlows().contains(flow)) {
+															if (pattern_Task2NormalStepAfterPG_22_2_black_nac_3BB(pflow,
+																	useCase) == null) {
+																_result.add(new Object[] { step, pstep, useCase, pflow,
+																		flow, _edge_invokedFlows });
+															}
+														}
+													}
+												}
 											}
 										}
 									}
@@ -3882,9 +4125,9 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 
 	}
 
-	public static final boolean pattern_Task2NormalStepAfterPG_22_3_expressionFBBBBBB(Task2NormalStepAfterPG _this,
-			Match match, NormalStep step, ParallelStep pstep, UseCase useCase, ParallelFlow flow) {
-		boolean _localVariable_0 = _this.isAppropriate_BWD(match, step, pstep, useCase, flow);
+	public static final boolean pattern_Task2NormalStepAfterPG_22_3_expressionFBBBBBBB(Task2NormalStepAfterPG _this,
+			Match match, NormalStep step, ParallelStep pstep, UseCase useCase, ParallelFlow pflow, Flow flow) {
+		boolean _localVariable_0 = _this.isAppropriate_BWD(match, step, pstep, useCase, pflow, flow);
 		boolean _result = Boolean.valueOf(_localVariable_0);
 		return _result;
 	}
@@ -3956,22 +4199,30 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return new Object[] { __result };
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_23_2_black_nac_0BB(SequenceFlow sf1,
+	public static final Object[] pattern_Task2NormalStepAfterPG_23_2_black_nac_0B(SequenceFlow sf1) {
+		for (ExclusiveGateway __DEC_sf1_default_646009 : org.moflon.core.utilities.eMoflonEMFUtil
+				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
+			return new Object[] { sf1 };
+		}
+		return null;
+	}
+
+	public static final Object[] pattern_Task2NormalStepAfterPG_23_2_black_nac_1BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_239947 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_749120 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_239947)) {
+			if (!process.equals(__DEC_sf1_flowElements_749120)) {
 				return new Object[] { sf1, process };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_23_2_black_nac_1BB(Task task,
+	public static final Object[] pattern_Task2NormalStepAfterPG_23_2_black_nac_2BB(Task task,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_task_flowElements_747386 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_task_flowElements_801781 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(task, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_task_flowElements_747386)) {
+			if (!process.equals(__DEC_task_flowElements_801781)) {
 				return new Object[] { task, process };
 			}
 		}
@@ -3998,11 +4249,14 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 								if (process.getFlowElements().contains(task)) {
 									boolean prevNodeisDiverging = prevNode.isIsDiverging();
 									if (Boolean.valueOf(prevNodeisDiverging).equals(Boolean.valueOf(true))) {
-										if (pattern_Task2NormalStepAfterPG_23_2_black_nac_0BB(sf1, process) == null) {
-											if (pattern_Task2NormalStepAfterPG_23_2_black_nac_1BB(task,
+										if (pattern_Task2NormalStepAfterPG_23_2_black_nac_0B(sf1) == null) {
+											if (pattern_Task2NormalStepAfterPG_23_2_black_nac_1BB(sf1,
 													process) == null) {
-												_result.add(new Object[] { prevNode, sf1, process, task,
-														_edge_flowElements });
+												if (pattern_Task2NormalStepAfterPG_23_2_black_nac_2BB(task,
+														process) == null) {
+													_result.add(new Object[] { prevNode, sf1, process, task,
+															_edge_flowElements });
+												}
 											}
 										}
 									}
@@ -4104,11 +4358,16 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return new Object[] { __result };
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_24_2_black_nac_0BB(NormalStep step, ParallelFlow flow) {
-		for (Flow __DEC_step_steps_686766 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
-				Flow.class, "steps")) {
-			if (!flow.equals(__DEC_step_steps_686766)) {
-				return new Object[] { step, flow };
+	public static final Object[] pattern_Task2NormalStepAfterPG_24_2_black_nac_0BBB(NormalStep step, ParallelFlow pflow,
+			Flow flow) {
+		if (!flow.equals(pflow)) {
+			for (Flow __DEC_step_steps_489667 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+					Flow.class, "steps")) {
+				if (!pflow.equals(__DEC_step_steps_489667)) {
+					if (!flow.equals(__DEC_step_steps_489667)) {
+						return new Object[] { step, pflow, flow };
+					}
+				}
 			}
 		}
 		return null;
@@ -4116,10 +4375,10 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterPG_24_2_black_nac_1BB(NormalStep step,
 			ParallelStep pstep) {
-		for (Step __DEC_step_next_380663 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+		for (Step __DEC_step_next_365282 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 				Step.class, "next")) {
-			if (!step.equals(__DEC_step_next_380663)) {
-				if (!pstep.equals(__DEC_step_next_380663)) {
+			if (!step.equals(__DEC_step_next_365282)) {
+				if (!pstep.equals(__DEC_step_next_365282)) {
 					return new Object[] { step, pstep };
 				}
 			}
@@ -4127,47 +4386,68 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return null;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_24_2_black_nac_2BB(ParallelFlow flow,
+	public static final Object[] pattern_Task2NormalStepAfterPG_24_2_black_nac_2BB(ParallelFlow pflow,
 			ParallelStep pstep) {
-		for (ParallelStep __DEC_flow_invokedFlows_623967 : org.moflon.core.utilities.eMoflonEMFUtil
-				.getOppositeReferenceTyped(flow, ParallelStep.class, "invokedFlows")) {
-			if (!pstep.equals(__DEC_flow_invokedFlows_623967)) {
-				return new Object[] { flow, pstep };
+		for (ParallelStep __DEC_pflow_invokedFlows_379461 : org.moflon.core.utilities.eMoflonEMFUtil
+				.getOppositeReferenceTyped(pflow, ParallelStep.class, "invokedFlows")) {
+			if (!pstep.equals(__DEC_pflow_invokedFlows_379461)) {
+				return new Object[] { pflow, pstep };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_24_2_black_nac_3BB(ParallelFlow flow, UseCase useCase) {
-		for (UseCase __DEC_flow_flows_938949 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(flow,
-				UseCase.class, "flows")) {
-			if (!useCase.equals(__DEC_flow_flows_938949)) {
-				return new Object[] { flow, useCase };
+	public static final Object[] pattern_Task2NormalStepAfterPG_24_2_black_nac_3BB(ParallelFlow pflow,
+			UseCase useCase) {
+		for (UseCase __DEC_pflow_flows_364466 : org.moflon.core.utilities.eMoflonEMFUtil
+				.getOppositeReferenceTyped(pflow, UseCase.class, "flows")) {
+			if (!useCase.equals(__DEC_pflow_flows_364466)) {
+				return new Object[] { pflow, useCase };
 			}
 		}
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_Task2NormalStepAfterPG_24_2_blackFFFFB(EMoflonEdge _edge_flows) {
+	public static final Object[] pattern_Task2NormalStepAfterPG_24_2_black_nac_4BB(Flow flow, NormalStep step) {
+		if (flow.getSteps().contains(step)) {
+			return new Object[] { flow, step };
+		}
+		return null;
+	}
+
+	public static final Iterable<Object[]> pattern_Task2NormalStepAfterPG_24_2_blackFFFFFB(EMoflonEdge _edge_flows) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		EObject tmpUseCase = _edge_flows.getSrc();
 		if (tmpUseCase instanceof UseCase) {
 			UseCase useCase = (UseCase) tmpUseCase;
-			EObject tmpFlow = _edge_flows.getTrg();
-			if (tmpFlow instanceof ParallelFlow) {
-				ParallelFlow flow = (ParallelFlow) tmpFlow;
-				if (useCase.getFlows().contains(flow)) {
-					if (pattern_Task2NormalStepAfterPG_24_2_black_nac_3BB(flow, useCase) == null) {
-						for (Step tmpStep : flow.getSteps()) {
-							if (tmpStep instanceof NormalStep) {
-								NormalStep step = (NormalStep) tmpStep;
-								if (pattern_Task2NormalStepAfterPG_24_2_black_nac_0BB(step, flow) == null) {
-									for (ParallelStep pstep : org.moflon.core.utilities.eMoflonEMFUtil
-											.getOppositeReferenceTyped(flow, ParallelStep.class, "invokedFlows")) {
-										if (pattern_Task2NormalStepAfterPG_24_2_black_nac_1BB(step, pstep) == null) {
-											if (pattern_Task2NormalStepAfterPG_24_2_black_nac_2BB(flow,
-													pstep) == null) {
-												_result.add(new Object[] { step, pstep, useCase, flow, _edge_flows });
+			EObject tmpPflow = _edge_flows.getTrg();
+			if (tmpPflow instanceof ParallelFlow) {
+				ParallelFlow pflow = (ParallelFlow) tmpPflow;
+				if (useCase.getFlows().contains(pflow)) {
+					if (pattern_Task2NormalStepAfterPG_24_2_black_nac_3BB(pflow, useCase) == null) {
+						for (Flow flow : useCase.getFlows()) {
+							if (!flow.equals(pflow)) {
+								for (Step tmpStep : pflow.getSteps()) {
+									if (tmpStep instanceof NormalStep) {
+										NormalStep step = (NormalStep) tmpStep;
+										if (pattern_Task2NormalStepAfterPG_24_2_black_nac_0BBB(step, pflow,
+												flow) == null) {
+											if (pattern_Task2NormalStepAfterPG_24_2_black_nac_4BB(flow, step) == null) {
+												for (Step tmpPstep : flow.getSteps()) {
+													if (tmpPstep instanceof ParallelStep) {
+														ParallelStep pstep = (ParallelStep) tmpPstep;
+														if (pstep.getInvokedFlows().contains(pflow)) {
+															if (pattern_Task2NormalStepAfterPG_24_2_black_nac_1BB(step,
+																	pstep) == null) {
+																if (pattern_Task2NormalStepAfterPG_24_2_black_nac_2BB(
+																		pflow, pstep) == null) {
+																	_result.add(new Object[] { step, pstep, useCase,
+																			pflow, flow, _edge_flows });
+																}
+															}
+														}
+													}
+												}
 											}
 										}
 									}
@@ -4192,9 +4472,9 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 
 	}
 
-	public static final boolean pattern_Task2NormalStepAfterPG_24_3_expressionFBBBBBB(Task2NormalStepAfterPG _this,
-			Match match, NormalStep step, ParallelStep pstep, UseCase useCase, ParallelFlow flow) {
-		boolean _localVariable_0 = _this.isAppropriate_BWD(match, step, pstep, useCase, flow);
+	public static final boolean pattern_Task2NormalStepAfterPG_24_3_expressionFBBBBBBB(Task2NormalStepAfterPG _this,
+			Match match, NormalStep step, ParallelStep pstep, UseCase useCase, ParallelFlow pflow, Flow flow) {
+		boolean _localVariable_0 = _this.isAppropriate_BWD(match, step, pstep, useCase, pflow, flow);
 		boolean _result = Boolean.valueOf(_localVariable_0);
 		return _result;
 	}
@@ -4266,11 +4546,16 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return new Object[] { __result };
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_25_2_black_nac_0BB(NormalStep step, ParallelFlow flow) {
-		for (Flow __DEC_step_steps_262411 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
-				Flow.class, "steps")) {
-			if (!flow.equals(__DEC_step_steps_262411)) {
-				return new Object[] { step, flow };
+	public static final Object[] pattern_Task2NormalStepAfterPG_25_2_black_nac_0BBB(NormalStep step, ParallelFlow pflow,
+			Flow flow) {
+		if (!flow.equals(pflow)) {
+			for (Flow __DEC_step_steps_331406 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+					Flow.class, "steps")) {
+				if (!pflow.equals(__DEC_step_steps_331406)) {
+					if (!flow.equals(__DEC_step_steps_331406)) {
+						return new Object[] { step, pflow, flow };
+					}
+				}
 			}
 		}
 		return null;
@@ -4278,10 +4563,10 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterPG_25_2_black_nac_1BB(NormalStep step,
 			ParallelStep pstep) {
-		for (Step __DEC_step_next_88066 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+		for (Step __DEC_step_next_605957 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 				Step.class, "next")) {
-			if (!step.equals(__DEC_step_next_88066)) {
-				if (!pstep.equals(__DEC_step_next_88066)) {
+			if (!step.equals(__DEC_step_next_605957)) {
+				if (!pstep.equals(__DEC_step_next_605957)) {
 					return new Object[] { step, pstep };
 				}
 			}
@@ -4289,45 +4574,64 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return null;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_25_2_black_nac_2BB(ParallelFlow flow,
+	public static final Object[] pattern_Task2NormalStepAfterPG_25_2_black_nac_2BB(ParallelFlow pflow,
 			ParallelStep pstep) {
-		for (ParallelStep __DEC_flow_invokedFlows_110841 : org.moflon.core.utilities.eMoflonEMFUtil
-				.getOppositeReferenceTyped(flow, ParallelStep.class, "invokedFlows")) {
-			if (!pstep.equals(__DEC_flow_invokedFlows_110841)) {
-				return new Object[] { flow, pstep };
+		for (ParallelStep __DEC_pflow_invokedFlows_219349 : org.moflon.core.utilities.eMoflonEMFUtil
+				.getOppositeReferenceTyped(pflow, ParallelStep.class, "invokedFlows")) {
+			if (!pstep.equals(__DEC_pflow_invokedFlows_219349)) {
+				return new Object[] { pflow, pstep };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_25_2_black_nac_3BB(ParallelFlow flow, UseCase useCase) {
-		for (UseCase __DEC_flow_flows_118827 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(flow,
-				UseCase.class, "flows")) {
-			if (!useCase.equals(__DEC_flow_flows_118827)) {
-				return new Object[] { flow, useCase };
+	public static final Object[] pattern_Task2NormalStepAfterPG_25_2_black_nac_3BB(ParallelFlow pflow,
+			UseCase useCase) {
+		for (UseCase __DEC_pflow_flows_788406 : org.moflon.core.utilities.eMoflonEMFUtil
+				.getOppositeReferenceTyped(pflow, UseCase.class, "flows")) {
+			if (!useCase.equals(__DEC_pflow_flows_788406)) {
+				return new Object[] { pflow, useCase };
 			}
 		}
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_Task2NormalStepAfterPG_25_2_blackFFFFB(EMoflonEdge _edge_steps) {
+	public static final Object[] pattern_Task2NormalStepAfterPG_25_2_black_nac_4BB(Flow flow, NormalStep step) {
+		if (flow.getSteps().contains(step)) {
+			return new Object[] { flow, step };
+		}
+		return null;
+	}
+
+	public static final Iterable<Object[]> pattern_Task2NormalStepAfterPG_25_2_blackFFFFFB(EMoflonEdge _edge_steps) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
-		EObject tmpFlow = _edge_steps.getSrc();
-		if (tmpFlow instanceof ParallelFlow) {
-			ParallelFlow flow = (ParallelFlow) tmpFlow;
+		EObject tmpPflow = _edge_steps.getSrc();
+		if (tmpPflow instanceof ParallelFlow) {
+			ParallelFlow pflow = (ParallelFlow) tmpPflow;
 			EObject tmpStep = _edge_steps.getTrg();
 			if (tmpStep instanceof NormalStep) {
 				NormalStep step = (NormalStep) tmpStep;
-				if (flow.getSteps().contains(step)) {
-					if (pattern_Task2NormalStepAfterPG_25_2_black_nac_0BB(step, flow) == null) {
-						for (ParallelStep pstep : org.moflon.core.utilities.eMoflonEMFUtil
-								.getOppositeReferenceTyped(flow, ParallelStep.class, "invokedFlows")) {
-							if (pattern_Task2NormalStepAfterPG_25_2_black_nac_1BB(step, pstep) == null) {
-								if (pattern_Task2NormalStepAfterPG_25_2_black_nac_2BB(flow, pstep) == null) {
-									for (UseCase useCase : org.moflon.core.utilities.eMoflonEMFUtil
-											.getOppositeReferenceTyped(flow, UseCase.class, "flows")) {
-										if (pattern_Task2NormalStepAfterPG_25_2_black_nac_3BB(flow, useCase) == null) {
-											_result.add(new Object[] { step, pstep, useCase, flow, _edge_steps });
+				if (pflow.getSteps().contains(step)) {
+					for (ParallelStep pstep : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(pflow,
+							ParallelStep.class, "invokedFlows")) {
+						if (pattern_Task2NormalStepAfterPG_25_2_black_nac_1BB(step, pstep) == null) {
+							if (pattern_Task2NormalStepAfterPG_25_2_black_nac_2BB(pflow, pstep) == null) {
+								for (UseCase useCase : org.moflon.core.utilities.eMoflonEMFUtil
+										.getOppositeReferenceTyped(pflow, UseCase.class, "flows")) {
+									if (pattern_Task2NormalStepAfterPG_25_2_black_nac_3BB(pflow, useCase) == null) {
+										for (Flow flow : useCase.getFlows()) {
+											if (!flow.equals(pflow)) {
+												if (flow.getSteps().contains(pstep)) {
+													if (pattern_Task2NormalStepAfterPG_25_2_black_nac_0BBB(step, pflow,
+															flow) == null) {
+														if (pattern_Task2NormalStepAfterPG_25_2_black_nac_4BB(flow,
+																step) == null) {
+															_result.add(new Object[] { step, pstep, useCase, pflow,
+																	flow, _edge_steps });
+														}
+													}
+												}
+											}
 										}
 									}
 								}
@@ -4351,9 +4655,9 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 
 	}
 
-	public static final boolean pattern_Task2NormalStepAfterPG_25_3_expressionFBBBBBB(Task2NormalStepAfterPG _this,
-			Match match, NormalStep step, ParallelStep pstep, UseCase useCase, ParallelFlow flow) {
-		boolean _localVariable_0 = _this.isAppropriate_BWD(match, step, pstep, useCase, flow);
+	public static final boolean pattern_Task2NormalStepAfterPG_25_3_expressionFBBBBBBB(Task2NormalStepAfterPG _this,
+			Match match, NormalStep step, ParallelStep pstep, UseCase useCase, ParallelFlow pflow, Flow flow) {
+		boolean _localVariable_0 = _this.isAppropriate_BWD(match, step, pstep, useCase, pflow, flow);
 		boolean _result = Boolean.valueOf(_localVariable_0);
 		return _result;
 	}
@@ -4425,22 +4729,30 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return new Object[] { __result };
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_26_2_black_nac_0BB(SequenceFlow sf1,
+	public static final Object[] pattern_Task2NormalStepAfterPG_26_2_black_nac_0B(SequenceFlow sf1) {
+		for (ExclusiveGateway __DEC_sf1_default_177379 : org.moflon.core.utilities.eMoflonEMFUtil
+				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
+			return new Object[] { sf1 };
+		}
+		return null;
+	}
+
+	public static final Object[] pattern_Task2NormalStepAfterPG_26_2_black_nac_1BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_264467 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_252106 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_264467)) {
+			if (!process.equals(__DEC_sf1_flowElements_252106)) {
 				return new Object[] { sf1, process };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_26_2_black_nac_1BB(Task task,
+	public static final Object[] pattern_Task2NormalStepAfterPG_26_2_black_nac_2BB(Task task,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_task_flowElements_623780 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_task_flowElements_249472 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(task, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_task_flowElements_623780)) {
+			if (!process.equals(__DEC_task_flowElements_249472)) {
 				return new Object[] { task, process };
 			}
 		}
@@ -4457,7 +4769,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 			if (tmpTask instanceof Task) {
 				Task task = (Task) tmpTask;
 				if (process.getFlowElements().contains(task)) {
-					if (pattern_Task2NormalStepAfterPG_26_2_black_nac_1BB(task, process) == null) {
+					if (pattern_Task2NormalStepAfterPG_26_2_black_nac_2BB(task, process) == null) {
 						for (FlowElement tmpPrevNode : process.getFlowElements()) {
 							if (tmpPrevNode instanceof ParallelGateway) {
 								ParallelGateway prevNode = (ParallelGateway) tmpPrevNode;
@@ -4468,10 +4780,12 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 											SequenceFlow sf1 = (SequenceFlow) tmpSf1;
 											if (prevNode.equals(sf1.getSourceRef())) {
 												if (task.equals(sf1.getTargetRef())) {
-													if (pattern_Task2NormalStepAfterPG_26_2_black_nac_0BB(sf1,
-															process) == null) {
-														_result.add(new Object[] { prevNode, sf1, process, task,
-																_edge_flowElements });
+													if (pattern_Task2NormalStepAfterPG_26_2_black_nac_0B(sf1) == null) {
+														if (pattern_Task2NormalStepAfterPG_26_2_black_nac_1BB(sf1,
+																process) == null) {
+															_result.add(new Object[] { prevNode, sf1, process, task,
+																	_edge_flowElements });
+														}
 													}
 												}
 											}
@@ -4573,22 +4887,30 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return new Object[] { __result };
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_27_2_black_nac_0BB(SequenceFlow sf1,
+	public static final Object[] pattern_Task2NormalStepAfterPG_27_2_black_nac_0B(SequenceFlow sf1) {
+		for (ExclusiveGateway __DEC_sf1_default_872429 : org.moflon.core.utilities.eMoflonEMFUtil
+				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
+			return new Object[] { sf1 };
+		}
+		return null;
+	}
+
+	public static final Object[] pattern_Task2NormalStepAfterPG_27_2_black_nac_1BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_265746 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_526753 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_265746)) {
+			if (!process.equals(__DEC_sf1_flowElements_526753)) {
 				return new Object[] { sf1, process };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_27_2_black_nac_1BB(Task task,
+	public static final Object[] pattern_Task2NormalStepAfterPG_27_2_black_nac_2BB(Task task,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_task_flowElements_895016 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_task_flowElements_429812 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(task, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_task_flowElements_895016)) {
+			if (!process.equals(__DEC_task_flowElements_429812)) {
 				return new Object[] { task, process };
 			}
 		}
@@ -4609,15 +4931,18 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 						ParallelGateway prevNode = (ParallelGateway) tmpPrevNode;
 						boolean prevNodeisDiverging = prevNode.isIsDiverging();
 						if (Boolean.valueOf(prevNodeisDiverging).equals(Boolean.valueOf(true))) {
-							for (SimpleBPMN.Process process : org.moflon.core.utilities.eMoflonEMFUtil
-									.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-								if (process.getFlowElements().contains(prevNode)) {
-									if (process.getFlowElements().contains(task)) {
-										if (pattern_Task2NormalStepAfterPG_27_2_black_nac_0BB(sf1, process) == null) {
-											if (pattern_Task2NormalStepAfterPG_27_2_black_nac_1BB(task,
+							if (pattern_Task2NormalStepAfterPG_27_2_black_nac_0B(sf1) == null) {
+								for (SimpleBPMN.Process process : org.moflon.core.utilities.eMoflonEMFUtil
+										.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
+									if (process.getFlowElements().contains(prevNode)) {
+										if (process.getFlowElements().contains(task)) {
+											if (pattern_Task2NormalStepAfterPG_27_2_black_nac_1BB(sf1,
 													process) == null) {
-												_result.add(
-														new Object[] { prevNode, sf1, process, task, _edge_targetRef });
+												if (pattern_Task2NormalStepAfterPG_27_2_black_nac_2BB(task,
+														process) == null) {
+													_result.add(new Object[] { prevNode, sf1, process, task,
+															_edge_targetRef });
+												}
 											}
 										}
 									}
@@ -4718,22 +5043,30 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return new Object[] { __result };
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_28_2_black_nac_0BB(SequenceFlow sf1,
+	public static final Object[] pattern_Task2NormalStepAfterPG_28_2_black_nac_0B(SequenceFlow sf1) {
+		for (ExclusiveGateway __DEC_sf1_default_24664 : org.moflon.core.utilities.eMoflonEMFUtil
+				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
+			return new Object[] { sf1 };
+		}
+		return null;
+	}
+
+	public static final Object[] pattern_Task2NormalStepAfterPG_28_2_black_nac_1BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_157262 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_288847 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_157262)) {
+			if (!process.equals(__DEC_sf1_flowElements_288847)) {
 				return new Object[] { sf1, process };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_28_2_black_nac_1BB(Task task,
+	public static final Object[] pattern_Task2NormalStepAfterPG_28_2_black_nac_2BB(Task task,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_task_flowElements_622234 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_task_flowElements_533843 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(task, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_task_flowElements_622234)) {
+			if (!process.equals(__DEC_task_flowElements_533843)) {
 				return new Object[] { task, process };
 			}
 		}
@@ -4754,15 +5087,18 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 						ParallelGateway prevNode = (ParallelGateway) tmpPrevNode;
 						boolean prevNodeisDiverging = prevNode.isIsDiverging();
 						if (Boolean.valueOf(prevNodeisDiverging).equals(Boolean.valueOf(true))) {
-							for (SimpleBPMN.Process process : org.moflon.core.utilities.eMoflonEMFUtil
-									.getOppositeReferenceTyped(task, SimpleBPMN.Process.class, "flowElements")) {
-								if (process.getFlowElements().contains(prevNode)) {
-									if (process.getFlowElements().contains(sf1)) {
-										if (pattern_Task2NormalStepAfterPG_28_2_black_nac_0BB(sf1, process) == null) {
-											if (pattern_Task2NormalStepAfterPG_28_2_black_nac_1BB(task,
+							if (pattern_Task2NormalStepAfterPG_28_2_black_nac_0B(sf1) == null) {
+								for (SimpleBPMN.Process process : org.moflon.core.utilities.eMoflonEMFUtil
+										.getOppositeReferenceTyped(task, SimpleBPMN.Process.class, "flowElements")) {
+									if (process.getFlowElements().contains(prevNode)) {
+										if (process.getFlowElements().contains(sf1)) {
+											if (pattern_Task2NormalStepAfterPG_28_2_black_nac_1BB(sf1,
 													process) == null) {
-												_result.add(
-														new Object[] { prevNode, sf1, process, task, _edge_incoming });
+												if (pattern_Task2NormalStepAfterPG_28_2_black_nac_2BB(task,
+														process) == null) {
+													_result.add(new Object[] { prevNode, sf1, process, task,
+															_edge_incoming });
+												}
 											}
 										}
 									}
@@ -4829,7 +5165,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return new Object[] { result };
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_31_2_bindingFFFFFFFFBB(Match targetMatch,
+	public static final Object[] pattern_Task2NormalStepAfterPG_31_2_bindingFFFFFFFFFBB(Match targetMatch,
 			Match sourceMatch) {
 		EObject _localVariable_0 = targetMatch.getObject("step");
 		EObject _localVariable_1 = sourceMatch.getObject("prevNode");
@@ -4837,16 +5173,18 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		EObject _localVariable_3 = sourceMatch.getObject("sf1");
 		EObject _localVariable_4 = sourceMatch.getObject("process");
 		EObject _localVariable_5 = targetMatch.getObject("useCase");
-		EObject _localVariable_6 = targetMatch.getObject("flow");
-		EObject _localVariable_7 = sourceMatch.getObject("task");
+		EObject _localVariable_6 = targetMatch.getObject("pflow");
+		EObject _localVariable_7 = targetMatch.getObject("flow");
+		EObject _localVariable_8 = sourceMatch.getObject("task");
 		EObject tmpStep = _localVariable_0;
 		EObject tmpPrevNode = _localVariable_1;
 		EObject tmpPstep = _localVariable_2;
 		EObject tmpSf1 = _localVariable_3;
 		EObject tmpProcess = _localVariable_4;
 		EObject tmpUseCase = _localVariable_5;
-		EObject tmpFlow = _localVariable_6;
-		EObject tmpTask = _localVariable_7;
+		EObject tmpPflow = _localVariable_6;
+		EObject tmpFlow = _localVariable_7;
+		EObject tmpTask = _localVariable_8;
 		if (tmpStep instanceof NormalStep) {
 			NormalStep step = (NormalStep) tmpStep;
 			if (tmpPrevNode instanceof ParallelGateway) {
@@ -4859,12 +5197,15 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 							SimpleBPMN.Process process = (SimpleBPMN.Process) tmpProcess;
 							if (tmpUseCase instanceof UseCase) {
 								UseCase useCase = (UseCase) tmpUseCase;
-								if (tmpFlow instanceof ParallelFlow) {
-									ParallelFlow flow = (ParallelFlow) tmpFlow;
-									if (tmpTask instanceof Task) {
-										Task task = (Task) tmpTask;
-										return new Object[] { step, prevNode, pstep, sf1, process, useCase, flow, task,
-												targetMatch, sourceMatch };
+								if (tmpPflow instanceof ParallelFlow) {
+									ParallelFlow pflow = (ParallelFlow) tmpPflow;
+									if (tmpFlow instanceof Flow) {
+										Flow flow = (Flow) tmpFlow;
+										if (tmpTask instanceof Task) {
+											Task task = (Task) tmpTask;
+											return new Object[] { step, prevNode, pstep, sf1, process, useCase, pflow,
+													flow, task, targetMatch, sourceMatch };
+										}
 									}
 								}
 							}
@@ -4876,37 +5217,46 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_Task2NormalStepAfterPG_31_2_blackBFBBBBBFBBBB(NormalStep step,
+	public static final Iterable<Object[]> pattern_Task2NormalStepAfterPG_31_2_blackBFBBBBBFBBBBB(NormalStep step,
 			ParallelGateway prevNode, ParallelStep pstep, SequenceFlow sf1, SimpleBPMN.Process process, UseCase useCase,
-			ParallelFlow flow, Task task, Match sourceMatch, Match targetMatch) {
+			ParallelFlow pflow, Flow flow, Task task, Match sourceMatch, Match targetMatch) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
-		if (!sourceMatch.equals(targetMatch)) {
-			if (prevNode.equals(sf1.getSourceRef())) {
-				if (pstep.getInvokedFlows().contains(flow)) {
-					if (process.getFlowElements().contains(prevNode)) {
-						if (process.getFlowElements().contains(sf1)) {
-							if (useCase.getFlows().contains(flow)) {
-								if (flow.getSteps().contains(step)) {
-									if (process.getFlowElements().contains(task)) {
-										if (task.equals(sf1.getTargetRef())) {
-											boolean prevNodeisDiverging = prevNode.isIsDiverging();
-											if (Boolean.valueOf(prevNodeisDiverging).equals(Boolean.valueOf(true))) {
-												for (GW2S pgw2ps : org.moflon.core.utilities.eMoflonEMFUtil
-														.getOppositeReferenceTyped(prevNode, GW2S.class, "source")) {
-													if (pstep.equals(pgw2ps.getTarget())) {
-														for (P2UC p2uc : org.moflon.core.utilities.eMoflonEMFUtil
-																.getOppositeReferenceTyped(process, P2UC.class,
-																		"source")) {
-															if (useCase.equals(p2uc.getTarget())) {
-																_result.add(new Object[] { step, pgw2ps, prevNode,
-																		pstep, sf1, process, useCase, p2uc, flow, task,
-																		sourceMatch, targetMatch });
+		if (!flow.equals(pflow)) {
+			if (!sourceMatch.equals(targetMatch)) {
+				if (prevNode.equals(sf1.getSourceRef())) {
+					if (pstep.getInvokedFlows().contains(pflow)) {
+						if (process.getFlowElements().contains(prevNode)) {
+							if (process.getFlowElements().contains(sf1)) {
+								if (useCase.getFlows().contains(pflow)) {
+									if (useCase.getFlows().contains(flow)) {
+										if (pflow.getSteps().contains(step)) {
+											if (flow.getSteps().contains(pstep)) {
+												if (process.getFlowElements().contains(task)) {
+													if (task.equals(sf1.getTargetRef())) {
+														boolean prevNodeisDiverging = prevNode.isIsDiverging();
+														if (Boolean.valueOf(prevNodeisDiverging)
+																.equals(Boolean.valueOf(true))) {
+															for (GW2S pgw2ps : org.moflon.core.utilities.eMoflonEMFUtil
+																	.getOppositeReferenceTyped(prevNode, GW2S.class,
+																			"source")) {
+																if (pstep.equals(pgw2ps.getTarget())) {
+																	for (P2UC p2uc : org.moflon.core.utilities.eMoflonEMFUtil
+																			.getOppositeReferenceTyped(process,
+																					P2UC.class, "source")) {
+																		if (useCase.equals(p2uc.getTarget())) {
+																			_result.add(new Object[] { step, pgw2ps,
+																					prevNode, pstep, sf1, process,
+																					useCase, p2uc, pflow, flow, task,
+																					sourceMatch, targetMatch });
+																		}
+																	}
+																}
 															}
 														}
+
 													}
 												}
 											}
-
 										}
 									}
 								}
@@ -4919,9 +5269,9 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return _result;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_31_2_greenBBBBBBBBBBBBF(NormalStep step, GW2S pgw2ps,
+	public static final Object[] pattern_Task2NormalStepAfterPG_31_2_greenBBBBBBBBBBBBBF(NormalStep step, GW2S pgw2ps,
 			ParallelGateway prevNode, ParallelStep pstep, SequenceFlow sf1, SimpleBPMN.Process process, UseCase useCase,
-			P2UC p2uc, ParallelFlow flow, Task task, Match sourceMatch, Match targetMatch) {
+			P2UC p2uc, ParallelFlow pflow, Flow flow, Task task, Match sourceMatch, Match targetMatch) {
 		IsApplicableMatchCC isApplicableMatch = TGGRuntimeFactory.eINSTANCE.createIsApplicableMatchCC();
 		String isApplicableMatch_ruleName_prime = "Task2NormalStepAfterPG";
 		isApplicableMatch.setSourceMatch(sourceMatch);
@@ -4933,24 +5283,25 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		isApplicableMatch.getAllContextElements().add(step);
 		isApplicableMatch.getAllContextElements().add(pstep);
 		isApplicableMatch.getAllContextElements().add(useCase);
+		isApplicableMatch.getAllContextElements().add(pflow);
 		isApplicableMatch.getAllContextElements().add(flow);
 		isApplicableMatch.getAllContextElements().add(pgw2ps);
 		isApplicableMatch.getAllContextElements().add(p2uc);
 		isApplicableMatch.setRuleName(isApplicableMatch_ruleName_prime);
-		return new Object[] { step, pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, flow, task, sourceMatch,
-				targetMatch, isApplicableMatch };
+		return new Object[] { step, pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, pflow, flow, task,
+				sourceMatch, targetMatch, isApplicableMatch };
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_31_3_bindingFBBBBBBBBBBBBBB(
+	public static final Object[] pattern_Task2NormalStepAfterPG_31_3_bindingFBBBBBBBBBBBBBBB(
 			Task2NormalStepAfterPG _this, IsApplicableMatchCC isApplicableMatch, NormalStep step, GW2S pgw2ps,
 			ParallelGateway prevNode, ParallelStep pstep, SequenceFlow sf1, SimpleBPMN.Process process, UseCase useCase,
-			P2UC p2uc, ParallelFlow flow, Task task, Match sourceMatch, Match targetMatch) {
+			P2UC p2uc, ParallelFlow pflow, Flow flow, Task task, Match sourceMatch, Match targetMatch) {
 		CSP _localVariable_0 = _this.isApplicable_solveCsp_CC(isApplicableMatch, step, pgw2ps, prevNode, pstep, sf1,
-				process, useCase, p2uc, flow, task, sourceMatch, targetMatch);
+				process, useCase, p2uc, pflow, flow, task, sourceMatch, targetMatch);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
 			return new Object[] { csp, _this, isApplicableMatch, step, pgw2ps, prevNode, pstep, sf1, process, useCase,
-					p2uc, flow, task, sourceMatch, targetMatch };
+					p2uc, pflow, flow, task, sourceMatch, targetMatch };
 		}
 		return null;
 	}
@@ -4959,12 +5310,12 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return new Object[] { csp };
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_31_3_bindingAndBlackFBBBBBBBBBBBBBB(
+	public static final Object[] pattern_Task2NormalStepAfterPG_31_3_bindingAndBlackFBBBBBBBBBBBBBBB(
 			Task2NormalStepAfterPG _this, IsApplicableMatchCC isApplicableMatch, NormalStep step, GW2S pgw2ps,
 			ParallelGateway prevNode, ParallelStep pstep, SequenceFlow sf1, SimpleBPMN.Process process, UseCase useCase,
-			P2UC p2uc, ParallelFlow flow, Task task, Match sourceMatch, Match targetMatch) {
-		Object[] result_pattern_Task2NormalStepAfterPG_31_3_binding = pattern_Task2NormalStepAfterPG_31_3_bindingFBBBBBBBBBBBBBB(
-				_this, isApplicableMatch, step, pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, flow, task,
+			P2UC p2uc, ParallelFlow pflow, Flow flow, Task task, Match sourceMatch, Match targetMatch) {
+		Object[] result_pattern_Task2NormalStepAfterPG_31_3_binding = pattern_Task2NormalStepAfterPG_31_3_bindingFBBBBBBBBBBBBBBB(
+				_this, isApplicableMatch, step, pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, pflow, flow, task,
 				sourceMatch, targetMatch);
 		if (result_pattern_Task2NormalStepAfterPG_31_3_binding != null) {
 			CSP csp = (CSP) result_pattern_Task2NormalStepAfterPG_31_3_binding[0];
@@ -4973,7 +5324,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 			if (result_pattern_Task2NormalStepAfterPG_31_3_black != null) {
 
 				return new Object[] { csp, _this, isApplicableMatch, step, pgw2ps, prevNode, pstep, sf1, process,
-						useCase, p2uc, flow, task, sourceMatch, targetMatch };
+						useCase, p2uc, pflow, flow, task, sourceMatch, targetMatch };
 			}
 		}
 		return null;
@@ -5004,7 +5355,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return new Object[] { _this };
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_34_2_bindingFFFFFFFFFFB(
+	public static final Object[] pattern_Task2NormalStepAfterPG_34_2_bindingFFFFFFFFFFFB(
 			IsApplicableMatchCC isApplicableMatch) {
 		EObject _localVariable_0 = isApplicableMatch.getObject("step");
 		EObject _localVariable_1 = isApplicableMatch.getObject("pgw2ps");
@@ -5014,8 +5365,9 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		EObject _localVariable_5 = isApplicableMatch.getObject("process");
 		EObject _localVariable_6 = isApplicableMatch.getObject("useCase");
 		EObject _localVariable_7 = isApplicableMatch.getObject("p2uc");
-		EObject _localVariable_8 = isApplicableMatch.getObject("flow");
-		EObject _localVariable_9 = isApplicableMatch.getObject("task");
+		EObject _localVariable_8 = isApplicableMatch.getObject("pflow");
+		EObject _localVariable_9 = isApplicableMatch.getObject("flow");
+		EObject _localVariable_10 = isApplicableMatch.getObject("task");
 		EObject tmpStep = _localVariable_0;
 		EObject tmpPgw2ps = _localVariable_1;
 		EObject tmpPrevNode = _localVariable_2;
@@ -5024,8 +5376,9 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		EObject tmpProcess = _localVariable_5;
 		EObject tmpUseCase = _localVariable_6;
 		EObject tmpP2uc = _localVariable_7;
-		EObject tmpFlow = _localVariable_8;
-		EObject tmpTask = _localVariable_9;
+		EObject tmpPflow = _localVariable_8;
+		EObject tmpFlow = _localVariable_9;
+		EObject tmpTask = _localVariable_10;
 		if (tmpStep instanceof NormalStep) {
 			NormalStep step = (NormalStep) tmpStep;
 			if (tmpPgw2ps instanceof GW2S) {
@@ -5042,12 +5395,15 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 									UseCase useCase = (UseCase) tmpUseCase;
 									if (tmpP2uc instanceof P2UC) {
 										P2UC p2uc = (P2UC) tmpP2uc;
-										if (tmpFlow instanceof ParallelFlow) {
-											ParallelFlow flow = (ParallelFlow) tmpFlow;
-											if (tmpTask instanceof Task) {
-												Task task = (Task) tmpTask;
-												return new Object[] { step, pgw2ps, prevNode, pstep, sf1, process,
-														useCase, p2uc, flow, task, isApplicableMatch };
+										if (tmpPflow instanceof ParallelFlow) {
+											ParallelFlow pflow = (ParallelFlow) tmpPflow;
+											if (tmpFlow instanceof Flow) {
+												Flow flow = (Flow) tmpFlow;
+												if (tmpTask instanceof Task) {
+													Task task = (Task) tmpTask;
+													return new Object[] { step, pgw2ps, prevNode, pstep, sf1, process,
+															useCase, p2uc, pflow, flow, task, isApplicableMatch };
+												}
 											}
 										}
 									}
@@ -5061,29 +5417,36 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return null;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_34_2_blackBBBBBBBBBBB(NormalStep step, GW2S pgw2ps,
+	public static final Object[] pattern_Task2NormalStepAfterPG_34_2_blackBBBBBBBBBBBB(NormalStep step, GW2S pgw2ps,
 			ParallelGateway prevNode, ParallelStep pstep, SequenceFlow sf1, SimpleBPMN.Process process, UseCase useCase,
-			P2UC p2uc, ParallelFlow flow, Task task, IsApplicableMatchCC isApplicableMatch) {
-		if (prevNode.equals(pgw2ps.getSource())) {
-			if (pstep.equals(pgw2ps.getTarget())) {
-				if (prevNode.equals(sf1.getSourceRef())) {
-					if (pstep.getInvokedFlows().contains(flow)) {
-						if (process.getFlowElements().contains(prevNode)) {
-							if (process.getFlowElements().contains(sf1)) {
-								if (useCase.getFlows().contains(flow)) {
-									if (process.equals(p2uc.getSource())) {
-										if (useCase.equals(p2uc.getTarget())) {
-											if (flow.getSteps().contains(step)) {
-												if (process.getFlowElements().contains(task)) {
-													if (task.equals(sf1.getTargetRef())) {
-														boolean prevNodeisDiverging = prevNode.isIsDiverging();
-														if (Boolean.valueOf(prevNodeisDiverging)
-																.equals(Boolean.valueOf(true))) {
-															return new Object[] { step, pgw2ps, prevNode, pstep, sf1,
-																	process, useCase, p2uc, flow, task,
-																	isApplicableMatch };
-														}
+			P2UC p2uc, ParallelFlow pflow, Flow flow, Task task, IsApplicableMatchCC isApplicableMatch) {
+		if (!flow.equals(pflow)) {
+			if (prevNode.equals(pgw2ps.getSource())) {
+				if (pstep.equals(pgw2ps.getTarget())) {
+					if (prevNode.equals(sf1.getSourceRef())) {
+						if (pstep.getInvokedFlows().contains(pflow)) {
+							if (process.getFlowElements().contains(prevNode)) {
+								if (process.getFlowElements().contains(sf1)) {
+									if (useCase.getFlows().contains(pflow)) {
+										if (useCase.getFlows().contains(flow)) {
+											if (process.equals(p2uc.getSource())) {
+												if (useCase.equals(p2uc.getTarget())) {
+													if (pflow.getSteps().contains(step)) {
+														if (flow.getSteps().contains(pstep)) {
+															if (process.getFlowElements().contains(task)) {
+																if (task.equals(sf1.getTargetRef())) {
+																	boolean prevNodeisDiverging = prevNode
+																			.isIsDiverging();
+																	if (Boolean.valueOf(prevNodeisDiverging)
+																			.equals(Boolean.valueOf(true))) {
+																		return new Object[] { step, pgw2ps, prevNode,
+																				pstep, sf1, process, useCase, p2uc,
+																				pflow, flow, task, isApplicableMatch };
+																	}
 
+																}
+															}
+														}
 													}
 												}
 											}
@@ -5099,9 +5462,9 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return null;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_34_2_bindingAndBlackFFFFFFFFFFB(
+	public static final Object[] pattern_Task2NormalStepAfterPG_34_2_bindingAndBlackFFFFFFFFFFFB(
 			IsApplicableMatchCC isApplicableMatch) {
-		Object[] result_pattern_Task2NormalStepAfterPG_34_2_binding = pattern_Task2NormalStepAfterPG_34_2_bindingFFFFFFFFFFB(
+		Object[] result_pattern_Task2NormalStepAfterPG_34_2_binding = pattern_Task2NormalStepAfterPG_34_2_bindingFFFFFFFFFFFB(
 				isApplicableMatch);
 		if (result_pattern_Task2NormalStepAfterPG_34_2_binding != null) {
 			NormalStep step = (NormalStep) result_pattern_Task2NormalStepAfterPG_34_2_binding[0];
@@ -5112,14 +5475,15 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 			SimpleBPMN.Process process = (SimpleBPMN.Process) result_pattern_Task2NormalStepAfterPG_34_2_binding[5];
 			UseCase useCase = (UseCase) result_pattern_Task2NormalStepAfterPG_34_2_binding[6];
 			P2UC p2uc = (P2UC) result_pattern_Task2NormalStepAfterPG_34_2_binding[7];
-			ParallelFlow flow = (ParallelFlow) result_pattern_Task2NormalStepAfterPG_34_2_binding[8];
-			Task task = (Task) result_pattern_Task2NormalStepAfterPG_34_2_binding[9];
+			ParallelFlow pflow = (ParallelFlow) result_pattern_Task2NormalStepAfterPG_34_2_binding[8];
+			Flow flow = (Flow) result_pattern_Task2NormalStepAfterPG_34_2_binding[9];
+			Task task = (Task) result_pattern_Task2NormalStepAfterPG_34_2_binding[10];
 
-			Object[] result_pattern_Task2NormalStepAfterPG_34_2_black = pattern_Task2NormalStepAfterPG_34_2_blackBBBBBBBBBBB(
-					step, pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, flow, task, isApplicableMatch);
+			Object[] result_pattern_Task2NormalStepAfterPG_34_2_black = pattern_Task2NormalStepAfterPG_34_2_blackBBBBBBBBBBBB(
+					step, pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, pflow, flow, task, isApplicableMatch);
 			if (result_pattern_Task2NormalStepAfterPG_34_2_black != null) {
 
-				return new Object[] { step, pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, flow, task,
+				return new Object[] { step, pgw2ps, prevNode, pstep, sf1, process, useCase, p2uc, pflow, flow, task,
 						isApplicableMatch };
 			}
 		}
@@ -5193,6 +5557,14 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 	}
 
 	public static final Object[] pattern_Task2NormalStepAfterPG_35_2_black_nac_5BB(ModelgeneratorRuleResult ruleResult,
+			Flow flow) {
+		if (ruleResult.getTargetObjects().contains(flow)) {
+			return new Object[] { ruleResult, flow };
+		}
+		return null;
+	}
+
+	public static final Object[] pattern_Task2NormalStepAfterPG_35_2_black_nac_6BB(ModelgeneratorRuleResult ruleResult,
 			ParallelStep pstep) {
 		if (ruleResult.getTargetObjects().contains(pstep)) {
 			return new Object[] { ruleResult, pstep };
@@ -5200,7 +5572,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_Task2NormalStepAfterPG_35_2_blackFFFFFFFBB(
+	public static final Iterable<Object[]> pattern_Task2NormalStepAfterPG_35_2_blackFFFFFFFFBB(
 			RuleEntryContainer ruleEntryContainer, ModelgeneratorRuleResult ruleResult) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		for (RuleEntryList pgw2psList : ruleEntryContainer.getRuleEntryList()) {
@@ -5218,28 +5590,39 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 								if (pattern_Task2NormalStepAfterPG_35_2_black_nac_0BB(ruleResult, pgw2ps) == null) {
 									if (pattern_Task2NormalStepAfterPG_35_2_black_nac_1BB(ruleResult,
 											prevNode) == null) {
-										if (pattern_Task2NormalStepAfterPG_35_2_black_nac_5BB(ruleResult,
+										if (pattern_Task2NormalStepAfterPG_35_2_black_nac_6BB(ruleResult,
 												pstep) == null) {
 											for (SimpleBPMN.Process process : org.moflon.core.utilities.eMoflonEMFUtil
 													.getOppositeReferenceTyped(prevNode, SimpleBPMN.Process.class,
 															"flowElements")) {
 												if (pattern_Task2NormalStepAfterPG_35_2_black_nac_2BB(ruleResult,
 														process) == null) {
-													for (P2UC p2uc : org.moflon.core.utilities.eMoflonEMFUtil
-															.getOppositeReferenceTyped(process, P2UC.class, "source")) {
-														UseCase useCase = p2uc.getTarget();
-														if (useCase != null) {
-															if (pattern_Task2NormalStepAfterPG_35_2_black_nac_3BB(
-																	ruleResult, p2uc) == null) {
-																if (pattern_Task2NormalStepAfterPG_35_2_black_nac_4BB(
-																		ruleResult, useCase) == null) {
-																	_result.add(new Object[] { pgw2psList, pgw2ps,
-																			prevNode, process, p2uc, useCase, pstep,
-																			ruleEntryContainer, ruleResult });
+													for (Flow flow : org.moflon.core.utilities.eMoflonEMFUtil
+															.getOppositeReferenceTyped(pstep, Flow.class, "steps")) {
+														if (pattern_Task2NormalStepAfterPG_35_2_black_nac_5BB(
+																ruleResult, flow) == null) {
+															for (P2UC p2uc : org.moflon.core.utilities.eMoflonEMFUtil
+																	.getOppositeReferenceTyped(process, P2UC.class,
+																			"source")) {
+																UseCase useCase = p2uc.getTarget();
+																if (useCase != null) {
+																	if (useCase.getFlows().contains(flow)) {
+																		if (pattern_Task2NormalStepAfterPG_35_2_black_nac_3BB(
+																				ruleResult, p2uc) == null) {
+																			if (pattern_Task2NormalStepAfterPG_35_2_black_nac_4BB(
+																					ruleResult, useCase) == null) {
+																				_result.add(new Object[] { pgw2psList,
+																						pgw2ps, prevNode, process, p2uc,
+																						useCase, flow, pstep,
+																						ruleEntryContainer,
+																						ruleResult });
+																			}
+																		}
+																	}
 																}
+
 															}
 														}
-
 													}
 												}
 											}
@@ -5258,14 +5641,14 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return _result;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_35_3_bindingFBBBBBBBBB(Task2NormalStepAfterPG _this,
+	public static final Object[] pattern_Task2NormalStepAfterPG_35_3_bindingFBBBBBBBBBB(Task2NormalStepAfterPG _this,
 			IsApplicableMatch isApplicableMatch, GW2S pgw2ps, ParallelGateway prevNode, ParallelStep pstep,
-			SimpleBPMN.Process process, UseCase useCase, P2UC p2uc, ModelgeneratorRuleResult ruleResult) {
+			SimpleBPMN.Process process, UseCase useCase, P2UC p2uc, Flow flow, ModelgeneratorRuleResult ruleResult) {
 		CSP _localVariable_0 = _this.generateModel_solveCsp_BWD(isApplicableMatch, pgw2ps, prevNode, pstep, process,
-				useCase, p2uc, ruleResult);
+				useCase, p2uc, flow, ruleResult);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, isApplicableMatch, pgw2ps, prevNode, pstep, process, useCase, p2uc,
+			return new Object[] { csp, _this, isApplicableMatch, pgw2ps, prevNode, pstep, process, useCase, p2uc, flow,
 					ruleResult };
 		}
 		return null;
@@ -5275,12 +5658,12 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return new Object[] { csp };
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_35_3_bindingAndBlackFBBBBBBBBB(
+	public static final Object[] pattern_Task2NormalStepAfterPG_35_3_bindingAndBlackFBBBBBBBBBB(
 			Task2NormalStepAfterPG _this, IsApplicableMatch isApplicableMatch, GW2S pgw2ps, ParallelGateway prevNode,
-			ParallelStep pstep, SimpleBPMN.Process process, UseCase useCase, P2UC p2uc,
+			ParallelStep pstep, SimpleBPMN.Process process, UseCase useCase, P2UC p2uc, Flow flow,
 			ModelgeneratorRuleResult ruleResult) {
-		Object[] result_pattern_Task2NormalStepAfterPG_35_3_binding = pattern_Task2NormalStepAfterPG_35_3_bindingFBBBBBBBBB(
-				_this, isApplicableMatch, pgw2ps, prevNode, pstep, process, useCase, p2uc, ruleResult);
+		Object[] result_pattern_Task2NormalStepAfterPG_35_3_binding = pattern_Task2NormalStepAfterPG_35_3_bindingFBBBBBBBBBB(
+				_this, isApplicableMatch, pgw2ps, prevNode, pstep, process, useCase, p2uc, flow, ruleResult);
 		if (result_pattern_Task2NormalStepAfterPG_35_3_binding != null) {
 			CSP csp = (CSP) result_pattern_Task2NormalStepAfterPG_35_3_binding[0];
 
@@ -5288,7 +5671,7 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 			if (result_pattern_Task2NormalStepAfterPG_35_3_black != null) {
 
 				return new Object[] { csp, _this, isApplicableMatch, pgw2ps, prevNode, pstep, process, useCase, p2uc,
-						ruleResult };
+						flow, ruleResult };
 			}
 		}
 		return null;
@@ -5301,22 +5684,22 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		return _result;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_35_5_blackBBBBBB(GW2S pgw2ps, ParallelGateway prevNode,
-			ParallelStep pstep, SimpleBPMN.Process process, UseCase useCase, P2UC p2uc) {
+	public static final Object[] pattern_Task2NormalStepAfterPG_35_5_blackBBBBBBB(GW2S pgw2ps, ParallelGateway prevNode,
+			ParallelStep pstep, SimpleBPMN.Process process, UseCase useCase, P2UC p2uc, Flow flow) {
 		boolean prevNodeisDiverging = prevNode.isIsDiverging();
 		if (Boolean.valueOf(prevNodeisDiverging).equals(Boolean.valueOf(true))) {
-			return new Object[] { pgw2ps, prevNode, pstep, process, useCase, p2uc };
+			return new Object[] { pgw2ps, prevNode, pstep, process, useCase, p2uc, flow };
 		}
 
 		return null;
 	}
 
-	public static final Object[] pattern_Task2NormalStepAfterPG_35_6_blackBBBBBBB(GW2S pgw2ps, ParallelGateway prevNode,
-			ParallelStep pstep, SimpleBPMN.Process process, UseCase useCase, P2UC p2uc,
-			ModelgeneratorRuleResult ruleResult) {
+	public static final Object[] pattern_Task2NormalStepAfterPG_35_6_blackBBBBBBBB(GW2S pgw2ps,
+			ParallelGateway prevNode, ParallelStep pstep, SimpleBPMN.Process process, UseCase useCase, P2UC p2uc,
+			Flow flow, ModelgeneratorRuleResult ruleResult) {
 		boolean prevNodeisDiverging = prevNode.isIsDiverging();
 		if (Boolean.valueOf(prevNodeisDiverging).equals(Boolean.valueOf(true))) {
-			return new Object[] { pgw2ps, prevNode, pstep, process, useCase, p2uc, ruleResult };
+			return new Object[] { pgw2ps, prevNode, pstep, process, useCase, p2uc, flow, ruleResult };
 		}
 
 		return null;
@@ -5327,12 +5710,12 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 			CSP csp) {
 		NormalStep step = SimpleUseCaseFactory.eINSTANCE.createNormalStep();
 		SequenceFlow sf1 = SimpleBPMNFactory.eINSTANCE.createSequenceFlow();
-		ParallelFlow flow = SimpleUseCaseFactory.eINSTANCE.createParallelFlow();
+		ParallelFlow pflow = SimpleUseCaseFactory.eINSTANCE.createParallelFlow();
 		FN2S t2s = Bpmn2UseCaseFactory.eINSTANCE.createFN2S();
 		Task task = SimpleBPMNFactory.eINSTANCE.createTask();
 		Object _localVariable_0 = csp.getValue("step", "id");
 		Object _localVariable_1 = csp.getValue("sf1", "id");
-		Object _localVariable_2 = csp.getValue("flow", "id");
+		Object _localVariable_2 = csp.getValue("pflow", "id");
 		Object _localVariable_3 = csp.getValue("task", "id");
 		boolean ruleResult_success_prime = Boolean.valueOf(true);
 		int _localVariable_4 = ruleResult.getIncrementedPerformCount();
@@ -5340,10 +5723,10 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		sf1.setSourceRef(prevNode);
 		process.getFlowElements().add(sf1);
 		ruleResult.getSourceObjects().add(sf1);
-		pstep.getInvokedFlows().add(flow);
-		useCase.getFlows().add(flow);
-		flow.getSteps().add(step);
-		ruleResult.getTargetObjects().add(flow);
+		pstep.getInvokedFlows().add(pflow);
+		useCase.getFlows().add(pflow);
+		pflow.getSteps().add(step);
+		ruleResult.getTargetObjects().add(pflow);
 		t2s.setTarget(step);
 		ruleResult.getCorrObjects().add(t2s);
 		t2s.setSource(task);
@@ -5352,16 +5735,16 @@ public class Task2NormalStepAfterPGImpl extends AbstractRuleImpl implements Task
 		ruleResult.getSourceObjects().add(task);
 		String step_id_prime = (String) _localVariable_0;
 		String sf1_id_prime = (String) _localVariable_1;
-		String flow_id_prime = (String) _localVariable_2;
+		String pflow_id_prime = (String) _localVariable_2;
 		String task_id_prime = (String) _localVariable_3;
 		ruleResult.setSuccess(Boolean.valueOf(ruleResult_success_prime));
 		int ruleResult_performCount_prime = Integer.valueOf(_localVariable_4);
 		step.setId(step_id_prime);
 		sf1.setId(sf1_id_prime);
-		flow.setId(flow_id_prime);
+		pflow.setId(pflow_id_prime);
 		task.setId(task_id_prime);
 		ruleResult.setPerformCount(Integer.valueOf(ruleResult_performCount_prime));
-		return new Object[] { step, prevNode, pstep, sf1, process, useCase, flow, t2s, task, ruleResult, csp };
+		return new Object[] { step, prevNode, pstep, sf1, process, useCase, pflow, t2s, task, ruleResult, csp };
 	}
 
 	public static final ModelgeneratorRuleResult pattern_Task2NormalStepAfterPG_35_7_expressionFB(

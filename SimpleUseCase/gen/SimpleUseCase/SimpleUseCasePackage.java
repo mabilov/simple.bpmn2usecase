@@ -662,13 +662,22 @@ public interface SimpleUseCasePackage extends EPackage {
 	int CHOICE_STEP__ID = STEP__ID;
 
 	/**
-	 * The feature id for the '<em><b>Alternative Flows</b></em>' reference list.
+	 * The feature id for the '<em><b>Step Alternatives</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_STEP__ALTERNATIVE_FLOWS = STEP_FEATURE_COUNT + 0;
+	int CHOICE_STEP__STEP_ALTERNATIVES = STEP_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>last In Def</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHOICE_STEP__LAST_IN_DEF = STEP_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Choice Step</em>' class.
@@ -677,7 +686,7 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_STEP_FEATURE_COUNT = STEP_FEATURE_COUNT + 1;
+	int CHOICE_STEP_FEATURE_COUNT = STEP_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Choice Step</em>' class.
@@ -687,6 +696,70 @@ public interface SimpleUseCasePackage extends EPackage {
 	 * @ordered
 	 */
 	int CHOICE_STEP_OPERATION_COUNT = STEP_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link SimpleUseCase.impl.StepAlternativeImpl <em>Step Alternative</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see SimpleUseCase.impl.StepAlternativeImpl
+	 * @see SimpleUseCase.impl.SimpleUseCasePackageImpl#getStepAlternative()
+	 * @generated
+	 */
+	int STEP_ALTERNATIVE = 11;
+
+	/**
+	 * The feature id for the '<em><b>Ref</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STEP_ALTERNATIVE__REF = 0;
+
+	/**
+	 * The feature id for the '<em><b>Continuation</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STEP_ALTERNATIVE__CONTINUATION = 1;
+
+	/**
+	 * The feature id for the '<em><b>has Continue</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STEP_ALTERNATIVE__HAS_CONTINUE = 2;
+
+	/**
+	 * The feature id for the '<em><b>Condition</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STEP_ALTERNATIVE__CONDITION = 3;
+
+	/**
+	 * The number of structural features of the '<em>Step Alternative</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STEP_ALTERNATIVE_FEATURE_COUNT = 4;
+
+	/**
+	 * The number of operations of the '<em>Step Alternative</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STEP_ALTERNATIVE_OPERATION_COUNT = 0;
 
 	/**
 	 * Returns the meta object for class '{@link SimpleUseCase.UseCase <em>Use Case</em>}'.
@@ -931,15 +1004,80 @@ public interface SimpleUseCasePackage extends EPackage {
 	EClass getChoiceStep();
 
 	/**
-	 * Returns the meta object for the reference list '{@link SimpleUseCase.ChoiceStep#getAlternativeFlows <em>Alternative Flows</em>}'.
+	 * Returns the meta object for the containment reference list '{@link SimpleUseCase.ChoiceStep#getStepAlternatives <em>Step Alternatives</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Alternative Flows</em>'.
-	 * @see SimpleUseCase.ChoiceStep#getAlternativeFlows()
+	 * @return the meta object for the containment reference list '<em>Step Alternatives</em>'.
+	 * @see SimpleUseCase.ChoiceStep#getStepAlternatives()
 	 * @see #getChoiceStep()
 	 * @generated
 	 */
-	EReference getChoiceStep_AlternativeFlows();
+	EReference getChoiceStep_StepAlternatives();
+
+	/**
+	 * Returns the meta object for the reference '{@link SimpleUseCase.ChoiceStep#get__lastInDef <em>last In Def</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>last In Def</em>'.
+	 * @see SimpleUseCase.ChoiceStep#get__lastInDef()
+	 * @see #getChoiceStep()
+	 * @generated
+	 */
+	EReference getChoiceStep___lastInDef();
+
+	/**
+	 * Returns the meta object for class '{@link SimpleUseCase.StepAlternative <em>Step Alternative</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Step Alternative</em>'.
+	 * @see SimpleUseCase.StepAlternative
+	 * @generated
+	 */
+	EClass getStepAlternative();
+
+	/**
+	 * Returns the meta object for the reference '{@link SimpleUseCase.StepAlternative#getRef <em>Ref</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Ref</em>'.
+	 * @see SimpleUseCase.StepAlternative#getRef()
+	 * @see #getStepAlternative()
+	 * @generated
+	 */
+	EReference getStepAlternative_Ref();
+
+	/**
+	 * Returns the meta object for the reference '{@link SimpleUseCase.StepAlternative#getContinuation <em>Continuation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Continuation</em>'.
+	 * @see SimpleUseCase.StepAlternative#getContinuation()
+	 * @see #getStepAlternative()
+	 * @generated
+	 */
+	EReference getStepAlternative_Continuation();
+
+	/**
+	 * Returns the meta object for the reference '{@link SimpleUseCase.StepAlternative#get__hasContinue <em>has Continue</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>has Continue</em>'.
+	 * @see SimpleUseCase.StepAlternative#get__hasContinue()
+	 * @see #getStepAlternative()
+	 * @generated
+	 */
+	EReference getStepAlternative___hasContinue();
+
+	/**
+	 * Returns the meta object for the attribute '{@link SimpleUseCase.StepAlternative#getCondition <em>Condition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Condition</em>'.
+	 * @see SimpleUseCase.StepAlternative#getCondition()
+	 * @see #getStepAlternative()
+	 * @generated
+	 */
+	EAttribute getStepAlternative_Condition();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -1171,12 +1309,62 @@ public interface SimpleUseCasePackage extends EPackage {
 		EClass CHOICE_STEP = eINSTANCE.getChoiceStep();
 
 		/**
-		 * The meta object literal for the '<em><b>Alternative Flows</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Step Alternatives</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CHOICE_STEP__ALTERNATIVE_FLOWS = eINSTANCE.getChoiceStep_AlternativeFlows();
+		EReference CHOICE_STEP__STEP_ALTERNATIVES = eINSTANCE.getChoiceStep_StepAlternatives();
+
+		/**
+		 * The meta object literal for the '<em><b>last In Def</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CHOICE_STEP__LAST_IN_DEF = eINSTANCE.getChoiceStep___lastInDef();
+
+		/**
+		 * The meta object literal for the '{@link SimpleUseCase.impl.StepAlternativeImpl <em>Step Alternative</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see SimpleUseCase.impl.StepAlternativeImpl
+		 * @see SimpleUseCase.impl.SimpleUseCasePackageImpl#getStepAlternative()
+		 * @generated
+		 */
+		EClass STEP_ALTERNATIVE = eINSTANCE.getStepAlternative();
+
+		/**
+		 * The meta object literal for the '<em><b>Ref</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STEP_ALTERNATIVE__REF = eINSTANCE.getStepAlternative_Ref();
+
+		/**
+		 * The meta object literal for the '<em><b>Continuation</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STEP_ALTERNATIVE__CONTINUATION = eINSTANCE.getStepAlternative_Continuation();
+
+		/**
+		 * The meta object literal for the '<em><b>has Continue</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STEP_ALTERNATIVE__HAS_CONTINUE = eINSTANCE.getStepAlternative___hasContinue();
+
+		/**
+		 * The meta object literal for the '<em><b>Condition</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute STEP_ALTERNATIVE__CONDITION = eINSTANCE.getStepAlternative_Condition();
 
 	}
 

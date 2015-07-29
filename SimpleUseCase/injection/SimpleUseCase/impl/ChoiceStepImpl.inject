@@ -9,12 +9,17 @@ partial class ChoiceStepImpl {
 		sb.append(this.getId());
 		String comma = "";
 
-		Iterator<AlternativeFlow> altFlows = this.getAlternativeFlows().stream().sorted(new NamedFlowComparator())
-				.iterator();
+		java.util.Iterator<StepAlternative> altFlows = this.getStepAlternatives().stream()
+				.sorted(new java.util.Comparator<StepAlternative>() {
+					@Override
+					public int compare(StepAlternative o1, StepAlternative o2) {
+						return o1.getCondition().compareTo(o2.getCondition());
+					}
+				}).iterator();
 		while (altFlows.hasNext()) {
-			AlternativeFlow flow = altFlows.next();
+			StepAlternative alt = altFlows.next();
 			sb.append(comma);
-			sb.append(flow.getId());
+			sb.append("if " + alt.getCondition() + " then alternative flow " + alt.getRef().getId());
 			comma = ", ";
 		}
 		

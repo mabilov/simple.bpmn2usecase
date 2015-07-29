@@ -9,7 +9,6 @@ import org.moflon.testframework.tgg.IntegratorTest;
 import Bpmn2UseCase.Bpmn2UseCasePackage;
 import SimpleBPMN.Process;
 import SimpleBPMN.SimpleBPMNPackage;
-import SimpleBPMN.util.PatternDiscovery;
 import SimpleUseCase.SimpleUseCasePackage;
 import SimpleUseCase.UseCase;
 import TGGLanguage.algorithm.ApplicationTypes;
@@ -70,9 +69,16 @@ public class Batch extends IntegratorTest {
 	protected void setInputModel(ApplicationTypes direction, String testCaseName) {
 		super.setInputModel(direction, testCaseName);
 		if (direction == ApplicationTypes.FORWARD) {
-			PatternDiscovery.discoverParallel((Process) helper.getSrc());
+			SimpleBPMN.util.SynchronizationHelper.discoverConverging((Process) helper.getSrc());
 		} else {
-			SimpleUseCase.util.PreProcessor.process((UseCase) helper.getTrg());
+			SimpleUseCase.util.SynchronizationHelper.preprocess((UseCase) helper.getTrg());
+		}
+	}
+
+	@Override
+	public void postProcessing(EObject created) {
+		if (created instanceof UseCase) {
+			SimpleUseCase.util.SynchronizationHelper.postprocess((UseCase) created);
 		}
 	}
 

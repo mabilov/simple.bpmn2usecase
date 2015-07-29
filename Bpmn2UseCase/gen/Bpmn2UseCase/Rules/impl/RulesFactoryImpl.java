@@ -75,6 +75,30 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 			return createEndEvent2FinalStateSeq();
 		case RulesPackage.LAST_STEP_IN_PFLOW:
 			return createLastStepInPFlow();
+		case RulesPackage.EG2_CHOICE_SEQ:
+			return createEG2ChoiceSeq();
+		case RulesPackage.EG2_CHOICE_FIRST:
+			return createEG2ChoiceFirst();
+		case RulesPackage.EG2_CHOICE_AFTER_PG:
+			return createEG2ChoiceAfterPG();
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_DEF_EG:
+			return createTask2NormalStepAfterDefEG();
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_EG:
+			return createTask2NormalStepAfterEG();
+		case RulesPackage.CLASS1:
+			return createClass1();
+		case RulesPackage.LAST_STEP_IN_ALT_FLOW:
+			return createLastStepInAltFlow();
+		case RulesPackage.PG2_PARALLEL_STEP_AFTER_DEF_EG:
+			return createPG2ParallelStepAfterDefEG();
+		case RulesPackage.PG2_PARALLEL_STEP_AFTER_EG:
+			return createPG2ParallelStepAfterEG();
+		case RulesPackage.EG2_CHOICE_STEP_AFTER_DEF_EG:
+			return createEG2ChoiceStepAfterDefEG();
+		case RulesPackage.EG2_CHOICE_STEP_AFTER_EG:
+			return createEG2ChoiceStepAfterEG();
+		case RulesPackage.END_EVENT2_FINAL_STATE_GW_SEQ:
+			return createEndEvent2FinalStateGWSeq();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -178,6 +202,126 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	public LastStepInPFlow createLastStepInPFlow() {
 		LastStepInPFlowImpl lastStepInPFlow = new LastStepInPFlowImpl();
 		return lastStepInPFlow;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EG2ChoiceSeq createEG2ChoiceSeq() {
+		EG2ChoiceSeqImpl eg2ChoiceSeq = new EG2ChoiceSeqImpl();
+		return eg2ChoiceSeq;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EG2ChoiceFirst createEG2ChoiceFirst() {
+		EG2ChoiceFirstImpl eg2ChoiceFirst = new EG2ChoiceFirstImpl();
+		return eg2ChoiceFirst;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EG2ChoiceAfterPG createEG2ChoiceAfterPG() {
+		EG2ChoiceAfterPGImpl eg2ChoiceAfterPG = new EG2ChoiceAfterPGImpl();
+		return eg2ChoiceAfterPG;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Task2NormalStepAfterDefEG createTask2NormalStepAfterDefEG() {
+		Task2NormalStepAfterDefEGImpl task2NormalStepAfterDefEG = new Task2NormalStepAfterDefEGImpl();
+		return task2NormalStepAfterDefEG;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Task2NormalStepAfterEG createTask2NormalStepAfterEG() {
+		Task2NormalStepAfterEGImpl task2NormalStepAfterEG = new Task2NormalStepAfterEGImpl();
+		return task2NormalStepAfterEG;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Class1 createClass1() {
+		Class1Impl class1 = new Class1Impl();
+		return class1;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public LastStepInAltFlow createLastStepInAltFlow() {
+		LastStepInAltFlowImpl lastStepInAltFlow = new LastStepInAltFlowImpl();
+		return lastStepInAltFlow;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PG2ParallelStepAfterDefEG createPG2ParallelStepAfterDefEG() {
+		PG2ParallelStepAfterDefEGImpl pg2ParallelStepAfterDefEG = new PG2ParallelStepAfterDefEGImpl();
+		return pg2ParallelStepAfterDefEG;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PG2ParallelStepAfterEG createPG2ParallelStepAfterEG() {
+		PG2ParallelStepAfterEGImpl pg2ParallelStepAfterEG = new PG2ParallelStepAfterEGImpl();
+		return pg2ParallelStepAfterEG;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EG2ChoiceStepAfterDefEG createEG2ChoiceStepAfterDefEG() {
+		EG2ChoiceStepAfterDefEGImpl eg2ChoiceStepAfterDefEG = new EG2ChoiceStepAfterDefEGImpl();
+		return eg2ChoiceStepAfterDefEG;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EG2ChoiceStepAfterEG createEG2ChoiceStepAfterEG() {
+		EG2ChoiceStepAfterEGImpl eg2ChoiceStepAfterEG = new EG2ChoiceStepAfterEGImpl();
+		return eg2ChoiceStepAfterEG;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EndEvent2FinalStateGWSeq createEndEvent2FinalStateGWSeq() {
+		EndEvent2FinalStateGWSeqImpl endEvent2FinalStateGWSeq = new EndEvent2FinalStateGWSeqImpl();
+		return endEvent2FinalStateGWSeq;
 	}
 
 	/**

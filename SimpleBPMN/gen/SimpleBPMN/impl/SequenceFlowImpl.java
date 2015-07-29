@@ -17,15 +17,15 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 // [user defined imports] -->
 
 /**
- * <!-- begin-user-doc --> An implementation of the model object '
- * <em><b>Sequence Flow</b></em>'. <!-- end-user-doc -->
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Sequence Flow</b></em>'.
+ * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- * <li>{@link SimpleBPMN.impl.SequenceFlowImpl#getSourceRef <em>Source Ref</em>}
- * </li>
- * <li>{@link SimpleBPMN.impl.SequenceFlowImpl#getTargetRef <em>Target Ref</em>}
- * </li>
+ *   <li>{@link SimpleBPMN.impl.SequenceFlowImpl#getSourceRef <em>Source Ref</em>}</li>
+ *   <li>{@link SimpleBPMN.impl.SequenceFlowImpl#getTargetRef <em>Target Ref</em>}</li>
+ *   <li>{@link SimpleBPMN.impl.SequenceFlowImpl#getConditionExpression <em>Condition Expression</em>}</li>
  * </ul>
  * </p>
  *
@@ -33,9 +33,9 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	/**
-	 * The cached value of the '{@link #getSourceRef() <em>Source Ref</em>}'
-	 * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The cached value of the '{@link #getSourceRef() <em>Source Ref</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getSourceRef()
 	 * @generated
 	 * @ordered
@@ -43,9 +43,9 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	protected FlowNode sourceRef;
 
 	/**
-	 * The cached value of the '{@link #getTargetRef() <em>Target Ref</em>}'
-	 * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The cached value of the '{@link #getTargetRef() <em>Target Ref</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getTargetRef()
 	 * @generated
 	 * @ordered
@@ -53,8 +53,28 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	protected FlowNode targetRef;
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The default value of the '{@link #getConditionExpression() <em>Condition Expression</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getConditionExpression()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String CONDITION_EXPRESSION_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getConditionExpression() <em>Condition Expression</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getConditionExpression()
+	 * @generated
+	 * @ordered
+	 */
+	protected String conditionExpression = CONDITION_EXPRESSION_EDEFAULT;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected SequenceFlowImpl() {
@@ -62,8 +82,8 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -72,8 +92,8 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public FlowNode getSourceRef() {
@@ -90,8 +110,8 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public FlowNode basicGetSourceRef() {
@@ -99,8 +119,8 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public NotificationChain basicSetSourceRef(FlowNode newSourceRef, NotificationChain msgs) {
@@ -118,8 +138,8 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public void setSourceRef(FlowNode newSourceRef) {
@@ -140,8 +160,8 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public FlowNode getTargetRef() {
@@ -158,8 +178,8 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public FlowNode basicGetTargetRef() {
@@ -167,8 +187,8 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public NotificationChain basicSetTargetRef(FlowNode newTargetRef, NotificationChain msgs) {
@@ -186,8 +206,8 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public void setTargetRef(FlowNode newTargetRef) {
@@ -208,8 +228,30 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getConditionExpression() {
+		return conditionExpression;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setConditionExpression(String newConditionExpression) {
+		String oldConditionExpression = conditionExpression;
+		conditionExpression = newConditionExpression;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SimpleBPMNPackage.SEQUENCE_FLOW__CONDITION_EXPRESSION,
+					oldConditionExpression, conditionExpression));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -230,8 +272,8 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -246,8 +288,8 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -261,13 +303,15 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 			if (resolve)
 				return getTargetRef();
 			return basicGetTargetRef();
+		case SimpleBPMNPackage.SEQUENCE_FLOW__CONDITION_EXPRESSION:
+			return getConditionExpression();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -279,13 +323,16 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 		case SimpleBPMNPackage.SEQUENCE_FLOW__TARGET_REF:
 			setTargetRef((FlowNode) newValue);
 			return;
+		case SimpleBPMNPackage.SEQUENCE_FLOW__CONDITION_EXPRESSION:
+			setConditionExpression((String) newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -297,13 +344,16 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 		case SimpleBPMNPackage.SEQUENCE_FLOW__TARGET_REF:
 			setTargetRef((FlowNode) null);
 			return;
+		case SimpleBPMNPackage.SEQUENCE_FLOW__CONDITION_EXPRESSION:
+			setConditionExpression(CONDITION_EXPRESSION_EDEFAULT);
+			return;
 		}
 		super.eUnset(featureID);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -313,8 +363,28 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 			return sourceRef != null;
 		case SimpleBPMNPackage.SEQUENCE_FLOW__TARGET_REF:
 			return targetRef != null;
+		case SimpleBPMNPackage.SEQUENCE_FLOW__CONDITION_EXPRESSION:
+			return CONDITION_EXPRESSION_EDEFAULT == null ? conditionExpression != null
+					: !CONDITION_EXPRESSION_EDEFAULT.equals(conditionExpression);
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy())
+			return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (conditionExpression: ");
+		result.append(conditionExpression);
+		result.append(')');
+		return result.toString();
 	}
 
 	// <-- [user code injected with eMoflon]
@@ -335,4 +405,4 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 		return this._exported;
 	}
 	// [user code injected with eMoflon] -->
-} // SequenceFlowImpl
+} //SequenceFlowImpl

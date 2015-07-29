@@ -4,11 +4,8 @@ package SimpleBPMN.impl;
 
 import SimpleBPMN.FlowElement;
 import SimpleBPMN.SimpleBPMNPackage;
-import SimpleBPMN.StartEvent;
-import SimpleBPMN.util.PatternDiscovery;
 
 import java.util.Collection;
-import java.util.Optional;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -27,14 +24,14 @@ import org.eclipse.emf.ecore.util.InternalEList;
 // [user defined imports] -->
 
 /**
- * <!-- begin-user-doc --> An implementation of the model object '
- * <em><b>Process</b></em>'. <!-- end-user-doc -->
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Process</b></em>'.
+ * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- * <li>{@link SimpleBPMN.impl.ProcessImpl#getFlowElements <em>Flow Elements</em>
- * }</li>
- * <li>{@link SimpleBPMN.impl.ProcessImpl#getId <em>Id</em>}</li>
+ *   <li>{@link SimpleBPMN.impl.ProcessImpl#getFlowElements <em>Flow Elements</em>}</li>
+ *   <li>{@link SimpleBPMN.impl.ProcessImpl#getId <em>Id</em>}</li>
  * </ul>
  * </p>
  *
@@ -42,10 +39,9 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class ProcessImpl extends EObjectImpl implements SimpleBPMN.Process {
 	/**
-	 * The cached value of the '{@link #getFlowElements() <em>Flow Elements</em>
-	 * }' containment reference list. <!-- begin-user-doc --> <!-- end-user-doc
-	 * -->
-	 * 
+	 * The cached value of the '{@link #getFlowElements() <em>Flow Elements</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getFlowElements()
 	 * @generated
 	 * @ordered
@@ -53,9 +49,9 @@ public class ProcessImpl extends EObjectImpl implements SimpleBPMN.Process {
 	protected EList<FlowElement> flowElements;
 
 	/**
-	 * The default value of the '{@link #getId() <em>Id</em>}' attribute. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The default value of the '{@link #getId() <em>Id</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getId()
 	 * @generated
 	 * @ordered
@@ -63,9 +59,9 @@ public class ProcessImpl extends EObjectImpl implements SimpleBPMN.Process {
 	protected static final String ID_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getId()
 	 * @generated
 	 * @ordered
@@ -73,8 +69,8 @@ public class ProcessImpl extends EObjectImpl implements SimpleBPMN.Process {
 	protected String id = ID_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected ProcessImpl() {
@@ -82,8 +78,8 @@ public class ProcessImpl extends EObjectImpl implements SimpleBPMN.Process {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -92,8 +88,8 @@ public class ProcessImpl extends EObjectImpl implements SimpleBPMN.Process {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public EList<FlowElement> getFlowElements() {
@@ -105,8 +101,8 @@ public class ProcessImpl extends EObjectImpl implements SimpleBPMN.Process {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public String getId() {
@@ -114,8 +110,8 @@ public class ProcessImpl extends EObjectImpl implements SimpleBPMN.Process {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public void setId(String newId) {
@@ -126,8 +122,8 @@ public class ProcessImpl extends EObjectImpl implements SimpleBPMN.Process {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -140,8 +136,8 @@ public class ProcessImpl extends EObjectImpl implements SimpleBPMN.Process {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -156,8 +152,8 @@ public class ProcessImpl extends EObjectImpl implements SimpleBPMN.Process {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -176,8 +172,8 @@ public class ProcessImpl extends EObjectImpl implements SimpleBPMN.Process {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -194,8 +190,8 @@ public class ProcessImpl extends EObjectImpl implements SimpleBPMN.Process {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -210,8 +206,8 @@ public class ProcessImpl extends EObjectImpl implements SimpleBPMN.Process {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -237,8 +233,8 @@ public class ProcessImpl extends EObjectImpl implements SimpleBPMN.Process {
 	}
 
 	public SimpleBPMN.FlowNode findFirst() {
-		java.util.Optional<FlowElement> el = this.getFlowElements().stream().filter(fe -> fe instanceof SimpleBPMN.StartEvent)
-				.findAny();
+		java.util.Optional<FlowElement> el = this.getFlowElements().stream()
+				.filter(fe -> fe instanceof SimpleBPMN.StartEvent).findAny();
 		if (el.isPresent())
 			return (SimpleBPMN.FlowNode) el.get();
 
@@ -252,4 +248,4 @@ public class ProcessImpl extends EObjectImpl implements SimpleBPMN.Process {
 		return null;
 	}
 	// [user code injected with eMoflon] -->
-} // ProcessImpl
+} //ProcessImpl

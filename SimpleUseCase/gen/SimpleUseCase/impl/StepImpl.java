@@ -288,6 +288,7 @@ public abstract class StepImpl extends EObjectImpl implements Step {
 		result.append(')');
 		return result.toString();
 	}
+
 	// <-- [user code injected with eMoflon]
 	public abstract String export();
 	// [user code injected with eMoflon] -->

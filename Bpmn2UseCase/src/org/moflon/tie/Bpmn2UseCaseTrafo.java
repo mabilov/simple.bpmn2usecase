@@ -8,7 +8,6 @@ import org.moflon.ide.debug.DebugSynchronizationHelper;
 
 import Bpmn2UseCase.Bpmn2UseCasePackage;
 import SimpleBPMN.Process;
-import SimpleBPMN.util.PatternDiscovery;
 import SimpleUseCase.UseCase;
 
 public class Bpmn2UseCaseTrafo extends DebugSynchronizationHelper {
@@ -27,39 +26,55 @@ public class Bpmn2UseCaseTrafo extends DebugSynchronizationHelper {
 	}
 
 	public static void main(String[] args) throws IOException {
-
-		// Forward Transformation
-		Bpmn2UseCaseTrafo helper = new Bpmn2UseCaseTrafo();
-
-		// Which pattern to transform?
-		String patternName = args[0];
+		// Which test file to transform?
+		String testName = args[0];
 
 		// Which direction to use?
 		String direction = args[1];
 
-		if (patternName.equalsIgnoreCase("all")) {
+		if (testName.equalsIgnoreCase("all")) {
+			Bpmn2UseCaseTrafo helper = new Bpmn2UseCaseTrafo();
 			helper.perform(direction, "Empty");
+
+			helper = new Bpmn2UseCaseTrafo();
 			helper.perform(direction, "Sequence");
+
+			helper = new Bpmn2UseCaseTrafo();
 			helper.perform(direction, "ParallelSplitSynchronization");
+
+			helper = new Bpmn2UseCaseTrafo();
 			helper.perform(direction, "SequenceInParallel");
+
+			helper = new Bpmn2UseCaseTrafo();
 			helper.perform(direction, "ParallelConvTask");
+
+			helper = new Bpmn2UseCaseTrafo();
 			helper.perform(direction, "Recursive1Parallel");
+
+			helper = new Bpmn2UseCaseTrafo();
+			helper.perform(direction, "ChoiceMerge");
+
+			helper = new Bpmn2UseCaseTrafo();
+			helper.perform(direction, "SequenceInAlternative");
+			// helper.perform(direction, "EmptyDefaultFlow");
 		} else {
-			helper.perform(direction, patternName);
+			Bpmn2UseCaseTrafo helper = new Bpmn2UseCaseTrafo();
+			helper.perform(direction, testName);
 		}
 	}
 
-	private String _patterName;
+	private String _testName;
 
 	public void performForward() {
-		PatternDiscovery.discoverParallel((Process) this.src);
+		SimpleBPMN.util.SynchronizationHelper.discoverConverging((Process) this.src);
 		integrateForward();
+		SimpleUseCase.util.SynchronizationHelper.postprocess((UseCase) this.trg);
 
-		saveTrg("instances/fwd/usecase/" + _patterName + ".xmi");
-		saveCorr("instances/fwd/corr/" + _patterName + ".xmi");
-		saveSynchronizationProtocol("instances/fwd/protocol/" + _patterName + ".xmi");
+		saveTrg("instances/fwd/usecase/" + _testName + ".xmi");
+		saveCorr("instances/fwd/corr/" + _testName + ".xmi");
+		saveSynchronizationProtocol("instances/fwd/protocol/" + _testName + ".xmi");
 
-		System.out.println("Completed forward transformation for pattern " + _patterName + "!");
+		System.out.println("Completed forward transformation for test " + _testName + "!");
 	}
 
 	public void performForward(EObject srcModel) {
@@ -67,12 +82,12 @@ public class Bpmn2UseCaseTrafo extends DebugSynchronizationHelper {
 		performForward();
 	}
 
-	public void perform(String direction, String patterName) {
-		this._patterName = patterName;
+	public void perform(String direction, String testName) {
+		this._testName = testName;
 		if (direction.equalsIgnoreCase("forward")) {
-			this.performForward(FORWARD_FOLDER + patterName + ".xmi");
+			this.performForward(FORWARD_FOLDER + testName + ".xmi");
 		} else {
-			this.performBackward(BACKWARD_FOLDER + patterName + ".xmi");
+			this.performBackward(BACKWARD_FOLDER + testName + ".xmi");
 		}
 	}
 
@@ -87,17 +102,17 @@ public class Bpmn2UseCaseTrafo extends DebugSynchronizationHelper {
 	}
 
 	public void performBackward() {
-		SimpleUseCase.util.PreProcessor.process((UseCase) this.trg);
+		SimpleUseCase.util.SynchronizationHelper.preprocess((UseCase) this.trg);
 
 		integrateBackward();
 
-		SimpleBPMN.util.PostProcessor.process((Process) this.src);
+		SimpleBPMN.util.SynchronizationHelper.postprocess((Process) this.src);
 
-		saveSrc("instances/bwd/bpmn/" + _patterName + ".xmi");
-		saveCorr("instances/bwd/corr/" + _patterName + ".xmi");
-		saveSynchronizationProtocol("instances/bwd/protocol/" + _patterName + ".xmi");
+		saveSrc("instances/bwd/bpmn/" + _testName + ".xmi");
+		saveCorr("instances/bwd/corr/" + _testName + ".xmi");
+		saveSynchronizationProtocol("instances/bwd/protocol/" + _testName + ".xmi");
 
-		System.out.println("Completed backward transformation for pattern " + _patterName + "!");
+		System.out.println("Completed backward transformation for test " + _testName + "!");
 	}
 
 	public void performBackward(EObject targetModel) {

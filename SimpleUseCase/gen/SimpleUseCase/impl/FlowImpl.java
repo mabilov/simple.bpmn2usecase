@@ -8,7 +8,6 @@ import SimpleUseCase.Step;
 import SimpleUseCase.UCCondition;
 
 import java.util.Collection;
-import java.util.Optional;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -27,15 +26,15 @@ import org.eclipse.emf.ecore.util.InternalEList;
 // [user defined imports] -->
 
 /**
- * <!-- begin-user-doc --> An implementation of the model object '
- * <em><b>Flow</b></em>'. <!-- end-user-doc -->
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Flow</b></em>'.
+ * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- * <li>{@link SimpleUseCase.impl.FlowImpl#getSteps <em>Steps</em>}</li>
- * <li>{@link SimpleUseCase.impl.FlowImpl#getFinalState <em>Final State</em>}
- * </li>
- * <li>{@link SimpleUseCase.impl.FlowImpl#get__last <em>last</em>}</li>
+ *   <li>{@link SimpleUseCase.impl.FlowImpl#getSteps <em>Steps</em>}</li>
+ *   <li>{@link SimpleUseCase.impl.FlowImpl#getFinalState <em>Final State</em>}</li>
+ *   <li>{@link SimpleUseCase.impl.FlowImpl#get__last <em>last</em>}</li>
  * </ul>
  * </p>
  *
@@ -43,9 +42,9 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public abstract class FlowImpl extends EObjectImpl implements Flow {
 	/**
-	 * The cached value of the '{@link #getSteps() <em>Steps</em>}' containment
-	 * reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The cached value of the '{@link #getSteps() <em>Steps</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getSteps()
 	 * @generated
 	 * @ordered
@@ -53,9 +52,9 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 	protected EList<Step> steps;
 
 	/**
-	 * The cached value of the '{@link #getFinalState() <em>Final State</em>}'
-	 * containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The cached value of the '{@link #getFinalState() <em>Final State</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getFinalState()
 	 * @generated
 	 * @ordered
@@ -64,8 +63,8 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 
 	/**
 	 * The cached value of the '{@link #get__last() <em>last</em>}' reference.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #get__last()
 	 * @generated
 	 * @ordered
@@ -73,8 +72,8 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 	protected Step __last;
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected FlowImpl() {
@@ -82,8 +81,8 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -92,8 +91,8 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public EList<Step> getSteps() {
@@ -104,8 +103,8 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public UCCondition getFinalState() {
@@ -113,8 +112,8 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public NotificationChain basicSetFinalState(UCCondition newFinalState, NotificationChain msgs) {
@@ -132,8 +131,8 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public void setFinalState(UCCondition newFinalState) {
@@ -154,8 +153,8 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public Step get__last() {
@@ -172,8 +171,8 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public Step basicGet__last() {
@@ -181,8 +180,8 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public void set__last(Step new__last) {
@@ -193,8 +192,8 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -209,8 +208,8 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -229,8 +228,8 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -252,8 +251,8 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -273,8 +272,8 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -343,4 +342,4 @@ public abstract class FlowImpl extends EObjectImpl implements Flow {
 			return null;
 	}
 	// [user code injected with eMoflon] -->
-} // FlowImpl
+} //FlowImpl

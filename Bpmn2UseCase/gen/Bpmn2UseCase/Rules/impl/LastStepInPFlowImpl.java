@@ -8,6 +8,7 @@ import Bpmn2UseCase.GW2S;
 import Bpmn2UseCase.Rules.LastStepInPFlow;
 import Bpmn2UseCase.Rules.RulesPackage;
 
+import SimpleBPMN.ExclusiveGateway;
 import SimpleBPMN.FlowElement;
 import SimpleBPMN.FlowNode;
 import SimpleBPMN.Gateway;
@@ -750,7 +751,7 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_115(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_202(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = LastStepInPFlowImpl.pattern_LastStepInPFlow_20_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -804,7 +805,7 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_116(EMoflonEdge _edge_sourceRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_203(EMoflonEdge _edge_sourceRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = LastStepInPFlowImpl.pattern_LastStepInPFlow_21_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -857,7 +858,7 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_117(EMoflonEdge _edge_outgoing) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_204(EMoflonEdge _edge_outgoing) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = LastStepInPFlowImpl.pattern_LastStepInPFlow_22_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -910,7 +911,7 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_118(EMoflonEdge _edge_targetRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_205(EMoflonEdge _edge_targetRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = LastStepInPFlowImpl.pattern_LastStepInPFlow_23_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -963,7 +964,7 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_119(EMoflonEdge _edge_incoming) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_206(EMoflonEdge _edge_incoming) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = LastStepInPFlowImpl.pattern_LastStepInPFlow_24_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -1016,7 +1017,7 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_35(EMoflonEdge _edge___last) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_64(EMoflonEdge _edge___last) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = LastStepInPFlowImpl.pattern_LastStepInPFlow_25_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -1566,18 +1567,18 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 			return null;
 		case RulesPackage.LAST_STEP_IN_PFLOW___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_115__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_115((EMoflonEdge) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_116__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_116((EMoflonEdge) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_117__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_117((EMoflonEdge) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_118__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_118((EMoflonEdge) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_119__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_119((EMoflonEdge) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_35__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_35((EMoflonEdge) arguments.get(0));
+		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_202__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_202((EMoflonEdge) arguments.get(0));
+		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_203__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_203((EMoflonEdge) arguments.get(0));
+		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_204__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_204((EMoflonEdge) arguments.get(0));
+		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_205__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_205((EMoflonEdge) arguments.get(0));
+		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_206__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_206((EMoflonEdge) arguments.get(0));
+		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_64__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_64((EMoflonEdge) arguments.get(0));
 		case RulesPackage.LAST_STEP_IN_PFLOW___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.LAST_STEP_IN_PFLOW___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
@@ -3183,11 +3184,32 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 		return new Object[] { __result };
 	}
 
-	public static final Object[] pattern_LastStepInPFlow_20_2_black_nac_0BB(SequenceFlow sf,
+	public static final Object[] pattern_LastStepInPFlow_20_2_black_nac_0BBBB(SequenceFlow sf, Gateway gw, Gateway gcw,
+			FlowNode node) {
+		if (!gw.equals(node)) {
+			if (!gcw.equals(gw)) {
+				if (!gcw.equals(node)) {
+					for (ExclusiveGateway __DEC_sf_default_608796 : org.moflon.core.utilities.eMoflonEMFUtil
+							.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
+						if (!gw.equals(__DEC_sf_default_608796)) {
+							if (!gcw.equals(__DEC_sf_default_608796)) {
+								if (!node.equals(__DEC_sf_default_608796)) {
+									return new Object[] { sf, gw, gcw, node };
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		return null;
+	}
+
+	public static final Object[] pattern_LastStepInPFlow_20_2_black_nac_1BB(SequenceFlow sf,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf_flowElements_591084 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf_flowElements_419527 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_591084)) {
+			if (!process.equals(__DEC_sf_flowElements_419527)) {
 				return new Object[] { sf, process };
 			}
 		}
@@ -3214,7 +3236,7 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 										boolean gcwisDiverging = gcw.isIsDiverging();
 										if (Boolean.valueOf(gcwisDiverging).equals(false)) {
 											if (Boolean.valueOf(gcwisDiverging).equals(false)) {
-												if (pattern_LastStepInPFlow_20_2_black_nac_0BB(sf, process) == null) {
+												if (pattern_LastStepInPFlow_20_2_black_nac_1BB(sf, process) == null) {
 													for (FlowElement tmpGw : process.getFlowElements()) {
 														if (tmpGw instanceof Gateway) {
 															Gateway gw = (Gateway) tmpGw;
@@ -3226,9 +3248,12 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 																				.equals(Boolean.valueOf(true))) {
 																			if (Boolean.valueOf(gwisDiverging)
 																					.equals(Boolean.valueOf(true))) {
-																				_result.add(new Object[] { process, gw,
-																						gcw, node, sf,
-																						_edge_flowElements });
+																				if (pattern_LastStepInPFlow_20_2_black_nac_0BBBB(
+																						sf, gw, gcw, node) == null) {
+																					_result.add(new Object[] { process,
+																							gw, gcw, node, sf,
+																							_edge_flowElements });
+																				}
 																			}
 																		}
 
@@ -3335,11 +3360,32 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 		return new Object[] { __result };
 	}
 
-	public static final Object[] pattern_LastStepInPFlow_21_2_black_nac_0BB(SequenceFlow sf,
+	public static final Object[] pattern_LastStepInPFlow_21_2_black_nac_0BBBB(SequenceFlow sf, Gateway gw, Gateway gcw,
+			FlowNode node) {
+		if (!gw.equals(node)) {
+			if (!gcw.equals(gw)) {
+				if (!gcw.equals(node)) {
+					for (ExclusiveGateway __DEC_sf_default_812072 : org.moflon.core.utilities.eMoflonEMFUtil
+							.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
+						if (!gw.equals(__DEC_sf_default_812072)) {
+							if (!gcw.equals(__DEC_sf_default_812072)) {
+								if (!node.equals(__DEC_sf_default_812072)) {
+									return new Object[] { sf, gw, gcw, node };
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		return null;
+	}
+
+	public static final Object[] pattern_LastStepInPFlow_21_2_black_nac_1BB(SequenceFlow sf,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf_flowElements_841148 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf_flowElements_840698 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_841148)) {
+			if (!process.equals(__DEC_sf_flowElements_840698)) {
 				return new Object[] { sf, process };
 			}
 		}
@@ -3366,7 +3412,7 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 											.getOppositeReferenceTyped(sf, SimpleBPMN.Process.class, "flowElements")) {
 										if (process.getFlowElements().contains(gcw)) {
 											if (process.getFlowElements().contains(node)) {
-												if (pattern_LastStepInPFlow_21_2_black_nac_0BB(sf, process) == null) {
+												if (pattern_LastStepInPFlow_21_2_black_nac_1BB(sf, process) == null) {
 													for (FlowElement tmpGw : process.getFlowElements()) {
 														if (tmpGw instanceof Gateway) {
 															Gateway gw = (Gateway) tmpGw;
@@ -3378,9 +3424,12 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 																				.equals(Boolean.valueOf(true))) {
 																			if (Boolean.valueOf(gwisDiverging)
 																					.equals(Boolean.valueOf(true))) {
-																				_result.add(new Object[] { process, gw,
-																						gcw, node, sf,
-																						_edge_sourceRef });
+																				if (pattern_LastStepInPFlow_21_2_black_nac_0BBBB(
+																						sf, gw, gcw, node) == null) {
+																					_result.add(new Object[] { process,
+																							gw, gcw, node, sf,
+																							_edge_sourceRef });
+																				}
 																			}
 																		}
 
@@ -3486,11 +3535,32 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 		return new Object[] { __result };
 	}
 
-	public static final Object[] pattern_LastStepInPFlow_22_2_black_nac_0BB(SequenceFlow sf,
+	public static final Object[] pattern_LastStepInPFlow_22_2_black_nac_0BBBB(SequenceFlow sf, Gateway gw, Gateway gcw,
+			FlowNode node) {
+		if (!gw.equals(node)) {
+			if (!gcw.equals(gw)) {
+				if (!gcw.equals(node)) {
+					for (ExclusiveGateway __DEC_sf_default_360617 : org.moflon.core.utilities.eMoflonEMFUtil
+							.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
+						if (!gw.equals(__DEC_sf_default_360617)) {
+							if (!gcw.equals(__DEC_sf_default_360617)) {
+								if (!node.equals(__DEC_sf_default_360617)) {
+									return new Object[] { sf, gw, gcw, node };
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		return null;
+	}
+
+	public static final Object[] pattern_LastStepInPFlow_22_2_black_nac_1BB(SequenceFlow sf,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf_flowElements_342171 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf_flowElements_69349 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_342171)) {
+			if (!process.equals(__DEC_sf_flowElements_69349)) {
 				return new Object[] { sf, process };
 			}
 		}
@@ -3518,7 +3588,7 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 													"flowElements")) {
 										if (process.getFlowElements().contains(gcw)) {
 											if (process.getFlowElements().contains(sf)) {
-												if (pattern_LastStepInPFlow_22_2_black_nac_0BB(sf, process) == null) {
+												if (pattern_LastStepInPFlow_22_2_black_nac_1BB(sf, process) == null) {
 													for (FlowElement tmpGw : process.getFlowElements()) {
 														if (tmpGw instanceof Gateway) {
 															Gateway gw = (Gateway) tmpGw;
@@ -3530,9 +3600,12 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 																				.equals(Boolean.valueOf(true))) {
 																			if (Boolean.valueOf(gwisDiverging)
 																					.equals(Boolean.valueOf(true))) {
-																				_result.add(new Object[] { process, gw,
-																						gcw, node, sf,
-																						_edge_outgoing });
+																				if (pattern_LastStepInPFlow_22_2_black_nac_0BBBB(
+																						sf, gw, gcw, node) == null) {
+																					_result.add(new Object[] { process,
+																							gw, gcw, node, sf,
+																							_edge_outgoing });
+																				}
 																			}
 																		}
 
@@ -3638,11 +3711,32 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 		return new Object[] { __result };
 	}
 
-	public static final Object[] pattern_LastStepInPFlow_23_2_black_nac_0BB(SequenceFlow sf,
+	public static final Object[] pattern_LastStepInPFlow_23_2_black_nac_0BBBB(SequenceFlow sf, Gateway gw, Gateway gcw,
+			FlowNode node) {
+		if (!gw.equals(node)) {
+			if (!gcw.equals(gw)) {
+				if (!gcw.equals(node)) {
+					for (ExclusiveGateway __DEC_sf_default_284690 : org.moflon.core.utilities.eMoflonEMFUtil
+							.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
+						if (!gw.equals(__DEC_sf_default_284690)) {
+							if (!gcw.equals(__DEC_sf_default_284690)) {
+								if (!node.equals(__DEC_sf_default_284690)) {
+									return new Object[] { sf, gw, gcw, node };
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		return null;
+	}
+
+	public static final Object[] pattern_LastStepInPFlow_23_2_black_nac_1BB(SequenceFlow sf,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf_flowElements_159818 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf_flowElements_771367 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_159818)) {
+			if (!process.equals(__DEC_sf_flowElements_771367)) {
 				return new Object[] { sf, process };
 			}
 		}
@@ -3668,7 +3762,7 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 											.getOppositeReferenceTyped(sf, SimpleBPMN.Process.class, "flowElements")) {
 										if (process.getFlowElements().contains(gcw)) {
 											if (process.getFlowElements().contains(node)) {
-												if (pattern_LastStepInPFlow_23_2_black_nac_0BB(sf, process) == null) {
+												if (pattern_LastStepInPFlow_23_2_black_nac_1BB(sf, process) == null) {
 													for (FlowElement tmpGw : process.getFlowElements()) {
 														if (tmpGw instanceof Gateway) {
 															Gateway gw = (Gateway) tmpGw;
@@ -3680,9 +3774,12 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 																				.equals(Boolean.valueOf(true))) {
 																			if (Boolean.valueOf(gwisDiverging)
 																					.equals(Boolean.valueOf(true))) {
-																				_result.add(new Object[] { process, gw,
-																						gcw, node, sf,
-																						_edge_targetRef });
+																				if (pattern_LastStepInPFlow_23_2_black_nac_0BBBB(
+																						sf, gw, gcw, node) == null) {
+																					_result.add(new Object[] { process,
+																							gw, gcw, node, sf,
+																							_edge_targetRef });
+																				}
 																			}
 																		}
 
@@ -3788,11 +3885,32 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 		return new Object[] { __result };
 	}
 
-	public static final Object[] pattern_LastStepInPFlow_24_2_black_nac_0BB(SequenceFlow sf,
+	public static final Object[] pattern_LastStepInPFlow_24_2_black_nac_0BBBB(SequenceFlow sf, Gateway gw, Gateway gcw,
+			FlowNode node) {
+		if (!gw.equals(node)) {
+			if (!gcw.equals(gw)) {
+				if (!gcw.equals(node)) {
+					for (ExclusiveGateway __DEC_sf_default_330298 : org.moflon.core.utilities.eMoflonEMFUtil
+							.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
+						if (!gw.equals(__DEC_sf_default_330298)) {
+							if (!gcw.equals(__DEC_sf_default_330298)) {
+								if (!node.equals(__DEC_sf_default_330298)) {
+									return new Object[] { sf, gw, gcw, node };
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		return null;
+	}
+
+	public static final Object[] pattern_LastStepInPFlow_24_2_black_nac_1BB(SequenceFlow sf,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf_flowElements_553506 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf_flowElements_344789 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_553506)) {
+			if (!process.equals(__DEC_sf_flowElements_344789)) {
 				return new Object[] { sf, process };
 			}
 		}
@@ -3818,7 +3936,7 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 											.getOppositeReferenceTyped(gcw, SimpleBPMN.Process.class, "flowElements")) {
 										if (process.getFlowElements().contains(node)) {
 											if (process.getFlowElements().contains(sf)) {
-												if (pattern_LastStepInPFlow_24_2_black_nac_0BB(sf, process) == null) {
+												if (pattern_LastStepInPFlow_24_2_black_nac_1BB(sf, process) == null) {
 													for (FlowElement tmpGw : process.getFlowElements()) {
 														if (tmpGw instanceof Gateway) {
 															Gateway gw = (Gateway) tmpGw;
@@ -3830,9 +3948,12 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 																				.equals(Boolean.valueOf(true))) {
 																			if (Boolean.valueOf(gwisDiverging)
 																					.equals(Boolean.valueOf(true))) {
-																				_result.add(new Object[] { process, gw,
-																						gcw, node, sf,
-																						_edge_incoming });
+																				if (pattern_LastStepInPFlow_24_2_black_nac_0BBBB(
+																						sf, gw, gcw, node) == null) {
+																					_result.add(new Object[] { process,
+																							gw, gcw, node, sf,
+																							_edge_incoming });
+																				}
 																			}
 																		}
 

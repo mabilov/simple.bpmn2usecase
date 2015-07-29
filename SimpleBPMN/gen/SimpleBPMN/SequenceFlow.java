@@ -6,14 +6,16 @@ package SimpleBPMN;
 // [user defined imports] -->
 
 /**
- * <!-- begin-user-doc --> A representation of the model object '
- * <em><b>Sequence Flow</b></em>'. <!-- end-user-doc -->
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Sequence Flow</b></em>'.
+ * <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- * <li>{@link SimpleBPMN.SequenceFlow#getSourceRef <em>Source Ref</em>}</li>
- * <li>{@link SimpleBPMN.SequenceFlow#getTargetRef <em>Target Ref</em>}</li>
+ *   <li>{@link SimpleBPMN.SequenceFlow#getSourceRef <em>Source Ref</em>}</li>
+ *   <li>{@link SimpleBPMN.SequenceFlow#getTargetRef <em>Target Ref</em>}</li>
+ *   <li>{@link SimpleBPMN.SequenceFlow#getConditionExpression <em>Condition Expression</em>}</li>
  * </ul>
  * </p>
  *
@@ -23,15 +25,14 @@ package SimpleBPMN;
  */
 public interface SequenceFlow extends FlowElement {
 	/**
-	 * Returns the value of the '<em><b>Source Ref</b></em>' reference. It is
-	 * bidirectional and its opposite is '{@link SimpleBPMN.FlowNode#getOutgoing
-	 * <em>Outgoing</em>}'. <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Source Ref</b></em>' reference.
+	 * It is bidirectional and its opposite is '{@link SimpleBPMN.FlowNode#getOutgoing <em>Outgoing</em>}'.
+	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Source Ref</em>' reference isn't clear, there
-	 * really should be more of a description here...
+	 * If the meaning of the '<em>Source Ref</em>' reference isn't clear,
+	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * 
 	 * @return the value of the '<em>Source Ref</em>' reference.
 	 * @see #setSourceRef(FlowNode)
 	 * @see SimpleBPMN.SimpleBPMNPackage#getSequenceFlow_SourceRef()
@@ -42,27 +43,24 @@ public interface SequenceFlow extends FlowElement {
 	FlowNode getSourceRef();
 
 	/**
-	 * Sets the value of the '{@link SimpleBPMN.SequenceFlow#getSourceRef
-	 * <em>Source Ref</em>}' reference. <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-	 * 
-	 * @param value
-	 *            the new value of the '<em>Source Ref</em>' reference.
+	 * Sets the value of the '{@link SimpleBPMN.SequenceFlow#getSourceRef <em>Source Ref</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Source Ref</em>' reference.
 	 * @see #getSourceRef()
 	 * @generated
 	 */
 	void setSourceRef(FlowNode value);
 
 	/**
-	 * Returns the value of the '<em><b>Target Ref</b></em>' reference. It is
-	 * bidirectional and its opposite is '{@link SimpleBPMN.FlowNode#getIncoming
-	 * <em>Incoming</em>}'. <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Target Ref</b></em>' reference.
+	 * It is bidirectional and its opposite is '{@link SimpleBPMN.FlowNode#getIncoming <em>Incoming</em>}'.
+	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Target Ref</em>' reference isn't clear, there
-	 * really should be more of a description here...
+	 * If the meaning of the '<em>Target Ref</em>' reference isn't clear,
+	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * 
 	 * @return the value of the '<em>Target Ref</em>' reference.
 	 * @see #setTargetRef(FlowNode)
 	 * @see SimpleBPMN.SimpleBPMNPackage#getSequenceFlow_TargetRef()
@@ -73,16 +71,40 @@ public interface SequenceFlow extends FlowElement {
 	FlowNode getTargetRef();
 
 	/**
-	 * Sets the value of the '{@link SimpleBPMN.SequenceFlow#getTargetRef
-	 * <em>Target Ref</em>}' reference. <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-	 * 
-	 * @param value
-	 *            the new value of the '<em>Target Ref</em>' reference.
+	 * Sets the value of the '{@link SimpleBPMN.SequenceFlow#getTargetRef <em>Target Ref</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Target Ref</em>' reference.
 	 * @see #getTargetRef()
 	 * @generated
 	 */
 	void setTargetRef(FlowNode value);
+
+	/**
+	 * Returns the value of the '<em><b>Condition Expression</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Condition Expression</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Condition Expression</em>' attribute.
+	 * @see #setConditionExpression(String)
+	 * @see SimpleBPMN.SimpleBPMNPackage#getSequenceFlow_ConditionExpression()
+	 * @model required="true" ordered="false"
+	 * @generated
+	 */
+	String getConditionExpression();
+
+	/**
+	 * Sets the value of the '{@link SimpleBPMN.SequenceFlow#getConditionExpression <em>Condition Expression</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Condition Expression</em>' attribute.
+	 * @see #getConditionExpression()
+	 * @generated
+	 */
+	void setConditionExpression(String value);
 
 	// <-- [user code injected with eMoflon]
 	/**

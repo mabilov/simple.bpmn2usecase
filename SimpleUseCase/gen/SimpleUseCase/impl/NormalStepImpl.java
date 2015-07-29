@@ -37,6 +37,7 @@ public class NormalStepImpl extends StepImpl implements NormalStep {
 	protected EClass eStaticClass() {
 		return SimpleUseCasePackage.Literals.NORMAL_STEP;
 	}
+
 	// <-- [user code injected with eMoflon]
 	@Override
 	public String export() {

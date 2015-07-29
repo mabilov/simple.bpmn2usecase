@@ -102,6 +102,7 @@ public interface Step extends EObject {
 	 * @generated
 	 */
 	void setId(String value);
+
 	// <-- [user code injected with eMoflon]
 	String export();
 	// [user code injected with eMoflon] -->

@@ -9,7 +9,7 @@ partial class ParallelStepImpl {
 		sb.append(this.getId());
 		String comma = "";
 
-		Iterator<ParallelFlow> invokedFlows = this.getInvokedFlows().stream().sorted(new NamedFlowComparator())
+		java.util.Iterator<SimpleUseCase.ParallelFlow> invokedFlows = this.getInvokedFlows().stream().sorted(new SimpleUseCase.util.NamedFlowComparator())
 				.iterator();
 		while (invokedFlows.hasNext()) {
 			ParallelFlow flow = invokedFlows.next();
