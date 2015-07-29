@@ -703,7 +703,7 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_294(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_1190(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Process2UseCaseImpl.pattern_Process2UseCase_20_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -752,7 +752,7 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_94(EMoflonEdge _edge_flows) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_381(EMoflonEdge _edge_flows) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Process2UseCaseImpl.pattern_Process2UseCase_21_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -802,7 +802,7 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_95(EMoflonEdge _edge_precondition) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_382(EMoflonEdge _edge_precondition) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Process2UseCaseImpl.pattern_Process2UseCase_22_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -1344,12 +1344,12 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 			return null;
 		case RulesPackage.PROCESS2_USE_CASE___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.PROCESS2_USE_CASE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_294__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_294((EMoflonEdge) arguments.get(0));
-		case RulesPackage.PROCESS2_USE_CASE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_94__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_94((EMoflonEdge) arguments.get(0));
-		case RulesPackage.PROCESS2_USE_CASE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_95__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_95((EMoflonEdge) arguments.get(0));
+		case RulesPackage.PROCESS2_USE_CASE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_1190__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_1190((EMoflonEdge) arguments.get(0));
+		case RulesPackage.PROCESS2_USE_CASE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_381__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_381((EMoflonEdge) arguments.get(0));
+		case RulesPackage.PROCESS2_USE_CASE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_382__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_382((EMoflonEdge) arguments.get(0));
 		case RulesPackage.PROCESS2_USE_CASE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.PROCESS2_USE_CASE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
@@ -2295,9 +2295,9 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 
 	public static final Object[] pattern_Process2UseCase_20_2_black_nac_0BB(StartEvent start,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_start_flowElements_446283 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_start_flowElements_944055 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(start, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_start_flowElements_446283)) {
+			if (!process.equals(__DEC_start_flowElements_944055)) {
 				return new Object[] { start, process };
 			}
 		}
@@ -2404,9 +2404,9 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	}
 
 	public static final Object[] pattern_Process2UseCase_21_2_black_nac_0BB(BasicFlow flow, UseCase useCase) {
-		for (UseCase __DEC_flow_flows_215053 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(flow,
+		for (UseCase __DEC_flow_flows_779012 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(flow,
 				UseCase.class, "flows")) {
-			if (!useCase.equals(__DEC_flow_flows_215053)) {
+			if (!useCase.equals(__DEC_flow_flows_779012)) {
 				return new Object[] { flow, useCase };
 			}
 		}
@@ -2414,9 +2414,9 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	}
 
 	public static final Object[] pattern_Process2UseCase_21_2_black_nac_1BB(UCCondition cond, UseCase useCase) {
-		for (UseCase __DEC_cond_precondition_688703 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (UseCase __DEC_cond_precondition_224438 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(cond, UseCase.class, "precondition")) {
-			if (!useCase.equals(__DEC_cond_precondition_688703)) {
+			if (!useCase.equals(__DEC_cond_precondition_224438)) {
 				return new Object[] { cond, useCase };
 			}
 		}
@@ -2424,9 +2424,9 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	}
 
 	public static final Object[] pattern_Process2UseCase_21_2_black_nac_2BB(UCCondition cond, BasicFlow flow) {
-		for (Flow __DEC_cond_finalState_37719 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(cond,
-				Flow.class, "finalState")) {
-			if (!flow.equals(__DEC_cond_finalState_37719)) {
+		for (Flow __DEC_cond_finalState_276166 : org.moflon.core.utilities.eMoflonEMFUtil
+				.getOppositeReferenceTyped(cond, Flow.class, "finalState")) {
+			if (!flow.equals(__DEC_cond_finalState_276166)) {
 				return new Object[] { cond, flow };
 			}
 		}
@@ -2434,7 +2434,7 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	}
 
 	public static final Object[] pattern_Process2UseCase_21_2_black_nac_3B(UCCondition cond) {
-		for (Step __DEC_cond___last_513771 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(cond,
+		for (Step __DEC_cond___last_110223 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(cond,
 				Step.class, "__last")) {
 			return new Object[] { cond };
 		}
@@ -2560,9 +2560,9 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	}
 
 	public static final Object[] pattern_Process2UseCase_22_2_black_nac_0BB(BasicFlow flow, UseCase useCase) {
-		for (UseCase __DEC_flow_flows_381449 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(flow,
+		for (UseCase __DEC_flow_flows_200424 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(flow,
 				UseCase.class, "flows")) {
-			if (!useCase.equals(__DEC_flow_flows_381449)) {
+			if (!useCase.equals(__DEC_flow_flows_200424)) {
 				return new Object[] { flow, useCase };
 			}
 		}
@@ -2570,9 +2570,9 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	}
 
 	public static final Object[] pattern_Process2UseCase_22_2_black_nac_1BB(UCCondition cond, UseCase useCase) {
-		for (UseCase __DEC_cond_precondition_859470 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (UseCase __DEC_cond_precondition_500285 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(cond, UseCase.class, "precondition")) {
-			if (!useCase.equals(__DEC_cond_precondition_859470)) {
+			if (!useCase.equals(__DEC_cond_precondition_500285)) {
 				return new Object[] { cond, useCase };
 			}
 		}
@@ -2580,9 +2580,9 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	}
 
 	public static final Object[] pattern_Process2UseCase_22_2_black_nac_2BB(UCCondition cond, BasicFlow flow) {
-		for (Flow __DEC_cond_finalState_997458 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (Flow __DEC_cond_finalState_366157 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(cond, Flow.class, "finalState")) {
-			if (!flow.equals(__DEC_cond_finalState_997458)) {
+			if (!flow.equals(__DEC_cond_finalState_366157)) {
 				return new Object[] { cond, flow };
 			}
 		}
@@ -2590,7 +2590,7 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	}
 
 	public static final Object[] pattern_Process2UseCase_22_2_black_nac_3B(UCCondition cond) {
-		for (Step __DEC_cond___last_316473 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(cond,
+		for (Step __DEC_cond___last_52692 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(cond,
 				Step.class, "__last")) {
 			return new Object[] { cond };
 		}

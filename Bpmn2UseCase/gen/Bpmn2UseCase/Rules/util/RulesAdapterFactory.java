@@ -169,8 +169,13 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseClass1(Class1 object) {
-			return createClass1Adapter();
+		public Adapter caseEmptyDefaulFlow(EmptyDefaulFlow object) {
+			return createEmptyDefaulFlowAdapter();
+		}
+
+		@Override
+		public Adapter caseLastStepInDefaultFlow(LastStepInDefaultFlow object) {
+			return createLastStepInDefaultFlowAdapter();
 		}
 
 		@Override
@@ -508,16 +513,30 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.Class1 <em>Class1</em>}'.
+	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.EmptyDefaulFlow <em>Empty Defaul Flow</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.Rules.Class1
+	 * @see Bpmn2UseCase.Rules.EmptyDefaulFlow
 	 * @generated
 	 */
-	public Adapter createClass1Adapter() {
+	public Adapter createEmptyDefaulFlowAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.LastStepInDefaultFlow <em>Last Step In Default Flow</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Bpmn2UseCase.Rules.LastStepInDefaultFlow
+	 * @generated
+	 */
+	public Adapter createLastStepInDefaultFlowAdapter() {
 		return null;
 	}
 

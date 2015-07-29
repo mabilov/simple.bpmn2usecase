@@ -2,18 +2,18 @@
 <SimpleBPMN:Process xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SimpleBPMN="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore" id="SequenceInAlternative">
   <flowElements xsi:type="SimpleBPMN:StartEvent" id="se1" outgoing="//@flowElements.1"/>
   <flowElements xsi:type="SimpleBPMN:SequenceFlow" sourceRef="se1" targetRef="eg1"/>
-  <flowElements xsi:type="SimpleBPMN:ExclusiveGateway" id="eg1" outgoing="//@flowElements.4 sf2" incoming="//@flowElements.1" __conv="//@flowElements.3" default="//@flowElements.4"/>
-  <flowElements xsi:type="SimpleBPMN:ExclusiveGateway" outgoing="//@flowElements.11" incoming="//@flowElements.10 //@flowElements.15" isDiverging="false"/>
-  <flowElements xsi:type="SimpleBPMN:SequenceFlow" sourceRef="eg1" targetRef="t3"/>
-  <flowElements xsi:type="SimpleBPMN:Task" id="t3" outgoing="//@flowElements.13" incoming="//@flowElements.4"/>
-  <flowElements xsi:type="SimpleBPMN:SequenceFlow" id="sf2" sourceRef="eg1" targetRef="t1"/>
-  <flowElements xsi:type="SimpleBPMN:Task" id="t1" outgoing="//@flowElements.8" incoming="sf2"/>
-  <flowElements xsi:type="SimpleBPMN:SequenceFlow" sourceRef="t1" targetRef="t2"/>
-  <flowElements xsi:type="SimpleBPMN:Task" id="t2" outgoing="//@flowElements.10" incoming="//@flowElements.8"/>
-  <flowElements xsi:type="SimpleBPMN:SequenceFlow" sourceRef="t2" targetRef="//@flowElements.3"/>
+  <flowElements xsi:type="SimpleBPMN:ExclusiveGateway" id="eg1" outgoing="//@flowElements.6 sf2" incoming="//@flowElements.1" __conv="//@flowElements.3" default="//@flowElements.6"/>
+  <flowElements xsi:type="SimpleBPMN:ExclusiveGateway" outgoing="//@flowElements.4" incoming="//@flowElements.14 //@flowElements.15" isDiverging="false"/>
   <flowElements xsi:type="SimpleBPMN:SequenceFlow" sourceRef="//@flowElements.3" targetRef="ee1"/>
-  <flowElements xsi:type="SimpleBPMN:EndEvent" id="ee1" incoming="//@flowElements.11"/>
+  <flowElements xsi:type="SimpleBPMN:EndEvent" id="ee1" incoming="//@flowElements.4"/>
+  <flowElements xsi:type="SimpleBPMN:SequenceFlow" sourceRef="eg1" targetRef="t3"/>
+  <flowElements xsi:type="SimpleBPMN:Task" id="t3" outgoing="//@flowElements.10" incoming="//@flowElements.6"/>
+  <flowElements xsi:type="SimpleBPMN:SequenceFlow" id="sf2" sourceRef="eg1" targetRef="t1"/>
+  <flowElements xsi:type="SimpleBPMN:Task" id="t1" outgoing="//@flowElements.12" incoming="sf2"/>
   <flowElements xsi:type="SimpleBPMN:SequenceFlow" sourceRef="t3" targetRef="t4"/>
-  <flowElements xsi:type="SimpleBPMN:Task" id="t4" outgoing="//@flowElements.15" incoming="//@flowElements.13"/>
+  <flowElements xsi:type="SimpleBPMN:Task" id="t4" outgoing="//@flowElements.15" incoming="//@flowElements.10"/>
+  <flowElements xsi:type="SimpleBPMN:SequenceFlow" sourceRef="t1" targetRef="t2"/>
+  <flowElements xsi:type="SimpleBPMN:Task" id="t2" outgoing="//@flowElements.14" incoming="//@flowElements.12"/>
+  <flowElements xsi:type="SimpleBPMN:SequenceFlow" sourceRef="t2" targetRef="//@flowElements.3"/>
   <flowElements xsi:type="SimpleBPMN:SequenceFlow" sourceRef="t4" targetRef="//@flowElements.3"/>
 </SimpleBPMN:Process>

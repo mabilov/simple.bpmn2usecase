@@ -157,13 +157,22 @@ public interface RulesFactory extends EFactory {
 	Task2NormalStepAfterEG createTask2NormalStepAfterEG();
 
 	/**
-	 * Returns a new object of class '<em>Class1</em>'.
+	 * Returns a new object of class '<em>Empty Defaul Flow</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Class1</em>'.
+	 * @return a new object of class '<em>Empty Defaul Flow</em>'.
 	 * @generated
 	 */
-	Class1 createClass1();
+	EmptyDefaulFlow createEmptyDefaulFlow();
+
+	/**
+	 * Returns a new object of class '<em>Last Step In Default Flow</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Last Step In Default Flow</em>'.
+	 * @generated
+	 */
+	LastStepInDefaultFlow createLastStepInDefaultFlow();
 
 	/**
 	 * Returns a new object of class '<em>Last Step In Alt Flow</em>'.

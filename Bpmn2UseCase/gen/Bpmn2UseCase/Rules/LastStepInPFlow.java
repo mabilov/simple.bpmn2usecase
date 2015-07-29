@@ -4,6 +4,7 @@ package Bpmn2UseCase.Rules;
 
 import Bpmn2UseCase.FN2S;
 import Bpmn2UseCase.GW2S;
+import Bpmn2UseCase.P2UC;
 
 import SimpleBPMN.FlowNode;
 import SimpleBPMN.Gateway;
@@ -12,6 +13,7 @@ import SimpleBPMN.SequenceFlow;
 import SimpleUseCase.ParallelFlow;
 import SimpleUseCase.ParallelStep;
 import SimpleUseCase.Step;
+import SimpleUseCase.UseCase;
 
 import TGGLanguage.csp.CSP;
 
@@ -103,7 +105,7 @@ public interface LastStepInPFlow extends EObject, AbstractRule {
 	 */
 	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, ParallelStep gwStep, ParallelFlow flow,
 			SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, SequenceFlow sf, Step step, FN2S n2s,
-			GW2S gw2gs);
+			GW2S gw2gs, UseCase useCase, P2UC p2uc);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -120,7 +122,8 @@ public interface LastStepInPFlow extends EObject, AbstractRule {
 	 * @generated
 	 */
 	void registerObjects_FWD(PerformRuleResult ruleresult, EObject gwStep, EObject flow, EObject process, EObject gw,
-			EObject gcw, EObject node, EObject sf, EObject step, EObject n2s, EObject gw2gs);
+			EObject gcw, EObject node, EObject sf, EObject step, EObject n2s, EObject gw2gs, EObject useCase,
+			EObject p2uc);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -136,7 +139,7 @@ public interface LastStepInPFlow extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	boolean isAppropriate_BWD(Match match, ParallelStep gwStep, ParallelFlow flow, Step step);
+	boolean isAppropriate_BWD(Match match, ParallelStep gwStep, ParallelFlow flow, Step step, UseCase useCase);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -160,7 +163,7 @@ public interface LastStepInPFlow extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjectsToMatch_BWD(Match match, ParallelStep gwStep, ParallelFlow flow, Step step);
+	void registerObjectsToMatch_BWD(Match match, ParallelStep gwStep, ParallelFlow flow, Step step, UseCase useCase);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -168,7 +171,7 @@ public interface LastStepInPFlow extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isAppropriate_solveCsp_BWD(Match match, ParallelStep gwStep, ParallelFlow flow, Step step);
+	CSP isAppropriate_solveCsp_BWD(Match match, ParallelStep gwStep, ParallelFlow flow, Step step, UseCase useCase);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -185,7 +188,8 @@ public interface LastStepInPFlow extends EObject, AbstractRule {
 	 * @generated
 	 */
 	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, ParallelStep gwStep, ParallelFlow flow,
-			SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, Step step, FN2S n2s, GW2S gw2gs);
+			SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, Step step, FN2S n2s, GW2S gw2gs,
+			UseCase useCase, P2UC p2uc);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -202,7 +206,8 @@ public interface LastStepInPFlow extends EObject, AbstractRule {
 	 * @generated
 	 */
 	void registerObjects_BWD(PerformRuleResult ruleresult, EObject gwStep, EObject flow, EObject process, EObject gw,
-			EObject gcw, EObject node, EObject sf, EObject step, EObject n2s, EObject gw2gs);
+			EObject gcw, EObject node, EObject sf, EObject step, EObject n2s, EObject gw2gs, EObject useCase,
+			EObject p2uc);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -218,7 +223,7 @@ public interface LastStepInPFlow extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_349(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_1245(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -226,7 +231,7 @@ public interface LastStepInPFlow extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_350(EMoflonEdge _edge_sourceRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_1246(EMoflonEdge _edge_sourceRef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -234,7 +239,7 @@ public interface LastStepInPFlow extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_351(EMoflonEdge _edge_outgoing);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_1247(EMoflonEdge _edge_outgoing);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -242,7 +247,7 @@ public interface LastStepInPFlow extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_352(EMoflonEdge _edge_targetRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_1248(EMoflonEdge _edge_targetRef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -250,7 +255,7 @@ public interface LastStepInPFlow extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_353(EMoflonEdge _edge_incoming);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_1249(EMoflonEdge _edge_incoming);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -258,7 +263,7 @@ public interface LastStepInPFlow extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_111(EMoflonEdge _edge___last);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_398(EMoflonEdge _edge___last);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -292,7 +297,7 @@ public interface LastStepInPFlow extends EObject, AbstractRule {
 	 */
 	CSP isApplicable_solveCsp_CC(IsApplicableMatchCC isApplicableMatch, ParallelStep gwStep, ParallelFlow flow,
 			SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, SequenceFlow sf, Step step, FN2S n2s,
-			GW2S gw2gs, Match sourceMatch, Match targetMatch);
+			GW2S gw2gs, UseCase useCase, P2UC p2uc, Match sourceMatch, Match targetMatch);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -326,7 +331,7 @@ public interface LastStepInPFlow extends EObject, AbstractRule {
 	 */
 	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, ParallelStep gwStep, ParallelFlow flow,
 			SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, Step step, FN2S n2s, GW2S gw2gs,
-			ModelgeneratorRuleResult ruleResult);
+			UseCase useCase, P2UC p2uc, ModelgeneratorRuleResult ruleResult);
 
 	/**
 	 * <!-- begin-user-doc -->

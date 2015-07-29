@@ -248,11 +248,20 @@ public class RulesSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case RulesPackage.CLASS1: {
-			Class1 class1 = (Class1) theEObject;
-			T result = caseClass1(class1);
+		case RulesPackage.EMPTY_DEFAUL_FLOW: {
+			EmptyDefaulFlow emptyDefaulFlow = (EmptyDefaulFlow) theEObject;
+			T result = caseEmptyDefaulFlow(emptyDefaulFlow);
 			if (result == null)
-				result = caseAbstractRule(class1);
+				result = caseAbstractRule(emptyDefaulFlow);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case RulesPackage.LAST_STEP_IN_DEFAULT_FLOW: {
+			LastStepInDefaultFlow lastStepInDefaultFlow = (LastStepInDefaultFlow) theEObject;
+			T result = caseLastStepInDefaultFlow(lastStepInDefaultFlow);
+			if (result == null)
+				result = caseAbstractRule(lastStepInDefaultFlow);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -617,17 +626,32 @@ public class RulesSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Class1</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Empty Defaul Flow</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Class1</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Empty Defaul Flow</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseClass1(Class1 object) {
+	public T caseEmptyDefaulFlow(EmptyDefaulFlow object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Last Step In Default Flow</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Last Step In Default Flow</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLastStepInDefaultFlow(LastStepInDefaultFlow object) {
 		return null;
 	}
 

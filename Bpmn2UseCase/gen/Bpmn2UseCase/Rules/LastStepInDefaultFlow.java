@@ -4,6 +4,7 @@ package Bpmn2UseCase.Rules;
 
 import Bpmn2UseCase.FN2S;
 import Bpmn2UseCase.GW2S;
+import Bpmn2UseCase.P2UC;
 
 import SimpleBPMN.FlowNode;
 import SimpleBPMN.Gateway;
@@ -12,6 +13,7 @@ import SimpleBPMN.SequenceFlow;
 import SimpleUseCase.ChoiceStep;
 import SimpleUseCase.Flow;
 import SimpleUseCase.Step;
+import SimpleUseCase.UseCase;
 
 import TGGLanguage.csp.CSP;
 
@@ -35,15 +37,15 @@ import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Class1</b></em>'.
+ * A representation of the model object '<em><b>Last Step In Default Flow</b></em>'.
  * <!-- end-user-doc -->
  *
  *
- * @see Bpmn2UseCase.Rules.RulesPackage#getClass1()
+ * @see Bpmn2UseCase.Rules.RulesPackage#getLastStepInDefaultFlow()
  * @model
  * @generated
  */
-public interface Class1 extends EObject, AbstractRule {
+public interface LastStepInDefaultFlow extends EObject, AbstractRule {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -102,7 +104,8 @@ public interface Class1 extends EObject, AbstractRule {
 	 * @generated
 	 */
 	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, ChoiceStep gwStep, Step step, Flow flow,
-			SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, SequenceFlow sf, FN2S n2s, GW2S gw2gs);
+			SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, SequenceFlow sf, FN2S n2s, GW2S gw2gs,
+			UseCase useCase, P2UC p2uc);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -119,7 +122,8 @@ public interface Class1 extends EObject, AbstractRule {
 	 * @generated
 	 */
 	void registerObjects_FWD(PerformRuleResult ruleresult, EObject gwStep, EObject step, EObject flow, EObject process,
-			EObject gw, EObject gcw, EObject node, EObject sf, EObject n2s, EObject gw2gs);
+			EObject gw, EObject gcw, EObject node, EObject sf, EObject n2s, EObject gw2gs, EObject useCase,
+			EObject p2uc);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -135,7 +139,7 @@ public interface Class1 extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	boolean isAppropriate_BWD(Match match, ChoiceStep gwStep, Step step, Flow flow);
+	boolean isAppropriate_BWD(Match match, ChoiceStep gwStep, Step step, Flow flow, UseCase useCase);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -159,7 +163,7 @@ public interface Class1 extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjectsToMatch_BWD(Match match, ChoiceStep gwStep, Step step, Flow flow);
+	void registerObjectsToMatch_BWD(Match match, ChoiceStep gwStep, Step step, Flow flow, UseCase useCase);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -167,7 +171,7 @@ public interface Class1 extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isAppropriate_solveCsp_BWD(Match match, ChoiceStep gwStep, Step step, Flow flow);
+	CSP isAppropriate_solveCsp_BWD(Match match, ChoiceStep gwStep, Step step, Flow flow, UseCase useCase);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -184,7 +188,8 @@ public interface Class1 extends EObject, AbstractRule {
 	 * @generated
 	 */
 	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, ChoiceStep gwStep, Step step, Flow flow,
-			SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, FN2S n2s, GW2S gw2gs);
+			SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, FN2S n2s, GW2S gw2gs, UseCase useCase,
+			P2UC p2uc);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -201,7 +206,8 @@ public interface Class1 extends EObject, AbstractRule {
 	 * @generated
 	 */
 	void registerObjects_BWD(PerformRuleResult ruleresult, EObject gwStep, EObject step, EObject flow, EObject process,
-			EObject gw, EObject gcw, EObject node, EObject sf, EObject n2s, EObject gw2gs);
+			EObject gw, EObject gcw, EObject node, EObject sf, EObject n2s, EObject gw2gs, EObject useCase,
+			EObject p2uc);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -217,7 +223,7 @@ public interface Class1 extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_124(EMoflonEdge _edge___lastInDef);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_412(EMoflonEdge _edge___lastInDef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -225,7 +231,7 @@ public interface Class1 extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_391(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_1293(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -233,7 +239,7 @@ public interface Class1 extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_392(EMoflonEdge _edge_sourceRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_1294(EMoflonEdge _edge_sourceRef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -241,7 +247,7 @@ public interface Class1 extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_393(EMoflonEdge _edge_outgoing);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_1295(EMoflonEdge _edge_outgoing);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -249,7 +255,7 @@ public interface Class1 extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_394(EMoflonEdge _edge_targetRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_1296(EMoflonEdge _edge_targetRef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -257,7 +263,7 @@ public interface Class1 extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_395(EMoflonEdge _edge_incoming);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_1297(EMoflonEdge _edge_incoming);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -291,7 +297,7 @@ public interface Class1 extends EObject, AbstractRule {
 	 */
 	CSP isApplicable_solveCsp_CC(IsApplicableMatchCC isApplicableMatch, ChoiceStep gwStep, Step step, Flow flow,
 			SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, SequenceFlow sf, FN2S n2s, GW2S gw2gs,
-			Match sourceMatch, Match targetMatch);
+			UseCase useCase, P2UC p2uc, Match sourceMatch, Match targetMatch);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -324,8 +330,8 @@ public interface Class1 extends EObject, AbstractRule {
 	 * @generated
 	 */
 	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, ChoiceStep gwStep, Step step, Flow flow,
-			SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, FN2S n2s, GW2S gw2gs,
-			ModelgeneratorRuleResult ruleResult);
+			SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, FN2S n2s, GW2S gw2gs, UseCase useCase,
+			P2UC p2uc, ModelgeneratorRuleResult ruleResult);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -337,4 +343,4 @@ public interface Class1 extends EObject, AbstractRule {
 	// <-- [user code injected with eMoflon]
 
 	// [user code injected with eMoflon] -->
-} // Class1
+} // LastStepInDefaultFlow

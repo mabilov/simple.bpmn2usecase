@@ -17,6 +17,10 @@
     <target xsi:type="SimpleUseCase:ParallelStep" href="../../../../targetModel#pg1"/>
   </correspondences>
   <correspondences xsi:type="Bpmn2UseCase:FN2S">
+    <source xsi:type="SimpleBPMN:Task" href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t3"/>
+    <target xsi:type="SimpleUseCase:NormalStep" href="../../../../targetModel#t3"/>
+  </correspondences>
+  <correspondences xsi:type="Bpmn2UseCase:FN2S">
     <source xsi:type="SimpleBPMN:ParallelGateway" href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#pcg2"/>
     <target xsi:type="SimpleUseCase:ParallelStep" href="../../../../targetModel#pg2"/>
   </correspondences>
@@ -25,16 +29,12 @@
     <target xsi:type="SimpleUseCase:ParallelStep" href="../../../../targetModel#pg2"/>
   </correspondences>
   <correspondences xsi:type="Bpmn2UseCase:FN2S">
-    <source xsi:type="SimpleBPMN:Task" href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t2"/>
-    <target xsi:type="SimpleUseCase:NormalStep" href="../../../../targetModel#t2"/>
-  </correspondences>
-  <correspondences xsi:type="Bpmn2UseCase:FN2S">
-    <source xsi:type="SimpleBPMN:Task" href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t3"/>
-    <target xsi:type="SimpleUseCase:NormalStep" href="../../../../targetModel#t3"/>
-  </correspondences>
-  <correspondences xsi:type="Bpmn2UseCase:FN2S">
     <source xsi:type="SimpleBPMN:Task" href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t1"/>
     <target xsi:type="SimpleUseCase:NormalStep" href="../../../../targetModel#t1"/>
+  </correspondences>
+  <correspondences xsi:type="Bpmn2UseCase:FN2S">
+    <source xsi:type="SimpleBPMN:Task" href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#t2"/>
+    <target xsi:type="SimpleUseCase:NormalStep" href="../../../../targetModel#t2"/>
   </correspondences>
   <source href="../../in/Bpmn2UseCase/Recursive1Parallel_FWD.xmi#/"/>
   <target href="../../../../targetModel#/"/>

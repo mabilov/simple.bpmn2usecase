@@ -880,7 +880,7 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_385(EMoflonEdge _edge_sourceRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_1281(EMoflonEdge _edge_sourceRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterEGImpl
 				.pattern_Task2NormalStepAfterEG_20_1_bindingAndBlackFFB(this);
@@ -935,7 +935,7 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_386(EMoflonEdge _edge_outgoing) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_1282(EMoflonEdge _edge_outgoing) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterEGImpl
 				.pattern_Task2NormalStepAfterEG_21_1_bindingAndBlackFFB(this);
@@ -990,7 +990,7 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_120(EMoflonEdge _edge_stepAlternatives) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_407(EMoflonEdge _edge_stepAlternatives) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterEGImpl
 				.pattern_Task2NormalStepAfterEG_22_1_bindingAndBlackFFB(this);
@@ -1047,7 +1047,7 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_121(EMoflonEdge _edge_steps) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_408(EMoflonEdge _edge_steps) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterEGImpl
 				.pattern_Task2NormalStepAfterEG_23_1_bindingAndBlackFFB(this);
@@ -1104,7 +1104,7 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_387(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_1283(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterEGImpl
 				.pattern_Task2NormalStepAfterEG_24_1_bindingAndBlackFFB(this);
@@ -1159,7 +1159,7 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_122(EMoflonEdge _edge_flows) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_409(EMoflonEdge _edge_flows) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterEGImpl
 				.pattern_Task2NormalStepAfterEG_25_1_bindingAndBlackFFB(this);
@@ -1216,7 +1216,7 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_123(EMoflonEdge _edge_ref) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_410(EMoflonEdge _edge_ref) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterEGImpl
 				.pattern_Task2NormalStepAfterEG_26_1_bindingAndBlackFFB(this);
@@ -1273,7 +1273,7 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_388(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_1284(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterEGImpl
 				.pattern_Task2NormalStepAfterEG_27_1_bindingAndBlackFFB(this);
@@ -1328,7 +1328,7 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_389(EMoflonEdge _edge_targetRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_1285(EMoflonEdge _edge_targetRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterEGImpl
 				.pattern_Task2NormalStepAfterEG_28_1_bindingAndBlackFFB(this);
@@ -1383,7 +1383,7 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_390(EMoflonEdge _edge_incoming) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_1286(EMoflonEdge _edge_incoming) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2NormalStepAfterEGImpl
 				.pattern_Task2NormalStepAfterEG_29_1_bindingAndBlackFFB(this);
@@ -2107,26 +2107,26 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 			return null;
 		case RulesPackage.TASK2_NORMAL_STEP_AFTER_EG___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_EG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_385__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_385((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_EG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_386__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_386((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_EG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_120__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_120((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_EG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_121__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_121((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_EG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_387__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_387((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_EG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_122__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_122((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_EG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_123__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_123((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_EG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_388__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_388((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_EG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_389__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_389((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_EG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_390__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_390((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_EG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_1281__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_1281((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_EG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_1282__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_1282((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_EG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_407__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_407((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_EG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_408__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_408((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_EG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_1283__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_1283((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_EG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_409__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_409((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_EG___IS_APPROPRIATE_BWD_EMOFLON_EDGE_410__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_410((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_EG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_1284__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_1284((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_EG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_1285__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_1285((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_NORMAL_STEP_AFTER_EG___IS_APPROPRIATE_FWD_EMOFLON_EDGE_1286__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_1286((EMoflonEdge) arguments.get(0));
 		case RulesPackage.TASK2_NORMAL_STEP_AFTER_EG___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.TASK2_NORMAL_STEP_AFTER_EG___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
@@ -3999,9 +3999,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_20_2_black_nac_0BB(SequenceFlow sf1,
 			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_876276 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_sf1_default_422981 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_876276)) {
+			if (!prevNode.equals(__DEC_sf1_default_422981)) {
 				return new Object[] { sf1, prevNode };
 			}
 		}
@@ -4010,9 +4010,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_20_2_black_nac_1BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_334007 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_449255 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_334007)) {
+			if (!process.equals(__DEC_sf1_flowElements_449255)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -4021,9 +4021,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_20_2_black_nac_2BB(Task task,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_task_flowElements_561674 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_task_flowElements_263863 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(task, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_task_flowElements_561674)) {
+			if (!process.equals(__DEC_task_flowElements_263863)) {
 				return new Object[] { task, process };
 			}
 		}
@@ -4168,9 +4168,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_21_2_black_nac_0BB(SequenceFlow sf1,
 			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_714435 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_sf1_default_844909 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_714435)) {
+			if (!prevNode.equals(__DEC_sf1_default_844909)) {
 				return new Object[] { sf1, prevNode };
 			}
 		}
@@ -4179,9 +4179,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_21_2_black_nac_1BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_774777 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_723865 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_774777)) {
+			if (!process.equals(__DEC_sf1_flowElements_723865)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -4190,9 +4190,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_21_2_black_nac_2BB(Task task,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_task_flowElements_300032 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_task_flowElements_147521 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(task, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_task_flowElements_300032)) {
+			if (!process.equals(__DEC_task_flowElements_147521)) {
 				return new Object[] { task, process };
 			}
 		}
@@ -4339,10 +4339,10 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 	public static final Object[] pattern_Task2NormalStepAfterEG_22_2_black_nac_0BBB(NormalStep step,
 			AlternativeFlow altFlow, Flow flow) {
 		if (!altFlow.equals(flow)) {
-			for (Flow __DEC_step_steps_251981 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+			for (Flow __DEC_step_steps_331906 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 					Flow.class, "steps")) {
-				if (!altFlow.equals(__DEC_step_steps_251981)) {
-					if (!flow.equals(__DEC_step_steps_251981)) {
+				if (!altFlow.equals(__DEC_step_steps_331906)) {
+					if (!flow.equals(__DEC_step_steps_331906)) {
 						return new Object[] { step, altFlow, flow };
 					}
 				}
@@ -4352,10 +4352,10 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 	}
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_22_2_black_nac_1BB(NormalStep step, ChoiceStep cStep) {
-		for (Step __DEC_step_next_836274 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+		for (Step __DEC_step_next_72029 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 				Step.class, "next")) {
-			if (!step.equals(__DEC_step_next_836274)) {
-				if (!cStep.equals(__DEC_step_next_836274)) {
+			if (!step.equals(__DEC_step_next_72029)) {
+				if (!cStep.equals(__DEC_step_next_72029)) {
 					return new Object[] { step, cStep };
 				}
 			}
@@ -4365,9 +4365,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_22_2_black_nac_2BB(AlternativeFlow altFlow,
 			StepAlternative alt) {
-		for (StepAlternative __DEC_altFlow_ref_911293 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (StepAlternative __DEC_altFlow_ref_561994 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(altFlow, StepAlternative.class, "ref")) {
-			if (!alt.equals(__DEC_altFlow_ref_911293)) {
+			if (!alt.equals(__DEC_altFlow_ref_561994)) {
 				return new Object[] { altFlow, alt };
 			}
 		}
@@ -4376,9 +4376,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_22_2_black_nac_3BB(AlternativeFlow altFlow,
 			UseCase useCase) {
-		for (UseCase __DEC_altFlow_flows_748268 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (UseCase __DEC_altFlow_flows_242550 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(altFlow, UseCase.class, "flows")) {
-			if (!useCase.equals(__DEC_altFlow_flows_748268)) {
+			if (!useCase.equals(__DEC_altFlow_flows_242550)) {
 				return new Object[] { altFlow, useCase };
 			}
 		}
@@ -4387,9 +4387,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_22_2_black_nac_4BB(StepAlternative alt,
 			ChoiceStep cStep) {
-		for (ChoiceStep __DEC_alt_stepAlternatives_941139 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ChoiceStep __DEC_alt_stepAlternatives_987950 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(alt, ChoiceStep.class, "stepAlternatives")) {
-			if (!cStep.equals(__DEC_alt_stepAlternatives_941139)) {
+			if (!cStep.equals(__DEC_alt_stepAlternatives_987950)) {
 				return new Object[] { alt, cStep };
 			}
 		}
@@ -4556,10 +4556,10 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 	public static final Object[] pattern_Task2NormalStepAfterEG_23_2_black_nac_0BBB(NormalStep step,
 			AlternativeFlow altFlow, Flow flow) {
 		if (!altFlow.equals(flow)) {
-			for (Flow __DEC_step_steps_547995 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+			for (Flow __DEC_step_steps_938972 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 					Flow.class, "steps")) {
-				if (!altFlow.equals(__DEC_step_steps_547995)) {
-					if (!flow.equals(__DEC_step_steps_547995)) {
+				if (!altFlow.equals(__DEC_step_steps_938972)) {
+					if (!flow.equals(__DEC_step_steps_938972)) {
 						return new Object[] { step, altFlow, flow };
 					}
 				}
@@ -4569,10 +4569,10 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 	}
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_23_2_black_nac_1BB(NormalStep step, ChoiceStep cStep) {
-		for (Step __DEC_step_next_9134 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+		for (Step __DEC_step_next_770547 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 				Step.class, "next")) {
-			if (!step.equals(__DEC_step_next_9134)) {
-				if (!cStep.equals(__DEC_step_next_9134)) {
+			if (!step.equals(__DEC_step_next_770547)) {
+				if (!cStep.equals(__DEC_step_next_770547)) {
 					return new Object[] { step, cStep };
 				}
 			}
@@ -4582,9 +4582,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_23_2_black_nac_2BB(AlternativeFlow altFlow,
 			StepAlternative alt) {
-		for (StepAlternative __DEC_altFlow_ref_148689 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (StepAlternative __DEC_altFlow_ref_419208 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(altFlow, StepAlternative.class, "ref")) {
-			if (!alt.equals(__DEC_altFlow_ref_148689)) {
+			if (!alt.equals(__DEC_altFlow_ref_419208)) {
 				return new Object[] { altFlow, alt };
 			}
 		}
@@ -4593,9 +4593,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_23_2_black_nac_3BB(AlternativeFlow altFlow,
 			UseCase useCase) {
-		for (UseCase __DEC_altFlow_flows_950147 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (UseCase __DEC_altFlow_flows_734124 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(altFlow, UseCase.class, "flows")) {
-			if (!useCase.equals(__DEC_altFlow_flows_950147)) {
+			if (!useCase.equals(__DEC_altFlow_flows_734124)) {
 				return new Object[] { altFlow, useCase };
 			}
 		}
@@ -4604,9 +4604,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_23_2_black_nac_4BB(StepAlternative alt,
 			ChoiceStep cStep) {
-		for (ChoiceStep __DEC_alt_stepAlternatives_237484 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ChoiceStep __DEC_alt_stepAlternatives_423434 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(alt, ChoiceStep.class, "stepAlternatives")) {
-			if (!cStep.equals(__DEC_alt_stepAlternatives_237484)) {
+			if (!cStep.equals(__DEC_alt_stepAlternatives_423434)) {
 				return new Object[] { alt, cStep };
 			}
 		}
@@ -4768,9 +4768,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_24_2_black_nac_0BB(SequenceFlow sf1,
 			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_220434 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_sf1_default_417798 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_220434)) {
+			if (!prevNode.equals(__DEC_sf1_default_417798)) {
 				return new Object[] { sf1, prevNode };
 			}
 		}
@@ -4779,9 +4779,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_24_2_black_nac_1BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_425795 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_694095 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_425795)) {
+			if (!process.equals(__DEC_sf1_flowElements_694095)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -4790,9 +4790,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_24_2_black_nac_2BB(Task task,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_task_flowElements_970505 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_task_flowElements_603497 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(task, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_task_flowElements_970505)) {
+			if (!process.equals(__DEC_task_flowElements_603497)) {
 				return new Object[] { task, process };
 			}
 		}
@@ -4942,10 +4942,10 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 	public static final Object[] pattern_Task2NormalStepAfterEG_25_2_black_nac_0BBB(NormalStep step,
 			AlternativeFlow altFlow, Flow flow) {
 		if (!altFlow.equals(flow)) {
-			for (Flow __DEC_step_steps_37774 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+			for (Flow __DEC_step_steps_456974 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 					Flow.class, "steps")) {
-				if (!altFlow.equals(__DEC_step_steps_37774)) {
-					if (!flow.equals(__DEC_step_steps_37774)) {
+				if (!altFlow.equals(__DEC_step_steps_456974)) {
+					if (!flow.equals(__DEC_step_steps_456974)) {
 						return new Object[] { step, altFlow, flow };
 					}
 				}
@@ -4955,10 +4955,10 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 	}
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_25_2_black_nac_1BB(NormalStep step, ChoiceStep cStep) {
-		for (Step __DEC_step_next_56471 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+		for (Step __DEC_step_next_51314 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 				Step.class, "next")) {
-			if (!step.equals(__DEC_step_next_56471)) {
-				if (!cStep.equals(__DEC_step_next_56471)) {
+			if (!step.equals(__DEC_step_next_51314)) {
+				if (!cStep.equals(__DEC_step_next_51314)) {
 					return new Object[] { step, cStep };
 				}
 			}
@@ -4968,9 +4968,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_25_2_black_nac_2BB(AlternativeFlow altFlow,
 			StepAlternative alt) {
-		for (StepAlternative __DEC_altFlow_ref_193652 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (StepAlternative __DEC_altFlow_ref_121635 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(altFlow, StepAlternative.class, "ref")) {
-			if (!alt.equals(__DEC_altFlow_ref_193652)) {
+			if (!alt.equals(__DEC_altFlow_ref_121635)) {
 				return new Object[] { altFlow, alt };
 			}
 		}
@@ -4979,9 +4979,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_25_2_black_nac_3BB(AlternativeFlow altFlow,
 			UseCase useCase) {
-		for (UseCase __DEC_altFlow_flows_893746 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (UseCase __DEC_altFlow_flows_337275 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(altFlow, UseCase.class, "flows")) {
-			if (!useCase.equals(__DEC_altFlow_flows_893746)) {
+			if (!useCase.equals(__DEC_altFlow_flows_337275)) {
 				return new Object[] { altFlow, useCase };
 			}
 		}
@@ -4990,9 +4990,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_25_2_black_nac_4BB(StepAlternative alt,
 			ChoiceStep cStep) {
-		for (ChoiceStep __DEC_alt_stepAlternatives_457956 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ChoiceStep __DEC_alt_stepAlternatives_119545 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(alt, ChoiceStep.class, "stepAlternatives")) {
-			if (!cStep.equals(__DEC_alt_stepAlternatives_457956)) {
+			if (!cStep.equals(__DEC_alt_stepAlternatives_119545)) {
 				return new Object[] { alt, cStep };
 			}
 		}
@@ -5158,10 +5158,10 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 	public static final Object[] pattern_Task2NormalStepAfterEG_26_2_black_nac_0BBB(NormalStep step,
 			AlternativeFlow altFlow, Flow flow) {
 		if (!altFlow.equals(flow)) {
-			for (Flow __DEC_step_steps_176985 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+			for (Flow __DEC_step_steps_567854 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 					Flow.class, "steps")) {
-				if (!altFlow.equals(__DEC_step_steps_176985)) {
-					if (!flow.equals(__DEC_step_steps_176985)) {
+				if (!altFlow.equals(__DEC_step_steps_567854)) {
+					if (!flow.equals(__DEC_step_steps_567854)) {
 						return new Object[] { step, altFlow, flow };
 					}
 				}
@@ -5171,10 +5171,10 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 	}
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_26_2_black_nac_1BB(NormalStep step, ChoiceStep cStep) {
-		for (Step __DEC_step_next_241742 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+		for (Step __DEC_step_next_28784 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 				Step.class, "next")) {
-			if (!step.equals(__DEC_step_next_241742)) {
-				if (!cStep.equals(__DEC_step_next_241742)) {
+			if (!step.equals(__DEC_step_next_28784)) {
+				if (!cStep.equals(__DEC_step_next_28784)) {
 					return new Object[] { step, cStep };
 				}
 			}
@@ -5184,9 +5184,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_26_2_black_nac_2BB(AlternativeFlow altFlow,
 			StepAlternative alt) {
-		for (StepAlternative __DEC_altFlow_ref_18231 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (StepAlternative __DEC_altFlow_ref_320983 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(altFlow, StepAlternative.class, "ref")) {
-			if (!alt.equals(__DEC_altFlow_ref_18231)) {
+			if (!alt.equals(__DEC_altFlow_ref_320983)) {
 				return new Object[] { altFlow, alt };
 			}
 		}
@@ -5195,9 +5195,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_26_2_black_nac_3BB(AlternativeFlow altFlow,
 			UseCase useCase) {
-		for (UseCase __DEC_altFlow_flows_440484 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (UseCase __DEC_altFlow_flows_487236 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(altFlow, UseCase.class, "flows")) {
-			if (!useCase.equals(__DEC_altFlow_flows_440484)) {
+			if (!useCase.equals(__DEC_altFlow_flows_487236)) {
 				return new Object[] { altFlow, useCase };
 			}
 		}
@@ -5206,9 +5206,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_26_2_black_nac_4BB(StepAlternative alt,
 			ChoiceStep cStep) {
-		for (ChoiceStep __DEC_alt_stepAlternatives_566501 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ChoiceStep __DEC_alt_stepAlternatives_869298 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(alt, ChoiceStep.class, "stepAlternatives")) {
-			if (!cStep.equals(__DEC_alt_stepAlternatives_566501)) {
+			if (!cStep.equals(__DEC_alt_stepAlternatives_869298)) {
 				return new Object[] { alt, cStep };
 			}
 		}
@@ -5370,9 +5370,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_27_2_black_nac_0BB(SequenceFlow sf1,
 			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_350605 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_sf1_default_1412 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_350605)) {
+			if (!prevNode.equals(__DEC_sf1_default_1412)) {
 				return new Object[] { sf1, prevNode };
 			}
 		}
@@ -5381,9 +5381,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_27_2_black_nac_1BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_194896 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_715800 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_194896)) {
+			if (!process.equals(__DEC_sf1_flowElements_715800)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -5392,9 +5392,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_27_2_black_nac_2BB(Task task,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_task_flowElements_711511 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_task_flowElements_573545 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(task, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_task_flowElements_711511)) {
+			if (!process.equals(__DEC_task_flowElements_573545)) {
 				return new Object[] { task, process };
 			}
 		}
@@ -5543,9 +5543,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_28_2_black_nac_0BB(SequenceFlow sf1,
 			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_607056 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_sf1_default_805732 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_607056)) {
+			if (!prevNode.equals(__DEC_sf1_default_805732)) {
 				return new Object[] { sf1, prevNode };
 			}
 		}
@@ -5554,9 +5554,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_28_2_black_nac_1BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_68071 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_131526 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_68071)) {
+			if (!process.equals(__DEC_sf1_flowElements_131526)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -5565,9 +5565,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_28_2_black_nac_2BB(Task task,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_task_flowElements_908193 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_task_flowElements_765177 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(task, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_task_flowElements_908193)) {
+			if (!process.equals(__DEC_task_flowElements_765177)) {
 				return new Object[] { task, process };
 			}
 		}
@@ -5712,9 +5712,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_29_2_black_nac_0BB(SequenceFlow sf1,
 			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_420731 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_sf1_default_418796 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_420731)) {
+			if (!prevNode.equals(__DEC_sf1_default_418796)) {
 				return new Object[] { sf1, prevNode };
 			}
 		}
@@ -5723,9 +5723,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_29_2_black_nac_1BB(SequenceFlow sf1,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf1_flowElements_694484 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf1_flowElements_903875 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_694484)) {
+			if (!process.equals(__DEC_sf1_flowElements_903875)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -5734,9 +5734,9 @@ public class Task2NormalStepAfterEGImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2NormalStepAfterEG_29_2_black_nac_2BB(Task task,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_task_flowElements_34835 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_task_flowElements_226931 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(task, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_task_flowElements_34835)) {
+			if (!process.equals(__DEC_task_flowElements_226931)) {
 				return new Object[] { task, process };
 			}
 		}

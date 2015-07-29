@@ -84,6 +84,16 @@ public class Batch extends IntegratorTest {
 	public void sequenceInAlternativeBwd() {
 		integrate("SequenceInAlternative_BWD");
 	}
+	
+	@Test
+	public void emptyDefaultFwd() {
+		integrate("EmptyDefaultFlow_FWD");
+	}
+	
+	@Test
+	public void emptyDefaultBwd() {
+		integrate("EmptyDefaultFlow_BWD");
+	}
 
 	@Override
 	protected void setInputModel(ApplicationTypes direction, String testCaseName) {

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ASCII"?>
+<TGGRuntime:CorrespondenceModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Bpmn2UseCase="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore" xmlns:SimpleBPMN="platform:/plugin/SimpleBPMN/model/SimpleBPMN.ecore" xmlns:SimpleUseCase="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore" xmlns:TGGRuntime="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore">
+  <correspondences xsi:type="Bpmn2UseCase:P2UC">
+    <source href="../bpmn/EmptyDefaultFlow.xmi#EmptyDefaultFlow"/>
+    <target href="../usecase/EmptyDefaultFlow.xmi#EmptyDefaultFlow"/>
+  </correspondences>
+  <correspondences xsi:type="Bpmn2UseCase:FN2F">
+    <source xsi:type="SimpleBPMN:StartEvent" href="../bpmn/EmptyDefaultFlow.xmi#se1"/>
+    <target xsi:type="SimpleUseCase:BasicFlow" href="../usecase/EmptyDefaultFlow.xmi#//@flows.0"/>
+  </correspondences>
+  <correspondences xsi:type="Bpmn2UseCase:GW2S">
+    <source xsi:type="SimpleBPMN:ExclusiveGateway" href="../bpmn/EmptyDefaultFlow.xmi#eg1"/>
+    <target xsi:type="SimpleUseCase:ChoiceStep" href="../usecase/EmptyDefaultFlow.xmi#eg1"/>
+  </correspondences>
+  <correspondences xsi:type="Bpmn2UseCase:GW2S">
+    <source xsi:type="SimpleBPMN:ExclusiveGateway" href="../bpmn/EmptyDefaultFlow.xmi#ecg1"/>
+    <target xsi:type="SimpleUseCase:ChoiceStep" href="../usecase/EmptyDefaultFlow.xmi#eg1"/>
+  </correspondences>
+  <correspondences xsi:type="Bpmn2UseCase:FN2S">
+    <source xsi:type="SimpleBPMN:Task" href="../bpmn/EmptyDefaultFlow.xmi#t1"/>
+    <target xsi:type="SimpleUseCase:NormalStep" href="../usecase/EmptyDefaultFlow.xmi#t1"/>
+  </correspondences>
+  <source href="../bpmn/EmptyDefaultFlow.xmi#EmptyDefaultFlow"/>
+  <target href="../usecase/EmptyDefaultFlow.xmi#EmptyDefaultFlow"/>
+</TGGRuntime:CorrespondenceModel>

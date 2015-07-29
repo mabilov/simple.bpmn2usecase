@@ -97,7 +97,10 @@
     <eClassifiers xsi:type="ecore:EClass" name="Task2NormalStepAfterEG">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Class1">
+    <eClassifiers xsi:type="ecore:EClass" name="EmptyDefaulFlow">
+      <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="LastStepInDefaultFlow">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="LastStepInAltFlow">

@@ -85,8 +85,10 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 			return createTask2NormalStepAfterDefEG();
 		case RulesPackage.TASK2_NORMAL_STEP_AFTER_EG:
 			return createTask2NormalStepAfterEG();
-		case RulesPackage.CLASS1:
-			return createClass1();
+		case RulesPackage.EMPTY_DEFAUL_FLOW:
+			return createEmptyDefaulFlow();
+		case RulesPackage.LAST_STEP_IN_DEFAULT_FLOW:
+			return createLastStepInDefaultFlow();
 		case RulesPackage.LAST_STEP_IN_ALT_FLOW:
 			return createLastStepInAltFlow();
 		case RulesPackage.PG2_PARALLEL_STEP_AFTER_DEF_EG:
@@ -259,9 +261,19 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Class1 createClass1() {
-		Class1Impl class1 = new Class1Impl();
-		return class1;
+	public EmptyDefaulFlow createEmptyDefaulFlow() {
+		EmptyDefaulFlowImpl emptyDefaulFlow = new EmptyDefaulFlowImpl();
+		return emptyDefaulFlow;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public LastStepInDefaultFlow createLastStepInDefaultFlow() {
+		LastStepInDefaultFlowImpl lastStepInDefaultFlow = new LastStepInDefaultFlowImpl();
+		return lastStepInDefaultFlow;
 	}
 
 	/**

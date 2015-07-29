@@ -4,6 +4,7 @@ package Bpmn2UseCase.Rules.impl;
 
 import Bpmn2UseCase.FN2S;
 import Bpmn2UseCase.GW2S;
+import Bpmn2UseCase.P2UC;
 
 import Bpmn2UseCase.Rules.LastStepInAltFlow;
 import Bpmn2UseCase.Rules.RulesPackage;
@@ -20,6 +21,7 @@ import SimpleUseCase.ChoiceStep;
 import SimpleUseCase.Flow;
 import SimpleUseCase.Step;
 import SimpleUseCase.StepAlternative;
+import SimpleUseCase.UseCase;
 
 import TGGLanguage.csp.CSP;
 
@@ -166,7 +168,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 	public PerformRuleResult perform_FWD(IsApplicableMatch isApplicableMatch) {
 		// perform transformation
 		Object[] result1_bindingAndBlack = LastStepInAltFlowImpl
-				.pattern_LastStepInAltFlow_1_1_bindingAndBlackFFFFFFFFFFFBFB(this, isApplicableMatch);
+				.pattern_LastStepInAltFlow_1_1_bindingAndBlackFFFFFFFFFFFFFBFB(this, isApplicableMatch);
 		if (result1_bindingAndBlack == null) {
 			throw new RuntimeException("Pattern matching in node [perform transformation] failed." + " Variables: "
 					+ "[this] = " + this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ".");
@@ -182,7 +184,9 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		Step step = (Step) result1_bindingAndBlack[8];
 		FN2S n2s = (FN2S) result1_bindingAndBlack[9];
 		GW2S gw2gs = (GW2S) result1_bindingAndBlack[10];
-		// CSP csp = (CSP) result1_bindingAndBlack[12];
+		UseCase useCase = (UseCase) result1_bindingAndBlack[11];
+		P2UC p2uc = (P2UC) result1_bindingAndBlack[12];
+		// CSP csp = (CSP) result1_bindingAndBlack[14];
 		LastStepInAltFlowImpl.pattern_LastStepInAltFlow_1_1_greenBBBB(alt, gwStep, flow, step);
 
 		// collect translated elements
@@ -195,14 +199,15 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		PerformRuleResult ruleresult = (PerformRuleResult) result2_green[0];
 
 		// bookkeeping for edges
-		Object[] result3_black = LastStepInAltFlowImpl.pattern_LastStepInAltFlow_1_3_blackBBBBBBBBBBBB(ruleresult, alt,
-				gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs);
+		Object[] result3_black = LastStepInAltFlowImpl.pattern_LastStepInAltFlow_1_3_blackBBBBBBBBBBBBBB(ruleresult,
+				alt, gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs, useCase, p2uc);
 		if (result3_black == null) {
 			throw new RuntimeException("Pattern matching in node [bookkeeping for edges] failed." + " Variables: "
 					+ "[ruleresult] = " + ruleresult + ", " + "[alt] = " + alt + ", " + "[gwStep] = " + gwStep + ", "
 					+ "[flow] = " + flow + ", " + "[process] = " + process + ", " + "[gw] = " + gw + ", " + "[gcw] = "
 					+ gcw + ", " + "[node] = " + node + ", " + "[sf] = " + sf + ", " + "[step] = " + step + ", "
-					+ "[n2s] = " + n2s + ", " + "[gw2gs] = " + gw2gs + ".");
+					+ "[n2s] = " + n2s + ", " + "[gw2gs] = " + gw2gs + ", " + "[useCase] = " + useCase + ", "
+					+ "[p2uc] = " + p2uc + ".");
 		}
 		LastStepInAltFlowImpl.pattern_LastStepInAltFlow_1_3_greenBBBBBBBBBFFFFFFF(ruleresult, alt, gwStep, flow,
 				process, gcw, node, sf, step);
@@ -216,8 +221,8 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 
 		// perform postprocessing story node is empty
 		// register objects
-		LastStepInAltFlowImpl.pattern_LastStepInAltFlow_1_5_expressionBBBBBBBBBBBBB(this, ruleresult, alt, gwStep, flow,
-				process, gw, gcw, node, sf, step, n2s, gw2gs);
+		LastStepInAltFlowImpl.pattern_LastStepInAltFlow_1_5_expressionBBBBBBBBBBBBBBB(this, ruleresult, alt, gwStep,
+				flow, process, gw, gcw, node, sf, step, n2s, gw2gs, useCase, p2uc);
 		return LastStepInAltFlowImpl.pattern_LastStepInAltFlow_1_6_expressionFB(ruleresult);
 	}
 
@@ -249,49 +254,55 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		Gateway gcw = (Gateway) result2_binding[2];
 		FlowNode node = (FlowNode) result2_binding[3];
 		SequenceFlow sf = (SequenceFlow) result2_binding[4];
-		for (Object[] result2_black : LastStepInAltFlowImpl.pattern_LastStepInAltFlow_2_2_blackFBBBBBFFFB(process, gw,
+		for (Object[] result2_black : LastStepInAltFlowImpl.pattern_LastStepInAltFlow_2_2_blackFBBBBBFFFFFB(process, gw,
 				gcw, node, sf, match)) {
 			ChoiceStep gwStep = (ChoiceStep) result2_black[0];
 			Step step = (Step) result2_black[6];
 			FN2S n2s = (FN2S) result2_black[7];
 			GW2S gw2gs = (GW2S) result2_black[8];
+			UseCase useCase = (UseCase) result2_black[9];
+			P2UC p2uc = (P2UC) result2_black[10];
 			// ForEach find context
-			for (Object[] result3_black : LastStepInAltFlowImpl.pattern_LastStepInAltFlow_2_3_blackFBFBBBBBBBB(gwStep,
-					process, gw, gcw, node, sf, step, n2s, gw2gs)) {
+			for (Object[] result3_black : LastStepInAltFlowImpl.pattern_LastStepInAltFlow_2_3_blackFBFBBBBBBBBBB(gwStep,
+					process, gw, gcw, node, sf, step, n2s, gw2gs, useCase, p2uc)) {
 				StepAlternative alt = (StepAlternative) result3_black[0];
 				AlternativeFlow flow = (AlternativeFlow) result3_black[2];
 				Object[] result3_green = LastStepInAltFlowImpl
-						.pattern_LastStepInAltFlow_2_3_greenBBBBBBBBBBBFFFFFFFFFFFFFFFFF(alt, gwStep, flow, process, gw,
-								gcw, node, sf, step, n2s, gw2gs);
-				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[11];
-				// EMoflonEdge alt__flow____ref = (EMoflonEdge) result3_green[12];
-				// EMoflonEdge gwStep__alt____stepAlternatives = (EMoflonEdge) result3_green[13];
-				// EMoflonEdge process__gw____flowElements = (EMoflonEdge) result3_green[14];
-				// EMoflonEdge process__gcw____flowElements = (EMoflonEdge) result3_green[15];
-				// EMoflonEdge process__node____flowElements = (EMoflonEdge) result3_green[16];
-				// EMoflonEdge process__sf____flowElements = (EMoflonEdge) result3_green[17];
-				// EMoflonEdge gw__gcw______conv = (EMoflonEdge) result3_green[18];
-				// EMoflonEdge sf__node____sourceRef = (EMoflonEdge) result3_green[19];
-				// EMoflonEdge node__sf____outgoing = (EMoflonEdge) result3_green[20];
-				// EMoflonEdge sf__gcw____targetRef = (EMoflonEdge) result3_green[21];
-				// EMoflonEdge gcw__sf____incoming = (EMoflonEdge) result3_green[22];
-				// EMoflonEdge flow__step____steps = (EMoflonEdge) result3_green[23];
-				// EMoflonEdge n2s__node____source = (EMoflonEdge) result3_green[24];
-				// EMoflonEdge n2s__step____target = (EMoflonEdge) result3_green[25];
-				// EMoflonEdge gw2gs__gw____source = (EMoflonEdge) result3_green[26];
-				// EMoflonEdge gw2gs__gwStep____target = (EMoflonEdge) result3_green[27];
+						.pattern_LastStepInAltFlow_2_3_greenBBBBBBBBBBBBBFFFFFFFFFFFFFFFFFFFF(alt, gwStep, flow,
+								process, gw, gcw, node, sf, step, n2s, gw2gs, useCase, p2uc);
+				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[13];
+				// EMoflonEdge alt__flow____ref = (EMoflonEdge) result3_green[14];
+				// EMoflonEdge gwStep__alt____stepAlternatives = (EMoflonEdge) result3_green[15];
+				// EMoflonEdge process__gw____flowElements = (EMoflonEdge) result3_green[16];
+				// EMoflonEdge process__gcw____flowElements = (EMoflonEdge) result3_green[17];
+				// EMoflonEdge process__node____flowElements = (EMoflonEdge) result3_green[18];
+				// EMoflonEdge process__sf____flowElements = (EMoflonEdge) result3_green[19];
+				// EMoflonEdge gw__gcw______conv = (EMoflonEdge) result3_green[20];
+				// EMoflonEdge sf__node____sourceRef = (EMoflonEdge) result3_green[21];
+				// EMoflonEdge node__sf____outgoing = (EMoflonEdge) result3_green[22];
+				// EMoflonEdge sf__gcw____targetRef = (EMoflonEdge) result3_green[23];
+				// EMoflonEdge gcw__sf____incoming = (EMoflonEdge) result3_green[24];
+				// EMoflonEdge flow__step____steps = (EMoflonEdge) result3_green[25];
+				// EMoflonEdge n2s__node____source = (EMoflonEdge) result3_green[26];
+				// EMoflonEdge n2s__step____target = (EMoflonEdge) result3_green[27];
+				// EMoflonEdge gw2gs__gw____source = (EMoflonEdge) result3_green[28];
+				// EMoflonEdge gw2gs__gwStep____target = (EMoflonEdge) result3_green[29];
+				// EMoflonEdge useCase__flow____flows = (EMoflonEdge) result3_green[30];
+				// EMoflonEdge p2uc__process____source = (EMoflonEdge) result3_green[31];
+				// EMoflonEdge p2uc__useCase____target = (EMoflonEdge) result3_green[32];
 
 				// solve CSP
 				Object[] result4_bindingAndBlack = LastStepInAltFlowImpl
-						.pattern_LastStepInAltFlow_2_4_bindingAndBlackFBBBBBBBBBBBBB(this, isApplicableMatch, alt,
-								gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs);
+						.pattern_LastStepInAltFlow_2_4_bindingAndBlackFBBBBBBBBBBBBBBB(this, isApplicableMatch, alt,
+								gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs, useCase, p2uc);
 				if (result4_bindingAndBlack == null) {
 					throw new RuntimeException("Pattern matching in node [solve CSP] failed." + " Variables: "
 							+ "[this] = " + this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ", "
 							+ "[alt] = " + alt + ", " + "[gwStep] = " + gwStep + ", " + "[flow] = " + flow + ", "
 							+ "[process] = " + process + ", " + "[gw] = " + gw + ", " + "[gcw] = " + gcw + ", "
 							+ "[node] = " + node + ", " + "[sf] = " + sf + ", " + "[step] = " + step + ", " + "[n2s] = "
-							+ n2s + ", " + "[gw2gs] = " + gw2gs + ".");
+							+ n2s + ", " + "[gw2gs] = " + gw2gs + ", " + "[useCase] = " + useCase + ", " + "[p2uc] = "
+							+ p2uc + ".");
 				}
 				CSP csp = (CSP) result4_bindingAndBlack[0];
 				// check CSP
@@ -368,7 +379,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 	 */
 	public CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, StepAlternative alt, ChoiceStep gwStep,
 			AlternativeFlow flow, SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, SequenceFlow sf,
-			Step step, FN2S n2s, GW2S gw2gs) {// Create CSP
+			Step step, FN2S n2s, GW2S gw2gs, UseCase useCase, P2UC p2uc) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
 
@@ -394,6 +405,8 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		isApplicableMatch.registerObject("step", step);
 		isApplicableMatch.registerObject("n2s", n2s);
 		isApplicableMatch.registerObject("gw2gs", gw2gs);
+		isApplicableMatch.registerObject("useCase", useCase);
+		isApplicableMatch.registerObject("p2uc", p2uc);
 		return csp;
 	}
 
@@ -413,7 +426,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 	 */
 	public void registerObjects_FWD(PerformRuleResult ruleresult, EObject alt, EObject gwStep, EObject flow,
 			EObject process, EObject gw, EObject gcw, EObject node, EObject sf, EObject step, EObject n2s,
-			EObject gw2gs) {
+			EObject gw2gs, EObject useCase, EObject p2uc) {
 		ruleresult.registerObject("alt", alt);
 		ruleresult.registerObject("gwStep", gwStep);
 		ruleresult.registerObject("flow", flow);
@@ -425,6 +438,8 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		ruleresult.registerObject("step", step);
 		ruleresult.registerObject("n2s", n2s);
 		ruleresult.registerObject("gw2gs", gw2gs);
+		ruleresult.registerObject("useCase", useCase);
+		ruleresult.registerObject("p2uc", p2uc);
 
 	}
 
@@ -443,55 +458,61 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 	 * @generated
 	 */
 	public boolean isAppropriate_BWD(Match match, StepAlternative alt, ChoiceStep gwStep, AlternativeFlow flow,
-			Step step) {
+			Step step, UseCase useCase) {
 		// initial bindings
-		Object[] result1_black = LastStepInAltFlowImpl.pattern_LastStepInAltFlow_10_1_blackBBBBBB(this, match, alt,
-				gwStep, flow, step);
+		Object[] result1_black = LastStepInAltFlowImpl.pattern_LastStepInAltFlow_10_1_blackBBBBBBB(this, match, alt,
+				gwStep, flow, step, useCase);
 		if (result1_black == null) {
-			throw new RuntimeException("Pattern matching in node [initial bindings] failed." + " Variables: "
-					+ "[this] = " + this + ", " + "[match] = " + match + ", " + "[alt] = " + alt + ", " + "[gwStep] = "
-					+ gwStep + ", " + "[flow] = " + flow + ", " + "[step] = " + step + ".");
+			throw new RuntimeException(
+					"Pattern matching in node [initial bindings] failed." + " Variables: " + "[this] = " + this + ", "
+							+ "[match] = " + match + ", " + "[alt] = " + alt + ", " + "[gwStep] = " + gwStep + ", "
+							+ "[flow] = " + flow + ", " + "[step] = " + step + ", " + "[useCase] = " + useCase + ".");
 		}
 
 		// Solve CSP
 		Object[] result2_bindingAndBlack = LastStepInAltFlowImpl
-				.pattern_LastStepInAltFlow_10_2_bindingAndBlackFBBBBBB(this, match, alt, gwStep, flow, step);
+				.pattern_LastStepInAltFlow_10_2_bindingAndBlackFBBBBBBB(this, match, alt, gwStep, flow, step, useCase);
 		if (result2_bindingAndBlack == null) {
 			throw new RuntimeException("Pattern matching in node [Solve CSP] failed." + " Variables: " + "[this] = "
 					+ this + ", " + "[match] = " + match + ", " + "[alt] = " + alt + ", " + "[gwStep] = " + gwStep
-					+ ", " + "[flow] = " + flow + ", " + "[step] = " + step + ".");
+					+ ", " + "[flow] = " + flow + ", " + "[step] = " + step + ", " + "[useCase] = " + useCase + ".");
 		}
 		CSP csp = (CSP) result2_bindingAndBlack[0];
 		// Check CSP
 		if (LastStepInAltFlowImpl.pattern_LastStepInAltFlow_10_3_expressionFBB(this, csp)) {
 
 			// collect elements to be translated
-			Object[] result4_black = LastStepInAltFlowImpl.pattern_LastStepInAltFlow_10_4_blackBBBBB(match, alt, gwStep,
-					flow, step);
+			Object[] result4_black = LastStepInAltFlowImpl.pattern_LastStepInAltFlow_10_4_blackBBBBBB(match, alt,
+					gwStep, flow, step, useCase);
 			if (result4_black == null) {
 				throw new RuntimeException("Pattern matching in node [collect elements to be translated] failed."
 						+ " Variables: " + "[match] = " + match + ", " + "[alt] = " + alt + ", " + "[gwStep] = "
-						+ gwStep + ", " + "[flow] = " + flow + ", " + "[step] = " + step + ".");
+						+ gwStep + ", " + "[flow] = " + flow + ", " + "[step] = " + step + ", " + "[useCase] = "
+						+ useCase + ".");
 			}
 			LastStepInAltFlowImpl.pattern_LastStepInAltFlow_10_4_greenBBBBBFF(match, alt, gwStep, flow, step);
 			// EMoflonEdge alt__gwStep______hasContinue = (EMoflonEdge) result4_green[5];
 			// EMoflonEdge flow__step______last = (EMoflonEdge) result4_green[6];
 
 			// collect context elements
-			Object[] result5_black = LastStepInAltFlowImpl.pattern_LastStepInAltFlow_10_5_blackBBBBB(match, alt, gwStep,
-					flow, step);
+			Object[] result5_black = LastStepInAltFlowImpl.pattern_LastStepInAltFlow_10_5_blackBBBBBB(match, alt,
+					gwStep, flow, step, useCase);
 			if (result5_black == null) {
-				throw new RuntimeException("Pattern matching in node [collect context elements] failed."
-						+ " Variables: " + "[match] = " + match + ", " + "[alt] = " + alt + ", " + "[gwStep] = "
-						+ gwStep + ", " + "[flow] = " + flow + ", " + "[step] = " + step + ".");
+				throw new RuntimeException(
+						"Pattern matching in node [collect context elements] failed." + " Variables: " + "[match] = "
+								+ match + ", " + "[alt] = " + alt + ", " + "[gwStep] = " + gwStep + ", " + "[flow] = "
+								+ flow + ", " + "[step] = " + step + ", " + "[useCase] = " + useCase + ".");
 			}
-			LastStepInAltFlowImpl.pattern_LastStepInAltFlow_10_5_greenBBBBBFFF(match, alt, gwStep, flow, step);
-			// EMoflonEdge alt__flow____ref = (EMoflonEdge) result5_green[5];
-			// EMoflonEdge gwStep__alt____stepAlternatives = (EMoflonEdge) result5_green[6];
-			// EMoflonEdge flow__step____steps = (EMoflonEdge) result5_green[7];
+			LastStepInAltFlowImpl.pattern_LastStepInAltFlow_10_5_greenBBBBBBFFFF(match, alt, gwStep, flow, step,
+					useCase);
+					// EMoflonEdge alt__flow____ref = (EMoflonEdge) result5_green[6];
+					// EMoflonEdge gwStep__alt____stepAlternatives = (EMoflonEdge) result5_green[7];
+					// EMoflonEdge flow__step____steps = (EMoflonEdge) result5_green[8];
+					// EMoflonEdge useCase__flow____flows = (EMoflonEdge) result5_green[9];
 
 			// register objects to match
-			LastStepInAltFlowImpl.pattern_LastStepInAltFlow_10_6_expressionBBBBBB(this, match, alt, gwStep, flow, step);
+			LastStepInAltFlowImpl.pattern_LastStepInAltFlow_10_6_expressionBBBBBBB(this, match, alt, gwStep, flow, step,
+					useCase);
 			return LastStepInAltFlowImpl.pattern_LastStepInAltFlow_10_7_expressionF();
 		} else {
 			return LastStepInAltFlowImpl.pattern_LastStepInAltFlow_10_8_expressionF();
@@ -507,7 +528,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 	public PerformRuleResult perform_BWD(IsApplicableMatch isApplicableMatch) {
 		// perform transformation
 		Object[] result1_bindingAndBlack = LastStepInAltFlowImpl
-				.pattern_LastStepInAltFlow_11_1_bindingAndBlackFFFFFFFFFFBFB(this, isApplicableMatch);
+				.pattern_LastStepInAltFlow_11_1_bindingAndBlackFFFFFFFFFFFFBFB(this, isApplicableMatch);
 		if (result1_bindingAndBlack == null) {
 			throw new RuntimeException("Pattern matching in node [perform transformation] failed." + " Variables: "
 					+ "[this] = " + this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ".");
@@ -522,7 +543,9 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		Step step = (Step) result1_bindingAndBlack[7];
 		FN2S n2s = (FN2S) result1_bindingAndBlack[8];
 		GW2S gw2gs = (GW2S) result1_bindingAndBlack[9];
-		// CSP csp = (CSP) result1_bindingAndBlack[11];
+		UseCase useCase = (UseCase) result1_bindingAndBlack[10];
+		P2UC p2uc = (P2UC) result1_bindingAndBlack[11];
+		// CSP csp = (CSP) result1_bindingAndBlack[13];
 		Object[] result1_green = LastStepInAltFlowImpl.pattern_LastStepInAltFlow_11_1_greenBBBF(process, gcw, node);
 		SequenceFlow sf = (SequenceFlow) result1_green[3];
 
@@ -536,14 +559,15 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		PerformRuleResult ruleresult = (PerformRuleResult) result2_green[0];
 
 		// bookkeeping for edges
-		Object[] result3_black = LastStepInAltFlowImpl.pattern_LastStepInAltFlow_11_3_blackBBBBBBBBBBBB(ruleresult, alt,
-				gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs);
+		Object[] result3_black = LastStepInAltFlowImpl.pattern_LastStepInAltFlow_11_3_blackBBBBBBBBBBBBBB(ruleresult,
+				alt, gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs, useCase, p2uc);
 		if (result3_black == null) {
 			throw new RuntimeException("Pattern matching in node [bookkeeping for edges] failed." + " Variables: "
 					+ "[ruleresult] = " + ruleresult + ", " + "[alt] = " + alt + ", " + "[gwStep] = " + gwStep + ", "
 					+ "[flow] = " + flow + ", " + "[process] = " + process + ", " + "[gw] = " + gw + ", " + "[gcw] = "
 					+ gcw + ", " + "[node] = " + node + ", " + "[sf] = " + sf + ", " + "[step] = " + step + ", "
-					+ "[n2s] = " + n2s + ", " + "[gw2gs] = " + gw2gs + ".");
+					+ "[n2s] = " + n2s + ", " + "[gw2gs] = " + gw2gs + ", " + "[useCase] = " + useCase + ", "
+					+ "[p2uc] = " + p2uc + ".");
 		}
 		LastStepInAltFlowImpl.pattern_LastStepInAltFlow_11_3_greenBBBBBBBBBFFFFFFF(ruleresult, alt, gwStep, flow,
 				process, gcw, node, sf, step);
@@ -557,8 +581,8 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 
 		// perform postprocessing story node is empty
 		// register objects
-		LastStepInAltFlowImpl.pattern_LastStepInAltFlow_11_5_expressionBBBBBBBBBBBBB(this, ruleresult, alt, gwStep,
-				flow, process, gw, gcw, node, sf, step, n2s, gw2gs);
+		LastStepInAltFlowImpl.pattern_LastStepInAltFlow_11_5_expressionBBBBBBBBBBBBBBB(this, ruleresult, alt, gwStep,
+				flow, process, gw, gcw, node, sf, step, n2s, gw2gs, useCase, p2uc);
 		return LastStepInAltFlowImpl.pattern_LastStepInAltFlow_11_6_expressionFB(ruleresult);
 	}
 
@@ -581,7 +605,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		IsApplicableRuleResult ruleresult = (IsApplicableRuleResult) result1_green[1];
 
 		// ForEach core match
-		Object[] result2_binding = LastStepInAltFlowImpl.pattern_LastStepInAltFlow_12_2_bindingFFFFB(match);
+		Object[] result2_binding = LastStepInAltFlowImpl.pattern_LastStepInAltFlow_12_2_bindingFFFFFB(match);
 		if (result2_binding == null) {
 			throw new RuntimeException(
 					"Binding in node core match failed." + " Variables: " + "[match] = " + match + ".");
@@ -590,46 +614,51 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		ChoiceStep gwStep = (ChoiceStep) result2_binding[1];
 		AlternativeFlow flow = (AlternativeFlow) result2_binding[2];
 		Step step = (Step) result2_binding[3];
-		for (Object[] result2_black : LastStepInAltFlowImpl.pattern_LastStepInAltFlow_12_2_blackBBBFFBFFB(alt, gwStep,
-				flow, step, match)) {
-			Gateway gw = (Gateway) result2_black[3];
-			FlowNode node = (FlowNode) result2_black[4];
-			FN2S n2s = (FN2S) result2_black[6];
-			GW2S gw2gs = (GW2S) result2_black[7];
+		UseCase useCase = (UseCase) result2_binding[4];
+		for (Object[] result2_black : LastStepInAltFlowImpl.pattern_LastStepInAltFlow_12_2_blackBBBFFFBFFBFB(alt,
+				gwStep, flow, step, useCase, match)) {
+			SimpleBPMN.Process process = (SimpleBPMN.Process) result2_black[3];
+			Gateway gw = (Gateway) result2_black[4];
+			FlowNode node = (FlowNode) result2_black[5];
+			FN2S n2s = (FN2S) result2_black[7];
+			GW2S gw2gs = (GW2S) result2_black[8];
+			P2UC p2uc = (P2UC) result2_black[10];
 			// ForEach find context
-			for (Object[] result3_black : LastStepInAltFlowImpl.pattern_LastStepInAltFlow_12_3_blackBBBFBFBBBB(alt,
-					gwStep, flow, gw, node, step, n2s, gw2gs)) {
-				SimpleBPMN.Process process = (SimpleBPMN.Process) result3_black[3];
+			for (Object[] result3_black : LastStepInAltFlowImpl.pattern_LastStepInAltFlow_12_3_blackBBBBBFBBBBBB(alt,
+					gwStep, flow, process, gw, node, step, n2s, gw2gs, useCase, p2uc)) {
 				Gateway gcw = (Gateway) result3_black[5];
 				Object[] result3_green = LastStepInAltFlowImpl
-						.pattern_LastStepInAltFlow_12_3_greenBBBBBBBBBBFFFFFFFFFFFFFF(alt, gwStep, flow, process, gw,
-								gcw, node, step, n2s, gw2gs);
-				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[10];
-				// EMoflonEdge alt__flow____ref = (EMoflonEdge) result3_green[11];
-				// EMoflonEdge alt__gwStep______hasContinue = (EMoflonEdge) result3_green[12];
-				// EMoflonEdge gwStep__alt____stepAlternatives = (EMoflonEdge) result3_green[13];
-				// EMoflonEdge process__gw____flowElements = (EMoflonEdge) result3_green[14];
-				// EMoflonEdge process__gcw____flowElements = (EMoflonEdge) result3_green[15];
-				// EMoflonEdge process__node____flowElements = (EMoflonEdge) result3_green[16];
-				// EMoflonEdge gw__gcw______conv = (EMoflonEdge) result3_green[17];
-				// EMoflonEdge flow__step____steps = (EMoflonEdge) result3_green[18];
-				// EMoflonEdge flow__step______last = (EMoflonEdge) result3_green[19];
-				// EMoflonEdge n2s__node____source = (EMoflonEdge) result3_green[20];
-				// EMoflonEdge n2s__step____target = (EMoflonEdge) result3_green[21];
-				// EMoflonEdge gw2gs__gw____source = (EMoflonEdge) result3_green[22];
-				// EMoflonEdge gw2gs__gwStep____target = (EMoflonEdge) result3_green[23];
+						.pattern_LastStepInAltFlow_12_3_greenBBBBBBBBBBBBFFFFFFFFFFFFFFFFF(alt, gwStep, flow, process,
+								gw, gcw, node, step, n2s, gw2gs, useCase, p2uc);
+				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[12];
+				// EMoflonEdge alt__flow____ref = (EMoflonEdge) result3_green[13];
+				// EMoflonEdge alt__gwStep______hasContinue = (EMoflonEdge) result3_green[14];
+				// EMoflonEdge gwStep__alt____stepAlternatives = (EMoflonEdge) result3_green[15];
+				// EMoflonEdge process__gw____flowElements = (EMoflonEdge) result3_green[16];
+				// EMoflonEdge process__gcw____flowElements = (EMoflonEdge) result3_green[17];
+				// EMoflonEdge process__node____flowElements = (EMoflonEdge) result3_green[18];
+				// EMoflonEdge gw__gcw______conv = (EMoflonEdge) result3_green[19];
+				// EMoflonEdge flow__step____steps = (EMoflonEdge) result3_green[20];
+				// EMoflonEdge flow__step______last = (EMoflonEdge) result3_green[21];
+				// EMoflonEdge n2s__node____source = (EMoflonEdge) result3_green[22];
+				// EMoflonEdge n2s__step____target = (EMoflonEdge) result3_green[23];
+				// EMoflonEdge gw2gs__gw____source = (EMoflonEdge) result3_green[24];
+				// EMoflonEdge gw2gs__gwStep____target = (EMoflonEdge) result3_green[25];
+				// EMoflonEdge useCase__flow____flows = (EMoflonEdge) result3_green[26];
+				// EMoflonEdge p2uc__process____source = (EMoflonEdge) result3_green[27];
+				// EMoflonEdge p2uc__useCase____target = (EMoflonEdge) result3_green[28];
 
 				// solve CSP
 				Object[] result4_bindingAndBlack = LastStepInAltFlowImpl
-						.pattern_LastStepInAltFlow_12_4_bindingAndBlackFBBBBBBBBBBBB(this, isApplicableMatch, alt,
-								gwStep, flow, process, gw, gcw, node, step, n2s, gw2gs);
+						.pattern_LastStepInAltFlow_12_4_bindingAndBlackFBBBBBBBBBBBBBB(this, isApplicableMatch, alt,
+								gwStep, flow, process, gw, gcw, node, step, n2s, gw2gs, useCase, p2uc);
 				if (result4_bindingAndBlack == null) {
 					throw new RuntimeException("Pattern matching in node [solve CSP] failed." + " Variables: "
 							+ "[this] = " + this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ", "
 							+ "[alt] = " + alt + ", " + "[gwStep] = " + gwStep + ", " + "[flow] = " + flow + ", "
 							+ "[process] = " + process + ", " + "[gw] = " + gw + ", " + "[gcw] = " + gcw + ", "
 							+ "[node] = " + node + ", " + "[step] = " + step + ", " + "[n2s] = " + n2s + ", "
-							+ "[gw2gs] = " + gw2gs + ".");
+							+ "[gw2gs] = " + gw2gs + ", " + "[useCase] = " + useCase + ", " + "[p2uc] = " + p2uc + ".");
 				}
 				CSP csp = (CSP) result4_bindingAndBlack[0];
 				// check CSP
@@ -660,11 +689,12 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 	 * @generated
 	 */
 	public void registerObjectsToMatch_BWD(Match match, StepAlternative alt, ChoiceStep gwStep, AlternativeFlow flow,
-			Step step) {
+			Step step, UseCase useCase) {
 		match.registerObject("alt", alt);
 		match.registerObject("gwStep", gwStep);
 		match.registerObject("flow", flow);
 		match.registerObject("step", step);
+		match.registerObject("useCase", useCase);
 
 	}
 
@@ -674,7 +704,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 	 * @generated
 	 */
 	public CSP isAppropriate_solveCsp_BWD(Match match, StepAlternative alt, ChoiceStep gwStep, AlternativeFlow flow,
-			Step step) {// Create CSP
+			Step step, UseCase useCase) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 
 		// Create literals
@@ -705,7 +735,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 	 */
 	public CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, StepAlternative alt, ChoiceStep gwStep,
 			AlternativeFlow flow, SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, Step step,
-			FN2S n2s, GW2S gw2gs) {// Create CSP
+			FN2S n2s, GW2S gw2gs, UseCase useCase, P2UC p2uc) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
 
@@ -730,6 +760,8 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		isApplicableMatch.registerObject("step", step);
 		isApplicableMatch.registerObject("n2s", n2s);
 		isApplicableMatch.registerObject("gw2gs", gw2gs);
+		isApplicableMatch.registerObject("useCase", useCase);
+		isApplicableMatch.registerObject("p2uc", p2uc);
 		return csp;
 	}
 
@@ -749,7 +781,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 	 */
 	public void registerObjects_BWD(PerformRuleResult ruleresult, EObject alt, EObject gwStep, EObject flow,
 			EObject process, EObject gw, EObject gcw, EObject node, EObject sf, EObject step, EObject n2s,
-			EObject gw2gs) {
+			EObject gw2gs, EObject useCase, EObject p2uc) {
 		ruleresult.registerObject("alt", alt);
 		ruleresult.registerObject("gwStep", gwStep);
 		ruleresult.registerObject("flow", flow);
@@ -761,6 +793,8 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		ruleresult.registerObject("step", step);
 		ruleresult.registerObject("n2s", n2s);
 		ruleresult.registerObject("gw2gs", gw2gs);
+		ruleresult.registerObject("useCase", useCase);
+		ruleresult.registerObject("p2uc", p2uc);
 
 	}
 
@@ -778,7 +812,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_125(EMoflonEdge _edge___hasContinue) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_413(EMoflonEdge _edge___hasContinue) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = LastStepInAltFlowImpl
 				.pattern_LastStepInAltFlow_20_1_bindingAndBlackFFB(this);
@@ -793,17 +827,18 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 
 		// ForEach test core match and DECs
 		for (Object[] result2_black : LastStepInAltFlowImpl
-				.pattern_LastStepInAltFlow_20_2_blackFFFFB(_edge___hasContinue)) {
+				.pattern_LastStepInAltFlow_20_2_blackFFFFFB(_edge___hasContinue)) {
 			StepAlternative alt = (StepAlternative) result2_black[0];
 			ChoiceStep gwStep = (ChoiceStep) result2_black[1];
 			AlternativeFlow flow = (AlternativeFlow) result2_black[2];
 			Step step = (Step) result2_black[3];
+			UseCase useCase = (UseCase) result2_black[4];
 			Object[] result2_green = LastStepInAltFlowImpl.pattern_LastStepInAltFlow_20_2_greenFB(__eClass);
 			Match match = (Match) result2_green[0];
 
 			// bookkeeping with generic isAppropriate method
-			if (LastStepInAltFlowImpl.pattern_LastStepInAltFlow_20_3_expressionFBBBBBB(this, match, alt, gwStep, flow,
-					step)) {
+			if (LastStepInAltFlowImpl.pattern_LastStepInAltFlow_20_3_expressionFBBBBBBB(this, match, alt, gwStep, flow,
+					step, useCase)) {
 				// Ensure that the correct types of elements are matched
 				if (LastStepInAltFlowImpl.pattern_LastStepInAltFlow_20_4_expressionFBB(this, match)) {
 
@@ -832,7 +867,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_396(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_1298(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = LastStepInAltFlowImpl
 				.pattern_LastStepInAltFlow_21_1_bindingAndBlackFFB(this);
@@ -887,7 +922,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_397(EMoflonEdge _edge_sourceRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_1299(EMoflonEdge _edge_sourceRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = LastStepInAltFlowImpl
 				.pattern_LastStepInAltFlow_22_1_bindingAndBlackFFB(this);
@@ -942,7 +977,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_398(EMoflonEdge _edge_outgoing) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_1300(EMoflonEdge _edge_outgoing) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = LastStepInAltFlowImpl
 				.pattern_LastStepInAltFlow_23_1_bindingAndBlackFFB(this);
@@ -997,7 +1032,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_399(EMoflonEdge _edge_targetRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_1301(EMoflonEdge _edge_targetRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = LastStepInAltFlowImpl
 				.pattern_LastStepInAltFlow_24_1_bindingAndBlackFFB(this);
@@ -1052,7 +1087,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_400(EMoflonEdge _edge_incoming) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_1302(EMoflonEdge _edge_incoming) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = LastStepInAltFlowImpl
 				.pattern_LastStepInAltFlow_25_1_bindingAndBlackFFB(this);
@@ -1107,7 +1142,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_126(EMoflonEdge _edge___last) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_414(EMoflonEdge _edge___last) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = LastStepInAltFlowImpl
 				.pattern_LastStepInAltFlow_26_1_bindingAndBlackFFB(this);
@@ -1121,17 +1156,18 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		EObjectContainer __result = (EObjectContainer) result1_green[0];
 
 		// ForEach test core match and DECs
-		for (Object[] result2_black : LastStepInAltFlowImpl.pattern_LastStepInAltFlow_26_2_blackFFFFB(_edge___last)) {
+		for (Object[] result2_black : LastStepInAltFlowImpl.pattern_LastStepInAltFlow_26_2_blackFFFFFB(_edge___last)) {
 			StepAlternative alt = (StepAlternative) result2_black[0];
 			ChoiceStep gwStep = (ChoiceStep) result2_black[1];
 			AlternativeFlow flow = (AlternativeFlow) result2_black[2];
 			Step step = (Step) result2_black[3];
+			UseCase useCase = (UseCase) result2_black[4];
 			Object[] result2_green = LastStepInAltFlowImpl.pattern_LastStepInAltFlow_26_2_greenFB(__eClass);
 			Match match = (Match) result2_green[0];
 
 			// bookkeeping with generic isAppropriate method
-			if (LastStepInAltFlowImpl.pattern_LastStepInAltFlow_26_3_expressionFBBBBBB(this, match, alt, gwStep, flow,
-					step)) {
+			if (LastStepInAltFlowImpl.pattern_LastStepInAltFlow_26_3_expressionFBBBBBBB(this, match, alt, gwStep, flow,
+					step, useCase)) {
 				// Ensure that the correct types of elements are matched
 				if (LastStepInAltFlowImpl.pattern_LastStepInAltFlow_26_4_expressionFBB(this, match)) {
 
@@ -1210,6 +1246,14 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		Optional<TripleMatchNodeMapping> matchForGw2gs = __tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("gw2gs")).findAny();
 		Bpmn2UseCase.GW2S gw2gs = (Bpmn2UseCase.GW2S) matchForGw2gs.get().getNode();
+
+		Optional<TripleMatchNodeMapping> matchForUseCase = __tripleMatch.getNodeMappings().stream()
+				.filter(nm -> nm.getNodeName().equals("useCase")).findAny();
+		SimpleUseCase.UseCase useCase = (SimpleUseCase.UseCase) matchForUseCase.get().getNode();
+
+		Optional<TripleMatchNodeMapping> matchForP2uc = __tripleMatch.getNodeMappings().stream()
+				.filter(nm -> nm.getNodeName().equals("p2uc")).findAny();
+		Bpmn2UseCase.P2UC p2uc = (Bpmn2UseCase.P2UC) matchForP2uc.get().getNode();
 
 		if (!(gw.isIsDiverging() == true)) {
 			ruleResult.setSuccess(false);
@@ -1302,6 +1346,14 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 				.filter(nm -> nm.getNodeName().equals("gw2gs")).findAny();
 		Bpmn2UseCase.GW2S gw2gs = (Bpmn2UseCase.GW2S) matchForGw2gs.get().getNode();
 
+		Optional<TripleMatchNodeMapping> matchForUseCase = __tripleMatch.getNodeMappings().stream()
+				.filter(nm -> nm.getNodeName().equals("useCase")).findAny();
+		SimpleUseCase.UseCase useCase = (SimpleUseCase.UseCase) matchForUseCase.get().getNode();
+
+		Optional<TripleMatchNodeMapping> matchForP2uc = __tripleMatch.getNodeMappings().stream()
+				.filter(nm -> nm.getNodeName().equals("p2uc")).findAny();
+		Bpmn2UseCase.P2UC p2uc = (Bpmn2UseCase.P2UC) matchForP2uc.get().getNode();
+
 		if (!(gw.isIsDiverging() == true)) {
 			ruleResult.setSuccess(false);
 			return ruleResult;
@@ -1353,7 +1405,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		IsApplicableRuleResult result = (IsApplicableRuleResult) result1_green[0];
 
 		// ForEach match context
-		Object[] result2_binding = LastStepInAltFlowImpl.pattern_LastStepInAltFlow_29_2_bindingFFFFFFFFFBB(targetMatch,
+		Object[] result2_binding = LastStepInAltFlowImpl.pattern_LastStepInAltFlow_29_2_bindingFFFFFFFFFFBB(targetMatch,
 				sourceMatch);
 		if (result2_binding == null) {
 			throw new RuntimeException("Binding in node match context failed." + " Variables: " + "[targetMatch] = "
@@ -1368,18 +1420,22 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		FlowNode node = (FlowNode) result2_binding[6];
 		SequenceFlow sf = (SequenceFlow) result2_binding[7];
 		Step step = (Step) result2_binding[8];
-		for (Object[] result2_black : LastStepInAltFlowImpl.pattern_LastStepInAltFlow_29_2_blackBBBBBBBBBFFBB(alt,
-				gwStep, flow, process, gw, gcw, node, sf, step, sourceMatch, targetMatch)) {
+		UseCase useCase = (UseCase) result2_binding[9];
+		for (Object[] result2_black : LastStepInAltFlowImpl.pattern_LastStepInAltFlow_29_2_blackBBBBBBBBBFFBFBB(alt,
+				gwStep, flow, process, gw, gcw, node, sf, step, useCase, sourceMatch, targetMatch)) {
 			FN2S n2s = (FN2S) result2_black[9];
 			GW2S gw2gs = (GW2S) result2_black[10];
-			Object[] result2_green = LastStepInAltFlowImpl.pattern_LastStepInAltFlow_29_2_greenBBBBBBBBBBBBBF(alt,
-					gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs, sourceMatch, targetMatch);
-			IsApplicableMatchCC isApplicableMatch = (IsApplicableMatchCC) result2_green[13];
+			P2UC p2uc = (P2UC) result2_black[12];
+			Object[] result2_green = LastStepInAltFlowImpl.pattern_LastStepInAltFlow_29_2_greenBBBBBBBBBBBBBBBF(alt,
+					gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs, useCase, p2uc, sourceMatch,
+					targetMatch);
+			IsApplicableMatchCC isApplicableMatch = (IsApplicableMatchCC) result2_green[15];
 
 			// check csp
 			Object[] result3_bindingAndBlack = LastStepInAltFlowImpl
-					.pattern_LastStepInAltFlow_29_3_bindingAndBlackFBBBBBBBBBBBBBBB(this, isApplicableMatch, alt,
-							gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs, sourceMatch, targetMatch);
+					.pattern_LastStepInAltFlow_29_3_bindingAndBlackFBBBBBBBBBBBBBBBBB(this, isApplicableMatch, alt,
+							gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs, useCase, p2uc, sourceMatch,
+							targetMatch);
 			if (result3_bindingAndBlack != null) {
 				// CSP csp = (CSP) result3_bindingAndBlack[0];
 
@@ -1407,7 +1463,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 	 */
 	public CSP isApplicable_solveCsp_CC(IsApplicableMatchCC isApplicableMatch, StepAlternative alt, ChoiceStep gwStep,
 			AlternativeFlow flow, SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, SequenceFlow sf,
-			Step step, FN2S n2s, GW2S gw2gs, Match sourceMatch, Match targetMatch) {// Create CSP
+			Step step, FN2S n2s, GW2S gw2gs, UseCase useCase, P2UC p2uc, Match sourceMatch, Match targetMatch) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
 
@@ -1433,6 +1489,8 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		isApplicableMatch.registerObject("step", step);
 		isApplicableMatch.registerObject("n2s", n2s);
 		isApplicableMatch.registerObject("gw2gs", gw2gs);
+		isApplicableMatch.registerObject("useCase", useCase);
+		isApplicableMatch.registerObject("p2uc", p2uc);
 		return csp;
 	}
 
@@ -1460,7 +1518,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 
 		// create correspondence links
 		Object[] result2_bindingAndBlack = LastStepInAltFlowImpl
-				.pattern_LastStepInAltFlow_32_2_bindingAndBlackFFFFFFFFFFFB(isApplicableMatch);
+				.pattern_LastStepInAltFlow_32_2_bindingAndBlackFFFFFFFFFFFFFB(isApplicableMatch);
 		if (result2_bindingAndBlack == null) {
 			throw new RuntimeException("Pattern matching in node [create correspondence links] failed." + " Variables: "
 					+ "[isApplicableMatch] = " + isApplicableMatch + ".");
@@ -1476,6 +1534,8 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		// Step step = (Step) result2_bindingAndBlack[8];
 		// FN2S n2s = (FN2S) result2_bindingAndBlack[9];
 		// GW2S gw2gs = (GW2S) result2_bindingAndBlack[10];
+		// UseCase useCase = (UseCase) result2_bindingAndBlack[11];
+		// P2UC p2uc = (P2UC) result2_bindingAndBlack[12];
 		Object[] result2_green = LastStepInAltFlowImpl.pattern_LastStepInAltFlow_32_2_greenF();
 		PerformRuleResult result = (PerformRuleResult) result2_green[0];
 
@@ -1500,7 +1560,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 
 		// ForEach is applicable core
 		for (Object[] result2_black : LastStepInAltFlowImpl
-				.pattern_LastStepInAltFlow_33_2_blackFFFFFFFFFFFBB(ruleEntryContainer, ruleResult)) {
+				.pattern_LastStepInAltFlow_33_2_blackFFFFFFFFFFFFFBB(ruleEntryContainer, ruleResult)) {
 			// RuleEntryList n2sList = (RuleEntryList) result2_black[0];
 			StepAlternative alt = (StepAlternative) result2_black[1];
 			AlternativeFlow flow = (AlternativeFlow) result2_black[2];
@@ -1512,36 +1572,39 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 			Gateway gcw = (Gateway) result2_black[8];
 			GW2S gw2gs = (GW2S) result2_black[9];
 			ChoiceStep gwStep = (ChoiceStep) result2_black[10];
+			P2UC p2uc = (P2UC) result2_black[11];
+			UseCase useCase = (UseCase) result2_black[12];
 
 			// solve CSP
 			Object[] result3_bindingAndBlack = LastStepInAltFlowImpl
-					.pattern_LastStepInAltFlow_33_3_bindingAndBlackFBBBBBBBBBBBBB(this, isApplicableMatch, alt, gwStep,
-							flow, process, gw, gcw, node, step, n2s, gw2gs, ruleResult);
+					.pattern_LastStepInAltFlow_33_3_bindingAndBlackFBBBBBBBBBBBBBBB(this, isApplicableMatch, alt,
+							gwStep, flow, process, gw, gcw, node, step, n2s, gw2gs, useCase, p2uc, ruleResult);
 			if (result3_bindingAndBlack == null) {
 				throw new RuntimeException("Pattern matching in node [solve CSP] failed." + " Variables: " + "[this] = "
 						+ this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ", " + "[alt] = " + alt + ", "
 						+ "[gwStep] = " + gwStep + ", " + "[flow] = " + flow + ", " + "[process] = " + process + ", "
 						+ "[gw] = " + gw + ", " + "[gcw] = " + gcw + ", " + "[node] = " + node + ", " + "[step] = "
-						+ step + ", " + "[n2s] = " + n2s + ", " + "[gw2gs] = " + gw2gs + ", " + "[ruleResult] = "
-						+ ruleResult + ".");
+						+ step + ", " + "[n2s] = " + n2s + ", " + "[gw2gs] = " + gw2gs + ", " + "[useCase] = " + useCase
+						+ ", " + "[p2uc] = " + p2uc + ", " + "[ruleResult] = " + ruleResult + ".");
 			}
 			CSP csp = (CSP) result3_bindingAndBlack[0];
 			// check CSP
 			if (LastStepInAltFlowImpl.pattern_LastStepInAltFlow_33_4_expressionFBB(this, csp)) {
 				// check nacs
-				Object[] result5_black = LastStepInAltFlowImpl.pattern_LastStepInAltFlow_33_5_blackBBBBBBBBBB(alt,
-						gwStep, flow, process, gw, gcw, node, step, n2s, gw2gs);
+				Object[] result5_black = LastStepInAltFlowImpl.pattern_LastStepInAltFlow_33_5_blackBBBBBBBBBBBB(alt,
+						gwStep, flow, process, gw, gcw, node, step, n2s, gw2gs, useCase, p2uc);
 				if (result5_black != null) {
 
 					// perform
-					Object[] result6_black = LastStepInAltFlowImpl.pattern_LastStepInAltFlow_33_6_blackBBBBBBBBBBB(alt,
-							gwStep, flow, process, gw, gcw, node, step, n2s, gw2gs, ruleResult);
+					Object[] result6_black = LastStepInAltFlowImpl.pattern_LastStepInAltFlow_33_6_blackBBBBBBBBBBBBB(
+							alt, gwStep, flow, process, gw, gcw, node, step, n2s, gw2gs, useCase, p2uc, ruleResult);
 					if (result6_black == null) {
 						throw new RuntimeException("Pattern matching in node [perform] failed." + " Variables: "
 								+ "[alt] = " + alt + ", " + "[gwStep] = " + gwStep + ", " + "[flow] = " + flow + ", "
 								+ "[process] = " + process + ", " + "[gw] = " + gw + ", " + "[gcw] = " + gcw + ", "
 								+ "[node] = " + node + ", " + "[step] = " + step + ", " + "[n2s] = " + n2s + ", "
-								+ "[gw2gs] = " + gw2gs + ", " + "[ruleResult] = " + ruleResult + ".");
+								+ "[gw2gs] = " + gw2gs + ", " + "[useCase] = " + useCase + ", " + "[p2uc] = " + p2uc
+								+ ", " + "[ruleResult] = " + ruleResult + ".");
 					}
 					LastStepInAltFlowImpl.pattern_LastStepInAltFlow_33_6_greenBBBBBBFBB(alt, gwStep, flow, process, gcw,
 							node, step, ruleResult);
@@ -1564,7 +1627,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 	 */
 	public CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, StepAlternative alt, ChoiceStep gwStep,
 			AlternativeFlow flow, SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, Step step,
-			FN2S n2s, GW2S gw2gs, ModelgeneratorRuleResult ruleResult) {// Create CSP
+			FN2S n2s, GW2S gw2gs, UseCase useCase, P2UC p2uc, ModelgeneratorRuleResult ruleResult) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
 
@@ -1589,6 +1652,8 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		isApplicableMatch.registerObject("step", step);
 		isApplicableMatch.registerObject("n2s", n2s);
 		isApplicableMatch.registerObject("gw2gs", gw2gs);
+		isApplicableMatch.registerObject("useCase", useCase);
+		isApplicableMatch.registerObject("p2uc", p2uc);
 		return csp;
 	}
 
@@ -1628,95 +1693,100 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 					(SequenceFlow) arguments.get(5));
 		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_CHECK_CSP_FWD__CSP:
 			return isAppropriate_checkCsp_FWD((CSP) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_STEPALTERNATIVE_CHOICESTEP_ALTERNATIVEFLOW_PROCESS_GATEWAY_GATEWAY_FLOWNODE_SEQUENCEFLOW_STEP_FN2S_GW2S:
+		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_STEPALTERNATIVE_CHOICESTEP_ALTERNATIVEFLOW_PROCESS_GATEWAY_GATEWAY_FLOWNODE_SEQUENCEFLOW_STEP_FN2S_GW2S_USECASE_P2UC:
 			return isApplicable_solveCsp_FWD((IsApplicableMatch) arguments.get(0), (StepAlternative) arguments.get(1),
 					(ChoiceStep) arguments.get(2), (AlternativeFlow) arguments.get(3),
 					(SimpleBPMN.Process) arguments.get(4), (Gateway) arguments.get(5), (Gateway) arguments.get(6),
 					(FlowNode) arguments.get(7), (SequenceFlow) arguments.get(8), (Step) arguments.get(9),
-					(FN2S) arguments.get(10), (GW2S) arguments.get(11));
+					(FN2S) arguments.get(10), (GW2S) arguments.get(11), (UseCase) arguments.get(12),
+					(P2UC) arguments.get(13));
 		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPLICABLE_CHECK_CSP_FWD__CSP:
 			return isApplicable_checkCsp_FWD((CSP) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_ALT_FLOW___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
+		case RulesPackage.LAST_STEP_IN_ALT_FLOW___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
 			registerObjects_FWD((PerformRuleResult) arguments.get(0), (EObject) arguments.get(1),
 					(EObject) arguments.get(2), (EObject) arguments.get(3), (EObject) arguments.get(4),
 					(EObject) arguments.get(5), (EObject) arguments.get(6), (EObject) arguments.get(7),
 					(EObject) arguments.get(8), (EObject) arguments.get(9), (EObject) arguments.get(10),
-					(EObject) arguments.get(11));
+					(EObject) arguments.get(11), (EObject) arguments.get(12), (EObject) arguments.get(13));
 			return null;
 		case RulesPackage.LAST_STEP_IN_ALT_FLOW___CHECK_TYPES_FWD__MATCH:
 			return checkTypes_FWD((Match) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_BWD__MATCH_STEPALTERNATIVE_CHOICESTEP_ALTERNATIVEFLOW_STEP:
+		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_BWD__MATCH_STEPALTERNATIVE_CHOICESTEP_ALTERNATIVEFLOW_STEP_USECASE:
 			return isAppropriate_BWD((Match) arguments.get(0), (StepAlternative) arguments.get(1),
-					(ChoiceStep) arguments.get(2), (AlternativeFlow) arguments.get(3), (Step) arguments.get(4));
+					(ChoiceStep) arguments.get(2), (AlternativeFlow) arguments.get(3), (Step) arguments.get(4),
+					(UseCase) arguments.get(5));
 		case RulesPackage.LAST_STEP_IN_ALT_FLOW___PERFORM_BWD__ISAPPLICABLEMATCH:
 			return perform_BWD((IsApplicableMatch) arguments.get(0));
 		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPLICABLE_BWD__MATCH:
 			return isApplicable_BWD((Match) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_ALT_FLOW___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_STEPALTERNATIVE_CHOICESTEP_ALTERNATIVEFLOW_STEP:
+		case RulesPackage.LAST_STEP_IN_ALT_FLOW___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_STEPALTERNATIVE_CHOICESTEP_ALTERNATIVEFLOW_STEP_USECASE:
 			registerObjectsToMatch_BWD((Match) arguments.get(0), (StepAlternative) arguments.get(1),
-					(ChoiceStep) arguments.get(2), (AlternativeFlow) arguments.get(3), (Step) arguments.get(4));
+					(ChoiceStep) arguments.get(2), (AlternativeFlow) arguments.get(3), (Step) arguments.get(4),
+					(UseCase) arguments.get(5));
 			return null;
-		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_STEPALTERNATIVE_CHOICESTEP_ALTERNATIVEFLOW_STEP:
+		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_STEPALTERNATIVE_CHOICESTEP_ALTERNATIVEFLOW_STEP_USECASE:
 			return isAppropriate_solveCsp_BWD((Match) arguments.get(0), (StepAlternative) arguments.get(1),
-					(ChoiceStep) arguments.get(2), (AlternativeFlow) arguments.get(3), (Step) arguments.get(4));
+					(ChoiceStep) arguments.get(2), (AlternativeFlow) arguments.get(3), (Step) arguments.get(4),
+					(UseCase) arguments.get(5));
 		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_CHECK_CSP_BWD__CSP:
 			return isAppropriate_checkCsp_BWD((CSP) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_STEPALTERNATIVE_CHOICESTEP_ALTERNATIVEFLOW_PROCESS_GATEWAY_GATEWAY_FLOWNODE_STEP_FN2S_GW2S:
+		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_STEPALTERNATIVE_CHOICESTEP_ALTERNATIVEFLOW_PROCESS_GATEWAY_GATEWAY_FLOWNODE_STEP_FN2S_GW2S_USECASE_P2UC:
 			return isApplicable_solveCsp_BWD((IsApplicableMatch) arguments.get(0), (StepAlternative) arguments.get(1),
 					(ChoiceStep) arguments.get(2), (AlternativeFlow) arguments.get(3),
 					(SimpleBPMN.Process) arguments.get(4), (Gateway) arguments.get(5), (Gateway) arguments.get(6),
 					(FlowNode) arguments.get(7), (Step) arguments.get(8), (FN2S) arguments.get(9),
-					(GW2S) arguments.get(10));
+					(GW2S) arguments.get(10), (UseCase) arguments.get(11), (P2UC) arguments.get(12));
 		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPLICABLE_CHECK_CSP_BWD__CSP:
 			return isApplicable_checkCsp_BWD((CSP) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_ALT_FLOW___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
+		case RulesPackage.LAST_STEP_IN_ALT_FLOW___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
 			registerObjects_BWD((PerformRuleResult) arguments.get(0), (EObject) arguments.get(1),
 					(EObject) arguments.get(2), (EObject) arguments.get(3), (EObject) arguments.get(4),
 					(EObject) arguments.get(5), (EObject) arguments.get(6), (EObject) arguments.get(7),
 					(EObject) arguments.get(8), (EObject) arguments.get(9), (EObject) arguments.get(10),
-					(EObject) arguments.get(11));
+					(EObject) arguments.get(11), (EObject) arguments.get(12), (EObject) arguments.get(13));
 			return null;
 		case RulesPackage.LAST_STEP_IN_ALT_FLOW___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_125__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_125((EMoflonEdge) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_396__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_396((EMoflonEdge) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_397__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_397((EMoflonEdge) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_398__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_398((EMoflonEdge) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_399__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_399((EMoflonEdge) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_400__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_400((EMoflonEdge) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_126__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_126((EMoflonEdge) arguments.get(0));
+		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_413__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_413((EMoflonEdge) arguments.get(0));
+		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_1298__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_1298((EMoflonEdge) arguments.get(0));
+		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_1299__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_1299((EMoflonEdge) arguments.get(0));
+		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_1300__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_1300((EMoflonEdge) arguments.get(0));
+		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_1301__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_1301((EMoflonEdge) arguments.get(0));
+		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_1302__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_1302((EMoflonEdge) arguments.get(0));
+		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_414__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_414((EMoflonEdge) arguments.get(0));
 		case RulesPackage.LAST_STEP_IN_ALT_FLOW___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.LAST_STEP_IN_ALT_FLOW___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
 			return checkAttributes_BWD((TripleMatch) arguments.get(0));
 		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPLICABLE_CC__MATCH_MATCH:
 			return isApplicable_CC((Match) arguments.get(0), (Match) arguments.get(1));
-		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPLICABLE_SOLVE_CSP_CC__ISAPPLICABLEMATCHCC_STEPALTERNATIVE_CHOICESTEP_ALTERNATIVEFLOW_PROCESS_GATEWAY_GATEWAY_FLOWNODE_SEQUENCEFLOW_STEP_FN2S_GW2S_MATCH_MATCH:
+		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPLICABLE_SOLVE_CSP_CC__ISAPPLICABLEMATCHCC_STEPALTERNATIVE_CHOICESTEP_ALTERNATIVEFLOW_PROCESS_GATEWAY_GATEWAY_FLOWNODE_SEQUENCEFLOW_STEP_FN2S_GW2S_USECASE_P2UC_MATCH_MATCH:
 			return isApplicable_solveCsp_CC((IsApplicableMatchCC) arguments.get(0), (StepAlternative) arguments.get(1),
 					(ChoiceStep) arguments.get(2), (AlternativeFlow) arguments.get(3),
 					(SimpleBPMN.Process) arguments.get(4), (Gateway) arguments.get(5), (Gateway) arguments.get(6),
 					(FlowNode) arguments.get(7), (SequenceFlow) arguments.get(8), (Step) arguments.get(9),
-					(FN2S) arguments.get(10), (GW2S) arguments.get(11), (Match) arguments.get(12),
-					(Match) arguments.get(13));
+					(FN2S) arguments.get(10), (GW2S) arguments.get(11), (UseCase) arguments.get(12),
+					(P2UC) arguments.get(13), (Match) arguments.get(14), (Match) arguments.get(15));
 		case RulesPackage.LAST_STEP_IN_ALT_FLOW___IS_APPLICABLE_CHECK_CSP_CC__CSP:
 			return isApplicable_checkCsp_CC((CSP) arguments.get(0));
 		case RulesPackage.LAST_STEP_IN_ALT_FLOW___PERFORM_CC__ISAPPLICABLEMATCHCC:
 			return perform_CC((IsApplicableMatchCC) arguments.get(0));
 		case RulesPackage.LAST_STEP_IN_ALT_FLOW___GENERATE_MODEL__RULEENTRYCONTAINER_FN2S:
 			return generateModel((RuleEntryContainer) arguments.get(0), (FN2S) arguments.get(1));
-		case RulesPackage.LAST_STEP_IN_ALT_FLOW___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_STEPALTERNATIVE_CHOICESTEP_ALTERNATIVEFLOW_PROCESS_GATEWAY_GATEWAY_FLOWNODE_STEP_FN2S_GW2S_MODELGENERATORRULERESULT:
+		case RulesPackage.LAST_STEP_IN_ALT_FLOW___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_STEPALTERNATIVE_CHOICESTEP_ALTERNATIVEFLOW_PROCESS_GATEWAY_GATEWAY_FLOWNODE_STEP_FN2S_GW2S_USECASE_P2UC_MODELGENERATORRULERESULT:
 			return generateModel_solveCsp_BWD((IsApplicableMatch) arguments.get(0), (StepAlternative) arguments.get(1),
 					(ChoiceStep) arguments.get(2), (AlternativeFlow) arguments.get(3),
 					(SimpleBPMN.Process) arguments.get(4), (Gateway) arguments.get(5), (Gateway) arguments.get(6),
 					(FlowNode) arguments.get(7), (Step) arguments.get(8), (FN2S) arguments.get(9),
-					(GW2S) arguments.get(10), (ModelgeneratorRuleResult) arguments.get(11));
+					(GW2S) arguments.get(10), (UseCase) arguments.get(11), (P2UC) arguments.get(12),
+					(ModelgeneratorRuleResult) arguments.get(13));
 		case RulesPackage.LAST_STEP_IN_ALT_FLOW___GENERATE_MODEL_CHECK_CSP_BWD__CSP:
 			return generateModel_checkCsp_BWD((CSP) arguments.get(0));
 		}
@@ -1882,7 +1952,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return _result;
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_1_1_bindingFFFFFFFFFFFB(
+	public static final Object[] pattern_LastStepInAltFlow_1_1_bindingFFFFFFFFFFFFFB(
 			IsApplicableMatch isApplicableMatch) {
 		EObject _localVariable_0 = isApplicableMatch.getObject("alt");
 		EObject _localVariable_1 = isApplicableMatch.getObject("gwStep");
@@ -1895,6 +1965,8 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		EObject _localVariable_8 = isApplicableMatch.getObject("step");
 		EObject _localVariable_9 = isApplicableMatch.getObject("n2s");
 		EObject _localVariable_10 = isApplicableMatch.getObject("gw2gs");
+		EObject _localVariable_11 = isApplicableMatch.getObject("useCase");
+		EObject _localVariable_12 = isApplicableMatch.getObject("p2uc");
 		EObject tmpAlt = _localVariable_0;
 		EObject tmpGwStep = _localVariable_1;
 		EObject tmpFlow = _localVariable_2;
@@ -1906,6 +1978,8 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		EObject tmpStep = _localVariable_8;
 		EObject tmpN2s = _localVariable_9;
 		EObject tmpGw2gs = _localVariable_10;
+		EObject tmpUseCase = _localVariable_11;
+		EObject tmpP2uc = _localVariable_12;
 		if (tmpAlt instanceof StepAlternative) {
 			StepAlternative alt = (StepAlternative) tmpAlt;
 			if (tmpGwStep instanceof ChoiceStep) {
@@ -1928,8 +2002,15 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 												FN2S n2s = (FN2S) tmpN2s;
 												if (tmpGw2gs instanceof GW2S) {
 													GW2S gw2gs = (GW2S) tmpGw2gs;
-													return new Object[] { alt, gwStep, flow, process, gw, gcw, node, sf,
-															step, n2s, gw2gs, isApplicableMatch };
+													if (tmpUseCase instanceof UseCase) {
+														UseCase useCase = (UseCase) tmpUseCase;
+														if (tmpP2uc instanceof P2UC) {
+															P2UC p2uc = (P2UC) tmpP2uc;
+															return new Object[] { alt, gwStep, flow, process, gw, gcw,
+																	node, sf, step, n2s, gw2gs, useCase, p2uc,
+																	isApplicableMatch };
+														}
+													}
 												}
 											}
 										}
@@ -1944,9 +2025,9 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return null;
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_1_1_blackBBBBBBBBBBBBFB(StepAlternative alt,
+	public static final Object[] pattern_LastStepInAltFlow_1_1_blackBBBBBBBBBBBBBBFB(StepAlternative alt,
 			ChoiceStep gwStep, AlternativeFlow flow, SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node,
-			SequenceFlow sf, Step step, FN2S n2s, GW2S gw2gs, LastStepInAltFlow _this,
+			SequenceFlow sf, Step step, FN2S n2s, GW2S gw2gs, UseCase useCase, P2UC p2uc, LastStepInAltFlow _this,
 			IsApplicableMatch isApplicableMatch) {
 		if (!gwStep.equals(step)) {
 			if (!gw.equals(node)) {
@@ -1956,7 +2037,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 							if (tmpCsp instanceof CSP) {
 								CSP csp = (CSP) tmpCsp;
 								return new Object[] { alt, gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs,
-										_this, csp, isApplicableMatch };
+										useCase, p2uc, _this, csp, isApplicableMatch };
 							}
 						}
 					}
@@ -1966,9 +2047,9 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return null;
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_1_1_bindingAndBlackFFFFFFFFFFFBFB(LastStepInAltFlow _this,
+	public static final Object[] pattern_LastStepInAltFlow_1_1_bindingAndBlackFFFFFFFFFFFFFBFB(LastStepInAltFlow _this,
 			IsApplicableMatch isApplicableMatch) {
-		Object[] result_pattern_LastStepInAltFlow_1_1_binding = pattern_LastStepInAltFlow_1_1_bindingFFFFFFFFFFFB(
+		Object[] result_pattern_LastStepInAltFlow_1_1_binding = pattern_LastStepInAltFlow_1_1_bindingFFFFFFFFFFFFFB(
 				isApplicableMatch);
 		if (result_pattern_LastStepInAltFlow_1_1_binding != null) {
 			StepAlternative alt = (StepAlternative) result_pattern_LastStepInAltFlow_1_1_binding[0];
@@ -1982,14 +2063,17 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 			Step step = (Step) result_pattern_LastStepInAltFlow_1_1_binding[8];
 			FN2S n2s = (FN2S) result_pattern_LastStepInAltFlow_1_1_binding[9];
 			GW2S gw2gs = (GW2S) result_pattern_LastStepInAltFlow_1_1_binding[10];
+			UseCase useCase = (UseCase) result_pattern_LastStepInAltFlow_1_1_binding[11];
+			P2UC p2uc = (P2UC) result_pattern_LastStepInAltFlow_1_1_binding[12];
 
-			Object[] result_pattern_LastStepInAltFlow_1_1_black = pattern_LastStepInAltFlow_1_1_blackBBBBBBBBBBBBFB(alt,
-					gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs, _this, isApplicableMatch);
+			Object[] result_pattern_LastStepInAltFlow_1_1_black = pattern_LastStepInAltFlow_1_1_blackBBBBBBBBBBBBBBFB(
+					alt, gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs, useCase, p2uc, _this,
+					isApplicableMatch);
 			if (result_pattern_LastStepInAltFlow_1_1_black != null) {
-				CSP csp = (CSP) result_pattern_LastStepInAltFlow_1_1_black[12];
+				CSP csp = (CSP) result_pattern_LastStepInAltFlow_1_1_black[14];
 
-				return new Object[] { alt, gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs, _this, csp,
-						isApplicableMatch };
+				return new Object[] { alt, gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs, useCase, p2uc,
+						_this, csp, isApplicableMatch };
 			}
 		}
 		return null;
@@ -2012,9 +2096,9 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return new Object[] { ruleresult, sf };
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_1_3_blackBBBBBBBBBBBB(PerformRuleResult ruleresult,
+	public static final Object[] pattern_LastStepInAltFlow_1_3_blackBBBBBBBBBBBBBB(PerformRuleResult ruleresult,
 			EObject alt, EObject gwStep, EObject flow, EObject process, EObject gw, EObject gcw, EObject node,
-			EObject sf, EObject step, EObject n2s, EObject gw2gs) {
+			EObject sf, EObject step, EObject n2s, EObject gw2gs, EObject useCase, EObject p2uc) {
 		if (!alt.equals(gwStep)) {
 			if (!alt.equals(flow)) {
 				if (!alt.equals(process)) {
@@ -2025,96 +2109,167 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 									if (!alt.equals(step)) {
 										if (!alt.equals(n2s)) {
 											if (!alt.equals(gw2gs)) {
-												if (!gwStep.equals(process)) {
-													if (!gwStep.equals(node)) {
-														if (!gwStep.equals(sf)) {
-															if (!gwStep.equals(step)) {
-																if (!gwStep.equals(n2s)) {
-																	if (!flow.equals(gwStep)) {
-																		if (!flow.equals(process)) {
-																			if (!flow.equals(gw)) {
-																				if (!flow.equals(gcw)) {
-																					if (!flow.equals(node)) {
-																						if (!flow.equals(sf)) {
-																							if (!flow.equals(step)) {
-																								if (!flow.equals(n2s)) {
+												if (!alt.equals(useCase)) {
+													if (!alt.equals(p2uc)) {
+														if (!gwStep.equals(process)) {
+															if (!gwStep.equals(node)) {
+																if (!gwStep.equals(sf)) {
+																	if (!gwStep.equals(step)) {
+																		if (!gwStep.equals(n2s)) {
+																			if (!gwStep.equals(useCase)) {
+																				if (!gwStep.equals(p2uc)) {
+																					if (!flow.equals(gwStep)) {
+																						if (!flow.equals(process)) {
+																							if (!flow.equals(gw)) {
+																								if (!flow.equals(gcw)) {
 																									if (!flow.equals(
-																											gw2gs)) {
-																										if (!process
+																											node)) {
+																										if (!flow
 																												.equals(sf)) {
-																											if (!process
+																											if (!flow
 																													.equals(step)) {
-																												if (!gw.equals(
-																														gwStep)) {
-																													if (!gw.equals(
-																															process)) {
-																														if (!gw.equals(
-																																node)) {
-																															if (!gw.equals(
-																																	sf)) {
-																																if (!gw.equals(
-																																		step)) {
-																																	if (!gw.equals(
-																																			n2s)) {
-																																		if (!gw.equals(
-																																				gw2gs)) {
-																																			if (!gcw.equals(
+																												if (!flow
+																														.equals(n2s)) {
+																													if (!flow
+																															.equals(gw2gs)) {
+																														if (!flow
+																																.equals(useCase)) {
+																															if (!flow
+																																	.equals(p2uc)) {
+																																if (!process
+																																		.equals(sf)) {
+																																	if (!process
+																																			.equals(step)) {
+																																		if (!process
+																																				.equals(useCase)) {
+																																			if (!gw.equals(
 																																					gwStep)) {
-																																				if (!gcw.equals(
+																																				if (!gw.equals(
 																																						process)) {
-																																					if (!gcw.equals(
-																																							gw)) {
-																																						if (!gcw.equals(
-																																								node)) {
-																																							if (!gcw.equals(
-																																									sf)) {
-																																								if (!gcw.equals(
-																																										step)) {
-																																									if (!gcw.equals(
-																																											n2s)) {
-																																										if (!gcw.equals(
-																																												gw2gs)) {
-																																											if (!node
-																																													.equals(process)) {
-																																												if (!node
-																																														.equals(sf)) {
-																																													if (!node
-																																															.equals(step)) {
-																																														if (!sf.equals(
-																																																step)) {
-																																															if (!n2s.equals(
-																																																	process)) {
-																																																if (!n2s.equals(
-																																																		node)) {
-																																																	if (!n2s.equals(
-																																																			sf)) {
-																																																		if (!n2s.equals(
-																																																				step)) {
-																																																			if (!gw2gs
-																																																					.equals(gwStep)) {
-																																																				if (!gw2gs
-																																																						.equals(process)) {
-																																																					if (!gw2gs
-																																																							.equals(node)) {
-																																																						if (!gw2gs
-																																																								.equals(sf)) {
-																																																							if (!gw2gs
-																																																									.equals(step)) {
-																																																								if (!gw2gs
-																																																										.equals(n2s)) {
-																																																									return new Object[] {
-																																																											ruleresult,
-																																																											alt,
-																																																											gwStep,
-																																																											flow,
-																																																											process,
-																																																											gw,
-																																																											gcw,
-																																																											node,
-																																																											sf,
-																																																											step,
-																																																											n2s,
-																																																											gw2gs };
+																																					if (!gw.equals(
+																																							node)) {
+																																						if (!gw.equals(
+																																								sf)) {
+																																							if (!gw.equals(
+																																									step)) {
+																																								if (!gw.equals(
+																																										n2s)) {
+																																									if (!gw.equals(
+																																											gw2gs)) {
+																																										if (!gw.equals(
+																																												useCase)) {
+																																											if (!gw.equals(
+																																													p2uc)) {
+																																												if (!gcw.equals(
+																																														gwStep)) {
+																																													if (!gcw.equals(
+																																															process)) {
+																																														if (!gcw.equals(
+																																																gw)) {
+																																															if (!gcw.equals(
+																																																	node)) {
+																																																if (!gcw.equals(
+																																																		sf)) {
+																																																	if (!gcw.equals(
+																																																			step)) {
+																																																		if (!gcw.equals(
+																																																				n2s)) {
+																																																			if (!gcw.equals(
+																																																					gw2gs)) {
+																																																				if (!gcw.equals(
+																																																						useCase)) {
+																																																					if (!gcw.equals(
+																																																							p2uc)) {
+																																																						if (!node
+																																																								.equals(process)) {
+																																																							if (!node
+																																																									.equals(sf)) {
+																																																								if (!node
+																																																										.equals(step)) {
+																																																									if (!node
+																																																											.equals(useCase)) {
+																																																										if (!node
+																																																												.equals(p2uc)) {
+																																																											if (!sf.equals(
+																																																													step)) {
+																																																												if (!sf.equals(
+																																																														useCase)) {
+																																																													if (!step
+																																																															.equals(useCase)) {
+																																																														if (!n2s.equals(
+																																																																process)) {
+																																																															if (!n2s.equals(
+																																																																	node)) {
+																																																																if (!n2s.equals(
+																																																																		sf)) {
+																																																																	if (!n2s.equals(
+																																																																			step)) {
+																																																																		if (!n2s.equals(
+																																																																				useCase)) {
+																																																																			if (!n2s.equals(
+																																																																					p2uc)) {
+																																																																				if (!gw2gs
+																																																																						.equals(gwStep)) {
+																																																																					if (!gw2gs
+																																																																							.equals(process)) {
+																																																																						if (!gw2gs
+																																																																								.equals(node)) {
+																																																																							if (!gw2gs
+																																																																									.equals(sf)) {
+																																																																								if (!gw2gs
+																																																																										.equals(step)) {
+																																																																									if (!gw2gs
+																																																																											.equals(n2s)) {
+																																																																										if (!gw2gs
+																																																																												.equals(useCase)) {
+																																																																											if (!gw2gs
+																																																																													.equals(p2uc)) {
+																																																																												if (!p2uc
+																																																																														.equals(process)) {
+																																																																													if (!p2uc
+																																																																															.equals(sf)) {
+																																																																														if (!p2uc
+																																																																																.equals(step)) {
+																																																																															if (!p2uc
+																																																																																	.equals(useCase)) {
+																																																																																return new Object[] {
+																																																																																		ruleresult,
+																																																																																		alt,
+																																																																																		gwStep,
+																																																																																		flow,
+																																																																																		process,
+																																																																																		gw,
+																																																																																		gcw,
+																																																																																		node,
+																																																																																		sf,
+																																																																																		step,
+																																																																																		n2s,
+																																																																																		gw2gs,
+																																																																																		useCase,
+																																																																																		p2uc };
+																																																																															}
+																																																																														}
+																																																																													}
+																																																																												}
+																																																																											}
+																																																																										}
+																																																																									}
+																																																																								}
+																																																																							}
+																																																																						}
+																																																																					}
+																																																																				}
+																																																																			}
+																																																																		}
+																																																																	}
+																																																																}
+																																																															}
+																																																														}
+																																																													}
+																																																												}
+																																																											}
+																																																										}
+																																																									}
 																																																								}
 																																																							}
 																																																						}
@@ -2225,10 +2380,12 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 				gcw__sf____incoming, flow__step______last };
 	}
 
-	public static final void pattern_LastStepInAltFlow_1_5_expressionBBBBBBBBBBBBB(LastStepInAltFlow _this,
+	public static final void pattern_LastStepInAltFlow_1_5_expressionBBBBBBBBBBBBBBB(LastStepInAltFlow _this,
 			PerformRuleResult ruleresult, EObject alt, EObject gwStep, EObject flow, EObject process, EObject gw,
-			EObject gcw, EObject node, EObject sf, EObject step, EObject n2s, EObject gw2gs) {
-		_this.registerObjects_FWD(ruleresult, alt, gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs);
+			EObject gcw, EObject node, EObject sf, EObject step, EObject n2s, EObject gw2gs, EObject useCase,
+			EObject p2uc) {
+		_this.registerObjects_FWD(ruleresult, alt, gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs, useCase,
+				p2uc);
 
 	}
 
@@ -2312,7 +2469,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_LastStepInAltFlow_2_2_blackFBBBBBFFFB(SimpleBPMN.Process process,
+	public static final Iterable<Object[]> pattern_LastStepInAltFlow_2_2_blackFBBBBBFFFFFB(SimpleBPMN.Process process,
 			Gateway gw, Gateway gcw, FlowNode node, SequenceFlow sf, Match match) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		if (!gw.equals(node)) {
@@ -2334,8 +2491,17 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 												if (tmpGwStep instanceof ChoiceStep) {
 													ChoiceStep gwStep = (ChoiceStep) tmpGwStep;
 													if (!gwStep.equals(step)) {
-														_result.add(new Object[] { gwStep, process, gw, gcw, node, sf,
-																step, n2s, gw2gs, match });
+														for (P2UC p2uc : org.moflon.core.utilities.eMoflonEMFUtil
+																.getOppositeReferenceTyped(process, P2UC.class,
+																		"source")) {
+															UseCase useCase = p2uc.getTarget();
+															if (useCase != null) {
+																_result.add(new Object[] { gwStep, process, gw, gcw,
+																		node, sf, step, n2s, gw2gs, useCase, p2uc,
+																		match });
+															}
+
+														}
 													}
 												}
 
@@ -2355,9 +2521,9 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return _result;
 	}
 
-	public static final Iterable<Object[]> pattern_LastStepInAltFlow_2_3_blackFBFBBBBBBBB(ChoiceStep gwStep,
+	public static final Iterable<Object[]> pattern_LastStepInAltFlow_2_3_blackFBFBBBBBBBBBB(ChoiceStep gwStep,
 			SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, SequenceFlow sf, Step step, FN2S n2s,
-			GW2S gw2gs) {
+			GW2S gw2gs, UseCase useCase, P2UC p2uc) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		if (!gwStep.equals(step)) {
 			if (!gw.equals(node)) {
@@ -2374,46 +2540,61 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 														if (step.equals(n2s.getTarget())) {
 															if (gw.equals(gw2gs.getSource())) {
 																if (gwStep.equals(gw2gs.getTarget())) {
-																	boolean gwisDiverging = gw.isIsDiverging();
-																	if (Boolean.valueOf(gwisDiverging)
-																			.equals(Boolean.valueOf(true))) {
-																		if (Boolean.valueOf(gwisDiverging)
-																				.equals(Boolean.valueOf(true))) {
-																			boolean gcwisDiverging = gcw
-																					.isIsDiverging();
-																			if (Boolean.valueOf(gcwisDiverging)
-																					.equals(false)) {
-																				if (Boolean.valueOf(gcwisDiverging)
-																						.equals(false)) {
-																					for (StepAlternative alt : gwStep
-																							.getStepAlternatives()) {
-																						AlternativeFlow flow = alt
-																								.getRef();
-																						if (flow != null) {
-																							if (flow.getSteps()
-																									.contains(step)) {
-																								_result.add(
-																										new Object[] {
-																												alt,
-																												gwStep,
-																												flow,
-																												process,
-																												gw, gcw,
-																												node,
-																												sf,
-																												step,
-																												n2s,
-																												gw2gs });
+																	if (process.equals(p2uc.getSource())) {
+																		if (useCase.equals(p2uc.getTarget())) {
+																			boolean gwisDiverging = gw.isIsDiverging();
+																			if (Boolean.valueOf(gwisDiverging)
+																					.equals(Boolean.valueOf(true))) {
+																				if (Boolean.valueOf(gwisDiverging)
+																						.equals(Boolean
+																								.valueOf(true))) {
+																					boolean gcwisDiverging = gcw
+																							.isIsDiverging();
+																					if (Boolean.valueOf(gcwisDiverging)
+																							.equals(false)) {
+																						if (Boolean
+																								.valueOf(gcwisDiverging)
+																								.equals(false)) {
+																							for (StepAlternative alt : gwStep
+																									.getStepAlternatives()) {
+																								AlternativeFlow flow = alt
+																										.getRef();
+																								if (flow != null) {
+																									if (flow.getSteps()
+																											.contains(
+																													step)) {
+																										if (useCase
+																												.getFlows()
+																												.contains(
+																														flow)) {
+																											_result.add(
+																													new Object[] {
+																															alt,
+																															gwStep,
+																															flow,
+																															process,
+																															gw,
+																															gcw,
+																															node,
+																															sf,
+																															step,
+																															n2s,
+																															gw2gs,
+																															useCase,
+																															p2uc });
+																										}
+																									}
+																								}
+
 																							}
 																						}
-
 																					}
+
 																				}
 																			}
 
 																		}
 																	}
-
 																}
 															}
 														}
@@ -2432,9 +2613,9 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return _result;
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_2_3_greenBBBBBBBBBBBFFFFFFFFFFFFFFFFF(StepAlternative alt,
-			ChoiceStep gwStep, AlternativeFlow flow, SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node,
-			SequenceFlow sf, Step step, FN2S n2s, GW2S gw2gs) {
+	public static final Object[] pattern_LastStepInAltFlow_2_3_greenBBBBBBBBBBBBBFFFFFFFFFFFFFFFFFFFF(
+			StepAlternative alt, ChoiceStep gwStep, AlternativeFlow flow, SimpleBPMN.Process process, Gateway gw,
+			Gateway gcw, FlowNode node, SequenceFlow sf, Step step, FN2S n2s, GW2S gw2gs, UseCase useCase, P2UC p2uc) {
 		IsApplicableMatch isApplicableMatch = TGGRuntimeFactory.eINSTANCE.createIsApplicableMatch();
 		EMoflonEdge alt__flow____ref = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge gwStep__alt____stepAlternatives = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
@@ -2452,6 +2633,9 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		EMoflonEdge n2s__step____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge gw2gs__gw____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge gw2gs__gwStep____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge useCase__flow____flows = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge p2uc__process____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge p2uc__useCase____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		String alt__flow____ref_name_prime = "ref";
 		String gwStep__alt____stepAlternatives_name_prime = "stepAlternatives";
 		String process__gw____flowElements_name_prime = "flowElements";
@@ -2468,6 +2652,9 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		String n2s__step____target_name_prime = "target";
 		String gw2gs__gw____source_name_prime = "source";
 		String gw2gs__gwStep____target_name_prime = "target";
+		String useCase__flow____flows_name_prime = "flows";
+		String p2uc__process____source_name_prime = "source";
+		String p2uc__useCase____target_name_prime = "target";
 		isApplicableMatch.getAllContextElements().add(alt);
 		isApplicableMatch.getAllContextElements().add(gwStep);
 		isApplicableMatch.getAllContextElements().add(flow);
@@ -2479,6 +2666,8 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		isApplicableMatch.getAllContextElements().add(step);
 		isApplicableMatch.getAllContextElements().add(n2s);
 		isApplicableMatch.getAllContextElements().add(gw2gs);
+		isApplicableMatch.getAllContextElements().add(useCase);
+		isApplicableMatch.getAllContextElements().add(p2uc);
 		alt__flow____ref.setSrc(alt);
 		alt__flow____ref.setTrg(flow);
 		isApplicableMatch.getAllContextElements().add(alt__flow____ref);
@@ -2527,6 +2716,15 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		gw2gs__gwStep____target.setSrc(gw2gs);
 		gw2gs__gwStep____target.setTrg(gwStep);
 		isApplicableMatch.getAllContextElements().add(gw2gs__gwStep____target);
+		useCase__flow____flows.setSrc(useCase);
+		useCase__flow____flows.setTrg(flow);
+		isApplicableMatch.getAllContextElements().add(useCase__flow____flows);
+		p2uc__process____source.setSrc(p2uc);
+		p2uc__process____source.setTrg(process);
+		isApplicableMatch.getAllContextElements().add(p2uc__process____source);
+		p2uc__useCase____target.setSrc(p2uc);
+		p2uc__useCase____target.setTrg(useCase);
+		isApplicableMatch.getAllContextElements().add(p2uc__useCase____target);
 		alt__flow____ref.setName(alt__flow____ref_name_prime);
 		gwStep__alt____stepAlternatives.setName(gwStep__alt____stepAlternatives_name_prime);
 		process__gw____flowElements.setName(process__gw____flowElements_name_prime);
@@ -2543,24 +2741,27 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		n2s__step____target.setName(n2s__step____target_name_prime);
 		gw2gs__gw____source.setName(gw2gs__gw____source_name_prime);
 		gw2gs__gwStep____target.setName(gw2gs__gwStep____target_name_prime);
-		return new Object[] { alt, gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs, isApplicableMatch,
-				alt__flow____ref, gwStep__alt____stepAlternatives, process__gw____flowElements,
+		useCase__flow____flows.setName(useCase__flow____flows_name_prime);
+		p2uc__process____source.setName(p2uc__process____source_name_prime);
+		p2uc__useCase____target.setName(p2uc__useCase____target_name_prime);
+		return new Object[] { alt, gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs, useCase, p2uc,
+				isApplicableMatch, alt__flow____ref, gwStep__alt____stepAlternatives, process__gw____flowElements,
 				process__gcw____flowElements, process__node____flowElements, process__sf____flowElements,
 				gw__gcw______conv, sf__node____sourceRef, node__sf____outgoing, sf__gcw____targetRef,
 				gcw__sf____incoming, flow__step____steps, n2s__node____source, n2s__step____target, gw2gs__gw____source,
-				gw2gs__gwStep____target };
+				gw2gs__gwStep____target, useCase__flow____flows, p2uc__process____source, p2uc__useCase____target };
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_2_4_bindingFBBBBBBBBBBBBB(LastStepInAltFlow _this,
+	public static final Object[] pattern_LastStepInAltFlow_2_4_bindingFBBBBBBBBBBBBBBB(LastStepInAltFlow _this,
 			IsApplicableMatch isApplicableMatch, StepAlternative alt, ChoiceStep gwStep, AlternativeFlow flow,
 			SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, SequenceFlow sf, Step step, FN2S n2s,
-			GW2S gw2gs) {
+			GW2S gw2gs, UseCase useCase, P2UC p2uc) {
 		CSP _localVariable_0 = _this.isApplicable_solveCsp_FWD(isApplicableMatch, alt, gwStep, flow, process, gw, gcw,
-				node, sf, step, n2s, gw2gs);
+				node, sf, step, n2s, gw2gs, useCase, p2uc);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
 			return new Object[] { csp, _this, isApplicableMatch, alt, gwStep, flow, process, gw, gcw, node, sf, step,
-					n2s, gw2gs };
+					n2s, gw2gs, useCase, p2uc };
 		}
 		return null;
 	}
@@ -2569,12 +2770,13 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return new Object[] { csp };
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_2_4_bindingAndBlackFBBBBBBBBBBBBB(LastStepInAltFlow _this,
+	public static final Object[] pattern_LastStepInAltFlow_2_4_bindingAndBlackFBBBBBBBBBBBBBBB(LastStepInAltFlow _this,
 			IsApplicableMatch isApplicableMatch, StepAlternative alt, ChoiceStep gwStep, AlternativeFlow flow,
 			SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, SequenceFlow sf, Step step, FN2S n2s,
-			GW2S gw2gs) {
-		Object[] result_pattern_LastStepInAltFlow_2_4_binding = pattern_LastStepInAltFlow_2_4_bindingFBBBBBBBBBBBBB(
-				_this, isApplicableMatch, alt, gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs);
+			GW2S gw2gs, UseCase useCase, P2UC p2uc) {
+		Object[] result_pattern_LastStepInAltFlow_2_4_binding = pattern_LastStepInAltFlow_2_4_bindingFBBBBBBBBBBBBBBB(
+				_this, isApplicableMatch, alt, gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs, useCase,
+				p2uc);
 		if (result_pattern_LastStepInAltFlow_2_4_binding != null) {
 			CSP csp = (CSP) result_pattern_LastStepInAltFlow_2_4_binding[0];
 
@@ -2582,7 +2784,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 			if (result_pattern_LastStepInAltFlow_2_4_black != null) {
 
 				return new Object[] { csp, _this, isApplicableMatch, alt, gwStep, flow, process, gw, gcw, node, sf,
-						step, n2s, gw2gs };
+						step, n2s, gw2gs, useCase, p2uc };
 			}
 		}
 		return null;
@@ -2615,20 +2817,20 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return _result;
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_10_1_blackBBBBBB(LastStepInAltFlow _this, Match match,
-			StepAlternative alt, ChoiceStep gwStep, AlternativeFlow flow, Step step) {
+	public static final Object[] pattern_LastStepInAltFlow_10_1_blackBBBBBBB(LastStepInAltFlow _this, Match match,
+			StepAlternative alt, ChoiceStep gwStep, AlternativeFlow flow, Step step, UseCase useCase) {
 		if (!gwStep.equals(step)) {
-			return new Object[] { _this, match, alt, gwStep, flow, step };
+			return new Object[] { _this, match, alt, gwStep, flow, step, useCase };
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_10_2_bindingFBBBBBB(LastStepInAltFlow _this, Match match,
-			StepAlternative alt, ChoiceStep gwStep, AlternativeFlow flow, Step step) {
-		CSP _localVariable_0 = _this.isAppropriate_solveCsp_BWD(match, alt, gwStep, flow, step);
+	public static final Object[] pattern_LastStepInAltFlow_10_2_bindingFBBBBBBB(LastStepInAltFlow _this, Match match,
+			StepAlternative alt, ChoiceStep gwStep, AlternativeFlow flow, Step step, UseCase useCase) {
+		CSP _localVariable_0 = _this.isAppropriate_solveCsp_BWD(match, alt, gwStep, flow, step, useCase);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, match, alt, gwStep, flow, step };
+			return new Object[] { csp, _this, match, alt, gwStep, flow, step, useCase };
 		}
 		return null;
 	}
@@ -2637,17 +2839,17 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return new Object[] { csp };
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_10_2_bindingAndBlackFBBBBBB(LastStepInAltFlow _this,
-			Match match, StepAlternative alt, ChoiceStep gwStep, AlternativeFlow flow, Step step) {
-		Object[] result_pattern_LastStepInAltFlow_10_2_binding = pattern_LastStepInAltFlow_10_2_bindingFBBBBBB(_this,
-				match, alt, gwStep, flow, step);
+	public static final Object[] pattern_LastStepInAltFlow_10_2_bindingAndBlackFBBBBBBB(LastStepInAltFlow _this,
+			Match match, StepAlternative alt, ChoiceStep gwStep, AlternativeFlow flow, Step step, UseCase useCase) {
+		Object[] result_pattern_LastStepInAltFlow_10_2_binding = pattern_LastStepInAltFlow_10_2_bindingFBBBBBBB(_this,
+				match, alt, gwStep, flow, step, useCase);
 		if (result_pattern_LastStepInAltFlow_10_2_binding != null) {
 			CSP csp = (CSP) result_pattern_LastStepInAltFlow_10_2_binding[0];
 
 			Object[] result_pattern_LastStepInAltFlow_10_2_black = pattern_LastStepInAltFlow_10_2_blackB(csp);
 			if (result_pattern_LastStepInAltFlow_10_2_black != null) {
 
-				return new Object[] { csp, _this, match, alt, gwStep, flow, step };
+				return new Object[] { csp, _this, match, alt, gwStep, flow, step, useCase };
 			}
 		}
 		return null;
@@ -2659,10 +2861,10 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return _result;
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_10_4_blackBBBBB(Match match, StepAlternative alt,
-			ChoiceStep gwStep, AlternativeFlow flow, Step step) {
+	public static final Object[] pattern_LastStepInAltFlow_10_4_blackBBBBBB(Match match, StepAlternative alt,
+			ChoiceStep gwStep, AlternativeFlow flow, Step step, UseCase useCase) {
 		if (!gwStep.equals(step)) {
-			return new Object[] { match, alt, gwStep, flow, step };
+			return new Object[] { match, alt, gwStep, flow, step, useCase };
 		}
 		return null;
 	}
@@ -2684,26 +2886,29 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return new Object[] { match, alt, gwStep, flow, step, alt__gwStep______hasContinue, flow__step______last };
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_10_5_blackBBBBB(Match match, StepAlternative alt,
-			ChoiceStep gwStep, AlternativeFlow flow, Step step) {
+	public static final Object[] pattern_LastStepInAltFlow_10_5_blackBBBBBB(Match match, StepAlternative alt,
+			ChoiceStep gwStep, AlternativeFlow flow, Step step, UseCase useCase) {
 		if (!gwStep.equals(step)) {
-			return new Object[] { match, alt, gwStep, flow, step };
+			return new Object[] { match, alt, gwStep, flow, step, useCase };
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_10_5_greenBBBBBFFF(Match match, StepAlternative alt,
-			ChoiceStep gwStep, AlternativeFlow flow, Step step) {
+	public static final Object[] pattern_LastStepInAltFlow_10_5_greenBBBBBBFFFF(Match match, StepAlternative alt,
+			ChoiceStep gwStep, AlternativeFlow flow, Step step, UseCase useCase) {
 		EMoflonEdge alt__flow____ref = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge gwStep__alt____stepAlternatives = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge flow__step____steps = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge useCase__flow____flows = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		match.getContextNodes().add(alt);
 		match.getContextNodes().add(gwStep);
 		match.getContextNodes().add(flow);
 		match.getContextNodes().add(step);
+		match.getContextNodes().add(useCase);
 		String alt__flow____ref_name_prime = "ref";
 		String gwStep__alt____stepAlternatives_name_prime = "stepAlternatives";
 		String flow__step____steps_name_prime = "steps";
+		String useCase__flow____flows_name_prime = "flows";
 		alt__flow____ref.setSrc(alt);
 		alt__flow____ref.setTrg(flow);
 		match.getContextEdges().add(alt__flow____ref);
@@ -2713,16 +2918,20 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		flow__step____steps.setSrc(flow);
 		flow__step____steps.setTrg(step);
 		match.getContextEdges().add(flow__step____steps);
+		useCase__flow____flows.setSrc(useCase);
+		useCase__flow____flows.setTrg(flow);
+		match.getContextEdges().add(useCase__flow____flows);
 		alt__flow____ref.setName(alt__flow____ref_name_prime);
 		gwStep__alt____stepAlternatives.setName(gwStep__alt____stepAlternatives_name_prime);
 		flow__step____steps.setName(flow__step____steps_name_prime);
-		return new Object[] { match, alt, gwStep, flow, step, alt__flow____ref, gwStep__alt____stepAlternatives,
-				flow__step____steps };
+		useCase__flow____flows.setName(useCase__flow____flows_name_prime);
+		return new Object[] { match, alt, gwStep, flow, step, useCase, alt__flow____ref,
+				gwStep__alt____stepAlternatives, flow__step____steps, useCase__flow____flows };
 	}
 
-	public static final void pattern_LastStepInAltFlow_10_6_expressionBBBBBB(LastStepInAltFlow _this, Match match,
-			StepAlternative alt, ChoiceStep gwStep, AlternativeFlow flow, Step step) {
-		_this.registerObjectsToMatch_BWD(match, alt, gwStep, flow, step);
+	public static final void pattern_LastStepInAltFlow_10_6_expressionBBBBBBB(LastStepInAltFlow _this, Match match,
+			StepAlternative alt, ChoiceStep gwStep, AlternativeFlow flow, Step step, UseCase useCase) {
+		_this.registerObjectsToMatch_BWD(match, alt, gwStep, flow, step, useCase);
 
 	}
 
@@ -2736,7 +2945,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return _result;
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_11_1_bindingFFFFFFFFFFB(
+	public static final Object[] pattern_LastStepInAltFlow_11_1_bindingFFFFFFFFFFFFB(
 			IsApplicableMatch isApplicableMatch) {
 		EObject _localVariable_0 = isApplicableMatch.getObject("alt");
 		EObject _localVariable_1 = isApplicableMatch.getObject("gwStep");
@@ -2748,6 +2957,8 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		EObject _localVariable_7 = isApplicableMatch.getObject("step");
 		EObject _localVariable_8 = isApplicableMatch.getObject("n2s");
 		EObject _localVariable_9 = isApplicableMatch.getObject("gw2gs");
+		EObject _localVariable_10 = isApplicableMatch.getObject("useCase");
+		EObject _localVariable_11 = isApplicableMatch.getObject("p2uc");
 		EObject tmpAlt = _localVariable_0;
 		EObject tmpGwStep = _localVariable_1;
 		EObject tmpFlow = _localVariable_2;
@@ -2758,6 +2969,8 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		EObject tmpStep = _localVariable_7;
 		EObject tmpN2s = _localVariable_8;
 		EObject tmpGw2gs = _localVariable_9;
+		EObject tmpUseCase = _localVariable_10;
+		EObject tmpP2uc = _localVariable_11;
 		if (tmpAlt instanceof StepAlternative) {
 			StepAlternative alt = (StepAlternative) tmpAlt;
 			if (tmpGwStep instanceof ChoiceStep) {
@@ -2778,8 +2991,14 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 											FN2S n2s = (FN2S) tmpN2s;
 											if (tmpGw2gs instanceof GW2S) {
 												GW2S gw2gs = (GW2S) tmpGw2gs;
-												return new Object[] { alt, gwStep, flow, process, gw, gcw, node, step,
-														n2s, gw2gs, isApplicableMatch };
+												if (tmpUseCase instanceof UseCase) {
+													UseCase useCase = (UseCase) tmpUseCase;
+													if (tmpP2uc instanceof P2UC) {
+														P2UC p2uc = (P2UC) tmpP2uc;
+														return new Object[] { alt, gwStep, flow, process, gw, gcw, node,
+																step, n2s, gw2gs, useCase, p2uc, isApplicableMatch };
+													}
+												}
 											}
 										}
 									}
@@ -2793,9 +3012,10 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return null;
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_11_1_blackBBBBBBBBBBBFB(StepAlternative alt,
+	public static final Object[] pattern_LastStepInAltFlow_11_1_blackBBBBBBBBBBBBBFB(StepAlternative alt,
 			ChoiceStep gwStep, AlternativeFlow flow, SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node,
-			Step step, FN2S n2s, GW2S gw2gs, LastStepInAltFlow _this, IsApplicableMatch isApplicableMatch) {
+			Step step, FN2S n2s, GW2S gw2gs, UseCase useCase, P2UC p2uc, LastStepInAltFlow _this,
+			IsApplicableMatch isApplicableMatch) {
 		if (!gwStep.equals(step)) {
 			if (!gw.equals(node)) {
 				if (!gcw.equals(gw)) {
@@ -2804,7 +3024,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 							if (tmpCsp instanceof CSP) {
 								CSP csp = (CSP) tmpCsp;
 								return new Object[] { alt, gwStep, flow, process, gw, gcw, node, step, n2s, gw2gs,
-										_this, csp, isApplicableMatch };
+										useCase, p2uc, _this, csp, isApplicableMatch };
 							}
 						}
 					}
@@ -2814,9 +3034,9 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return null;
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_11_1_bindingAndBlackFFFFFFFFFFBFB(LastStepInAltFlow _this,
+	public static final Object[] pattern_LastStepInAltFlow_11_1_bindingAndBlackFFFFFFFFFFFFBFB(LastStepInAltFlow _this,
 			IsApplicableMatch isApplicableMatch) {
-		Object[] result_pattern_LastStepInAltFlow_11_1_binding = pattern_LastStepInAltFlow_11_1_bindingFFFFFFFFFFB(
+		Object[] result_pattern_LastStepInAltFlow_11_1_binding = pattern_LastStepInAltFlow_11_1_bindingFFFFFFFFFFFFB(
 				isApplicableMatch);
 		if (result_pattern_LastStepInAltFlow_11_1_binding != null) {
 			StepAlternative alt = (StepAlternative) result_pattern_LastStepInAltFlow_11_1_binding[0];
@@ -2829,14 +3049,17 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 			Step step = (Step) result_pattern_LastStepInAltFlow_11_1_binding[7];
 			FN2S n2s = (FN2S) result_pattern_LastStepInAltFlow_11_1_binding[8];
 			GW2S gw2gs = (GW2S) result_pattern_LastStepInAltFlow_11_1_binding[9];
+			UseCase useCase = (UseCase) result_pattern_LastStepInAltFlow_11_1_binding[10];
+			P2UC p2uc = (P2UC) result_pattern_LastStepInAltFlow_11_1_binding[11];
 
-			Object[] result_pattern_LastStepInAltFlow_11_1_black = pattern_LastStepInAltFlow_11_1_blackBBBBBBBBBBBFB(
-					alt, gwStep, flow, process, gw, gcw, node, step, n2s, gw2gs, _this, isApplicableMatch);
+			Object[] result_pattern_LastStepInAltFlow_11_1_black = pattern_LastStepInAltFlow_11_1_blackBBBBBBBBBBBBBFB(
+					alt, gwStep, flow, process, gw, gcw, node, step, n2s, gw2gs, useCase, p2uc, _this,
+					isApplicableMatch);
 			if (result_pattern_LastStepInAltFlow_11_1_black != null) {
-				CSP csp = (CSP) result_pattern_LastStepInAltFlow_11_1_black[11];
+				CSP csp = (CSP) result_pattern_LastStepInAltFlow_11_1_black[13];
 
-				return new Object[] { alt, gwStep, flow, process, gw, gcw, node, step, n2s, gw2gs, _this, csp,
-						isApplicableMatch };
+				return new Object[] { alt, gwStep, flow, process, gw, gcw, node, step, n2s, gw2gs, useCase, p2uc, _this,
+						csp, isApplicableMatch };
 			}
 		}
 		return null;
@@ -2861,9 +3084,9 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return new Object[] { ruleresult, sf };
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_11_3_blackBBBBBBBBBBBB(PerformRuleResult ruleresult,
+	public static final Object[] pattern_LastStepInAltFlow_11_3_blackBBBBBBBBBBBBBB(PerformRuleResult ruleresult,
 			EObject alt, EObject gwStep, EObject flow, EObject process, EObject gw, EObject gcw, EObject node,
-			EObject sf, EObject step, EObject n2s, EObject gw2gs) {
+			EObject sf, EObject step, EObject n2s, EObject gw2gs, EObject useCase, EObject p2uc) {
 		if (!alt.equals(gwStep)) {
 			if (!alt.equals(flow)) {
 				if (!alt.equals(process)) {
@@ -2874,96 +3097,167 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 									if (!alt.equals(step)) {
 										if (!alt.equals(n2s)) {
 											if (!alt.equals(gw2gs)) {
-												if (!gwStep.equals(process)) {
-													if (!gwStep.equals(node)) {
-														if (!gwStep.equals(sf)) {
-															if (!gwStep.equals(step)) {
-																if (!gwStep.equals(n2s)) {
-																	if (!flow.equals(gwStep)) {
-																		if (!flow.equals(process)) {
-																			if (!flow.equals(gw)) {
-																				if (!flow.equals(gcw)) {
-																					if (!flow.equals(node)) {
-																						if (!flow.equals(sf)) {
-																							if (!flow.equals(step)) {
-																								if (!flow.equals(n2s)) {
+												if (!alt.equals(useCase)) {
+													if (!alt.equals(p2uc)) {
+														if (!gwStep.equals(process)) {
+															if (!gwStep.equals(node)) {
+																if (!gwStep.equals(sf)) {
+																	if (!gwStep.equals(step)) {
+																		if (!gwStep.equals(n2s)) {
+																			if (!gwStep.equals(useCase)) {
+																				if (!gwStep.equals(p2uc)) {
+																					if (!flow.equals(gwStep)) {
+																						if (!flow.equals(process)) {
+																							if (!flow.equals(gw)) {
+																								if (!flow.equals(gcw)) {
 																									if (!flow.equals(
-																											gw2gs)) {
-																										if (!process
+																											node)) {
+																										if (!flow
 																												.equals(sf)) {
-																											if (!process
+																											if (!flow
 																													.equals(step)) {
-																												if (!gw.equals(
-																														gwStep)) {
-																													if (!gw.equals(
-																															process)) {
-																														if (!gw.equals(
-																																node)) {
-																															if (!gw.equals(
-																																	sf)) {
-																																if (!gw.equals(
-																																		step)) {
-																																	if (!gw.equals(
-																																			n2s)) {
-																																		if (!gw.equals(
-																																				gw2gs)) {
-																																			if (!gcw.equals(
+																												if (!flow
+																														.equals(n2s)) {
+																													if (!flow
+																															.equals(gw2gs)) {
+																														if (!flow
+																																.equals(useCase)) {
+																															if (!flow
+																																	.equals(p2uc)) {
+																																if (!process
+																																		.equals(sf)) {
+																																	if (!process
+																																			.equals(step)) {
+																																		if (!process
+																																				.equals(useCase)) {
+																																			if (!gw.equals(
 																																					gwStep)) {
-																																				if (!gcw.equals(
+																																				if (!gw.equals(
 																																						process)) {
-																																					if (!gcw.equals(
-																																							gw)) {
-																																						if (!gcw.equals(
-																																								node)) {
-																																							if (!gcw.equals(
-																																									sf)) {
-																																								if (!gcw.equals(
-																																										step)) {
-																																									if (!gcw.equals(
-																																											n2s)) {
-																																										if (!gcw.equals(
-																																												gw2gs)) {
-																																											if (!node
-																																													.equals(process)) {
-																																												if (!node
-																																														.equals(sf)) {
-																																													if (!node
-																																															.equals(step)) {
-																																														if (!sf.equals(
-																																																step)) {
-																																															if (!n2s.equals(
-																																																	process)) {
-																																																if (!n2s.equals(
-																																																		node)) {
-																																																	if (!n2s.equals(
-																																																			sf)) {
-																																																		if (!n2s.equals(
-																																																				step)) {
-																																																			if (!gw2gs
-																																																					.equals(gwStep)) {
-																																																				if (!gw2gs
-																																																						.equals(process)) {
-																																																					if (!gw2gs
-																																																							.equals(node)) {
-																																																						if (!gw2gs
-																																																								.equals(sf)) {
-																																																							if (!gw2gs
-																																																									.equals(step)) {
-																																																								if (!gw2gs
-																																																										.equals(n2s)) {
-																																																									return new Object[] {
-																																																											ruleresult,
-																																																											alt,
-																																																											gwStep,
-																																																											flow,
-																																																											process,
-																																																											gw,
-																																																											gcw,
-																																																											node,
-																																																											sf,
-																																																											step,
-																																																											n2s,
-																																																											gw2gs };
+																																					if (!gw.equals(
+																																							node)) {
+																																						if (!gw.equals(
+																																								sf)) {
+																																							if (!gw.equals(
+																																									step)) {
+																																								if (!gw.equals(
+																																										n2s)) {
+																																									if (!gw.equals(
+																																											gw2gs)) {
+																																										if (!gw.equals(
+																																												useCase)) {
+																																											if (!gw.equals(
+																																													p2uc)) {
+																																												if (!gcw.equals(
+																																														gwStep)) {
+																																													if (!gcw.equals(
+																																															process)) {
+																																														if (!gcw.equals(
+																																																gw)) {
+																																															if (!gcw.equals(
+																																																	node)) {
+																																																if (!gcw.equals(
+																																																		sf)) {
+																																																	if (!gcw.equals(
+																																																			step)) {
+																																																		if (!gcw.equals(
+																																																				n2s)) {
+																																																			if (!gcw.equals(
+																																																					gw2gs)) {
+																																																				if (!gcw.equals(
+																																																						useCase)) {
+																																																					if (!gcw.equals(
+																																																							p2uc)) {
+																																																						if (!node
+																																																								.equals(process)) {
+																																																							if (!node
+																																																									.equals(sf)) {
+																																																								if (!node
+																																																										.equals(step)) {
+																																																									if (!node
+																																																											.equals(useCase)) {
+																																																										if (!node
+																																																												.equals(p2uc)) {
+																																																											if (!sf.equals(
+																																																													step)) {
+																																																												if (!sf.equals(
+																																																														useCase)) {
+																																																													if (!step
+																																																															.equals(useCase)) {
+																																																														if (!n2s.equals(
+																																																																process)) {
+																																																															if (!n2s.equals(
+																																																																	node)) {
+																																																																if (!n2s.equals(
+																																																																		sf)) {
+																																																																	if (!n2s.equals(
+																																																																			step)) {
+																																																																		if (!n2s.equals(
+																																																																				useCase)) {
+																																																																			if (!n2s.equals(
+																																																																					p2uc)) {
+																																																																				if (!gw2gs
+																																																																						.equals(gwStep)) {
+																																																																					if (!gw2gs
+																																																																							.equals(process)) {
+																																																																						if (!gw2gs
+																																																																								.equals(node)) {
+																																																																							if (!gw2gs
+																																																																									.equals(sf)) {
+																																																																								if (!gw2gs
+																																																																										.equals(step)) {
+																																																																									if (!gw2gs
+																																																																											.equals(n2s)) {
+																																																																										if (!gw2gs
+																																																																												.equals(useCase)) {
+																																																																											if (!gw2gs
+																																																																													.equals(p2uc)) {
+																																																																												if (!p2uc
+																																																																														.equals(process)) {
+																																																																													if (!p2uc
+																																																																															.equals(sf)) {
+																																																																														if (!p2uc
+																																																																																.equals(step)) {
+																																																																															if (!p2uc
+																																																																																	.equals(useCase)) {
+																																																																																return new Object[] {
+																																																																																		ruleresult,
+																																																																																		alt,
+																																																																																		gwStep,
+																																																																																		flow,
+																																																																																		process,
+																																																																																		gw,
+																																																																																		gcw,
+																																																																																		node,
+																																																																																		sf,
+																																																																																		step,
+																																																																																		n2s,
+																																																																																		gw2gs,
+																																																																																		useCase,
+																																																																																		p2uc };
+																																																																															}
+																																																																														}
+																																																																													}
+																																																																												}
+																																																																											}
+																																																																										}
+																																																																									}
+																																																																								}
+																																																																							}
+																																																																						}
+																																																																					}
+																																																																				}
+																																																																			}
+																																																																		}
+																																																																	}
+																																																																}
+																																																															}
+																																																														}
+																																																													}
+																																																												}
+																																																											}
+																																																										}
+																																																									}
 																																																								}
 																																																							}
 																																																						}
@@ -3074,10 +3368,12 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 				gcw__sf____incoming, flow__step______last };
 	}
 
-	public static final void pattern_LastStepInAltFlow_11_5_expressionBBBBBBBBBBBBB(LastStepInAltFlow _this,
+	public static final void pattern_LastStepInAltFlow_11_5_expressionBBBBBBBBBBBBBBB(LastStepInAltFlow _this,
 			PerformRuleResult ruleresult, EObject alt, EObject gwStep, EObject flow, EObject process, EObject gw,
-			EObject gcw, EObject node, EObject sf, EObject step, EObject n2s, EObject gw2gs) {
-		_this.registerObjects_BWD(ruleresult, alt, gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs);
+			EObject gcw, EObject node, EObject sf, EObject step, EObject n2s, EObject gw2gs, EObject useCase,
+			EObject p2uc) {
+		_this.registerObjects_BWD(ruleresult, alt, gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs, useCase,
+				p2uc);
 
 	}
 
@@ -3132,15 +3428,17 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return new Object[] { performOperation, ruleresult };
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_12_2_bindingFFFFB(Match match) {
+	public static final Object[] pattern_LastStepInAltFlow_12_2_bindingFFFFFB(Match match) {
 		EObject _localVariable_0 = match.getObject("alt");
 		EObject _localVariable_1 = match.getObject("gwStep");
 		EObject _localVariable_2 = match.getObject("flow");
 		EObject _localVariable_3 = match.getObject("step");
+		EObject _localVariable_4 = match.getObject("useCase");
 		EObject tmpAlt = _localVariable_0;
 		EObject tmpGwStep = _localVariable_1;
 		EObject tmpFlow = _localVariable_2;
 		EObject tmpStep = _localVariable_3;
+		EObject tmpUseCase = _localVariable_4;
 		if (tmpAlt instanceof StepAlternative) {
 			StepAlternative alt = (StepAlternative) tmpAlt;
 			if (tmpGwStep instanceof ChoiceStep) {
@@ -3149,7 +3447,10 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 					AlternativeFlow flow = (AlternativeFlow) tmpFlow;
 					if (tmpStep instanceof Step) {
 						Step step = (Step) tmpStep;
-						return new Object[] { alt, gwStep, flow, step, match };
+						if (tmpUseCase instanceof UseCase) {
+							UseCase useCase = (UseCase) tmpUseCase;
+							return new Object[] { alt, gwStep, flow, step, useCase, match };
+						}
 					}
 				}
 			}
@@ -3157,8 +3458,8 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_LastStepInAltFlow_12_2_blackBBBFFBFFB(StepAlternative alt,
-			ChoiceStep gwStep, AlternativeFlow flow, Step step, Match match) {
+	public static final Iterable<Object[]> pattern_LastStepInAltFlow_12_2_blackBBBFFFBFFBFB(StepAlternative alt,
+			ChoiceStep gwStep, AlternativeFlow flow, Step step, UseCase useCase, Match match) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		if (!gwStep.equals(step)) {
 			for (FN2S n2s : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step, FN2S.class,
@@ -3173,8 +3474,15 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 								boolean gwisDiverging = gw.isIsDiverging();
 								if (Boolean.valueOf(gwisDiverging).equals(Boolean.valueOf(true))) {
 									if (Boolean.valueOf(gwisDiverging).equals(Boolean.valueOf(true))) {
-										_result.add(
-												new Object[] { alt, gwStep, flow, gw, node, step, n2s, gw2gs, match });
+										for (P2UC p2uc : org.moflon.core.utilities.eMoflonEMFUtil
+												.getOppositeReferenceTyped(useCase, P2UC.class, "target")) {
+											SimpleBPMN.Process process = p2uc.getSource();
+											if (process != null) {
+												_result.add(new Object[] { alt, gwStep, flow, process, gw, node, step,
+														n2s, gw2gs, useCase, p2uc, match });
+											}
+
+										}
 									}
 								}
 
@@ -3189,48 +3497,74 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return _result;
 	}
 
-	public static final Iterable<Object[]> pattern_LastStepInAltFlow_12_3_blackBBBFBFBBBB(StepAlternative alt,
-			ChoiceStep gwStep, AlternativeFlow flow, Gateway gw, FlowNode node, Step step, FN2S n2s, GW2S gw2gs) {
+	public static final Iterable<Object[]> pattern_LastStepInAltFlow_12_3_blackBBBBBFBBBBBB(StepAlternative alt,
+			ChoiceStep gwStep, AlternativeFlow flow, SimpleBPMN.Process process, Gateway gw, FlowNode node, Step step,
+			FN2S n2s, GW2S gw2gs, UseCase useCase, P2UC p2uc) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		if (!gwStep.equals(step)) {
 			if (!gw.equals(node)) {
 				if (flow.equals(alt.getRef())) {
 					if (gwStep.equals(alt.get__hasContinue())) {
 						if (gwStep.getStepAlternatives().contains(alt)) {
-							if (flow.getSteps().contains(step)) {
-								if (step.equals(flow.get__last())) {
-									if (node.equals(n2s.getSource())) {
-										if (step.equals(n2s.getTarget())) {
-											if (gw.equals(gw2gs.getSource())) {
-												if (gwStep.equals(gw2gs.getTarget())) {
-													Gateway gcw = gw.get__conv();
-													if (gcw != null) {
-														if (!gcw.equals(gw)) {
-															if (!gcw.equals(node)) {
-																boolean gwisDiverging = gw.isIsDiverging();
-																if (Boolean.valueOf(gwisDiverging)
-																		.equals(Boolean.valueOf(true))) {
-																	if (Boolean.valueOf(gwisDiverging)
-																			.equals(Boolean.valueOf(true))) {
-																		boolean gcwisDiverging = gcw.isIsDiverging();
-																		if (Boolean.valueOf(gcwisDiverging)
-																				.equals(false)) {
-																			if (Boolean.valueOf(gcwisDiverging)
-																					.equals(false)) {
-																				for (SimpleBPMN.Process process : org.moflon.core.utilities.eMoflonEMFUtil
-																						.getOppositeReferenceTyped(gw,
-																								SimpleBPMN.Process.class,
-																								"flowElements")) {
+							if (process.getFlowElements().contains(gw)) {
+								if (process.getFlowElements().contains(node)) {
+									if (flow.getSteps().contains(step)) {
+										if (step.equals(flow.get__last())) {
+											if (node.equals(n2s.getSource())) {
+												if (step.equals(n2s.getTarget())) {
+													if (gw.equals(gw2gs.getSource())) {
+														if (gwStep.equals(gw2gs.getTarget())) {
+															if (useCase.getFlows().contains(flow)) {
+																if (process.equals(p2uc.getSource())) {
+																	if (useCase.equals(p2uc.getTarget())) {
+																		Gateway gcw = gw.get__conv();
+																		if (gcw != null) {
+																			if (!gcw.equals(gw)) {
+																				if (!gcw.equals(node)) {
 																					if (process.getFlowElements()
 																							.contains(gcw)) {
-																						if (process.getFlowElements()
-																								.contains(node)) {
-																							_result.add(new Object[] {
-																									alt, gwStep, flow,
-																									process, gw, gcw,
-																									node, step, n2s,
-																									gw2gs });
+																						boolean gwisDiverging = gw
+																								.isIsDiverging();
+																						if (Boolean
+																								.valueOf(gwisDiverging)
+																								.equals(Boolean.valueOf(
+																										true))) {
+																							if (Boolean
+																									.valueOf(
+																											gwisDiverging)
+																									.equals(Boolean
+																											.valueOf(
+																													true))) {
+																								boolean gcwisDiverging = gcw
+																										.isIsDiverging();
+																								if (Boolean
+																										.valueOf(
+																												gcwisDiverging)
+																										.equals(false)) {
+																									if (Boolean
+																											.valueOf(
+																													gcwisDiverging)
+																											.equals(false)) {
+																										_result.add(
+																												new Object[] {
+																														alt,
+																														gwStep,
+																														flow,
+																														process,
+																														gw,
+																														gcw,
+																														node,
+																														step,
+																														n2s,
+																														gw2gs,
+																														useCase,
+																														p2uc });
+																									}
+																								}
+
+																							}
 																						}
+
 																					}
 																				}
 																			}
@@ -3238,11 +3572,9 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 
 																	}
 																}
-
 															}
 														}
 													}
-
 												}
 											}
 										}
@@ -3257,9 +3589,9 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return _result;
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_12_3_greenBBBBBBBBBBFFFFFFFFFFFFFF(StepAlternative alt,
+	public static final Object[] pattern_LastStepInAltFlow_12_3_greenBBBBBBBBBBBBFFFFFFFFFFFFFFFFF(StepAlternative alt,
 			ChoiceStep gwStep, AlternativeFlow flow, SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node,
-			Step step, FN2S n2s, GW2S gw2gs) {
+			Step step, FN2S n2s, GW2S gw2gs, UseCase useCase, P2UC p2uc) {
 		IsApplicableMatch isApplicableMatch = TGGRuntimeFactory.eINSTANCE.createIsApplicableMatch();
 		EMoflonEdge alt__flow____ref = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge alt__gwStep______hasContinue = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
@@ -3274,6 +3606,9 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		EMoflonEdge n2s__step____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge gw2gs__gw____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge gw2gs__gwStep____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge useCase__flow____flows = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge p2uc__process____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge p2uc__useCase____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		String alt__flow____ref_name_prime = "ref";
 		String alt__gwStep______hasContinue_name_prime = "__hasContinue";
 		String gwStep__alt____stepAlternatives_name_prime = "stepAlternatives";
@@ -3287,6 +3622,9 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		String n2s__step____target_name_prime = "target";
 		String gw2gs__gw____source_name_prime = "source";
 		String gw2gs__gwStep____target_name_prime = "target";
+		String useCase__flow____flows_name_prime = "flows";
+		String p2uc__process____source_name_prime = "source";
+		String p2uc__useCase____target_name_prime = "target";
 		isApplicableMatch.getAllContextElements().add(alt);
 		isApplicableMatch.getAllContextElements().add(gwStep);
 		isApplicableMatch.getAllContextElements().add(flow);
@@ -3297,6 +3635,8 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		isApplicableMatch.getAllContextElements().add(step);
 		isApplicableMatch.getAllContextElements().add(n2s);
 		isApplicableMatch.getAllContextElements().add(gw2gs);
+		isApplicableMatch.getAllContextElements().add(useCase);
+		isApplicableMatch.getAllContextElements().add(p2uc);
 		alt__flow____ref.setSrc(alt);
 		alt__flow____ref.setTrg(flow);
 		isApplicableMatch.getAllContextElements().add(alt__flow____ref);
@@ -3336,6 +3676,15 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		gw2gs__gwStep____target.setSrc(gw2gs);
 		gw2gs__gwStep____target.setTrg(gwStep);
 		isApplicableMatch.getAllContextElements().add(gw2gs__gwStep____target);
+		useCase__flow____flows.setSrc(useCase);
+		useCase__flow____flows.setTrg(flow);
+		isApplicableMatch.getAllContextElements().add(useCase__flow____flows);
+		p2uc__process____source.setSrc(p2uc);
+		p2uc__process____source.setTrg(process);
+		isApplicableMatch.getAllContextElements().add(p2uc__process____source);
+		p2uc__useCase____target.setSrc(p2uc);
+		p2uc__useCase____target.setTrg(useCase);
+		isApplicableMatch.getAllContextElements().add(p2uc__useCase____target);
 		alt__flow____ref.setName(alt__flow____ref_name_prime);
 		alt__gwStep______hasContinue.setName(alt__gwStep______hasContinue_name_prime);
 		gwStep__alt____stepAlternatives.setName(gwStep__alt____stepAlternatives_name_prime);
@@ -3349,22 +3698,27 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		n2s__step____target.setName(n2s__step____target_name_prime);
 		gw2gs__gw____source.setName(gw2gs__gw____source_name_prime);
 		gw2gs__gwStep____target.setName(gw2gs__gwStep____target_name_prime);
-		return new Object[] { alt, gwStep, flow, process, gw, gcw, node, step, n2s, gw2gs, isApplicableMatch,
-				alt__flow____ref, alt__gwStep______hasContinue, gwStep__alt____stepAlternatives,
+		useCase__flow____flows.setName(useCase__flow____flows_name_prime);
+		p2uc__process____source.setName(p2uc__process____source_name_prime);
+		p2uc__useCase____target.setName(p2uc__useCase____target_name_prime);
+		return new Object[] { alt, gwStep, flow, process, gw, gcw, node, step, n2s, gw2gs, useCase, p2uc,
+				isApplicableMatch, alt__flow____ref, alt__gwStep______hasContinue, gwStep__alt____stepAlternatives,
 				process__gw____flowElements, process__gcw____flowElements, process__node____flowElements,
 				gw__gcw______conv, flow__step____steps, flow__step______last, n2s__node____source, n2s__step____target,
-				gw2gs__gw____source, gw2gs__gwStep____target };
+				gw2gs__gw____source, gw2gs__gwStep____target, useCase__flow____flows, p2uc__process____source,
+				p2uc__useCase____target };
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_12_4_bindingFBBBBBBBBBBBB(LastStepInAltFlow _this,
+	public static final Object[] pattern_LastStepInAltFlow_12_4_bindingFBBBBBBBBBBBBBB(LastStepInAltFlow _this,
 			IsApplicableMatch isApplicableMatch, StepAlternative alt, ChoiceStep gwStep, AlternativeFlow flow,
-			SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, Step step, FN2S n2s, GW2S gw2gs) {
+			SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, Step step, FN2S n2s, GW2S gw2gs,
+			UseCase useCase, P2UC p2uc) {
 		CSP _localVariable_0 = _this.isApplicable_solveCsp_BWD(isApplicableMatch, alt, gwStep, flow, process, gw, gcw,
-				node, step, n2s, gw2gs);
+				node, step, n2s, gw2gs, useCase, p2uc);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
 			return new Object[] { csp, _this, isApplicableMatch, alt, gwStep, flow, process, gw, gcw, node, step, n2s,
-					gw2gs };
+					gw2gs, useCase, p2uc };
 		}
 		return null;
 	}
@@ -3373,11 +3727,12 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return new Object[] { csp };
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_12_4_bindingAndBlackFBBBBBBBBBBBB(LastStepInAltFlow _this,
+	public static final Object[] pattern_LastStepInAltFlow_12_4_bindingAndBlackFBBBBBBBBBBBBBB(LastStepInAltFlow _this,
 			IsApplicableMatch isApplicableMatch, StepAlternative alt, ChoiceStep gwStep, AlternativeFlow flow,
-			SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, Step step, FN2S n2s, GW2S gw2gs) {
-		Object[] result_pattern_LastStepInAltFlow_12_4_binding = pattern_LastStepInAltFlow_12_4_bindingFBBBBBBBBBBBB(
-				_this, isApplicableMatch, alt, gwStep, flow, process, gw, gcw, node, step, n2s, gw2gs);
+			SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, Step step, FN2S n2s, GW2S gw2gs,
+			UseCase useCase, P2UC p2uc) {
+		Object[] result_pattern_LastStepInAltFlow_12_4_binding = pattern_LastStepInAltFlow_12_4_bindingFBBBBBBBBBBBBBB(
+				_this, isApplicableMatch, alt, gwStep, flow, process, gw, gcw, node, step, n2s, gw2gs, useCase, p2uc);
 		if (result_pattern_LastStepInAltFlow_12_4_binding != null) {
 			CSP csp = (CSP) result_pattern_LastStepInAltFlow_12_4_binding[0];
 
@@ -3385,7 +3740,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 			if (result_pattern_LastStepInAltFlow_12_4_black != null) {
 
 				return new Object[] { csp, _this, isApplicableMatch, alt, gwStep, flow, process, gw, gcw, node, step,
-						n2s, gw2gs };
+						n2s, gw2gs, useCase, p2uc };
 			}
 		}
 		return null;
@@ -3459,7 +3814,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return new Object[] { __result };
 	}
 
-	public static final Iterable<Object[]> pattern_LastStepInAltFlow_20_2_blackFFFFB(EMoflonEdge _edge___hasContinue) {
+	public static final Iterable<Object[]> pattern_LastStepInAltFlow_20_2_blackFFFFFB(EMoflonEdge _edge___hasContinue) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		EObject tmpAlt = _edge___hasContinue.getSrc();
 		if (tmpAlt instanceof StepAlternative) {
@@ -3475,7 +3830,11 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 							if (step != null) {
 								if (!gwStep.equals(step)) {
 									if (flow.getSteps().contains(step)) {
-										_result.add(new Object[] { alt, gwStep, flow, step, _edge___hasContinue });
+										for (UseCase useCase : org.moflon.core.utilities.eMoflonEMFUtil
+												.getOppositeReferenceTyped(flow, UseCase.class, "flows")) {
+											_result.add(new Object[] { alt, gwStep, flow, step, useCase,
+													_edge___hasContinue });
+										}
 									}
 								}
 							}
@@ -3500,9 +3859,9 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 
 	}
 
-	public static final boolean pattern_LastStepInAltFlow_20_3_expressionFBBBBBB(LastStepInAltFlow _this, Match match,
-			StepAlternative alt, ChoiceStep gwStep, AlternativeFlow flow, Step step) {
-		boolean _localVariable_0 = _this.isAppropriate_BWD(match, alt, gwStep, flow, step);
+	public static final boolean pattern_LastStepInAltFlow_20_3_expressionFBBBBBBB(LastStepInAltFlow _this, Match match,
+			StepAlternative alt, ChoiceStep gwStep, AlternativeFlow flow, Step step, UseCase useCase) {
+		boolean _localVariable_0 = _this.isAppropriate_BWD(match, alt, gwStep, flow, step, useCase);
 		boolean _result = Boolean.valueOf(_localVariable_0);
 		return _result;
 	}
@@ -3576,11 +3935,11 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		if (!gw.equals(node)) {
 			if (!gcw.equals(gw)) {
 				if (!gcw.equals(node)) {
-					for (ExclusiveGateway __DEC_sf_default_651020 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ExclusiveGateway __DEC_sf_default_654459 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
-						if (!gw.equals(__DEC_sf_default_651020)) {
-							if (!gcw.equals(__DEC_sf_default_651020)) {
-								if (!node.equals(__DEC_sf_default_651020)) {
+						if (!gw.equals(__DEC_sf_default_654459)) {
+							if (!gcw.equals(__DEC_sf_default_654459)) {
+								if (!node.equals(__DEC_sf_default_654459)) {
 									return new Object[] { sf, gw, gcw, node };
 								}
 							}
@@ -3594,9 +3953,9 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 
 	public static final Object[] pattern_LastStepInAltFlow_21_2_black_nac_1BB(SequenceFlow sf,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf_flowElements_99881 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf_flowElements_520559 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_99881)) {
+			if (!process.equals(__DEC_sf_flowElements_520559)) {
 				return new Object[] { sf, process };
 			}
 		}
@@ -3753,11 +4112,11 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		if (!gw.equals(node)) {
 			if (!gcw.equals(gw)) {
 				if (!gcw.equals(node)) {
-					for (ExclusiveGateway __DEC_sf_default_707199 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ExclusiveGateway __DEC_sf_default_201774 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
-						if (!gw.equals(__DEC_sf_default_707199)) {
-							if (!gcw.equals(__DEC_sf_default_707199)) {
-								if (!node.equals(__DEC_sf_default_707199)) {
+						if (!gw.equals(__DEC_sf_default_201774)) {
+							if (!gcw.equals(__DEC_sf_default_201774)) {
+								if (!node.equals(__DEC_sf_default_201774)) {
 									return new Object[] { sf, gw, gcw, node };
 								}
 							}
@@ -3771,9 +4130,9 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 
 	public static final Object[] pattern_LastStepInAltFlow_22_2_black_nac_1BB(SequenceFlow sf,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf_flowElements_991796 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf_flowElements_379153 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_991796)) {
+			if (!process.equals(__DEC_sf_flowElements_379153)) {
 				return new Object[] { sf, process };
 			}
 		}
@@ -3929,11 +4288,11 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		if (!gw.equals(node)) {
 			if (!gcw.equals(gw)) {
 				if (!gcw.equals(node)) {
-					for (ExclusiveGateway __DEC_sf_default_831803 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ExclusiveGateway __DEC_sf_default_301120 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
-						if (!gw.equals(__DEC_sf_default_831803)) {
-							if (!gcw.equals(__DEC_sf_default_831803)) {
-								if (!node.equals(__DEC_sf_default_831803)) {
+						if (!gw.equals(__DEC_sf_default_301120)) {
+							if (!gcw.equals(__DEC_sf_default_301120)) {
+								if (!node.equals(__DEC_sf_default_301120)) {
 									return new Object[] { sf, gw, gcw, node };
 								}
 							}
@@ -3947,9 +4306,9 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 
 	public static final Object[] pattern_LastStepInAltFlow_23_2_black_nac_1BB(SequenceFlow sf,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf_flowElements_936391 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf_flowElements_631411 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_936391)) {
+			if (!process.equals(__DEC_sf_flowElements_631411)) {
 				return new Object[] { sf, process };
 			}
 		}
@@ -4106,11 +4465,11 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		if (!gw.equals(node)) {
 			if (!gcw.equals(gw)) {
 				if (!gcw.equals(node)) {
-					for (ExclusiveGateway __DEC_sf_default_507171 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ExclusiveGateway __DEC_sf_default_337869 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
-						if (!gw.equals(__DEC_sf_default_507171)) {
-							if (!gcw.equals(__DEC_sf_default_507171)) {
-								if (!node.equals(__DEC_sf_default_507171)) {
+						if (!gw.equals(__DEC_sf_default_337869)) {
+							if (!gcw.equals(__DEC_sf_default_337869)) {
+								if (!node.equals(__DEC_sf_default_337869)) {
 									return new Object[] { sf, gw, gcw, node };
 								}
 							}
@@ -4124,9 +4483,9 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 
 	public static final Object[] pattern_LastStepInAltFlow_24_2_black_nac_1BB(SequenceFlow sf,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf_flowElements_946528 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf_flowElements_836468 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_946528)) {
+			if (!process.equals(__DEC_sf_flowElements_836468)) {
 				return new Object[] { sf, process };
 			}
 		}
@@ -4281,11 +4640,11 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		if (!gw.equals(node)) {
 			if (!gcw.equals(gw)) {
 				if (!gcw.equals(node)) {
-					for (ExclusiveGateway __DEC_sf_default_879894 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ExclusiveGateway __DEC_sf_default_56715 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
-						if (!gw.equals(__DEC_sf_default_879894)) {
-							if (!gcw.equals(__DEC_sf_default_879894)) {
-								if (!node.equals(__DEC_sf_default_879894)) {
+						if (!gw.equals(__DEC_sf_default_56715)) {
+							if (!gcw.equals(__DEC_sf_default_56715)) {
+								if (!node.equals(__DEC_sf_default_56715)) {
 									return new Object[] { sf, gw, gcw, node };
 								}
 							}
@@ -4299,9 +4658,9 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 
 	public static final Object[] pattern_LastStepInAltFlow_25_2_black_nac_1BB(SequenceFlow sf,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf_flowElements_898396 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf_flowElements_717507 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_898396)) {
+			if (!process.equals(__DEC_sf_flowElements_717507)) {
 				return new Object[] { sf, process };
 			}
 		}
@@ -4451,7 +4810,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return new Object[] { __result };
 	}
 
-	public static final Iterable<Object[]> pattern_LastStepInAltFlow_26_2_blackFFFFB(EMoflonEdge _edge___last) {
+	public static final Iterable<Object[]> pattern_LastStepInAltFlow_26_2_blackFFFFFB(EMoflonEdge _edge___last) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		EObject tmpFlow = _edge___last.getSrc();
 		if (tmpFlow instanceof AlternativeFlow) {
@@ -4467,7 +4826,11 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 							if (gwStep != null) {
 								if (!gwStep.equals(step)) {
 									if (gwStep.getStepAlternatives().contains(alt)) {
-										_result.add(new Object[] { alt, gwStep, flow, step, _edge___last });
+										for (UseCase useCase : org.moflon.core.utilities.eMoflonEMFUtil
+												.getOppositeReferenceTyped(flow, UseCase.class, "flows")) {
+											_result.add(
+													new Object[] { alt, gwStep, flow, step, useCase, _edge___last });
+										}
 									}
 								}
 							}
@@ -4491,9 +4854,9 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 
 	}
 
-	public static final boolean pattern_LastStepInAltFlow_26_3_expressionFBBBBBB(LastStepInAltFlow _this, Match match,
-			StepAlternative alt, ChoiceStep gwStep, AlternativeFlow flow, Step step) {
-		boolean _localVariable_0 = _this.isAppropriate_BWD(match, alt, gwStep, flow, step);
+	public static final boolean pattern_LastStepInAltFlow_26_3_expressionFBBBBBBB(LastStepInAltFlow _this, Match match,
+			StepAlternative alt, ChoiceStep gwStep, AlternativeFlow flow, Step step, UseCase useCase) {
+		boolean _localVariable_0 = _this.isAppropriate_BWD(match, alt, gwStep, flow, step, useCase);
 		boolean _result = Boolean.valueOf(_localVariable_0);
 		return _result;
 	}
@@ -4530,7 +4893,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return new Object[] { result };
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_29_2_bindingFFFFFFFFFBB(Match targetMatch,
+	public static final Object[] pattern_LastStepInAltFlow_29_2_bindingFFFFFFFFFFBB(Match targetMatch,
 			Match sourceMatch) {
 		EObject _localVariable_0 = targetMatch.getObject("alt");
 		EObject _localVariable_1 = targetMatch.getObject("gwStep");
@@ -4541,6 +4904,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		EObject _localVariable_6 = sourceMatch.getObject("node");
 		EObject _localVariable_7 = sourceMatch.getObject("sf");
 		EObject _localVariable_8 = targetMatch.getObject("step");
+		EObject _localVariable_9 = targetMatch.getObject("useCase");
 		EObject tmpAlt = _localVariable_0;
 		EObject tmpGwStep = _localVariable_1;
 		EObject tmpFlow = _localVariable_2;
@@ -4550,6 +4914,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		EObject tmpNode = _localVariable_6;
 		EObject tmpSf = _localVariable_7;
 		EObject tmpStep = _localVariable_8;
+		EObject tmpUseCase = _localVariable_9;
 		if (tmpAlt instanceof StepAlternative) {
 			StepAlternative alt = (StepAlternative) tmpAlt;
 			if (tmpGwStep instanceof ChoiceStep) {
@@ -4568,8 +4933,11 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 										SequenceFlow sf = (SequenceFlow) tmpSf;
 										if (tmpStep instanceof Step) {
 											Step step = (Step) tmpStep;
-											return new Object[] { alt, gwStep, flow, process, gw, gcw, node, sf, step,
-													targetMatch, sourceMatch };
+											if (tmpUseCase instanceof UseCase) {
+												UseCase useCase = (UseCase) tmpUseCase;
+												return new Object[] { alt, gwStep, flow, process, gw, gcw, node, sf,
+														step, useCase, targetMatch, sourceMatch };
+											}
 										}
 									}
 								}
@@ -4582,9 +4950,9 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_LastStepInAltFlow_29_2_blackBBBBBBBBBFFBB(StepAlternative alt,
+	public static final Iterable<Object[]> pattern_LastStepInAltFlow_29_2_blackBBBBBBBBBFFBFBB(StepAlternative alt,
 			ChoiceStep gwStep, AlternativeFlow flow, SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node,
-			SequenceFlow sf, Step step, Match sourceMatch, Match targetMatch) {
+			SequenceFlow sf, Step step, UseCase useCase, Match sourceMatch, Match targetMatch) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		if (!gwStep.equals(step)) {
 			if (!gw.equals(node)) {
@@ -4603,59 +4971,77 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 																if (gcw.equals(sf.getTargetRef())) {
 																	if (flow.getSteps().contains(step)) {
 																		if (step.equals(flow.get__last())) {
-																			boolean gwisDiverging = gw.isIsDiverging();
-																			if (Boolean.valueOf(gwisDiverging)
-																					.equals(Boolean.valueOf(true))) {
+																			if (useCase.getFlows().contains(flow)) {
+																				boolean gwisDiverging = gw
+																						.isIsDiverging();
 																				if (Boolean.valueOf(gwisDiverging)
 																						.equals(Boolean
 																								.valueOf(true))) {
-																					boolean gcwisDiverging = gcw
-																							.isIsDiverging();
-																					if (Boolean.valueOf(gcwisDiverging)
-																							.equals(false)) {
+																					if (Boolean.valueOf(gwisDiverging)
+																							.equals(Boolean
+																									.valueOf(true))) {
+																						boolean gcwisDiverging = gcw
+																								.isIsDiverging();
 																						if (Boolean
 																								.valueOf(gcwisDiverging)
 																								.equals(false)) {
-																							for (FN2S n2s : org.moflon.core.utilities.eMoflonEMFUtil
-																									.getOppositeReferenceTyped(
-																											node,
-																											FN2S.class,
-																											"source")) {
-																								if (step.equals(n2s
-																										.getTarget())) {
-																									for (GW2S gw2gs : org.moflon.core.utilities.eMoflonEMFUtil
-																											.getOppositeReferenceTyped(
-																													gw,
-																													GW2S.class,
-																													"source")) {
-																										if (gwStep
-																												.equals(gw2gs
-																														.getTarget())) {
-																											_result.add(
-																													new Object[] {
-																															alt,
-																															gwStep,
-																															flow,
-																															process,
-																															gw,
-																															gcw,
-																															node,
-																															sf,
-																															step,
-																															n2s,
-																															gw2gs,
-																															sourceMatch,
-																															targetMatch });
+																							if (Boolean
+																									.valueOf(
+																											gcwisDiverging)
+																									.equals(false)) {
+																								for (FN2S n2s : org.moflon.core.utilities.eMoflonEMFUtil
+																										.getOppositeReferenceTyped(
+																												node,
+																												FN2S.class,
+																												"source")) {
+																									if (step.equals(n2s
+																											.getTarget())) {
+																										for (GW2S gw2gs : org.moflon.core.utilities.eMoflonEMFUtil
+																												.getOppositeReferenceTyped(
+																														gw,
+																														GW2S.class,
+																														"source")) {
+																											if (gwStep
+																													.equals(gw2gs
+																															.getTarget())) {
+																												for (P2UC p2uc : org.moflon.core.utilities.eMoflonEMFUtil
+																														.getOppositeReferenceTyped(
+																																process,
+																																P2UC.class,
+																																"source")) {
+																													if (useCase
+																															.equals(p2uc
+																																	.getTarget())) {
+																														_result.add(
+																																new Object[] {
+																																		alt,
+																																		gwStep,
+																																		flow,
+																																		process,
+																																		gw,
+																																		gcw,
+																																		node,
+																																		sf,
+																																		step,
+																																		n2s,
+																																		gw2gs,
+																																		useCase,
+																																		p2uc,
+																																		sourceMatch,
+																																		targetMatch });
+																													}
+																												}
+																											}
 																										}
 																									}
 																								}
 																							}
 																						}
+
 																					}
-
 																				}
-																			}
 
+																			}
 																		}
 																	}
 																}
@@ -4676,9 +5062,10 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return _result;
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_29_2_greenBBBBBBBBBBBBBF(StepAlternative alt,
+	public static final Object[] pattern_LastStepInAltFlow_29_2_greenBBBBBBBBBBBBBBBF(StepAlternative alt,
 			ChoiceStep gwStep, AlternativeFlow flow, SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node,
-			SequenceFlow sf, Step step, FN2S n2s, GW2S gw2gs, Match sourceMatch, Match targetMatch) {
+			SequenceFlow sf, Step step, FN2S n2s, GW2S gw2gs, UseCase useCase, P2UC p2uc, Match sourceMatch,
+			Match targetMatch) {
 		IsApplicableMatchCC isApplicableMatch = TGGRuntimeFactory.eINSTANCE.createIsApplicableMatchCC();
 		String isApplicableMatch_ruleName_prime = "LastStepInAltFlow";
 		isApplicableMatch.setSourceMatch(sourceMatch);
@@ -4692,23 +5079,25 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		isApplicableMatch.getAllContextElements().add(gwStep);
 		isApplicableMatch.getAllContextElements().add(flow);
 		isApplicableMatch.getAllContextElements().add(step);
+		isApplicableMatch.getAllContextElements().add(useCase);
 		isApplicableMatch.getAllContextElements().add(n2s);
 		isApplicableMatch.getAllContextElements().add(gw2gs);
+		isApplicableMatch.getAllContextElements().add(p2uc);
 		isApplicableMatch.setRuleName(isApplicableMatch_ruleName_prime);
-		return new Object[] { alt, gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs, sourceMatch, targetMatch,
-				isApplicableMatch };
+		return new Object[] { alt, gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs, useCase, p2uc,
+				sourceMatch, targetMatch, isApplicableMatch };
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_29_3_bindingFBBBBBBBBBBBBBBB(LastStepInAltFlow _this,
+	public static final Object[] pattern_LastStepInAltFlow_29_3_bindingFBBBBBBBBBBBBBBBBB(LastStepInAltFlow _this,
 			IsApplicableMatchCC isApplicableMatch, StepAlternative alt, ChoiceStep gwStep, AlternativeFlow flow,
 			SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, SequenceFlow sf, Step step, FN2S n2s,
-			GW2S gw2gs, Match sourceMatch, Match targetMatch) {
+			GW2S gw2gs, UseCase useCase, P2UC p2uc, Match sourceMatch, Match targetMatch) {
 		CSP _localVariable_0 = _this.isApplicable_solveCsp_CC(isApplicableMatch, alt, gwStep, flow, process, gw, gcw,
-				node, sf, step, n2s, gw2gs, sourceMatch, targetMatch);
+				node, sf, step, n2s, gw2gs, useCase, p2uc, sourceMatch, targetMatch);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
 			return new Object[] { csp, _this, isApplicableMatch, alt, gwStep, flow, process, gw, gcw, node, sf, step,
-					n2s, gw2gs, sourceMatch, targetMatch };
+					n2s, gw2gs, useCase, p2uc, sourceMatch, targetMatch };
 		}
 		return null;
 	}
@@ -4717,13 +5106,13 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return new Object[] { csp };
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_29_3_bindingAndBlackFBBBBBBBBBBBBBBB(LastStepInAltFlow _this,
-			IsApplicableMatchCC isApplicableMatch, StepAlternative alt, ChoiceStep gwStep, AlternativeFlow flow,
-			SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, SequenceFlow sf, Step step, FN2S n2s,
-			GW2S gw2gs, Match sourceMatch, Match targetMatch) {
-		Object[] result_pattern_LastStepInAltFlow_29_3_binding = pattern_LastStepInAltFlow_29_3_bindingFBBBBBBBBBBBBBBB(
-				_this, isApplicableMatch, alt, gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs, sourceMatch,
-				targetMatch);
+	public static final Object[] pattern_LastStepInAltFlow_29_3_bindingAndBlackFBBBBBBBBBBBBBBBBB(
+			LastStepInAltFlow _this, IsApplicableMatchCC isApplicableMatch, StepAlternative alt, ChoiceStep gwStep,
+			AlternativeFlow flow, SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, SequenceFlow sf,
+			Step step, FN2S n2s, GW2S gw2gs, UseCase useCase, P2UC p2uc, Match sourceMatch, Match targetMatch) {
+		Object[] result_pattern_LastStepInAltFlow_29_3_binding = pattern_LastStepInAltFlow_29_3_bindingFBBBBBBBBBBBBBBBBB(
+				_this, isApplicableMatch, alt, gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs, useCase,
+				p2uc, sourceMatch, targetMatch);
 		if (result_pattern_LastStepInAltFlow_29_3_binding != null) {
 			CSP csp = (CSP) result_pattern_LastStepInAltFlow_29_3_binding[0];
 
@@ -4731,7 +5120,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 			if (result_pattern_LastStepInAltFlow_29_3_black != null) {
 
 				return new Object[] { csp, _this, isApplicableMatch, alt, gwStep, flow, process, gw, gcw, node, sf,
-						step, n2s, gw2gs, sourceMatch, targetMatch };
+						step, n2s, gw2gs, useCase, p2uc, sourceMatch, targetMatch };
 			}
 		}
 		return null;
@@ -4762,7 +5151,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return new Object[] { _this };
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_32_2_bindingFFFFFFFFFFFB(
+	public static final Object[] pattern_LastStepInAltFlow_32_2_bindingFFFFFFFFFFFFFB(
 			IsApplicableMatchCC isApplicableMatch) {
 		EObject _localVariable_0 = isApplicableMatch.getObject("alt");
 		EObject _localVariable_1 = isApplicableMatch.getObject("gwStep");
@@ -4775,6 +5164,8 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		EObject _localVariable_8 = isApplicableMatch.getObject("step");
 		EObject _localVariable_9 = isApplicableMatch.getObject("n2s");
 		EObject _localVariable_10 = isApplicableMatch.getObject("gw2gs");
+		EObject _localVariable_11 = isApplicableMatch.getObject("useCase");
+		EObject _localVariable_12 = isApplicableMatch.getObject("p2uc");
 		EObject tmpAlt = _localVariable_0;
 		EObject tmpGwStep = _localVariable_1;
 		EObject tmpFlow = _localVariable_2;
@@ -4786,6 +5177,8 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		EObject tmpStep = _localVariable_8;
 		EObject tmpN2s = _localVariable_9;
 		EObject tmpGw2gs = _localVariable_10;
+		EObject tmpUseCase = _localVariable_11;
+		EObject tmpP2uc = _localVariable_12;
 		if (tmpAlt instanceof StepAlternative) {
 			StepAlternative alt = (StepAlternative) tmpAlt;
 			if (tmpGwStep instanceof ChoiceStep) {
@@ -4808,8 +5201,15 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 												FN2S n2s = (FN2S) tmpN2s;
 												if (tmpGw2gs instanceof GW2S) {
 													GW2S gw2gs = (GW2S) tmpGw2gs;
-													return new Object[] { alt, gwStep, flow, process, gw, gcw, node, sf,
-															step, n2s, gw2gs, isApplicableMatch };
+													if (tmpUseCase instanceof UseCase) {
+														UseCase useCase = (UseCase) tmpUseCase;
+														if (tmpP2uc instanceof P2UC) {
+															P2UC p2uc = (P2UC) tmpP2uc;
+															return new Object[] { alt, gwStep, flow, process, gw, gcw,
+																	node, sf, step, n2s, gw2gs, useCase, p2uc,
+																	isApplicableMatch };
+														}
+													}
 												}
 											}
 										}
@@ -4824,9 +5224,10 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return null;
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_32_2_blackBBBBBBBBBBBB(StepAlternative alt,
+	public static final Object[] pattern_LastStepInAltFlow_32_2_blackBBBBBBBBBBBBBB(StepAlternative alt,
 			ChoiceStep gwStep, AlternativeFlow flow, SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node,
-			SequenceFlow sf, Step step, FN2S n2s, GW2S gw2gs, IsApplicableMatchCC isApplicableMatch) {
+			SequenceFlow sf, Step step, FN2S n2s, GW2S gw2gs, UseCase useCase, P2UC p2uc,
+			IsApplicableMatchCC isApplicableMatch) {
 		if (!gwStep.equals(step)) {
 			if (!gw.equals(node)) {
 				if (!gcw.equals(gw)) {
@@ -4848,46 +5249,60 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 																				if (gw.equals(gw2gs.getSource())) {
 																					if (gwStep.equals(
 																							gw2gs.getTarget())) {
-																						boolean gwisDiverging = gw
-																								.isIsDiverging();
-																						if (Boolean
-																								.valueOf(gwisDiverging)
-																								.equals(Boolean.valueOf(
-																										true))) {
-																							if (Boolean
-																									.valueOf(
-																											gwisDiverging)
-																									.equals(Boolean
-																											.valueOf(
-																													true))) {
-																								boolean gcwisDiverging = gcw
-																										.isIsDiverging();
-																								if (Boolean
-																										.valueOf(
-																												gcwisDiverging)
-																										.equals(false)) {
+																						if (useCase.getFlows()
+																								.contains(flow)) {
+																							if (process.equals(
+																									p2uc.getSource())) {
+																								if (useCase.equals(p2uc
+																										.getTarget())) {
+																									boolean gwisDiverging = gw
+																											.isIsDiverging();
 																									if (Boolean
 																											.valueOf(
-																													gcwisDiverging)
-																											.equals(false)) {
-																										return new Object[] {
-																												alt,
-																												gwStep,
-																												flow,
-																												process,
-																												gw, gcw,
-																												node,
-																												sf,
-																												step,
-																												n2s,
-																												gw2gs,
-																												isApplicableMatch };
-																									}
-																								}
+																													gwisDiverging)
+																											.equals(Boolean
+																													.valueOf(
+																															true))) {
+																										if (Boolean
+																												.valueOf(
+																														gwisDiverging)
+																												.equals(Boolean
+																														.valueOf(
+																																true))) {
+																											boolean gcwisDiverging = gcw
+																													.isIsDiverging();
+																											if (Boolean
+																													.valueOf(
+																															gcwisDiverging)
+																													.equals(false)) {
+																												if (Boolean
+																														.valueOf(
+																																gcwisDiverging)
+																														.equals(false)) {
+																													return new Object[] {
+																															alt,
+																															gwStep,
+																															flow,
+																															process,
+																															gw,
+																															gcw,
+																															node,
+																															sf,
+																															step,
+																															n2s,
+																															gw2gs,
+																															useCase,
+																															p2uc,
+																															isApplicableMatch };
+																												}
+																											}
 
+																										}
+																									}
+
+																								}
 																							}
 																						}
-
 																					}
 																				}
 																			}
@@ -4911,9 +5326,9 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return null;
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_32_2_bindingAndBlackFFFFFFFFFFFB(
+	public static final Object[] pattern_LastStepInAltFlow_32_2_bindingAndBlackFFFFFFFFFFFFFB(
 			IsApplicableMatchCC isApplicableMatch) {
-		Object[] result_pattern_LastStepInAltFlow_32_2_binding = pattern_LastStepInAltFlow_32_2_bindingFFFFFFFFFFFB(
+		Object[] result_pattern_LastStepInAltFlow_32_2_binding = pattern_LastStepInAltFlow_32_2_bindingFFFFFFFFFFFFFB(
 				isApplicableMatch);
 		if (result_pattern_LastStepInAltFlow_32_2_binding != null) {
 			StepAlternative alt = (StepAlternative) result_pattern_LastStepInAltFlow_32_2_binding[0];
@@ -4927,12 +5342,14 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 			Step step = (Step) result_pattern_LastStepInAltFlow_32_2_binding[8];
 			FN2S n2s = (FN2S) result_pattern_LastStepInAltFlow_32_2_binding[9];
 			GW2S gw2gs = (GW2S) result_pattern_LastStepInAltFlow_32_2_binding[10];
+			UseCase useCase = (UseCase) result_pattern_LastStepInAltFlow_32_2_binding[11];
+			P2UC p2uc = (P2UC) result_pattern_LastStepInAltFlow_32_2_binding[12];
 
-			Object[] result_pattern_LastStepInAltFlow_32_2_black = pattern_LastStepInAltFlow_32_2_blackBBBBBBBBBBBB(alt,
-					gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs, isApplicableMatch);
+			Object[] result_pattern_LastStepInAltFlow_32_2_black = pattern_LastStepInAltFlow_32_2_blackBBBBBBBBBBBBBB(
+					alt, gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs, useCase, p2uc, isApplicableMatch);
 			if (result_pattern_LastStepInAltFlow_32_2_black != null) {
 
-				return new Object[] { alt, gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs,
+				return new Object[] { alt, gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs, useCase, p2uc,
 						isApplicableMatch };
 			}
 		}
@@ -5041,7 +5458,23 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_LastStepInAltFlow_33_2_blackFFFFFFFFFFFBB(
+	public static final Object[] pattern_LastStepInAltFlow_33_2_black_nac_10BB(ModelgeneratorRuleResult ruleResult,
+			P2UC p2uc) {
+		if (ruleResult.getCorrObjects().contains(p2uc)) {
+			return new Object[] { ruleResult, p2uc };
+		}
+		return null;
+	}
+
+	public static final Object[] pattern_LastStepInAltFlow_33_2_black_nac_11BB(ModelgeneratorRuleResult ruleResult,
+			UseCase useCase) {
+		if (ruleResult.getTargetObjects().contains(useCase)) {
+			return new Object[] { ruleResult, useCase };
+		}
+		return null;
+	}
+
+	public static final Iterable<Object[]> pattern_LastStepInAltFlow_33_2_blackFFFFFFFFFFFFFBB(
 			RuleEntryContainer ruleEntryContainer, ModelgeneratorRuleResult ruleResult) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		for (RuleEntryList n2sList : ruleEntryContainer.getRuleEntryList()) {
@@ -5112,48 +5545,74 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 																													if (pattern_LastStepInAltFlow_33_2_black_nac_0BB(
 																															ruleResult,
 																															alt) == null) {
-																														for (GW2S gw2gs : org.moflon.core.utilities.eMoflonEMFUtil
+																														for (UseCase useCase : org.moflon.core.utilities.eMoflonEMFUtil
 																																.getOppositeReferenceTyped(
-																																		gw,
-																																		GW2S.class,
-																																		"source")) {
-																															Step tmpGwStep = gw2gs
-																																	.getTarget();
-																															if (tmpGwStep instanceof ChoiceStep) {
-																																ChoiceStep gwStep = (ChoiceStep) tmpGwStep;
-																																if (!gwStep
-																																		.equals(step)) {
-																																	if (gwStep
-																																			.getStepAlternatives()
-																																			.contains(
-																																					alt)) {
-																																		if (pattern_LastStepInAltFlow_33_2_black_nac_8BB(
+																																		flow,
+																																		UseCase.class,
+																																		"flows")) {
+																															if (pattern_LastStepInAltFlow_33_2_black_nac_11BB(
+																																	ruleResult,
+																																	useCase) == null) {
+																																for (P2UC p2uc : org.moflon.core.utilities.eMoflonEMFUtil
+																																		.getOppositeReferenceTyped(
+																																				process,
+																																				P2UC.class,
+																																				"source")) {
+																																	if (useCase
+																																			.equals(p2uc
+																																					.getTarget())) {
+																																		if (pattern_LastStepInAltFlow_33_2_black_nac_10BB(
 																																				ruleResult,
-																																				gw2gs) == null) {
-																																			if (pattern_LastStepInAltFlow_33_2_black_nac_9BB(
-																																					ruleResult,
-																																					gwStep) == null) {
-																																				_result.add(
-																																						new Object[] {
-																																								n2sList,
-																																								alt,
-																																								flow,
-																																								step,
-																																								n2s,
-																																								node,
-																																								process,
-																																								gw,
-																																								gcw,
-																																								gw2gs,
-																																								gwStep,
-																																								ruleEntryContainer,
-																																								ruleResult });
+																																				p2uc) == null) {
+																																			for (GW2S gw2gs : org.moflon.core.utilities.eMoflonEMFUtil
+																																					.getOppositeReferenceTyped(
+																																							gw,
+																																							GW2S.class,
+																																							"source")) {
+																																				Step tmpGwStep = gw2gs
+																																						.getTarget();
+																																				if (tmpGwStep instanceof ChoiceStep) {
+																																					ChoiceStep gwStep = (ChoiceStep) tmpGwStep;
+																																					if (!gwStep
+																																							.equals(step)) {
+																																						if (gwStep
+																																								.getStepAlternatives()
+																																								.contains(
+																																										alt)) {
+																																							if (pattern_LastStepInAltFlow_33_2_black_nac_8BB(
+																																									ruleResult,
+																																									gw2gs) == null) {
+																																								if (pattern_LastStepInAltFlow_33_2_black_nac_9BB(
+																																										ruleResult,
+																																										gwStep) == null) {
+																																									_result.add(
+																																											new Object[] {
+																																													n2sList,
+																																													alt,
+																																													flow,
+																																													step,
+																																													n2s,
+																																													node,
+																																													process,
+																																													gw,
+																																													gcw,
+																																													gw2gs,
+																																													gwStep,
+																																													p2uc,
+																																													useCase,
+																																													ruleEntryContainer,
+																																													ruleResult });
+																																								}
+																																							}
+																																						}
+																																					}
+																																				}
+
 																																			}
 																																		}
 																																	}
 																																}
 																															}
-
 																														}
 																													}
 																												}
@@ -5191,16 +5650,16 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return _result;
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_33_3_bindingFBBBBBBBBBBBBB(LastStepInAltFlow _this,
+	public static final Object[] pattern_LastStepInAltFlow_33_3_bindingFBBBBBBBBBBBBBBB(LastStepInAltFlow _this,
 			IsApplicableMatch isApplicableMatch, StepAlternative alt, ChoiceStep gwStep, AlternativeFlow flow,
 			SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, Step step, FN2S n2s, GW2S gw2gs,
-			ModelgeneratorRuleResult ruleResult) {
+			UseCase useCase, P2UC p2uc, ModelgeneratorRuleResult ruleResult) {
 		CSP _localVariable_0 = _this.generateModel_solveCsp_BWD(isApplicableMatch, alt, gwStep, flow, process, gw, gcw,
-				node, step, n2s, gw2gs, ruleResult);
+				node, step, n2s, gw2gs, useCase, p2uc, ruleResult);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
 			return new Object[] { csp, _this, isApplicableMatch, alt, gwStep, flow, process, gw, gcw, node, step, n2s,
-					gw2gs, ruleResult };
+					gw2gs, useCase, p2uc, ruleResult };
 		}
 		return null;
 	}
@@ -5209,12 +5668,13 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return new Object[] { csp };
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_33_3_bindingAndBlackFBBBBBBBBBBBBB(LastStepInAltFlow _this,
+	public static final Object[] pattern_LastStepInAltFlow_33_3_bindingAndBlackFBBBBBBBBBBBBBBB(LastStepInAltFlow _this,
 			IsApplicableMatch isApplicableMatch, StepAlternative alt, ChoiceStep gwStep, AlternativeFlow flow,
 			SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, Step step, FN2S n2s, GW2S gw2gs,
-			ModelgeneratorRuleResult ruleResult) {
-		Object[] result_pattern_LastStepInAltFlow_33_3_binding = pattern_LastStepInAltFlow_33_3_bindingFBBBBBBBBBBBBB(
-				_this, isApplicableMatch, alt, gwStep, flow, process, gw, gcw, node, step, n2s, gw2gs, ruleResult);
+			UseCase useCase, P2UC p2uc, ModelgeneratorRuleResult ruleResult) {
+		Object[] result_pattern_LastStepInAltFlow_33_3_binding = pattern_LastStepInAltFlow_33_3_bindingFBBBBBBBBBBBBBBB(
+				_this, isApplicableMatch, alt, gwStep, flow, process, gw, gcw, node, step, n2s, gw2gs, useCase, p2uc,
+				ruleResult);
 		if (result_pattern_LastStepInAltFlow_33_3_binding != null) {
 			CSP csp = (CSP) result_pattern_LastStepInAltFlow_33_3_binding[0];
 
@@ -5222,7 +5682,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 			if (result_pattern_LastStepInAltFlow_33_3_black != null) {
 
 				return new Object[] { csp, _this, isApplicableMatch, alt, gwStep, flow, process, gw, gcw, node, step,
-						n2s, gw2gs, ruleResult };
+						n2s, gw2gs, useCase, p2uc, ruleResult };
 			}
 		}
 		return null;
@@ -5234,9 +5694,9 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return _result;
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_33_5_blackBBBBBBBBBB(StepAlternative alt, ChoiceStep gwStep,
-			AlternativeFlow flow, SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, Step step,
-			FN2S n2s, GW2S gw2gs) {
+	public static final Object[] pattern_LastStepInAltFlow_33_5_blackBBBBBBBBBBBB(StepAlternative alt,
+			ChoiceStep gwStep, AlternativeFlow flow, SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node,
+			Step step, FN2S n2s, GW2S gw2gs, UseCase useCase, P2UC p2uc) {
 		if (!gwStep.equals(step)) {
 			if (!gw.equals(node)) {
 				if (!gcw.equals(gw)) {
@@ -5248,7 +5708,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 								if (Boolean.valueOf(gcwisDiverging).equals(false)) {
 									if (Boolean.valueOf(gcwisDiverging).equals(false)) {
 										return new Object[] { alt, gwStep, flow, process, gw, gcw, node, step, n2s,
-												gw2gs };
+												gw2gs, useCase, p2uc };
 									}
 								}
 
@@ -5262,9 +5722,9 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 		return null;
 	}
 
-	public static final Object[] pattern_LastStepInAltFlow_33_6_blackBBBBBBBBBBB(StepAlternative alt, ChoiceStep gwStep,
-			AlternativeFlow flow, SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, Step step,
-			FN2S n2s, GW2S gw2gs, ModelgeneratorRuleResult ruleResult) {
+	public static final Object[] pattern_LastStepInAltFlow_33_6_blackBBBBBBBBBBBBB(StepAlternative alt,
+			ChoiceStep gwStep, AlternativeFlow flow, SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node,
+			Step step, FN2S n2s, GW2S gw2gs, UseCase useCase, P2UC p2uc, ModelgeneratorRuleResult ruleResult) {
 		if (!gwStep.equals(step)) {
 			if (!gw.equals(node)) {
 				if (!gcw.equals(gw)) {
@@ -5276,7 +5736,7 @@ public class LastStepInAltFlowImpl extends AbstractRuleImpl implements LastStepI
 								if (Boolean.valueOf(gcwisDiverging).equals(false)) {
 									if (Boolean.valueOf(gcwisDiverging).equals(false)) {
 										return new Object[] { alt, gwStep, flow, process, gw, gcw, node, step, n2s,
-												gw2gs, ruleResult };
+												gw2gs, useCase, p2uc, ruleResult };
 									}
 								}
 
