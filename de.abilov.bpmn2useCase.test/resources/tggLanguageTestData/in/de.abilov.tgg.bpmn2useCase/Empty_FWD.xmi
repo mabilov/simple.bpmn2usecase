@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:Process
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:bpmn="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore"
+    xsi:schemaLocation="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore ../../../../de.abilov.bpmn/model/Bpmn.ecore">
+  <flowElements
+      xsi:type="bpmn:StartEvent"
+      id="se1"
+      outgoing="sf1"/>
+  <flowElements
+      xsi:type="bpmn:SequenceFlow"
+      id="sf1"
+      sourceRef="se1"
+      targetRef="ee1"/>
+  <flowElements
+      xsi:type="bpmn:EndEvent"
+      id="ee1"
+      incoming="sf1"/>
+</bpmn:Process>

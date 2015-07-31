@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ASCII"?>
+<useCase:UseCase
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:useCase="platform:/plugin/de.abilov.useCase/model/UseCase.ecore"
+    id="ChoiceMerge">
+  <flows xsi:type="useCase:BasicFlow">
+    <steps xsi:type="useCase:ChoiceStep"
+        next="t1"
+        id="eg1">
+      <stepAlternatives
+          ref="sf3"/>
+    </steps>
+    <steps xsi:type="useCase:NormalStep"
+        id="t1"/>
+    <finalState
+        name="ee1"/>
+  </flows>
+  <flows xsi:type="useCase:AlternativeFlow"
+      __last="t2"
+      id="sf3">
+    <steps xsi:type="useCase:NormalStep"
+        id="t2"/>
+  </flows>
+  <precondition
+      name="se1"/>
+</useCase:UseCase>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<useCase:UseCase xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:useCase="platform:/plugin/de.abilov.useCase/model/UseCase.ecore">
+  <flows xsi:type="useCase:BasicFlow">
+    <steps xsi:type="useCase:ParallelStep" __last="//@flows.0/@finalState" id="pg1" invokedFlows="sf2 sf3"/>
+    <finalState name="ee1"/>
+  </flows>
+  <flows xsi:type="useCase:ParallelFlow" __last="t1" id="sf2">
+    <steps xsi:type="useCase:NormalStep" id="t1"/>
+  </flows>
+  <flows xsi:type="useCase:ParallelFlow" __last="t2" id="sf3">
+    <steps xsi:type="useCase:NormalStep" id="t2"/>
+  </flows>
+  <precondition name="se1"/>
+</useCase:UseCase>

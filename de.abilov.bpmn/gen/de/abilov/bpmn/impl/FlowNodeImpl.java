@@ -220,6 +220,12 @@ public abstract class FlowNodeImpl extends FlowElementImpl implements FlowNode {
 				.sorted(new java.util.Comparator<SequenceFlow>() {
 					@Override
 					public int compare(SequenceFlow arg0, SequenceFlow arg1) {
+						if (arg0.getId() == null && arg1.getId() == null)
+							return 0;
+						if (arg0.getId() == null && arg1.getId() != null)
+							return -1;
+						if (arg0.getId() != null && arg1.getId() == null)
+							return 1;
 						return arg0.getId().compareTo(arg1.getId());
 					}
 				}).iterator();

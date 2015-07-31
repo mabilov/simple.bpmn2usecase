@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:Process
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:bpmn="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore">
+  <flowElements
+      xsi:type="bpmn:StartEvent"
+      id="se1"
+      outgoing="sf1"/>
+  <flowElements
+      xsi:type="bpmn:SequenceFlow"
+      id="sf1"
+      sourceRef="se1"
+      targetRef="pg1"/>
+  <flowElements
+      xsi:type="bpmn:ParallelGateway"
+      id="pg1"
+      outgoing="sf2 sf3"
+      incoming="sf1"/>
+  <flowElements
+      xsi:type="bpmn:SequenceFlow"
+      id="sf2"
+      sourceRef="pg1"
+      targetRef="t1"/>
+  <flowElements
+      xsi:type="bpmn:SequenceFlow"
+      id="sf3"
+      sourceRef="pg1"
+      targetRef="t2"/>
+  <flowElements
+      xsi:type="bpmn:Task"
+      id="t1"
+      outgoing="sf4"
+      incoming="sf2"/>
+  <flowElements
+      xsi:type="bpmn:Task"
+      id="t2"
+      outgoing="sf5"
+      incoming="sf3"/>
+  <flowElements
+      xsi:type="bpmn:SequenceFlow"
+      id="sf4"
+      sourceRef="t1"
+      targetRef="pg2"/>
+  <flowElements
+      xsi:type="bpmn:SequenceFlow"
+      id="sf5"
+      sourceRef="t2"
+      targetRef="pg2"/>
+  <flowElements
+      xsi:type="bpmn:ParallelGateway"
+      id="pg2"
+      outgoing="sf6"
+      incoming="sf4 sf5"
+      isDiverging="false"/>
+  <flowElements
+      xsi:type="bpmn:SequenceFlow"
+      id="sf6"
+      sourceRef="pg2"
+      targetRef="ee1"/>
+  <flowElements
+      xsi:type="bpmn:EndEvent"
+      id="ee1"
+      incoming="sf6"/>
+</bpmn:Process>

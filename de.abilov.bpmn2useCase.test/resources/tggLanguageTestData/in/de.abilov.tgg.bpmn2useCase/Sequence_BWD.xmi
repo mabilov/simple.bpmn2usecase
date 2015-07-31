@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<useCase:UseCase xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:useCase="platform:/plugin/de.abilov.useCase/model/UseCase.ecore">
+  <flows xsi:type="useCase:BasicFlow">
+    <steps xsi:type="useCase:NormalStep" next="t2" id="t1"/>
+    <steps xsi:type="useCase:NormalStep" __last="//@flows.0/@finalState" id="t2"/>
+    <finalState name="ee1"/>
+  </flows>
+  <precondition name="se1"/>
+</useCase:UseCase>
