@@ -1,6 +1,6 @@
 /**
  */
-package Bpmn2UseCase.Rules;
+package bpmn2UseCase.Rules;
 
 import TGGRuntime.AbstractRule;
 
@@ -14,7 +14,7 @@ import org.eclipse.emf.ecore.EObject;
  * <!-- end-user-doc -->
  *
  *
- * @see Bpmn2UseCase.Rules.RulesPackage#getLastStepInFlow()
+ * @see bpmn2UseCase.Rules.RulesPackage#getLastStepInFlow()
  * @model abstract="true"
  * @generated
  */

@@ -10,7 +10,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.moflon.testframework.tgg.IncrementalIntegratorTest;
 
-import Bpmn2UseCase.Bpmn2UseCasePackage;
+import bpmn2UseCase.Bpmn2UseCasePackage;
 import SimpleBPMN.SequenceFlow;
 import SimpleBPMN.SimpleBPMNFactory;
 import SimpleBPMN.SimpleBPMNPackage;

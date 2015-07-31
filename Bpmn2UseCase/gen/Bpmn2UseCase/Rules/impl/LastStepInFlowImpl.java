@@ -1,11 +1,11 @@
 /**
  */
-package Bpmn2UseCase.Rules.impl;
-
-import Bpmn2UseCase.Rules.LastStepInFlow;
-import Bpmn2UseCase.Rules.RulesPackage;
+package bpmn2UseCase.Rules.impl;
 
 import TGGRuntime.impl.AbstractRuleImpl;
+
+import bpmn2UseCase.Rules.LastStepInFlow;
+import bpmn2UseCase.Rules.RulesPackage;
 
 import org.eclipse.emf.ecore.EClass;
 // <-- [user defined imports]

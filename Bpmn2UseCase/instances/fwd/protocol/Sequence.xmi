@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <TGGRuntime:PrecedenceStructure xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TGGRuntime="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore">
-  <tripleMatches children="//@tripleMatches.1 //@tripleMatches.2 //@tripleMatches.3" ruleName="Process2UseCase">
+  <tripleMatches children="//@tripleMatches.2 //@tripleMatches.1 //@tripleMatches.3" ruleName="Process2UseCase" number="2">
     <sourceElements href="#//@tripleMatches.0/@containedEdges.7"/>
     <sourceElements href="../bpmn/Sequence.xmi#Sequence"/>
     <sourceElements href="../bpmn/Sequence.xmi#se1"/>
@@ -25,6 +25,18 @@
     <nodeMappings nodeName="flow">
       <node href="../usecase/Sequence.xmi#//@flows.0"/>
     </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/Sequence.xmi#Sequence"/>
+      <trg href="../bpmn/Sequence.xmi#se1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/Sequence.xmi#//@correspondences.0"/>
+      <trg href="../bpmn/Sequence.xmi#Sequence"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/Sequence.xmi#//@correspondences.0"/>
+      <trg href="../usecase/Sequence.xmi#Sequence"/>
+    </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="precondition">
       <src href="../usecase/Sequence.xmi#Sequence"/>
       <trg href="../usecase/Sequence.xmi#//@precondition"/>
@@ -34,73 +46,61 @@
       <trg href="../usecase/Sequence.xmi#//@flows.0"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
-      <src href="../corr/Sequence.xmi#//@correspondences.0"/>
-      <trg href="../bpmn/Sequence.xmi#Sequence"/>
+      <src href="../corr/Sequence.xmi#//@correspondences.1"/>
+      <trg href="../bpmn/Sequence.xmi#se1"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
       <src href="../corr/Sequence.xmi#//@correspondences.1"/>
       <trg href="../usecase/Sequence.xmi#//@flows.0"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
-      <src href="../corr/Sequence.xmi#//@correspondences.0"/>
-      <trg href="../usecase/Sequence.xmi#Sequence"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
-      <src href="../bpmn/Sequence.xmi#Sequence"/>
-      <trg href="../bpmn/Sequence.xmi#se1"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
-      <src href="../corr/Sequence.xmi#//@correspondences.1"/>
-      <trg href="../bpmn/Sequence.xmi#se1"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
       <src href="../bpmn/Sequence.xmi#Sequence"/>
       <trg href="../bpmn/Sequence.xmi#se1"/>
     </containedEdges>
     <targetElements href="../usecase/Sequence.xmi#//@flows.0"/>
-    <targetElements href="#//@tripleMatches.0/@containedEdges.0"/>
     <targetElements href="../usecase/Sequence.xmi#Sequence"/>
-    <targetElements href="#//@tripleMatches.0/@containedEdges.1"/>
+    <targetElements href="#//@tripleMatches.0/@containedEdges.3"/>
+    <targetElements href="#//@tripleMatches.0/@containedEdges.4"/>
     <targetElements href="../usecase/Sequence.xmi#//@precondition"/>
-    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.4"/>
     <correspondenceElements href="../corr/Sequence.xmi#//@correspondences.0"/>
-    <correspondenceElements href="../corr/Sequence.xmi#//@correspondences.1"/>
+    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.1"/>
     <correspondenceElements href="#//@tripleMatches.0/@containedEdges.2"/>
+    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.5"/>
+    <correspondenceElements href="../corr/Sequence.xmi#//@correspondences.1"/>
     <correspondenceElements href="#//@tripleMatches.0/@containedEdges.6"/>
-    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.3"/>
-    <createdElements href="../usecase/Sequence.xmi#//@flows.0"/>
     <createdElements href="#//@tripleMatches.0/@containedEdges.0"/>
-    <createdElements href="#//@tripleMatches.0/@containedEdges.1"/>
-    <createdElements href="#//@tripleMatches.0/@containedEdges.2"/>
-    <createdElements href="#//@tripleMatches.0/@containedEdges.3"/>
-    <createdElements href="#//@tripleMatches.0/@containedEdges.4"/>
-    <createdElements href="../corr/Sequence.xmi#//@correspondences.0"/>
-    <createdElements href="#//@tripleMatches.0/@containedEdges.5"/>
-    <createdElements href="../usecase/Sequence.xmi#Sequence"/>
-    <createdElements href="../corr/Sequence.xmi#//@correspondences.1"/>
-    <createdElements href="#//@tripleMatches.0/@containedEdges.6"/>
-    <createdElements href="../usecase/Sequence.xmi#//@precondition"/>
     <createdElements href="../bpmn/Sequence.xmi#Sequence"/>
     <createdElements href="../bpmn/Sequence.xmi#se1"/>
+    <createdElements href="../corr/Sequence.xmi#//@correspondences.0"/>
+    <createdElements href="../usecase/Sequence.xmi#Sequence"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.1"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.2"/>
+    <createdElements href="../usecase/Sequence.xmi#//@flows.0"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.3"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.5"/>
+    <createdElements href="../usecase/Sequence.xmi#//@precondition"/>
+    <createdElements href="../corr/Sequence.xmi#//@correspondences.1"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.6"/>
   </tripleMatches>
-  <tripleMatches children="//@tripleMatches.2" ruleName="Task2NormalStepFirst" number="1">
+  <tripleMatches children="//@tripleMatches.2" ruleName="Task2StepFirst" number="3">
     <sourceElements href="#//@tripleMatches.1/@containedEdges.12"/>
     <sourceElements href="#//@tripleMatches.1/@containedEdges.13"/>
     <sourceElements href="#//@tripleMatches.1/@containedEdges.14"/>
+    <sourceElements href="../bpmn/Sequence.xmi#Sequence"/>
     <sourceElements href="#//@tripleMatches.1/@containedEdges.15"/>
+    <sourceElements href="../bpmn/Sequence.xmi#se1"/>
+    <sourceElements href="../bpmn/Sequence.xmi#sf1"/>
     <sourceElements href="#//@tripleMatches.1/@containedEdges.16"/>
+    <sourceElements href="../bpmn/Sequence.xmi#t1"/>
     <sourceElements href="#//@tripleMatches.1/@containedEdges.17"/>
     <sourceElements href="#//@tripleMatches.1/@containedEdges.18"/>
-    <sourceElements href="../bpmn/Sequence.xmi#Sequence"/>
-    <sourceElements href="../bpmn/Sequence.xmi#sf1"/>
-    <sourceElements href="../bpmn/Sequence.xmi#t1"/>
-    <sourceElements href="../bpmn/Sequence.xmi#se1"/>
-    <contextElements href="../usecase/Sequence.xmi#//@flows.0"/>
     <contextElements href="#//@tripleMatches.1/@containedEdges.0"/>
-    <contextElements href="../corr/Sequence.xmi#//@correspondences.1"/>
-    <contextElements href="#//@tripleMatches.1/@containedEdges.1"/>
+    <contextElements href="../usecase/Sequence.xmi#//@flows.0"/>
     <contextElements href="../bpmn/Sequence.xmi#Sequence"/>
     <contextElements href="../bpmn/Sequence.xmi#se1"/>
+    <contextElements href="#//@tripleMatches.1/@containedEdges.1"/>
+    <contextElements href="../corr/Sequence.xmi#//@correspondences.1"/>
     <contextElements href="#//@tripleMatches.1/@containedEdges.2"/>
     <nodeMappings nodeName="pnToFlow">
       <node href="../corr/Sequence.xmi#//@correspondences.1"/>
@@ -138,29 +138,13 @@
       <src href="../corr/Sequence.xmi#//@correspondences.1"/>
       <trg href="../usecase/Sequence.xmi#//@flows.0"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
-      <src href="../bpmn/Sequence.xmi#t1"/>
-      <trg href="../bpmn/Sequence.xmi#sf1"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
-      <src href="../bpmn/Sequence.xmi#sf1"/>
-      <trg href="../bpmn/Sequence.xmi#se1"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
-      <src href="../corr/Sequence.xmi#//@correspondences.2"/>
-      <trg href="../usecase/Sequence.xmi#t1"/>
-    </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
       <src href="../bpmn/Sequence.xmi#sf1"/>
       <trg href="../bpmn/Sequence.xmi#t1"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
-      <src href="../bpmn/Sequence.xmi#Sequence"/>
-      <trg href="../bpmn/Sequence.xmi#t1"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
-      <src href="../usecase/Sequence.xmi#//@flows.0"/>
-      <trg href="../usecase/Sequence.xmi#t1"/>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/Sequence.xmi#t1"/>
+      <trg href="../bpmn/Sequence.xmi#sf1"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
       <src href="../bpmn/Sequence.xmi#Sequence"/>
@@ -170,82 +154,98 @@
       <src href="../corr/Sequence.xmi#//@correspondences.2"/>
       <trg href="../bpmn/Sequence.xmi#t1"/>
     </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/Sequence.xmi#//@correspondences.2"/>
+      <trg href="../usecase/Sequence.xmi#t1"/>
+    </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
       <src href="../bpmn/Sequence.xmi#se1"/>
       <trg href="../bpmn/Sequence.xmi#sf1"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
       <src href="../bpmn/Sequence.xmi#Sequence"/>
-      <trg href="../bpmn/Sequence.xmi#sf1"/>
+      <trg href="../bpmn/Sequence.xmi#t1"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
-      <src href="../bpmn/Sequence.xmi#t1"/>
-      <trg href="../bpmn/Sequence.xmi#sf1"/>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../usecase/Sequence.xmi#//@flows.0"/>
+      <trg href="../usecase/Sequence.xmi#t1"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
       <src href="../bpmn/Sequence.xmi#sf1"/>
+      <trg href="../bpmn/Sequence.xmi#se1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/Sequence.xmi#Sequence"/>
       <trg href="../bpmn/Sequence.xmi#se1"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
       <src href="../bpmn/Sequence.xmi#sf1"/>
       <trg href="../bpmn/Sequence.xmi#t1"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
-      <src href="../bpmn/Sequence.xmi#Sequence"/>
-      <trg href="../bpmn/Sequence.xmi#t1"/>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/Sequence.xmi#t1"/>
+      <trg href="../bpmn/Sequence.xmi#sf1"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
       <src href="../bpmn/Sequence.xmi#Sequence"/>
-      <trg href="../bpmn/Sequence.xmi#se1"/>
+      <trg href="../bpmn/Sequence.xmi#sf1"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
       <src href="../bpmn/Sequence.xmi#se1"/>
       <trg href="../bpmn/Sequence.xmi#sf1"/>
     </containedEdges>
-    <targetElements href="../usecase/Sequence.xmi#t1"/>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/Sequence.xmi#Sequence"/>
+      <trg href="../bpmn/Sequence.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../bpmn/Sequence.xmi#sf1"/>
+      <trg href="../bpmn/Sequence.xmi#se1"/>
+    </containedEdges>
     <targetElements href="../usecase/Sequence.xmi#//@flows.0"/>
-    <targetElements href="#//@tripleMatches.1/@containedEdges.8"/>
-    <correspondenceElements href="../corr/Sequence.xmi#//@correspondences.2"/>
-    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.5"/>
-    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.10"/>
-    <correspondenceElements href="../corr/Sequence.xmi#//@correspondences.1"/>
+    <targetElements href="../usecase/Sequence.xmi#t1"/>
+    <targetElements href="#//@tripleMatches.1/@containedEdges.10"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.6"/>
     <correspondenceElements href="#//@tripleMatches.1/@containedEdges.1"/>
+    <correspondenceElements href="../corr/Sequence.xmi#//@correspondences.2"/>
+    <correspondenceElements href="../corr/Sequence.xmi#//@correspondences.1"/>
     <correspondenceElements href="#//@tripleMatches.1/@containedEdges.2"/>
-    <createdElements href="../usecase/Sequence.xmi#t1"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.7"/>
     <createdElements href="#//@tripleMatches.1/@containedEdges.3"/>
     <createdElements href="#//@tripleMatches.1/@containedEdges.4"/>
     <createdElements href="#//@tripleMatches.1/@containedEdges.5"/>
+    <createdElements href="../bpmn/Sequence.xmi#sf1"/>
     <createdElements href="#//@tripleMatches.1/@containedEdges.6"/>
     <createdElements href="#//@tripleMatches.1/@containedEdges.7"/>
+    <createdElements href="../usecase/Sequence.xmi#t1"/>
     <createdElements href="#//@tripleMatches.1/@containedEdges.8"/>
-    <createdElements href="../bpmn/Sequence.xmi#sf1"/>
     <createdElements href="../bpmn/Sequence.xmi#t1"/>
     <createdElements href="../corr/Sequence.xmi#//@correspondences.2"/>
     <createdElements href="#//@tripleMatches.1/@containedEdges.9"/>
     <createdElements href="#//@tripleMatches.1/@containedEdges.10"/>
     <createdElements href="#//@tripleMatches.1/@containedEdges.11"/>
   </tripleMatches>
-  <tripleMatches children="//@tripleMatches.3" ruleName="Task2NormalStepSeq" number="2">
+  <tripleMatches children="//@tripleMatches.3" ruleName="Task2StepSeq" number="4">
     <sourceElements href="#//@tripleMatches.2/@containedEdges.14"/>
     <sourceElements href="#//@tripleMatches.2/@containedEdges.15"/>
-    <sourceElements href="#//@tripleMatches.2/@containedEdges.16"/>
-    <sourceElements href="../bpmn/Sequence.xmi#sf2"/>
-    <sourceElements href="#//@tripleMatches.2/@containedEdges.17"/>
-    <sourceElements href="#//@tripleMatches.2/@containedEdges.18"/>
     <sourceElements href="../bpmn/Sequence.xmi#Sequence"/>
-    <sourceElements href="../bpmn/Sequence.xmi#t1"/>
-    <sourceElements href="#//@tripleMatches.2/@containedEdges.19"/>
     <sourceElements href="../bpmn/Sequence.xmi#t2"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.16"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.17"/>
+    <sourceElements href="../bpmn/Sequence.xmi#t1"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.18"/>
+    <sourceElements href="../bpmn/Sequence.xmi#sf2"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.19"/>
     <sourceElements href="#//@tripleMatches.2/@containedEdges.20"/>
-    <contextElements href="../corr/Sequence.xmi#//@correspondences.2"/>
     <contextElements href="../usecase/Sequence.xmi#//@flows.0"/>
+    <contextElements href="../bpmn/Sequence.xmi#Sequence"/>
     <contextElements href="../usecase/Sequence.xmi#t1"/>
     <contextElements href="#//@tripleMatches.2/@containedEdges.0"/>
+    <contextElements href="../corr/Sequence.xmi#//@correspondences.2"/>
+    <contextElements href="../bpmn/Sequence.xmi#t1"/>
     <contextElements href="#//@tripleMatches.2/@containedEdges.1"/>
     <contextElements href="#//@tripleMatches.2/@containedEdges.2"/>
     <contextElements href="#//@tripleMatches.2/@containedEdges.3"/>
-    <contextElements href="../bpmn/Sequence.xmi#Sequence"/>
-    <contextElements href="../bpmn/Sequence.xmi#t1"/>
     <nodeMappings nodeName="prevNode">
       <node href="../bpmn/Sequence.xmi#t1"/>
     </nodeMappings>
@@ -273,138 +273,138 @@
     <nodeMappings nodeName="sf1">
       <node href="../bpmn/Sequence.xmi#sf2"/>
     </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/Sequence.xmi#//@correspondences.2"/>
+      <trg href="../bpmn/Sequence.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/Sequence.xmi#Sequence"/>
+      <trg href="../bpmn/Sequence.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../usecase/Sequence.xmi#//@flows.0"/>
+      <trg href="../usecase/Sequence.xmi#t1"/>
+    </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
       <src href="../corr/Sequence.xmi#//@correspondences.2"/>
       <trg href="../usecase/Sequence.xmi#t1"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
       <src href="../bpmn/Sequence.xmi#Sequence"/>
-      <trg href="../bpmn/Sequence.xmi#t1"/>
+      <trg href="../bpmn/Sequence.xmi#t2"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
-      <src href="../corr/Sequence.xmi#//@correspondences.2"/>
-      <trg href="../bpmn/Sequence.xmi#t1"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
-      <src href="../usecase/Sequence.xmi#//@flows.0"/>
-      <trg href="../usecase/Sequence.xmi#t1"/>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/Sequence.xmi#t2"/>
+      <trg href="../bpmn/Sequence.xmi#sf2"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
       <src href="../bpmn/Sequence.xmi#sf2"/>
       <trg href="../bpmn/Sequence.xmi#t1"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
-      <src href="../bpmn/Sequence.xmi#Sequence"/>
-      <trg href="../bpmn/Sequence.xmi#t2"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
-      <src href="../bpmn/Sequence.xmi#sf2"/>
-      <trg href="../bpmn/Sequence.xmi#t2"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
-      <src href="../usecase/Sequence.xmi#//@flows.0"/>
-      <trg href="../usecase/Sequence.xmi#t2"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
-      <src href="../corr/Sequence.xmi#//@correspondences.3"/>
-      <trg href="../bpmn/Sequence.xmi#t2"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
-      <src href="../bpmn/Sequence.xmi#t1"/>
-      <trg href="../bpmn/Sequence.xmi#sf2"/>
-    </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
       <src href="../corr/Sequence.xmi#//@correspondences.3"/>
       <trg href="../usecase/Sequence.xmi#t2"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
-      <src href="../bpmn/Sequence.xmi#Sequence"/>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../bpmn/Sequence.xmi#t1"/>
       <trg href="../bpmn/Sequence.xmi#sf2"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="next">
       <src href="../usecase/Sequence.xmi#t1"/>
       <trg href="../usecase/Sequence.xmi#t2"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
-      <src href="../bpmn/Sequence.xmi#t2"/>
-      <trg href="../bpmn/Sequence.xmi#sf2"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
-      <src href="../bpmn/Sequence.xmi#sf2"/>
-      <trg href="../bpmn/Sequence.xmi#t1"/>
-    </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
       <src href="../bpmn/Sequence.xmi#Sequence"/>
+      <trg href="../bpmn/Sequence.xmi#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/Sequence.xmi#//@correspondences.3"/>
       <trg href="../bpmn/Sequence.xmi#t2"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
-      <src href="../bpmn/Sequence.xmi#Sequence"/>
-      <trg href="../bpmn/Sequence.xmi#t1"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
-      <src href="../bpmn/Sequence.xmi#t1"/>
-      <trg href="../bpmn/Sequence.xmi#sf2"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
       <src href="../bpmn/Sequence.xmi#sf2"/>
       <trg href="../bpmn/Sequence.xmi#t2"/>
     </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../usecase/Sequence.xmi#//@flows.0"/>
+      <trg href="../usecase/Sequence.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../bpmn/Sequence.xmi#t1"/>
+      <trg href="../bpmn/Sequence.xmi#sf2"/>
+    </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
       <src href="../bpmn/Sequence.xmi#Sequence"/>
       <trg href="../bpmn/Sequence.xmi#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/Sequence.xmi#Sequence"/>
+      <trg href="../bpmn/Sequence.xmi#t2"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
       <src href="../bpmn/Sequence.xmi#t2"/>
       <trg href="../bpmn/Sequence.xmi#sf2"/>
     </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/Sequence.xmi#Sequence"/>
+      <trg href="../bpmn/Sequence.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../bpmn/Sequence.xmi#sf2"/>
+      <trg href="../bpmn/Sequence.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../bpmn/Sequence.xmi#sf2"/>
+      <trg href="../bpmn/Sequence.xmi#t2"/>
+    </containedEdges>
     <targetElements href="../usecase/Sequence.xmi#//@flows.0"/>
-    <targetElements href="../usecase/Sequence.xmi#t1"/>
-    <targetElements href="#//@tripleMatches.2/@containedEdges.7"/>
-    <targetElements href="#//@tripleMatches.2/@containedEdges.3"/>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.9"/>
     <targetElements href="../usecase/Sequence.xmi#t2"/>
-    <targetElements href="#//@tripleMatches.2/@containedEdges.12"/>
-    <correspondenceElements href="../corr/Sequence.xmi#//@correspondences.2"/>
-    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.0"/>
+    <targetElements href="../usecase/Sequence.xmi#t1"/>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.2"/>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.13"/>
     <correspondenceElements href="../corr/Sequence.xmi#//@correspondences.3"/>
-    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.2"/>
-    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.8"/>
-    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.10"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.11"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.0"/>
+    <correspondenceElements href="../corr/Sequence.xmi#//@correspondences.2"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.3"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.7"/>
+    <createdElements href="../bpmn/Sequence.xmi#t2"/>
     <createdElements href="#//@tripleMatches.2/@containedEdges.4"/>
     <createdElements href="#//@tripleMatches.2/@containedEdges.5"/>
-    <createdElements href="#//@tripleMatches.2/@containedEdges.6"/>
-    <createdElements href="../bpmn/Sequence.xmi#t2"/>
-    <createdElements href="../corr/Sequence.xmi#//@correspondences.3"/>
-    <createdElements href="#//@tripleMatches.2/@containedEdges.7"/>
     <createdElements href="../bpmn/Sequence.xmi#sf2"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.6"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.7"/>
     <createdElements href="#//@tripleMatches.2/@containedEdges.8"/>
     <createdElements href="#//@tripleMatches.2/@containedEdges.9"/>
-    <createdElements href="../usecase/Sequence.xmi#t2"/>
     <createdElements href="#//@tripleMatches.2/@containedEdges.10"/>
+    <createdElements href="../corr/Sequence.xmi#//@correspondences.3"/>
+    <createdElements href="../usecase/Sequence.xmi#t2"/>
     <createdElements href="#//@tripleMatches.2/@containedEdges.11"/>
     <createdElements href="#//@tripleMatches.2/@containedEdges.12"/>
     <createdElements href="#//@tripleMatches.2/@containedEdges.13"/>
   </tripleMatches>
-  <tripleMatches ruleName="EndEvent2FinalStateSeq" number="3">
+  <tripleMatches ruleName="TerminationSeq" number="5">
+    <sourceElements href="../bpmn/Sequence.xmi#t2"/>
+    <sourceElements href="../bpmn/Sequence.xmi#Sequence"/>
     <sourceElements href="#//@tripleMatches.3/@containedEdges.12"/>
     <sourceElements href="#//@tripleMatches.3/@containedEdges.13"/>
     <sourceElements href="#//@tripleMatches.3/@containedEdges.14"/>
-    <sourceElements href="../bpmn/Sequence.xmi#sf3"/>
     <sourceElements href="#//@tripleMatches.3/@containedEdges.15"/>
     <sourceElements href="#//@tripleMatches.3/@containedEdges.16"/>
-    <sourceElements href="../bpmn/Sequence.xmi#Sequence"/>
     <sourceElements href="#//@tripleMatches.3/@containedEdges.17"/>
     <sourceElements href="../bpmn/Sequence.xmi#ee1"/>
-    <sourceElements href="../bpmn/Sequence.xmi#t2"/>
+    <sourceElements href="../bpmn/Sequence.xmi#sf3"/>
     <sourceElements href="#//@tripleMatches.3/@containedEdges.18"/>
     <contextElements href="../usecase/Sequence.xmi#//@flows.0"/>
-    <contextElements href="#//@tripleMatches.3/@containedEdges.0"/>
+    <contextElements href="../bpmn/Sequence.xmi#t2"/>
     <contextElements href="../corr/Sequence.xmi#//@correspondences.3"/>
+    <contextElements href="../bpmn/Sequence.xmi#Sequence"/>
+    <contextElements href="../usecase/Sequence.xmi#t2"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.0"/>
     <contextElements href="#//@tripleMatches.3/@containedEdges.1"/>
     <contextElements href="#//@tripleMatches.3/@containedEdges.2"/>
-    <contextElements href="../usecase/Sequence.xmi#t2"/>
-    <contextElements href="../bpmn/Sequence.xmi#Sequence"/>
     <contextElements href="#//@tripleMatches.3/@containedEdges.3"/>
-    <contextElements href="../bpmn/Sequence.xmi#t2"/>
     <nodeMappings nodeName="lastStep">
       <node href="../usecase/Sequence.xmi#t2"/>
     </nodeMappings>
@@ -429,6 +429,10 @@
     <nodeMappings nodeName="inFlow">
       <node href="../bpmn/Sequence.xmi#sf3"/>
     </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/Sequence.xmi#//@correspondences.3"/>
+      <trg href="../bpmn/Sequence.xmi#t2"/>
+    </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
       <src href="../bpmn/Sequence.xmi#Sequence"/>
       <trg href="../bpmn/Sequence.xmi#t2"/>
@@ -437,21 +441,13 @@
       <src href="../usecase/Sequence.xmi#//@flows.0"/>
       <trg href="../usecase/Sequence.xmi#t2"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
-      <src href="../corr/Sequence.xmi#//@correspondences.3"/>
-      <trg href="../bpmn/Sequence.xmi#t2"/>
-    </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
       <src href="../corr/Sequence.xmi#//@correspondences.3"/>
       <trg href="../usecase/Sequence.xmi#t2"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
-      <src href="../bpmn/Sequence.xmi#sf3"/>
-      <trg href="../bpmn/Sequence.xmi#t2"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
-      <src href="../bpmn/Sequence.xmi#Sequence"/>
-      <trg href="../bpmn/Sequence.xmi#ee1"/>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__last">
+      <src href="../usecase/Sequence.xmi#t2"/>
+      <trg href="../usecase/Sequence.xmi#//@flows.0/@finalState"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="finalState">
       <src href="../usecase/Sequence.xmi#//@flows.0"/>
@@ -461,20 +457,16 @@
       <src href="../bpmn/Sequence.xmi#t2"/>
       <trg href="../bpmn/Sequence.xmi#sf3"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
-      <src href="../bpmn/Sequence.xmi#ee1"/>
-      <trg href="../bpmn/Sequence.xmi#sf3"/>
-    </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
       <src href="../bpmn/Sequence.xmi#sf3"/>
       <trg href="../bpmn/Sequence.xmi#ee1"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__last">
-      <src href="../usecase/Sequence.xmi#t2"/>
-      <trg href="../usecase/Sequence.xmi#//@flows.0/@finalState"/>
-    </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
       <src href="../bpmn/Sequence.xmi#Sequence"/>
+      <trg href="../bpmn/Sequence.xmi#ee1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/Sequence.xmi#ee1"/>
       <trg href="../bpmn/Sequence.xmi#sf3"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
@@ -483,18 +475,14 @@
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
       <src href="../bpmn/Sequence.xmi#Sequence"/>
-      <trg href="../bpmn/Sequence.xmi#t2"/>
+      <trg href="../bpmn/Sequence.xmi#sf3"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
       <src href="../bpmn/Sequence.xmi#Sequence"/>
-      <trg href="../bpmn/Sequence.xmi#ee1"/>
+      <trg href="../bpmn/Sequence.xmi#t2"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
       <src href="../bpmn/Sequence.xmi#t2"/>
-      <trg href="../bpmn/Sequence.xmi#sf3"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
-      <src href="../bpmn/Sequence.xmi#ee1"/>
       <trg href="../bpmn/Sequence.xmi#sf3"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
@@ -503,27 +491,39 @@
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
       <src href="../bpmn/Sequence.xmi#Sequence"/>
+      <trg href="../bpmn/Sequence.xmi#ee1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/Sequence.xmi#ee1"/>
       <trg href="../bpmn/Sequence.xmi#sf3"/>
     </containedEdges>
-    <targetElements href="../usecase/Sequence.xmi#//@flows.0/@finalState"/>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../bpmn/Sequence.xmi#sf3"/>
+      <trg href="../bpmn/Sequence.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/Sequence.xmi#Sequence"/>
+      <trg href="../bpmn/Sequence.xmi#sf3"/>
+    </containedEdges>
     <targetElements href="../usecase/Sequence.xmi#//@flows.0"/>
-    <targetElements href="#//@tripleMatches.3/@containedEdges.6"/>
-    <targetElements href="#//@tripleMatches.3/@containedEdges.1"/>
     <targetElements href="../usecase/Sequence.xmi#t2"/>
-    <targetElements href="#//@tripleMatches.3/@containedEdges.10"/>
+    <targetElements href="#//@tripleMatches.3/@containedEdges.4"/>
+    <targetElements href="#//@tripleMatches.3/@containedEdges.5"/>
+    <targetElements href="../usecase/Sequence.xmi#//@flows.0/@finalState"/>
+    <targetElements href="#//@tripleMatches.3/@containedEdges.2"/>
     <correspondenceElements href="../corr/Sequence.xmi#//@correspondences.3"/>
-    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.2"/>
+    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.0"/>
     <correspondenceElements href="#//@tripleMatches.3/@containedEdges.3"/>
-    <createdElements href="../usecase/Sequence.xmi#//@flows.0/@finalState"/>
     <createdElements href="#//@tripleMatches.3/@containedEdges.4"/>
     <createdElements href="#//@tripleMatches.3/@containedEdges.5"/>
-    <createdElements href="../bpmn/Sequence.xmi#sf3"/>
     <createdElements href="#//@tripleMatches.3/@containedEdges.6"/>
     <createdElements href="#//@tripleMatches.3/@containedEdges.7"/>
     <createdElements href="#//@tripleMatches.3/@containedEdges.8"/>
     <createdElements href="#//@tripleMatches.3/@containedEdges.9"/>
-    <createdElements href="../bpmn/Sequence.xmi#ee1"/>
     <createdElements href="#//@tripleMatches.3/@containedEdges.10"/>
+    <createdElements href="../usecase/Sequence.xmi#//@flows.0/@finalState"/>
+    <createdElements href="../bpmn/Sequence.xmi#ee1"/>
+    <createdElements href="../bpmn/Sequence.xmi#sf3"/>
     <createdElements href="#//@tripleMatches.3/@containedEdges.11"/>
   </tripleMatches>
 </TGGRuntime:PrecedenceStructure>

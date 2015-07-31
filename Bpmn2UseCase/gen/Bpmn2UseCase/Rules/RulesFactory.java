@@ -1,6 +1,6 @@
 /**
  */
-package Bpmn2UseCase.Rules;
+package bpmn2UseCase.Rules;
 
 import org.eclipse.emf.ecore.EFactory;
 
@@ -9,7 +9,7 @@ import org.eclipse.emf.ecore.EFactory;
  * The <b>Factory</b> for the model.
  * It provides a create method for each non-abstract class of the model.
  * <!-- end-user-doc -->
- * @see Bpmn2UseCase.Rules.RulesPackage
+ * @see bpmn2UseCase.Rules.RulesPackage
  * @generated
  */
 public interface RulesFactory extends EFactory {
@@ -19,7 +19,7 @@ public interface RulesFactory extends EFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	RulesFactory eINSTANCE = Bpmn2UseCase.Rules.impl.RulesFactoryImpl.init();
+	RulesFactory eINSTANCE = bpmn2UseCase.Rules.impl.RulesFactoryImpl.init();
 
 	/**
 	 * Returns a new object of class '<em>Process2 Use Case</em>'.
@@ -31,76 +31,76 @@ public interface RulesFactory extends EFactory {
 	Process2UseCase createProcess2UseCase();
 
 	/**
-	 * Returns a new object of class '<em>PG2 Parallel Step After PG</em>'.
+	 * Returns a new object of class '<em>Split After Split</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>PG2 Parallel Step After PG</em>'.
+	 * @return a new object of class '<em>Split After Split</em>'.
 	 * @generated
 	 */
-	PG2ParallelStepAfterPG createPG2ParallelStepAfterPG();
+	SplitAfterSplit createSplitAfterSplit();
 
 	/**
-	 * Returns a new object of class '<em>Task2 Normal Step Seq</em>'.
+	 * Returns a new object of class '<em>Task2 Step Seq</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Task2 Normal Step Seq</em>'.
+	 * @return a new object of class '<em>Task2 Step Seq</em>'.
 	 * @generated
 	 */
-	Task2NormalStepSeq createTask2NormalStepSeq();
+	Task2StepSeq createTask2StepSeq();
 
 	/**
-	 * Returns a new object of class '<em>Task2 Normal Step First</em>'.
+	 * Returns a new object of class '<em>Task2 Step First</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Task2 Normal Step First</em>'.
+	 * @return a new object of class '<em>Task2 Step First</em>'.
 	 * @generated
 	 */
-	Task2NormalStepFirst createTask2NormalStepFirst();
+	Task2StepFirst createTask2StepFirst();
 
 	/**
-	 * Returns a new object of class '<em>PG2 Parallel Step Seq</em>'.
+	 * Returns a new object of class '<em>Split Seq</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>PG2 Parallel Step Seq</em>'.
+	 * @return a new object of class '<em>Split Seq</em>'.
 	 * @generated
 	 */
-	PG2ParallelStepSeq createPG2ParallelStepSeq();
+	SplitSeq createSplitSeq();
 
 	/**
-	 * Returns a new object of class '<em>PG2 Parallel Step First</em>'.
+	 * Returns a new object of class '<em>Split First</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>PG2 Parallel Step First</em>'.
+	 * @return a new object of class '<em>Split First</em>'.
 	 * @generated
 	 */
-	PG2ParallelStepFirst createPG2ParallelStepFirst();
+	SplitFirst createSplitFirst();
 
 	/**
-	 * Returns a new object of class '<em>End Event2 Final State First</em>'.
+	 * Returns a new object of class '<em>Termination First</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>End Event2 Final State First</em>'.
+	 * @return a new object of class '<em>Termination First</em>'.
 	 * @generated
 	 */
-	EndEvent2FinalStateFirst createEndEvent2FinalStateFirst();
+	TerminationFirst createTerminationFirst();
 
 	/**
-	 * Returns a new object of class '<em>Task2 Normal Step After PG</em>'.
+	 * Returns a new object of class '<em>Task2 Step After Split</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Task2 Normal Step After PG</em>'.
+	 * @return a new object of class '<em>Task2 Step After Split</em>'.
 	 * @generated
 	 */
-	Task2NormalStepAfterPG createTask2NormalStepAfterPG();
+	Task2StepAfterSplit createTask2StepAfterSplit();
 
 	/**
-	 * Returns a new object of class '<em>End Event2 Final State Seq</em>'.
+	 * Returns a new object of class '<em>Termination Seq</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>End Event2 Final State Seq</em>'.
+	 * @return a new object of class '<em>Termination Seq</em>'.
 	 * @generated
 	 */
-	EndEvent2FinalStateSeq createEndEvent2FinalStateSeq();
+	TerminationSeq createTerminationSeq();
 
 	/**
 	 * Returns a new object of class '<em>Last Step In PFlow</em>'.
@@ -112,49 +112,58 @@ public interface RulesFactory extends EFactory {
 	LastStepInPFlow createLastStepInPFlow();
 
 	/**
-	 * Returns a new object of class '<em>EG2 Choice Seq</em>'.
+	 * Returns a new object of class '<em>Task2 Step After Merge</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>EG2 Choice Seq</em>'.
+	 * @return a new object of class '<em>Task2 Step After Merge</em>'.
 	 * @generated
 	 */
-	EG2ChoiceSeq createEG2ChoiceSeq();
+	Task2StepAfterMerge createTask2StepAfterMerge();
 
 	/**
-	 * Returns a new object of class '<em>EG2 Choice First</em>'.
+	 * Returns a new object of class '<em>Choice Seq</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>EG2 Choice First</em>'.
+	 * @return a new object of class '<em>Choice Seq</em>'.
 	 * @generated
 	 */
-	EG2ChoiceFirst createEG2ChoiceFirst();
+	ChoiceSeq createChoiceSeq();
 
 	/**
-	 * Returns a new object of class '<em>EG2 Choice After PG</em>'.
+	 * Returns a new object of class '<em>Choice First</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>EG2 Choice After PG</em>'.
+	 * @return a new object of class '<em>Choice First</em>'.
 	 * @generated
 	 */
-	EG2ChoiceAfterPG createEG2ChoiceAfterPG();
+	ChoiceFirst createChoiceFirst();
 
 	/**
-	 * Returns a new object of class '<em>Task2 Normal Step After Def EG</em>'.
+	 * Returns a new object of class '<em>Choice After Split</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Task2 Normal Step After Def EG</em>'.
+	 * @return a new object of class '<em>Choice After Split</em>'.
 	 * @generated
 	 */
-	Task2NormalStepAfterDefEG createTask2NormalStepAfterDefEG();
+	ChoiceAfterSplit createChoiceAfterSplit();
 
 	/**
-	 * Returns a new object of class '<em>Task2 Normal Step After EG</em>'.
+	 * Returns a new object of class '<em>Task2 Step After Choice Def</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Task2 Normal Step After EG</em>'.
+	 * @return a new object of class '<em>Task2 Step After Choice Def</em>'.
 	 * @generated
 	 */
-	Task2NormalStepAfterEG createTask2NormalStepAfterEG();
+	Task2StepAfterChoiceDef createTask2StepAfterChoiceDef();
+
+	/**
+	 * Returns a new object of class '<em>Task2 Step After Choice</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Task2 Step After Choice</em>'.
+	 * @generated
+	 */
+	Task2StepAfterChoice createTask2StepAfterChoice();
 
 	/**
 	 * Returns a new object of class '<em>Empty Defaul Flow</em>'.
@@ -175,6 +184,24 @@ public interface RulesFactory extends EFactory {
 	LastStepInDefaultFlow createLastStepInDefaultFlow();
 
 	/**
+	 * Returns a new object of class '<em>Split After Merge</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Split After Merge</em>'.
+	 * @generated
+	 */
+	SplitAfterMerge createSplitAfterMerge();
+
+	/**
+	 * Returns a new object of class '<em>Choice After Merge</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Choice After Merge</em>'.
+	 * @generated
+	 */
+	ChoiceAfterMerge createChoiceAfterMerge();
+
+	/**
 	 * Returns a new object of class '<em>Last Step In Alt Flow</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -184,49 +211,76 @@ public interface RulesFactory extends EFactory {
 	LastStepInAltFlow createLastStepInAltFlow();
 
 	/**
-	 * Returns a new object of class '<em>PG2 Parallel Step After Def EG</em>'.
+	 * Returns a new object of class '<em>Split After Choice Def</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>PG2 Parallel Step After Def EG</em>'.
+	 * @return a new object of class '<em>Split After Choice Def</em>'.
 	 * @generated
 	 */
-	PG2ParallelStepAfterDefEG createPG2ParallelStepAfterDefEG();
+	SplitAfterChoiceDef createSplitAfterChoiceDef();
 
 	/**
-	 * Returns a new object of class '<em>PG2 Parallel Step After EG</em>'.
+	 * Returns a new object of class '<em>Split After Choice</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>PG2 Parallel Step After EG</em>'.
+	 * @return a new object of class '<em>Split After Choice</em>'.
 	 * @generated
 	 */
-	PG2ParallelStepAfterEG createPG2ParallelStepAfterEG();
+	SplitAfterChoice createSplitAfterChoice();
 
 	/**
-	 * Returns a new object of class '<em>EG2 Choice Step After Def EG</em>'.
+	 * Returns a new object of class '<em>Choice After Choice Def</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>EG2 Choice Step After Def EG</em>'.
+	 * @return a new object of class '<em>Choice After Choice Def</em>'.
 	 * @generated
 	 */
-	EG2ChoiceStepAfterDefEG createEG2ChoiceStepAfterDefEG();
+	ChoiceAfterChoiceDef createChoiceAfterChoiceDef();
 
 	/**
-	 * Returns a new object of class '<em>EG2 Choice Step After EG</em>'.
+	 * Returns a new object of class '<em>Choice After Choice</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>EG2 Choice Step After EG</em>'.
+	 * @return a new object of class '<em>Choice After Choice</em>'.
 	 * @generated
 	 */
-	EG2ChoiceStepAfterEG createEG2ChoiceStepAfterEG();
+	ChoiceAfterChoice createChoiceAfterChoice();
 
 	/**
-	 * Returns a new object of class '<em>End Event2 Final State GW Seq</em>'.
+	 * Returns a new object of class '<em>Termination After Merge</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>End Event2 Final State GW Seq</em>'.
+	 * @return a new object of class '<em>Termination After Merge</em>'.
 	 * @generated
 	 */
-	EndEvent2FinalStateGWSeq createEndEvent2FinalStateGWSeq();
+	TerminationAfterMerge createTerminationAfterMerge();
+
+	/**
+	 * Returns a new object of class '<em>Task2 Step After Empty Def</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Task2 Step After Empty Def</em>'.
+	 * @generated
+	 */
+	Task2StepAfterEmptyDef createTask2StepAfterEmptyDef();
+
+	/**
+	 * Returns a new object of class '<em>Split After Empty Def</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Split After Empty Def</em>'.
+	 * @generated
+	 */
+	SplitAfterEmptyDef createSplitAfterEmptyDef();
+
+	/**
+	 * Returns a new object of class '<em>Choice After Empty Def</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Choice After Empty Def</em>'.
+	 * @generated
+	 */
+	ChoiceAfterEmptyDef createChoiceAfterEmptyDef();
 
 	/**
 	 * Returns the package supported by this factory.

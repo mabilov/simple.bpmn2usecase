@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Bpmn2UseCase" nsURI="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore" nsPrefix="Bpmn2UseCase">
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="bpmn2UseCase" nsURI="platform:/plugin/bpmn2UseCase/model/Bpmn2UseCase.ecore" nsPrefix="bpmn2UseCase">
   <eClassifiers xsi:type="ecore:EClass" name="P2UC">
     <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractCorrespondence"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1">
@@ -36,41 +36,41 @@
       <eType xsi:type="ecore:EClass" href="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore#//Step"/>
     </eStructuralFeatures>
   </eClassifiers>
-  <eSubpackages name="Rules" nsURI="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules" nsPrefix="Rules">
+  <eSubpackages name="Rules" nsURI="platform:/plugin/bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules" nsPrefix="Rules">
     <eClassifiers xsi:type="ecore:EClass" name="Process2UseCase">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Task2NormalStep" abstract="true">
+    <eClassifiers xsi:type="ecore:EClass" name="Task2Step" abstract="true">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="PG2ParallelStep" abstract="true">
+    <eClassifiers xsi:type="ecore:EClass" name="Split" abstract="true">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="PG2ParallelStepAfterPG">
+    <eClassifiers xsi:type="ecore:EClass" name="SplitAfterSplit">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Task2NormalStepSeq">
+    <eClassifiers xsi:type="ecore:EClass" name="Task2StepSeq">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Task2NormalStepFirst">
+    <eClassifiers xsi:type="ecore:EClass" name="Task2StepFirst">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="PG2ParallelStepSeq">
+    <eClassifiers xsi:type="ecore:EClass" name="SplitSeq">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="PG2ParallelStepFirst">
+    <eClassifiers xsi:type="ecore:EClass" name="SplitFirst">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="EndEvent2FinalStateFirst">
+    <eClassifiers xsi:type="ecore:EClass" name="TerminationFirst">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Task2NormalStepAfterPG">
+    <eClassifiers xsi:type="ecore:EClass" name="Task2StepAfterSplit">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="EndEvent2FinalState" abstract="true">
+    <eClassifiers xsi:type="ecore:EClass" name="Termination" abstract="true">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="EndEvent2FinalStateSeq">
+    <eClassifiers xsi:type="ecore:EClass" name="TerminationSeq">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="LastStepInFlow" abstract="true">
@@ -79,22 +79,25 @@
     <eClassifiers xsi:type="ecore:EClass" name="LastStepInPFlow">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="EG2Choice" abstract="true">
+    <eClassifiers xsi:type="ecore:EClass" name="Choice" abstract="true">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="EG2ChoiceSeq">
+    <eClassifiers xsi:type="ecore:EClass" name="Task2StepAfterMerge">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="EG2ChoiceFirst">
+    <eClassifiers xsi:type="ecore:EClass" name="ChoiceSeq">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="EG2ChoiceAfterPG">
+    <eClassifiers xsi:type="ecore:EClass" name="ChoiceFirst">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Task2NormalStepAfterDefEG">
+    <eClassifiers xsi:type="ecore:EClass" name="ChoiceAfterSplit">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Task2NormalStepAfterEG">
+    <eClassifiers xsi:type="ecore:EClass" name="Task2StepAfterChoiceDef">
+      <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Task2StepAfterChoice">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="EmptyDefaulFlow">
@@ -103,22 +106,37 @@
     <eClassifiers xsi:type="ecore:EClass" name="LastStepInDefaultFlow">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="SplitAfterMerge">
+      <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ChoiceAfterMerge">
+      <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
+    </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="LastStepInAltFlow">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="PG2ParallelStepAfterDefEG">
+    <eClassifiers xsi:type="ecore:EClass" name="SplitAfterChoiceDef">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="PG2ParallelStepAfterEG">
+    <eClassifiers xsi:type="ecore:EClass" name="SplitAfterChoice">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="EG2ChoiceStepAfterDefEG">
+    <eClassifiers xsi:type="ecore:EClass" name="ChoiceAfterChoiceDef">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="EG2ChoiceStepAfterEG">
+    <eClassifiers xsi:type="ecore:EClass" name="ChoiceAfterChoice">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="EndEvent2FinalStateGWSeq">
+    <eClassifiers xsi:type="ecore:EClass" name="TerminationAfterMerge">
+      <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Task2StepAfterEmptyDef">
+      <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="SplitAfterEmptyDef">
+      <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ChoiceAfterEmptyDef">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
   </eSubpackages>

@@ -1,13 +1,6 @@
 /**
  */
-package Bpmn2UseCase.Rules.impl;
-
-import Bpmn2UseCase.FN2S;
-import Bpmn2UseCase.GW2S;
-import Bpmn2UseCase.P2UC;
-
-import Bpmn2UseCase.Rules.LastStepInPFlow;
-import Bpmn2UseCase.Rules.RulesPackage;
+package bpmn2UseCase.Rules.impl;
 
 import SimpleBPMN.ExclusiveGateway;
 import SimpleBPMN.FlowElement;
@@ -16,7 +9,6 @@ import SimpleBPMN.Gateway;
 import SimpleBPMN.SequenceFlow;
 import SimpleBPMN.SimpleBPMNFactory;
 
-import SimpleUseCase.Flow;
 import SimpleUseCase.ParallelFlow;
 import SimpleUseCase.ParallelStep;
 import SimpleUseCase.Step;
@@ -24,22 +16,24 @@ import SimpleUseCase.UseCase;
 
 import TGGLanguage.csp.CSP;
 
-import TGGLanguage.modelgenerator.RuleEntryContainer;
-import TGGLanguage.modelgenerator.RuleEntryList;
-
 import TGGRuntime.AttributeConstraintsRuleResult;
 import TGGRuntime.EMoflonEdge;
 import TGGRuntime.EObjectContainer;
 import TGGRuntime.IsApplicableMatch;
-import TGGRuntime.IsApplicableMatchCC;
 import TGGRuntime.IsApplicableRuleResult;
 import TGGRuntime.Match;
-import TGGRuntime.ModelgeneratorRuleResult;
 import TGGRuntime.PerformRuleResult;
 import TGGRuntime.TGGRuntimeFactory;
 import TGGRuntime.TripleMatch;
 
 import TGGRuntime.impl.AbstractRuleImpl;
+
+import bpmn2UseCase.FN2S;
+import bpmn2UseCase.GW2S;
+import bpmn2UseCase.P2UC;
+
+import bpmn2UseCase.Rules.LastStepInPFlow;
+import bpmn2UseCase.Rules.RulesPackage;
 
 import java.lang.Iterable;
 
@@ -784,7 +778,7 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_1245(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_55(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = LastStepInPFlowImpl.pattern_LastStepInPFlow_20_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -838,7 +832,7 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_1246(EMoflonEdge _edge_sourceRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_56(EMoflonEdge _edge_sourceRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = LastStepInPFlowImpl.pattern_LastStepInPFlow_21_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -891,7 +885,7 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_1247(EMoflonEdge _edge_outgoing) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_57(EMoflonEdge _edge_outgoing) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = LastStepInPFlowImpl.pattern_LastStepInPFlow_22_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -944,7 +938,7 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_1248(EMoflonEdge _edge_targetRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_58(EMoflonEdge _edge_targetRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = LastStepInPFlowImpl.pattern_LastStepInPFlow_23_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -997,7 +991,7 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_1249(EMoflonEdge _edge_incoming) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_59(EMoflonEdge _edge_incoming) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = LastStepInPFlowImpl.pattern_LastStepInPFlow_24_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -1050,7 +1044,7 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_398(EMoflonEdge _edge___last) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_17(EMoflonEdge _edge___last) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = LastStepInPFlowImpl.pattern_LastStepInPFlow_25_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -1143,11 +1137,11 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 
 		Optional<TripleMatchNodeMapping> matchForN2s = __tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("n2s")).findAny();
-		Bpmn2UseCase.FN2S n2s = (Bpmn2UseCase.FN2S) matchForN2s.get().getNode();
+		bpmn2UseCase.FN2S n2s = (bpmn2UseCase.FN2S) matchForN2s.get().getNode();
 
 		Optional<TripleMatchNodeMapping> matchForGw2gs = __tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("gw2gs")).findAny();
-		Bpmn2UseCase.GW2S gw2gs = (Bpmn2UseCase.GW2S) matchForGw2gs.get().getNode();
+		bpmn2UseCase.GW2S gw2gs = (bpmn2UseCase.GW2S) matchForGw2gs.get().getNode();
 
 		Optional<TripleMatchNodeMapping> matchForUseCase = __tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("useCase")).findAny();
@@ -1155,7 +1149,7 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 
 		Optional<TripleMatchNodeMapping> matchForP2uc = __tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("p2uc")).findAny();
-		Bpmn2UseCase.P2UC p2uc = (Bpmn2UseCase.P2UC) matchForP2uc.get().getNode();
+		bpmn2UseCase.P2UC p2uc = (bpmn2UseCase.P2UC) matchForP2uc.get().getNode();
 
 		if (!(gw.isIsDiverging() == true)) {
 			ruleResult.setSuccess(false);
@@ -1238,11 +1232,11 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 
 		Optional<TripleMatchNodeMapping> matchForN2s = __tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("n2s")).findAny();
-		Bpmn2UseCase.FN2S n2s = (Bpmn2UseCase.FN2S) matchForN2s.get().getNode();
+		bpmn2UseCase.FN2S n2s = (bpmn2UseCase.FN2S) matchForN2s.get().getNode();
 
 		Optional<TripleMatchNodeMapping> matchForGw2gs = __tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("gw2gs")).findAny();
-		Bpmn2UseCase.GW2S gw2gs = (Bpmn2UseCase.GW2S) matchForGw2gs.get().getNode();
+		bpmn2UseCase.GW2S gw2gs = (bpmn2UseCase.GW2S) matchForGw2gs.get().getNode();
 
 		Optional<TripleMatchNodeMapping> matchForUseCase = __tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("useCase")).findAny();
@@ -1250,7 +1244,7 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 
 		Optional<TripleMatchNodeMapping> matchForP2uc = __tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("p2uc")).findAny();
-		Bpmn2UseCase.P2UC p2uc = (Bpmn2UseCase.P2UC) matchForP2uc.get().getNode();
+		bpmn2UseCase.P2UC p2uc = (bpmn2UseCase.P2UC) matchForP2uc.get().getNode();
 
 		if (!(gw.isIsDiverging() == true)) {
 			ruleResult.setSuccess(false);
@@ -1285,277 +1279,6 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 		}
 
 		return ruleResult;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public IsApplicableRuleResult isApplicable_CC(Match sourceMatch, Match targetMatch) {
-		// prepare
-		Object[] result1_black = LastStepInPFlowImpl.pattern_LastStepInPFlow_28_1_blackB(this);
-		if (result1_black == null) {
-			throw new RuntimeException(
-					"Pattern matching in node [prepare] failed." + " Variables: " + "[this] = " + this + ".");
-		}
-		Object[] result1_green = LastStepInPFlowImpl.pattern_LastStepInPFlow_28_1_greenF();
-		IsApplicableRuleResult result = (IsApplicableRuleResult) result1_green[0];
-
-		// ForEach match context
-		Object[] result2_binding = LastStepInPFlowImpl.pattern_LastStepInPFlow_28_2_bindingFFFFFFFFFBB(targetMatch,
-				sourceMatch);
-		if (result2_binding == null) {
-			throw new RuntimeException("Binding in node match context failed." + " Variables: " + "[targetMatch] = "
-					+ targetMatch + ", " + "[sourceMatch] = " + sourceMatch + ".");
-		}
-		ParallelStep gwStep = (ParallelStep) result2_binding[0];
-		ParallelFlow flow = (ParallelFlow) result2_binding[1];
-		SimpleBPMN.Process process = (SimpleBPMN.Process) result2_binding[2];
-		Gateway gw = (Gateway) result2_binding[3];
-		Gateway gcw = (Gateway) result2_binding[4];
-		FlowNode node = (FlowNode) result2_binding[5];
-		SequenceFlow sf = (SequenceFlow) result2_binding[6];
-		Step step = (Step) result2_binding[7];
-		UseCase useCase = (UseCase) result2_binding[8];
-		for (Object[] result2_black : LastStepInPFlowImpl.pattern_LastStepInPFlow_28_2_blackBBBBBBBBFFBFBB(gwStep, flow,
-				process, gw, gcw, node, sf, step, useCase, sourceMatch, targetMatch)) {
-			FN2S n2s = (FN2S) result2_black[8];
-			GW2S gw2gs = (GW2S) result2_black[9];
-			P2UC p2uc = (P2UC) result2_black[11];
-			Object[] result2_green = LastStepInPFlowImpl.pattern_LastStepInPFlow_28_2_greenBBBBBBBBBBBBBBF(gwStep, flow,
-					process, gw, gcw, node, sf, step, n2s, gw2gs, useCase, p2uc, sourceMatch, targetMatch);
-			IsApplicableMatchCC isApplicableMatch = (IsApplicableMatchCC) result2_green[14];
-
-			// check csp
-			Object[] result3_bindingAndBlack = LastStepInPFlowImpl
-					.pattern_LastStepInPFlow_28_3_bindingAndBlackFBBBBBBBBBBBBBBBB(this, isApplicableMatch, gwStep,
-							flow, process, gw, gcw, node, sf, step, n2s, gw2gs, useCase, p2uc, sourceMatch,
-							targetMatch);
-			if (result3_bindingAndBlack != null) {
-				// CSP csp = (CSP) result3_bindingAndBlack[0];
-
-				// add to returned result
-				Object[] result4_black = LastStepInPFlowImpl.pattern_LastStepInPFlow_28_4_blackBB(result,
-						isApplicableMatch);
-				if (result4_black == null) {
-					throw new RuntimeException(
-							"Pattern matching in node [add to returned result] failed." + " Variables: " + "[result] = "
-									+ result + ", " + "[isApplicableMatch] = " + isApplicableMatch + ".");
-				}
-				LastStepInPFlowImpl.pattern_LastStepInPFlow_28_4_greenBB(result, isApplicableMatch);
-
-			} else {
-			}
-
-		}
-		return LastStepInPFlowImpl.pattern_LastStepInPFlow_28_5_expressionFB(result);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public CSP isApplicable_solveCsp_CC(IsApplicableMatchCC isApplicableMatch, ParallelStep gwStep, ParallelFlow flow,
-			SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, SequenceFlow sf, Step step, FN2S n2s,
-			GW2S gw2gs, UseCase useCase, P2UC p2uc, Match sourceMatch, Match targetMatch) {// Create CSP
-		CSP csp = CspFactory.eINSTANCE.createCSP();
-		isApplicableMatch.getAttributeInfo().add(csp);
-
-		// Create literals
-
-		// Create attribute variables
-
-		// Create unbound variables
-
-		// Create constraints
-
-		// Solve CSP
-
-		// Snapshot pattern match on which CSP is solved
-		isApplicableMatch.registerObject("gwStep", gwStep);
-		isApplicableMatch.registerObject("flow", flow);
-		isApplicableMatch.registerObject("process", process);
-		isApplicableMatch.registerObject("gw", gw);
-		isApplicableMatch.registerObject("gcw", gcw);
-		isApplicableMatch.registerObject("node", node);
-		isApplicableMatch.registerObject("sf", sf);
-		isApplicableMatch.registerObject("step", step);
-		isApplicableMatch.registerObject("n2s", n2s);
-		isApplicableMatch.registerObject("gw2gs", gw2gs);
-		isApplicableMatch.registerObject("useCase", useCase);
-		isApplicableMatch.registerObject("p2uc", p2uc);
-		return csp;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean isApplicable_checkCsp_CC(CSP csp) {
-		return csp.check();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PerformRuleResult perform_CC(IsApplicableMatchCC isApplicableMatch) {
-		// prepare
-		Object[] result1_black = LastStepInPFlowImpl.pattern_LastStepInPFlow_31_1_blackB(this);
-		if (result1_black == null) {
-			throw new RuntimeException(
-					"Pattern matching in node [prepare] failed." + " Variables: " + "[this] = " + this + ".");
-		}
-
-		// create correspondence links
-		Object[] result2_bindingAndBlack = LastStepInPFlowImpl
-				.pattern_LastStepInPFlow_31_2_bindingAndBlackFFFFFFFFFFFFB(isApplicableMatch);
-		if (result2_bindingAndBlack == null) {
-			throw new RuntimeException("Pattern matching in node [create correspondence links] failed." + " Variables: "
-					+ "[isApplicableMatch] = " + isApplicableMatch + ".");
-		}
-		// ParallelStep gwStep = (ParallelStep) result2_bindingAndBlack[0];
-		// ParallelFlow flow = (ParallelFlow) result2_bindingAndBlack[1];
-		// SimpleBPMN.Process process = (SimpleBPMN.Process) result2_bindingAndBlack[2];
-		// Gateway gw = (Gateway) result2_bindingAndBlack[3];
-		// Gateway gcw = (Gateway) result2_bindingAndBlack[4];
-		// FlowNode node = (FlowNode) result2_bindingAndBlack[5];
-		// SequenceFlow sf = (SequenceFlow) result2_bindingAndBlack[6];
-		// Step step = (Step) result2_bindingAndBlack[7];
-		// FN2S n2s = (FN2S) result2_bindingAndBlack[8];
-		// GW2S gw2gs = (GW2S) result2_bindingAndBlack[9];
-		// UseCase useCase = (UseCase) result2_bindingAndBlack[10];
-		// P2UC p2uc = (P2UC) result2_bindingAndBlack[11];
-		Object[] result2_green = LastStepInPFlowImpl.pattern_LastStepInPFlow_31_2_greenF();
-		PerformRuleResult result = (PerformRuleResult) result2_green[0];
-
-		return LastStepInPFlowImpl.pattern_LastStepInPFlow_31_3_expressionFB(result);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ModelgeneratorRuleResult generateModel(RuleEntryContainer ruleEntryContainer, FN2S n2sParameter) {
-		// create result
-		Object[] result1_black = LastStepInPFlowImpl.pattern_LastStepInPFlow_32_1_blackB(this);
-		if (result1_black == null) {
-			throw new RuntimeException(
-					"Pattern matching in node [create result] failed." + " Variables: " + "[this] = " + this + ".");
-		}
-		Object[] result1_green = LastStepInPFlowImpl.pattern_LastStepInPFlow_32_1_greenFF();
-		IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result1_green[0];
-		ModelgeneratorRuleResult ruleResult = (ModelgeneratorRuleResult) result1_green[1];
-
-		// ForEach is applicable core
-		for (Object[] result2_black : LastStepInPFlowImpl
-				.pattern_LastStepInPFlow_32_2_blackFFFFFFFFFFFFBB(ruleEntryContainer, ruleResult)) {
-			// RuleEntryList n2sList = (RuleEntryList) result2_black[0];
-			ParallelStep gwStep = (ParallelStep) result2_black[1];
-			ParallelFlow flow = (ParallelFlow) result2_black[2];
-			Step step = (Step) result2_black[3];
-			FN2S n2s = (FN2S) result2_black[4];
-			FlowNode node = (FlowNode) result2_black[5];
-			SimpleBPMN.Process process = (SimpleBPMN.Process) result2_black[6];
-			Gateway gw = (Gateway) result2_black[7];
-			Gateway gcw = (Gateway) result2_black[8];
-			GW2S gw2gs = (GW2S) result2_black[9];
-			P2UC p2uc = (P2UC) result2_black[10];
-			UseCase useCase = (UseCase) result2_black[11];
-
-			// solve CSP
-			Object[] result3_bindingAndBlack = LastStepInPFlowImpl
-					.pattern_LastStepInPFlow_32_3_bindingAndBlackFBBBBBBBBBBBBBB(this, isApplicableMatch, gwStep, flow,
-							process, gw, gcw, node, step, n2s, gw2gs, useCase, p2uc, ruleResult);
-			if (result3_bindingAndBlack == null) {
-				throw new RuntimeException("Pattern matching in node [solve CSP] failed." + " Variables: " + "[this] = "
-						+ this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ", " + "[gwStep] = " + gwStep
-						+ ", " + "[flow] = " + flow + ", " + "[process] = " + process + ", " + "[gw] = " + gw + ", "
-						+ "[gcw] = " + gcw + ", " + "[node] = " + node + ", " + "[step] = " + step + ", " + "[n2s] = "
-						+ n2s + ", " + "[gw2gs] = " + gw2gs + ", " + "[useCase] = " + useCase + ", " + "[p2uc] = "
-						+ p2uc + ", " + "[ruleResult] = " + ruleResult + ".");
-			}
-			CSP csp = (CSP) result3_bindingAndBlack[0];
-			// check CSP
-			if (LastStepInPFlowImpl.pattern_LastStepInPFlow_32_4_expressionFBB(this, csp)) {
-				// check nacs
-				Object[] result5_black = LastStepInPFlowImpl.pattern_LastStepInPFlow_32_5_blackBBBBBBBBBBB(gwStep, flow,
-						process, gw, gcw, node, step, n2s, gw2gs, useCase, p2uc);
-				if (result5_black != null) {
-
-					// perform
-					Object[] result6_black = LastStepInPFlowImpl.pattern_LastStepInPFlow_32_6_blackBBBBBBBBBBBB(gwStep,
-							flow, process, gw, gcw, node, step, n2s, gw2gs, useCase, p2uc, ruleResult);
-					if (result6_black == null) {
-						throw new RuntimeException("Pattern matching in node [perform] failed." + " Variables: "
-								+ "[gwStep] = " + gwStep + ", " + "[flow] = " + flow + ", " + "[process] = " + process
-								+ ", " + "[gw] = " + gw + ", " + "[gcw] = " + gcw + ", " + "[node] = " + node + ", "
-								+ "[step] = " + step + ", " + "[n2s] = " + n2s + ", " + "[gw2gs] = " + gw2gs + ", "
-								+ "[useCase] = " + useCase + ", " + "[p2uc] = " + p2uc + ", " + "[ruleResult] = "
-								+ ruleResult + ".");
-					}
-					LastStepInPFlowImpl.pattern_LastStepInPFlow_32_6_greenBBBBFBB(flow, process, gcw, node, step,
-							ruleResult);
-					// SequenceFlow sf = (SequenceFlow) result6_green[4];
-
-				} else {
-				}
-
-			} else {
-			}
-
-		}
-		return LastStepInPFlowImpl.pattern_LastStepInPFlow_32_7_expressionFB(ruleResult);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, ParallelStep gwStep, ParallelFlow flow,
-			SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, Step step, FN2S n2s, GW2S gw2gs,
-			UseCase useCase, P2UC p2uc, ModelgeneratorRuleResult ruleResult) {// Create CSP
-		CSP csp = CspFactory.eINSTANCE.createCSP();
-		isApplicableMatch.getAttributeInfo().add(csp);
-
-		// Create literals
-
-		// Create attribute variables
-
-		// Create unbound variables
-
-		// Create constraints
-
-		// Solve CSP
-
-		// Snapshot pattern match on which CSP is solved
-		isApplicableMatch.registerObject("gwStep", gwStep);
-		isApplicableMatch.registerObject("flow", flow);
-		isApplicableMatch.registerObject("process", process);
-		isApplicableMatch.registerObject("gw", gw);
-		isApplicableMatch.registerObject("gcw", gcw);
-		isApplicableMatch.registerObject("node", node);
-		isApplicableMatch.registerObject("step", step);
-		isApplicableMatch.registerObject("n2s", n2s);
-		isApplicableMatch.registerObject("gw2gs", gw2gs);
-		isApplicableMatch.registerObject("useCase", useCase);
-		isApplicableMatch.registerObject("p2uc", p2uc);
-		return csp;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean generateModel_checkCsp_BWD(CSP csp) {
-		return csp.check();
 	}
 
 	/**
@@ -1635,45 +1358,22 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 			return null;
 		case RulesPackage.LAST_STEP_IN_PFLOW___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_1245__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_1245((EMoflonEdge) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_1246__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_1246((EMoflonEdge) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_1247__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_1247((EMoflonEdge) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_1248__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_1248((EMoflonEdge) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_1249__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_1249((EMoflonEdge) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_398__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_398((EMoflonEdge) arguments.get(0));
+		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_55__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_55((EMoflonEdge) arguments.get(0));
+		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_56__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_56((EMoflonEdge) arguments.get(0));
+		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_57__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_57((EMoflonEdge) arguments.get(0));
+		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_58__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_58((EMoflonEdge) arguments.get(0));
+		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_59__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_59((EMoflonEdge) arguments.get(0));
+		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_17__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_17((EMoflonEdge) arguments.get(0));
 		case RulesPackage.LAST_STEP_IN_PFLOW___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.LAST_STEP_IN_PFLOW___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
 			return checkAttributes_BWD((TripleMatch) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPLICABLE_CC__MATCH_MATCH:
-			return isApplicable_CC((Match) arguments.get(0), (Match) arguments.get(1));
-		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPLICABLE_SOLVE_CSP_CC__ISAPPLICABLEMATCHCC_PARALLELSTEP_PARALLELFLOW_PROCESS_GATEWAY_GATEWAY_FLOWNODE_SEQUENCEFLOW_STEP_FN2S_GW2S_USECASE_P2UC_MATCH_MATCH:
-			return isApplicable_solveCsp_CC((IsApplicableMatchCC) arguments.get(0), (ParallelStep) arguments.get(1),
-					(ParallelFlow) arguments.get(2), (SimpleBPMN.Process) arguments.get(3), (Gateway) arguments.get(4),
-					(Gateway) arguments.get(5), (FlowNode) arguments.get(6), (SequenceFlow) arguments.get(7),
-					(Step) arguments.get(8), (FN2S) arguments.get(9), (GW2S) arguments.get(10),
-					(UseCase) arguments.get(11), (P2UC) arguments.get(12), (Match) arguments.get(13),
-					(Match) arguments.get(14));
-		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPLICABLE_CHECK_CSP_CC__CSP:
-			return isApplicable_checkCsp_CC((CSP) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_PFLOW___PERFORM_CC__ISAPPLICABLEMATCHCC:
-			return perform_CC((IsApplicableMatchCC) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_PFLOW___GENERATE_MODEL__RULEENTRYCONTAINER_FN2S:
-			return generateModel((RuleEntryContainer) arguments.get(0), (FN2S) arguments.get(1));
-		case RulesPackage.LAST_STEP_IN_PFLOW___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_PARALLELSTEP_PARALLELFLOW_PROCESS_GATEWAY_GATEWAY_FLOWNODE_STEP_FN2S_GW2S_USECASE_P2UC_MODELGENERATORRULERESULT:
-			return generateModel_solveCsp_BWD((IsApplicableMatch) arguments.get(0), (ParallelStep) arguments.get(1),
-					(ParallelFlow) arguments.get(2), (SimpleBPMN.Process) arguments.get(3), (Gateway) arguments.get(4),
-					(Gateway) arguments.get(5), (FlowNode) arguments.get(6), (Step) arguments.get(7),
-					(FN2S) arguments.get(8), (GW2S) arguments.get(9), (UseCase) arguments.get(10),
-					(P2UC) arguments.get(11), (ModelgeneratorRuleResult) arguments.get(12));
-		case RulesPackage.LAST_STEP_IN_PFLOW___GENERATE_MODEL_CHECK_CSP_BWD__CSP:
-			return generateModel_checkCsp_BWD((CSP) arguments.get(0));
 		}
 		return super.eInvoke(operationID, arguments);
 	}
@@ -3534,11 +3234,11 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 		if (!gw.equals(node)) {
 			if (!gcw.equals(gw)) {
 				if (!gcw.equals(node)) {
-					for (ExclusiveGateway __DEC_sf_default_347746 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ExclusiveGateway __DEC_sf_default_618521 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
-						if (!gw.equals(__DEC_sf_default_347746)) {
-							if (!gcw.equals(__DEC_sf_default_347746)) {
-								if (!node.equals(__DEC_sf_default_347746)) {
+						if (!gw.equals(__DEC_sf_default_618521)) {
+							if (!gcw.equals(__DEC_sf_default_618521)) {
+								if (!node.equals(__DEC_sf_default_618521)) {
 									return new Object[] { sf, gw, gcw, node };
 								}
 							}
@@ -3552,9 +3252,9 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 
 	public static final Object[] pattern_LastStepInPFlow_20_2_black_nac_1BB(SequenceFlow sf,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf_flowElements_51483 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf_flowElements_44191 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_51483)) {
+			if (!process.equals(__DEC_sf_flowElements_44191)) {
 				return new Object[] { sf, process };
 			}
 		}
@@ -3710,11 +3410,11 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 		if (!gw.equals(node)) {
 			if (!gcw.equals(gw)) {
 				if (!gcw.equals(node)) {
-					for (ExclusiveGateway __DEC_sf_default_409894 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ExclusiveGateway __DEC_sf_default_237507 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
-						if (!gw.equals(__DEC_sf_default_409894)) {
-							if (!gcw.equals(__DEC_sf_default_409894)) {
-								if (!node.equals(__DEC_sf_default_409894)) {
+						if (!gw.equals(__DEC_sf_default_237507)) {
+							if (!gcw.equals(__DEC_sf_default_237507)) {
+								if (!node.equals(__DEC_sf_default_237507)) {
 									return new Object[] { sf, gw, gcw, node };
 								}
 							}
@@ -3728,9 +3428,9 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 
 	public static final Object[] pattern_LastStepInPFlow_21_2_black_nac_1BB(SequenceFlow sf,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf_flowElements_677914 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf_flowElements_56910 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_677914)) {
+			if (!process.equals(__DEC_sf_flowElements_56910)) {
 				return new Object[] { sf, process };
 			}
 		}
@@ -3885,11 +3585,11 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 		if (!gw.equals(node)) {
 			if (!gcw.equals(gw)) {
 				if (!gcw.equals(node)) {
-					for (ExclusiveGateway __DEC_sf_default_915492 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ExclusiveGateway __DEC_sf_default_863209 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
-						if (!gw.equals(__DEC_sf_default_915492)) {
-							if (!gcw.equals(__DEC_sf_default_915492)) {
-								if (!node.equals(__DEC_sf_default_915492)) {
+						if (!gw.equals(__DEC_sf_default_863209)) {
+							if (!gcw.equals(__DEC_sf_default_863209)) {
+								if (!node.equals(__DEC_sf_default_863209)) {
 									return new Object[] { sf, gw, gcw, node };
 								}
 							}
@@ -3903,9 +3603,9 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 
 	public static final Object[] pattern_LastStepInPFlow_22_2_black_nac_1BB(SequenceFlow sf,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf_flowElements_248467 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf_flowElements_180244 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_248467)) {
+			if (!process.equals(__DEC_sf_flowElements_180244)) {
 				return new Object[] { sf, process };
 			}
 		}
@@ -4061,11 +3761,11 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 		if (!gw.equals(node)) {
 			if (!gcw.equals(gw)) {
 				if (!gcw.equals(node)) {
-					for (ExclusiveGateway __DEC_sf_default_372884 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ExclusiveGateway __DEC_sf_default_699038 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
-						if (!gw.equals(__DEC_sf_default_372884)) {
-							if (!gcw.equals(__DEC_sf_default_372884)) {
-								if (!node.equals(__DEC_sf_default_372884)) {
+						if (!gw.equals(__DEC_sf_default_699038)) {
+							if (!gcw.equals(__DEC_sf_default_699038)) {
+								if (!node.equals(__DEC_sf_default_699038)) {
 									return new Object[] { sf, gw, gcw, node };
 								}
 							}
@@ -4079,9 +3779,9 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 
 	public static final Object[] pattern_LastStepInPFlow_23_2_black_nac_1BB(SequenceFlow sf,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf_flowElements_960381 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf_flowElements_129578 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_960381)) {
+			if (!process.equals(__DEC_sf_flowElements_129578)) {
 				return new Object[] { sf, process };
 			}
 		}
@@ -4235,11 +3935,11 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 		if (!gw.equals(node)) {
 			if (!gcw.equals(gw)) {
 				if (!gcw.equals(node)) {
-					for (ExclusiveGateway __DEC_sf_default_663088 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ExclusiveGateway __DEC_sf_default_720733 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
-						if (!gw.equals(__DEC_sf_default_663088)) {
-							if (!gcw.equals(__DEC_sf_default_663088)) {
-								if (!node.equals(__DEC_sf_default_663088)) {
+						if (!gw.equals(__DEC_sf_default_720733)) {
+							if (!gcw.equals(__DEC_sf_default_720733)) {
+								if (!node.equals(__DEC_sf_default_720733)) {
 									return new Object[] { sf, gw, gcw, node };
 								}
 							}
@@ -4253,9 +3953,9 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 
 	public static final Object[] pattern_LastStepInPFlow_24_2_black_nac_1BB(SequenceFlow sf,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_sf_flowElements_105585 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_sf_flowElements_896530 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_105585)) {
+			if (!process.equals(__DEC_sf_flowElements_896530)) {
 				return new Object[] { sf, process };
 			}
 		}
@@ -4468,839 +4168,6 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 
 	public static final EObjectContainer pattern_LastStepInPFlow_25_6_expressionFB(EObjectContainer __result) {
 		EObjectContainer _result = __result;
-		return _result;
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_28_1_blackB(LastStepInPFlow _this) {
-		return new Object[] { _this };
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_28_1_greenF() {
-		IsApplicableRuleResult result = TGGRuntimeFactory.eINSTANCE.createIsApplicableRuleResult();
-		return new Object[] { result };
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_28_2_bindingFFFFFFFFFBB(Match targetMatch, Match sourceMatch) {
-		EObject _localVariable_0 = targetMatch.getObject("gwStep");
-		EObject _localVariable_1 = targetMatch.getObject("flow");
-		EObject _localVariable_2 = sourceMatch.getObject("process");
-		EObject _localVariable_3 = sourceMatch.getObject("gw");
-		EObject _localVariable_4 = sourceMatch.getObject("gcw");
-		EObject _localVariable_5 = sourceMatch.getObject("node");
-		EObject _localVariable_6 = sourceMatch.getObject("sf");
-		EObject _localVariable_7 = targetMatch.getObject("step");
-		EObject _localVariable_8 = targetMatch.getObject("useCase");
-		EObject tmpGwStep = _localVariable_0;
-		EObject tmpFlow = _localVariable_1;
-		EObject tmpProcess = _localVariable_2;
-		EObject tmpGw = _localVariable_3;
-		EObject tmpGcw = _localVariable_4;
-		EObject tmpNode = _localVariable_5;
-		EObject tmpSf = _localVariable_6;
-		EObject tmpStep = _localVariable_7;
-		EObject tmpUseCase = _localVariable_8;
-		if (tmpGwStep instanceof ParallelStep) {
-			ParallelStep gwStep = (ParallelStep) tmpGwStep;
-			if (tmpFlow instanceof ParallelFlow) {
-				ParallelFlow flow = (ParallelFlow) tmpFlow;
-				if (tmpProcess instanceof SimpleBPMN.Process) {
-					SimpleBPMN.Process process = (SimpleBPMN.Process) tmpProcess;
-					if (tmpGw instanceof Gateway) {
-						Gateway gw = (Gateway) tmpGw;
-						if (tmpGcw instanceof Gateway) {
-							Gateway gcw = (Gateway) tmpGcw;
-							if (tmpNode instanceof FlowNode) {
-								FlowNode node = (FlowNode) tmpNode;
-								if (tmpSf instanceof SequenceFlow) {
-									SequenceFlow sf = (SequenceFlow) tmpSf;
-									if (tmpStep instanceof Step) {
-										Step step = (Step) tmpStep;
-										if (tmpUseCase instanceof UseCase) {
-											UseCase useCase = (UseCase) tmpUseCase;
-											return new Object[] { gwStep, flow, process, gw, gcw, node, sf, step,
-													useCase, targetMatch, sourceMatch };
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-		return null;
-	}
-
-	public static final Iterable<Object[]> pattern_LastStepInPFlow_28_2_blackBBBBBBBBFFBFBB(ParallelStep gwStep,
-			ParallelFlow flow, SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, SequenceFlow sf,
-			Step step, UseCase useCase, Match sourceMatch, Match targetMatch) {
-		LinkedList<Object[]> _result = new LinkedList<Object[]>();
-		if (!gwStep.equals(step)) {
-			if (!gw.equals(node)) {
-				if (!gcw.equals(gw)) {
-					if (!gcw.equals(node)) {
-						if (!sourceMatch.equals(targetMatch)) {
-							if (gwStep.getInvokedFlows().contains(flow)) {
-								if (process.getFlowElements().contains(gw)) {
-									if (process.getFlowElements().contains(gcw)) {
-										if (process.getFlowElements().contains(node)) {
-											if (process.getFlowElements().contains(sf)) {
-												if (gcw.equals(gw.get__conv())) {
-													if (node.equals(sf.getSourceRef())) {
-														if (gcw.equals(sf.getTargetRef())) {
-															if (flow.getSteps().contains(step)) {
-																if (step.equals(flow.get__last())) {
-																	if (useCase.getFlows().contains(flow)) {
-																		boolean gwisDiverging = gw.isIsDiverging();
-																		if (Boolean.valueOf(gwisDiverging)
-																				.equals(Boolean.valueOf(true))) {
-																			if (Boolean.valueOf(gwisDiverging)
-																					.equals(Boolean.valueOf(true))) {
-																				boolean gcwisDiverging = gcw
-																						.isIsDiverging();
-																				if (Boolean.valueOf(gcwisDiverging)
-																						.equals(false)) {
-																					if (Boolean.valueOf(gcwisDiverging)
-																							.equals(false)) {
-																						for (FN2S n2s : org.moflon.core.utilities.eMoflonEMFUtil
-																								.getOppositeReferenceTyped(
-																										node,
-																										FN2S.class,
-																										"source")) {
-																							if (step.equals(
-																									n2s.getTarget())) {
-																								for (GW2S gw2gs : org.moflon.core.utilities.eMoflonEMFUtil
-																										.getOppositeReferenceTyped(
-																												gw,
-																												GW2S.class,
-																												"source")) {
-																									if (gwStep.equals(
-																											gw2gs.getTarget())) {
-																										for (P2UC p2uc : org.moflon.core.utilities.eMoflonEMFUtil
-																												.getOppositeReferenceTyped(
-																														process,
-																														P2UC.class,
-																														"source")) {
-																											if (useCase
-																													.equals(p2uc
-																															.getTarget())) {
-																												_result.add(
-																														new Object[] {
-																																gwStep,
-																																flow,
-																																process,
-																																gw,
-																																gcw,
-																																node,
-																																sf,
-																																step,
-																																n2s,
-																																gw2gs,
-																																useCase,
-																																p2uc,
-																																sourceMatch,
-																																targetMatch });
-																											}
-																										}
-																									}
-																								}
-																							}
-																						}
-																					}
-																				}
-
-																			}
-																		}
-
-																	}
-																}
-															}
-														}
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-		return _result;
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_28_2_greenBBBBBBBBBBBBBBF(ParallelStep gwStep,
-			ParallelFlow flow, SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, SequenceFlow sf,
-			Step step, FN2S n2s, GW2S gw2gs, UseCase useCase, P2UC p2uc, Match sourceMatch, Match targetMatch) {
-		IsApplicableMatchCC isApplicableMatch = TGGRuntimeFactory.eINSTANCE.createIsApplicableMatchCC();
-		String isApplicableMatch_ruleName_prime = "LastStepInPFlow";
-		isApplicableMatch.setSourceMatch(sourceMatch);
-		isApplicableMatch.setTargetMatch(targetMatch);
-		isApplicableMatch.getAllContextElements().add(process);
-		isApplicableMatch.getAllContextElements().add(gw);
-		isApplicableMatch.getAllContextElements().add(gcw);
-		isApplicableMatch.getAllContextElements().add(node);
-		isApplicableMatch.getAllContextElements().add(sf);
-		isApplicableMatch.getAllContextElements().add(gwStep);
-		isApplicableMatch.getAllContextElements().add(flow);
-		isApplicableMatch.getAllContextElements().add(step);
-		isApplicableMatch.getAllContextElements().add(useCase);
-		isApplicableMatch.getAllContextElements().add(n2s);
-		isApplicableMatch.getAllContextElements().add(gw2gs);
-		isApplicableMatch.getAllContextElements().add(p2uc);
-		isApplicableMatch.setRuleName(isApplicableMatch_ruleName_prime);
-		return new Object[] { gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs, useCase, p2uc, sourceMatch,
-				targetMatch, isApplicableMatch };
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_28_3_bindingFBBBBBBBBBBBBBBBB(LastStepInPFlow _this,
-			IsApplicableMatchCC isApplicableMatch, ParallelStep gwStep, ParallelFlow flow, SimpleBPMN.Process process,
-			Gateway gw, Gateway gcw, FlowNode node, SequenceFlow sf, Step step, FN2S n2s, GW2S gw2gs, UseCase useCase,
-			P2UC p2uc, Match sourceMatch, Match targetMatch) {
-		CSP _localVariable_0 = _this.isApplicable_solveCsp_CC(isApplicableMatch, gwStep, flow, process, gw, gcw, node,
-				sf, step, n2s, gw2gs, useCase, p2uc, sourceMatch, targetMatch);
-		CSP csp = _localVariable_0;
-		if (csp != null) {
-			return new Object[] { csp, _this, isApplicableMatch, gwStep, flow, process, gw, gcw, node, sf, step, n2s,
-					gw2gs, useCase, p2uc, sourceMatch, targetMatch };
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_28_3_blackB(CSP csp) {
-		return new Object[] { csp };
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_28_3_bindingAndBlackFBBBBBBBBBBBBBBBB(LastStepInPFlow _this,
-			IsApplicableMatchCC isApplicableMatch, ParallelStep gwStep, ParallelFlow flow, SimpleBPMN.Process process,
-			Gateway gw, Gateway gcw, FlowNode node, SequenceFlow sf, Step step, FN2S n2s, GW2S gw2gs, UseCase useCase,
-			P2UC p2uc, Match sourceMatch, Match targetMatch) {
-		Object[] result_pattern_LastStepInPFlow_28_3_binding = pattern_LastStepInPFlow_28_3_bindingFBBBBBBBBBBBBBBBB(
-				_this, isApplicableMatch, gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs, useCase, p2uc,
-				sourceMatch, targetMatch);
-		if (result_pattern_LastStepInPFlow_28_3_binding != null) {
-			CSP csp = (CSP) result_pattern_LastStepInPFlow_28_3_binding[0];
-
-			Object[] result_pattern_LastStepInPFlow_28_3_black = pattern_LastStepInPFlow_28_3_blackB(csp);
-			if (result_pattern_LastStepInPFlow_28_3_black != null) {
-
-				return new Object[] { csp, _this, isApplicableMatch, gwStep, flow, process, gw, gcw, node, sf, step,
-						n2s, gw2gs, useCase, p2uc, sourceMatch, targetMatch };
-			}
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_28_4_blackBB(IsApplicableRuleResult result,
-			IsApplicableMatch isApplicableMatch) {
-		return new Object[] { result, isApplicableMatch };
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_28_4_greenBB(IsApplicableRuleResult result,
-			IsApplicableMatch isApplicableMatch) {
-		result.getIsApplicableMatch().add(isApplicableMatch);
-		boolean result_success_prime = Boolean.valueOf(true);
-		String isApplicableMatch_ruleName_prime = "LastStepInPFlow";
-		result.setSuccess(Boolean.valueOf(result_success_prime));
-		isApplicableMatch.setRuleName(isApplicableMatch_ruleName_prime);
-		return new Object[] { result, isApplicableMatch };
-	}
-
-	public static final IsApplicableRuleResult pattern_LastStepInPFlow_28_5_expressionFB(
-			IsApplicableRuleResult result) {
-		IsApplicableRuleResult _result = result;
-		return _result;
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_31_1_blackB(LastStepInPFlow _this) {
-		return new Object[] { _this };
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_31_2_bindingFFFFFFFFFFFFB(
-			IsApplicableMatchCC isApplicableMatch) {
-		EObject _localVariable_0 = isApplicableMatch.getObject("gwStep");
-		EObject _localVariable_1 = isApplicableMatch.getObject("flow");
-		EObject _localVariable_2 = isApplicableMatch.getObject("process");
-		EObject _localVariable_3 = isApplicableMatch.getObject("gw");
-		EObject _localVariable_4 = isApplicableMatch.getObject("gcw");
-		EObject _localVariable_5 = isApplicableMatch.getObject("node");
-		EObject _localVariable_6 = isApplicableMatch.getObject("sf");
-		EObject _localVariable_7 = isApplicableMatch.getObject("step");
-		EObject _localVariable_8 = isApplicableMatch.getObject("n2s");
-		EObject _localVariable_9 = isApplicableMatch.getObject("gw2gs");
-		EObject _localVariable_10 = isApplicableMatch.getObject("useCase");
-		EObject _localVariable_11 = isApplicableMatch.getObject("p2uc");
-		EObject tmpGwStep = _localVariable_0;
-		EObject tmpFlow = _localVariable_1;
-		EObject tmpProcess = _localVariable_2;
-		EObject tmpGw = _localVariable_3;
-		EObject tmpGcw = _localVariable_4;
-		EObject tmpNode = _localVariable_5;
-		EObject tmpSf = _localVariable_6;
-		EObject tmpStep = _localVariable_7;
-		EObject tmpN2s = _localVariable_8;
-		EObject tmpGw2gs = _localVariable_9;
-		EObject tmpUseCase = _localVariable_10;
-		EObject tmpP2uc = _localVariable_11;
-		if (tmpGwStep instanceof ParallelStep) {
-			ParallelStep gwStep = (ParallelStep) tmpGwStep;
-			if (tmpFlow instanceof ParallelFlow) {
-				ParallelFlow flow = (ParallelFlow) tmpFlow;
-				if (tmpProcess instanceof SimpleBPMN.Process) {
-					SimpleBPMN.Process process = (SimpleBPMN.Process) tmpProcess;
-					if (tmpGw instanceof Gateway) {
-						Gateway gw = (Gateway) tmpGw;
-						if (tmpGcw instanceof Gateway) {
-							Gateway gcw = (Gateway) tmpGcw;
-							if (tmpNode instanceof FlowNode) {
-								FlowNode node = (FlowNode) tmpNode;
-								if (tmpSf instanceof SequenceFlow) {
-									SequenceFlow sf = (SequenceFlow) tmpSf;
-									if (tmpStep instanceof Step) {
-										Step step = (Step) tmpStep;
-										if (tmpN2s instanceof FN2S) {
-											FN2S n2s = (FN2S) tmpN2s;
-											if (tmpGw2gs instanceof GW2S) {
-												GW2S gw2gs = (GW2S) tmpGw2gs;
-												if (tmpUseCase instanceof UseCase) {
-													UseCase useCase = (UseCase) tmpUseCase;
-													if (tmpP2uc instanceof P2UC) {
-														P2UC p2uc = (P2UC) tmpP2uc;
-														return new Object[] { gwStep, flow, process, gw, gcw, node, sf,
-																step, n2s, gw2gs, useCase, p2uc, isApplicableMatch };
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_31_2_blackBBBBBBBBBBBBB(ParallelStep gwStep, ParallelFlow flow,
-			SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, SequenceFlow sf, Step step, FN2S n2s,
-			GW2S gw2gs, UseCase useCase, P2UC p2uc, IsApplicableMatchCC isApplicableMatch) {
-		if (!gwStep.equals(step)) {
-			if (!gw.equals(node)) {
-				if (!gcw.equals(gw)) {
-					if (!gcw.equals(node)) {
-						if (gwStep.getInvokedFlows().contains(flow)) {
-							if (process.getFlowElements().contains(gw)) {
-								if (process.getFlowElements().contains(gcw)) {
-									if (process.getFlowElements().contains(node)) {
-										if (process.getFlowElements().contains(sf)) {
-											if (gcw.equals(gw.get__conv())) {
-												if (node.equals(sf.getSourceRef())) {
-													if (gcw.equals(sf.getTargetRef())) {
-														if (flow.getSteps().contains(step)) {
-															if (step.equals(flow.get__last())) {
-																if (node.equals(n2s.getSource())) {
-																	if (step.equals(n2s.getTarget())) {
-																		if (gw.equals(gw2gs.getSource())) {
-																			if (gwStep.equals(gw2gs.getTarget())) {
-																				if (useCase.getFlows().contains(flow)) {
-																					if (process
-																							.equals(p2uc.getSource())) {
-																						if (useCase.equals(
-																								p2uc.getTarget())) {
-																							boolean gwisDiverging = gw
-																									.isIsDiverging();
-																							if (Boolean
-																									.valueOf(
-																											gwisDiverging)
-																									.equals(Boolean
-																											.valueOf(
-																													true))) {
-																								if (Boolean
-																										.valueOf(
-																												gwisDiverging)
-																										.equals(Boolean
-																												.valueOf(
-																														true))) {
-																									boolean gcwisDiverging = gcw
-																											.isIsDiverging();
-																									if (Boolean
-																											.valueOf(
-																													gcwisDiverging)
-																											.equals(false)) {
-																										if (Boolean
-																												.valueOf(
-																														gcwisDiverging)
-																												.equals(false)) {
-																											return new Object[] {
-																													gwStep,
-																													flow,
-																													process,
-																													gw,
-																													gcw,
-																													node,
-																													sf,
-																													step,
-																													n2s,
-																													gw2gs,
-																													useCase,
-																													p2uc,
-																													isApplicableMatch };
-																										}
-																									}
-
-																								}
-																							}
-
-																						}
-																					}
-																				}
-																			}
-																		}
-																	}
-																}
-															}
-														}
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_31_2_bindingAndBlackFFFFFFFFFFFFB(
-			IsApplicableMatchCC isApplicableMatch) {
-		Object[] result_pattern_LastStepInPFlow_31_2_binding = pattern_LastStepInPFlow_31_2_bindingFFFFFFFFFFFFB(
-				isApplicableMatch);
-		if (result_pattern_LastStepInPFlow_31_2_binding != null) {
-			ParallelStep gwStep = (ParallelStep) result_pattern_LastStepInPFlow_31_2_binding[0];
-			ParallelFlow flow = (ParallelFlow) result_pattern_LastStepInPFlow_31_2_binding[1];
-			SimpleBPMN.Process process = (SimpleBPMN.Process) result_pattern_LastStepInPFlow_31_2_binding[2];
-			Gateway gw = (Gateway) result_pattern_LastStepInPFlow_31_2_binding[3];
-			Gateway gcw = (Gateway) result_pattern_LastStepInPFlow_31_2_binding[4];
-			FlowNode node = (FlowNode) result_pattern_LastStepInPFlow_31_2_binding[5];
-			SequenceFlow sf = (SequenceFlow) result_pattern_LastStepInPFlow_31_2_binding[6];
-			Step step = (Step) result_pattern_LastStepInPFlow_31_2_binding[7];
-			FN2S n2s = (FN2S) result_pattern_LastStepInPFlow_31_2_binding[8];
-			GW2S gw2gs = (GW2S) result_pattern_LastStepInPFlow_31_2_binding[9];
-			UseCase useCase = (UseCase) result_pattern_LastStepInPFlow_31_2_binding[10];
-			P2UC p2uc = (P2UC) result_pattern_LastStepInPFlow_31_2_binding[11];
-
-			Object[] result_pattern_LastStepInPFlow_31_2_black = pattern_LastStepInPFlow_31_2_blackBBBBBBBBBBBBB(gwStep,
-					flow, process, gw, gcw, node, sf, step, n2s, gw2gs, useCase, p2uc, isApplicableMatch);
-			if (result_pattern_LastStepInPFlow_31_2_black != null) {
-
-				return new Object[] { gwStep, flow, process, gw, gcw, node, sf, step, n2s, gw2gs, useCase, p2uc,
-						isApplicableMatch };
-			}
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_31_2_greenF() {
-		PerformRuleResult result = TGGRuntimeFactory.eINSTANCE.createPerformRuleResult();
-		return new Object[] { result };
-	}
-
-	public static final PerformRuleResult pattern_LastStepInPFlow_31_3_expressionFB(PerformRuleResult result) {
-		PerformRuleResult _result = result;
-		return _result;
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_32_1_blackB(LastStepInPFlow _this) {
-		return new Object[] { _this };
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_32_1_greenFF() {
-		IsApplicableMatch isApplicableMatch = TGGRuntimeFactory.eINSTANCE.createIsApplicableMatch();
-		ModelgeneratorRuleResult ruleResult = TGGRuntimeFactory.eINSTANCE.createModelgeneratorRuleResult();
-		boolean ruleResult_success_prime = false;
-		ruleResult.setSuccess(Boolean.valueOf(ruleResult_success_prime));
-		return new Object[] { isApplicableMatch, ruleResult };
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_32_2_black_nac_0BB(ModelgeneratorRuleResult ruleResult,
-			ParallelStep gwStep) {
-		if (ruleResult.getTargetObjects().contains(gwStep)) {
-			return new Object[] { ruleResult, gwStep };
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_32_2_black_nac_1BB(ModelgeneratorRuleResult ruleResult,
-			ParallelFlow flow) {
-		if (ruleResult.getTargetObjects().contains(flow)) {
-			return new Object[] { ruleResult, flow };
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_32_2_black_nac_2BB(ModelgeneratorRuleResult ruleResult,
-			Step step) {
-		if (ruleResult.getTargetObjects().contains(step)) {
-			return new Object[] { ruleResult, step };
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_32_2_black_nac_3BB(ModelgeneratorRuleResult ruleResult,
-			FN2S n2s) {
-		if (ruleResult.getCorrObjects().contains(n2s)) {
-			return new Object[] { ruleResult, n2s };
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_32_2_black_nac_4BB(ModelgeneratorRuleResult ruleResult,
-			FlowNode node) {
-		if (ruleResult.getSourceObjects().contains(node)) {
-			return new Object[] { ruleResult, node };
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_32_2_black_nac_5BB(ModelgeneratorRuleResult ruleResult,
-			SimpleBPMN.Process process) {
-		if (ruleResult.getSourceObjects().contains(process)) {
-			return new Object[] { ruleResult, process };
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_32_2_black_nac_6BB(ModelgeneratorRuleResult ruleResult,
-			Gateway gw) {
-		if (ruleResult.getSourceObjects().contains(gw)) {
-			return new Object[] { ruleResult, gw };
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_32_2_black_nac_7BB(ModelgeneratorRuleResult ruleResult,
-			Gateway gcw) {
-		if (ruleResult.getSourceObjects().contains(gcw)) {
-			return new Object[] { ruleResult, gcw };
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_32_2_black_nac_8BB(ModelgeneratorRuleResult ruleResult,
-			GW2S gw2gs) {
-		if (ruleResult.getCorrObjects().contains(gw2gs)) {
-			return new Object[] { ruleResult, gw2gs };
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_32_2_black_nac_9BB(ModelgeneratorRuleResult ruleResult,
-			P2UC p2uc) {
-		if (ruleResult.getCorrObjects().contains(p2uc)) {
-			return new Object[] { ruleResult, p2uc };
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_32_2_black_nac_10BB(ModelgeneratorRuleResult ruleResult,
-			UseCase useCase) {
-		if (ruleResult.getTargetObjects().contains(useCase)) {
-			return new Object[] { ruleResult, useCase };
-		}
-		return null;
-	}
-
-	public static final Iterable<Object[]> pattern_LastStepInPFlow_32_2_blackFFFFFFFFFFFFBB(
-			RuleEntryContainer ruleEntryContainer, ModelgeneratorRuleResult ruleResult) {
-		LinkedList<Object[]> _result = new LinkedList<Object[]>();
-		for (RuleEntryList n2sList : ruleEntryContainer.getRuleEntryList()) {
-			for (EObject tmpN2s : n2sList.getEntryObjects()) {
-				if (tmpN2s instanceof FN2S) {
-					FN2S n2s = (FN2S) tmpN2s;
-					Step step = n2s.getTarget();
-					if (step != null) {
-						FlowNode node = n2s.getSource();
-						if (node != null) {
-							if (pattern_LastStepInPFlow_32_2_black_nac_3BB(ruleResult, n2s) == null) {
-								if (pattern_LastStepInPFlow_32_2_black_nac_2BB(ruleResult, step) == null) {
-									if (pattern_LastStepInPFlow_32_2_black_nac_4BB(ruleResult, node) == null) {
-										for (Flow tmpFlow : org.moflon.core.utilities.eMoflonEMFUtil
-												.getOppositeReferenceTyped(step, Flow.class, "steps")) {
-											if (tmpFlow instanceof ParallelFlow) {
-												ParallelFlow flow = (ParallelFlow) tmpFlow;
-												if (pattern_LastStepInPFlow_32_2_black_nac_1BB(ruleResult,
-														flow) == null) {
-													for (SimpleBPMN.Process process : org.moflon.core.utilities.eMoflonEMFUtil
-															.getOppositeReferenceTyped(node, SimpleBPMN.Process.class,
-																	"flowElements")) {
-														if (pattern_LastStepInPFlow_32_2_black_nac_5BB(ruleResult,
-																process) == null) {
-															for (FlowElement tmpGw : process.getFlowElements()) {
-																if (tmpGw instanceof Gateway) {
-																	Gateway gw = (Gateway) tmpGw;
-																	if (!gw.equals(node)) {
-																		Gateway gcw = gw.get__conv();
-																		if (gcw != null) {
-																			if (!gcw.equals(node)) {
-																				if (!gcw.equals(gw)) {
-																					if (process.getFlowElements()
-																							.contains(gcw)) {
-																						boolean gwisDiverging = gw
-																								.isIsDiverging();
-																						if (Boolean
-																								.valueOf(gwisDiverging)
-																								.equals(Boolean.valueOf(
-																										true))) {
-																							if (Boolean
-																									.valueOf(
-																											gwisDiverging)
-																									.equals(Boolean
-																											.valueOf(
-																													true))) {
-																								boolean gcwisDiverging = gcw
-																										.isIsDiverging();
-																								if (Boolean
-																										.valueOf(
-																												gcwisDiverging)
-																										.equals(false)) {
-																									if (Boolean
-																											.valueOf(
-																													gcwisDiverging)
-																											.equals(false)) {
-																										if (pattern_LastStepInPFlow_32_2_black_nac_6BB(
-																												ruleResult,
-																												gw) == null) {
-																											if (pattern_LastStepInPFlow_32_2_black_nac_7BB(
-																													ruleResult,
-																													gcw) == null) {
-																												for (ParallelStep gwStep : org.moflon.core.utilities.eMoflonEMFUtil
-																														.getOppositeReferenceTyped(
-																																flow,
-																																ParallelStep.class,
-																																"invokedFlows")) {
-																													if (!gwStep
-																															.equals(step)) {
-																														if (pattern_LastStepInPFlow_32_2_black_nac_0BB(
-																																ruleResult,
-																																gwStep) == null) {
-																															for (UseCase useCase : org.moflon.core.utilities.eMoflonEMFUtil
-																																	.getOppositeReferenceTyped(
-																																			flow,
-																																			UseCase.class,
-																																			"flows")) {
-																																if (pattern_LastStepInPFlow_32_2_black_nac_10BB(
-																																		ruleResult,
-																																		useCase) == null) {
-																																	for (P2UC p2uc : org.moflon.core.utilities.eMoflonEMFUtil
-																																			.getOppositeReferenceTyped(
-																																					process,
-																																					P2UC.class,
-																																					"source")) {
-																																		if (useCase
-																																				.equals(p2uc
-																																						.getTarget())) {
-																																			if (pattern_LastStepInPFlow_32_2_black_nac_9BB(
-																																					ruleResult,
-																																					p2uc) == null) {
-																																				for (GW2S gw2gs : org.moflon.core.utilities.eMoflonEMFUtil
-																																						.getOppositeReferenceTyped(
-																																								gw,
-																																								GW2S.class,
-																																								"source")) {
-																																					if (gwStep
-																																							.equals(gw2gs
-																																									.getTarget())) {
-																																						if (pattern_LastStepInPFlow_32_2_black_nac_8BB(
-																																								ruleResult,
-																																								gw2gs) == null) {
-																																							_result.add(
-																																									new Object[] {
-																																											n2sList,
-																																											gwStep,
-																																											flow,
-																																											step,
-																																											n2s,
-																																											node,
-																																											process,
-																																											gw,
-																																											gcw,
-																																											gw2gs,
-																																											p2uc,
-																																											useCase,
-																																											ruleEntryContainer,
-																																											ruleResult });
-																																						}
-																																					}
-																																				}
-																																			}
-																																		}
-																																	}
-																																}
-																															}
-																														}
-																													}
-																												}
-																											}
-																										}
-																									}
-																								}
-
-																							}
-																						}
-
-																					}
-																				}
-																			}
-																		}
-
-																	}
-																}
-															}
-														}
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-
-					}
-
-				}
-			}
-		}
-		return _result;
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_32_3_bindingFBBBBBBBBBBBBBB(LastStepInPFlow _this,
-			IsApplicableMatch isApplicableMatch, ParallelStep gwStep, ParallelFlow flow, SimpleBPMN.Process process,
-			Gateway gw, Gateway gcw, FlowNode node, Step step, FN2S n2s, GW2S gw2gs, UseCase useCase, P2UC p2uc,
-			ModelgeneratorRuleResult ruleResult) {
-		CSP _localVariable_0 = _this.generateModel_solveCsp_BWD(isApplicableMatch, gwStep, flow, process, gw, gcw, node,
-				step, n2s, gw2gs, useCase, p2uc, ruleResult);
-		CSP csp = _localVariable_0;
-		if (csp != null) {
-			return new Object[] { csp, _this, isApplicableMatch, gwStep, flow, process, gw, gcw, node, step, n2s, gw2gs,
-					useCase, p2uc, ruleResult };
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_32_3_blackB(CSP csp) {
-		return new Object[] { csp };
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_32_3_bindingAndBlackFBBBBBBBBBBBBBB(LastStepInPFlow _this,
-			IsApplicableMatch isApplicableMatch, ParallelStep gwStep, ParallelFlow flow, SimpleBPMN.Process process,
-			Gateway gw, Gateway gcw, FlowNode node, Step step, FN2S n2s, GW2S gw2gs, UseCase useCase, P2UC p2uc,
-			ModelgeneratorRuleResult ruleResult) {
-		Object[] result_pattern_LastStepInPFlow_32_3_binding = pattern_LastStepInPFlow_32_3_bindingFBBBBBBBBBBBBBB(
-				_this, isApplicableMatch, gwStep, flow, process, gw, gcw, node, step, n2s, gw2gs, useCase, p2uc,
-				ruleResult);
-		if (result_pattern_LastStepInPFlow_32_3_binding != null) {
-			CSP csp = (CSP) result_pattern_LastStepInPFlow_32_3_binding[0];
-
-			Object[] result_pattern_LastStepInPFlow_32_3_black = pattern_LastStepInPFlow_32_3_blackB(csp);
-			if (result_pattern_LastStepInPFlow_32_3_black != null) {
-
-				return new Object[] { csp, _this, isApplicableMatch, gwStep, flow, process, gw, gcw, node, step, n2s,
-						gw2gs, useCase, p2uc, ruleResult };
-			}
-		}
-		return null;
-	}
-
-	public static final boolean pattern_LastStepInPFlow_32_4_expressionFBB(LastStepInPFlow _this, CSP csp) {
-		boolean _localVariable_0 = _this.generateModel_checkCsp_BWD(csp);
-		boolean _result = Boolean.valueOf(_localVariable_0);
-		return _result;
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_32_5_blackBBBBBBBBBBB(ParallelStep gwStep, ParallelFlow flow,
-			SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, Step step, FN2S n2s, GW2S gw2gs,
-			UseCase useCase, P2UC p2uc) {
-		if (!gwStep.equals(step)) {
-			if (!gw.equals(node)) {
-				if (!gcw.equals(gw)) {
-					if (!gcw.equals(node)) {
-						boolean gwisDiverging = gw.isIsDiverging();
-						if (Boolean.valueOf(gwisDiverging).equals(Boolean.valueOf(true))) {
-							if (Boolean.valueOf(gwisDiverging).equals(Boolean.valueOf(true))) {
-								boolean gcwisDiverging = gcw.isIsDiverging();
-								if (Boolean.valueOf(gcwisDiverging).equals(false)) {
-									if (Boolean.valueOf(gcwisDiverging).equals(false)) {
-										return new Object[] { gwStep, flow, process, gw, gcw, node, step, n2s, gw2gs,
-												useCase, p2uc };
-									}
-								}
-
-							}
-						}
-
-					}
-				}
-			}
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_32_6_blackBBBBBBBBBBBB(ParallelStep gwStep, ParallelFlow flow,
-			SimpleBPMN.Process process, Gateway gw, Gateway gcw, FlowNode node, Step step, FN2S n2s, GW2S gw2gs,
-			UseCase useCase, P2UC p2uc, ModelgeneratorRuleResult ruleResult) {
-		if (!gwStep.equals(step)) {
-			if (!gw.equals(node)) {
-				if (!gcw.equals(gw)) {
-					if (!gcw.equals(node)) {
-						boolean gwisDiverging = gw.isIsDiverging();
-						if (Boolean.valueOf(gwisDiverging).equals(Boolean.valueOf(true))) {
-							if (Boolean.valueOf(gwisDiverging).equals(Boolean.valueOf(true))) {
-								boolean gcwisDiverging = gcw.isIsDiverging();
-								if (Boolean.valueOf(gcwisDiverging).equals(false)) {
-									if (Boolean.valueOf(gcwisDiverging).equals(false)) {
-										return new Object[] { gwStep, flow, process, gw, gcw, node, step, n2s, gw2gs,
-												useCase, p2uc, ruleResult };
-									}
-								}
-
-							}
-						}
-
-					}
-				}
-			}
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_LastStepInPFlow_32_6_greenBBBBFBB(ParallelFlow flow,
-			SimpleBPMN.Process process, Gateway gcw, FlowNode node, Step step, ModelgeneratorRuleResult ruleResult) {
-		SequenceFlow sf = SimpleBPMNFactory.eINSTANCE.createSequenceFlow();
-		flow.set__last(step);
-		boolean ruleResult_success_prime = Boolean.valueOf(true);
-		int _localVariable_0 = ruleResult.getIncrementedPerformCount();
-		process.getFlowElements().add(sf);
-		sf.setSourceRef(node);
-		sf.setTargetRef(gcw);
-		ruleResult.getSourceObjects().add(sf);
-		ruleResult.setSuccess(Boolean.valueOf(ruleResult_success_prime));
-		int ruleResult_performCount_prime = Integer.valueOf(_localVariable_0);
-		ruleResult.setPerformCount(Integer.valueOf(ruleResult_performCount_prime));
-		return new Object[] { flow, process, gcw, node, sf, step, ruleResult };
-	}
-
-	public static final ModelgeneratorRuleResult pattern_LastStepInPFlow_32_7_expressionFB(
-			ModelgeneratorRuleResult ruleResult) {
-		ModelgeneratorRuleResult _result = ruleResult;
 		return _result;
 	}
 

@@ -1,10 +1,10 @@
 /**
  */
-package Bpmn2UseCase.Rules.util;
-
-import Bpmn2UseCase.Rules.*;
+package bpmn2UseCase.Rules.util;
 
 import TGGRuntime.AbstractRule;
+
+import bpmn2UseCase.Rules.*;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
@@ -18,7 +18,7 @@ import org.eclipse.emf.ecore.EObject;
  * The <b>Adapter Factory</b> for the model.
  * It provides an adapter <code>createXXX</code> method for each class of the model.
  * <!-- end-user-doc -->
- * @see Bpmn2UseCase.Rules.RulesPackage
+ * @see bpmn2UseCase.Rules.RulesPackage
  * @generated
  */
 public class RulesAdapterFactory extends AdapterFactoryImpl {
@@ -74,58 +74,58 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseTask2NormalStep(Task2NormalStep object) {
-			return createTask2NormalStepAdapter();
+		public Adapter caseTask2Step(Task2Step object) {
+			return createTask2StepAdapter();
 		}
 
 		@Override
-		public Adapter casePG2ParallelStep(PG2ParallelStep object) {
-			return createPG2ParallelStepAdapter();
+		public Adapter caseSplit(Split object) {
+			return createSplitAdapter();
 		}
 
 		@Override
-		public Adapter casePG2ParallelStepAfterPG(PG2ParallelStepAfterPG object) {
-			return createPG2ParallelStepAfterPGAdapter();
+		public Adapter caseSplitAfterSplit(SplitAfterSplit object) {
+			return createSplitAfterSplitAdapter();
 		}
 
 		@Override
-		public Adapter caseTask2NormalStepSeq(Task2NormalStepSeq object) {
-			return createTask2NormalStepSeqAdapter();
+		public Adapter caseTask2StepSeq(Task2StepSeq object) {
+			return createTask2StepSeqAdapter();
 		}
 
 		@Override
-		public Adapter caseTask2NormalStepFirst(Task2NormalStepFirst object) {
-			return createTask2NormalStepFirstAdapter();
+		public Adapter caseTask2StepFirst(Task2StepFirst object) {
+			return createTask2StepFirstAdapter();
 		}
 
 		@Override
-		public Adapter casePG2ParallelStepSeq(PG2ParallelStepSeq object) {
-			return createPG2ParallelStepSeqAdapter();
+		public Adapter caseSplitSeq(SplitSeq object) {
+			return createSplitSeqAdapter();
 		}
 
 		@Override
-		public Adapter casePG2ParallelStepFirst(PG2ParallelStepFirst object) {
-			return createPG2ParallelStepFirstAdapter();
+		public Adapter caseSplitFirst(SplitFirst object) {
+			return createSplitFirstAdapter();
 		}
 
 		@Override
-		public Adapter caseEndEvent2FinalStateFirst(EndEvent2FinalStateFirst object) {
-			return createEndEvent2FinalStateFirstAdapter();
+		public Adapter caseTerminationFirst(TerminationFirst object) {
+			return createTerminationFirstAdapter();
 		}
 
 		@Override
-		public Adapter caseTask2NormalStepAfterPG(Task2NormalStepAfterPG object) {
-			return createTask2NormalStepAfterPGAdapter();
+		public Adapter caseTask2StepAfterSplit(Task2StepAfterSplit object) {
+			return createTask2StepAfterSplitAdapter();
 		}
 
 		@Override
-		public Adapter caseEndEvent2FinalState(EndEvent2FinalState object) {
-			return createEndEvent2FinalStateAdapter();
+		public Adapter caseTermination(Termination object) {
+			return createTerminationAdapter();
 		}
 
 		@Override
-		public Adapter caseEndEvent2FinalStateSeq(EndEvent2FinalStateSeq object) {
-			return createEndEvent2FinalStateSeqAdapter();
+		public Adapter caseTerminationSeq(TerminationSeq object) {
+			return createTerminationSeqAdapter();
 		}
 
 		@Override
@@ -139,33 +139,38 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseEG2Choice(EG2Choice object) {
-			return createEG2ChoiceAdapter();
+		public Adapter caseChoice(Choice object) {
+			return createChoiceAdapter();
 		}
 
 		@Override
-		public Adapter caseEG2ChoiceSeq(EG2ChoiceSeq object) {
-			return createEG2ChoiceSeqAdapter();
+		public Adapter caseTask2StepAfterMerge(Task2StepAfterMerge object) {
+			return createTask2StepAfterMergeAdapter();
 		}
 
 		@Override
-		public Adapter caseEG2ChoiceFirst(EG2ChoiceFirst object) {
-			return createEG2ChoiceFirstAdapter();
+		public Adapter caseChoiceSeq(ChoiceSeq object) {
+			return createChoiceSeqAdapter();
 		}
 
 		@Override
-		public Adapter caseEG2ChoiceAfterPG(EG2ChoiceAfterPG object) {
-			return createEG2ChoiceAfterPGAdapter();
+		public Adapter caseChoiceFirst(ChoiceFirst object) {
+			return createChoiceFirstAdapter();
 		}
 
 		@Override
-		public Adapter caseTask2NormalStepAfterDefEG(Task2NormalStepAfterDefEG object) {
-			return createTask2NormalStepAfterDefEGAdapter();
+		public Adapter caseChoiceAfterSplit(ChoiceAfterSplit object) {
+			return createChoiceAfterSplitAdapter();
 		}
 
 		@Override
-		public Adapter caseTask2NormalStepAfterEG(Task2NormalStepAfterEG object) {
-			return createTask2NormalStepAfterEGAdapter();
+		public Adapter caseTask2StepAfterChoiceDef(Task2StepAfterChoiceDef object) {
+			return createTask2StepAfterChoiceDefAdapter();
+		}
+
+		@Override
+		public Adapter caseTask2StepAfterChoice(Task2StepAfterChoice object) {
+			return createTask2StepAfterChoiceAdapter();
 		}
 
 		@Override
@@ -179,33 +184,58 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseSplitAfterMerge(SplitAfterMerge object) {
+			return createSplitAfterMergeAdapter();
+		}
+
+		@Override
+		public Adapter caseChoiceAfterMerge(ChoiceAfterMerge object) {
+			return createChoiceAfterMergeAdapter();
+		}
+
+		@Override
 		public Adapter caseLastStepInAltFlow(LastStepInAltFlow object) {
 			return createLastStepInAltFlowAdapter();
 		}
 
 		@Override
-		public Adapter casePG2ParallelStepAfterDefEG(PG2ParallelStepAfterDefEG object) {
-			return createPG2ParallelStepAfterDefEGAdapter();
+		public Adapter caseSplitAfterChoiceDef(SplitAfterChoiceDef object) {
+			return createSplitAfterChoiceDefAdapter();
 		}
 
 		@Override
-		public Adapter casePG2ParallelStepAfterEG(PG2ParallelStepAfterEG object) {
-			return createPG2ParallelStepAfterEGAdapter();
+		public Adapter caseSplitAfterChoice(SplitAfterChoice object) {
+			return createSplitAfterChoiceAdapter();
 		}
 
 		@Override
-		public Adapter caseEG2ChoiceStepAfterDefEG(EG2ChoiceStepAfterDefEG object) {
-			return createEG2ChoiceStepAfterDefEGAdapter();
+		public Adapter caseChoiceAfterChoiceDef(ChoiceAfterChoiceDef object) {
+			return createChoiceAfterChoiceDefAdapter();
 		}
 
 		@Override
-		public Adapter caseEG2ChoiceStepAfterEG(EG2ChoiceStepAfterEG object) {
-			return createEG2ChoiceStepAfterEGAdapter();
+		public Adapter caseChoiceAfterChoice(ChoiceAfterChoice object) {
+			return createChoiceAfterChoiceAdapter();
 		}
 
 		@Override
-		public Adapter caseEndEvent2FinalStateGWSeq(EndEvent2FinalStateGWSeq object) {
-			return createEndEvent2FinalStateGWSeqAdapter();
+		public Adapter caseTerminationAfterMerge(TerminationAfterMerge object) {
+			return createTerminationAfterMergeAdapter();
+		}
+
+		@Override
+		public Adapter caseTask2StepAfterEmptyDef(Task2StepAfterEmptyDef object) {
+			return createTask2StepAfterEmptyDefAdapter();
+		}
+
+		@Override
+		public Adapter caseSplitAfterEmptyDef(SplitAfterEmptyDef object) {
+			return createSplitAfterEmptyDefAdapter();
+		}
+
+		@Override
+		public Adapter caseChoiceAfterEmptyDef(ChoiceAfterEmptyDef object) {
+			return createChoiceAfterEmptyDefAdapter();
 		}
 
 		@Override
@@ -233,13 +263,13 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.Process2UseCase <em>Process2 Use Case</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.Process2UseCase <em>Process2 Use Case</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.Rules.Process2UseCase
+	 * @see bpmn2UseCase.Rules.Process2UseCase
 	 * @generated
 	 */
 	public Adapter createProcess2UseCaseAdapter() {
@@ -247,167 +277,167 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.Task2NormalStep <em>Task2 Normal Step</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.Task2Step <em>Task2 Step</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.Rules.Task2NormalStep
+	 * @see bpmn2UseCase.Rules.Task2Step
 	 * @generated
 	 */
-	public Adapter createTask2NormalStepAdapter() {
+	public Adapter createTask2StepAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.PG2ParallelStep <em>PG2 Parallel Step</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.Split <em>Split</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.Rules.PG2ParallelStep
+	 * @see bpmn2UseCase.Rules.Split
 	 * @generated
 	 */
-	public Adapter createPG2ParallelStepAdapter() {
+	public Adapter createSplitAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.PG2ParallelStepAfterPG <em>PG2 Parallel Step After PG</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.SplitAfterSplit <em>Split After Split</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.Rules.PG2ParallelStepAfterPG
+	 * @see bpmn2UseCase.Rules.SplitAfterSplit
 	 * @generated
 	 */
-	public Adapter createPG2ParallelStepAfterPGAdapter() {
+	public Adapter createSplitAfterSplitAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.Task2NormalStepSeq <em>Task2 Normal Step Seq</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.Task2StepSeq <em>Task2 Step Seq</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.Rules.Task2NormalStepSeq
+	 * @see bpmn2UseCase.Rules.Task2StepSeq
 	 * @generated
 	 */
-	public Adapter createTask2NormalStepSeqAdapter() {
+	public Adapter createTask2StepSeqAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.Task2NormalStepFirst <em>Task2 Normal Step First</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.Task2StepFirst <em>Task2 Step First</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.Rules.Task2NormalStepFirst
+	 * @see bpmn2UseCase.Rules.Task2StepFirst
 	 * @generated
 	 */
-	public Adapter createTask2NormalStepFirstAdapter() {
+	public Adapter createTask2StepFirstAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.PG2ParallelStepSeq <em>PG2 Parallel Step Seq</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.SplitSeq <em>Split Seq</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.Rules.PG2ParallelStepSeq
+	 * @see bpmn2UseCase.Rules.SplitSeq
 	 * @generated
 	 */
-	public Adapter createPG2ParallelStepSeqAdapter() {
+	public Adapter createSplitSeqAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.PG2ParallelStepFirst <em>PG2 Parallel Step First</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.SplitFirst <em>Split First</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.Rules.PG2ParallelStepFirst
+	 * @see bpmn2UseCase.Rules.SplitFirst
 	 * @generated
 	 */
-	public Adapter createPG2ParallelStepFirstAdapter() {
+	public Adapter createSplitFirstAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.EndEvent2FinalStateFirst <em>End Event2 Final State First</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.TerminationFirst <em>Termination First</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.Rules.EndEvent2FinalStateFirst
+	 * @see bpmn2UseCase.Rules.TerminationFirst
 	 * @generated
 	 */
-	public Adapter createEndEvent2FinalStateFirstAdapter() {
+	public Adapter createTerminationFirstAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.Task2NormalStepAfterPG <em>Task2 Normal Step After PG</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.Task2StepAfterSplit <em>Task2 Step After Split</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.Rules.Task2NormalStepAfterPG
+	 * @see bpmn2UseCase.Rules.Task2StepAfterSplit
 	 * @generated
 	 */
-	public Adapter createTask2NormalStepAfterPGAdapter() {
+	public Adapter createTask2StepAfterSplitAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.EndEvent2FinalState <em>End Event2 Final State</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.Termination <em>Termination</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.Rules.EndEvent2FinalState
+	 * @see bpmn2UseCase.Rules.Termination
 	 * @generated
 	 */
-	public Adapter createEndEvent2FinalStateAdapter() {
+	public Adapter createTerminationAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.EndEvent2FinalStateSeq <em>End Event2 Final State Seq</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.TerminationSeq <em>Termination Seq</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.Rules.EndEvent2FinalStateSeq
+	 * @see bpmn2UseCase.Rules.TerminationSeq
 	 * @generated
 	 */
-	public Adapter createEndEvent2FinalStateSeqAdapter() {
+	public Adapter createTerminationSeqAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.LastStepInFlow <em>Last Step In Flow</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.LastStepInFlow <em>Last Step In Flow</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.Rules.LastStepInFlow
+	 * @see bpmn2UseCase.Rules.LastStepInFlow
 	 * @generated
 	 */
 	public Adapter createLastStepInFlowAdapter() {
@@ -415,13 +445,13 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.LastStepInPFlow <em>Last Step In PFlow</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.LastStepInPFlow <em>Last Step In PFlow</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.Rules.LastStepInPFlow
+	 * @see bpmn2UseCase.Rules.LastStepInPFlow
 	 * @generated
 	 */
 	public Adapter createLastStepInPFlowAdapter() {
@@ -429,97 +459,111 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.EG2Choice <em>EG2 Choice</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.Choice <em>Choice</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.Rules.EG2Choice
+	 * @see bpmn2UseCase.Rules.Choice
 	 * @generated
 	 */
-	public Adapter createEG2ChoiceAdapter() {
+	public Adapter createChoiceAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.EG2ChoiceSeq <em>EG2 Choice Seq</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.Task2StepAfterMerge <em>Task2 Step After Merge</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.Rules.EG2ChoiceSeq
+	 * @see bpmn2UseCase.Rules.Task2StepAfterMerge
 	 * @generated
 	 */
-	public Adapter createEG2ChoiceSeqAdapter() {
+	public Adapter createTask2StepAfterMergeAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.EG2ChoiceFirst <em>EG2 Choice First</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.ChoiceSeq <em>Choice Seq</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.Rules.EG2ChoiceFirst
+	 * @see bpmn2UseCase.Rules.ChoiceSeq
 	 * @generated
 	 */
-	public Adapter createEG2ChoiceFirstAdapter() {
+	public Adapter createChoiceSeqAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.EG2ChoiceAfterPG <em>EG2 Choice After PG</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.ChoiceFirst <em>Choice First</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.Rules.EG2ChoiceAfterPG
+	 * @see bpmn2UseCase.Rules.ChoiceFirst
 	 * @generated
 	 */
-	public Adapter createEG2ChoiceAfterPGAdapter() {
+	public Adapter createChoiceFirstAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.Task2NormalStepAfterDefEG <em>Task2 Normal Step After Def EG</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.ChoiceAfterSplit <em>Choice After Split</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.Rules.Task2NormalStepAfterDefEG
+	 * @see bpmn2UseCase.Rules.ChoiceAfterSplit
 	 * @generated
 	 */
-	public Adapter createTask2NormalStepAfterDefEGAdapter() {
+	public Adapter createChoiceAfterSplitAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.Task2NormalStepAfterEG <em>Task2 Normal Step After EG</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.Task2StepAfterChoiceDef <em>Task2 Step After Choice Def</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.Rules.Task2NormalStepAfterEG
+	 * @see bpmn2UseCase.Rules.Task2StepAfterChoiceDef
 	 * @generated
 	 */
-	public Adapter createTask2NormalStepAfterEGAdapter() {
+	public Adapter createTask2StepAfterChoiceDefAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.EmptyDefaulFlow <em>Empty Defaul Flow</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.Task2StepAfterChoice <em>Task2 Step After Choice</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.Rules.EmptyDefaulFlow
+	 * @see bpmn2UseCase.Rules.Task2StepAfterChoice
+	 * @generated
+	 */
+	public Adapter createTask2StepAfterChoiceAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.EmptyDefaulFlow <em>Empty Defaul Flow</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see bpmn2UseCase.Rules.EmptyDefaulFlow
 	 * @generated
 	 */
 	public Adapter createEmptyDefaulFlowAdapter() {
@@ -527,13 +571,13 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.LastStepInDefaultFlow <em>Last Step In Default Flow</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.LastStepInDefaultFlow <em>Last Step In Default Flow</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.Rules.LastStepInDefaultFlow
+	 * @see bpmn2UseCase.Rules.LastStepInDefaultFlow
 	 * @generated
 	 */
 	public Adapter createLastStepInDefaultFlowAdapter() {
@@ -541,13 +585,41 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.LastStepInAltFlow <em>Last Step In Alt Flow</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.SplitAfterMerge <em>Split After Merge</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.Rules.LastStepInAltFlow
+	 * @see bpmn2UseCase.Rules.SplitAfterMerge
+	 * @generated
+	 */
+	public Adapter createSplitAfterMergeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.ChoiceAfterMerge <em>Choice After Merge</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see bpmn2UseCase.Rules.ChoiceAfterMerge
+	 * @generated
+	 */
+	public Adapter createChoiceAfterMergeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.LastStepInAltFlow <em>Last Step In Alt Flow</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see bpmn2UseCase.Rules.LastStepInAltFlow
 	 * @generated
 	 */
 	public Adapter createLastStepInAltFlowAdapter() {
@@ -555,72 +627,114 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.PG2ParallelStepAfterDefEG <em>PG2 Parallel Step After Def EG</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.SplitAfterChoiceDef <em>Split After Choice Def</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.Rules.PG2ParallelStepAfterDefEG
+	 * @see bpmn2UseCase.Rules.SplitAfterChoiceDef
 	 * @generated
 	 */
-	public Adapter createPG2ParallelStepAfterDefEGAdapter() {
+	public Adapter createSplitAfterChoiceDefAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.PG2ParallelStepAfterEG <em>PG2 Parallel Step After EG</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.SplitAfterChoice <em>Split After Choice</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.Rules.PG2ParallelStepAfterEG
+	 * @see bpmn2UseCase.Rules.SplitAfterChoice
 	 * @generated
 	 */
-	public Adapter createPG2ParallelStepAfterEGAdapter() {
+	public Adapter createSplitAfterChoiceAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.EG2ChoiceStepAfterDefEG <em>EG2 Choice Step After Def EG</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.ChoiceAfterChoiceDef <em>Choice After Choice Def</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.Rules.EG2ChoiceStepAfterDefEG
+	 * @see bpmn2UseCase.Rules.ChoiceAfterChoiceDef
 	 * @generated
 	 */
-	public Adapter createEG2ChoiceStepAfterDefEGAdapter() {
+	public Adapter createChoiceAfterChoiceDefAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.EG2ChoiceStepAfterEG <em>EG2 Choice Step After EG</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.ChoiceAfterChoice <em>Choice After Choice</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.Rules.EG2ChoiceStepAfterEG
+	 * @see bpmn2UseCase.Rules.ChoiceAfterChoice
 	 * @generated
 	 */
-	public Adapter createEG2ChoiceStepAfterEGAdapter() {
+	public Adapter createChoiceAfterChoiceAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.Rules.EndEvent2FinalStateGWSeq <em>End Event2 Final State GW Seq</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.TerminationAfterMerge <em>Termination After Merge</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.Rules.EndEvent2FinalStateGWSeq
+	 * @see bpmn2UseCase.Rules.TerminationAfterMerge
 	 * @generated
 	 */
-	public Adapter createEndEvent2FinalStateGWSeqAdapter() {
+	public Adapter createTerminationAfterMergeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.Task2StepAfterEmptyDef <em>Task2 Step After Empty Def</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see bpmn2UseCase.Rules.Task2StepAfterEmptyDef
+	 * @generated
+	 */
+	public Adapter createTask2StepAfterEmptyDefAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.SplitAfterEmptyDef <em>Split After Empty Def</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see bpmn2UseCase.Rules.SplitAfterEmptyDef
+	 * @generated
+	 */
+	public Adapter createSplitAfterEmptyDefAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.Rules.ChoiceAfterEmptyDef <em>Choice After Empty Def</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see bpmn2UseCase.Rules.ChoiceAfterEmptyDef
+	 * @generated
+	 */
+	public Adapter createChoiceAfterEmptyDefAdapter() {
 		return null;
 	}
 

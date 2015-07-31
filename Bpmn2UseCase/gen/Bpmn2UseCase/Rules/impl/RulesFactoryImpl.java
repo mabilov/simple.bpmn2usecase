@@ -1,8 +1,8 @@
 /**
  */
-package Bpmn2UseCase.Rules.impl;
+package bpmn2UseCase.Rules.impl;
 
-import Bpmn2UseCase.Rules.*;
+import bpmn2UseCase.Rules.*;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
@@ -57,50 +57,62 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 		switch (eClass.getClassifierID()) {
 		case RulesPackage.PROCESS2_USE_CASE:
 			return createProcess2UseCase();
-		case RulesPackage.PG2_PARALLEL_STEP_AFTER_PG:
-			return createPG2ParallelStepAfterPG();
-		case RulesPackage.TASK2_NORMAL_STEP_SEQ:
-			return createTask2NormalStepSeq();
-		case RulesPackage.TASK2_NORMAL_STEP_FIRST:
-			return createTask2NormalStepFirst();
-		case RulesPackage.PG2_PARALLEL_STEP_SEQ:
-			return createPG2ParallelStepSeq();
-		case RulesPackage.PG2_PARALLEL_STEP_FIRST:
-			return createPG2ParallelStepFirst();
-		case RulesPackage.END_EVENT2_FINAL_STATE_FIRST:
-			return createEndEvent2FinalStateFirst();
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_PG:
-			return createTask2NormalStepAfterPG();
-		case RulesPackage.END_EVENT2_FINAL_STATE_SEQ:
-			return createEndEvent2FinalStateSeq();
+		case RulesPackage.SPLIT_AFTER_SPLIT:
+			return createSplitAfterSplit();
+		case RulesPackage.TASK2_STEP_SEQ:
+			return createTask2StepSeq();
+		case RulesPackage.TASK2_STEP_FIRST:
+			return createTask2StepFirst();
+		case RulesPackage.SPLIT_SEQ:
+			return createSplitSeq();
+		case RulesPackage.SPLIT_FIRST:
+			return createSplitFirst();
+		case RulesPackage.TERMINATION_FIRST:
+			return createTerminationFirst();
+		case RulesPackage.TASK2_STEP_AFTER_SPLIT:
+			return createTask2StepAfterSplit();
+		case RulesPackage.TERMINATION_SEQ:
+			return createTerminationSeq();
 		case RulesPackage.LAST_STEP_IN_PFLOW:
 			return createLastStepInPFlow();
-		case RulesPackage.EG2_CHOICE_SEQ:
-			return createEG2ChoiceSeq();
-		case RulesPackage.EG2_CHOICE_FIRST:
-			return createEG2ChoiceFirst();
-		case RulesPackage.EG2_CHOICE_AFTER_PG:
-			return createEG2ChoiceAfterPG();
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_DEF_EG:
-			return createTask2NormalStepAfterDefEG();
-		case RulesPackage.TASK2_NORMAL_STEP_AFTER_EG:
-			return createTask2NormalStepAfterEG();
+		case RulesPackage.TASK2_STEP_AFTER_MERGE:
+			return createTask2StepAfterMerge();
+		case RulesPackage.CHOICE_SEQ:
+			return createChoiceSeq();
+		case RulesPackage.CHOICE_FIRST:
+			return createChoiceFirst();
+		case RulesPackage.CHOICE_AFTER_SPLIT:
+			return createChoiceAfterSplit();
+		case RulesPackage.TASK2_STEP_AFTER_CHOICE_DEF:
+			return createTask2StepAfterChoiceDef();
+		case RulesPackage.TASK2_STEP_AFTER_CHOICE:
+			return createTask2StepAfterChoice();
 		case RulesPackage.EMPTY_DEFAUL_FLOW:
 			return createEmptyDefaulFlow();
 		case RulesPackage.LAST_STEP_IN_DEFAULT_FLOW:
 			return createLastStepInDefaultFlow();
+		case RulesPackage.SPLIT_AFTER_MERGE:
+			return createSplitAfterMerge();
+		case RulesPackage.CHOICE_AFTER_MERGE:
+			return createChoiceAfterMerge();
 		case RulesPackage.LAST_STEP_IN_ALT_FLOW:
 			return createLastStepInAltFlow();
-		case RulesPackage.PG2_PARALLEL_STEP_AFTER_DEF_EG:
-			return createPG2ParallelStepAfterDefEG();
-		case RulesPackage.PG2_PARALLEL_STEP_AFTER_EG:
-			return createPG2ParallelStepAfterEG();
-		case RulesPackage.EG2_CHOICE_STEP_AFTER_DEF_EG:
-			return createEG2ChoiceStepAfterDefEG();
-		case RulesPackage.EG2_CHOICE_STEP_AFTER_EG:
-			return createEG2ChoiceStepAfterEG();
-		case RulesPackage.END_EVENT2_FINAL_STATE_GW_SEQ:
-			return createEndEvent2FinalStateGWSeq();
+		case RulesPackage.SPLIT_AFTER_CHOICE_DEF:
+			return createSplitAfterChoiceDef();
+		case RulesPackage.SPLIT_AFTER_CHOICE:
+			return createSplitAfterChoice();
+		case RulesPackage.CHOICE_AFTER_CHOICE_DEF:
+			return createChoiceAfterChoiceDef();
+		case RulesPackage.CHOICE_AFTER_CHOICE:
+			return createChoiceAfterChoice();
+		case RulesPackage.TERMINATION_AFTER_MERGE:
+			return createTerminationAfterMerge();
+		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF:
+			return createTask2StepAfterEmptyDef();
+		case RulesPackage.SPLIT_AFTER_EMPTY_DEF:
+			return createSplitAfterEmptyDef();
+		case RulesPackage.CHOICE_AFTER_EMPTY_DEF:
+			return createChoiceAfterEmptyDef();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -121,9 +133,9 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PG2ParallelStepAfterPG createPG2ParallelStepAfterPG() {
-		PG2ParallelStepAfterPGImpl pg2ParallelStepAfterPG = new PG2ParallelStepAfterPGImpl();
-		return pg2ParallelStepAfterPG;
+	public SplitAfterSplit createSplitAfterSplit() {
+		SplitAfterSplitImpl splitAfterSplit = new SplitAfterSplitImpl();
+		return splitAfterSplit;
 	}
 
 	/**
@@ -131,9 +143,9 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Task2NormalStepSeq createTask2NormalStepSeq() {
-		Task2NormalStepSeqImpl task2NormalStepSeq = new Task2NormalStepSeqImpl();
-		return task2NormalStepSeq;
+	public Task2StepSeq createTask2StepSeq() {
+		Task2StepSeqImpl task2StepSeq = new Task2StepSeqImpl();
+		return task2StepSeq;
 	}
 
 	/**
@@ -141,9 +153,9 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Task2NormalStepFirst createTask2NormalStepFirst() {
-		Task2NormalStepFirstImpl task2NormalStepFirst = new Task2NormalStepFirstImpl();
-		return task2NormalStepFirst;
+	public Task2StepFirst createTask2StepFirst() {
+		Task2StepFirstImpl task2StepFirst = new Task2StepFirstImpl();
+		return task2StepFirst;
 	}
 
 	/**
@@ -151,9 +163,9 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PG2ParallelStepSeq createPG2ParallelStepSeq() {
-		PG2ParallelStepSeqImpl pg2ParallelStepSeq = new PG2ParallelStepSeqImpl();
-		return pg2ParallelStepSeq;
+	public SplitSeq createSplitSeq() {
+		SplitSeqImpl splitSeq = new SplitSeqImpl();
+		return splitSeq;
 	}
 
 	/**
@@ -161,9 +173,9 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PG2ParallelStepFirst createPG2ParallelStepFirst() {
-		PG2ParallelStepFirstImpl pg2ParallelStepFirst = new PG2ParallelStepFirstImpl();
-		return pg2ParallelStepFirst;
+	public SplitFirst createSplitFirst() {
+		SplitFirstImpl splitFirst = new SplitFirstImpl();
+		return splitFirst;
 	}
 
 	/**
@@ -171,9 +183,9 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EndEvent2FinalStateFirst createEndEvent2FinalStateFirst() {
-		EndEvent2FinalStateFirstImpl endEvent2FinalStateFirst = new EndEvent2FinalStateFirstImpl();
-		return endEvent2FinalStateFirst;
+	public TerminationFirst createTerminationFirst() {
+		TerminationFirstImpl terminationFirst = new TerminationFirstImpl();
+		return terminationFirst;
 	}
 
 	/**
@@ -181,9 +193,9 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Task2NormalStepAfterPG createTask2NormalStepAfterPG() {
-		Task2NormalStepAfterPGImpl task2NormalStepAfterPG = new Task2NormalStepAfterPGImpl();
-		return task2NormalStepAfterPG;
+	public Task2StepAfterSplit createTask2StepAfterSplit() {
+		Task2StepAfterSplitImpl task2StepAfterSplit = new Task2StepAfterSplitImpl();
+		return task2StepAfterSplit;
 	}
 
 	/**
@@ -191,9 +203,9 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EndEvent2FinalStateSeq createEndEvent2FinalStateSeq() {
-		EndEvent2FinalStateSeqImpl endEvent2FinalStateSeq = new EndEvent2FinalStateSeqImpl();
-		return endEvent2FinalStateSeq;
+	public TerminationSeq createTerminationSeq() {
+		TerminationSeqImpl terminationSeq = new TerminationSeqImpl();
+		return terminationSeq;
 	}
 
 	/**
@@ -211,9 +223,9 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EG2ChoiceSeq createEG2ChoiceSeq() {
-		EG2ChoiceSeqImpl eg2ChoiceSeq = new EG2ChoiceSeqImpl();
-		return eg2ChoiceSeq;
+	public Task2StepAfterMerge createTask2StepAfterMerge() {
+		Task2StepAfterMergeImpl task2StepAfterMerge = new Task2StepAfterMergeImpl();
+		return task2StepAfterMerge;
 	}
 
 	/**
@@ -221,9 +233,9 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EG2ChoiceFirst createEG2ChoiceFirst() {
-		EG2ChoiceFirstImpl eg2ChoiceFirst = new EG2ChoiceFirstImpl();
-		return eg2ChoiceFirst;
+	public ChoiceSeq createChoiceSeq() {
+		ChoiceSeqImpl choiceSeq = new ChoiceSeqImpl();
+		return choiceSeq;
 	}
 
 	/**
@@ -231,9 +243,9 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EG2ChoiceAfterPG createEG2ChoiceAfterPG() {
-		EG2ChoiceAfterPGImpl eg2ChoiceAfterPG = new EG2ChoiceAfterPGImpl();
-		return eg2ChoiceAfterPG;
+	public ChoiceFirst createChoiceFirst() {
+		ChoiceFirstImpl choiceFirst = new ChoiceFirstImpl();
+		return choiceFirst;
 	}
 
 	/**
@@ -241,9 +253,9 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Task2NormalStepAfterDefEG createTask2NormalStepAfterDefEG() {
-		Task2NormalStepAfterDefEGImpl task2NormalStepAfterDefEG = new Task2NormalStepAfterDefEGImpl();
-		return task2NormalStepAfterDefEG;
+	public ChoiceAfterSplit createChoiceAfterSplit() {
+		ChoiceAfterSplitImpl choiceAfterSplit = new ChoiceAfterSplitImpl();
+		return choiceAfterSplit;
 	}
 
 	/**
@@ -251,9 +263,19 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Task2NormalStepAfterEG createTask2NormalStepAfterEG() {
-		Task2NormalStepAfterEGImpl task2NormalStepAfterEG = new Task2NormalStepAfterEGImpl();
-		return task2NormalStepAfterEG;
+	public Task2StepAfterChoiceDef createTask2StepAfterChoiceDef() {
+		Task2StepAfterChoiceDefImpl task2StepAfterChoiceDef = new Task2StepAfterChoiceDefImpl();
+		return task2StepAfterChoiceDef;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Task2StepAfterChoice createTask2StepAfterChoice() {
+		Task2StepAfterChoiceImpl task2StepAfterChoice = new Task2StepAfterChoiceImpl();
+		return task2StepAfterChoice;
 	}
 
 	/**
@@ -281,6 +303,26 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public SplitAfterMerge createSplitAfterMerge() {
+		SplitAfterMergeImpl splitAfterMerge = new SplitAfterMergeImpl();
+		return splitAfterMerge;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ChoiceAfterMerge createChoiceAfterMerge() {
+		ChoiceAfterMergeImpl choiceAfterMerge = new ChoiceAfterMergeImpl();
+		return choiceAfterMerge;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public LastStepInAltFlow createLastStepInAltFlow() {
 		LastStepInAltFlowImpl lastStepInAltFlow = new LastStepInAltFlowImpl();
 		return lastStepInAltFlow;
@@ -291,9 +333,9 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PG2ParallelStepAfterDefEG createPG2ParallelStepAfterDefEG() {
-		PG2ParallelStepAfterDefEGImpl pg2ParallelStepAfterDefEG = new PG2ParallelStepAfterDefEGImpl();
-		return pg2ParallelStepAfterDefEG;
+	public SplitAfterChoiceDef createSplitAfterChoiceDef() {
+		SplitAfterChoiceDefImpl splitAfterChoiceDef = new SplitAfterChoiceDefImpl();
+		return splitAfterChoiceDef;
 	}
 
 	/**
@@ -301,9 +343,9 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PG2ParallelStepAfterEG createPG2ParallelStepAfterEG() {
-		PG2ParallelStepAfterEGImpl pg2ParallelStepAfterEG = new PG2ParallelStepAfterEGImpl();
-		return pg2ParallelStepAfterEG;
+	public SplitAfterChoice createSplitAfterChoice() {
+		SplitAfterChoiceImpl splitAfterChoice = new SplitAfterChoiceImpl();
+		return splitAfterChoice;
 	}
 
 	/**
@@ -311,9 +353,9 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EG2ChoiceStepAfterDefEG createEG2ChoiceStepAfterDefEG() {
-		EG2ChoiceStepAfterDefEGImpl eg2ChoiceStepAfterDefEG = new EG2ChoiceStepAfterDefEGImpl();
-		return eg2ChoiceStepAfterDefEG;
+	public ChoiceAfterChoiceDef createChoiceAfterChoiceDef() {
+		ChoiceAfterChoiceDefImpl choiceAfterChoiceDef = new ChoiceAfterChoiceDefImpl();
+		return choiceAfterChoiceDef;
 	}
 
 	/**
@@ -321,9 +363,9 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EG2ChoiceStepAfterEG createEG2ChoiceStepAfterEG() {
-		EG2ChoiceStepAfterEGImpl eg2ChoiceStepAfterEG = new EG2ChoiceStepAfterEGImpl();
-		return eg2ChoiceStepAfterEG;
+	public ChoiceAfterChoice createChoiceAfterChoice() {
+		ChoiceAfterChoiceImpl choiceAfterChoice = new ChoiceAfterChoiceImpl();
+		return choiceAfterChoice;
 	}
 
 	/**
@@ -331,9 +373,39 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EndEvent2FinalStateGWSeq createEndEvent2FinalStateGWSeq() {
-		EndEvent2FinalStateGWSeqImpl endEvent2FinalStateGWSeq = new EndEvent2FinalStateGWSeqImpl();
-		return endEvent2FinalStateGWSeq;
+	public TerminationAfterMerge createTerminationAfterMerge() {
+		TerminationAfterMergeImpl terminationAfterMerge = new TerminationAfterMergeImpl();
+		return terminationAfterMerge;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Task2StepAfterEmptyDef createTask2StepAfterEmptyDef() {
+		Task2StepAfterEmptyDefImpl task2StepAfterEmptyDef = new Task2StepAfterEmptyDefImpl();
+		return task2StepAfterEmptyDef;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SplitAfterEmptyDef createSplitAfterEmptyDef() {
+		SplitAfterEmptyDefImpl splitAfterEmptyDef = new SplitAfterEmptyDefImpl();
+		return splitAfterEmptyDef;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ChoiceAfterEmptyDef createChoiceAfterEmptyDef() {
+		ChoiceAfterEmptyDefImpl choiceAfterEmptyDef = new ChoiceAfterEmptyDefImpl();
+		return choiceAfterEmptyDef;
 	}
 
 	/**

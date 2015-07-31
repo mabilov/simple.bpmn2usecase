@@ -1,10 +1,10 @@
 /**
  */
-package Bpmn2UseCase.util;
-
-import Bpmn2UseCase.*;
+package bpmn2UseCase.util;
 
 import TGGRuntime.AbstractCorrespondence;
+
+import bpmn2UseCase.*;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
@@ -21,7 +21,7 @@ import org.eclipse.emf.ecore.util.Switch;
  * until a non-null result is returned,
  * which is the result of the switch.
  * <!-- end-user-doc -->
- * @see Bpmn2UseCase.Bpmn2UseCasePackage
+ * @see bpmn2UseCase.Bpmn2UseCasePackage
  * @generated
  */
 public class Bpmn2UseCaseSwitch<T> extends Switch<T> {

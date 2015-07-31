@@ -1,15 +1,15 @@
 /**
  */
-package Bpmn2UseCase.impl;
-
-import Bpmn2UseCase.Bpmn2UseCasePackage;
-import Bpmn2UseCase.FN2F;
+package bpmn2UseCase.impl;
 
 import SimpleBPMN.FlowNode;
 
 import SimpleUseCase.Flow;
 
 import TGGRuntime.impl.AbstractCorrespondenceImpl;
+
+import bpmn2UseCase.Bpmn2UseCasePackage;
+import bpmn2UseCase.FN2F;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -27,8 +27,8 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link Bpmn2UseCase.impl.FN2FImpl#getSource <em>Source</em>}</li>
- *   <li>{@link Bpmn2UseCase.impl.FN2FImpl#getTarget <em>Target</em>}</li>
+ *   <li>{@link bpmn2UseCase.impl.FN2FImpl#getSource <em>Source</em>}</li>
+ *   <li>{@link bpmn2UseCase.impl.FN2FImpl#getTarget <em>Target</em>}</li>
  * </ul>
  * </p>
  *

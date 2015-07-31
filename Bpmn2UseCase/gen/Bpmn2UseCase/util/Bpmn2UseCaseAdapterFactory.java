@@ -1,10 +1,10 @@
 /**
  */
-package Bpmn2UseCase.util;
-
-import Bpmn2UseCase.*;
+package bpmn2UseCase.util;
 
 import TGGRuntime.AbstractCorrespondence;
+
+import bpmn2UseCase.*;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
@@ -18,7 +18,7 @@ import org.eclipse.emf.ecore.EObject;
  * The <b>Adapter Factory</b> for the model.
  * It provides an adapter <code>createXXX</code> method for each class of the model.
  * <!-- end-user-doc -->
- * @see Bpmn2UseCase.Bpmn2UseCasePackage
+ * @see bpmn2UseCase.Bpmn2UseCasePackage
  * @generated
  */
 public class Bpmn2UseCaseAdapterFactory extends AdapterFactoryImpl {
@@ -113,13 +113,13 @@ public class Bpmn2UseCaseAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.P2UC <em>P2UC</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.P2UC <em>P2UC</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.P2UC
+	 * @see bpmn2UseCase.P2UC
 	 * @generated
 	 */
 	public Adapter createP2UCAdapter() {
@@ -127,13 +127,13 @@ public class Bpmn2UseCaseAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.FN2F <em>FN2F</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.FN2F <em>FN2F</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.FN2F
+	 * @see bpmn2UseCase.FN2F
 	 * @generated
 	 */
 	public Adapter createFN2FAdapter() {
@@ -141,13 +141,13 @@ public class Bpmn2UseCaseAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.GW2S <em>GW2S</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.GW2S <em>GW2S</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.GW2S
+	 * @see bpmn2UseCase.GW2S
 	 * @generated
 	 */
 	public Adapter createGW2SAdapter() {
@@ -155,13 +155,13 @@ public class Bpmn2UseCaseAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Bpmn2UseCase.FN2S <em>FN2S</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2UseCase.FN2S <em>FN2S</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Bpmn2UseCase.FN2S
+	 * @see bpmn2UseCase.FN2S
 	 * @generated
 	 */
 	public Adapter createFN2SAdapter() {

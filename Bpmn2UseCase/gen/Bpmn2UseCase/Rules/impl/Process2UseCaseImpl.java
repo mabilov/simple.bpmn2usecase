@@ -1,13 +1,6 @@
 /**
  */
-package Bpmn2UseCase.Rules.impl;
-
-import Bpmn2UseCase.Bpmn2UseCaseFactory;
-import Bpmn2UseCase.FN2F;
-import Bpmn2UseCase.P2UC;
-
-import Bpmn2UseCase.Rules.Process2UseCase;
-import Bpmn2UseCase.Rules.RulesPackage;
+package bpmn2UseCase.Rules.impl;
 
 import SimpleBPMN.SimpleBPMNFactory;
 import SimpleBPMN.StartEvent;
@@ -21,21 +14,24 @@ import SimpleUseCase.UseCase;
 
 import TGGLanguage.csp.CSP;
 
-import TGGLanguage.modelgenerator.RuleEntryContainer;
-
 import TGGRuntime.AttributeConstraintsRuleResult;
 import TGGRuntime.EMoflonEdge;
 import TGGRuntime.EObjectContainer;
 import TGGRuntime.IsApplicableMatch;
-import TGGRuntime.IsApplicableMatchCC;
 import TGGRuntime.IsApplicableRuleResult;
 import TGGRuntime.Match;
-import TGGRuntime.ModelgeneratorRuleResult;
 import TGGRuntime.PerformRuleResult;
 import TGGRuntime.TGGRuntimeFactory;
 import TGGRuntime.TripleMatch;
 
 import TGGRuntime.impl.AbstractRuleImpl;
+
+import bpmn2UseCase.Bpmn2UseCaseFactory;
+import bpmn2UseCase.FN2F;
+import bpmn2UseCase.P2UC;
+
+import bpmn2UseCase.Rules.Process2UseCase;
+import bpmn2UseCase.Rules.RulesPackage;
 
 import java.lang.Iterable;
 
@@ -703,7 +699,7 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_1190(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_0(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Process2UseCaseImpl.pattern_Process2UseCase_20_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -752,7 +748,7 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_381(EMoflonEdge _edge_flows) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_0(EMoflonEdge _edge_flows) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Process2UseCaseImpl.pattern_Process2UseCase_21_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -802,7 +798,7 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_382(EMoflonEdge _edge_precondition) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_1(EMoflonEdge _edge_precondition) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Process2UseCaseImpl.pattern_Process2UseCase_22_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -869,7 +865,7 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 
 		Optional<TripleMatchNodeMapping> matchFor_p2uc = __tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("_p2uc")).findAny();
-		Bpmn2UseCase.P2UC _p2uc = (Bpmn2UseCase.P2UC) matchFor_p2uc.get().getNode();
+		bpmn2UseCase.P2UC _p2uc = (bpmn2UseCase.P2UC) matchFor_p2uc.get().getNode();
 
 		Optional<TripleMatchNodeMapping> matchForFlow = __tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("flow")).findAny();
@@ -877,7 +873,7 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 
 		Optional<TripleMatchNodeMapping> matchForS2f = __tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("s2f")).findAny();
-		Bpmn2UseCase.FN2F s2f = (Bpmn2UseCase.FN2F) matchForS2f.get().getNode();
+		bpmn2UseCase.FN2F s2f = (bpmn2UseCase.FN2F) matchForS2f.get().getNode();
 
 		Optional<TripleMatchNodeMapping> matchForStart = __tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("start")).findAny();
@@ -958,7 +954,7 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 
 		Optional<TripleMatchNodeMapping> matchFor_p2uc = __tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("_p2uc")).findAny();
-		Bpmn2UseCase.P2UC _p2uc = (Bpmn2UseCase.P2UC) matchFor_p2uc.get().getNode();
+		bpmn2UseCase.P2UC _p2uc = (bpmn2UseCase.P2UC) matchFor_p2uc.get().getNode();
 
 		Optional<TripleMatchNodeMapping> matchForFlow = __tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("flow")).findAny();
@@ -966,7 +962,7 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 
 		Optional<TripleMatchNodeMapping> matchForS2f = __tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("s2f")).findAny();
-		Bpmn2UseCase.FN2F s2f = (Bpmn2UseCase.FN2F) matchForS2f.get().getNode();
+		bpmn2UseCase.FN2F s2f = (bpmn2UseCase.FN2F) matchForS2f.get().getNode();
 
 		Optional<TripleMatchNodeMapping> matchForStart = __tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("start")).findAny();
@@ -1023,261 +1019,6 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 		}
 
 		return ruleResult;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public IsApplicableRuleResult isApplicable_CC(Match sourceMatch, Match targetMatch) {
-		// prepare
-		Object[] result1_black = Process2UseCaseImpl.pattern_Process2UseCase_25_1_blackB(this);
-		if (result1_black == null) {
-			throw new RuntimeException(
-					"Pattern matching in node [prepare] failed." + " Variables: " + "[this] = " + this + ".");
-		}
-		Object[] result1_green = Process2UseCaseImpl.pattern_Process2UseCase_25_1_greenF();
-		IsApplicableRuleResult result = (IsApplicableRuleResult) result1_green[0];
-
-		// ForEach match context
-		Object[] result2_binding = Process2UseCaseImpl.pattern_Process2UseCase_25_2_bindingFFFFFBB(sourceMatch,
-				targetMatch);
-		if (result2_binding == null) {
-			throw new RuntimeException("Binding in node match context failed." + " Variables: " + "[sourceMatch] = "
-					+ sourceMatch + ", " + "[targetMatch] = " + targetMatch + ".");
-		}
-		SimpleBPMN.Process process = (SimpleBPMN.Process) result2_binding[0];
-		UseCase useCase = (UseCase) result2_binding[1];
-		BasicFlow flow = (BasicFlow) result2_binding[2];
-		StartEvent start = (StartEvent) result2_binding[3];
-		UCCondition cond = (UCCondition) result2_binding[4];
-		for (Object[] result2_black : Process2UseCaseImpl.pattern_Process2UseCase_25_2_blackBBBBBBB(process, useCase,
-				flow, start, cond, sourceMatch, targetMatch)) {
-			Object[] result2_green = Process2UseCaseImpl.pattern_Process2UseCase_25_2_greenBBBBBBBF(process, useCase,
-					flow, start, cond, sourceMatch, targetMatch);
-			IsApplicableMatchCC isApplicableMatch = (IsApplicableMatchCC) result2_green[7];
-
-			// check csp
-			Object[] result3_bindingAndBlack = Process2UseCaseImpl
-					.pattern_Process2UseCase_25_3_bindingAndBlackFBBBBBBBBB(this, isApplicableMatch, process, useCase,
-							flow, start, cond, sourceMatch, targetMatch);
-			if (result3_bindingAndBlack != null) {
-				// CSP csp = (CSP) result3_bindingAndBlack[0];
-
-				// add to returned result
-				Object[] result4_black = Process2UseCaseImpl.pattern_Process2UseCase_25_4_blackBB(result,
-						isApplicableMatch);
-				if (result4_black == null) {
-					throw new RuntimeException(
-							"Pattern matching in node [add to returned result] failed." + " Variables: " + "[result] = "
-									+ result + ", " + "[isApplicableMatch] = " + isApplicableMatch + ".");
-				}
-				Process2UseCaseImpl.pattern_Process2UseCase_25_4_greenBB(result, isApplicableMatch);
-
-			} else {
-			}
-
-		}
-		return Process2UseCaseImpl.pattern_Process2UseCase_25_5_expressionFB(result);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public CSP isApplicable_solveCsp_CC(IsApplicableMatchCC isApplicableMatch, SimpleBPMN.Process process,
-			UseCase useCase, BasicFlow flow, StartEvent start, UCCondition cond, Match sourceMatch, Match targetMatch) {// Create CSP
-		CSP csp = CspFactory.eINSTANCE.createCSP();
-		isApplicableMatch.getAttributeInfo().add(csp);
-
-		// Create literals
-
-		// Create attribute variables
-		Variable var_start_id = CSPFactoryHelper.eINSTANCE.createVariable("start.id", true, csp);
-		var_start_id.setValue(start.getId());
-		var_start_id.setType("String");
-		Variable var_cond_name = CSPFactoryHelper.eINSTANCE.createVariable("cond.name", true, csp);
-		var_cond_name.setValue(cond.getName());
-		var_cond_name.setType("String");
-		Variable var_process_id = CSPFactoryHelper.eINSTANCE.createVariable("process.id", true, csp);
-		var_process_id.setValue(process.getId());
-		var_process_id.setType("String");
-		Variable var_useCase_id = CSPFactoryHelper.eINSTANCE.createVariable("useCase.id", true, csp);
-		var_useCase_id.setValue(useCase.getId());
-		var_useCase_id.setType("String");
-
-		// Create unbound variables
-
-		// Create constraints
-		Eq eq = new Eq();
-		Eq eq_0 = new Eq();
-
-		csp.getConstraints().add(eq);
-		csp.getConstraints().add(eq_0);
-
-		// Solve CSP
-		eq.setRuleName("");
-		eq.solve(var_start_id, var_cond_name);
-		eq_0.setRuleName("");
-		eq_0.solve(var_process_id, var_useCase_id);
-
-		// Snapshot pattern match on which CSP is solved
-		isApplicableMatch.registerObject("process", process);
-		isApplicableMatch.registerObject("useCase", useCase);
-		isApplicableMatch.registerObject("flow", flow);
-		isApplicableMatch.registerObject("start", start);
-		isApplicableMatch.registerObject("cond", cond);
-		return csp;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean isApplicable_checkCsp_CC(CSP csp) {
-		return csp.check();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PerformRuleResult perform_CC(IsApplicableMatchCC isApplicableMatch) {
-		// prepare
-		Object[] result1_black = Process2UseCaseImpl.pattern_Process2UseCase_28_1_blackB(this);
-		if (result1_black == null) {
-			throw new RuntimeException(
-					"Pattern matching in node [prepare] failed." + " Variables: " + "[this] = " + this + ".");
-		}
-
-		// create correspondence links
-		Object[] result2_bindingAndBlack = Process2UseCaseImpl
-				.pattern_Process2UseCase_28_2_bindingAndBlackFFFFFB(isApplicableMatch);
-		if (result2_bindingAndBlack == null) {
-			throw new RuntimeException("Pattern matching in node [create correspondence links] failed." + " Variables: "
-					+ "[isApplicableMatch] = " + isApplicableMatch + ".");
-		}
-		SimpleBPMN.Process process = (SimpleBPMN.Process) result2_bindingAndBlack[0];
-		UseCase useCase = (UseCase) result2_bindingAndBlack[1];
-		BasicFlow flow = (BasicFlow) result2_bindingAndBlack[2];
-		StartEvent start = (StartEvent) result2_bindingAndBlack[3];
-		// UCCondition cond = (UCCondition) result2_bindingAndBlack[4];
-		Object[] result2_green = Process2UseCaseImpl.pattern_Process2UseCase_28_2_greenBBBBFFF(process, useCase, flow,
-				start);
-		PerformRuleResult result = (PerformRuleResult) result2_green[4];
-		// P2UC _p2uc = (P2UC) result2_green[5];
-		// FN2F s2f = (FN2F) result2_green[6];
-
-		return Process2UseCaseImpl.pattern_Process2UseCase_28_3_expressionFB(result);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ModelgeneratorRuleResult generateModel(RuleEntryContainer ruleEntryContainer) {
-		// create result
-		Object[] result1_black = Process2UseCaseImpl.pattern_Process2UseCase_29_1_blackB(this);
-		if (result1_black == null) {
-			throw new RuntimeException(
-					"Pattern matching in node [create result] failed." + " Variables: " + "[this] = " + this + ".");
-		}
-		Object[] result1_green = Process2UseCaseImpl.pattern_Process2UseCase_29_1_greenFF();
-		IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result1_green[0];
-		ModelgeneratorRuleResult ruleResult = (ModelgeneratorRuleResult) result1_green[1];
-
-		// is applicable core
-		Object[] result2_black = Process2UseCaseImpl.pattern_Process2UseCase_29_2_blackB(this);
-		if (result2_black != null) {
-
-			// solve CSP
-			Object[] result3_bindingAndBlack = Process2UseCaseImpl
-					.pattern_Process2UseCase_29_3_bindingAndBlackFBBB(this, isApplicableMatch, ruleResult);
-			if (result3_bindingAndBlack == null) {
-				throw new RuntimeException("Pattern matching in node [solve CSP] failed." + " Variables: " + "[this] = "
-						+ this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ", " + "[ruleResult] = "
-						+ ruleResult + ".");
-			}
-			CSP csp = (CSP) result3_bindingAndBlack[0];
-			// check CSP
-			if (Process2UseCaseImpl.pattern_Process2UseCase_29_4_expressionFBB(this, csp)) {
-				// check nacs story node is empty
-
-				// perform
-				Object[] result6_black = Process2UseCaseImpl.pattern_Process2UseCase_29_6_blackB(ruleResult);
-				if (result6_black == null) {
-					throw new RuntimeException("Pattern matching in node [perform] failed." + " Variables: "
-							+ "[ruleResult] = " + ruleResult + ".");
-				}
-				Process2UseCaseImpl.pattern_Process2UseCase_29_6_greenFFFFFFFBB(ruleResult, csp);
-				// SimpleBPMN.Process process = (SimpleBPMN.Process) result6_green[0];
-				// UseCase useCase = (UseCase) result6_green[1];
-				// P2UC _p2uc = (P2UC) result6_green[2];
-				// BasicFlow flow = (BasicFlow) result6_green[3];
-				// FN2F s2f = (FN2F) result6_green[4];
-				// StartEvent start = (StartEvent) result6_green[5];
-				// UCCondition cond = (UCCondition) result6_green[6];
-
-			} else {
-			}
-
-		} else {
-		}
-		return Process2UseCaseImpl.pattern_Process2UseCase_29_7_expressionFB(ruleResult);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, ModelgeneratorRuleResult ruleResult) {// Create CSP
-		CSP csp = CspFactory.eINSTANCE.createCSP();
-		isApplicableMatch.getAttributeInfo().add(csp);
-
-		// Create literals
-
-		// Create attribute variables
-
-		// Create unbound variables
-		Variable var_start_id = CSPFactoryHelper.eINSTANCE.createVariable("start.id", csp);
-		var_start_id.setType("String");
-		Variable var_cond_name = CSPFactoryHelper.eINSTANCE.createVariable("cond.name", csp);
-		var_cond_name.setType("String");
-		Variable var_process_id = CSPFactoryHelper.eINSTANCE.createVariable("process.id", csp);
-		var_process_id.setType("String");
-		Variable var_useCase_id = CSPFactoryHelper.eINSTANCE.createVariable("useCase.id", csp);
-		var_useCase_id.setType("String");
-
-		// Create constraints
-		Eq eq = new Eq();
-		Eq eq_0 = new Eq();
-
-		csp.getConstraints().add(eq);
-		csp.getConstraints().add(eq_0);
-
-		// Solve CSP
-		eq.setRuleName("");
-		eq.solve(var_start_id, var_cond_name);
-		eq_0.setRuleName("");
-		eq_0.solve(var_process_id, var_useCase_id);
-
-		// Snapshot pattern match on which CSP is solved
-		return csp;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean generateModel_checkCsp_BWD(CSP csp) {
-		return csp.check();
 	}
 
 	/**
@@ -1344,34 +1085,16 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 			return null;
 		case RulesPackage.PROCESS2_USE_CASE___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.PROCESS2_USE_CASE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_1190__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_1190((EMoflonEdge) arguments.get(0));
-		case RulesPackage.PROCESS2_USE_CASE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_381__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_381((EMoflonEdge) arguments.get(0));
-		case RulesPackage.PROCESS2_USE_CASE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_382__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_382((EMoflonEdge) arguments.get(0));
+		case RulesPackage.PROCESS2_USE_CASE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_0__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_0((EMoflonEdge) arguments.get(0));
+		case RulesPackage.PROCESS2_USE_CASE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_0__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_0((EMoflonEdge) arguments.get(0));
+		case RulesPackage.PROCESS2_USE_CASE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_1__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_1((EMoflonEdge) arguments.get(0));
 		case RulesPackage.PROCESS2_USE_CASE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.PROCESS2_USE_CASE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
 			return checkAttributes_BWD((TripleMatch) arguments.get(0));
-		case RulesPackage.PROCESS2_USE_CASE___IS_APPLICABLE_CC__MATCH_MATCH:
-			return isApplicable_CC((Match) arguments.get(0), (Match) arguments.get(1));
-		case RulesPackage.PROCESS2_USE_CASE___IS_APPLICABLE_SOLVE_CSP_CC__ISAPPLICABLEMATCHCC_PROCESS_USECASE_BASICFLOW_STARTEVENT_UCCONDITION_MATCH_MATCH:
-			return isApplicable_solveCsp_CC((IsApplicableMatchCC) arguments.get(0),
-					(SimpleBPMN.Process) arguments.get(1), (UseCase) arguments.get(2), (BasicFlow) arguments.get(3),
-					(StartEvent) arguments.get(4), (UCCondition) arguments.get(5), (Match) arguments.get(6),
-					(Match) arguments.get(7));
-		case RulesPackage.PROCESS2_USE_CASE___IS_APPLICABLE_CHECK_CSP_CC__CSP:
-			return isApplicable_checkCsp_CC((CSP) arguments.get(0));
-		case RulesPackage.PROCESS2_USE_CASE___PERFORM_CC__ISAPPLICABLEMATCHCC:
-			return perform_CC((IsApplicableMatchCC) arguments.get(0));
-		case RulesPackage.PROCESS2_USE_CASE___GENERATE_MODEL__RULEENTRYCONTAINER:
-			return generateModel((RuleEntryContainer) arguments.get(0));
-		case RulesPackage.PROCESS2_USE_CASE___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_MODELGENERATORRULERESULT:
-			return generateModel_solveCsp_BWD((IsApplicableMatch) arguments.get(0),
-					(ModelgeneratorRuleResult) arguments.get(1));
-		case RulesPackage.PROCESS2_USE_CASE___GENERATE_MODEL_CHECK_CSP_BWD__CSP:
-			return generateModel_checkCsp_BWD((CSP) arguments.get(0));
 		}
 		return super.eInvoke(operationID, arguments);
 	}
@@ -2295,9 +2018,9 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 
 	public static final Object[] pattern_Process2UseCase_20_2_black_nac_0BB(StartEvent start,
 			SimpleBPMN.Process process) {
-		for (SimpleBPMN.Process __DEC_start_flowElements_944055 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SimpleBPMN.Process __DEC_start_flowElements_608229 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(start, SimpleBPMN.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_start_flowElements_944055)) {
+			if (!process.equals(__DEC_start_flowElements_608229)) {
 				return new Object[] { start, process };
 			}
 		}
@@ -2404,9 +2127,9 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	}
 
 	public static final Object[] pattern_Process2UseCase_21_2_black_nac_0BB(BasicFlow flow, UseCase useCase) {
-		for (UseCase __DEC_flow_flows_779012 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(flow,
+		for (UseCase __DEC_flow_flows_481023 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(flow,
 				UseCase.class, "flows")) {
-			if (!useCase.equals(__DEC_flow_flows_779012)) {
+			if (!useCase.equals(__DEC_flow_flows_481023)) {
 				return new Object[] { flow, useCase };
 			}
 		}
@@ -2414,9 +2137,9 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	}
 
 	public static final Object[] pattern_Process2UseCase_21_2_black_nac_1BB(UCCondition cond, UseCase useCase) {
-		for (UseCase __DEC_cond_precondition_224438 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (UseCase __DEC_cond_precondition_439181 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(cond, UseCase.class, "precondition")) {
-			if (!useCase.equals(__DEC_cond_precondition_224438)) {
+			if (!useCase.equals(__DEC_cond_precondition_439181)) {
 				return new Object[] { cond, useCase };
 			}
 		}
@@ -2424,9 +2147,9 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	}
 
 	public static final Object[] pattern_Process2UseCase_21_2_black_nac_2BB(UCCondition cond, BasicFlow flow) {
-		for (Flow __DEC_cond_finalState_276166 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (Flow __DEC_cond_finalState_368168 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(cond, Flow.class, "finalState")) {
-			if (!flow.equals(__DEC_cond_finalState_276166)) {
+			if (!flow.equals(__DEC_cond_finalState_368168)) {
 				return new Object[] { cond, flow };
 			}
 		}
@@ -2434,7 +2157,7 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	}
 
 	public static final Object[] pattern_Process2UseCase_21_2_black_nac_3B(UCCondition cond) {
-		for (Step __DEC_cond___last_110223 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(cond,
+		for (Step __DEC_cond___last_618621 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(cond,
 				Step.class, "__last")) {
 			return new Object[] { cond };
 		}
@@ -2560,9 +2283,9 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	}
 
 	public static final Object[] pattern_Process2UseCase_22_2_black_nac_0BB(BasicFlow flow, UseCase useCase) {
-		for (UseCase __DEC_flow_flows_200424 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(flow,
+		for (UseCase __DEC_flow_flows_966707 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(flow,
 				UseCase.class, "flows")) {
-			if (!useCase.equals(__DEC_flow_flows_200424)) {
+			if (!useCase.equals(__DEC_flow_flows_966707)) {
 				return new Object[] { flow, useCase };
 			}
 		}
@@ -2570,9 +2293,9 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	}
 
 	public static final Object[] pattern_Process2UseCase_22_2_black_nac_1BB(UCCondition cond, UseCase useCase) {
-		for (UseCase __DEC_cond_precondition_500285 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (UseCase __DEC_cond_precondition_835117 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(cond, UseCase.class, "precondition")) {
-			if (!useCase.equals(__DEC_cond_precondition_500285)) {
+			if (!useCase.equals(__DEC_cond_precondition_835117)) {
 				return new Object[] { cond, useCase };
 			}
 		}
@@ -2580,9 +2303,9 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	}
 
 	public static final Object[] pattern_Process2UseCase_22_2_black_nac_2BB(UCCondition cond, BasicFlow flow) {
-		for (Flow __DEC_cond_finalState_366157 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (Flow __DEC_cond_finalState_413160 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(cond, Flow.class, "finalState")) {
-			if (!flow.equals(__DEC_cond_finalState_366157)) {
+			if (!flow.equals(__DEC_cond_finalState_413160)) {
 				return new Object[] { cond, flow };
 			}
 		}
@@ -2590,7 +2313,7 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 	}
 
 	public static final Object[] pattern_Process2UseCase_22_2_black_nac_3B(UCCondition cond) {
-		for (Step __DEC_cond___last_52692 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(cond,
+		for (Step __DEC_cond___last_163215 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(cond,
 				Step.class, "__last")) {
 			return new Object[] { cond };
 		}
@@ -2673,322 +2396,6 @@ public class Process2UseCaseImpl extends AbstractRuleImpl implements Process2Use
 
 	public static final EObjectContainer pattern_Process2UseCase_22_6_expressionFB(EObjectContainer __result) {
 		EObjectContainer _result = __result;
-		return _result;
-	}
-
-	public static final Object[] pattern_Process2UseCase_25_1_blackB(Process2UseCase _this) {
-		return new Object[] { _this };
-	}
-
-	public static final Object[] pattern_Process2UseCase_25_1_greenF() {
-		IsApplicableRuleResult result = TGGRuntimeFactory.eINSTANCE.createIsApplicableRuleResult();
-		return new Object[] { result };
-	}
-
-	public static final Object[] pattern_Process2UseCase_25_2_bindingFFFFFBB(Match sourceMatch, Match targetMatch) {
-		EObject _localVariable_0 = sourceMatch.getObject("process");
-		EObject _localVariable_1 = targetMatch.getObject("useCase");
-		EObject _localVariable_2 = targetMatch.getObject("flow");
-		EObject _localVariable_3 = sourceMatch.getObject("start");
-		EObject _localVariable_4 = targetMatch.getObject("cond");
-		EObject tmpProcess = _localVariable_0;
-		EObject tmpUseCase = _localVariable_1;
-		EObject tmpFlow = _localVariable_2;
-		EObject tmpStart = _localVariable_3;
-		EObject tmpCond = _localVariable_4;
-		if (tmpProcess instanceof SimpleBPMN.Process) {
-			SimpleBPMN.Process process = (SimpleBPMN.Process) tmpProcess;
-			if (tmpUseCase instanceof UseCase) {
-				UseCase useCase = (UseCase) tmpUseCase;
-				if (tmpFlow instanceof BasicFlow) {
-					BasicFlow flow = (BasicFlow) tmpFlow;
-					if (tmpStart instanceof StartEvent) {
-						StartEvent start = (StartEvent) tmpStart;
-						if (tmpCond instanceof UCCondition) {
-							UCCondition cond = (UCCondition) tmpCond;
-							return new Object[] { process, useCase, flow, start, cond, sourceMatch, targetMatch };
-						}
-					}
-				}
-			}
-		}
-		return null;
-	}
-
-	public static final Iterable<Object[]> pattern_Process2UseCase_25_2_blackBBBBBBB(SimpleBPMN.Process process,
-			UseCase useCase, BasicFlow flow, StartEvent start, UCCondition cond, Match sourceMatch, Match targetMatch) {
-		LinkedList<Object[]> _result = new LinkedList<Object[]>();
-		if (!sourceMatch.equals(targetMatch)) {
-			if (process.getFlowElements().contains(start)) {
-				if (useCase.getFlows().contains(flow)) {
-					if (cond.equals(useCase.getPrecondition())) {
-						_result.add(new Object[] { process, useCase, flow, start, cond, sourceMatch, targetMatch });
-					}
-				}
-			}
-		}
-		return _result;
-	}
-
-	public static final Object[] pattern_Process2UseCase_25_2_greenBBBBBBBF(SimpleBPMN.Process process, UseCase useCase,
-			BasicFlow flow, StartEvent start, UCCondition cond, Match sourceMatch, Match targetMatch) {
-		IsApplicableMatchCC isApplicableMatch = TGGRuntimeFactory.eINSTANCE.createIsApplicableMatchCC();
-		String isApplicableMatch_ruleName_prime = "Process2UseCase";
-		isApplicableMatch.setSourceMatch(sourceMatch);
-		isApplicableMatch.setTargetMatch(targetMatch);
-		isApplicableMatch.getAllContextElements().add(process);
-		isApplicableMatch.getAllContextElements().add(start);
-		isApplicableMatch.getAllContextElements().add(useCase);
-		isApplicableMatch.getAllContextElements().add(flow);
-		isApplicableMatch.getAllContextElements().add(cond);
-		isApplicableMatch.setRuleName(isApplicableMatch_ruleName_prime);
-		return new Object[] { process, useCase, flow, start, cond, sourceMatch, targetMatch, isApplicableMatch };
-	}
-
-	public static final Object[] pattern_Process2UseCase_25_3_bindingFBBBBBBBBB(Process2UseCase _this,
-			IsApplicableMatchCC isApplicableMatch, SimpleBPMN.Process process, UseCase useCase, BasicFlow flow,
-			StartEvent start, UCCondition cond, Match sourceMatch, Match targetMatch) {
-		CSP _localVariable_0 = _this.isApplicable_solveCsp_CC(isApplicableMatch, process, useCase, flow, start, cond,
-				sourceMatch, targetMatch);
-		CSP csp = _localVariable_0;
-		if (csp != null) {
-			return new Object[] { csp, _this, isApplicableMatch, process, useCase, flow, start, cond, sourceMatch,
-					targetMatch };
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_Process2UseCase_25_3_blackB(CSP csp) {
-		return new Object[] { csp };
-	}
-
-	public static final Object[] pattern_Process2UseCase_25_3_bindingAndBlackFBBBBBBBBB(Process2UseCase _this,
-			IsApplicableMatchCC isApplicableMatch, SimpleBPMN.Process process, UseCase useCase, BasicFlow flow,
-			StartEvent start, UCCondition cond, Match sourceMatch, Match targetMatch) {
-		Object[] result_pattern_Process2UseCase_25_3_binding = pattern_Process2UseCase_25_3_bindingFBBBBBBBBB(_this,
-				isApplicableMatch, process, useCase, flow, start, cond, sourceMatch, targetMatch);
-		if (result_pattern_Process2UseCase_25_3_binding != null) {
-			CSP csp = (CSP) result_pattern_Process2UseCase_25_3_binding[0];
-
-			Object[] result_pattern_Process2UseCase_25_3_black = pattern_Process2UseCase_25_3_blackB(csp);
-			if (result_pattern_Process2UseCase_25_3_black != null) {
-
-				return new Object[] { csp, _this, isApplicableMatch, process, useCase, flow, start, cond, sourceMatch,
-						targetMatch };
-			}
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_Process2UseCase_25_4_blackBB(IsApplicableRuleResult result,
-			IsApplicableMatch isApplicableMatch) {
-		return new Object[] { result, isApplicableMatch };
-	}
-
-	public static final Object[] pattern_Process2UseCase_25_4_greenBB(IsApplicableRuleResult result,
-			IsApplicableMatch isApplicableMatch) {
-		result.getIsApplicableMatch().add(isApplicableMatch);
-		boolean result_success_prime = Boolean.valueOf(true);
-		String isApplicableMatch_ruleName_prime = "Process2UseCase";
-		result.setSuccess(Boolean.valueOf(result_success_prime));
-		isApplicableMatch.setRuleName(isApplicableMatch_ruleName_prime);
-		return new Object[] { result, isApplicableMatch };
-	}
-
-	public static final IsApplicableRuleResult pattern_Process2UseCase_25_5_expressionFB(
-			IsApplicableRuleResult result) {
-		IsApplicableRuleResult _result = result;
-		return _result;
-	}
-
-	public static final Object[] pattern_Process2UseCase_28_1_blackB(Process2UseCase _this) {
-		return new Object[] { _this };
-	}
-
-	public static final Object[] pattern_Process2UseCase_28_2_bindingFFFFFB(IsApplicableMatchCC isApplicableMatch) {
-		EObject _localVariable_0 = isApplicableMatch.getObject("process");
-		EObject _localVariable_1 = isApplicableMatch.getObject("useCase");
-		EObject _localVariable_2 = isApplicableMatch.getObject("flow");
-		EObject _localVariable_3 = isApplicableMatch.getObject("start");
-		EObject _localVariable_4 = isApplicableMatch.getObject("cond");
-		EObject tmpProcess = _localVariable_0;
-		EObject tmpUseCase = _localVariable_1;
-		EObject tmpFlow = _localVariable_2;
-		EObject tmpStart = _localVariable_3;
-		EObject tmpCond = _localVariable_4;
-		if (tmpProcess instanceof SimpleBPMN.Process) {
-			SimpleBPMN.Process process = (SimpleBPMN.Process) tmpProcess;
-			if (tmpUseCase instanceof UseCase) {
-				UseCase useCase = (UseCase) tmpUseCase;
-				if (tmpFlow instanceof BasicFlow) {
-					BasicFlow flow = (BasicFlow) tmpFlow;
-					if (tmpStart instanceof StartEvent) {
-						StartEvent start = (StartEvent) tmpStart;
-						if (tmpCond instanceof UCCondition) {
-							UCCondition cond = (UCCondition) tmpCond;
-							return new Object[] { process, useCase, flow, start, cond, isApplicableMatch };
-						}
-					}
-				}
-			}
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_Process2UseCase_28_2_blackBBBBBB(SimpleBPMN.Process process, UseCase useCase,
-			BasicFlow flow, StartEvent start, UCCondition cond, IsApplicableMatchCC isApplicableMatch) {
-		if (process.getFlowElements().contains(start)) {
-			if (useCase.getFlows().contains(flow)) {
-				if (cond.equals(useCase.getPrecondition())) {
-					return new Object[] { process, useCase, flow, start, cond, isApplicableMatch };
-				}
-			}
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_Process2UseCase_28_2_bindingAndBlackFFFFFB(
-			IsApplicableMatchCC isApplicableMatch) {
-		Object[] result_pattern_Process2UseCase_28_2_binding = pattern_Process2UseCase_28_2_bindingFFFFFB(
-				isApplicableMatch);
-		if (result_pattern_Process2UseCase_28_2_binding != null) {
-			SimpleBPMN.Process process = (SimpleBPMN.Process) result_pattern_Process2UseCase_28_2_binding[0];
-			UseCase useCase = (UseCase) result_pattern_Process2UseCase_28_2_binding[1];
-			BasicFlow flow = (BasicFlow) result_pattern_Process2UseCase_28_2_binding[2];
-			StartEvent start = (StartEvent) result_pattern_Process2UseCase_28_2_binding[3];
-			UCCondition cond = (UCCondition) result_pattern_Process2UseCase_28_2_binding[4];
-
-			Object[] result_pattern_Process2UseCase_28_2_black = pattern_Process2UseCase_28_2_blackBBBBBB(process,
-					useCase, flow, start, cond, isApplicableMatch);
-			if (result_pattern_Process2UseCase_28_2_black != null) {
-
-				return new Object[] { process, useCase, flow, start, cond, isApplicableMatch };
-			}
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_Process2UseCase_28_2_greenBBBBFFF(SimpleBPMN.Process process, UseCase useCase,
-			BasicFlow flow, StartEvent start) {
-		PerformRuleResult result = TGGRuntimeFactory.eINSTANCE.createPerformRuleResult();
-		P2UC _p2uc = Bpmn2UseCaseFactory.eINSTANCE.createP2UC();
-		FN2F s2f = Bpmn2UseCaseFactory.eINSTANCE.createFN2F();
-		result.getCreatedElements().add(_p2uc);
-		_p2uc.setSource(process);
-		_p2uc.setTarget(useCase);
-		result.getCreatedElements().add(s2f);
-		s2f.setSource(start);
-		s2f.setTarget(flow);
-		return new Object[] { process, useCase, flow, start, result, _p2uc, s2f };
-	}
-
-	public static final PerformRuleResult pattern_Process2UseCase_28_3_expressionFB(PerformRuleResult result) {
-		PerformRuleResult _result = result;
-		return _result;
-	}
-
-	public static final Object[] pattern_Process2UseCase_29_1_blackB(Process2UseCase _this) {
-		return new Object[] { _this };
-	}
-
-	public static final Object[] pattern_Process2UseCase_29_1_greenFF() {
-		IsApplicableMatch isApplicableMatch = TGGRuntimeFactory.eINSTANCE.createIsApplicableMatch();
-		ModelgeneratorRuleResult ruleResult = TGGRuntimeFactory.eINSTANCE.createModelgeneratorRuleResult();
-		boolean ruleResult_success_prime = false;
-		ruleResult.setSuccess(Boolean.valueOf(ruleResult_success_prime));
-		return new Object[] { isApplicableMatch, ruleResult };
-	}
-
-	public static final Object[] pattern_Process2UseCase_29_2_blackB(Process2UseCase _this) {
-		return new Object[] { _this };
-	}
-
-	public static final Object[] pattern_Process2UseCase_29_3_bindingFBBB(Process2UseCase _this,
-			IsApplicableMatch isApplicableMatch, ModelgeneratorRuleResult ruleResult) {
-		CSP _localVariable_0 = _this.generateModel_solveCsp_BWD(isApplicableMatch, ruleResult);
-		CSP csp = _localVariable_0;
-		if (csp != null) {
-			return new Object[] { csp, _this, isApplicableMatch, ruleResult };
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_Process2UseCase_29_3_blackB(CSP csp) {
-		return new Object[] { csp };
-	}
-
-	public static final Object[] pattern_Process2UseCase_29_3_bindingAndBlackFBBB(Process2UseCase _this,
-			IsApplicableMatch isApplicableMatch, ModelgeneratorRuleResult ruleResult) {
-		Object[] result_pattern_Process2UseCase_29_3_binding = pattern_Process2UseCase_29_3_bindingFBBB(_this,
-				isApplicableMatch, ruleResult);
-		if (result_pattern_Process2UseCase_29_3_binding != null) {
-			CSP csp = (CSP) result_pattern_Process2UseCase_29_3_binding[0];
-
-			Object[] result_pattern_Process2UseCase_29_3_black = pattern_Process2UseCase_29_3_blackB(csp);
-			if (result_pattern_Process2UseCase_29_3_black != null) {
-
-				return new Object[] { csp, _this, isApplicableMatch, ruleResult };
-			}
-		}
-		return null;
-	}
-
-	public static final boolean pattern_Process2UseCase_29_4_expressionFBB(Process2UseCase _this, CSP csp) {
-		boolean _localVariable_0 = _this.generateModel_checkCsp_BWD(csp);
-		boolean _result = Boolean.valueOf(_localVariable_0);
-		return _result;
-	}
-
-	public static final Object[] pattern_Process2UseCase_29_6_blackB(ModelgeneratorRuleResult ruleResult) {
-		return new Object[] { ruleResult };
-	}
-
-	public static final Object[] pattern_Process2UseCase_29_6_greenFFFFFFFBB(ModelgeneratorRuleResult ruleResult,
-			CSP csp) {
-		SimpleBPMN.Process process = SimpleBPMNFactory.eINSTANCE.createProcess();
-		UseCase useCase = SimpleUseCaseFactory.eINSTANCE.createUseCase();
-		P2UC _p2uc = Bpmn2UseCaseFactory.eINSTANCE.createP2UC();
-		BasicFlow flow = SimpleUseCaseFactory.eINSTANCE.createBasicFlow();
-		FN2F s2f = Bpmn2UseCaseFactory.eINSTANCE.createFN2F();
-		StartEvent start = SimpleBPMNFactory.eINSTANCE.createStartEvent();
-		UCCondition cond = SimpleUseCaseFactory.eINSTANCE.createUCCondition();
-		Object _localVariable_0 = csp.getValue("process", "id");
-		Object _localVariable_1 = csp.getValue("useCase", "id");
-		Object _localVariable_2 = csp.getValue("start", "id");
-		Object _localVariable_3 = csp.getValue("cond", "name");
-		boolean ruleResult_success_prime = Boolean.valueOf(true);
-		int _localVariable_4 = ruleResult.getIncrementedPerformCount();
-		ruleResult.getSourceObjects().add(process);
-		ruleResult.getTargetObjects().add(useCase);
-		_p2uc.setSource(process);
-		_p2uc.setTarget(useCase);
-		ruleResult.getCorrObjects().add(_p2uc);
-		useCase.getFlows().add(flow);
-		ruleResult.getTargetObjects().add(flow);
-		s2f.setTarget(flow);
-		ruleResult.getCorrObjects().add(s2f);
-		process.getFlowElements().add(start);
-		s2f.setSource(start);
-		ruleResult.getSourceObjects().add(start);
-		useCase.setPrecondition(cond);
-		ruleResult.getTargetObjects().add(cond);
-		String process_id_prime = (String) _localVariable_0;
-		String useCase_id_prime = (String) _localVariable_1;
-		String start_id_prime = (String) _localVariable_2;
-		String cond_name_prime = (String) _localVariable_3;
-		ruleResult.setSuccess(Boolean.valueOf(ruleResult_success_prime));
-		int ruleResult_performCount_prime = Integer.valueOf(_localVariable_4);
-		process.setId(process_id_prime);
-		useCase.setId(useCase_id_prime);
-		start.setId(start_id_prime);
-		cond.setName(cond_name_prime);
-		ruleResult.setPerformCount(Integer.valueOf(ruleResult_performCount_prime));
-		return new Object[] { process, useCase, _p2uc, flow, s2f, start, cond, ruleResult, csp };
-	}
-
-	public static final ModelgeneratorRuleResult pattern_Process2UseCase_29_7_expressionFB(
-			ModelgeneratorRuleResult ruleResult) {
-		ModelgeneratorRuleResult _result = ruleResult;
 		return _result;
 	}
 

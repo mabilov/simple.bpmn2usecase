@@ -1,8 +1,8 @@
 /**
  */
-package Bpmn2UseCase.impl;
+package bpmn2UseCase.impl;
 
-import Bpmn2UseCase.*;
+import bpmn2UseCase.*;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;

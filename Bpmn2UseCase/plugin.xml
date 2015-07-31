@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?eclipse version="3.0"?><plugin>
   <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="Bpmn2UseCase.Bpmn2UseCasePackage" genModel="model/Bpmn2UseCase.genmodel" uri="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore"/>
+    <package class="bpmn2UseCase.Bpmn2UseCasePackage" genModel="model/Bpmn2UseCase.genmodel" uri="platform:/plugin/bpmn2UseCase/model/Bpmn2UseCase.ecore"/>
   </extension>
   <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="Bpmn2UseCase.Rules.RulesPackage" genModel="model/Bpmn2UseCase.genmodel" uri="platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules"/>
+    <package class="bpmn2UseCase.Rules.RulesPackage" genModel="model/Bpmn2UseCase.genmodel" uri="platform:/plugin/bpmn2UseCase/model/Bpmn2UseCase.ecore#//Rules"/>
   </extension>
 </plugin>

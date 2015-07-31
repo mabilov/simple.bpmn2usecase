@@ -1,6 +1,6 @@
 /**
  */
-package Bpmn2UseCase;
+package bpmn2UseCase;
 
 import SimpleUseCase.UseCase;
 
@@ -18,12 +18,12 @@ import org.eclipse.emf.ecore.EObject;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link Bpmn2UseCase.P2UC#getSource <em>Source</em>}</li>
- *   <li>{@link Bpmn2UseCase.P2UC#getTarget <em>Target</em>}</li>
+ *   <li>{@link bpmn2UseCase.P2UC#getSource <em>Source</em>}</li>
+ *   <li>{@link bpmn2UseCase.P2UC#getTarget <em>Target</em>}</li>
  * </ul>
  * </p>
  *
- * @see Bpmn2UseCase.Bpmn2UseCasePackage#getP2UC()
+ * @see bpmn2UseCase.Bpmn2UseCasePackage#getP2UC()
  * @model
  * @generated
  */
@@ -38,14 +38,14 @@ public interface P2UC extends EObject, AbstractCorrespondence {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source</em>' reference.
 	 * @see #setSource(SimpleBPMN.Process)
-	 * @see Bpmn2UseCase.Bpmn2UseCasePackage#getP2UC_Source()
+	 * @see bpmn2UseCase.Bpmn2UseCasePackage#getP2UC_Source()
 	 * @model required="true"
 	 * @generated
 	 */
 	SimpleBPMN.Process getSource();
 
 	/**
-	 * Sets the value of the '{@link Bpmn2UseCase.P2UC#getSource <em>Source</em>}' reference.
+	 * Sets the value of the '{@link bpmn2UseCase.P2UC#getSource <em>Source</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Source</em>' reference.
@@ -64,14 +64,14 @@ public interface P2UC extends EObject, AbstractCorrespondence {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target</em>' reference.
 	 * @see #setTarget(UseCase)
-	 * @see Bpmn2UseCase.Bpmn2UseCasePackage#getP2UC_Target()
+	 * @see bpmn2UseCase.Bpmn2UseCasePackage#getP2UC_Target()
 	 * @model required="true"
 	 * @generated
 	 */
 	UseCase getTarget();
 
 	/**
-	 * Sets the value of the '{@link Bpmn2UseCase.P2UC#getTarget <em>Target</em>}' reference.
+	 * Sets the value of the '{@link bpmn2UseCase.P2UC#getTarget <em>Target</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Target</em>' reference.

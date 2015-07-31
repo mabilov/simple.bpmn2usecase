@@ -1,13 +1,13 @@
 /**
  */
-package Bpmn2UseCase.impl;
-
-import Bpmn2UseCase.Bpmn2UseCasePackage;
-import Bpmn2UseCase.P2UC;
+package bpmn2UseCase.impl;
 
 import SimpleUseCase.UseCase;
 
 import TGGRuntime.impl.AbstractCorrespondenceImpl;
+
+import bpmn2UseCase.Bpmn2UseCasePackage;
+import bpmn2UseCase.P2UC;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -25,8 +25,8 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link Bpmn2UseCase.impl.P2UCImpl#getSource <em>Source</em>}</li>
- *   <li>{@link Bpmn2UseCase.impl.P2UCImpl#getTarget <em>Target</em>}</li>
+ *   <li>{@link bpmn2UseCase.impl.P2UCImpl#getSource <em>Source</em>}</li>
+ *   <li>{@link bpmn2UseCase.impl.P2UCImpl#getTarget <em>Target</em>}</li>
  * </ul>
  * </p>
  *

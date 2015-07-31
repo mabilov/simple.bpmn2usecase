@@ -1,6 +1,6 @@
 /**
  */
-package Bpmn2UseCase;
+package bpmn2UseCase;
 
 import TGGRuntime.TGGRuntimePackage;
 
@@ -20,7 +20,7 @@ import org.eclipse.emf.ecore.EReference;
  *   <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
- * @see Bpmn2UseCase.Bpmn2UseCaseFactory
+ * @see bpmn2UseCase.Bpmn2UseCaseFactory
  * @model kind="package"
  * @generated
  */
@@ -31,7 +31,7 @@ public interface Bpmn2UseCasePackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNAME = "Bpmn2UseCase";
+	String eNAME = "bpmn2UseCase";
 
 	/**
 	 * The package namespace URI.
@@ -39,7 +39,7 @@ public interface Bpmn2UseCasePackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "platform:/plugin/Bpmn2UseCase/model/Bpmn2UseCase.ecore";
+	String eNS_URI = "platform:/plugin/bpmn2UseCase/model/Bpmn2UseCase.ecore";
 
 	/**
 	 * The package namespace name.
@@ -47,7 +47,7 @@ public interface Bpmn2UseCasePackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_PREFIX = "Bpmn2UseCase";
+	String eNS_PREFIX = "bpmn2UseCase";
 
 	/**
 	 * The singleton instance of the package.
@@ -55,14 +55,14 @@ public interface Bpmn2UseCasePackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	Bpmn2UseCasePackage eINSTANCE = Bpmn2UseCase.impl.Bpmn2UseCasePackageImpl.init();
+	Bpmn2UseCasePackage eINSTANCE = bpmn2UseCase.impl.Bpmn2UseCasePackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link Bpmn2UseCase.impl.P2UCImpl <em>P2UC</em>}' class.
+	 * The meta object id for the '{@link bpmn2UseCase.impl.P2UCImpl <em>P2UC</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see Bpmn2UseCase.impl.P2UCImpl
-	 * @see Bpmn2UseCase.impl.Bpmn2UseCasePackageImpl#getP2UC()
+	 * @see bpmn2UseCase.impl.P2UCImpl
+	 * @see bpmn2UseCase.impl.Bpmn2UseCasePackageImpl#getP2UC()
 	 * @generated
 	 */
 	int P2UC = 0;
@@ -104,11 +104,11 @@ public interface Bpmn2UseCasePackage extends EPackage {
 	int P2UC_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link Bpmn2UseCase.impl.FN2FImpl <em>FN2F</em>}' class.
+	 * The meta object id for the '{@link bpmn2UseCase.impl.FN2FImpl <em>FN2F</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see Bpmn2UseCase.impl.FN2FImpl
-	 * @see Bpmn2UseCase.impl.Bpmn2UseCasePackageImpl#getFN2F()
+	 * @see bpmn2UseCase.impl.FN2FImpl
+	 * @see bpmn2UseCase.impl.Bpmn2UseCasePackageImpl#getFN2F()
 	 * @generated
 	 */
 	int FN2F = 1;
@@ -150,11 +150,11 @@ public interface Bpmn2UseCasePackage extends EPackage {
 	int FN2F_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link Bpmn2UseCase.impl.GW2SImpl <em>GW2S</em>}' class.
+	 * The meta object id for the '{@link bpmn2UseCase.impl.GW2SImpl <em>GW2S</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see Bpmn2UseCase.impl.GW2SImpl
-	 * @see Bpmn2UseCase.impl.Bpmn2UseCasePackageImpl#getGW2S()
+	 * @see bpmn2UseCase.impl.GW2SImpl
+	 * @see bpmn2UseCase.impl.Bpmn2UseCasePackageImpl#getGW2S()
 	 * @generated
 	 */
 	int GW2S = 2;
@@ -196,11 +196,11 @@ public interface Bpmn2UseCasePackage extends EPackage {
 	int GW2S_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link Bpmn2UseCase.impl.FN2SImpl <em>FN2S</em>}' class.
+	 * The meta object id for the '{@link bpmn2UseCase.impl.FN2SImpl <em>FN2S</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see Bpmn2UseCase.impl.FN2SImpl
-	 * @see Bpmn2UseCase.impl.Bpmn2UseCasePackageImpl#getFN2S()
+	 * @see bpmn2UseCase.impl.FN2SImpl
+	 * @see bpmn2UseCase.impl.Bpmn2UseCasePackageImpl#getFN2S()
 	 * @generated
 	 */
 	int FN2S = 3;
@@ -242,128 +242,128 @@ public interface Bpmn2UseCasePackage extends EPackage {
 	int FN2S_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
 
 	/**
-	 * Returns the meta object for class '{@link Bpmn2UseCase.P2UC <em>P2UC</em>}'.
+	 * Returns the meta object for class '{@link bpmn2UseCase.P2UC <em>P2UC</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>P2UC</em>'.
-	 * @see Bpmn2UseCase.P2UC
+	 * @see bpmn2UseCase.P2UC
 	 * @generated
 	 */
 	EClass getP2UC();
 
 	/**
-	 * Returns the meta object for the reference '{@link Bpmn2UseCase.P2UC#getSource <em>Source</em>}'.
+	 * Returns the meta object for the reference '{@link bpmn2UseCase.P2UC#getSource <em>Source</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Source</em>'.
-	 * @see Bpmn2UseCase.P2UC#getSource()
+	 * @see bpmn2UseCase.P2UC#getSource()
 	 * @see #getP2UC()
 	 * @generated
 	 */
 	EReference getP2UC_Source();
 
 	/**
-	 * Returns the meta object for the reference '{@link Bpmn2UseCase.P2UC#getTarget <em>Target</em>}'.
+	 * Returns the meta object for the reference '{@link bpmn2UseCase.P2UC#getTarget <em>Target</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Target</em>'.
-	 * @see Bpmn2UseCase.P2UC#getTarget()
+	 * @see bpmn2UseCase.P2UC#getTarget()
 	 * @see #getP2UC()
 	 * @generated
 	 */
 	EReference getP2UC_Target();
 
 	/**
-	 * Returns the meta object for class '{@link Bpmn2UseCase.FN2F <em>FN2F</em>}'.
+	 * Returns the meta object for class '{@link bpmn2UseCase.FN2F <em>FN2F</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>FN2F</em>'.
-	 * @see Bpmn2UseCase.FN2F
+	 * @see bpmn2UseCase.FN2F
 	 * @generated
 	 */
 	EClass getFN2F();
 
 	/**
-	 * Returns the meta object for the reference '{@link Bpmn2UseCase.FN2F#getSource <em>Source</em>}'.
+	 * Returns the meta object for the reference '{@link bpmn2UseCase.FN2F#getSource <em>Source</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Source</em>'.
-	 * @see Bpmn2UseCase.FN2F#getSource()
+	 * @see bpmn2UseCase.FN2F#getSource()
 	 * @see #getFN2F()
 	 * @generated
 	 */
 	EReference getFN2F_Source();
 
 	/**
-	 * Returns the meta object for the reference '{@link Bpmn2UseCase.FN2F#getTarget <em>Target</em>}'.
+	 * Returns the meta object for the reference '{@link bpmn2UseCase.FN2F#getTarget <em>Target</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Target</em>'.
-	 * @see Bpmn2UseCase.FN2F#getTarget()
+	 * @see bpmn2UseCase.FN2F#getTarget()
 	 * @see #getFN2F()
 	 * @generated
 	 */
 	EReference getFN2F_Target();
 
 	/**
-	 * Returns the meta object for class '{@link Bpmn2UseCase.GW2S <em>GW2S</em>}'.
+	 * Returns the meta object for class '{@link bpmn2UseCase.GW2S <em>GW2S</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>GW2S</em>'.
-	 * @see Bpmn2UseCase.GW2S
+	 * @see bpmn2UseCase.GW2S
 	 * @generated
 	 */
 	EClass getGW2S();
 
 	/**
-	 * Returns the meta object for the reference '{@link Bpmn2UseCase.GW2S#getSource <em>Source</em>}'.
+	 * Returns the meta object for the reference '{@link bpmn2UseCase.GW2S#getSource <em>Source</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Source</em>'.
-	 * @see Bpmn2UseCase.GW2S#getSource()
+	 * @see bpmn2UseCase.GW2S#getSource()
 	 * @see #getGW2S()
 	 * @generated
 	 */
 	EReference getGW2S_Source();
 
 	/**
-	 * Returns the meta object for the reference '{@link Bpmn2UseCase.GW2S#getTarget <em>Target</em>}'.
+	 * Returns the meta object for the reference '{@link bpmn2UseCase.GW2S#getTarget <em>Target</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Target</em>'.
-	 * @see Bpmn2UseCase.GW2S#getTarget()
+	 * @see bpmn2UseCase.GW2S#getTarget()
 	 * @see #getGW2S()
 	 * @generated
 	 */
 	EReference getGW2S_Target();
 
 	/**
-	 * Returns the meta object for class '{@link Bpmn2UseCase.FN2S <em>FN2S</em>}'.
+	 * Returns the meta object for class '{@link bpmn2UseCase.FN2S <em>FN2S</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>FN2S</em>'.
-	 * @see Bpmn2UseCase.FN2S
+	 * @see bpmn2UseCase.FN2S
 	 * @generated
 	 */
 	EClass getFN2S();
 
 	/**
-	 * Returns the meta object for the reference '{@link Bpmn2UseCase.FN2S#getSource <em>Source</em>}'.
+	 * Returns the meta object for the reference '{@link bpmn2UseCase.FN2S#getSource <em>Source</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Source</em>'.
-	 * @see Bpmn2UseCase.FN2S#getSource()
+	 * @see bpmn2UseCase.FN2S#getSource()
 	 * @see #getFN2S()
 	 * @generated
 	 */
 	EReference getFN2S_Source();
 
 	/**
-	 * Returns the meta object for the reference '{@link Bpmn2UseCase.FN2S#getTarget <em>Target</em>}'.
+	 * Returns the meta object for the reference '{@link bpmn2UseCase.FN2S#getTarget <em>Target</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Target</em>'.
-	 * @see Bpmn2UseCase.FN2S#getTarget()
+	 * @see bpmn2UseCase.FN2S#getTarget()
 	 * @see #getFN2S()
 	 * @generated
 	 */
@@ -393,11 +393,11 @@ public interface Bpmn2UseCasePackage extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link Bpmn2UseCase.impl.P2UCImpl <em>P2UC</em>}' class.
+		 * The meta object literal for the '{@link bpmn2UseCase.impl.P2UCImpl <em>P2UC</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see Bpmn2UseCase.impl.P2UCImpl
-		 * @see Bpmn2UseCase.impl.Bpmn2UseCasePackageImpl#getP2UC()
+		 * @see bpmn2UseCase.impl.P2UCImpl
+		 * @see bpmn2UseCase.impl.Bpmn2UseCasePackageImpl#getP2UC()
 		 * @generated
 		 */
 		EClass P2UC = eINSTANCE.getP2UC();
@@ -419,11 +419,11 @@ public interface Bpmn2UseCasePackage extends EPackage {
 		EReference P2UC__TARGET = eINSTANCE.getP2UC_Target();
 
 		/**
-		 * The meta object literal for the '{@link Bpmn2UseCase.impl.FN2FImpl <em>FN2F</em>}' class.
+		 * The meta object literal for the '{@link bpmn2UseCase.impl.FN2FImpl <em>FN2F</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see Bpmn2UseCase.impl.FN2FImpl
-		 * @see Bpmn2UseCase.impl.Bpmn2UseCasePackageImpl#getFN2F()
+		 * @see bpmn2UseCase.impl.FN2FImpl
+		 * @see bpmn2UseCase.impl.Bpmn2UseCasePackageImpl#getFN2F()
 		 * @generated
 		 */
 		EClass FN2F = eINSTANCE.getFN2F();
@@ -445,11 +445,11 @@ public interface Bpmn2UseCasePackage extends EPackage {
 		EReference FN2F__TARGET = eINSTANCE.getFN2F_Target();
 
 		/**
-		 * The meta object literal for the '{@link Bpmn2UseCase.impl.GW2SImpl <em>GW2S</em>}' class.
+		 * The meta object literal for the '{@link bpmn2UseCase.impl.GW2SImpl <em>GW2S</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see Bpmn2UseCase.impl.GW2SImpl
-		 * @see Bpmn2UseCase.impl.Bpmn2UseCasePackageImpl#getGW2S()
+		 * @see bpmn2UseCase.impl.GW2SImpl
+		 * @see bpmn2UseCase.impl.Bpmn2UseCasePackageImpl#getGW2S()
 		 * @generated
 		 */
 		EClass GW2S = eINSTANCE.getGW2S();
@@ -471,11 +471,11 @@ public interface Bpmn2UseCasePackage extends EPackage {
 		EReference GW2S__TARGET = eINSTANCE.getGW2S_Target();
 
 		/**
-		 * The meta object literal for the '{@link Bpmn2UseCase.impl.FN2SImpl <em>FN2S</em>}' class.
+		 * The meta object literal for the '{@link bpmn2UseCase.impl.FN2SImpl <em>FN2S</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see Bpmn2UseCase.impl.FN2SImpl
-		 * @see Bpmn2UseCase.impl.Bpmn2UseCasePackageImpl#getFN2S()
+		 * @see bpmn2UseCase.impl.FN2SImpl
+		 * @see bpmn2UseCase.impl.Bpmn2UseCasePackageImpl#getFN2S()
 		 * @generated
 		 */
 		EClass FN2S = eINSTANCE.getFN2S();

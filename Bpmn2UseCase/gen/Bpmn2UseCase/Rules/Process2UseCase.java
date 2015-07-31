@@ -1,6 +1,6 @@
 /**
  */
-package Bpmn2UseCase.Rules;
+package bpmn2UseCase.Rules;
 
 import SimpleBPMN.StartEvent;
 
@@ -10,17 +10,13 @@ import SimpleUseCase.UseCase;
 
 import TGGLanguage.csp.CSP;
 
-import TGGLanguage.modelgenerator.RuleEntryContainer;
-
 import TGGRuntime.AbstractRule;
 import TGGRuntime.AttributeConstraintsRuleResult;
 import TGGRuntime.EMoflonEdge;
 import TGGRuntime.EObjectContainer;
 import TGGRuntime.IsApplicableMatch;
-import TGGRuntime.IsApplicableMatchCC;
 import TGGRuntime.IsApplicableRuleResult;
 import TGGRuntime.Match;
-import TGGRuntime.ModelgeneratorRuleResult;
 import TGGRuntime.PerformRuleResult;
 import TGGRuntime.TripleMatch;
 
@@ -34,7 +30,7 @@ import org.eclipse.emf.ecore.EObject;
  * <!-- end-user-doc -->
  *
  *
- * @see Bpmn2UseCase.Rules.RulesPackage#getProcess2UseCase()
+ * @see bpmn2UseCase.Rules.RulesPackage#getProcess2UseCase()
  * @model
  * @generated
  */
@@ -208,7 +204,7 @@ public interface Process2UseCase extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_1190(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_0(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -216,7 +212,7 @@ public interface Process2UseCase extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_381(EMoflonEdge _edge_flows);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_0(EMoflonEdge _edge_flows);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -224,7 +220,7 @@ public interface Process2UseCase extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_382(EMoflonEdge _edge_precondition);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_1(EMoflonEdge _edge_precondition);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -241,63 +237,6 @@ public interface Process2UseCase extends EObject, AbstractRule {
 	 * @generated
 	 */
 	AttributeConstraintsRuleResult checkAttributes_BWD(TripleMatch __tripleMatch);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	IsApplicableRuleResult isApplicable_CC(Match sourceMatch, Match targetMatch);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	CSP isApplicable_solveCsp_CC(IsApplicableMatchCC isApplicableMatch, SimpleBPMN.Process process, UseCase useCase,
-			BasicFlow flow, StartEvent start, UCCondition cond, Match sourceMatch, Match targetMatch);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	boolean isApplicable_checkCsp_CC(CSP csp);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	PerformRuleResult perform_CC(IsApplicableMatchCC isApplicableMatch);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	ModelgeneratorRuleResult generateModel(RuleEntryContainer ruleEntryContainer);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, ModelgeneratorRuleResult ruleResult);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	boolean generateModel_checkCsp_BWD(CSP csp);
 	// <-- [user code injected with eMoflon]
 
 	// [user code injected with eMoflon] -->

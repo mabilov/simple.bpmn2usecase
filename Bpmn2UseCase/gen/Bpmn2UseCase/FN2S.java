@@ -1,6 +1,6 @@
 /**
  */
-package Bpmn2UseCase;
+package bpmn2UseCase;
 
 import SimpleBPMN.FlowNode;
 
@@ -20,12 +20,12 @@ import org.eclipse.emf.ecore.EObject;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link Bpmn2UseCase.FN2S#getSource <em>Source</em>}</li>
- *   <li>{@link Bpmn2UseCase.FN2S#getTarget <em>Target</em>}</li>
+ *   <li>{@link bpmn2UseCase.FN2S#getSource <em>Source</em>}</li>
+ *   <li>{@link bpmn2UseCase.FN2S#getTarget <em>Target</em>}</li>
  * </ul>
  * </p>
  *
- * @see Bpmn2UseCase.Bpmn2UseCasePackage#getFN2S()
+ * @see bpmn2UseCase.Bpmn2UseCasePackage#getFN2S()
  * @model
  * @generated
  */
@@ -40,14 +40,14 @@ public interface FN2S extends EObject, AbstractCorrespondence {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source</em>' reference.
 	 * @see #setSource(FlowNode)
-	 * @see Bpmn2UseCase.Bpmn2UseCasePackage#getFN2S_Source()
+	 * @see bpmn2UseCase.Bpmn2UseCasePackage#getFN2S_Source()
 	 * @model required="true"
 	 * @generated
 	 */
 	FlowNode getSource();
 
 	/**
-	 * Sets the value of the '{@link Bpmn2UseCase.FN2S#getSource <em>Source</em>}' reference.
+	 * Sets the value of the '{@link bpmn2UseCase.FN2S#getSource <em>Source</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Source</em>' reference.
@@ -66,14 +66,14 @@ public interface FN2S extends EObject, AbstractCorrespondence {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target</em>' reference.
 	 * @see #setTarget(Step)
-	 * @see Bpmn2UseCase.Bpmn2UseCasePackage#getFN2S_Target()
+	 * @see bpmn2UseCase.Bpmn2UseCasePackage#getFN2S_Target()
 	 * @model required="true"
 	 * @generated
 	 */
 	Step getTarget();
 
 	/**
-	 * Sets the value of the '{@link Bpmn2UseCase.FN2S#getTarget <em>Target</em>}' reference.
+	 * Sets the value of the '{@link bpmn2UseCase.FN2S#getTarget <em>Target</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Target</em>' reference.

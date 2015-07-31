@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="ASCII"?>
 <TGGRuntime:PrecedenceStructure xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TGGRuntime="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore">
-  <tripleMatches children="//@tripleMatches.1" ruleName="Process2UseCase">
+  <tripleMatches children="//@tripleMatches.2 //@tripleMatches.5 //@tripleMatches.1 //@tripleMatches.7 //@tripleMatches.6 //@tripleMatches.3 //@tripleMatches.4" ruleName="Process2UseCase" number="22">
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#se1"/>
     <sourceElements href="#//@tripleMatches.0/@containedEdges.7"/>
-    <sourceElements href="../bpmn/Empty.xmi#Empty"/>
-    <sourceElements href="../bpmn/Empty.xmi#se1"/>
     <nodeMappings nodeName="_p2uc">
       <node href="../corr/ParallelConvTask.xmi#//@correspondences.0"/>
     </nodeMappings>
     <nodeMappings nodeName="process">
-      <node href="../bpmn/Empty.xmi#Empty"/>
+      <node href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
     </nodeMappings>
     <nodeMappings nodeName="useCase">
-      <node href="../usecase/ParallelConvTask.xmi#Empty"/>
+      <node href="../usecase/ParallelConvTask.xmi#ParallelConvTask"/>
     </nodeMappings>
     <nodeMappings nodeName="s2f">
       <node href="../corr/ParallelConvTask.xmi#//@correspondences.1"/>
     </nodeMappings>
     <nodeMappings nodeName="start">
-      <node href="../bpmn/Empty.xmi#se1"/>
+      <node href="../bpmn/ParallelConvTask.xmi#se1"/>
     </nodeMappings>
     <nodeMappings nodeName="cond">
       <node href="../usecase/ParallelConvTask.xmi#//@precondition"/>
@@ -25,187 +25,1367 @@
     <nodeMappings nodeName="flow">
       <node href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
     </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.1"/>
+      <trg href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.0"/>
+      <trg href="../usecase/ParallelConvTask.xmi#ParallelConvTask"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.0"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+    </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="precondition">
-      <src href="../usecase/ParallelConvTask.xmi#Empty"/>
+      <src href="../usecase/ParallelConvTask.xmi#ParallelConvTask"/>
       <trg href="../usecase/ParallelConvTask.xmi#//@precondition"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
-      <src href="../corr/ParallelConvTask.xmi#//@correspondences.1"/>
-      <trg href="../bpmn/Empty.xmi#se1"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
-      <src href="../corr/ParallelConvTask.xmi#//@correspondences.1"/>
-      <trg href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
-      <src href="../corr/ParallelConvTask.xmi#//@correspondences.0"/>
-      <trg href="../bpmn/Empty.xmi#Empty"/>
-    </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
-      <src href="../usecase/ParallelConvTask.xmi#Empty"/>
+      <src href="../usecase/ParallelConvTask.xmi#ParallelConvTask"/>
       <trg href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
-      <src href="../bpmn/Empty.xmi#Empty"/>
-      <trg href="../bpmn/Empty.xmi#se1"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
-      <src href="../corr/ParallelConvTask.xmi#//@correspondences.0"/>
-      <trg href="../usecase/ParallelConvTask.xmi#Empty"/>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#se1"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
-      <src href="../bpmn/Empty.xmi#Empty"/>
-      <trg href="../bpmn/Empty.xmi#se1"/>
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#se1"/>
     </containedEdges>
-    <targetElements href="#//@tripleMatches.0/@containedEdges.0"/>
-    <targetElements href="#//@tripleMatches.0/@containedEdges.4"/>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#se1"/>
+    </containedEdges>
     <targetElements href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
-    <targetElements href="../usecase/ParallelConvTask.xmi#Empty"/>
+    <targetElements href="#//@tripleMatches.0/@containedEdges.3"/>
     <targetElements href="../usecase/ParallelConvTask.xmi#//@precondition"/>
+    <targetElements href="../usecase/ParallelConvTask.xmi#ParallelConvTask"/>
+    <targetElements href="#//@tripleMatches.0/@containedEdges.4"/>
     <correspondenceElements href="../corr/ParallelConvTask.xmi#//@correspondences.1"/>
-    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.1"/>
     <correspondenceElements href="#//@tripleMatches.0/@containedEdges.2"/>
+    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.0"/>
     <correspondenceElements href="../corr/ParallelConvTask.xmi#//@correspondences.0"/>
-    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.6"/>
-    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.3"/>
-    <createdElements href="#//@tripleMatches.0/@containedEdges.0"/>
-    <createdElements href="#//@tripleMatches.0/@containedEdges.1"/>
-    <createdElements href="#//@tripleMatches.0/@containedEdges.2"/>
-    <createdElements href="../corr/ParallelConvTask.xmi#//@correspondences.0"/>
+    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.1"/>
+    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.5"/>
     <createdElements href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
-    <createdElements href="../usecase/ParallelConvTask.xmi#Empty"/>
-    <createdElements href="../usecase/ParallelConvTask.xmi#//@precondition"/>
-    <createdElements href="#//@tripleMatches.0/@containedEdges.3"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.0"/>
+    <createdElements href="../usecase/ParallelConvTask.xmi#ParallelConvTask"/>
+    <createdElements href="../bpmn/ParallelConvTask.xmi#se1"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.1"/>
+    <createdElements href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
     <createdElements href="../corr/ParallelConvTask.xmi#//@correspondences.1"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.2"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.3"/>
+    <createdElements href="../usecase/ParallelConvTask.xmi#//@precondition"/>
     <createdElements href="#//@tripleMatches.0/@containedEdges.4"/>
+    <createdElements href="../corr/ParallelConvTask.xmi#//@correspondences.0"/>
     <createdElements href="#//@tripleMatches.0/@containedEdges.5"/>
     <createdElements href="#//@tripleMatches.0/@containedEdges.6"/>
-    <createdElements href="../bpmn/Empty.xmi#Empty"/>
-    <createdElements href="../bpmn/Empty.xmi#se1"/>
   </tripleMatches>
-  <tripleMatches ruleName="EndEvent2FinalStateFirst" number="1">
-    <sourceElements href="#//@tripleMatches.1/@containedEdges.10"/>
-    <sourceElements href="#//@tripleMatches.1/@containedEdges.11"/>
-    <sourceElements href="#//@tripleMatches.1/@containedEdges.12"/>
-    <sourceElements href="#//@tripleMatches.1/@containedEdges.13"/>
-    <sourceElements href="#//@tripleMatches.1/@containedEdges.14"/>
-    <sourceElements href="#//@tripleMatches.1/@containedEdges.15"/>
+  <tripleMatches children="//@tripleMatches.2 //@tripleMatches.5 //@tripleMatches.6 //@tripleMatches.3 //@tripleMatches.4" ruleName="SplitFirst" number="23">
     <sourceElements href="#//@tripleMatches.1/@containedEdges.16"/>
-    <sourceElements href="../bpmn/Empty.xmi#Empty"/>
-    <sourceElements href="../bpmn/Empty.xmi#sf1"/>
-    <sourceElements href="../bpmn/Empty.xmi#ee1"/>
-    <sourceElements href="../bpmn/Empty.xmi#se1"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.17"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.18"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.19"/>
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#se1"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.20"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.21"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.22"/>
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.23"/>
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#sf1"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.24"/>
+    <contextElements href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
     <contextElements href="../corr/ParallelConvTask.xmi#//@correspondences.1"/>
+    <contextElements href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
     <contextElements href="#//@tripleMatches.1/@containedEdges.0"/>
+    <contextElements href="../bpmn/ParallelConvTask.xmi#se1"/>
     <contextElements href="#//@tripleMatches.1/@containedEdges.1"/>
     <contextElements href="#//@tripleMatches.1/@containedEdges.2"/>
-    <contextElements href="../bpmn/Empty.xmi#Empty"/>
-    <contextElements href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
-    <contextElements href="../bpmn/Empty.xmi#se1"/>
+    <nodeMappings nodeName="pgw">
+      <node href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pnToFlow">
+      <node href="../corr/ParallelConvTask.xmi#//@correspondences.1"/>
+    </nodeMappings>
     <nodeMappings nodeName="prevNode">
-      <node href="../bpmn/Empty.xmi#se1"/>
+      <node href="../bpmn/ParallelConvTask.xmi#se1"/>
     </nodeMappings>
     <nodeMappings nodeName="process">
-      <node href="../bpmn/Empty.xmi#Empty"/>
+      <node href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
     </nodeMappings>
-    <nodeMappings nodeName="pn2f">
-      <node href="../corr/ParallelConvTask.xmi#//@correspondences.1"/>
+    <nodeMappings nodeName="pcgw">
+      <node href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="step">
+      <node href="../usecase/ParallelConvTask.xmi#pg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pcgwToStep">
+      <node href="../corr/ParallelConvTask.xmi#//@correspondences.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="flow">
+      <node href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pgwToStep">
+      <node href="../corr/ParallelConvTask.xmi#//@correspondences.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="sf1">
+      <node href="../bpmn/ParallelConvTask.xmi#sf1"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.1"/>
+      <trg href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#se1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#se1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.3"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/ParallelConvTask.xmi#pg1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../bpmn/ParallelConvTask.xmi#sf1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.2"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.2"/>
+      <trg href="../usecase/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../bpmn/ParallelConvTask.xmi#se1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../bpmn/ParallelConvTask.xmi#sf1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#se1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.3"/>
+      <trg href="../usecase/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__conv">
+      <src href="../bpmn/ParallelConvTask.xmi#pg1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
+      <trg href="../usecase/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/ParallelConvTask.xmi#pg1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../bpmn/ParallelConvTask.xmi#sf1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../bpmn/ParallelConvTask.xmi#se1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../bpmn/ParallelConvTask.xmi#sf1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#se1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__conv">
+      <src href="../bpmn/ParallelConvTask.xmi#pg1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#se1"/>
+    </containedEdges>
+    <targetElements href="../usecase/ParallelConvTask.xmi#pg1"/>
+    <targetElements href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
+    <targetElements href="#//@tripleMatches.1/@containedEdges.15"/>
+    <correspondenceElements href="../corr/ParallelConvTask.xmi#//@correspondences.1"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.4"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.13"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.0"/>
+    <correspondenceElements href="../corr/ParallelConvTask.xmi#//@correspondences.2"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.7"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.8"/>
+    <correspondenceElements href="../corr/ParallelConvTask.xmi#//@correspondences.3"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.1"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.3"/>
+    <createdElements href="../usecase/ParallelConvTask.xmi#pg1"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.5"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.6"/>
+    <createdElements href="../corr/ParallelConvTask.xmi#//@correspondences.2"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.7"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.8"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.9"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.10"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.11"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.12"/>
+    <createdElements href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.13"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.14"/>
+    <createdElements href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.15"/>
+    <createdElements href="../corr/ParallelConvTask.xmi#//@correspondences.3"/>
+    <createdElements href="../bpmn/ParallelConvTask.xmi#sf1"/>
+  </tripleMatches>
+  <tripleMatches children="//@tripleMatches.3" ruleName="Task2StepAfterSplit" number="24">
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#sf2"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.18"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.19"/>
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.20"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.21"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.22"/>
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#t1"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.23"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.24"/>
+    <contextElements href="../usecase/ParallelConvTask.xmi#pg1"/>
+    <contextElements href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.0"/>
+    <contextElements href="../usecase/ParallelConvTask.xmi#ParallelConvTask"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.1"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.2"/>
+    <contextElements href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.3"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.4"/>
+    <contextElements href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.5"/>
+    <contextElements href="../corr/ParallelConvTask.xmi#//@correspondences.0"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.6"/>
+    <contextElements href="../corr/ParallelConvTask.xmi#//@correspondences.3"/>
+    <nodeMappings nodeName="prevNode">
+      <node href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="process">
+      <node href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+    </nodeMappings>
+    <nodeMappings nodeName="useCase">
+      <node href="../usecase/ParallelConvTask.xmi#ParallelConvTask"/>
+    </nodeMappings>
+    <nodeMappings nodeName="p2uc">
+      <node href="../corr/ParallelConvTask.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="task">
+      <node href="../bpmn/ParallelConvTask.xmi#t1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pgw2ps">
+      <node href="../corr/ParallelConvTask.xmi#//@correspondences.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pflow">
+      <node href="../usecase/ParallelConvTask.xmi#sf2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="t2s">
+      <node href="../corr/ParallelConvTask.xmi#//@correspondences.4"/>
+    </nodeMappings>
+    <nodeMappings nodeName="step">
+      <node href="../usecase/ParallelConvTask.xmi#t1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pstep">
+      <node href="../usecase/ParallelConvTask.xmi#pg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="flow">
+      <node href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="sf1">
+      <node href="../bpmn/ParallelConvTask.xmi#sf2"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.3"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.0"/>
+      <trg href="../usecase/ParallelConvTask.xmi#ParallelConvTask"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.0"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.3"/>
+      <trg href="../usecase/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
+      <src href="../usecase/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
+      <trg href="../usecase/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
+      <src href="../usecase/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../usecase/ParallelConvTask.xmi#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/ParallelConvTask.xmi#t1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../usecase/ParallelConvTask.xmi#sf2"/>
+      <trg href="../usecase/ParallelConvTask.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="invokedFlows">
+      <src href="../usecase/ParallelConvTask.xmi#pg1"/>
+      <trg href="../usecase/ParallelConvTask.xmi#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../bpmn/ParallelConvTask.xmi#pg1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.4"/>
+      <trg href="../usecase/ParallelConvTask.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.4"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../bpmn/ParallelConvTask.xmi#sf2"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../bpmn/ParallelConvTask.xmi#sf2"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/ParallelConvTask.xmi#t1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../bpmn/ParallelConvTask.xmi#pg1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../bpmn/ParallelConvTask.xmi#sf2"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../bpmn/ParallelConvTask.xmi#sf2"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t1"/>
+    </containedEdges>
+    <targetElements href="../usecase/ParallelConvTask.xmi#pg1"/>
+    <targetElements href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
+    <targetElements href="../usecase/ParallelConvTask.xmi#sf2"/>
+    <targetElements href="../usecase/ParallelConvTask.xmi#ParallelConvTask"/>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.8"/>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.12"/>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.5"/>
+    <targetElements href="../usecase/ParallelConvTask.xmi#t1"/>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.11"/>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.6"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.0"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.3"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.4"/>
+    <correspondenceElements href="../corr/ParallelConvTask.xmi#//@correspondences.4"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.14"/>
+    <correspondenceElements href="../corr/ParallelConvTask.xmi#//@correspondences.0"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.15"/>
+    <correspondenceElements href="../corr/ParallelConvTask.xmi#//@correspondences.3"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.2"/>
+    <createdElements href="../usecase/ParallelConvTask.xmi#sf2"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.7"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.8"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.9"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.10"/>
+    <createdElements href="../usecase/ParallelConvTask.xmi#t1"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.11"/>
+    <createdElements href="../bpmn/ParallelConvTask.xmi#sf2"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.12"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.13"/>
+    <createdElements href="../corr/ParallelConvTask.xmi#//@correspondences.4"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.14"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.15"/>
+    <createdElements href="../bpmn/ParallelConvTask.xmi#t1"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.16"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.17"/>
+  </tripleMatches>
+  <tripleMatches ruleName="LastStepInPFlow" number="25">
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.19"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.20"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.21"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.22"/>
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.23"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.24"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.25"/>
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.26"/>
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#sf4"/>
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#t1"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.27"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.0"/>
+    <contextElements href="../usecase/ParallelConvTask.xmi#pg1"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.1"/>
+    <contextElements href="../usecase/ParallelConvTask.xmi#sf2"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.2"/>
+    <contextElements href="../usecase/ParallelConvTask.xmi#ParallelConvTask"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.3"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.4"/>
+    <contextElements href="../usecase/ParallelConvTask.xmi#t1"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.5"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.6"/>
+    <contextElements href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.7"/>
+    <contextElements href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.8"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.9"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.10"/>
+    <contextElements href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    <contextElements href="../corr/ParallelConvTask.xmi#//@correspondences.4"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.11"/>
+    <contextElements href="../corr/ParallelConvTask.xmi#//@correspondences.0"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.12"/>
+    <contextElements href="../bpmn/ParallelConvTask.xmi#t1"/>
+    <contextElements href="../corr/ParallelConvTask.xmi#//@correspondences.3"/>
+    <nodeMappings nodeName="gw">
+      <node href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="node">
+      <node href="../bpmn/ParallelConvTask.xmi#t1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="process">
+      <node href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+    </nodeMappings>
+    <nodeMappings nodeName="useCase">
+      <node href="../usecase/ParallelConvTask.xmi#ParallelConvTask"/>
+    </nodeMappings>
+    <nodeMappings nodeName="sf">
+      <node href="../bpmn/ParallelConvTask.xmi#sf4"/>
+    </nodeMappings>
+    <nodeMappings nodeName="p2uc">
+      <node href="../corr/ParallelConvTask.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="gcw">
+      <node href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="step">
+      <node href="../usecase/ParallelConvTask.xmi#t1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="gwStep">
+      <node href="../usecase/ParallelConvTask.xmi#pg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="gw2gs">
+      <node href="../corr/ParallelConvTask.xmi#//@correspondences.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="flow">
+      <node href="../usecase/ParallelConvTask.xmi#sf2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="n2s">
+      <node href="../corr/ParallelConvTask.xmi#//@correspondences.4"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.3"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
+      <src href="../usecase/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../usecase/ParallelConvTask.xmi#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../usecase/ParallelConvTask.xmi#sf2"/>
+      <trg href="../usecase/ParallelConvTask.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.0"/>
+      <trg href="../usecase/ParallelConvTask.xmi#ParallelConvTask"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.0"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.3"/>
+      <trg href="../usecase/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="invokedFlows">
+      <src href="../usecase/ParallelConvTask.xmi#pg1"/>
+      <trg href="../usecase/ParallelConvTask.xmi#sf2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__conv">
+      <src href="../bpmn/ParallelConvTask.xmi#pg1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.4"/>
+      <trg href="../usecase/ParallelConvTask.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.4"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../bpmn/ParallelConvTask.xmi#t1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf4"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__last">
+      <src href="../usecase/ParallelConvTask.xmi#sf2"/>
+      <trg href="../usecase/ParallelConvTask.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../bpmn/ParallelConvTask.xmi#sf4"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../bpmn/ParallelConvTask.xmi#sf4"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf4"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf4"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../bpmn/ParallelConvTask.xmi#sf4"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../bpmn/ParallelConvTask.xmi#t1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf4"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../bpmn/ParallelConvTask.xmi#sf4"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__conv">
+      <src href="../bpmn/ParallelConvTask.xmi#pg1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf4"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf4"/>
+    </containedEdges>
+    <targetElements href="../usecase/ParallelConvTask.xmi#pg1"/>
+    <targetElements href="../usecase/ParallelConvTask.xmi#sf2"/>
+    <targetElements href="#//@tripleMatches.3/@containedEdges.14"/>
+    <targetElements href="../usecase/ParallelConvTask.xmi#ParallelConvTask"/>
+    <targetElements href="#//@tripleMatches.3/@containedEdges.3"/>
+    <targetElements href="#//@tripleMatches.3/@containedEdges.9"/>
+    <targetElements href="../usecase/ParallelConvTask.xmi#t1"/>
+    <targetElements href="#//@tripleMatches.3/@containedEdges.5"/>
+    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.1"/>
+    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.7"/>
+    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.8"/>
+    <correspondenceElements href="../corr/ParallelConvTask.xmi#//@correspondences.4"/>
+    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.11"/>
+    <correspondenceElements href="../corr/ParallelConvTask.xmi#//@correspondences.0"/>
+    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.12"/>
+    <correspondenceElements href="../corr/ParallelConvTask.xmi#//@correspondences.3"/>
+    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.6"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.13"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.14"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.15"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.16"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.17"/>
+    <createdElements href="../bpmn/ParallelConvTask.xmi#sf4"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.18"/>
+  </tripleMatches>
+  <tripleMatches children="//@tripleMatches.5" ruleName="Task2StepAfterSplit" number="26">
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.18"/>
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#sf3"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.19"/>
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#t2"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.20"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.21"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.22"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.23"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.24"/>
+    <contextElements href="../usecase/ParallelConvTask.xmi#pg1"/>
+    <contextElements href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.0"/>
+    <contextElements href="../usecase/ParallelConvTask.xmi#ParallelConvTask"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.1"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.2"/>
+    <contextElements href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.3"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.4"/>
+    <contextElements href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.5"/>
+    <contextElements href="../corr/ParallelConvTask.xmi#//@correspondences.0"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.6"/>
+    <contextElements href="../corr/ParallelConvTask.xmi#//@correspondences.3"/>
+    <nodeMappings nodeName="prevNode">
+      <node href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="process">
+      <node href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+    </nodeMappings>
+    <nodeMappings nodeName="useCase">
+      <node href="../usecase/ParallelConvTask.xmi#ParallelConvTask"/>
+    </nodeMappings>
+    <nodeMappings nodeName="p2uc">
+      <node href="../corr/ParallelConvTask.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="task">
+      <node href="../bpmn/ParallelConvTask.xmi#t2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pgw2ps">
+      <node href="../corr/ParallelConvTask.xmi#//@correspondences.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pflow">
+      <node href="../usecase/ParallelConvTask.xmi#sf3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="t2s">
+      <node href="../corr/ParallelConvTask.xmi#//@correspondences.5"/>
+    </nodeMappings>
+    <nodeMappings nodeName="step">
+      <node href="../usecase/ParallelConvTask.xmi#t2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pstep">
+      <node href="../usecase/ParallelConvTask.xmi#pg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="flow">
+      <node href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="sf1">
+      <node href="../bpmn/ParallelConvTask.xmi#sf3"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.3"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.0"/>
+      <trg href="../usecase/ParallelConvTask.xmi#ParallelConvTask"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.0"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.3"/>
+      <trg href="../usecase/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
+      <src href="../usecase/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
+      <trg href="../usecase/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
+      <src href="../usecase/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../usecase/ParallelConvTask.xmi#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.5"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../bpmn/ParallelConvTask.xmi#pg1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../bpmn/ParallelConvTask.xmi#sf3"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../usecase/ParallelConvTask.xmi#sf3"/>
+      <trg href="../usecase/ParallelConvTask.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.5"/>
+      <trg href="../usecase/ParallelConvTask.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../bpmn/ParallelConvTask.xmi#sf3"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="invokedFlows">
+      <src href="../usecase/ParallelConvTask.xmi#pg1"/>
+      <trg href="../usecase/ParallelConvTask.xmi#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/ParallelConvTask.xmi#t2"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../bpmn/ParallelConvTask.xmi#sf3"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../bpmn/ParallelConvTask.xmi#pg1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/ParallelConvTask.xmi#t2"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../bpmn/ParallelConvTask.xmi#sf3"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t2"/>
+    </containedEdges>
+    <targetElements href="../usecase/ParallelConvTask.xmi#t2"/>
+    <targetElements href="#//@tripleMatches.4/@containedEdges.12"/>
+    <targetElements href="../usecase/ParallelConvTask.xmi#pg1"/>
+    <targetElements href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
+    <targetElements href="../usecase/ParallelConvTask.xmi#sf3"/>
+    <targetElements href="../usecase/ParallelConvTask.xmi#ParallelConvTask"/>
+    <targetElements href="#//@tripleMatches.4/@containedEdges.7"/>
+    <targetElements href="#//@tripleMatches.4/@containedEdges.15"/>
+    <targetElements href="#//@tripleMatches.4/@containedEdges.5"/>
+    <targetElements href="#//@tripleMatches.4/@containedEdges.6"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.0"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.3"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.13"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.4"/>
+    <correspondenceElements href="../corr/ParallelConvTask.xmi#//@correspondences.5"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.8"/>
+    <correspondenceElements href="../corr/ParallelConvTask.xmi#//@correspondences.0"/>
+    <correspondenceElements href="../corr/ParallelConvTask.xmi#//@correspondences.3"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.2"/>
+    <createdElements href="../usecase/ParallelConvTask.xmi#sf3"/>
+    <createdElements href="../bpmn/ParallelConvTask.xmi#sf3"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.7"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.8"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.9"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.10"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.11"/>
+    <createdElements href="../usecase/ParallelConvTask.xmi#t2"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.12"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.13"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.14"/>
+    <createdElements href="../corr/ParallelConvTask.xmi#//@correspondences.5"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.15"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.16"/>
+    <createdElements href="../bpmn/ParallelConvTask.xmi#t2"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.17"/>
+  </tripleMatches>
+  <tripleMatches ruleName="LastStepInPFlow" number="27">
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.19"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.20"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.21"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.22"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.23"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.24"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.25"/>
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#sf5"/>
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.26"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.27"/>
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#t2"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.0"/>
+    <contextElements href="../usecase/ParallelConvTask.xmi#pg1"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.1"/>
+    <contextElements href="../usecase/ParallelConvTask.xmi#sf3"/>
+    <contextElements href="../usecase/ParallelConvTask.xmi#ParallelConvTask"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.2"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.3"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.4"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.5"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.6"/>
+    <contextElements href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+    <contextElements href="../usecase/ParallelConvTask.xmi#t2"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.7"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.8"/>
+    <contextElements href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.9"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.10"/>
+    <contextElements href="../corr/ParallelConvTask.xmi#//@correspondences.5"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.11"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.12"/>
+    <contextElements href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    <contextElements href="../corr/ParallelConvTask.xmi#//@correspondences.0"/>
+    <contextElements href="../bpmn/ParallelConvTask.xmi#t2"/>
+    <contextElements href="../corr/ParallelConvTask.xmi#//@correspondences.3"/>
+    <nodeMappings nodeName="gw">
+      <node href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="node">
+      <node href="../bpmn/ParallelConvTask.xmi#t2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="process">
+      <node href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+    </nodeMappings>
+    <nodeMappings nodeName="useCase">
+      <node href="../usecase/ParallelConvTask.xmi#ParallelConvTask"/>
+    </nodeMappings>
+    <nodeMappings nodeName="sf">
+      <node href="../bpmn/ParallelConvTask.xmi#sf5"/>
+    </nodeMappings>
+    <nodeMappings nodeName="p2uc">
+      <node href="../corr/ParallelConvTask.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="gcw">
+      <node href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="step">
+      <node href="../usecase/ParallelConvTask.xmi#t2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="gwStep">
+      <node href="../usecase/ParallelConvTask.xmi#pg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="gw2gs">
+      <node href="../corr/ParallelConvTask.xmi#//@correspondences.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="flow">
+      <node href="../usecase/ParallelConvTask.xmi#sf3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="n2s">
+      <node href="../corr/ParallelConvTask.xmi#//@correspondences.5"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.3"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.5"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flows">
+      <src href="../usecase/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../usecase/ParallelConvTask.xmi#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.0"/>
+      <trg href="../usecase/ParallelConvTask.xmi#ParallelConvTask"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../usecase/ParallelConvTask.xmi#sf3"/>
+      <trg href="../usecase/ParallelConvTask.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.0"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.5"/>
+      <trg href="../usecase/ParallelConvTask.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.3"/>
+      <trg href="../usecase/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="invokedFlows">
+      <src href="../usecase/ParallelConvTask.xmi#pg1"/>
+      <trg href="../usecase/ParallelConvTask.xmi#sf3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__conv">
+      <src href="../bpmn/ParallelConvTask.xmi#pg1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__last">
+      <src href="../usecase/ParallelConvTask.xmi#sf3"/>
+      <trg href="../usecase/ParallelConvTask.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../bpmn/ParallelConvTask.xmi#sf5"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf5"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf5"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../bpmn/ParallelConvTask.xmi#sf5"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../bpmn/ParallelConvTask.xmi#t2"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf5"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../bpmn/ParallelConvTask.xmi#sf5"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf5"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf5"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../bpmn/ParallelConvTask.xmi#t2"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf5"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t2"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__conv">
+      <src href="../bpmn/ParallelConvTask.xmi#pg1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../bpmn/ParallelConvTask.xmi#sf5"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t2"/>
+    </containedEdges>
+    <targetElements href="../usecase/ParallelConvTask.xmi#t2"/>
+    <targetElements href="#//@tripleMatches.5/@containedEdges.13"/>
+    <targetElements href="#//@tripleMatches.5/@containedEdges.7"/>
+    <targetElements href="../usecase/ParallelConvTask.xmi#pg1"/>
+    <targetElements href="../usecase/ParallelConvTask.xmi#sf3"/>
+    <targetElements href="../usecase/ParallelConvTask.xmi#ParallelConvTask"/>
+    <targetElements href="#//@tripleMatches.5/@containedEdges.3"/>
+    <targetElements href="#//@tripleMatches.5/@containedEdges.11"/>
+    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.1"/>
+    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.8"/>
+    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.9"/>
+    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.10"/>
+    <correspondenceElements href="../corr/ParallelConvTask.xmi#//@correspondences.5"/>
+    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.2"/>
+    <correspondenceElements href="../corr/ParallelConvTask.xmi#//@correspondences.0"/>
+    <correspondenceElements href="../corr/ParallelConvTask.xmi#//@correspondences.3"/>
+    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.5"/>
+    <createdElements href="../bpmn/ParallelConvTask.xmi#sf5"/>
+    <createdElements href="#//@tripleMatches.5/@containedEdges.13"/>
+    <createdElements href="#//@tripleMatches.5/@containedEdges.14"/>
+    <createdElements href="#//@tripleMatches.5/@containedEdges.15"/>
+    <createdElements href="#//@tripleMatches.5/@containedEdges.16"/>
+    <createdElements href="#//@tripleMatches.5/@containedEdges.17"/>
+    <createdElements href="#//@tripleMatches.5/@containedEdges.18"/>
+  </tripleMatches>
+  <tripleMatches children="//@tripleMatches.7" ruleName="Task2StepSeq" number="28">
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.14"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.15"/>
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#sf6"/>
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#t3"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.16"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.17"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.18"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.19"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.20"/>
+    <contextElements href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+    <contextElements href="#//@tripleMatches.6/@containedEdges.0"/>
+    <contextElements href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
+    <contextElements href="../usecase/ParallelConvTask.xmi#pg1"/>
+    <contextElements href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    <contextElements href="../corr/ParallelConvTask.xmi#//@correspondences.2"/>
+    <contextElements href="#//@tripleMatches.6/@containedEdges.1"/>
+    <contextElements href="#//@tripleMatches.6/@containedEdges.2"/>
+    <contextElements href="#//@tripleMatches.6/@containedEdges.3"/>
+    <nodeMappings nodeName="prevNode">
+      <node href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="process">
+      <node href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+    </nodeMappings>
+    <nodeMappings nodeName="task">
+      <node href="../bpmn/ParallelConvTask.xmi#t3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="t2s">
+      <node href="../corr/ParallelConvTask.xmi#//@correspondences.6"/>
+    </nodeMappings>
+    <nodeMappings nodeName="prevStep">
+      <node href="../usecase/ParallelConvTask.xmi#pg1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="pn2ps">
+      <node href="../corr/ParallelConvTask.xmi#//@correspondences.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="step">
+      <node href="../usecase/ParallelConvTask.xmi#t3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="flow">
+      <node href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="sf1">
+      <node href="../bpmn/ParallelConvTask.xmi#sf6"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.2"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.2"/>
+      <trg href="../usecase/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
+      <trg href="../usecase/ParallelConvTask.xmi#pg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf6"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.6"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf6"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/ParallelConvTask.xmi#t3"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf6"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
+      <trg href="../usecase/ParallelConvTask.xmi#t3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../bpmn/ParallelConvTask.xmi#sf6"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.6"/>
+      <trg href="../usecase/ParallelConvTask.xmi#t3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../bpmn/ParallelConvTask.xmi#sf6"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="next">
+      <src href="../usecase/ParallelConvTask.xmi#pg1"/>
+      <trg href="../usecase/ParallelConvTask.xmi#t3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf6"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf6"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../bpmn/ParallelConvTask.xmi#sf6"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#pcg1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/ParallelConvTask.xmi#t3"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf6"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
+      <src href="../bpmn/ParallelConvTask.xmi#sf6"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t3"/>
+    </containedEdges>
+    <targetElements href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
+    <targetElements href="../usecase/ParallelConvTask.xmi#pg1"/>
+    <targetElements href="../usecase/ParallelConvTask.xmi#t3"/>
+    <targetElements href="#//@tripleMatches.6/@containedEdges.8"/>
+    <targetElements href="#//@tripleMatches.6/@containedEdges.12"/>
+    <targetElements href="#//@tripleMatches.6/@containedEdges.3"/>
+    <correspondenceElements href="#//@tripleMatches.6/@containedEdges.5"/>
+    <correspondenceElements href="#//@tripleMatches.6/@containedEdges.10"/>
+    <correspondenceElements href="../corr/ParallelConvTask.xmi#//@correspondences.2"/>
+    <correspondenceElements href="#//@tripleMatches.6/@containedEdges.1"/>
+    <correspondenceElements href="../corr/ParallelConvTask.xmi#//@correspondences.6"/>
+    <correspondenceElements href="#//@tripleMatches.6/@containedEdges.2"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.5"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.6"/>
+    <createdElements href="../usecase/ParallelConvTask.xmi#t3"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.7"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.8"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.9"/>
+    <createdElements href="../bpmn/ParallelConvTask.xmi#sf6"/>
+    <createdElements href="../bpmn/ParallelConvTask.xmi#t3"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.10"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.11"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.12"/>
+    <createdElements href="../corr/ParallelConvTask.xmi#//@correspondences.6"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.13"/>
+  </tripleMatches>
+  <tripleMatches ruleName="TerminationSeq" number="29">
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#sf7"/>
+    <sourceElements href="#//@tripleMatches.7/@containedEdges.12"/>
+    <sourceElements href="#//@tripleMatches.7/@containedEdges.13"/>
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#t3"/>
+    <sourceElements href="#//@tripleMatches.7/@containedEdges.14"/>
+    <sourceElements href="#//@tripleMatches.7/@containedEdges.15"/>
+    <sourceElements href="#//@tripleMatches.7/@containedEdges.16"/>
+    <sourceElements href="#//@tripleMatches.7/@containedEdges.17"/>
+    <sourceElements href="../bpmn/ParallelConvTask.xmi#ee1"/>
+    <sourceElements href="#//@tripleMatches.7/@containedEdges.18"/>
+    <contextElements href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+    <contextElements href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
+    <contextElements href="../bpmn/ParallelConvTask.xmi#t3"/>
+    <contextElements href="#//@tripleMatches.7/@containedEdges.0"/>
+    <contextElements href="../usecase/ParallelConvTask.xmi#t3"/>
+    <contextElements href="#//@tripleMatches.7/@containedEdges.1"/>
+    <contextElements href="#//@tripleMatches.7/@containedEdges.2"/>
+    <contextElements href="../corr/ParallelConvTask.xmi#//@correspondences.6"/>
+    <contextElements href="#//@tripleMatches.7/@containedEdges.3"/>
+    <nodeMappings nodeName="lastStep">
+      <node href="../usecase/ParallelConvTask.xmi#t3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="prevNode">
+      <node href="../bpmn/ParallelConvTask.xmi#t3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="process">
+      <node href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
     </nodeMappings>
     <nodeMappings nodeName="state">
       <node href="../usecase/ParallelConvTask.xmi#//@flows.0/@finalState"/>
     </nodeMappings>
+    <nodeMappings nodeName="pn2s">
+      <node href="../corr/ParallelConvTask.xmi#//@correspondences.6"/>
+    </nodeMappings>
     <nodeMappings nodeName="event">
-      <node href="../bpmn/Empty.xmi#ee1"/>
+      <node href="../bpmn/ParallelConvTask.xmi#ee1"/>
     </nodeMappings>
     <nodeMappings nodeName="flow">
       <node href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
     </nodeMappings>
     <nodeMappings nodeName="inFlow">
-      <node href="../bpmn/Empty.xmi#sf1"/>
+      <node href="../bpmn/ParallelConvTask.xmi#sf7"/>
     </nodeMappings>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
-      <src href="../corr/ParallelConvTask.xmi#//@correspondences.1"/>
-      <trg href="../bpmn/Empty.xmi#se1"/>
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.6"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t3"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
-      <src href="../corr/ParallelConvTask.xmi#//@correspondences.1"/>
-      <trg href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
+      <src href="../corr/ParallelConvTask.xmi#//@correspondences.6"/>
+      <trg href="../usecase/ParallelConvTask.xmi#t3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
+      <trg href="../usecase/ParallelConvTask.xmi#t3"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
-      <src href="../bpmn/Empty.xmi#Empty"/>
-      <trg href="../bpmn/Empty.xmi#se1"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
-      <src href="../bpmn/Empty.xmi#Empty"/>
-      <trg href="../bpmn/Empty.xmi#sf1"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
-      <src href="../bpmn/Empty.xmi#ee1"/>
-      <trg href="../bpmn/Empty.xmi#sf1"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
-      <src href="../bpmn/Empty.xmi#sf1"/>
-      <trg href="../bpmn/Empty.xmi#se1"/>
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t3"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
-      <src href="../bpmn/Empty.xmi#sf1"/>
-      <trg href="../bpmn/Empty.xmi#ee1"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
-      <src href="../bpmn/Empty.xmi#Empty"/>
-      <trg href="../bpmn/Empty.xmi#ee1"/>
+      <src href="../bpmn/ParallelConvTask.xmi#sf7"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#ee1"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="finalState">
       <src href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
       <trg href="../usecase/ParallelConvTask.xmi#//@flows.0/@finalState"/>
     </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
-      <src href="../bpmn/Empty.xmi#se1"/>
-      <trg href="../bpmn/Empty.xmi#sf1"/>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf7"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
-      <src href="../bpmn/Empty.xmi#Empty"/>
-      <trg href="../bpmn/Empty.xmi#sf1"/>
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#ee1"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
+      <src href="../bpmn/ParallelConvTask.xmi#t3"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf7"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
-      <src href="../bpmn/Empty.xmi#ee1"/>
-      <trg href="../bpmn/Empty.xmi#sf1"/>
+      <src href="../bpmn/ParallelConvTask.xmi#ee1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf7"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
-      <src href="../bpmn/Empty.xmi#sf1"/>
-      <trg href="../bpmn/Empty.xmi#se1"/>
+      <src href="../bpmn/ParallelConvTask.xmi#sf7"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="__last">
+      <src href="../usecase/ParallelConvTask.xmi#t3"/>
+      <trg href="../usecase/ParallelConvTask.xmi#//@flows.0/@finalState"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="targetRef">
-      <src href="../bpmn/Empty.xmi#sf1"/>
-      <trg href="../bpmn/Empty.xmi#ee1"/>
+      <src href="../bpmn/ParallelConvTask.xmi#sf7"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#ee1"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
-      <src href="../bpmn/Empty.xmi#Empty"/>
-      <trg href="../bpmn/Empty.xmi#ee1"/>
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf7"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
-      <src href="../bpmn/Empty.xmi#Empty"/>
-      <trg href="../bpmn/Empty.xmi#se1"/>
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#ee1"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="outgoing">
-      <src href="../bpmn/Empty.xmi#se1"/>
-      <trg href="../bpmn/Empty.xmi#sf1"/>
+      <src href="../bpmn/ParallelConvTask.xmi#t3"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf7"/>
     </containedEdges>
-    <targetElements href="#//@tripleMatches.1/@containedEdges.8"/>
-    <targetElements href="../usecase/ParallelConvTask.xmi#//@flows.0/@finalState"/>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="incoming">
+      <src href="../bpmn/ParallelConvTask.xmi#ee1"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#sf7"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="sourceRef">
+      <src href="../bpmn/ParallelConvTask.xmi#sf7"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t3"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="flowElements">
+      <src href="../bpmn/ParallelConvTask.xmi#ParallelConvTask"/>
+      <trg href="../bpmn/ParallelConvTask.xmi#t3"/>
+    </containedEdges>
     <targetElements href="../usecase/ParallelConvTask.xmi#//@flows.0"/>
-    <correspondenceElements href="../corr/ParallelConvTask.xmi#//@correspondences.1"/>
-    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.0"/>
-    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.1"/>
-    <createdElements href="#//@tripleMatches.1/@containedEdges.3"/>
-    <createdElements href="#//@tripleMatches.1/@containedEdges.4"/>
-    <createdElements href="#//@tripleMatches.1/@containedEdges.5"/>
-    <createdElements href="#//@tripleMatches.1/@containedEdges.6"/>
-    <createdElements href="#//@tripleMatches.1/@containedEdges.7"/>
-    <createdElements href="#//@tripleMatches.1/@containedEdges.8"/>
-    <createdElements href="#//@tripleMatches.1/@containedEdges.9"/>
+    <targetElements href="#//@tripleMatches.7/@containedEdges.5"/>
+    <targetElements href="../usecase/ParallelConvTask.xmi#//@flows.0/@finalState"/>
+    <targetElements href="../usecase/ParallelConvTask.xmi#t3"/>
+    <targetElements href="#//@tripleMatches.7/@containedEdges.2"/>
+    <targetElements href="#//@tripleMatches.7/@containedEdges.11"/>
+    <correspondenceElements href="#//@tripleMatches.7/@containedEdges.0"/>
+    <correspondenceElements href="#//@tripleMatches.7/@containedEdges.1"/>
+    <correspondenceElements href="../corr/ParallelConvTask.xmi#//@correspondences.6"/>
+    <createdElements href="../bpmn/ParallelConvTask.xmi#sf7"/>
+    <createdElements href="#//@tripleMatches.7/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.7/@containedEdges.5"/>
+    <createdElements href="#//@tripleMatches.7/@containedEdges.6"/>
+    <createdElements href="#//@tripleMatches.7/@containedEdges.7"/>
     <createdElements href="../usecase/ParallelConvTask.xmi#//@flows.0/@finalState"/>
-    <createdElements href="../bpmn/Empty.xmi#sf1"/>
-    <createdElements href="../bpmn/Empty.xmi#ee1"/>
+    <createdElements href="#//@tripleMatches.7/@containedEdges.8"/>
+    <createdElements href="#//@tripleMatches.7/@containedEdges.9"/>
+    <createdElements href="#//@tripleMatches.7/@containedEdges.10"/>
+    <createdElements href="#//@tripleMatches.7/@containedEdges.11"/>
+    <createdElements href="../bpmn/ParallelConvTask.xmi#ee1"/>
   </tripleMatches>
 </TGGRuntime:PrecedenceStructure>

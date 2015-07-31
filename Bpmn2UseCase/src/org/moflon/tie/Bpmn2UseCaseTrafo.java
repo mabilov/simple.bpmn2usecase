@@ -6,7 +6,7 @@ import org.apache.log4j.BasicConfigurator;
 import org.eclipse.emf.ecore.EObject;
 import org.moflon.ide.debug.DebugSynchronizationHelper;
 
-import Bpmn2UseCase.Bpmn2UseCasePackage;
+import bpmn2UseCase.Bpmn2UseCasePackage;
 import SimpleBPMN.Process;
 import SimpleUseCase.UseCase;
 
@@ -25,6 +25,11 @@ public class Bpmn2UseCaseTrafo extends DebugSynchronizationHelper {
 		this.verbose = true;
 	}
 
+	private static void __perform(String direction, String test) {
+		Bpmn2UseCaseTrafo helper = new Bpmn2UseCaseTrafo();
+		helper.perform(direction, test);
+	}
+
 	public static void main(String[] args) throws IOException {
 		// Which test file to transform?
 		String testName = args[0];
@@ -33,33 +38,18 @@ public class Bpmn2UseCaseTrafo extends DebugSynchronizationHelper {
 		String direction = args[1];
 
 		if (testName.equalsIgnoreCase("all")) {
-			Bpmn2UseCaseTrafo helper = new Bpmn2UseCaseTrafo();
-			helper.perform(direction, "Empty");
-
-			helper = new Bpmn2UseCaseTrafo();
-			helper.perform(direction, "Sequence");
-
-			helper = new Bpmn2UseCaseTrafo();
-			helper.perform(direction, "ParallelSplitSynchronization");
-
-			helper = new Bpmn2UseCaseTrafo();
-			helper.perform(direction, "SequenceInParallel");
-
-			helper = new Bpmn2UseCaseTrafo();
-			helper.perform(direction, "ParallelConvTask");
-
-			helper = new Bpmn2UseCaseTrafo();
-			helper.perform(direction, "Recursive1Parallel");
-
-			helper = new Bpmn2UseCaseTrafo();
-			helper.perform(direction, "ChoiceMerge");
-
-			helper = new Bpmn2UseCaseTrafo();
-			helper.perform(direction, "SequenceInAlternative");
-			// helper.perform(direction, "EmptyDefaultFlow");
+			__perform(direction, "Empty");
+			__perform(direction, "Sequence");
+			__perform(direction, "ParallelSplitSynchronization");
+			__perform(direction, "SequenceInParallel");
+			__perform(direction, "ParallelConvTask");
+			__perform(direction, "Recursive1Parallel");
+			__perform(direction, "ChoiceMerge");
+			__perform(direction, "SequenceInAlternative");
+			__perform(direction, "EmptyDefaultFlow");
+			__perform(direction, "TaskAfterMerge");
 		} else {
-			Bpmn2UseCaseTrafo helper = new Bpmn2UseCaseTrafo();
-			helper.perform(direction, testName);
+			__perform(direction, testName);
 		}
 	}
 

@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="ASCII"?>
-<SimpleUseCase:UseCase xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SimpleUseCase="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore" id="Empty">
+<SimpleUseCase:UseCase xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SimpleUseCase="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore" id="SequenceInParallel">
   <flows xsi:type="SimpleUseCase:BasicFlow">
+    <steps xsi:type="SimpleUseCase:ParallelStep" __last="//@flows.0/@finalState" id="pg1" invokedFlows="sf3 sf2"/>
     <finalState name="ee1"/>
+  </flows>
+  <flows xsi:type="SimpleUseCase:ParallelFlow" __last="t4" id="sf3">
+    <steps xsi:type="SimpleUseCase:NormalStep" next="t4" id="t2"/>
+    <steps xsi:type="SimpleUseCase:NormalStep" id="t4"/>
+  </flows>
+  <flows xsi:type="SimpleUseCase:ParallelFlow" __last="t3" id="sf2">
+    <steps xsi:type="SimpleUseCase:NormalStep" next="t3" id="t1"/>
+    <steps xsi:type="SimpleUseCase:NormalStep" id="t3"/>
   </flows>
   <precondition name="se1"/>
 </SimpleUseCase:UseCase>

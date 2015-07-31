@@ -1,6 +1,6 @@
 /**
  */
-package Bpmn2UseCase;
+package bpmn2UseCase;
 
 import org.eclipse.emf.ecore.EFactory;
 
@@ -9,7 +9,7 @@ import org.eclipse.emf.ecore.EFactory;
  * The <b>Factory</b> for the model.
  * It provides a create method for each non-abstract class of the model.
  * <!-- end-user-doc -->
- * @see Bpmn2UseCase.Bpmn2UseCasePackage
+ * @see bpmn2UseCase.Bpmn2UseCasePackage
  * @generated
  */
 public interface Bpmn2UseCaseFactory extends EFactory {
@@ -19,7 +19,7 @@ public interface Bpmn2UseCaseFactory extends EFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	Bpmn2UseCaseFactory eINSTANCE = Bpmn2UseCase.impl.Bpmn2UseCaseFactoryImpl.init();
+	Bpmn2UseCaseFactory eINSTANCE = bpmn2UseCase.impl.Bpmn2UseCaseFactoryImpl.init();
 
 	/**
 	 * Returns a new object of class '<em>P2UC</em>'.

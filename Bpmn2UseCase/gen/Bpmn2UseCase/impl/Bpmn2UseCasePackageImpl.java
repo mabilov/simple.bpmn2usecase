@@ -1,19 +1,19 @@
 /**
  */
-package Bpmn2UseCase.impl;
-
-import Bpmn2UseCase.Bpmn2UseCaseFactory;
-import Bpmn2UseCase.Bpmn2UseCasePackage;
-
-import Bpmn2UseCase.Rules.RulesPackage;
-
-import Bpmn2UseCase.Rules.impl.RulesPackageImpl;
+package bpmn2UseCase.impl;
 
 import SimpleBPMN.SimpleBPMNPackage;
 
 import SimpleUseCase.SimpleUseCasePackage;
 
 import TGGLanguage.TGGLanguagePackage;
+
+import bpmn2UseCase.Bpmn2UseCaseFactory;
+import bpmn2UseCase.Bpmn2UseCasePackage;
+
+import bpmn2UseCase.Rules.RulesPackage;
+
+import bpmn2UseCase.Rules.impl.RulesPackageImpl;
 
 import java.io.IOException;
 
@@ -45,7 +45,7 @@ public class Bpmn2UseCasePackageImpl extends EPackageImpl implements Bpmn2UseCas
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected String packageFilename = "Bpmn2UseCase.ecore";
+	protected String packageFilename = "bpmn2UseCase.ecore";
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,7 +86,7 @@ public class Bpmn2UseCasePackageImpl extends EPackageImpl implements Bpmn2UseCas
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
-	 * @see Bpmn2UseCase.Bpmn2UseCasePackage#eNS_URI
+	 * @see bpmn2UseCase.Bpmn2UseCasePackage#eNS_URI
 	 * @see #init()
 	 * @generated
 	 */
@@ -342,7 +342,7 @@ public class Bpmn2UseCasePackageImpl extends EPackageImpl implements Bpmn2UseCas
 	@Override
 	protected void fixInstanceClass(EClassifier eClassifier) {
 		if (eClassifier.getInstanceClassName() == null) {
-			eClassifier.setInstanceClassName("Bpmn2UseCase." + eClassifier.getName());
+			eClassifier.setInstanceClassName("bpmn2UseCase." + eClassifier.getName());
 			setGeneratedClassName(eClassifier);
 		}
 	}

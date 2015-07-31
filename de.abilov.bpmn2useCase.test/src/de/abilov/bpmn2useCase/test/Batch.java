@@ -6,7 +6,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.moflon.testframework.tgg.IntegratorTest;
 
-import Bpmn2UseCase.Bpmn2UseCasePackage;
+import bpmn2UseCase.Bpmn2UseCasePackage;
 import SimpleBPMN.Process;
 import SimpleBPMN.SimpleBPMNPackage;
 import SimpleUseCase.SimpleUseCasePackage;
