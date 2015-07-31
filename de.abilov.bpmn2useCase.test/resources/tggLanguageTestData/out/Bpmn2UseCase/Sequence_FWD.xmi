@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<SimpleUseCase:UseCase xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SimpleUseCase="platform:/plugin/SimpleUseCase/model/SimpleUseCase.ecore">
-  <flows xsi:type="SimpleUseCase:BasicFlow">
-    <steps xsi:type="SimpleUseCase:NormalStep" next="t2" id="t1"/>
-    <steps xsi:type="SimpleUseCase:NormalStep" __last="//@flows.0/@finalState" id="t2"/>
-    <finalState name="ee1"/>
-  </flows>
-  <precondition name="se1"/>
-</SimpleUseCase:UseCase>
