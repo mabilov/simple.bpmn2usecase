@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.abilov.bpmn/gen" modelPluginID="de.abilov.bpmn"
+    modelName="Bpmn" updateClasspath="false" codeFormatting="true" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" operationReflection="true">
+  <foreignModel>Bpmn.ecore</foreignModel>
+  <genPackages prefix="Bpmn" disposableProviderFactory="true" ecorePackage="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#/">
+    <genClasses ecoreClass="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//Process">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//Process/flowElements"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//Process/id"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//FlowElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//FlowElement/id"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//FlowNode">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//FlowNode/outgoing"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//FlowNode/incoming"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//SequenceFlow">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//SequenceFlow/sourceRef"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//SequenceFlow/targetRef"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//SequenceFlow/conditionExpression"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//Task"/>
+    <genClasses ecoreClass="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//ParallelGateway"/>
+    <genClasses ecoreClass="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//StartEvent"/>
+    <genClasses ecoreClass="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//EndEvent"/>
+    <genClasses image="false" ecoreClass="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//Event"/>
+    <genClasses image="false" ecoreClass="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//Gateway">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//Gateway/__conv"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//Gateway/isDiverging"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//ExclusiveGateway">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//ExclusiveGateway/default"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

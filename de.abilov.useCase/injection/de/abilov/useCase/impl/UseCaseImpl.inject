@@ -1,0 +1,46 @@
+
+partial class UseCaseImpl {
+
+@members <--
+
+	public String export() {
+		StringBuffer sb = new StringBuffer();
+		sb.append("use case ");
+		sb.append(this.getId());
+		if (this.getPrecondition() != null) {
+			sb.append(" precondition ");
+			sb.append(this.getPrecondition().getName());
+		}
+		java.util.Optional<Flow> basicFlowOptional = this.getFlows().stream().filter(f -> f instanceof de.abilov.useCase.BasicFlow).findAny();
+		if (basicFlowOptional.isPresent()) {
+			de.abilov.useCase.BasicFlow bFlow = (de.abilov.useCase.BasicFlow) basicFlowOptional.get();
+			sb.append(" basic flow");
+			sb.append(bFlow.export());
+		}
+
+		java.util.Iterator<de.abilov.useCase.NamedFlow> sortedFlows = this.getFlows().stream().filter(f -> f instanceof de.abilov.useCase.NamedFlow)
+				.map(new java.util.function.Function<de.abilov.useCase.Flow, de.abilov.useCase.NamedFlow>() {
+					@Override
+					public de.abilov.useCase.NamedFlow apply(Flow t) {
+						return (de.abilov.useCase.NamedFlow) t;
+					}
+				}).sorted(new de.abilov.useCase.util.NamedFlowComparator()).iterator();
+
+		while (sortedFlows.hasNext()) {
+			Flow flow = sortedFlows.next();
+			if (flow instanceof de.abilov.useCase.BasicFlow)
+				continue;
+			else if (flow instanceof de.abilov.useCase.ParallelFlow) {
+				sb.append(" parallel flow ");
+				sb.append(flow.export());
+			} else if (flow instanceof de.abilov.useCase.AlternativeFlow) {
+				sb.append(" alternative flow ");
+				sb.append(flow.export());
+			}
+		}
+		return sb.toString();
+	}
+	
+-->
+
+}

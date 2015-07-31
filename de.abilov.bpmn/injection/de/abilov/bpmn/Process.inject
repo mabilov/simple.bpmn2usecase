@@ -1,0 +1,20 @@
+
+partial class Process {
+
+@members <--
+
+	/**
+	 * Export process to string so it can be compared with the another
+	 * @return string representation of the process
+	 */
+	String export();
+	
+	/**
+	 * Find first node in the process, which is usually a start event
+	 * @return
+	 */
+	de.abilov.bpmn.FlowNode findFirst();
+	
+-->
+
+}

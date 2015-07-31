@@ -2,8 +2,8 @@ package de.abilov.model.compare.str;
 
 import org.eclipse.emf.ecore.EObject;
 
-import SimpleUseCase.UseCase;
-import SimpleBPMN.Process;
+import de.abilov.useCase.UseCase;
+import de.abilov.bpmn.Process;
 import de.abilov.model.compare.IComparator;
 
 public class Comparator implements IComparator {

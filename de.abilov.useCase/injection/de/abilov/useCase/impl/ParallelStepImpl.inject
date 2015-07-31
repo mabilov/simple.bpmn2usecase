@@ -1,0 +1,25 @@
+
+partial class ParallelStepImpl {
+
+@members <--
+
+	public String export() {
+		StringBuffer sb = new StringBuffer();
+		sb.append(" parallel step ");
+		sb.append(this.getId());
+		String comma = "";
+
+		java.util.Iterator<de.abilov.useCase.ParallelFlow> invokedFlows = this.getInvokedFlows().stream().sorted(new de.abilov.useCase.util.NamedFlowComparator())
+				.iterator();
+		while (invokedFlows.hasNext()) {
+			ParallelFlow flow = invokedFlows.next();
+			sb.append(comma);
+			sb.append(flow.getId());
+			comma = ", ";
+		}
+		return sb.toString();
+	}
+	
+-->
+
+}

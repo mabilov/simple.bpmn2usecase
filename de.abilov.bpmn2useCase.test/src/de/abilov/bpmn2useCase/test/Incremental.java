@@ -10,25 +10,25 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.moflon.testframework.tgg.IncrementalIntegratorTest;
 
-import bpmn2UseCase.Bpmn2UseCasePackage;
-import SimpleBPMN.SequenceFlow;
-import SimpleBPMN.SimpleBPMNFactory;
-import SimpleBPMN.SimpleBPMNPackage;
-import SimpleBPMN.StartEvent;
-import SimpleBPMN.Task;
-import SimpleBPMN.util.SynchronizationHelper;
-import SimpleBPMN.EndEvent;
-import SimpleBPMN.FlowElement;
-import SimpleBPMN.ParallelGateway;
-import SimpleBPMN.Process;
-import SimpleUseCase.SimpleUseCasePackage;
-import SimpleUseCase.UseCase;
+import de.abilov.tgg.bpmn2useCase.Bpmn2useCasePackage;
+import de.abilov.bpmn.SequenceFlow;
+import de.abilov.bpmn.BpmnFactory;
+import de.abilov.bpmn.BpmnPackage;
+import de.abilov.bpmn.StartEvent;
+import de.abilov.bpmn.Task;
+import de.abilov.bpmn.EndEvent;
+import de.abilov.bpmn.FlowElement;
+import de.abilov.bpmn.ParallelGateway;
+import de.abilov.bpmn.Process;
+import de.abilov.useCase.UseCasePackage;
+import de.abilov.useCase.UseCase;
 import TGGLanguage.algorithm.ApplicationTypes;
+import de.abilov.bpmn.util.SynchronizationHelper;
 import de.abilov.model.compare.IComparator;
 
 public class Incremental extends IncrementalIntegratorTest {
 	public Incremental() {
-		super(SimpleBPMNPackage.eINSTANCE, Bpmn2UseCasePackage.eINSTANCE, SimpleUseCasePackage.eINSTANCE);
+		super(BpmnPackage.eINSTANCE, Bpmn2useCasePackage.eINSTANCE, UseCasePackage.eINSTANCE);
 	}
 
 	@BeforeClass
@@ -53,11 +53,11 @@ public class Incremental extends IncrementalIntegratorTest {
 			StartEvent se = (StartEvent) fe.get();
 			SequenceFlow sf1 = se.getOutgoing().get(0);
 
-			SequenceFlow sf2 = SimpleBPMNFactory.eINSTANCE.createSequenceFlow();
+			SequenceFlow sf2 = BpmnFactory.eINSTANCE.createSequenceFlow();
 			sf2.setId("sf2");
 			proc.getFlowElements().add(sf2);
 
-			Task t1 = SimpleBPMNFactory.eINSTANCE.createTask();
+			Task t1 = BpmnFactory.eINSTANCE.createTask();
 			t1.setId("t1");
 			proc.getFlowElements().add(t1);
 
@@ -80,34 +80,34 @@ public class Incremental extends IncrementalIntegratorTest {
 			SequenceFlow sf2 = t1.getOutgoing().get(0);
 			EndEvent ee1 = (EndEvent) sf2.getTargetRef();
 
-			ParallelGateway pg1 = SimpleBPMNFactory.eINSTANCE.createParallelGateway();
+			ParallelGateway pg1 = BpmnFactory.eINSTANCE.createParallelGateway();
 			pg1.setId("pg1");
 			pg1.setIsDiverging(true);
 			proc.getFlowElements().add(pg1);
 			sf2.setTargetRef(pg1);
 
-			SequenceFlow sf3 = SimpleBPMNFactory.eINSTANCE.createSequenceFlow();
+			SequenceFlow sf3 = BpmnFactory.eINSTANCE.createSequenceFlow();
 			sf3.setId("sf3");
 			proc.getFlowElements().add(sf3);
 			sf3.setSourceRef(pg1);
 
-			Task t2 = SimpleBPMNFactory.eINSTANCE.createTask();
+			Task t2 = BpmnFactory.eINSTANCE.createTask();
 			t2.setId("t2");
 			proc.getFlowElements().add(t2);
 			sf3.setTargetRef(t2);
 
-			SequenceFlow sf4 = SimpleBPMNFactory.eINSTANCE.createSequenceFlow();
+			SequenceFlow sf4 = BpmnFactory.eINSTANCE.createSequenceFlow();
 			sf4.setId("sf4");
 			proc.getFlowElements().add(sf4);
 			sf4.setSourceRef(t2);
 
-			ParallelGateway pcg1 = SimpleBPMNFactory.eINSTANCE.createParallelGateway();
+			ParallelGateway pcg1 = BpmnFactory.eINSTANCE.createParallelGateway();
 			pcg1.setId("pcg1");
 			pcg1.setIsDiverging(false);
 			proc.getFlowElements().add(pcg1);
 			sf4.setTargetRef(pcg1);
 
-			SequenceFlow sf5 = SimpleBPMNFactory.eINSTANCE.createSequenceFlow();
+			SequenceFlow sf5 = BpmnFactory.eINSTANCE.createSequenceFlow();
 			sf5.setId("sf5");
 			proc.getFlowElements().add(sf5);
 			sf5.setSourceRef(pcg1);
@@ -131,17 +131,17 @@ public class Incremental extends IncrementalIntegratorTest {
 			ParallelGateway pg = (ParallelGateway) fe1.get();
 			ParallelGateway pcg = (ParallelGateway) fe2.get();
 
-			SequenceFlow sf6 = SimpleBPMNFactory.eINSTANCE.createSequenceFlow();
+			SequenceFlow sf6 = BpmnFactory.eINSTANCE.createSequenceFlow();
 			sf6.setId("sf6");
 			sf6.setSourceRef(pg);
 			proc.getFlowElements().add(sf6);
 
-			Task t3 = SimpleBPMNFactory.eINSTANCE.createTask();
+			Task t3 = BpmnFactory.eINSTANCE.createTask();
 			t3.setId("t3");
 			proc.getFlowElements().add(t3);
 			sf6.setTargetRef(t3);
 
-			SequenceFlow sf7 = SimpleBPMNFactory.eINSTANCE.createSequenceFlow();
+			SequenceFlow sf7 = BpmnFactory.eINSTANCE.createSequenceFlow();
 			sf7.setId("sf7");
 			sf7.setSourceRef(t3);
 			sf7.setTargetRef(pcg);
@@ -174,23 +174,23 @@ public class Incremental extends IncrementalIntegratorTest {
 			SequenceFlow sf5 = (SequenceFlow) feSF5.get();
 			EndEvent ee = (EndEvent) sf5.getTargetRef();
 
-			Task t4 = SimpleBPMNFactory.eINSTANCE.createTask();
+			Task t4 = BpmnFactory.eINSTANCE.createTask();
 			t4.setId("t4");
 			sf7.setTargetRef(t4);
 			proc.getFlowElements().add(t4);
 
-			SequenceFlow sf8 = SimpleBPMNFactory.eINSTANCE.createSequenceFlow();
+			SequenceFlow sf8 = BpmnFactory.eINSTANCE.createSequenceFlow();
 			sf8.setId("sf8");
 			sf8.setSourceRef(t4);
 			sf8.setTargetRef(pcgw);
 			proc.getFlowElements().add(sf8);
 
-			Task t5 = SimpleBPMNFactory.eINSTANCE.createTask();
+			Task t5 = BpmnFactory.eINSTANCE.createTask();
 			t5.setId("t5");
 			sf5.setTargetRef(t5);
 			proc.getFlowElements().add(t5);
 
-			SequenceFlow sf9 = SimpleBPMNFactory.eINSTANCE.createSequenceFlow();
+			SequenceFlow sf9 = BpmnFactory.eINSTANCE.createSequenceFlow();
 			sf9.setId("sf9");
 			sf9.setSourceRef(t5);
 			sf9.setTargetRef(ee);
@@ -203,7 +203,7 @@ public class Incremental extends IncrementalIntegratorTest {
 
 	private void delta(String testCaseName, final Consumer<EObject> changeSrc) throws InterruptedException {
 		setInputModel(ApplicationTypes.BACKWARD, testCaseName);
-		SimpleUseCase.util.SynchronizationHelper.preprocess((UseCase) helper.getTrg());
+		de.abilov.useCase.util.SynchronizationHelper.preprocess((UseCase) helper.getTrg());
 
 		helper.integrateBackward();
 		helper.setChangeSrc(changeSrc);

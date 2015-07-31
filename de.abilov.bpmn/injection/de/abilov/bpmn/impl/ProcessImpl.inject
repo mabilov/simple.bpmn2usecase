@@ -1,0 +1,33 @@
+
+partial class ProcessImpl {
+
+@members <--
+
+	public String export() {
+		StringBuffer sb = new StringBuffer();
+		sb.append("process ");
+		sb.append(this.getId());
+		de.abilov.bpmn.FlowNode se = this.findFirst();
+		sb.append(se.export());
+		return sb.toString();
+	}
+
+	public de.abilov.bpmn.FlowNode findFirst() {
+		java.util.Optional<FlowElement> el = this.getFlowElements().stream().filter(fe -> fe instanceof de.abilov.bpmn.StartEvent)
+				.findAny();
+		if (el.isPresent())
+			return (de.abilov.bpmn.FlowNode) el.get();
+
+		el = this.getFlowElements().stream()
+				.filter(fe -> fe instanceof de.abilov.bpmn.FlowNode && (((de.abilov.bpmn.FlowNode) fe).getIncoming() == null
+						|| ((de.abilov.bpmn.FlowNode) fe).getIncoming().isEmpty()))
+				.findAny();
+		if (el.isPresent())
+			return (de.abilov.bpmn.FlowNode) el.get();
+
+		return null;
+	}
+	
+-->
+
+}

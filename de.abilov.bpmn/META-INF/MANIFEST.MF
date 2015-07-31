@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: de.abilov.bpmn;singleton:=true
+Export-Package: de.abilov.bpmn.util,
+ de.abilov.bpmn.impl,
+ de.abilov.bpmn
+Bundle-Name: de.abilov.bpmn
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.eclipse.emf.ecore,
+ org.eclipse.emf.ecore.xmi,
+ org.moflon.core.utilities
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: TU Darmstadt

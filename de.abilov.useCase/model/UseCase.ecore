@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="de.abilov.useCase" nsURI="platform:/plugin/de.abilov.useCase/model/UseCase.ecore" nsPrefix="de.abilov.useCase">
+  <eClassifiers xsi:type="ecore:EClass" name="UseCase">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="flows" upperBound="-1" eType="//Flow" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="precondition" eType="//UCCondition" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" ordered="false" lowerBound="1" iD="true">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Flow" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="steps" upperBound="-1" eType="//Step" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="finalState" eType="//UCCondition" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="__last" eType="//Step"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BasicFlow" eSuperTypes="//Flow"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ParallelFlow" eSuperTypes="//NamedFlow"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Step" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="next" eType="//Step"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="__last" eType="//UCCondition"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" ordered="false" lowerBound="1" iD="true">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NormalStep" eSuperTypes="//Step"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ParallelStep" eSuperTypes="//Step">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="invokedFlows" upperBound="-1" eType="//ParallelFlow"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="UCCondition">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NamedFlow" abstract="true" eSuperTypes="//Flow">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" ordered="false" lowerBound="1" iD="true">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AlternativeFlow" eSuperTypes="//NamedFlow"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ChoiceStep" eSuperTypes="//Step">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="stepAlternatives" upperBound="-1" eType="//StepAlternative" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="__lastInDef" eType="//Step"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StepAlternative">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ref" eType="//AlternativeFlow"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="continuation" eType="//Step"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="__hasContinue" eType="//ChoiceStep"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="condition" ordered="false" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

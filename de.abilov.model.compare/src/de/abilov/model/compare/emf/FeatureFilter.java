@@ -12,9 +12,9 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 import com.google.common.base.Predicate;
 import com.google.common.collect.Iterators;
 
-import SimpleBPMN.Gateway;
-import SimpleBPMN.SequenceFlow;
-import SimpleBPMN.SimpleBPMNPackage;
+import de.abilov.bpmn.Gateway;
+import de.abilov.bpmn.SequenceFlow;
+import de.abilov.bpmn.BpmnPackage;
 
 public class FeatureFilter extends org.eclipse.emf.compare.diff.FeatureFilter {
 	@Override
@@ -42,7 +42,7 @@ public class FeatureFilter extends org.eclipse.emf.compare.diff.FeatureFilter {
 		return Iterators.filter(clazz.getEAllAttributes().iterator(), new Predicate<EAttribute>() {
 			public boolean apply(EAttribute attribute) {
 				if (clazz.getInstanceClass() == SequenceFlow.class
-						&& attribute == SimpleBPMNPackage.Literals.FLOW_ELEMENT__ID) {
+						&& attribute == BpmnPackage.Literals.FLOW_ELEMENT__ID) {
 					// Consider only id attributes of sequence
 					// flows
 					SequenceFlow sf = (SequenceFlow) obj;

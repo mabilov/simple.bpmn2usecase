@@ -6,18 +6,18 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.moflon.testframework.tgg.IntegratorTest;
 
-import bpmn2UseCase.Bpmn2UseCasePackage;
-import SimpleBPMN.Process;
-import SimpleBPMN.SimpleBPMNPackage;
-import SimpleUseCase.SimpleUseCasePackage;
-import SimpleUseCase.UseCase;
+import de.abilov.tgg.bpmn2useCase.Bpmn2useCasePackage;
+import de.abilov.bpmn.Process;
+import de.abilov.bpmn.BpmnPackage;
+import de.abilov.useCase.UseCasePackage;
+import de.abilov.useCase.UseCase;
 import TGGLanguage.algorithm.ApplicationTypes;
 import de.abilov.model.compare.IComparator;
 import org.junit.Assert;
 
 public class Batch extends IntegratorTest {
 	public Batch() {
-		super(SimpleBPMNPackage.eINSTANCE, Bpmn2UseCasePackage.eINSTANCE, SimpleUseCasePackage.eINSTANCE);
+		super(BpmnPackage.eINSTANCE, Bpmn2useCasePackage.eINSTANCE, UseCasePackage.eINSTANCE);
 	}
 
 	@BeforeClass
@@ -99,16 +99,16 @@ public class Batch extends IntegratorTest {
 	protected void setInputModel(ApplicationTypes direction, String testCaseName) {
 		super.setInputModel(direction, testCaseName);
 		if (direction == ApplicationTypes.FORWARD) {
-			SimpleBPMN.util.SynchronizationHelper.discoverConverging((Process) helper.getSrc());
+			de.abilov.bpmn.util.SynchronizationHelper.discoverConverging((Process) helper.getSrc());
 		} else {
-			SimpleUseCase.util.SynchronizationHelper.preprocess((UseCase) helper.getTrg());
+			de.abilov.useCase.util.SynchronizationHelper.preprocess((UseCase) helper.getTrg());
 		}
 	}
 
 	@Override
 	public void postProcessing(EObject created) {
 		if (created instanceof UseCase) {
-			SimpleUseCase.util.SynchronizationHelper.postprocess((UseCase) created);
+			de.abilov.useCase.util.SynchronizationHelper.postprocess((UseCase) created);
 		}
 	}
 

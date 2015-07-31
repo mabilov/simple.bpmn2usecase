@@ -4,10 +4,10 @@ import org.eclipse.emf.common.util.EList;
 
 import com.google.common.cache.CacheBuilder;
 
-import SimpleUseCase.BasicFlow;
-import SimpleUseCase.Flow;
-import SimpleUseCase.Step;
-import SimpleUseCase.UseCase;
+import de.abilov.useCase.BasicFlow;
+import de.abilov.useCase.Flow;
+import de.abilov.useCase.Step;
+import de.abilov.useCase.UseCase;
 
 public class EqualityHelper extends org.eclipse.emf.compare.utils.EqualityHelper {
 	public EqualityHelper(CacheBuilder<Object, Object> cacheBuilder) {
