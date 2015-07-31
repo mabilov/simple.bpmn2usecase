@@ -15,8 +15,10 @@ import TGGRuntime.PerformRuleResult;
 import TGGRuntime.TripleMatch;
 
 import de.abilov.bpmn.ExclusiveGateway;
+import de.abilov.bpmn.FlowNode;
 import de.abilov.bpmn.SequenceFlow;
 
+import de.abilov.tgg.bpmn2useCase.FN2S;
 import de.abilov.tgg.bpmn2useCase.GW2S;
 
 import de.abilov.useCase.ChoiceStep;
@@ -45,8 +47,8 @@ public interface ChoiceAfterMerge extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	boolean isAppropriate_FWD(Match match, ExclusiveGateway prevNode, de.abilov.bpmn.Process process, SequenceFlow sf1,
-			ExclusiveGateway egw, ExclusiveGateway ecgw);
+	boolean isAppropriate_FWD(Match match, ExclusiveGateway prevNode, SequenceFlow prevInFlow, FlowNode prevPrevNode,
+			de.abilov.bpmn.Process process, SequenceFlow sf1, ExclusiveGateway egw, ExclusiveGateway ecgw);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -70,8 +72,9 @@ public interface ChoiceAfterMerge extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjectsToMatch_FWD(Match match, ExclusiveGateway prevNode, de.abilov.bpmn.Process process,
-			SequenceFlow sf1, ExclusiveGateway egw, ExclusiveGateway ecgw);
+	void registerObjectsToMatch_FWD(Match match, ExclusiveGateway prevNode, SequenceFlow prevInFlow,
+			FlowNode prevPrevNode, de.abilov.bpmn.Process process, SequenceFlow sf1, ExclusiveGateway egw,
+			ExclusiveGateway ecgw);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -79,8 +82,9 @@ public interface ChoiceAfterMerge extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isAppropriate_solveCsp_FWD(Match match, ExclusiveGateway prevNode, de.abilov.bpmn.Process process,
-			SequenceFlow sf1, ExclusiveGateway egw, ExclusiveGateway ecgw);
+	CSP isAppropriate_solveCsp_FWD(Match match, ExclusiveGateway prevNode, SequenceFlow prevInFlow,
+			FlowNode prevPrevNode, de.abilov.bpmn.Process process, SequenceFlow sf1, ExclusiveGateway egw,
+			ExclusiveGateway ecgw);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -97,8 +101,8 @@ public interface ChoiceAfterMerge extends EObject, AbstractRule {
 	 * @generated
 	 */
 	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, ExclusiveGateway prevNode, ChoiceStep choiceStep,
-			GW2S pn2cs, Step prevStep, Flow flow, de.abilov.bpmn.Process process, SequenceFlow sf1,
-			ExclusiveGateway egw, ExclusiveGateway ecgw);
+			GW2S pn2cs, Step prevStep, Flow flow, SequenceFlow prevInFlow, FlowNode prevPrevNode, FN2S fn2ps,
+			de.abilov.bpmn.Process process, SequenceFlow sf1, ExclusiveGateway egw, ExclusiveGateway ecgw);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -115,8 +119,8 @@ public interface ChoiceAfterMerge extends EObject, AbstractRule {
 	 * @generated
 	 */
 	void registerObjects_FWD(PerformRuleResult ruleresult, EObject prevNode, EObject choiceStep, EObject pn2cs,
-			EObject prevStep, EObject flow, EObject step, EObject process, EObject sf1, EObject egw, EObject egwToStep,
-			EObject ecgw, EObject ecgwToStep);
+			EObject prevStep, EObject flow, EObject step, EObject prevInFlow, EObject prevPrevNode, EObject fn2ps,
+			EObject process, EObject sf1, EObject egw, EObject egwToStep, EObject ecgw, EObject ecgwToStep);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -181,7 +185,8 @@ public interface ChoiceAfterMerge extends EObject, AbstractRule {
 	 * @generated
 	 */
 	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, ExclusiveGateway prevNode, ChoiceStep choiceStep,
-			GW2S pn2cs, Step prevStep, Flow flow, NormalStep step, de.abilov.bpmn.Process process);
+			GW2S pn2cs, Step prevStep, Flow flow, NormalStep step, SequenceFlow prevInFlow, FlowNode prevPrevNode,
+			FN2S fn2ps, de.abilov.bpmn.Process process);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -198,8 +203,8 @@ public interface ChoiceAfterMerge extends EObject, AbstractRule {
 	 * @generated
 	 */
 	void registerObjects_BWD(PerformRuleResult ruleresult, EObject prevNode, EObject choiceStep, EObject pn2cs,
-			EObject prevStep, EObject flow, EObject step, EObject process, EObject sf1, EObject egw, EObject egwToStep,
-			EObject ecgw, EObject ecgwToStep);
+			EObject prevStep, EObject flow, EObject step, EObject prevInFlow, EObject prevPrevNode, EObject fn2ps,
+			EObject process, EObject sf1, EObject egw, EObject egwToStep, EObject ecgw, EObject ecgwToStep);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -215,7 +220,7 @@ public interface ChoiceAfterMerge extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_156(EMoflonEdge _edge_next);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_278(EMoflonEdge _edge_next);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -223,7 +228,7 @@ public interface ChoiceAfterMerge extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_157(EMoflonEdge _edge_steps);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_279(EMoflonEdge _edge_steps);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -231,7 +236,7 @@ public interface ChoiceAfterMerge extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_516(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_910(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -239,7 +244,7 @@ public interface ChoiceAfterMerge extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_517(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_911(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -247,7 +252,7 @@ public interface ChoiceAfterMerge extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_518(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_912(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -255,7 +260,7 @@ public interface ChoiceAfterMerge extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_519(EMoflonEdge _edge_sourceRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_913(EMoflonEdge _edge_sourceRef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -263,7 +268,7 @@ public interface ChoiceAfterMerge extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_520(EMoflonEdge _edge_outgoing);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_914(EMoflonEdge _edge_outgoing);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -271,7 +276,7 @@ public interface ChoiceAfterMerge extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_521(EMoflonEdge _edge_targetRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_915(EMoflonEdge _edge_targetRef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -279,7 +284,7 @@ public interface ChoiceAfterMerge extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_522(EMoflonEdge _edge_incoming);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_916(EMoflonEdge _edge_incoming);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -287,7 +292,7 @@ public interface ChoiceAfterMerge extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_523(EMoflonEdge _edge___conv);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_917(EMoflonEdge _edge___conv);
 
 	/**
 	 * <!-- begin-user-doc -->

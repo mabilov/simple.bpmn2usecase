@@ -92,36 +92,39 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isAppropriate_FWD(Match match, ExclusiveGateway prevNode, de.abilov.bpmn.Process process,
-			SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw) {
+	public boolean isAppropriate_FWD(Match match, ExclusiveGateway prevNode, SequenceFlow prevInFlow,
+			FlowNode prevPrevNode, de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw,
+			ParallelGateway pcgw) {
 		// initial bindings
-		Object[] result1_black = SplitAfterMergeImpl.pattern_SplitAfterMerge_0_1_blackBBBBBBB(this, match, prevNode,
-				process, sf1, pgw, pcgw);
+		Object[] result1_black = SplitAfterMergeImpl.pattern_SplitAfterMerge_0_1_blackBBBBBBBBB(this, match, prevNode,
+				prevInFlow, prevPrevNode, process, sf1, pgw, pcgw);
 		if (result1_black == null) {
-			throw new RuntimeException(
-					"Pattern matching in node [initial bindings] failed." + " Variables: " + "[this] = " + this + ", "
-							+ "[match] = " + match + ", " + "[prevNode] = " + prevNode + ", " + "[process] = " + process
-							+ ", " + "[sf1] = " + sf1 + ", " + "[pgw] = " + pgw + ", " + "[pcgw] = " + pcgw + ".");
+			throw new RuntimeException("Pattern matching in node [initial bindings] failed." + " Variables: "
+					+ "[this] = " + this + ", " + "[match] = " + match + ", " + "[prevNode] = " + prevNode + ", "
+					+ "[prevInFlow] = " + prevInFlow + ", " + "[prevPrevNode] = " + prevPrevNode + ", " + "[process] = "
+					+ process + ", " + "[sf1] = " + sf1 + ", " + "[pgw] = " + pgw + ", " + "[pcgw] = " + pcgw + ".");
 		}
 
 		// Solve CSP
-		Object[] result2_bindingAndBlack = SplitAfterMergeImpl.pattern_SplitAfterMerge_0_2_bindingAndBlackFBBBBBBB(this,
-				match, prevNode, process, sf1, pgw, pcgw);
+		Object[] result2_bindingAndBlack = SplitAfterMergeImpl.pattern_SplitAfterMerge_0_2_bindingAndBlackFBBBBBBBBB(
+				this, match, prevNode, prevInFlow, prevPrevNode, process, sf1, pgw, pcgw);
 		if (result2_bindingAndBlack == null) {
 			throw new RuntimeException("Pattern matching in node [Solve CSP] failed." + " Variables: " + "[this] = "
-					+ this + ", " + "[match] = " + match + ", " + "[prevNode] = " + prevNode + ", " + "[process] = "
-					+ process + ", " + "[sf1] = " + sf1 + ", " + "[pgw] = " + pgw + ", " + "[pcgw] = " + pcgw + ".");
+					+ this + ", " + "[match] = " + match + ", " + "[prevNode] = " + prevNode + ", " + "[prevInFlow] = "
+					+ prevInFlow + ", " + "[prevPrevNode] = " + prevPrevNode + ", " + "[process] = " + process + ", "
+					+ "[sf1] = " + sf1 + ", " + "[pgw] = " + pgw + ", " + "[pcgw] = " + pcgw + ".");
 		}
 		CSP csp = (CSP) result2_bindingAndBlack[0];
 		// Check CSP
 		if (SplitAfterMergeImpl.pattern_SplitAfterMerge_0_3_expressionFBB(this, csp)) {
 
 			// collect elements to be translated
-			Object[] result4_black = SplitAfterMergeImpl.pattern_SplitAfterMerge_0_4_blackBBBBBB(match, prevNode,
-					process, sf1, pgw, pcgw);
+			Object[] result4_black = SplitAfterMergeImpl.pattern_SplitAfterMerge_0_4_blackBBBBBBBB(match, prevNode,
+					prevInFlow, prevPrevNode, process, sf1, pgw, pcgw);
 			if (result4_black == null) {
 				throw new RuntimeException("Pattern matching in node [collect elements to be translated] failed."
 						+ " Variables: " + "[match] = " + match + ", " + "[prevNode] = " + prevNode + ", "
+						+ "[prevInFlow] = " + prevInFlow + ", " + "[prevPrevNode] = " + prevPrevNode + ", "
 						+ "[process] = " + process + ", " + "[sf1] = " + sf1 + ", " + "[pgw] = " + pgw + ", "
 						+ "[pcgw] = " + pcgw + ".");
 			}
@@ -137,20 +140,26 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 					// EMoflonEdge prevNode__sf1____outgoing = (EMoflonEdge) result4_green[13];
 
 			// collect context elements
-			Object[] result5_black = SplitAfterMergeImpl.pattern_SplitAfterMerge_0_5_blackBBBBBB(match, prevNode,
-					process, sf1, pgw, pcgw);
+			Object[] result5_black = SplitAfterMergeImpl.pattern_SplitAfterMerge_0_5_blackBBBBBBBB(match, prevNode,
+					prevInFlow, prevPrevNode, process, sf1, pgw, pcgw);
 			if (result5_black == null) {
 				throw new RuntimeException(
 						"Pattern matching in node [collect context elements] failed." + " Variables: " + "[match] = "
-								+ match + ", " + "[prevNode] = " + prevNode + ", " + "[process] = " + process + ", "
+								+ match + ", " + "[prevNode] = " + prevNode + ", " + "[prevInFlow] = " + prevInFlow
+								+ ", " + "[prevPrevNode] = " + prevPrevNode + ", " + "[process] = " + process + ", "
 								+ "[sf1] = " + sf1 + ", " + "[pgw] = " + pgw + ", " + "[pcgw] = " + pcgw + ".");
 			}
-			SplitAfterMergeImpl.pattern_SplitAfterMerge_0_5_greenBBBF(match, prevNode, process);
-			// EMoflonEdge process__prevNode____flowElements = (EMoflonEdge) result5_green[3];
+			SplitAfterMergeImpl.pattern_SplitAfterMerge_0_5_greenBBBBBFFFFF(match, prevNode, prevInFlow, prevPrevNode,
+					process);
+					// EMoflonEdge prevInFlow__prevNode____targetRef = (EMoflonEdge) result5_green[5];
+					// EMoflonEdge prevNode__prevInFlow____incoming = (EMoflonEdge) result5_green[6];
+					// EMoflonEdge prevInFlow__prevPrevNode____sourceRef = (EMoflonEdge) result5_green[7];
+					// EMoflonEdge prevPrevNode__prevInFlow____outgoing = (EMoflonEdge) result5_green[8];
+					// EMoflonEdge process__prevNode____flowElements = (EMoflonEdge) result5_green[9];
 
 			// register objects to match
-			SplitAfterMergeImpl.pattern_SplitAfterMerge_0_6_expressionBBBBBBB(this, match, prevNode, process, sf1, pgw,
-					pcgw);
+			SplitAfterMergeImpl.pattern_SplitAfterMerge_0_6_expressionBBBBBBBBB(this, match, prevNode, prevInFlow,
+					prevPrevNode, process, sf1, pgw, pcgw);
 			return SplitAfterMergeImpl.pattern_SplitAfterMerge_0_7_expressionF();
 		} else {
 			return SplitAfterMergeImpl.pattern_SplitAfterMerge_0_8_expressionF();
@@ -166,7 +175,7 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 	public PerformRuleResult perform_FWD(IsApplicableMatch isApplicableMatch) {
 		// perform transformation
 		Object[] result1_bindingAndBlack = SplitAfterMergeImpl
-				.pattern_SplitAfterMerge_1_1_bindingAndBlackFFFFFFFFFBFB(this, isApplicableMatch);
+				.pattern_SplitAfterMerge_1_1_bindingAndBlackFFFFFFFFFFFFBFB(this, isApplicableMatch);
 		if (result1_bindingAndBlack == null) {
 			throw new RuntimeException("Pattern matching in node [perform transformation] failed." + " Variables: "
 					+ "[this] = " + this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ".");
@@ -176,11 +185,14 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		GW2S pn2cs = (GW2S) result1_bindingAndBlack[2];
 		Step prevStep = (Step) result1_bindingAndBlack[3];
 		Flow flow = (Flow) result1_bindingAndBlack[4];
-		de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result1_bindingAndBlack[5];
-		SequenceFlow sf1 = (SequenceFlow) result1_bindingAndBlack[6];
-		ParallelGateway pgw = (ParallelGateway) result1_bindingAndBlack[7];
-		ParallelGateway pcgw = (ParallelGateway) result1_bindingAndBlack[8];
-		CSP csp = (CSP) result1_bindingAndBlack[10];
+		SequenceFlow prevInFlow = (SequenceFlow) result1_bindingAndBlack[5];
+		FlowNode prevPrevNode = (FlowNode) result1_bindingAndBlack[6];
+		FN2S fn2ps = (FN2S) result1_bindingAndBlack[7];
+		de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result1_bindingAndBlack[8];
+		SequenceFlow sf1 = (SequenceFlow) result1_bindingAndBlack[9];
+		ParallelGateway pgw = (ParallelGateway) result1_bindingAndBlack[10];
+		ParallelGateway pcgw = (ParallelGateway) result1_bindingAndBlack[11];
+		CSP csp = (CSP) result1_bindingAndBlack[13];
 		Object[] result1_green = SplitAfterMergeImpl.pattern_SplitAfterMerge_1_1_greenBBFBFFBB(prevStep, flow, pgw,
 				pcgw, csp);
 		ParallelStep step = (ParallelStep) result1_green[2];
@@ -200,15 +212,17 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		PerformRuleResult ruleresult = (PerformRuleResult) result2_green[0];
 
 		// bookkeeping for edges
-		Object[] result3_black = SplitAfterMergeImpl.pattern_SplitAfterMerge_1_3_blackBBBBBBBBBBBBB(ruleresult,
-				prevNode, choiceStep, pn2cs, prevStep, flow, step, process, sf1, pgw, pcgwToStep, pgwToStep, pcgw);
+		Object[] result3_black = SplitAfterMergeImpl.pattern_SplitAfterMerge_1_3_blackBBBBBBBBBBBBBBBB(ruleresult,
+				prevNode, choiceStep, pn2cs, prevStep, flow, step, prevInFlow, prevPrevNode, fn2ps, process, sf1, pgw,
+				pcgwToStep, pgwToStep, pcgw);
 		if (result3_black == null) {
 			throw new RuntimeException("Pattern matching in node [bookkeeping for edges] failed." + " Variables: "
 					+ "[ruleresult] = " + ruleresult + ", " + "[prevNode] = " + prevNode + ", " + "[choiceStep] = "
 					+ choiceStep + ", " + "[pn2cs] = " + pn2cs + ", " + "[prevStep] = " + prevStep + ", " + "[flow] = "
-					+ flow + ", " + "[step] = " + step + ", " + "[process] = " + process + ", " + "[sf1] = " + sf1
-					+ ", " + "[pgw] = " + pgw + ", " + "[pcgwToStep] = " + pcgwToStep + ", " + "[pgwToStep] = "
-					+ pgwToStep + ", " + "[pcgw] = " + pcgw + ".");
+					+ flow + ", " + "[step] = " + step + ", " + "[prevInFlow] = " + prevInFlow + ", "
+					+ "[prevPrevNode] = " + prevPrevNode + ", " + "[fn2ps] = " + fn2ps + ", " + "[process] = " + process
+					+ ", " + "[sf1] = " + sf1 + ", " + "[pgw] = " + pgw + ", " + "[pcgwToStep] = " + pcgwToStep + ", "
+					+ "[pgwToStep] = " + pgwToStep + ", " + "[pcgw] = " + pcgw + ".");
 		}
 		SplitAfterMergeImpl.pattern_SplitAfterMerge_1_3_greenBBBBBBBBBBBFFFFFFFFFFFFFF(ruleresult, prevNode, prevStep,
 				flow, step, process, sf1, pgw, pcgwToStep, pgwToStep, pcgw);
@@ -229,8 +243,9 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 
 		// perform postprocessing story node is empty
 		// register objects
-		SplitAfterMergeImpl.pattern_SplitAfterMerge_1_5_expressionBBBBBBBBBBBBBB(this, ruleresult, prevNode, choiceStep,
-				pn2cs, prevStep, flow, step, process, sf1, pgw, pcgwToStep, pgwToStep, pcgw);
+		SplitAfterMergeImpl.pattern_SplitAfterMerge_1_5_expressionBBBBBBBBBBBBBBBBB(this, ruleresult, prevNode,
+				choiceStep, pn2cs, prevStep, flow, step, prevInFlow, prevPrevNode, fn2ps, process, sf1, pgw, pcgwToStep,
+				pgwToStep, pcgw);
 		return SplitAfterMergeImpl.pattern_SplitAfterMerge_1_6_expressionFB(ruleresult);
 	}
 
@@ -252,54 +267,65 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		IsApplicableRuleResult ruleresult = (IsApplicableRuleResult) result1_green[1];
 
 		// ForEach core match
-		Object[] result2_binding = SplitAfterMergeImpl.pattern_SplitAfterMerge_2_2_bindingFFFFFB(match);
+		Object[] result2_binding = SplitAfterMergeImpl.pattern_SplitAfterMerge_2_2_bindingFFFFFFFB(match);
 		if (result2_binding == null) {
 			throw new RuntimeException(
 					"Binding in node core match failed." + " Variables: " + "[match] = " + match + ".");
 		}
 		ExclusiveGateway prevNode = (ExclusiveGateway) result2_binding[0];
-		de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_binding[1];
-		SequenceFlow sf1 = (SequenceFlow) result2_binding[2];
-		ParallelGateway pgw = (ParallelGateway) result2_binding[3];
-		ParallelGateway pcgw = (ParallelGateway) result2_binding[4];
-		for (Object[] result2_black : SplitAfterMergeImpl.pattern_SplitAfterMerge_2_2_blackBFFBBBBB(prevNode, process,
-				sf1, pgw, pcgw, match)) {
+		SequenceFlow prevInFlow = (SequenceFlow) result2_binding[1];
+		FlowNode prevPrevNode = (FlowNode) result2_binding[2];
+		de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_binding[3];
+		SequenceFlow sf1 = (SequenceFlow) result2_binding[4];
+		ParallelGateway pgw = (ParallelGateway) result2_binding[5];
+		ParallelGateway pcgw = (ParallelGateway) result2_binding[6];
+		for (Object[] result2_black : SplitAfterMergeImpl.pattern_SplitAfterMerge_2_2_blackBFFFBBFBBBBB(prevNode,
+				prevInFlow, prevPrevNode, process, sf1, pgw, pcgw, match)) {
 			ChoiceStep choiceStep = (ChoiceStep) result2_black[1];
 			GW2S pn2cs = (GW2S) result2_black[2];
+			Step prevStep = (Step) result2_black[3];
+			FN2S fn2ps = (FN2S) result2_black[6];
 			// ForEach find context
-			for (Object[] result3_black : SplitAfterMergeImpl.pattern_SplitAfterMerge_2_3_blackBBBFFBBBB(prevNode,
-					choiceStep, pn2cs, process, sf1, pgw, pcgw)) {
-				Step prevStep = (Step) result3_black[3];
+			for (Object[] result3_black : SplitAfterMergeImpl.pattern_SplitAfterMerge_2_3_blackBBBBFBBBBBBB(prevNode,
+					choiceStep, pn2cs, prevStep, prevInFlow, prevPrevNode, fn2ps, process, sf1, pgw, pcgw)) {
 				Flow flow = (Flow) result3_black[4];
-				Object[] result3_green = SplitAfterMergeImpl.pattern_SplitAfterMerge_2_3_greenBBBBBBBBBFFFFFFFFFFFFFFF(
-						prevNode, choiceStep, pn2cs, prevStep, flow, process, sf1, pgw, pcgw);
-				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[9];
-				// EMoflonEdge choiceStep__prevStep______lastInDef = (EMoflonEdge) result3_green[10];
-				// EMoflonEdge pn2cs__prevNode____source = (EMoflonEdge) result3_green[11];
-				// EMoflonEdge pn2cs__choiceStep____target = (EMoflonEdge) result3_green[12];
-				// EMoflonEdge flow__choiceStep____steps = (EMoflonEdge) result3_green[13];
-				// EMoflonEdge flow__prevStep____steps = (EMoflonEdge) result3_green[14];
-				// EMoflonEdge process__pgw____flowElements = (EMoflonEdge) result3_green[15];
-				// EMoflonEdge process__sf1____flowElements = (EMoflonEdge) result3_green[16];
-				// EMoflonEdge process__prevNode____flowElements = (EMoflonEdge) result3_green[17];
-				// EMoflonEdge process__pcgw____flowElements = (EMoflonEdge) result3_green[18];
-				// EMoflonEdge sf1__pgw____targetRef = (EMoflonEdge) result3_green[19];
-				// EMoflonEdge pgw__sf1____incoming = (EMoflonEdge) result3_green[20];
-				// EMoflonEdge pgw__pcgw______conv = (EMoflonEdge) result3_green[21];
-				// EMoflonEdge sf1__prevNode____sourceRef = (EMoflonEdge) result3_green[22];
-				// EMoflonEdge prevNode__sf1____outgoing = (EMoflonEdge) result3_green[23];
+				Object[] result3_green = SplitAfterMergeImpl
+						.pattern_SplitAfterMerge_2_3_greenBBBBBBBBBBBBFFFFFFFFFFFFFFFFFFFF(prevNode, choiceStep, pn2cs,
+								prevStep, flow, prevInFlow, prevPrevNode, fn2ps, process, sf1, pgw, pcgw);
+				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[12];
+				// EMoflonEdge prevInFlow__prevNode____targetRef = (EMoflonEdge) result3_green[13];
+				// EMoflonEdge prevNode__prevInFlow____incoming = (EMoflonEdge) result3_green[14];
+				// EMoflonEdge pn2cs__prevNode____source = (EMoflonEdge) result3_green[15];
+				// EMoflonEdge pn2cs__choiceStep____target = (EMoflonEdge) result3_green[16];
+				// EMoflonEdge flow__choiceStep____steps = (EMoflonEdge) result3_green[17];
+				// EMoflonEdge flow__prevStep____steps = (EMoflonEdge) result3_green[18];
+				// EMoflonEdge prevInFlow__prevPrevNode____sourceRef = (EMoflonEdge) result3_green[19];
+				// EMoflonEdge prevPrevNode__prevInFlow____outgoing = (EMoflonEdge) result3_green[20];
+				// EMoflonEdge fn2ps__prevPrevNode____source = (EMoflonEdge) result3_green[21];
+				// EMoflonEdge fn2ps__prevStep____target = (EMoflonEdge) result3_green[22];
+				// EMoflonEdge process__pgw____flowElements = (EMoflonEdge) result3_green[23];
+				// EMoflonEdge process__sf1____flowElements = (EMoflonEdge) result3_green[24];
+				// EMoflonEdge process__prevNode____flowElements = (EMoflonEdge) result3_green[25];
+				// EMoflonEdge process__pcgw____flowElements = (EMoflonEdge) result3_green[26];
+				// EMoflonEdge sf1__pgw____targetRef = (EMoflonEdge) result3_green[27];
+				// EMoflonEdge pgw__sf1____incoming = (EMoflonEdge) result3_green[28];
+				// EMoflonEdge pgw__pcgw______conv = (EMoflonEdge) result3_green[29];
+				// EMoflonEdge sf1__prevNode____sourceRef = (EMoflonEdge) result3_green[30];
+				// EMoflonEdge prevNode__sf1____outgoing = (EMoflonEdge) result3_green[31];
 
 				// solve CSP
 				Object[] result4_bindingAndBlack = SplitAfterMergeImpl
-						.pattern_SplitAfterMerge_2_4_bindingAndBlackFBBBBBBBBBBB(this, isApplicableMatch, prevNode,
-								choiceStep, pn2cs, prevStep, flow, process, sf1, pgw, pcgw);
+						.pattern_SplitAfterMerge_2_4_bindingAndBlackFBBBBBBBBBBBBBB(this, isApplicableMatch, prevNode,
+								choiceStep, pn2cs, prevStep, flow, prevInFlow, prevPrevNode, fn2ps, process, sf1, pgw,
+								pcgw);
 				if (result4_bindingAndBlack == null) {
 					throw new RuntimeException("Pattern matching in node [solve CSP] failed." + " Variables: "
 							+ "[this] = " + this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ", "
 							+ "[prevNode] = " + prevNode + ", " + "[choiceStep] = " + choiceStep + ", " + "[pn2cs] = "
 							+ pn2cs + ", " + "[prevStep] = " + prevStep + ", " + "[flow] = " + flow + ", "
-							+ "[process] = " + process + ", " + "[sf1] = " + sf1 + ", " + "[pgw] = " + pgw + ", "
-							+ "[pcgw] = " + pcgw + ".");
+							+ "[prevInFlow] = " + prevInFlow + ", " + "[prevPrevNode] = " + prevPrevNode + ", "
+							+ "[fn2ps] = " + fn2ps + ", " + "[process] = " + process + ", " + "[sf1] = " + sf1 + ", "
+							+ "[pgw] = " + pgw + ", " + "[pcgw] = " + pcgw + ".");
 				}
 				CSP csp = (CSP) result4_bindingAndBlack[0];
 				// check CSP
@@ -329,9 +355,12 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void registerObjectsToMatch_FWD(Match match, ExclusiveGateway prevNode, de.abilov.bpmn.Process process,
-			SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw) {
+	public void registerObjectsToMatch_FWD(Match match, ExclusiveGateway prevNode, SequenceFlow prevInFlow,
+			FlowNode prevPrevNode, de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw,
+			ParallelGateway pcgw) {
 		match.registerObject("prevNode", prevNode);
+		match.registerObject("prevInFlow", prevInFlow);
+		match.registerObject("prevPrevNode", prevPrevNode);
 		match.registerObject("process", process);
 		match.registerObject("sf1", sf1);
 		match.registerObject("pgw", pgw);
@@ -344,8 +373,9 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP isAppropriate_solveCsp_FWD(Match match, ExclusiveGateway prevNode, de.abilov.bpmn.Process process,
-			SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw) {// Create CSP
+	public CSP isAppropriate_solveCsp_FWD(Match match, ExclusiveGateway prevNode, SequenceFlow prevInFlow,
+			FlowNode prevPrevNode, de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw,
+			ParallelGateway pcgw) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 
 		// Create literals
@@ -375,8 +405,8 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 	 * @generated
 	 */
 	public CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, ExclusiveGateway prevNode,
-			ChoiceStep choiceStep, GW2S pn2cs, Step prevStep, Flow flow, de.abilov.bpmn.Process process,
-			SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw) {// Create CSP
+			ChoiceStep choiceStep, GW2S pn2cs, Step prevStep, Flow flow, SequenceFlow prevInFlow, FlowNode prevPrevNode,
+			FN2S fn2ps, de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
 
@@ -406,6 +436,9 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		isApplicableMatch.registerObject("pn2cs", pn2cs);
 		isApplicableMatch.registerObject("prevStep", prevStep);
 		isApplicableMatch.registerObject("flow", flow);
+		isApplicableMatch.registerObject("prevInFlow", prevInFlow);
+		isApplicableMatch.registerObject("prevPrevNode", prevPrevNode);
+		isApplicableMatch.registerObject("fn2ps", fn2ps);
 		isApplicableMatch.registerObject("process", process);
 		isApplicableMatch.registerObject("sf1", sf1);
 		isApplicableMatch.registerObject("pgw", pgw);
@@ -428,14 +461,17 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 	 * @generated
 	 */
 	public void registerObjects_FWD(PerformRuleResult ruleresult, EObject prevNode, EObject choiceStep, EObject pn2cs,
-			EObject prevStep, EObject flow, EObject step, EObject process, EObject sf1, EObject pgw, EObject pcgwToStep,
-			EObject pgwToStep, EObject pcgw) {
+			EObject prevStep, EObject flow, EObject step, EObject prevInFlow, EObject prevPrevNode, EObject fn2ps,
+			EObject process, EObject sf1, EObject pgw, EObject pcgwToStep, EObject pgwToStep, EObject pcgw) {
 		ruleresult.registerObject("prevNode", prevNode);
 		ruleresult.registerObject("choiceStep", choiceStep);
 		ruleresult.registerObject("pn2cs", pn2cs);
 		ruleresult.registerObject("prevStep", prevStep);
 		ruleresult.registerObject("flow", flow);
 		ruleresult.registerObject("step", step);
+		ruleresult.registerObject("prevInFlow", prevInFlow);
+		ruleresult.registerObject("prevPrevNode", prevPrevNode);
+		ruleresult.registerObject("fn2ps", fn2ps);
 		ruleresult.registerObject("process", process);
 		ruleresult.registerObject("sf1", sf1);
 		ruleresult.registerObject("pgw", pgw);
@@ -507,10 +543,9 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 						+ " Variables: " + "[match] = " + match + ", " + "[choiceStep] = " + choiceStep + ", "
 						+ "[prevStep] = " + prevStep + ", " + "[flow] = " + flow + ", " + "[step] = " + step + ".");
 			}
-			SplitAfterMergeImpl.pattern_SplitAfterMerge_10_5_greenBBBBFFF(match, choiceStep, prevStep, flow);
-			// EMoflonEdge choiceStep__prevStep______lastInDef = (EMoflonEdge) result5_green[4];
-			// EMoflonEdge flow__choiceStep____steps = (EMoflonEdge) result5_green[5];
-			// EMoflonEdge flow__prevStep____steps = (EMoflonEdge) result5_green[6];
+			SplitAfterMergeImpl.pattern_SplitAfterMerge_10_5_greenBBBBFF(match, choiceStep, prevStep, flow);
+			// EMoflonEdge flow__choiceStep____steps = (EMoflonEdge) result5_green[4];
+			// EMoflonEdge flow__prevStep____steps = (EMoflonEdge) result5_green[5];
 
 			// register objects to match
 			SplitAfterMergeImpl.pattern_SplitAfterMerge_10_6_expressionBBBBBB(this, match, choiceStep, prevStep, flow,
@@ -530,7 +565,7 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 	public PerformRuleResult perform_BWD(IsApplicableMatch isApplicableMatch) {
 		// perform transformation
 		Object[] result1_bindingAndBlack = SplitAfterMergeImpl
-				.pattern_SplitAfterMerge_11_1_bindingAndBlackFFFFFFFBFB(this, isApplicableMatch);
+				.pattern_SplitAfterMerge_11_1_bindingAndBlackFFFFFFFFFFBFB(this, isApplicableMatch);
 		if (result1_bindingAndBlack == null) {
 			throw new RuntimeException("Pattern matching in node [perform transformation] failed." + " Variables: "
 					+ "[this] = " + this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ".");
@@ -541,8 +576,11 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		Step prevStep = (Step) result1_bindingAndBlack[3];
 		Flow flow = (Flow) result1_bindingAndBlack[4];
 		ParallelStep step = (ParallelStep) result1_bindingAndBlack[5];
-		de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result1_bindingAndBlack[6];
-		CSP csp = (CSP) result1_bindingAndBlack[8];
+		SequenceFlow prevInFlow = (SequenceFlow) result1_bindingAndBlack[6];
+		FlowNode prevPrevNode = (FlowNode) result1_bindingAndBlack[7];
+		FN2S fn2ps = (FN2S) result1_bindingAndBlack[8];
+		de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result1_bindingAndBlack[9];
+		CSP csp = (CSP) result1_bindingAndBlack[11];
 		Object[] result1_green = SplitAfterMergeImpl.pattern_SplitAfterMerge_11_1_greenBBBFFFFFB(prevNode, step,
 				process, csp);
 		SequenceFlow sf1 = (SequenceFlow) result1_green[3];
@@ -564,15 +602,17 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		PerformRuleResult ruleresult = (PerformRuleResult) result2_green[0];
 
 		// bookkeeping for edges
-		Object[] result3_black = SplitAfterMergeImpl.pattern_SplitAfterMerge_11_3_blackBBBBBBBBBBBBB(ruleresult,
-				prevNode, choiceStep, pn2cs, prevStep, flow, step, process, sf1, pgw, pcgwToStep, pgwToStep, pcgw);
+		Object[] result3_black = SplitAfterMergeImpl.pattern_SplitAfterMerge_11_3_blackBBBBBBBBBBBBBBBB(ruleresult,
+				prevNode, choiceStep, pn2cs, prevStep, flow, step, prevInFlow, prevPrevNode, fn2ps, process, sf1, pgw,
+				pcgwToStep, pgwToStep, pcgw);
 		if (result3_black == null) {
 			throw new RuntimeException("Pattern matching in node [bookkeeping for edges] failed." + " Variables: "
 					+ "[ruleresult] = " + ruleresult + ", " + "[prevNode] = " + prevNode + ", " + "[choiceStep] = "
 					+ choiceStep + ", " + "[pn2cs] = " + pn2cs + ", " + "[prevStep] = " + prevStep + ", " + "[flow] = "
-					+ flow + ", " + "[step] = " + step + ", " + "[process] = " + process + ", " + "[sf1] = " + sf1
-					+ ", " + "[pgw] = " + pgw + ", " + "[pcgwToStep] = " + pcgwToStep + ", " + "[pgwToStep] = "
-					+ pgwToStep + ", " + "[pcgw] = " + pcgw + ".");
+					+ flow + ", " + "[step] = " + step + ", " + "[prevInFlow] = " + prevInFlow + ", "
+					+ "[prevPrevNode] = " + prevPrevNode + ", " + "[fn2ps] = " + fn2ps + ", " + "[process] = " + process
+					+ ", " + "[sf1] = " + sf1 + ", " + "[pgw] = " + pgw + ", " + "[pcgwToStep] = " + pcgwToStep + ", "
+					+ "[pgwToStep] = " + pgwToStep + ", " + "[pcgw] = " + pcgw + ".");
 		}
 		SplitAfterMergeImpl.pattern_SplitAfterMerge_11_3_greenBBBBBBBBBBBFFFFFFFFFFFFFF(ruleresult, prevNode, prevStep,
 				flow, step, process, sf1, pgw, pcgwToStep, pgwToStep, pcgw);
@@ -593,8 +633,9 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 
 		// perform postprocessing story node is empty
 		// register objects
-		SplitAfterMergeImpl.pattern_SplitAfterMerge_11_5_expressionBBBBBBBBBBBBBB(this, ruleresult, prevNode,
-				choiceStep, pn2cs, prevStep, flow, step, process, sf1, pgw, pcgwToStep, pgwToStep, pcgw);
+		SplitAfterMergeImpl.pattern_SplitAfterMerge_11_5_expressionBBBBBBBBBBBBBBBBB(this, ruleresult, prevNode,
+				choiceStep, pn2cs, prevStep, flow, step, prevInFlow, prevPrevNode, fn2ps, process, sf1, pgw, pcgwToStep,
+				pgwToStep, pcgw);
 		return SplitAfterMergeImpl.pattern_SplitAfterMerge_11_6_expressionFB(ruleresult);
 	}
 
@@ -625,36 +666,45 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		Step prevStep = (Step) result2_binding[1];
 		Flow flow = (Flow) result2_binding[2];
 		ParallelStep step = (ParallelStep) result2_binding[3];
-		for (Object[] result2_black : SplitAfterMergeImpl.pattern_SplitAfterMerge_12_2_blackFBFBBBB(choiceStep,
+		for (Object[] result2_black : SplitAfterMergeImpl.pattern_SplitAfterMerge_12_2_blackFBFBBBFFB(choiceStep,
 				prevStep, flow, step, match)) {
 			ExclusiveGateway prevNode = (ExclusiveGateway) result2_black[0];
 			GW2S pn2cs = (GW2S) result2_black[2];
+			FlowNode prevPrevNode = (FlowNode) result2_black[6];
+			FN2S fn2ps = (FN2S) result2_black[7];
 			// ForEach find context
-			for (Object[] result3_black : SplitAfterMergeImpl.pattern_SplitAfterMerge_12_3_blackBBBBBBF(prevNode,
-					choiceStep, pn2cs, prevStep, flow, step)) {
-				de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result3_black[6];
-				Object[] result3_green = SplitAfterMergeImpl.pattern_SplitAfterMerge_12_3_greenBBBBBBBFFFFFFFFF(
-						prevNode, choiceStep, pn2cs, prevStep, flow, step, process);
-				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[7];
-				// EMoflonEdge choiceStep__prevStep______lastInDef = (EMoflonEdge) result3_green[8];
-				// EMoflonEdge pn2cs__prevNode____source = (EMoflonEdge) result3_green[9];
-				// EMoflonEdge pn2cs__choiceStep____target = (EMoflonEdge) result3_green[10];
-				// EMoflonEdge prevStep__step____next = (EMoflonEdge) result3_green[11];
-				// EMoflonEdge flow__choiceStep____steps = (EMoflonEdge) result3_green[12];
-				// EMoflonEdge flow__prevStep____steps = (EMoflonEdge) result3_green[13];
-				// EMoflonEdge flow__step____steps = (EMoflonEdge) result3_green[14];
-				// EMoflonEdge process__prevNode____flowElements = (EMoflonEdge) result3_green[15];
+			for (Object[] result3_black : SplitAfterMergeImpl.pattern_SplitAfterMerge_12_3_blackBBBBBBFBBF(prevNode,
+					choiceStep, pn2cs, prevStep, flow, step, prevPrevNode, fn2ps)) {
+				SequenceFlow prevInFlow = (SequenceFlow) result3_black[6];
+				de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result3_black[9];
+				Object[] result3_green = SplitAfterMergeImpl.pattern_SplitAfterMerge_12_3_greenBBBBBBBBBBFFFFFFFFFFFFFF(
+						prevNode, choiceStep, pn2cs, prevStep, flow, step, prevInFlow, prevPrevNode, fn2ps, process);
+				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[10];
+				// EMoflonEdge prevInFlow__prevNode____targetRef = (EMoflonEdge) result3_green[11];
+				// EMoflonEdge prevNode__prevInFlow____incoming = (EMoflonEdge) result3_green[12];
+				// EMoflonEdge pn2cs__prevNode____source = (EMoflonEdge) result3_green[13];
+				// EMoflonEdge pn2cs__choiceStep____target = (EMoflonEdge) result3_green[14];
+				// EMoflonEdge prevStep__step____next = (EMoflonEdge) result3_green[15];
+				// EMoflonEdge flow__choiceStep____steps = (EMoflonEdge) result3_green[16];
+				// EMoflonEdge flow__prevStep____steps = (EMoflonEdge) result3_green[17];
+				// EMoflonEdge flow__step____steps = (EMoflonEdge) result3_green[18];
+				// EMoflonEdge prevInFlow__prevPrevNode____sourceRef = (EMoflonEdge) result3_green[19];
+				// EMoflonEdge prevPrevNode__prevInFlow____outgoing = (EMoflonEdge) result3_green[20];
+				// EMoflonEdge fn2ps__prevPrevNode____source = (EMoflonEdge) result3_green[21];
+				// EMoflonEdge fn2ps__prevStep____target = (EMoflonEdge) result3_green[22];
+				// EMoflonEdge process__prevNode____flowElements = (EMoflonEdge) result3_green[23];
 
 				// solve CSP
 				Object[] result4_bindingAndBlack = SplitAfterMergeImpl
-						.pattern_SplitAfterMerge_12_4_bindingAndBlackFBBBBBBBBB(this, isApplicableMatch, prevNode,
-								choiceStep, pn2cs, prevStep, flow, step, process);
+						.pattern_SplitAfterMerge_12_4_bindingAndBlackFBBBBBBBBBBBB(this, isApplicableMatch, prevNode,
+								choiceStep, pn2cs, prevStep, flow, step, prevInFlow, prevPrevNode, fn2ps, process);
 				if (result4_bindingAndBlack == null) {
 					throw new RuntimeException("Pattern matching in node [solve CSP] failed." + " Variables: "
 							+ "[this] = " + this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ", "
 							+ "[prevNode] = " + prevNode + ", " + "[choiceStep] = " + choiceStep + ", " + "[pn2cs] = "
 							+ pn2cs + ", " + "[prevStep] = " + prevStep + ", " + "[flow] = " + flow + ", " + "[step] = "
-							+ step + ", " + "[process] = " + process + ".");
+							+ step + ", " + "[prevInFlow] = " + prevInFlow + ", " + "[prevPrevNode] = " + prevPrevNode
+							+ ", " + "[fn2ps] = " + fn2ps + ", " + "[process] = " + process + ".");
 				}
 				CSP csp = (CSP) result4_bindingAndBlack[0];
 				// check CSP
@@ -729,8 +779,8 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 	 * @generated
 	 */
 	public CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, ExclusiveGateway prevNode,
-			ChoiceStep choiceStep, GW2S pn2cs, Step prevStep, Flow flow, ParallelStep step,
-			de.abilov.bpmn.Process process) {// Create CSP
+			ChoiceStep choiceStep, GW2S pn2cs, Step prevStep, Flow flow, ParallelStep step, SequenceFlow prevInFlow,
+			FlowNode prevPrevNode, FN2S fn2ps, de.abilov.bpmn.Process process) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
 
@@ -761,6 +811,9 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		isApplicableMatch.registerObject("prevStep", prevStep);
 		isApplicableMatch.registerObject("flow", flow);
 		isApplicableMatch.registerObject("step", step);
+		isApplicableMatch.registerObject("prevInFlow", prevInFlow);
+		isApplicableMatch.registerObject("prevPrevNode", prevPrevNode);
+		isApplicableMatch.registerObject("fn2ps", fn2ps);
 		isApplicableMatch.registerObject("process", process);
 		return csp;
 	}
@@ -780,14 +833,17 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 	 * @generated
 	 */
 	public void registerObjects_BWD(PerformRuleResult ruleresult, EObject prevNode, EObject choiceStep, EObject pn2cs,
-			EObject prevStep, EObject flow, EObject step, EObject process, EObject sf1, EObject pgw, EObject pcgwToStep,
-			EObject pgwToStep, EObject pcgw) {
+			EObject prevStep, EObject flow, EObject step, EObject prevInFlow, EObject prevPrevNode, EObject fn2ps,
+			EObject process, EObject sf1, EObject pgw, EObject pcgwToStep, EObject pgwToStep, EObject pcgw) {
 		ruleresult.registerObject("prevNode", prevNode);
 		ruleresult.registerObject("choiceStep", choiceStep);
 		ruleresult.registerObject("pn2cs", pn2cs);
 		ruleresult.registerObject("prevStep", prevStep);
 		ruleresult.registerObject("flow", flow);
 		ruleresult.registerObject("step", step);
+		ruleresult.registerObject("prevInFlow", prevInFlow);
+		ruleresult.registerObject("prevPrevNode", prevPrevNode);
+		ruleresult.registerObject("fn2ps", fn2ps);
 		ruleresult.registerObject("process", process);
 		ruleresult.registerObject("sf1", sf1);
 		ruleresult.registerObject("pgw", pgw);
@@ -812,7 +868,7 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_154(EMoflonEdge _edge_next) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_276(EMoflonEdge _edge_next) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SplitAfterMergeImpl.pattern_SplitAfterMerge_20_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -864,7 +920,7 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_155(EMoflonEdge _edge_steps) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_277(EMoflonEdge _edge_steps) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SplitAfterMergeImpl.pattern_SplitAfterMerge_21_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -916,7 +972,7 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_508(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_902(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SplitAfterMergeImpl.pattern_SplitAfterMerge_22_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -930,18 +986,20 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 
 		// ForEach test core match and DECs
 		for (Object[] result2_black : SplitAfterMergeImpl
-				.pattern_SplitAfterMerge_22_2_blackFFFFFB(_edge_flowElements)) {
+				.pattern_SplitAfterMerge_22_2_blackFFFFFFFB(_edge_flowElements)) {
 			ExclusiveGateway prevNode = (ExclusiveGateway) result2_black[0];
-			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_black[1];
-			SequenceFlow sf1 = (SequenceFlow) result2_black[2];
-			ParallelGateway pgw = (ParallelGateway) result2_black[3];
-			ParallelGateway pcgw = (ParallelGateway) result2_black[4];
+			SequenceFlow prevInFlow = (SequenceFlow) result2_black[1];
+			FlowNode prevPrevNode = (FlowNode) result2_black[2];
+			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_black[3];
+			SequenceFlow sf1 = (SequenceFlow) result2_black[4];
+			ParallelGateway pgw = (ParallelGateway) result2_black[5];
+			ParallelGateway pcgw = (ParallelGateway) result2_black[6];
 			Object[] result2_green = SplitAfterMergeImpl.pattern_SplitAfterMerge_22_2_greenFB(__eClass);
 			Match match = (Match) result2_green[0];
 
 			// bookkeeping with generic isAppropriate method
-			if (SplitAfterMergeImpl.pattern_SplitAfterMerge_22_3_expressionFBBBBBBB(this, match, prevNode, process, sf1,
-					pgw, pcgw)) {
+			if (SplitAfterMergeImpl.pattern_SplitAfterMerge_22_3_expressionFBBBBBBBBB(this, match, prevNode, prevInFlow,
+					prevPrevNode, process, sf1, pgw, pcgw)) {
 				// Ensure that the correct types of elements are matched
 				if (SplitAfterMergeImpl.pattern_SplitAfterMerge_22_4_expressionFBB(this, match)) {
 
@@ -970,7 +1028,7 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_509(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_903(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SplitAfterMergeImpl.pattern_SplitAfterMerge_23_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -984,18 +1042,20 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 
 		// ForEach test core match and DECs
 		for (Object[] result2_black : SplitAfterMergeImpl
-				.pattern_SplitAfterMerge_23_2_blackFFFFFB(_edge_flowElements)) {
+				.pattern_SplitAfterMerge_23_2_blackFFFFFFFB(_edge_flowElements)) {
 			ExclusiveGateway prevNode = (ExclusiveGateway) result2_black[0];
-			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_black[1];
-			SequenceFlow sf1 = (SequenceFlow) result2_black[2];
-			ParallelGateway pgw = (ParallelGateway) result2_black[3];
-			ParallelGateway pcgw = (ParallelGateway) result2_black[4];
+			SequenceFlow prevInFlow = (SequenceFlow) result2_black[1];
+			FlowNode prevPrevNode = (FlowNode) result2_black[2];
+			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_black[3];
+			SequenceFlow sf1 = (SequenceFlow) result2_black[4];
+			ParallelGateway pgw = (ParallelGateway) result2_black[5];
+			ParallelGateway pcgw = (ParallelGateway) result2_black[6];
 			Object[] result2_green = SplitAfterMergeImpl.pattern_SplitAfterMerge_23_2_greenFB(__eClass);
 			Match match = (Match) result2_green[0];
 
 			// bookkeeping with generic isAppropriate method
-			if (SplitAfterMergeImpl.pattern_SplitAfterMerge_23_3_expressionFBBBBBBB(this, match, prevNode, process, sf1,
-					pgw, pcgw)) {
+			if (SplitAfterMergeImpl.pattern_SplitAfterMerge_23_3_expressionFBBBBBBBBB(this, match, prevNode, prevInFlow,
+					prevPrevNode, process, sf1, pgw, pcgw)) {
 				// Ensure that the correct types of elements are matched
 				if (SplitAfterMergeImpl.pattern_SplitAfterMerge_23_4_expressionFBB(this, match)) {
 
@@ -1024,7 +1084,7 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_510(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_904(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SplitAfterMergeImpl.pattern_SplitAfterMerge_24_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -1038,18 +1098,20 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 
 		// ForEach test core match and DECs
 		for (Object[] result2_black : SplitAfterMergeImpl
-				.pattern_SplitAfterMerge_24_2_blackFFFFFB(_edge_flowElements)) {
+				.pattern_SplitAfterMerge_24_2_blackFFFFFFFB(_edge_flowElements)) {
 			ExclusiveGateway prevNode = (ExclusiveGateway) result2_black[0];
-			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_black[1];
-			SequenceFlow sf1 = (SequenceFlow) result2_black[2];
-			ParallelGateway pgw = (ParallelGateway) result2_black[3];
-			ParallelGateway pcgw = (ParallelGateway) result2_black[4];
+			SequenceFlow prevInFlow = (SequenceFlow) result2_black[1];
+			FlowNode prevPrevNode = (FlowNode) result2_black[2];
+			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_black[3];
+			SequenceFlow sf1 = (SequenceFlow) result2_black[4];
+			ParallelGateway pgw = (ParallelGateway) result2_black[5];
+			ParallelGateway pcgw = (ParallelGateway) result2_black[6];
 			Object[] result2_green = SplitAfterMergeImpl.pattern_SplitAfterMerge_24_2_greenFB(__eClass);
 			Match match = (Match) result2_green[0];
 
 			// bookkeeping with generic isAppropriate method
-			if (SplitAfterMergeImpl.pattern_SplitAfterMerge_24_3_expressionFBBBBBBB(this, match, prevNode, process, sf1,
-					pgw, pcgw)) {
+			if (SplitAfterMergeImpl.pattern_SplitAfterMerge_24_3_expressionFBBBBBBBBB(this, match, prevNode, prevInFlow,
+					prevPrevNode, process, sf1, pgw, pcgw)) {
 				// Ensure that the correct types of elements are matched
 				if (SplitAfterMergeImpl.pattern_SplitAfterMerge_24_4_expressionFBB(this, match)) {
 
@@ -1078,7 +1140,7 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_511(EMoflonEdge _edge_targetRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_905(EMoflonEdge _edge_targetRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SplitAfterMergeImpl.pattern_SplitAfterMerge_25_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -1091,18 +1153,20 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		EObjectContainer __result = (EObjectContainer) result1_green[0];
 
 		// ForEach test core match and DECs
-		for (Object[] result2_black : SplitAfterMergeImpl.pattern_SplitAfterMerge_25_2_blackFFFFFB(_edge_targetRef)) {
+		for (Object[] result2_black : SplitAfterMergeImpl.pattern_SplitAfterMerge_25_2_blackFFFFFFFB(_edge_targetRef)) {
 			ExclusiveGateway prevNode = (ExclusiveGateway) result2_black[0];
-			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_black[1];
-			SequenceFlow sf1 = (SequenceFlow) result2_black[2];
-			ParallelGateway pgw = (ParallelGateway) result2_black[3];
-			ParallelGateway pcgw = (ParallelGateway) result2_black[4];
+			SequenceFlow prevInFlow = (SequenceFlow) result2_black[1];
+			FlowNode prevPrevNode = (FlowNode) result2_black[2];
+			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_black[3];
+			SequenceFlow sf1 = (SequenceFlow) result2_black[4];
+			ParallelGateway pgw = (ParallelGateway) result2_black[5];
+			ParallelGateway pcgw = (ParallelGateway) result2_black[6];
 			Object[] result2_green = SplitAfterMergeImpl.pattern_SplitAfterMerge_25_2_greenFB(__eClass);
 			Match match = (Match) result2_green[0];
 
 			// bookkeeping with generic isAppropriate method
-			if (SplitAfterMergeImpl.pattern_SplitAfterMerge_25_3_expressionFBBBBBBB(this, match, prevNode, process, sf1,
-					pgw, pcgw)) {
+			if (SplitAfterMergeImpl.pattern_SplitAfterMerge_25_3_expressionFBBBBBBBBB(this, match, prevNode, prevInFlow,
+					prevPrevNode, process, sf1, pgw, pcgw)) {
 				// Ensure that the correct types of elements are matched
 				if (SplitAfterMergeImpl.pattern_SplitAfterMerge_25_4_expressionFBB(this, match)) {
 
@@ -1131,7 +1195,7 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_512(EMoflonEdge _edge_incoming) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_906(EMoflonEdge _edge_incoming) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SplitAfterMergeImpl.pattern_SplitAfterMerge_26_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -1144,18 +1208,20 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		EObjectContainer __result = (EObjectContainer) result1_green[0];
 
 		// ForEach test core match and DECs
-		for (Object[] result2_black : SplitAfterMergeImpl.pattern_SplitAfterMerge_26_2_blackFFFFFB(_edge_incoming)) {
+		for (Object[] result2_black : SplitAfterMergeImpl.pattern_SplitAfterMerge_26_2_blackFFFFFFFB(_edge_incoming)) {
 			ExclusiveGateway prevNode = (ExclusiveGateway) result2_black[0];
-			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_black[1];
-			SequenceFlow sf1 = (SequenceFlow) result2_black[2];
-			ParallelGateway pgw = (ParallelGateway) result2_black[3];
-			ParallelGateway pcgw = (ParallelGateway) result2_black[4];
+			SequenceFlow prevInFlow = (SequenceFlow) result2_black[1];
+			FlowNode prevPrevNode = (FlowNode) result2_black[2];
+			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_black[3];
+			SequenceFlow sf1 = (SequenceFlow) result2_black[4];
+			ParallelGateway pgw = (ParallelGateway) result2_black[5];
+			ParallelGateway pcgw = (ParallelGateway) result2_black[6];
 			Object[] result2_green = SplitAfterMergeImpl.pattern_SplitAfterMerge_26_2_greenFB(__eClass);
 			Match match = (Match) result2_green[0];
 
 			// bookkeeping with generic isAppropriate method
-			if (SplitAfterMergeImpl.pattern_SplitAfterMerge_26_3_expressionFBBBBBBB(this, match, prevNode, process, sf1,
-					pgw, pcgw)) {
+			if (SplitAfterMergeImpl.pattern_SplitAfterMerge_26_3_expressionFBBBBBBBBB(this, match, prevNode, prevInFlow,
+					prevPrevNode, process, sf1, pgw, pcgw)) {
 				// Ensure that the correct types of elements are matched
 				if (SplitAfterMergeImpl.pattern_SplitAfterMerge_26_4_expressionFBB(this, match)) {
 
@@ -1184,7 +1250,7 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_513(EMoflonEdge _edge___conv) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_907(EMoflonEdge _edge___conv) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SplitAfterMergeImpl.pattern_SplitAfterMerge_27_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -1197,18 +1263,20 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		EObjectContainer __result = (EObjectContainer) result1_green[0];
 
 		// ForEach test core match and DECs
-		for (Object[] result2_black : SplitAfterMergeImpl.pattern_SplitAfterMerge_27_2_blackFFFFFB(_edge___conv)) {
+		for (Object[] result2_black : SplitAfterMergeImpl.pattern_SplitAfterMerge_27_2_blackFFFFFFFB(_edge___conv)) {
 			ExclusiveGateway prevNode = (ExclusiveGateway) result2_black[0];
-			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_black[1];
-			SequenceFlow sf1 = (SequenceFlow) result2_black[2];
-			ParallelGateway pgw = (ParallelGateway) result2_black[3];
-			ParallelGateway pcgw = (ParallelGateway) result2_black[4];
+			SequenceFlow prevInFlow = (SequenceFlow) result2_black[1];
+			FlowNode prevPrevNode = (FlowNode) result2_black[2];
+			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_black[3];
+			SequenceFlow sf1 = (SequenceFlow) result2_black[4];
+			ParallelGateway pgw = (ParallelGateway) result2_black[5];
+			ParallelGateway pcgw = (ParallelGateway) result2_black[6];
 			Object[] result2_green = SplitAfterMergeImpl.pattern_SplitAfterMerge_27_2_greenFB(__eClass);
 			Match match = (Match) result2_green[0];
 
 			// bookkeeping with generic isAppropriate method
-			if (SplitAfterMergeImpl.pattern_SplitAfterMerge_27_3_expressionFBBBBBBB(this, match, prevNode, process, sf1,
-					pgw, pcgw)) {
+			if (SplitAfterMergeImpl.pattern_SplitAfterMerge_27_3_expressionFBBBBBBBBB(this, match, prevNode, prevInFlow,
+					prevPrevNode, process, sf1, pgw, pcgw)) {
 				// Ensure that the correct types of elements are matched
 				if (SplitAfterMergeImpl.pattern_SplitAfterMerge_27_4_expressionFBB(this, match)) {
 
@@ -1237,7 +1305,7 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_514(EMoflonEdge _edge_sourceRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_908(EMoflonEdge _edge_sourceRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SplitAfterMergeImpl.pattern_SplitAfterMerge_28_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -1250,18 +1318,20 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		EObjectContainer __result = (EObjectContainer) result1_green[0];
 
 		// ForEach test core match and DECs
-		for (Object[] result2_black : SplitAfterMergeImpl.pattern_SplitAfterMerge_28_2_blackFFFFFB(_edge_sourceRef)) {
+		for (Object[] result2_black : SplitAfterMergeImpl.pattern_SplitAfterMerge_28_2_blackFFFFFFFB(_edge_sourceRef)) {
 			ExclusiveGateway prevNode = (ExclusiveGateway) result2_black[0];
-			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_black[1];
-			SequenceFlow sf1 = (SequenceFlow) result2_black[2];
-			ParallelGateway pgw = (ParallelGateway) result2_black[3];
-			ParallelGateway pcgw = (ParallelGateway) result2_black[4];
+			SequenceFlow prevInFlow = (SequenceFlow) result2_black[1];
+			FlowNode prevPrevNode = (FlowNode) result2_black[2];
+			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_black[3];
+			SequenceFlow sf1 = (SequenceFlow) result2_black[4];
+			ParallelGateway pgw = (ParallelGateway) result2_black[5];
+			ParallelGateway pcgw = (ParallelGateway) result2_black[6];
 			Object[] result2_green = SplitAfterMergeImpl.pattern_SplitAfterMerge_28_2_greenFB(__eClass);
 			Match match = (Match) result2_green[0];
 
 			// bookkeeping with generic isAppropriate method
-			if (SplitAfterMergeImpl.pattern_SplitAfterMerge_28_3_expressionFBBBBBBB(this, match, prevNode, process, sf1,
-					pgw, pcgw)) {
+			if (SplitAfterMergeImpl.pattern_SplitAfterMerge_28_3_expressionFBBBBBBBBB(this, match, prevNode, prevInFlow,
+					prevPrevNode, process, sf1, pgw, pcgw)) {
 				// Ensure that the correct types of elements are matched
 				if (SplitAfterMergeImpl.pattern_SplitAfterMerge_28_4_expressionFBB(this, match)) {
 
@@ -1290,7 +1360,7 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_515(EMoflonEdge _edge_outgoing) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_909(EMoflonEdge _edge_outgoing) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SplitAfterMergeImpl.pattern_SplitAfterMerge_29_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -1303,18 +1373,20 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		EObjectContainer __result = (EObjectContainer) result1_green[0];
 
 		// ForEach test core match and DECs
-		for (Object[] result2_black : SplitAfterMergeImpl.pattern_SplitAfterMerge_29_2_blackFFFFFB(_edge_outgoing)) {
+		for (Object[] result2_black : SplitAfterMergeImpl.pattern_SplitAfterMerge_29_2_blackFFFFFFFB(_edge_outgoing)) {
 			ExclusiveGateway prevNode = (ExclusiveGateway) result2_black[0];
-			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_black[1];
-			SequenceFlow sf1 = (SequenceFlow) result2_black[2];
-			ParallelGateway pgw = (ParallelGateway) result2_black[3];
-			ParallelGateway pcgw = (ParallelGateway) result2_black[4];
+			SequenceFlow prevInFlow = (SequenceFlow) result2_black[1];
+			FlowNode prevPrevNode = (FlowNode) result2_black[2];
+			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_black[3];
+			SequenceFlow sf1 = (SequenceFlow) result2_black[4];
+			ParallelGateway pgw = (ParallelGateway) result2_black[5];
+			ParallelGateway pcgw = (ParallelGateway) result2_black[6];
 			Object[] result2_green = SplitAfterMergeImpl.pattern_SplitAfterMerge_29_2_greenFB(__eClass);
 			Match match = (Match) result2_green[0];
 
 			// bookkeeping with generic isAppropriate method
-			if (SplitAfterMergeImpl.pattern_SplitAfterMerge_29_3_expressionFBBBBBBB(this, match, prevNode, process, sf1,
-					pgw, pcgw)) {
+			if (SplitAfterMergeImpl.pattern_SplitAfterMerge_29_3_expressionFBBBBBBBBB(this, match, prevNode, prevInFlow,
+					prevPrevNode, process, sf1, pgw, pcgw)) {
 				// Ensure that the correct types of elements are matched
 				if (SplitAfterMergeImpl.pattern_SplitAfterMerge_29_4_expressionFBB(this, match)) {
 
@@ -1373,6 +1445,18 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		Optional<TripleMatchNodeMapping> matchForStep = __tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("step")).findAny();
 		de.abilov.useCase.ParallelStep step = (de.abilov.useCase.ParallelStep) matchForStep.get().getNode();
+
+		Optional<TripleMatchNodeMapping> matchForPrevInFlow = __tripleMatch.getNodeMappings().stream()
+				.filter(nm -> nm.getNodeName().equals("prevInFlow")).findAny();
+		de.abilov.bpmn.SequenceFlow prevInFlow = (de.abilov.bpmn.SequenceFlow) matchForPrevInFlow.get().getNode();
+
+		Optional<TripleMatchNodeMapping> matchForPrevPrevNode = __tripleMatch.getNodeMappings().stream()
+				.filter(nm -> nm.getNodeName().equals("prevPrevNode")).findAny();
+		de.abilov.bpmn.FlowNode prevPrevNode = (de.abilov.bpmn.FlowNode) matchForPrevPrevNode.get().getNode();
+
+		Optional<TripleMatchNodeMapping> matchForFn2ps = __tripleMatch.getNodeMappings().stream()
+				.filter(nm -> nm.getNodeName().equals("fn2ps")).findAny();
+		de.abilov.tgg.bpmn2useCase.FN2S fn2ps = (de.abilov.tgg.bpmn2useCase.FN2S) matchForFn2ps.get().getNode();
 
 		Optional<TripleMatchNodeMapping> matchForProcess = __tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("process")).findAny();
@@ -1482,6 +1566,18 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 				.filter(nm -> nm.getNodeName().equals("step")).findAny();
 		de.abilov.useCase.ParallelStep step = (de.abilov.useCase.ParallelStep) matchForStep.get().getNode();
 
+		Optional<TripleMatchNodeMapping> matchForPrevInFlow = __tripleMatch.getNodeMappings().stream()
+				.filter(nm -> nm.getNodeName().equals("prevInFlow")).findAny();
+		de.abilov.bpmn.SequenceFlow prevInFlow = (de.abilov.bpmn.SequenceFlow) matchForPrevInFlow.get().getNode();
+
+		Optional<TripleMatchNodeMapping> matchForPrevPrevNode = __tripleMatch.getNodeMappings().stream()
+				.filter(nm -> nm.getNodeName().equals("prevPrevNode")).findAny();
+		de.abilov.bpmn.FlowNode prevPrevNode = (de.abilov.bpmn.FlowNode) matchForPrevPrevNode.get().getNode();
+
+		Optional<TripleMatchNodeMapping> matchForFn2ps = __tripleMatch.getNodeMappings().stream()
+				.filter(nm -> nm.getNodeName().equals("fn2ps")).findAny();
+		de.abilov.tgg.bpmn2useCase.FN2S fn2ps = (de.abilov.tgg.bpmn2useCase.FN2S) matchForFn2ps.get().getNode();
+
 		Optional<TripleMatchNodeMapping> matchForProcess = __tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("process")).findAny();
 		de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) matchForProcess.get().getNode();
@@ -1562,38 +1658,44 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
-		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD__MATCH_EXCLUSIVEGATEWAY_PROCESS_SEQUENCEFLOW_PARALLELGATEWAY_PARALLELGATEWAY:
+		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD__MATCH_EXCLUSIVEGATEWAY_SEQUENCEFLOW_FLOWNODE_PROCESS_SEQUENCEFLOW_PARALLELGATEWAY_PARALLELGATEWAY:
 			return isAppropriate_FWD((Match) arguments.get(0), (ExclusiveGateway) arguments.get(1),
-					(de.abilov.bpmn.Process) arguments.get(2), (SequenceFlow) arguments.get(3),
-					(ParallelGateway) arguments.get(4), (ParallelGateway) arguments.get(5));
+					(SequenceFlow) arguments.get(2), (FlowNode) arguments.get(3),
+					(de.abilov.bpmn.Process) arguments.get(4), (SequenceFlow) arguments.get(5),
+					(ParallelGateway) arguments.get(6), (ParallelGateway) arguments.get(7));
 		case RulesPackage.SPLIT_AFTER_MERGE___PERFORM_FWD__ISAPPLICABLEMATCH:
 			return perform_FWD((IsApplicableMatch) arguments.get(0));
 		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPLICABLE_FWD__MATCH:
 			return isApplicable_FWD((Match) arguments.get(0));
-		case RulesPackage.SPLIT_AFTER_MERGE___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_EXCLUSIVEGATEWAY_PROCESS_SEQUENCEFLOW_PARALLELGATEWAY_PARALLELGATEWAY:
+		case RulesPackage.SPLIT_AFTER_MERGE___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_EXCLUSIVEGATEWAY_SEQUENCEFLOW_FLOWNODE_PROCESS_SEQUENCEFLOW_PARALLELGATEWAY_PARALLELGATEWAY:
 			registerObjectsToMatch_FWD((Match) arguments.get(0), (ExclusiveGateway) arguments.get(1),
-					(de.abilov.bpmn.Process) arguments.get(2), (SequenceFlow) arguments.get(3),
-					(ParallelGateway) arguments.get(4), (ParallelGateway) arguments.get(5));
+					(SequenceFlow) arguments.get(2), (FlowNode) arguments.get(3),
+					(de.abilov.bpmn.Process) arguments.get(4), (SequenceFlow) arguments.get(5),
+					(ParallelGateway) arguments.get(6), (ParallelGateway) arguments.get(7));
 			return null;
-		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_EXCLUSIVEGATEWAY_PROCESS_SEQUENCEFLOW_PARALLELGATEWAY_PARALLELGATEWAY:
+		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_EXCLUSIVEGATEWAY_SEQUENCEFLOW_FLOWNODE_PROCESS_SEQUENCEFLOW_PARALLELGATEWAY_PARALLELGATEWAY:
 			return isAppropriate_solveCsp_FWD((Match) arguments.get(0), (ExclusiveGateway) arguments.get(1),
-					(de.abilov.bpmn.Process) arguments.get(2), (SequenceFlow) arguments.get(3),
-					(ParallelGateway) arguments.get(4), (ParallelGateway) arguments.get(5));
+					(SequenceFlow) arguments.get(2), (FlowNode) arguments.get(3),
+					(de.abilov.bpmn.Process) arguments.get(4), (SequenceFlow) arguments.get(5),
+					(ParallelGateway) arguments.get(6), (ParallelGateway) arguments.get(7));
 		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPROPRIATE_CHECK_CSP_FWD__CSP:
 			return isAppropriate_checkCsp_FWD((CSP) arguments.get(0));
-		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_EXCLUSIVEGATEWAY_CHOICESTEP_GW2S_STEP_FLOW_PROCESS_SEQUENCEFLOW_PARALLELGATEWAY_PARALLELGATEWAY:
+		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_EXCLUSIVEGATEWAY_CHOICESTEP_GW2S_STEP_FLOW_SEQUENCEFLOW_FLOWNODE_FN2S_PROCESS_SEQUENCEFLOW_PARALLELGATEWAY_PARALLELGATEWAY:
 			return isApplicable_solveCsp_FWD((IsApplicableMatch) arguments.get(0), (ExclusiveGateway) arguments.get(1),
 					(ChoiceStep) arguments.get(2), (GW2S) arguments.get(3), (Step) arguments.get(4),
-					(Flow) arguments.get(5), (de.abilov.bpmn.Process) arguments.get(6), (SequenceFlow) arguments.get(7),
-					(ParallelGateway) arguments.get(8), (ParallelGateway) arguments.get(9));
+					(Flow) arguments.get(5), (SequenceFlow) arguments.get(6), (FlowNode) arguments.get(7),
+					(FN2S) arguments.get(8), (de.abilov.bpmn.Process) arguments.get(9),
+					(SequenceFlow) arguments.get(10), (ParallelGateway) arguments.get(11),
+					(ParallelGateway) arguments.get(12));
 		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPLICABLE_CHECK_CSP_FWD__CSP:
 			return isApplicable_checkCsp_FWD((CSP) arguments.get(0));
-		case RulesPackage.SPLIT_AFTER_MERGE___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
+		case RulesPackage.SPLIT_AFTER_MERGE___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
 			registerObjects_FWD((PerformRuleResult) arguments.get(0), (EObject) arguments.get(1),
 					(EObject) arguments.get(2), (EObject) arguments.get(3), (EObject) arguments.get(4),
 					(EObject) arguments.get(5), (EObject) arguments.get(6), (EObject) arguments.get(7),
 					(EObject) arguments.get(8), (EObject) arguments.get(9), (EObject) arguments.get(10),
-					(EObject) arguments.get(11), (EObject) arguments.get(12));
+					(EObject) arguments.get(11), (EObject) arguments.get(12), (EObject) arguments.get(13),
+					(EObject) arguments.get(14), (EObject) arguments.get(15));
 			return null;
 		case RulesPackage.SPLIT_AFTER_MERGE___CHECK_TYPES_FWD__MATCH:
 			return checkTypes_FWD((Match) arguments.get(0));
@@ -1613,42 +1715,43 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 					(Step) arguments.get(2), (Flow) arguments.get(3), (ParallelStep) arguments.get(4));
 		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPROPRIATE_CHECK_CSP_BWD__CSP:
 			return isAppropriate_checkCsp_BWD((CSP) arguments.get(0));
-		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_EXCLUSIVEGATEWAY_CHOICESTEP_GW2S_STEP_FLOW_PARALLELSTEP_PROCESS:
+		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_EXCLUSIVEGATEWAY_CHOICESTEP_GW2S_STEP_FLOW_PARALLELSTEP_SEQUENCEFLOW_FLOWNODE_FN2S_PROCESS:
 			return isApplicable_solveCsp_BWD((IsApplicableMatch) arguments.get(0), (ExclusiveGateway) arguments.get(1),
 					(ChoiceStep) arguments.get(2), (GW2S) arguments.get(3), (Step) arguments.get(4),
-					(Flow) arguments.get(5), (ParallelStep) arguments.get(6),
-					(de.abilov.bpmn.Process) arguments.get(7));
+					(Flow) arguments.get(5), (ParallelStep) arguments.get(6), (SequenceFlow) arguments.get(7),
+					(FlowNode) arguments.get(8), (FN2S) arguments.get(9), (de.abilov.bpmn.Process) arguments.get(10));
 		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPLICABLE_CHECK_CSP_BWD__CSP:
 			return isApplicable_checkCsp_BWD((CSP) arguments.get(0));
-		case RulesPackage.SPLIT_AFTER_MERGE___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
+		case RulesPackage.SPLIT_AFTER_MERGE___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
 			registerObjects_BWD((PerformRuleResult) arguments.get(0), (EObject) arguments.get(1),
 					(EObject) arguments.get(2), (EObject) arguments.get(3), (EObject) arguments.get(4),
 					(EObject) arguments.get(5), (EObject) arguments.get(6), (EObject) arguments.get(7),
 					(EObject) arguments.get(8), (EObject) arguments.get(9), (EObject) arguments.get(10),
-					(EObject) arguments.get(11), (EObject) arguments.get(12));
+					(EObject) arguments.get(11), (EObject) arguments.get(12), (EObject) arguments.get(13),
+					(EObject) arguments.get(14), (EObject) arguments.get(15));
 			return null;
 		case RulesPackage.SPLIT_AFTER_MERGE___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_154__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_154((EMoflonEdge) arguments.get(0));
-		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_155__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_155((EMoflonEdge) arguments.get(0));
-		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_508__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_508((EMoflonEdge) arguments.get(0));
-		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_509__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_509((EMoflonEdge) arguments.get(0));
-		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_510__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_510((EMoflonEdge) arguments.get(0));
-		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_511__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_511((EMoflonEdge) arguments.get(0));
-		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_512__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_512((EMoflonEdge) arguments.get(0));
-		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_513__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_513((EMoflonEdge) arguments.get(0));
-		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_514__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_514((EMoflonEdge) arguments.get(0));
-		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_515__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_515((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_276__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_276((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_277__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_277((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_902__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_902((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_903__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_903((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_904__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_904((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_905__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_905((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_906__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_906((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_907__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_907((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_908__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_908((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_909__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_909((EMoflonEdge) arguments.get(0));
 		case RulesPackage.SPLIT_AFTER_MERGE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.SPLIT_AFTER_MERGE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
@@ -1657,22 +1760,32 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return super.eInvoke(operationID, arguments);
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_0_1_blackBBBBBBB(SplitAfterMerge _this, Match match,
-			ExclusiveGateway prevNode, de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw,
-			ParallelGateway pcgw) {
-		if (!pcgw.equals(pgw)) {
-			return new Object[] { _this, match, prevNode, process, sf1, pgw, pcgw };
+	public static final Object[] pattern_SplitAfterMerge_0_1_blackBBBBBBBBB(SplitAfterMerge _this, Match match,
+			ExclusiveGateway prevNode, SequenceFlow prevInFlow, FlowNode prevPrevNode, de.abilov.bpmn.Process process,
+			SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw) {
+		if (!prevNode.equals(prevPrevNode)) {
+			if (!prevInFlow.equals(sf1)) {
+				if (!pgw.equals(prevPrevNode)) {
+					if (!pcgw.equals(prevPrevNode)) {
+						if (!pcgw.equals(pgw)) {
+							return new Object[] { _this, match, prevNode, prevInFlow, prevPrevNode, process, sf1, pgw,
+									pcgw };
+						}
+					}
+				}
+			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_0_2_bindingFBBBBBBB(SplitAfterMerge _this, Match match,
-			ExclusiveGateway prevNode, de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw,
-			ParallelGateway pcgw) {
-		CSP _localVariable_0 = _this.isAppropriate_solveCsp_FWD(match, prevNode, process, sf1, pgw, pcgw);
+	public static final Object[] pattern_SplitAfterMerge_0_2_bindingFBBBBBBBBB(SplitAfterMerge _this, Match match,
+			ExclusiveGateway prevNode, SequenceFlow prevInFlow, FlowNode prevPrevNode, de.abilov.bpmn.Process process,
+			SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw) {
+		CSP _localVariable_0 = _this.isAppropriate_solveCsp_FWD(match, prevNode, prevInFlow, prevPrevNode, process, sf1,
+				pgw, pcgw);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, match, prevNode, process, sf1, pgw, pcgw };
+			return new Object[] { csp, _this, match, prevNode, prevInFlow, prevPrevNode, process, sf1, pgw, pcgw };
 		}
 		return null;
 	}
@@ -1681,18 +1794,18 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return new Object[] { csp };
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_0_2_bindingAndBlackFBBBBBBB(SplitAfterMerge _this, Match match,
-			ExclusiveGateway prevNode, de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw,
-			ParallelGateway pcgw) {
-		Object[] result_pattern_SplitAfterMerge_0_2_binding = pattern_SplitAfterMerge_0_2_bindingFBBBBBBB(_this, match,
-				prevNode, process, sf1, pgw, pcgw);
+	public static final Object[] pattern_SplitAfterMerge_0_2_bindingAndBlackFBBBBBBBBB(SplitAfterMerge _this,
+			Match match, ExclusiveGateway prevNode, SequenceFlow prevInFlow, FlowNode prevPrevNode,
+			de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw) {
+		Object[] result_pattern_SplitAfterMerge_0_2_binding = pattern_SplitAfterMerge_0_2_bindingFBBBBBBBBB(_this,
+				match, prevNode, prevInFlow, prevPrevNode, process, sf1, pgw, pcgw);
 		if (result_pattern_SplitAfterMerge_0_2_binding != null) {
 			CSP csp = (CSP) result_pattern_SplitAfterMerge_0_2_binding[0];
 
 			Object[] result_pattern_SplitAfterMerge_0_2_black = pattern_SplitAfterMerge_0_2_blackB(csp);
 			if (result_pattern_SplitAfterMerge_0_2_black != null) {
 
-				return new Object[] { csp, _this, match, prevNode, process, sf1, pgw, pcgw };
+				return new Object[] { csp, _this, match, prevNode, prevInFlow, prevPrevNode, process, sf1, pgw, pcgw };
 			}
 		}
 		return null;
@@ -1704,10 +1817,19 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return _result;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_0_4_blackBBBBBB(Match match, ExclusiveGateway prevNode,
-			de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw) {
-		if (!pcgw.equals(pgw)) {
-			return new Object[] { match, prevNode, process, sf1, pgw, pcgw };
+	public static final Object[] pattern_SplitAfterMerge_0_4_blackBBBBBBBB(Match match, ExclusiveGateway prevNode,
+			SequenceFlow prevInFlow, FlowNode prevPrevNode, de.abilov.bpmn.Process process, SequenceFlow sf1,
+			ParallelGateway pgw, ParallelGateway pcgw) {
+		if (!prevNode.equals(prevPrevNode)) {
+			if (!prevInFlow.equals(sf1)) {
+				if (!pgw.equals(prevPrevNode)) {
+					if (!pcgw.equals(prevPrevNode)) {
+						if (!pcgw.equals(pgw)) {
+							return new Object[] { match, prevNode, prevInFlow, prevPrevNode, process, sf1, pgw, pcgw };
+						}
+					}
+				}
+			}
 		}
 		return null;
 	}
@@ -1770,31 +1892,68 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 				pgw__sf1____incoming, pgw__pcgw______conv, sf1__prevNode____sourceRef, prevNode__sf1____outgoing };
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_0_5_blackBBBBBB(Match match, ExclusiveGateway prevNode,
-			de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw) {
-		if (!pcgw.equals(pgw)) {
-			return new Object[] { match, prevNode, process, sf1, pgw, pcgw };
+	public static final Object[] pattern_SplitAfterMerge_0_5_blackBBBBBBBB(Match match, ExclusiveGateway prevNode,
+			SequenceFlow prevInFlow, FlowNode prevPrevNode, de.abilov.bpmn.Process process, SequenceFlow sf1,
+			ParallelGateway pgw, ParallelGateway pcgw) {
+		if (!prevNode.equals(prevPrevNode)) {
+			if (!prevInFlow.equals(sf1)) {
+				if (!pgw.equals(prevPrevNode)) {
+					if (!pcgw.equals(prevPrevNode)) {
+						if (!pcgw.equals(pgw)) {
+							return new Object[] { match, prevNode, prevInFlow, prevPrevNode, process, sf1, pgw, pcgw };
+						}
+					}
+				}
+			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_0_5_greenBBBF(Match match, ExclusiveGateway prevNode,
-			de.abilov.bpmn.Process process) {
+	public static final Object[] pattern_SplitAfterMerge_0_5_greenBBBBBFFFFF(Match match, ExclusiveGateway prevNode,
+			SequenceFlow prevInFlow, FlowNode prevPrevNode, de.abilov.bpmn.Process process) {
+		EMoflonEdge prevInFlow__prevNode____targetRef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge prevNode__prevInFlow____incoming = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge prevInFlow__prevPrevNode____sourceRef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge prevPrevNode__prevInFlow____outgoing = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge process__prevNode____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		match.getContextNodes().add(prevNode);
+		match.getContextNodes().add(prevInFlow);
+		match.getContextNodes().add(prevPrevNode);
 		match.getContextNodes().add(process);
+		String prevInFlow__prevNode____targetRef_name_prime = "targetRef";
+		String prevNode__prevInFlow____incoming_name_prime = "incoming";
+		String prevInFlow__prevPrevNode____sourceRef_name_prime = "sourceRef";
+		String prevPrevNode__prevInFlow____outgoing_name_prime = "outgoing";
 		String process__prevNode____flowElements_name_prime = "flowElements";
+		prevInFlow__prevNode____targetRef.setSrc(prevInFlow);
+		prevInFlow__prevNode____targetRef.setTrg(prevNode);
+		match.getContextEdges().add(prevInFlow__prevNode____targetRef);
+		prevNode__prevInFlow____incoming.setSrc(prevNode);
+		prevNode__prevInFlow____incoming.setTrg(prevInFlow);
+		match.getContextEdges().add(prevNode__prevInFlow____incoming);
+		prevInFlow__prevPrevNode____sourceRef.setSrc(prevInFlow);
+		prevInFlow__prevPrevNode____sourceRef.setTrg(prevPrevNode);
+		match.getContextEdges().add(prevInFlow__prevPrevNode____sourceRef);
+		prevPrevNode__prevInFlow____outgoing.setSrc(prevPrevNode);
+		prevPrevNode__prevInFlow____outgoing.setTrg(prevInFlow);
+		match.getContextEdges().add(prevPrevNode__prevInFlow____outgoing);
 		process__prevNode____flowElements.setSrc(process);
 		process__prevNode____flowElements.setTrg(prevNode);
 		match.getContextEdges().add(process__prevNode____flowElements);
+		prevInFlow__prevNode____targetRef.setName(prevInFlow__prevNode____targetRef_name_prime);
+		prevNode__prevInFlow____incoming.setName(prevNode__prevInFlow____incoming_name_prime);
+		prevInFlow__prevPrevNode____sourceRef.setName(prevInFlow__prevPrevNode____sourceRef_name_prime);
+		prevPrevNode__prevInFlow____outgoing.setName(prevPrevNode__prevInFlow____outgoing_name_prime);
 		process__prevNode____flowElements.setName(process__prevNode____flowElements_name_prime);
-		return new Object[] { match, prevNode, process, process__prevNode____flowElements };
+		return new Object[] { match, prevNode, prevInFlow, prevPrevNode, process, prevInFlow__prevNode____targetRef,
+				prevNode__prevInFlow____incoming, prevInFlow__prevPrevNode____sourceRef,
+				prevPrevNode__prevInFlow____outgoing, process__prevNode____flowElements };
 	}
 
-	public static final void pattern_SplitAfterMerge_0_6_expressionBBBBBBB(SplitAfterMerge _this, Match match,
-			ExclusiveGateway prevNode, de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw,
-			ParallelGateway pcgw) {
-		_this.registerObjectsToMatch_FWD(match, prevNode, process, sf1, pgw, pcgw);
+	public static final void pattern_SplitAfterMerge_0_6_expressionBBBBBBBBB(SplitAfterMerge _this, Match match,
+			ExclusiveGateway prevNode, SequenceFlow prevInFlow, FlowNode prevPrevNode, de.abilov.bpmn.Process process,
+			SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw) {
+		_this.registerObjectsToMatch_FWD(match, prevNode, prevInFlow, prevPrevNode, process, sf1, pgw, pcgw);
 
 	}
 
@@ -1808,25 +1967,31 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return _result;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_1_1_bindingFFFFFFFFFB(IsApplicableMatch isApplicableMatch) {
+	public static final Object[] pattern_SplitAfterMerge_1_1_bindingFFFFFFFFFFFFB(IsApplicableMatch isApplicableMatch) {
 		EObject _localVariable_0 = isApplicableMatch.getObject("prevNode");
 		EObject _localVariable_1 = isApplicableMatch.getObject("choiceStep");
 		EObject _localVariable_2 = isApplicableMatch.getObject("pn2cs");
 		EObject _localVariable_3 = isApplicableMatch.getObject("prevStep");
 		EObject _localVariable_4 = isApplicableMatch.getObject("flow");
-		EObject _localVariable_5 = isApplicableMatch.getObject("process");
-		EObject _localVariable_6 = isApplicableMatch.getObject("sf1");
-		EObject _localVariable_7 = isApplicableMatch.getObject("pgw");
-		EObject _localVariable_8 = isApplicableMatch.getObject("pcgw");
+		EObject _localVariable_5 = isApplicableMatch.getObject("prevInFlow");
+		EObject _localVariable_6 = isApplicableMatch.getObject("prevPrevNode");
+		EObject _localVariable_7 = isApplicableMatch.getObject("fn2ps");
+		EObject _localVariable_8 = isApplicableMatch.getObject("process");
+		EObject _localVariable_9 = isApplicableMatch.getObject("sf1");
+		EObject _localVariable_10 = isApplicableMatch.getObject("pgw");
+		EObject _localVariable_11 = isApplicableMatch.getObject("pcgw");
 		EObject tmpPrevNode = _localVariable_0;
 		EObject tmpChoiceStep = _localVariable_1;
 		EObject tmpPn2cs = _localVariable_2;
 		EObject tmpPrevStep = _localVariable_3;
 		EObject tmpFlow = _localVariable_4;
-		EObject tmpProcess = _localVariable_5;
-		EObject tmpSf1 = _localVariable_6;
-		EObject tmpPgw = _localVariable_7;
-		EObject tmpPcgw = _localVariable_8;
+		EObject tmpPrevInFlow = _localVariable_5;
+		EObject tmpPrevPrevNode = _localVariable_6;
+		EObject tmpFn2ps = _localVariable_7;
+		EObject tmpProcess = _localVariable_8;
+		EObject tmpSf1 = _localVariable_9;
+		EObject tmpPgw = _localVariable_10;
+		EObject tmpPcgw = _localVariable_11;
 		if (tmpPrevNode instanceof ExclusiveGateway) {
 			ExclusiveGateway prevNode = (ExclusiveGateway) tmpPrevNode;
 			if (tmpChoiceStep instanceof ChoiceStep) {
@@ -1837,16 +2002,26 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 						Step prevStep = (Step) tmpPrevStep;
 						if (tmpFlow instanceof Flow) {
 							Flow flow = (Flow) tmpFlow;
-							if (tmpProcess instanceof de.abilov.bpmn.Process) {
-								de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) tmpProcess;
-								if (tmpSf1 instanceof SequenceFlow) {
-									SequenceFlow sf1 = (SequenceFlow) tmpSf1;
-									if (tmpPgw instanceof ParallelGateway) {
-										ParallelGateway pgw = (ParallelGateway) tmpPgw;
-										if (tmpPcgw instanceof ParallelGateway) {
-											ParallelGateway pcgw = (ParallelGateway) tmpPcgw;
-											return new Object[] { prevNode, choiceStep, pn2cs, prevStep, flow, process,
-													sf1, pgw, pcgw, isApplicableMatch };
+							if (tmpPrevInFlow instanceof SequenceFlow) {
+								SequenceFlow prevInFlow = (SequenceFlow) tmpPrevInFlow;
+								if (tmpPrevPrevNode instanceof FlowNode) {
+									FlowNode prevPrevNode = (FlowNode) tmpPrevPrevNode;
+									if (tmpFn2ps instanceof FN2S) {
+										FN2S fn2ps = (FN2S) tmpFn2ps;
+										if (tmpProcess instanceof de.abilov.bpmn.Process) {
+											de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) tmpProcess;
+											if (tmpSf1 instanceof SequenceFlow) {
+												SequenceFlow sf1 = (SequenceFlow) tmpSf1;
+												if (tmpPgw instanceof ParallelGateway) {
+													ParallelGateway pgw = (ParallelGateway) tmpPgw;
+													if (tmpPcgw instanceof ParallelGateway) {
+														ParallelGateway pcgw = (ParallelGateway) tmpPcgw;
+														return new Object[] { prevNode, choiceStep, pn2cs, prevStep,
+																flow, prevInFlow, prevPrevNode, fn2ps, process, sf1,
+																pgw, pcgw, isApplicableMatch };
+													}
+												}
+											}
 										}
 									}
 								}
@@ -1859,17 +2034,26 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_1_1_blackBBBBBBBBBBFB(ExclusiveGateway prevNode,
-			ChoiceStep choiceStep, GW2S pn2cs, Step prevStep, Flow flow, de.abilov.bpmn.Process process,
-			SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw, SplitAfterMerge _this,
-			IsApplicableMatch isApplicableMatch) {
-		if (!choiceStep.equals(prevStep)) {
-			if (!pcgw.equals(pgw)) {
-				for (EObject tmpCsp : isApplicableMatch.getAttributeInfo()) {
-					if (tmpCsp instanceof CSP) {
-						CSP csp = (CSP) tmpCsp;
-						return new Object[] { prevNode, choiceStep, pn2cs, prevStep, flow, process, sf1, pgw, pcgw,
-								_this, csp, isApplicableMatch };
+	public static final Object[] pattern_SplitAfterMerge_1_1_blackBBBBBBBBBBBBBFB(ExclusiveGateway prevNode,
+			ChoiceStep choiceStep, GW2S pn2cs, Step prevStep, Flow flow, SequenceFlow prevInFlow, FlowNode prevPrevNode,
+			FN2S fn2ps, de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw,
+			SplitAfterMerge _this, IsApplicableMatch isApplicableMatch) {
+		if (!prevNode.equals(prevPrevNode)) {
+			if (!choiceStep.equals(prevStep)) {
+				if (!prevInFlow.equals(sf1)) {
+					if (!pgw.equals(prevPrevNode)) {
+						if (!pcgw.equals(prevPrevNode)) {
+							if (!pcgw.equals(pgw)) {
+								for (EObject tmpCsp : isApplicableMatch.getAttributeInfo()) {
+									if (tmpCsp instanceof CSP) {
+										CSP csp = (CSP) tmpCsp;
+										return new Object[] { prevNode, choiceStep, pn2cs, prevStep, flow, prevInFlow,
+												prevPrevNode, fn2ps, process, sf1, pgw, pcgw, _this, csp,
+												isApplicableMatch };
+									}
+								}
+							}
+						}
 					}
 				}
 			}
@@ -1877,9 +2061,9 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_1_1_bindingAndBlackFFFFFFFFFBFB(SplitAfterMerge _this,
+	public static final Object[] pattern_SplitAfterMerge_1_1_bindingAndBlackFFFFFFFFFFFFBFB(SplitAfterMerge _this,
 			IsApplicableMatch isApplicableMatch) {
-		Object[] result_pattern_SplitAfterMerge_1_1_binding = pattern_SplitAfterMerge_1_1_bindingFFFFFFFFFB(
+		Object[] result_pattern_SplitAfterMerge_1_1_binding = pattern_SplitAfterMerge_1_1_bindingFFFFFFFFFFFFB(
 				isApplicableMatch);
 		if (result_pattern_SplitAfterMerge_1_1_binding != null) {
 			ExclusiveGateway prevNode = (ExclusiveGateway) result_pattern_SplitAfterMerge_1_1_binding[0];
@@ -1887,18 +2071,22 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 			GW2S pn2cs = (GW2S) result_pattern_SplitAfterMerge_1_1_binding[2];
 			Step prevStep = (Step) result_pattern_SplitAfterMerge_1_1_binding[3];
 			Flow flow = (Flow) result_pattern_SplitAfterMerge_1_1_binding[4];
-			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result_pattern_SplitAfterMerge_1_1_binding[5];
-			SequenceFlow sf1 = (SequenceFlow) result_pattern_SplitAfterMerge_1_1_binding[6];
-			ParallelGateway pgw = (ParallelGateway) result_pattern_SplitAfterMerge_1_1_binding[7];
-			ParallelGateway pcgw = (ParallelGateway) result_pattern_SplitAfterMerge_1_1_binding[8];
+			SequenceFlow prevInFlow = (SequenceFlow) result_pattern_SplitAfterMerge_1_1_binding[5];
+			FlowNode prevPrevNode = (FlowNode) result_pattern_SplitAfterMerge_1_1_binding[6];
+			FN2S fn2ps = (FN2S) result_pattern_SplitAfterMerge_1_1_binding[7];
+			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result_pattern_SplitAfterMerge_1_1_binding[8];
+			SequenceFlow sf1 = (SequenceFlow) result_pattern_SplitAfterMerge_1_1_binding[9];
+			ParallelGateway pgw = (ParallelGateway) result_pattern_SplitAfterMerge_1_1_binding[10];
+			ParallelGateway pcgw = (ParallelGateway) result_pattern_SplitAfterMerge_1_1_binding[11];
 
-			Object[] result_pattern_SplitAfterMerge_1_1_black = pattern_SplitAfterMerge_1_1_blackBBBBBBBBBBFB(prevNode,
-					choiceStep, pn2cs, prevStep, flow, process, sf1, pgw, pcgw, _this, isApplicableMatch);
+			Object[] result_pattern_SplitAfterMerge_1_1_black = pattern_SplitAfterMerge_1_1_blackBBBBBBBBBBBBBFB(
+					prevNode, choiceStep, pn2cs, prevStep, flow, prevInFlow, prevPrevNode, fn2ps, process, sf1, pgw,
+					pcgw, _this, isApplicableMatch);
 			if (result_pattern_SplitAfterMerge_1_1_black != null) {
-				CSP csp = (CSP) result_pattern_SplitAfterMerge_1_1_black[10];
+				CSP csp = (CSP) result_pattern_SplitAfterMerge_1_1_black[13];
 
-				return new Object[] { prevNode, choiceStep, pn2cs, prevStep, flow, process, sf1, pgw, pcgw, _this, csp,
-						isApplicableMatch };
+				return new Object[] { prevNode, choiceStep, pn2cs, prevStep, flow, prevInFlow, prevPrevNode, fn2ps,
+						process, sf1, pgw, pcgw, _this, csp, isApplicableMatch };
 			}
 		}
 		return null;
@@ -1941,134 +2129,254 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return new Object[] { ruleresult, step, sf1, pgw, pcgwToStep, pgwToStep, pcgw };
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_1_3_blackBBBBBBBBBBBBB(PerformRuleResult ruleresult,
+	public static final Object[] pattern_SplitAfterMerge_1_3_blackBBBBBBBBBBBBBBBB(PerformRuleResult ruleresult,
 			EObject prevNode, EObject choiceStep, EObject pn2cs, EObject prevStep, EObject flow, EObject step,
-			EObject process, EObject sf1, EObject pgw, EObject pcgwToStep, EObject pgwToStep, EObject pcgw) {
+			EObject prevInFlow, EObject prevPrevNode, EObject fn2ps, EObject process, EObject sf1, EObject pgw,
+			EObject pcgwToStep, EObject pgwToStep, EObject pcgw) {
 		if (!prevNode.equals(prevStep)) {
 			if (!prevNode.equals(step)) {
-				if (!prevNode.equals(process)) {
-					if (!prevNode.equals(sf1)) {
-						if (!choiceStep.equals(prevNode)) {
-							if (!choiceStep.equals(pn2cs)) {
-								if (!choiceStep.equals(prevStep)) {
-									if (!choiceStep.equals(flow)) {
-										if (!choiceStep.equals(step)) {
-											if (!choiceStep.equals(process)) {
-												if (!choiceStep.equals(sf1)) {
-													if (!choiceStep.equals(pgw)) {
-														if (!choiceStep.equals(pcgwToStep)) {
-															if (!choiceStep.equals(pgwToStep)) {
-																if (!choiceStep.equals(pcgw)) {
-																	if (!pn2cs.equals(prevNode)) {
-																		if (!pn2cs.equals(prevStep)) {
-																			if (!pn2cs.equals(step)) {
-																				if (!pn2cs.equals(process)) {
-																					if (!pn2cs.equals(sf1)) {
-																						if (!prevStep.equals(step)) {
-																							if (!prevStep
-																									.equals(process)) {
-																								if (!prevStep
-																										.equals(sf1)) {
-																									if (!flow.equals(
-																											prevNode)) {
-																										if (!flow
-																												.equals(pn2cs)) {
-																											if (!flow
-																													.equals(prevStep)) {
-																												if (!flow
+				if (!prevNode.equals(prevPrevNode)) {
+					if (!prevNode.equals(process)) {
+						if (!prevNode.equals(sf1)) {
+							if (!choiceStep.equals(prevNode)) {
+								if (!choiceStep.equals(pn2cs)) {
+									if (!choiceStep.equals(prevStep)) {
+										if (!choiceStep.equals(flow)) {
+											if (!choiceStep.equals(step)) {
+												if (!choiceStep.equals(prevInFlow)) {
+													if (!choiceStep.equals(prevPrevNode)) {
+														if (!choiceStep.equals(fn2ps)) {
+															if (!choiceStep.equals(process)) {
+																if (!choiceStep.equals(sf1)) {
+																	if (!choiceStep.equals(pgw)) {
+																		if (!choiceStep.equals(pcgwToStep)) {
+																			if (!choiceStep.equals(pgwToStep)) {
+																				if (!choiceStep.equals(pcgw)) {
+																					if (!pn2cs.equals(prevNode)) {
+																						if (!pn2cs.equals(prevStep)) {
+																							if (!pn2cs.equals(step)) {
+																								if (!pn2cs.equals(
+																										prevInFlow)) {
+																									if (!pn2cs.equals(
+																											prevPrevNode)) {
+																										if (!pn2cs
+																												.equals(process)) {
+																											if (!pn2cs
+																													.equals(sf1)) {
+																												if (!prevStep
 																														.equals(step)) {
-																													if (!flow
+																													if (!prevStep
 																															.equals(process)) {
-																														if (!flow
+																														if (!prevStep
 																																.equals(sf1)) {
 																															if (!flow
-																																	.equals(pgw)) {
+																																	.equals(prevNode)) {
 																																if (!flow
-																																		.equals(pcgwToStep)) {
+																																		.equals(pn2cs)) {
 																																	if (!flow
-																																			.equals(pgwToStep)) {
+																																			.equals(prevStep)) {
 																																		if (!flow
-																																				.equals(pcgw)) {
-																																			if (!process
-																																					.equals(step)) {
-																																				if (!process
-																																						.equals(sf1)) {
-																																					if (!sf1.equals(
-																																							step)) {
-																																						if (!pgw.equals(
-																																								prevNode)) {
-																																							if (!pgw.equals(
-																																									pn2cs)) {
-																																								if (!pgw.equals(
-																																										prevStep)) {
-																																									if (!pgw.equals(
-																																											step)) {
-																																										if (!pgw.equals(
-																																												process)) {
-																																											if (!pgw.equals(
-																																													sf1)) {
-																																												if (!pgw.equals(
-																																														pgwToStep)) {
-																																													if (!pcgwToStep
-																																															.equals(prevNode)) {
-																																														if (!pcgwToStep
-																																																.equals(pn2cs)) {
-																																															if (!pcgwToStep
-																																																	.equals(prevStep)) {
-																																																if (!pcgwToStep
-																																																		.equals(step)) {
-																																																	if (!pcgwToStep
-																																																			.equals(process)) {
-																																																		if (!pcgwToStep
-																																																				.equals(sf1)) {
-																																																			if (!pcgwToStep
-																																																					.equals(pgw)) {
-																																																				if (!pcgwToStep
-																																																						.equals(pgwToStep)) {
-																																																					if (!pgwToStep
-																																																							.equals(prevNode)) {
-																																																						if (!pgwToStep
-																																																								.equals(pn2cs)) {
-																																																							if (!pgwToStep
-																																																									.equals(prevStep)) {
-																																																								if (!pgwToStep
-																																																										.equals(step)) {
-																																																									if (!pgwToStep
-																																																											.equals(process)) {
-																																																										if (!pgwToStep
-																																																												.equals(sf1)) {
-																																																											if (!pcgw
-																																																													.equals(prevNode)) {
-																																																												if (!pcgw
-																																																														.equals(pn2cs)) {
-																																																													if (!pcgw
-																																																															.equals(prevStep)) {
-																																																														if (!pcgw
-																																																																.equals(step)) {
-																																																															if (!pcgw
-																																																																	.equals(process)) {
-																																																																if (!pcgw
-																																																																		.equals(sf1)) {
-																																																																	if (!pcgw
-																																																																			.equals(pgw)) {
-																																																																		if (!pcgw
-																																																																				.equals(pcgwToStep)) {
-																																																																			if (!pcgw
-																																																																					.equals(pgwToStep)) {
-																																																																				return new Object[] {
-																																																																						ruleresult,
-																																																																						prevNode,
-																																																																						choiceStep,
-																																																																						pn2cs,
-																																																																						prevStep,
-																																																																						flow,
-																																																																						step,
-																																																																						process,
-																																																																						sf1,
-																																																																						pgw,
-																																																																						pcgwToStep,
-																																																																						pgwToStep,
-																																																																						pcgw };
+																																				.equals(step)) {
+																																			if (!flow
+																																					.equals(prevInFlow)) {
+																																				if (!flow
+																																						.equals(prevPrevNode)) {
+																																					if (!flow
+																																							.equals(fn2ps)) {
+																																						if (!flow
+																																								.equals(process)) {
+																																							if (!flow
+																																									.equals(sf1)) {
+																																								if (!flow
+																																										.equals(pgw)) {
+																																									if (!flow
+																																											.equals(pcgwToStep)) {
+																																										if (!flow
+																																												.equals(pgwToStep)) {
+																																											if (!flow
+																																													.equals(pcgw)) {
+																																												if (!prevInFlow
+																																														.equals(prevNode)) {
+																																													if (!prevInFlow
+																																															.equals(prevStep)) {
+																																														if (!prevInFlow
+																																																.equals(step)) {
+																																															if (!prevInFlow
+																																																	.equals(prevPrevNode)) {
+																																																if (!prevInFlow
+																																																		.equals(process)) {
+																																																	if (!prevInFlow
+																																																			.equals(sf1)) {
+																																																		if (!prevPrevNode
+																																																				.equals(prevStep)) {
+																																																			if (!prevPrevNode
+																																																					.equals(step)) {
+																																																				if (!prevPrevNode
+																																																						.equals(process)) {
+																																																					if (!prevPrevNode
+																																																							.equals(sf1)) {
+																																																						if (!fn2ps
+																																																								.equals(prevNode)) {
+																																																							if (!fn2ps
+																																																									.equals(pn2cs)) {
+																																																								if (!fn2ps
+																																																										.equals(prevStep)) {
+																																																									if (!fn2ps
+																																																											.equals(step)) {
+																																																										if (!fn2ps
+																																																												.equals(prevInFlow)) {
+																																																											if (!fn2ps
+																																																													.equals(prevPrevNode)) {
+																																																												if (!fn2ps
+																																																														.equals(process)) {
+																																																													if (!fn2ps
+																																																															.equals(sf1)) {
+																																																														if (!fn2ps
+																																																																.equals(pgw)) {
+																																																															if (!fn2ps
+																																																																	.equals(pcgwToStep)) {
+																																																																if (!fn2ps
+																																																																		.equals(pgwToStep)) {
+																																																																	if (!fn2ps
+																																																																			.equals(pcgw)) {
+																																																																		if (!process
+																																																																				.equals(step)) {
+																																																																			if (!process
+																																																																					.equals(sf1)) {
+																																																																				if (!sf1.equals(
+																																																																						step)) {
+																																																																					if (!pgw.equals(
+																																																																							prevNode)) {
+																																																																						if (!pgw.equals(
+																																																																								pn2cs)) {
+																																																																							if (!pgw.equals(
+																																																																									prevStep)) {
+																																																																								if (!pgw.equals(
+																																																																										step)) {
+																																																																									if (!pgw.equals(
+																																																																											prevInFlow)) {
+																																																																										if (!pgw.equals(
+																																																																												prevPrevNode)) {
+																																																																											if (!pgw.equals(
+																																																																													process)) {
+																																																																												if (!pgw.equals(
+																																																																														sf1)) {
+																																																																													if (!pgw.equals(
+																																																																															pgwToStep)) {
+																																																																														if (!pcgwToStep
+																																																																																.equals(prevNode)) {
+																																																																															if (!pcgwToStep
+																																																																																	.equals(pn2cs)) {
+																																																																																if (!pcgwToStep
+																																																																																		.equals(prevStep)) {
+																																																																																	if (!pcgwToStep
+																																																																																			.equals(step)) {
+																																																																																		if (!pcgwToStep
+																																																																																				.equals(prevInFlow)) {
+																																																																																			if (!pcgwToStep
+																																																																																					.equals(prevPrevNode)) {
+																																																																																				if (!pcgwToStep
+																																																																																						.equals(process)) {
+																																																																																					if (!pcgwToStep
+																																																																																							.equals(sf1)) {
+																																																																																						if (!pcgwToStep
+																																																																																								.equals(pgw)) {
+																																																																																							if (!pcgwToStep
+																																																																																									.equals(pgwToStep)) {
+																																																																																								if (!pgwToStep
+																																																																																										.equals(prevNode)) {
+																																																																																									if (!pgwToStep
+																																																																																											.equals(pn2cs)) {
+																																																																																										if (!pgwToStep
+																																																																																												.equals(prevStep)) {
+																																																																																											if (!pgwToStep
+																																																																																													.equals(step)) {
+																																																																																												if (!pgwToStep
+																																																																																														.equals(prevInFlow)) {
+																																																																																													if (!pgwToStep
+																																																																																															.equals(prevPrevNode)) {
+																																																																																														if (!pgwToStep
+																																																																																																.equals(process)) {
+																																																																																															if (!pgwToStep
+																																																																																																	.equals(sf1)) {
+																																																																																																if (!pcgw
+																																																																																																		.equals(prevNode)) {
+																																																																																																	if (!pcgw
+																																																																																																			.equals(pn2cs)) {
+																																																																																																		if (!pcgw
+																																																																																																				.equals(prevStep)) {
+																																																																																																			if (!pcgw
+																																																																																																					.equals(step)) {
+																																																																																																				if (!pcgw
+																																																																																																						.equals(prevInFlow)) {
+																																																																																																					if (!pcgw
+																																																																																																							.equals(prevPrevNode)) {
+																																																																																																						if (!pcgw
+																																																																																																								.equals(process)) {
+																																																																																																							if (!pcgw
+																																																																																																									.equals(sf1)) {
+																																																																																																								if (!pcgw
+																																																																																																										.equals(pgw)) {
+																																																																																																									if (!pcgw
+																																																																																																											.equals(pcgwToStep)) {
+																																																																																																										if (!pcgw
+																																																																																																												.equals(pgwToStep)) {
+																																																																																																											return new Object[] {
+																																																																																																													ruleresult,
+																																																																																																													prevNode,
+																																																																																																													choiceStep,
+																																																																																																													pn2cs,
+																																																																																																													prevStep,
+																																																																																																													flow,
+																																																																																																													step,
+																																																																																																													prevInFlow,
+																																																																																																													prevPrevNode,
+																																																																																																													fn2ps,
+																																																																																																													process,
+																																																																																																													sf1,
+																																																																																																													pgw,
+																																																																																																													pcgwToStep,
+																																																																																																													pgwToStep,
+																																																																																																													pcgw };
+																																																																																																										}
+																																																																																																									}
+																																																																																																								}
+																																																																																																							}
+																																																																																																						}
+																																																																																																					}
+																																																																																																				}
+																																																																																																			}
+																																																																																																		}
+																																																																																																	}
+																																																																																																}
+																																																																																															}
+																																																																																														}
+																																																																																													}
+																																																																																												}
+																																																																																											}
+																																																																																										}
+																																																																																									}
+																																																																																								}
+																																																																																							}
+																																																																																						}
+																																																																																					}
+																																																																																				}
+																																																																																			}
+																																																																																		}
+																																																																																	}
+																																																																																}
+																																																																															}
+																																																																														}
+																																																																													}
+																																																																												}
+																																																																											}
+																																																																										}
+																																																																									}
+																																																																								}
+																																																																							}
+																																																																						}
+																																																																					}
+																																																																				}
 																																																																			}
 																																																																		}
 																																																																	}
@@ -2235,12 +2543,12 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 				pgwToStep__step____target };
 	}
 
-	public static final void pattern_SplitAfterMerge_1_5_expressionBBBBBBBBBBBBBB(SplitAfterMerge _this,
+	public static final void pattern_SplitAfterMerge_1_5_expressionBBBBBBBBBBBBBBBBB(SplitAfterMerge _this,
 			PerformRuleResult ruleresult, EObject prevNode, EObject choiceStep, EObject pn2cs, EObject prevStep,
-			EObject flow, EObject step, EObject process, EObject sf1, EObject pgw, EObject pcgwToStep,
-			EObject pgwToStep, EObject pcgw) {
-		_this.registerObjects_FWD(ruleresult, prevNode, choiceStep, pn2cs, prevStep, flow, step, process, sf1, pgw,
-				pcgwToStep, pgwToStep, pcgw);
+			EObject flow, EObject step, EObject prevInFlow, EObject prevPrevNode, EObject fn2ps, EObject process,
+			EObject sf1, EObject pgw, EObject pcgwToStep, EObject pgwToStep, EObject pcgw) {
+		_this.registerObjects_FWD(ruleresult, prevNode, choiceStep, pn2cs, prevStep, flow, step, prevInFlow,
+				prevPrevNode, fn2ps, process, sf1, pgw, pcgwToStep, pgwToStep, pcgw);
 
 	}
 
@@ -2294,28 +2602,39 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return new Object[] { performOperation, ruleresult };
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_2_2_bindingFFFFFB(Match match) {
+	public static final Object[] pattern_SplitAfterMerge_2_2_bindingFFFFFFFB(Match match) {
 		EObject _localVariable_0 = match.getObject("prevNode");
-		EObject _localVariable_1 = match.getObject("process");
-		EObject _localVariable_2 = match.getObject("sf1");
-		EObject _localVariable_3 = match.getObject("pgw");
-		EObject _localVariable_4 = match.getObject("pcgw");
+		EObject _localVariable_1 = match.getObject("prevInFlow");
+		EObject _localVariable_2 = match.getObject("prevPrevNode");
+		EObject _localVariable_3 = match.getObject("process");
+		EObject _localVariable_4 = match.getObject("sf1");
+		EObject _localVariable_5 = match.getObject("pgw");
+		EObject _localVariable_6 = match.getObject("pcgw");
 		EObject tmpPrevNode = _localVariable_0;
-		EObject tmpProcess = _localVariable_1;
-		EObject tmpSf1 = _localVariable_2;
-		EObject tmpPgw = _localVariable_3;
-		EObject tmpPcgw = _localVariable_4;
+		EObject tmpPrevInFlow = _localVariable_1;
+		EObject tmpPrevPrevNode = _localVariable_2;
+		EObject tmpProcess = _localVariable_3;
+		EObject tmpSf1 = _localVariable_4;
+		EObject tmpPgw = _localVariable_5;
+		EObject tmpPcgw = _localVariable_6;
 		if (tmpPrevNode instanceof ExclusiveGateway) {
 			ExclusiveGateway prevNode = (ExclusiveGateway) tmpPrevNode;
-			if (tmpProcess instanceof de.abilov.bpmn.Process) {
-				de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) tmpProcess;
-				if (tmpSf1 instanceof SequenceFlow) {
-					SequenceFlow sf1 = (SequenceFlow) tmpSf1;
-					if (tmpPgw instanceof ParallelGateway) {
-						ParallelGateway pgw = (ParallelGateway) tmpPgw;
-						if (tmpPcgw instanceof ParallelGateway) {
-							ParallelGateway pcgw = (ParallelGateway) tmpPcgw;
-							return new Object[] { prevNode, process, sf1, pgw, pcgw, match };
+			if (tmpPrevInFlow instanceof SequenceFlow) {
+				SequenceFlow prevInFlow = (SequenceFlow) tmpPrevInFlow;
+				if (tmpPrevPrevNode instanceof FlowNode) {
+					FlowNode prevPrevNode = (FlowNode) tmpPrevPrevNode;
+					if (tmpProcess instanceof de.abilov.bpmn.Process) {
+						de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) tmpProcess;
+						if (tmpSf1 instanceof SequenceFlow) {
+							SequenceFlow sf1 = (SequenceFlow) tmpSf1;
+							if (tmpPgw instanceof ParallelGateway) {
+								ParallelGateway pgw = (ParallelGateway) tmpPgw;
+								if (tmpPcgw instanceof ParallelGateway) {
+									ParallelGateway pcgw = (ParallelGateway) tmpPcgw;
+									return new Object[] { prevNode, prevInFlow, prevPrevNode, process, sf1, pgw, pcgw,
+											match };
+								}
+							}
 						}
 					}
 				}
@@ -2324,78 +2643,137 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_SplitAfterMerge_2_2_blackBFFBBBBB(ExclusiveGateway prevNode,
-			de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw, Match match) {
+	public static final Iterable<Object[]> pattern_SplitAfterMerge_2_2_blackBFFFBBFBBBBB(ExclusiveGateway prevNode,
+			SequenceFlow prevInFlow, FlowNode prevPrevNode, de.abilov.bpmn.Process process, SequenceFlow sf1,
+			ParallelGateway pgw, ParallelGateway pcgw, Match match) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
-		if (!pcgw.equals(pgw)) {
-			boolean prevNodeisDiverging = prevNode.isIsDiverging();
-			if (Boolean.valueOf(prevNodeisDiverging).equals(false)) {
-				boolean pgwisDiverging = pgw.isIsDiverging();
-				if (Boolean.valueOf(pgwisDiverging).equals(Boolean.valueOf(true))) {
-					boolean pcgwisDiverging = pcgw.isIsDiverging();
-					if (Boolean.valueOf(pcgwisDiverging).equals(false)) {
-						for (GW2S pn2cs : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(prevNode,
-								GW2S.class, "source")) {
-							Step tmpChoiceStep = pn2cs.getTarget();
-							if (tmpChoiceStep instanceof ChoiceStep) {
-								ChoiceStep choiceStep = (ChoiceStep) tmpChoiceStep;
-								_result.add(
-										new Object[] { prevNode, choiceStep, pn2cs, process, sf1, pgw, pcgw, match });
+		if (!prevNode.equals(prevPrevNode)) {
+			if (!prevInFlow.equals(sf1)) {
+				if (!pgw.equals(prevPrevNode)) {
+					if (!pcgw.equals(prevPrevNode)) {
+						if (!pcgw.equals(pgw)) {
+							boolean prevNodeisDiverging = prevNode.isIsDiverging();
+							if (Boolean.valueOf(prevNodeisDiverging).equals(false)) {
+								boolean pgwisDiverging = pgw.isIsDiverging();
+								if (Boolean.valueOf(pgwisDiverging).equals(Boolean.valueOf(true))) {
+									boolean pcgwisDiverging = pcgw.isIsDiverging();
+									if (Boolean.valueOf(pcgwisDiverging).equals(false)) {
+										for (GW2S pn2cs : org.moflon.core.utilities.eMoflonEMFUtil
+												.getOppositeReferenceTyped(prevNode, GW2S.class, "source")) {
+											Step tmpChoiceStep = pn2cs.getTarget();
+											if (tmpChoiceStep instanceof ChoiceStep) {
+												ChoiceStep choiceStep = (ChoiceStep) tmpChoiceStep;
+												for (FN2S fn2ps : org.moflon.core.utilities.eMoflonEMFUtil
+														.getOppositeReferenceTyped(prevPrevNode, FN2S.class,
+																"source")) {
+													Step prevStep = fn2ps.getTarget();
+													if (prevStep != null) {
+														if (!choiceStep.equals(prevStep)) {
+															_result.add(new Object[] { prevNode, choiceStep, pn2cs,
+																	prevStep, prevInFlow, prevPrevNode, fn2ps, process,
+																	sf1, pgw, pcgw, match });
+														}
+													}
+
+												}
+											}
+
+										}
+									}
+
+								}
+
 							}
 
 						}
 					}
-
 				}
-
 			}
-
 		}
 		return _result;
 	}
 
-	public static final Iterable<Object[]> pattern_SplitAfterMerge_2_3_blackBBBFFBBBB(ExclusiveGateway prevNode,
-			ChoiceStep choiceStep, GW2S pn2cs, de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw,
-			ParallelGateway pcgw) {
+	public static final Iterable<Object[]> pattern_SplitAfterMerge_2_3_blackBBBBFBBBBBBB(ExclusiveGateway prevNode,
+			ChoiceStep choiceStep, GW2S pn2cs, Step prevStep, SequenceFlow prevInFlow, FlowNode prevPrevNode,
+			FN2S fn2ps, de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
-		if (!pcgw.equals(pgw)) {
-			if (prevNode.equals(pn2cs.getSource())) {
-				if (choiceStep.equals(pn2cs.getTarget())) {
-					if (process.getFlowElements().contains(pgw)) {
-						if (process.getFlowElements().contains(sf1)) {
-							if (process.getFlowElements().contains(prevNode)) {
-								if (process.getFlowElements().contains(pcgw)) {
-									if (pgw.equals(sf1.getTargetRef())) {
-										if (pcgw.equals(pgw.get__conv())) {
-											if (prevNode.equals(sf1.getSourceRef())) {
-												Step prevStep = choiceStep.get__lastInDef();
-												if (prevStep != null) {
-													if (!choiceStep.equals(prevStep)) {
-														boolean prevNodeisDiverging = prevNode.isIsDiverging();
-														if (Boolean.valueOf(prevNodeisDiverging).equals(false)) {
-															boolean pgwisDiverging = pgw.isIsDiverging();
-															if (Boolean.valueOf(pgwisDiverging)
-																	.equals(Boolean.valueOf(true))) {
-																boolean pcgwisDiverging = pcgw.isIsDiverging();
-																if (Boolean.valueOf(pcgwisDiverging).equals(false)) {
-																	for (Flow flow : org.moflon.core.utilities.eMoflonEMFUtil
-																			.getOppositeReferenceTyped(choiceStep,
-																					Flow.class, "steps")) {
-																		if (flow.getSteps().contains(prevStep)) {
-																			_result.add(new Object[] { prevNode,
-																					choiceStep, pn2cs, prevStep, flow,
-																					process, sf1, pgw, pcgw });
+		if (!prevNode.equals(prevPrevNode)) {
+			if (!choiceStep.equals(prevStep)) {
+				if (!prevInFlow.equals(sf1)) {
+					if (!pgw.equals(prevPrevNode)) {
+						if (!pcgw.equals(prevPrevNode)) {
+							if (!pcgw.equals(pgw)) {
+								if (prevNode.equals(prevInFlow.getTargetRef())) {
+									if (prevNode.equals(pn2cs.getSource())) {
+										if (choiceStep.equals(pn2cs.getTarget())) {
+											if (prevPrevNode.equals(prevInFlow.getSourceRef())) {
+												if (prevPrevNode.equals(fn2ps.getSource())) {
+													if (prevStep.equals(fn2ps.getTarget())) {
+														if (process.getFlowElements().contains(pgw)) {
+															if (process.getFlowElements().contains(sf1)) {
+																if (process.getFlowElements().contains(prevNode)) {
+																	if (process.getFlowElements().contains(pcgw)) {
+																		if (pgw.equals(sf1.getTargetRef())) {
+																			if (pcgw.equals(pgw.get__conv())) {
+																				if (prevNode
+																						.equals(sf1.getSourceRef())) {
+																					boolean prevNodeisDiverging = prevNode
+																							.isIsDiverging();
+																					if (Boolean
+																							.valueOf(
+																									prevNodeisDiverging)
+																							.equals(false)) {
+																						boolean pgwisDiverging = pgw
+																								.isIsDiverging();
+																						if (Boolean
+																								.valueOf(pgwisDiverging)
+																								.equals(Boolean.valueOf(
+																										true))) {
+																							boolean pcgwisDiverging = pcgw
+																									.isIsDiverging();
+																							if (Boolean
+																									.valueOf(
+																											pcgwisDiverging)
+																									.equals(false)) {
+																								for (Flow flow : org.moflon.core.utilities.eMoflonEMFUtil
+																										.getOppositeReferenceTyped(
+																												choiceStep,
+																												Flow.class,
+																												"steps")) {
+																									if (flow.getSteps()
+																											.contains(
+																													prevStep)) {
+																										_result.add(
+																												new Object[] {
+																														prevNode,
+																														choiceStep,
+																														pn2cs,
+																														prevStep,
+																														flow,
+																														prevInFlow,
+																														prevPrevNode,
+																														fn2ps,
+																														process,
+																														sf1,
+																														pgw,
+																														pcgw });
+																									}
+																								}
+																							}
+
+																						}
+
+																					}
+
+																				}
+																			}
 																		}
 																	}
 																}
-
 															}
-
 														}
-
 													}
 												}
-
 											}
 										}
 									}
@@ -2409,15 +2787,21 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return _result;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_2_3_greenBBBBBBBBBFFFFFFFFFFFFFFF(ExclusiveGateway prevNode,
-			ChoiceStep choiceStep, GW2S pn2cs, Step prevStep, Flow flow, de.abilov.bpmn.Process process,
+	public static final Object[] pattern_SplitAfterMerge_2_3_greenBBBBBBBBBBBBFFFFFFFFFFFFFFFFFFFF(
+			ExclusiveGateway prevNode, ChoiceStep choiceStep, GW2S pn2cs, Step prevStep, Flow flow,
+			SequenceFlow prevInFlow, FlowNode prevPrevNode, FN2S fn2ps, de.abilov.bpmn.Process process,
 			SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw) {
 		IsApplicableMatch isApplicableMatch = TGGRuntimeFactory.eINSTANCE.createIsApplicableMatch();
-		EMoflonEdge choiceStep__prevStep______lastInDef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge prevInFlow__prevNode____targetRef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge prevNode__prevInFlow____incoming = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge pn2cs__prevNode____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge pn2cs__choiceStep____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge flow__choiceStep____steps = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge flow__prevStep____steps = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge prevInFlow__prevPrevNode____sourceRef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge prevPrevNode__prevInFlow____outgoing = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge fn2ps__prevPrevNode____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge fn2ps__prevStep____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge process__pgw____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge process__sf1____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge process__prevNode____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
@@ -2427,11 +2811,16 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		EMoflonEdge pgw__pcgw______conv = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge sf1__prevNode____sourceRef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge prevNode__sf1____outgoing = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
-		String choiceStep__prevStep______lastInDef_name_prime = "__lastInDef";
+		String prevInFlow__prevNode____targetRef_name_prime = "targetRef";
+		String prevNode__prevInFlow____incoming_name_prime = "incoming";
 		String pn2cs__prevNode____source_name_prime = "source";
 		String pn2cs__choiceStep____target_name_prime = "target";
 		String flow__choiceStep____steps_name_prime = "steps";
 		String flow__prevStep____steps_name_prime = "steps";
+		String prevInFlow__prevPrevNode____sourceRef_name_prime = "sourceRef";
+		String prevPrevNode__prevInFlow____outgoing_name_prime = "outgoing";
+		String fn2ps__prevPrevNode____source_name_prime = "source";
+		String fn2ps__prevStep____target_name_prime = "target";
 		String process__pgw____flowElements_name_prime = "flowElements";
 		String process__sf1____flowElements_name_prime = "flowElements";
 		String process__prevNode____flowElements_name_prime = "flowElements";
@@ -2446,13 +2835,19 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		isApplicableMatch.getAllContextElements().add(pn2cs);
 		isApplicableMatch.getAllContextElements().add(prevStep);
 		isApplicableMatch.getAllContextElements().add(flow);
+		isApplicableMatch.getAllContextElements().add(prevInFlow);
+		isApplicableMatch.getAllContextElements().add(prevPrevNode);
+		isApplicableMatch.getAllContextElements().add(fn2ps);
 		isApplicableMatch.getAllContextElements().add(process);
 		isApplicableMatch.getAllContextElements().add(sf1);
 		isApplicableMatch.getAllContextElements().add(pgw);
 		isApplicableMatch.getAllContextElements().add(pcgw);
-		choiceStep__prevStep______lastInDef.setSrc(choiceStep);
-		choiceStep__prevStep______lastInDef.setTrg(prevStep);
-		isApplicableMatch.getAllContextElements().add(choiceStep__prevStep______lastInDef);
+		prevInFlow__prevNode____targetRef.setSrc(prevInFlow);
+		prevInFlow__prevNode____targetRef.setTrg(prevNode);
+		isApplicableMatch.getAllContextElements().add(prevInFlow__prevNode____targetRef);
+		prevNode__prevInFlow____incoming.setSrc(prevNode);
+		prevNode__prevInFlow____incoming.setTrg(prevInFlow);
+		isApplicableMatch.getAllContextElements().add(prevNode__prevInFlow____incoming);
 		pn2cs__prevNode____source.setSrc(pn2cs);
 		pn2cs__prevNode____source.setTrg(prevNode);
 		isApplicableMatch.getAllContextElements().add(pn2cs__prevNode____source);
@@ -2465,6 +2860,18 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		flow__prevStep____steps.setSrc(flow);
 		flow__prevStep____steps.setTrg(prevStep);
 		isApplicableMatch.getAllContextElements().add(flow__prevStep____steps);
+		prevInFlow__prevPrevNode____sourceRef.setSrc(prevInFlow);
+		prevInFlow__prevPrevNode____sourceRef.setTrg(prevPrevNode);
+		isApplicableMatch.getAllContextElements().add(prevInFlow__prevPrevNode____sourceRef);
+		prevPrevNode__prevInFlow____outgoing.setSrc(prevPrevNode);
+		prevPrevNode__prevInFlow____outgoing.setTrg(prevInFlow);
+		isApplicableMatch.getAllContextElements().add(prevPrevNode__prevInFlow____outgoing);
+		fn2ps__prevPrevNode____source.setSrc(fn2ps);
+		fn2ps__prevPrevNode____source.setTrg(prevPrevNode);
+		isApplicableMatch.getAllContextElements().add(fn2ps__prevPrevNode____source);
+		fn2ps__prevStep____target.setSrc(fn2ps);
+		fn2ps__prevStep____target.setTrg(prevStep);
+		isApplicableMatch.getAllContextElements().add(fn2ps__prevStep____target);
 		process__pgw____flowElements.setSrc(process);
 		process__pgw____flowElements.setTrg(pgw);
 		isApplicableMatch.getAllContextElements().add(process__pgw____flowElements);
@@ -2492,11 +2899,16 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		prevNode__sf1____outgoing.setSrc(prevNode);
 		prevNode__sf1____outgoing.setTrg(sf1);
 		isApplicableMatch.getAllContextElements().add(prevNode__sf1____outgoing);
-		choiceStep__prevStep______lastInDef.setName(choiceStep__prevStep______lastInDef_name_prime);
+		prevInFlow__prevNode____targetRef.setName(prevInFlow__prevNode____targetRef_name_prime);
+		prevNode__prevInFlow____incoming.setName(prevNode__prevInFlow____incoming_name_prime);
 		pn2cs__prevNode____source.setName(pn2cs__prevNode____source_name_prime);
 		pn2cs__choiceStep____target.setName(pn2cs__choiceStep____target_name_prime);
 		flow__choiceStep____steps.setName(flow__choiceStep____steps_name_prime);
 		flow__prevStep____steps.setName(flow__prevStep____steps_name_prime);
+		prevInFlow__prevPrevNode____sourceRef.setName(prevInFlow__prevPrevNode____sourceRef_name_prime);
+		prevPrevNode__prevInFlow____outgoing.setName(prevPrevNode__prevInFlow____outgoing_name_prime);
+		fn2ps__prevPrevNode____source.setName(fn2ps__prevPrevNode____source_name_prime);
+		fn2ps__prevStep____target.setName(fn2ps__prevStep____target_name_prime);
 		process__pgw____flowElements.setName(process__pgw____flowElements_name_prime);
 		process__sf1____flowElements.setName(process__sf1____flowElements_name_prime);
 		process__prevNode____flowElements.setName(process__prevNode____flowElements_name_prime);
@@ -2506,24 +2918,26 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		pgw__pcgw______conv.setName(pgw__pcgw______conv_name_prime);
 		sf1__prevNode____sourceRef.setName(sf1__prevNode____sourceRef_name_prime);
 		prevNode__sf1____outgoing.setName(prevNode__sf1____outgoing_name_prime);
-		return new Object[] { prevNode, choiceStep, pn2cs, prevStep, flow, process, sf1, pgw, pcgw, isApplicableMatch,
-				choiceStep__prevStep______lastInDef, pn2cs__prevNode____source, pn2cs__choiceStep____target,
-				flow__choiceStep____steps, flow__prevStep____steps, process__pgw____flowElements,
+		return new Object[] { prevNode, choiceStep, pn2cs, prevStep, flow, prevInFlow, prevPrevNode, fn2ps, process,
+				sf1, pgw, pcgw, isApplicableMatch, prevInFlow__prevNode____targetRef, prevNode__prevInFlow____incoming,
+				pn2cs__prevNode____source, pn2cs__choiceStep____target, flow__choiceStep____steps,
+				flow__prevStep____steps, prevInFlow__prevPrevNode____sourceRef, prevPrevNode__prevInFlow____outgoing,
+				fn2ps__prevPrevNode____source, fn2ps__prevStep____target, process__pgw____flowElements,
 				process__sf1____flowElements, process__prevNode____flowElements, process__pcgw____flowElements,
 				sf1__pgw____targetRef, pgw__sf1____incoming, pgw__pcgw______conv, sf1__prevNode____sourceRef,
 				prevNode__sf1____outgoing };
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_2_4_bindingFBBBBBBBBBBB(SplitAfterMerge _this,
+	public static final Object[] pattern_SplitAfterMerge_2_4_bindingFBBBBBBBBBBBBBB(SplitAfterMerge _this,
 			IsApplicableMatch isApplicableMatch, ExclusiveGateway prevNode, ChoiceStep choiceStep, GW2S pn2cs,
-			Step prevStep, Flow flow, de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw,
-			ParallelGateway pcgw) {
+			Step prevStep, Flow flow, SequenceFlow prevInFlow, FlowNode prevPrevNode, FN2S fn2ps,
+			de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw) {
 		CSP _localVariable_0 = _this.isApplicable_solveCsp_FWD(isApplicableMatch, prevNode, choiceStep, pn2cs, prevStep,
-				flow, process, sf1, pgw, pcgw);
+				flow, prevInFlow, prevPrevNode, fn2ps, process, sf1, pgw, pcgw);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, isApplicableMatch, prevNode, choiceStep, pn2cs, prevStep, flow, process,
-					sf1, pgw, pcgw };
+			return new Object[] { csp, _this, isApplicableMatch, prevNode, choiceStep, pn2cs, prevStep, flow,
+					prevInFlow, prevPrevNode, fn2ps, process, sf1, pgw, pcgw };
 		}
 		return null;
 	}
@@ -2532,12 +2946,13 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return new Object[] { csp };
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_2_4_bindingAndBlackFBBBBBBBBBBB(SplitAfterMerge _this,
+	public static final Object[] pattern_SplitAfterMerge_2_4_bindingAndBlackFBBBBBBBBBBBBBB(SplitAfterMerge _this,
 			IsApplicableMatch isApplicableMatch, ExclusiveGateway prevNode, ChoiceStep choiceStep, GW2S pn2cs,
-			Step prevStep, Flow flow, de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw,
-			ParallelGateway pcgw) {
-		Object[] result_pattern_SplitAfterMerge_2_4_binding = pattern_SplitAfterMerge_2_4_bindingFBBBBBBBBBBB(_this,
-				isApplicableMatch, prevNode, choiceStep, pn2cs, prevStep, flow, process, sf1, pgw, pcgw);
+			Step prevStep, Flow flow, SequenceFlow prevInFlow, FlowNode prevPrevNode, FN2S fn2ps,
+			de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw) {
+		Object[] result_pattern_SplitAfterMerge_2_4_binding = pattern_SplitAfterMerge_2_4_bindingFBBBBBBBBBBBBBB(_this,
+				isApplicableMatch, prevNode, choiceStep, pn2cs, prevStep, flow, prevInFlow, prevPrevNode, fn2ps,
+				process, sf1, pgw, pcgw);
 		if (result_pattern_SplitAfterMerge_2_4_binding != null) {
 			CSP csp = (CSP) result_pattern_SplitAfterMerge_2_4_binding[0];
 
@@ -2545,7 +2960,7 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 			if (result_pattern_SplitAfterMerge_2_4_black != null) {
 
 				return new Object[] { csp, _this, isApplicableMatch, prevNode, choiceStep, pn2cs, prevStep, flow,
-						process, sf1, pgw, pcgw };
+						prevInFlow, prevPrevNode, fn2ps, process, sf1, pgw, pcgw };
 			}
 		}
 		return null;
@@ -2662,31 +3077,24 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_10_5_greenBBBBFFF(Match match, ChoiceStep choiceStep,
+	public static final Object[] pattern_SplitAfterMerge_10_5_greenBBBBFF(Match match, ChoiceStep choiceStep,
 			Step prevStep, Flow flow) {
-		EMoflonEdge choiceStep__prevStep______lastInDef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge flow__choiceStep____steps = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge flow__prevStep____steps = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		match.getContextNodes().add(choiceStep);
 		match.getContextNodes().add(prevStep);
 		match.getContextNodes().add(flow);
-		String choiceStep__prevStep______lastInDef_name_prime = "__lastInDef";
 		String flow__choiceStep____steps_name_prime = "steps";
 		String flow__prevStep____steps_name_prime = "steps";
-		choiceStep__prevStep______lastInDef.setSrc(choiceStep);
-		choiceStep__prevStep______lastInDef.setTrg(prevStep);
-		match.getContextEdges().add(choiceStep__prevStep______lastInDef);
 		flow__choiceStep____steps.setSrc(flow);
 		flow__choiceStep____steps.setTrg(choiceStep);
 		match.getContextEdges().add(flow__choiceStep____steps);
 		flow__prevStep____steps.setSrc(flow);
 		flow__prevStep____steps.setTrg(prevStep);
 		match.getContextEdges().add(flow__prevStep____steps);
-		choiceStep__prevStep______lastInDef.setName(choiceStep__prevStep______lastInDef_name_prime);
 		flow__choiceStep____steps.setName(flow__choiceStep____steps_name_prime);
 		flow__prevStep____steps.setName(flow__prevStep____steps_name_prime);
-		return new Object[] { match, choiceStep, prevStep, flow, choiceStep__prevStep______lastInDef,
-				flow__choiceStep____steps, flow__prevStep____steps };
+		return new Object[] { match, choiceStep, prevStep, flow, flow__choiceStep____steps, flow__prevStep____steps };
 	}
 
 	public static final void pattern_SplitAfterMerge_10_6_expressionBBBBBB(SplitAfterMerge _this, Match match,
@@ -2705,21 +3113,27 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return _result;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_11_1_bindingFFFFFFFB(IsApplicableMatch isApplicableMatch) {
+	public static final Object[] pattern_SplitAfterMerge_11_1_bindingFFFFFFFFFFB(IsApplicableMatch isApplicableMatch) {
 		EObject _localVariable_0 = isApplicableMatch.getObject("prevNode");
 		EObject _localVariable_1 = isApplicableMatch.getObject("choiceStep");
 		EObject _localVariable_2 = isApplicableMatch.getObject("pn2cs");
 		EObject _localVariable_3 = isApplicableMatch.getObject("prevStep");
 		EObject _localVariable_4 = isApplicableMatch.getObject("flow");
 		EObject _localVariable_5 = isApplicableMatch.getObject("step");
-		EObject _localVariable_6 = isApplicableMatch.getObject("process");
+		EObject _localVariable_6 = isApplicableMatch.getObject("prevInFlow");
+		EObject _localVariable_7 = isApplicableMatch.getObject("prevPrevNode");
+		EObject _localVariable_8 = isApplicableMatch.getObject("fn2ps");
+		EObject _localVariable_9 = isApplicableMatch.getObject("process");
 		EObject tmpPrevNode = _localVariable_0;
 		EObject tmpChoiceStep = _localVariable_1;
 		EObject tmpPn2cs = _localVariable_2;
 		EObject tmpPrevStep = _localVariable_3;
 		EObject tmpFlow = _localVariable_4;
 		EObject tmpStep = _localVariable_5;
-		EObject tmpProcess = _localVariable_6;
+		EObject tmpPrevInFlow = _localVariable_6;
+		EObject tmpPrevPrevNode = _localVariable_7;
+		EObject tmpFn2ps = _localVariable_8;
+		EObject tmpProcess = _localVariable_9;
 		if (tmpPrevNode instanceof ExclusiveGateway) {
 			ExclusiveGateway prevNode = (ExclusiveGateway) tmpPrevNode;
 			if (tmpChoiceStep instanceof ChoiceStep) {
@@ -2732,10 +3146,19 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 							Flow flow = (Flow) tmpFlow;
 							if (tmpStep instanceof ParallelStep) {
 								ParallelStep step = (ParallelStep) tmpStep;
-								if (tmpProcess instanceof de.abilov.bpmn.Process) {
-									de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) tmpProcess;
-									return new Object[] { prevNode, choiceStep, pn2cs, prevStep, flow, step, process,
-											isApplicableMatch };
+								if (tmpPrevInFlow instanceof SequenceFlow) {
+									SequenceFlow prevInFlow = (SequenceFlow) tmpPrevInFlow;
+									if (tmpPrevPrevNode instanceof FlowNode) {
+										FlowNode prevPrevNode = (FlowNode) tmpPrevPrevNode;
+										if (tmpFn2ps instanceof FN2S) {
+											FN2S fn2ps = (FN2S) tmpFn2ps;
+											if (tmpProcess instanceof de.abilov.bpmn.Process) {
+												de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) tmpProcess;
+												return new Object[] { prevNode, choiceStep, pn2cs, prevStep, flow, step,
+														prevInFlow, prevPrevNode, fn2ps, process, isApplicableMatch };
+											}
+										}
+									}
 								}
 							}
 						}
@@ -2746,16 +3169,19 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_11_1_blackBBBBBBBBFB(ExclusiveGateway prevNode,
-			ChoiceStep choiceStep, GW2S pn2cs, Step prevStep, Flow flow, ParallelStep step,
-			de.abilov.bpmn.Process process, SplitAfterMerge _this, IsApplicableMatch isApplicableMatch) {
-		if (!choiceStep.equals(prevStep)) {
-			if (!prevStep.equals(step)) {
-				for (EObject tmpCsp : isApplicableMatch.getAttributeInfo()) {
-					if (tmpCsp instanceof CSP) {
-						CSP csp = (CSP) tmpCsp;
-						return new Object[] { prevNode, choiceStep, pn2cs, prevStep, flow, step, process, _this, csp,
-								isApplicableMatch };
+	public static final Object[] pattern_SplitAfterMerge_11_1_blackBBBBBBBBBBBFB(ExclusiveGateway prevNode,
+			ChoiceStep choiceStep, GW2S pn2cs, Step prevStep, Flow flow, ParallelStep step, SequenceFlow prevInFlow,
+			FlowNode prevPrevNode, FN2S fn2ps, de.abilov.bpmn.Process process, SplitAfterMerge _this,
+			IsApplicableMatch isApplicableMatch) {
+		if (!prevNode.equals(prevPrevNode)) {
+			if (!choiceStep.equals(prevStep)) {
+				if (!prevStep.equals(step)) {
+					for (EObject tmpCsp : isApplicableMatch.getAttributeInfo()) {
+						if (tmpCsp instanceof CSP) {
+							CSP csp = (CSP) tmpCsp;
+							return new Object[] { prevNode, choiceStep, pn2cs, prevStep, flow, step, prevInFlow,
+									prevPrevNode, fn2ps, process, _this, csp, isApplicableMatch };
+						}
 					}
 				}
 			}
@@ -2763,9 +3189,9 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_11_1_bindingAndBlackFFFFFFFBFB(SplitAfterMerge _this,
+	public static final Object[] pattern_SplitAfterMerge_11_1_bindingAndBlackFFFFFFFFFFBFB(SplitAfterMerge _this,
 			IsApplicableMatch isApplicableMatch) {
-		Object[] result_pattern_SplitAfterMerge_11_1_binding = pattern_SplitAfterMerge_11_1_bindingFFFFFFFB(
+		Object[] result_pattern_SplitAfterMerge_11_1_binding = pattern_SplitAfterMerge_11_1_bindingFFFFFFFFFFB(
 				isApplicableMatch);
 		if (result_pattern_SplitAfterMerge_11_1_binding != null) {
 			ExclusiveGateway prevNode = (ExclusiveGateway) result_pattern_SplitAfterMerge_11_1_binding[0];
@@ -2774,15 +3200,19 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 			Step prevStep = (Step) result_pattern_SplitAfterMerge_11_1_binding[3];
 			Flow flow = (Flow) result_pattern_SplitAfterMerge_11_1_binding[4];
 			ParallelStep step = (ParallelStep) result_pattern_SplitAfterMerge_11_1_binding[5];
-			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result_pattern_SplitAfterMerge_11_1_binding[6];
+			SequenceFlow prevInFlow = (SequenceFlow) result_pattern_SplitAfterMerge_11_1_binding[6];
+			FlowNode prevPrevNode = (FlowNode) result_pattern_SplitAfterMerge_11_1_binding[7];
+			FN2S fn2ps = (FN2S) result_pattern_SplitAfterMerge_11_1_binding[8];
+			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result_pattern_SplitAfterMerge_11_1_binding[9];
 
-			Object[] result_pattern_SplitAfterMerge_11_1_black = pattern_SplitAfterMerge_11_1_blackBBBBBBBBFB(prevNode,
-					choiceStep, pn2cs, prevStep, flow, step, process, _this, isApplicableMatch);
+			Object[] result_pattern_SplitAfterMerge_11_1_black = pattern_SplitAfterMerge_11_1_blackBBBBBBBBBBBFB(
+					prevNode, choiceStep, pn2cs, prevStep, flow, step, prevInFlow, prevPrevNode, fn2ps, process, _this,
+					isApplicableMatch);
 			if (result_pattern_SplitAfterMerge_11_1_black != null) {
-				CSP csp = (CSP) result_pattern_SplitAfterMerge_11_1_black[8];
+				CSP csp = (CSP) result_pattern_SplitAfterMerge_11_1_black[11];
 
-				return new Object[] { prevNode, choiceStep, pn2cs, prevStep, flow, step, process, _this, csp,
-						isApplicableMatch };
+				return new Object[] { prevNode, choiceStep, pn2cs, prevStep, flow, step, prevInFlow, prevPrevNode,
+						fn2ps, process, _this, csp, isApplicableMatch };
 			}
 		}
 		return null;
@@ -2835,134 +3265,254 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return new Object[] { ruleresult, step, sf1, pgw, pcgwToStep, pgwToStep, pcgw };
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_11_3_blackBBBBBBBBBBBBB(PerformRuleResult ruleresult,
+	public static final Object[] pattern_SplitAfterMerge_11_3_blackBBBBBBBBBBBBBBBB(PerformRuleResult ruleresult,
 			EObject prevNode, EObject choiceStep, EObject pn2cs, EObject prevStep, EObject flow, EObject step,
-			EObject process, EObject sf1, EObject pgw, EObject pcgwToStep, EObject pgwToStep, EObject pcgw) {
+			EObject prevInFlow, EObject prevPrevNode, EObject fn2ps, EObject process, EObject sf1, EObject pgw,
+			EObject pcgwToStep, EObject pgwToStep, EObject pcgw) {
 		if (!prevNode.equals(prevStep)) {
 			if (!prevNode.equals(step)) {
-				if (!prevNode.equals(process)) {
-					if (!prevNode.equals(sf1)) {
-						if (!choiceStep.equals(prevNode)) {
-							if (!choiceStep.equals(pn2cs)) {
-								if (!choiceStep.equals(prevStep)) {
-									if (!choiceStep.equals(flow)) {
-										if (!choiceStep.equals(step)) {
-											if (!choiceStep.equals(process)) {
-												if (!choiceStep.equals(sf1)) {
-													if (!choiceStep.equals(pgw)) {
-														if (!choiceStep.equals(pcgwToStep)) {
-															if (!choiceStep.equals(pgwToStep)) {
-																if (!choiceStep.equals(pcgw)) {
-																	if (!pn2cs.equals(prevNode)) {
-																		if (!pn2cs.equals(prevStep)) {
-																			if (!pn2cs.equals(step)) {
-																				if (!pn2cs.equals(process)) {
-																					if (!pn2cs.equals(sf1)) {
-																						if (!prevStep.equals(step)) {
-																							if (!prevStep
-																									.equals(process)) {
-																								if (!prevStep
-																										.equals(sf1)) {
-																									if (!flow.equals(
-																											prevNode)) {
-																										if (!flow
-																												.equals(pn2cs)) {
-																											if (!flow
-																													.equals(prevStep)) {
-																												if (!flow
+				if (!prevNode.equals(prevPrevNode)) {
+					if (!prevNode.equals(process)) {
+						if (!prevNode.equals(sf1)) {
+							if (!choiceStep.equals(prevNode)) {
+								if (!choiceStep.equals(pn2cs)) {
+									if (!choiceStep.equals(prevStep)) {
+										if (!choiceStep.equals(flow)) {
+											if (!choiceStep.equals(step)) {
+												if (!choiceStep.equals(prevInFlow)) {
+													if (!choiceStep.equals(prevPrevNode)) {
+														if (!choiceStep.equals(fn2ps)) {
+															if (!choiceStep.equals(process)) {
+																if (!choiceStep.equals(sf1)) {
+																	if (!choiceStep.equals(pgw)) {
+																		if (!choiceStep.equals(pcgwToStep)) {
+																			if (!choiceStep.equals(pgwToStep)) {
+																				if (!choiceStep.equals(pcgw)) {
+																					if (!pn2cs.equals(prevNode)) {
+																						if (!pn2cs.equals(prevStep)) {
+																							if (!pn2cs.equals(step)) {
+																								if (!pn2cs.equals(
+																										prevInFlow)) {
+																									if (!pn2cs.equals(
+																											prevPrevNode)) {
+																										if (!pn2cs
+																												.equals(process)) {
+																											if (!pn2cs
+																													.equals(sf1)) {
+																												if (!prevStep
 																														.equals(step)) {
-																													if (!flow
+																													if (!prevStep
 																															.equals(process)) {
-																														if (!flow
+																														if (!prevStep
 																																.equals(sf1)) {
 																															if (!flow
-																																	.equals(pgw)) {
+																																	.equals(prevNode)) {
 																																if (!flow
-																																		.equals(pcgwToStep)) {
+																																		.equals(pn2cs)) {
 																																	if (!flow
-																																			.equals(pgwToStep)) {
+																																			.equals(prevStep)) {
 																																		if (!flow
-																																				.equals(pcgw)) {
-																																			if (!process
-																																					.equals(step)) {
-																																				if (!process
-																																						.equals(sf1)) {
-																																					if (!sf1.equals(
-																																							step)) {
-																																						if (!pgw.equals(
-																																								prevNode)) {
-																																							if (!pgw.equals(
-																																									pn2cs)) {
-																																								if (!pgw.equals(
-																																										prevStep)) {
-																																									if (!pgw.equals(
-																																											step)) {
-																																										if (!pgw.equals(
-																																												process)) {
-																																											if (!pgw.equals(
-																																													sf1)) {
-																																												if (!pgw.equals(
-																																														pgwToStep)) {
-																																													if (!pcgwToStep
-																																															.equals(prevNode)) {
-																																														if (!pcgwToStep
-																																																.equals(pn2cs)) {
-																																															if (!pcgwToStep
-																																																	.equals(prevStep)) {
-																																																if (!pcgwToStep
-																																																		.equals(step)) {
-																																																	if (!pcgwToStep
-																																																			.equals(process)) {
-																																																		if (!pcgwToStep
-																																																				.equals(sf1)) {
-																																																			if (!pcgwToStep
-																																																					.equals(pgw)) {
-																																																				if (!pcgwToStep
-																																																						.equals(pgwToStep)) {
-																																																					if (!pgwToStep
-																																																							.equals(prevNode)) {
-																																																						if (!pgwToStep
-																																																								.equals(pn2cs)) {
-																																																							if (!pgwToStep
-																																																									.equals(prevStep)) {
-																																																								if (!pgwToStep
-																																																										.equals(step)) {
-																																																									if (!pgwToStep
-																																																											.equals(process)) {
-																																																										if (!pgwToStep
-																																																												.equals(sf1)) {
-																																																											if (!pcgw
-																																																													.equals(prevNode)) {
-																																																												if (!pcgw
-																																																														.equals(pn2cs)) {
-																																																													if (!pcgw
-																																																															.equals(prevStep)) {
-																																																														if (!pcgw
-																																																																.equals(step)) {
-																																																															if (!pcgw
-																																																																	.equals(process)) {
-																																																																if (!pcgw
-																																																																		.equals(sf1)) {
-																																																																	if (!pcgw
-																																																																			.equals(pgw)) {
-																																																																		if (!pcgw
-																																																																				.equals(pcgwToStep)) {
-																																																																			if (!pcgw
-																																																																					.equals(pgwToStep)) {
-																																																																				return new Object[] {
-																																																																						ruleresult,
-																																																																						prevNode,
-																																																																						choiceStep,
-																																																																						pn2cs,
-																																																																						prevStep,
-																																																																						flow,
-																																																																						step,
-																																																																						process,
-																																																																						sf1,
-																																																																						pgw,
-																																																																						pcgwToStep,
-																																																																						pgwToStep,
-																																																																						pcgw };
+																																				.equals(step)) {
+																																			if (!flow
+																																					.equals(prevInFlow)) {
+																																				if (!flow
+																																						.equals(prevPrevNode)) {
+																																					if (!flow
+																																							.equals(fn2ps)) {
+																																						if (!flow
+																																								.equals(process)) {
+																																							if (!flow
+																																									.equals(sf1)) {
+																																								if (!flow
+																																										.equals(pgw)) {
+																																									if (!flow
+																																											.equals(pcgwToStep)) {
+																																										if (!flow
+																																												.equals(pgwToStep)) {
+																																											if (!flow
+																																													.equals(pcgw)) {
+																																												if (!prevInFlow
+																																														.equals(prevNode)) {
+																																													if (!prevInFlow
+																																															.equals(prevStep)) {
+																																														if (!prevInFlow
+																																																.equals(step)) {
+																																															if (!prevInFlow
+																																																	.equals(prevPrevNode)) {
+																																																if (!prevInFlow
+																																																		.equals(process)) {
+																																																	if (!prevInFlow
+																																																			.equals(sf1)) {
+																																																		if (!prevPrevNode
+																																																				.equals(prevStep)) {
+																																																			if (!prevPrevNode
+																																																					.equals(step)) {
+																																																				if (!prevPrevNode
+																																																						.equals(process)) {
+																																																					if (!prevPrevNode
+																																																							.equals(sf1)) {
+																																																						if (!fn2ps
+																																																								.equals(prevNode)) {
+																																																							if (!fn2ps
+																																																									.equals(pn2cs)) {
+																																																								if (!fn2ps
+																																																										.equals(prevStep)) {
+																																																									if (!fn2ps
+																																																											.equals(step)) {
+																																																										if (!fn2ps
+																																																												.equals(prevInFlow)) {
+																																																											if (!fn2ps
+																																																													.equals(prevPrevNode)) {
+																																																												if (!fn2ps
+																																																														.equals(process)) {
+																																																													if (!fn2ps
+																																																															.equals(sf1)) {
+																																																														if (!fn2ps
+																																																																.equals(pgw)) {
+																																																															if (!fn2ps
+																																																																	.equals(pcgwToStep)) {
+																																																																if (!fn2ps
+																																																																		.equals(pgwToStep)) {
+																																																																	if (!fn2ps
+																																																																			.equals(pcgw)) {
+																																																																		if (!process
+																																																																				.equals(step)) {
+																																																																			if (!process
+																																																																					.equals(sf1)) {
+																																																																				if (!sf1.equals(
+																																																																						step)) {
+																																																																					if (!pgw.equals(
+																																																																							prevNode)) {
+																																																																						if (!pgw.equals(
+																																																																								pn2cs)) {
+																																																																							if (!pgw.equals(
+																																																																									prevStep)) {
+																																																																								if (!pgw.equals(
+																																																																										step)) {
+																																																																									if (!pgw.equals(
+																																																																											prevInFlow)) {
+																																																																										if (!pgw.equals(
+																																																																												prevPrevNode)) {
+																																																																											if (!pgw.equals(
+																																																																													process)) {
+																																																																												if (!pgw.equals(
+																																																																														sf1)) {
+																																																																													if (!pgw.equals(
+																																																																															pgwToStep)) {
+																																																																														if (!pcgwToStep
+																																																																																.equals(prevNode)) {
+																																																																															if (!pcgwToStep
+																																																																																	.equals(pn2cs)) {
+																																																																																if (!pcgwToStep
+																																																																																		.equals(prevStep)) {
+																																																																																	if (!pcgwToStep
+																																																																																			.equals(step)) {
+																																																																																		if (!pcgwToStep
+																																																																																				.equals(prevInFlow)) {
+																																																																																			if (!pcgwToStep
+																																																																																					.equals(prevPrevNode)) {
+																																																																																				if (!pcgwToStep
+																																																																																						.equals(process)) {
+																																																																																					if (!pcgwToStep
+																																																																																							.equals(sf1)) {
+																																																																																						if (!pcgwToStep
+																																																																																								.equals(pgw)) {
+																																																																																							if (!pcgwToStep
+																																																																																									.equals(pgwToStep)) {
+																																																																																								if (!pgwToStep
+																																																																																										.equals(prevNode)) {
+																																																																																									if (!pgwToStep
+																																																																																											.equals(pn2cs)) {
+																																																																																										if (!pgwToStep
+																																																																																												.equals(prevStep)) {
+																																																																																											if (!pgwToStep
+																																																																																													.equals(step)) {
+																																																																																												if (!pgwToStep
+																																																																																														.equals(prevInFlow)) {
+																																																																																													if (!pgwToStep
+																																																																																															.equals(prevPrevNode)) {
+																																																																																														if (!pgwToStep
+																																																																																																.equals(process)) {
+																																																																																															if (!pgwToStep
+																																																																																																	.equals(sf1)) {
+																																																																																																if (!pcgw
+																																																																																																		.equals(prevNode)) {
+																																																																																																	if (!pcgw
+																																																																																																			.equals(pn2cs)) {
+																																																																																																		if (!pcgw
+																																																																																																				.equals(prevStep)) {
+																																																																																																			if (!pcgw
+																																																																																																					.equals(step)) {
+																																																																																																				if (!pcgw
+																																																																																																						.equals(prevInFlow)) {
+																																																																																																					if (!pcgw
+																																																																																																							.equals(prevPrevNode)) {
+																																																																																																						if (!pcgw
+																																																																																																								.equals(process)) {
+																																																																																																							if (!pcgw
+																																																																																																									.equals(sf1)) {
+																																																																																																								if (!pcgw
+																																																																																																										.equals(pgw)) {
+																																																																																																									if (!pcgw
+																																																																																																											.equals(pcgwToStep)) {
+																																																																																																										if (!pcgw
+																																																																																																												.equals(pgwToStep)) {
+																																																																																																											return new Object[] {
+																																																																																																													ruleresult,
+																																																																																																													prevNode,
+																																																																																																													choiceStep,
+																																																																																																													pn2cs,
+																																																																																																													prevStep,
+																																																																																																													flow,
+																																																																																																													step,
+																																																																																																													prevInFlow,
+																																																																																																													prevPrevNode,
+																																																																																																													fn2ps,
+																																																																																																													process,
+																																																																																																													sf1,
+																																																																																																													pgw,
+																																																																																																													pcgwToStep,
+																																																																																																													pgwToStep,
+																																																																																																													pcgw };
+																																																																																																										}
+																																																																																																									}
+																																																																																																								}
+																																																																																																							}
+																																																																																																						}
+																																																																																																					}
+																																																																																																				}
+																																																																																																			}
+																																																																																																		}
+																																																																																																	}
+																																																																																																}
+																																																																																															}
+																																																																																														}
+																																																																																													}
+																																																																																												}
+																																																																																											}
+																																																																																										}
+																																																																																									}
+																																																																																								}
+																																																																																							}
+																																																																																						}
+																																																																																					}
+																																																																																				}
+																																																																																			}
+																																																																																		}
+																																																																																	}
+																																																																																}
+																																																																															}
+																																																																														}
+																																																																													}
+																																																																												}
+																																																																											}
+																																																																										}
+																																																																									}
+																																																																								}
+																																																																							}
+																																																																						}
+																																																																					}
+																																																																				}
 																																																																			}
 																																																																		}
 																																																																	}
@@ -3129,12 +3679,12 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 				pgwToStep__step____target };
 	}
 
-	public static final void pattern_SplitAfterMerge_11_5_expressionBBBBBBBBBBBBBB(SplitAfterMerge _this,
+	public static final void pattern_SplitAfterMerge_11_5_expressionBBBBBBBBBBBBBBBBB(SplitAfterMerge _this,
 			PerformRuleResult ruleresult, EObject prevNode, EObject choiceStep, EObject pn2cs, EObject prevStep,
-			EObject flow, EObject step, EObject process, EObject sf1, EObject pgw, EObject pcgwToStep,
-			EObject pgwToStep, EObject pcgw) {
-		_this.registerObjects_BWD(ruleresult, prevNode, choiceStep, pn2cs, prevStep, flow, step, process, sf1, pgw,
-				pcgwToStep, pgwToStep, pcgw);
+			EObject flow, EObject step, EObject prevInFlow, EObject prevPrevNode, EObject fn2ps, EObject process,
+			EObject sf1, EObject pgw, EObject pcgwToStep, EObject pgwToStep, EObject pcgw) {
+		_this.registerObjects_BWD(ruleresult, prevNode, choiceStep, pn2cs, prevStep, flow, step, prevInFlow,
+				prevPrevNode, fn2ps, process, sf1, pgw, pcgwToStep, pgwToStep, pcgw);
 
 	}
 
@@ -3213,7 +3763,7 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_SplitAfterMerge_12_2_blackFBFBBBB(ChoiceStep choiceStep,
+	public static final Iterable<Object[]> pattern_SplitAfterMerge_12_2_blackFBFBBBFFB(ChoiceStep choiceStep,
 			Step prevStep, Flow flow, ParallelStep step, Match match) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		if (!choiceStep.equals(prevStep)) {
@@ -3225,7 +3775,17 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 						ExclusiveGateway prevNode = (ExclusiveGateway) tmpPrevNode;
 						boolean prevNodeisDiverging = prevNode.isIsDiverging();
 						if (Boolean.valueOf(prevNodeisDiverging).equals(false)) {
-							_result.add(new Object[] { prevNode, choiceStep, pn2cs, prevStep, flow, step, match });
+							for (FN2S fn2ps : org.moflon.core.utilities.eMoflonEMFUtil
+									.getOppositeReferenceTyped(prevStep, FN2S.class, "target")) {
+								FlowNode prevPrevNode = fn2ps.getSource();
+								if (prevPrevNode != null) {
+									if (!prevNode.equals(prevPrevNode)) {
+										_result.add(new Object[] { prevNode, choiceStep, pn2cs, prevStep, flow, step,
+												prevPrevNode, fn2ps, match });
+									}
+								}
+
+							}
 						}
 
 					}
@@ -3236,28 +3796,39 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return _result;
 	}
 
-	public static final Iterable<Object[]> pattern_SplitAfterMerge_12_3_blackBBBBBBF(ExclusiveGateway prevNode,
-			ChoiceStep choiceStep, GW2S pn2cs, Step prevStep, Flow flow, ParallelStep step) {
+	public static final Iterable<Object[]> pattern_SplitAfterMerge_12_3_blackBBBBBBFBBF(ExclusiveGateway prevNode,
+			ChoiceStep choiceStep, GW2S pn2cs, Step prevStep, Flow flow, ParallelStep step, FlowNode prevPrevNode,
+			FN2S fn2ps) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
-		if (!choiceStep.equals(prevStep)) {
-			if (!prevStep.equals(step)) {
-				if (prevStep.equals(choiceStep.get__lastInDef())) {
+		if (!prevNode.equals(prevPrevNode)) {
+			if (!choiceStep.equals(prevStep)) {
+				if (!prevStep.equals(step)) {
 					if (prevNode.equals(pn2cs.getSource())) {
 						if (choiceStep.equals(pn2cs.getTarget())) {
 							if (step.equals(prevStep.getNext())) {
 								if (flow.getSteps().contains(choiceStep)) {
 									if (flow.getSteps().contains(prevStep)) {
 										if (flow.getSteps().contains(step)) {
-											boolean prevNodeisDiverging = prevNode.isIsDiverging();
-											if (Boolean.valueOf(prevNodeisDiverging).equals(false)) {
-												for (de.abilov.bpmn.Process process : org.moflon.core.utilities.eMoflonEMFUtil
-														.getOppositeReferenceTyped(prevNode,
-																de.abilov.bpmn.Process.class, "flowElements")) {
-													_result.add(new Object[] { prevNode, choiceStep, pn2cs, prevStep,
-															flow, step, process });
+											if (prevPrevNode.equals(fn2ps.getSource())) {
+												if (prevStep.equals(fn2ps.getTarget())) {
+													boolean prevNodeisDiverging = prevNode.isIsDiverging();
+													if (Boolean.valueOf(prevNodeisDiverging).equals(false)) {
+														for (SequenceFlow prevInFlow : prevNode.getIncoming()) {
+															if (prevPrevNode.equals(prevInFlow.getSourceRef())) {
+																for (de.abilov.bpmn.Process process : org.moflon.core.utilities.eMoflonEMFUtil
+																		.getOppositeReferenceTyped(prevNode,
+																				de.abilov.bpmn.Process.class,
+																				"flowElements")) {
+																	_result.add(new Object[] { prevNode, choiceStep,
+																			pn2cs, prevStep, flow, step, prevInFlow,
+																			prevPrevNode, fn2ps, process });
+																}
+															}
+														}
+													}
+
 												}
 											}
-
 										}
 									}
 								}
@@ -3270,25 +3841,35 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return _result;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_12_3_greenBBBBBBBFFFFFFFFF(ExclusiveGateway prevNode,
-			ChoiceStep choiceStep, GW2S pn2cs, Step prevStep, Flow flow, ParallelStep step,
-			de.abilov.bpmn.Process process) {
+	public static final Object[] pattern_SplitAfterMerge_12_3_greenBBBBBBBBBBFFFFFFFFFFFFFF(ExclusiveGateway prevNode,
+			ChoiceStep choiceStep, GW2S pn2cs, Step prevStep, Flow flow, ParallelStep step, SequenceFlow prevInFlow,
+			FlowNode prevPrevNode, FN2S fn2ps, de.abilov.bpmn.Process process) {
 		IsApplicableMatch isApplicableMatch = TGGRuntimeFactory.eINSTANCE.createIsApplicableMatch();
-		EMoflonEdge choiceStep__prevStep______lastInDef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge prevInFlow__prevNode____targetRef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge prevNode__prevInFlow____incoming = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge pn2cs__prevNode____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge pn2cs__choiceStep____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge prevStep__step____next = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge flow__choiceStep____steps = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge flow__prevStep____steps = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge flow__step____steps = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge prevInFlow__prevPrevNode____sourceRef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge prevPrevNode__prevInFlow____outgoing = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge fn2ps__prevPrevNode____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge fn2ps__prevStep____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge process__prevNode____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
-		String choiceStep__prevStep______lastInDef_name_prime = "__lastInDef";
+		String prevInFlow__prevNode____targetRef_name_prime = "targetRef";
+		String prevNode__prevInFlow____incoming_name_prime = "incoming";
 		String pn2cs__prevNode____source_name_prime = "source";
 		String pn2cs__choiceStep____target_name_prime = "target";
 		String prevStep__step____next_name_prime = "next";
 		String flow__choiceStep____steps_name_prime = "steps";
 		String flow__prevStep____steps_name_prime = "steps";
 		String flow__step____steps_name_prime = "steps";
+		String prevInFlow__prevPrevNode____sourceRef_name_prime = "sourceRef";
+		String prevPrevNode__prevInFlow____outgoing_name_prime = "outgoing";
+		String fn2ps__prevPrevNode____source_name_prime = "source";
+		String fn2ps__prevStep____target_name_prime = "target";
 		String process__prevNode____flowElements_name_prime = "flowElements";
 		isApplicableMatch.getAllContextElements().add(prevNode);
 		isApplicableMatch.getAllContextElements().add(choiceStep);
@@ -3296,10 +3877,16 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		isApplicableMatch.getAllContextElements().add(prevStep);
 		isApplicableMatch.getAllContextElements().add(flow);
 		isApplicableMatch.getAllContextElements().add(step);
+		isApplicableMatch.getAllContextElements().add(prevInFlow);
+		isApplicableMatch.getAllContextElements().add(prevPrevNode);
+		isApplicableMatch.getAllContextElements().add(fn2ps);
 		isApplicableMatch.getAllContextElements().add(process);
-		choiceStep__prevStep______lastInDef.setSrc(choiceStep);
-		choiceStep__prevStep______lastInDef.setTrg(prevStep);
-		isApplicableMatch.getAllContextElements().add(choiceStep__prevStep______lastInDef);
+		prevInFlow__prevNode____targetRef.setSrc(prevInFlow);
+		prevInFlow__prevNode____targetRef.setTrg(prevNode);
+		isApplicableMatch.getAllContextElements().add(prevInFlow__prevNode____targetRef);
+		prevNode__prevInFlow____incoming.setSrc(prevNode);
+		prevNode__prevInFlow____incoming.setTrg(prevInFlow);
+		isApplicableMatch.getAllContextElements().add(prevNode__prevInFlow____incoming);
 		pn2cs__prevNode____source.setSrc(pn2cs);
 		pn2cs__prevNode____source.setTrg(prevNode);
 		isApplicableMatch.getAllContextElements().add(pn2cs__prevNode____source);
@@ -3318,32 +3905,52 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		flow__step____steps.setSrc(flow);
 		flow__step____steps.setTrg(step);
 		isApplicableMatch.getAllContextElements().add(flow__step____steps);
+		prevInFlow__prevPrevNode____sourceRef.setSrc(prevInFlow);
+		prevInFlow__prevPrevNode____sourceRef.setTrg(prevPrevNode);
+		isApplicableMatch.getAllContextElements().add(prevInFlow__prevPrevNode____sourceRef);
+		prevPrevNode__prevInFlow____outgoing.setSrc(prevPrevNode);
+		prevPrevNode__prevInFlow____outgoing.setTrg(prevInFlow);
+		isApplicableMatch.getAllContextElements().add(prevPrevNode__prevInFlow____outgoing);
+		fn2ps__prevPrevNode____source.setSrc(fn2ps);
+		fn2ps__prevPrevNode____source.setTrg(prevPrevNode);
+		isApplicableMatch.getAllContextElements().add(fn2ps__prevPrevNode____source);
+		fn2ps__prevStep____target.setSrc(fn2ps);
+		fn2ps__prevStep____target.setTrg(prevStep);
+		isApplicableMatch.getAllContextElements().add(fn2ps__prevStep____target);
 		process__prevNode____flowElements.setSrc(process);
 		process__prevNode____flowElements.setTrg(prevNode);
 		isApplicableMatch.getAllContextElements().add(process__prevNode____flowElements);
-		choiceStep__prevStep______lastInDef.setName(choiceStep__prevStep______lastInDef_name_prime);
+		prevInFlow__prevNode____targetRef.setName(prevInFlow__prevNode____targetRef_name_prime);
+		prevNode__prevInFlow____incoming.setName(prevNode__prevInFlow____incoming_name_prime);
 		pn2cs__prevNode____source.setName(pn2cs__prevNode____source_name_prime);
 		pn2cs__choiceStep____target.setName(pn2cs__choiceStep____target_name_prime);
 		prevStep__step____next.setName(prevStep__step____next_name_prime);
 		flow__choiceStep____steps.setName(flow__choiceStep____steps_name_prime);
 		flow__prevStep____steps.setName(flow__prevStep____steps_name_prime);
 		flow__step____steps.setName(flow__step____steps_name_prime);
+		prevInFlow__prevPrevNode____sourceRef.setName(prevInFlow__prevPrevNode____sourceRef_name_prime);
+		prevPrevNode__prevInFlow____outgoing.setName(prevPrevNode__prevInFlow____outgoing_name_prime);
+		fn2ps__prevPrevNode____source.setName(fn2ps__prevPrevNode____source_name_prime);
+		fn2ps__prevStep____target.setName(fn2ps__prevStep____target_name_prime);
 		process__prevNode____flowElements.setName(process__prevNode____flowElements_name_prime);
-		return new Object[] { prevNode, choiceStep, pn2cs, prevStep, flow, step, process, isApplicableMatch,
-				choiceStep__prevStep______lastInDef, pn2cs__prevNode____source, pn2cs__choiceStep____target,
-				prevStep__step____next, flow__choiceStep____steps, flow__prevStep____steps, flow__step____steps,
-				process__prevNode____flowElements };
+		return new Object[] { prevNode, choiceStep, pn2cs, prevStep, flow, step, prevInFlow, prevPrevNode, fn2ps,
+				process, isApplicableMatch, prevInFlow__prevNode____targetRef, prevNode__prevInFlow____incoming,
+				pn2cs__prevNode____source, pn2cs__choiceStep____target, prevStep__step____next,
+				flow__choiceStep____steps, flow__prevStep____steps, flow__step____steps,
+				prevInFlow__prevPrevNode____sourceRef, prevPrevNode__prevInFlow____outgoing,
+				fn2ps__prevPrevNode____source, fn2ps__prevStep____target, process__prevNode____flowElements };
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_12_4_bindingFBBBBBBBBB(SplitAfterMerge _this,
+	public static final Object[] pattern_SplitAfterMerge_12_4_bindingFBBBBBBBBBBBB(SplitAfterMerge _this,
 			IsApplicableMatch isApplicableMatch, ExclusiveGateway prevNode, ChoiceStep choiceStep, GW2S pn2cs,
-			Step prevStep, Flow flow, ParallelStep step, de.abilov.bpmn.Process process) {
+			Step prevStep, Flow flow, ParallelStep step, SequenceFlow prevInFlow, FlowNode prevPrevNode, FN2S fn2ps,
+			de.abilov.bpmn.Process process) {
 		CSP _localVariable_0 = _this.isApplicable_solveCsp_BWD(isApplicableMatch, prevNode, choiceStep, pn2cs, prevStep,
-				flow, step, process);
+				flow, step, prevInFlow, prevPrevNode, fn2ps, process);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
 			return new Object[] { csp, _this, isApplicableMatch, prevNode, choiceStep, pn2cs, prevStep, flow, step,
-					process };
+					prevInFlow, prevPrevNode, fn2ps, process };
 		}
 		return null;
 	}
@@ -3352,11 +3959,13 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return new Object[] { csp };
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_12_4_bindingAndBlackFBBBBBBBBB(SplitAfterMerge _this,
+	public static final Object[] pattern_SplitAfterMerge_12_4_bindingAndBlackFBBBBBBBBBBBB(SplitAfterMerge _this,
 			IsApplicableMatch isApplicableMatch, ExclusiveGateway prevNode, ChoiceStep choiceStep, GW2S pn2cs,
-			Step prevStep, Flow flow, ParallelStep step, de.abilov.bpmn.Process process) {
-		Object[] result_pattern_SplitAfterMerge_12_4_binding = pattern_SplitAfterMerge_12_4_bindingFBBBBBBBBB(_this,
-				isApplicableMatch, prevNode, choiceStep, pn2cs, prevStep, flow, step, process);
+			Step prevStep, Flow flow, ParallelStep step, SequenceFlow prevInFlow, FlowNode prevPrevNode, FN2S fn2ps,
+			de.abilov.bpmn.Process process) {
+		Object[] result_pattern_SplitAfterMerge_12_4_binding = pattern_SplitAfterMerge_12_4_bindingFBBBBBBBBBBBB(_this,
+				isApplicableMatch, prevNode, choiceStep, pn2cs, prevStep, flow, step, prevInFlow, prevPrevNode, fn2ps,
+				process);
 		if (result_pattern_SplitAfterMerge_12_4_binding != null) {
 			CSP csp = (CSP) result_pattern_SplitAfterMerge_12_4_binding[0];
 
@@ -3364,7 +3973,7 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 			if (result_pattern_SplitAfterMerge_12_4_black != null) {
 
 				return new Object[] { csp, _this, isApplicableMatch, prevNode, choiceStep, pn2cs, prevStep, flow, step,
-						process };
+						prevInFlow, prevPrevNode, fn2ps, process };
 			}
 		}
 		return null;
@@ -3438,9 +4047,9 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 	}
 
 	public static final Object[] pattern_SplitAfterMerge_20_2_black_nac_0BB(ParallelStep step, Flow flow) {
-		for (Flow __DEC_step_steps_698042 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+		for (Flow __DEC_step_steps_536056 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 				Flow.class, "steps")) {
-			if (!flow.equals(__DEC_step_steps_698042)) {
+			if (!flow.equals(__DEC_step_steps_536056)) {
 				return new Object[] { step, flow };
 			}
 		}
@@ -3451,11 +4060,11 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 			Step prevStep) {
 		if (!choiceStep.equals(prevStep)) {
 			if (!prevStep.equals(step)) {
-				for (Step __DEC_step_next_27079 : org.moflon.core.utilities.eMoflonEMFUtil
+				for (Step __DEC_step_next_215744 : org.moflon.core.utilities.eMoflonEMFUtil
 						.getOppositeReferenceTyped(step, Step.class, "next")) {
-					if (!step.equals(__DEC_step_next_27079)) {
-						if (!choiceStep.equals(__DEC_step_next_27079)) {
-							if (!prevStep.equals(__DEC_step_next_27079)) {
+					if (!step.equals(__DEC_step_next_215744)) {
+						if (!choiceStep.equals(__DEC_step_next_215744)) {
+							if (!prevStep.equals(__DEC_step_next_215744)) {
 								return new Object[] { step, choiceStep, prevStep };
 							}
 						}
@@ -3483,17 +4092,18 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 				ParallelStep step = (ParallelStep) tmpStep;
 				if (!prevStep.equals(step)) {
 					if (step.equals(prevStep.getNext())) {
-						for (ChoiceStep choiceStep : org.moflon.core.utilities.eMoflonEMFUtil
-								.getOppositeReferenceTyped(prevStep, ChoiceStep.class, "__lastInDef")) {
-							if (!choiceStep.equals(prevStep)) {
-								if (pattern_SplitAfterMerge_20_2_black_nac_1BBB(step, choiceStep, prevStep) == null) {
-									if (pattern_SplitAfterMerge_20_2_black_nac_2BB(choiceStep, step) == null) {
-										for (Flow flow : org.moflon.core.utilities.eMoflonEMFUtil
-												.getOppositeReferenceTyped(prevStep, Flow.class, "steps")) {
-											if (flow.getSteps().contains(choiceStep)) {
-												if (flow.getSteps().contains(step)) {
-													if (pattern_SplitAfterMerge_20_2_black_nac_0BB(step,
-															flow) == null) {
+						for (Flow flow : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(prevStep,
+								Flow.class, "steps")) {
+							if (flow.getSteps().contains(step)) {
+								if (pattern_SplitAfterMerge_20_2_black_nac_0BB(step, flow) == null) {
+									for (Step tmpChoiceStep : flow.getSteps()) {
+										if (tmpChoiceStep instanceof ChoiceStep) {
+											ChoiceStep choiceStep = (ChoiceStep) tmpChoiceStep;
+											if (!choiceStep.equals(prevStep)) {
+												if (pattern_SplitAfterMerge_20_2_black_nac_1BBB(step, choiceStep,
+														prevStep) == null) {
+													if (pattern_SplitAfterMerge_20_2_black_nac_2BB(choiceStep,
+															step) == null) {
 														_result.add(new Object[] { choiceStep, prevStep, flow, step,
 																_edge_next });
 													}
@@ -3593,9 +4203,9 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 	}
 
 	public static final Object[] pattern_SplitAfterMerge_21_2_black_nac_0BB(ParallelStep step, Flow flow) {
-		for (Flow __DEC_step_steps_977507 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+		for (Flow __DEC_step_steps_177132 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 				Flow.class, "steps")) {
-			if (!flow.equals(__DEC_step_steps_977507)) {
+			if (!flow.equals(__DEC_step_steps_177132)) {
 				return new Object[] { step, flow };
 			}
 		}
@@ -3606,11 +4216,11 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 			Step prevStep) {
 		if (!choiceStep.equals(prevStep)) {
 			if (!prevStep.equals(step)) {
-				for (Step __DEC_step_next_329938 : org.moflon.core.utilities.eMoflonEMFUtil
+				for (Step __DEC_step_next_68938 : org.moflon.core.utilities.eMoflonEMFUtil
 						.getOppositeReferenceTyped(step, Step.class, "next")) {
-					if (!step.equals(__DEC_step_next_329938)) {
-						if (!choiceStep.equals(__DEC_step_next_329938)) {
-							if (!prevStep.equals(__DEC_step_next_329938)) {
+					if (!step.equals(__DEC_step_next_68938)) {
+						if (!choiceStep.equals(__DEC_step_next_68938)) {
+							if (!prevStep.equals(__DEC_step_next_68938)) {
 								return new Object[] { step, choiceStep, prevStep };
 							}
 						}
@@ -3641,26 +4251,21 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 						for (Step tmpChoiceStep : flow.getSteps()) {
 							if (tmpChoiceStep instanceof ChoiceStep) {
 								ChoiceStep choiceStep = (ChoiceStep) tmpChoiceStep;
-								Step prevStep = choiceStep.get__lastInDef();
-								if (prevStep != null) {
-									if (!choiceStep.equals(prevStep)) {
-										if (!prevStep.equals(step)) {
-											if (step.equals(prevStep.getNext())) {
-												if (flow.getSteps().contains(prevStep)) {
-													if (pattern_SplitAfterMerge_21_2_black_nac_2BB(choiceStep,
-															step) == null) {
-														if (pattern_SplitAfterMerge_21_2_black_nac_1BBB(step,
-																choiceStep, prevStep) == null) {
-															_result.add(new Object[] { choiceStep, prevStep, flow, step,
-																	_edge_steps });
-														}
+								if (pattern_SplitAfterMerge_21_2_black_nac_2BB(choiceStep, step) == null) {
+									for (Step prevStep : flow.getSteps()) {
+										if (!choiceStep.equals(prevStep)) {
+											if (!prevStep.equals(step)) {
+												if (step.equals(prevStep.getNext())) {
+													if (pattern_SplitAfterMerge_21_2_black_nac_1BBB(step, choiceStep,
+															prevStep) == null) {
+														_result.add(new Object[] { choiceStep, prevStep, flow, step,
+																_edge_steps });
 													}
 												}
 											}
 										}
 									}
 								}
-
 							}
 						}
 					}
@@ -3751,12 +4356,16 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return new Object[] { __result };
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_22_2_black_nac_0BB(SequenceFlow sf1,
-			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_103197 : org.moflon.core.utilities.eMoflonEMFUtil
-				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_103197)) {
-				return new Object[] { sf1, prevNode };
+	public static final Object[] pattern_SplitAfterMerge_22_2_black_nac_0BBB(SequenceFlow sf1,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode) {
+		if (!prevNode.equals(prevPrevNode)) {
+			for (ExclusiveGateway __DEC_sf1_default_724843 : org.moflon.core.utilities.eMoflonEMFUtil
+					.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
+				if (!prevNode.equals(__DEC_sf1_default_724843)) {
+					if (!prevPrevNode.equals(__DEC_sf1_default_724843)) {
+						return new Object[] { sf1, prevNode, prevPrevNode };
+					}
+				}
 			}
 		}
 		return null;
@@ -3764,9 +4373,9 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 
 	public static final Object[] pattern_SplitAfterMerge_22_2_black_nac_1BB(SequenceFlow sf1,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_619399 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_442766 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_619399)) {
+			if (!process.equals(__DEC_sf1_flowElements_442766)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -3775,24 +4384,32 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 
 	public static final Object[] pattern_SplitAfterMerge_22_2_black_nac_2BB(ParallelGateway pgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_885518 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_935419 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pgw_flowElements_885518)) {
+			if (!process.equals(__DEC_pgw_flowElements_935419)) {
 				return new Object[] { pgw, process };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_22_2_black_nac_3BBB(ParallelGateway pgw,
-			ExclusiveGateway prevNode, ParallelGateway pcgw) {
-		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pgw___conv_980426 : org.moflon.core.utilities.eMoflonEMFUtil
-					.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
-				if (!pgw.equals(__DEC_pgw___conv_980426)) {
-					if (!prevNode.equals(__DEC_pgw___conv_980426)) {
-						if (!pcgw.equals(__DEC_pgw___conv_980426)) {
-							return new Object[] { pgw, prevNode, pcgw };
+	public static final Object[] pattern_SplitAfterMerge_22_2_black_nac_3BBBB(ParallelGateway pgw,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode, ParallelGateway pcgw) {
+		if (!pgw.equals(prevPrevNode)) {
+			if (!prevNode.equals(prevPrevNode)) {
+				if (!pcgw.equals(pgw)) {
+					if (!pcgw.equals(prevPrevNode)) {
+						for (Gateway __DEC_pgw___conv_778480 : org.moflon.core.utilities.eMoflonEMFUtil
+								.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
+							if (!pgw.equals(__DEC_pgw___conv_778480)) {
+								if (!prevNode.equals(__DEC_pgw___conv_778480)) {
+									if (!prevPrevNode.equals(__DEC_pgw___conv_778480)) {
+										if (!pcgw.equals(__DEC_pgw___conv_778480)) {
+											return new Object[] { pgw, prevNode, prevPrevNode, pcgw };
+										}
+									}
+								}
+							}
 						}
 					}
 				}
@@ -3801,44 +4418,60 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_22_2_black_nac_4BBB(ParallelGateway pcgw,
-			ExclusiveGateway prevNode, ParallelGateway pgw) {
-		if (!pcgw.equals(pgw)) {
-			Gateway __DEC_pcgw___conv_173663 = pcgw.get__conv();
-			if (__DEC_pcgw___conv_173663 != null) {
-				if (!pcgw.equals(__DEC_pcgw___conv_173663)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_173663)) {
-						if (!pgw.equals(__DEC_pcgw___conv_173663)) {
-							return new Object[] { pcgw, prevNode, pgw };
+	public static final Object[] pattern_SplitAfterMerge_22_2_black_nac_4BBBB(ParallelGateway pcgw,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode, ParallelGateway pgw) {
+		if (!pcgw.equals(prevPrevNode)) {
+			if (!pcgw.equals(pgw)) {
+				if (!prevNode.equals(prevPrevNode)) {
+					if (!pgw.equals(prevPrevNode)) {
+						Gateway __DEC_pcgw___conv_699870 = pcgw.get__conv();
+						if (__DEC_pcgw___conv_699870 != null) {
+							if (!pcgw.equals(__DEC_pcgw___conv_699870)) {
+								if (!prevNode.equals(__DEC_pcgw___conv_699870)) {
+									if (!prevPrevNode.equals(__DEC_pcgw___conv_699870)) {
+										if (!pgw.equals(__DEC_pcgw___conv_699870)) {
+											return new Object[] { pcgw, prevNode, prevPrevNode, pgw };
+										}
+									}
+								}
+							}
 						}
+
 					}
 				}
 			}
-
 		}
 		return null;
 	}
 
 	public static final Object[] pattern_SplitAfterMerge_22_2_black_nac_5BB(ParallelGateway pcgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_165297 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_74299 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pcgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pcgw_flowElements_165297)) {
+			if (!process.equals(__DEC_pcgw_flowElements_74299)) {
 				return new Object[] { pcgw, process };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_22_2_black_nac_6BBB(ParallelGateway pcgw,
-			ExclusiveGateway prevNode, ParallelGateway pgw) {
-		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pcgw___conv_153183 : org.moflon.core.utilities.eMoflonEMFUtil
-					.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
-				if (!pcgw.equals(__DEC_pcgw___conv_153183)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_153183)) {
-						if (!pgw.equals(__DEC_pcgw___conv_153183)) {
-							return new Object[] { pcgw, prevNode, pgw };
+	public static final Object[] pattern_SplitAfterMerge_22_2_black_nac_6BBBB(ParallelGateway pcgw,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode, ParallelGateway pgw) {
+		if (!pcgw.equals(prevPrevNode)) {
+			if (!pcgw.equals(pgw)) {
+				if (!prevNode.equals(prevPrevNode)) {
+					if (!pgw.equals(prevPrevNode)) {
+						for (Gateway __DEC_pcgw___conv_749675 : org.moflon.core.utilities.eMoflonEMFUtil
+								.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
+							if (!pcgw.equals(__DEC_pcgw___conv_749675)) {
+								if (!prevNode.equals(__DEC_pcgw___conv_749675)) {
+									if (!prevPrevNode.equals(__DEC_pcgw___conv_749675)) {
+										if (!pgw.equals(__DEC_pcgw___conv_749675)) {
+											return new Object[] { pcgw, prevNode, prevPrevNode, pgw };
+										}
+									}
+								}
+							}
 						}
 					}
 				}
@@ -3871,7 +4504,7 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_SplitAfterMerge_22_2_blackFFFFFB(EMoflonEdge _edge_flowElements) {
+	public static final Iterable<Object[]> pattern_SplitAfterMerge_22_2_blackFFFFFFFB(EMoflonEdge _edge_flowElements) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		EObject tmpProcess = _edge_flowElements.getSrc();
 		if (tmpProcess instanceof de.abilov.bpmn.Process) {
@@ -3905,35 +4538,63 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 																			.equals(false)) {
 																		if (pattern_SplitAfterMerge_22_2_black_nac_1BB(
 																				sf1, process) == null) {
-																			if (pattern_SplitAfterMerge_22_2_black_nac_0BB(
-																					sf1, prevNode) == null) {
-																				if (pattern_SplitAfterMerge_22_2_black_nac_3BBB(
-																						pgw, prevNode, pcgw) == null) {
-																					if (pattern_SplitAfterMerge_22_2_black_nac_4BBB(
-																							pcgw, prevNode,
-																							pgw) == null) {
-																						if (pattern_SplitAfterMerge_22_2_black_nac_6BBB(
-																								pcgw, prevNode,
-																								pgw) == null) {
-																							if (pattern_SplitAfterMerge_22_2_black_nac_7BB(
-																									prevNode,
-																									sf1) == null) {
-																								if (pattern_SplitAfterMerge_22_2_black_nac_8BB(
-																										prevNode,
-																										pgw) == null) {
-																									if (pattern_SplitAfterMerge_22_2_black_nac_9BB(
-																											pcgw,
-																											prevNode) == null) {
-																										_result.add(
-																												new Object[] {
-																														prevNode,
-																														process,
+																			if (pattern_SplitAfterMerge_22_2_black_nac_7BB(
+																					prevNode, sf1) == null) {
+																				if (pattern_SplitAfterMerge_22_2_black_nac_8BB(
+																						prevNode, pgw) == null) {
+																					if (pattern_SplitAfterMerge_22_2_black_nac_9BB(
+																							pcgw, prevNode) == null) {
+																						for (SequenceFlow prevInFlow : prevNode
+																								.getIncoming()) {
+																							if (!prevInFlow
+																									.equals(sf1)) {
+																								FlowNode prevPrevNode = prevInFlow
+																										.getSourceRef();
+																								if (prevPrevNode != null) {
+																									if (!prevNode
+																											.equals(prevPrevNode)) {
+																										if (!pgw.equals(
+																												prevPrevNode)) {
+																											if (!pcgw
+																													.equals(prevPrevNode)) {
+																												if (pattern_SplitAfterMerge_22_2_black_nac_0BBB(
 																														sf1,
-																														pgw,
-																														pcgw,
-																														_edge_flowElements });
+																														prevNode,
+																														prevPrevNode) == null) {
+																													if (pattern_SplitAfterMerge_22_2_black_nac_3BBBB(
+																															pgw,
+																															prevNode,
+																															prevPrevNode,
+																															pcgw) == null) {
+																														if (pattern_SplitAfterMerge_22_2_black_nac_4BBBB(
+																																pcgw,
+																																prevNode,
+																																prevPrevNode,
+																																pgw) == null) {
+																															if (pattern_SplitAfterMerge_22_2_black_nac_6BBBB(
+																																	pcgw,
+																																	prevNode,
+																																	prevPrevNode,
+																																	pgw) == null) {
+																																_result.add(
+																																		new Object[] {
+																																				prevNode,
+																																				prevInFlow,
+																																				prevPrevNode,
+																																				process,
+																																				sf1,
+																																				pgw,
+																																				pcgw,
+																																				_edge_flowElements });
+																															}
+																														}
+																													}
+																												}
+																											}
+																										}
 																									}
 																								}
+
 																							}
 																						}
 																					}
@@ -3975,10 +4636,11 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 
 	}
 
-	public static final boolean pattern_SplitAfterMerge_22_3_expressionFBBBBBBB(SplitAfterMerge _this, Match match,
-			ExclusiveGateway prevNode, de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw,
-			ParallelGateway pcgw) {
-		boolean _localVariable_0 = _this.isAppropriate_FWD(match, prevNode, process, sf1, pgw, pcgw);
+	public static final boolean pattern_SplitAfterMerge_22_3_expressionFBBBBBBBBB(SplitAfterMerge _this, Match match,
+			ExclusiveGateway prevNode, SequenceFlow prevInFlow, FlowNode prevPrevNode, de.abilov.bpmn.Process process,
+			SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw) {
+		boolean _localVariable_0 = _this.isAppropriate_FWD(match, prevNode, prevInFlow, prevPrevNode, process, sf1, pgw,
+				pcgw);
 		boolean _result = Boolean.valueOf(_localVariable_0);
 		return _result;
 	}
@@ -4046,12 +4708,16 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return new Object[] { __result };
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_23_2_black_nac_0BB(SequenceFlow sf1,
-			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_904906 : org.moflon.core.utilities.eMoflonEMFUtil
-				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_904906)) {
-				return new Object[] { sf1, prevNode };
+	public static final Object[] pattern_SplitAfterMerge_23_2_black_nac_0BBB(SequenceFlow sf1,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode) {
+		if (!prevNode.equals(prevPrevNode)) {
+			for (ExclusiveGateway __DEC_sf1_default_492175 : org.moflon.core.utilities.eMoflonEMFUtil
+					.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
+				if (!prevNode.equals(__DEC_sf1_default_492175)) {
+					if (!prevPrevNode.equals(__DEC_sf1_default_492175)) {
+						return new Object[] { sf1, prevNode, prevPrevNode };
+					}
+				}
 			}
 		}
 		return null;
@@ -4059,9 +4725,9 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 
 	public static final Object[] pattern_SplitAfterMerge_23_2_black_nac_1BB(SequenceFlow sf1,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_728837 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_376565 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_728837)) {
+			if (!process.equals(__DEC_sf1_flowElements_376565)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -4070,24 +4736,32 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 
 	public static final Object[] pattern_SplitAfterMerge_23_2_black_nac_2BB(ParallelGateway pgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_859984 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_398073 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pgw_flowElements_859984)) {
+			if (!process.equals(__DEC_pgw_flowElements_398073)) {
 				return new Object[] { pgw, process };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_23_2_black_nac_3BBB(ParallelGateway pgw,
-			ExclusiveGateway prevNode, ParallelGateway pcgw) {
-		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pgw___conv_419156 : org.moflon.core.utilities.eMoflonEMFUtil
-					.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
-				if (!pgw.equals(__DEC_pgw___conv_419156)) {
-					if (!prevNode.equals(__DEC_pgw___conv_419156)) {
-						if (!pcgw.equals(__DEC_pgw___conv_419156)) {
-							return new Object[] { pgw, prevNode, pcgw };
+	public static final Object[] pattern_SplitAfterMerge_23_2_black_nac_3BBBB(ParallelGateway pgw,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode, ParallelGateway pcgw) {
+		if (!pgw.equals(prevPrevNode)) {
+			if (!prevNode.equals(prevPrevNode)) {
+				if (!pcgw.equals(pgw)) {
+					if (!pcgw.equals(prevPrevNode)) {
+						for (Gateway __DEC_pgw___conv_61868 : org.moflon.core.utilities.eMoflonEMFUtil
+								.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
+							if (!pgw.equals(__DEC_pgw___conv_61868)) {
+								if (!prevNode.equals(__DEC_pgw___conv_61868)) {
+									if (!prevPrevNode.equals(__DEC_pgw___conv_61868)) {
+										if (!pcgw.equals(__DEC_pgw___conv_61868)) {
+											return new Object[] { pgw, prevNode, prevPrevNode, pcgw };
+										}
+									}
+								}
+							}
 						}
 					}
 				}
@@ -4096,44 +4770,60 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_23_2_black_nac_4BBB(ParallelGateway pcgw,
-			ExclusiveGateway prevNode, ParallelGateway pgw) {
-		if (!pcgw.equals(pgw)) {
-			Gateway __DEC_pcgw___conv_132919 = pcgw.get__conv();
-			if (__DEC_pcgw___conv_132919 != null) {
-				if (!pcgw.equals(__DEC_pcgw___conv_132919)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_132919)) {
-						if (!pgw.equals(__DEC_pcgw___conv_132919)) {
-							return new Object[] { pcgw, prevNode, pgw };
+	public static final Object[] pattern_SplitAfterMerge_23_2_black_nac_4BBBB(ParallelGateway pcgw,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode, ParallelGateway pgw) {
+		if (!pcgw.equals(prevPrevNode)) {
+			if (!pcgw.equals(pgw)) {
+				if (!prevNode.equals(prevPrevNode)) {
+					if (!pgw.equals(prevPrevNode)) {
+						Gateway __DEC_pcgw___conv_696976 = pcgw.get__conv();
+						if (__DEC_pcgw___conv_696976 != null) {
+							if (!pcgw.equals(__DEC_pcgw___conv_696976)) {
+								if (!prevNode.equals(__DEC_pcgw___conv_696976)) {
+									if (!prevPrevNode.equals(__DEC_pcgw___conv_696976)) {
+										if (!pgw.equals(__DEC_pcgw___conv_696976)) {
+											return new Object[] { pcgw, prevNode, prevPrevNode, pgw };
+										}
+									}
+								}
+							}
 						}
+
 					}
 				}
 			}
-
 		}
 		return null;
 	}
 
 	public static final Object[] pattern_SplitAfterMerge_23_2_black_nac_5BB(ParallelGateway pcgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_837567 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_650496 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pcgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pcgw_flowElements_837567)) {
+			if (!process.equals(__DEC_pcgw_flowElements_650496)) {
 				return new Object[] { pcgw, process };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_23_2_black_nac_6BBB(ParallelGateway pcgw,
-			ExclusiveGateway prevNode, ParallelGateway pgw) {
-		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pcgw___conv_275622 : org.moflon.core.utilities.eMoflonEMFUtil
-					.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
-				if (!pcgw.equals(__DEC_pcgw___conv_275622)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_275622)) {
-						if (!pgw.equals(__DEC_pcgw___conv_275622)) {
-							return new Object[] { pcgw, prevNode, pgw };
+	public static final Object[] pattern_SplitAfterMerge_23_2_black_nac_6BBBB(ParallelGateway pcgw,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode, ParallelGateway pgw) {
+		if (!pcgw.equals(prevPrevNode)) {
+			if (!pcgw.equals(pgw)) {
+				if (!prevNode.equals(prevPrevNode)) {
+					if (!pgw.equals(prevPrevNode)) {
+						for (Gateway __DEC_pcgw___conv_513353 : org.moflon.core.utilities.eMoflonEMFUtil
+								.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
+							if (!pcgw.equals(__DEC_pcgw___conv_513353)) {
+								if (!prevNode.equals(__DEC_pcgw___conv_513353)) {
+									if (!prevPrevNode.equals(__DEC_pcgw___conv_513353)) {
+										if (!pgw.equals(__DEC_pcgw___conv_513353)) {
+											return new Object[] { pcgw, prevNode, prevPrevNode, pgw };
+										}
+									}
+								}
+							}
 						}
 					}
 				}
@@ -4166,7 +4856,7 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_SplitAfterMerge_23_2_blackFFFFFB(EMoflonEdge _edge_flowElements) {
+	public static final Iterable<Object[]> pattern_SplitAfterMerge_23_2_blackFFFFFFFB(EMoflonEdge _edge_flowElements) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		EObject tmpProcess = _edge_flowElements.getSrc();
 		if (tmpProcess instanceof de.abilov.bpmn.Process) {
@@ -4198,36 +4888,64 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 																	process) == null) {
 																if (pattern_SplitAfterMerge_23_2_black_nac_2BB(pgw,
 																		process) == null) {
-																	if (pattern_SplitAfterMerge_23_2_black_nac_0BB(sf1,
-																			prevNode) == null) {
-																		if (pattern_SplitAfterMerge_23_2_black_nac_7BB(
-																				prevNode, sf1) == null) {
-																			if (pattern_SplitAfterMerge_23_2_black_nac_8BB(
-																					prevNode, pgw) == null) {
-																				if (pattern_SplitAfterMerge_23_2_black_nac_3BBB(
-																						pgw, prevNode, pcgw) == null) {
-																					if (pattern_SplitAfterMerge_23_2_black_nac_4BBB(
-																							pcgw, prevNode,
-																							pgw) == null) {
-																						if (pattern_SplitAfterMerge_23_2_black_nac_5BB(
-																								pcgw,
-																								process) == null) {
-																							if (pattern_SplitAfterMerge_23_2_black_nac_6BBB(
-																									pcgw, prevNode,
-																									pgw) == null) {
-																								if (pattern_SplitAfterMerge_23_2_black_nac_9BB(
-																										pcgw,
-																										prevNode) == null) {
-																									_result.add(
-																											new Object[] {
-																													prevNode,
-																													process,
+																	if (pattern_SplitAfterMerge_23_2_black_nac_7BB(
+																			prevNode, sf1) == null) {
+																		if (pattern_SplitAfterMerge_23_2_black_nac_8BB(
+																				prevNode, pgw) == null) {
+																			if (pattern_SplitAfterMerge_23_2_black_nac_5BB(
+																					pcgw, process) == null) {
+																				if (pattern_SplitAfterMerge_23_2_black_nac_9BB(
+																						pcgw, prevNode) == null) {
+																					for (SequenceFlow prevInFlow : prevNode
+																							.getIncoming()) {
+																						if (!prevInFlow.equals(sf1)) {
+																							FlowNode prevPrevNode = prevInFlow
+																									.getSourceRef();
+																							if (prevPrevNode != null) {
+																								if (!prevNode.equals(
+																										prevPrevNode)) {
+																									if (!pgw.equals(
+																											prevPrevNode)) {
+																										if (!pcgw
+																												.equals(prevPrevNode)) {
+																											if (pattern_SplitAfterMerge_23_2_black_nac_0BBB(
 																													sf1,
-																													pgw,
-																													pcgw,
-																													_edge_flowElements });
+																													prevNode,
+																													prevPrevNode) == null) {
+																												if (pattern_SplitAfterMerge_23_2_black_nac_3BBBB(
+																														pgw,
+																														prevNode,
+																														prevPrevNode,
+																														pcgw) == null) {
+																													if (pattern_SplitAfterMerge_23_2_black_nac_4BBBB(
+																															pcgw,
+																															prevNode,
+																															prevPrevNode,
+																															pgw) == null) {
+																														if (pattern_SplitAfterMerge_23_2_black_nac_6BBBB(
+																																pcgw,
+																																prevNode,
+																																prevPrevNode,
+																																pgw) == null) {
+																															_result.add(
+																																	new Object[] {
+																																			prevNode,
+																																			prevInFlow,
+																																			prevPrevNode,
+																																			process,
+																																			sf1,
+																																			pgw,
+																																			pcgw,
+																																			_edge_flowElements });
+																														}
+																													}
+																												}
+																											}
+																										}
+																									}
 																								}
 																							}
+
 																						}
 																					}
 																				}
@@ -4269,10 +4987,11 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 
 	}
 
-	public static final boolean pattern_SplitAfterMerge_23_3_expressionFBBBBBBB(SplitAfterMerge _this, Match match,
-			ExclusiveGateway prevNode, de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw,
-			ParallelGateway pcgw) {
-		boolean _localVariable_0 = _this.isAppropriate_FWD(match, prevNode, process, sf1, pgw, pcgw);
+	public static final boolean pattern_SplitAfterMerge_23_3_expressionFBBBBBBBBB(SplitAfterMerge _this, Match match,
+			ExclusiveGateway prevNode, SequenceFlow prevInFlow, FlowNode prevPrevNode, de.abilov.bpmn.Process process,
+			SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw) {
+		boolean _localVariable_0 = _this.isAppropriate_FWD(match, prevNode, prevInFlow, prevPrevNode, process, sf1, pgw,
+				pcgw);
 		boolean _result = Boolean.valueOf(_localVariable_0);
 		return _result;
 	}
@@ -4340,12 +5059,16 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return new Object[] { __result };
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_24_2_black_nac_0BB(SequenceFlow sf1,
-			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_208455 : org.moflon.core.utilities.eMoflonEMFUtil
-				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_208455)) {
-				return new Object[] { sf1, prevNode };
+	public static final Object[] pattern_SplitAfterMerge_24_2_black_nac_0BBB(SequenceFlow sf1,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode) {
+		if (!prevNode.equals(prevPrevNode)) {
+			for (ExclusiveGateway __DEC_sf1_default_770101 : org.moflon.core.utilities.eMoflonEMFUtil
+					.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
+				if (!prevNode.equals(__DEC_sf1_default_770101)) {
+					if (!prevPrevNode.equals(__DEC_sf1_default_770101)) {
+						return new Object[] { sf1, prevNode, prevPrevNode };
+					}
+				}
 			}
 		}
 		return null;
@@ -4353,9 +5076,9 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 
 	public static final Object[] pattern_SplitAfterMerge_24_2_black_nac_1BB(SequenceFlow sf1,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_291545 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_566769 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_291545)) {
+			if (!process.equals(__DEC_sf1_flowElements_566769)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -4364,24 +5087,32 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 
 	public static final Object[] pattern_SplitAfterMerge_24_2_black_nac_2BB(ParallelGateway pgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_927235 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_908330 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pgw_flowElements_927235)) {
+			if (!process.equals(__DEC_pgw_flowElements_908330)) {
 				return new Object[] { pgw, process };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_24_2_black_nac_3BBB(ParallelGateway pgw,
-			ExclusiveGateway prevNode, ParallelGateway pcgw) {
-		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pgw___conv_241583 : org.moflon.core.utilities.eMoflonEMFUtil
-					.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
-				if (!pgw.equals(__DEC_pgw___conv_241583)) {
-					if (!prevNode.equals(__DEC_pgw___conv_241583)) {
-						if (!pcgw.equals(__DEC_pgw___conv_241583)) {
-							return new Object[] { pgw, prevNode, pcgw };
+	public static final Object[] pattern_SplitAfterMerge_24_2_black_nac_3BBBB(ParallelGateway pgw,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode, ParallelGateway pcgw) {
+		if (!pgw.equals(prevPrevNode)) {
+			if (!prevNode.equals(prevPrevNode)) {
+				if (!pcgw.equals(pgw)) {
+					if (!pcgw.equals(prevPrevNode)) {
+						for (Gateway __DEC_pgw___conv_236079 : org.moflon.core.utilities.eMoflonEMFUtil
+								.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
+							if (!pgw.equals(__DEC_pgw___conv_236079)) {
+								if (!prevNode.equals(__DEC_pgw___conv_236079)) {
+									if (!prevPrevNode.equals(__DEC_pgw___conv_236079)) {
+										if (!pcgw.equals(__DEC_pgw___conv_236079)) {
+											return new Object[] { pgw, prevNode, prevPrevNode, pcgw };
+										}
+									}
+								}
+							}
 						}
 					}
 				}
@@ -4390,44 +5121,60 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_24_2_black_nac_4BBB(ParallelGateway pcgw,
-			ExclusiveGateway prevNode, ParallelGateway pgw) {
-		if (!pcgw.equals(pgw)) {
-			Gateway __DEC_pcgw___conv_523723 = pcgw.get__conv();
-			if (__DEC_pcgw___conv_523723 != null) {
-				if (!pcgw.equals(__DEC_pcgw___conv_523723)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_523723)) {
-						if (!pgw.equals(__DEC_pcgw___conv_523723)) {
-							return new Object[] { pcgw, prevNode, pgw };
+	public static final Object[] pattern_SplitAfterMerge_24_2_black_nac_4BBBB(ParallelGateway pcgw,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode, ParallelGateway pgw) {
+		if (!pcgw.equals(prevPrevNode)) {
+			if (!pcgw.equals(pgw)) {
+				if (!prevNode.equals(prevPrevNode)) {
+					if (!pgw.equals(prevPrevNode)) {
+						Gateway __DEC_pcgw___conv_132513 = pcgw.get__conv();
+						if (__DEC_pcgw___conv_132513 != null) {
+							if (!pcgw.equals(__DEC_pcgw___conv_132513)) {
+								if (!prevNode.equals(__DEC_pcgw___conv_132513)) {
+									if (!prevPrevNode.equals(__DEC_pcgw___conv_132513)) {
+										if (!pgw.equals(__DEC_pcgw___conv_132513)) {
+											return new Object[] { pcgw, prevNode, prevPrevNode, pgw };
+										}
+									}
+								}
+							}
 						}
+
 					}
 				}
 			}
-
 		}
 		return null;
 	}
 
 	public static final Object[] pattern_SplitAfterMerge_24_2_black_nac_5BB(ParallelGateway pcgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_490601 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_45112 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pcgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pcgw_flowElements_490601)) {
+			if (!process.equals(__DEC_pcgw_flowElements_45112)) {
 				return new Object[] { pcgw, process };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_24_2_black_nac_6BBB(ParallelGateway pcgw,
-			ExclusiveGateway prevNode, ParallelGateway pgw) {
-		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pcgw___conv_521136 : org.moflon.core.utilities.eMoflonEMFUtil
-					.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
-				if (!pcgw.equals(__DEC_pcgw___conv_521136)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_521136)) {
-						if (!pgw.equals(__DEC_pcgw___conv_521136)) {
-							return new Object[] { pcgw, prevNode, pgw };
+	public static final Object[] pattern_SplitAfterMerge_24_2_black_nac_6BBBB(ParallelGateway pcgw,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode, ParallelGateway pgw) {
+		if (!pcgw.equals(prevPrevNode)) {
+			if (!pcgw.equals(pgw)) {
+				if (!prevNode.equals(prevPrevNode)) {
+					if (!pgw.equals(prevPrevNode)) {
+						for (Gateway __DEC_pcgw___conv_218975 : org.moflon.core.utilities.eMoflonEMFUtil
+								.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
+							if (!pcgw.equals(__DEC_pcgw___conv_218975)) {
+								if (!prevNode.equals(__DEC_pcgw___conv_218975)) {
+									if (!prevPrevNode.equals(__DEC_pcgw___conv_218975)) {
+										if (!pgw.equals(__DEC_pcgw___conv_218975)) {
+											return new Object[] { pcgw, prevNode, prevPrevNode, pgw };
+										}
+									}
+								}
+							}
 						}
 					}
 				}
@@ -4460,7 +5207,7 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_SplitAfterMerge_24_2_blackFFFFFB(EMoflonEdge _edge_flowElements) {
+	public static final Iterable<Object[]> pattern_SplitAfterMerge_24_2_blackFFFFFFFB(EMoflonEdge _edge_flowElements) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		EObject tmpProcess = _edge_flowElements.getSrc();
 		if (tmpProcess instanceof de.abilov.bpmn.Process) {
@@ -4494,36 +5241,64 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 																				.equals(false)) {
 																			if (pattern_SplitAfterMerge_24_2_black_nac_1BB(
 																					sf1, process) == null) {
-																				if (pattern_SplitAfterMerge_24_2_black_nac_0BB(
-																						sf1, prevNode) == null) {
-																					if (pattern_SplitAfterMerge_24_2_black_nac_3BBB(
-																							pgw, prevNode,
-																							pcgw) == null) {
-																						if (pattern_SplitAfterMerge_24_2_black_nac_4BBB(
-																								pcgw, prevNode,
-																								pgw) == null) {
-																							if (pattern_SplitAfterMerge_24_2_black_nac_6BBB(
-																									pcgw, prevNode,
-																									pgw) == null) {
-																								if (pattern_SplitAfterMerge_24_2_black_nac_7BB(
-																										prevNode,
-																										sf1) == null) {
-																									if (pattern_SplitAfterMerge_24_2_black_nac_8BB(
-																											prevNode,
-																											pgw) == null) {
-																										if (pattern_SplitAfterMerge_24_2_black_nac_9BB(
-																												pcgw,
-																												prevNode) == null) {
-																											_result.add(
-																													new Object[] {
-																															prevNode,
-																															process,
+																				if (pattern_SplitAfterMerge_24_2_black_nac_7BB(
+																						prevNode, sf1) == null) {
+																					if (pattern_SplitAfterMerge_24_2_black_nac_8BB(
+																							prevNode, pgw) == null) {
+																						if (pattern_SplitAfterMerge_24_2_black_nac_9BB(
+																								pcgw,
+																								prevNode) == null) {
+																							for (SequenceFlow prevInFlow : prevNode
+																									.getIncoming()) {
+																								if (!prevInFlow
+																										.equals(sf1)) {
+																									FlowNode prevPrevNode = prevInFlow
+																											.getSourceRef();
+																									if (prevPrevNode != null) {
+																										if (!prevNode
+																												.equals(prevPrevNode)) {
+																											if (!pgw.equals(
+																													prevPrevNode)) {
+																												if (!pcgw
+																														.equals(prevPrevNode)) {
+																													if (pattern_SplitAfterMerge_24_2_black_nac_0BBB(
 																															sf1,
-																															pgw,
-																															pcgw,
-																															_edge_flowElements });
+																															prevNode,
+																															prevPrevNode) == null) {
+																														if (pattern_SplitAfterMerge_24_2_black_nac_3BBBB(
+																																pgw,
+																																prevNode,
+																																prevPrevNode,
+																																pcgw) == null) {
+																															if (pattern_SplitAfterMerge_24_2_black_nac_4BBBB(
+																																	pcgw,
+																																	prevNode,
+																																	prevPrevNode,
+																																	pgw) == null) {
+																																if (pattern_SplitAfterMerge_24_2_black_nac_6BBBB(
+																																		pcgw,
+																																		prevNode,
+																																		prevPrevNode,
+																																		pgw) == null) {
+																																	_result.add(
+																																			new Object[] {
+																																					prevNode,
+																																					prevInFlow,
+																																					prevPrevNode,
+																																					process,
+																																					sf1,
+																																					pgw,
+																																					pcgw,
+																																					_edge_flowElements });
+																																}
+																															}
+																														}
+																													}
+																												}
+																											}
 																										}
 																									}
+
 																								}
 																							}
 																						}
@@ -4565,10 +5340,11 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 
 	}
 
-	public static final boolean pattern_SplitAfterMerge_24_3_expressionFBBBBBBB(SplitAfterMerge _this, Match match,
-			ExclusiveGateway prevNode, de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw,
-			ParallelGateway pcgw) {
-		boolean _localVariable_0 = _this.isAppropriate_FWD(match, prevNode, process, sf1, pgw, pcgw);
+	public static final boolean pattern_SplitAfterMerge_24_3_expressionFBBBBBBBBB(SplitAfterMerge _this, Match match,
+			ExclusiveGateway prevNode, SequenceFlow prevInFlow, FlowNode prevPrevNode, de.abilov.bpmn.Process process,
+			SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw) {
+		boolean _localVariable_0 = _this.isAppropriate_FWD(match, prevNode, prevInFlow, prevPrevNode, process, sf1, pgw,
+				pcgw);
 		boolean _result = Boolean.valueOf(_localVariable_0);
 		return _result;
 	}
@@ -4636,12 +5412,16 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return new Object[] { __result };
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_25_2_black_nac_0BB(SequenceFlow sf1,
-			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_156162 : org.moflon.core.utilities.eMoflonEMFUtil
-				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_156162)) {
-				return new Object[] { sf1, prevNode };
+	public static final Object[] pattern_SplitAfterMerge_25_2_black_nac_0BBB(SequenceFlow sf1,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode) {
+		if (!prevNode.equals(prevPrevNode)) {
+			for (ExclusiveGateway __DEC_sf1_default_654684 : org.moflon.core.utilities.eMoflonEMFUtil
+					.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
+				if (!prevNode.equals(__DEC_sf1_default_654684)) {
+					if (!prevPrevNode.equals(__DEC_sf1_default_654684)) {
+						return new Object[] { sf1, prevNode, prevPrevNode };
+					}
+				}
 			}
 		}
 		return null;
@@ -4649,9 +5429,9 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 
 	public static final Object[] pattern_SplitAfterMerge_25_2_black_nac_1BB(SequenceFlow sf1,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_232650 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_696705 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_232650)) {
+			if (!process.equals(__DEC_sf1_flowElements_696705)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -4660,24 +5440,32 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 
 	public static final Object[] pattern_SplitAfterMerge_25_2_black_nac_2BB(ParallelGateway pgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_991351 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_942181 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pgw_flowElements_991351)) {
+			if (!process.equals(__DEC_pgw_flowElements_942181)) {
 				return new Object[] { pgw, process };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_25_2_black_nac_3BBB(ParallelGateway pgw,
-			ExclusiveGateway prevNode, ParallelGateway pcgw) {
-		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pgw___conv_28022 : org.moflon.core.utilities.eMoflonEMFUtil
-					.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
-				if (!pgw.equals(__DEC_pgw___conv_28022)) {
-					if (!prevNode.equals(__DEC_pgw___conv_28022)) {
-						if (!pcgw.equals(__DEC_pgw___conv_28022)) {
-							return new Object[] { pgw, prevNode, pcgw };
+	public static final Object[] pattern_SplitAfterMerge_25_2_black_nac_3BBBB(ParallelGateway pgw,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode, ParallelGateway pcgw) {
+		if (!pgw.equals(prevPrevNode)) {
+			if (!prevNode.equals(prevPrevNode)) {
+				if (!pcgw.equals(pgw)) {
+					if (!pcgw.equals(prevPrevNode)) {
+						for (Gateway __DEC_pgw___conv_386055 : org.moflon.core.utilities.eMoflonEMFUtil
+								.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
+							if (!pgw.equals(__DEC_pgw___conv_386055)) {
+								if (!prevNode.equals(__DEC_pgw___conv_386055)) {
+									if (!prevPrevNode.equals(__DEC_pgw___conv_386055)) {
+										if (!pcgw.equals(__DEC_pgw___conv_386055)) {
+											return new Object[] { pgw, prevNode, prevPrevNode, pcgw };
+										}
+									}
+								}
+							}
 						}
 					}
 				}
@@ -4686,44 +5474,60 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_25_2_black_nac_4BBB(ParallelGateway pcgw,
-			ExclusiveGateway prevNode, ParallelGateway pgw) {
-		if (!pcgw.equals(pgw)) {
-			Gateway __DEC_pcgw___conv_313005 = pcgw.get__conv();
-			if (__DEC_pcgw___conv_313005 != null) {
-				if (!pcgw.equals(__DEC_pcgw___conv_313005)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_313005)) {
-						if (!pgw.equals(__DEC_pcgw___conv_313005)) {
-							return new Object[] { pcgw, prevNode, pgw };
+	public static final Object[] pattern_SplitAfterMerge_25_2_black_nac_4BBBB(ParallelGateway pcgw,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode, ParallelGateway pgw) {
+		if (!pcgw.equals(prevPrevNode)) {
+			if (!pcgw.equals(pgw)) {
+				if (!prevNode.equals(prevPrevNode)) {
+					if (!pgw.equals(prevPrevNode)) {
+						Gateway __DEC_pcgw___conv_188899 = pcgw.get__conv();
+						if (__DEC_pcgw___conv_188899 != null) {
+							if (!pcgw.equals(__DEC_pcgw___conv_188899)) {
+								if (!prevNode.equals(__DEC_pcgw___conv_188899)) {
+									if (!prevPrevNode.equals(__DEC_pcgw___conv_188899)) {
+										if (!pgw.equals(__DEC_pcgw___conv_188899)) {
+											return new Object[] { pcgw, prevNode, prevPrevNode, pgw };
+										}
+									}
+								}
+							}
 						}
+
 					}
 				}
 			}
-
 		}
 		return null;
 	}
 
 	public static final Object[] pattern_SplitAfterMerge_25_2_black_nac_5BB(ParallelGateway pcgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_699346 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_701973 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pcgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pcgw_flowElements_699346)) {
+			if (!process.equals(__DEC_pcgw_flowElements_701973)) {
 				return new Object[] { pcgw, process };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_25_2_black_nac_6BBB(ParallelGateway pcgw,
-			ExclusiveGateway prevNode, ParallelGateway pgw) {
-		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pcgw___conv_4204 : org.moflon.core.utilities.eMoflonEMFUtil
-					.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
-				if (!pcgw.equals(__DEC_pcgw___conv_4204)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_4204)) {
-						if (!pgw.equals(__DEC_pcgw___conv_4204)) {
-							return new Object[] { pcgw, prevNode, pgw };
+	public static final Object[] pattern_SplitAfterMerge_25_2_black_nac_6BBBB(ParallelGateway pcgw,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode, ParallelGateway pgw) {
+		if (!pcgw.equals(prevPrevNode)) {
+			if (!pcgw.equals(pgw)) {
+				if (!prevNode.equals(prevPrevNode)) {
+					if (!pgw.equals(prevPrevNode)) {
+						for (Gateway __DEC_pcgw___conv_90148 : org.moflon.core.utilities.eMoflonEMFUtil
+								.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
+							if (!pcgw.equals(__DEC_pcgw___conv_90148)) {
+								if (!prevNode.equals(__DEC_pcgw___conv_90148)) {
+									if (!prevPrevNode.equals(__DEC_pcgw___conv_90148)) {
+										if (!pgw.equals(__DEC_pcgw___conv_90148)) {
+											return new Object[] { pcgw, prevNode, prevPrevNode, pgw };
+										}
+									}
+								}
+							}
 						}
 					}
 				}
@@ -4756,7 +5560,7 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_SplitAfterMerge_25_2_blackFFFFFB(EMoflonEdge _edge_targetRef) {
+	public static final Iterable<Object[]> pattern_SplitAfterMerge_25_2_blackFFFFFFFB(EMoflonEdge _edge_targetRef) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		EObject tmpSf1 = _edge_targetRef.getSrc();
 		if (tmpSf1 instanceof SequenceFlow) {
@@ -4778,44 +5582,73 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 									if (Boolean.valueOf(prevNodeisDiverging).equals(false)) {
 										boolean pcgwisDiverging = pcgw.isIsDiverging();
 										if (Boolean.valueOf(pcgwisDiverging).equals(false)) {
-											if (pattern_SplitAfterMerge_25_2_black_nac_0BB(sf1, prevNode) == null) {
-												if (pattern_SplitAfterMerge_25_2_black_nac_7BB(prevNode, sf1) == null) {
-													if (pattern_SplitAfterMerge_25_2_black_nac_8BB(prevNode,
-															pgw) == null) {
-														if (pattern_SplitAfterMerge_25_2_black_nac_3BBB(pgw, prevNode,
-																pcgw) == null) {
-															if (pattern_SplitAfterMerge_25_2_black_nac_4BBB(pcgw,
-																	prevNode, pgw) == null) {
-																if (pattern_SplitAfterMerge_25_2_black_nac_6BBB(pcgw,
-																		prevNode, pgw) == null) {
-																	if (pattern_SplitAfterMerge_25_2_black_nac_9BB(pcgw,
-																			prevNode) == null) {
-																		for (de.abilov.bpmn.Process process : org.moflon.core.utilities.eMoflonEMFUtil
-																				.getOppositeReferenceTyped(sf1,
-																						de.abilov.bpmn.Process.class,
-																						"flowElements")) {
-																			if (process.getFlowElements()
-																					.contains(pgw)) {
-																				if (process.getFlowElements()
-																						.contains(prevNode)) {
-																					if (process.getFlowElements()
-																							.contains(pcgw)) {
-																						if (pattern_SplitAfterMerge_25_2_black_nac_1BB(
-																								sf1, process) == null) {
-																							if (pattern_SplitAfterMerge_25_2_black_nac_2BB(
-																									pgw,
-																									process) == null) {
-																								if (pattern_SplitAfterMerge_25_2_black_nac_5BB(
-																										pcgw,
-																										process) == null) {
-																									_result.add(
-																											new Object[] {
-																													prevNode,
-																													process,
-																													sf1,
-																													pgw,
-																													pcgw,
-																													_edge_targetRef });
+											if (pattern_SplitAfterMerge_25_2_black_nac_7BB(prevNode, sf1) == null) {
+												if (pattern_SplitAfterMerge_25_2_black_nac_8BB(prevNode, pgw) == null) {
+													if (pattern_SplitAfterMerge_25_2_black_nac_9BB(pcgw,
+															prevNode) == null) {
+														for (SequenceFlow prevInFlow : prevNode.getIncoming()) {
+															if (!prevInFlow.equals(sf1)) {
+																FlowNode prevPrevNode = prevInFlow.getSourceRef();
+																if (prevPrevNode != null) {
+																	if (!prevNode.equals(prevPrevNode)) {
+																		if (!pgw.equals(prevPrevNode)) {
+																			if (!pcgw.equals(prevPrevNode)) {
+																				if (pattern_SplitAfterMerge_25_2_black_nac_0BBB(
+																						sf1, prevNode,
+																						prevPrevNode) == null) {
+																					if (pattern_SplitAfterMerge_25_2_black_nac_3BBBB(
+																							pgw, prevNode, prevPrevNode,
+																							pcgw) == null) {
+																						if (pattern_SplitAfterMerge_25_2_black_nac_4BBBB(
+																								pcgw, prevNode,
+																								prevPrevNode,
+																								pgw) == null) {
+																							if (pattern_SplitAfterMerge_25_2_black_nac_6BBBB(
+																									pcgw, prevNode,
+																									prevPrevNode,
+																									pgw) == null) {
+																								for (de.abilov.bpmn.Process process : org.moflon.core.utilities.eMoflonEMFUtil
+																										.getOppositeReferenceTyped(
+																												sf1,
+																												de.abilov.bpmn.Process.class,
+																												"flowElements")) {
+																									if (process
+																											.getFlowElements()
+																											.contains(
+																													pgw)) {
+																										if (process
+																												.getFlowElements()
+																												.contains(
+																														prevNode)) {
+																											if (process
+																													.getFlowElements()
+																													.contains(
+																															pcgw)) {
+																												if (pattern_SplitAfterMerge_25_2_black_nac_1BB(
+																														sf1,
+																														process) == null) {
+																													if (pattern_SplitAfterMerge_25_2_black_nac_2BB(
+																															pgw,
+																															process) == null) {
+																														if (pattern_SplitAfterMerge_25_2_black_nac_5BB(
+																																pcgw,
+																																process) == null) {
+																															_result.add(
+																																	new Object[] {
+																																			prevNode,
+																																			prevInFlow,
+																																			prevPrevNode,
+																																			process,
+																																			sf1,
+																																			pgw,
+																																			pcgw,
+																																			_edge_targetRef });
+																														}
+																													}
+																												}
+																											}
+																										}
+																									}
 																								}
 																							}
 																						}
@@ -4825,6 +5658,7 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 																		}
 																	}
 																}
+
 															}
 														}
 													}
@@ -4858,10 +5692,11 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 
 	}
 
-	public static final boolean pattern_SplitAfterMerge_25_3_expressionFBBBBBBB(SplitAfterMerge _this, Match match,
-			ExclusiveGateway prevNode, de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw,
-			ParallelGateway pcgw) {
-		boolean _localVariable_0 = _this.isAppropriate_FWD(match, prevNode, process, sf1, pgw, pcgw);
+	public static final boolean pattern_SplitAfterMerge_25_3_expressionFBBBBBBBBB(SplitAfterMerge _this, Match match,
+			ExclusiveGateway prevNode, SequenceFlow prevInFlow, FlowNode prevPrevNode, de.abilov.bpmn.Process process,
+			SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw) {
+		boolean _localVariable_0 = _this.isAppropriate_FWD(match, prevNode, prevInFlow, prevPrevNode, process, sf1, pgw,
+				pcgw);
 		boolean _result = Boolean.valueOf(_localVariable_0);
 		return _result;
 	}
@@ -4929,12 +5764,16 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return new Object[] { __result };
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_26_2_black_nac_0BB(SequenceFlow sf1,
-			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_313338 : org.moflon.core.utilities.eMoflonEMFUtil
-				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_313338)) {
-				return new Object[] { sf1, prevNode };
+	public static final Object[] pattern_SplitAfterMerge_26_2_black_nac_0BBB(SequenceFlow sf1,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode) {
+		if (!prevNode.equals(prevPrevNode)) {
+			for (ExclusiveGateway __DEC_sf1_default_707973 : org.moflon.core.utilities.eMoflonEMFUtil
+					.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
+				if (!prevNode.equals(__DEC_sf1_default_707973)) {
+					if (!prevPrevNode.equals(__DEC_sf1_default_707973)) {
+						return new Object[] { sf1, prevNode, prevPrevNode };
+					}
+				}
 			}
 		}
 		return null;
@@ -4942,9 +5781,9 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 
 	public static final Object[] pattern_SplitAfterMerge_26_2_black_nac_1BB(SequenceFlow sf1,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_420278 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_332971 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_420278)) {
+			if (!process.equals(__DEC_sf1_flowElements_332971)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -4953,24 +5792,32 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 
 	public static final Object[] pattern_SplitAfterMerge_26_2_black_nac_2BB(ParallelGateway pgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_53737 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_457328 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pgw_flowElements_53737)) {
+			if (!process.equals(__DEC_pgw_flowElements_457328)) {
 				return new Object[] { pgw, process };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_26_2_black_nac_3BBB(ParallelGateway pgw,
-			ExclusiveGateway prevNode, ParallelGateway pcgw) {
-		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pgw___conv_821265 : org.moflon.core.utilities.eMoflonEMFUtil
-					.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
-				if (!pgw.equals(__DEC_pgw___conv_821265)) {
-					if (!prevNode.equals(__DEC_pgw___conv_821265)) {
-						if (!pcgw.equals(__DEC_pgw___conv_821265)) {
-							return new Object[] { pgw, prevNode, pcgw };
+	public static final Object[] pattern_SplitAfterMerge_26_2_black_nac_3BBBB(ParallelGateway pgw,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode, ParallelGateway pcgw) {
+		if (!pgw.equals(prevPrevNode)) {
+			if (!prevNode.equals(prevPrevNode)) {
+				if (!pcgw.equals(pgw)) {
+					if (!pcgw.equals(prevPrevNode)) {
+						for (Gateway __DEC_pgw___conv_945926 : org.moflon.core.utilities.eMoflonEMFUtil
+								.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
+							if (!pgw.equals(__DEC_pgw___conv_945926)) {
+								if (!prevNode.equals(__DEC_pgw___conv_945926)) {
+									if (!prevPrevNode.equals(__DEC_pgw___conv_945926)) {
+										if (!pcgw.equals(__DEC_pgw___conv_945926)) {
+											return new Object[] { pgw, prevNode, prevPrevNode, pcgw };
+										}
+									}
+								}
+							}
 						}
 					}
 				}
@@ -4979,44 +5826,60 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_26_2_black_nac_4BBB(ParallelGateway pcgw,
-			ExclusiveGateway prevNode, ParallelGateway pgw) {
-		if (!pcgw.equals(pgw)) {
-			Gateway __DEC_pcgw___conv_618574 = pcgw.get__conv();
-			if (__DEC_pcgw___conv_618574 != null) {
-				if (!pcgw.equals(__DEC_pcgw___conv_618574)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_618574)) {
-						if (!pgw.equals(__DEC_pcgw___conv_618574)) {
-							return new Object[] { pcgw, prevNode, pgw };
+	public static final Object[] pattern_SplitAfterMerge_26_2_black_nac_4BBBB(ParallelGateway pcgw,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode, ParallelGateway pgw) {
+		if (!pcgw.equals(prevPrevNode)) {
+			if (!pcgw.equals(pgw)) {
+				if (!prevNode.equals(prevPrevNode)) {
+					if (!pgw.equals(prevPrevNode)) {
+						Gateway __DEC_pcgw___conv_988055 = pcgw.get__conv();
+						if (__DEC_pcgw___conv_988055 != null) {
+							if (!pcgw.equals(__DEC_pcgw___conv_988055)) {
+								if (!prevNode.equals(__DEC_pcgw___conv_988055)) {
+									if (!prevPrevNode.equals(__DEC_pcgw___conv_988055)) {
+										if (!pgw.equals(__DEC_pcgw___conv_988055)) {
+											return new Object[] { pcgw, prevNode, prevPrevNode, pgw };
+										}
+									}
+								}
+							}
 						}
+
 					}
 				}
 			}
-
 		}
 		return null;
 	}
 
 	public static final Object[] pattern_SplitAfterMerge_26_2_black_nac_5BB(ParallelGateway pcgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_866558 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_875090 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pcgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pcgw_flowElements_866558)) {
+			if (!process.equals(__DEC_pcgw_flowElements_875090)) {
 				return new Object[] { pcgw, process };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_26_2_black_nac_6BBB(ParallelGateway pcgw,
-			ExclusiveGateway prevNode, ParallelGateway pgw) {
-		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pcgw___conv_470604 : org.moflon.core.utilities.eMoflonEMFUtil
-					.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
-				if (!pcgw.equals(__DEC_pcgw___conv_470604)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_470604)) {
-						if (!pgw.equals(__DEC_pcgw___conv_470604)) {
-							return new Object[] { pcgw, prevNode, pgw };
+	public static final Object[] pattern_SplitAfterMerge_26_2_black_nac_6BBBB(ParallelGateway pcgw,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode, ParallelGateway pgw) {
+		if (!pcgw.equals(prevPrevNode)) {
+			if (!pcgw.equals(pgw)) {
+				if (!prevNode.equals(prevPrevNode)) {
+					if (!pgw.equals(prevPrevNode)) {
+						for (Gateway __DEC_pcgw___conv_785168 : org.moflon.core.utilities.eMoflonEMFUtil
+								.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
+							if (!pcgw.equals(__DEC_pcgw___conv_785168)) {
+								if (!prevNode.equals(__DEC_pcgw___conv_785168)) {
+									if (!prevPrevNode.equals(__DEC_pcgw___conv_785168)) {
+										if (!pgw.equals(__DEC_pcgw___conv_785168)) {
+											return new Object[] { pcgw, prevNode, prevPrevNode, pgw };
+										}
+									}
+								}
+							}
 						}
 					}
 				}
@@ -5049,7 +5912,7 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_SplitAfterMerge_26_2_blackFFFFFB(EMoflonEdge _edge_incoming) {
+	public static final Iterable<Object[]> pattern_SplitAfterMerge_26_2_blackFFFFFFFB(EMoflonEdge _edge_incoming) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		EObject tmpPgw = _edge_incoming.getSrc();
 		if (tmpPgw instanceof ParallelGateway) {
@@ -5071,45 +5934,73 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 									if (Boolean.valueOf(pcgwisDiverging).equals(false)) {
 										boolean prevNodeisDiverging = prevNode.isIsDiverging();
 										if (Boolean.valueOf(prevNodeisDiverging).equals(false)) {
-											if (pattern_SplitAfterMerge_26_2_black_nac_0BB(sf1, prevNode) == null) {
-												if (pattern_SplitAfterMerge_26_2_black_nac_3BBB(pgw, prevNode,
-														pcgw) == null) {
-													if (pattern_SplitAfterMerge_26_2_black_nac_4BBB(pcgw, prevNode,
-															pgw) == null) {
-														if (pattern_SplitAfterMerge_26_2_black_nac_6BBB(pcgw, prevNode,
-																pgw) == null) {
-															if (pattern_SplitAfterMerge_26_2_black_nac_7BB(prevNode,
-																	sf1) == null) {
-																if (pattern_SplitAfterMerge_26_2_black_nac_8BB(prevNode,
-																		pgw) == null) {
-																	if (pattern_SplitAfterMerge_26_2_black_nac_9BB(pcgw,
-																			prevNode) == null) {
-																		for (de.abilov.bpmn.Process process : org.moflon.core.utilities.eMoflonEMFUtil
-																				.getOppositeReferenceTyped(pgw,
-																						de.abilov.bpmn.Process.class,
-																						"flowElements")) {
-																			if (process.getFlowElements()
-																					.contains(sf1)) {
-																				if (process.getFlowElements()
-																						.contains(prevNode)) {
-																					if (process.getFlowElements()
-																							.contains(pcgw)) {
-																						if (pattern_SplitAfterMerge_26_2_black_nac_1BB(
-																								sf1, process) == null) {
-																							if (pattern_SplitAfterMerge_26_2_black_nac_2BB(
-																									pgw,
-																									process) == null) {
-																								if (pattern_SplitAfterMerge_26_2_black_nac_5BB(
-																										pcgw,
-																										process) == null) {
-																									_result.add(
-																											new Object[] {
-																													prevNode,
-																													process,
-																													sf1,
-																													pgw,
-																													pcgw,
-																													_edge_incoming });
+											if (pattern_SplitAfterMerge_26_2_black_nac_7BB(prevNode, sf1) == null) {
+												if (pattern_SplitAfterMerge_26_2_black_nac_8BB(prevNode, pgw) == null) {
+													if (pattern_SplitAfterMerge_26_2_black_nac_9BB(pcgw,
+															prevNode) == null) {
+														for (SequenceFlow prevInFlow : prevNode.getIncoming()) {
+															if (!prevInFlow.equals(sf1)) {
+																FlowNode prevPrevNode = prevInFlow.getSourceRef();
+																if (prevPrevNode != null) {
+																	if (!prevNode.equals(prevPrevNode)) {
+																		if (!pgw.equals(prevPrevNode)) {
+																			if (!pcgw.equals(prevPrevNode)) {
+																				if (pattern_SplitAfterMerge_26_2_black_nac_0BBB(
+																						sf1, prevNode,
+																						prevPrevNode) == null) {
+																					if (pattern_SplitAfterMerge_26_2_black_nac_3BBBB(
+																							pgw, prevNode, prevPrevNode,
+																							pcgw) == null) {
+																						if (pattern_SplitAfterMerge_26_2_black_nac_4BBBB(
+																								pcgw, prevNode,
+																								prevPrevNode,
+																								pgw) == null) {
+																							if (pattern_SplitAfterMerge_26_2_black_nac_6BBBB(
+																									pcgw, prevNode,
+																									prevPrevNode,
+																									pgw) == null) {
+																								for (de.abilov.bpmn.Process process : org.moflon.core.utilities.eMoflonEMFUtil
+																										.getOppositeReferenceTyped(
+																												pgw,
+																												de.abilov.bpmn.Process.class,
+																												"flowElements")) {
+																									if (process
+																											.getFlowElements()
+																											.contains(
+																													sf1)) {
+																										if (process
+																												.getFlowElements()
+																												.contains(
+																														prevNode)) {
+																											if (process
+																													.getFlowElements()
+																													.contains(
+																															pcgw)) {
+																												if (pattern_SplitAfterMerge_26_2_black_nac_1BB(
+																														sf1,
+																														process) == null) {
+																													if (pattern_SplitAfterMerge_26_2_black_nac_2BB(
+																															pgw,
+																															process) == null) {
+																														if (pattern_SplitAfterMerge_26_2_black_nac_5BB(
+																																pcgw,
+																																process) == null) {
+																															_result.add(
+																																	new Object[] {
+																																			prevNode,
+																																			prevInFlow,
+																																			prevPrevNode,
+																																			process,
+																																			sf1,
+																																			pgw,
+																																			pcgw,
+																																			_edge_incoming });
+																														}
+																													}
+																												}
+																											}
+																										}
+																									}
 																								}
 																							}
 																						}
@@ -5119,6 +6010,7 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 																		}
 																	}
 																}
+
 															}
 														}
 													}
@@ -5152,10 +6044,11 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 
 	}
 
-	public static final boolean pattern_SplitAfterMerge_26_3_expressionFBBBBBBB(SplitAfterMerge _this, Match match,
-			ExclusiveGateway prevNode, de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw,
-			ParallelGateway pcgw) {
-		boolean _localVariable_0 = _this.isAppropriate_FWD(match, prevNode, process, sf1, pgw, pcgw);
+	public static final boolean pattern_SplitAfterMerge_26_3_expressionFBBBBBBBBB(SplitAfterMerge _this, Match match,
+			ExclusiveGateway prevNode, SequenceFlow prevInFlow, FlowNode prevPrevNode, de.abilov.bpmn.Process process,
+			SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw) {
+		boolean _localVariable_0 = _this.isAppropriate_FWD(match, prevNode, prevInFlow, prevPrevNode, process, sf1, pgw,
+				pcgw);
 		boolean _result = Boolean.valueOf(_localVariable_0);
 		return _result;
 	}
@@ -5223,12 +6116,16 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return new Object[] { __result };
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_27_2_black_nac_0BB(SequenceFlow sf1,
-			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_631162 : org.moflon.core.utilities.eMoflonEMFUtil
-				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_631162)) {
-				return new Object[] { sf1, prevNode };
+	public static final Object[] pattern_SplitAfterMerge_27_2_black_nac_0BBB(SequenceFlow sf1,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode) {
+		if (!prevNode.equals(prevPrevNode)) {
+			for (ExclusiveGateway __DEC_sf1_default_156213 : org.moflon.core.utilities.eMoflonEMFUtil
+					.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
+				if (!prevNode.equals(__DEC_sf1_default_156213)) {
+					if (!prevPrevNode.equals(__DEC_sf1_default_156213)) {
+						return new Object[] { sf1, prevNode, prevPrevNode };
+					}
+				}
 			}
 		}
 		return null;
@@ -5236,9 +6133,9 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 
 	public static final Object[] pattern_SplitAfterMerge_27_2_black_nac_1BB(SequenceFlow sf1,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_763340 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_64825 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_763340)) {
+			if (!process.equals(__DEC_sf1_flowElements_64825)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -5247,24 +6144,32 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 
 	public static final Object[] pattern_SplitAfterMerge_27_2_black_nac_2BB(ParallelGateway pgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_444648 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_276385 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pgw_flowElements_444648)) {
+			if (!process.equals(__DEC_pgw_flowElements_276385)) {
 				return new Object[] { pgw, process };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_27_2_black_nac_3BBB(ParallelGateway pgw,
-			ExclusiveGateway prevNode, ParallelGateway pcgw) {
-		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pgw___conv_838650 : org.moflon.core.utilities.eMoflonEMFUtil
-					.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
-				if (!pgw.equals(__DEC_pgw___conv_838650)) {
-					if (!prevNode.equals(__DEC_pgw___conv_838650)) {
-						if (!pcgw.equals(__DEC_pgw___conv_838650)) {
-							return new Object[] { pgw, prevNode, pcgw };
+	public static final Object[] pattern_SplitAfterMerge_27_2_black_nac_3BBBB(ParallelGateway pgw,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode, ParallelGateway pcgw) {
+		if (!pgw.equals(prevPrevNode)) {
+			if (!prevNode.equals(prevPrevNode)) {
+				if (!pcgw.equals(pgw)) {
+					if (!pcgw.equals(prevPrevNode)) {
+						for (Gateway __DEC_pgw___conv_738631 : org.moflon.core.utilities.eMoflonEMFUtil
+								.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
+							if (!pgw.equals(__DEC_pgw___conv_738631)) {
+								if (!prevNode.equals(__DEC_pgw___conv_738631)) {
+									if (!prevPrevNode.equals(__DEC_pgw___conv_738631)) {
+										if (!pcgw.equals(__DEC_pgw___conv_738631)) {
+											return new Object[] { pgw, prevNode, prevPrevNode, pcgw };
+										}
+									}
+								}
+							}
 						}
 					}
 				}
@@ -5273,44 +6178,60 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_27_2_black_nac_4BBB(ParallelGateway pcgw,
-			ExclusiveGateway prevNode, ParallelGateway pgw) {
-		if (!pcgw.equals(pgw)) {
-			Gateway __DEC_pcgw___conv_786444 = pcgw.get__conv();
-			if (__DEC_pcgw___conv_786444 != null) {
-				if (!pcgw.equals(__DEC_pcgw___conv_786444)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_786444)) {
-						if (!pgw.equals(__DEC_pcgw___conv_786444)) {
-							return new Object[] { pcgw, prevNode, pgw };
+	public static final Object[] pattern_SplitAfterMerge_27_2_black_nac_4BBBB(ParallelGateway pcgw,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode, ParallelGateway pgw) {
+		if (!pcgw.equals(prevPrevNode)) {
+			if (!pcgw.equals(pgw)) {
+				if (!prevNode.equals(prevPrevNode)) {
+					if (!pgw.equals(prevPrevNode)) {
+						Gateway __DEC_pcgw___conv_506984 = pcgw.get__conv();
+						if (__DEC_pcgw___conv_506984 != null) {
+							if (!pcgw.equals(__DEC_pcgw___conv_506984)) {
+								if (!prevNode.equals(__DEC_pcgw___conv_506984)) {
+									if (!prevPrevNode.equals(__DEC_pcgw___conv_506984)) {
+										if (!pgw.equals(__DEC_pcgw___conv_506984)) {
+											return new Object[] { pcgw, prevNode, prevPrevNode, pgw };
+										}
+									}
+								}
+							}
 						}
+
 					}
 				}
 			}
-
 		}
 		return null;
 	}
 
 	public static final Object[] pattern_SplitAfterMerge_27_2_black_nac_5BB(ParallelGateway pcgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_464185 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_891260 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pcgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pcgw_flowElements_464185)) {
+			if (!process.equals(__DEC_pcgw_flowElements_891260)) {
 				return new Object[] { pcgw, process };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_27_2_black_nac_6BBB(ParallelGateway pcgw,
-			ExclusiveGateway prevNode, ParallelGateway pgw) {
-		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pcgw___conv_183025 : org.moflon.core.utilities.eMoflonEMFUtil
-					.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
-				if (!pcgw.equals(__DEC_pcgw___conv_183025)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_183025)) {
-						if (!pgw.equals(__DEC_pcgw___conv_183025)) {
-							return new Object[] { pcgw, prevNode, pgw };
+	public static final Object[] pattern_SplitAfterMerge_27_2_black_nac_6BBBB(ParallelGateway pcgw,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode, ParallelGateway pgw) {
+		if (!pcgw.equals(prevPrevNode)) {
+			if (!pcgw.equals(pgw)) {
+				if (!prevNode.equals(prevPrevNode)) {
+					if (!pgw.equals(prevPrevNode)) {
+						for (Gateway __DEC_pcgw___conv_65728 : org.moflon.core.utilities.eMoflonEMFUtil
+								.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
+							if (!pcgw.equals(__DEC_pcgw___conv_65728)) {
+								if (!prevNode.equals(__DEC_pcgw___conv_65728)) {
+									if (!prevPrevNode.equals(__DEC_pcgw___conv_65728)) {
+										if (!pgw.equals(__DEC_pcgw___conv_65728)) {
+											return new Object[] { pcgw, prevNode, prevPrevNode, pgw };
+										}
+									}
+								}
+							}
 						}
 					}
 				}
@@ -5343,7 +6264,7 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_SplitAfterMerge_27_2_blackFFFFFB(EMoflonEdge _edge___conv) {
+	public static final Iterable<Object[]> pattern_SplitAfterMerge_27_2_blackFFFFFFFB(EMoflonEdge _edge___conv) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		EObject tmpPgw = _edge___conv.getSrc();
 		if (tmpPgw instanceof ParallelGateway) {
@@ -5363,45 +6284,73 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 										ExclusiveGateway prevNode = (ExclusiveGateway) tmpPrevNode;
 										boolean prevNodeisDiverging = prevNode.isIsDiverging();
 										if (Boolean.valueOf(prevNodeisDiverging).equals(false)) {
-											if (pattern_SplitAfterMerge_27_2_black_nac_0BB(sf1, prevNode) == null) {
-												if (pattern_SplitAfterMerge_27_2_black_nac_3BBB(pgw, prevNode,
-														pcgw) == null) {
-													if (pattern_SplitAfterMerge_27_2_black_nac_4BBB(pcgw, prevNode,
-															pgw) == null) {
-														if (pattern_SplitAfterMerge_27_2_black_nac_6BBB(pcgw, prevNode,
-																pgw) == null) {
-															if (pattern_SplitAfterMerge_27_2_black_nac_7BB(prevNode,
-																	sf1) == null) {
-																if (pattern_SplitAfterMerge_27_2_black_nac_8BB(prevNode,
-																		pgw) == null) {
-																	if (pattern_SplitAfterMerge_27_2_black_nac_9BB(pcgw,
-																			prevNode) == null) {
-																		for (de.abilov.bpmn.Process process : org.moflon.core.utilities.eMoflonEMFUtil
-																				.getOppositeReferenceTyped(pgw,
-																						de.abilov.bpmn.Process.class,
-																						"flowElements")) {
-																			if (process.getFlowElements()
-																					.contains(sf1)) {
-																				if (process.getFlowElements()
-																						.contains(prevNode)) {
-																					if (process.getFlowElements()
-																							.contains(pcgw)) {
-																						if (pattern_SplitAfterMerge_27_2_black_nac_1BB(
-																								sf1, process) == null) {
-																							if (pattern_SplitAfterMerge_27_2_black_nac_2BB(
-																									pgw,
-																									process) == null) {
-																								if (pattern_SplitAfterMerge_27_2_black_nac_5BB(
-																										pcgw,
-																										process) == null) {
-																									_result.add(
-																											new Object[] {
-																													prevNode,
-																													process,
-																													sf1,
-																													pgw,
-																													pcgw,
-																													_edge___conv });
+											if (pattern_SplitAfterMerge_27_2_black_nac_7BB(prevNode, sf1) == null) {
+												if (pattern_SplitAfterMerge_27_2_black_nac_8BB(prevNode, pgw) == null) {
+													if (pattern_SplitAfterMerge_27_2_black_nac_9BB(pcgw,
+															prevNode) == null) {
+														for (SequenceFlow prevInFlow : prevNode.getIncoming()) {
+															if (!prevInFlow.equals(sf1)) {
+																FlowNode prevPrevNode = prevInFlow.getSourceRef();
+																if (prevPrevNode != null) {
+																	if (!prevNode.equals(prevPrevNode)) {
+																		if (!pgw.equals(prevPrevNode)) {
+																			if (!pcgw.equals(prevPrevNode)) {
+																				if (pattern_SplitAfterMerge_27_2_black_nac_0BBB(
+																						sf1, prevNode,
+																						prevPrevNode) == null) {
+																					if (pattern_SplitAfterMerge_27_2_black_nac_3BBBB(
+																							pgw, prevNode, prevPrevNode,
+																							pcgw) == null) {
+																						if (pattern_SplitAfterMerge_27_2_black_nac_4BBBB(
+																								pcgw, prevNode,
+																								prevPrevNode,
+																								pgw) == null) {
+																							if (pattern_SplitAfterMerge_27_2_black_nac_6BBBB(
+																									pcgw, prevNode,
+																									prevPrevNode,
+																									pgw) == null) {
+																								for (de.abilov.bpmn.Process process : org.moflon.core.utilities.eMoflonEMFUtil
+																										.getOppositeReferenceTyped(
+																												pgw,
+																												de.abilov.bpmn.Process.class,
+																												"flowElements")) {
+																									if (process
+																											.getFlowElements()
+																											.contains(
+																													sf1)) {
+																										if (process
+																												.getFlowElements()
+																												.contains(
+																														prevNode)) {
+																											if (process
+																													.getFlowElements()
+																													.contains(
+																															pcgw)) {
+																												if (pattern_SplitAfterMerge_27_2_black_nac_1BB(
+																														sf1,
+																														process) == null) {
+																													if (pattern_SplitAfterMerge_27_2_black_nac_2BB(
+																															pgw,
+																															process) == null) {
+																														if (pattern_SplitAfterMerge_27_2_black_nac_5BB(
+																																pcgw,
+																																process) == null) {
+																															_result.add(
+																																	new Object[] {
+																																			prevNode,
+																																			prevInFlow,
+																																			prevPrevNode,
+																																			process,
+																																			sf1,
+																																			pgw,
+																																			pcgw,
+																																			_edge___conv });
+																														}
+																													}
+																												}
+																											}
+																										}
+																									}
 																								}
 																							}
 																						}
@@ -5411,6 +6360,7 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 																		}
 																	}
 																}
+
 															}
 														}
 													}
@@ -5443,10 +6393,11 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 
 	}
 
-	public static final boolean pattern_SplitAfterMerge_27_3_expressionFBBBBBBB(SplitAfterMerge _this, Match match,
-			ExclusiveGateway prevNode, de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw,
-			ParallelGateway pcgw) {
-		boolean _localVariable_0 = _this.isAppropriate_FWD(match, prevNode, process, sf1, pgw, pcgw);
+	public static final boolean pattern_SplitAfterMerge_27_3_expressionFBBBBBBBBB(SplitAfterMerge _this, Match match,
+			ExclusiveGateway prevNode, SequenceFlow prevInFlow, FlowNode prevPrevNode, de.abilov.bpmn.Process process,
+			SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw) {
+		boolean _localVariable_0 = _this.isAppropriate_FWD(match, prevNode, prevInFlow, prevPrevNode, process, sf1, pgw,
+				pcgw);
 		boolean _result = Boolean.valueOf(_localVariable_0);
 		return _result;
 	}
@@ -5514,12 +6465,16 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return new Object[] { __result };
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_28_2_black_nac_0BB(SequenceFlow sf1,
-			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_240059 : org.moflon.core.utilities.eMoflonEMFUtil
-				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_240059)) {
-				return new Object[] { sf1, prevNode };
+	public static final Object[] pattern_SplitAfterMerge_28_2_black_nac_0BBB(SequenceFlow sf1,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode) {
+		if (!prevNode.equals(prevPrevNode)) {
+			for (ExclusiveGateway __DEC_sf1_default_450101 : org.moflon.core.utilities.eMoflonEMFUtil
+					.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
+				if (!prevNode.equals(__DEC_sf1_default_450101)) {
+					if (!prevPrevNode.equals(__DEC_sf1_default_450101)) {
+						return new Object[] { sf1, prevNode, prevPrevNode };
+					}
+				}
 			}
 		}
 		return null;
@@ -5527,9 +6482,9 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 
 	public static final Object[] pattern_SplitAfterMerge_28_2_black_nac_1BB(SequenceFlow sf1,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_997963 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_368054 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_997963)) {
+			if (!process.equals(__DEC_sf1_flowElements_368054)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -5538,24 +6493,32 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 
 	public static final Object[] pattern_SplitAfterMerge_28_2_black_nac_2BB(ParallelGateway pgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_34829 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_981895 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pgw_flowElements_34829)) {
+			if (!process.equals(__DEC_pgw_flowElements_981895)) {
 				return new Object[] { pgw, process };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_28_2_black_nac_3BBB(ParallelGateway pgw,
-			ExclusiveGateway prevNode, ParallelGateway pcgw) {
-		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pgw___conv_654314 : org.moflon.core.utilities.eMoflonEMFUtil
-					.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
-				if (!pgw.equals(__DEC_pgw___conv_654314)) {
-					if (!prevNode.equals(__DEC_pgw___conv_654314)) {
-						if (!pcgw.equals(__DEC_pgw___conv_654314)) {
-							return new Object[] { pgw, prevNode, pcgw };
+	public static final Object[] pattern_SplitAfterMerge_28_2_black_nac_3BBBB(ParallelGateway pgw,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode, ParallelGateway pcgw) {
+		if (!pgw.equals(prevPrevNode)) {
+			if (!prevNode.equals(prevPrevNode)) {
+				if (!pcgw.equals(pgw)) {
+					if (!pcgw.equals(prevPrevNode)) {
+						for (Gateway __DEC_pgw___conv_560689 : org.moflon.core.utilities.eMoflonEMFUtil
+								.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
+							if (!pgw.equals(__DEC_pgw___conv_560689)) {
+								if (!prevNode.equals(__DEC_pgw___conv_560689)) {
+									if (!prevPrevNode.equals(__DEC_pgw___conv_560689)) {
+										if (!pcgw.equals(__DEC_pgw___conv_560689)) {
+											return new Object[] { pgw, prevNode, prevPrevNode, pcgw };
+										}
+									}
+								}
+							}
 						}
 					}
 				}
@@ -5564,44 +6527,60 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_28_2_black_nac_4BBB(ParallelGateway pcgw,
-			ExclusiveGateway prevNode, ParallelGateway pgw) {
-		if (!pcgw.equals(pgw)) {
-			Gateway __DEC_pcgw___conv_732251 = pcgw.get__conv();
-			if (__DEC_pcgw___conv_732251 != null) {
-				if (!pcgw.equals(__DEC_pcgw___conv_732251)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_732251)) {
-						if (!pgw.equals(__DEC_pcgw___conv_732251)) {
-							return new Object[] { pcgw, prevNode, pgw };
+	public static final Object[] pattern_SplitAfterMerge_28_2_black_nac_4BBBB(ParallelGateway pcgw,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode, ParallelGateway pgw) {
+		if (!pcgw.equals(prevPrevNode)) {
+			if (!pcgw.equals(pgw)) {
+				if (!prevNode.equals(prevPrevNode)) {
+					if (!pgw.equals(prevPrevNode)) {
+						Gateway __DEC_pcgw___conv_148968 = pcgw.get__conv();
+						if (__DEC_pcgw___conv_148968 != null) {
+							if (!pcgw.equals(__DEC_pcgw___conv_148968)) {
+								if (!prevNode.equals(__DEC_pcgw___conv_148968)) {
+									if (!prevPrevNode.equals(__DEC_pcgw___conv_148968)) {
+										if (!pgw.equals(__DEC_pcgw___conv_148968)) {
+											return new Object[] { pcgw, prevNode, prevPrevNode, pgw };
+										}
+									}
+								}
+							}
 						}
+
 					}
 				}
 			}
-
 		}
 		return null;
 	}
 
 	public static final Object[] pattern_SplitAfterMerge_28_2_black_nac_5BB(ParallelGateway pcgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_915969 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_213062 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pcgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pcgw_flowElements_915969)) {
+			if (!process.equals(__DEC_pcgw_flowElements_213062)) {
 				return new Object[] { pcgw, process };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_28_2_black_nac_6BBB(ParallelGateway pcgw,
-			ExclusiveGateway prevNode, ParallelGateway pgw) {
-		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pcgw___conv_694405 : org.moflon.core.utilities.eMoflonEMFUtil
-					.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
-				if (!pcgw.equals(__DEC_pcgw___conv_694405)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_694405)) {
-						if (!pgw.equals(__DEC_pcgw___conv_694405)) {
-							return new Object[] { pcgw, prevNode, pgw };
+	public static final Object[] pattern_SplitAfterMerge_28_2_black_nac_6BBBB(ParallelGateway pcgw,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode, ParallelGateway pgw) {
+		if (!pcgw.equals(prevPrevNode)) {
+			if (!pcgw.equals(pgw)) {
+				if (!prevNode.equals(prevPrevNode)) {
+					if (!pgw.equals(prevPrevNode)) {
+						for (Gateway __DEC_pcgw___conv_867943 : org.moflon.core.utilities.eMoflonEMFUtil
+								.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
+							if (!pcgw.equals(__DEC_pcgw___conv_867943)) {
+								if (!prevNode.equals(__DEC_pcgw___conv_867943)) {
+									if (!prevPrevNode.equals(__DEC_pcgw___conv_867943)) {
+										if (!pgw.equals(__DEC_pcgw___conv_867943)) {
+											return new Object[] { pcgw, prevNode, prevPrevNode, pgw };
+										}
+									}
+								}
+							}
 						}
 					}
 				}
@@ -5634,7 +6613,7 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_SplitAfterMerge_28_2_blackFFFFFB(EMoflonEdge _edge_sourceRef) {
+	public static final Iterable<Object[]> pattern_SplitAfterMerge_28_2_blackFFFFFFFB(EMoflonEdge _edge_sourceRef) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		EObject tmpSf1 = _edge_sourceRef.getSrc();
 		if (tmpSf1 instanceof SequenceFlow) {
@@ -5656,44 +6635,73 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 									if (Boolean.valueOf(pgwisDiverging).equals(Boolean.valueOf(true))) {
 										boolean pcgwisDiverging = pcgw.isIsDiverging();
 										if (Boolean.valueOf(pcgwisDiverging).equals(false)) {
-											if (pattern_SplitAfterMerge_28_2_black_nac_0BB(sf1, prevNode) == null) {
-												if (pattern_SplitAfterMerge_28_2_black_nac_7BB(prevNode, sf1) == null) {
-													if (pattern_SplitAfterMerge_28_2_black_nac_8BB(prevNode,
-															pgw) == null) {
-														if (pattern_SplitAfterMerge_28_2_black_nac_3BBB(pgw, prevNode,
-																pcgw) == null) {
-															if (pattern_SplitAfterMerge_28_2_black_nac_4BBB(pcgw,
-																	prevNode, pgw) == null) {
-																if (pattern_SplitAfterMerge_28_2_black_nac_6BBB(pcgw,
-																		prevNode, pgw) == null) {
-																	if (pattern_SplitAfterMerge_28_2_black_nac_9BB(pcgw,
-																			prevNode) == null) {
-																		for (de.abilov.bpmn.Process process : org.moflon.core.utilities.eMoflonEMFUtil
-																				.getOppositeReferenceTyped(sf1,
-																						de.abilov.bpmn.Process.class,
-																						"flowElements")) {
-																			if (process.getFlowElements()
-																					.contains(pgw)) {
-																				if (process.getFlowElements()
-																						.contains(prevNode)) {
-																					if (process.getFlowElements()
-																							.contains(pcgw)) {
-																						if (pattern_SplitAfterMerge_28_2_black_nac_1BB(
-																								sf1, process) == null) {
-																							if (pattern_SplitAfterMerge_28_2_black_nac_2BB(
-																									pgw,
-																									process) == null) {
-																								if (pattern_SplitAfterMerge_28_2_black_nac_5BB(
-																										pcgw,
-																										process) == null) {
-																									_result.add(
-																											new Object[] {
-																													prevNode,
-																													process,
-																													sf1,
-																													pgw,
-																													pcgw,
-																													_edge_sourceRef });
+											if (pattern_SplitAfterMerge_28_2_black_nac_7BB(prevNode, sf1) == null) {
+												if (pattern_SplitAfterMerge_28_2_black_nac_8BB(prevNode, pgw) == null) {
+													if (pattern_SplitAfterMerge_28_2_black_nac_9BB(pcgw,
+															prevNode) == null) {
+														for (SequenceFlow prevInFlow : prevNode.getIncoming()) {
+															if (!prevInFlow.equals(sf1)) {
+																FlowNode prevPrevNode = prevInFlow.getSourceRef();
+																if (prevPrevNode != null) {
+																	if (!prevNode.equals(prevPrevNode)) {
+																		if (!pgw.equals(prevPrevNode)) {
+																			if (!pcgw.equals(prevPrevNode)) {
+																				if (pattern_SplitAfterMerge_28_2_black_nac_0BBB(
+																						sf1, prevNode,
+																						prevPrevNode) == null) {
+																					if (pattern_SplitAfterMerge_28_2_black_nac_3BBBB(
+																							pgw, prevNode, prevPrevNode,
+																							pcgw) == null) {
+																						if (pattern_SplitAfterMerge_28_2_black_nac_4BBBB(
+																								pcgw, prevNode,
+																								prevPrevNode,
+																								pgw) == null) {
+																							if (pattern_SplitAfterMerge_28_2_black_nac_6BBBB(
+																									pcgw, prevNode,
+																									prevPrevNode,
+																									pgw) == null) {
+																								for (de.abilov.bpmn.Process process : org.moflon.core.utilities.eMoflonEMFUtil
+																										.getOppositeReferenceTyped(
+																												sf1,
+																												de.abilov.bpmn.Process.class,
+																												"flowElements")) {
+																									if (process
+																											.getFlowElements()
+																											.contains(
+																													pgw)) {
+																										if (process
+																												.getFlowElements()
+																												.contains(
+																														prevNode)) {
+																											if (process
+																													.getFlowElements()
+																													.contains(
+																															pcgw)) {
+																												if (pattern_SplitAfterMerge_28_2_black_nac_1BB(
+																														sf1,
+																														process) == null) {
+																													if (pattern_SplitAfterMerge_28_2_black_nac_2BB(
+																															pgw,
+																															process) == null) {
+																														if (pattern_SplitAfterMerge_28_2_black_nac_5BB(
+																																pcgw,
+																																process) == null) {
+																															_result.add(
+																																	new Object[] {
+																																			prevNode,
+																																			prevInFlow,
+																																			prevPrevNode,
+																																			process,
+																																			sf1,
+																																			pgw,
+																																			pcgw,
+																																			_edge_sourceRef });
+																														}
+																													}
+																												}
+																											}
+																										}
+																									}
 																								}
 																							}
 																						}
@@ -5703,6 +6711,7 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 																		}
 																	}
 																}
+
 															}
 														}
 													}
@@ -5736,10 +6745,11 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 
 	}
 
-	public static final boolean pattern_SplitAfterMerge_28_3_expressionFBBBBBBB(SplitAfterMerge _this, Match match,
-			ExclusiveGateway prevNode, de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw,
-			ParallelGateway pcgw) {
-		boolean _localVariable_0 = _this.isAppropriate_FWD(match, prevNode, process, sf1, pgw, pcgw);
+	public static final boolean pattern_SplitAfterMerge_28_3_expressionFBBBBBBBBB(SplitAfterMerge _this, Match match,
+			ExclusiveGateway prevNode, SequenceFlow prevInFlow, FlowNode prevPrevNode, de.abilov.bpmn.Process process,
+			SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw) {
+		boolean _localVariable_0 = _this.isAppropriate_FWD(match, prevNode, prevInFlow, prevPrevNode, process, sf1, pgw,
+				pcgw);
 		boolean _result = Boolean.valueOf(_localVariable_0);
 		return _result;
 	}
@@ -5807,12 +6817,16 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return new Object[] { __result };
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_29_2_black_nac_0BB(SequenceFlow sf1,
-			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_631192 : org.moflon.core.utilities.eMoflonEMFUtil
-				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_631192)) {
-				return new Object[] { sf1, prevNode };
+	public static final Object[] pattern_SplitAfterMerge_29_2_black_nac_0BBB(SequenceFlow sf1,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode) {
+		if (!prevNode.equals(prevPrevNode)) {
+			for (ExclusiveGateway __DEC_sf1_default_960308 : org.moflon.core.utilities.eMoflonEMFUtil
+					.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
+				if (!prevNode.equals(__DEC_sf1_default_960308)) {
+					if (!prevPrevNode.equals(__DEC_sf1_default_960308)) {
+						return new Object[] { sf1, prevNode, prevPrevNode };
+					}
+				}
 			}
 		}
 		return null;
@@ -5820,9 +6834,9 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 
 	public static final Object[] pattern_SplitAfterMerge_29_2_black_nac_1BB(SequenceFlow sf1,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_26127 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_98677 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_26127)) {
+			if (!process.equals(__DEC_sf1_flowElements_98677)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -5831,24 +6845,32 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 
 	public static final Object[] pattern_SplitAfterMerge_29_2_black_nac_2BB(ParallelGateway pgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_824273 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_46219 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pgw_flowElements_824273)) {
+			if (!process.equals(__DEC_pgw_flowElements_46219)) {
 				return new Object[] { pgw, process };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_29_2_black_nac_3BBB(ParallelGateway pgw,
-			ExclusiveGateway prevNode, ParallelGateway pcgw) {
-		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pgw___conv_203472 : org.moflon.core.utilities.eMoflonEMFUtil
-					.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
-				if (!pgw.equals(__DEC_pgw___conv_203472)) {
-					if (!prevNode.equals(__DEC_pgw___conv_203472)) {
-						if (!pcgw.equals(__DEC_pgw___conv_203472)) {
-							return new Object[] { pgw, prevNode, pcgw };
+	public static final Object[] pattern_SplitAfterMerge_29_2_black_nac_3BBBB(ParallelGateway pgw,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode, ParallelGateway pcgw) {
+		if (!pgw.equals(prevPrevNode)) {
+			if (!prevNode.equals(prevPrevNode)) {
+				if (!pcgw.equals(pgw)) {
+					if (!pcgw.equals(prevPrevNode)) {
+						for (Gateway __DEC_pgw___conv_53149 : org.moflon.core.utilities.eMoflonEMFUtil
+								.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
+							if (!pgw.equals(__DEC_pgw___conv_53149)) {
+								if (!prevNode.equals(__DEC_pgw___conv_53149)) {
+									if (!prevPrevNode.equals(__DEC_pgw___conv_53149)) {
+										if (!pcgw.equals(__DEC_pgw___conv_53149)) {
+											return new Object[] { pgw, prevNode, prevPrevNode, pcgw };
+										}
+									}
+								}
+							}
 						}
 					}
 				}
@@ -5857,44 +6879,60 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_29_2_black_nac_4BBB(ParallelGateway pcgw,
-			ExclusiveGateway prevNode, ParallelGateway pgw) {
-		if (!pcgw.equals(pgw)) {
-			Gateway __DEC_pcgw___conv_242350 = pcgw.get__conv();
-			if (__DEC_pcgw___conv_242350 != null) {
-				if (!pcgw.equals(__DEC_pcgw___conv_242350)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_242350)) {
-						if (!pgw.equals(__DEC_pcgw___conv_242350)) {
-							return new Object[] { pcgw, prevNode, pgw };
+	public static final Object[] pattern_SplitAfterMerge_29_2_black_nac_4BBBB(ParallelGateway pcgw,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode, ParallelGateway pgw) {
+		if (!pcgw.equals(prevPrevNode)) {
+			if (!pcgw.equals(pgw)) {
+				if (!prevNode.equals(prevPrevNode)) {
+					if (!pgw.equals(prevPrevNode)) {
+						Gateway __DEC_pcgw___conv_871986 = pcgw.get__conv();
+						if (__DEC_pcgw___conv_871986 != null) {
+							if (!pcgw.equals(__DEC_pcgw___conv_871986)) {
+								if (!prevNode.equals(__DEC_pcgw___conv_871986)) {
+									if (!prevPrevNode.equals(__DEC_pcgw___conv_871986)) {
+										if (!pgw.equals(__DEC_pcgw___conv_871986)) {
+											return new Object[] { pcgw, prevNode, prevPrevNode, pgw };
+										}
+									}
+								}
+							}
 						}
+
 					}
 				}
 			}
-
 		}
 		return null;
 	}
 
 	public static final Object[] pattern_SplitAfterMerge_29_2_black_nac_5BB(ParallelGateway pcgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_788837 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_446264 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pcgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pcgw_flowElements_788837)) {
+			if (!process.equals(__DEC_pcgw_flowElements_446264)) {
 				return new Object[] { pcgw, process };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_SplitAfterMerge_29_2_black_nac_6BBB(ParallelGateway pcgw,
-			ExclusiveGateway prevNode, ParallelGateway pgw) {
-		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pcgw___conv_721679 : org.moflon.core.utilities.eMoflonEMFUtil
-					.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
-				if (!pcgw.equals(__DEC_pcgw___conv_721679)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_721679)) {
-						if (!pgw.equals(__DEC_pcgw___conv_721679)) {
-							return new Object[] { pcgw, prevNode, pgw };
+	public static final Object[] pattern_SplitAfterMerge_29_2_black_nac_6BBBB(ParallelGateway pcgw,
+			ExclusiveGateway prevNode, FlowNode prevPrevNode, ParallelGateway pgw) {
+		if (!pcgw.equals(prevPrevNode)) {
+			if (!pcgw.equals(pgw)) {
+				if (!prevNode.equals(prevPrevNode)) {
+					if (!pgw.equals(prevPrevNode)) {
+						for (Gateway __DEC_pcgw___conv_599356 : org.moflon.core.utilities.eMoflonEMFUtil
+								.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
+							if (!pcgw.equals(__DEC_pcgw___conv_599356)) {
+								if (!prevNode.equals(__DEC_pcgw___conv_599356)) {
+									if (!prevPrevNode.equals(__DEC_pcgw___conv_599356)) {
+										if (!pgw.equals(__DEC_pcgw___conv_599356)) {
+											return new Object[] { pcgw, prevNode, prevPrevNode, pgw };
+										}
+									}
+								}
+							}
 						}
 					}
 				}
@@ -5927,7 +6965,7 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_SplitAfterMerge_29_2_blackFFFFFB(EMoflonEdge _edge_outgoing) {
+	public static final Iterable<Object[]> pattern_SplitAfterMerge_29_2_blackFFFFFFFB(EMoflonEdge _edge_outgoing) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		EObject tmpPrevNode = _edge_outgoing.getSrc();
 		if (tmpPrevNode instanceof ExclusiveGateway) {
@@ -5949,44 +6987,73 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 									if (Boolean.valueOf(pgwisDiverging).equals(Boolean.valueOf(true))) {
 										boolean pcgwisDiverging = pcgw.isIsDiverging();
 										if (Boolean.valueOf(pcgwisDiverging).equals(false)) {
-											if (pattern_SplitAfterMerge_29_2_black_nac_0BB(sf1, prevNode) == null) {
-												if (pattern_SplitAfterMerge_29_2_black_nac_7BB(prevNode, sf1) == null) {
-													if (pattern_SplitAfterMerge_29_2_black_nac_8BB(prevNode,
-															pgw) == null) {
-														if (pattern_SplitAfterMerge_29_2_black_nac_3BBB(pgw, prevNode,
-																pcgw) == null) {
-															if (pattern_SplitAfterMerge_29_2_black_nac_4BBB(pcgw,
-																	prevNode, pgw) == null) {
-																if (pattern_SplitAfterMerge_29_2_black_nac_6BBB(pcgw,
-																		prevNode, pgw) == null) {
-																	if (pattern_SplitAfterMerge_29_2_black_nac_9BB(pcgw,
-																			prevNode) == null) {
-																		for (de.abilov.bpmn.Process process : org.moflon.core.utilities.eMoflonEMFUtil
-																				.getOppositeReferenceTyped(prevNode,
-																						de.abilov.bpmn.Process.class,
-																						"flowElements")) {
-																			if (process.getFlowElements()
-																					.contains(pgw)) {
-																				if (process.getFlowElements()
-																						.contains(sf1)) {
-																					if (process.getFlowElements()
-																							.contains(pcgw)) {
-																						if (pattern_SplitAfterMerge_29_2_black_nac_1BB(
-																								sf1, process) == null) {
-																							if (pattern_SplitAfterMerge_29_2_black_nac_2BB(
-																									pgw,
-																									process) == null) {
-																								if (pattern_SplitAfterMerge_29_2_black_nac_5BB(
-																										pcgw,
-																										process) == null) {
-																									_result.add(
-																											new Object[] {
-																													prevNode,
-																													process,
-																													sf1,
-																													pgw,
-																													pcgw,
-																													_edge_outgoing });
+											if (pattern_SplitAfterMerge_29_2_black_nac_7BB(prevNode, sf1) == null) {
+												if (pattern_SplitAfterMerge_29_2_black_nac_8BB(prevNode, pgw) == null) {
+													if (pattern_SplitAfterMerge_29_2_black_nac_9BB(pcgw,
+															prevNode) == null) {
+														for (SequenceFlow prevInFlow : prevNode.getIncoming()) {
+															if (!prevInFlow.equals(sf1)) {
+																FlowNode prevPrevNode = prevInFlow.getSourceRef();
+																if (prevPrevNode != null) {
+																	if (!prevNode.equals(prevPrevNode)) {
+																		if (!pgw.equals(prevPrevNode)) {
+																			if (!pcgw.equals(prevPrevNode)) {
+																				if (pattern_SplitAfterMerge_29_2_black_nac_0BBB(
+																						sf1, prevNode,
+																						prevPrevNode) == null) {
+																					if (pattern_SplitAfterMerge_29_2_black_nac_3BBBB(
+																							pgw, prevNode, prevPrevNode,
+																							pcgw) == null) {
+																						if (pattern_SplitAfterMerge_29_2_black_nac_4BBBB(
+																								pcgw, prevNode,
+																								prevPrevNode,
+																								pgw) == null) {
+																							if (pattern_SplitAfterMerge_29_2_black_nac_6BBBB(
+																									pcgw, prevNode,
+																									prevPrevNode,
+																									pgw) == null) {
+																								for (de.abilov.bpmn.Process process : org.moflon.core.utilities.eMoflonEMFUtil
+																										.getOppositeReferenceTyped(
+																												prevNode,
+																												de.abilov.bpmn.Process.class,
+																												"flowElements")) {
+																									if (process
+																											.getFlowElements()
+																											.contains(
+																													pgw)) {
+																										if (process
+																												.getFlowElements()
+																												.contains(
+																														sf1)) {
+																											if (process
+																													.getFlowElements()
+																													.contains(
+																															pcgw)) {
+																												if (pattern_SplitAfterMerge_29_2_black_nac_1BB(
+																														sf1,
+																														process) == null) {
+																													if (pattern_SplitAfterMerge_29_2_black_nac_2BB(
+																															pgw,
+																															process) == null) {
+																														if (pattern_SplitAfterMerge_29_2_black_nac_5BB(
+																																pcgw,
+																																process) == null) {
+																															_result.add(
+																																	new Object[] {
+																																			prevNode,
+																																			prevInFlow,
+																																			prevPrevNode,
+																																			process,
+																																			sf1,
+																																			pgw,
+																																			pcgw,
+																																			_edge_outgoing });
+																														}
+																													}
+																												}
+																											}
+																										}
+																									}
 																								}
 																							}
 																						}
@@ -5996,6 +7063,7 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 																		}
 																	}
 																}
+
 															}
 														}
 													}
@@ -6029,10 +7097,11 @@ public class SplitAfterMergeImpl extends AbstractRuleImpl implements SplitAfterM
 
 	}
 
-	public static final boolean pattern_SplitAfterMerge_29_3_expressionFBBBBBBB(SplitAfterMerge _this, Match match,
-			ExclusiveGateway prevNode, de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw,
-			ParallelGateway pcgw) {
-		boolean _localVariable_0 = _this.isAppropriate_FWD(match, prevNode, process, sf1, pgw, pcgw);
+	public static final boolean pattern_SplitAfterMerge_29_3_expressionFBBBBBBBBB(SplitAfterMerge _this, Match match,
+			ExclusiveGateway prevNode, SequenceFlow prevInFlow, FlowNode prevPrevNode, de.abilov.bpmn.Process process,
+			SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw) {
+		boolean _localVariable_0 = _this.isAppropriate_FWD(match, prevNode, prevInFlow, prevPrevNode, process, sf1, pgw,
+				pcgw);
 		boolean _result = Boolean.valueOf(_localVariable_0);
 		return _result;
 	}

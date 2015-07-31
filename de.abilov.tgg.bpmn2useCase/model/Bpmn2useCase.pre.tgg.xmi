@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ASCII"?>
 <TGGLanguage:TripleGraphGrammar xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TGGLanguage="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore" xmlns:csp="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:expressions="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//expressions" xmlns:patternExpressions="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//patterns/patternExpressions" name="de.abilov.tgg.bpmn2useCase">
   <domain name="Source" metamodel="//@metamodel.1" type="SOURCE"/>
-  <domain name="Target" metamodel="//@metamodel.0" type="TARGET"/>
-  <domain name="Correspondence" metamodel="//@metamodel.2"/>
+  <domain name="Target" metamodel="//@metamodel.2" type="TARGET"/>
+  <domain name="Correspondence" metamodel="//@metamodel.0"/>
   <tggRule name="Process2UseCase" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
     <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="process" incomingLink="//@tggRule.0/@linkVariable.3" outgoingLink="//@tggRule.0/@linkVariable.0" bindingOperator="CREATE" domain="//@domain.0">
       <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//Process"/>
@@ -829,7 +829,7 @@
     </csp>
   </tggRule>
   <tggRule name="Task2StepAfterMerge" refines="//@tggRule.1" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="prevNode" incomingLink="//@tggRule.15/@linkVariable.1" domain="//@domain.0">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="prevNode" incomingLink="//@tggRule.15/@linkVariable.0 //@tggRule.15/@linkVariable.6" domain="//@domain.0">
       <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//ExclusiveGateway"/>
       <constraint>
         <constraintExpression xsi:type="expressions:ComparisonExpression" operator="EQUAL">
@@ -840,24 +840,30 @@
         </constraintExpression>
       </constraint>
     </objectVariable>
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="choiceStep" incomingLink="//@tggRule.15/@linkVariable.2 //@tggRule.15/@linkVariable.4" outgoingLink="//@tggRule.15/@linkVariable.0" domain="//@domain.1">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="choiceStep" incomingLink="//@tggRule.15/@linkVariable.1 //@tggRule.15/@linkVariable.3" domain="//@domain.1">
       <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//ChoiceStep"/>
     </objectVariable>
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="pn2cs" outgoingLink="//@tggRule.15/@linkVariable.1 //@tggRule.15/@linkVariable.2" domain="//@domain.2">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="pn2cs" outgoingLink="//@tggRule.15/@linkVariable.0 //@tggRule.15/@linkVariable.1" domain="//@domain.2">
       <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//GW2S"/>
     </objectVariable>
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="prevStep" incomingLink="//@tggRule.15/@linkVariable.0 //@tggRule.15/@linkVariable.5" outgoingLink="//@tggRule.15/@linkVariable.3" domain="//@domain.1">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="prevStep" incomingLink="//@tggRule.15/@linkVariable.4 //@tggRule.15/@linkVariable.9" outgoingLink="//@tggRule.15/@linkVariable.2" domain="//@domain.1">
       <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//Step"/>
     </objectVariable>
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="flow" outgoingLink="//@tggRule.15/@linkVariable.4 //@tggRule.15/@linkVariable.5 //@tggRule.15/@linkVariable.6" domain="//@domain.1">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="flow" outgoingLink="//@tggRule.15/@linkVariable.3 //@tggRule.15/@linkVariable.4 //@tggRule.15/@linkVariable.5" domain="//@domain.1">
       <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//Flow"/>
     </objectVariable>
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="step" incomingLink="//@tggRule.15/@linkVariable.3 //@tggRule.15/@linkVariable.6" bindingOperator="CREATE" domain="//@domain.1">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="step" incomingLink="//@tggRule.15/@linkVariable.2 //@tggRule.15/@linkVariable.5" bindingOperator="CREATE" domain="//@domain.1">
       <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//NormalStep"/>
     </objectVariable>
-    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="__lastInDef" target="//@tggRule.15/@objectVariable.3" source="//@tggRule.15/@objectVariable.1" domain="//@domain.1">
-      <type href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//ChoiceStep/__lastInDef"/>
-    </linkVariable>
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="prevInFlow" outgoingLink="//@tggRule.15/@linkVariable.6 //@tggRule.15/@linkVariable.7" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//SequenceFlow"/>
+    </objectVariable>
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="prevPrevNode" incomingLink="//@tggRule.15/@linkVariable.8 //@tggRule.15/@linkVariable.7" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//FlowNode"/>
+    </objectVariable>
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="fn2ps" outgoingLink="//@tggRule.15/@linkVariable.8 //@tggRule.15/@linkVariable.9" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//FN2S"/>
+    </objectVariable>
     <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="source" target="//@tggRule.15/@objectVariable.0" source="//@tggRule.15/@objectVariable.2" domain="//@domain.2">
       <type href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//GW2S/source"/>
     </linkVariable>
@@ -875,6 +881,18 @@
     </linkVariable>
     <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="steps" target="//@tggRule.15/@objectVariable.5" source="//@tggRule.15/@objectVariable.4" bindingOperator="CREATE" domain="//@domain.1">
       <type href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//Flow/steps"/>
+    </linkVariable>
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="targetRef" target="//@tggRule.15/@objectVariable.0" source="//@tggRule.15/@objectVariable.6" domain="//@domain.0">
+      <type href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//SequenceFlow/targetRef"/>
+    </linkVariable>
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="sourceRef" target="//@tggRule.15/@objectVariable.7" source="//@tggRule.15/@objectVariable.6" domain="//@domain.0">
+      <type href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//SequenceFlow/sourceRef"/>
+    </linkVariable>
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="source" target="//@tggRule.15/@objectVariable.7" source="//@tggRule.15/@objectVariable.8" domain="//@domain.2">
+      <type href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//FN2S/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="target" target="//@tggRule.15/@objectVariable.3" source="//@tggRule.15/@objectVariable.8" domain="//@domain.2">
+      <type href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//FN2S/target"/>
     </linkVariable>
     <csp/>
   </tggRule>
@@ -1299,7 +1317,7 @@
     <csp/>
   </tggRule>
   <tggRule name="SplitAfterMerge" refines="//@tggRule.2" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="prevNode" incomingLink="//@tggRule.23/@linkVariable.1" domain="//@domain.0">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="prevNode" incomingLink="//@tggRule.23/@linkVariable.1 //@tggRule.23/@linkVariable.0" domain="//@domain.0">
       <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//ExclusiveGateway"/>
       <constraint>
         <constraintExpression xsi:type="expressions:ComparisonExpression" operator="EQUAL">
@@ -1310,13 +1328,13 @@
         </constraintExpression>
       </constraint>
     </objectVariable>
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="choiceStep" incomingLink="//@tggRule.23/@linkVariable.2 //@tggRule.23/@linkVariable.4" outgoingLink="//@tggRule.23/@linkVariable.0" domain="//@domain.1">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="choiceStep" incomingLink="//@tggRule.23/@linkVariable.2 //@tggRule.23/@linkVariable.4" domain="//@domain.1">
       <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//ChoiceStep"/>
     </objectVariable>
     <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="pn2cs" outgoingLink="//@tggRule.23/@linkVariable.1 //@tggRule.23/@linkVariable.2" domain="//@domain.2">
       <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//GW2S"/>
     </objectVariable>
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="prevStep" incomingLink="//@tggRule.23/@linkVariable.0 //@tggRule.23/@linkVariable.5" outgoingLink="//@tggRule.23/@linkVariable.3" domain="//@domain.1">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="prevStep" incomingLink="//@tggRule.23/@linkVariable.5 //@tggRule.23/@linkVariable.9" outgoingLink="//@tggRule.23/@linkVariable.3" domain="//@domain.1">
       <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//Step"/>
     </objectVariable>
     <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="flow" outgoingLink="//@tggRule.23/@linkVariable.4 //@tggRule.23/@linkVariable.5 //@tggRule.23/@linkVariable.6" domain="//@domain.1">
@@ -1325,8 +1343,17 @@
     <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="step" incomingLink="//@tggRule.23/@linkVariable.3 //@tggRule.23/@linkVariable.6" bindingOperator="CREATE" domain="//@domain.1">
       <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//ParallelStep"/>
     </objectVariable>
-    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="__lastInDef" target="//@tggRule.23/@objectVariable.3" source="//@tggRule.23/@objectVariable.1" domain="//@domain.1">
-      <type href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//ChoiceStep/__lastInDef"/>
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="prevInFlow" outgoingLink="//@tggRule.23/@linkVariable.7 //@tggRule.23/@linkVariable.0" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//SequenceFlow"/>
+    </objectVariable>
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="prevPrevNode" incomingLink="//@tggRule.23/@linkVariable.7 //@tggRule.23/@linkVariable.8" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//FlowNode"/>
+    </objectVariable>
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="fn2ps" outgoingLink="//@tggRule.23/@linkVariable.8 //@tggRule.23/@linkVariable.9" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//FN2S"/>
+    </objectVariable>
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="targetRef" target="//@tggRule.23/@objectVariable.0" source="//@tggRule.23/@objectVariable.6" domain="//@domain.0">
+      <type href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//SequenceFlow/targetRef"/>
     </linkVariable>
     <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="source" target="//@tggRule.23/@objectVariable.0" source="//@tggRule.23/@objectVariable.2" domain="//@domain.2">
       <type href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//GW2S/source"/>
@@ -1346,10 +1373,19 @@
     <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="steps" target="//@tggRule.23/@objectVariable.5" source="//@tggRule.23/@objectVariable.4" bindingOperator="CREATE" domain="//@domain.1">
       <type href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//Flow/steps"/>
     </linkVariable>
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="sourceRef" target="//@tggRule.23/@objectVariable.7" source="//@tggRule.23/@objectVariable.6" domain="//@domain.0">
+      <type href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//SequenceFlow/sourceRef"/>
+    </linkVariable>
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="source" target="//@tggRule.23/@objectVariable.7" source="//@tggRule.23/@objectVariable.8" domain="//@domain.2">
+      <type href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//FN2S/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="target" target="//@tggRule.23/@objectVariable.3" source="//@tggRule.23/@objectVariable.8" domain="//@domain.2">
+      <type href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//FN2S/target"/>
+    </linkVariable>
     <csp/>
   </tggRule>
   <tggRule name="ChoiceAfterMerge" refines="//@tggRule.14" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="prevNode" incomingLink="//@tggRule.24/@linkVariable.1" domain="//@domain.0">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="prevNode" incomingLink="//@tggRule.24/@linkVariable.1 //@tggRule.24/@linkVariable.0" domain="//@domain.0">
       <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//ExclusiveGateway"/>
       <constraint>
         <constraintExpression xsi:type="expressions:ComparisonExpression" operator="EQUAL">
@@ -1360,13 +1396,13 @@
         </constraintExpression>
       </constraint>
     </objectVariable>
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="choiceStep" incomingLink="//@tggRule.24/@linkVariable.2 //@tggRule.24/@linkVariable.4" outgoingLink="//@tggRule.24/@linkVariable.0" domain="//@domain.1">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="choiceStep" incomingLink="//@tggRule.24/@linkVariable.2 //@tggRule.24/@linkVariable.4" domain="//@domain.1">
       <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//ChoiceStep"/>
     </objectVariable>
     <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="pn2cs" outgoingLink="//@tggRule.24/@linkVariable.1 //@tggRule.24/@linkVariable.2" domain="//@domain.2">
       <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//GW2S"/>
     </objectVariable>
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="prevStep" incomingLink="//@tggRule.24/@linkVariable.0 //@tggRule.24/@linkVariable.5" outgoingLink="//@tggRule.24/@linkVariable.3" domain="//@domain.1">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="prevStep" incomingLink="//@tggRule.24/@linkVariable.5 //@tggRule.24/@linkVariable.9" outgoingLink="//@tggRule.24/@linkVariable.3" domain="//@domain.1">
       <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//Step"/>
     </objectVariable>
     <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="flow" outgoingLink="//@tggRule.24/@linkVariable.4 //@tggRule.24/@linkVariable.5 //@tggRule.24/@linkVariable.6" domain="//@domain.1">
@@ -1375,8 +1411,17 @@
     <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="step" incomingLink="//@tggRule.24/@linkVariable.3 //@tggRule.24/@linkVariable.6" bindingOperator="CREATE" domain="//@domain.1">
       <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//NormalStep"/>
     </objectVariable>
-    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="__lastInDef" target="//@tggRule.24/@objectVariable.3" source="//@tggRule.24/@objectVariable.1" domain="//@domain.1">
-      <type href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//ChoiceStep/__lastInDef"/>
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="prevInFlow" outgoingLink="//@tggRule.24/@linkVariable.0 //@tggRule.24/@linkVariable.7" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//SequenceFlow"/>
+    </objectVariable>
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="prevPrevNode" incomingLink="//@tggRule.24/@linkVariable.8 //@tggRule.24/@linkVariable.7" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//FlowNode"/>
+    </objectVariable>
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="fn2ps" outgoingLink="//@tggRule.24/@linkVariable.8 //@tggRule.24/@linkVariable.9" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//FN2S"/>
+    </objectVariable>
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="targetRef" target="//@tggRule.24/@objectVariable.0" source="//@tggRule.24/@objectVariable.6" domain="//@domain.0">
+      <type href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//SequenceFlow/targetRef"/>
     </linkVariable>
     <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="source" target="//@tggRule.24/@objectVariable.0" source="//@tggRule.24/@objectVariable.2" domain="//@domain.2">
       <type href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//GW2S/source"/>
@@ -1395,6 +1440,15 @@
     </linkVariable>
     <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="steps" target="//@tggRule.24/@objectVariable.5" source="//@tggRule.24/@objectVariable.4" bindingOperator="CREATE" domain="//@domain.1">
       <type href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//Flow/steps"/>
+    </linkVariable>
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="sourceRef" target="//@tggRule.24/@objectVariable.7" source="//@tggRule.24/@objectVariable.6" domain="//@domain.0">
+      <type href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//SequenceFlow/sourceRef"/>
+    </linkVariable>
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="source" target="//@tggRule.24/@objectVariable.7" source="//@tggRule.24/@objectVariable.8" domain="//@domain.2">
+      <type href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//FN2S/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="target" target="//@tggRule.24/@objectVariable.3" source="//@tggRule.24/@objectVariable.8" domain="//@domain.2">
+      <type href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//FN2S/target"/>
     </linkVariable>
     <csp/>
   </tggRule>
@@ -1781,144 +1835,204 @@
     <csp/>
   </tggRule>
   <tggRule name="Task2StepAfterEmptyDef" refines="//@tggRule.1" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="prevNode" incomingLink="//@tggRule.31/@linkVariable.0" domain="//@domain.0">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="prevInFlow" incomingLink="//@tggRule.31/@linkVariable.7" outgoingLink="//@tggRule.31/@linkVariable.0 //@tggRule.31/@linkVariable.6" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//SequenceFlow"/>
+    </objectVariable>
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="prevNode" incomingLink="//@tggRule.31/@linkVariable.1 //@tggRule.31/@linkVariable.0" domain="//@domain.0">
       <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//ExclusiveGateway"/>
       <constraint>
         <constraintExpression xsi:type="expressions:ComparisonExpression" operator="EQUAL">
           <rightExpression xsi:type="expressions:LiteralExpression" value="false"/>
-          <leftExpression xsi:type="patternExpressions:AttributeValueExpression" object="//@tggRule.31/@objectVariable.0">
+          <leftExpression xsi:type="patternExpressions:AttributeValueExpression" object="//@tggRule.31/@objectVariable.1">
             <attribute href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//Gateway/isDiverging"/>
           </leftExpression>
         </constraintExpression>
       </constraint>
     </objectVariable>
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="pn2cs" outgoingLink="//@tggRule.31/@linkVariable.0 //@tggRule.31/@linkVariable.1" domain="//@domain.2">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="pn2cs" outgoingLink="//@tggRule.31/@linkVariable.1 //@tggRule.31/@linkVariable.2" domain="//@domain.2">
       <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//GW2S"/>
     </objectVariable>
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="step" incomingLink="//@tggRule.31/@linkVariable.2 //@tggRule.31/@linkVariable.4" bindingOperator="CREATE" domain="//@domain.1">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="step" incomingLink="//@tggRule.31/@linkVariable.3 //@tggRule.31/@linkVariable.5" bindingOperator="CREATE" domain="//@domain.1">
       <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//NormalStep"/>
     </objectVariable>
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="flow" outgoingLink="//@tggRule.31/@linkVariable.2 //@tggRule.31/@linkVariable.3" domain="//@domain.1">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="flow" outgoingLink="//@tggRule.31/@linkVariable.3 //@tggRule.31/@linkVariable.4" domain="//@domain.1">
       <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//Flow"/>
     </objectVariable>
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="choiceStep" incomingLink="//@tggRule.31/@linkVariable.1 //@tggRule.31/@linkVariable.3 //@tggRule.31/@linkVariable.5" outgoingLink="//@tggRule.31/@linkVariable.4 //@tggRule.31/@linkVariable.5" domain="//@domain.1">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="choiceStep" incomingLink="//@tggRule.31/@linkVariable.2 //@tggRule.31/@linkVariable.4" outgoingLink="//@tggRule.31/@linkVariable.5" domain="//@domain.1">
       <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//ChoiceStep"/>
     </objectVariable>
-    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="source" target="//@tggRule.31/@objectVariable.0" source="//@tggRule.31/@objectVariable.1" domain="//@domain.2">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="eg" incomingLink="//@tggRule.31/@linkVariable.6" outgoingLink="//@tggRule.31/@linkVariable.7" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//ExclusiveGateway"/>
+      <constraint>
+        <constraintExpression xsi:type="expressions:ComparisonExpression" operator="EQUAL">
+          <rightExpression xsi:type="expressions:LiteralExpression" value="true"/>
+          <leftExpression xsi:type="patternExpressions:AttributeValueExpression" object="//@tggRule.31/@objectVariable.6">
+            <attribute href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//Gateway/isDiverging"/>
+          </leftExpression>
+        </constraintExpression>
+      </constraint>
+    </objectVariable>
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="targetRef" target="//@tggRule.31/@objectVariable.1" source="//@tggRule.31/@objectVariable.0" domain="//@domain.0">
+      <type href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//SequenceFlow/targetRef"/>
+    </linkVariable>
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="source" target="//@tggRule.31/@objectVariable.1" source="//@tggRule.31/@objectVariable.2" domain="//@domain.2">
       <type href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//GW2S/source"/>
     </linkVariable>
-    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="target" target="//@tggRule.31/@objectVariable.4" source="//@tggRule.31/@objectVariable.1" domain="//@domain.2">
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="target" target="//@tggRule.31/@objectVariable.5" source="//@tggRule.31/@objectVariable.2" domain="//@domain.2">
       <type href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//GW2S/target"/>
     </linkVariable>
-    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="steps" target="//@tggRule.31/@objectVariable.2" source="//@tggRule.31/@objectVariable.3" bindingOperator="CREATE" domain="//@domain.1">
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="steps" target="//@tggRule.31/@objectVariable.3" source="//@tggRule.31/@objectVariable.4" bindingOperator="CREATE" domain="//@domain.1">
       <type href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//Flow/steps"/>
     </linkVariable>
-    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="steps" target="//@tggRule.31/@objectVariable.4" source="//@tggRule.31/@objectVariable.3" domain="//@domain.1">
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="steps" target="//@tggRule.31/@objectVariable.5" source="//@tggRule.31/@objectVariable.4" domain="//@domain.1">
       <type href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//Flow/steps"/>
     </linkVariable>
-    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="next" target="//@tggRule.31/@objectVariable.2" source="//@tggRule.31/@objectVariable.4" bindingOperator="CREATE" domain="//@domain.1">
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="next" target="//@tggRule.31/@objectVariable.3" source="//@tggRule.31/@objectVariable.5" bindingOperator="CREATE" domain="//@domain.1">
       <type href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//Step/next"/>
     </linkVariable>
-    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="__lastInDef" target="//@tggRule.31/@objectVariable.4" source="//@tggRule.31/@objectVariable.4" domain="//@domain.1">
-      <type href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//ChoiceStep/__lastInDef"/>
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="sourceRef" target="//@tggRule.31/@objectVariable.6" source="//@tggRule.31/@objectVariable.0" domain="//@domain.0">
+      <type href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//SequenceFlow/sourceRef"/>
+    </linkVariable>
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="default" target="//@tggRule.31/@objectVariable.0" source="//@tggRule.31/@objectVariable.6" domain="//@domain.0">
+      <type href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//ExclusiveGateway/default"/>
     </linkVariable>
     <csp/>
   </tggRule>
   <tggRule name="SplitAfterEmptyDef" refines="//@tggRule.2" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="prevNode" incomingLink="//@tggRule.32/@linkVariable.2" domain="//@domain.0">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="prevInFlow" incomingLink="//@tggRule.32/@linkVariable.7" outgoingLink="//@tggRule.32/@linkVariable.0 //@tggRule.32/@linkVariable.6" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//SequenceFlow"/>
+    </objectVariable>
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="prevNode" incomingLink="//@tggRule.32/@linkVariable.2 //@tggRule.32/@linkVariable.0" domain="//@domain.0">
       <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//ExclusiveGateway"/>
       <constraint>
         <constraintExpression xsi:type="expressions:ComparisonExpression" operator="EQUAL">
           <rightExpression xsi:type="expressions:LiteralExpression" value="false"/>
-          <leftExpression xsi:type="patternExpressions:AttributeValueExpression" object="//@tggRule.32/@objectVariable.0">
+          <leftExpression xsi:type="patternExpressions:AttributeValueExpression" object="//@tggRule.32/@objectVariable.1">
             <attribute href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//Gateway/isDiverging"/>
           </leftExpression>
         </constraintExpression>
       </constraint>
     </objectVariable>
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="choiceStep" incomingLink="//@tggRule.32/@linkVariable.1 //@tggRule.32/@linkVariable.3 //@tggRule.32/@linkVariable.4" outgoingLink="//@tggRule.32/@linkVariable.0 //@tggRule.32/@linkVariable.1" domain="//@domain.1">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="choiceStep" incomingLink="//@tggRule.32/@linkVariable.3 //@tggRule.32/@linkVariable.4" outgoingLink="//@tggRule.32/@linkVariable.1" domain="//@domain.1">
       <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//ChoiceStep"/>
     </objectVariable>
     <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="pn2cs" outgoingLink="//@tggRule.32/@linkVariable.2 //@tggRule.32/@linkVariable.3" domain="//@domain.2">
       <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//GW2S"/>
     </objectVariable>
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="step" incomingLink="//@tggRule.32/@linkVariable.0 //@tggRule.32/@linkVariable.5" bindingOperator="CREATE" domain="//@domain.1">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="step" incomingLink="//@tggRule.32/@linkVariable.1 //@tggRule.32/@linkVariable.5" bindingOperator="CREATE" domain="//@domain.1">
       <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//NormalStep"/>
     </objectVariable>
     <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="flow" outgoingLink="//@tggRule.32/@linkVariable.4 //@tggRule.32/@linkVariable.5" domain="//@domain.1">
       <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//Flow"/>
     </objectVariable>
-    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="next" target="//@tggRule.32/@objectVariable.3" source="//@tggRule.32/@objectVariable.1" bindingOperator="CREATE" domain="//@domain.1">
-      <type href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//Step/next"/>
-    </linkVariable>
-    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="__lastInDef" target="//@tggRule.32/@objectVariable.1" source="//@tggRule.32/@objectVariable.1" domain="//@domain.1">
-      <type href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//ChoiceStep/__lastInDef"/>
-    </linkVariable>
-    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="source" target="//@tggRule.32/@objectVariable.0" source="//@tggRule.32/@objectVariable.2" domain="//@domain.2">
-      <type href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//GW2S/source"/>
-    </linkVariable>
-    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="target" target="//@tggRule.32/@objectVariable.1" source="//@tggRule.32/@objectVariable.2" domain="//@domain.2">
-      <type href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//GW2S/target"/>
-    </linkVariable>
-    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="steps" target="//@tggRule.32/@objectVariable.1" source="//@tggRule.32/@objectVariable.4" domain="//@domain.1">
-      <type href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//Flow/steps"/>
-    </linkVariable>
-    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="steps" target="//@tggRule.32/@objectVariable.3" source="//@tggRule.32/@objectVariable.4" bindingOperator="CREATE" domain="//@domain.1">
-      <type href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//Flow/steps"/>
-    </linkVariable>
-    <csp/>
-  </tggRule>
-  <tggRule name="ChoiceAfterEmptyDef" refines="//@tggRule.14" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="prevNode" incomingLink="//@tggRule.33/@linkVariable.2" domain="//@domain.0">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="eg" incomingLink="//@tggRule.32/@linkVariable.6" outgoingLink="//@tggRule.32/@linkVariable.7" domain="//@domain.0">
       <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//ExclusiveGateway"/>
       <constraint>
         <constraintExpression xsi:type="expressions:ComparisonExpression" operator="EQUAL">
-          <rightExpression xsi:type="expressions:LiteralExpression" value="false"/>
-          <leftExpression xsi:type="patternExpressions:AttributeValueExpression" object="//@tggRule.33/@objectVariable.0">
+          <rightExpression xsi:type="expressions:LiteralExpression" value="true"/>
+          <leftExpression xsi:type="patternExpressions:AttributeValueExpression" object="//@tggRule.32/@objectVariable.6">
             <attribute href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//Gateway/isDiverging"/>
           </leftExpression>
         </constraintExpression>
       </constraint>
     </objectVariable>
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="choiceStep" incomingLink="//@tggRule.33/@linkVariable.1 //@tggRule.33/@linkVariable.3 //@tggRule.33/@linkVariable.4" outgoingLink="//@tggRule.33/@linkVariable.0 //@tggRule.33/@linkVariable.1" domain="//@domain.1">
-      <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//ChoiceStep"/>
-    </objectVariable>
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="pn2cs" outgoingLink="//@tggRule.33/@linkVariable.2 //@tggRule.33/@linkVariable.3" domain="//@domain.2">
-      <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//GW2S"/>
-    </objectVariable>
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="step" incomingLink="//@tggRule.33/@linkVariable.0 //@tggRule.33/@linkVariable.5" bindingOperator="CREATE" domain="//@domain.1">
-      <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//NormalStep"/>
-    </objectVariable>
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="flow" outgoingLink="//@tggRule.33/@linkVariable.4 //@tggRule.33/@linkVariable.5" domain="//@domain.1">
-      <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//Flow"/>
-    </objectVariable>
-    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="next" target="//@tggRule.33/@objectVariable.3" source="//@tggRule.33/@objectVariable.1" bindingOperator="CREATE" domain="//@domain.1">
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="targetRef" target="//@tggRule.32/@objectVariable.1" source="//@tggRule.32/@objectVariable.0" domain="//@domain.0">
+      <type href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//SequenceFlow/targetRef"/>
+    </linkVariable>
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="next" target="//@tggRule.32/@objectVariable.4" source="//@tggRule.32/@objectVariable.2" bindingOperator="CREATE" domain="//@domain.1">
       <type href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//Step/next"/>
     </linkVariable>
-    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="__lastInDef" target="//@tggRule.33/@objectVariable.1" source="//@tggRule.33/@objectVariable.1" domain="//@domain.1">
-      <type href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//ChoiceStep/__lastInDef"/>
-    </linkVariable>
-    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="source" target="//@tggRule.33/@objectVariable.0" source="//@tggRule.33/@objectVariable.2" domain="//@domain.2">
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="source" target="//@tggRule.32/@objectVariable.1" source="//@tggRule.32/@objectVariable.3" domain="//@domain.2">
       <type href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//GW2S/source"/>
     </linkVariable>
-    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="target" target="//@tggRule.33/@objectVariable.1" source="//@tggRule.33/@objectVariable.2" domain="//@domain.2">
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="target" target="//@tggRule.32/@objectVariable.2" source="//@tggRule.32/@objectVariable.3" domain="//@domain.2">
       <type href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//GW2S/target"/>
     </linkVariable>
-    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="steps" target="//@tggRule.33/@objectVariable.1" source="//@tggRule.33/@objectVariable.4" domain="//@domain.1">
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="steps" target="//@tggRule.32/@objectVariable.2" source="//@tggRule.32/@objectVariable.5" domain="//@domain.1">
       <type href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//Flow/steps"/>
     </linkVariable>
-    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="steps" target="//@tggRule.33/@objectVariable.3" source="//@tggRule.33/@objectVariable.4" bindingOperator="CREATE" domain="//@domain.1">
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="steps" target="//@tggRule.32/@objectVariable.4" source="//@tggRule.32/@objectVariable.5" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//Flow/steps"/>
+    </linkVariable>
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="sourceRef" target="//@tggRule.32/@objectVariable.6" source="//@tggRule.32/@objectVariable.0" domain="//@domain.0">
+      <type href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//SequenceFlow/sourceRef"/>
+    </linkVariable>
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="default" target="//@tggRule.32/@objectVariable.0" source="//@tggRule.32/@objectVariable.6" domain="//@domain.0">
+      <type href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//ExclusiveGateway/default"/>
+    </linkVariable>
+    <csp/>
+  </tggRule>
+  <tggRule name="ChoiceAfterEmptyDef" refines="//@tggRule.14" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="defInFlow" incomingLink="//@tggRule.33/@linkVariable.1" outgoingLink="//@tggRule.33/@linkVariable.0 //@tggRule.33/@linkVariable.2" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//SequenceFlow"/>
+    </objectVariable>
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="eg" incomingLink="//@tggRule.33/@linkVariable.0" outgoingLink="//@tggRule.33/@linkVariable.1" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//ExclusiveGateway"/>
+      <constraint>
+        <constraintExpression xsi:type="expressions:ComparisonExpression" operator="EQUAL">
+          <rightExpression xsi:type="expressions:LiteralExpression" value="true"/>
+          <leftExpression xsi:type="patternExpressions:AttributeValueExpression" object="//@tggRule.33/@objectVariable.1">
+            <attribute href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//Gateway/isDiverging"/>
+          </leftExpression>
+        </constraintExpression>
+      </constraint>
+    </objectVariable>
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="prevNode" incomingLink="//@tggRule.33/@linkVariable.4 //@tggRule.33/@linkVariable.2" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//ExclusiveGateway"/>
+      <constraint>
+        <constraintExpression xsi:type="expressions:ComparisonExpression" operator="EQUAL">
+          <rightExpression xsi:type="expressions:LiteralExpression" value="false"/>
+          <leftExpression xsi:type="patternExpressions:AttributeValueExpression" object="//@tggRule.33/@objectVariable.2">
+            <attribute href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//Gateway/isDiverging"/>
+          </leftExpression>
+        </constraintExpression>
+      </constraint>
+    </objectVariable>
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="choiceStep" incomingLink="//@tggRule.33/@linkVariable.5 //@tggRule.33/@linkVariable.6" outgoingLink="//@tggRule.33/@linkVariable.3" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//ChoiceStep"/>
+    </objectVariable>
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="pn2cs" outgoingLink="//@tggRule.33/@linkVariable.4 //@tggRule.33/@linkVariable.5" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//GW2S"/>
+    </objectVariable>
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="step" incomingLink="//@tggRule.33/@linkVariable.3 //@tggRule.33/@linkVariable.7" bindingOperator="CREATE" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//NormalStep"/>
+    </objectVariable>
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="flow" outgoingLink="//@tggRule.33/@linkVariable.6 //@tggRule.33/@linkVariable.7" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//Flow"/>
+    </objectVariable>
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="sourceRef" target="//@tggRule.33/@objectVariable.1" source="//@tggRule.33/@objectVariable.0" domain="//@domain.0">
+      <type href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//SequenceFlow/sourceRef"/>
+    </linkVariable>
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="default" target="//@tggRule.33/@objectVariable.0" source="//@tggRule.33/@objectVariable.1" domain="//@domain.0">
+      <type href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//ExclusiveGateway/default"/>
+    </linkVariable>
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="targetRef" target="//@tggRule.33/@objectVariable.2" source="//@tggRule.33/@objectVariable.0" domain="//@domain.0">
+      <type href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//SequenceFlow/targetRef"/>
+    </linkVariable>
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="next" target="//@tggRule.33/@objectVariable.5" source="//@tggRule.33/@objectVariable.3" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//Step/next"/>
+    </linkVariable>
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="source" target="//@tggRule.33/@objectVariable.2" source="//@tggRule.33/@objectVariable.4" domain="//@domain.2">
+      <type href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//GW2S/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="target" target="//@tggRule.33/@objectVariable.3" source="//@tggRule.33/@objectVariable.4" domain="//@domain.2">
+      <type href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//GW2S/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="steps" target="//@tggRule.33/@objectVariable.3" source="//@tggRule.33/@objectVariable.6" domain="//@domain.1">
+      <type href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//Flow/steps"/>
+    </linkVariable>
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="steps" target="//@tggRule.33/@objectVariable.5" source="//@tggRule.33/@objectVariable.6" bindingOperator="CREATE" domain="//@domain.1">
       <type href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#//Flow/steps"/>
     </linkVariable>
     <csp/>
   </tggRule>
-  <metamodel name="de.abilov.useCase">
-    <outermostPackage href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#/"/>
+  <metamodel name="de.abilov.tgg.bpmn2useCase">
+    <outermostPackage href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#/"/>
   </metamodel>
   <metamodel name="de.abilov.bpmn">
     <outermostPackage href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#/"/>
   </metamodel>
-  <metamodel name="de.abilov.tgg.bpmn2useCase">
-    <outermostPackage href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#/"/>
+  <metamodel name="de.abilov.useCase">
+    <outermostPackage href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#/"/>
   </metamodel>
 </TGGLanguage:TripleGraphGrammar>

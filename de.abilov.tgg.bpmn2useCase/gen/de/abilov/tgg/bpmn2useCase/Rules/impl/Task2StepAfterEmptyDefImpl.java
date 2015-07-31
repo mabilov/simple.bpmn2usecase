@@ -92,36 +92,40 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isAppropriate_FWD(Match match, ExclusiveGateway prevNode, de.abilov.bpmn.Process process,
-			SequenceFlow sf1, Task task) {
+	public boolean isAppropriate_FWD(Match match, SequenceFlow prevInFlow, ExclusiveGateway prevNode,
+			ExclusiveGateway eg, de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
 		// initial bindings
-		Object[] result1_black = Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_0_1_blackBBBBBB(this, match,
-				prevNode, process, sf1, task);
+		Object[] result1_black = Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_0_1_blackBBBBBBBB(this,
+				match, prevInFlow, prevNode, eg, process, sf1, task);
 		if (result1_black == null) {
 			throw new RuntimeException("Pattern matching in node [initial bindings] failed." + " Variables: "
-					+ "[this] = " + this + ", " + "[match] = " + match + ", " + "[prevNode] = " + prevNode + ", "
-					+ "[process] = " + process + ", " + "[sf1] = " + sf1 + ", " + "[task] = " + task + ".");
+					+ "[this] = " + this + ", " + "[match] = " + match + ", " + "[prevInFlow] = " + prevInFlow + ", "
+					+ "[prevNode] = " + prevNode + ", " + "[eg] = " + eg + ", " + "[process] = " + process + ", "
+					+ "[sf1] = " + sf1 + ", " + "[task] = " + task + ".");
 		}
 
 		// Solve CSP
 		Object[] result2_bindingAndBlack = Task2StepAfterEmptyDefImpl
-				.pattern_Task2StepAfterEmptyDef_0_2_bindingAndBlackFBBBBBB(this, match, prevNode, process, sf1, task);
+				.pattern_Task2StepAfterEmptyDef_0_2_bindingAndBlackFBBBBBBBB(this, match, prevInFlow, prevNode, eg,
+						process, sf1, task);
 		if (result2_bindingAndBlack == null) {
 			throw new RuntimeException("Pattern matching in node [Solve CSP] failed." + " Variables: " + "[this] = "
-					+ this + ", " + "[match] = " + match + ", " + "[prevNode] = " + prevNode + ", " + "[process] = "
-					+ process + ", " + "[sf1] = " + sf1 + ", " + "[task] = " + task + ".");
+					+ this + ", " + "[match] = " + match + ", " + "[prevInFlow] = " + prevInFlow + ", "
+					+ "[prevNode] = " + prevNode + ", " + "[eg] = " + eg + ", " + "[process] = " + process + ", "
+					+ "[sf1] = " + sf1 + ", " + "[task] = " + task + ".");
 		}
 		CSP csp = (CSP) result2_bindingAndBlack[0];
 		// Check CSP
 		if (Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_0_3_expressionFBB(this, csp)) {
 
 			// collect elements to be translated
-			Object[] result4_black = Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_0_4_blackBBBBB(match,
-					prevNode, process, sf1, task);
+			Object[] result4_black = Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_0_4_blackBBBBBBB(match,
+					prevInFlow, prevNode, eg, process, sf1, task);
 			if (result4_black == null) {
 				throw new RuntimeException("Pattern matching in node [collect elements to be translated] failed."
-						+ " Variables: " + "[match] = " + match + ", " + "[prevNode] = " + prevNode + ", "
-						+ "[process] = " + process + ", " + "[sf1] = " + sf1 + ", " + "[task] = " + task + ".");
+						+ " Variables: " + "[match] = " + match + ", " + "[prevInFlow] = " + prevInFlow + ", "
+						+ "[prevNode] = " + prevNode + ", " + "[eg] = " + eg + ", " + "[process] = " + process + ", "
+						+ "[sf1] = " + sf1 + ", " + "[task] = " + task + ".");
 			}
 			Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_0_4_greenBBBBBFFFFFF(match, prevNode, process,
 					sf1, task);
@@ -133,19 +137,26 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 					// EMoflonEdge prevNode__sf1____outgoing = (EMoflonEdge) result4_green[10];
 
 			// collect context elements
-			Object[] result5_black = Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_0_5_blackBBBBB(match,
-					prevNode, process, sf1, task);
+			Object[] result5_black = Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_0_5_blackBBBBBBB(match,
+					prevInFlow, prevNode, eg, process, sf1, task);
 			if (result5_black == null) {
 				throw new RuntimeException("Pattern matching in node [collect context elements] failed."
-						+ " Variables: " + "[match] = " + match + ", " + "[prevNode] = " + prevNode + ", "
-						+ "[process] = " + process + ", " + "[sf1] = " + sf1 + ", " + "[task] = " + task + ".");
+						+ " Variables: " + "[match] = " + match + ", " + "[prevInFlow] = " + prevInFlow + ", "
+						+ "[prevNode] = " + prevNode + ", " + "[eg] = " + eg + ", " + "[process] = " + process + ", "
+						+ "[sf1] = " + sf1 + ", " + "[task] = " + task + ".");
 			}
-			Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_0_5_greenBBBF(match, prevNode, process);
-			// EMoflonEdge process__prevNode____flowElements = (EMoflonEdge) result5_green[3];
+			Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_0_5_greenBBBBBFFFFFF(match, prevInFlow, prevNode,
+					eg, process);
+					// EMoflonEdge prevInFlow__prevNode____targetRef = (EMoflonEdge) result5_green[5];
+					// EMoflonEdge prevNode__prevInFlow____incoming = (EMoflonEdge) result5_green[6];
+					// EMoflonEdge prevInFlow__eg____sourceRef = (EMoflonEdge) result5_green[7];
+					// EMoflonEdge eg__prevInFlow____outgoing = (EMoflonEdge) result5_green[8];
+					// EMoflonEdge eg__prevInFlow____default = (EMoflonEdge) result5_green[9];
+					// EMoflonEdge process__prevNode____flowElements = (EMoflonEdge) result5_green[10];
 
 			// register objects to match
-			Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_0_6_expressionBBBBBB(this, match, prevNode,
-					process, sf1, task);
+			Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_0_6_expressionBBBBBBBB(this, match, prevInFlow,
+					prevNode, eg, process, sf1, task);
 			return Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_0_7_expressionF();
 		} else {
 			return Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_0_8_expressionF();
@@ -161,19 +172,21 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 	public PerformRuleResult perform_FWD(IsApplicableMatch isApplicableMatch) {
 		// perform transformation
 		Object[] result1_bindingAndBlack = Task2StepAfterEmptyDefImpl
-				.pattern_Task2StepAfterEmptyDef_1_1_bindingAndBlackFFFFFFFBFB(this, isApplicableMatch);
+				.pattern_Task2StepAfterEmptyDef_1_1_bindingAndBlackFFFFFFFFFBFB(this, isApplicableMatch);
 		if (result1_bindingAndBlack == null) {
 			throw new RuntimeException("Pattern matching in node [perform transformation] failed." + " Variables: "
 					+ "[this] = " + this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ".");
 		}
-		ExclusiveGateway prevNode = (ExclusiveGateway) result1_bindingAndBlack[0];
-		GW2S pn2cs = (GW2S) result1_bindingAndBlack[1];
-		Flow flow = (Flow) result1_bindingAndBlack[2];
-		ChoiceStep choiceStep = (ChoiceStep) result1_bindingAndBlack[3];
-		de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result1_bindingAndBlack[4];
-		SequenceFlow sf1 = (SequenceFlow) result1_bindingAndBlack[5];
-		Task task = (Task) result1_bindingAndBlack[6];
-		CSP csp = (CSP) result1_bindingAndBlack[8];
+		SequenceFlow prevInFlow = (SequenceFlow) result1_bindingAndBlack[0];
+		ExclusiveGateway prevNode = (ExclusiveGateway) result1_bindingAndBlack[1];
+		GW2S pn2cs = (GW2S) result1_bindingAndBlack[2];
+		Flow flow = (Flow) result1_bindingAndBlack[3];
+		ChoiceStep choiceStep = (ChoiceStep) result1_bindingAndBlack[4];
+		ExclusiveGateway eg = (ExclusiveGateway) result1_bindingAndBlack[5];
+		de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result1_bindingAndBlack[6];
+		SequenceFlow sf1 = (SequenceFlow) result1_bindingAndBlack[7];
+		Task task = (Task) result1_bindingAndBlack[8];
+		CSP csp = (CSP) result1_bindingAndBlack[10];
 		Object[] result1_green = Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_1_1_greenFBBFBB(flow,
 				choiceStep, task, csp);
 		NormalStep step = (NormalStep) result1_green[0];
@@ -192,14 +205,14 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		PerformRuleResult ruleresult = (PerformRuleResult) result2_green[0];
 
 		// bookkeeping for edges
-		Object[] result3_black = Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_1_3_blackBBBBBBBBBB(
-				ruleresult, prevNode, pn2cs, step, flow, choiceStep, t2s, process, sf1, task);
+		Object[] result3_black = Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_1_3_blackBBBBBBBBBBBB(
+				ruleresult, prevInFlow, prevNode, pn2cs, step, flow, choiceStep, eg, t2s, process, sf1, task);
 		if (result3_black == null) {
 			throw new RuntimeException("Pattern matching in node [bookkeeping for edges] failed." + " Variables: "
-					+ "[ruleresult] = " + ruleresult + ", " + "[prevNode] = " + prevNode + ", " + "[pn2cs] = " + pn2cs
-					+ ", " + "[step] = " + step + ", " + "[flow] = " + flow + ", " + "[choiceStep] = " + choiceStep
-					+ ", " + "[t2s] = " + t2s + ", " + "[process] = " + process + ", " + "[sf1] = " + sf1 + ", "
-					+ "[task] = " + task + ".");
+					+ "[ruleresult] = " + ruleresult + ", " + "[prevInFlow] = " + prevInFlow + ", " + "[prevNode] = "
+					+ prevNode + ", " + "[pn2cs] = " + pn2cs + ", " + "[step] = " + step + ", " + "[flow] = " + flow
+					+ ", " + "[choiceStep] = " + choiceStep + ", " + "[eg] = " + eg + ", " + "[t2s] = " + t2s + ", "
+					+ "[process] = " + process + ", " + "[sf1] = " + sf1 + ", " + "[task] = " + task + ".");
 		}
 		Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_1_3_greenBBBBBBBBBFFFFFFFFFF(ruleresult, prevNode,
 				step, flow, choiceStep, t2s, process, sf1, task);
@@ -216,8 +229,8 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 		// perform postprocessing story node is empty
 		// register objects
-		Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_1_5_expressionBBBBBBBBBBB(this, ruleresult, prevNode,
-				pn2cs, step, flow, choiceStep, t2s, process, sf1, task);
+		Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_1_5_expressionBBBBBBBBBBBBB(this, ruleresult,
+				prevInFlow, prevNode, pn2cs, step, flow, choiceStep, eg, t2s, process, sf1, task);
 		return Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_1_6_expressionFB(ruleresult);
 	}
 
@@ -241,49 +254,56 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		IsApplicableRuleResult ruleresult = (IsApplicableRuleResult) result1_green[1];
 
 		// ForEach core match
-		Object[] result2_binding = Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_2_2_bindingFFFFB(match);
+		Object[] result2_binding = Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_2_2_bindingFFFFFFB(match);
 		if (result2_binding == null) {
 			throw new RuntimeException(
 					"Binding in node core match failed." + " Variables: " + "[match] = " + match + ".");
 		}
-		ExclusiveGateway prevNode = (ExclusiveGateway) result2_binding[0];
-		de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_binding[1];
-		SequenceFlow sf1 = (SequenceFlow) result2_binding[2];
-		Task task = (Task) result2_binding[3];
-		for (Object[] result2_black : Task2StepAfterEmptyDefImpl
-				.pattern_Task2StepAfterEmptyDef_2_2_blackBFFBBBB(prevNode, process, sf1, task, match)) {
-			GW2S pn2cs = (GW2S) result2_black[1];
-			ChoiceStep choiceStep = (ChoiceStep) result2_black[2];
+		SequenceFlow prevInFlow = (SequenceFlow) result2_binding[0];
+		ExclusiveGateway prevNode = (ExclusiveGateway) result2_binding[1];
+		ExclusiveGateway eg = (ExclusiveGateway) result2_binding[2];
+		de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_binding[3];
+		SequenceFlow sf1 = (SequenceFlow) result2_binding[4];
+		Task task = (Task) result2_binding[5];
+		for (Object[] result2_black : Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_2_2_blackBBFFBBBBB(
+				prevInFlow, prevNode, eg, process, sf1, task, match)) {
+			GW2S pn2cs = (GW2S) result2_black[2];
+			ChoiceStep choiceStep = (ChoiceStep) result2_black[3];
 			// ForEach find context
-			for (Object[] result3_black : Task2StepAfterEmptyDefImpl
-					.pattern_Task2StepAfterEmptyDef_2_3_blackBBFBBBB(prevNode, pn2cs, choiceStep, process, sf1, task)) {
-				Flow flow = (Flow) result3_black[2];
+			for (Object[] result3_black : Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_2_3_blackBBBFBBBBB(
+					prevInFlow, prevNode, pn2cs, choiceStep, eg, process, sf1, task)) {
+				Flow flow = (Flow) result3_black[3];
 				Object[] result3_green = Task2StepAfterEmptyDefImpl
-						.pattern_Task2StepAfterEmptyDef_2_3_greenBBBBBBBFFFFFFFFFFFF(prevNode, pn2cs, flow, choiceStep,
-								process, sf1, task);
-				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[7];
-				// EMoflonEdge pn2cs__prevNode____source = (EMoflonEdge) result3_green[8];
-				// EMoflonEdge pn2cs__choiceStep____target = (EMoflonEdge) result3_green[9];
-				// EMoflonEdge flow__choiceStep____steps = (EMoflonEdge) result3_green[10];
-				// EMoflonEdge choiceStep__choiceStep______lastInDef = (EMoflonEdge) result3_green[11];
-				// EMoflonEdge process__task____flowElements = (EMoflonEdge) result3_green[12];
-				// EMoflonEdge process__sf1____flowElements = (EMoflonEdge) result3_green[13];
-				// EMoflonEdge process__prevNode____flowElements = (EMoflonEdge) result3_green[14];
-				// EMoflonEdge sf1__task____targetRef = (EMoflonEdge) result3_green[15];
-				// EMoflonEdge task__sf1____incoming = (EMoflonEdge) result3_green[16];
-				// EMoflonEdge sf1__prevNode____sourceRef = (EMoflonEdge) result3_green[17];
-				// EMoflonEdge prevNode__sf1____outgoing = (EMoflonEdge) result3_green[18];
+						.pattern_Task2StepAfterEmptyDef_2_3_greenBBBBBBBBBFFFFFFFFFFFFFFFF(prevInFlow, prevNode, pn2cs,
+								flow, choiceStep, eg, process, sf1, task);
+				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[9];
+				// EMoflonEdge prevInFlow__prevNode____targetRef = (EMoflonEdge) result3_green[10];
+				// EMoflonEdge prevNode__prevInFlow____incoming = (EMoflonEdge) result3_green[11];
+				// EMoflonEdge pn2cs__prevNode____source = (EMoflonEdge) result3_green[12];
+				// EMoflonEdge pn2cs__choiceStep____target = (EMoflonEdge) result3_green[13];
+				// EMoflonEdge flow__choiceStep____steps = (EMoflonEdge) result3_green[14];
+				// EMoflonEdge prevInFlow__eg____sourceRef = (EMoflonEdge) result3_green[15];
+				// EMoflonEdge eg__prevInFlow____outgoing = (EMoflonEdge) result3_green[16];
+				// EMoflonEdge eg__prevInFlow____default = (EMoflonEdge) result3_green[17];
+				// EMoflonEdge process__task____flowElements = (EMoflonEdge) result3_green[18];
+				// EMoflonEdge process__sf1____flowElements = (EMoflonEdge) result3_green[19];
+				// EMoflonEdge process__prevNode____flowElements = (EMoflonEdge) result3_green[20];
+				// EMoflonEdge sf1__task____targetRef = (EMoflonEdge) result3_green[21];
+				// EMoflonEdge task__sf1____incoming = (EMoflonEdge) result3_green[22];
+				// EMoflonEdge sf1__prevNode____sourceRef = (EMoflonEdge) result3_green[23];
+				// EMoflonEdge prevNode__sf1____outgoing = (EMoflonEdge) result3_green[24];
 
 				// solve CSP
 				Object[] result4_bindingAndBlack = Task2StepAfterEmptyDefImpl
-						.pattern_Task2StepAfterEmptyDef_2_4_bindingAndBlackFBBBBBBBBB(this, isApplicableMatch, prevNode,
-								pn2cs, flow, choiceStep, process, sf1, task);
+						.pattern_Task2StepAfterEmptyDef_2_4_bindingAndBlackFBBBBBBBBBBB(this, isApplicableMatch,
+								prevInFlow, prevNode, pn2cs, flow, choiceStep, eg, process, sf1, task);
 				if (result4_bindingAndBlack == null) {
 					throw new RuntimeException("Pattern matching in node [solve CSP] failed." + " Variables: "
 							+ "[this] = " + this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ", "
-							+ "[prevNode] = " + prevNode + ", " + "[pn2cs] = " + pn2cs + ", " + "[flow] = " + flow
-							+ ", " + "[choiceStep] = " + choiceStep + ", " + "[process] = " + process + ", "
-							+ "[sf1] = " + sf1 + ", " + "[task] = " + task + ".");
+							+ "[prevInFlow] = " + prevInFlow + ", " + "[prevNode] = " + prevNode + ", " + "[pn2cs] = "
+							+ pn2cs + ", " + "[flow] = " + flow + ", " + "[choiceStep] = " + choiceStep + ", "
+							+ "[eg] = " + eg + ", " + "[process] = " + process + ", " + "[sf1] = " + sf1 + ", "
+							+ "[task] = " + task + ".");
 				}
 				CSP csp = (CSP) result4_bindingAndBlack[0];
 				// check CSP
@@ -314,9 +334,11 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void registerObjectsToMatch_FWD(Match match, ExclusiveGateway prevNode, de.abilov.bpmn.Process process,
-			SequenceFlow sf1, Task task) {
+	public void registerObjectsToMatch_FWD(Match match, SequenceFlow prevInFlow, ExclusiveGateway prevNode,
+			ExclusiveGateway eg, de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
+		match.registerObject("prevInFlow", prevInFlow);
 		match.registerObject("prevNode", prevNode);
+		match.registerObject("eg", eg);
 		match.registerObject("process", process);
 		match.registerObject("sf1", sf1);
 		match.registerObject("task", task);
@@ -328,8 +350,8 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP isAppropriate_solveCsp_FWD(Match match, ExclusiveGateway prevNode, de.abilov.bpmn.Process process,
-			SequenceFlow sf1, Task task) {// Create CSP
+	public CSP isAppropriate_solveCsp_FWD(Match match, SequenceFlow prevInFlow, ExclusiveGateway prevNode,
+			ExclusiveGateway eg, de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 
 		// Create literals
@@ -358,8 +380,9 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, ExclusiveGateway prevNode, GW2S pn2cs,
-			Flow flow, ChoiceStep choiceStep, de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {// Create CSP
+	public CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, SequenceFlow prevInFlow,
+			ExclusiveGateway prevNode, GW2S pn2cs, Flow flow, ChoiceStep choiceStep, ExclusiveGateway eg,
+			de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
 
@@ -384,10 +407,12 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		eq.solve(var_task_id, var_step_id);
 
 		// Snapshot pattern match on which CSP is solved
+		isApplicableMatch.registerObject("prevInFlow", prevInFlow);
 		isApplicableMatch.registerObject("prevNode", prevNode);
 		isApplicableMatch.registerObject("pn2cs", pn2cs);
 		isApplicableMatch.registerObject("flow", flow);
 		isApplicableMatch.registerObject("choiceStep", choiceStep);
+		isApplicableMatch.registerObject("eg", eg);
 		isApplicableMatch.registerObject("process", process);
 		isApplicableMatch.registerObject("sf1", sf1);
 		isApplicableMatch.registerObject("task", task);
@@ -408,13 +433,16 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void registerObjects_FWD(PerformRuleResult ruleresult, EObject prevNode, EObject pn2cs, EObject step,
-			EObject flow, EObject choiceStep, EObject t2s, EObject process, EObject sf1, EObject task) {
+	public void registerObjects_FWD(PerformRuleResult ruleresult, EObject prevInFlow, EObject prevNode, EObject pn2cs,
+			EObject step, EObject flow, EObject choiceStep, EObject eg, EObject t2s, EObject process, EObject sf1,
+			EObject task) {
+		ruleresult.registerObject("prevInFlow", prevInFlow);
 		ruleresult.registerObject("prevNode", prevNode);
 		ruleresult.registerObject("pn2cs", pn2cs);
 		ruleresult.registerObject("step", step);
 		ruleresult.registerObject("flow", flow);
 		ruleresult.registerObject("choiceStep", choiceStep);
+		ruleresult.registerObject("eg", eg);
 		ruleresult.registerObject("t2s", t2s);
 		ruleresult.registerObject("process", process);
 		ruleresult.registerObject("sf1", sf1);
@@ -481,9 +509,8 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 						+ " Variables: " + "[match] = " + match + ", " + "[step] = " + step + ", " + "[flow] = " + flow
 						+ ", " + "[choiceStep] = " + choiceStep + ".");
 			}
-			Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_10_5_greenBBBFF(match, flow, choiceStep);
+			Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_10_5_greenBBBF(match, flow, choiceStep);
 			// EMoflonEdge flow__choiceStep____steps = (EMoflonEdge) result5_green[3];
-			// EMoflonEdge choiceStep__choiceStep______lastInDef = (EMoflonEdge) result5_green[4];
 
 			// register objects to match
 			Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_10_6_expressionBBBBB(this, match, step, flow,
@@ -503,18 +530,20 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 	public PerformRuleResult perform_BWD(IsApplicableMatch isApplicableMatch) {
 		// perform transformation
 		Object[] result1_bindingAndBlack = Task2StepAfterEmptyDefImpl
-				.pattern_Task2StepAfterEmptyDef_11_1_bindingAndBlackFFFFFFBFB(this, isApplicableMatch);
+				.pattern_Task2StepAfterEmptyDef_11_1_bindingAndBlackFFFFFFFFBFB(this, isApplicableMatch);
 		if (result1_bindingAndBlack == null) {
 			throw new RuntimeException("Pattern matching in node [perform transformation] failed." + " Variables: "
 					+ "[this] = " + this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ".");
 		}
-		ExclusiveGateway prevNode = (ExclusiveGateway) result1_bindingAndBlack[0];
-		GW2S pn2cs = (GW2S) result1_bindingAndBlack[1];
-		NormalStep step = (NormalStep) result1_bindingAndBlack[2];
-		Flow flow = (Flow) result1_bindingAndBlack[3];
-		ChoiceStep choiceStep = (ChoiceStep) result1_bindingAndBlack[4];
-		de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result1_bindingAndBlack[5];
-		CSP csp = (CSP) result1_bindingAndBlack[7];
+		SequenceFlow prevInFlow = (SequenceFlow) result1_bindingAndBlack[0];
+		ExclusiveGateway prevNode = (ExclusiveGateway) result1_bindingAndBlack[1];
+		GW2S pn2cs = (GW2S) result1_bindingAndBlack[2];
+		NormalStep step = (NormalStep) result1_bindingAndBlack[3];
+		Flow flow = (Flow) result1_bindingAndBlack[4];
+		ChoiceStep choiceStep = (ChoiceStep) result1_bindingAndBlack[5];
+		ExclusiveGateway eg = (ExclusiveGateway) result1_bindingAndBlack[6];
+		de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result1_bindingAndBlack[7];
+		CSP csp = (CSP) result1_bindingAndBlack[9];
 		Object[] result1_green = Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_11_1_greenBBFBFFB(prevNode,
 				step, process, csp);
 		FN2S t2s = (FN2S) result1_green[2];
@@ -534,14 +563,14 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		PerformRuleResult ruleresult = (PerformRuleResult) result2_green[0];
 
 		// bookkeeping for edges
-		Object[] result3_black = Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_11_3_blackBBBBBBBBBB(
-				ruleresult, prevNode, pn2cs, step, flow, choiceStep, t2s, process, sf1, task);
+		Object[] result3_black = Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_11_3_blackBBBBBBBBBBBB(
+				ruleresult, prevInFlow, prevNode, pn2cs, step, flow, choiceStep, eg, t2s, process, sf1, task);
 		if (result3_black == null) {
 			throw new RuntimeException("Pattern matching in node [bookkeeping for edges] failed." + " Variables: "
-					+ "[ruleresult] = " + ruleresult + ", " + "[prevNode] = " + prevNode + ", " + "[pn2cs] = " + pn2cs
-					+ ", " + "[step] = " + step + ", " + "[flow] = " + flow + ", " + "[choiceStep] = " + choiceStep
-					+ ", " + "[t2s] = " + t2s + ", " + "[process] = " + process + ", " + "[sf1] = " + sf1 + ", "
-					+ "[task] = " + task + ".");
+					+ "[ruleresult] = " + ruleresult + ", " + "[prevInFlow] = " + prevInFlow + ", " + "[prevNode] = "
+					+ prevNode + ", " + "[pn2cs] = " + pn2cs + ", " + "[step] = " + step + ", " + "[flow] = " + flow
+					+ ", " + "[choiceStep] = " + choiceStep + ", " + "[eg] = " + eg + ", " + "[t2s] = " + t2s + ", "
+					+ "[process] = " + process + ", " + "[sf1] = " + sf1 + ", " + "[task] = " + task + ".");
 		}
 		Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_11_3_greenBBBBBBBBBFFFFFFFFFF(ruleresult, prevNode,
 				step, flow, choiceStep, t2s, process, sf1, task);
@@ -558,8 +587,8 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 		// perform postprocessing story node is empty
 		// register objects
-		Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_11_5_expressionBBBBBBBBBBB(this, ruleresult, prevNode,
-				pn2cs, step, flow, choiceStep, t2s, process, sf1, task);
+		Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_11_5_expressionBBBBBBBBBBBBB(this, ruleresult,
+				prevInFlow, prevNode, pn2cs, step, flow, choiceStep, eg, t2s, process, sf1, task);
 		return Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_11_6_expressionFB(ruleresult);
 	}
 
@@ -597,30 +626,36 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 			GW2S pn2cs = (GW2S) result2_black[1];
 			// ForEach find context
 			for (Object[] result3_black : Task2StepAfterEmptyDefImpl
-					.pattern_Task2StepAfterEmptyDef_12_3_blackBBBBBF(prevNode, pn2cs, step, flow, choiceStep)) {
-				de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result3_black[5];
+					.pattern_Task2StepAfterEmptyDef_12_3_blackFBBBBBFF(prevNode, pn2cs, step, flow, choiceStep)) {
+				SequenceFlow prevInFlow = (SequenceFlow) result3_black[0];
+				ExclusiveGateway eg = (ExclusiveGateway) result3_black[6];
+				de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result3_black[7];
 				Object[] result3_green = Task2StepAfterEmptyDefImpl
-						.pattern_Task2StepAfterEmptyDef_12_3_greenBBBBBBFFFFFFFF(prevNode, pn2cs, step, flow,
-								choiceStep, process);
-				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[6];
-				// EMoflonEdge pn2cs__prevNode____source = (EMoflonEdge) result3_green[7];
-				// EMoflonEdge pn2cs__choiceStep____target = (EMoflonEdge) result3_green[8];
-				// EMoflonEdge flow__step____steps = (EMoflonEdge) result3_green[9];
-				// EMoflonEdge flow__choiceStep____steps = (EMoflonEdge) result3_green[10];
-				// EMoflonEdge choiceStep__step____next = (EMoflonEdge) result3_green[11];
-				// EMoflonEdge choiceStep__choiceStep______lastInDef = (EMoflonEdge) result3_green[12];
-				// EMoflonEdge process__prevNode____flowElements = (EMoflonEdge) result3_green[13];
+						.pattern_Task2StepAfterEmptyDef_12_3_greenBBBBBBBBFFFFFFFFFFFF(prevInFlow, prevNode, pn2cs,
+								step, flow, choiceStep, eg, process);
+				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[8];
+				// EMoflonEdge prevInFlow__prevNode____targetRef = (EMoflonEdge) result3_green[9];
+				// EMoflonEdge prevNode__prevInFlow____incoming = (EMoflonEdge) result3_green[10];
+				// EMoflonEdge pn2cs__prevNode____source = (EMoflonEdge) result3_green[11];
+				// EMoflonEdge pn2cs__choiceStep____target = (EMoflonEdge) result3_green[12];
+				// EMoflonEdge flow__step____steps = (EMoflonEdge) result3_green[13];
+				// EMoflonEdge flow__choiceStep____steps = (EMoflonEdge) result3_green[14];
+				// EMoflonEdge choiceStep__step____next = (EMoflonEdge) result3_green[15];
+				// EMoflonEdge prevInFlow__eg____sourceRef = (EMoflonEdge) result3_green[16];
+				// EMoflonEdge eg__prevInFlow____outgoing = (EMoflonEdge) result3_green[17];
+				// EMoflonEdge eg__prevInFlow____default = (EMoflonEdge) result3_green[18];
+				// EMoflonEdge process__prevNode____flowElements = (EMoflonEdge) result3_green[19];
 
 				// solve CSP
 				Object[] result4_bindingAndBlack = Task2StepAfterEmptyDefImpl
-						.pattern_Task2StepAfterEmptyDef_12_4_bindingAndBlackFBBBBBBBB(this, isApplicableMatch, prevNode,
-								pn2cs, step, flow, choiceStep, process);
+						.pattern_Task2StepAfterEmptyDef_12_4_bindingAndBlackFBBBBBBBBBB(this, isApplicableMatch,
+								prevInFlow, prevNode, pn2cs, step, flow, choiceStep, eg, process);
 				if (result4_bindingAndBlack == null) {
 					throw new RuntimeException("Pattern matching in node [solve CSP] failed." + " Variables: "
 							+ "[this] = " + this + ", " + "[isApplicableMatch] = " + isApplicableMatch + ", "
-							+ "[prevNode] = " + prevNode + ", " + "[pn2cs] = " + pn2cs + ", " + "[step] = " + step
-							+ ", " + "[flow] = " + flow + ", " + "[choiceStep] = " + choiceStep + ", " + "[process] = "
-							+ process + ".");
+							+ "[prevInFlow] = " + prevInFlow + ", " + "[prevNode] = " + prevNode + ", " + "[pn2cs] = "
+							+ pn2cs + ", " + "[step] = " + step + ", " + "[flow] = " + flow + ", " + "[choiceStep] = "
+							+ choiceStep + ", " + "[eg] = " + eg + ", " + "[process] = " + process + ".");
 				}
 				CSP csp = (CSP) result4_bindingAndBlack[0];
 				// check CSP
@@ -692,8 +727,9 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, ExclusiveGateway prevNode, GW2S pn2cs,
-			NormalStep step, Flow flow, ChoiceStep choiceStep, de.abilov.bpmn.Process process) {// Create CSP
+	public CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, SequenceFlow prevInFlow,
+			ExclusiveGateway prevNode, GW2S pn2cs, NormalStep step, Flow flow, ChoiceStep choiceStep,
+			ExclusiveGateway eg, de.abilov.bpmn.Process process) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
 
@@ -718,11 +754,13 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		eq.solve(var_task_id, var_step_id);
 
 		// Snapshot pattern match on which CSP is solved
+		isApplicableMatch.registerObject("prevInFlow", prevInFlow);
 		isApplicableMatch.registerObject("prevNode", prevNode);
 		isApplicableMatch.registerObject("pn2cs", pn2cs);
 		isApplicableMatch.registerObject("step", step);
 		isApplicableMatch.registerObject("flow", flow);
 		isApplicableMatch.registerObject("choiceStep", choiceStep);
+		isApplicableMatch.registerObject("eg", eg);
 		isApplicableMatch.registerObject("process", process);
 		return csp;
 	}
@@ -741,13 +779,16 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void registerObjects_BWD(PerformRuleResult ruleresult, EObject prevNode, EObject pn2cs, EObject step,
-			EObject flow, EObject choiceStep, EObject t2s, EObject process, EObject sf1, EObject task) {
+	public void registerObjects_BWD(PerformRuleResult ruleresult, EObject prevInFlow, EObject prevNode, EObject pn2cs,
+			EObject step, EObject flow, EObject choiceStep, EObject eg, EObject t2s, EObject process, EObject sf1,
+			EObject task) {
+		ruleresult.registerObject("prevInFlow", prevInFlow);
 		ruleresult.registerObject("prevNode", prevNode);
 		ruleresult.registerObject("pn2cs", pn2cs);
 		ruleresult.registerObject("step", step);
 		ruleresult.registerObject("flow", flow);
 		ruleresult.registerObject("choiceStep", choiceStep);
+		ruleresult.registerObject("eg", eg);
 		ruleresult.registerObject("t2s", t2s);
 		ruleresult.registerObject("process", process);
 		ruleresult.registerObject("sf1", sf1);
@@ -770,7 +811,7 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_174(EMoflonEdge _edge_steps) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_296(EMoflonEdge _edge_steps) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2StepAfterEmptyDefImpl
 				.pattern_Task2StepAfterEmptyDef_20_1_bindingAndBlackFFB(this);
@@ -824,7 +865,7 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_175(EMoflonEdge _edge_next) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_297(EMoflonEdge _edge_next) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2StepAfterEmptyDefImpl
 				.pattern_Task2StepAfterEmptyDef_21_1_bindingAndBlackFFB(this);
@@ -878,7 +919,7 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_569(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_963(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2StepAfterEmptyDefImpl
 				.pattern_Task2StepAfterEmptyDef_22_1_bindingAndBlackFFB(this);
@@ -893,17 +934,19 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 		// ForEach test core match and DECs
 		for (Object[] result2_black : Task2StepAfterEmptyDefImpl
-				.pattern_Task2StepAfterEmptyDef_22_2_blackFFFFB(_edge_flowElements)) {
-			ExclusiveGateway prevNode = (ExclusiveGateway) result2_black[0];
-			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_black[1];
-			SequenceFlow sf1 = (SequenceFlow) result2_black[2];
-			Task task = (Task) result2_black[3];
+				.pattern_Task2StepAfterEmptyDef_22_2_blackFFFFFFB(_edge_flowElements)) {
+			SequenceFlow prevInFlow = (SequenceFlow) result2_black[0];
+			ExclusiveGateway prevNode = (ExclusiveGateway) result2_black[1];
+			ExclusiveGateway eg = (ExclusiveGateway) result2_black[2];
+			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_black[3];
+			SequenceFlow sf1 = (SequenceFlow) result2_black[4];
+			Task task = (Task) result2_black[5];
 			Object[] result2_green = Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_22_2_greenFB(__eClass);
 			Match match = (Match) result2_green[0];
 
 			// bookkeeping with generic isAppropriate method
-			if (Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_22_3_expressionFBBBBBB(this, match, prevNode,
-					process, sf1, task)) {
+			if (Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_22_3_expressionFBBBBBBBB(this, match,
+					prevInFlow, prevNode, eg, process, sf1, task)) {
 				// Ensure that the correct types of elements are matched
 				if (Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_22_4_expressionFBB(this, match)) {
 
@@ -933,7 +976,7 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_570(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_964(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2StepAfterEmptyDefImpl
 				.pattern_Task2StepAfterEmptyDef_23_1_bindingAndBlackFFB(this);
@@ -948,17 +991,19 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 		// ForEach test core match and DECs
 		for (Object[] result2_black : Task2StepAfterEmptyDefImpl
-				.pattern_Task2StepAfterEmptyDef_23_2_blackFFFFB(_edge_flowElements)) {
-			ExclusiveGateway prevNode = (ExclusiveGateway) result2_black[0];
-			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_black[1];
-			SequenceFlow sf1 = (SequenceFlow) result2_black[2];
-			Task task = (Task) result2_black[3];
+				.pattern_Task2StepAfterEmptyDef_23_2_blackFFFFFFB(_edge_flowElements)) {
+			SequenceFlow prevInFlow = (SequenceFlow) result2_black[0];
+			ExclusiveGateway prevNode = (ExclusiveGateway) result2_black[1];
+			ExclusiveGateway eg = (ExclusiveGateway) result2_black[2];
+			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_black[3];
+			SequenceFlow sf1 = (SequenceFlow) result2_black[4];
+			Task task = (Task) result2_black[5];
 			Object[] result2_green = Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_23_2_greenFB(__eClass);
 			Match match = (Match) result2_green[0];
 
 			// bookkeeping with generic isAppropriate method
-			if (Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_23_3_expressionFBBBBBB(this, match, prevNode,
-					process, sf1, task)) {
+			if (Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_23_3_expressionFBBBBBBBB(this, match,
+					prevInFlow, prevNode, eg, process, sf1, task)) {
 				// Ensure that the correct types of elements are matched
 				if (Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_23_4_expressionFBB(this, match)) {
 
@@ -988,7 +1033,7 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_571(EMoflonEdge _edge_targetRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_965(EMoflonEdge _edge_targetRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2StepAfterEmptyDefImpl
 				.pattern_Task2StepAfterEmptyDef_24_1_bindingAndBlackFFB(this);
@@ -1003,17 +1048,19 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 		// ForEach test core match and DECs
 		for (Object[] result2_black : Task2StepAfterEmptyDefImpl
-				.pattern_Task2StepAfterEmptyDef_24_2_blackFFFFB(_edge_targetRef)) {
-			ExclusiveGateway prevNode = (ExclusiveGateway) result2_black[0];
-			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_black[1];
-			SequenceFlow sf1 = (SequenceFlow) result2_black[2];
-			Task task = (Task) result2_black[3];
+				.pattern_Task2StepAfterEmptyDef_24_2_blackFFFFFFB(_edge_targetRef)) {
+			SequenceFlow prevInFlow = (SequenceFlow) result2_black[0];
+			ExclusiveGateway prevNode = (ExclusiveGateway) result2_black[1];
+			ExclusiveGateway eg = (ExclusiveGateway) result2_black[2];
+			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_black[3];
+			SequenceFlow sf1 = (SequenceFlow) result2_black[4];
+			Task task = (Task) result2_black[5];
 			Object[] result2_green = Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_24_2_greenFB(__eClass);
 			Match match = (Match) result2_green[0];
 
 			// bookkeeping with generic isAppropriate method
-			if (Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_24_3_expressionFBBBBBB(this, match, prevNode,
-					process, sf1, task)) {
+			if (Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_24_3_expressionFBBBBBBBB(this, match,
+					prevInFlow, prevNode, eg, process, sf1, task)) {
 				// Ensure that the correct types of elements are matched
 				if (Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_24_4_expressionFBB(this, match)) {
 
@@ -1043,7 +1090,7 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_572(EMoflonEdge _edge_incoming) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_966(EMoflonEdge _edge_incoming) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2StepAfterEmptyDefImpl
 				.pattern_Task2StepAfterEmptyDef_25_1_bindingAndBlackFFB(this);
@@ -1058,17 +1105,19 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 		// ForEach test core match and DECs
 		for (Object[] result2_black : Task2StepAfterEmptyDefImpl
-				.pattern_Task2StepAfterEmptyDef_25_2_blackFFFFB(_edge_incoming)) {
-			ExclusiveGateway prevNode = (ExclusiveGateway) result2_black[0];
-			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_black[1];
-			SequenceFlow sf1 = (SequenceFlow) result2_black[2];
-			Task task = (Task) result2_black[3];
+				.pattern_Task2StepAfterEmptyDef_25_2_blackFFFFFFB(_edge_incoming)) {
+			SequenceFlow prevInFlow = (SequenceFlow) result2_black[0];
+			ExclusiveGateway prevNode = (ExclusiveGateway) result2_black[1];
+			ExclusiveGateway eg = (ExclusiveGateway) result2_black[2];
+			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_black[3];
+			SequenceFlow sf1 = (SequenceFlow) result2_black[4];
+			Task task = (Task) result2_black[5];
 			Object[] result2_green = Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_25_2_greenFB(__eClass);
 			Match match = (Match) result2_green[0];
 
 			// bookkeeping with generic isAppropriate method
-			if (Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_25_3_expressionFBBBBBB(this, match, prevNode,
-					process, sf1, task)) {
+			if (Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_25_3_expressionFBBBBBBBB(this, match,
+					prevInFlow, prevNode, eg, process, sf1, task)) {
 				// Ensure that the correct types of elements are matched
 				if (Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_25_4_expressionFBB(this, match)) {
 
@@ -1098,7 +1147,7 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_573(EMoflonEdge _edge_sourceRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_967(EMoflonEdge _edge_sourceRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2StepAfterEmptyDefImpl
 				.pattern_Task2StepAfterEmptyDef_26_1_bindingAndBlackFFB(this);
@@ -1113,17 +1162,19 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 		// ForEach test core match and DECs
 		for (Object[] result2_black : Task2StepAfterEmptyDefImpl
-				.pattern_Task2StepAfterEmptyDef_26_2_blackFFFFB(_edge_sourceRef)) {
-			ExclusiveGateway prevNode = (ExclusiveGateway) result2_black[0];
-			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_black[1];
-			SequenceFlow sf1 = (SequenceFlow) result2_black[2];
-			Task task = (Task) result2_black[3];
+				.pattern_Task2StepAfterEmptyDef_26_2_blackFFFFFFB(_edge_sourceRef)) {
+			SequenceFlow prevInFlow = (SequenceFlow) result2_black[0];
+			ExclusiveGateway prevNode = (ExclusiveGateway) result2_black[1];
+			ExclusiveGateway eg = (ExclusiveGateway) result2_black[2];
+			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_black[3];
+			SequenceFlow sf1 = (SequenceFlow) result2_black[4];
+			Task task = (Task) result2_black[5];
 			Object[] result2_green = Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_26_2_greenFB(__eClass);
 			Match match = (Match) result2_green[0];
 
 			// bookkeeping with generic isAppropriate method
-			if (Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_26_3_expressionFBBBBBB(this, match, prevNode,
-					process, sf1, task)) {
+			if (Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_26_3_expressionFBBBBBBBB(this, match,
+					prevInFlow, prevNode, eg, process, sf1, task)) {
 				// Ensure that the correct types of elements are matched
 				if (Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_26_4_expressionFBB(this, match)) {
 
@@ -1153,7 +1204,7 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_574(EMoflonEdge _edge_outgoing) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_968(EMoflonEdge _edge_outgoing) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Task2StepAfterEmptyDefImpl
 				.pattern_Task2StepAfterEmptyDef_27_1_bindingAndBlackFFB(this);
@@ -1168,17 +1219,19 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 		// ForEach test core match and DECs
 		for (Object[] result2_black : Task2StepAfterEmptyDefImpl
-				.pattern_Task2StepAfterEmptyDef_27_2_blackFFFFB(_edge_outgoing)) {
-			ExclusiveGateway prevNode = (ExclusiveGateway) result2_black[0];
-			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_black[1];
-			SequenceFlow sf1 = (SequenceFlow) result2_black[2];
-			Task task = (Task) result2_black[3];
+				.pattern_Task2StepAfterEmptyDef_27_2_blackFFFFFFB(_edge_outgoing)) {
+			SequenceFlow prevInFlow = (SequenceFlow) result2_black[0];
+			ExclusiveGateway prevNode = (ExclusiveGateway) result2_black[1];
+			ExclusiveGateway eg = (ExclusiveGateway) result2_black[2];
+			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result2_black[3];
+			SequenceFlow sf1 = (SequenceFlow) result2_black[4];
+			Task task = (Task) result2_black[5];
 			Object[] result2_green = Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_27_2_greenFB(__eClass);
 			Match match = (Match) result2_green[0];
 
 			// bookkeeping with generic isAppropriate method
-			if (Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_27_3_expressionFBBBBBB(this, match, prevNode,
-					process, sf1, task)) {
+			if (Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_27_3_expressionFBBBBBBBB(this, match,
+					prevInFlow, prevNode, eg, process, sf1, task)) {
 				// Ensure that the correct types of elements are matched
 				if (Task2StepAfterEmptyDefImpl.pattern_Task2StepAfterEmptyDef_27_4_expressionFBB(this, match)) {
 
@@ -1215,6 +1268,10 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 
+		Optional<TripleMatchNodeMapping> matchForPrevInFlow = __tripleMatch.getNodeMappings().stream()
+				.filter(nm -> nm.getNodeName().equals("prevInFlow")).findAny();
+		de.abilov.bpmn.SequenceFlow prevInFlow = (de.abilov.bpmn.SequenceFlow) matchForPrevInFlow.get().getNode();
+
 		Optional<TripleMatchNodeMapping> matchForPrevNode = __tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("prevNode")).findAny();
 		de.abilov.bpmn.ExclusiveGateway prevNode = (de.abilov.bpmn.ExclusiveGateway) matchForPrevNode.get().getNode();
@@ -1235,6 +1292,10 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 				.filter(nm -> nm.getNodeName().equals("choiceStep")).findAny();
 		de.abilov.useCase.ChoiceStep choiceStep = (de.abilov.useCase.ChoiceStep) matchForChoiceStep.get().getNode();
 
+		Optional<TripleMatchNodeMapping> matchForEg = __tripleMatch.getNodeMappings().stream()
+				.filter(nm -> nm.getNodeName().equals("eg")).findAny();
+		de.abilov.bpmn.ExclusiveGateway eg = (de.abilov.bpmn.ExclusiveGateway) matchForEg.get().getNode();
+
 		Optional<TripleMatchNodeMapping> matchForT2s = __tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("t2s")).findAny();
 		de.abilov.tgg.bpmn2useCase.FN2S t2s = (de.abilov.tgg.bpmn2useCase.FN2S) matchForT2s.get().getNode();
@@ -1252,6 +1313,11 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		de.abilov.bpmn.Task task = (de.abilov.bpmn.Task) matchForTask.get().getNode();
 
 		if (!(prevNode.isIsDiverging() == false)) {
+			ruleResult.setSuccess(false);
+			return ruleResult;
+		}
+
+		if (!(eg.isIsDiverging() == true)) {
 			ruleResult.setSuccess(false);
 			return ruleResult;
 		}
@@ -1300,6 +1366,10 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 
+		Optional<TripleMatchNodeMapping> matchForPrevInFlow = __tripleMatch.getNodeMappings().stream()
+				.filter(nm -> nm.getNodeName().equals("prevInFlow")).findAny();
+		de.abilov.bpmn.SequenceFlow prevInFlow = (de.abilov.bpmn.SequenceFlow) matchForPrevInFlow.get().getNode();
+
 		Optional<TripleMatchNodeMapping> matchForPrevNode = __tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("prevNode")).findAny();
 		de.abilov.bpmn.ExclusiveGateway prevNode = (de.abilov.bpmn.ExclusiveGateway) matchForPrevNode.get().getNode();
@@ -1320,6 +1390,10 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 				.filter(nm -> nm.getNodeName().equals("choiceStep")).findAny();
 		de.abilov.useCase.ChoiceStep choiceStep = (de.abilov.useCase.ChoiceStep) matchForChoiceStep.get().getNode();
 
+		Optional<TripleMatchNodeMapping> matchForEg = __tripleMatch.getNodeMappings().stream()
+				.filter(nm -> nm.getNodeName().equals("eg")).findAny();
+		de.abilov.bpmn.ExclusiveGateway eg = (de.abilov.bpmn.ExclusiveGateway) matchForEg.get().getNode();
+
 		Optional<TripleMatchNodeMapping> matchForT2s = __tripleMatch.getNodeMappings().stream()
 				.filter(nm -> nm.getNodeName().equals("t2s")).findAny();
 		de.abilov.tgg.bpmn2useCase.FN2S t2s = (de.abilov.tgg.bpmn2useCase.FN2S) matchForT2s.get().getNode();
@@ -1337,6 +1411,11 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		de.abilov.bpmn.Task task = (de.abilov.bpmn.Task) matchForTask.get().getNode();
 
 		if (!(prevNode.isIsDiverging() == false)) {
+			ruleResult.setSuccess(false);
+			return ruleResult;
+		}
+
+		if (!(eg.isIsDiverging() == true)) {
 			ruleResult.setSuccess(false);
 			return ruleResult;
 		}
@@ -1381,37 +1460,42 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
-		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD__MATCH_EXCLUSIVEGATEWAY_PROCESS_SEQUENCEFLOW_TASK:
-			return isAppropriate_FWD((Match) arguments.get(0), (ExclusiveGateway) arguments.get(1),
-					(de.abilov.bpmn.Process) arguments.get(2), (SequenceFlow) arguments.get(3),
-					(Task) arguments.get(4));
+		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD__MATCH_SEQUENCEFLOW_EXCLUSIVEGATEWAY_EXCLUSIVEGATEWAY_PROCESS_SEQUENCEFLOW_TASK:
+			return isAppropriate_FWD((Match) arguments.get(0), (SequenceFlow) arguments.get(1),
+					(ExclusiveGateway) arguments.get(2), (ExclusiveGateway) arguments.get(3),
+					(de.abilov.bpmn.Process) arguments.get(4), (SequenceFlow) arguments.get(5),
+					(Task) arguments.get(6));
 		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___PERFORM_FWD__ISAPPLICABLEMATCH:
 			return perform_FWD((IsApplicableMatch) arguments.get(0));
 		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___IS_APPLICABLE_FWD__MATCH:
 			return isApplicable_FWD((Match) arguments.get(0));
-		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_EXCLUSIVEGATEWAY_PROCESS_SEQUENCEFLOW_TASK:
-			registerObjectsToMatch_FWD((Match) arguments.get(0), (ExclusiveGateway) arguments.get(1),
-					(de.abilov.bpmn.Process) arguments.get(2), (SequenceFlow) arguments.get(3),
-					(Task) arguments.get(4));
+		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_SEQUENCEFLOW_EXCLUSIVEGATEWAY_EXCLUSIVEGATEWAY_PROCESS_SEQUENCEFLOW_TASK:
+			registerObjectsToMatch_FWD((Match) arguments.get(0), (SequenceFlow) arguments.get(1),
+					(ExclusiveGateway) arguments.get(2), (ExclusiveGateway) arguments.get(3),
+					(de.abilov.bpmn.Process) arguments.get(4), (SequenceFlow) arguments.get(5),
+					(Task) arguments.get(6));
 			return null;
-		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_EXCLUSIVEGATEWAY_PROCESS_SEQUENCEFLOW_TASK:
-			return isAppropriate_solveCsp_FWD((Match) arguments.get(0), (ExclusiveGateway) arguments.get(1),
-					(de.abilov.bpmn.Process) arguments.get(2), (SequenceFlow) arguments.get(3),
-					(Task) arguments.get(4));
+		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_SEQUENCEFLOW_EXCLUSIVEGATEWAY_EXCLUSIVEGATEWAY_PROCESS_SEQUENCEFLOW_TASK:
+			return isAppropriate_solveCsp_FWD((Match) arguments.get(0), (SequenceFlow) arguments.get(1),
+					(ExclusiveGateway) arguments.get(2), (ExclusiveGateway) arguments.get(3),
+					(de.abilov.bpmn.Process) arguments.get(4), (SequenceFlow) arguments.get(5),
+					(Task) arguments.get(6));
 		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_CHECK_CSP_FWD__CSP:
 			return isAppropriate_checkCsp_FWD((CSP) arguments.get(0));
-		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_EXCLUSIVEGATEWAY_GW2S_FLOW_CHOICESTEP_PROCESS_SEQUENCEFLOW_TASK:
-			return isApplicable_solveCsp_FWD((IsApplicableMatch) arguments.get(0), (ExclusiveGateway) arguments.get(1),
-					(GW2S) arguments.get(2), (Flow) arguments.get(3), (ChoiceStep) arguments.get(4),
-					(de.abilov.bpmn.Process) arguments.get(5), (SequenceFlow) arguments.get(6),
-					(Task) arguments.get(7));
+		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_SEQUENCEFLOW_EXCLUSIVEGATEWAY_GW2S_FLOW_CHOICESTEP_EXCLUSIVEGATEWAY_PROCESS_SEQUENCEFLOW_TASK:
+			return isApplicable_solveCsp_FWD((IsApplicableMatch) arguments.get(0), (SequenceFlow) arguments.get(1),
+					(ExclusiveGateway) arguments.get(2), (GW2S) arguments.get(3), (Flow) arguments.get(4),
+					(ChoiceStep) arguments.get(5), (ExclusiveGateway) arguments.get(6),
+					(de.abilov.bpmn.Process) arguments.get(7), (SequenceFlow) arguments.get(8),
+					(Task) arguments.get(9));
 		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___IS_APPLICABLE_CHECK_CSP_FWD__CSP:
 			return isApplicable_checkCsp_FWD((CSP) arguments.get(0));
-		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
+		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
 			registerObjects_FWD((PerformRuleResult) arguments.get(0), (EObject) arguments.get(1),
 					(EObject) arguments.get(2), (EObject) arguments.get(3), (EObject) arguments.get(4),
 					(EObject) arguments.get(5), (EObject) arguments.get(6), (EObject) arguments.get(7),
-					(EObject) arguments.get(8), (EObject) arguments.get(9));
+					(EObject) arguments.get(8), (EObject) arguments.get(9), (EObject) arguments.get(10),
+					(EObject) arguments.get(11));
 			return null;
 		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___CHECK_TYPES_FWD__MATCH:
 			return checkTypes_FWD((Match) arguments.get(0));
@@ -1431,36 +1515,38 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 					(Flow) arguments.get(2), (ChoiceStep) arguments.get(3));
 		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_CHECK_CSP_BWD__CSP:
 			return isAppropriate_checkCsp_BWD((CSP) arguments.get(0));
-		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_EXCLUSIVEGATEWAY_GW2S_NORMALSTEP_FLOW_CHOICESTEP_PROCESS:
-			return isApplicable_solveCsp_BWD((IsApplicableMatch) arguments.get(0), (ExclusiveGateway) arguments.get(1),
-					(GW2S) arguments.get(2), (NormalStep) arguments.get(3), (Flow) arguments.get(4),
-					(ChoiceStep) arguments.get(5), (de.abilov.bpmn.Process) arguments.get(6));
+		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_SEQUENCEFLOW_EXCLUSIVEGATEWAY_GW2S_NORMALSTEP_FLOW_CHOICESTEP_EXCLUSIVEGATEWAY_PROCESS:
+			return isApplicable_solveCsp_BWD((IsApplicableMatch) arguments.get(0), (SequenceFlow) arguments.get(1),
+					(ExclusiveGateway) arguments.get(2), (GW2S) arguments.get(3), (NormalStep) arguments.get(4),
+					(Flow) arguments.get(5), (ChoiceStep) arguments.get(6), (ExclusiveGateway) arguments.get(7),
+					(de.abilov.bpmn.Process) arguments.get(8));
 		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___IS_APPLICABLE_CHECK_CSP_BWD__CSP:
 			return isApplicable_checkCsp_BWD((CSP) arguments.get(0));
-		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
+		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
 			registerObjects_BWD((PerformRuleResult) arguments.get(0), (EObject) arguments.get(1),
 					(EObject) arguments.get(2), (EObject) arguments.get(3), (EObject) arguments.get(4),
 					(EObject) arguments.get(5), (EObject) arguments.get(6), (EObject) arguments.get(7),
-					(EObject) arguments.get(8), (EObject) arguments.get(9));
+					(EObject) arguments.get(8), (EObject) arguments.get(9), (EObject) arguments.get(10),
+					(EObject) arguments.get(11));
 			return null;
 		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_174__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_174((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_175__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_175((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_569__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_569((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_570__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_570((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_571__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_571((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_572__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_572((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_573__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_573((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_574__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_574((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_296__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_296((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_297__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_297((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_963__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_963((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_964__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_964((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_965__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_965((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_966__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_966((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_967__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_967((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_968__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_968((EMoflonEdge) arguments.get(0));
 		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
@@ -1469,17 +1555,24 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		return super.eInvoke(operationID, arguments);
 	}
 
-	public static final Object[] pattern_Task2StepAfterEmptyDef_0_1_blackBBBBBB(Task2StepAfterEmptyDef _this,
-			Match match, ExclusiveGateway prevNode, de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
-		return new Object[] { _this, match, prevNode, process, sf1, task };
+	public static final Object[] pattern_Task2StepAfterEmptyDef_0_1_blackBBBBBBBB(Task2StepAfterEmptyDef _this,
+			Match match, SequenceFlow prevInFlow, ExclusiveGateway prevNode, ExclusiveGateway eg,
+			de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
+		if (!prevInFlow.equals(sf1)) {
+			if (!eg.equals(prevNode)) {
+				return new Object[] { _this, match, prevInFlow, prevNode, eg, process, sf1, task };
+			}
+		}
+		return null;
 	}
 
-	public static final Object[] pattern_Task2StepAfterEmptyDef_0_2_bindingFBBBBBB(Task2StepAfterEmptyDef _this,
-			Match match, ExclusiveGateway prevNode, de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
-		CSP _localVariable_0 = _this.isAppropriate_solveCsp_FWD(match, prevNode, process, sf1, task);
+	public static final Object[] pattern_Task2StepAfterEmptyDef_0_2_bindingFBBBBBBBB(Task2StepAfterEmptyDef _this,
+			Match match, SequenceFlow prevInFlow, ExclusiveGateway prevNode, ExclusiveGateway eg,
+			de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
+		CSP _localVariable_0 = _this.isAppropriate_solveCsp_FWD(match, prevInFlow, prevNode, eg, process, sf1, task);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, match, prevNode, process, sf1, task };
+			return new Object[] { csp, _this, match, prevInFlow, prevNode, eg, process, sf1, task };
 		}
 		return null;
 	}
@@ -1488,17 +1581,18 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		return new Object[] { csp };
 	}
 
-	public static final Object[] pattern_Task2StepAfterEmptyDef_0_2_bindingAndBlackFBBBBBB(Task2StepAfterEmptyDef _this,
-			Match match, ExclusiveGateway prevNode, de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
-		Object[] result_pattern_Task2StepAfterEmptyDef_0_2_binding = pattern_Task2StepAfterEmptyDef_0_2_bindingFBBBBBB(
-				_this, match, prevNode, process, sf1, task);
+	public static final Object[] pattern_Task2StepAfterEmptyDef_0_2_bindingAndBlackFBBBBBBBB(
+			Task2StepAfterEmptyDef _this, Match match, SequenceFlow prevInFlow, ExclusiveGateway prevNode,
+			ExclusiveGateway eg, de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
+		Object[] result_pattern_Task2StepAfterEmptyDef_0_2_binding = pattern_Task2StepAfterEmptyDef_0_2_bindingFBBBBBBBB(
+				_this, match, prevInFlow, prevNode, eg, process, sf1, task);
 		if (result_pattern_Task2StepAfterEmptyDef_0_2_binding != null) {
 			CSP csp = (CSP) result_pattern_Task2StepAfterEmptyDef_0_2_binding[0];
 
 			Object[] result_pattern_Task2StepAfterEmptyDef_0_2_black = pattern_Task2StepAfterEmptyDef_0_2_blackB(csp);
 			if (result_pattern_Task2StepAfterEmptyDef_0_2_black != null) {
 
-				return new Object[] { csp, _this, match, prevNode, process, sf1, task };
+				return new Object[] { csp, _this, match, prevInFlow, prevNode, eg, process, sf1, task };
 			}
 		}
 		return null;
@@ -1511,9 +1605,15 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		return _result;
 	}
 
-	public static final Object[] pattern_Task2StepAfterEmptyDef_0_4_blackBBBBB(Match match, ExclusiveGateway prevNode,
-			de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
-		return new Object[] { match, prevNode, process, sf1, task };
+	public static final Object[] pattern_Task2StepAfterEmptyDef_0_4_blackBBBBBBB(Match match, SequenceFlow prevInFlow,
+			ExclusiveGateway prevNode, ExclusiveGateway eg, de.abilov.bpmn.Process process, SequenceFlow sf1,
+			Task task) {
+		if (!prevInFlow.equals(sf1)) {
+			if (!eg.equals(prevNode)) {
+				return new Object[] { match, prevInFlow, prevNode, eg, process, sf1, task };
+			}
+		}
+		return null;
 	}
 
 	public static final Object[] pattern_Task2StepAfterEmptyDef_0_4_greenBBBBBFFFFFF(Match match,
@@ -1561,27 +1661,68 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 				prevNode__sf1____outgoing };
 	}
 
-	public static final Object[] pattern_Task2StepAfterEmptyDef_0_5_blackBBBBB(Match match, ExclusiveGateway prevNode,
-			de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
-		return new Object[] { match, prevNode, process, sf1, task };
+	public static final Object[] pattern_Task2StepAfterEmptyDef_0_5_blackBBBBBBB(Match match, SequenceFlow prevInFlow,
+			ExclusiveGateway prevNode, ExclusiveGateway eg, de.abilov.bpmn.Process process, SequenceFlow sf1,
+			Task task) {
+		if (!prevInFlow.equals(sf1)) {
+			if (!eg.equals(prevNode)) {
+				return new Object[] { match, prevInFlow, prevNode, eg, process, sf1, task };
+			}
+		}
+		return null;
 	}
 
-	public static final Object[] pattern_Task2StepAfterEmptyDef_0_5_greenBBBF(Match match, ExclusiveGateway prevNode,
-			de.abilov.bpmn.Process process) {
+	public static final Object[] pattern_Task2StepAfterEmptyDef_0_5_greenBBBBBFFFFFF(Match match,
+			SequenceFlow prevInFlow, ExclusiveGateway prevNode, ExclusiveGateway eg, de.abilov.bpmn.Process process) {
+		EMoflonEdge prevInFlow__prevNode____targetRef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge prevNode__prevInFlow____incoming = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge prevInFlow__eg____sourceRef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge eg__prevInFlow____outgoing = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge eg__prevInFlow____default = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge process__prevNode____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		match.getContextNodes().add(prevInFlow);
 		match.getContextNodes().add(prevNode);
+		match.getContextNodes().add(eg);
 		match.getContextNodes().add(process);
+		String prevInFlow__prevNode____targetRef_name_prime = "targetRef";
+		String prevNode__prevInFlow____incoming_name_prime = "incoming";
+		String prevInFlow__eg____sourceRef_name_prime = "sourceRef";
+		String eg__prevInFlow____outgoing_name_prime = "outgoing";
+		String eg__prevInFlow____default_name_prime = "default";
 		String process__prevNode____flowElements_name_prime = "flowElements";
+		prevInFlow__prevNode____targetRef.setSrc(prevInFlow);
+		prevInFlow__prevNode____targetRef.setTrg(prevNode);
+		match.getContextEdges().add(prevInFlow__prevNode____targetRef);
+		prevNode__prevInFlow____incoming.setSrc(prevNode);
+		prevNode__prevInFlow____incoming.setTrg(prevInFlow);
+		match.getContextEdges().add(prevNode__prevInFlow____incoming);
+		prevInFlow__eg____sourceRef.setSrc(prevInFlow);
+		prevInFlow__eg____sourceRef.setTrg(eg);
+		match.getContextEdges().add(prevInFlow__eg____sourceRef);
+		eg__prevInFlow____outgoing.setSrc(eg);
+		eg__prevInFlow____outgoing.setTrg(prevInFlow);
+		match.getContextEdges().add(eg__prevInFlow____outgoing);
+		eg__prevInFlow____default.setSrc(eg);
+		eg__prevInFlow____default.setTrg(prevInFlow);
+		match.getContextEdges().add(eg__prevInFlow____default);
 		process__prevNode____flowElements.setSrc(process);
 		process__prevNode____flowElements.setTrg(prevNode);
 		match.getContextEdges().add(process__prevNode____flowElements);
+		prevInFlow__prevNode____targetRef.setName(prevInFlow__prevNode____targetRef_name_prime);
+		prevNode__prevInFlow____incoming.setName(prevNode__prevInFlow____incoming_name_prime);
+		prevInFlow__eg____sourceRef.setName(prevInFlow__eg____sourceRef_name_prime);
+		eg__prevInFlow____outgoing.setName(eg__prevInFlow____outgoing_name_prime);
+		eg__prevInFlow____default.setName(eg__prevInFlow____default_name_prime);
 		process__prevNode____flowElements.setName(process__prevNode____flowElements_name_prime);
-		return new Object[] { match, prevNode, process, process__prevNode____flowElements };
+		return new Object[] { match, prevInFlow, prevNode, eg, process, prevInFlow__prevNode____targetRef,
+				prevNode__prevInFlow____incoming, prevInFlow__eg____sourceRef, eg__prevInFlow____outgoing,
+				eg__prevInFlow____default, process__prevNode____flowElements };
 	}
 
-	public static final void pattern_Task2StepAfterEmptyDef_0_6_expressionBBBBBB(Task2StepAfterEmptyDef _this,
-			Match match, ExclusiveGateway prevNode, de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
-		_this.registerObjectsToMatch_FWD(match, prevNode, process, sf1, task);
+	public static final void pattern_Task2StepAfterEmptyDef_0_6_expressionBBBBBBBB(Task2StepAfterEmptyDef _this,
+			Match match, SequenceFlow prevInFlow, ExclusiveGateway prevNode, ExclusiveGateway eg,
+			de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
+		_this.registerObjectsToMatch_FWD(match, prevInFlow, prevNode, eg, process, sf1, task);
 
 	}
 
@@ -1595,38 +1736,48 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		return _result;
 	}
 
-	public static final Object[] pattern_Task2StepAfterEmptyDef_1_1_bindingFFFFFFFB(
+	public static final Object[] pattern_Task2StepAfterEmptyDef_1_1_bindingFFFFFFFFFB(
 			IsApplicableMatch isApplicableMatch) {
-		EObject _localVariable_0 = isApplicableMatch.getObject("prevNode");
-		EObject _localVariable_1 = isApplicableMatch.getObject("pn2cs");
-		EObject _localVariable_2 = isApplicableMatch.getObject("flow");
-		EObject _localVariable_3 = isApplicableMatch.getObject("choiceStep");
-		EObject _localVariable_4 = isApplicableMatch.getObject("process");
-		EObject _localVariable_5 = isApplicableMatch.getObject("sf1");
-		EObject _localVariable_6 = isApplicableMatch.getObject("task");
-		EObject tmpPrevNode = _localVariable_0;
-		EObject tmpPn2cs = _localVariable_1;
-		EObject tmpFlow = _localVariable_2;
-		EObject tmpChoiceStep = _localVariable_3;
-		EObject tmpProcess = _localVariable_4;
-		EObject tmpSf1 = _localVariable_5;
-		EObject tmpTask = _localVariable_6;
-		if (tmpPrevNode instanceof ExclusiveGateway) {
-			ExclusiveGateway prevNode = (ExclusiveGateway) tmpPrevNode;
-			if (tmpPn2cs instanceof GW2S) {
-				GW2S pn2cs = (GW2S) tmpPn2cs;
-				if (tmpFlow instanceof Flow) {
-					Flow flow = (Flow) tmpFlow;
-					if (tmpChoiceStep instanceof ChoiceStep) {
-						ChoiceStep choiceStep = (ChoiceStep) tmpChoiceStep;
-						if (tmpProcess instanceof de.abilov.bpmn.Process) {
-							de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) tmpProcess;
-							if (tmpSf1 instanceof SequenceFlow) {
-								SequenceFlow sf1 = (SequenceFlow) tmpSf1;
-								if (tmpTask instanceof Task) {
-									Task task = (Task) tmpTask;
-									return new Object[] { prevNode, pn2cs, flow, choiceStep, process, sf1, task,
-											isApplicableMatch };
+		EObject _localVariable_0 = isApplicableMatch.getObject("prevInFlow");
+		EObject _localVariable_1 = isApplicableMatch.getObject("prevNode");
+		EObject _localVariable_2 = isApplicableMatch.getObject("pn2cs");
+		EObject _localVariable_3 = isApplicableMatch.getObject("flow");
+		EObject _localVariable_4 = isApplicableMatch.getObject("choiceStep");
+		EObject _localVariable_5 = isApplicableMatch.getObject("eg");
+		EObject _localVariable_6 = isApplicableMatch.getObject("process");
+		EObject _localVariable_7 = isApplicableMatch.getObject("sf1");
+		EObject _localVariable_8 = isApplicableMatch.getObject("task");
+		EObject tmpPrevInFlow = _localVariable_0;
+		EObject tmpPrevNode = _localVariable_1;
+		EObject tmpPn2cs = _localVariable_2;
+		EObject tmpFlow = _localVariable_3;
+		EObject tmpChoiceStep = _localVariable_4;
+		EObject tmpEg = _localVariable_5;
+		EObject tmpProcess = _localVariable_6;
+		EObject tmpSf1 = _localVariable_7;
+		EObject tmpTask = _localVariable_8;
+		if (tmpPrevInFlow instanceof SequenceFlow) {
+			SequenceFlow prevInFlow = (SequenceFlow) tmpPrevInFlow;
+			if (tmpPrevNode instanceof ExclusiveGateway) {
+				ExclusiveGateway prevNode = (ExclusiveGateway) tmpPrevNode;
+				if (tmpPn2cs instanceof GW2S) {
+					GW2S pn2cs = (GW2S) tmpPn2cs;
+					if (tmpFlow instanceof Flow) {
+						Flow flow = (Flow) tmpFlow;
+						if (tmpChoiceStep instanceof ChoiceStep) {
+							ChoiceStep choiceStep = (ChoiceStep) tmpChoiceStep;
+							if (tmpEg instanceof ExclusiveGateway) {
+								ExclusiveGateway eg = (ExclusiveGateway) tmpEg;
+								if (tmpProcess instanceof de.abilov.bpmn.Process) {
+									de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) tmpProcess;
+									if (tmpSf1 instanceof SequenceFlow) {
+										SequenceFlow sf1 = (SequenceFlow) tmpSf1;
+										if (tmpTask instanceof Task) {
+											Task task = (Task) tmpTask;
+											return new Object[] { prevInFlow, prevNode, pn2cs, flow, choiceStep, eg,
+													process, sf1, task, isApplicableMatch };
+										}
+									}
 								}
 							}
 						}
@@ -1637,38 +1788,45 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		return null;
 	}
 
-	public static final Object[] pattern_Task2StepAfterEmptyDef_1_1_blackBBBBBBBBFB(ExclusiveGateway prevNode,
-			GW2S pn2cs, Flow flow, ChoiceStep choiceStep, de.abilov.bpmn.Process process, SequenceFlow sf1, Task task,
-			Task2StepAfterEmptyDef _this, IsApplicableMatch isApplicableMatch) {
-		for (EObject tmpCsp : isApplicableMatch.getAttributeInfo()) {
-			if (tmpCsp instanceof CSP) {
-				CSP csp = (CSP) tmpCsp;
-				return new Object[] { prevNode, pn2cs, flow, choiceStep, process, sf1, task, _this, csp,
-						isApplicableMatch };
+	public static final Object[] pattern_Task2StepAfterEmptyDef_1_1_blackBBBBBBBBBBFB(SequenceFlow prevInFlow,
+			ExclusiveGateway prevNode, GW2S pn2cs, Flow flow, ChoiceStep choiceStep, ExclusiveGateway eg,
+			de.abilov.bpmn.Process process, SequenceFlow sf1, Task task, Task2StepAfterEmptyDef _this,
+			IsApplicableMatch isApplicableMatch) {
+		if (!prevInFlow.equals(sf1)) {
+			if (!eg.equals(prevNode)) {
+				for (EObject tmpCsp : isApplicableMatch.getAttributeInfo()) {
+					if (tmpCsp instanceof CSP) {
+						CSP csp = (CSP) tmpCsp;
+						return new Object[] { prevInFlow, prevNode, pn2cs, flow, choiceStep, eg, process, sf1, task,
+								_this, csp, isApplicableMatch };
+					}
+				}
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_Task2StepAfterEmptyDef_1_1_bindingAndBlackFFFFFFFBFB(
+	public static final Object[] pattern_Task2StepAfterEmptyDef_1_1_bindingAndBlackFFFFFFFFFBFB(
 			Task2StepAfterEmptyDef _this, IsApplicableMatch isApplicableMatch) {
-		Object[] result_pattern_Task2StepAfterEmptyDef_1_1_binding = pattern_Task2StepAfterEmptyDef_1_1_bindingFFFFFFFB(
+		Object[] result_pattern_Task2StepAfterEmptyDef_1_1_binding = pattern_Task2StepAfterEmptyDef_1_1_bindingFFFFFFFFFB(
 				isApplicableMatch);
 		if (result_pattern_Task2StepAfterEmptyDef_1_1_binding != null) {
-			ExclusiveGateway prevNode = (ExclusiveGateway) result_pattern_Task2StepAfterEmptyDef_1_1_binding[0];
-			GW2S pn2cs = (GW2S) result_pattern_Task2StepAfterEmptyDef_1_1_binding[1];
-			Flow flow = (Flow) result_pattern_Task2StepAfterEmptyDef_1_1_binding[2];
-			ChoiceStep choiceStep = (ChoiceStep) result_pattern_Task2StepAfterEmptyDef_1_1_binding[3];
-			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result_pattern_Task2StepAfterEmptyDef_1_1_binding[4];
-			SequenceFlow sf1 = (SequenceFlow) result_pattern_Task2StepAfterEmptyDef_1_1_binding[5];
-			Task task = (Task) result_pattern_Task2StepAfterEmptyDef_1_1_binding[6];
+			SequenceFlow prevInFlow = (SequenceFlow) result_pattern_Task2StepAfterEmptyDef_1_1_binding[0];
+			ExclusiveGateway prevNode = (ExclusiveGateway) result_pattern_Task2StepAfterEmptyDef_1_1_binding[1];
+			GW2S pn2cs = (GW2S) result_pattern_Task2StepAfterEmptyDef_1_1_binding[2];
+			Flow flow = (Flow) result_pattern_Task2StepAfterEmptyDef_1_1_binding[3];
+			ChoiceStep choiceStep = (ChoiceStep) result_pattern_Task2StepAfterEmptyDef_1_1_binding[4];
+			ExclusiveGateway eg = (ExclusiveGateway) result_pattern_Task2StepAfterEmptyDef_1_1_binding[5];
+			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result_pattern_Task2StepAfterEmptyDef_1_1_binding[6];
+			SequenceFlow sf1 = (SequenceFlow) result_pattern_Task2StepAfterEmptyDef_1_1_binding[7];
+			Task task = (Task) result_pattern_Task2StepAfterEmptyDef_1_1_binding[8];
 
-			Object[] result_pattern_Task2StepAfterEmptyDef_1_1_black = pattern_Task2StepAfterEmptyDef_1_1_blackBBBBBBBBFB(
-					prevNode, pn2cs, flow, choiceStep, process, sf1, task, _this, isApplicableMatch);
+			Object[] result_pattern_Task2StepAfterEmptyDef_1_1_black = pattern_Task2StepAfterEmptyDef_1_1_blackBBBBBBBBBBFB(
+					prevInFlow, prevNode, pn2cs, flow, choiceStep, eg, process, sf1, task, _this, isApplicableMatch);
 			if (result_pattern_Task2StepAfterEmptyDef_1_1_black != null) {
-				CSP csp = (CSP) result_pattern_Task2StepAfterEmptyDef_1_1_black[8];
+				CSP csp = (CSP) result_pattern_Task2StepAfterEmptyDef_1_1_black[10];
 
-				return new Object[] { prevNode, pn2cs, flow, choiceStep, process, sf1, task, _this, csp,
+				return new Object[] { prevInFlow, prevNode, pn2cs, flow, choiceStep, eg, process, sf1, task, _this, csp,
 						isApplicableMatch };
 			}
 		}
@@ -1704,72 +1862,130 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		return new Object[] { ruleresult, step, t2s, sf1, task };
 	}
 
-	public static final Object[] pattern_Task2StepAfterEmptyDef_1_3_blackBBBBBBBBBB(PerformRuleResult ruleresult,
-			EObject prevNode, EObject pn2cs, EObject step, EObject flow, EObject choiceStep, EObject t2s,
-			EObject process, EObject sf1, EObject task) {
-		if (!prevNode.equals(step)) {
-			if (!prevNode.equals(t2s)) {
-				if (!prevNode.equals(process)) {
-					if (!prevNode.equals(sf1)) {
-						if (!prevNode.equals(task)) {
-							if (!pn2cs.equals(prevNode)) {
-								if (!pn2cs.equals(step)) {
-									if (!pn2cs.equals(t2s)) {
-										if (!pn2cs.equals(process)) {
-											if (!pn2cs.equals(sf1)) {
-												if (!pn2cs.equals(task)) {
-													if (!step.equals(t2s)) {
-														if (!step.equals(task)) {
-															if (!flow.equals(prevNode)) {
-																if (!flow.equals(pn2cs)) {
-																	if (!flow.equals(step)) {
-																		if (!flow.equals(t2s)) {
-																			if (!flow.equals(process)) {
-																				if (!flow.equals(sf1)) {
-																					if (!flow.equals(task)) {
-																						if (!choiceStep
-																								.equals(prevNode)) {
-																							if (!choiceStep
-																									.equals(pn2cs)) {
-																								if (!choiceStep
-																										.equals(step)) {
-																									if (!choiceStep
-																											.equals(flow)) {
-																										if (!choiceStep
+	public static final Object[] pattern_Task2StepAfterEmptyDef_1_3_blackBBBBBBBBBBBB(PerformRuleResult ruleresult,
+			EObject prevInFlow, EObject prevNode, EObject pn2cs, EObject step, EObject flow, EObject choiceStep,
+			EObject eg, EObject t2s, EObject process, EObject sf1, EObject task) {
+		if (!prevInFlow.equals(prevNode)) {
+			if (!prevInFlow.equals(step)) {
+				if (!prevInFlow.equals(t2s)) {
+					if (!prevInFlow.equals(process)) {
+						if (!prevInFlow.equals(sf1)) {
+							if (!prevInFlow.equals(task)) {
+								if (!prevNode.equals(step)) {
+									if (!prevNode.equals(t2s)) {
+										if (!prevNode.equals(process)) {
+											if (!prevNode.equals(sf1)) {
+												if (!prevNode.equals(task)) {
+													if (!pn2cs.equals(prevInFlow)) {
+														if (!pn2cs.equals(prevNode)) {
+															if (!pn2cs.equals(step)) {
+																if (!pn2cs.equals(t2s)) {
+																	if (!pn2cs.equals(process)) {
+																		if (!pn2cs.equals(sf1)) {
+																			if (!pn2cs.equals(task)) {
+																				if (!step.equals(t2s)) {
+																					if (!step.equals(task)) {
+																						if (!flow.equals(prevInFlow)) {
+																							if (!flow
+																									.equals(prevNode)) {
+																								if (!flow.equals(
+																										pn2cs)) {
+																									if (!flow.equals(
+																											step)) {
+																										if (!flow
 																												.equals(t2s)) {
-																											if (!choiceStep
+																											if (!flow
 																													.equals(process)) {
-																												if (!choiceStep
+																												if (!flow
 																														.equals(sf1)) {
-																													if (!choiceStep
+																													if (!flow
 																															.equals(task)) {
-																														if (!t2s.equals(
-																																task)) {
-																															if (!process
-																																	.equals(step)) {
-																																if (!process
-																																		.equals(t2s)) {
-																																	if (!process
-																																			.equals(sf1)) {
-																																		if (!process
-																																				.equals(task)) {
-																																			if (!sf1.equals(
-																																					step)) {
-																																				if (!sf1.equals(
-																																						t2s)) {
-																																					if (!sf1.equals(
-																																							task)) {
-																																						return new Object[] {
-																																								ruleresult,
-																																								prevNode,
-																																								pn2cs,
-																																								step,
-																																								flow,
-																																								choiceStep,
-																																								t2s,
-																																								process,
-																																								sf1,
-																																								task };
+																														if (!choiceStep
+																																.equals(prevInFlow)) {
+																															if (!choiceStep
+																																	.equals(prevNode)) {
+																																if (!choiceStep
+																																		.equals(pn2cs)) {
+																																	if (!choiceStep
+																																			.equals(step)) {
+																																		if (!choiceStep
+																																				.equals(flow)) {
+																																			if (!choiceStep
+																																					.equals(eg)) {
+																																				if (!choiceStep
+																																						.equals(t2s)) {
+																																					if (!choiceStep
+																																							.equals(process)) {
+																																						if (!choiceStep
+																																								.equals(sf1)) {
+																																							if (!choiceStep
+																																									.equals(task)) {
+																																								if (!eg.equals(
+																																										prevInFlow)) {
+																																									if (!eg.equals(
+																																											prevNode)) {
+																																										if (!eg.equals(
+																																												pn2cs)) {
+																																											if (!eg.equals(
+																																													step)) {
+																																												if (!eg.equals(
+																																														flow)) {
+																																													if (!eg.equals(
+																																															t2s)) {
+																																														if (!eg.equals(
+																																																process)) {
+																																															if (!eg.equals(
+																																																	sf1)) {
+																																																if (!eg.equals(
+																																																		task)) {
+																																																	if (!t2s.equals(
+																																																			task)) {
+																																																		if (!process
+																																																				.equals(step)) {
+																																																			if (!process
+																																																					.equals(t2s)) {
+																																																				if (!process
+																																																						.equals(sf1)) {
+																																																					if (!process
+																																																							.equals(task)) {
+																																																						if (!sf1.equals(
+																																																								step)) {
+																																																							if (!sf1.equals(
+																																																									t2s)) {
+																																																								if (!sf1.equals(
+																																																										task)) {
+																																																									return new Object[] {
+																																																											ruleresult,
+																																																											prevInFlow,
+																																																											prevNode,
+																																																											pn2cs,
+																																																											step,
+																																																											flow,
+																																																											choiceStep,
+																																																											eg,
+																																																											t2s,
+																																																											process,
+																																																											sf1,
+																																																											task };
+																																																								}
+																																																							}
+																																																						}
+																																																					}
+																																																				}
+																																																			}
+																																																		}
+																																																	}
+																																																}
+																																															}
+																																														}
+																																													}
+																																												}
+																																											}
+																																										}
+																																									}
+																																								}
+																																							}
+																																						}
 																																					}
 																																				}
 																																			}
@@ -1880,10 +2096,11 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 				task__sf1____incoming, sf1__prevNode____sourceRef, prevNode__sf1____outgoing };
 	}
 
-	public static final void pattern_Task2StepAfterEmptyDef_1_5_expressionBBBBBBBBBBB(Task2StepAfterEmptyDef _this,
-			PerformRuleResult ruleresult, EObject prevNode, EObject pn2cs, EObject step, EObject flow,
-			EObject choiceStep, EObject t2s, EObject process, EObject sf1, EObject task) {
-		_this.registerObjects_FWD(ruleresult, prevNode, pn2cs, step, flow, choiceStep, t2s, process, sf1, task);
+	public static final void pattern_Task2StepAfterEmptyDef_1_5_expressionBBBBBBBBBBBBB(Task2StepAfterEmptyDef _this,
+			PerformRuleResult ruleresult, EObject prevInFlow, EObject prevNode, EObject pn2cs, EObject step,
+			EObject flow, EObject choiceStep, EObject eg, EObject t2s, EObject process, EObject sf1, EObject task) {
+		_this.registerObjects_FWD(ruleresult, prevInFlow, prevNode, pn2cs, step, flow, choiceStep, eg, t2s, process,
+				sf1, task);
 
 	}
 
@@ -1941,24 +2158,34 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		return new Object[] { performOperation, ruleresult };
 	}
 
-	public static final Object[] pattern_Task2StepAfterEmptyDef_2_2_bindingFFFFB(Match match) {
-		EObject _localVariable_0 = match.getObject("prevNode");
-		EObject _localVariable_1 = match.getObject("process");
-		EObject _localVariable_2 = match.getObject("sf1");
-		EObject _localVariable_3 = match.getObject("task");
-		EObject tmpPrevNode = _localVariable_0;
-		EObject tmpProcess = _localVariable_1;
-		EObject tmpSf1 = _localVariable_2;
-		EObject tmpTask = _localVariable_3;
-		if (tmpPrevNode instanceof ExclusiveGateway) {
-			ExclusiveGateway prevNode = (ExclusiveGateway) tmpPrevNode;
-			if (tmpProcess instanceof de.abilov.bpmn.Process) {
-				de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) tmpProcess;
-				if (tmpSf1 instanceof SequenceFlow) {
-					SequenceFlow sf1 = (SequenceFlow) tmpSf1;
-					if (tmpTask instanceof Task) {
-						Task task = (Task) tmpTask;
-						return new Object[] { prevNode, process, sf1, task, match };
+	public static final Object[] pattern_Task2StepAfterEmptyDef_2_2_bindingFFFFFFB(Match match) {
+		EObject _localVariable_0 = match.getObject("prevInFlow");
+		EObject _localVariable_1 = match.getObject("prevNode");
+		EObject _localVariable_2 = match.getObject("eg");
+		EObject _localVariable_3 = match.getObject("process");
+		EObject _localVariable_4 = match.getObject("sf1");
+		EObject _localVariable_5 = match.getObject("task");
+		EObject tmpPrevInFlow = _localVariable_0;
+		EObject tmpPrevNode = _localVariable_1;
+		EObject tmpEg = _localVariable_2;
+		EObject tmpProcess = _localVariable_3;
+		EObject tmpSf1 = _localVariable_4;
+		EObject tmpTask = _localVariable_5;
+		if (tmpPrevInFlow instanceof SequenceFlow) {
+			SequenceFlow prevInFlow = (SequenceFlow) tmpPrevInFlow;
+			if (tmpPrevNode instanceof ExclusiveGateway) {
+				ExclusiveGateway prevNode = (ExclusiveGateway) tmpPrevNode;
+				if (tmpEg instanceof ExclusiveGateway) {
+					ExclusiveGateway eg = (ExclusiveGateway) tmpEg;
+					if (tmpProcess instanceof de.abilov.bpmn.Process) {
+						de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) tmpProcess;
+						if (tmpSf1 instanceof SequenceFlow) {
+							SequenceFlow sf1 = (SequenceFlow) tmpSf1;
+							if (tmpTask instanceof Task) {
+								Task task = (Task) tmpTask;
+								return new Object[] { prevInFlow, prevNode, eg, process, sf1, task, match };
+							}
+						}
 					}
 				}
 			}
@@ -1966,45 +2193,71 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_Task2StepAfterEmptyDef_2_2_blackBFFBBBB(ExclusiveGateway prevNode,
-			de.abilov.bpmn.Process process, SequenceFlow sf1, Task task, Match match) {
+	public static final Iterable<Object[]> pattern_Task2StepAfterEmptyDef_2_2_blackBBFFBBBBB(SequenceFlow prevInFlow,
+			ExclusiveGateway prevNode, ExclusiveGateway eg, de.abilov.bpmn.Process process, SequenceFlow sf1, Task task,
+			Match match) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
-		boolean prevNodeisDiverging = prevNode.isIsDiverging();
-		if (Boolean.valueOf(prevNodeisDiverging).equals(false)) {
-			for (GW2S pn2cs : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(prevNode, GW2S.class,
-					"source")) {
-				Step tmpChoiceStep = pn2cs.getTarget();
-				if (tmpChoiceStep instanceof ChoiceStep) {
-					ChoiceStep choiceStep = (ChoiceStep) tmpChoiceStep;
-					_result.add(new Object[] { prevNode, pn2cs, choiceStep, process, sf1, task, match });
+		if (!prevInFlow.equals(sf1)) {
+			if (!eg.equals(prevNode)) {
+				boolean prevNodeisDiverging = prevNode.isIsDiverging();
+				if (Boolean.valueOf(prevNodeisDiverging).equals(false)) {
+					boolean egisDiverging = eg.isIsDiverging();
+					if (Boolean.valueOf(egisDiverging).equals(Boolean.valueOf(true))) {
+						for (GW2S pn2cs : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(prevNode,
+								GW2S.class, "source")) {
+							Step tmpChoiceStep = pn2cs.getTarget();
+							if (tmpChoiceStep instanceof ChoiceStep) {
+								ChoiceStep choiceStep = (ChoiceStep) tmpChoiceStep;
+								_result.add(new Object[] { prevInFlow, prevNode, pn2cs, choiceStep, eg, process, sf1,
+										task, match });
+							}
+
+						}
+					}
+
 				}
 
 			}
 		}
-
 		return _result;
 	}
 
-	public static final Iterable<Object[]> pattern_Task2StepAfterEmptyDef_2_3_blackBBFBBBB(ExclusiveGateway prevNode,
-			GW2S pn2cs, ChoiceStep choiceStep, de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
+	public static final Iterable<Object[]> pattern_Task2StepAfterEmptyDef_2_3_blackBBBFBBBBB(SequenceFlow prevInFlow,
+			ExclusiveGateway prevNode, GW2S pn2cs, ChoiceStep choiceStep, ExclusiveGateway eg,
+			de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
-		if (prevNode.equals(pn2cs.getSource())) {
-			if (choiceStep.equals(pn2cs.getTarget())) {
-				if (choiceStep.equals(choiceStep.get__lastInDef())) {
-					if (process.getFlowElements().contains(task)) {
-						if (process.getFlowElements().contains(sf1)) {
-							if (process.getFlowElements().contains(prevNode)) {
-								if (task.equals(sf1.getTargetRef())) {
-									if (prevNode.equals(sf1.getSourceRef())) {
-										boolean prevNodeisDiverging = prevNode.isIsDiverging();
-										if (Boolean.valueOf(prevNodeisDiverging).equals(false)) {
-											for (Flow flow : org.moflon.core.utilities.eMoflonEMFUtil
-													.getOppositeReferenceTyped(choiceStep, Flow.class, "steps")) {
-												_result.add(new Object[] { prevNode, pn2cs, flow, choiceStep, process,
-														sf1, task });
+		if (!prevInFlow.equals(sf1)) {
+			if (!eg.equals(prevNode)) {
+				if (prevNode.equals(prevInFlow.getTargetRef())) {
+					if (prevNode.equals(pn2cs.getSource())) {
+						if (choiceStep.equals(pn2cs.getTarget())) {
+							if (eg.equals(prevInFlow.getSourceRef())) {
+								if (prevInFlow.equals(eg.getDefault())) {
+									if (process.getFlowElements().contains(task)) {
+										if (process.getFlowElements().contains(sf1)) {
+											if (process.getFlowElements().contains(prevNode)) {
+												if (task.equals(sf1.getTargetRef())) {
+													if (prevNode.equals(sf1.getSourceRef())) {
+														boolean prevNodeisDiverging = prevNode.isIsDiverging();
+														if (Boolean.valueOf(prevNodeisDiverging).equals(false)) {
+															boolean egisDiverging = eg.isIsDiverging();
+															if (Boolean.valueOf(egisDiverging)
+																	.equals(Boolean.valueOf(true))) {
+																for (Flow flow : org.moflon.core.utilities.eMoflonEMFUtil
+																		.getOppositeReferenceTyped(choiceStep,
+																				Flow.class, "steps")) {
+																	_result.add(new Object[] { prevInFlow, prevNode,
+																			pn2cs, flow, choiceStep, eg, process, sf1,
+																			task });
+																}
+															}
+
+														}
+
+													}
+												}
 											}
 										}
-
 									}
 								}
 							}
@@ -2016,13 +2269,18 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		return _result;
 	}
 
-	public static final Object[] pattern_Task2StepAfterEmptyDef_2_3_greenBBBBBBBFFFFFFFFFFFF(ExclusiveGateway prevNode,
-			GW2S pn2cs, Flow flow, ChoiceStep choiceStep, de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
+	public static final Object[] pattern_Task2StepAfterEmptyDef_2_3_greenBBBBBBBBBFFFFFFFFFFFFFFFF(
+			SequenceFlow prevInFlow, ExclusiveGateway prevNode, GW2S pn2cs, Flow flow, ChoiceStep choiceStep,
+			ExclusiveGateway eg, de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
 		IsApplicableMatch isApplicableMatch = TGGRuntimeFactory.eINSTANCE.createIsApplicableMatch();
+		EMoflonEdge prevInFlow__prevNode____targetRef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge prevNode__prevInFlow____incoming = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge pn2cs__prevNode____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge pn2cs__choiceStep____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge flow__choiceStep____steps = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge choiceStep__choiceStep______lastInDef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge prevInFlow__eg____sourceRef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge eg__prevInFlow____outgoing = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge eg__prevInFlow____default = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge process__task____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge process__sf1____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge process__prevNode____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
@@ -2030,10 +2288,14 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		EMoflonEdge task__sf1____incoming = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge sf1__prevNode____sourceRef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge prevNode__sf1____outgoing = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		String prevInFlow__prevNode____targetRef_name_prime = "targetRef";
+		String prevNode__prevInFlow____incoming_name_prime = "incoming";
 		String pn2cs__prevNode____source_name_prime = "source";
 		String pn2cs__choiceStep____target_name_prime = "target";
 		String flow__choiceStep____steps_name_prime = "steps";
-		String choiceStep__choiceStep______lastInDef_name_prime = "__lastInDef";
+		String prevInFlow__eg____sourceRef_name_prime = "sourceRef";
+		String eg__prevInFlow____outgoing_name_prime = "outgoing";
+		String eg__prevInFlow____default_name_prime = "default";
 		String process__task____flowElements_name_prime = "flowElements";
 		String process__sf1____flowElements_name_prime = "flowElements";
 		String process__prevNode____flowElements_name_prime = "flowElements";
@@ -2041,13 +2303,21 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		String task__sf1____incoming_name_prime = "incoming";
 		String sf1__prevNode____sourceRef_name_prime = "sourceRef";
 		String prevNode__sf1____outgoing_name_prime = "outgoing";
+		isApplicableMatch.getAllContextElements().add(prevInFlow);
 		isApplicableMatch.getAllContextElements().add(prevNode);
 		isApplicableMatch.getAllContextElements().add(pn2cs);
 		isApplicableMatch.getAllContextElements().add(flow);
 		isApplicableMatch.getAllContextElements().add(choiceStep);
+		isApplicableMatch.getAllContextElements().add(eg);
 		isApplicableMatch.getAllContextElements().add(process);
 		isApplicableMatch.getAllContextElements().add(sf1);
 		isApplicableMatch.getAllContextElements().add(task);
+		prevInFlow__prevNode____targetRef.setSrc(prevInFlow);
+		prevInFlow__prevNode____targetRef.setTrg(prevNode);
+		isApplicableMatch.getAllContextElements().add(prevInFlow__prevNode____targetRef);
+		prevNode__prevInFlow____incoming.setSrc(prevNode);
+		prevNode__prevInFlow____incoming.setTrg(prevInFlow);
+		isApplicableMatch.getAllContextElements().add(prevNode__prevInFlow____incoming);
 		pn2cs__prevNode____source.setSrc(pn2cs);
 		pn2cs__prevNode____source.setTrg(prevNode);
 		isApplicableMatch.getAllContextElements().add(pn2cs__prevNode____source);
@@ -2057,9 +2327,15 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		flow__choiceStep____steps.setSrc(flow);
 		flow__choiceStep____steps.setTrg(choiceStep);
 		isApplicableMatch.getAllContextElements().add(flow__choiceStep____steps);
-		choiceStep__choiceStep______lastInDef.setSrc(choiceStep);
-		choiceStep__choiceStep______lastInDef.setTrg(choiceStep);
-		isApplicableMatch.getAllContextElements().add(choiceStep__choiceStep______lastInDef);
+		prevInFlow__eg____sourceRef.setSrc(prevInFlow);
+		prevInFlow__eg____sourceRef.setTrg(eg);
+		isApplicableMatch.getAllContextElements().add(prevInFlow__eg____sourceRef);
+		eg__prevInFlow____outgoing.setSrc(eg);
+		eg__prevInFlow____outgoing.setTrg(prevInFlow);
+		isApplicableMatch.getAllContextElements().add(eg__prevInFlow____outgoing);
+		eg__prevInFlow____default.setSrc(eg);
+		eg__prevInFlow____default.setTrg(prevInFlow);
+		isApplicableMatch.getAllContextElements().add(eg__prevInFlow____default);
 		process__task____flowElements.setSrc(process);
 		process__task____flowElements.setTrg(task);
 		isApplicableMatch.getAllContextElements().add(process__task____flowElements);
@@ -2081,10 +2357,14 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		prevNode__sf1____outgoing.setSrc(prevNode);
 		prevNode__sf1____outgoing.setTrg(sf1);
 		isApplicableMatch.getAllContextElements().add(prevNode__sf1____outgoing);
+		prevInFlow__prevNode____targetRef.setName(prevInFlow__prevNode____targetRef_name_prime);
+		prevNode__prevInFlow____incoming.setName(prevNode__prevInFlow____incoming_name_prime);
 		pn2cs__prevNode____source.setName(pn2cs__prevNode____source_name_prime);
 		pn2cs__choiceStep____target.setName(pn2cs__choiceStep____target_name_prime);
 		flow__choiceStep____steps.setName(flow__choiceStep____steps_name_prime);
-		choiceStep__choiceStep______lastInDef.setName(choiceStep__choiceStep______lastInDef_name_prime);
+		prevInFlow__eg____sourceRef.setName(prevInFlow__eg____sourceRef_name_prime);
+		eg__prevInFlow____outgoing.setName(eg__prevInFlow____outgoing_name_prime);
+		eg__prevInFlow____default.setName(eg__prevInFlow____default_name_prime);
 		process__task____flowElements.setName(process__task____flowElements_name_prime);
 		process__sf1____flowElements.setName(process__sf1____flowElements_name_prime);
 		process__prevNode____flowElements.setName(process__prevNode____flowElements_name_prime);
@@ -2092,22 +2372,24 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		task__sf1____incoming.setName(task__sf1____incoming_name_prime);
 		sf1__prevNode____sourceRef.setName(sf1__prevNode____sourceRef_name_prime);
 		prevNode__sf1____outgoing.setName(prevNode__sf1____outgoing_name_prime);
-		return new Object[] { prevNode, pn2cs, flow, choiceStep, process, sf1, task, isApplicableMatch,
-				pn2cs__prevNode____source, pn2cs__choiceStep____target, flow__choiceStep____steps,
-				choiceStep__choiceStep______lastInDef, process__task____flowElements, process__sf1____flowElements,
-				process__prevNode____flowElements, sf1__task____targetRef, task__sf1____incoming,
-				sf1__prevNode____sourceRef, prevNode__sf1____outgoing };
+		return new Object[] { prevInFlow, prevNode, pn2cs, flow, choiceStep, eg, process, sf1, task, isApplicableMatch,
+				prevInFlow__prevNode____targetRef, prevNode__prevInFlow____incoming, pn2cs__prevNode____source,
+				pn2cs__choiceStep____target, flow__choiceStep____steps, prevInFlow__eg____sourceRef,
+				eg__prevInFlow____outgoing, eg__prevInFlow____default, process__task____flowElements,
+				process__sf1____flowElements, process__prevNode____flowElements, sf1__task____targetRef,
+				task__sf1____incoming, sf1__prevNode____sourceRef, prevNode__sf1____outgoing };
 	}
 
-	public static final Object[] pattern_Task2StepAfterEmptyDef_2_4_bindingFBBBBBBBBB(Task2StepAfterEmptyDef _this,
-			IsApplicableMatch isApplicableMatch, ExclusiveGateway prevNode, GW2S pn2cs, Flow flow,
-			ChoiceStep choiceStep, de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
-		CSP _localVariable_0 = _this.isApplicable_solveCsp_FWD(isApplicableMatch, prevNode, pn2cs, flow, choiceStep,
-				process, sf1, task);
+	public static final Object[] pattern_Task2StepAfterEmptyDef_2_4_bindingFBBBBBBBBBBB(Task2StepAfterEmptyDef _this,
+			IsApplicableMatch isApplicableMatch, SequenceFlow prevInFlow, ExclusiveGateway prevNode, GW2S pn2cs,
+			Flow flow, ChoiceStep choiceStep, ExclusiveGateway eg, de.abilov.bpmn.Process process, SequenceFlow sf1,
+			Task task) {
+		CSP _localVariable_0 = _this.isApplicable_solveCsp_FWD(isApplicableMatch, prevInFlow, prevNode, pn2cs, flow,
+				choiceStep, eg, process, sf1, task);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, isApplicableMatch, prevNode, pn2cs, flow, choiceStep, process, sf1,
-					task };
+			return new Object[] { csp, _this, isApplicableMatch, prevInFlow, prevNode, pn2cs, flow, choiceStep, eg,
+					process, sf1, task };
 		}
 		return null;
 	}
@@ -2116,19 +2398,20 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		return new Object[] { csp };
 	}
 
-	public static final Object[] pattern_Task2StepAfterEmptyDef_2_4_bindingAndBlackFBBBBBBBBB(
-			Task2StepAfterEmptyDef _this, IsApplicableMatch isApplicableMatch, ExclusiveGateway prevNode, GW2S pn2cs,
-			Flow flow, ChoiceStep choiceStep, de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
-		Object[] result_pattern_Task2StepAfterEmptyDef_2_4_binding = pattern_Task2StepAfterEmptyDef_2_4_bindingFBBBBBBBBB(
-				_this, isApplicableMatch, prevNode, pn2cs, flow, choiceStep, process, sf1, task);
+	public static final Object[] pattern_Task2StepAfterEmptyDef_2_4_bindingAndBlackFBBBBBBBBBBB(
+			Task2StepAfterEmptyDef _this, IsApplicableMatch isApplicableMatch, SequenceFlow prevInFlow,
+			ExclusiveGateway prevNode, GW2S pn2cs, Flow flow, ChoiceStep choiceStep, ExclusiveGateway eg,
+			de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
+		Object[] result_pattern_Task2StepAfterEmptyDef_2_4_binding = pattern_Task2StepAfterEmptyDef_2_4_bindingFBBBBBBBBBBB(
+				_this, isApplicableMatch, prevInFlow, prevNode, pn2cs, flow, choiceStep, eg, process, sf1, task);
 		if (result_pattern_Task2StepAfterEmptyDef_2_4_binding != null) {
 			CSP csp = (CSP) result_pattern_Task2StepAfterEmptyDef_2_4_binding[0];
 
 			Object[] result_pattern_Task2StepAfterEmptyDef_2_4_black = pattern_Task2StepAfterEmptyDef_2_4_blackB(csp);
 			if (result_pattern_Task2StepAfterEmptyDef_2_4_black != null) {
 
-				return new Object[] { csp, _this, isApplicableMatch, prevNode, pn2cs, flow, choiceStep, process, sf1,
-						task };
+				return new Object[] { csp, _this, isApplicableMatch, prevInFlow, prevNode, pn2cs, flow, choiceStep, eg,
+						process, sf1, task };
 			}
 		}
 		return null;
@@ -2232,24 +2515,17 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		return new Object[] { match, step, flow, choiceStep };
 	}
 
-	public static final Object[] pattern_Task2StepAfterEmptyDef_10_5_greenBBBFF(Match match, Flow flow,
+	public static final Object[] pattern_Task2StepAfterEmptyDef_10_5_greenBBBF(Match match, Flow flow,
 			ChoiceStep choiceStep) {
 		EMoflonEdge flow__choiceStep____steps = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge choiceStep__choiceStep______lastInDef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		match.getContextNodes().add(flow);
 		match.getContextNodes().add(choiceStep);
 		String flow__choiceStep____steps_name_prime = "steps";
-		String choiceStep__choiceStep______lastInDef_name_prime = "__lastInDef";
 		flow__choiceStep____steps.setSrc(flow);
 		flow__choiceStep____steps.setTrg(choiceStep);
 		match.getContextEdges().add(flow__choiceStep____steps);
-		choiceStep__choiceStep______lastInDef.setSrc(choiceStep);
-		choiceStep__choiceStep______lastInDef.setTrg(choiceStep);
-		match.getContextEdges().add(choiceStep__choiceStep______lastInDef);
 		flow__choiceStep____steps.setName(flow__choiceStep____steps_name_prime);
-		choiceStep__choiceStep______lastInDef.setName(choiceStep__choiceStep______lastInDef_name_prime);
-		return new Object[] { match, flow, choiceStep, flow__choiceStep____steps,
-				choiceStep__choiceStep______lastInDef };
+		return new Object[] { match, flow, choiceStep, flow__choiceStep____steps };
 	}
 
 	public static final void pattern_Task2StepAfterEmptyDef_10_6_expressionBBBBB(Task2StepAfterEmptyDef _this,
@@ -2268,34 +2544,44 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		return _result;
 	}
 
-	public static final Object[] pattern_Task2StepAfterEmptyDef_11_1_bindingFFFFFFB(
+	public static final Object[] pattern_Task2StepAfterEmptyDef_11_1_bindingFFFFFFFFB(
 			IsApplicableMatch isApplicableMatch) {
-		EObject _localVariable_0 = isApplicableMatch.getObject("prevNode");
-		EObject _localVariable_1 = isApplicableMatch.getObject("pn2cs");
-		EObject _localVariable_2 = isApplicableMatch.getObject("step");
-		EObject _localVariable_3 = isApplicableMatch.getObject("flow");
-		EObject _localVariable_4 = isApplicableMatch.getObject("choiceStep");
-		EObject _localVariable_5 = isApplicableMatch.getObject("process");
-		EObject tmpPrevNode = _localVariable_0;
-		EObject tmpPn2cs = _localVariable_1;
-		EObject tmpStep = _localVariable_2;
-		EObject tmpFlow = _localVariable_3;
-		EObject tmpChoiceStep = _localVariable_4;
-		EObject tmpProcess = _localVariable_5;
-		if (tmpPrevNode instanceof ExclusiveGateway) {
-			ExclusiveGateway prevNode = (ExclusiveGateway) tmpPrevNode;
-			if (tmpPn2cs instanceof GW2S) {
-				GW2S pn2cs = (GW2S) tmpPn2cs;
-				if (tmpStep instanceof NormalStep) {
-					NormalStep step = (NormalStep) tmpStep;
-					if (tmpFlow instanceof Flow) {
-						Flow flow = (Flow) tmpFlow;
-						if (tmpChoiceStep instanceof ChoiceStep) {
-							ChoiceStep choiceStep = (ChoiceStep) tmpChoiceStep;
-							if (tmpProcess instanceof de.abilov.bpmn.Process) {
-								de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) tmpProcess;
-								return new Object[] { prevNode, pn2cs, step, flow, choiceStep, process,
-										isApplicableMatch };
+		EObject _localVariable_0 = isApplicableMatch.getObject("prevInFlow");
+		EObject _localVariable_1 = isApplicableMatch.getObject("prevNode");
+		EObject _localVariable_2 = isApplicableMatch.getObject("pn2cs");
+		EObject _localVariable_3 = isApplicableMatch.getObject("step");
+		EObject _localVariable_4 = isApplicableMatch.getObject("flow");
+		EObject _localVariable_5 = isApplicableMatch.getObject("choiceStep");
+		EObject _localVariable_6 = isApplicableMatch.getObject("eg");
+		EObject _localVariable_7 = isApplicableMatch.getObject("process");
+		EObject tmpPrevInFlow = _localVariable_0;
+		EObject tmpPrevNode = _localVariable_1;
+		EObject tmpPn2cs = _localVariable_2;
+		EObject tmpStep = _localVariable_3;
+		EObject tmpFlow = _localVariable_4;
+		EObject tmpChoiceStep = _localVariable_5;
+		EObject tmpEg = _localVariable_6;
+		EObject tmpProcess = _localVariable_7;
+		if (tmpPrevInFlow instanceof SequenceFlow) {
+			SequenceFlow prevInFlow = (SequenceFlow) tmpPrevInFlow;
+			if (tmpPrevNode instanceof ExclusiveGateway) {
+				ExclusiveGateway prevNode = (ExclusiveGateway) tmpPrevNode;
+				if (tmpPn2cs instanceof GW2S) {
+					GW2S pn2cs = (GW2S) tmpPn2cs;
+					if (tmpStep instanceof NormalStep) {
+						NormalStep step = (NormalStep) tmpStep;
+						if (tmpFlow instanceof Flow) {
+							Flow flow = (Flow) tmpFlow;
+							if (tmpChoiceStep instanceof ChoiceStep) {
+								ChoiceStep choiceStep = (ChoiceStep) tmpChoiceStep;
+								if (tmpEg instanceof ExclusiveGateway) {
+									ExclusiveGateway eg = (ExclusiveGateway) tmpEg;
+									if (tmpProcess instanceof de.abilov.bpmn.Process) {
+										de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) tmpProcess;
+										return new Object[] { prevInFlow, prevNode, pn2cs, step, flow, choiceStep, eg,
+												process, isApplicableMatch };
+									}
+								}
 							}
 						}
 					}
@@ -2305,36 +2591,43 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		return null;
 	}
 
-	public static final Object[] pattern_Task2StepAfterEmptyDef_11_1_blackBBBBBBBFB(ExclusiveGateway prevNode,
-			GW2S pn2cs, NormalStep step, Flow flow, ChoiceStep choiceStep, de.abilov.bpmn.Process process,
-			Task2StepAfterEmptyDef _this, IsApplicableMatch isApplicableMatch) {
-		for (EObject tmpCsp : isApplicableMatch.getAttributeInfo()) {
-			if (tmpCsp instanceof CSP) {
-				CSP csp = (CSP) tmpCsp;
-				return new Object[] { prevNode, pn2cs, step, flow, choiceStep, process, _this, csp, isApplicableMatch };
+	public static final Object[] pattern_Task2StepAfterEmptyDef_11_1_blackBBBBBBBBBFB(SequenceFlow prevInFlow,
+			ExclusiveGateway prevNode, GW2S pn2cs, NormalStep step, Flow flow, ChoiceStep choiceStep,
+			ExclusiveGateway eg, de.abilov.bpmn.Process process, Task2StepAfterEmptyDef _this,
+			IsApplicableMatch isApplicableMatch) {
+		if (!eg.equals(prevNode)) {
+			for (EObject tmpCsp : isApplicableMatch.getAttributeInfo()) {
+				if (tmpCsp instanceof CSP) {
+					CSP csp = (CSP) tmpCsp;
+					return new Object[] { prevInFlow, prevNode, pn2cs, step, flow, choiceStep, eg, process, _this, csp,
+							isApplicableMatch };
+				}
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_Task2StepAfterEmptyDef_11_1_bindingAndBlackFFFFFFBFB(
+	public static final Object[] pattern_Task2StepAfterEmptyDef_11_1_bindingAndBlackFFFFFFFFBFB(
 			Task2StepAfterEmptyDef _this, IsApplicableMatch isApplicableMatch) {
-		Object[] result_pattern_Task2StepAfterEmptyDef_11_1_binding = pattern_Task2StepAfterEmptyDef_11_1_bindingFFFFFFB(
+		Object[] result_pattern_Task2StepAfterEmptyDef_11_1_binding = pattern_Task2StepAfterEmptyDef_11_1_bindingFFFFFFFFB(
 				isApplicableMatch);
 		if (result_pattern_Task2StepAfterEmptyDef_11_1_binding != null) {
-			ExclusiveGateway prevNode = (ExclusiveGateway) result_pattern_Task2StepAfterEmptyDef_11_1_binding[0];
-			GW2S pn2cs = (GW2S) result_pattern_Task2StepAfterEmptyDef_11_1_binding[1];
-			NormalStep step = (NormalStep) result_pattern_Task2StepAfterEmptyDef_11_1_binding[2];
-			Flow flow = (Flow) result_pattern_Task2StepAfterEmptyDef_11_1_binding[3];
-			ChoiceStep choiceStep = (ChoiceStep) result_pattern_Task2StepAfterEmptyDef_11_1_binding[4];
-			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result_pattern_Task2StepAfterEmptyDef_11_1_binding[5];
+			SequenceFlow prevInFlow = (SequenceFlow) result_pattern_Task2StepAfterEmptyDef_11_1_binding[0];
+			ExclusiveGateway prevNode = (ExclusiveGateway) result_pattern_Task2StepAfterEmptyDef_11_1_binding[1];
+			GW2S pn2cs = (GW2S) result_pattern_Task2StepAfterEmptyDef_11_1_binding[2];
+			NormalStep step = (NormalStep) result_pattern_Task2StepAfterEmptyDef_11_1_binding[3];
+			Flow flow = (Flow) result_pattern_Task2StepAfterEmptyDef_11_1_binding[4];
+			ChoiceStep choiceStep = (ChoiceStep) result_pattern_Task2StepAfterEmptyDef_11_1_binding[5];
+			ExclusiveGateway eg = (ExclusiveGateway) result_pattern_Task2StepAfterEmptyDef_11_1_binding[6];
+			de.abilov.bpmn.Process process = (de.abilov.bpmn.Process) result_pattern_Task2StepAfterEmptyDef_11_1_binding[7];
 
-			Object[] result_pattern_Task2StepAfterEmptyDef_11_1_black = pattern_Task2StepAfterEmptyDef_11_1_blackBBBBBBBFB(
-					prevNode, pn2cs, step, flow, choiceStep, process, _this, isApplicableMatch);
+			Object[] result_pattern_Task2StepAfterEmptyDef_11_1_black = pattern_Task2StepAfterEmptyDef_11_1_blackBBBBBBBBBFB(
+					prevInFlow, prevNode, pn2cs, step, flow, choiceStep, eg, process, _this, isApplicableMatch);
 			if (result_pattern_Task2StepAfterEmptyDef_11_1_black != null) {
-				CSP csp = (CSP) result_pattern_Task2StepAfterEmptyDef_11_1_black[7];
+				CSP csp = (CSP) result_pattern_Task2StepAfterEmptyDef_11_1_black[9];
 
-				return new Object[] { prevNode, pn2cs, step, flow, choiceStep, process, _this, csp, isApplicableMatch };
+				return new Object[] { prevInFlow, prevNode, pn2cs, step, flow, choiceStep, eg, process, _this, csp,
+						isApplicableMatch };
 			}
 		}
 		return null;
@@ -2372,72 +2665,130 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		return new Object[] { ruleresult, step, t2s, sf1, task };
 	}
 
-	public static final Object[] pattern_Task2StepAfterEmptyDef_11_3_blackBBBBBBBBBB(PerformRuleResult ruleresult,
-			EObject prevNode, EObject pn2cs, EObject step, EObject flow, EObject choiceStep, EObject t2s,
-			EObject process, EObject sf1, EObject task) {
-		if (!prevNode.equals(step)) {
-			if (!prevNode.equals(t2s)) {
-				if (!prevNode.equals(process)) {
-					if (!prevNode.equals(sf1)) {
-						if (!prevNode.equals(task)) {
-							if (!pn2cs.equals(prevNode)) {
-								if (!pn2cs.equals(step)) {
-									if (!pn2cs.equals(t2s)) {
-										if (!pn2cs.equals(process)) {
-											if (!pn2cs.equals(sf1)) {
-												if (!pn2cs.equals(task)) {
-													if (!step.equals(t2s)) {
-														if (!step.equals(task)) {
-															if (!flow.equals(prevNode)) {
-																if (!flow.equals(pn2cs)) {
-																	if (!flow.equals(step)) {
-																		if (!flow.equals(t2s)) {
-																			if (!flow.equals(process)) {
-																				if (!flow.equals(sf1)) {
-																					if (!flow.equals(task)) {
-																						if (!choiceStep
-																								.equals(prevNode)) {
-																							if (!choiceStep
-																									.equals(pn2cs)) {
-																								if (!choiceStep
-																										.equals(step)) {
-																									if (!choiceStep
-																											.equals(flow)) {
-																										if (!choiceStep
+	public static final Object[] pattern_Task2StepAfterEmptyDef_11_3_blackBBBBBBBBBBBB(PerformRuleResult ruleresult,
+			EObject prevInFlow, EObject prevNode, EObject pn2cs, EObject step, EObject flow, EObject choiceStep,
+			EObject eg, EObject t2s, EObject process, EObject sf1, EObject task) {
+		if (!prevInFlow.equals(prevNode)) {
+			if (!prevInFlow.equals(step)) {
+				if (!prevInFlow.equals(t2s)) {
+					if (!prevInFlow.equals(process)) {
+						if (!prevInFlow.equals(sf1)) {
+							if (!prevInFlow.equals(task)) {
+								if (!prevNode.equals(step)) {
+									if (!prevNode.equals(t2s)) {
+										if (!prevNode.equals(process)) {
+											if (!prevNode.equals(sf1)) {
+												if (!prevNode.equals(task)) {
+													if (!pn2cs.equals(prevInFlow)) {
+														if (!pn2cs.equals(prevNode)) {
+															if (!pn2cs.equals(step)) {
+																if (!pn2cs.equals(t2s)) {
+																	if (!pn2cs.equals(process)) {
+																		if (!pn2cs.equals(sf1)) {
+																			if (!pn2cs.equals(task)) {
+																				if (!step.equals(t2s)) {
+																					if (!step.equals(task)) {
+																						if (!flow.equals(prevInFlow)) {
+																							if (!flow
+																									.equals(prevNode)) {
+																								if (!flow.equals(
+																										pn2cs)) {
+																									if (!flow.equals(
+																											step)) {
+																										if (!flow
 																												.equals(t2s)) {
-																											if (!choiceStep
+																											if (!flow
 																													.equals(process)) {
-																												if (!choiceStep
+																												if (!flow
 																														.equals(sf1)) {
-																													if (!choiceStep
+																													if (!flow
 																															.equals(task)) {
-																														if (!t2s.equals(
-																																task)) {
-																															if (!process
-																																	.equals(step)) {
-																																if (!process
-																																		.equals(t2s)) {
-																																	if (!process
-																																			.equals(sf1)) {
-																																		if (!process
-																																				.equals(task)) {
-																																			if (!sf1.equals(
-																																					step)) {
-																																				if (!sf1.equals(
-																																						t2s)) {
-																																					if (!sf1.equals(
-																																							task)) {
-																																						return new Object[] {
-																																								ruleresult,
-																																								prevNode,
-																																								pn2cs,
-																																								step,
-																																								flow,
-																																								choiceStep,
-																																								t2s,
-																																								process,
-																																								sf1,
-																																								task };
+																														if (!choiceStep
+																																.equals(prevInFlow)) {
+																															if (!choiceStep
+																																	.equals(prevNode)) {
+																																if (!choiceStep
+																																		.equals(pn2cs)) {
+																																	if (!choiceStep
+																																			.equals(step)) {
+																																		if (!choiceStep
+																																				.equals(flow)) {
+																																			if (!choiceStep
+																																					.equals(eg)) {
+																																				if (!choiceStep
+																																						.equals(t2s)) {
+																																					if (!choiceStep
+																																							.equals(process)) {
+																																						if (!choiceStep
+																																								.equals(sf1)) {
+																																							if (!choiceStep
+																																									.equals(task)) {
+																																								if (!eg.equals(
+																																										prevInFlow)) {
+																																									if (!eg.equals(
+																																											prevNode)) {
+																																										if (!eg.equals(
+																																												pn2cs)) {
+																																											if (!eg.equals(
+																																													step)) {
+																																												if (!eg.equals(
+																																														flow)) {
+																																													if (!eg.equals(
+																																															t2s)) {
+																																														if (!eg.equals(
+																																																process)) {
+																																															if (!eg.equals(
+																																																	sf1)) {
+																																																if (!eg.equals(
+																																																		task)) {
+																																																	if (!t2s.equals(
+																																																			task)) {
+																																																		if (!process
+																																																				.equals(step)) {
+																																																			if (!process
+																																																					.equals(t2s)) {
+																																																				if (!process
+																																																						.equals(sf1)) {
+																																																					if (!process
+																																																							.equals(task)) {
+																																																						if (!sf1.equals(
+																																																								step)) {
+																																																							if (!sf1.equals(
+																																																									t2s)) {
+																																																								if (!sf1.equals(
+																																																										task)) {
+																																																									return new Object[] {
+																																																											ruleresult,
+																																																											prevInFlow,
+																																																											prevNode,
+																																																											pn2cs,
+																																																											step,
+																																																											flow,
+																																																											choiceStep,
+																																																											eg,
+																																																											t2s,
+																																																											process,
+																																																											sf1,
+																																																											task };
+																																																								}
+																																																							}
+																																																						}
+																																																					}
+																																																				}
+																																																			}
+																																																		}
+																																																	}
+																																																}
+																																															}
+																																														}
+																																													}
+																																												}
+																																											}
+																																										}
+																																									}
+																																								}
+																																							}
+																																						}
 																																					}
 																																				}
 																																			}
@@ -2548,10 +2899,11 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 				task__sf1____incoming, sf1__prevNode____sourceRef, prevNode__sf1____outgoing };
 	}
 
-	public static final void pattern_Task2StepAfterEmptyDef_11_5_expressionBBBBBBBBBBB(Task2StepAfterEmptyDef _this,
-			PerformRuleResult ruleresult, EObject prevNode, EObject pn2cs, EObject step, EObject flow,
-			EObject choiceStep, EObject t2s, EObject process, EObject sf1, EObject task) {
-		_this.registerObjects_BWD(ruleresult, prevNode, pn2cs, step, flow, choiceStep, t2s, process, sf1, task);
+	public static final void pattern_Task2StepAfterEmptyDef_11_5_expressionBBBBBBBBBBBBB(Task2StepAfterEmptyDef _this,
+			PerformRuleResult ruleresult, EObject prevInFlow, EObject prevNode, EObject pn2cs, EObject step,
+			EObject flow, EObject choiceStep, EObject eg, EObject t2s, EObject process, EObject sf1, EObject task) {
+		_this.registerObjects_BWD(ruleresult, prevInFlow, prevNode, pn2cs, step, flow, choiceStep, eg, t2s, process,
+				sf1, task);
 
 	}
 
@@ -2648,7 +3000,7 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		return _result;
 	}
 
-	public static final Iterable<Object[]> pattern_Task2StepAfterEmptyDef_12_3_blackBBBBBF(ExclusiveGateway prevNode,
+	public static final Iterable<Object[]> pattern_Task2StepAfterEmptyDef_12_3_blackFBBBBBFF(ExclusiveGateway prevNode,
 			GW2S pn2cs, NormalStep step, Flow flow, ChoiceStep choiceStep) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		if (prevNode.equals(pn2cs.getSource())) {
@@ -2656,17 +3008,31 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 				if (flow.getSteps().contains(step)) {
 					if (flow.getSteps().contains(choiceStep)) {
 						if (step.equals(choiceStep.getNext())) {
-							if (choiceStep.equals(choiceStep.get__lastInDef())) {
-								boolean prevNodeisDiverging = prevNode.isIsDiverging();
-								if (Boolean.valueOf(prevNodeisDiverging).equals(false)) {
-									for (de.abilov.bpmn.Process process : org.moflon.core.utilities.eMoflonEMFUtil
-											.getOppositeReferenceTyped(prevNode, de.abilov.bpmn.Process.class,
-													"flowElements")) {
-										_result.add(new Object[] { prevNode, pn2cs, step, flow, choiceStep, process });
-									}
-								}
+							boolean prevNodeisDiverging = prevNode.isIsDiverging();
+							if (Boolean.valueOf(prevNodeisDiverging).equals(false)) {
+								for (SequenceFlow prevInFlow : prevNode.getIncoming()) {
+									FlowNode tmpEg = prevInFlow.getSourceRef();
+									if (tmpEg instanceof ExclusiveGateway) {
+										ExclusiveGateway eg = (ExclusiveGateway) tmpEg;
+										if (!eg.equals(prevNode)) {
+											if (prevInFlow.equals(eg.getDefault())) {
+												boolean egisDiverging = eg.isIsDiverging();
+												if (Boolean.valueOf(egisDiverging).equals(Boolean.valueOf(true))) {
+													for (de.abilov.bpmn.Process process : org.moflon.core.utilities.eMoflonEMFUtil
+															.getOppositeReferenceTyped(prevNode,
+																	de.abilov.bpmn.Process.class, "flowElements")) {
+														_result.add(new Object[] { prevInFlow, prevNode, pn2cs, step,
+																flow, choiceStep, eg, process });
+													}
+												}
 
+											}
+										}
+									}
+
+								}
 							}
+
 						}
 					}
 				}
@@ -2675,29 +3041,46 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		return _result;
 	}
 
-	public static final Object[] pattern_Task2StepAfterEmptyDef_12_3_greenBBBBBBFFFFFFFF(ExclusiveGateway prevNode,
-			GW2S pn2cs, NormalStep step, Flow flow, ChoiceStep choiceStep, de.abilov.bpmn.Process process) {
+	public static final Object[] pattern_Task2StepAfterEmptyDef_12_3_greenBBBBBBBBFFFFFFFFFFFF(SequenceFlow prevInFlow,
+			ExclusiveGateway prevNode, GW2S pn2cs, NormalStep step, Flow flow, ChoiceStep choiceStep,
+			ExclusiveGateway eg, de.abilov.bpmn.Process process) {
 		IsApplicableMatch isApplicableMatch = TGGRuntimeFactory.eINSTANCE.createIsApplicableMatch();
+		EMoflonEdge prevInFlow__prevNode____targetRef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge prevNode__prevInFlow____incoming = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge pn2cs__prevNode____source = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge pn2cs__choiceStep____target = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge flow__step____steps = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge flow__choiceStep____steps = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge choiceStep__step____next = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge choiceStep__choiceStep______lastInDef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge prevInFlow__eg____sourceRef = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge eg__prevInFlow____outgoing = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge eg__prevInFlow____default = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge process__prevNode____flowElements = TGGRuntimeFactory.eINSTANCE.createEMoflonEdge();
+		String prevInFlow__prevNode____targetRef_name_prime = "targetRef";
+		String prevNode__prevInFlow____incoming_name_prime = "incoming";
 		String pn2cs__prevNode____source_name_prime = "source";
 		String pn2cs__choiceStep____target_name_prime = "target";
 		String flow__step____steps_name_prime = "steps";
 		String flow__choiceStep____steps_name_prime = "steps";
 		String choiceStep__step____next_name_prime = "next";
-		String choiceStep__choiceStep______lastInDef_name_prime = "__lastInDef";
+		String prevInFlow__eg____sourceRef_name_prime = "sourceRef";
+		String eg__prevInFlow____outgoing_name_prime = "outgoing";
+		String eg__prevInFlow____default_name_prime = "default";
 		String process__prevNode____flowElements_name_prime = "flowElements";
+		isApplicableMatch.getAllContextElements().add(prevInFlow);
 		isApplicableMatch.getAllContextElements().add(prevNode);
 		isApplicableMatch.getAllContextElements().add(pn2cs);
 		isApplicableMatch.getAllContextElements().add(step);
 		isApplicableMatch.getAllContextElements().add(flow);
 		isApplicableMatch.getAllContextElements().add(choiceStep);
+		isApplicableMatch.getAllContextElements().add(eg);
 		isApplicableMatch.getAllContextElements().add(process);
+		prevInFlow__prevNode____targetRef.setSrc(prevInFlow);
+		prevInFlow__prevNode____targetRef.setTrg(prevNode);
+		isApplicableMatch.getAllContextElements().add(prevInFlow__prevNode____targetRef);
+		prevNode__prevInFlow____incoming.setSrc(prevNode);
+		prevNode__prevInFlow____incoming.setTrg(prevInFlow);
+		isApplicableMatch.getAllContextElements().add(prevNode__prevInFlow____incoming);
 		pn2cs__prevNode____source.setSrc(pn2cs);
 		pn2cs__prevNode____source.setTrg(prevNode);
 		isApplicableMatch.getAllContextElements().add(pn2cs__prevNode____source);
@@ -2713,32 +3096,45 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		choiceStep__step____next.setSrc(choiceStep);
 		choiceStep__step____next.setTrg(step);
 		isApplicableMatch.getAllContextElements().add(choiceStep__step____next);
-		choiceStep__choiceStep______lastInDef.setSrc(choiceStep);
-		choiceStep__choiceStep______lastInDef.setTrg(choiceStep);
-		isApplicableMatch.getAllContextElements().add(choiceStep__choiceStep______lastInDef);
+		prevInFlow__eg____sourceRef.setSrc(prevInFlow);
+		prevInFlow__eg____sourceRef.setTrg(eg);
+		isApplicableMatch.getAllContextElements().add(prevInFlow__eg____sourceRef);
+		eg__prevInFlow____outgoing.setSrc(eg);
+		eg__prevInFlow____outgoing.setTrg(prevInFlow);
+		isApplicableMatch.getAllContextElements().add(eg__prevInFlow____outgoing);
+		eg__prevInFlow____default.setSrc(eg);
+		eg__prevInFlow____default.setTrg(prevInFlow);
+		isApplicableMatch.getAllContextElements().add(eg__prevInFlow____default);
 		process__prevNode____flowElements.setSrc(process);
 		process__prevNode____flowElements.setTrg(prevNode);
 		isApplicableMatch.getAllContextElements().add(process__prevNode____flowElements);
+		prevInFlow__prevNode____targetRef.setName(prevInFlow__prevNode____targetRef_name_prime);
+		prevNode__prevInFlow____incoming.setName(prevNode__prevInFlow____incoming_name_prime);
 		pn2cs__prevNode____source.setName(pn2cs__prevNode____source_name_prime);
 		pn2cs__choiceStep____target.setName(pn2cs__choiceStep____target_name_prime);
 		flow__step____steps.setName(flow__step____steps_name_prime);
 		flow__choiceStep____steps.setName(flow__choiceStep____steps_name_prime);
 		choiceStep__step____next.setName(choiceStep__step____next_name_prime);
-		choiceStep__choiceStep______lastInDef.setName(choiceStep__choiceStep______lastInDef_name_prime);
+		prevInFlow__eg____sourceRef.setName(prevInFlow__eg____sourceRef_name_prime);
+		eg__prevInFlow____outgoing.setName(eg__prevInFlow____outgoing_name_prime);
+		eg__prevInFlow____default.setName(eg__prevInFlow____default_name_prime);
 		process__prevNode____flowElements.setName(process__prevNode____flowElements_name_prime);
-		return new Object[] { prevNode, pn2cs, step, flow, choiceStep, process, isApplicableMatch,
-				pn2cs__prevNode____source, pn2cs__choiceStep____target, flow__step____steps, flow__choiceStep____steps,
-				choiceStep__step____next, choiceStep__choiceStep______lastInDef, process__prevNode____flowElements };
+		return new Object[] { prevInFlow, prevNode, pn2cs, step, flow, choiceStep, eg, process, isApplicableMatch,
+				prevInFlow__prevNode____targetRef, prevNode__prevInFlow____incoming, pn2cs__prevNode____source,
+				pn2cs__choiceStep____target, flow__step____steps, flow__choiceStep____steps, choiceStep__step____next,
+				prevInFlow__eg____sourceRef, eg__prevInFlow____outgoing, eg__prevInFlow____default,
+				process__prevNode____flowElements };
 	}
 
-	public static final Object[] pattern_Task2StepAfterEmptyDef_12_4_bindingFBBBBBBBB(Task2StepAfterEmptyDef _this,
-			IsApplicableMatch isApplicableMatch, ExclusiveGateway prevNode, GW2S pn2cs, NormalStep step, Flow flow,
-			ChoiceStep choiceStep, de.abilov.bpmn.Process process) {
-		CSP _localVariable_0 = _this.isApplicable_solveCsp_BWD(isApplicableMatch, prevNode, pn2cs, step, flow,
-				choiceStep, process);
+	public static final Object[] pattern_Task2StepAfterEmptyDef_12_4_bindingFBBBBBBBBBB(Task2StepAfterEmptyDef _this,
+			IsApplicableMatch isApplicableMatch, SequenceFlow prevInFlow, ExclusiveGateway prevNode, GW2S pn2cs,
+			NormalStep step, Flow flow, ChoiceStep choiceStep, ExclusiveGateway eg, de.abilov.bpmn.Process process) {
+		CSP _localVariable_0 = _this.isApplicable_solveCsp_BWD(isApplicableMatch, prevInFlow, prevNode, pn2cs, step,
+				flow, choiceStep, eg, process);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, isApplicableMatch, prevNode, pn2cs, step, flow, choiceStep, process };
+			return new Object[] { csp, _this, isApplicableMatch, prevInFlow, prevNode, pn2cs, step, flow, choiceStep,
+					eg, process };
 		}
 		return null;
 	}
@@ -2747,18 +3143,20 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		return new Object[] { csp };
 	}
 
-	public static final Object[] pattern_Task2StepAfterEmptyDef_12_4_bindingAndBlackFBBBBBBBB(
-			Task2StepAfterEmptyDef _this, IsApplicableMatch isApplicableMatch, ExclusiveGateway prevNode, GW2S pn2cs,
-			NormalStep step, Flow flow, ChoiceStep choiceStep, de.abilov.bpmn.Process process) {
-		Object[] result_pattern_Task2StepAfterEmptyDef_12_4_binding = pattern_Task2StepAfterEmptyDef_12_4_bindingFBBBBBBBB(
-				_this, isApplicableMatch, prevNode, pn2cs, step, flow, choiceStep, process);
+	public static final Object[] pattern_Task2StepAfterEmptyDef_12_4_bindingAndBlackFBBBBBBBBBB(
+			Task2StepAfterEmptyDef _this, IsApplicableMatch isApplicableMatch, SequenceFlow prevInFlow,
+			ExclusiveGateway prevNode, GW2S pn2cs, NormalStep step, Flow flow, ChoiceStep choiceStep,
+			ExclusiveGateway eg, de.abilov.bpmn.Process process) {
+		Object[] result_pattern_Task2StepAfterEmptyDef_12_4_binding = pattern_Task2StepAfterEmptyDef_12_4_bindingFBBBBBBBBBB(
+				_this, isApplicableMatch, prevInFlow, prevNode, pn2cs, step, flow, choiceStep, eg, process);
 		if (result_pattern_Task2StepAfterEmptyDef_12_4_binding != null) {
 			CSP csp = (CSP) result_pattern_Task2StepAfterEmptyDef_12_4_binding[0];
 
 			Object[] result_pattern_Task2StepAfterEmptyDef_12_4_black = pattern_Task2StepAfterEmptyDef_12_4_blackB(csp);
 			if (result_pattern_Task2StepAfterEmptyDef_12_4_black != null) {
 
-				return new Object[] { csp, _this, isApplicableMatch, prevNode, pn2cs, step, flow, choiceStep, process };
+				return new Object[] { csp, _this, isApplicableMatch, prevInFlow, prevNode, pn2cs, step, flow,
+						choiceStep, eg, process };
 			}
 		}
 		return null;
@@ -2836,9 +3234,9 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 	}
 
 	public static final Object[] pattern_Task2StepAfterEmptyDef_20_2_black_nac_0BB(NormalStep step, Flow flow) {
-		for (Flow __DEC_step_steps_629964 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+		for (Flow __DEC_step_steps_467327 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 				Flow.class, "steps")) {
-			if (!flow.equals(__DEC_step_steps_629964)) {
+			if (!flow.equals(__DEC_step_steps_467327)) {
 				return new Object[] { step, flow };
 			}
 		}
@@ -2847,10 +3245,10 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2StepAfterEmptyDef_20_2_black_nac_1BB(NormalStep step,
 			ChoiceStep choiceStep) {
-		for (Step __DEC_step_next_664682 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+		for (Step __DEC_step_next_115910 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 				Step.class, "next")) {
-			if (!step.equals(__DEC_step_next_664682)) {
-				if (!choiceStep.equals(__DEC_step_next_664682)) {
+			if (!step.equals(__DEC_step_next_115910)) {
+				if (!choiceStep.equals(__DEC_step_next_115910)) {
 					return new Object[] { step, choiceStep };
 				}
 			}
@@ -2872,11 +3270,8 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 							if (tmpChoiceStep instanceof ChoiceStep) {
 								ChoiceStep choiceStep = (ChoiceStep) tmpChoiceStep;
 								if (step.equals(choiceStep.getNext())) {
-									if (choiceStep.equals(choiceStep.get__lastInDef())) {
-										if (pattern_Task2StepAfterEmptyDef_20_2_black_nac_1BB(step,
-												choiceStep) == null) {
-											_result.add(new Object[] { step, flow, choiceStep, _edge_steps });
-										}
+									if (pattern_Task2StepAfterEmptyDef_20_2_black_nac_1BB(step, choiceStep) == null) {
+										_result.add(new Object[] { step, flow, choiceStep, _edge_steps });
 									}
 								}
 							}
@@ -2974,9 +3369,9 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 	}
 
 	public static final Object[] pattern_Task2StepAfterEmptyDef_21_2_black_nac_0BB(NormalStep step, Flow flow) {
-		for (Flow __DEC_step_steps_252785 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+		for (Flow __DEC_step_steps_286178 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 				Flow.class, "steps")) {
-			if (!flow.equals(__DEC_step_steps_252785)) {
+			if (!flow.equals(__DEC_step_steps_286178)) {
 				return new Object[] { step, flow };
 			}
 		}
@@ -2985,10 +3380,10 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2StepAfterEmptyDef_21_2_black_nac_1BB(NormalStep step,
 			ChoiceStep choiceStep) {
-		for (Step __DEC_step_next_385364 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+		for (Step __DEC_step_next_303384 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 				Step.class, "next")) {
-			if (!step.equals(__DEC_step_next_385364)) {
-				if (!choiceStep.equals(__DEC_step_next_385364)) {
+			if (!step.equals(__DEC_step_next_303384)) {
+				if (!choiceStep.equals(__DEC_step_next_303384)) {
 					return new Object[] { step, choiceStep };
 				}
 			}
@@ -3001,25 +3396,23 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		EObject tmpChoiceStep = _edge_next.getSrc();
 		if (tmpChoiceStep instanceof ChoiceStep) {
 			ChoiceStep choiceStep = (ChoiceStep) tmpChoiceStep;
-			if (choiceStep.equals(choiceStep.get__lastInDef())) {
-				EObject tmpStep = _edge_next.getTrg();
-				if (tmpStep instanceof NormalStep) {
-					NormalStep step = (NormalStep) tmpStep;
-					if (step.equals(choiceStep.getNext())) {
-						if (pattern_Task2StepAfterEmptyDef_21_2_black_nac_1BB(step, choiceStep) == null) {
-							for (Flow flow : org.moflon.core.utilities.eMoflonEMFUtil
-									.getOppositeReferenceTyped(choiceStep, Flow.class, "steps")) {
-								if (flow.getSteps().contains(step)) {
-									if (pattern_Task2StepAfterEmptyDef_21_2_black_nac_0BB(step, flow) == null) {
-										_result.add(new Object[] { step, flow, choiceStep, _edge_next });
-									}
+			EObject tmpStep = _edge_next.getTrg();
+			if (tmpStep instanceof NormalStep) {
+				NormalStep step = (NormalStep) tmpStep;
+				if (step.equals(choiceStep.getNext())) {
+					if (pattern_Task2StepAfterEmptyDef_21_2_black_nac_1BB(step, choiceStep) == null) {
+						for (Flow flow : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(choiceStep,
+								Flow.class, "steps")) {
+							if (flow.getSteps().contains(step)) {
+								if (pattern_Task2StepAfterEmptyDef_21_2_black_nac_0BB(step, flow) == null) {
+									_result.add(new Object[] { step, flow, choiceStep, _edge_next });
 								}
 							}
 						}
 					}
 				}
-
 			}
+
 		}
 
 		return _result;
@@ -3108,12 +3501,16 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		return new Object[] { __result };
 	}
 
-	public static final Object[] pattern_Task2StepAfterEmptyDef_22_2_black_nac_0BB(SequenceFlow sf1,
-			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_173672 : org.moflon.core.utilities.eMoflonEMFUtil
-				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_173672)) {
-				return new Object[] { sf1, prevNode };
+	public static final Object[] pattern_Task2StepAfterEmptyDef_22_2_black_nac_0BBB(SequenceFlow sf1,
+			ExclusiveGateway prevNode, ExclusiveGateway eg) {
+		if (!eg.equals(prevNode)) {
+			for (ExclusiveGateway __DEC_sf1_default_666064 : org.moflon.core.utilities.eMoflonEMFUtil
+					.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
+				if (!prevNode.equals(__DEC_sf1_default_666064)) {
+					if (!eg.equals(__DEC_sf1_default_666064)) {
+						return new Object[] { sf1, prevNode, eg };
+					}
+				}
 			}
 		}
 		return null;
@@ -3121,9 +3518,9 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2StepAfterEmptyDef_22_2_black_nac_1BB(SequenceFlow sf1,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_152365 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_406817 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_152365)) {
+			if (!process.equals(__DEC_sf1_flowElements_406817)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -3132,9 +3529,9 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2StepAfterEmptyDef_22_2_black_nac_2BB(Task task,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_task_flowElements_442953 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_task_flowElements_252091 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(task, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_task_flowElements_442953)) {
+			if (!process.equals(__DEC_task_flowElements_252091)) {
 				return new Object[] { task, process };
 			}
 		}
@@ -3149,7 +3546,15 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_Task2StepAfterEmptyDef_22_2_blackFFFFB(
+	public static final Object[] pattern_Task2StepAfterEmptyDef_22_2_black_nac_4BB(ExclusiveGateway eg,
+			SequenceFlow sf1) {
+		if (sf1.equals(eg.getDefault())) {
+			return new Object[] { eg, sf1 };
+		}
+		return null;
+	}
+
+	public static final Iterable<Object[]> pattern_Task2StepAfterEmptyDef_22_2_blackFFFFFFB(
 			EMoflonEdge _edge_flowElements) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		EObject tmpProcess = _edge_flowElements.getSrc();
@@ -3172,12 +3577,35 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 											if (Boolean.valueOf(prevNodeisDiverging).equals(false)) {
 												if (pattern_Task2StepAfterEmptyDef_22_2_black_nac_1BB(sf1,
 														process) == null) {
-													if (pattern_Task2StepAfterEmptyDef_22_2_black_nac_0BB(sf1,
-															prevNode) == null) {
-														if (pattern_Task2StepAfterEmptyDef_22_2_black_nac_3BB(prevNode,
-																sf1) == null) {
-															_result.add(new Object[] { prevNode, process, sf1, task,
-																	_edge_flowElements });
+													if (pattern_Task2StepAfterEmptyDef_22_2_black_nac_3BB(prevNode,
+															sf1) == null) {
+														for (SequenceFlow prevInFlow : prevNode.getIncoming()) {
+															if (!prevInFlow.equals(sf1)) {
+																FlowNode tmpEg = prevInFlow.getSourceRef();
+																if (tmpEg instanceof ExclusiveGateway) {
+																	ExclusiveGateway eg = (ExclusiveGateway) tmpEg;
+																	if (!eg.equals(prevNode)) {
+																		if (prevInFlow.equals(eg.getDefault())) {
+																			boolean egisDiverging = eg.isIsDiverging();
+																			if (Boolean.valueOf(egisDiverging)
+																					.equals(Boolean.valueOf(true))) {
+																				if (pattern_Task2StepAfterEmptyDef_22_2_black_nac_0BBB(
+																						sf1, prevNode, eg) == null) {
+																					if (pattern_Task2StepAfterEmptyDef_22_2_black_nac_4BB(
+																							eg, sf1) == null) {
+																						_result.add(new Object[] {
+																								prevInFlow, prevNode,
+																								eg, process, sf1, task,
+																								_edge_flowElements });
+																					}
+																				}
+																			}
+
+																		}
+																	}
+																}
+
+															}
 														}
 													}
 												}
@@ -3207,9 +3635,10 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 	}
 
-	public static final boolean pattern_Task2StepAfterEmptyDef_22_3_expressionFBBBBBB(Task2StepAfterEmptyDef _this,
-			Match match, ExclusiveGateway prevNode, de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
-		boolean _localVariable_0 = _this.isAppropriate_FWD(match, prevNode, process, sf1, task);
+	public static final boolean pattern_Task2StepAfterEmptyDef_22_3_expressionFBBBBBBBB(Task2StepAfterEmptyDef _this,
+			Match match, SequenceFlow prevInFlow, ExclusiveGateway prevNode, ExclusiveGateway eg,
+			de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
+		boolean _localVariable_0 = _this.isAppropriate_FWD(match, prevInFlow, prevNode, eg, process, sf1, task);
 		boolean _result = Boolean.valueOf(_localVariable_0);
 		return _result;
 	}
@@ -3281,12 +3710,16 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		return new Object[] { __result };
 	}
 
-	public static final Object[] pattern_Task2StepAfterEmptyDef_23_2_black_nac_0BB(SequenceFlow sf1,
-			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_825597 : org.moflon.core.utilities.eMoflonEMFUtil
-				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_825597)) {
-				return new Object[] { sf1, prevNode };
+	public static final Object[] pattern_Task2StepAfterEmptyDef_23_2_black_nac_0BBB(SequenceFlow sf1,
+			ExclusiveGateway prevNode, ExclusiveGateway eg) {
+		if (!eg.equals(prevNode)) {
+			for (ExclusiveGateway __DEC_sf1_default_72610 : org.moflon.core.utilities.eMoflonEMFUtil
+					.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
+				if (!prevNode.equals(__DEC_sf1_default_72610)) {
+					if (!eg.equals(__DEC_sf1_default_72610)) {
+						return new Object[] { sf1, prevNode, eg };
+					}
+				}
 			}
 		}
 		return null;
@@ -3294,9 +3727,9 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2StepAfterEmptyDef_23_2_black_nac_1BB(SequenceFlow sf1,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_856441 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_259632 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_856441)) {
+			if (!process.equals(__DEC_sf1_flowElements_259632)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -3305,9 +3738,9 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2StepAfterEmptyDef_23_2_black_nac_2BB(Task task,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_task_flowElements_823819 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_task_flowElements_985485 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(task, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_task_flowElements_823819)) {
+			if (!process.equals(__DEC_task_flowElements_985485)) {
 				return new Object[] { task, process };
 			}
 		}
@@ -3322,7 +3755,15 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_Task2StepAfterEmptyDef_23_2_blackFFFFB(
+	public static final Object[] pattern_Task2StepAfterEmptyDef_23_2_black_nac_4BB(ExclusiveGateway eg,
+			SequenceFlow sf1) {
+		if (sf1.equals(eg.getDefault())) {
+			return new Object[] { eg, sf1 };
+		}
+		return null;
+	}
+
+	public static final Iterable<Object[]> pattern_Task2StepAfterEmptyDef_23_2_blackFFFFFFB(
 			EMoflonEdge _edge_flowElements) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		EObject tmpProcess = _edge_flowElements.getSrc();
@@ -3345,12 +3786,35 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 										if (pattern_Task2StepAfterEmptyDef_23_2_black_nac_1BB(sf1, process) == null) {
 											if (pattern_Task2StepAfterEmptyDef_23_2_black_nac_2BB(task,
 													process) == null) {
-												if (pattern_Task2StepAfterEmptyDef_23_2_black_nac_0BB(sf1,
-														prevNode) == null) {
-													if (pattern_Task2StepAfterEmptyDef_23_2_black_nac_3BB(prevNode,
-															sf1) == null) {
-														_result.add(new Object[] { prevNode, process, sf1, task,
-																_edge_flowElements });
+												if (pattern_Task2StepAfterEmptyDef_23_2_black_nac_3BB(prevNode,
+														sf1) == null) {
+													for (SequenceFlow prevInFlow : prevNode.getIncoming()) {
+														if (!prevInFlow.equals(sf1)) {
+															FlowNode tmpEg = prevInFlow.getSourceRef();
+															if (tmpEg instanceof ExclusiveGateway) {
+																ExclusiveGateway eg = (ExclusiveGateway) tmpEg;
+																if (!eg.equals(prevNode)) {
+																	if (prevInFlow.equals(eg.getDefault())) {
+																		boolean egisDiverging = eg.isIsDiverging();
+																		if (Boolean.valueOf(egisDiverging)
+																				.equals(Boolean.valueOf(true))) {
+																			if (pattern_Task2StepAfterEmptyDef_23_2_black_nac_0BBB(
+																					sf1, prevNode, eg) == null) {
+																				if (pattern_Task2StepAfterEmptyDef_23_2_black_nac_4BB(
+																						eg, sf1) == null) {
+																					_result.add(new Object[] {
+																							prevInFlow, prevNode, eg,
+																							process, sf1, task,
+																							_edge_flowElements });
+																				}
+																			}
+																		}
+
+																	}
+																}
+															}
+
+														}
 													}
 												}
 											}
@@ -3380,9 +3844,10 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 	}
 
-	public static final boolean pattern_Task2StepAfterEmptyDef_23_3_expressionFBBBBBB(Task2StepAfterEmptyDef _this,
-			Match match, ExclusiveGateway prevNode, de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
-		boolean _localVariable_0 = _this.isAppropriate_FWD(match, prevNode, process, sf1, task);
+	public static final boolean pattern_Task2StepAfterEmptyDef_23_3_expressionFBBBBBBBB(Task2StepAfterEmptyDef _this,
+			Match match, SequenceFlow prevInFlow, ExclusiveGateway prevNode, ExclusiveGateway eg,
+			de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
+		boolean _localVariable_0 = _this.isAppropriate_FWD(match, prevInFlow, prevNode, eg, process, sf1, task);
 		boolean _result = Boolean.valueOf(_localVariable_0);
 		return _result;
 	}
@@ -3454,12 +3919,16 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		return new Object[] { __result };
 	}
 
-	public static final Object[] pattern_Task2StepAfterEmptyDef_24_2_black_nac_0BB(SequenceFlow sf1,
-			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_67307 : org.moflon.core.utilities.eMoflonEMFUtil
-				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_67307)) {
-				return new Object[] { sf1, prevNode };
+	public static final Object[] pattern_Task2StepAfterEmptyDef_24_2_black_nac_0BBB(SequenceFlow sf1,
+			ExclusiveGateway prevNode, ExclusiveGateway eg) {
+		if (!eg.equals(prevNode)) {
+			for (ExclusiveGateway __DEC_sf1_default_528533 : org.moflon.core.utilities.eMoflonEMFUtil
+					.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
+				if (!prevNode.equals(__DEC_sf1_default_528533)) {
+					if (!eg.equals(__DEC_sf1_default_528533)) {
+						return new Object[] { sf1, prevNode, eg };
+					}
+				}
 			}
 		}
 		return null;
@@ -3467,9 +3936,9 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2StepAfterEmptyDef_24_2_black_nac_1BB(SequenceFlow sf1,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_172972 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_905365 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_172972)) {
+			if (!process.equals(__DEC_sf1_flowElements_905365)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -3478,9 +3947,9 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2StepAfterEmptyDef_24_2_black_nac_2BB(Task task,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_task_flowElements_814378 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_task_flowElements_120996 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(task, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_task_flowElements_814378)) {
+			if (!process.equals(__DEC_task_flowElements_120996)) {
 				return new Object[] { task, process };
 			}
 		}
@@ -3495,7 +3964,16 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_Task2StepAfterEmptyDef_24_2_blackFFFFB(EMoflonEdge _edge_targetRef) {
+	public static final Object[] pattern_Task2StepAfterEmptyDef_24_2_black_nac_4BB(ExclusiveGateway eg,
+			SequenceFlow sf1) {
+		if (sf1.equals(eg.getDefault())) {
+			return new Object[] { eg, sf1 };
+		}
+		return null;
+	}
+
+	public static final Iterable<Object[]> pattern_Task2StepAfterEmptyDef_24_2_blackFFFFFFB(
+			EMoflonEdge _edge_targetRef) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		EObject tmpSf1 = _edge_targetRef.getSrc();
 		if (tmpSf1 instanceof SequenceFlow) {
@@ -3509,23 +3987,48 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 						ExclusiveGateway prevNode = (ExclusiveGateway) tmpPrevNode;
 						boolean prevNodeisDiverging = prevNode.isIsDiverging();
 						if (Boolean.valueOf(prevNodeisDiverging).equals(false)) {
-							if (pattern_Task2StepAfterEmptyDef_24_2_black_nac_0BB(sf1, prevNode) == null) {
-								if (pattern_Task2StepAfterEmptyDef_24_2_black_nac_3BB(prevNode, sf1) == null) {
-									for (de.abilov.bpmn.Process process : org.moflon.core.utilities.eMoflonEMFUtil
-											.getOppositeReferenceTyped(sf1, de.abilov.bpmn.Process.class,
-													"flowElements")) {
-										if (process.getFlowElements().contains(task)) {
-											if (process.getFlowElements().contains(prevNode)) {
-												if (pattern_Task2StepAfterEmptyDef_24_2_black_nac_1BB(sf1,
-														process) == null) {
-													if (pattern_Task2StepAfterEmptyDef_24_2_black_nac_2BB(task,
-															process) == null) {
-														_result.add(new Object[] { prevNode, process, sf1, task,
-																_edge_targetRef });
+							if (pattern_Task2StepAfterEmptyDef_24_2_black_nac_3BB(prevNode, sf1) == null) {
+								for (SequenceFlow prevInFlow : prevNode.getIncoming()) {
+									if (!prevInFlow.equals(sf1)) {
+										FlowNode tmpEg = prevInFlow.getSourceRef();
+										if (tmpEg instanceof ExclusiveGateway) {
+											ExclusiveGateway eg = (ExclusiveGateway) tmpEg;
+											if (!eg.equals(prevNode)) {
+												if (prevInFlow.equals(eg.getDefault())) {
+													boolean egisDiverging = eg.isIsDiverging();
+													if (Boolean.valueOf(egisDiverging).equals(Boolean.valueOf(true))) {
+														if (pattern_Task2StepAfterEmptyDef_24_2_black_nac_0BBB(sf1,
+																prevNode, eg) == null) {
+															if (pattern_Task2StepAfterEmptyDef_24_2_black_nac_4BB(eg,
+																	sf1) == null) {
+																for (de.abilov.bpmn.Process process : org.moflon.core.utilities.eMoflonEMFUtil
+																		.getOppositeReferenceTyped(sf1,
+																				de.abilov.bpmn.Process.class,
+																				"flowElements")) {
+																	if (process.getFlowElements().contains(task)) {
+																		if (process.getFlowElements()
+																				.contains(prevNode)) {
+																			if (pattern_Task2StepAfterEmptyDef_24_2_black_nac_1BB(
+																					sf1, process) == null) {
+																				if (pattern_Task2StepAfterEmptyDef_24_2_black_nac_2BB(
+																						task, process) == null) {
+																					_result.add(new Object[] {
+																							prevInFlow, prevNode, eg,
+																							process, sf1, task,
+																							_edge_targetRef });
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														}
 													}
+
 												}
 											}
 										}
+
 									}
 								}
 							}
@@ -3550,9 +4053,10 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 	}
 
-	public static final boolean pattern_Task2StepAfterEmptyDef_24_3_expressionFBBBBBB(Task2StepAfterEmptyDef _this,
-			Match match, ExclusiveGateway prevNode, de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
-		boolean _localVariable_0 = _this.isAppropriate_FWD(match, prevNode, process, sf1, task);
+	public static final boolean pattern_Task2StepAfterEmptyDef_24_3_expressionFBBBBBBBB(Task2StepAfterEmptyDef _this,
+			Match match, SequenceFlow prevInFlow, ExclusiveGateway prevNode, ExclusiveGateway eg,
+			de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
+		boolean _localVariable_0 = _this.isAppropriate_FWD(match, prevInFlow, prevNode, eg, process, sf1, task);
 		boolean _result = Boolean.valueOf(_localVariable_0);
 		return _result;
 	}
@@ -3624,12 +4128,16 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		return new Object[] { __result };
 	}
 
-	public static final Object[] pattern_Task2StepAfterEmptyDef_25_2_black_nac_0BB(SequenceFlow sf1,
-			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_208837 : org.moflon.core.utilities.eMoflonEMFUtil
-				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_208837)) {
-				return new Object[] { sf1, prevNode };
+	public static final Object[] pattern_Task2StepAfterEmptyDef_25_2_black_nac_0BBB(SequenceFlow sf1,
+			ExclusiveGateway prevNode, ExclusiveGateway eg) {
+		if (!eg.equals(prevNode)) {
+			for (ExclusiveGateway __DEC_sf1_default_463694 : org.moflon.core.utilities.eMoflonEMFUtil
+					.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
+				if (!prevNode.equals(__DEC_sf1_default_463694)) {
+					if (!eg.equals(__DEC_sf1_default_463694)) {
+						return new Object[] { sf1, prevNode, eg };
+					}
+				}
 			}
 		}
 		return null;
@@ -3637,9 +4145,9 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2StepAfterEmptyDef_25_2_black_nac_1BB(SequenceFlow sf1,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_6406 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_423888 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_6406)) {
+			if (!process.equals(__DEC_sf1_flowElements_423888)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -3648,9 +4156,9 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2StepAfterEmptyDef_25_2_black_nac_2BB(Task task,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_task_flowElements_253097 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_task_flowElements_584544 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(task, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_task_flowElements_253097)) {
+			if (!process.equals(__DEC_task_flowElements_584544)) {
 				return new Object[] { task, process };
 			}
 		}
@@ -3665,7 +4173,16 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_Task2StepAfterEmptyDef_25_2_blackFFFFB(EMoflonEdge _edge_incoming) {
+	public static final Object[] pattern_Task2StepAfterEmptyDef_25_2_black_nac_4BB(ExclusiveGateway eg,
+			SequenceFlow sf1) {
+		if (sf1.equals(eg.getDefault())) {
+			return new Object[] { eg, sf1 };
+		}
+		return null;
+	}
+
+	public static final Iterable<Object[]> pattern_Task2StepAfterEmptyDef_25_2_blackFFFFFFB(
+			EMoflonEdge _edge_incoming) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		EObject tmpTask = _edge_incoming.getSrc();
 		if (tmpTask instanceof Task) {
@@ -3679,23 +4196,48 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 						ExclusiveGateway prevNode = (ExclusiveGateway) tmpPrevNode;
 						boolean prevNodeisDiverging = prevNode.isIsDiverging();
 						if (Boolean.valueOf(prevNodeisDiverging).equals(false)) {
-							if (pattern_Task2StepAfterEmptyDef_25_2_black_nac_0BB(sf1, prevNode) == null) {
-								if (pattern_Task2StepAfterEmptyDef_25_2_black_nac_3BB(prevNode, sf1) == null) {
-									for (de.abilov.bpmn.Process process : org.moflon.core.utilities.eMoflonEMFUtil
-											.getOppositeReferenceTyped(task, de.abilov.bpmn.Process.class,
-													"flowElements")) {
-										if (process.getFlowElements().contains(sf1)) {
-											if (process.getFlowElements().contains(prevNode)) {
-												if (pattern_Task2StepAfterEmptyDef_25_2_black_nac_1BB(sf1,
-														process) == null) {
-													if (pattern_Task2StepAfterEmptyDef_25_2_black_nac_2BB(task,
-															process) == null) {
-														_result.add(new Object[] { prevNode, process, sf1, task,
-																_edge_incoming });
+							if (pattern_Task2StepAfterEmptyDef_25_2_black_nac_3BB(prevNode, sf1) == null) {
+								for (SequenceFlow prevInFlow : prevNode.getIncoming()) {
+									if (!prevInFlow.equals(sf1)) {
+										FlowNode tmpEg = prevInFlow.getSourceRef();
+										if (tmpEg instanceof ExclusiveGateway) {
+											ExclusiveGateway eg = (ExclusiveGateway) tmpEg;
+											if (!eg.equals(prevNode)) {
+												if (prevInFlow.equals(eg.getDefault())) {
+													boolean egisDiverging = eg.isIsDiverging();
+													if (Boolean.valueOf(egisDiverging).equals(Boolean.valueOf(true))) {
+														if (pattern_Task2StepAfterEmptyDef_25_2_black_nac_0BBB(sf1,
+																prevNode, eg) == null) {
+															if (pattern_Task2StepAfterEmptyDef_25_2_black_nac_4BB(eg,
+																	sf1) == null) {
+																for (de.abilov.bpmn.Process process : org.moflon.core.utilities.eMoflonEMFUtil
+																		.getOppositeReferenceTyped(task,
+																				de.abilov.bpmn.Process.class,
+																				"flowElements")) {
+																	if (process.getFlowElements().contains(sf1)) {
+																		if (process.getFlowElements()
+																				.contains(prevNode)) {
+																			if (pattern_Task2StepAfterEmptyDef_25_2_black_nac_1BB(
+																					sf1, process) == null) {
+																				if (pattern_Task2StepAfterEmptyDef_25_2_black_nac_2BB(
+																						task, process) == null) {
+																					_result.add(new Object[] {
+																							prevInFlow, prevNode, eg,
+																							process, sf1, task,
+																							_edge_incoming });
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														}
 													}
+
 												}
 											}
 										}
+
 									}
 								}
 							}
@@ -3720,9 +4262,10 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 	}
 
-	public static final boolean pattern_Task2StepAfterEmptyDef_25_3_expressionFBBBBBB(Task2StepAfterEmptyDef _this,
-			Match match, ExclusiveGateway prevNode, de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
-		boolean _localVariable_0 = _this.isAppropriate_FWD(match, prevNode, process, sf1, task);
+	public static final boolean pattern_Task2StepAfterEmptyDef_25_3_expressionFBBBBBBBB(Task2StepAfterEmptyDef _this,
+			Match match, SequenceFlow prevInFlow, ExclusiveGateway prevNode, ExclusiveGateway eg,
+			de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
+		boolean _localVariable_0 = _this.isAppropriate_FWD(match, prevInFlow, prevNode, eg, process, sf1, task);
 		boolean _result = Boolean.valueOf(_localVariable_0);
 		return _result;
 	}
@@ -3794,12 +4337,16 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		return new Object[] { __result };
 	}
 
-	public static final Object[] pattern_Task2StepAfterEmptyDef_26_2_black_nac_0BB(SequenceFlow sf1,
-			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_532391 : org.moflon.core.utilities.eMoflonEMFUtil
-				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_532391)) {
-				return new Object[] { sf1, prevNode };
+	public static final Object[] pattern_Task2StepAfterEmptyDef_26_2_black_nac_0BBB(SequenceFlow sf1,
+			ExclusiveGateway prevNode, ExclusiveGateway eg) {
+		if (!eg.equals(prevNode)) {
+			for (ExclusiveGateway __DEC_sf1_default_410700 : org.moflon.core.utilities.eMoflonEMFUtil
+					.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
+				if (!prevNode.equals(__DEC_sf1_default_410700)) {
+					if (!eg.equals(__DEC_sf1_default_410700)) {
+						return new Object[] { sf1, prevNode, eg };
+					}
+				}
 			}
 		}
 		return null;
@@ -3807,9 +4354,9 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2StepAfterEmptyDef_26_2_black_nac_1BB(SequenceFlow sf1,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_600335 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_217951 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_600335)) {
+			if (!process.equals(__DEC_sf1_flowElements_217951)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -3818,9 +4365,9 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2StepAfterEmptyDef_26_2_black_nac_2BB(Task task,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_task_flowElements_801182 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_task_flowElements_578464 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(task, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_task_flowElements_801182)) {
+			if (!process.equals(__DEC_task_flowElements_578464)) {
 				return new Object[] { task, process };
 			}
 		}
@@ -3835,7 +4382,16 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_Task2StepAfterEmptyDef_26_2_blackFFFFB(EMoflonEdge _edge_sourceRef) {
+	public static final Object[] pattern_Task2StepAfterEmptyDef_26_2_black_nac_4BB(ExclusiveGateway eg,
+			SequenceFlow sf1) {
+		if (sf1.equals(eg.getDefault())) {
+			return new Object[] { eg, sf1 };
+		}
+		return null;
+	}
+
+	public static final Iterable<Object[]> pattern_Task2StepAfterEmptyDef_26_2_blackFFFFFFB(
+			EMoflonEdge _edge_sourceRef) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		EObject tmpSf1 = _edge_sourceRef.getSrc();
 		if (tmpSf1 instanceof SequenceFlow) {
@@ -3849,23 +4405,48 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 						Task task = (Task) tmpTask;
 						boolean prevNodeisDiverging = prevNode.isIsDiverging();
 						if (Boolean.valueOf(prevNodeisDiverging).equals(false)) {
-							if (pattern_Task2StepAfterEmptyDef_26_2_black_nac_0BB(sf1, prevNode) == null) {
-								if (pattern_Task2StepAfterEmptyDef_26_2_black_nac_3BB(prevNode, sf1) == null) {
-									for (de.abilov.bpmn.Process process : org.moflon.core.utilities.eMoflonEMFUtil
-											.getOppositeReferenceTyped(sf1, de.abilov.bpmn.Process.class,
-													"flowElements")) {
-										if (process.getFlowElements().contains(task)) {
-											if (process.getFlowElements().contains(prevNode)) {
-												if (pattern_Task2StepAfterEmptyDef_26_2_black_nac_1BB(sf1,
-														process) == null) {
-													if (pattern_Task2StepAfterEmptyDef_26_2_black_nac_2BB(task,
-															process) == null) {
-														_result.add(new Object[] { prevNode, process, sf1, task,
-																_edge_sourceRef });
+							if (pattern_Task2StepAfterEmptyDef_26_2_black_nac_3BB(prevNode, sf1) == null) {
+								for (SequenceFlow prevInFlow : prevNode.getIncoming()) {
+									if (!prevInFlow.equals(sf1)) {
+										FlowNode tmpEg = prevInFlow.getSourceRef();
+										if (tmpEg instanceof ExclusiveGateway) {
+											ExclusiveGateway eg = (ExclusiveGateway) tmpEg;
+											if (!eg.equals(prevNode)) {
+												if (prevInFlow.equals(eg.getDefault())) {
+													boolean egisDiverging = eg.isIsDiverging();
+													if (Boolean.valueOf(egisDiverging).equals(Boolean.valueOf(true))) {
+														if (pattern_Task2StepAfterEmptyDef_26_2_black_nac_0BBB(sf1,
+																prevNode, eg) == null) {
+															if (pattern_Task2StepAfterEmptyDef_26_2_black_nac_4BB(eg,
+																	sf1) == null) {
+																for (de.abilov.bpmn.Process process : org.moflon.core.utilities.eMoflonEMFUtil
+																		.getOppositeReferenceTyped(sf1,
+																				de.abilov.bpmn.Process.class,
+																				"flowElements")) {
+																	if (process.getFlowElements().contains(task)) {
+																		if (process.getFlowElements()
+																				.contains(prevNode)) {
+																			if (pattern_Task2StepAfterEmptyDef_26_2_black_nac_1BB(
+																					sf1, process) == null) {
+																				if (pattern_Task2StepAfterEmptyDef_26_2_black_nac_2BB(
+																						task, process) == null) {
+																					_result.add(new Object[] {
+																							prevInFlow, prevNode, eg,
+																							process, sf1, task,
+																							_edge_sourceRef });
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														}
 													}
+
 												}
 											}
 										}
+
 									}
 								}
 							}
@@ -3890,9 +4471,10 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 	}
 
-	public static final boolean pattern_Task2StepAfterEmptyDef_26_3_expressionFBBBBBB(Task2StepAfterEmptyDef _this,
-			Match match, ExclusiveGateway prevNode, de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
-		boolean _localVariable_0 = _this.isAppropriate_FWD(match, prevNode, process, sf1, task);
+	public static final boolean pattern_Task2StepAfterEmptyDef_26_3_expressionFBBBBBBBB(Task2StepAfterEmptyDef _this,
+			Match match, SequenceFlow prevInFlow, ExclusiveGateway prevNode, ExclusiveGateway eg,
+			de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
+		boolean _localVariable_0 = _this.isAppropriate_FWD(match, prevInFlow, prevNode, eg, process, sf1, task);
 		boolean _result = Boolean.valueOf(_localVariable_0);
 		return _result;
 	}
@@ -3964,12 +4546,16 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		return new Object[] { __result };
 	}
 
-	public static final Object[] pattern_Task2StepAfterEmptyDef_27_2_black_nac_0BB(SequenceFlow sf1,
-			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_840929 : org.moflon.core.utilities.eMoflonEMFUtil
-				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_840929)) {
-				return new Object[] { sf1, prevNode };
+	public static final Object[] pattern_Task2StepAfterEmptyDef_27_2_black_nac_0BBB(SequenceFlow sf1,
+			ExclusiveGateway prevNode, ExclusiveGateway eg) {
+		if (!eg.equals(prevNode)) {
+			for (ExclusiveGateway __DEC_sf1_default_188024 : org.moflon.core.utilities.eMoflonEMFUtil
+					.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
+				if (!prevNode.equals(__DEC_sf1_default_188024)) {
+					if (!eg.equals(__DEC_sf1_default_188024)) {
+						return new Object[] { sf1, prevNode, eg };
+					}
+				}
 			}
 		}
 		return null;
@@ -3977,9 +4563,9 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2StepAfterEmptyDef_27_2_black_nac_1BB(SequenceFlow sf1,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_48540 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_859405 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_48540)) {
+			if (!process.equals(__DEC_sf1_flowElements_859405)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -3988,9 +4574,9 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 	public static final Object[] pattern_Task2StepAfterEmptyDef_27_2_black_nac_2BB(Task task,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_task_flowElements_839745 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_task_flowElements_539390 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(task, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_task_flowElements_839745)) {
+			if (!process.equals(__DEC_task_flowElements_539390)) {
 				return new Object[] { task, process };
 			}
 		}
@@ -4005,7 +4591,16 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_Task2StepAfterEmptyDef_27_2_blackFFFFB(EMoflonEdge _edge_outgoing) {
+	public static final Object[] pattern_Task2StepAfterEmptyDef_27_2_black_nac_4BB(ExclusiveGateway eg,
+			SequenceFlow sf1) {
+		if (sf1.equals(eg.getDefault())) {
+			return new Object[] { eg, sf1 };
+		}
+		return null;
+	}
+
+	public static final Iterable<Object[]> pattern_Task2StepAfterEmptyDef_27_2_blackFFFFFFB(
+			EMoflonEdge _edge_outgoing) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		EObject tmpPrevNode = _edge_outgoing.getSrc();
 		if (tmpPrevNode instanceof ExclusiveGateway) {
@@ -4019,23 +4614,47 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 						FlowNode tmpTask = sf1.getTargetRef();
 						if (tmpTask instanceof Task) {
 							Task task = (Task) tmpTask;
-							if (pattern_Task2StepAfterEmptyDef_27_2_black_nac_0BB(sf1, prevNode) == null) {
-								if (pattern_Task2StepAfterEmptyDef_27_2_black_nac_3BB(prevNode, sf1) == null) {
-									for (de.abilov.bpmn.Process process : org.moflon.core.utilities.eMoflonEMFUtil
-											.getOppositeReferenceTyped(prevNode, de.abilov.bpmn.Process.class,
-													"flowElements")) {
-										if (process.getFlowElements().contains(task)) {
-											if (process.getFlowElements().contains(sf1)) {
-												if (pattern_Task2StepAfterEmptyDef_27_2_black_nac_1BB(sf1,
-														process) == null) {
-													if (pattern_Task2StepAfterEmptyDef_27_2_black_nac_2BB(task,
-															process) == null) {
-														_result.add(new Object[] { prevNode, process, sf1, task,
-																_edge_outgoing });
+							if (pattern_Task2StepAfterEmptyDef_27_2_black_nac_3BB(prevNode, sf1) == null) {
+								for (SequenceFlow prevInFlow : prevNode.getIncoming()) {
+									if (!prevInFlow.equals(sf1)) {
+										FlowNode tmpEg = prevInFlow.getSourceRef();
+										if (tmpEg instanceof ExclusiveGateway) {
+											ExclusiveGateway eg = (ExclusiveGateway) tmpEg;
+											if (!eg.equals(prevNode)) {
+												if (prevInFlow.equals(eg.getDefault())) {
+													boolean egisDiverging = eg.isIsDiverging();
+													if (Boolean.valueOf(egisDiverging).equals(Boolean.valueOf(true))) {
+														if (pattern_Task2StepAfterEmptyDef_27_2_black_nac_0BBB(sf1,
+																prevNode, eg) == null) {
+															if (pattern_Task2StepAfterEmptyDef_27_2_black_nac_4BB(eg,
+																	sf1) == null) {
+																for (de.abilov.bpmn.Process process : org.moflon.core.utilities.eMoflonEMFUtil
+																		.getOppositeReferenceTyped(prevNode,
+																				de.abilov.bpmn.Process.class,
+																				"flowElements")) {
+																	if (process.getFlowElements().contains(task)) {
+																		if (process.getFlowElements().contains(sf1)) {
+																			if (pattern_Task2StepAfterEmptyDef_27_2_black_nac_1BB(
+																					sf1, process) == null) {
+																				if (pattern_Task2StepAfterEmptyDef_27_2_black_nac_2BB(
+																						task, process) == null) {
+																					_result.add(new Object[] {
+																							prevInFlow, prevNode, eg,
+																							process, sf1, task,
+																							_edge_outgoing });
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														}
 													}
+
 												}
 											}
 										}
+
 									}
 								}
 							}
@@ -4060,9 +4679,10 @@ public class Task2StepAfterEmptyDefImpl extends AbstractRuleImpl implements Task
 
 	}
 
-	public static final boolean pattern_Task2StepAfterEmptyDef_27_3_expressionFBBBBBB(Task2StepAfterEmptyDef _this,
-			Match match, ExclusiveGateway prevNode, de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
-		boolean _localVariable_0 = _this.isAppropriate_FWD(match, prevNode, process, sf1, task);
+	public static final boolean pattern_Task2StepAfterEmptyDef_27_3_expressionFBBBBBBBB(Task2StepAfterEmptyDef _this,
+			Match match, SequenceFlow prevInFlow, ExclusiveGateway prevNode, ExclusiveGateway eg,
+			de.abilov.bpmn.Process process, SequenceFlow sf1, Task task) {
+		boolean _localVariable_0 = _this.isAppropriate_FWD(match, prevInFlow, prevNode, eg, process, sf1, task);
 		boolean _result = Boolean.valueOf(_localVariable_0);
 		return _result;
 	}

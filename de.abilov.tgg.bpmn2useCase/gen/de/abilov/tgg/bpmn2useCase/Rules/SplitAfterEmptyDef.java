@@ -45,8 +45,8 @@ public interface SplitAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	boolean isAppropriate_FWD(Match match, ExclusiveGateway prevNode, de.abilov.bpmn.Process process, SequenceFlow sf1,
-			ParallelGateway pgw, ParallelGateway pcgw);
+	boolean isAppropriate_FWD(Match match, SequenceFlow prevInFlow, ExclusiveGateway prevNode, ExclusiveGateway eg,
+			de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -70,8 +70,9 @@ public interface SplitAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjectsToMatch_FWD(Match match, ExclusiveGateway prevNode, de.abilov.bpmn.Process process,
-			SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw);
+	void registerObjectsToMatch_FWD(Match match, SequenceFlow prevInFlow, ExclusiveGateway prevNode,
+			ExclusiveGateway eg, de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw,
+			ParallelGateway pcgw);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -79,8 +80,8 @@ public interface SplitAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isAppropriate_solveCsp_FWD(Match match, ExclusiveGateway prevNode, de.abilov.bpmn.Process process,
-			SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw);
+	CSP isAppropriate_solveCsp_FWD(Match match, SequenceFlow prevInFlow, ExclusiveGateway prevNode, ExclusiveGateway eg,
+			de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -96,9 +97,9 @@ public interface SplitAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, ExclusiveGateway prevNode, ChoiceStep choiceStep,
-			GW2S pn2cs, Flow flow, de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw,
-			ParallelGateway pcgw);
+	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, SequenceFlow prevInFlow,
+			ExclusiveGateway prevNode, ChoiceStep choiceStep, GW2S pn2cs, Flow flow, ExclusiveGateway eg,
+			de.abilov.bpmn.Process process, SequenceFlow sf1, ParallelGateway pgw, ParallelGateway pcgw);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -114,9 +115,9 @@ public interface SplitAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_FWD(PerformRuleResult ruleresult, EObject prevNode, EObject choiceStep, EObject pn2cs,
-			EObject step, EObject flow, EObject process, EObject sf1, EObject pgw, EObject pcgwToStep,
-			EObject pgwToStep, EObject pcgw);
+	void registerObjects_FWD(PerformRuleResult ruleresult, EObject prevInFlow, EObject prevNode, EObject choiceStep,
+			EObject pn2cs, EObject step, EObject flow, EObject eg, EObject process, EObject sf1, EObject pgw,
+			EObject pcgwToStep, EObject pgwToStep, EObject pcgw);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -180,8 +181,9 @@ public interface SplitAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, ExclusiveGateway prevNode, ChoiceStep choiceStep,
-			GW2S pn2cs, NormalStep step, Flow flow, de.abilov.bpmn.Process process);
+	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, SequenceFlow prevInFlow,
+			ExclusiveGateway prevNode, ChoiceStep choiceStep, GW2S pn2cs, NormalStep step, Flow flow,
+			ExclusiveGateway eg, de.abilov.bpmn.Process process);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -197,9 +199,9 @@ public interface SplitAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_BWD(PerformRuleResult ruleresult, EObject prevNode, EObject choiceStep, EObject pn2cs,
-			EObject step, EObject flow, EObject process, EObject sf1, EObject pgw, EObject pcgwToStep,
-			EObject pgwToStep, EObject pcgw);
+	void registerObjects_BWD(PerformRuleResult ruleresult, EObject prevInFlow, EObject prevNode, EObject choiceStep,
+			EObject pn2cs, EObject step, EObject flow, EObject eg, EObject process, EObject sf1, EObject pgw,
+			EObject pcgwToStep, EObject pgwToStep, EObject pcgw);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -215,7 +217,7 @@ public interface SplitAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_176(EMoflonEdge _edge_next);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_298(EMoflonEdge _edge_next);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -223,7 +225,7 @@ public interface SplitAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_177(EMoflonEdge _edge_steps);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_299(EMoflonEdge _edge_steps);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -231,7 +233,7 @@ public interface SplitAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_575(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_969(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -239,7 +241,7 @@ public interface SplitAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_576(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_970(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -247,7 +249,7 @@ public interface SplitAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_577(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_971(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -255,7 +257,7 @@ public interface SplitAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_578(EMoflonEdge _edge_targetRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_972(EMoflonEdge _edge_targetRef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -263,7 +265,7 @@ public interface SplitAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_579(EMoflonEdge _edge_incoming);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_973(EMoflonEdge _edge_incoming);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -271,7 +273,7 @@ public interface SplitAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_580(EMoflonEdge _edge___conv);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_974(EMoflonEdge _edge___conv);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -279,7 +281,7 @@ public interface SplitAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_581(EMoflonEdge _edge_sourceRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_975(EMoflonEdge _edge_sourceRef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -287,7 +289,7 @@ public interface SplitAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_582(EMoflonEdge _edge_outgoing);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_976(EMoflonEdge _edge_outgoing);
 
 	/**
 	 * <!-- begin-user-doc -->

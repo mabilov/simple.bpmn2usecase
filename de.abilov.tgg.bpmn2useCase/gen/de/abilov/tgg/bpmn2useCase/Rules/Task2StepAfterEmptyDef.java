@@ -45,8 +45,8 @@ public interface Task2StepAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	boolean isAppropriate_FWD(Match match, ExclusiveGateway prevNode, de.abilov.bpmn.Process process, SequenceFlow sf1,
-			Task task);
+	boolean isAppropriate_FWD(Match match, SequenceFlow prevInFlow, ExclusiveGateway prevNode, ExclusiveGateway eg,
+			de.abilov.bpmn.Process process, SequenceFlow sf1, Task task);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -70,8 +70,8 @@ public interface Task2StepAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjectsToMatch_FWD(Match match, ExclusiveGateway prevNode, de.abilov.bpmn.Process process,
-			SequenceFlow sf1, Task task);
+	void registerObjectsToMatch_FWD(Match match, SequenceFlow prevInFlow, ExclusiveGateway prevNode,
+			ExclusiveGateway eg, de.abilov.bpmn.Process process, SequenceFlow sf1, Task task);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -79,8 +79,8 @@ public interface Task2StepAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isAppropriate_solveCsp_FWD(Match match, ExclusiveGateway prevNode, de.abilov.bpmn.Process process,
-			SequenceFlow sf1, Task task);
+	CSP isAppropriate_solveCsp_FWD(Match match, SequenceFlow prevInFlow, ExclusiveGateway prevNode, ExclusiveGateway eg,
+			de.abilov.bpmn.Process process, SequenceFlow sf1, Task task);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -96,8 +96,9 @@ public interface Task2StepAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, ExclusiveGateway prevNode, GW2S pn2cs, Flow flow,
-			ChoiceStep choiceStep, de.abilov.bpmn.Process process, SequenceFlow sf1, Task task);
+	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, SequenceFlow prevInFlow,
+			ExclusiveGateway prevNode, GW2S pn2cs, Flow flow, ChoiceStep choiceStep, ExclusiveGateway eg,
+			de.abilov.bpmn.Process process, SequenceFlow sf1, Task task);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -113,8 +114,9 @@ public interface Task2StepAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_FWD(PerformRuleResult ruleresult, EObject prevNode, EObject pn2cs, EObject step, EObject flow,
-			EObject choiceStep, EObject t2s, EObject process, EObject sf1, EObject task);
+	void registerObjects_FWD(PerformRuleResult ruleresult, EObject prevInFlow, EObject prevNode, EObject pn2cs,
+			EObject step, EObject flow, EObject choiceStep, EObject eg, EObject t2s, EObject process, EObject sf1,
+			EObject task);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -178,8 +180,9 @@ public interface Task2StepAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, ExclusiveGateway prevNode, GW2S pn2cs,
-			NormalStep step, Flow flow, ChoiceStep choiceStep, de.abilov.bpmn.Process process);
+	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, SequenceFlow prevInFlow,
+			ExclusiveGateway prevNode, GW2S pn2cs, NormalStep step, Flow flow, ChoiceStep choiceStep,
+			ExclusiveGateway eg, de.abilov.bpmn.Process process);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -195,8 +198,9 @@ public interface Task2StepAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_BWD(PerformRuleResult ruleresult, EObject prevNode, EObject pn2cs, EObject step, EObject flow,
-			EObject choiceStep, EObject t2s, EObject process, EObject sf1, EObject task);
+	void registerObjects_BWD(PerformRuleResult ruleresult, EObject prevInFlow, EObject prevNode, EObject pn2cs,
+			EObject step, EObject flow, EObject choiceStep, EObject eg, EObject t2s, EObject process, EObject sf1,
+			EObject task);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -212,7 +216,7 @@ public interface Task2StepAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_174(EMoflonEdge _edge_steps);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_296(EMoflonEdge _edge_steps);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -220,7 +224,7 @@ public interface Task2StepAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_175(EMoflonEdge _edge_next);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_297(EMoflonEdge _edge_next);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -228,7 +232,7 @@ public interface Task2StepAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_569(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_963(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -236,7 +240,7 @@ public interface Task2StepAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_570(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_964(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -244,7 +248,7 @@ public interface Task2StepAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_571(EMoflonEdge _edge_targetRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_965(EMoflonEdge _edge_targetRef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -252,7 +256,7 @@ public interface Task2StepAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_572(EMoflonEdge _edge_incoming);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_966(EMoflonEdge _edge_incoming);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -260,7 +264,7 @@ public interface Task2StepAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_573(EMoflonEdge _edge_sourceRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_967(EMoflonEdge _edge_sourceRef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -268,7 +272,7 @@ public interface Task2StepAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_574(EMoflonEdge _edge_outgoing);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_968(EMoflonEdge _edge_outgoing);
 
 	/**
 	 * <!-- begin-user-doc -->

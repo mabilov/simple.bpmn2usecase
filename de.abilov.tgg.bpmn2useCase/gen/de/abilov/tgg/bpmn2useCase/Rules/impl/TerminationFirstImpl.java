@@ -717,7 +717,7 @@ public class TerminationFirstImpl extends AbstractRuleImpl implements Terminatio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_431(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_825(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = TerminationFirstImpl.pattern_TerminationFirst_20_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -770,7 +770,7 @@ public class TerminationFirstImpl extends AbstractRuleImpl implements Terminatio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_432(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_826(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = TerminationFirstImpl.pattern_TerminationFirst_21_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -823,7 +823,7 @@ public class TerminationFirstImpl extends AbstractRuleImpl implements Terminatio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_433(EMoflonEdge _edge_targetRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_827(EMoflonEdge _edge_targetRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = TerminationFirstImpl.pattern_TerminationFirst_22_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -875,7 +875,7 @@ public class TerminationFirstImpl extends AbstractRuleImpl implements Terminatio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_434(EMoflonEdge _edge_incoming) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_828(EMoflonEdge _edge_incoming) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = TerminationFirstImpl.pattern_TerminationFirst_23_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -927,7 +927,7 @@ public class TerminationFirstImpl extends AbstractRuleImpl implements Terminatio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_131(EMoflonEdge _edge_finalState) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_253(EMoflonEdge _edge_finalState) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = TerminationFirstImpl.pattern_TerminationFirst_24_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -976,7 +976,7 @@ public class TerminationFirstImpl extends AbstractRuleImpl implements Terminatio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_435(EMoflonEdge _edge_sourceRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_829(EMoflonEdge _edge_sourceRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = TerminationFirstImpl.pattern_TerminationFirst_25_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -1028,7 +1028,7 @@ public class TerminationFirstImpl extends AbstractRuleImpl implements Terminatio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_436(EMoflonEdge _edge_outgoing) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_830(EMoflonEdge _edge_outgoing) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = TerminationFirstImpl.pattern_TerminationFirst_26_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -1287,20 +1287,20 @@ public class TerminationFirstImpl extends AbstractRuleImpl implements Terminatio
 			return null;
 		case RulesPackage.TERMINATION_FIRST___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.TERMINATION_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_431__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_431((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TERMINATION_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_432__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_432((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TERMINATION_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_433__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_433((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TERMINATION_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_434__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_434((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TERMINATION_FIRST___IS_APPROPRIATE_BWD_EMOFLON_EDGE_131__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_131((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TERMINATION_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_435__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_435((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TERMINATION_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_436__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_436((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TERMINATION_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_825__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_825((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TERMINATION_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_826__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_826((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TERMINATION_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_827__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_827((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TERMINATION_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_828__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_828((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TERMINATION_FIRST___IS_APPROPRIATE_BWD_EMOFLON_EDGE_253__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_253((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TERMINATION_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_829__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_829((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TERMINATION_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_830__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_830((EMoflonEdge) arguments.get(0));
 		case RulesPackage.TERMINATION_FIRST___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.TERMINATION_FIRST___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
@@ -2417,9 +2417,9 @@ public class TerminationFirstImpl extends AbstractRuleImpl implements Terminatio
 	}
 
 	public static final Object[] pattern_TerminationFirst_20_2_black_nac_0BB(SequenceFlow inFlow, FlowNode prevNode) {
-		for (ExclusiveGateway __DEC_inFlow_default_565530 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_inFlow_default_916682 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(inFlow, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_inFlow_default_565530)) {
+			if (!prevNode.equals(__DEC_inFlow_default_916682)) {
 				return new Object[] { inFlow, prevNode };
 			}
 		}
@@ -2428,9 +2428,9 @@ public class TerminationFirstImpl extends AbstractRuleImpl implements Terminatio
 
 	public static final Object[] pattern_TerminationFirst_20_2_black_nac_1BB(SequenceFlow inFlow,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_inFlow_flowElements_147590 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_inFlow_flowElements_116190 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(inFlow, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_inFlow_flowElements_147590)) {
+			if (!process.equals(__DEC_inFlow_flowElements_116190)) {
 				return new Object[] { inFlow, process };
 			}
 		}
@@ -2439,9 +2439,9 @@ public class TerminationFirstImpl extends AbstractRuleImpl implements Terminatio
 
 	public static final Object[] pattern_TerminationFirst_20_2_black_nac_2BB(EndEvent event,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_event_flowElements_959931 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_event_flowElements_391509 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(event, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_event_flowElements_959931)) {
+			if (!process.equals(__DEC_event_flowElements_391509)) {
 				return new Object[] { event, process };
 			}
 		}
@@ -2570,9 +2570,9 @@ public class TerminationFirstImpl extends AbstractRuleImpl implements Terminatio
 	}
 
 	public static final Object[] pattern_TerminationFirst_21_2_black_nac_0BB(SequenceFlow inFlow, FlowNode prevNode) {
-		for (ExclusiveGateway __DEC_inFlow_default_887111 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_inFlow_default_238024 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(inFlow, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_inFlow_default_887111)) {
+			if (!prevNode.equals(__DEC_inFlow_default_238024)) {
 				return new Object[] { inFlow, prevNode };
 			}
 		}
@@ -2581,9 +2581,9 @@ public class TerminationFirstImpl extends AbstractRuleImpl implements Terminatio
 
 	public static final Object[] pattern_TerminationFirst_21_2_black_nac_1BB(SequenceFlow inFlow,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_inFlow_flowElements_940847 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_inFlow_flowElements_695697 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(inFlow, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_inFlow_flowElements_940847)) {
+			if (!process.equals(__DEC_inFlow_flowElements_695697)) {
 				return new Object[] { inFlow, process };
 			}
 		}
@@ -2592,9 +2592,9 @@ public class TerminationFirstImpl extends AbstractRuleImpl implements Terminatio
 
 	public static final Object[] pattern_TerminationFirst_21_2_black_nac_2BB(EndEvent event,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_event_flowElements_400998 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_event_flowElements_508188 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(event, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_event_flowElements_400998)) {
+			if (!process.equals(__DEC_event_flowElements_508188)) {
 				return new Object[] { event, process };
 			}
 		}
@@ -2724,9 +2724,9 @@ public class TerminationFirstImpl extends AbstractRuleImpl implements Terminatio
 	}
 
 	public static final Object[] pattern_TerminationFirst_22_2_black_nac_0BB(SequenceFlow inFlow, FlowNode prevNode) {
-		for (ExclusiveGateway __DEC_inFlow_default_481214 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_inFlow_default_132709 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(inFlow, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_inFlow_default_481214)) {
+			if (!prevNode.equals(__DEC_inFlow_default_132709)) {
 				return new Object[] { inFlow, prevNode };
 			}
 		}
@@ -2735,9 +2735,9 @@ public class TerminationFirstImpl extends AbstractRuleImpl implements Terminatio
 
 	public static final Object[] pattern_TerminationFirst_22_2_black_nac_1BB(SequenceFlow inFlow,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_inFlow_flowElements_981150 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_inFlow_flowElements_607796 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(inFlow, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_inFlow_flowElements_981150)) {
+			if (!process.equals(__DEC_inFlow_flowElements_607796)) {
 				return new Object[] { inFlow, process };
 			}
 		}
@@ -2746,9 +2746,9 @@ public class TerminationFirstImpl extends AbstractRuleImpl implements Terminatio
 
 	public static final Object[] pattern_TerminationFirst_22_2_black_nac_2BB(EndEvent event,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_event_flowElements_786534 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_event_flowElements_796629 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(event, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_event_flowElements_786534)) {
+			if (!process.equals(__DEC_event_flowElements_796629)) {
 				return new Object[] { event, process };
 			}
 		}
@@ -2876,9 +2876,9 @@ public class TerminationFirstImpl extends AbstractRuleImpl implements Terminatio
 	}
 
 	public static final Object[] pattern_TerminationFirst_23_2_black_nac_0BB(SequenceFlow inFlow, FlowNode prevNode) {
-		for (ExclusiveGateway __DEC_inFlow_default_302507 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_inFlow_default_372300 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(inFlow, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_inFlow_default_302507)) {
+			if (!prevNode.equals(__DEC_inFlow_default_372300)) {
 				return new Object[] { inFlow, prevNode };
 			}
 		}
@@ -2887,9 +2887,9 @@ public class TerminationFirstImpl extends AbstractRuleImpl implements Terminatio
 
 	public static final Object[] pattern_TerminationFirst_23_2_black_nac_1BB(SequenceFlow inFlow,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_inFlow_flowElements_801862 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_inFlow_flowElements_854353 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(inFlow, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_inFlow_flowElements_801862)) {
+			if (!process.equals(__DEC_inFlow_flowElements_854353)) {
 				return new Object[] { inFlow, process };
 			}
 		}
@@ -2898,9 +2898,9 @@ public class TerminationFirstImpl extends AbstractRuleImpl implements Terminatio
 
 	public static final Object[] pattern_TerminationFirst_23_2_black_nac_2BB(EndEvent event,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_event_flowElements_390561 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_event_flowElements_817534 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(event, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_event_flowElements_390561)) {
+			if (!process.equals(__DEC_event_flowElements_817534)) {
 				return new Object[] { event, process };
 			}
 		}
@@ -3028,7 +3028,7 @@ public class TerminationFirstImpl extends AbstractRuleImpl implements Terminatio
 	}
 
 	public static final Object[] pattern_TerminationFirst_24_2_black_nac_0B(UCCondition state) {
-		for (UseCase __DEC_state_precondition_223189 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (UseCase __DEC_state_precondition_910298 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(state, UseCase.class, "precondition")) {
 			return new Object[] { state };
 		}
@@ -3036,9 +3036,9 @@ public class TerminationFirstImpl extends AbstractRuleImpl implements Terminatio
 	}
 
 	public static final Object[] pattern_TerminationFirst_24_2_black_nac_1BB(UCCondition state, Flow flow) {
-		for (Flow __DEC_state_finalState_631711 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (Flow __DEC_state_finalState_416144 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(state, Flow.class, "finalState")) {
-			if (!flow.equals(__DEC_state_finalState_631711)) {
+			if (!flow.equals(__DEC_state_finalState_416144)) {
 				return new Object[] { state, flow };
 			}
 		}
@@ -3046,7 +3046,7 @@ public class TerminationFirstImpl extends AbstractRuleImpl implements Terminatio
 	}
 
 	public static final Object[] pattern_TerminationFirst_24_2_black_nac_2B(UCCondition state) {
-		for (Step __DEC_state___last_232466 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(state,
+		for (Step __DEC_state___last_775987 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(state,
 				Step.class, "__last")) {
 			return new Object[] { state };
 		}
@@ -3158,9 +3158,9 @@ public class TerminationFirstImpl extends AbstractRuleImpl implements Terminatio
 	}
 
 	public static final Object[] pattern_TerminationFirst_25_2_black_nac_0BB(SequenceFlow inFlow, FlowNode prevNode) {
-		for (ExclusiveGateway __DEC_inFlow_default_632667 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_inFlow_default_232353 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(inFlow, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_inFlow_default_632667)) {
+			if (!prevNode.equals(__DEC_inFlow_default_232353)) {
 				return new Object[] { inFlow, prevNode };
 			}
 		}
@@ -3169,9 +3169,9 @@ public class TerminationFirstImpl extends AbstractRuleImpl implements Terminatio
 
 	public static final Object[] pattern_TerminationFirst_25_2_black_nac_1BB(SequenceFlow inFlow,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_inFlow_flowElements_76554 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_inFlow_flowElements_276557 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(inFlow, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_inFlow_flowElements_76554)) {
+			if (!process.equals(__DEC_inFlow_flowElements_276557)) {
 				return new Object[] { inFlow, process };
 			}
 		}
@@ -3180,9 +3180,9 @@ public class TerminationFirstImpl extends AbstractRuleImpl implements Terminatio
 
 	public static final Object[] pattern_TerminationFirst_25_2_black_nac_2BB(EndEvent event,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_event_flowElements_994254 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_event_flowElements_782021 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(event, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_event_flowElements_994254)) {
+			if (!process.equals(__DEC_event_flowElements_782021)) {
 				return new Object[] { event, process };
 			}
 		}
@@ -3311,9 +3311,9 @@ public class TerminationFirstImpl extends AbstractRuleImpl implements Terminatio
 	}
 
 	public static final Object[] pattern_TerminationFirst_26_2_black_nac_0BB(SequenceFlow inFlow, FlowNode prevNode) {
-		for (ExclusiveGateway __DEC_inFlow_default_106709 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_inFlow_default_59870 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(inFlow, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_inFlow_default_106709)) {
+			if (!prevNode.equals(__DEC_inFlow_default_59870)) {
 				return new Object[] { inFlow, prevNode };
 			}
 		}
@@ -3322,9 +3322,9 @@ public class TerminationFirstImpl extends AbstractRuleImpl implements Terminatio
 
 	public static final Object[] pattern_TerminationFirst_26_2_black_nac_1BB(SequenceFlow inFlow,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_inFlow_flowElements_734266 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_inFlow_flowElements_668863 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(inFlow, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_inFlow_flowElements_734266)) {
+			if (!process.equals(__DEC_inFlow_flowElements_668863)) {
 				return new Object[] { inFlow, process };
 			}
 		}
@@ -3333,9 +3333,9 @@ public class TerminationFirstImpl extends AbstractRuleImpl implements Terminatio
 
 	public static final Object[] pattern_TerminationFirst_26_2_black_nac_2BB(EndEvent event,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_event_flowElements_620560 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_event_flowElements_474702 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(event, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_event_flowElements_620560)) {
+			if (!process.equals(__DEC_event_flowElements_474702)) {
 				return new Object[] { event, process };
 			}
 		}

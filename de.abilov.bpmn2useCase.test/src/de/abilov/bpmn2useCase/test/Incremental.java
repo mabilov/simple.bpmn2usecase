@@ -206,6 +206,9 @@ public class Incremental extends IncrementalIntegratorTest {
 		de.abilov.useCase.util.SynchronizationHelper.preprocess((UseCase) helper.getTrg());
 
 		helper.integrateBackward();
+		
+		de.abilov.bpmn.util.SynchronizationHelper.postprocess((Process) helper.getSrc());
+		
 		helper.setChangeSrc(changeSrc);
 		helper.integrateForward();
 

@@ -731,7 +731,7 @@ public class EmptyDefaulFlowImpl extends AbstractRuleImpl implements EmptyDefaul
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_497(EMoflonEdge _edge_sourceRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_891(EMoflonEdge _edge_sourceRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = EmptyDefaulFlowImpl.pattern_EmptyDefaulFlow_20_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -782,7 +782,7 @@ public class EmptyDefaulFlowImpl extends AbstractRuleImpl implements EmptyDefaul
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_498(EMoflonEdge _edge_outgoing) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_892(EMoflonEdge _edge_outgoing) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = EmptyDefaulFlowImpl.pattern_EmptyDefaulFlow_21_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -833,7 +833,7 @@ public class EmptyDefaulFlowImpl extends AbstractRuleImpl implements EmptyDefaul
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_499(EMoflonEdge _edge_default) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_893(EMoflonEdge _edge_default) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = EmptyDefaulFlowImpl.pattern_EmptyDefaulFlow_22_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -884,7 +884,7 @@ public class EmptyDefaulFlowImpl extends AbstractRuleImpl implements EmptyDefaul
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_152(EMoflonEdge _edge___lastInDef) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_274(EMoflonEdge _edge___lastInDef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = EmptyDefaulFlowImpl.pattern_EmptyDefaulFlow_23_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -934,7 +934,7 @@ public class EmptyDefaulFlowImpl extends AbstractRuleImpl implements EmptyDefaul
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_500(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_894(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = EmptyDefaulFlowImpl.pattern_EmptyDefaulFlow_24_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -985,7 +985,7 @@ public class EmptyDefaulFlowImpl extends AbstractRuleImpl implements EmptyDefaul
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_501(EMoflonEdge _edge_targetRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_895(EMoflonEdge _edge_targetRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = EmptyDefaulFlowImpl.pattern_EmptyDefaulFlow_25_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -1036,7 +1036,7 @@ public class EmptyDefaulFlowImpl extends AbstractRuleImpl implements EmptyDefaul
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_502(EMoflonEdge _edge_incoming) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_896(EMoflonEdge _edge_incoming) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = EmptyDefaulFlowImpl.pattern_EmptyDefaulFlow_26_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -1301,20 +1301,20 @@ public class EmptyDefaulFlowImpl extends AbstractRuleImpl implements EmptyDefaul
 			return null;
 		case RulesPackage.EMPTY_DEFAUL_FLOW___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.EMPTY_DEFAUL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_497__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_497((EMoflonEdge) arguments.get(0));
-		case RulesPackage.EMPTY_DEFAUL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_498__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_498((EMoflonEdge) arguments.get(0));
-		case RulesPackage.EMPTY_DEFAUL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_499__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_499((EMoflonEdge) arguments.get(0));
-		case RulesPackage.EMPTY_DEFAUL_FLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_152__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_152((EMoflonEdge) arguments.get(0));
-		case RulesPackage.EMPTY_DEFAUL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_500__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_500((EMoflonEdge) arguments.get(0));
-		case RulesPackage.EMPTY_DEFAUL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_501__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_501((EMoflonEdge) arguments.get(0));
-		case RulesPackage.EMPTY_DEFAUL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_502__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_502((EMoflonEdge) arguments.get(0));
+		case RulesPackage.EMPTY_DEFAUL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_891__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_891((EMoflonEdge) arguments.get(0));
+		case RulesPackage.EMPTY_DEFAUL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_892__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_892((EMoflonEdge) arguments.get(0));
+		case RulesPackage.EMPTY_DEFAUL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_893__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_893((EMoflonEdge) arguments.get(0));
+		case RulesPackage.EMPTY_DEFAUL_FLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_274__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_274((EMoflonEdge) arguments.get(0));
+		case RulesPackage.EMPTY_DEFAUL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_894__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_894((EMoflonEdge) arguments.get(0));
+		case RulesPackage.EMPTY_DEFAUL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_895__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_895((EMoflonEdge) arguments.get(0));
+		case RulesPackage.EMPTY_DEFAUL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_896__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_896((EMoflonEdge) arguments.get(0));
 		case RulesPackage.EMPTY_DEFAUL_FLOW___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.EMPTY_DEFAUL_FLOW___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
@@ -2722,10 +2722,10 @@ public class EmptyDefaulFlowImpl extends AbstractRuleImpl implements EmptyDefaul
 	public static final Object[] pattern_EmptyDefaulFlow_20_2_black_nac_0BBB(SequenceFlow sf, ExclusiveGateway gw,
 			ExclusiveGateway gcw) {
 		if (!gcw.equals(gw)) {
-			for (ExclusiveGateway __DEC_sf_default_498615 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (ExclusiveGateway __DEC_sf_default_352246 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
-				if (!gw.equals(__DEC_sf_default_498615)) {
-					if (!gcw.equals(__DEC_sf_default_498615)) {
+				if (!gw.equals(__DEC_sf_default_352246)) {
+					if (!gcw.equals(__DEC_sf_default_352246)) {
 						return new Object[] { sf, gw, gcw };
 					}
 				}
@@ -2736,9 +2736,9 @@ public class EmptyDefaulFlowImpl extends AbstractRuleImpl implements EmptyDefaul
 
 	public static final Object[] pattern_EmptyDefaulFlow_20_2_black_nac_1BB(SequenceFlow sf,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf_flowElements_310724 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf_flowElements_474188 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_310724)) {
+			if (!process.equals(__DEC_sf_flowElements_474188)) {
 				return new Object[] { sf, process };
 			}
 		}
@@ -2885,10 +2885,10 @@ public class EmptyDefaulFlowImpl extends AbstractRuleImpl implements EmptyDefaul
 	public static final Object[] pattern_EmptyDefaulFlow_21_2_black_nac_0BBB(SequenceFlow sf, ExclusiveGateway gw,
 			ExclusiveGateway gcw) {
 		if (!gcw.equals(gw)) {
-			for (ExclusiveGateway __DEC_sf_default_221520 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (ExclusiveGateway __DEC_sf_default_469869 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
-				if (!gw.equals(__DEC_sf_default_221520)) {
-					if (!gcw.equals(__DEC_sf_default_221520)) {
+				if (!gw.equals(__DEC_sf_default_469869)) {
+					if (!gcw.equals(__DEC_sf_default_469869)) {
 						return new Object[] { sf, gw, gcw };
 					}
 				}
@@ -2899,9 +2899,9 @@ public class EmptyDefaulFlowImpl extends AbstractRuleImpl implements EmptyDefaul
 
 	public static final Object[] pattern_EmptyDefaulFlow_21_2_black_nac_1BB(SequenceFlow sf,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf_flowElements_925601 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf_flowElements_20427 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_925601)) {
+			if (!process.equals(__DEC_sf_flowElements_20427)) {
 				return new Object[] { sf, process };
 			}
 		}
@@ -3048,10 +3048,10 @@ public class EmptyDefaulFlowImpl extends AbstractRuleImpl implements EmptyDefaul
 	public static final Object[] pattern_EmptyDefaulFlow_22_2_black_nac_0BBB(SequenceFlow sf, ExclusiveGateway gw,
 			ExclusiveGateway gcw) {
 		if (!gcw.equals(gw)) {
-			for (ExclusiveGateway __DEC_sf_default_522350 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (ExclusiveGateway __DEC_sf_default_256148 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
-				if (!gw.equals(__DEC_sf_default_522350)) {
-					if (!gcw.equals(__DEC_sf_default_522350)) {
+				if (!gw.equals(__DEC_sf_default_256148)) {
+					if (!gcw.equals(__DEC_sf_default_256148)) {
 						return new Object[] { sf, gw, gcw };
 					}
 				}
@@ -3062,9 +3062,9 @@ public class EmptyDefaulFlowImpl extends AbstractRuleImpl implements EmptyDefaul
 
 	public static final Object[] pattern_EmptyDefaulFlow_22_2_black_nac_1BB(SequenceFlow sf,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf_flowElements_752240 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf_flowElements_636789 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_752240)) {
+			if (!process.equals(__DEC_sf_flowElements_636789)) {
 				return new Object[] { sf, process };
 			}
 		}
@@ -3311,10 +3311,10 @@ public class EmptyDefaulFlowImpl extends AbstractRuleImpl implements EmptyDefaul
 	public static final Object[] pattern_EmptyDefaulFlow_24_2_black_nac_0BBB(SequenceFlow sf, ExclusiveGateway gw,
 			ExclusiveGateway gcw) {
 		if (!gcw.equals(gw)) {
-			for (ExclusiveGateway __DEC_sf_default_439216 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (ExclusiveGateway __DEC_sf_default_274388 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
-				if (!gw.equals(__DEC_sf_default_439216)) {
-					if (!gcw.equals(__DEC_sf_default_439216)) {
+				if (!gw.equals(__DEC_sf_default_274388)) {
+					if (!gcw.equals(__DEC_sf_default_274388)) {
 						return new Object[] { sf, gw, gcw };
 					}
 				}
@@ -3325,9 +3325,9 @@ public class EmptyDefaulFlowImpl extends AbstractRuleImpl implements EmptyDefaul
 
 	public static final Object[] pattern_EmptyDefaulFlow_24_2_black_nac_1BB(SequenceFlow sf,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf_flowElements_689959 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf_flowElements_117178 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_689959)) {
+			if (!process.equals(__DEC_sf_flowElements_117178)) {
 				return new Object[] { sf, process };
 			}
 		}
@@ -3477,10 +3477,10 @@ public class EmptyDefaulFlowImpl extends AbstractRuleImpl implements EmptyDefaul
 	public static final Object[] pattern_EmptyDefaulFlow_25_2_black_nac_0BBB(SequenceFlow sf, ExclusiveGateway gw,
 			ExclusiveGateway gcw) {
 		if (!gcw.equals(gw)) {
-			for (ExclusiveGateway __DEC_sf_default_488045 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (ExclusiveGateway __DEC_sf_default_988490 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
-				if (!gw.equals(__DEC_sf_default_488045)) {
-					if (!gcw.equals(__DEC_sf_default_488045)) {
+				if (!gw.equals(__DEC_sf_default_988490)) {
+					if (!gcw.equals(__DEC_sf_default_988490)) {
 						return new Object[] { sf, gw, gcw };
 					}
 				}
@@ -3491,9 +3491,9 @@ public class EmptyDefaulFlowImpl extends AbstractRuleImpl implements EmptyDefaul
 
 	public static final Object[] pattern_EmptyDefaulFlow_25_2_black_nac_1BB(SequenceFlow sf,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf_flowElements_659074 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf_flowElements_834219 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_659074)) {
+			if (!process.equals(__DEC_sf_flowElements_834219)) {
 				return new Object[] { sf, process };
 			}
 		}
@@ -3640,10 +3640,10 @@ public class EmptyDefaulFlowImpl extends AbstractRuleImpl implements EmptyDefaul
 	public static final Object[] pattern_EmptyDefaulFlow_26_2_black_nac_0BBB(SequenceFlow sf, ExclusiveGateway gw,
 			ExclusiveGateway gcw) {
 		if (!gcw.equals(gw)) {
-			for (ExclusiveGateway __DEC_sf_default_601390 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (ExclusiveGateway __DEC_sf_default_234878 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
-				if (!gw.equals(__DEC_sf_default_601390)) {
-					if (!gcw.equals(__DEC_sf_default_601390)) {
+				if (!gw.equals(__DEC_sf_default_234878)) {
+					if (!gcw.equals(__DEC_sf_default_234878)) {
 						return new Object[] { sf, gw, gcw };
 					}
 				}
@@ -3654,9 +3654,9 @@ public class EmptyDefaulFlowImpl extends AbstractRuleImpl implements EmptyDefaul
 
 	public static final Object[] pattern_EmptyDefaulFlow_26_2_black_nac_1BB(SequenceFlow sf,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf_flowElements_64332 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf_flowElements_125073 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_64332)) {
+			if (!process.equals(__DEC_sf_flowElements_125073)) {
 				return new Object[] { sf, process };
 			}
 		}

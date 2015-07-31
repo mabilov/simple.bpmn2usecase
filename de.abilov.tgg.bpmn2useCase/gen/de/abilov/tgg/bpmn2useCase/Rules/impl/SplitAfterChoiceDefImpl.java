@@ -800,7 +800,7 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_529(EMoflonEdge _edge_sourceRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_923(EMoflonEdge _edge_sourceRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SplitAfterChoiceDefImpl
 				.pattern_SplitAfterChoiceDef_20_1_bindingAndBlackFFB(this);
@@ -856,7 +856,7 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_530(EMoflonEdge _edge_outgoing) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_924(EMoflonEdge _edge_outgoing) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SplitAfterChoiceDefImpl
 				.pattern_SplitAfterChoiceDef_21_1_bindingAndBlackFFB(this);
@@ -912,7 +912,7 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_531(EMoflonEdge _edge_default) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_925(EMoflonEdge _edge_default) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SplitAfterChoiceDefImpl
 				.pattern_SplitAfterChoiceDef_22_1_bindingAndBlackFFB(this);
@@ -968,7 +968,7 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_160(EMoflonEdge _edge_next) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_282(EMoflonEdge _edge_next) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SplitAfterChoiceDefImpl
 				.pattern_SplitAfterChoiceDef_23_1_bindingAndBlackFFB(this);
@@ -1021,7 +1021,7 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_161(EMoflonEdge _edge_steps) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_283(EMoflonEdge _edge_steps) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SplitAfterChoiceDefImpl
 				.pattern_SplitAfterChoiceDef_24_1_bindingAndBlackFFB(this);
@@ -1074,7 +1074,7 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_532(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_926(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SplitAfterChoiceDefImpl
 				.pattern_SplitAfterChoiceDef_25_1_bindingAndBlackFFB(this);
@@ -1130,7 +1130,7 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_533(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_927(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SplitAfterChoiceDefImpl
 				.pattern_SplitAfterChoiceDef_26_1_bindingAndBlackFFB(this);
@@ -1186,7 +1186,7 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_534(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_928(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SplitAfterChoiceDefImpl
 				.pattern_SplitAfterChoiceDef_27_1_bindingAndBlackFFB(this);
@@ -1242,7 +1242,7 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_535(EMoflonEdge _edge_targetRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_929(EMoflonEdge _edge_targetRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SplitAfterChoiceDefImpl
 				.pattern_SplitAfterChoiceDef_28_1_bindingAndBlackFFB(this);
@@ -1298,7 +1298,7 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_536(EMoflonEdge _edge_incoming) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_930(EMoflonEdge _edge_incoming) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SplitAfterChoiceDefImpl
 				.pattern_SplitAfterChoiceDef_29_1_bindingAndBlackFFB(this);
@@ -1354,7 +1354,7 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_537(EMoflonEdge _edge___conv) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_931(EMoflonEdge _edge___conv) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SplitAfterChoiceDefImpl
 				.pattern_SplitAfterChoiceDef_30_1_bindingAndBlackFFB(this);
@@ -1687,28 +1687,28 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 			return null;
 		case RulesPackage.SPLIT_AFTER_CHOICE_DEF___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_529__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_529((EMoflonEdge) arguments.get(0));
-		case RulesPackage.SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_530__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_530((EMoflonEdge) arguments.get(0));
-		case RulesPackage.SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_531__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_531((EMoflonEdge) arguments.get(0));
-		case RulesPackage.SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_160__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_160((EMoflonEdge) arguments.get(0));
-		case RulesPackage.SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_161__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_161((EMoflonEdge) arguments.get(0));
-		case RulesPackage.SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_532__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_532((EMoflonEdge) arguments.get(0));
-		case RulesPackage.SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_533__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_533((EMoflonEdge) arguments.get(0));
-		case RulesPackage.SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_534__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_534((EMoflonEdge) arguments.get(0));
-		case RulesPackage.SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_535__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_535((EMoflonEdge) arguments.get(0));
-		case RulesPackage.SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_536__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_536((EMoflonEdge) arguments.get(0));
-		case RulesPackage.SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_537__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_537((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_923__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_923((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_924__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_924((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_925__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_925((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_282__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_282((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_283__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_283((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_926__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_926((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_927__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_927((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_928__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_928((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_929__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_929((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_930__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_930((EMoflonEdge) arguments.get(0));
+		case RulesPackage.SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_931__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_931((EMoflonEdge) arguments.get(0));
 		case RulesPackage.SPLIT_AFTER_CHOICE_DEF___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.SPLIT_AFTER_CHOICE_DEF___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
@@ -3345,9 +3345,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_20_2_black_nac_0BB(SequenceFlow sf1,
 			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_495328 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_sf1_default_807368 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_495328)) {
+			if (!prevNode.equals(__DEC_sf1_default_807368)) {
 				return new Object[] { sf1, prevNode };
 			}
 		}
@@ -3356,9 +3356,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_20_2_black_nac_1BB(SequenceFlow sf1,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_124196 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_774272 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_124196)) {
+			if (!process.equals(__DEC_sf1_flowElements_774272)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -3367,9 +3367,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_20_2_black_nac_2BB(ParallelGateway pgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_539803 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_182474 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pgw_flowElements_539803)) {
+			if (!process.equals(__DEC_pgw_flowElements_182474)) {
 				return new Object[] { pgw, process };
 			}
 		}
@@ -3379,11 +3379,11 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	public static final Object[] pattern_SplitAfterChoiceDef_20_2_black_nac_3BBB(ParallelGateway pgw,
 			ExclusiveGateway prevNode, ParallelGateway pcgw) {
 		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pgw___conv_887639 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_pgw___conv_559559 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
-				if (!pgw.equals(__DEC_pgw___conv_887639)) {
-					if (!prevNode.equals(__DEC_pgw___conv_887639)) {
-						if (!pcgw.equals(__DEC_pgw___conv_887639)) {
+				if (!pgw.equals(__DEC_pgw___conv_559559)) {
+					if (!prevNode.equals(__DEC_pgw___conv_559559)) {
+						if (!pcgw.equals(__DEC_pgw___conv_559559)) {
 							return new Object[] { pgw, prevNode, pcgw };
 						}
 					}
@@ -3396,11 +3396,11 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	public static final Object[] pattern_SplitAfterChoiceDef_20_2_black_nac_4BBB(ParallelGateway pcgw,
 			ExclusiveGateway prevNode, ParallelGateway pgw) {
 		if (!pcgw.equals(pgw)) {
-			Gateway __DEC_pcgw___conv_704408 = pcgw.get__conv();
-			if (__DEC_pcgw___conv_704408 != null) {
-				if (!pcgw.equals(__DEC_pcgw___conv_704408)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_704408)) {
-						if (!pgw.equals(__DEC_pcgw___conv_704408)) {
+			Gateway __DEC_pcgw___conv_928078 = pcgw.get__conv();
+			if (__DEC_pcgw___conv_928078 != null) {
+				if (!pcgw.equals(__DEC_pcgw___conv_928078)) {
+					if (!prevNode.equals(__DEC_pcgw___conv_928078)) {
+						if (!pgw.equals(__DEC_pcgw___conv_928078)) {
 							return new Object[] { pcgw, prevNode, pgw };
 						}
 					}
@@ -3413,9 +3413,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_20_2_black_nac_5BB(ParallelGateway pcgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_805311 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_231017 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pcgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pcgw_flowElements_805311)) {
+			if (!process.equals(__DEC_pcgw_flowElements_231017)) {
 				return new Object[] { pcgw, process };
 			}
 		}
@@ -3425,11 +3425,11 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	public static final Object[] pattern_SplitAfterChoiceDef_20_2_black_nac_6BBB(ParallelGateway pcgw,
 			ExclusiveGateway prevNode, ParallelGateway pgw) {
 		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pcgw___conv_991982 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_pcgw___conv_554385 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
-				if (!pcgw.equals(__DEC_pcgw___conv_991982)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_991982)) {
-						if (!pgw.equals(__DEC_pcgw___conv_991982)) {
+				if (!pcgw.equals(__DEC_pcgw___conv_554385)) {
+					if (!prevNode.equals(__DEC_pcgw___conv_554385)) {
+						if (!pgw.equals(__DEC_pcgw___conv_554385)) {
 							return new Object[] { pcgw, prevNode, pgw };
 						}
 					}
@@ -3632,9 +3632,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_21_2_black_nac_0BB(SequenceFlow sf1,
 			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_360614 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_sf1_default_834704 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_360614)) {
+			if (!prevNode.equals(__DEC_sf1_default_834704)) {
 				return new Object[] { sf1, prevNode };
 			}
 		}
@@ -3643,9 +3643,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_21_2_black_nac_1BB(SequenceFlow sf1,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_737688 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_619797 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_737688)) {
+			if (!process.equals(__DEC_sf1_flowElements_619797)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -3654,9 +3654,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_21_2_black_nac_2BB(ParallelGateway pgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_652705 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_559344 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pgw_flowElements_652705)) {
+			if (!process.equals(__DEC_pgw_flowElements_559344)) {
 				return new Object[] { pgw, process };
 			}
 		}
@@ -3666,11 +3666,11 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	public static final Object[] pattern_SplitAfterChoiceDef_21_2_black_nac_3BBB(ParallelGateway pgw,
 			ExclusiveGateway prevNode, ParallelGateway pcgw) {
 		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pgw___conv_358781 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_pgw___conv_471653 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
-				if (!pgw.equals(__DEC_pgw___conv_358781)) {
-					if (!prevNode.equals(__DEC_pgw___conv_358781)) {
-						if (!pcgw.equals(__DEC_pgw___conv_358781)) {
+				if (!pgw.equals(__DEC_pgw___conv_471653)) {
+					if (!prevNode.equals(__DEC_pgw___conv_471653)) {
+						if (!pcgw.equals(__DEC_pgw___conv_471653)) {
 							return new Object[] { pgw, prevNode, pcgw };
 						}
 					}
@@ -3683,11 +3683,11 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	public static final Object[] pattern_SplitAfterChoiceDef_21_2_black_nac_4BBB(ParallelGateway pcgw,
 			ExclusiveGateway prevNode, ParallelGateway pgw) {
 		if (!pcgw.equals(pgw)) {
-			Gateway __DEC_pcgw___conv_172988 = pcgw.get__conv();
-			if (__DEC_pcgw___conv_172988 != null) {
-				if (!pcgw.equals(__DEC_pcgw___conv_172988)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_172988)) {
-						if (!pgw.equals(__DEC_pcgw___conv_172988)) {
+			Gateway __DEC_pcgw___conv_611741 = pcgw.get__conv();
+			if (__DEC_pcgw___conv_611741 != null) {
+				if (!pcgw.equals(__DEC_pcgw___conv_611741)) {
+					if (!prevNode.equals(__DEC_pcgw___conv_611741)) {
+						if (!pgw.equals(__DEC_pcgw___conv_611741)) {
 							return new Object[] { pcgw, prevNode, pgw };
 						}
 					}
@@ -3700,9 +3700,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_21_2_black_nac_5BB(ParallelGateway pcgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_580219 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_516652 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pcgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pcgw_flowElements_580219)) {
+			if (!process.equals(__DEC_pcgw_flowElements_516652)) {
 				return new Object[] { pcgw, process };
 			}
 		}
@@ -3712,11 +3712,11 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	public static final Object[] pattern_SplitAfterChoiceDef_21_2_black_nac_6BBB(ParallelGateway pcgw,
 			ExclusiveGateway prevNode, ParallelGateway pgw) {
 		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pcgw___conv_539555 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_pcgw___conv_39895 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
-				if (!pcgw.equals(__DEC_pcgw___conv_539555)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_539555)) {
-						if (!pgw.equals(__DEC_pcgw___conv_539555)) {
+				if (!pcgw.equals(__DEC_pcgw___conv_39895)) {
+					if (!prevNode.equals(__DEC_pcgw___conv_39895)) {
+						if (!pgw.equals(__DEC_pcgw___conv_39895)) {
 							return new Object[] { pcgw, prevNode, pgw };
 						}
 					}
@@ -3919,9 +3919,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_22_2_black_nac_0BB(SequenceFlow sf1,
 			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_195560 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_sf1_default_199277 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_195560)) {
+			if (!prevNode.equals(__DEC_sf1_default_199277)) {
 				return new Object[] { sf1, prevNode };
 			}
 		}
@@ -3930,9 +3930,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_22_2_black_nac_1BB(SequenceFlow sf1,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_135026 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_216896 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_135026)) {
+			if (!process.equals(__DEC_sf1_flowElements_216896)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -3941,9 +3941,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_22_2_black_nac_2BB(ParallelGateway pgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_487592 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_560836 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pgw_flowElements_487592)) {
+			if (!process.equals(__DEC_pgw_flowElements_560836)) {
 				return new Object[] { pgw, process };
 			}
 		}
@@ -3953,11 +3953,11 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	public static final Object[] pattern_SplitAfterChoiceDef_22_2_black_nac_3BBB(ParallelGateway pgw,
 			ExclusiveGateway prevNode, ParallelGateway pcgw) {
 		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pgw___conv_753592 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_pgw___conv_32802 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
-				if (!pgw.equals(__DEC_pgw___conv_753592)) {
-					if (!prevNode.equals(__DEC_pgw___conv_753592)) {
-						if (!pcgw.equals(__DEC_pgw___conv_753592)) {
+				if (!pgw.equals(__DEC_pgw___conv_32802)) {
+					if (!prevNode.equals(__DEC_pgw___conv_32802)) {
+						if (!pcgw.equals(__DEC_pgw___conv_32802)) {
 							return new Object[] { pgw, prevNode, pcgw };
 						}
 					}
@@ -3970,11 +3970,11 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	public static final Object[] pattern_SplitAfterChoiceDef_22_2_black_nac_4BBB(ParallelGateway pcgw,
 			ExclusiveGateway prevNode, ParallelGateway pgw) {
 		if (!pcgw.equals(pgw)) {
-			Gateway __DEC_pcgw___conv_747662 = pcgw.get__conv();
-			if (__DEC_pcgw___conv_747662 != null) {
-				if (!pcgw.equals(__DEC_pcgw___conv_747662)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_747662)) {
-						if (!pgw.equals(__DEC_pcgw___conv_747662)) {
+			Gateway __DEC_pcgw___conv_655607 = pcgw.get__conv();
+			if (__DEC_pcgw___conv_655607 != null) {
+				if (!pcgw.equals(__DEC_pcgw___conv_655607)) {
+					if (!prevNode.equals(__DEC_pcgw___conv_655607)) {
+						if (!pgw.equals(__DEC_pcgw___conv_655607)) {
 							return new Object[] { pcgw, prevNode, pgw };
 						}
 					}
@@ -3987,9 +3987,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_22_2_black_nac_5BB(ParallelGateway pcgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_634769 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_83082 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pcgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pcgw_flowElements_634769)) {
+			if (!process.equals(__DEC_pcgw_flowElements_83082)) {
 				return new Object[] { pcgw, process };
 			}
 		}
@@ -3999,11 +3999,11 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	public static final Object[] pattern_SplitAfterChoiceDef_22_2_black_nac_6BBB(ParallelGateway pcgw,
 			ExclusiveGateway prevNode, ParallelGateway pgw) {
 		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pcgw___conv_499344 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_pcgw___conv_425826 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
-				if (!pcgw.equals(__DEC_pcgw___conv_499344)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_499344)) {
-						if (!pgw.equals(__DEC_pcgw___conv_499344)) {
+				if (!pcgw.equals(__DEC_pcgw___conv_425826)) {
+					if (!prevNode.equals(__DEC_pcgw___conv_425826)) {
+						if (!pgw.equals(__DEC_pcgw___conv_425826)) {
 							return new Object[] { pcgw, prevNode, pgw };
 						}
 					}
@@ -4205,9 +4205,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	}
 
 	public static final Object[] pattern_SplitAfterChoiceDef_23_2_black_nac_0BB(ParallelStep step, Flow flow) {
-		for (Flow __DEC_step_steps_411131 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+		for (Flow __DEC_step_steps_41898 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 				Flow.class, "steps")) {
-			if (!flow.equals(__DEC_step_steps_411131)) {
+			if (!flow.equals(__DEC_step_steps_41898)) {
 				return new Object[] { step, flow };
 			}
 		}
@@ -4215,10 +4215,10 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	}
 
 	public static final Object[] pattern_SplitAfterChoiceDef_23_2_black_nac_1BB(ParallelStep step, ChoiceStep cStep) {
-		for (Step __DEC_step_next_44029 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+		for (Step __DEC_step_next_236566 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 				Step.class, "next")) {
-			if (!step.equals(__DEC_step_next_44029)) {
-				if (!cStep.equals(__DEC_step_next_44029)) {
+			if (!step.equals(__DEC_step_next_236566)) {
+				if (!cStep.equals(__DEC_step_next_236566)) {
 					return new Object[] { step, cStep };
 				}
 			}
@@ -4334,9 +4334,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	}
 
 	public static final Object[] pattern_SplitAfterChoiceDef_24_2_black_nac_0BB(ParallelStep step, Flow flow) {
-		for (Flow __DEC_step_steps_307195 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+		for (Flow __DEC_step_steps_482987 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 				Flow.class, "steps")) {
-			if (!flow.equals(__DEC_step_steps_307195)) {
+			if (!flow.equals(__DEC_step_steps_482987)) {
 				return new Object[] { step, flow };
 			}
 		}
@@ -4344,10 +4344,10 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	}
 
 	public static final Object[] pattern_SplitAfterChoiceDef_24_2_black_nac_1BB(ParallelStep step, ChoiceStep cStep) {
-		for (Step __DEC_step_next_437004 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
+		for (Step __DEC_step_next_887974 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(step,
 				Step.class, "next")) {
-			if (!step.equals(__DEC_step_next_437004)) {
-				if (!cStep.equals(__DEC_step_next_437004)) {
+			if (!step.equals(__DEC_step_next_887974)) {
+				if (!cStep.equals(__DEC_step_next_887974)) {
 					return new Object[] { step, cStep };
 				}
 			}
@@ -4466,9 +4466,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_25_2_black_nac_0BB(SequenceFlow sf1,
 			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_444661 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_sf1_default_192562 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_444661)) {
+			if (!prevNode.equals(__DEC_sf1_default_192562)) {
 				return new Object[] { sf1, prevNode };
 			}
 		}
@@ -4477,9 +4477,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_25_2_black_nac_1BB(SequenceFlow sf1,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_497079 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_939692 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_497079)) {
+			if (!process.equals(__DEC_sf1_flowElements_939692)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -4488,9 +4488,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_25_2_black_nac_2BB(ParallelGateway pgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_898770 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_305196 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pgw_flowElements_898770)) {
+			if (!process.equals(__DEC_pgw_flowElements_305196)) {
 				return new Object[] { pgw, process };
 			}
 		}
@@ -4500,11 +4500,11 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	public static final Object[] pattern_SplitAfterChoiceDef_25_2_black_nac_3BBB(ParallelGateway pgw,
 			ExclusiveGateway prevNode, ParallelGateway pcgw) {
 		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pgw___conv_615821 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_pgw___conv_875018 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
-				if (!pgw.equals(__DEC_pgw___conv_615821)) {
-					if (!prevNode.equals(__DEC_pgw___conv_615821)) {
-						if (!pcgw.equals(__DEC_pgw___conv_615821)) {
+				if (!pgw.equals(__DEC_pgw___conv_875018)) {
+					if (!prevNode.equals(__DEC_pgw___conv_875018)) {
+						if (!pcgw.equals(__DEC_pgw___conv_875018)) {
 							return new Object[] { pgw, prevNode, pcgw };
 						}
 					}
@@ -4517,11 +4517,11 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	public static final Object[] pattern_SplitAfterChoiceDef_25_2_black_nac_4BBB(ParallelGateway pcgw,
 			ExclusiveGateway prevNode, ParallelGateway pgw) {
 		if (!pcgw.equals(pgw)) {
-			Gateway __DEC_pcgw___conv_540713 = pcgw.get__conv();
-			if (__DEC_pcgw___conv_540713 != null) {
-				if (!pcgw.equals(__DEC_pcgw___conv_540713)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_540713)) {
-						if (!pgw.equals(__DEC_pcgw___conv_540713)) {
+			Gateway __DEC_pcgw___conv_698639 = pcgw.get__conv();
+			if (__DEC_pcgw___conv_698639 != null) {
+				if (!pcgw.equals(__DEC_pcgw___conv_698639)) {
+					if (!prevNode.equals(__DEC_pcgw___conv_698639)) {
+						if (!pgw.equals(__DEC_pcgw___conv_698639)) {
 							return new Object[] { pcgw, prevNode, pgw };
 						}
 					}
@@ -4534,9 +4534,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_25_2_black_nac_5BB(ParallelGateway pcgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_19623 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_415490 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pcgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pcgw_flowElements_19623)) {
+			if (!process.equals(__DEC_pcgw_flowElements_415490)) {
 				return new Object[] { pcgw, process };
 			}
 		}
@@ -4546,11 +4546,11 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	public static final Object[] pattern_SplitAfterChoiceDef_25_2_black_nac_6BBB(ParallelGateway pcgw,
 			ExclusiveGateway prevNode, ParallelGateway pgw) {
 		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pcgw___conv_36645 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_pcgw___conv_86020 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
-				if (!pcgw.equals(__DEC_pcgw___conv_36645)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_36645)) {
-						if (!pgw.equals(__DEC_pcgw___conv_36645)) {
+				if (!pcgw.equals(__DEC_pcgw___conv_86020)) {
+					if (!prevNode.equals(__DEC_pcgw___conv_86020)) {
+						if (!pgw.equals(__DEC_pcgw___conv_86020)) {
 							return new Object[] { pcgw, prevNode, pgw };
 						}
 					}
@@ -4754,9 +4754,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_26_2_black_nac_0BB(SequenceFlow sf1,
 			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_445493 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_sf1_default_975720 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_445493)) {
+			if (!prevNode.equals(__DEC_sf1_default_975720)) {
 				return new Object[] { sf1, prevNode };
 			}
 		}
@@ -4765,9 +4765,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_26_2_black_nac_1BB(SequenceFlow sf1,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_265112 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_238661 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_265112)) {
+			if (!process.equals(__DEC_sf1_flowElements_238661)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -4776,9 +4776,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_26_2_black_nac_2BB(ParallelGateway pgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_506503 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_269846 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pgw_flowElements_506503)) {
+			if (!process.equals(__DEC_pgw_flowElements_269846)) {
 				return new Object[] { pgw, process };
 			}
 		}
@@ -4788,11 +4788,11 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	public static final Object[] pattern_SplitAfterChoiceDef_26_2_black_nac_3BBB(ParallelGateway pgw,
 			ExclusiveGateway prevNode, ParallelGateway pcgw) {
 		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pgw___conv_987738 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_pgw___conv_120056 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
-				if (!pgw.equals(__DEC_pgw___conv_987738)) {
-					if (!prevNode.equals(__DEC_pgw___conv_987738)) {
-						if (!pcgw.equals(__DEC_pgw___conv_987738)) {
+				if (!pgw.equals(__DEC_pgw___conv_120056)) {
+					if (!prevNode.equals(__DEC_pgw___conv_120056)) {
+						if (!pcgw.equals(__DEC_pgw___conv_120056)) {
 							return new Object[] { pgw, prevNode, pcgw };
 						}
 					}
@@ -4805,11 +4805,11 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	public static final Object[] pattern_SplitAfterChoiceDef_26_2_black_nac_4BBB(ParallelGateway pcgw,
 			ExclusiveGateway prevNode, ParallelGateway pgw) {
 		if (!pcgw.equals(pgw)) {
-			Gateway __DEC_pcgw___conv_72754 = pcgw.get__conv();
-			if (__DEC_pcgw___conv_72754 != null) {
-				if (!pcgw.equals(__DEC_pcgw___conv_72754)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_72754)) {
-						if (!pgw.equals(__DEC_pcgw___conv_72754)) {
+			Gateway __DEC_pcgw___conv_781759 = pcgw.get__conv();
+			if (__DEC_pcgw___conv_781759 != null) {
+				if (!pcgw.equals(__DEC_pcgw___conv_781759)) {
+					if (!prevNode.equals(__DEC_pcgw___conv_781759)) {
+						if (!pgw.equals(__DEC_pcgw___conv_781759)) {
 							return new Object[] { pcgw, prevNode, pgw };
 						}
 					}
@@ -4822,9 +4822,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_26_2_black_nac_5BB(ParallelGateway pcgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_754301 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_287522 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pcgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pcgw_flowElements_754301)) {
+			if (!process.equals(__DEC_pcgw_flowElements_287522)) {
 				return new Object[] { pcgw, process };
 			}
 		}
@@ -4834,11 +4834,11 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	public static final Object[] pattern_SplitAfterChoiceDef_26_2_black_nac_6BBB(ParallelGateway pcgw,
 			ExclusiveGateway prevNode, ParallelGateway pgw) {
 		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pcgw___conv_896814 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_pcgw___conv_668792 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
-				if (!pcgw.equals(__DEC_pcgw___conv_896814)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_896814)) {
-						if (!pgw.equals(__DEC_pcgw___conv_896814)) {
+				if (!pcgw.equals(__DEC_pcgw___conv_668792)) {
+					if (!prevNode.equals(__DEC_pcgw___conv_668792)) {
+						if (!pgw.equals(__DEC_pcgw___conv_668792)) {
 							return new Object[] { pcgw, prevNode, pgw };
 						}
 					}
@@ -5042,9 +5042,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_27_2_black_nac_0BB(SequenceFlow sf1,
 			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_650166 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_sf1_default_364126 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_650166)) {
+			if (!prevNode.equals(__DEC_sf1_default_364126)) {
 				return new Object[] { sf1, prevNode };
 			}
 		}
@@ -5053,9 +5053,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_27_2_black_nac_1BB(SequenceFlow sf1,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_227482 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_551168 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_227482)) {
+			if (!process.equals(__DEC_sf1_flowElements_551168)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -5064,9 +5064,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_27_2_black_nac_2BB(ParallelGateway pgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_774278 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_357015 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pgw_flowElements_774278)) {
+			if (!process.equals(__DEC_pgw_flowElements_357015)) {
 				return new Object[] { pgw, process };
 			}
 		}
@@ -5076,11 +5076,11 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	public static final Object[] pattern_SplitAfterChoiceDef_27_2_black_nac_3BBB(ParallelGateway pgw,
 			ExclusiveGateway prevNode, ParallelGateway pcgw) {
 		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pgw___conv_931951 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_pgw___conv_55732 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
-				if (!pgw.equals(__DEC_pgw___conv_931951)) {
-					if (!prevNode.equals(__DEC_pgw___conv_931951)) {
-						if (!pcgw.equals(__DEC_pgw___conv_931951)) {
+				if (!pgw.equals(__DEC_pgw___conv_55732)) {
+					if (!prevNode.equals(__DEC_pgw___conv_55732)) {
+						if (!pcgw.equals(__DEC_pgw___conv_55732)) {
 							return new Object[] { pgw, prevNode, pcgw };
 						}
 					}
@@ -5093,11 +5093,11 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	public static final Object[] pattern_SplitAfterChoiceDef_27_2_black_nac_4BBB(ParallelGateway pcgw,
 			ExclusiveGateway prevNode, ParallelGateway pgw) {
 		if (!pcgw.equals(pgw)) {
-			Gateway __DEC_pcgw___conv_957956 = pcgw.get__conv();
-			if (__DEC_pcgw___conv_957956 != null) {
-				if (!pcgw.equals(__DEC_pcgw___conv_957956)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_957956)) {
-						if (!pgw.equals(__DEC_pcgw___conv_957956)) {
+			Gateway __DEC_pcgw___conv_22046 = pcgw.get__conv();
+			if (__DEC_pcgw___conv_22046 != null) {
+				if (!pcgw.equals(__DEC_pcgw___conv_22046)) {
+					if (!prevNode.equals(__DEC_pcgw___conv_22046)) {
+						if (!pgw.equals(__DEC_pcgw___conv_22046)) {
 							return new Object[] { pcgw, prevNode, pgw };
 						}
 					}
@@ -5110,9 +5110,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_27_2_black_nac_5BB(ParallelGateway pcgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_474009 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_332008 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pcgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pcgw_flowElements_474009)) {
+			if (!process.equals(__DEC_pcgw_flowElements_332008)) {
 				return new Object[] { pcgw, process };
 			}
 		}
@@ -5122,11 +5122,11 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	public static final Object[] pattern_SplitAfterChoiceDef_27_2_black_nac_6BBB(ParallelGateway pcgw,
 			ExclusiveGateway prevNode, ParallelGateway pgw) {
 		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pcgw___conv_652797 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_pcgw___conv_787102 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
-				if (!pcgw.equals(__DEC_pcgw___conv_652797)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_652797)) {
-						if (!pgw.equals(__DEC_pcgw___conv_652797)) {
+				if (!pcgw.equals(__DEC_pcgw___conv_787102)) {
+					if (!prevNode.equals(__DEC_pcgw___conv_787102)) {
+						if (!pgw.equals(__DEC_pcgw___conv_787102)) {
 							return new Object[] { pcgw, prevNode, pgw };
 						}
 					}
@@ -5332,9 +5332,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_28_2_black_nac_0BB(SequenceFlow sf1,
 			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_155437 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_sf1_default_581241 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_155437)) {
+			if (!prevNode.equals(__DEC_sf1_default_581241)) {
 				return new Object[] { sf1, prevNode };
 			}
 		}
@@ -5343,9 +5343,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_28_2_black_nac_1BB(SequenceFlow sf1,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_599709 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_151845 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_599709)) {
+			if (!process.equals(__DEC_sf1_flowElements_151845)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -5354,9 +5354,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_28_2_black_nac_2BB(ParallelGateway pgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_140618 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_865662 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pgw_flowElements_140618)) {
+			if (!process.equals(__DEC_pgw_flowElements_865662)) {
 				return new Object[] { pgw, process };
 			}
 		}
@@ -5366,11 +5366,11 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	public static final Object[] pattern_SplitAfterChoiceDef_28_2_black_nac_3BBB(ParallelGateway pgw,
 			ExclusiveGateway prevNode, ParallelGateway pcgw) {
 		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pgw___conv_575825 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_pgw___conv_199531 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
-				if (!pgw.equals(__DEC_pgw___conv_575825)) {
-					if (!prevNode.equals(__DEC_pgw___conv_575825)) {
-						if (!pcgw.equals(__DEC_pgw___conv_575825)) {
+				if (!pgw.equals(__DEC_pgw___conv_199531)) {
+					if (!prevNode.equals(__DEC_pgw___conv_199531)) {
+						if (!pcgw.equals(__DEC_pgw___conv_199531)) {
 							return new Object[] { pgw, prevNode, pcgw };
 						}
 					}
@@ -5383,11 +5383,11 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	public static final Object[] pattern_SplitAfterChoiceDef_28_2_black_nac_4BBB(ParallelGateway pcgw,
 			ExclusiveGateway prevNode, ParallelGateway pgw) {
 		if (!pcgw.equals(pgw)) {
-			Gateway __DEC_pcgw___conv_662361 = pcgw.get__conv();
-			if (__DEC_pcgw___conv_662361 != null) {
-				if (!pcgw.equals(__DEC_pcgw___conv_662361)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_662361)) {
-						if (!pgw.equals(__DEC_pcgw___conv_662361)) {
+			Gateway __DEC_pcgw___conv_666866 = pcgw.get__conv();
+			if (__DEC_pcgw___conv_666866 != null) {
+				if (!pcgw.equals(__DEC_pcgw___conv_666866)) {
+					if (!prevNode.equals(__DEC_pcgw___conv_666866)) {
+						if (!pgw.equals(__DEC_pcgw___conv_666866)) {
 							return new Object[] { pcgw, prevNode, pgw };
 						}
 					}
@@ -5400,9 +5400,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_28_2_black_nac_5BB(ParallelGateway pcgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_452864 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_372339 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pcgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pcgw_flowElements_452864)) {
+			if (!process.equals(__DEC_pcgw_flowElements_372339)) {
 				return new Object[] { pcgw, process };
 			}
 		}
@@ -5412,11 +5412,11 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	public static final Object[] pattern_SplitAfterChoiceDef_28_2_black_nac_6BBB(ParallelGateway pcgw,
 			ExclusiveGateway prevNode, ParallelGateway pgw) {
 		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pcgw___conv_302747 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_pcgw___conv_301012 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
-				if (!pcgw.equals(__DEC_pcgw___conv_302747)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_302747)) {
-						if (!pgw.equals(__DEC_pcgw___conv_302747)) {
+				if (!pcgw.equals(__DEC_pcgw___conv_301012)) {
+					if (!prevNode.equals(__DEC_pcgw___conv_301012)) {
+						if (!pgw.equals(__DEC_pcgw___conv_301012)) {
 							return new Object[] { pcgw, prevNode, pgw };
 						}
 					}
@@ -5619,9 +5619,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_29_2_black_nac_0BB(SequenceFlow sf1,
 			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_5859 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_sf1_default_976362 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_5859)) {
+			if (!prevNode.equals(__DEC_sf1_default_976362)) {
 				return new Object[] { sf1, prevNode };
 			}
 		}
@@ -5630,9 +5630,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_29_2_black_nac_1BB(SequenceFlow sf1,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_599429 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_976870 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_599429)) {
+			if (!process.equals(__DEC_sf1_flowElements_976870)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -5641,9 +5641,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_29_2_black_nac_2BB(ParallelGateway pgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_417409 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_762606 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pgw_flowElements_417409)) {
+			if (!process.equals(__DEC_pgw_flowElements_762606)) {
 				return new Object[] { pgw, process };
 			}
 		}
@@ -5653,11 +5653,11 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	public static final Object[] pattern_SplitAfterChoiceDef_29_2_black_nac_3BBB(ParallelGateway pgw,
 			ExclusiveGateway prevNode, ParallelGateway pcgw) {
 		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pgw___conv_329196 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_pgw___conv_993958 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
-				if (!pgw.equals(__DEC_pgw___conv_329196)) {
-					if (!prevNode.equals(__DEC_pgw___conv_329196)) {
-						if (!pcgw.equals(__DEC_pgw___conv_329196)) {
+				if (!pgw.equals(__DEC_pgw___conv_993958)) {
+					if (!prevNode.equals(__DEC_pgw___conv_993958)) {
+						if (!pcgw.equals(__DEC_pgw___conv_993958)) {
 							return new Object[] { pgw, prevNode, pcgw };
 						}
 					}
@@ -5670,11 +5670,11 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	public static final Object[] pattern_SplitAfterChoiceDef_29_2_black_nac_4BBB(ParallelGateway pcgw,
 			ExclusiveGateway prevNode, ParallelGateway pgw) {
 		if (!pcgw.equals(pgw)) {
-			Gateway __DEC_pcgw___conv_527549 = pcgw.get__conv();
-			if (__DEC_pcgw___conv_527549 != null) {
-				if (!pcgw.equals(__DEC_pcgw___conv_527549)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_527549)) {
-						if (!pgw.equals(__DEC_pcgw___conv_527549)) {
+			Gateway __DEC_pcgw___conv_158226 = pcgw.get__conv();
+			if (__DEC_pcgw___conv_158226 != null) {
+				if (!pcgw.equals(__DEC_pcgw___conv_158226)) {
+					if (!prevNode.equals(__DEC_pcgw___conv_158226)) {
+						if (!pgw.equals(__DEC_pcgw___conv_158226)) {
 							return new Object[] { pcgw, prevNode, pgw };
 						}
 					}
@@ -5687,9 +5687,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_29_2_black_nac_5BB(ParallelGateway pcgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_441060 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_955683 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pcgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pcgw_flowElements_441060)) {
+			if (!process.equals(__DEC_pcgw_flowElements_955683)) {
 				return new Object[] { pcgw, process };
 			}
 		}
@@ -5699,11 +5699,11 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	public static final Object[] pattern_SplitAfterChoiceDef_29_2_black_nac_6BBB(ParallelGateway pcgw,
 			ExclusiveGateway prevNode, ParallelGateway pgw) {
 		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pcgw___conv_396406 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_pcgw___conv_345761 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
-				if (!pcgw.equals(__DEC_pcgw___conv_396406)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_396406)) {
-						if (!pgw.equals(__DEC_pcgw___conv_396406)) {
+				if (!pcgw.equals(__DEC_pcgw___conv_345761)) {
+					if (!prevNode.equals(__DEC_pcgw___conv_345761)) {
+						if (!pgw.equals(__DEC_pcgw___conv_345761)) {
 							return new Object[] { pcgw, prevNode, pgw };
 						}
 					}
@@ -5906,9 +5906,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_30_2_black_nac_0BB(SequenceFlow sf1,
 			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_sf1_default_665707 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_sf1_default_441127 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_sf1_default_665707)) {
+			if (!prevNode.equals(__DEC_sf1_default_441127)) {
 				return new Object[] { sf1, prevNode };
 			}
 		}
@@ -5917,9 +5917,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_30_2_black_nac_1BB(SequenceFlow sf1,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_255186 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf1_flowElements_970582 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf1, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf1_flowElements_255186)) {
+			if (!process.equals(__DEC_sf1_flowElements_970582)) {
 				return new Object[] { sf1, process };
 			}
 		}
@@ -5928,9 +5928,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_30_2_black_nac_2BB(ParallelGateway pgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_622607 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pgw_flowElements_3828 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pgw_flowElements_622607)) {
+			if (!process.equals(__DEC_pgw_flowElements_3828)) {
 				return new Object[] { pgw, process };
 			}
 		}
@@ -5940,11 +5940,11 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	public static final Object[] pattern_SplitAfterChoiceDef_30_2_black_nac_3BBB(ParallelGateway pgw,
 			ExclusiveGateway prevNode, ParallelGateway pcgw) {
 		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pgw___conv_15398 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_pgw___conv_127504 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(pgw, Gateway.class, "__conv")) {
-				if (!pgw.equals(__DEC_pgw___conv_15398)) {
-					if (!prevNode.equals(__DEC_pgw___conv_15398)) {
-						if (!pcgw.equals(__DEC_pgw___conv_15398)) {
+				if (!pgw.equals(__DEC_pgw___conv_127504)) {
+					if (!prevNode.equals(__DEC_pgw___conv_127504)) {
+						if (!pcgw.equals(__DEC_pgw___conv_127504)) {
 							return new Object[] { pgw, prevNode, pcgw };
 						}
 					}
@@ -5957,11 +5957,11 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	public static final Object[] pattern_SplitAfterChoiceDef_30_2_black_nac_4BBB(ParallelGateway pcgw,
 			ExclusiveGateway prevNode, ParallelGateway pgw) {
 		if (!pcgw.equals(pgw)) {
-			Gateway __DEC_pcgw___conv_726522 = pcgw.get__conv();
-			if (__DEC_pcgw___conv_726522 != null) {
-				if (!pcgw.equals(__DEC_pcgw___conv_726522)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_726522)) {
-						if (!pgw.equals(__DEC_pcgw___conv_726522)) {
+			Gateway __DEC_pcgw___conv_702300 = pcgw.get__conv();
+			if (__DEC_pcgw___conv_702300 != null) {
+				if (!pcgw.equals(__DEC_pcgw___conv_702300)) {
+					if (!prevNode.equals(__DEC_pcgw___conv_702300)) {
+						if (!pgw.equals(__DEC_pcgw___conv_702300)) {
 							return new Object[] { pcgw, prevNode, pgw };
 						}
 					}
@@ -5974,9 +5974,9 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 
 	public static final Object[] pattern_SplitAfterChoiceDef_30_2_black_nac_5BB(ParallelGateway pcgw,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_46944 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_pcgw_flowElements_781003 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(pcgw, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_pcgw_flowElements_46944)) {
+			if (!process.equals(__DEC_pcgw_flowElements_781003)) {
 				return new Object[] { pcgw, process };
 			}
 		}
@@ -5986,11 +5986,11 @@ public class SplitAfterChoiceDefImpl extends AbstractRuleImpl implements SplitAf
 	public static final Object[] pattern_SplitAfterChoiceDef_30_2_black_nac_6BBB(ParallelGateway pcgw,
 			ExclusiveGateway prevNode, ParallelGateway pgw) {
 		if (!pcgw.equals(pgw)) {
-			for (Gateway __DEC_pcgw___conv_198704 : org.moflon.core.utilities.eMoflonEMFUtil
+			for (Gateway __DEC_pcgw___conv_311411 : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(pcgw, Gateway.class, "__conv")) {
-				if (!pcgw.equals(__DEC_pcgw___conv_198704)) {
-					if (!prevNode.equals(__DEC_pcgw___conv_198704)) {
-						if (!pgw.equals(__DEC_pcgw___conv_198704)) {
+				if (!pcgw.equals(__DEC_pcgw___conv_311411)) {
+					if (!prevNode.equals(__DEC_pcgw___conv_311411)) {
+						if (!pgw.equals(__DEC_pcgw___conv_311411)) {
 							return new Object[] { pcgw, prevNode, pgw };
 						}
 					}

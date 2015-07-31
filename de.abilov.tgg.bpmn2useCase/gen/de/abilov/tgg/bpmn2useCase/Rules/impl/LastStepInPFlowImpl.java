@@ -779,7 +779,7 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_449(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_843(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = LastStepInPFlowImpl.pattern_LastStepInPFlow_20_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -833,7 +833,7 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_450(EMoflonEdge _edge_sourceRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_844(EMoflonEdge _edge_sourceRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = LastStepInPFlowImpl.pattern_LastStepInPFlow_21_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -886,7 +886,7 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_451(EMoflonEdge _edge_outgoing) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_845(EMoflonEdge _edge_outgoing) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = LastStepInPFlowImpl.pattern_LastStepInPFlow_22_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -939,7 +939,7 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_452(EMoflonEdge _edge_targetRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_846(EMoflonEdge _edge_targetRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = LastStepInPFlowImpl.pattern_LastStepInPFlow_23_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -992,7 +992,7 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_453(EMoflonEdge _edge_incoming) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_847(EMoflonEdge _edge_incoming) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = LastStepInPFlowImpl.pattern_LastStepInPFlow_24_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -1045,7 +1045,7 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_137(EMoflonEdge _edge___last) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_259(EMoflonEdge _edge___last) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = LastStepInPFlowImpl.pattern_LastStepInPFlow_25_1_bindingAndBlackFFB(this);
 		if (result1_bindingAndBlack == null) {
@@ -1359,18 +1359,18 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 			return null;
 		case RulesPackage.LAST_STEP_IN_PFLOW___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_449__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_449((EMoflonEdge) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_450__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_450((EMoflonEdge) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_451__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_451((EMoflonEdge) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_452__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_452((EMoflonEdge) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_453__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_453((EMoflonEdge) arguments.get(0));
-		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_137__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_137((EMoflonEdge) arguments.get(0));
+		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_843__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_843((EMoflonEdge) arguments.get(0));
+		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_844__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_844((EMoflonEdge) arguments.get(0));
+		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_845__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_845((EMoflonEdge) arguments.get(0));
+		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_846__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_846((EMoflonEdge) arguments.get(0));
+		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_847__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_847((EMoflonEdge) arguments.get(0));
+		case RulesPackage.LAST_STEP_IN_PFLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_259__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_259((EMoflonEdge) arguments.get(0));
 		case RulesPackage.LAST_STEP_IN_PFLOW___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.LAST_STEP_IN_PFLOW___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
@@ -3236,11 +3236,11 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 		if (!gw.equals(node)) {
 			if (!gcw.equals(gw)) {
 				if (!gcw.equals(node)) {
-					for (ExclusiveGateway __DEC_sf_default_439513 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ExclusiveGateway __DEC_sf_default_835214 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
-						if (!gw.equals(__DEC_sf_default_439513)) {
-							if (!gcw.equals(__DEC_sf_default_439513)) {
-								if (!node.equals(__DEC_sf_default_439513)) {
+						if (!gw.equals(__DEC_sf_default_835214)) {
+							if (!gcw.equals(__DEC_sf_default_835214)) {
+								if (!node.equals(__DEC_sf_default_835214)) {
 									return new Object[] { sf, gw, gcw, node };
 								}
 							}
@@ -3254,9 +3254,9 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 
 	public static final Object[] pattern_LastStepInPFlow_20_2_black_nac_1BB(SequenceFlow sf,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf_flowElements_125356 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf_flowElements_814822 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_125356)) {
+			if (!process.equals(__DEC_sf_flowElements_814822)) {
 				return new Object[] { sf, process };
 			}
 		}
@@ -3412,11 +3412,11 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 		if (!gw.equals(node)) {
 			if (!gcw.equals(gw)) {
 				if (!gcw.equals(node)) {
-					for (ExclusiveGateway __DEC_sf_default_438966 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ExclusiveGateway __DEC_sf_default_551229 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
-						if (!gw.equals(__DEC_sf_default_438966)) {
-							if (!gcw.equals(__DEC_sf_default_438966)) {
-								if (!node.equals(__DEC_sf_default_438966)) {
+						if (!gw.equals(__DEC_sf_default_551229)) {
+							if (!gcw.equals(__DEC_sf_default_551229)) {
+								if (!node.equals(__DEC_sf_default_551229)) {
 									return new Object[] { sf, gw, gcw, node };
 								}
 							}
@@ -3430,9 +3430,9 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 
 	public static final Object[] pattern_LastStepInPFlow_21_2_black_nac_1BB(SequenceFlow sf,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf_flowElements_610737 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf_flowElements_815066 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_610737)) {
+			if (!process.equals(__DEC_sf_flowElements_815066)) {
 				return new Object[] { sf, process };
 			}
 		}
@@ -3588,11 +3588,11 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 		if (!gw.equals(node)) {
 			if (!gcw.equals(gw)) {
 				if (!gcw.equals(node)) {
-					for (ExclusiveGateway __DEC_sf_default_460543 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ExclusiveGateway __DEC_sf_default_496257 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
-						if (!gw.equals(__DEC_sf_default_460543)) {
-							if (!gcw.equals(__DEC_sf_default_460543)) {
-								if (!node.equals(__DEC_sf_default_460543)) {
+						if (!gw.equals(__DEC_sf_default_496257)) {
+							if (!gcw.equals(__DEC_sf_default_496257)) {
+								if (!node.equals(__DEC_sf_default_496257)) {
 									return new Object[] { sf, gw, gcw, node };
 								}
 							}
@@ -3606,9 +3606,9 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 
 	public static final Object[] pattern_LastStepInPFlow_22_2_black_nac_1BB(SequenceFlow sf,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf_flowElements_655015 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf_flowElements_592989 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_655015)) {
+			if (!process.equals(__DEC_sf_flowElements_592989)) {
 				return new Object[] { sf, process };
 			}
 		}
@@ -3764,11 +3764,11 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 		if (!gw.equals(node)) {
 			if (!gcw.equals(gw)) {
 				if (!gcw.equals(node)) {
-					for (ExclusiveGateway __DEC_sf_default_360743 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ExclusiveGateway __DEC_sf_default_176086 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
-						if (!gw.equals(__DEC_sf_default_360743)) {
-							if (!gcw.equals(__DEC_sf_default_360743)) {
-								if (!node.equals(__DEC_sf_default_360743)) {
+						if (!gw.equals(__DEC_sf_default_176086)) {
+							if (!gcw.equals(__DEC_sf_default_176086)) {
+								if (!node.equals(__DEC_sf_default_176086)) {
 									return new Object[] { sf, gw, gcw, node };
 								}
 							}
@@ -3782,9 +3782,9 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 
 	public static final Object[] pattern_LastStepInPFlow_23_2_black_nac_1BB(SequenceFlow sf,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf_flowElements_648759 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf_flowElements_941774 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_648759)) {
+			if (!process.equals(__DEC_sf_flowElements_941774)) {
 				return new Object[] { sf, process };
 			}
 		}
@@ -3939,11 +3939,11 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 		if (!gw.equals(node)) {
 			if (!gcw.equals(gw)) {
 				if (!gcw.equals(node)) {
-					for (ExclusiveGateway __DEC_sf_default_68519 : org.moflon.core.utilities.eMoflonEMFUtil
+					for (ExclusiveGateway __DEC_sf_default_432014 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(sf, ExclusiveGateway.class, "default")) {
-						if (!gw.equals(__DEC_sf_default_68519)) {
-							if (!gcw.equals(__DEC_sf_default_68519)) {
-								if (!node.equals(__DEC_sf_default_68519)) {
+						if (!gw.equals(__DEC_sf_default_432014)) {
+							if (!gcw.equals(__DEC_sf_default_432014)) {
+								if (!node.equals(__DEC_sf_default_432014)) {
 									return new Object[] { sf, gw, gcw, node };
 								}
 							}
@@ -3957,9 +3957,9 @@ public class LastStepInPFlowImpl extends AbstractRuleImpl implements LastStepInP
 
 	public static final Object[] pattern_LastStepInPFlow_24_2_black_nac_1BB(SequenceFlow sf,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_sf_flowElements_485060 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_sf_flowElements_35193 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(sf, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_sf_flowElements_485060)) {
+			if (!process.equals(__DEC_sf_flowElements_35193)) {
 				return new Object[] { sf, process };
 			}
 		}

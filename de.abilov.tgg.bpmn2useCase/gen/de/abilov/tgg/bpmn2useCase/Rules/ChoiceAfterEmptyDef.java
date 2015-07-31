@@ -44,8 +44,8 @@ public interface ChoiceAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	boolean isAppropriate_FWD(Match match, ExclusiveGateway prevNode, de.abilov.bpmn.Process process, SequenceFlow sf1,
-			ExclusiveGateway egw, ExclusiveGateway ecgw);
+	boolean isAppropriate_FWD(Match match, SequenceFlow defInFlow, ExclusiveGateway eg, ExclusiveGateway prevNode,
+			de.abilov.bpmn.Process process, SequenceFlow sf1, ExclusiveGateway egw, ExclusiveGateway ecgw);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -69,8 +69,8 @@ public interface ChoiceAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjectsToMatch_FWD(Match match, ExclusiveGateway prevNode, de.abilov.bpmn.Process process,
-			SequenceFlow sf1, ExclusiveGateway egw, ExclusiveGateway ecgw);
+	void registerObjectsToMatch_FWD(Match match, SequenceFlow defInFlow, ExclusiveGateway eg, ExclusiveGateway prevNode,
+			de.abilov.bpmn.Process process, SequenceFlow sf1, ExclusiveGateway egw, ExclusiveGateway ecgw);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -78,8 +78,8 @@ public interface ChoiceAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isAppropriate_solveCsp_FWD(Match match, ExclusiveGateway prevNode, de.abilov.bpmn.Process process,
-			SequenceFlow sf1, ExclusiveGateway egw, ExclusiveGateway ecgw);
+	CSP isAppropriate_solveCsp_FWD(Match match, SequenceFlow defInFlow, ExclusiveGateway eg, ExclusiveGateway prevNode,
+			de.abilov.bpmn.Process process, SequenceFlow sf1, ExclusiveGateway egw, ExclusiveGateway ecgw);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -95,9 +95,9 @@ public interface ChoiceAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, ExclusiveGateway prevNode, ChoiceStep choiceStep,
-			GW2S pn2cs, Flow flow, de.abilov.bpmn.Process process, SequenceFlow sf1, ExclusiveGateway egw,
-			ExclusiveGateway ecgw);
+	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, SequenceFlow defInFlow, ExclusiveGateway eg,
+			ExclusiveGateway prevNode, ChoiceStep choiceStep, GW2S pn2cs, Flow flow, de.abilov.bpmn.Process process,
+			SequenceFlow sf1, ExclusiveGateway egw, ExclusiveGateway ecgw);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -113,9 +113,9 @@ public interface ChoiceAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_FWD(PerformRuleResult ruleresult, EObject prevNode, EObject choiceStep, EObject pn2cs,
-			EObject step, EObject flow, EObject process, EObject sf1, EObject egw, EObject egwToStep, EObject ecgw,
-			EObject ecgwToStep);
+	void registerObjects_FWD(PerformRuleResult ruleresult, EObject defInFlow, EObject eg, EObject prevNode,
+			EObject choiceStep, EObject pn2cs, EObject step, EObject flow, EObject process, EObject sf1, EObject egw,
+			EObject egwToStep, EObject ecgw, EObject ecgwToStep);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -179,8 +179,9 @@ public interface ChoiceAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, ExclusiveGateway prevNode, ChoiceStep choiceStep,
-			GW2S pn2cs, NormalStep step, Flow flow, de.abilov.bpmn.Process process);
+	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, SequenceFlow defInFlow, ExclusiveGateway eg,
+			ExclusiveGateway prevNode, ChoiceStep choiceStep, GW2S pn2cs, NormalStep step, Flow flow,
+			de.abilov.bpmn.Process process);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -196,9 +197,9 @@ public interface ChoiceAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_BWD(PerformRuleResult ruleresult, EObject prevNode, EObject choiceStep, EObject pn2cs,
-			EObject step, EObject flow, EObject process, EObject sf1, EObject egw, EObject egwToStep, EObject ecgw,
-			EObject ecgwToStep);
+	void registerObjects_BWD(PerformRuleResult ruleresult, EObject defInFlow, EObject eg, EObject prevNode,
+			EObject choiceStep, EObject pn2cs, EObject step, EObject flow, EObject process, EObject sf1, EObject egw,
+			EObject egwToStep, EObject ecgw, EObject ecgwToStep);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -214,7 +215,7 @@ public interface ChoiceAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_178(EMoflonEdge _edge_next);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_300(EMoflonEdge _edge_next);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -222,7 +223,7 @@ public interface ChoiceAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_179(EMoflonEdge _edge_steps);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_301(EMoflonEdge _edge_steps);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -230,7 +231,7 @@ public interface ChoiceAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_583(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_977(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -238,7 +239,7 @@ public interface ChoiceAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_584(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_978(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -246,7 +247,7 @@ public interface ChoiceAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_585(EMoflonEdge _edge_flowElements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_979(EMoflonEdge _edge_flowElements);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -254,7 +255,7 @@ public interface ChoiceAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_586(EMoflonEdge _edge_sourceRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_980(EMoflonEdge _edge_sourceRef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -262,7 +263,7 @@ public interface ChoiceAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_587(EMoflonEdge _edge_outgoing);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_981(EMoflonEdge _edge_outgoing);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -270,7 +271,7 @@ public interface ChoiceAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_588(EMoflonEdge _edge_targetRef);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_982(EMoflonEdge _edge_targetRef);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -278,7 +279,7 @@ public interface ChoiceAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_589(EMoflonEdge _edge_incoming);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_983(EMoflonEdge _edge_incoming);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -286,7 +287,7 @@ public interface ChoiceAfterEmptyDef extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_590(EMoflonEdge _edge___conv);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_984(EMoflonEdge _edge___conv);
 
 	/**
 	 * <!-- begin-user-doc -->

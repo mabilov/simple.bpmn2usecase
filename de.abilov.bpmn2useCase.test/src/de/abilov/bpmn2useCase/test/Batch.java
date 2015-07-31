@@ -109,6 +109,8 @@ public class Batch extends IntegratorTest {
 	public void postProcessing(EObject created) {
 		if (created instanceof UseCase) {
 			de.abilov.useCase.util.SynchronizationHelper.postprocess((UseCase) created);
+		} else if (created instanceof Process) {
+			de.abilov.bpmn.util.SynchronizationHelper.postprocess((Process)created);
 		}
 	}
 
