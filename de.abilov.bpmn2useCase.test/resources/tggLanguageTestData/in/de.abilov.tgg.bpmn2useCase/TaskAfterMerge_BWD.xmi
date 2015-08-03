@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<de.abilov.useCase:UseCase xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:de.abilov.useCase="platform:/plugin/de.abilov.useCase/model/UseCase.ecore" id="SequenceInAlternative">
+  <flows xsi:type="de.abilov.useCase:BasicFlow">
+    <steps xsi:type="de.abilov.useCase:ChoiceStep" next="t3" id="eg1" __lastInDef="t4">
+      <stepAlternatives ref="sf2" continuation="t5" __hasContinue="eg1"/>
+    </steps>
+    <steps xsi:type="de.abilov.useCase:NormalStep" next="t4" id="t3"/>
+    <steps xsi:type="de.abilov.useCase:NormalStep" next="t5" id="t4"/>
+    <steps xsi:type="de.abilov.useCase:NormalStep" __last="//@flows.0/@finalState" id="t5"/>
+    <finalState name="ee1"/>
+  </flows>
+  <flows xsi:type="de.abilov.useCase:AlternativeFlow" __last="t2" id="sf2">
+    <steps xsi:type="de.abilov.useCase:NormalStep" next="t2" id="t1"/>
+    <steps xsi:type="de.abilov.useCase:NormalStep" id="t2"/>
+  </flows>
+  <precondition name="se1"/>
+</de.abilov.useCase:UseCase>

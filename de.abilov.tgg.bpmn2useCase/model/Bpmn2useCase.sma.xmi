@@ -2,379 +2,391 @@
 <analysis:StaticAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:analysis="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//analysis">
   <sourceRules>
     <rules ruleName="Process2UseCase">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_788"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Process2UseCase/isAppropriate_FWD_EMoflonEdge_406"/>
     </rules>
     <rules ruleName="SplitAfterSplit">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterSplit/isAppropriate_FWD_EMoflonEdge_789"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterSplit/isAppropriate_FWD_EMoflonEdge_790"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterSplit/isAppropriate_FWD_EMoflonEdge_791"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterSplit/isAppropriate_FWD_EMoflonEdge_792"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterSplit/isAppropriate_FWD_EMoflonEdge_793"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterSplit/isAppropriate_FWD_EMoflonEdge_794"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterSplit/isAppropriate_FWD_EMoflonEdge_795"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterSplit/isAppropriate_FWD_EMoflonEdge_796"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterSplit/isAppropriate_FWD_EMoflonEdge_407"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterSplit/isAppropriate_FWD_EMoflonEdge_408"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterSplit/isAppropriate_FWD_EMoflonEdge_409"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterSplit/isAppropriate_FWD_EMoflonEdge_410"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterSplit/isAppropriate_FWD_EMoflonEdge_411"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterSplit/isAppropriate_FWD_EMoflonEdge_412"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterSplit/isAppropriate_FWD_EMoflonEdge_413"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterSplit/isAppropriate_FWD_EMoflonEdge_414"/>
     </rules>
-    <rules ruleName="Task2StepSeq">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepSeq/isAppropriate_FWD_EMoflonEdge_797"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepSeq/isAppropriate_FWD_EMoflonEdge_798"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepSeq/isAppropriate_FWD_EMoflonEdge_799"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepSeq/isAppropriate_FWD_EMoflonEdge_800"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepSeq/isAppropriate_FWD_EMoflonEdge_801"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepSeq/isAppropriate_FWD_EMoflonEdge_802"/>
-    </rules>
-    <rules ruleName="Task2StepFirst">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepFirst/isAppropriate_FWD_EMoflonEdge_803"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepFirst/isAppropriate_FWD_EMoflonEdge_804"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepFirst/isAppropriate_FWD_EMoflonEdge_805"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepFirst/isAppropriate_FWD_EMoflonEdge_806"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepFirst/isAppropriate_FWD_EMoflonEdge_807"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepFirst/isAppropriate_FWD_EMoflonEdge_808"/>
+    <rules ruleName="T2SFirst">
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SFirst/isAppropriate_FWD_EMoflonEdge_415"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SFirst/isAppropriate_FWD_EMoflonEdge_416"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SFirst/isAppropriate_FWD_EMoflonEdge_417"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SFirst/isAppropriate_FWD_EMoflonEdge_418"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SFirst/isAppropriate_FWD_EMoflonEdge_419"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SFirst/isAppropriate_FWD_EMoflonEdge_420"/>
     </rules>
     <rules ruleName="SplitSeq">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitSeq/isAppropriate_FWD_EMoflonEdge_809"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitSeq/isAppropriate_FWD_EMoflonEdge_810"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitSeq/isAppropriate_FWD_EMoflonEdge_811"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitSeq/isAppropriate_FWD_EMoflonEdge_812"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitSeq/isAppropriate_FWD_EMoflonEdge_813"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitSeq/isAppropriate_FWD_EMoflonEdge_814"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitSeq/isAppropriate_FWD_EMoflonEdge_815"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitSeq/isAppropriate_FWD_EMoflonEdge_816"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitSeq/isAppropriate_FWD_EMoflonEdge_421"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitSeq/isAppropriate_FWD_EMoflonEdge_422"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitSeq/isAppropriate_FWD_EMoflonEdge_423"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitSeq/isAppropriate_FWD_EMoflonEdge_424"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitSeq/isAppropriate_FWD_EMoflonEdge_425"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitSeq/isAppropriate_FWD_EMoflonEdge_426"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitSeq/isAppropriate_FWD_EMoflonEdge_427"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitSeq/isAppropriate_FWD_EMoflonEdge_428"/>
     </rules>
     <rules ruleName="SplitFirst">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitFirst/isAppropriate_FWD_EMoflonEdge_817"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitFirst/isAppropriate_FWD_EMoflonEdge_818"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitFirst/isAppropriate_FWD_EMoflonEdge_819"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitFirst/isAppropriate_FWD_EMoflonEdge_820"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitFirst/isAppropriate_FWD_EMoflonEdge_821"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitFirst/isAppropriate_FWD_EMoflonEdge_822"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitFirst/isAppropriate_FWD_EMoflonEdge_823"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitFirst/isAppropriate_FWD_EMoflonEdge_824"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitFirst/isAppropriate_FWD_EMoflonEdge_429"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitFirst/isAppropriate_FWD_EMoflonEdge_430"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitFirst/isAppropriate_FWD_EMoflonEdge_431"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitFirst/isAppropriate_FWD_EMoflonEdge_432"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitFirst/isAppropriate_FWD_EMoflonEdge_433"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitFirst/isAppropriate_FWD_EMoflonEdge_434"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitFirst/isAppropriate_FWD_EMoflonEdge_435"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitFirst/isAppropriate_FWD_EMoflonEdge_436"/>
     </rules>
     <rules ruleName="TerminationFirst">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationFirst/isAppropriate_FWD_EMoflonEdge_825"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationFirst/isAppropriate_FWD_EMoflonEdge_826"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationFirst/isAppropriate_FWD_EMoflonEdge_827"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationFirst/isAppropriate_FWD_EMoflonEdge_828"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationFirst/isAppropriate_FWD_EMoflonEdge_829"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationFirst/isAppropriate_FWD_EMoflonEdge_830"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationFirst/isAppropriate_FWD_EMoflonEdge_437"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationFirst/isAppropriate_FWD_EMoflonEdge_438"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationFirst/isAppropriate_FWD_EMoflonEdge_439"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationFirst/isAppropriate_FWD_EMoflonEdge_440"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationFirst/isAppropriate_FWD_EMoflonEdge_441"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationFirst/isAppropriate_FWD_EMoflonEdge_442"/>
     </rules>
-    <rules ruleName="Task2StepAfterSplit">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterSplit/isAppropriate_FWD_EMoflonEdge_831"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterSplit/isAppropriate_FWD_EMoflonEdge_832"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterSplit/isAppropriate_FWD_EMoflonEdge_833"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterSplit/isAppropriate_FWD_EMoflonEdge_834"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterSplit/isAppropriate_FWD_EMoflonEdge_835"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterSplit/isAppropriate_FWD_EMoflonEdge_836"/>
+    <rules ruleName="T2SAfterSplit">
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterSplit/isAppropriate_FWD_EMoflonEdge_443"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterSplit/isAppropriate_FWD_EMoflonEdge_444"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterSplit/isAppropriate_FWD_EMoflonEdge_445"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterSplit/isAppropriate_FWD_EMoflonEdge_446"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterSplit/isAppropriate_FWD_EMoflonEdge_447"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterSplit/isAppropriate_FWD_EMoflonEdge_448"/>
     </rules>
     <rules ruleName="TerminationSeq">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationSeq/isAppropriate_FWD_EMoflonEdge_837"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationSeq/isAppropriate_FWD_EMoflonEdge_838"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationSeq/isAppropriate_FWD_EMoflonEdge_839"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationSeq/isAppropriate_FWD_EMoflonEdge_840"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationSeq/isAppropriate_FWD_EMoflonEdge_841"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationSeq/isAppropriate_FWD_EMoflonEdge_842"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationSeq/isAppropriate_FWD_EMoflonEdge_449"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationSeq/isAppropriate_FWD_EMoflonEdge_450"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationSeq/isAppropriate_FWD_EMoflonEdge_451"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationSeq/isAppropriate_FWD_EMoflonEdge_452"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationSeq/isAppropriate_FWD_EMoflonEdge_453"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationSeq/isAppropriate_FWD_EMoflonEdge_454"/>
     </rules>
     <rules ruleName="LastStepInPFlow">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInPFlow/isAppropriate_FWD_EMoflonEdge_843"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInPFlow/isAppropriate_FWD_EMoflonEdge_844"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInPFlow/isAppropriate_FWD_EMoflonEdge_845"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInPFlow/isAppropriate_FWD_EMoflonEdge_846"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInPFlow/isAppropriate_FWD_EMoflonEdge_847"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInPFlow/isAppropriate_FWD_EMoflonEdge_455"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInPFlow/isAppropriate_FWD_EMoflonEdge_456"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInPFlow/isAppropriate_FWD_EMoflonEdge_457"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInPFlow/isAppropriate_FWD_EMoflonEdge_458"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInPFlow/isAppropriate_FWD_EMoflonEdge_459"/>
     </rules>
-    <rules ruleName="Task2StepAfterMerge">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterMerge/isAppropriate_FWD_EMoflonEdge_848"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterMerge/isAppropriate_FWD_EMoflonEdge_849"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterMerge/isAppropriate_FWD_EMoflonEdge_850"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterMerge/isAppropriate_FWD_EMoflonEdge_851"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterMerge/isAppropriate_FWD_EMoflonEdge_852"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterMerge/isAppropriate_FWD_EMoflonEdge_853"/>
+    <rules ruleName="T2SAfterMerge">
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterMerge/isAppropriate_FWD_EMoflonEdge_460"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterMerge/isAppropriate_FWD_EMoflonEdge_461"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterMerge/isAppropriate_FWD_EMoflonEdge_462"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterMerge/isAppropriate_FWD_EMoflonEdge_463"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterMerge/isAppropriate_FWD_EMoflonEdge_464"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterMerge/isAppropriate_FWD_EMoflonEdge_465"/>
     </rules>
     <rules ruleName="ChoiceSeq">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceSeq/isAppropriate_FWD_EMoflonEdge_854"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceSeq/isAppropriate_FWD_EMoflonEdge_855"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceSeq/isAppropriate_FWD_EMoflonEdge_856"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceSeq/isAppropriate_FWD_EMoflonEdge_857"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceSeq/isAppropriate_FWD_EMoflonEdge_858"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceSeq/isAppropriate_FWD_EMoflonEdge_859"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceSeq/isAppropriate_FWD_EMoflonEdge_860"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceSeq/isAppropriate_FWD_EMoflonEdge_861"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceSeq/isAppropriate_FWD_EMoflonEdge_466"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceSeq/isAppropriate_FWD_EMoflonEdge_467"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceSeq/isAppropriate_FWD_EMoflonEdge_468"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceSeq/isAppropriate_FWD_EMoflonEdge_469"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceSeq/isAppropriate_FWD_EMoflonEdge_470"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceSeq/isAppropriate_FWD_EMoflonEdge_471"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceSeq/isAppropriate_FWD_EMoflonEdge_472"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceSeq/isAppropriate_FWD_EMoflonEdge_473"/>
     </rules>
     <rules ruleName="ChoiceFirst">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceFirst/isAppropriate_FWD_EMoflonEdge_862"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceFirst/isAppropriate_FWD_EMoflonEdge_863"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceFirst/isAppropriate_FWD_EMoflonEdge_864"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceFirst/isAppropriate_FWD_EMoflonEdge_865"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceFirst/isAppropriate_FWD_EMoflonEdge_866"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceFirst/isAppropriate_FWD_EMoflonEdge_867"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceFirst/isAppropriate_FWD_EMoflonEdge_868"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceFirst/isAppropriate_FWD_EMoflonEdge_869"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceFirst/isAppropriate_FWD_EMoflonEdge_474"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceFirst/isAppropriate_FWD_EMoflonEdge_475"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceFirst/isAppropriate_FWD_EMoflonEdge_476"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceFirst/isAppropriate_FWD_EMoflonEdge_477"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceFirst/isAppropriate_FWD_EMoflonEdge_478"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceFirst/isAppropriate_FWD_EMoflonEdge_479"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceFirst/isAppropriate_FWD_EMoflonEdge_480"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceFirst/isAppropriate_FWD_EMoflonEdge_481"/>
     </rules>
     <rules ruleName="ChoiceAfterSplit">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterSplit/isAppropriate_FWD_EMoflonEdge_870"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterSplit/isAppropriate_FWD_EMoflonEdge_871"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterSplit/isAppropriate_FWD_EMoflonEdge_872"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterSplit/isAppropriate_FWD_EMoflonEdge_873"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterSplit/isAppropriate_FWD_EMoflonEdge_874"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterSplit/isAppropriate_FWD_EMoflonEdge_875"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterSplit/isAppropriate_FWD_EMoflonEdge_876"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterSplit/isAppropriate_FWD_EMoflonEdge_877"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterSplit/isAppropriate_FWD_EMoflonEdge_482"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterSplit/isAppropriate_FWD_EMoflonEdge_483"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterSplit/isAppropriate_FWD_EMoflonEdge_484"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterSplit/isAppropriate_FWD_EMoflonEdge_485"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterSplit/isAppropriate_FWD_EMoflonEdge_486"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterSplit/isAppropriate_FWD_EMoflonEdge_487"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterSplit/isAppropriate_FWD_EMoflonEdge_488"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterSplit/isAppropriate_FWD_EMoflonEdge_489"/>
     </rules>
-    <rules ruleName="Task2StepAfterChoiceDef">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_878"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_879"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_880"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_881"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_882"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_883"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_884"/>
+    <rules ruleName="T2SAfterChoiceDef">
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_490"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_491"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_492"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_493"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_494"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_495"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_496"/>
     </rules>
-    <rules ruleName="Task2StepAfterChoice">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterChoice/isAppropriate_FWD_EMoflonEdge_885"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterChoice/isAppropriate_FWD_EMoflonEdge_886"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterChoice/isAppropriate_FWD_EMoflonEdge_887"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterChoice/isAppropriate_FWD_EMoflonEdge_888"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterChoice/isAppropriate_FWD_EMoflonEdge_889"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterChoice/isAppropriate_FWD_EMoflonEdge_890"/>
+    <rules ruleName="T2SAfterChoice">
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterChoice/isAppropriate_FWD_EMoflonEdge_497"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterChoice/isAppropriate_FWD_EMoflonEdge_498"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterChoice/isAppropriate_FWD_EMoflonEdge_499"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterChoice/isAppropriate_FWD_EMoflonEdge_500"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterChoice/isAppropriate_FWD_EMoflonEdge_501"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterChoice/isAppropriate_FWD_EMoflonEdge_502"/>
     </rules>
     <rules ruleName="EmptyDefaulFlow">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/EmptyDefaulFlow/isAppropriate_FWD_EMoflonEdge_891"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/EmptyDefaulFlow/isAppropriate_FWD_EMoflonEdge_892"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/EmptyDefaulFlow/isAppropriate_FWD_EMoflonEdge_893"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/EmptyDefaulFlow/isAppropriate_FWD_EMoflonEdge_894"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/EmptyDefaulFlow/isAppropriate_FWD_EMoflonEdge_895"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/EmptyDefaulFlow/isAppropriate_FWD_EMoflonEdge_896"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/EmptyDefaulFlow/isAppropriate_FWD_EMoflonEdge_503"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/EmptyDefaulFlow/isAppropriate_FWD_EMoflonEdge_504"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/EmptyDefaulFlow/isAppropriate_FWD_EMoflonEdge_505"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/EmptyDefaulFlow/isAppropriate_FWD_EMoflonEdge_506"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/EmptyDefaulFlow/isAppropriate_FWD_EMoflonEdge_507"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/EmptyDefaulFlow/isAppropriate_FWD_EMoflonEdge_508"/>
     </rules>
     <rules ruleName="LastStepInDefaultFlow">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInDefaultFlow/isAppropriate_FWD_EMoflonEdge_897"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInDefaultFlow/isAppropriate_FWD_EMoflonEdge_898"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInDefaultFlow/isAppropriate_FWD_EMoflonEdge_899"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInDefaultFlow/isAppropriate_FWD_EMoflonEdge_900"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInDefaultFlow/isAppropriate_FWD_EMoflonEdge_901"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInDefaultFlow/isAppropriate_FWD_EMoflonEdge_509"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInDefaultFlow/isAppropriate_FWD_EMoflonEdge_510"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInDefaultFlow/isAppropriate_FWD_EMoflonEdge_511"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInDefaultFlow/isAppropriate_FWD_EMoflonEdge_512"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInDefaultFlow/isAppropriate_FWD_EMoflonEdge_513"/>
     </rules>
     <rules ruleName="SplitAfterMerge">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterMerge/isAppropriate_FWD_EMoflonEdge_902"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterMerge/isAppropriate_FWD_EMoflonEdge_903"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterMerge/isAppropriate_FWD_EMoflonEdge_904"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterMerge/isAppropriate_FWD_EMoflonEdge_905"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterMerge/isAppropriate_FWD_EMoflonEdge_906"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterMerge/isAppropriate_FWD_EMoflonEdge_907"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterMerge/isAppropriate_FWD_EMoflonEdge_908"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterMerge/isAppropriate_FWD_EMoflonEdge_909"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterMerge/isAppropriate_FWD_EMoflonEdge_514"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterMerge/isAppropriate_FWD_EMoflonEdge_515"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterMerge/isAppropriate_FWD_EMoflonEdge_516"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterMerge/isAppropriate_FWD_EMoflonEdge_517"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterMerge/isAppropriate_FWD_EMoflonEdge_518"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterMerge/isAppropriate_FWD_EMoflonEdge_519"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterMerge/isAppropriate_FWD_EMoflonEdge_520"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterMerge/isAppropriate_FWD_EMoflonEdge_521"/>
     </rules>
     <rules ruleName="ChoiceAfterMerge">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterMerge/isAppropriate_FWD_EMoflonEdge_910"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterMerge/isAppropriate_FWD_EMoflonEdge_911"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterMerge/isAppropriate_FWD_EMoflonEdge_912"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterMerge/isAppropriate_FWD_EMoflonEdge_913"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterMerge/isAppropriate_FWD_EMoflonEdge_914"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterMerge/isAppropriate_FWD_EMoflonEdge_915"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterMerge/isAppropriate_FWD_EMoflonEdge_916"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterMerge/isAppropriate_FWD_EMoflonEdge_917"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterMerge/isAppropriate_FWD_EMoflonEdge_522"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterMerge/isAppropriate_FWD_EMoflonEdge_523"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterMerge/isAppropriate_FWD_EMoflonEdge_524"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterMerge/isAppropriate_FWD_EMoflonEdge_525"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterMerge/isAppropriate_FWD_EMoflonEdge_526"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterMerge/isAppropriate_FWD_EMoflonEdge_527"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterMerge/isAppropriate_FWD_EMoflonEdge_528"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterMerge/isAppropriate_FWD_EMoflonEdge_529"/>
     </rules>
     <rules ruleName="LastStepInAltFlow">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInAltFlow/isAppropriate_FWD_EMoflonEdge_918"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInAltFlow/isAppropriate_FWD_EMoflonEdge_919"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInAltFlow/isAppropriate_FWD_EMoflonEdge_920"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInAltFlow/isAppropriate_FWD_EMoflonEdge_921"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInAltFlow/isAppropriate_FWD_EMoflonEdge_922"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInAltFlow/isAppropriate_FWD_EMoflonEdge_530"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInAltFlow/isAppropriate_FWD_EMoflonEdge_531"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInAltFlow/isAppropriate_FWD_EMoflonEdge_532"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInAltFlow/isAppropriate_FWD_EMoflonEdge_533"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInAltFlow/isAppropriate_FWD_EMoflonEdge_534"/>
     </rules>
     <rules ruleName="SplitAfterChoiceDef">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_923"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_924"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_925"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_926"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_927"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_928"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_929"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_930"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_931"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_535"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_536"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_537"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_538"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_539"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_540"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_541"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_542"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_543"/>
     </rules>
     <rules ruleName="SplitAfterChoice">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoice/isAppropriate_FWD_EMoflonEdge_932"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoice/isAppropriate_FWD_EMoflonEdge_933"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoice/isAppropriate_FWD_EMoflonEdge_934"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoice/isAppropriate_FWD_EMoflonEdge_935"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoice/isAppropriate_FWD_EMoflonEdge_936"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoice/isAppropriate_FWD_EMoflonEdge_937"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoice/isAppropriate_FWD_EMoflonEdge_938"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoice/isAppropriate_FWD_EMoflonEdge_939"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoice/isAppropriate_FWD_EMoflonEdge_544"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoice/isAppropriate_FWD_EMoflonEdge_545"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoice/isAppropriate_FWD_EMoflonEdge_546"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoice/isAppropriate_FWD_EMoflonEdge_547"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoice/isAppropriate_FWD_EMoflonEdge_548"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoice/isAppropriate_FWD_EMoflonEdge_549"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoice/isAppropriate_FWD_EMoflonEdge_550"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoice/isAppropriate_FWD_EMoflonEdge_551"/>
     </rules>
     <rules ruleName="ChoiceAfterChoiceDef">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_940"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_941"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_942"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_943"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_944"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_945"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_946"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_947"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_948"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_552"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_553"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_554"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_555"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_556"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_557"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_558"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_559"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoiceDef/isAppropriate_FWD_EMoflonEdge_560"/>
     </rules>
     <rules ruleName="ChoiceAfterChoice">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoice/isAppropriate_FWD_EMoflonEdge_949"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoice/isAppropriate_FWD_EMoflonEdge_950"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoice/isAppropriate_FWD_EMoflonEdge_951"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoice/isAppropriate_FWD_EMoflonEdge_952"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoice/isAppropriate_FWD_EMoflonEdge_953"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoice/isAppropriate_FWD_EMoflonEdge_954"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoice/isAppropriate_FWD_EMoflonEdge_955"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoice/isAppropriate_FWD_EMoflonEdge_956"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoice/isAppropriate_FWD_EMoflonEdge_561"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoice/isAppropriate_FWD_EMoflonEdge_562"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoice/isAppropriate_FWD_EMoflonEdge_563"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoice/isAppropriate_FWD_EMoflonEdge_564"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoice/isAppropriate_FWD_EMoflonEdge_565"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoice/isAppropriate_FWD_EMoflonEdge_566"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoice/isAppropriate_FWD_EMoflonEdge_567"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoice/isAppropriate_FWD_EMoflonEdge_568"/>
     </rules>
     <rules ruleName="TerminationAfterMerge">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationAfterMerge/isAppropriate_FWD_EMoflonEdge_957"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationAfterMerge/isAppropriate_FWD_EMoflonEdge_958"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationAfterMerge/isAppropriate_FWD_EMoflonEdge_959"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationAfterMerge/isAppropriate_FWD_EMoflonEdge_960"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationAfterMerge/isAppropriate_FWD_EMoflonEdge_961"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationAfterMerge/isAppropriate_FWD_EMoflonEdge_962"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationAfterMerge/isAppropriate_FWD_EMoflonEdge_569"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationAfterMerge/isAppropriate_FWD_EMoflonEdge_570"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationAfterMerge/isAppropriate_FWD_EMoflonEdge_571"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationAfterMerge/isAppropriate_FWD_EMoflonEdge_572"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationAfterMerge/isAppropriate_FWD_EMoflonEdge_573"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationAfterMerge/isAppropriate_FWD_EMoflonEdge_574"/>
     </rules>
-    <rules ruleName="Task2StepAfterEmptyDef">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_963"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_964"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_965"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_966"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_967"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_968"/>
+    <rules ruleName="T2SAfterEmptyDef">
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_575"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_576"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_577"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_578"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_579"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_580"/>
     </rules>
     <rules ruleName="SplitAfterEmptyDef">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_969"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_970"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_971"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_972"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_973"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_974"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_975"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_976"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_581"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_582"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_583"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_584"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_585"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_586"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_587"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_588"/>
     </rules>
     <rules ruleName="ChoiceAfterEmptyDef">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_977"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_978"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_979"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_980"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_981"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_982"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_983"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_984"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_589"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_590"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_591"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_592"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_593"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_594"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_595"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterEmptyDef/isAppropriate_FWD_EMoflonEdge_596"/>
+    </rules>
+    <rules ruleName="T2SAfterTask">
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterTask/isAppropriate_FWD_EMoflonEdge_597"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterTask/isAppropriate_FWD_EMoflonEdge_598"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterTask/isAppropriate_FWD_EMoflonEdge_599"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterTask/isAppropriate_FWD_EMoflonEdge_600"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterTask/isAppropriate_FWD_EMoflonEdge_601"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterTask/isAppropriate_FWD_EMoflonEdge_602"/>
+    </rules>
+    <rules ruleName="T2SAfterSync">
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterSync/isAppropriate_FWD_EMoflonEdge_603"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterSync/isAppropriate_FWD_EMoflonEdge_604"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterSync/isAppropriate_FWD_EMoflonEdge_605"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterSync/isAppropriate_FWD_EMoflonEdge_606"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterSync/isAppropriate_FWD_EMoflonEdge_607"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterSync/isAppropriate_FWD_EMoflonEdge_608"/>
     </rules>
   </sourceRules>
   <targetRules>
     <rules ruleName="Process2UseCase">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Process2UseCase/isAppropriate_BWD_EMoflonEdge_242"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Process2UseCase/isAppropriate_BWD_EMoflonEdge_243"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Process2UseCase/isAppropriate_BWD_EMoflonEdge_124"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Process2UseCase/isAppropriate_BWD_EMoflonEdge_125"/>
     </rules>
     <rules ruleName="SplitAfterSplit">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterSplit/isAppropriate_BWD_EMoflonEdge_244"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterSplit/isAppropriate_BWD_EMoflonEdge_245"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterSplit/isAppropriate_BWD_EMoflonEdge_246"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterSplit/isAppropriate_BWD_EMoflonEdge_126"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterSplit/isAppropriate_BWD_EMoflonEdge_127"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterSplit/isAppropriate_BWD_EMoflonEdge_128"/>
     </rules>
-    <rules ruleName="Task2StepSeq">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepSeq/isAppropriate_BWD_EMoflonEdge_247"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepSeq/isAppropriate_BWD_EMoflonEdge_248"/>
-    </rules>
-    <rules ruleName="Task2StepFirst">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepFirst/isAppropriate_BWD_EMoflonEdge_249"/>
+    <rules ruleName="T2SFirst">
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SFirst/isAppropriate_BWD_EMoflonEdge_129"/>
     </rules>
     <rules ruleName="SplitSeq">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitSeq/isAppropriate_BWD_EMoflonEdge_250"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitSeq/isAppropriate_BWD_EMoflonEdge_251"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitSeq/isAppropriate_BWD_EMoflonEdge_130"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitSeq/isAppropriate_BWD_EMoflonEdge_131"/>
     </rules>
     <rules ruleName="SplitFirst">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitFirst/isAppropriate_BWD_EMoflonEdge_252"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitFirst/isAppropriate_BWD_EMoflonEdge_132"/>
     </rules>
     <rules ruleName="TerminationFirst">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationFirst/isAppropriate_BWD_EMoflonEdge_253"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationFirst/isAppropriate_BWD_EMoflonEdge_133"/>
     </rules>
-    <rules ruleName="Task2StepAfterSplit">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterSplit/isAppropriate_BWD_EMoflonEdge_254"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterSplit/isAppropriate_BWD_EMoflonEdge_255"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterSplit/isAppropriate_BWD_EMoflonEdge_256"/>
+    <rules ruleName="T2SAfterSplit">
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterSplit/isAppropriate_BWD_EMoflonEdge_134"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterSplit/isAppropriate_BWD_EMoflonEdge_135"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterSplit/isAppropriate_BWD_EMoflonEdge_136"/>
     </rules>
     <rules ruleName="TerminationSeq">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationSeq/isAppropriate_BWD_EMoflonEdge_257"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationSeq/isAppropriate_BWD_EMoflonEdge_258"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationSeq/isAppropriate_BWD_EMoflonEdge_137"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationSeq/isAppropriate_BWD_EMoflonEdge_138"/>
     </rules>
     <rules ruleName="LastStepInPFlow">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInPFlow/isAppropriate_BWD_EMoflonEdge_259"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInPFlow/isAppropriate_BWD_EMoflonEdge_139"/>
     </rules>
-    <rules ruleName="Task2StepAfterMerge">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterMerge/isAppropriate_BWD_EMoflonEdge_260"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterMerge/isAppropriate_BWD_EMoflonEdge_261"/>
+    <rules ruleName="T2SAfterMerge">
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterMerge/isAppropriate_BWD_EMoflonEdge_140"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterMerge/isAppropriate_BWD_EMoflonEdge_141"/>
     </rules>
     <rules ruleName="ChoiceSeq">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceSeq/isAppropriate_BWD_EMoflonEdge_262"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceSeq/isAppropriate_BWD_EMoflonEdge_263"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceSeq/isAppropriate_BWD_EMoflonEdge_142"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceSeq/isAppropriate_BWD_EMoflonEdge_143"/>
     </rules>
     <rules ruleName="ChoiceFirst">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceFirst/isAppropriate_BWD_EMoflonEdge_264"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceFirst/isAppropriate_BWD_EMoflonEdge_144"/>
     </rules>
     <rules ruleName="ChoiceAfterSplit">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterSplit/isAppropriate_BWD_EMoflonEdge_265"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterSplit/isAppropriate_BWD_EMoflonEdge_266"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterSplit/isAppropriate_BWD_EMoflonEdge_267"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterSplit/isAppropriate_BWD_EMoflonEdge_145"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterSplit/isAppropriate_BWD_EMoflonEdge_146"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterSplit/isAppropriate_BWD_EMoflonEdge_147"/>
     </rules>
-    <rules ruleName="Task2StepAfterChoiceDef">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterChoiceDef/isAppropriate_BWD_EMoflonEdge_268"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterChoiceDef/isAppropriate_BWD_EMoflonEdge_269"/>
+    <rules ruleName="T2SAfterChoiceDef">
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterChoiceDef/isAppropriate_BWD_EMoflonEdge_148"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterChoiceDef/isAppropriate_BWD_EMoflonEdge_149"/>
     </rules>
-    <rules ruleName="Task2StepAfterChoice">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterChoice/isAppropriate_BWD_EMoflonEdge_270"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterChoice/isAppropriate_BWD_EMoflonEdge_271"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterChoice/isAppropriate_BWD_EMoflonEdge_272"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterChoice/isAppropriate_BWD_EMoflonEdge_273"/>
+    <rules ruleName="T2SAfterChoice">
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterChoice/isAppropriate_BWD_EMoflonEdge_150"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterChoice/isAppropriate_BWD_EMoflonEdge_151"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterChoice/isAppropriate_BWD_EMoflonEdge_152"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterChoice/isAppropriate_BWD_EMoflonEdge_153"/>
     </rules>
     <rules ruleName="EmptyDefaulFlow">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/EmptyDefaulFlow/isAppropriate_BWD_EMoflonEdge_274"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/EmptyDefaulFlow/isAppropriate_BWD_EMoflonEdge_154"/>
     </rules>
     <rules ruleName="LastStepInDefaultFlow">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInDefaultFlow/isAppropriate_BWD_EMoflonEdge_275"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInDefaultFlow/isAppropriate_BWD_EMoflonEdge_155"/>
     </rules>
     <rules ruleName="SplitAfterMerge">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterMerge/isAppropriate_BWD_EMoflonEdge_276"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterMerge/isAppropriate_BWD_EMoflonEdge_277"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterMerge/isAppropriate_BWD_EMoflonEdge_156"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterMerge/isAppropriate_BWD_EMoflonEdge_157"/>
     </rules>
     <rules ruleName="ChoiceAfterMerge">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterMerge/isAppropriate_BWD_EMoflonEdge_278"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterMerge/isAppropriate_BWD_EMoflonEdge_279"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterMerge/isAppropriate_BWD_EMoflonEdge_158"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterMerge/isAppropriate_BWD_EMoflonEdge_159"/>
     </rules>
     <rules ruleName="LastStepInAltFlow">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInAltFlow/isAppropriate_BWD_EMoflonEdge_280"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInAltFlow/isAppropriate_BWD_EMoflonEdge_281"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInAltFlow/isAppropriate_BWD_EMoflonEdge_160"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/LastStepInAltFlow/isAppropriate_BWD_EMoflonEdge_161"/>
     </rules>
     <rules ruleName="SplitAfterChoiceDef">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoiceDef/isAppropriate_BWD_EMoflonEdge_282"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoiceDef/isAppropriate_BWD_EMoflonEdge_283"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoiceDef/isAppropriate_BWD_EMoflonEdge_162"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoiceDef/isAppropriate_BWD_EMoflonEdge_163"/>
     </rules>
     <rules ruleName="SplitAfterChoice">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoice/isAppropriate_BWD_EMoflonEdge_284"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoice/isAppropriate_BWD_EMoflonEdge_285"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoice/isAppropriate_BWD_EMoflonEdge_286"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoice/isAppropriate_BWD_EMoflonEdge_287"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoice/isAppropriate_BWD_EMoflonEdge_164"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoice/isAppropriate_BWD_EMoflonEdge_165"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoice/isAppropriate_BWD_EMoflonEdge_166"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterChoice/isAppropriate_BWD_EMoflonEdge_167"/>
     </rules>
     <rules ruleName="ChoiceAfterChoiceDef">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoiceDef/isAppropriate_BWD_EMoflonEdge_288"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoiceDef/isAppropriate_BWD_EMoflonEdge_289"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoiceDef/isAppropriate_BWD_EMoflonEdge_168"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoiceDef/isAppropriate_BWD_EMoflonEdge_169"/>
     </rules>
     <rules ruleName="ChoiceAfterChoice">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoice/isAppropriate_BWD_EMoflonEdge_290"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoice/isAppropriate_BWD_EMoflonEdge_291"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoice/isAppropriate_BWD_EMoflonEdge_292"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoice/isAppropriate_BWD_EMoflonEdge_293"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoice/isAppropriate_BWD_EMoflonEdge_170"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoice/isAppropriate_BWD_EMoflonEdge_171"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoice/isAppropriate_BWD_EMoflonEdge_172"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterChoice/isAppropriate_BWD_EMoflonEdge_173"/>
     </rules>
     <rules ruleName="TerminationAfterMerge">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationAfterMerge/isAppropriate_BWD_EMoflonEdge_294"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationAfterMerge/isAppropriate_BWD_EMoflonEdge_295"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationAfterMerge/isAppropriate_BWD_EMoflonEdge_174"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/TerminationAfterMerge/isAppropriate_BWD_EMoflonEdge_175"/>
     </rules>
-    <rules ruleName="Task2StepAfterEmptyDef">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterEmptyDef/isAppropriate_BWD_EMoflonEdge_296"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/Task2StepAfterEmptyDef/isAppropriate_BWD_EMoflonEdge_297"/>
+    <rules ruleName="T2SAfterEmptyDef">
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterEmptyDef/isAppropriate_BWD_EMoflonEdge_176"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterEmptyDef/isAppropriate_BWD_EMoflonEdge_177"/>
     </rules>
     <rules ruleName="SplitAfterEmptyDef">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterEmptyDef/isAppropriate_BWD_EMoflonEdge_298"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterEmptyDef/isAppropriate_BWD_EMoflonEdge_299"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterEmptyDef/isAppropriate_BWD_EMoflonEdge_178"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/SplitAfterEmptyDef/isAppropriate_BWD_EMoflonEdge_179"/>
     </rules>
     <rules ruleName="ChoiceAfterEmptyDef">
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterEmptyDef/isAppropriate_BWD_EMoflonEdge_300"/>
-      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterEmptyDef/isAppropriate_BWD_EMoflonEdge_301"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterEmptyDef/isAppropriate_BWD_EMoflonEdge_180"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/ChoiceAfterEmptyDef/isAppropriate_BWD_EMoflonEdge_181"/>
+    </rules>
+    <rules ruleName="T2SAfterTask">
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterTask/isAppropriate_BWD_EMoflonEdge_182"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterTask/isAppropriate_BWD_EMoflonEdge_183"/>
+    </rules>
+    <rules ruleName="T2SAfterSync">
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterSync/isAppropriate_BWD_EMoflonEdge_184"/>
+      <isAppropriateMethods href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#//Rules/T2SAfterSync/isAppropriate_BWD_EMoflonEdge_185"/>
     </rules>
   </targetRules>
 </analysis:StaticAnalysis>

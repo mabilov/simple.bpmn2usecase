@@ -89,13 +89,13 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseTask2StepSeq(Task2StepSeq object) {
-			return createTask2StepSeqAdapter();
+		public Adapter caseT2SSeq(T2SSeq object) {
+			return createT2SSeqAdapter();
 		}
 
 		@Override
-		public Adapter caseTask2StepFirst(Task2StepFirst object) {
-			return createTask2StepFirstAdapter();
+		public Adapter caseT2SFirst(T2SFirst object) {
+			return createT2SFirstAdapter();
 		}
 
 		@Override
@@ -114,8 +114,8 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseTask2StepAfterSplit(Task2StepAfterSplit object) {
-			return createTask2StepAfterSplitAdapter();
+		public Adapter caseT2SAfterSplit(T2SAfterSplit object) {
+			return createT2SAfterSplitAdapter();
 		}
 
 		@Override
@@ -144,8 +144,8 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseTask2StepAfterMerge(Task2StepAfterMerge object) {
-			return createTask2StepAfterMergeAdapter();
+		public Adapter caseT2SAfterMerge(T2SAfterMerge object) {
+			return createT2SAfterMergeAdapter();
 		}
 
 		@Override
@@ -164,13 +164,13 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseTask2StepAfterChoiceDef(Task2StepAfterChoiceDef object) {
-			return createTask2StepAfterChoiceDefAdapter();
+		public Adapter caseT2SAfterChoiceDef(T2SAfterChoiceDef object) {
+			return createT2SAfterChoiceDefAdapter();
 		}
 
 		@Override
-		public Adapter caseTask2StepAfterChoice(Task2StepAfterChoice object) {
-			return createTask2StepAfterChoiceAdapter();
+		public Adapter caseT2SAfterChoice(T2SAfterChoice object) {
+			return createT2SAfterChoiceAdapter();
 		}
 
 		@Override
@@ -224,8 +224,8 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseTask2StepAfterEmptyDef(Task2StepAfterEmptyDef object) {
-			return createTask2StepAfterEmptyDefAdapter();
+		public Adapter caseT2SAfterEmptyDef(T2SAfterEmptyDef object) {
+			return createT2SAfterEmptyDefAdapter();
 		}
 
 		@Override
@@ -236,6 +236,16 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseChoiceAfterEmptyDef(ChoiceAfterEmptyDef object) {
 			return createChoiceAfterEmptyDefAdapter();
+		}
+
+		@Override
+		public Adapter caseT2SAfterTask(T2SAfterTask object) {
+			return createT2SAfterTaskAdapter();
+		}
+
+		@Override
+		public Adapter caseT2SAfterSync(T2SAfterSync object) {
+			return createT2SAfterSyncAdapter();
 		}
 
 		@Override
@@ -319,30 +329,30 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq <em>Task2 Step Seq</em>}'.
+	 * Creates a new adapter for an object of class '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SSeq <em>T2S Seq</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SSeq
 	 * @generated
 	 */
-	public Adapter createTask2StepSeqAdapter() {
+	public Adapter createT2SSeqAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst <em>Task2 Step First</em>}'.
+	 * Creates a new adapter for an object of class '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst <em>T2S First</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst
 	 * @generated
 	 */
-	public Adapter createTask2StepFirstAdapter() {
+	public Adapter createT2SFirstAdapter() {
 		return null;
 	}
 
@@ -389,16 +399,16 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit <em>Task2 Step After Split</em>}'.
+	 * Creates a new adapter for an object of class '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit <em>T2S After Split</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit
 	 * @generated
 	 */
-	public Adapter createTask2StepAfterSplitAdapter() {
+	public Adapter createT2SAfterSplitAdapter() {
 		return null;
 	}
 
@@ -473,16 +483,16 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge <em>Task2 Step After Merge</em>}'.
+	 * Creates a new adapter for an object of class '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge <em>T2S After Merge</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge
 	 * @generated
 	 */
-	public Adapter createTask2StepAfterMergeAdapter() {
+	public Adapter createT2SAfterMergeAdapter() {
 		return null;
 	}
 
@@ -529,30 +539,30 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef <em>Task2 Step After Choice Def</em>}'.
+	 * Creates a new adapter for an object of class '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef <em>T2S After Choice Def</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef
 	 * @generated
 	 */
-	public Adapter createTask2StepAfterChoiceDefAdapter() {
+	public Adapter createT2SAfterChoiceDefAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice <em>Task2 Step After Choice</em>}'.
+	 * Creates a new adapter for an object of class '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice <em>T2S After Choice</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice
 	 * @generated
 	 */
-	public Adapter createTask2StepAfterChoiceAdapter() {
+	public Adapter createT2SAfterChoiceAdapter() {
 		return null;
 	}
 
@@ -697,16 +707,16 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef <em>Task2 Step After Empty Def</em>}'.
+	 * Creates a new adapter for an object of class '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef <em>T2S After Empty Def</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef
 	 * @generated
 	 */
-	public Adapter createTask2StepAfterEmptyDefAdapter() {
+	public Adapter createT2SAfterEmptyDefAdapter() {
 		return null;
 	}
 
@@ -735,6 +745,34 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createChoiceAfterEmptyDefAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask <em>T2S After Task</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask
+	 * @generated
+	 */
+	public Adapter createT2SAfterTaskAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync <em>T2S After Sync</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync
+	 * @generated
+	 */
+	public Adapter createT2SAfterSyncAdapter() {
 		return null;
 	}
 

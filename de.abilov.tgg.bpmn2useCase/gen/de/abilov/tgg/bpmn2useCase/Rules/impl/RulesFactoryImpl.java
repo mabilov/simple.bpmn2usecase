@@ -59,34 +59,32 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 			return createProcess2UseCase();
 		case RulesPackage.SPLIT_AFTER_SPLIT:
 			return createSplitAfterSplit();
-		case RulesPackage.TASK2_STEP_SEQ:
-			return createTask2StepSeq();
-		case RulesPackage.TASK2_STEP_FIRST:
-			return createTask2StepFirst();
+		case RulesPackage.T2S_FIRST:
+			return createT2SFirst();
 		case RulesPackage.SPLIT_SEQ:
 			return createSplitSeq();
 		case RulesPackage.SPLIT_FIRST:
 			return createSplitFirst();
 		case RulesPackage.TERMINATION_FIRST:
 			return createTerminationFirst();
-		case RulesPackage.TASK2_STEP_AFTER_SPLIT:
-			return createTask2StepAfterSplit();
+		case RulesPackage.T2S_AFTER_SPLIT:
+			return createT2SAfterSplit();
 		case RulesPackage.TERMINATION_SEQ:
 			return createTerminationSeq();
 		case RulesPackage.LAST_STEP_IN_PFLOW:
 			return createLastStepInPFlow();
-		case RulesPackage.TASK2_STEP_AFTER_MERGE:
-			return createTask2StepAfterMerge();
+		case RulesPackage.T2S_AFTER_MERGE:
+			return createT2SAfterMerge();
 		case RulesPackage.CHOICE_SEQ:
 			return createChoiceSeq();
 		case RulesPackage.CHOICE_FIRST:
 			return createChoiceFirst();
 		case RulesPackage.CHOICE_AFTER_SPLIT:
 			return createChoiceAfterSplit();
-		case RulesPackage.TASK2_STEP_AFTER_CHOICE_DEF:
-			return createTask2StepAfterChoiceDef();
-		case RulesPackage.TASK2_STEP_AFTER_CHOICE:
-			return createTask2StepAfterChoice();
+		case RulesPackage.T2S_AFTER_CHOICE_DEF:
+			return createT2SAfterChoiceDef();
+		case RulesPackage.T2S_AFTER_CHOICE:
+			return createT2SAfterChoice();
 		case RulesPackage.EMPTY_DEFAUL_FLOW:
 			return createEmptyDefaulFlow();
 		case RulesPackage.LAST_STEP_IN_DEFAULT_FLOW:
@@ -107,12 +105,16 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 			return createChoiceAfterChoice();
 		case RulesPackage.TERMINATION_AFTER_MERGE:
 			return createTerminationAfterMerge();
-		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF:
-			return createTask2StepAfterEmptyDef();
+		case RulesPackage.T2S_AFTER_EMPTY_DEF:
+			return createT2SAfterEmptyDef();
 		case RulesPackage.SPLIT_AFTER_EMPTY_DEF:
 			return createSplitAfterEmptyDef();
 		case RulesPackage.CHOICE_AFTER_EMPTY_DEF:
 			return createChoiceAfterEmptyDef();
+		case RulesPackage.T2S_AFTER_TASK:
+			return createT2SAfterTask();
+		case RulesPackage.T2S_AFTER_SYNC:
+			return createT2SAfterSync();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -143,19 +145,9 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Task2StepSeq createTask2StepSeq() {
-		Task2StepSeqImpl task2StepSeq = new Task2StepSeqImpl();
-		return task2StepSeq;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Task2StepFirst createTask2StepFirst() {
-		Task2StepFirstImpl task2StepFirst = new Task2StepFirstImpl();
-		return task2StepFirst;
+	public T2SFirst createT2SFirst() {
+		T2SFirstImpl t2SFirst = new T2SFirstImpl();
+		return t2SFirst;
 	}
 
 	/**
@@ -193,9 +185,9 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Task2StepAfterSplit createTask2StepAfterSplit() {
-		Task2StepAfterSplitImpl task2StepAfterSplit = new Task2StepAfterSplitImpl();
-		return task2StepAfterSplit;
+	public T2SAfterSplit createT2SAfterSplit() {
+		T2SAfterSplitImpl t2SAfterSplit = new T2SAfterSplitImpl();
+		return t2SAfterSplit;
 	}
 
 	/**
@@ -223,9 +215,9 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Task2StepAfterMerge createTask2StepAfterMerge() {
-		Task2StepAfterMergeImpl task2StepAfterMerge = new Task2StepAfterMergeImpl();
-		return task2StepAfterMerge;
+	public T2SAfterMerge createT2SAfterMerge() {
+		T2SAfterMergeImpl t2SAfterMerge = new T2SAfterMergeImpl();
+		return t2SAfterMerge;
 	}
 
 	/**
@@ -263,9 +255,9 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Task2StepAfterChoiceDef createTask2StepAfterChoiceDef() {
-		Task2StepAfterChoiceDefImpl task2StepAfterChoiceDef = new Task2StepAfterChoiceDefImpl();
-		return task2StepAfterChoiceDef;
+	public T2SAfterChoiceDef createT2SAfterChoiceDef() {
+		T2SAfterChoiceDefImpl t2SAfterChoiceDef = new T2SAfterChoiceDefImpl();
+		return t2SAfterChoiceDef;
 	}
 
 	/**
@@ -273,9 +265,9 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Task2StepAfterChoice createTask2StepAfterChoice() {
-		Task2StepAfterChoiceImpl task2StepAfterChoice = new Task2StepAfterChoiceImpl();
-		return task2StepAfterChoice;
+	public T2SAfterChoice createT2SAfterChoice() {
+		T2SAfterChoiceImpl t2SAfterChoice = new T2SAfterChoiceImpl();
+		return t2SAfterChoice;
 	}
 
 	/**
@@ -383,9 +375,9 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Task2StepAfterEmptyDef createTask2StepAfterEmptyDef() {
-		Task2StepAfterEmptyDefImpl task2StepAfterEmptyDef = new Task2StepAfterEmptyDefImpl();
-		return task2StepAfterEmptyDef;
+	public T2SAfterEmptyDef createT2SAfterEmptyDef() {
+		T2SAfterEmptyDefImpl t2SAfterEmptyDef = new T2SAfterEmptyDefImpl();
+		return t2SAfterEmptyDef;
 	}
 
 	/**
@@ -406,6 +398,26 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	public ChoiceAfterEmptyDef createChoiceAfterEmptyDef() {
 		ChoiceAfterEmptyDefImpl choiceAfterEmptyDef = new ChoiceAfterEmptyDefImpl();
 		return choiceAfterEmptyDef;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public T2SAfterTask createT2SAfterTask() {
+		T2SAfterTaskImpl t2SAfterTask = new T2SAfterTaskImpl();
+		return t2SAfterTask;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public T2SAfterSync createT2SAfterSync() {
+		T2SAfterSyncImpl t2SAfterSync = new T2SAfterSyncImpl();
+		return t2SAfterSync;
 	}
 
 	/**

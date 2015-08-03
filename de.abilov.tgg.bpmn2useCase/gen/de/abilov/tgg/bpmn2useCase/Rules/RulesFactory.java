@@ -40,22 +40,13 @@ public interface RulesFactory extends EFactory {
 	SplitAfterSplit createSplitAfterSplit();
 
 	/**
-	 * Returns a new object of class '<em>Task2 Step Seq</em>'.
+	 * Returns a new object of class '<em>T2S First</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Task2 Step Seq</em>'.
+	 * @return a new object of class '<em>T2S First</em>'.
 	 * @generated
 	 */
-	Task2StepSeq createTask2StepSeq();
-
-	/**
-	 * Returns a new object of class '<em>Task2 Step First</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Task2 Step First</em>'.
-	 * @generated
-	 */
-	Task2StepFirst createTask2StepFirst();
+	T2SFirst createT2SFirst();
 
 	/**
 	 * Returns a new object of class '<em>Split Seq</em>'.
@@ -85,13 +76,13 @@ public interface RulesFactory extends EFactory {
 	TerminationFirst createTerminationFirst();
 
 	/**
-	 * Returns a new object of class '<em>Task2 Step After Split</em>'.
+	 * Returns a new object of class '<em>T2S After Split</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Task2 Step After Split</em>'.
+	 * @return a new object of class '<em>T2S After Split</em>'.
 	 * @generated
 	 */
-	Task2StepAfterSplit createTask2StepAfterSplit();
+	T2SAfterSplit createT2SAfterSplit();
 
 	/**
 	 * Returns a new object of class '<em>Termination Seq</em>'.
@@ -112,13 +103,13 @@ public interface RulesFactory extends EFactory {
 	LastStepInPFlow createLastStepInPFlow();
 
 	/**
-	 * Returns a new object of class '<em>Task2 Step After Merge</em>'.
+	 * Returns a new object of class '<em>T2S After Merge</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Task2 Step After Merge</em>'.
+	 * @return a new object of class '<em>T2S After Merge</em>'.
 	 * @generated
 	 */
-	Task2StepAfterMerge createTask2StepAfterMerge();
+	T2SAfterMerge createT2SAfterMerge();
 
 	/**
 	 * Returns a new object of class '<em>Choice Seq</em>'.
@@ -148,22 +139,22 @@ public interface RulesFactory extends EFactory {
 	ChoiceAfterSplit createChoiceAfterSplit();
 
 	/**
-	 * Returns a new object of class '<em>Task2 Step After Choice Def</em>'.
+	 * Returns a new object of class '<em>T2S After Choice Def</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Task2 Step After Choice Def</em>'.
+	 * @return a new object of class '<em>T2S After Choice Def</em>'.
 	 * @generated
 	 */
-	Task2StepAfterChoiceDef createTask2StepAfterChoiceDef();
+	T2SAfterChoiceDef createT2SAfterChoiceDef();
 
 	/**
-	 * Returns a new object of class '<em>Task2 Step After Choice</em>'.
+	 * Returns a new object of class '<em>T2S After Choice</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Task2 Step After Choice</em>'.
+	 * @return a new object of class '<em>T2S After Choice</em>'.
 	 * @generated
 	 */
-	Task2StepAfterChoice createTask2StepAfterChoice();
+	T2SAfterChoice createT2SAfterChoice();
 
 	/**
 	 * Returns a new object of class '<em>Empty Defaul Flow</em>'.
@@ -256,13 +247,13 @@ public interface RulesFactory extends EFactory {
 	TerminationAfterMerge createTerminationAfterMerge();
 
 	/**
-	 * Returns a new object of class '<em>Task2 Step After Empty Def</em>'.
+	 * Returns a new object of class '<em>T2S After Empty Def</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Task2 Step After Empty Def</em>'.
+	 * @return a new object of class '<em>T2S After Empty Def</em>'.
 	 * @generated
 	 */
-	Task2StepAfterEmptyDef createTask2StepAfterEmptyDef();
+	T2SAfterEmptyDef createT2SAfterEmptyDef();
 
 	/**
 	 * Returns a new object of class '<em>Split After Empty Def</em>'.
@@ -281,6 +272,24 @@ public interface RulesFactory extends EFactory {
 	 * @generated
 	 */
 	ChoiceAfterEmptyDef createChoiceAfterEmptyDef();
+
+	/**
+	 * Returns a new object of class '<em>T2S After Task</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>T2S After Task</em>'.
+	 * @generated
+	 */
+	T2SAfterTask createT2SAfterTask();
+
+	/**
+	 * Returns a new object of class '<em>T2S After Sync</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>T2S After Sync</em>'.
+	 * @generated
+	 */
+	T2SAfterSync createT2SAfterSync();
 
 	/**
 	 * Returns the package supported by this factory.

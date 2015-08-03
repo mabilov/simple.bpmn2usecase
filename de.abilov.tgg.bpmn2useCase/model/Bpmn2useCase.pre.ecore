@@ -49,10 +49,10 @@
     <eClassifiers xsi:type="ecore:EClass" name="SplitAfterSplit">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Task2StepSeq">
+    <eClassifiers xsi:type="ecore:EClass" name="T2SSeq" abstract="true">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Task2StepFirst">
+    <eClassifiers xsi:type="ecore:EClass" name="T2SFirst">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="SplitSeq">
@@ -64,7 +64,7 @@
     <eClassifiers xsi:type="ecore:EClass" name="TerminationFirst">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Task2StepAfterSplit">
+    <eClassifiers xsi:type="ecore:EClass" name="T2SAfterSplit">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Termination" abstract="true">
@@ -82,7 +82,7 @@
     <eClassifiers xsi:type="ecore:EClass" name="Choice" abstract="true">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Task2StepAfterMerge">
+    <eClassifiers xsi:type="ecore:EClass" name="T2SAfterMerge">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="ChoiceSeq">
@@ -94,10 +94,10 @@
     <eClassifiers xsi:type="ecore:EClass" name="ChoiceAfterSplit">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Task2StepAfterChoiceDef">
+    <eClassifiers xsi:type="ecore:EClass" name="T2SAfterChoiceDef">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Task2StepAfterChoice">
+    <eClassifiers xsi:type="ecore:EClass" name="T2SAfterChoice">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="EmptyDefaulFlow">
@@ -130,13 +130,19 @@
     <eClassifiers xsi:type="ecore:EClass" name="TerminationAfterMerge">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Task2StepAfterEmptyDef">
+    <eClassifiers xsi:type="ecore:EClass" name="T2SAfterEmptyDef">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="SplitAfterEmptyDef">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="ChoiceAfterEmptyDef">
+      <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="T2SAfterTask">
+      <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="T2SAfterSync">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
   </eSubpackages>

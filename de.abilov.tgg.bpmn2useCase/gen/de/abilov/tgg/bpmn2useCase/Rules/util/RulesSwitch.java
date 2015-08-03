@@ -104,20 +104,20 @@ public class RulesSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case RulesPackage.TASK2_STEP_SEQ: {
-			Task2StepSeq task2StepSeq = (Task2StepSeq) theEObject;
-			T result = caseTask2StepSeq(task2StepSeq);
+		case RulesPackage.T2S_SEQ: {
+			T2SSeq t2SSeq = (T2SSeq) theEObject;
+			T result = caseT2SSeq(t2SSeq);
 			if (result == null)
-				result = caseAbstractRule(task2StepSeq);
+				result = caseAbstractRule(t2SSeq);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case RulesPackage.TASK2_STEP_FIRST: {
-			Task2StepFirst task2StepFirst = (Task2StepFirst) theEObject;
-			T result = caseTask2StepFirst(task2StepFirst);
+		case RulesPackage.T2S_FIRST: {
+			T2SFirst t2SFirst = (T2SFirst) theEObject;
+			T result = caseT2SFirst(t2SFirst);
 			if (result == null)
-				result = caseAbstractRule(task2StepFirst);
+				result = caseAbstractRule(t2SFirst);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -149,11 +149,11 @@ public class RulesSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case RulesPackage.TASK2_STEP_AFTER_SPLIT: {
-			Task2StepAfterSplit task2StepAfterSplit = (Task2StepAfterSplit) theEObject;
-			T result = caseTask2StepAfterSplit(task2StepAfterSplit);
+		case RulesPackage.T2S_AFTER_SPLIT: {
+			T2SAfterSplit t2SAfterSplit = (T2SAfterSplit) theEObject;
+			T result = caseT2SAfterSplit(t2SAfterSplit);
 			if (result == null)
-				result = caseAbstractRule(task2StepAfterSplit);
+				result = caseAbstractRule(t2SAfterSplit);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -203,11 +203,11 @@ public class RulesSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case RulesPackage.TASK2_STEP_AFTER_MERGE: {
-			Task2StepAfterMerge task2StepAfterMerge = (Task2StepAfterMerge) theEObject;
-			T result = caseTask2StepAfterMerge(task2StepAfterMerge);
+		case RulesPackage.T2S_AFTER_MERGE: {
+			T2SAfterMerge t2SAfterMerge = (T2SAfterMerge) theEObject;
+			T result = caseT2SAfterMerge(t2SAfterMerge);
 			if (result == null)
-				result = caseAbstractRule(task2StepAfterMerge);
+				result = caseAbstractRule(t2SAfterMerge);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -239,20 +239,20 @@ public class RulesSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case RulesPackage.TASK2_STEP_AFTER_CHOICE_DEF: {
-			Task2StepAfterChoiceDef task2StepAfterChoiceDef = (Task2StepAfterChoiceDef) theEObject;
-			T result = caseTask2StepAfterChoiceDef(task2StepAfterChoiceDef);
+		case RulesPackage.T2S_AFTER_CHOICE_DEF: {
+			T2SAfterChoiceDef t2SAfterChoiceDef = (T2SAfterChoiceDef) theEObject;
+			T result = caseT2SAfterChoiceDef(t2SAfterChoiceDef);
 			if (result == null)
-				result = caseAbstractRule(task2StepAfterChoiceDef);
+				result = caseAbstractRule(t2SAfterChoiceDef);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case RulesPackage.TASK2_STEP_AFTER_CHOICE: {
-			Task2StepAfterChoice task2StepAfterChoice = (Task2StepAfterChoice) theEObject;
-			T result = caseTask2StepAfterChoice(task2StepAfterChoice);
+		case RulesPackage.T2S_AFTER_CHOICE: {
+			T2SAfterChoice t2SAfterChoice = (T2SAfterChoice) theEObject;
+			T result = caseT2SAfterChoice(t2SAfterChoice);
 			if (result == null)
-				result = caseAbstractRule(task2StepAfterChoice);
+				result = caseAbstractRule(t2SAfterChoice);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -347,11 +347,11 @@ public class RulesSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case RulesPackage.TASK2_STEP_AFTER_EMPTY_DEF: {
-			Task2StepAfterEmptyDef task2StepAfterEmptyDef = (Task2StepAfterEmptyDef) theEObject;
-			T result = caseTask2StepAfterEmptyDef(task2StepAfterEmptyDef);
+		case RulesPackage.T2S_AFTER_EMPTY_DEF: {
+			T2SAfterEmptyDef t2SAfterEmptyDef = (T2SAfterEmptyDef) theEObject;
+			T result = caseT2SAfterEmptyDef(t2SAfterEmptyDef);
 			if (result == null)
-				result = caseAbstractRule(task2StepAfterEmptyDef);
+				result = caseAbstractRule(t2SAfterEmptyDef);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -370,6 +370,24 @@ public class RulesSwitch<T> extends Switch<T> {
 			T result = caseChoiceAfterEmptyDef(choiceAfterEmptyDef);
 			if (result == null)
 				result = caseAbstractRule(choiceAfterEmptyDef);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case RulesPackage.T2S_AFTER_TASK: {
+			T2SAfterTask t2SAfterTask = (T2SAfterTask) theEObject;
+			T result = caseT2SAfterTask(t2SAfterTask);
+			if (result == null)
+				result = caseAbstractRule(t2SAfterTask);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case RulesPackage.T2S_AFTER_SYNC: {
+			T2SAfterSync t2SAfterSync = (T2SAfterSync) theEObject;
+			T result = caseT2SAfterSync(t2SAfterSync);
+			if (result == null)
+				result = caseAbstractRule(t2SAfterSync);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -440,32 +458,32 @@ public class RulesSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Task2 Step Seq</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>T2S Seq</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Task2 Step Seq</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>T2S Seq</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTask2StepSeq(Task2StepSeq object) {
+	public T caseT2SSeq(T2SSeq object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Task2 Step First</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>T2S First</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Task2 Step First</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>T2S First</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTask2StepFirst(Task2StepFirst object) {
+	public T caseT2SFirst(T2SFirst object) {
 		return null;
 	}
 
@@ -515,17 +533,17 @@ public class RulesSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Task2 Step After Split</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>T2S After Split</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Task2 Step After Split</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>T2S After Split</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTask2StepAfterSplit(Task2StepAfterSplit object) {
+	public T caseT2SAfterSplit(T2SAfterSplit object) {
 		return null;
 	}
 
@@ -605,17 +623,17 @@ public class RulesSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Task2 Step After Merge</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>T2S After Merge</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Task2 Step After Merge</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>T2S After Merge</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTask2StepAfterMerge(Task2StepAfterMerge object) {
+	public T caseT2SAfterMerge(T2SAfterMerge object) {
 		return null;
 	}
 
@@ -665,32 +683,32 @@ public class RulesSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Task2 Step After Choice Def</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>T2S After Choice Def</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Task2 Step After Choice Def</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>T2S After Choice Def</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTask2StepAfterChoiceDef(Task2StepAfterChoiceDef object) {
+	public T caseT2SAfterChoiceDef(T2SAfterChoiceDef object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Task2 Step After Choice</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>T2S After Choice</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Task2 Step After Choice</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>T2S After Choice</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTask2StepAfterChoice(Task2StepAfterChoice object) {
+	public T caseT2SAfterChoice(T2SAfterChoice object) {
 		return null;
 	}
 
@@ -845,17 +863,17 @@ public class RulesSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Task2 Step After Empty Def</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>T2S After Empty Def</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Task2 Step After Empty Def</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>T2S After Empty Def</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTask2StepAfterEmptyDef(Task2StepAfterEmptyDef object) {
+	public T caseT2SAfterEmptyDef(T2SAfterEmptyDef object) {
 		return null;
 	}
 
@@ -886,6 +904,36 @@ public class RulesSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseChoiceAfterEmptyDef(ChoiceAfterEmptyDef object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>T2S After Task</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>T2S After Task</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseT2SAfterTask(T2SAfterTask object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>T2S After Sync</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>T2S After Sync</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseT2SAfterSync(T2SAfterSync object) {
 		return null;
 	}
 

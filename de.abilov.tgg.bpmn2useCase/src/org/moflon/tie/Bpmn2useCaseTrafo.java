@@ -22,7 +22,7 @@ public class Bpmn2useCaseTrafo extends DebugSynchronizationHelper {
 		BasicConfigurator.configure();
 
 		// Need to get exact list of ignored elements
-		this.verbose = true;
+		//this.verbose = true;
 	}
 
 	private static void __perform(String direction, String test) {

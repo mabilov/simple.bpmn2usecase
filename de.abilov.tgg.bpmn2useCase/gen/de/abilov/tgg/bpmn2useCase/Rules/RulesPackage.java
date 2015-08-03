@@ -267,33 +267,33 @@ public interface RulesPackage extends EPackage {
 	int PROCESS2_USE_CASE___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 788</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 406</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PROCESS2_USE_CASE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_788__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int PROCESS2_USE_CASE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_406__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 242</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 124</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PROCESS2_USE_CASE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_242__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int PROCESS2_USE_CASE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_124__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 21;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 243</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 125</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PROCESS2_USE_CASE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_243__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int PROCESS2_USE_CASE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_125__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 22;
 
 	/**
@@ -589,113 +589,113 @@ public interface RulesPackage extends EPackage {
 	int SPLIT_AFTER_SPLIT___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 789</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 407</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_789__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_407__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 790</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 408</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_790__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_408__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 21;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 791</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 409</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_791__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_409__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 22;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 244</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 126</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_SPLIT___IS_APPROPRIATE_BWD_EMOFLON_EDGE_244__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_SPLIT___IS_APPROPRIATE_BWD_EMOFLON_EDGE_126__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 23;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 245</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 127</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_SPLIT___IS_APPROPRIATE_BWD_EMOFLON_EDGE_245__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_SPLIT___IS_APPROPRIATE_BWD_EMOFLON_EDGE_127__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 24;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 246</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 128</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_SPLIT___IS_APPROPRIATE_BWD_EMOFLON_EDGE_246__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_SPLIT___IS_APPROPRIATE_BWD_EMOFLON_EDGE_128__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 25;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 792</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 410</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_792__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_410__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 26;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 793</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 411</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_793__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_411__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 27;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 794</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 412</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_794__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_412__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 28;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 795</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 413</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_795__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_413__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 29;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 796</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 414</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_796__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_414__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 30;
 
 	/**
@@ -726,23 +726,51 @@ public interface RulesPackage extends EPackage {
 	int SPLIT_AFTER_SPLIT_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 33;
 
 	/**
-	 * The meta object id for the '{@link de.abilov.tgg.bpmn2useCase.Rules.impl.Task2StepSeqImpl <em>Task2 Step Seq</em>}' class.
+	 * The meta object id for the '{@link de.abilov.tgg.bpmn2useCase.Rules.impl.T2SSeqImpl <em>T2S Seq</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.Task2StepSeqImpl
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.RulesPackageImpl#getTask2StepSeq()
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.T2SSeqImpl
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.RulesPackageImpl#getT2SSeq()
 	 * @generated
 	 */
-	int TASK2_STEP_SEQ = 4;
+	int T2S_SEQ = 4;
 
 	/**
-	 * The number of structural features of the '<em>Task2 Step Seq</em>' class.
+	 * The number of structural features of the '<em>T2S Seq</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_SEQ_FEATURE_COUNT = TGGRuntimePackage.ABSTRACT_RULE_FEATURE_COUNT + 0;
+	int T2S_SEQ_FEATURE_COUNT = TGGRuntimePackage.ABSTRACT_RULE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>T2S Seq</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_SEQ_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link de.abilov.tgg.bpmn2useCase.Rules.impl.T2SFirstImpl <em>T2S First</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.T2SFirstImpl
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.RulesPackageImpl#getT2SFirst()
+	 * @generated
+	 */
+	int T2S_FIRST = 5;
+
+	/**
+	 * The number of structural features of the '<em>T2S First</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_FIRST_FEATURE_COUNT = TGGRuntimePackage.ABSTRACT_RULE_FEATURE_COUNT + 0;
 
 	/**
 	 * The operation id for the '<em>Is Appropriate FWD</em>' operation.
@@ -751,7 +779,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_SEQ___IS_APPROPRIATE_FWD__MATCH_FLOWNODE_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_FIRST___IS_APPROPRIATE_FWD__MATCH_FLOWNODE_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 0;
 
 	/**
@@ -761,7 +789,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_SEQ___PERFORM_FWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 1;
+	int T2S_FIRST___PERFORM_FWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Is Applicable FWD</em>' operation.
@@ -770,7 +798,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_SEQ___IS_APPLICABLE_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 2;
+	int T2S_FIRST___IS_APPLICABLE_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 2;
 
 	/**
 	 * The operation id for the '<em>Register Objects To Match FWD</em>' operation.
@@ -779,7 +807,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_SEQ___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_FLOWNODE_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_FIRST___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_FLOWNODE_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 3;
 
 	/**
@@ -789,7 +817,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_SEQ___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_FLOWNODE_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_FIRST___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_FLOWNODE_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 4;
 
 	/**
@@ -799,7 +827,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_SEQ___IS_APPROPRIATE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 5;
+	int T2S_FIRST___IS_APPROPRIATE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 5;
 
 	/**
 	 * The operation id for the '<em>Is Applicable solve Csp FWD</em>' operation.
@@ -808,7 +836,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_SEQ___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_FN2S_FLOWNODE_FLOW_STEP_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_FIRST___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_FN2F_FLOWNODE_FLOW_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 6;
 
 	/**
@@ -818,7 +846,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_SEQ___IS_APPLICABLE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 7;
+	int T2S_FIRST___IS_APPLICABLE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 7;
 
 	/**
 	 * The operation id for the '<em>Register Objects FWD</em>' operation.
@@ -827,7 +855,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_SEQ___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_FIRST___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 8;
 
 	/**
@@ -837,7 +865,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_SEQ___CHECK_TYPES_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 9;
+	int T2S_FIRST___CHECK_TYPES_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 9;
 
 	/**
 	 * The operation id for the '<em>Is Appropriate BWD</em>' operation.
@@ -846,8 +874,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_SEQ___IS_APPROPRIATE_BWD__MATCH_FLOW_STEP_NORMALSTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 10;
+	int T2S_FIRST___IS_APPROPRIATE_BWD__MATCH_NORMALSTEP_FLOW = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 10;
 
 	/**
 	 * The operation id for the '<em>Perform BWD</em>' operation.
@@ -856,7 +883,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_SEQ___PERFORM_BWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 11;
+	int T2S_FIRST___PERFORM_BWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 11;
 
 	/**
 	 * The operation id for the '<em>Is Applicable BWD</em>' operation.
@@ -865,7 +892,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_SEQ___IS_APPLICABLE_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 12;
+	int T2S_FIRST___IS_APPLICABLE_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 12;
 
 	/**
 	 * The operation id for the '<em>Register Objects To Match BWD</em>' operation.
@@ -874,7 +901,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_SEQ___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_FLOW_STEP_NORMALSTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_FIRST___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_NORMALSTEP_FLOW = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 13;
 
 	/**
@@ -884,7 +911,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_SEQ___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_FLOW_STEP_NORMALSTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_FIRST___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_NORMALSTEP_FLOW = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 14;
 
 	/**
@@ -894,7 +921,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_SEQ___IS_APPROPRIATE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 15;
+	int T2S_FIRST___IS_APPROPRIATE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 15;
 
 	/**
 	 * The operation id for the '<em>Is Applicable solve Csp BWD</em>' operation.
@@ -903,7 +930,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_SEQ___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_FN2S_FLOWNODE_FLOW_STEP_NORMALSTEP_PROCESS = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_FIRST___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_FN2F_NORMALSTEP_FLOWNODE_FLOW_PROCESS = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 16;
 
 	/**
@@ -913,7 +940,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_SEQ___IS_APPLICABLE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 17;
+	int T2S_FIRST___IS_APPLICABLE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 17;
 
 	/**
 	 * The operation id for the '<em>Register Objects BWD</em>' operation.
@@ -922,7 +949,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_SEQ___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_FIRST___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 18;
 
 	/**
@@ -932,392 +959,76 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_SEQ___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
+	int T2S_FIRST___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 247</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 129</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_SEQ___IS_APPROPRIATE_BWD_EMOFLON_EDGE_247__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_FIRST___IS_APPROPRIATE_BWD_EMOFLON_EDGE_129__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 248</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 415</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_SEQ___IS_APPROPRIATE_BWD_EMOFLON_EDGE_248__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_415__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 21;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 797</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 416</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_797__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_416__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 22;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 798</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 417</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_798__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_417__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 23;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 799</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 418</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_799__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_418__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 24;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 800</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 419</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_800__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_419__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 25;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 801</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 420</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_801__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 26;
-
-	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 802</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_802__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 27;
-
-	/**
-	 * The operation id for the '<em>Check Attributes FWD</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_SEQ___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 28;
-
-	/**
-	 * The operation id for the '<em>Check Attributes BWD</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_SEQ___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 29;
-
-	/**
-	 * The number of operations of the '<em>Task2 Step Seq</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_SEQ_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 30;
-
-	/**
-	 * The meta object id for the '{@link de.abilov.tgg.bpmn2useCase.Rules.impl.Task2StepFirstImpl <em>Task2 Step First</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.Task2StepFirstImpl
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.RulesPackageImpl#getTask2StepFirst()
-	 * @generated
-	 */
-	int TASK2_STEP_FIRST = 5;
-
-	/**
-	 * The number of structural features of the '<em>Task2 Step First</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_FIRST_FEATURE_COUNT = TGGRuntimePackage.ABSTRACT_RULE_FEATURE_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>Is Appropriate FWD</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_FIRST___IS_APPROPRIATE_FWD__MATCH_FLOWNODE_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 0;
-
-	/**
-	 * The operation id for the '<em>Perform FWD</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_FIRST___PERFORM_FWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 1;
-
-	/**
-	 * The operation id for the '<em>Is Applicable FWD</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_FIRST___IS_APPLICABLE_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 2;
-
-	/**
-	 * The operation id for the '<em>Register Objects To Match FWD</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_FIRST___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_FLOWNODE_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 3;
-
-	/**
-	 * The operation id for the '<em>Is Appropriate solve Csp FWD</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_FIRST___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_FLOWNODE_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 4;
-
-	/**
-	 * The operation id for the '<em>Is Appropriate check Csp FWD</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_FIRST___IS_APPROPRIATE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 5;
-
-	/**
-	 * The operation id for the '<em>Is Applicable solve Csp FWD</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_FIRST___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_FN2F_FLOWNODE_FLOW_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 6;
-
-	/**
-	 * The operation id for the '<em>Is Applicable check Csp FWD</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_FIRST___IS_APPLICABLE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 7;
-
-	/**
-	 * The operation id for the '<em>Register Objects FWD</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_FIRST___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 8;
-
-	/**
-	 * The operation id for the '<em>Check Types FWD</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_FIRST___CHECK_TYPES_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 9;
-
-	/**
-	 * The operation id for the '<em>Is Appropriate BWD</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_FIRST___IS_APPROPRIATE_BWD__MATCH_NORMALSTEP_FLOW = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 10;
-
-	/**
-	 * The operation id for the '<em>Perform BWD</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_FIRST___PERFORM_BWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 11;
-
-	/**
-	 * The operation id for the '<em>Is Applicable BWD</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_FIRST___IS_APPLICABLE_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 12;
-
-	/**
-	 * The operation id for the '<em>Register Objects To Match BWD</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_FIRST___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_NORMALSTEP_FLOW = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 13;
-
-	/**
-	 * The operation id for the '<em>Is Appropriate solve Csp BWD</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_FIRST___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_NORMALSTEP_FLOW = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 14;
-
-	/**
-	 * The operation id for the '<em>Is Appropriate check Csp BWD</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_FIRST___IS_APPROPRIATE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 15;
-
-	/**
-	 * The operation id for the '<em>Is Applicable solve Csp BWD</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_FIRST___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_FN2F_NORMALSTEP_FLOWNODE_FLOW_PROCESS = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 16;
-
-	/**
-	 * The operation id for the '<em>Is Applicable check Csp BWD</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_FIRST___IS_APPLICABLE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 17;
-
-	/**
-	 * The operation id for the '<em>Register Objects BWD</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_FIRST___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 18;
-
-	/**
-	 * The operation id for the '<em>Check Types BWD</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_FIRST___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
-
-	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 249</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_FIRST___IS_APPROPRIATE_BWD_EMOFLON_EDGE_249__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 20;
-
-	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 803</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_803__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 21;
-
-	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 804</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_804__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 22;
-
-	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 805</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_805__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 23;
-
-	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 806</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_806__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 24;
-
-	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 807</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_807__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 25;
-
-	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 808</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TASK2_STEP_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_808__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_420__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 26;
 
 	/**
@@ -1327,7 +1038,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_FIRST___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 27;
+	int T2S_FIRST___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 27;
 
 	/**
 	 * The operation id for the '<em>Check Attributes BWD</em>' operation.
@@ -1336,16 +1047,16 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_FIRST___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 28;
+	int T2S_FIRST___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 28;
 
 	/**
-	 * The number of operations of the '<em>Task2 Step First</em>' class.
+	 * The number of operations of the '<em>T2S First</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_FIRST_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 29;
+	int T2S_FIRST_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 29;
 
 	/**
 	 * The meta object id for the '{@link de.abilov.tgg.bpmn2useCase.Rules.impl.SplitSeqImpl <em>Split Seq</em>}' class.
@@ -1557,103 +1268,103 @@ public interface RulesPackage extends EPackage {
 	int SPLIT_SEQ___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 250</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 130</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_SEQ___IS_APPROPRIATE_BWD_EMOFLON_EDGE_250__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_SEQ___IS_APPROPRIATE_BWD_EMOFLON_EDGE_130__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 251</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 131</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_SEQ___IS_APPROPRIATE_BWD_EMOFLON_EDGE_251__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_SEQ___IS_APPROPRIATE_BWD_EMOFLON_EDGE_131__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 21;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 809</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 421</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_809__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_421__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 22;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 810</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 422</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_810__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_422__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 23;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 811</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 423</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_811__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_423__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 24;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 812</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 424</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_812__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_424__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 25;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 813</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 425</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_813__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_425__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 26;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 814</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 426</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_814__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_426__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 27;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 815</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 427</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_815__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_427__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 28;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 816</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 428</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_816__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_428__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 29;
 
 	/**
@@ -1893,93 +1604,93 @@ public interface RulesPackage extends EPackage {
 	int SPLIT_FIRST___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 252</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 132</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_FIRST___IS_APPROPRIATE_BWD_EMOFLON_EDGE_252__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_FIRST___IS_APPROPRIATE_BWD_EMOFLON_EDGE_132__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 817</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 429</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_817__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_429__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 21;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 818</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 430</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_818__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_430__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 22;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 819</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 431</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_819__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_431__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 23;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 820</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 432</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_820__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_432__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 24;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 821</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 433</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_821__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_433__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 25;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 822</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 434</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_822__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_434__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 26;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 823</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 435</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_823__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_435__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 27;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 824</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 436</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_824__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_436__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 28;
 
 	/**
@@ -2219,73 +1930,73 @@ public interface RulesPackage extends EPackage {
 	int TERMINATION_FIRST___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 825</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 437</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_825__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int TERMINATION_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_437__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 826</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 438</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_826__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int TERMINATION_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_438__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 21;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 827</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 439</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_827__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int TERMINATION_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_439__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 22;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 828</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 440</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_828__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int TERMINATION_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_440__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 23;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 253</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 133</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_FIRST___IS_APPROPRIATE_BWD_EMOFLON_EDGE_253__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int TERMINATION_FIRST___IS_APPROPRIATE_BWD_EMOFLON_EDGE_133__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 24;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 829</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 441</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_829__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int TERMINATION_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_441__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 25;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 830</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 442</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_830__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int TERMINATION_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_442__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 26;
 
 	/**
@@ -2316,23 +2027,23 @@ public interface RulesPackage extends EPackage {
 	int TERMINATION_FIRST_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 29;
 
 	/**
-	 * The meta object id for the '{@link de.abilov.tgg.bpmn2useCase.Rules.impl.Task2StepAfterSplitImpl <em>Task2 Step After Split</em>}' class.
+	 * The meta object id for the '{@link de.abilov.tgg.bpmn2useCase.Rules.impl.T2SAfterSplitImpl <em>T2S After Split</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.Task2StepAfterSplitImpl
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.RulesPackageImpl#getTask2StepAfterSplit()
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.T2SAfterSplitImpl
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.RulesPackageImpl#getT2SAfterSplit()
 	 * @generated
 	 */
-	int TASK2_STEP_AFTER_SPLIT = 9;
+	int T2S_AFTER_SPLIT = 9;
 
 	/**
-	 * The number of structural features of the '<em>Task2 Step After Split</em>' class.
+	 * The number of structural features of the '<em>T2S After Split</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT_FEATURE_COUNT = TGGRuntimePackage.ABSTRACT_RULE_FEATURE_COUNT + 0;
+	int T2S_AFTER_SPLIT_FEATURE_COUNT = TGGRuntimePackage.ABSTRACT_RULE_FEATURE_COUNT + 0;
 
 	/**
 	 * The operation id for the '<em>Is Appropriate FWD</em>' operation.
@@ -2341,7 +2052,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___IS_APPROPRIATE_FWD__MATCH_PARALLELGATEWAY_SEQUENCEFLOW_PROCESS_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_SPLIT___IS_APPROPRIATE_FWD__MATCH_PARALLELGATEWAY_SEQUENCEFLOW_PROCESS_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 0;
 
 	/**
@@ -2351,7 +2062,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___PERFORM_FWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 1;
+	int T2S_AFTER_SPLIT___PERFORM_FWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Is Applicable FWD</em>' operation.
@@ -2360,7 +2071,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___IS_APPLICABLE_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 2;
+	int T2S_AFTER_SPLIT___IS_APPLICABLE_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 2;
 
 	/**
 	 * The operation id for the '<em>Register Objects To Match FWD</em>' operation.
@@ -2369,7 +2080,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_PARALLELGATEWAY_SEQUENCEFLOW_PROCESS_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_SPLIT___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_PARALLELGATEWAY_SEQUENCEFLOW_PROCESS_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 3;
 
 	/**
@@ -2379,7 +2090,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_PARALLELGATEWAY_SEQUENCEFLOW_PROCESS_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_SPLIT___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_PARALLELGATEWAY_SEQUENCEFLOW_PROCESS_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 4;
 
 	/**
@@ -2389,8 +2100,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___IS_APPROPRIATE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 5;
+	int T2S_AFTER_SPLIT___IS_APPROPRIATE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 5;
 
 	/**
 	 * The operation id for the '<em>Is Applicable solve Csp FWD</em>' operation.
@@ -2399,7 +2109,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_GW2S_PARALLELGATEWAY_PARALLELSTEP_SEQUENCEFLOW_PROCESS_USECASE_P2UC_FLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_SPLIT___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_GW2S_PARALLELGATEWAY_PARALLELSTEP_SEQUENCEFLOW_PROCESS_USECASE_P2UC_FLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 6;
 
 	/**
@@ -2409,7 +2119,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___IS_APPLICABLE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 7;
+	int T2S_AFTER_SPLIT___IS_APPLICABLE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 7;
 
 	/**
 	 * The operation id for the '<em>Register Objects FWD</em>' operation.
@@ -2418,7 +2128,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_SPLIT___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 8;
 
 	/**
@@ -2428,7 +2138,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___CHECK_TYPES_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 9;
+	int T2S_AFTER_SPLIT___CHECK_TYPES_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 9;
 
 	/**
 	 * The operation id for the '<em>Is Appropriate BWD</em>' operation.
@@ -2437,7 +2147,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___IS_APPROPRIATE_BWD__MATCH_NORMALSTEP_PARALLELSTEP_USECASE_PARALLELFLOW_FLOW = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_SPLIT___IS_APPROPRIATE_BWD__MATCH_NORMALSTEP_PARALLELSTEP_USECASE_PARALLELFLOW_FLOW = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 10;
 
 	/**
@@ -2447,7 +2157,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___PERFORM_BWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 11;
+	int T2S_AFTER_SPLIT___PERFORM_BWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 11;
 
 	/**
 	 * The operation id for the '<em>Is Applicable BWD</em>' operation.
@@ -2456,7 +2166,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___IS_APPLICABLE_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 12;
+	int T2S_AFTER_SPLIT___IS_APPLICABLE_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 12;
 
 	/**
 	 * The operation id for the '<em>Register Objects To Match BWD</em>' operation.
@@ -2465,7 +2175,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_NORMALSTEP_PARALLELSTEP_USECASE_PARALLELFLOW_FLOW = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_SPLIT___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_NORMALSTEP_PARALLELSTEP_USECASE_PARALLELFLOW_FLOW = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 13;
 
 	/**
@@ -2475,7 +2185,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_NORMALSTEP_PARALLELSTEP_USECASE_PARALLELFLOW_FLOW = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_SPLIT___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_NORMALSTEP_PARALLELSTEP_USECASE_PARALLELFLOW_FLOW = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 14;
 
 	/**
@@ -2485,8 +2195,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___IS_APPROPRIATE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 15;
+	int T2S_AFTER_SPLIT___IS_APPROPRIATE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 15;
 
 	/**
 	 * The operation id for the '<em>Is Applicable solve Csp BWD</em>' operation.
@@ -2495,7 +2204,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_NORMALSTEP_GW2S_PARALLELGATEWAY_PARALLELSTEP_PROCESS_USECASE_P2UC_PARALLELFLOW_FLOW = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_SPLIT___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_NORMALSTEP_GW2S_PARALLELGATEWAY_PARALLELSTEP_PROCESS_USECASE_P2UC_PARALLELFLOW_FLOW = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 16;
 
 	/**
@@ -2505,8 +2214,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___IS_APPLICABLE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 17;
+	int T2S_AFTER_SPLIT___IS_APPLICABLE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 17;
 
 	/**
 	 * The operation id for the '<em>Register Objects BWD</em>' operation.
@@ -2515,7 +2223,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_SPLIT___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 18;
 
 	/**
@@ -2525,96 +2233,96 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
+	int T2S_AFTER_SPLIT___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 831</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 443</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_831__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_443__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 832</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 444</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_832__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_444__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 21;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 254</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 134</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___IS_APPROPRIATE_BWD_EMOFLON_EDGE_254__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_SPLIT___IS_APPROPRIATE_BWD_EMOFLON_EDGE_134__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 22;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 833</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 445</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_833__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_445__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 23;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 255</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 135</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___IS_APPROPRIATE_BWD_EMOFLON_EDGE_255__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_SPLIT___IS_APPROPRIATE_BWD_EMOFLON_EDGE_135__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 24;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 256</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 136</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___IS_APPROPRIATE_BWD_EMOFLON_EDGE_256__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_SPLIT___IS_APPROPRIATE_BWD_EMOFLON_EDGE_136__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 25;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 834</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 446</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_834__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_446__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 26;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 835</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 447</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_835__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_447__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 27;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 836</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 448</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_836__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_448__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 28;
 
 	/**
@@ -2624,8 +2332,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 29;
+	int T2S_AFTER_SPLIT___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 29;
 
 	/**
 	 * The operation id for the '<em>Check Attributes BWD</em>' operation.
@@ -2634,17 +2341,16 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 30;
+	int T2S_AFTER_SPLIT___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 30;
 
 	/**
-	 * The number of operations of the '<em>Task2 Step After Split</em>' class.
+	 * The number of operations of the '<em>T2S After Split</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_SPLIT_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 31;
+	int T2S_AFTER_SPLIT_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 31;
 
 	/**
 	 * The meta object id for the '{@link de.abilov.tgg.bpmn2useCase.Rules.impl.TerminationImpl <em>Termination</em>}' class.
@@ -2884,83 +2590,83 @@ public interface RulesPackage extends EPackage {
 	int TERMINATION_SEQ___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 257</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 137</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_SEQ___IS_APPROPRIATE_BWD_EMOFLON_EDGE_257__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int TERMINATION_SEQ___IS_APPROPRIATE_BWD_EMOFLON_EDGE_137__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 258</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 138</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_SEQ___IS_APPROPRIATE_BWD_EMOFLON_EDGE_258__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int TERMINATION_SEQ___IS_APPROPRIATE_BWD_EMOFLON_EDGE_138__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 21;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 837</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 449</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_837__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int TERMINATION_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_449__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 22;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 838</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 450</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_838__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int TERMINATION_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_450__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 23;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 839</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 451</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_839__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int TERMINATION_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_451__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 24;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 840</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 452</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_840__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int TERMINATION_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_452__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 25;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 841</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 453</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_841__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int TERMINATION_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_453__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 26;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 842</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 454</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_842__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int TERMINATION_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_454__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 27;
 
 	/**
@@ -3228,63 +2934,63 @@ public interface RulesPackage extends EPackage {
 	int LAST_STEP_IN_PFLOW___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 843</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 455</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_843__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_455__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 844</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 456</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_844__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_456__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 21;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 845</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 457</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_845__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_457__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 22;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 846</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 458</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_846__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_458__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 23;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 847</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 459</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_847__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int LAST_STEP_IN_PFLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_459__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 24;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 259</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 139</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_STEP_IN_PFLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_259__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int LAST_STEP_IN_PFLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_139__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 25;
 
 	/**
@@ -3343,23 +3049,23 @@ public interface RulesPackage extends EPackage {
 	int CHOICE_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link de.abilov.tgg.bpmn2useCase.Rules.impl.Task2StepAfterMergeImpl <em>Task2 Step After Merge</em>}' class.
+	 * The meta object id for the '{@link de.abilov.tgg.bpmn2useCase.Rules.impl.T2SAfterMergeImpl <em>T2S After Merge</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.Task2StepAfterMergeImpl
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.RulesPackageImpl#getTask2StepAfterMerge()
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.T2SAfterMergeImpl
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.RulesPackageImpl#getT2SAfterMerge()
 	 * @generated
 	 */
-	int TASK2_STEP_AFTER_MERGE = 15;
+	int T2S_AFTER_MERGE = 15;
 
 	/**
-	 * The number of structural features of the '<em>Task2 Step After Merge</em>' class.
+	 * The number of structural features of the '<em>T2S After Merge</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE_FEATURE_COUNT = TGGRuntimePackage.ABSTRACT_RULE_FEATURE_COUNT + 0;
+	int T2S_AFTER_MERGE_FEATURE_COUNT = TGGRuntimePackage.ABSTRACT_RULE_FEATURE_COUNT + 0;
 
 	/**
 	 * The operation id for the '<em>Is Appropriate FWD</em>' operation.
@@ -3368,7 +3074,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___IS_APPROPRIATE_FWD__MATCH_EXCLUSIVEGATEWAY_SEQUENCEFLOW_FLOWNODE_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_MERGE___IS_APPROPRIATE_FWD__MATCH_EXCLUSIVEGATEWAY_SEQUENCEFLOW_FLOWNODE_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 0;
 
 	/**
@@ -3378,7 +3084,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___PERFORM_FWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 1;
+	int T2S_AFTER_MERGE___PERFORM_FWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Is Applicable FWD</em>' operation.
@@ -3387,7 +3093,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___IS_APPLICABLE_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 2;
+	int T2S_AFTER_MERGE___IS_APPLICABLE_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 2;
 
 	/**
 	 * The operation id for the '<em>Register Objects To Match FWD</em>' operation.
@@ -3396,7 +3102,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_EXCLUSIVEGATEWAY_SEQUENCEFLOW_FLOWNODE_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_MERGE___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_EXCLUSIVEGATEWAY_SEQUENCEFLOW_FLOWNODE_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 3;
 
 	/**
@@ -3406,7 +3112,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_EXCLUSIVEGATEWAY_SEQUENCEFLOW_FLOWNODE_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_MERGE___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_EXCLUSIVEGATEWAY_SEQUENCEFLOW_FLOWNODE_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 4;
 
 	/**
@@ -3416,8 +3122,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___IS_APPROPRIATE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 5;
+	int T2S_AFTER_MERGE___IS_APPROPRIATE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 5;
 
 	/**
 	 * The operation id for the '<em>Is Applicable solve Csp FWD</em>' operation.
@@ -3426,7 +3131,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_EXCLUSIVEGATEWAY_CHOICESTEP_GW2S_STEP_FLOW_SEQUENCEFLOW_FLOWNODE_FN2S_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_MERGE___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_EXCLUSIVEGATEWAY_CHOICESTEP_GW2S_STEP_FLOW_SEQUENCEFLOW_FLOWNODE_FN2S_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 6;
 
 	/**
@@ -3436,7 +3141,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___IS_APPLICABLE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 7;
+	int T2S_AFTER_MERGE___IS_APPLICABLE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 7;
 
 	/**
 	 * The operation id for the '<em>Register Objects FWD</em>' operation.
@@ -3445,7 +3150,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_MERGE___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 8;
 
 	/**
@@ -3455,7 +3160,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___CHECK_TYPES_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 9;
+	int T2S_AFTER_MERGE___CHECK_TYPES_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 9;
 
 	/**
 	 * The operation id for the '<em>Is Appropriate BWD</em>' operation.
@@ -3464,7 +3169,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___IS_APPROPRIATE_BWD__MATCH_CHOICESTEP_STEP_FLOW_NORMALSTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_MERGE___IS_APPROPRIATE_BWD__MATCH_CHOICESTEP_STEP_FLOW_NORMALSTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 10;
 
 	/**
@@ -3474,7 +3179,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___PERFORM_BWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 11;
+	int T2S_AFTER_MERGE___PERFORM_BWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 11;
 
 	/**
 	 * The operation id for the '<em>Is Applicable BWD</em>' operation.
@@ -3483,7 +3188,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___IS_APPLICABLE_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 12;
+	int T2S_AFTER_MERGE___IS_APPLICABLE_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 12;
 
 	/**
 	 * The operation id for the '<em>Register Objects To Match BWD</em>' operation.
@@ -3492,7 +3197,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_CHOICESTEP_STEP_FLOW_NORMALSTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_MERGE___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_CHOICESTEP_STEP_FLOW_NORMALSTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 13;
 
 	/**
@@ -3502,7 +3207,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_CHOICESTEP_STEP_FLOW_NORMALSTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_MERGE___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_CHOICESTEP_STEP_FLOW_NORMALSTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 14;
 
 	/**
@@ -3512,8 +3217,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___IS_APPROPRIATE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 15;
+	int T2S_AFTER_MERGE___IS_APPROPRIATE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 15;
 
 	/**
 	 * The operation id for the '<em>Is Applicable solve Csp BWD</em>' operation.
@@ -3522,7 +3226,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_EXCLUSIVEGATEWAY_CHOICESTEP_GW2S_STEP_FLOW_NORMALSTEP_SEQUENCEFLOW_FLOWNODE_FN2S_PROCESS = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_MERGE___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_EXCLUSIVEGATEWAY_CHOICESTEP_GW2S_STEP_FLOW_NORMALSTEP_SEQUENCEFLOW_FLOWNODE_FN2S_PROCESS = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 16;
 
 	/**
@@ -3532,8 +3236,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___IS_APPLICABLE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 17;
+	int T2S_AFTER_MERGE___IS_APPLICABLE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 17;
 
 	/**
 	 * The operation id for the '<em>Register Objects BWD</em>' operation.
@@ -3542,7 +3245,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_MERGE___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 18;
 
 	/**
@@ -3552,86 +3255,86 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
+	int T2S_AFTER_MERGE___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 260</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 140</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_260__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_MERGE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_140__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 261</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 141</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_261__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_MERGE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_141__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 21;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 848</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 460</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_848__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_460__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 22;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 849</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 461</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_849__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_461__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 23;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 850</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 462</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_850__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_462__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 24;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 851</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 463</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_851__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_463__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 25;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 852</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 464</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_852__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_464__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 26;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 853</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 465</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_853__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_465__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 27;
 
 	/**
@@ -3641,8 +3344,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 28;
+	int T2S_AFTER_MERGE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 28;
 
 	/**
 	 * The operation id for the '<em>Check Attributes BWD</em>' operation.
@@ -3651,17 +3353,16 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 29;
+	int T2S_AFTER_MERGE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 29;
 
 	/**
-	 * The number of operations of the '<em>Task2 Step After Merge</em>' class.
+	 * The number of operations of the '<em>T2S After Merge</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_MERGE_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 30;
+	int T2S_AFTER_MERGE_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 30;
 
 	/**
 	 * The meta object id for the '{@link de.abilov.tgg.bpmn2useCase.Rules.impl.ChoiceSeqImpl <em>Choice Seq</em>}' class.
@@ -3873,103 +3574,103 @@ public interface RulesPackage extends EPackage {
 	int CHOICE_SEQ___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 262</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 142</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_SEQ___IS_APPROPRIATE_BWD_EMOFLON_EDGE_262__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_SEQ___IS_APPROPRIATE_BWD_EMOFLON_EDGE_142__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 263</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 143</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_SEQ___IS_APPROPRIATE_BWD_EMOFLON_EDGE_263__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_SEQ___IS_APPROPRIATE_BWD_EMOFLON_EDGE_143__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 21;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 854</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 466</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_854__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_466__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 22;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 855</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 467</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_855__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_467__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 23;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 856</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 468</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_856__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_468__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 24;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 857</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 469</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_857__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_469__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 25;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 858</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 470</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_858__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_470__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 26;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 859</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 471</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_859__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_471__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 27;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 860</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 472</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_860__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_472__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 28;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 861</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 473</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_861__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_SEQ___IS_APPROPRIATE_FWD_EMOFLON_EDGE_473__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 29;
 
 	/**
@@ -4208,93 +3909,93 @@ public interface RulesPackage extends EPackage {
 	int CHOICE_FIRST___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 264</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 144</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_FIRST___IS_APPROPRIATE_BWD_EMOFLON_EDGE_264__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_FIRST___IS_APPROPRIATE_BWD_EMOFLON_EDGE_144__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 862</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 474</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_862__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_474__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 21;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 863</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 475</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_863__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_475__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 22;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 864</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 476</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_864__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_476__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 23;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 865</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 477</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_865__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_477__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 24;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 866</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 478</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_866__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_478__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 25;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 867</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 479</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_867__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_479__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 26;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 868</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 480</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_868__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_480__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 27;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 869</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 481</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_869__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_FIRST___IS_APPROPRIATE_FWD_EMOFLON_EDGE_481__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 28;
 
 	/**
@@ -4534,113 +4235,113 @@ public interface RulesPackage extends EPackage {
 	int CHOICE_AFTER_SPLIT___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 870</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 482</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_870__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_482__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 265</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 145</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_SPLIT___IS_APPROPRIATE_BWD_EMOFLON_EDGE_265__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_SPLIT___IS_APPROPRIATE_BWD_EMOFLON_EDGE_145__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 21;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 871</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 483</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_871__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_483__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 22;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 872</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 484</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_872__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_484__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 23;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 266</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 146</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_SPLIT___IS_APPROPRIATE_BWD_EMOFLON_EDGE_266__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_SPLIT___IS_APPROPRIATE_BWD_EMOFLON_EDGE_146__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 24;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 267</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 147</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_SPLIT___IS_APPROPRIATE_BWD_EMOFLON_EDGE_267__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_SPLIT___IS_APPROPRIATE_BWD_EMOFLON_EDGE_147__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 25;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 873</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 485</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_873__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_485__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 26;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 874</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 486</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_874__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_486__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 27;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 875</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 487</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_875__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_487__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 28;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 876</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 488</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_876__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_488__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 29;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 877</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 489</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_877__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_SPLIT___IS_APPROPRIATE_FWD_EMOFLON_EDGE_489__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 30;
 
 	/**
@@ -4671,23 +4372,23 @@ public interface RulesPackage extends EPackage {
 	int CHOICE_AFTER_SPLIT_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 33;
 
 	/**
-	 * The meta object id for the '{@link de.abilov.tgg.bpmn2useCase.Rules.impl.Task2StepAfterChoiceDefImpl <em>Task2 Step After Choice Def</em>}' class.
+	 * The meta object id for the '{@link de.abilov.tgg.bpmn2useCase.Rules.impl.T2SAfterChoiceDefImpl <em>T2S After Choice Def</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.Task2StepAfterChoiceDefImpl
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.RulesPackageImpl#getTask2StepAfterChoiceDef()
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.T2SAfterChoiceDefImpl
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.RulesPackageImpl#getT2SAfterChoiceDef()
 	 * @generated
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF = 19;
+	int T2S_AFTER_CHOICE_DEF = 19;
 
 	/**
-	 * The number of structural features of the '<em>Task2 Step After Choice Def</em>' class.
+	 * The number of structural features of the '<em>T2S After Choice Def</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF_FEATURE_COUNT = TGGRuntimePackage.ABSTRACT_RULE_FEATURE_COUNT + 0;
+	int T2S_AFTER_CHOICE_DEF_FEATURE_COUNT = TGGRuntimePackage.ABSTRACT_RULE_FEATURE_COUNT + 0;
 
 	/**
 	 * The operation id for the '<em>Is Appropriate FWD</em>' operation.
@@ -4696,7 +4397,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD__MATCH_EXCLUSIVEGATEWAY_SEQUENCEFLOW_PROCESS_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD__MATCH_EXCLUSIVEGATEWAY_SEQUENCEFLOW_PROCESS_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 0;
 
 	/**
@@ -4706,8 +4407,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___PERFORM_FWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 1;
+	int T2S_AFTER_CHOICE_DEF___PERFORM_FWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Is Applicable FWD</em>' operation.
@@ -4716,7 +4416,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___IS_APPLICABLE_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 2;
+	int T2S_AFTER_CHOICE_DEF___IS_APPLICABLE_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 2;
 
 	/**
 	 * The operation id for the '<em>Register Objects To Match FWD</em>' operation.
@@ -4725,7 +4425,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_EXCLUSIVEGATEWAY_SEQUENCEFLOW_PROCESS_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE_DEF___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_EXCLUSIVEGATEWAY_SEQUENCEFLOW_PROCESS_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 3;
 
 	/**
@@ -4735,7 +4435,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_EXCLUSIVEGATEWAY_SEQUENCEFLOW_PROCESS_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE_DEF___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_EXCLUSIVEGATEWAY_SEQUENCEFLOW_PROCESS_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 4;
 
 	/**
@@ -4745,8 +4445,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___IS_APPROPRIATE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 5;
+	int T2S_AFTER_CHOICE_DEF___IS_APPROPRIATE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 5;
 
 	/**
 	 * The operation id for the '<em>Is Applicable solve Csp FWD</em>' operation.
@@ -4755,7 +4454,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_FLOW_EXCLUSIVEGATEWAY_CHOICESTEP_GW2S_SEQUENCEFLOW_PROCESS_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE_DEF___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_FLOW_EXCLUSIVEGATEWAY_CHOICESTEP_GW2S_SEQUENCEFLOW_PROCESS_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 6;
 
 	/**
@@ -4765,8 +4464,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___IS_APPLICABLE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 7;
+	int T2S_AFTER_CHOICE_DEF___IS_APPLICABLE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 7;
 
 	/**
 	 * The operation id for the '<em>Register Objects FWD</em>' operation.
@@ -4775,7 +4473,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE_DEF___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 8;
 
 	/**
@@ -4785,7 +4483,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___CHECK_TYPES_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 9;
+	int T2S_AFTER_CHOICE_DEF___CHECK_TYPES_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 9;
 
 	/**
 	 * The operation id for the '<em>Is Appropriate BWD</em>' operation.
@@ -4794,7 +4492,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___IS_APPROPRIATE_BWD__MATCH_NORMALSTEP_FLOW_CHOICESTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE_DEF___IS_APPROPRIATE_BWD__MATCH_NORMALSTEP_FLOW_CHOICESTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 10;
 
 	/**
@@ -4804,8 +4502,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___PERFORM_BWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 11;
+	int T2S_AFTER_CHOICE_DEF___PERFORM_BWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 11;
 
 	/**
 	 * The operation id for the '<em>Is Applicable BWD</em>' operation.
@@ -4814,7 +4511,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___IS_APPLICABLE_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 12;
+	int T2S_AFTER_CHOICE_DEF___IS_APPLICABLE_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 12;
 
 	/**
 	 * The operation id for the '<em>Register Objects To Match BWD</em>' operation.
@@ -4823,7 +4520,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_NORMALSTEP_FLOW_CHOICESTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE_DEF___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_NORMALSTEP_FLOW_CHOICESTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 13;
 
 	/**
@@ -4833,7 +4530,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_NORMALSTEP_FLOW_CHOICESTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE_DEF___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_NORMALSTEP_FLOW_CHOICESTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 14;
 
 	/**
@@ -4843,8 +4540,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___IS_APPROPRIATE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 15;
+	int T2S_AFTER_CHOICE_DEF___IS_APPROPRIATE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 15;
 
 	/**
 	 * The operation id for the '<em>Is Applicable solve Csp BWD</em>' operation.
@@ -4853,7 +4549,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_NORMALSTEP_FLOW_EXCLUSIVEGATEWAY_CHOICESTEP_GW2S_PROCESS = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE_DEF___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_NORMALSTEP_FLOW_EXCLUSIVEGATEWAY_CHOICESTEP_GW2S_PROCESS = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 16;
 
 	/**
@@ -4863,8 +4559,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___IS_APPLICABLE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 17;
+	int T2S_AFTER_CHOICE_DEF___IS_APPLICABLE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 17;
 
 	/**
 	 * The operation id for the '<em>Register Objects BWD</em>' operation.
@@ -4873,7 +4568,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE_DEF___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 18;
 
 	/**
@@ -4883,96 +4578,96 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
+	int T2S_AFTER_CHOICE_DEF___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 268</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 148</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_268__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_148__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 878</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 490</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_878__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_490__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 21;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 879</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 491</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_879__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_491__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 22;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 880</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 492</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_880__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_492__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 23;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 269</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 149</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_269__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_149__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 24;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 881</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 493</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_881__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_493__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 25;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 882</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 494</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_882__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_494__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 26;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 883</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 495</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_883__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_495__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 27;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 884</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 496</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_884__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_496__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 28;
 
 	/**
@@ -4982,8 +4677,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 29;
+	int T2S_AFTER_CHOICE_DEF___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 29;
 
 	/**
 	 * The operation id for the '<em>Check Attributes BWD</em>' operation.
@@ -4992,36 +4686,35 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 30;
+	int T2S_AFTER_CHOICE_DEF___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 30;
 
 	/**
-	 * The number of operations of the '<em>Task2 Step After Choice Def</em>' class.
+	 * The number of operations of the '<em>T2S After Choice Def</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_DEF_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 31;
+	int T2S_AFTER_CHOICE_DEF_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 31;
 
 	/**
-	 * The meta object id for the '{@link de.abilov.tgg.bpmn2useCase.Rules.impl.Task2StepAfterChoiceImpl <em>Task2 Step After Choice</em>}' class.
+	 * The meta object id for the '{@link de.abilov.tgg.bpmn2useCase.Rules.impl.T2SAfterChoiceImpl <em>T2S After Choice</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.Task2StepAfterChoiceImpl
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.RulesPackageImpl#getTask2StepAfterChoice()
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.T2SAfterChoiceImpl
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.RulesPackageImpl#getT2SAfterChoice()
 	 * @generated
 	 */
-	int TASK2_STEP_AFTER_CHOICE = 20;
+	int T2S_AFTER_CHOICE = 20;
 
 	/**
-	 * The number of structural features of the '<em>Task2 Step After Choice</em>' class.
+	 * The number of structural features of the '<em>T2S After Choice</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_FEATURE_COUNT = TGGRuntimePackage.ABSTRACT_RULE_FEATURE_COUNT + 0;
+	int T2S_AFTER_CHOICE_FEATURE_COUNT = TGGRuntimePackage.ABSTRACT_RULE_FEATURE_COUNT + 0;
 
 	/**
 	 * The operation id for the '<em>Is Appropriate FWD</em>' operation.
@@ -5030,7 +4723,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___IS_APPROPRIATE_FWD__MATCH_EXCLUSIVEGATEWAY_SEQUENCEFLOW_PROCESS_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE___IS_APPROPRIATE_FWD__MATCH_EXCLUSIVEGATEWAY_SEQUENCEFLOW_PROCESS_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 0;
 
 	/**
@@ -5040,7 +4733,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___PERFORM_FWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 1;
+	int T2S_AFTER_CHOICE___PERFORM_FWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Is Applicable FWD</em>' operation.
@@ -5049,7 +4742,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___IS_APPLICABLE_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 2;
+	int T2S_AFTER_CHOICE___IS_APPLICABLE_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 2;
 
 	/**
 	 * The operation id for the '<em>Register Objects To Match FWD</em>' operation.
@@ -5058,7 +4751,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_EXCLUSIVEGATEWAY_SEQUENCEFLOW_PROCESS_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_EXCLUSIVEGATEWAY_SEQUENCEFLOW_PROCESS_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 3;
 
 	/**
@@ -5068,7 +4761,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_EXCLUSIVEGATEWAY_SEQUENCEFLOW_PROCESS_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_EXCLUSIVEGATEWAY_SEQUENCEFLOW_PROCESS_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 4;
 
 	/**
@@ -5078,8 +4771,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___IS_APPROPRIATE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 5;
+	int T2S_AFTER_CHOICE___IS_APPROPRIATE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 5;
 
 	/**
 	 * The operation id for the '<em>Is Applicable solve Csp FWD</em>' operation.
@@ -5088,7 +4780,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_EXCLUSIVEGATEWAY_CHOICESTEP_GW2S_SEQUENCEFLOW_PROCESS_USECASE_P2UC_FLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_EXCLUSIVEGATEWAY_CHOICESTEP_GW2S_SEQUENCEFLOW_PROCESS_USECASE_P2UC_FLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 6;
 
 	/**
@@ -5098,8 +4790,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___IS_APPLICABLE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 7;
+	int T2S_AFTER_CHOICE___IS_APPLICABLE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 7;
 
 	/**
 	 * The operation id for the '<em>Register Objects FWD</em>' operation.
@@ -5108,7 +4799,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 8;
 
 	/**
@@ -5118,7 +4809,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___CHECK_TYPES_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 9;
+	int T2S_AFTER_CHOICE___CHECK_TYPES_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 9;
 
 	/**
 	 * The operation id for the '<em>Is Appropriate BWD</em>' operation.
@@ -5127,7 +4818,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___IS_APPROPRIATE_BWD__MATCH_CHOICESTEP_NORMALSTEP_ALTERNATIVEFLOW_USECASE_STEPALTERNATIVE_FLOW = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE___IS_APPROPRIATE_BWD__MATCH_CHOICESTEP_NORMALSTEP_ALTERNATIVEFLOW_USECASE_STEPALTERNATIVE_FLOW = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 10;
 
 	/**
@@ -5137,7 +4828,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___PERFORM_BWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 11;
+	int T2S_AFTER_CHOICE___PERFORM_BWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 11;
 
 	/**
 	 * The operation id for the '<em>Is Applicable BWD</em>' operation.
@@ -5146,7 +4837,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___IS_APPLICABLE_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 12;
+	int T2S_AFTER_CHOICE___IS_APPLICABLE_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 12;
 
 	/**
 	 * The operation id for the '<em>Register Objects To Match BWD</em>' operation.
@@ -5155,7 +4846,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_CHOICESTEP_NORMALSTEP_ALTERNATIVEFLOW_USECASE_STEPALTERNATIVE_FLOW = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_CHOICESTEP_NORMALSTEP_ALTERNATIVEFLOW_USECASE_STEPALTERNATIVE_FLOW = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 13;
 
 	/**
@@ -5165,7 +4856,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_CHOICESTEP_NORMALSTEP_ALTERNATIVEFLOW_USECASE_STEPALTERNATIVE_FLOW = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_CHOICESTEP_NORMALSTEP_ALTERNATIVEFLOW_USECASE_STEPALTERNATIVE_FLOW = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 14;
 
 	/**
@@ -5175,8 +4866,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___IS_APPROPRIATE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 15;
+	int T2S_AFTER_CHOICE___IS_APPROPRIATE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 15;
 
 	/**
 	 * The operation id for the '<em>Is Applicable solve Csp BWD</em>' operation.
@@ -5185,7 +4875,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_EXCLUSIVEGATEWAY_CHOICESTEP_GW2S_NORMALSTEP_ALTERNATIVEFLOW_PROCESS_USECASE_P2UC_STEPALTERNATIVE_FLOW = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_EXCLUSIVEGATEWAY_CHOICESTEP_GW2S_NORMALSTEP_ALTERNATIVEFLOW_PROCESS_USECASE_P2UC_STEPALTERNATIVE_FLOW = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 16;
 
 	/**
@@ -5195,8 +4885,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___IS_APPLICABLE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 17;
+	int T2S_AFTER_CHOICE___IS_APPLICABLE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 17;
 
 	/**
 	 * The operation id for the '<em>Register Objects BWD</em>' operation.
@@ -5205,7 +4894,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 18;
 
 	/**
@@ -5215,106 +4904,106 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
+	int T2S_AFTER_CHOICE___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 885</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 497</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_885__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_497__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 886</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 498</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_886__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_498__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 21;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 270</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 150</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_270__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_150__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 22;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 271</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 151</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_271__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_151__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 23;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 887</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 499</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_887__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_499__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 24;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 272</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 152</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_272__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_152__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 25;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 273</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 153</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_273__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_153__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 26;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 888</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 500</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_888__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_500__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 27;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 889</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 501</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_889__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_501__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 28;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 890</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 502</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_890__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_502__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 29;
 
 	/**
@@ -5324,8 +5013,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 30;
+	int T2S_AFTER_CHOICE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 30;
 
 	/**
 	 * The operation id for the '<em>Check Attributes BWD</em>' operation.
@@ -5334,17 +5022,16 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 31;
+	int T2S_AFTER_CHOICE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 31;
 
 	/**
-	 * The number of operations of the '<em>Task2 Step After Choice</em>' class.
+	 * The number of operations of the '<em>T2S After Choice</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_CHOICE_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 32;
+	int T2S_AFTER_CHOICE_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 32;
 
 	/**
 	 * The meta object id for the '{@link de.abilov.tgg.bpmn2useCase.Rules.impl.EmptyDefaulFlowImpl <em>Empty Defaul Flow</em>}' class.
@@ -5556,73 +5243,73 @@ public interface RulesPackage extends EPackage {
 	int EMPTY_DEFAUL_FLOW___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 891</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 503</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EMPTY_DEFAUL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_891__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int EMPTY_DEFAUL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_503__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 892</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 504</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EMPTY_DEFAUL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_892__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int EMPTY_DEFAUL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_504__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 21;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 893</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 505</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EMPTY_DEFAUL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_893__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int EMPTY_DEFAUL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_505__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 22;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 274</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 154</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EMPTY_DEFAUL_FLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_274__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int EMPTY_DEFAUL_FLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_154__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 23;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 894</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 506</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EMPTY_DEFAUL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_894__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int EMPTY_DEFAUL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_506__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 24;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 895</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 507</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EMPTY_DEFAUL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_895__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int EMPTY_DEFAUL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_507__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 25;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 896</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 508</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EMPTY_DEFAUL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_896__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int EMPTY_DEFAUL_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_508__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 26;
 
 	/**
@@ -5868,63 +5555,63 @@ public interface RulesPackage extends EPackage {
 	int LAST_STEP_IN_DEFAULT_FLOW___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 275</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 155</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_STEP_IN_DEFAULT_FLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_275__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int LAST_STEP_IN_DEFAULT_FLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_155__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 897</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 509</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_STEP_IN_DEFAULT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_897__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int LAST_STEP_IN_DEFAULT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_509__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 21;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 898</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 510</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_STEP_IN_DEFAULT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_898__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int LAST_STEP_IN_DEFAULT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_510__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 22;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 899</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 511</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_STEP_IN_DEFAULT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_899__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int LAST_STEP_IN_DEFAULT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_511__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 23;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 900</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 512</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_STEP_IN_DEFAULT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_900__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int LAST_STEP_IN_DEFAULT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_512__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 24;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 901</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 513</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_STEP_IN_DEFAULT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_901__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int LAST_STEP_IN_DEFAULT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_513__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 25;
 
 	/**
@@ -6166,103 +5853,103 @@ public interface RulesPackage extends EPackage {
 	int SPLIT_AFTER_MERGE___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 276</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 156</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_MERGE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_276__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_MERGE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_156__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 277</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 157</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_MERGE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_277__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_MERGE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_157__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 21;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 902</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 514</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_902__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_514__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 22;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 903</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 515</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_903__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_515__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 23;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 904</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 516</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_904__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_516__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 24;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 905</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 517</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_905__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_517__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 25;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 906</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 518</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_906__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_518__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 26;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 907</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 519</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_907__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_519__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 27;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 908</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 520</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_908__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_520__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 28;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 909</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 521</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_909__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_521__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 29;
 
 	/**
@@ -6502,103 +6189,103 @@ public interface RulesPackage extends EPackage {
 	int CHOICE_AFTER_MERGE___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 278</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 158</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_MERGE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_278__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_MERGE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_158__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 279</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 159</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_MERGE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_279__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_MERGE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_159__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 21;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 910</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 522</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_910__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_522__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 22;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 911</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 523</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_911__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_523__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 23;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 912</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 524</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_912__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_524__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 24;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 913</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 525</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_913__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_525__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 25;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 914</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 526</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_914__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_526__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 26;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 915</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 527</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_915__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_527__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 27;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 916</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 528</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_916__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_528__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 28;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 917</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 529</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_917__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_529__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 29;
 
 	/**
@@ -6839,73 +6526,73 @@ public interface RulesPackage extends EPackage {
 	int LAST_STEP_IN_ALT_FLOW___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 280</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 160</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_280__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_160__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 918</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 530</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_918__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_530__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 21;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 919</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 531</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_919__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_531__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 22;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 920</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 532</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_920__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_532__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 23;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 921</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 533</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_921__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_533__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 24;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 922</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 534</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_922__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_FWD_EMOFLON_EDGE_534__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 25;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 281</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 161</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_281__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int LAST_STEP_IN_ALT_FLOW___IS_APPROPRIATE_BWD_EMOFLON_EDGE_161__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 26;
 
 	/**
@@ -7150,113 +6837,113 @@ public interface RulesPackage extends EPackage {
 	int SPLIT_AFTER_CHOICE_DEF___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 923</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 535</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_923__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_535__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 924</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 536</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_924__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_536__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 21;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 925</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 537</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_925__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_537__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 22;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 282</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 162</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_282__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_162__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 23;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 283</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 163</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_283__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_163__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 24;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 926</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 538</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_926__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_538__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 25;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 927</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 539</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_927__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_539__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 26;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 928</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 540</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_928__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_540__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 27;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 929</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 541</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_929__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_541__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 28;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 930</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 542</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_930__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_542__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 29;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 931</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 543</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_931__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_543__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 30;
 
 	/**
@@ -7498,123 +7185,123 @@ public interface RulesPackage extends EPackage {
 	int SPLIT_AFTER_CHOICE___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 284</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 164</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_CHOICE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_284__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_CHOICE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_164__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 932</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 544</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_932__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_544__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 21;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 285</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 165</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_CHOICE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_285__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_CHOICE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_165__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 22;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 933</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 545</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_933__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_545__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 23;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 934</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 546</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_934__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_546__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 24;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 286</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 166</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_CHOICE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_286__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_CHOICE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_166__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 25;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 287</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 167</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_CHOICE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_287__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_CHOICE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_167__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 26;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 935</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 547</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_935__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_547__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 27;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 936</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 548</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_936__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_548__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 28;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 937</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 549</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_937__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_549__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 29;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 938</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 550</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_938__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_550__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 30;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 939</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 551</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_939__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_551__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 31;
 
 	/**
@@ -7858,113 +7545,113 @@ public interface RulesPackage extends EPackage {
 	int CHOICE_AFTER_CHOICE_DEF___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 940</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 552</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_940__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_552__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 941</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 553</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_941__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_553__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 21;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 942</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 554</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_942__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_554__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 22;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 288</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 168</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_CHOICE_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_288__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_CHOICE_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_168__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 23;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 289</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 169</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_CHOICE_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_289__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_CHOICE_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_169__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 24;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 943</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 555</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_943__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_555__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 25;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 944</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 556</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_944__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_556__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 26;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 945</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 557</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_945__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_557__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 27;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 946</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 558</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_946__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_558__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 28;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 947</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 559</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_947__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_559__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 29;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 948</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 560</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_948__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_CHOICE_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_560__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 30;
 
 	/**
@@ -8206,123 +7893,123 @@ public interface RulesPackage extends EPackage {
 	int CHOICE_AFTER_CHOICE___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 290</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 170</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_CHOICE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_290__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_CHOICE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_170__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 949</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 561</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_949__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_561__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 21;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 291</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 171</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_CHOICE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_291__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_CHOICE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_171__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 22;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 292</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 172</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_CHOICE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_292__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_CHOICE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_172__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 23;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 950</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 562</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_950__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_562__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 24;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 951</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 563</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_951__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_563__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 25;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 293</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 173</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_CHOICE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_293__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_CHOICE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_173__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 26;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 952</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 564</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_952__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_564__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 27;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 953</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 565</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_953__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_565__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 28;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 954</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 566</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_954__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_566__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 29;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 955</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 567</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_955__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_567__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 30;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 956</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 568</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_956__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_CHOICE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_568__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 31;
 
 	/**
@@ -8566,83 +8253,83 @@ public interface RulesPackage extends EPackage {
 	int TERMINATION_AFTER_MERGE___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 294</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 174</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_AFTER_MERGE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_294__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int TERMINATION_AFTER_MERGE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_174__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 295</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 175</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_AFTER_MERGE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_295__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int TERMINATION_AFTER_MERGE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_175__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 21;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 957</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 569</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_957__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int TERMINATION_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_569__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 22;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 958</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 570</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_958__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int TERMINATION_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_570__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 23;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 959</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 571</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_959__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int TERMINATION_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_571__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 24;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 960</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 572</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_960__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int TERMINATION_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_572__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 25;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 961</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 573</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_961__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int TERMINATION_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_573__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 26;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 962</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 574</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_962__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int TERMINATION_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_574__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 27;
 
 	/**
@@ -8675,23 +8362,23 @@ public interface RulesPackage extends EPackage {
 	int TERMINATION_AFTER_MERGE_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 30;
 
 	/**
-	 * The meta object id for the '{@link de.abilov.tgg.bpmn2useCase.Rules.impl.Task2StepAfterEmptyDefImpl <em>Task2 Step After Empty Def</em>}' class.
+	 * The meta object id for the '{@link de.abilov.tgg.bpmn2useCase.Rules.impl.T2SAfterEmptyDefImpl <em>T2S After Empty Def</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.Task2StepAfterEmptyDefImpl
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.RulesPackageImpl#getTask2StepAfterEmptyDef()
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.T2SAfterEmptyDefImpl
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.RulesPackageImpl#getT2SAfterEmptyDef()
 	 * @generated
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF = 31;
+	int T2S_AFTER_EMPTY_DEF = 31;
 
 	/**
-	 * The number of structural features of the '<em>Task2 Step After Empty Def</em>' class.
+	 * The number of structural features of the '<em>T2S After Empty Def</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF_FEATURE_COUNT = TGGRuntimePackage.ABSTRACT_RULE_FEATURE_COUNT + 0;
+	int T2S_AFTER_EMPTY_DEF_FEATURE_COUNT = TGGRuntimePackage.ABSTRACT_RULE_FEATURE_COUNT + 0;
 
 	/**
 	 * The operation id for the '<em>Is Appropriate FWD</em>' operation.
@@ -8700,7 +8387,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD__MATCH_SEQUENCEFLOW_EXCLUSIVEGATEWAY_EXCLUSIVEGATEWAY_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD__MATCH_SEQUENCEFLOW_EXCLUSIVEGATEWAY_EXCLUSIVEGATEWAY_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 0;
 
 	/**
@@ -8710,8 +8397,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___PERFORM_FWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 1;
+	int T2S_AFTER_EMPTY_DEF___PERFORM_FWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Is Applicable FWD</em>' operation.
@@ -8720,7 +8406,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___IS_APPLICABLE_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 2;
+	int T2S_AFTER_EMPTY_DEF___IS_APPLICABLE_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 2;
 
 	/**
 	 * The operation id for the '<em>Register Objects To Match FWD</em>' operation.
@@ -8729,7 +8415,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_SEQUENCEFLOW_EXCLUSIVEGATEWAY_EXCLUSIVEGATEWAY_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_EMPTY_DEF___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_SEQUENCEFLOW_EXCLUSIVEGATEWAY_EXCLUSIVEGATEWAY_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 3;
 
 	/**
@@ -8739,7 +8425,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_SEQUENCEFLOW_EXCLUSIVEGATEWAY_EXCLUSIVEGATEWAY_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_EMPTY_DEF___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_SEQUENCEFLOW_EXCLUSIVEGATEWAY_EXCLUSIVEGATEWAY_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 4;
 
 	/**
@@ -8749,8 +8435,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 5;
+	int T2S_AFTER_EMPTY_DEF___IS_APPROPRIATE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 5;
 
 	/**
 	 * The operation id for the '<em>Is Applicable solve Csp FWD</em>' operation.
@@ -8759,7 +8444,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_SEQUENCEFLOW_EXCLUSIVEGATEWAY_GW2S_FLOW_CHOICESTEP_EXCLUSIVEGATEWAY_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_EMPTY_DEF___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_SEQUENCEFLOW_EXCLUSIVEGATEWAY_GW2S_FLOW_CHOICESTEP_EXCLUSIVEGATEWAY_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 6;
 
 	/**
@@ -8769,8 +8454,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___IS_APPLICABLE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 7;
+	int T2S_AFTER_EMPTY_DEF___IS_APPLICABLE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 7;
 
 	/**
 	 * The operation id for the '<em>Register Objects FWD</em>' operation.
@@ -8779,7 +8463,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_EMPTY_DEF___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 8;
 
 	/**
@@ -8789,7 +8473,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___CHECK_TYPES_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 9;
+	int T2S_AFTER_EMPTY_DEF___CHECK_TYPES_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 9;
 
 	/**
 	 * The operation id for the '<em>Is Appropriate BWD</em>' operation.
@@ -8798,7 +8482,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_BWD__MATCH_NORMALSTEP_FLOW_CHOICESTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_EMPTY_DEF___IS_APPROPRIATE_BWD__MATCH_NORMALSTEP_FLOW_CHOICESTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 10;
 
 	/**
@@ -8808,8 +8492,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___PERFORM_BWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 11;
+	int T2S_AFTER_EMPTY_DEF___PERFORM_BWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 11;
 
 	/**
 	 * The operation id for the '<em>Is Applicable BWD</em>' operation.
@@ -8818,7 +8501,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___IS_APPLICABLE_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 12;
+	int T2S_AFTER_EMPTY_DEF___IS_APPLICABLE_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 12;
 
 	/**
 	 * The operation id for the '<em>Register Objects To Match BWD</em>' operation.
@@ -8827,7 +8510,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_NORMALSTEP_FLOW_CHOICESTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_EMPTY_DEF___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_NORMALSTEP_FLOW_CHOICESTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 13;
 
 	/**
@@ -8837,7 +8520,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_NORMALSTEP_FLOW_CHOICESTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_EMPTY_DEF___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_NORMALSTEP_FLOW_CHOICESTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 14;
 
 	/**
@@ -8847,8 +8530,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 15;
+	int T2S_AFTER_EMPTY_DEF___IS_APPROPRIATE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 15;
 
 	/**
 	 * The operation id for the '<em>Is Applicable solve Csp BWD</em>' operation.
@@ -8857,7 +8539,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_SEQUENCEFLOW_EXCLUSIVEGATEWAY_GW2S_NORMALSTEP_FLOW_CHOICESTEP_EXCLUSIVEGATEWAY_PROCESS = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_EMPTY_DEF___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_SEQUENCEFLOW_EXCLUSIVEGATEWAY_GW2S_NORMALSTEP_FLOW_CHOICESTEP_EXCLUSIVEGATEWAY_PROCESS = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 16;
 
 	/**
@@ -8867,8 +8549,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___IS_APPLICABLE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 17;
+	int T2S_AFTER_EMPTY_DEF___IS_APPLICABLE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 17;
 
 	/**
 	 * The operation id for the '<em>Register Objects BWD</em>' operation.
@@ -8877,7 +8558,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_EMPTY_DEF___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 18;
 
 	/**
@@ -8887,86 +8568,86 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
+	int T2S_AFTER_EMPTY_DEF___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 296</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 176</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_296__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_EMPTY_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_176__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 297</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 177</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_297__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_EMPTY_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_177__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 21;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 963</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 575</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_963__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_575__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 22;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 964</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 576</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_964__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_576__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 23;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 965</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 577</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_965__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_577__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 24;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 966</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 578</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_966__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_578__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 25;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 967</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 579</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_967__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_579__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 26;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 968</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 580</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_968__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int T2S_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_580__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 27;
 
 	/**
@@ -8976,8 +8657,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 28;
+	int T2S_AFTER_EMPTY_DEF___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 28;
 
 	/**
 	 * The operation id for the '<em>Check Attributes BWD</em>' operation.
@@ -8986,17 +8666,16 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
-			+ 29;
+	int T2S_AFTER_EMPTY_DEF___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 29;
 
 	/**
-	 * The number of operations of the '<em>Task2 Step After Empty Def</em>' class.
+	 * The number of operations of the '<em>T2S After Empty Def</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TASK2_STEP_AFTER_EMPTY_DEF_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 30;
+	int T2S_AFTER_EMPTY_DEF_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 30;
 
 	/**
 	 * The meta object id for the '{@link de.abilov.tgg.bpmn2useCase.Rules.impl.SplitAfterEmptyDefImpl <em>Split After Empty Def</em>}' class.
@@ -9209,103 +8888,103 @@ public interface RulesPackage extends EPackage {
 	int SPLIT_AFTER_EMPTY_DEF___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 298</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 178</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_EMPTY_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_298__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_EMPTY_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_178__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 299</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 179</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_EMPTY_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_299__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_EMPTY_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_179__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 21;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 969</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 581</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_969__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_581__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 22;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 970</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 582</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_970__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_582__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 23;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 971</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 583</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_971__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_583__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 24;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 972</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 584</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_972__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_584__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 25;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 973</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 585</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_973__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_585__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 26;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 974</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 586</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_974__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_586__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 27;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 975</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 587</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_975__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_587__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 28;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 976</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 588</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_976__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int SPLIT_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_588__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 29;
 
 	/**
@@ -9550,103 +9229,103 @@ public interface RulesPackage extends EPackage {
 	int CHOICE_AFTER_EMPTY_DEF___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 300</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 180</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_EMPTY_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_300__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_EMPTY_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_180__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 301</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 181</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_EMPTY_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_301__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_EMPTY_DEF___IS_APPROPRIATE_BWD_EMOFLON_EDGE_181__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 21;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 977</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 589</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_977__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_589__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 22;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 978</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 590</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_978__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_590__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 23;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 979</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 591</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_979__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_591__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 24;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 980</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 592</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_980__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_592__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 25;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 981</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 593</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_981__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_593__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 26;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 982</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 594</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_982__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_594__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 27;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 983</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 595</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_983__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_595__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 28;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 984</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 596</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHOICE_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_984__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+	int CHOICE_AFTER_EMPTY_DEF___IS_APPROPRIATE_FWD_EMOFLON_EDGE_596__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
 			+ 29;
 
 	/**
@@ -9677,6 +9356,638 @@ public interface RulesPackage extends EPackage {
 	 * @ordered
 	 */
 	int CHOICE_AFTER_EMPTY_DEF_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 32;
+
+	/**
+	 * The meta object id for the '{@link de.abilov.tgg.bpmn2useCase.Rules.impl.T2SAfterTaskImpl <em>T2S After Task</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.T2SAfterTaskImpl
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.RulesPackageImpl#getT2SAfterTask()
+	 * @generated
+	 */
+	int T2S_AFTER_TASK = 34;
+
+	/**
+	 * The number of structural features of the '<em>T2S After Task</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK_FEATURE_COUNT = TGGRuntimePackage.ABSTRACT_RULE_FEATURE_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___IS_APPROPRIATE_FWD__MATCH_TASK_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 0;
+
+	/**
+	 * The operation id for the '<em>Perform FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___PERFORM_FWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Is Applicable FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___IS_APPLICABLE_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Register Objects To Match FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_TASK_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 3;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate solve Csp FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_TASK_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 4;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate check Csp FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___IS_APPROPRIATE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 5;
+
+	/**
+	 * The operation id for the '<em>Is Applicable solve Csp FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_TASK_FN2S_FLOW_STEP_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 6;
+
+	/**
+	 * The operation id for the '<em>Is Applicable check Csp FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___IS_APPLICABLE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 7;
+
+	/**
+	 * The operation id for the '<em>Register Objects FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 8;
+
+	/**
+	 * The operation id for the '<em>Check Types FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___CHECK_TYPES_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 9;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate BWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___IS_APPROPRIATE_BWD__MATCH_FLOW_STEP_NORMALSTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 10;
+
+	/**
+	 * The operation id for the '<em>Perform BWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___PERFORM_BWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 11;
+
+	/**
+	 * The operation id for the '<em>Is Applicable BWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___IS_APPLICABLE_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 12;
+
+	/**
+	 * The operation id for the '<em>Register Objects To Match BWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_FLOW_STEP_NORMALSTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 13;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate solve Csp BWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_FLOW_STEP_NORMALSTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 14;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate check Csp BWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___IS_APPROPRIATE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 15;
+
+	/**
+	 * The operation id for the '<em>Is Applicable solve Csp BWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_TASK_FN2S_FLOW_STEP_NORMALSTEP_PROCESS = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 16;
+
+	/**
+	 * The operation id for the '<em>Is Applicable check Csp BWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___IS_APPLICABLE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 17;
+
+	/**
+	 * The operation id for the '<em>Register Objects BWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 18;
+
+	/**
+	 * The operation id for the '<em>Check Types BWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 182</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___IS_APPROPRIATE_BWD_EMOFLON_EDGE_182__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 20;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 183</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___IS_APPROPRIATE_BWD_EMOFLON_EDGE_183__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 21;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 597</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___IS_APPROPRIATE_FWD_EMOFLON_EDGE_597__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 22;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 598</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___IS_APPROPRIATE_FWD_EMOFLON_EDGE_598__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 23;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 599</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___IS_APPROPRIATE_FWD_EMOFLON_EDGE_599__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 24;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 600</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___IS_APPROPRIATE_FWD_EMOFLON_EDGE_600__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 25;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 601</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___IS_APPROPRIATE_FWD_EMOFLON_EDGE_601__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 26;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 602</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___IS_APPROPRIATE_FWD_EMOFLON_EDGE_602__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 27;
+
+	/**
+	 * The operation id for the '<em>Check Attributes FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 28;
+
+	/**
+	 * The operation id for the '<em>Check Attributes BWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 29;
+
+	/**
+	 * The number of operations of the '<em>T2S After Task</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_TASK_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 30;
+
+	/**
+	 * The meta object id for the '{@link de.abilov.tgg.bpmn2useCase.Rules.impl.T2SAfterSyncImpl <em>T2S After Sync</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.T2SAfterSyncImpl
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.impl.RulesPackageImpl#getT2SAfterSync()
+	 * @generated
+	 */
+	int T2S_AFTER_SYNC = 35;
+
+	/**
+	 * The number of structural features of the '<em>T2S After Sync</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC_FEATURE_COUNT = TGGRuntimePackage.ABSTRACT_RULE_FEATURE_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___IS_APPROPRIATE_FWD__MATCH_PARALLELGATEWAY_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 0;
+
+	/**
+	 * The operation id for the '<em>Perform FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___PERFORM_FWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Is Applicable FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___IS_APPLICABLE_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Register Objects To Match FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_PARALLELGATEWAY_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 3;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate solve Csp FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_PARALLELGATEWAY_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 4;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate check Csp FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___IS_APPROPRIATE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 5;
+
+	/**
+	 * The operation id for the '<em>Is Applicable solve Csp FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_PARALLELGATEWAY_FN2S_FLOW_STEP_PROCESS_SEQUENCEFLOW_TASK = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 6;
+
+	/**
+	 * The operation id for the '<em>Is Applicable check Csp FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___IS_APPLICABLE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 7;
+
+	/**
+	 * The operation id for the '<em>Register Objects FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 8;
+
+	/**
+	 * The operation id for the '<em>Check Types FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___CHECK_TYPES_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 9;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate BWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___IS_APPROPRIATE_BWD__MATCH_FLOW_STEP_NORMALSTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 10;
+
+	/**
+	 * The operation id for the '<em>Perform BWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___PERFORM_BWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 11;
+
+	/**
+	 * The operation id for the '<em>Is Applicable BWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___IS_APPLICABLE_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 12;
+
+	/**
+	 * The operation id for the '<em>Register Objects To Match BWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_FLOW_STEP_NORMALSTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 13;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate solve Csp BWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_FLOW_STEP_NORMALSTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 14;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate check Csp BWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___IS_APPROPRIATE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 15;
+
+	/**
+	 * The operation id for the '<em>Is Applicable solve Csp BWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_PARALLELGATEWAY_FN2S_FLOW_STEP_NORMALSTEP_PROCESS = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 16;
+
+	/**
+	 * The operation id for the '<em>Is Applicable check Csp BWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___IS_APPLICABLE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 17;
+
+	/**
+	 * The operation id for the '<em>Register Objects BWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 18;
+
+	/**
+	 * The operation id for the '<em>Check Types BWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 184</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___IS_APPROPRIATE_BWD_EMOFLON_EDGE_184__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 20;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 185</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___IS_APPROPRIATE_BWD_EMOFLON_EDGE_185__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 21;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 603</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___IS_APPROPRIATE_FWD_EMOFLON_EDGE_603__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 22;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 604</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___IS_APPROPRIATE_FWD_EMOFLON_EDGE_604__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 23;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 605</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___IS_APPROPRIATE_FWD_EMOFLON_EDGE_605__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 24;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 606</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___IS_APPROPRIATE_FWD_EMOFLON_EDGE_606__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 25;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 607</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___IS_APPROPRIATE_FWD_EMOFLON_EDGE_607__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 26;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 608</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___IS_APPROPRIATE_FWD_EMOFLON_EDGE_608__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT
+			+ 27;
+
+	/**
+	 * The operation id for the '<em>Check Attributes FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 28;
+
+	/**
+	 * The operation id for the '<em>Check Attributes BWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 29;
+
+	/**
+	 * The number of operations of the '<em>T2S After Sync</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int T2S_AFTER_SYNC_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 30;
 
 	/**
 	 * Returns the meta object for class '{@link de.abilov.tgg.bpmn2useCase.Rules.Process2UseCase <em>Process2 Use Case</em>}'.
@@ -9889,34 +10200,34 @@ public interface RulesPackage extends EPackage {
 	EOperation getProcess2UseCase__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Process2UseCase#isAppropriate_FWD_EMoflonEdge_788(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 788</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Process2UseCase#isAppropriate_FWD_EMoflonEdge_406(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 406</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 788</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Process2UseCase#isAppropriate_FWD_EMoflonEdge_788(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 406</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.Process2UseCase#isAppropriate_FWD_EMoflonEdge_406(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getProcess2UseCase__IsAppropriate_FWD_EMoflonEdge_788__EMoflonEdge();
+	EOperation getProcess2UseCase__IsAppropriate_FWD_EMoflonEdge_406__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Process2UseCase#isAppropriate_BWD_EMoflonEdge_242(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 242</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Process2UseCase#isAppropriate_BWD_EMoflonEdge_124(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 124</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 242</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Process2UseCase#isAppropriate_BWD_EMoflonEdge_242(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 124</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.Process2UseCase#isAppropriate_BWD_EMoflonEdge_124(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getProcess2UseCase__IsAppropriate_BWD_EMoflonEdge_242__EMoflonEdge();
+	EOperation getProcess2UseCase__IsAppropriate_BWD_EMoflonEdge_124__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Process2UseCase#isAppropriate_BWD_EMoflonEdge_243(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 243</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Process2UseCase#isAppropriate_BWD_EMoflonEdge_125(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 125</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 243</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Process2UseCase#isAppropriate_BWD_EMoflonEdge_243(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 125</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.Process2UseCase#isAppropriate_BWD_EMoflonEdge_125(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getProcess2UseCase__IsAppropriate_BWD_EMoflonEdge_243__EMoflonEdge();
+	EOperation getProcess2UseCase__IsAppropriate_BWD_EMoflonEdge_125__EMoflonEdge();
 
 	/**
 	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Process2UseCase#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
@@ -10169,114 +10480,114 @@ public interface RulesPackage extends EPackage {
 	EOperation getSplitAfterSplit__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_789(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 789</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_407(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 407</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 789</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_789(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 407</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_407(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterSplit__IsAppropriate_FWD_EMoflonEdge_789__EMoflonEdge();
+	EOperation getSplitAfterSplit__IsAppropriate_FWD_EMoflonEdge_407__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_790(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 790</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_408(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 408</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 790</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_790(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 408</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_408(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterSplit__IsAppropriate_FWD_EMoflonEdge_790__EMoflonEdge();
+	EOperation getSplitAfterSplit__IsAppropriate_FWD_EMoflonEdge_408__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_791(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 791</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_409(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 409</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 791</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_791(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 409</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_409(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterSplit__IsAppropriate_FWD_EMoflonEdge_791__EMoflonEdge();
+	EOperation getSplitAfterSplit__IsAppropriate_FWD_EMoflonEdge_409__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_BWD_EMoflonEdge_244(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 244</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_BWD_EMoflonEdge_126(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 126</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 244</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_BWD_EMoflonEdge_244(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 126</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_BWD_EMoflonEdge_126(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterSplit__IsAppropriate_BWD_EMoflonEdge_244__EMoflonEdge();
+	EOperation getSplitAfterSplit__IsAppropriate_BWD_EMoflonEdge_126__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_BWD_EMoflonEdge_245(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 245</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_BWD_EMoflonEdge_127(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 127</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 245</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_BWD_EMoflonEdge_245(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 127</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_BWD_EMoflonEdge_127(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterSplit__IsAppropriate_BWD_EMoflonEdge_245__EMoflonEdge();
+	EOperation getSplitAfterSplit__IsAppropriate_BWD_EMoflonEdge_127__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_BWD_EMoflonEdge_246(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 246</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_BWD_EMoflonEdge_128(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 128</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 246</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_BWD_EMoflonEdge_246(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 128</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_BWD_EMoflonEdge_128(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterSplit__IsAppropriate_BWD_EMoflonEdge_246__EMoflonEdge();
+	EOperation getSplitAfterSplit__IsAppropriate_BWD_EMoflonEdge_128__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_792(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 792</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_410(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 410</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 792</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_792(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 410</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_410(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterSplit__IsAppropriate_FWD_EMoflonEdge_792__EMoflonEdge();
+	EOperation getSplitAfterSplit__IsAppropriate_FWD_EMoflonEdge_410__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_793(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 793</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_411(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 411</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 793</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_793(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 411</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_411(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterSplit__IsAppropriate_FWD_EMoflonEdge_793__EMoflonEdge();
+	EOperation getSplitAfterSplit__IsAppropriate_FWD_EMoflonEdge_411__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_794(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 794</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_412(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 412</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 794</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_794(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 412</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_412(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterSplit__IsAppropriate_FWD_EMoflonEdge_794__EMoflonEdge();
+	EOperation getSplitAfterSplit__IsAppropriate_FWD_EMoflonEdge_412__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_795(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 795</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_413(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 413</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 795</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_795(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 413</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_413(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterSplit__IsAppropriate_FWD_EMoflonEdge_795__EMoflonEdge();
+	EOperation getSplitAfterSplit__IsAppropriate_FWD_EMoflonEdge_413__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_796(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 796</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_414(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 414</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 796</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_796(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 414</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#isAppropriate_FWD_EMoflonEdge_414(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterSplit__IsAppropriate_FWD_EMoflonEdge_796__EMoflonEdge();
+	EOperation getSplitAfterSplit__IsAppropriate_FWD_EMoflonEdge_414__EMoflonEdge();
 
 	/**
 	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterSplit#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
@@ -10299,614 +10610,314 @@ public interface RulesPackage extends EPackage {
 	EOperation getSplitAfterSplit__CheckAttributes_BWD__TripleMatch();
 
 	/**
-	 * Returns the meta object for class '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq <em>Task2 Step Seq</em>}'.
+	 * Returns the meta object for class '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SSeq <em>T2S Seq</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Task2 Step Seq</em>'.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq
+	 * @return the meta object for class '<em>T2S Seq</em>'.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SSeq
 	 * @generated
 	 */
-	EClass getTask2StepSeq();
+	EClass getT2SSeq();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Is Appropriate FWD</em>}' operation.
+	 * Returns the meta object for class '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst <em>T2S First</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>T2S First</em>'.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst
+	 * @generated
+	 */
+	EClass getT2SFirst();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Is Appropriate FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
 	 * @generated
 	 */
-	EOperation getTask2StepSeq__IsAppropriate_FWD__Match_FlowNode_Process_SequenceFlow_Task();
+	EOperation getT2SFirst__IsAppropriate_FWD__Match_FlowNode_Process_SequenceFlow_Task();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#perform_FWD(TGGRuntime.IsApplicableMatch) <em>Perform FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#perform_FWD(TGGRuntime.IsApplicableMatch) <em>Perform FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Perform FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#perform_FWD(TGGRuntime.IsApplicableMatch)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#perform_FWD(TGGRuntime.IsApplicableMatch)
 	 * @generated
 	 */
-	EOperation getTask2StepSeq__Perform_FWD__IsApplicableMatch();
+	EOperation getT2SFirst__Perform_FWD__IsApplicableMatch();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isApplicable_FWD(TGGRuntime.Match) <em>Is Applicable FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isApplicable_FWD(TGGRuntime.Match) <em>Is Applicable FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isApplicable_FWD(TGGRuntime.Match)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isApplicable_FWD(TGGRuntime.Match)
 	 * @generated
 	 */
-	EOperation getTask2StepSeq__IsApplicable_FWD__Match();
+	EOperation getT2SFirst__IsApplicable_FWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Register Objects To Match FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Register Objects To Match FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Register Objects To Match FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
 	 * @generated
 	 */
-	EOperation getTask2StepSeq__RegisterObjectsToMatch_FWD__Match_FlowNode_Process_SequenceFlow_Task();
+	EOperation getT2SFirst__RegisterObjectsToMatch_FWD__Match_FlowNode_Process_SequenceFlow_Task();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Is Appropriate solve Csp FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Is Appropriate solve Csp FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate solve Csp FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
 	 * @generated
 	 */
-	EOperation getTask2StepSeq__IsAppropriate_solveCsp_FWD__Match_FlowNode_Process_SequenceFlow_Task();
+	EOperation getT2SFirst__IsAppropriate_solveCsp_FWD__Match_FlowNode_Process_SequenceFlow_Task();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate check Csp FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP)
 	 * @generated
 	 */
-	EOperation getTask2StepSeq__IsAppropriate_checkCsp_FWD__CSP();
+	EOperation getT2SFirst__IsAppropriate_checkCsp_FWD__CSP();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.tgg.bpmn2useCase.FN2S, de.abilov.bpmn.FlowNode, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Is Applicable solve Csp FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.tgg.bpmn2useCase.FN2F, de.abilov.bpmn.FlowNode, de.abilov.useCase.Flow, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Is Applicable solve Csp FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable solve Csp FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.tgg.bpmn2useCase.FN2S, de.abilov.bpmn.FlowNode, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.tgg.bpmn2useCase.FN2F, de.abilov.bpmn.FlowNode, de.abilov.useCase.Flow, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
 	 * @generated
 	 */
-	EOperation getTask2StepSeq__IsApplicable_solveCsp_FWD__IsApplicableMatch_FN2S_FlowNode_Flow_Step_Process_SequenceFlow_Task();
+	EOperation getT2SFirst__IsApplicable_solveCsp_FWD__IsApplicableMatch_FN2F_FlowNode_Flow_Process_SequenceFlow_Task();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable check Csp FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP)
 	 * @generated
 	 */
-	EOperation getTask2StepSeq__IsApplicable_checkCsp_FWD__CSP();
+	EOperation getT2SFirst__IsApplicable_checkCsp_FWD__CSP();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Register Objects FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
 	 * @generated
 	 */
-	EOperation getTask2StepSeq__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
+	EOperation getT2SFirst__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#checkTypes_FWD(TGGRuntime.Match) <em>Check Types FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#checkTypes_FWD(TGGRuntime.Match) <em>Check Types FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Check Types FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#checkTypes_FWD(TGGRuntime.Match)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#checkTypes_FWD(TGGRuntime.Match)
 	 * @generated
 	 */
-	EOperation getTask2StepSeq__CheckTypes_FWD__Match();
+	EOperation getT2SFirst__CheckTypes_FWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.useCase.NormalStep) <em>Is Appropriate BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow) <em>Is Appropriate BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.useCase.NormalStep)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow)
 	 * @generated
 	 */
-	EOperation getTask2StepSeq__IsAppropriate_BWD__Match_Flow_Step_NormalStep();
+	EOperation getT2SFirst__IsAppropriate_BWD__Match_NormalStep_Flow();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#perform_BWD(TGGRuntime.IsApplicableMatch) <em>Perform BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#perform_BWD(TGGRuntime.IsApplicableMatch) <em>Perform BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Perform BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#perform_BWD(TGGRuntime.IsApplicableMatch)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#perform_BWD(TGGRuntime.IsApplicableMatch)
 	 * @generated
 	 */
-	EOperation getTask2StepSeq__Perform_BWD__IsApplicableMatch();
+	EOperation getT2SFirst__Perform_BWD__IsApplicableMatch();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isApplicable_BWD(TGGRuntime.Match) <em>Is Applicable BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isApplicable_BWD(TGGRuntime.Match) <em>Is Applicable BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isApplicable_BWD(TGGRuntime.Match)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isApplicable_BWD(TGGRuntime.Match)
 	 * @generated
 	 */
-	EOperation getTask2StepSeq__IsApplicable_BWD__Match();
+	EOperation getT2SFirst__IsApplicable_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.useCase.NormalStep) <em>Register Objects To Match BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow) <em>Register Objects To Match BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Register Objects To Match BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.useCase.NormalStep)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow)
 	 * @generated
 	 */
-	EOperation getTask2StepSeq__RegisterObjectsToMatch_BWD__Match_Flow_Step_NormalStep();
+	EOperation getT2SFirst__RegisterObjectsToMatch_BWD__Match_NormalStep_Flow();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.useCase.NormalStep) <em>Is Appropriate solve Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow) <em>Is Appropriate solve Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate solve Csp BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.useCase.NormalStep)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow)
 	 * @generated
 	 */
-	EOperation getTask2StepSeq__IsAppropriate_solveCsp_BWD__Match_Flow_Step_NormalStep();
+	EOperation getT2SFirst__IsAppropriate_solveCsp_BWD__Match_NormalStep_Flow();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate check Csp BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP)
 	 * @generated
 	 */
-	EOperation getTask2StepSeq__IsAppropriate_checkCsp_BWD__CSP();
+	EOperation getT2SFirst__IsAppropriate_checkCsp_BWD__CSP();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.tgg.bpmn2useCase.FN2S, de.abilov.bpmn.FlowNode, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.useCase.NormalStep, de.abilov.bpmn.Process) <em>Is Applicable solve Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.tgg.bpmn2useCase.FN2F, de.abilov.useCase.NormalStep, de.abilov.bpmn.FlowNode, de.abilov.useCase.Flow, de.abilov.bpmn.Process) <em>Is Applicable solve Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable solve Csp BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.tgg.bpmn2useCase.FN2S, de.abilov.bpmn.FlowNode, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.useCase.NormalStep, de.abilov.bpmn.Process)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.tgg.bpmn2useCase.FN2F, de.abilov.useCase.NormalStep, de.abilov.bpmn.FlowNode, de.abilov.useCase.Flow, de.abilov.bpmn.Process)
 	 * @generated
 	 */
-	EOperation getTask2StepSeq__IsApplicable_solveCsp_BWD__IsApplicableMatch_FN2S_FlowNode_Flow_Step_NormalStep_Process();
+	EOperation getT2SFirst__IsApplicable_solveCsp_BWD__IsApplicableMatch_FN2F_NormalStep_FlowNode_Flow_Process();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable check Csp BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP)
 	 * @generated
 	 */
-	EOperation getTask2StepSeq__IsApplicable_checkCsp_BWD__CSP();
+	EOperation getT2SFirst__IsApplicable_checkCsp_BWD__CSP();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Register Objects BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
 	 * @generated
 	 */
-	EOperation getTask2StepSeq__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
+	EOperation getT2SFirst__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#checkTypes_BWD(TGGRuntime.Match) <em>Check Types BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#checkTypes_BWD(TGGRuntime.Match) <em>Check Types BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Check Types BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#checkTypes_BWD(TGGRuntime.Match)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#checkTypes_BWD(TGGRuntime.Match)
 	 * @generated
 	 */
-	EOperation getTask2StepSeq__CheckTypes_BWD__Match();
+	EOperation getT2SFirst__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isAppropriate_BWD_EMoflonEdge_247(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 247</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isAppropriate_BWD_EMoflonEdge_129(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 129</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 247</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isAppropriate_BWD_EMoflonEdge_247(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 129</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isAppropriate_BWD_EMoflonEdge_129(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepSeq__IsAppropriate_BWD_EMoflonEdge_247__EMoflonEdge();
+	EOperation getT2SFirst__IsAppropriate_BWD_EMoflonEdge_129__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isAppropriate_BWD_EMoflonEdge_248(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 248</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isAppropriate_FWD_EMoflonEdge_415(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 415</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 248</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isAppropriate_BWD_EMoflonEdge_248(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 415</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isAppropriate_FWD_EMoflonEdge_415(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepSeq__IsAppropriate_BWD_EMoflonEdge_248__EMoflonEdge();
+	EOperation getT2SFirst__IsAppropriate_FWD_EMoflonEdge_415__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isAppropriate_FWD_EMoflonEdge_797(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 797</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isAppropriate_FWD_EMoflonEdge_416(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 416</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 797</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isAppropriate_FWD_EMoflonEdge_797(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 416</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isAppropriate_FWD_EMoflonEdge_416(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepSeq__IsAppropriate_FWD_EMoflonEdge_797__EMoflonEdge();
+	EOperation getT2SFirst__IsAppropriate_FWD_EMoflonEdge_416__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isAppropriate_FWD_EMoflonEdge_798(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 798</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isAppropriate_FWD_EMoflonEdge_417(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 417</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 798</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isAppropriate_FWD_EMoflonEdge_798(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 417</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isAppropriate_FWD_EMoflonEdge_417(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepSeq__IsAppropriate_FWD_EMoflonEdge_798__EMoflonEdge();
+	EOperation getT2SFirst__IsAppropriate_FWD_EMoflonEdge_417__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isAppropriate_FWD_EMoflonEdge_799(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 799</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isAppropriate_FWD_EMoflonEdge_418(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 418</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 799</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isAppropriate_FWD_EMoflonEdge_799(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 418</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isAppropriate_FWD_EMoflonEdge_418(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepSeq__IsAppropriate_FWD_EMoflonEdge_799__EMoflonEdge();
+	EOperation getT2SFirst__IsAppropriate_FWD_EMoflonEdge_418__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isAppropriate_FWD_EMoflonEdge_800(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 800</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isAppropriate_FWD_EMoflonEdge_419(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 419</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 800</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isAppropriate_FWD_EMoflonEdge_800(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 419</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isAppropriate_FWD_EMoflonEdge_419(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepSeq__IsAppropriate_FWD_EMoflonEdge_800__EMoflonEdge();
+	EOperation getT2SFirst__IsAppropriate_FWD_EMoflonEdge_419__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isAppropriate_FWD_EMoflonEdge_801(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 801</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isAppropriate_FWD_EMoflonEdge_420(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 420</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 801</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isAppropriate_FWD_EMoflonEdge_801(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 420</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#isAppropriate_FWD_EMoflonEdge_420(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepSeq__IsAppropriate_FWD_EMoflonEdge_801__EMoflonEdge();
+	EOperation getT2SFirst__IsAppropriate_FWD_EMoflonEdge_420__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isAppropriate_FWD_EMoflonEdge_802(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 802</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 802</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#isAppropriate_FWD_EMoflonEdge_802(TGGRuntime.EMoflonEdge)
-	 * @generated
-	 */
-	EOperation getTask2StepSeq__IsAppropriate_FWD_EMoflonEdge_802__EMoflonEdge();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Check Attributes FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#checkAttributes_FWD(TGGRuntime.TripleMatch)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#checkAttributes_FWD(TGGRuntime.TripleMatch)
 	 * @generated
 	 */
-	EOperation getTask2StepSeq__CheckAttributes_FWD__TripleMatch();
+	EOperation getT2SFirst__CheckAttributes_FWD__TripleMatch();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#checkAttributes_BWD(TGGRuntime.TripleMatch) <em>Check Attributes BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#checkAttributes_BWD(TGGRuntime.TripleMatch) <em>Check Attributes BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Check Attributes BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepSeq#checkAttributes_BWD(TGGRuntime.TripleMatch)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SFirst#checkAttributes_BWD(TGGRuntime.TripleMatch)
 	 * @generated
 	 */
-	EOperation getTask2StepSeq__CheckAttributes_BWD__TripleMatch();
-
-	/**
-	 * Returns the meta object for class '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst <em>Task2 Step First</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Task2 Step First</em>'.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst
-	 * @generated
-	 */
-	EClass getTask2StepFirst();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Is Appropriate FWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
-	 * @generated
-	 */
-	EOperation getTask2StepFirst__IsAppropriate_FWD__Match_FlowNode_Process_SequenceFlow_Task();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#perform_FWD(TGGRuntime.IsApplicableMatch) <em>Perform FWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Perform FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#perform_FWD(TGGRuntime.IsApplicableMatch)
-	 * @generated
-	 */
-	EOperation getTask2StepFirst__Perform_FWD__IsApplicableMatch();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isApplicable_FWD(TGGRuntime.Match) <em>Is Applicable FWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Applicable FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isApplicable_FWD(TGGRuntime.Match)
-	 * @generated
-	 */
-	EOperation getTask2StepFirst__IsApplicable_FWD__Match();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Register Objects To Match FWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Register Objects To Match FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
-	 * @generated
-	 */
-	EOperation getTask2StepFirst__RegisterObjectsToMatch_FWD__Match_FlowNode_Process_SequenceFlow_Task();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Is Appropriate solve Csp FWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate solve Csp FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
-	 * @generated
-	 */
-	EOperation getTask2StepFirst__IsAppropriate_solveCsp_FWD__Match_FlowNode_Process_SequenceFlow_Task();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp FWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate check Csp FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP)
-	 * @generated
-	 */
-	EOperation getTask2StepFirst__IsAppropriate_checkCsp_FWD__CSP();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.tgg.bpmn2useCase.FN2F, de.abilov.bpmn.FlowNode, de.abilov.useCase.Flow, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Is Applicable solve Csp FWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Applicable solve Csp FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.tgg.bpmn2useCase.FN2F, de.abilov.bpmn.FlowNode, de.abilov.useCase.Flow, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
-	 * @generated
-	 */
-	EOperation getTask2StepFirst__IsApplicable_solveCsp_FWD__IsApplicableMatch_FN2F_FlowNode_Flow_Process_SequenceFlow_Task();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp FWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Applicable check Csp FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP)
-	 * @generated
-	 */
-	EOperation getTask2StepFirst__IsApplicable_checkCsp_FWD__CSP();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects FWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Register Objects FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
-	 * @generated
-	 */
-	EOperation getTask2StepFirst__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#checkTypes_FWD(TGGRuntime.Match) <em>Check Types FWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Check Types FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#checkTypes_FWD(TGGRuntime.Match)
-	 * @generated
-	 */
-	EOperation getTask2StepFirst__CheckTypes_FWD__Match();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow) <em>Is Appropriate BWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow)
-	 * @generated
-	 */
-	EOperation getTask2StepFirst__IsAppropriate_BWD__Match_NormalStep_Flow();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#perform_BWD(TGGRuntime.IsApplicableMatch) <em>Perform BWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Perform BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#perform_BWD(TGGRuntime.IsApplicableMatch)
-	 * @generated
-	 */
-	EOperation getTask2StepFirst__Perform_BWD__IsApplicableMatch();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isApplicable_BWD(TGGRuntime.Match) <em>Is Applicable BWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Applicable BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isApplicable_BWD(TGGRuntime.Match)
-	 * @generated
-	 */
-	EOperation getTask2StepFirst__IsApplicable_BWD__Match();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow) <em>Register Objects To Match BWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Register Objects To Match BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow)
-	 * @generated
-	 */
-	EOperation getTask2StepFirst__RegisterObjectsToMatch_BWD__Match_NormalStep_Flow();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow) <em>Is Appropriate solve Csp BWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate solve Csp BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow)
-	 * @generated
-	 */
-	EOperation getTask2StepFirst__IsAppropriate_solveCsp_BWD__Match_NormalStep_Flow();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp BWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate check Csp BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP)
-	 * @generated
-	 */
-	EOperation getTask2StepFirst__IsAppropriate_checkCsp_BWD__CSP();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.tgg.bpmn2useCase.FN2F, de.abilov.useCase.NormalStep, de.abilov.bpmn.FlowNode, de.abilov.useCase.Flow, de.abilov.bpmn.Process) <em>Is Applicable solve Csp BWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Applicable solve Csp BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.tgg.bpmn2useCase.FN2F, de.abilov.useCase.NormalStep, de.abilov.bpmn.FlowNode, de.abilov.useCase.Flow, de.abilov.bpmn.Process)
-	 * @generated
-	 */
-	EOperation getTask2StepFirst__IsApplicable_solveCsp_BWD__IsApplicableMatch_FN2F_NormalStep_FlowNode_Flow_Process();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp BWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Applicable check Csp BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP)
-	 * @generated
-	 */
-	EOperation getTask2StepFirst__IsApplicable_checkCsp_BWD__CSP();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects BWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Register Objects BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
-	 * @generated
-	 */
-	EOperation getTask2StepFirst__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#checkTypes_BWD(TGGRuntime.Match) <em>Check Types BWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Check Types BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#checkTypes_BWD(TGGRuntime.Match)
-	 * @generated
-	 */
-	EOperation getTask2StepFirst__CheckTypes_BWD__Match();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isAppropriate_BWD_EMoflonEdge_249(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 249</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 249</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isAppropriate_BWD_EMoflonEdge_249(TGGRuntime.EMoflonEdge)
-	 * @generated
-	 */
-	EOperation getTask2StepFirst__IsAppropriate_BWD_EMoflonEdge_249__EMoflonEdge();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isAppropriate_FWD_EMoflonEdge_803(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 803</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 803</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isAppropriate_FWD_EMoflonEdge_803(TGGRuntime.EMoflonEdge)
-	 * @generated
-	 */
-	EOperation getTask2StepFirst__IsAppropriate_FWD_EMoflonEdge_803__EMoflonEdge();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isAppropriate_FWD_EMoflonEdge_804(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 804</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 804</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isAppropriate_FWD_EMoflonEdge_804(TGGRuntime.EMoflonEdge)
-	 * @generated
-	 */
-	EOperation getTask2StepFirst__IsAppropriate_FWD_EMoflonEdge_804__EMoflonEdge();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isAppropriate_FWD_EMoflonEdge_805(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 805</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 805</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isAppropriate_FWD_EMoflonEdge_805(TGGRuntime.EMoflonEdge)
-	 * @generated
-	 */
-	EOperation getTask2StepFirst__IsAppropriate_FWD_EMoflonEdge_805__EMoflonEdge();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isAppropriate_FWD_EMoflonEdge_806(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 806</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 806</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isAppropriate_FWD_EMoflonEdge_806(TGGRuntime.EMoflonEdge)
-	 * @generated
-	 */
-	EOperation getTask2StepFirst__IsAppropriate_FWD_EMoflonEdge_806__EMoflonEdge();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isAppropriate_FWD_EMoflonEdge_807(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 807</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 807</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isAppropriate_FWD_EMoflonEdge_807(TGGRuntime.EMoflonEdge)
-	 * @generated
-	 */
-	EOperation getTask2StepFirst__IsAppropriate_FWD_EMoflonEdge_807__EMoflonEdge();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isAppropriate_FWD_EMoflonEdge_808(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 808</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 808</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#isAppropriate_FWD_EMoflonEdge_808(TGGRuntime.EMoflonEdge)
-	 * @generated
-	 */
-	EOperation getTask2StepFirst__IsAppropriate_FWD_EMoflonEdge_808__EMoflonEdge();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Check Attributes FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#checkAttributes_FWD(TGGRuntime.TripleMatch)
-	 * @generated
-	 */
-	EOperation getTask2StepFirst__CheckAttributes_FWD__TripleMatch();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#checkAttributes_BWD(TGGRuntime.TripleMatch) <em>Check Attributes BWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Check Attributes BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepFirst#checkAttributes_BWD(TGGRuntime.TripleMatch)
-	 * @generated
-	 */
-	EOperation getTask2StepFirst__CheckAttributes_BWD__TripleMatch();
+	EOperation getT2SFirst__CheckAttributes_BWD__TripleMatch();
 
 	/**
 	 * Returns the meta object for class '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitSeq <em>Split Seq</em>}'.
@@ -11119,104 +11130,104 @@ public interface RulesPackage extends EPackage {
 	EOperation getSplitSeq__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_BWD_EMoflonEdge_250(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 250</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_BWD_EMoflonEdge_130(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 130</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 250</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_BWD_EMoflonEdge_250(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 130</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_BWD_EMoflonEdge_130(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitSeq__IsAppropriate_BWD_EMoflonEdge_250__EMoflonEdge();
+	EOperation getSplitSeq__IsAppropriate_BWD_EMoflonEdge_130__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_BWD_EMoflonEdge_251(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 251</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_BWD_EMoflonEdge_131(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 131</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 251</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_BWD_EMoflonEdge_251(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 131</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_BWD_EMoflonEdge_131(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitSeq__IsAppropriate_BWD_EMoflonEdge_251__EMoflonEdge();
+	EOperation getSplitSeq__IsAppropriate_BWD_EMoflonEdge_131__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_809(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 809</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_421(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 421</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 809</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_809(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 421</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_421(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitSeq__IsAppropriate_FWD_EMoflonEdge_809__EMoflonEdge();
+	EOperation getSplitSeq__IsAppropriate_FWD_EMoflonEdge_421__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_810(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 810</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_422(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 422</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 810</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_810(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 422</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_422(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitSeq__IsAppropriate_FWD_EMoflonEdge_810__EMoflonEdge();
+	EOperation getSplitSeq__IsAppropriate_FWD_EMoflonEdge_422__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_811(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 811</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_423(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 423</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 811</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_811(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 423</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_423(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitSeq__IsAppropriate_FWD_EMoflonEdge_811__EMoflonEdge();
+	EOperation getSplitSeq__IsAppropriate_FWD_EMoflonEdge_423__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_812(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 812</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_424(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 424</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 812</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_812(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 424</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_424(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitSeq__IsAppropriate_FWD_EMoflonEdge_812__EMoflonEdge();
+	EOperation getSplitSeq__IsAppropriate_FWD_EMoflonEdge_424__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_813(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 813</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_425(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 425</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 813</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_813(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 425</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_425(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitSeq__IsAppropriate_FWD_EMoflonEdge_813__EMoflonEdge();
+	EOperation getSplitSeq__IsAppropriate_FWD_EMoflonEdge_425__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_814(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 814</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_426(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 426</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 814</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_814(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 426</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_426(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitSeq__IsAppropriate_FWD_EMoflonEdge_814__EMoflonEdge();
+	EOperation getSplitSeq__IsAppropriate_FWD_EMoflonEdge_426__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_815(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 815</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_427(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 427</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 815</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_815(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 427</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_427(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitSeq__IsAppropriate_FWD_EMoflonEdge_815__EMoflonEdge();
+	EOperation getSplitSeq__IsAppropriate_FWD_EMoflonEdge_427__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_816(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 816</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_428(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 428</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 816</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_816(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 428</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#isAppropriate_FWD_EMoflonEdge_428(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitSeq__IsAppropriate_FWD_EMoflonEdge_816__EMoflonEdge();
+	EOperation getSplitSeq__IsAppropriate_FWD_EMoflonEdge_428__EMoflonEdge();
 
 	/**
 	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitSeq#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
@@ -11449,94 +11460,94 @@ public interface RulesPackage extends EPackage {
 	EOperation getSplitFirst__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_BWD_EMoflonEdge_252(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 252</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_BWD_EMoflonEdge_132(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 132</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 252</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_BWD_EMoflonEdge_252(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 132</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_BWD_EMoflonEdge_132(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitFirst__IsAppropriate_BWD_EMoflonEdge_252__EMoflonEdge();
+	EOperation getSplitFirst__IsAppropriate_BWD_EMoflonEdge_132__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_817(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 817</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_429(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 429</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 817</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_817(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 429</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_429(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitFirst__IsAppropriate_FWD_EMoflonEdge_817__EMoflonEdge();
+	EOperation getSplitFirst__IsAppropriate_FWD_EMoflonEdge_429__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_818(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 818</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_430(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 430</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 818</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_818(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 430</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_430(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitFirst__IsAppropriate_FWD_EMoflonEdge_818__EMoflonEdge();
+	EOperation getSplitFirst__IsAppropriate_FWD_EMoflonEdge_430__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_819(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 819</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_431(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 431</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 819</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_819(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 431</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_431(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitFirst__IsAppropriate_FWD_EMoflonEdge_819__EMoflonEdge();
+	EOperation getSplitFirst__IsAppropriate_FWD_EMoflonEdge_431__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_820(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 820</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_432(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 432</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 820</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_820(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 432</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_432(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitFirst__IsAppropriate_FWD_EMoflonEdge_820__EMoflonEdge();
+	EOperation getSplitFirst__IsAppropriate_FWD_EMoflonEdge_432__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_821(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 821</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_433(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 433</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 821</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_821(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 433</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_433(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitFirst__IsAppropriate_FWD_EMoflonEdge_821__EMoflonEdge();
+	EOperation getSplitFirst__IsAppropriate_FWD_EMoflonEdge_433__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_822(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 822</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_434(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 434</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 822</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_822(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 434</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_434(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitFirst__IsAppropriate_FWD_EMoflonEdge_822__EMoflonEdge();
+	EOperation getSplitFirst__IsAppropriate_FWD_EMoflonEdge_434__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_823(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 823</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_435(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 435</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 823</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_823(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 435</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_435(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitFirst__IsAppropriate_FWD_EMoflonEdge_823__EMoflonEdge();
+	EOperation getSplitFirst__IsAppropriate_FWD_EMoflonEdge_435__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_824(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 824</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_436(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 436</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 824</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_824(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 436</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#isAppropriate_FWD_EMoflonEdge_436(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitFirst__IsAppropriate_FWD_EMoflonEdge_824__EMoflonEdge();
+	EOperation getSplitFirst__IsAppropriate_FWD_EMoflonEdge_436__EMoflonEdge();
 
 	/**
 	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitFirst#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
@@ -11769,74 +11780,74 @@ public interface RulesPackage extends EPackage {
 	EOperation getTerminationFirst__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationFirst#isAppropriate_FWD_EMoflonEdge_825(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 825</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationFirst#isAppropriate_FWD_EMoflonEdge_437(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 437</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 825</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationFirst#isAppropriate_FWD_EMoflonEdge_825(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 437</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationFirst#isAppropriate_FWD_EMoflonEdge_437(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTerminationFirst__IsAppropriate_FWD_EMoflonEdge_825__EMoflonEdge();
+	EOperation getTerminationFirst__IsAppropriate_FWD_EMoflonEdge_437__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationFirst#isAppropriate_FWD_EMoflonEdge_826(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 826</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationFirst#isAppropriate_FWD_EMoflonEdge_438(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 438</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 826</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationFirst#isAppropriate_FWD_EMoflonEdge_826(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 438</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationFirst#isAppropriate_FWD_EMoflonEdge_438(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTerminationFirst__IsAppropriate_FWD_EMoflonEdge_826__EMoflonEdge();
+	EOperation getTerminationFirst__IsAppropriate_FWD_EMoflonEdge_438__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationFirst#isAppropriate_FWD_EMoflonEdge_827(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 827</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationFirst#isAppropriate_FWD_EMoflonEdge_439(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 439</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 827</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationFirst#isAppropriate_FWD_EMoflonEdge_827(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 439</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationFirst#isAppropriate_FWD_EMoflonEdge_439(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTerminationFirst__IsAppropriate_FWD_EMoflonEdge_827__EMoflonEdge();
+	EOperation getTerminationFirst__IsAppropriate_FWD_EMoflonEdge_439__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationFirst#isAppropriate_FWD_EMoflonEdge_828(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 828</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationFirst#isAppropriate_FWD_EMoflonEdge_440(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 440</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 828</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationFirst#isAppropriate_FWD_EMoflonEdge_828(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 440</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationFirst#isAppropriate_FWD_EMoflonEdge_440(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTerminationFirst__IsAppropriate_FWD_EMoflonEdge_828__EMoflonEdge();
+	EOperation getTerminationFirst__IsAppropriate_FWD_EMoflonEdge_440__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationFirst#isAppropriate_BWD_EMoflonEdge_253(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 253</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationFirst#isAppropriate_BWD_EMoflonEdge_133(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 133</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 253</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationFirst#isAppropriate_BWD_EMoflonEdge_253(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 133</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationFirst#isAppropriate_BWD_EMoflonEdge_133(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTerminationFirst__IsAppropriate_BWD_EMoflonEdge_253__EMoflonEdge();
+	EOperation getTerminationFirst__IsAppropriate_BWD_EMoflonEdge_133__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationFirst#isAppropriate_FWD_EMoflonEdge_829(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 829</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationFirst#isAppropriate_FWD_EMoflonEdge_441(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 441</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 829</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationFirst#isAppropriate_FWD_EMoflonEdge_829(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 441</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationFirst#isAppropriate_FWD_EMoflonEdge_441(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTerminationFirst__IsAppropriate_FWD_EMoflonEdge_829__EMoflonEdge();
+	EOperation getTerminationFirst__IsAppropriate_FWD_EMoflonEdge_441__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationFirst#isAppropriate_FWD_EMoflonEdge_830(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 830</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationFirst#isAppropriate_FWD_EMoflonEdge_442(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 442</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 830</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationFirst#isAppropriate_FWD_EMoflonEdge_830(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 442</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationFirst#isAppropriate_FWD_EMoflonEdge_442(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTerminationFirst__IsAppropriate_FWD_EMoflonEdge_830__EMoflonEdge();
+	EOperation getTerminationFirst__IsAppropriate_FWD_EMoflonEdge_442__EMoflonEdge();
 
 	/**
 	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationFirst#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
@@ -11859,324 +11870,324 @@ public interface RulesPackage extends EPackage {
 	EOperation getTerminationFirst__CheckAttributes_BWD__TripleMatch();
 
 	/**
-	 * Returns the meta object for class '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit <em>Task2 Step After Split</em>}'.
+	 * Returns the meta object for class '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit <em>T2S After Split</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Task2 Step After Split</em>'.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit
+	 * @return the meta object for class '<em>T2S After Split</em>'.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit
 	 * @generated
 	 */
-	EClass getTask2StepAfterSplit();
+	EClass getT2SAfterSplit();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.ParallelGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task) <em>Is Appropriate FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.ParallelGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task) <em>Is Appropriate FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.ParallelGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.ParallelGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__IsAppropriate_FWD__Match_ParallelGateway_SequenceFlow_Process_Task();
+	EOperation getT2SAfterSplit__IsAppropriate_FWD__Match_ParallelGateway_SequenceFlow_Process_Task();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#perform_FWD(TGGRuntime.IsApplicableMatch) <em>Perform FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#perform_FWD(TGGRuntime.IsApplicableMatch) <em>Perform FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Perform FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#perform_FWD(TGGRuntime.IsApplicableMatch)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#perform_FWD(TGGRuntime.IsApplicableMatch)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__Perform_FWD__IsApplicableMatch();
+	EOperation getT2SAfterSplit__Perform_FWD__IsApplicableMatch();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isApplicable_FWD(TGGRuntime.Match) <em>Is Applicable FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isApplicable_FWD(TGGRuntime.Match) <em>Is Applicable FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isApplicable_FWD(TGGRuntime.Match)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isApplicable_FWD(TGGRuntime.Match)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__IsApplicable_FWD__Match();
+	EOperation getT2SAfterSplit__IsApplicable_FWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.ParallelGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task) <em>Register Objects To Match FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.ParallelGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task) <em>Register Objects To Match FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Register Objects To Match FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.ParallelGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.ParallelGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__RegisterObjectsToMatch_FWD__Match_ParallelGateway_SequenceFlow_Process_Task();
+	EOperation getT2SAfterSplit__RegisterObjectsToMatch_FWD__Match_ParallelGateway_SequenceFlow_Process_Task();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.ParallelGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task) <em>Is Appropriate solve Csp FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.ParallelGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task) <em>Is Appropriate solve Csp FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate solve Csp FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.ParallelGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.ParallelGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__IsAppropriate_solveCsp_FWD__Match_ParallelGateway_SequenceFlow_Process_Task();
+	EOperation getT2SAfterSplit__IsAppropriate_solveCsp_FWD__Match_ParallelGateway_SequenceFlow_Process_Task();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate check Csp FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__IsAppropriate_checkCsp_FWD__CSP();
+	EOperation getT2SAfterSplit__IsAppropriate_checkCsp_FWD__CSP();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.bpmn.ParallelGateway, de.abilov.useCase.ParallelStep, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.useCase.UseCase, de.abilov.tgg.bpmn2useCase.P2UC, de.abilov.useCase.Flow, de.abilov.bpmn.Task) <em>Is Applicable solve Csp FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.bpmn.ParallelGateway, de.abilov.useCase.ParallelStep, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.useCase.UseCase, de.abilov.tgg.bpmn2useCase.P2UC, de.abilov.useCase.Flow, de.abilov.bpmn.Task) <em>Is Applicable solve Csp FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable solve Csp FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.bpmn.ParallelGateway, de.abilov.useCase.ParallelStep, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.useCase.UseCase, de.abilov.tgg.bpmn2useCase.P2UC, de.abilov.useCase.Flow, de.abilov.bpmn.Task)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.bpmn.ParallelGateway, de.abilov.useCase.ParallelStep, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.useCase.UseCase, de.abilov.tgg.bpmn2useCase.P2UC, de.abilov.useCase.Flow, de.abilov.bpmn.Task)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__IsApplicable_solveCsp_FWD__IsApplicableMatch_GW2S_ParallelGateway_ParallelStep_SequenceFlow_Process_UseCase_P2UC_Flow_Task();
+	EOperation getT2SAfterSplit__IsApplicable_solveCsp_FWD__IsApplicableMatch_GW2S_ParallelGateway_ParallelStep_SequenceFlow_Process_UseCase_P2UC_Flow_Task();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable check Csp FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__IsApplicable_checkCsp_FWD__CSP();
+	EOperation getT2SAfterSplit__IsApplicable_checkCsp_FWD__CSP();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Register Objects FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
+	EOperation getT2SAfterSplit__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#checkTypes_FWD(TGGRuntime.Match) <em>Check Types FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#checkTypes_FWD(TGGRuntime.Match) <em>Check Types FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Check Types FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#checkTypes_FWD(TGGRuntime.Match)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#checkTypes_FWD(TGGRuntime.Match)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__CheckTypes_FWD__Match();
+	EOperation getT2SAfterSplit__CheckTypes_FWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.ParallelStep, de.abilov.useCase.UseCase, de.abilov.useCase.ParallelFlow, de.abilov.useCase.Flow) <em>Is Appropriate BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.ParallelStep, de.abilov.useCase.UseCase, de.abilov.useCase.ParallelFlow, de.abilov.useCase.Flow) <em>Is Appropriate BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.ParallelStep, de.abilov.useCase.UseCase, de.abilov.useCase.ParallelFlow, de.abilov.useCase.Flow)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.ParallelStep, de.abilov.useCase.UseCase, de.abilov.useCase.ParallelFlow, de.abilov.useCase.Flow)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__IsAppropriate_BWD__Match_NormalStep_ParallelStep_UseCase_ParallelFlow_Flow();
+	EOperation getT2SAfterSplit__IsAppropriate_BWD__Match_NormalStep_ParallelStep_UseCase_ParallelFlow_Flow();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#perform_BWD(TGGRuntime.IsApplicableMatch) <em>Perform BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#perform_BWD(TGGRuntime.IsApplicableMatch) <em>Perform BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Perform BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#perform_BWD(TGGRuntime.IsApplicableMatch)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#perform_BWD(TGGRuntime.IsApplicableMatch)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__Perform_BWD__IsApplicableMatch();
+	EOperation getT2SAfterSplit__Perform_BWD__IsApplicableMatch();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isApplicable_BWD(TGGRuntime.Match) <em>Is Applicable BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isApplicable_BWD(TGGRuntime.Match) <em>Is Applicable BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isApplicable_BWD(TGGRuntime.Match)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isApplicable_BWD(TGGRuntime.Match)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__IsApplicable_BWD__Match();
+	EOperation getT2SAfterSplit__IsApplicable_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.ParallelStep, de.abilov.useCase.UseCase, de.abilov.useCase.ParallelFlow, de.abilov.useCase.Flow) <em>Register Objects To Match BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.ParallelStep, de.abilov.useCase.UseCase, de.abilov.useCase.ParallelFlow, de.abilov.useCase.Flow) <em>Register Objects To Match BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Register Objects To Match BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.ParallelStep, de.abilov.useCase.UseCase, de.abilov.useCase.ParallelFlow, de.abilov.useCase.Flow)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.ParallelStep, de.abilov.useCase.UseCase, de.abilov.useCase.ParallelFlow, de.abilov.useCase.Flow)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__RegisterObjectsToMatch_BWD__Match_NormalStep_ParallelStep_UseCase_ParallelFlow_Flow();
+	EOperation getT2SAfterSplit__RegisterObjectsToMatch_BWD__Match_NormalStep_ParallelStep_UseCase_ParallelFlow_Flow();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.ParallelStep, de.abilov.useCase.UseCase, de.abilov.useCase.ParallelFlow, de.abilov.useCase.Flow) <em>Is Appropriate solve Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.ParallelStep, de.abilov.useCase.UseCase, de.abilov.useCase.ParallelFlow, de.abilov.useCase.Flow) <em>Is Appropriate solve Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate solve Csp BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.ParallelStep, de.abilov.useCase.UseCase, de.abilov.useCase.ParallelFlow, de.abilov.useCase.Flow)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.ParallelStep, de.abilov.useCase.UseCase, de.abilov.useCase.ParallelFlow, de.abilov.useCase.Flow)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__IsAppropriate_solveCsp_BWD__Match_NormalStep_ParallelStep_UseCase_ParallelFlow_Flow();
+	EOperation getT2SAfterSplit__IsAppropriate_solveCsp_BWD__Match_NormalStep_ParallelStep_UseCase_ParallelFlow_Flow();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate check Csp BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__IsAppropriate_checkCsp_BWD__CSP();
+	EOperation getT2SAfterSplit__IsAppropriate_checkCsp_BWD__CSP();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.useCase.NormalStep, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.bpmn.ParallelGateway, de.abilov.useCase.ParallelStep, de.abilov.bpmn.Process, de.abilov.useCase.UseCase, de.abilov.tgg.bpmn2useCase.P2UC, de.abilov.useCase.ParallelFlow, de.abilov.useCase.Flow) <em>Is Applicable solve Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.useCase.NormalStep, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.bpmn.ParallelGateway, de.abilov.useCase.ParallelStep, de.abilov.bpmn.Process, de.abilov.useCase.UseCase, de.abilov.tgg.bpmn2useCase.P2UC, de.abilov.useCase.ParallelFlow, de.abilov.useCase.Flow) <em>Is Applicable solve Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable solve Csp BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.useCase.NormalStep, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.bpmn.ParallelGateway, de.abilov.useCase.ParallelStep, de.abilov.bpmn.Process, de.abilov.useCase.UseCase, de.abilov.tgg.bpmn2useCase.P2UC, de.abilov.useCase.ParallelFlow, de.abilov.useCase.Flow)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.useCase.NormalStep, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.bpmn.ParallelGateway, de.abilov.useCase.ParallelStep, de.abilov.bpmn.Process, de.abilov.useCase.UseCase, de.abilov.tgg.bpmn2useCase.P2UC, de.abilov.useCase.ParallelFlow, de.abilov.useCase.Flow)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__IsApplicable_solveCsp_BWD__IsApplicableMatch_NormalStep_GW2S_ParallelGateway_ParallelStep_Process_UseCase_P2UC_ParallelFlow_Flow();
+	EOperation getT2SAfterSplit__IsApplicable_solveCsp_BWD__IsApplicableMatch_NormalStep_GW2S_ParallelGateway_ParallelStep_Process_UseCase_P2UC_ParallelFlow_Flow();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable check Csp BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__IsApplicable_checkCsp_BWD__CSP();
+	EOperation getT2SAfterSplit__IsApplicable_checkCsp_BWD__CSP();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Register Objects BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
+	EOperation getT2SAfterSplit__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#checkTypes_BWD(TGGRuntime.Match) <em>Check Types BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#checkTypes_BWD(TGGRuntime.Match) <em>Check Types BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Check Types BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#checkTypes_BWD(TGGRuntime.Match)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#checkTypes_BWD(TGGRuntime.Match)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__CheckTypes_BWD__Match();
+	EOperation getT2SAfterSplit__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_FWD_EMoflonEdge_831(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 831</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_FWD_EMoflonEdge_443(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 443</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 831</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_FWD_EMoflonEdge_831(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 443</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_FWD_EMoflonEdge_443(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__IsAppropriate_FWD_EMoflonEdge_831__EMoflonEdge();
+	EOperation getT2SAfterSplit__IsAppropriate_FWD_EMoflonEdge_443__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_FWD_EMoflonEdge_832(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 832</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_FWD_EMoflonEdge_444(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 444</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 832</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_FWD_EMoflonEdge_832(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 444</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_FWD_EMoflonEdge_444(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__IsAppropriate_FWD_EMoflonEdge_832__EMoflonEdge();
+	EOperation getT2SAfterSplit__IsAppropriate_FWD_EMoflonEdge_444__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_BWD_EMoflonEdge_254(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 254</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_BWD_EMoflonEdge_134(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 134</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 254</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_BWD_EMoflonEdge_254(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 134</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_BWD_EMoflonEdge_134(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__IsAppropriate_BWD_EMoflonEdge_254__EMoflonEdge();
+	EOperation getT2SAfterSplit__IsAppropriate_BWD_EMoflonEdge_134__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_FWD_EMoflonEdge_833(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 833</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_FWD_EMoflonEdge_445(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 445</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 833</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_FWD_EMoflonEdge_833(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 445</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_FWD_EMoflonEdge_445(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__IsAppropriate_FWD_EMoflonEdge_833__EMoflonEdge();
+	EOperation getT2SAfterSplit__IsAppropriate_FWD_EMoflonEdge_445__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_BWD_EMoflonEdge_255(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 255</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_BWD_EMoflonEdge_135(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 135</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 255</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_BWD_EMoflonEdge_255(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 135</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_BWD_EMoflonEdge_135(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__IsAppropriate_BWD_EMoflonEdge_255__EMoflonEdge();
+	EOperation getT2SAfterSplit__IsAppropriate_BWD_EMoflonEdge_135__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_BWD_EMoflonEdge_256(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 256</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_BWD_EMoflonEdge_136(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 136</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 256</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_BWD_EMoflonEdge_256(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 136</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_BWD_EMoflonEdge_136(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__IsAppropriate_BWD_EMoflonEdge_256__EMoflonEdge();
+	EOperation getT2SAfterSplit__IsAppropriate_BWD_EMoflonEdge_136__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_FWD_EMoflonEdge_834(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 834</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_FWD_EMoflonEdge_446(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 446</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 834</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_FWD_EMoflonEdge_834(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 446</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_FWD_EMoflonEdge_446(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__IsAppropriate_FWD_EMoflonEdge_834__EMoflonEdge();
+	EOperation getT2SAfterSplit__IsAppropriate_FWD_EMoflonEdge_446__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_FWD_EMoflonEdge_835(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 835</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_FWD_EMoflonEdge_447(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 447</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 835</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_FWD_EMoflonEdge_835(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 447</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_FWD_EMoflonEdge_447(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__IsAppropriate_FWD_EMoflonEdge_835__EMoflonEdge();
+	EOperation getT2SAfterSplit__IsAppropriate_FWD_EMoflonEdge_447__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_FWD_EMoflonEdge_836(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 836</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_FWD_EMoflonEdge_448(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 448</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 836</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#isAppropriate_FWD_EMoflonEdge_836(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 448</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#isAppropriate_FWD_EMoflonEdge_448(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__IsAppropriate_FWD_EMoflonEdge_836__EMoflonEdge();
+	EOperation getT2SAfterSplit__IsAppropriate_FWD_EMoflonEdge_448__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Check Attributes FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#checkAttributes_FWD(TGGRuntime.TripleMatch)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#checkAttributes_FWD(TGGRuntime.TripleMatch)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__CheckAttributes_FWD__TripleMatch();
+	EOperation getT2SAfterSplit__CheckAttributes_FWD__TripleMatch();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#checkAttributes_BWD(TGGRuntime.TripleMatch) <em>Check Attributes BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#checkAttributes_BWD(TGGRuntime.TripleMatch) <em>Check Attributes BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Check Attributes BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterSplit#checkAttributes_BWD(TGGRuntime.TripleMatch)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSplit#checkAttributes_BWD(TGGRuntime.TripleMatch)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterSplit__CheckAttributes_BWD__TripleMatch();
+	EOperation getT2SAfterSplit__CheckAttributes_BWD__TripleMatch();
 
 	/**
 	 * Returns the meta object for class '{@link de.abilov.tgg.bpmn2useCase.Rules.Termination <em>Termination</em>}'.
@@ -12399,84 +12410,84 @@ public interface RulesPackage extends EPackage {
 	EOperation getTerminationSeq__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_BWD_EMoflonEdge_257(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 257</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_BWD_EMoflonEdge_137(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 137</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 257</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_BWD_EMoflonEdge_257(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 137</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_BWD_EMoflonEdge_137(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTerminationSeq__IsAppropriate_BWD_EMoflonEdge_257__EMoflonEdge();
+	EOperation getTerminationSeq__IsAppropriate_BWD_EMoflonEdge_137__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_BWD_EMoflonEdge_258(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 258</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_BWD_EMoflonEdge_138(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 138</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 258</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_BWD_EMoflonEdge_258(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 138</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_BWD_EMoflonEdge_138(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTerminationSeq__IsAppropriate_BWD_EMoflonEdge_258__EMoflonEdge();
+	EOperation getTerminationSeq__IsAppropriate_BWD_EMoflonEdge_138__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_FWD_EMoflonEdge_837(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 837</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_FWD_EMoflonEdge_449(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 449</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 837</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_FWD_EMoflonEdge_837(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 449</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_FWD_EMoflonEdge_449(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTerminationSeq__IsAppropriate_FWD_EMoflonEdge_837__EMoflonEdge();
+	EOperation getTerminationSeq__IsAppropriate_FWD_EMoflonEdge_449__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_FWD_EMoflonEdge_838(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 838</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_FWD_EMoflonEdge_450(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 450</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 838</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_FWD_EMoflonEdge_838(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 450</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_FWD_EMoflonEdge_450(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTerminationSeq__IsAppropriate_FWD_EMoflonEdge_838__EMoflonEdge();
+	EOperation getTerminationSeq__IsAppropriate_FWD_EMoflonEdge_450__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_FWD_EMoflonEdge_839(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 839</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_FWD_EMoflonEdge_451(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 451</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 839</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_FWD_EMoflonEdge_839(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 451</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_FWD_EMoflonEdge_451(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTerminationSeq__IsAppropriate_FWD_EMoflonEdge_839__EMoflonEdge();
+	EOperation getTerminationSeq__IsAppropriate_FWD_EMoflonEdge_451__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_FWD_EMoflonEdge_840(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 840</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_FWD_EMoflonEdge_452(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 452</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 840</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_FWD_EMoflonEdge_840(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 452</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_FWD_EMoflonEdge_452(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTerminationSeq__IsAppropriate_FWD_EMoflonEdge_840__EMoflonEdge();
+	EOperation getTerminationSeq__IsAppropriate_FWD_EMoflonEdge_452__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_FWD_EMoflonEdge_841(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 841</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_FWD_EMoflonEdge_453(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 453</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 841</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_FWD_EMoflonEdge_841(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 453</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_FWD_EMoflonEdge_453(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTerminationSeq__IsAppropriate_FWD_EMoflonEdge_841__EMoflonEdge();
+	EOperation getTerminationSeq__IsAppropriate_FWD_EMoflonEdge_453__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_FWD_EMoflonEdge_842(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 842</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_FWD_EMoflonEdge_454(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 454</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 842</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_FWD_EMoflonEdge_842(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 454</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#isAppropriate_FWD_EMoflonEdge_454(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTerminationSeq__IsAppropriate_FWD_EMoflonEdge_842__EMoflonEdge();
+	EOperation getTerminationSeq__IsAppropriate_FWD_EMoflonEdge_454__EMoflonEdge();
 
 	/**
 	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationSeq#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
@@ -12719,64 +12730,64 @@ public interface RulesPackage extends EPackage {
 	EOperation getLastStepInPFlow__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInPFlow#isAppropriate_FWD_EMoflonEdge_843(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 843</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInPFlow#isAppropriate_FWD_EMoflonEdge_455(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 455</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 843</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInPFlow#isAppropriate_FWD_EMoflonEdge_843(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 455</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInPFlow#isAppropriate_FWD_EMoflonEdge_455(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getLastStepInPFlow__IsAppropriate_FWD_EMoflonEdge_843__EMoflonEdge();
+	EOperation getLastStepInPFlow__IsAppropriate_FWD_EMoflonEdge_455__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInPFlow#isAppropriate_FWD_EMoflonEdge_844(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 844</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInPFlow#isAppropriate_FWD_EMoflonEdge_456(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 456</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 844</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInPFlow#isAppropriate_FWD_EMoflonEdge_844(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 456</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInPFlow#isAppropriate_FWD_EMoflonEdge_456(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getLastStepInPFlow__IsAppropriate_FWD_EMoflonEdge_844__EMoflonEdge();
+	EOperation getLastStepInPFlow__IsAppropriate_FWD_EMoflonEdge_456__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInPFlow#isAppropriate_FWD_EMoflonEdge_845(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 845</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInPFlow#isAppropriate_FWD_EMoflonEdge_457(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 457</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 845</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInPFlow#isAppropriate_FWD_EMoflonEdge_845(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 457</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInPFlow#isAppropriate_FWD_EMoflonEdge_457(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getLastStepInPFlow__IsAppropriate_FWD_EMoflonEdge_845__EMoflonEdge();
+	EOperation getLastStepInPFlow__IsAppropriate_FWD_EMoflonEdge_457__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInPFlow#isAppropriate_FWD_EMoflonEdge_846(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 846</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInPFlow#isAppropriate_FWD_EMoflonEdge_458(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 458</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 846</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInPFlow#isAppropriate_FWD_EMoflonEdge_846(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 458</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInPFlow#isAppropriate_FWD_EMoflonEdge_458(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getLastStepInPFlow__IsAppropriate_FWD_EMoflonEdge_846__EMoflonEdge();
+	EOperation getLastStepInPFlow__IsAppropriate_FWD_EMoflonEdge_458__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInPFlow#isAppropriate_FWD_EMoflonEdge_847(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 847</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInPFlow#isAppropriate_FWD_EMoflonEdge_459(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 459</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 847</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInPFlow#isAppropriate_FWD_EMoflonEdge_847(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 459</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInPFlow#isAppropriate_FWD_EMoflonEdge_459(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getLastStepInPFlow__IsAppropriate_FWD_EMoflonEdge_847__EMoflonEdge();
+	EOperation getLastStepInPFlow__IsAppropriate_FWD_EMoflonEdge_459__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInPFlow#isAppropriate_BWD_EMoflonEdge_259(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 259</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInPFlow#isAppropriate_BWD_EMoflonEdge_139(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 139</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 259</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInPFlow#isAppropriate_BWD_EMoflonEdge_259(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 139</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInPFlow#isAppropriate_BWD_EMoflonEdge_139(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getLastStepInPFlow__IsAppropriate_BWD_EMoflonEdge_259__EMoflonEdge();
+	EOperation getLastStepInPFlow__IsAppropriate_BWD_EMoflonEdge_139__EMoflonEdge();
 
 	/**
 	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInPFlow#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
@@ -12809,314 +12820,314 @@ public interface RulesPackage extends EPackage {
 	EClass getChoice();
 
 	/**
-	 * Returns the meta object for class '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge <em>Task2 Step After Merge</em>}'.
+	 * Returns the meta object for class '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge <em>T2S After Merge</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Task2 Step After Merge</em>'.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge
+	 * @return the meta object for class '<em>T2S After Merge</em>'.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge
 	 * @generated
 	 */
-	EClass getTask2StepAfterMerge();
+	EClass getT2SAfterMerge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Is Appropriate FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Is Appropriate FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__IsAppropriate_FWD__Match_ExclusiveGateway_SequenceFlow_FlowNode_Process_SequenceFlow_Task();
+	EOperation getT2SAfterMerge__IsAppropriate_FWD__Match_ExclusiveGateway_SequenceFlow_FlowNode_Process_SequenceFlow_Task();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#perform_FWD(TGGRuntime.IsApplicableMatch) <em>Perform FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#perform_FWD(TGGRuntime.IsApplicableMatch) <em>Perform FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Perform FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#perform_FWD(TGGRuntime.IsApplicableMatch)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#perform_FWD(TGGRuntime.IsApplicableMatch)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__Perform_FWD__IsApplicableMatch();
+	EOperation getT2SAfterMerge__Perform_FWD__IsApplicableMatch();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isApplicable_FWD(TGGRuntime.Match) <em>Is Applicable FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isApplicable_FWD(TGGRuntime.Match) <em>Is Applicable FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isApplicable_FWD(TGGRuntime.Match)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isApplicable_FWD(TGGRuntime.Match)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__IsApplicable_FWD__Match();
+	EOperation getT2SAfterMerge__IsApplicable_FWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Register Objects To Match FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Register Objects To Match FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Register Objects To Match FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__RegisterObjectsToMatch_FWD__Match_ExclusiveGateway_SequenceFlow_FlowNode_Process_SequenceFlow_Task();
+	EOperation getT2SAfterMerge__RegisterObjectsToMatch_FWD__Match_ExclusiveGateway_SequenceFlow_FlowNode_Process_SequenceFlow_Task();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Is Appropriate solve Csp FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Is Appropriate solve Csp FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate solve Csp FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.FlowNode, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__IsAppropriate_solveCsp_FWD__Match_ExclusiveGateway_SequenceFlow_FlowNode_Process_SequenceFlow_Task();
+	EOperation getT2SAfterMerge__IsAppropriate_solveCsp_FWD__Match_ExclusiveGateway_SequenceFlow_FlowNode_Process_SequenceFlow_Task();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate check Csp FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__IsAppropriate_checkCsp_FWD__CSP();
+	EOperation getT2SAfterMerge__IsAppropriate_checkCsp_FWD__CSP();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.ExclusiveGateway, de.abilov.useCase.ChoiceStep, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.useCase.Step, de.abilov.useCase.Flow, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.FlowNode, de.abilov.tgg.bpmn2useCase.FN2S, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Is Applicable solve Csp FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.ExclusiveGateway, de.abilov.useCase.ChoiceStep, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.useCase.Step, de.abilov.useCase.Flow, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.FlowNode, de.abilov.tgg.bpmn2useCase.FN2S, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Is Applicable solve Csp FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable solve Csp FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.ExclusiveGateway, de.abilov.useCase.ChoiceStep, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.useCase.Step, de.abilov.useCase.Flow, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.FlowNode, de.abilov.tgg.bpmn2useCase.FN2S, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.ExclusiveGateway, de.abilov.useCase.ChoiceStep, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.useCase.Step, de.abilov.useCase.Flow, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.FlowNode, de.abilov.tgg.bpmn2useCase.FN2S, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__IsApplicable_solveCsp_FWD__IsApplicableMatch_ExclusiveGateway_ChoiceStep_GW2S_Step_Flow_SequenceFlow_FlowNode_FN2S_Process_SequenceFlow_Task();
+	EOperation getT2SAfterMerge__IsApplicable_solveCsp_FWD__IsApplicableMatch_ExclusiveGateway_ChoiceStep_GW2S_Step_Flow_SequenceFlow_FlowNode_FN2S_Process_SequenceFlow_Task();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable check Csp FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__IsApplicable_checkCsp_FWD__CSP();
+	EOperation getT2SAfterMerge__IsApplicable_checkCsp_FWD__CSP();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Register Objects FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
+	EOperation getT2SAfterMerge__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#checkTypes_FWD(TGGRuntime.Match) <em>Check Types FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#checkTypes_FWD(TGGRuntime.Match) <em>Check Types FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Check Types FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#checkTypes_FWD(TGGRuntime.Match)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#checkTypes_FWD(TGGRuntime.Match)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__CheckTypes_FWD__Match();
+	EOperation getT2SAfterMerge__CheckTypes_FWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.ChoiceStep, de.abilov.useCase.Step, de.abilov.useCase.Flow, de.abilov.useCase.NormalStep) <em>Is Appropriate BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.ChoiceStep, de.abilov.useCase.Step, de.abilov.useCase.Flow, de.abilov.useCase.NormalStep) <em>Is Appropriate BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.ChoiceStep, de.abilov.useCase.Step, de.abilov.useCase.Flow, de.abilov.useCase.NormalStep)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.ChoiceStep, de.abilov.useCase.Step, de.abilov.useCase.Flow, de.abilov.useCase.NormalStep)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__IsAppropriate_BWD__Match_ChoiceStep_Step_Flow_NormalStep();
+	EOperation getT2SAfterMerge__IsAppropriate_BWD__Match_ChoiceStep_Step_Flow_NormalStep();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#perform_BWD(TGGRuntime.IsApplicableMatch) <em>Perform BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#perform_BWD(TGGRuntime.IsApplicableMatch) <em>Perform BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Perform BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#perform_BWD(TGGRuntime.IsApplicableMatch)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#perform_BWD(TGGRuntime.IsApplicableMatch)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__Perform_BWD__IsApplicableMatch();
+	EOperation getT2SAfterMerge__Perform_BWD__IsApplicableMatch();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isApplicable_BWD(TGGRuntime.Match) <em>Is Applicable BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isApplicable_BWD(TGGRuntime.Match) <em>Is Applicable BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isApplicable_BWD(TGGRuntime.Match)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isApplicable_BWD(TGGRuntime.Match)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__IsApplicable_BWD__Match();
+	EOperation getT2SAfterMerge__IsApplicable_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.ChoiceStep, de.abilov.useCase.Step, de.abilov.useCase.Flow, de.abilov.useCase.NormalStep) <em>Register Objects To Match BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.ChoiceStep, de.abilov.useCase.Step, de.abilov.useCase.Flow, de.abilov.useCase.NormalStep) <em>Register Objects To Match BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Register Objects To Match BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.ChoiceStep, de.abilov.useCase.Step, de.abilov.useCase.Flow, de.abilov.useCase.NormalStep)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.ChoiceStep, de.abilov.useCase.Step, de.abilov.useCase.Flow, de.abilov.useCase.NormalStep)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__RegisterObjectsToMatch_BWD__Match_ChoiceStep_Step_Flow_NormalStep();
+	EOperation getT2SAfterMerge__RegisterObjectsToMatch_BWD__Match_ChoiceStep_Step_Flow_NormalStep();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.ChoiceStep, de.abilov.useCase.Step, de.abilov.useCase.Flow, de.abilov.useCase.NormalStep) <em>Is Appropriate solve Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.ChoiceStep, de.abilov.useCase.Step, de.abilov.useCase.Flow, de.abilov.useCase.NormalStep) <em>Is Appropriate solve Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate solve Csp BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.ChoiceStep, de.abilov.useCase.Step, de.abilov.useCase.Flow, de.abilov.useCase.NormalStep)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.ChoiceStep, de.abilov.useCase.Step, de.abilov.useCase.Flow, de.abilov.useCase.NormalStep)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__IsAppropriate_solveCsp_BWD__Match_ChoiceStep_Step_Flow_NormalStep();
+	EOperation getT2SAfterMerge__IsAppropriate_solveCsp_BWD__Match_ChoiceStep_Step_Flow_NormalStep();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate check Csp BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__IsAppropriate_checkCsp_BWD__CSP();
+	EOperation getT2SAfterMerge__IsAppropriate_checkCsp_BWD__CSP();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.ExclusiveGateway, de.abilov.useCase.ChoiceStep, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.useCase.Step, de.abilov.useCase.Flow, de.abilov.useCase.NormalStep, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.FlowNode, de.abilov.tgg.bpmn2useCase.FN2S, de.abilov.bpmn.Process) <em>Is Applicable solve Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.ExclusiveGateway, de.abilov.useCase.ChoiceStep, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.useCase.Step, de.abilov.useCase.Flow, de.abilov.useCase.NormalStep, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.FlowNode, de.abilov.tgg.bpmn2useCase.FN2S, de.abilov.bpmn.Process) <em>Is Applicable solve Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable solve Csp BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.ExclusiveGateway, de.abilov.useCase.ChoiceStep, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.useCase.Step, de.abilov.useCase.Flow, de.abilov.useCase.NormalStep, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.FlowNode, de.abilov.tgg.bpmn2useCase.FN2S, de.abilov.bpmn.Process)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.ExclusiveGateway, de.abilov.useCase.ChoiceStep, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.useCase.Step, de.abilov.useCase.Flow, de.abilov.useCase.NormalStep, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.FlowNode, de.abilov.tgg.bpmn2useCase.FN2S, de.abilov.bpmn.Process)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__IsApplicable_solveCsp_BWD__IsApplicableMatch_ExclusiveGateway_ChoiceStep_GW2S_Step_Flow_NormalStep_SequenceFlow_FlowNode_FN2S_Process();
+	EOperation getT2SAfterMerge__IsApplicable_solveCsp_BWD__IsApplicableMatch_ExclusiveGateway_ChoiceStep_GW2S_Step_Flow_NormalStep_SequenceFlow_FlowNode_FN2S_Process();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable check Csp BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__IsApplicable_checkCsp_BWD__CSP();
+	EOperation getT2SAfterMerge__IsApplicable_checkCsp_BWD__CSP();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Register Objects BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
+	EOperation getT2SAfterMerge__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#checkTypes_BWD(TGGRuntime.Match) <em>Check Types BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#checkTypes_BWD(TGGRuntime.Match) <em>Check Types BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Check Types BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#checkTypes_BWD(TGGRuntime.Match)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#checkTypes_BWD(TGGRuntime.Match)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__CheckTypes_BWD__Match();
+	EOperation getT2SAfterMerge__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isAppropriate_BWD_EMoflonEdge_260(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 260</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isAppropriate_BWD_EMoflonEdge_140(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 140</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 260</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isAppropriate_BWD_EMoflonEdge_260(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 140</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isAppropriate_BWD_EMoflonEdge_140(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__IsAppropriate_BWD_EMoflonEdge_260__EMoflonEdge();
+	EOperation getT2SAfterMerge__IsAppropriate_BWD_EMoflonEdge_140__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isAppropriate_BWD_EMoflonEdge_261(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 261</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isAppropriate_BWD_EMoflonEdge_141(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 141</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 261</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isAppropriate_BWD_EMoflonEdge_261(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 141</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isAppropriate_BWD_EMoflonEdge_141(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__IsAppropriate_BWD_EMoflonEdge_261__EMoflonEdge();
+	EOperation getT2SAfterMerge__IsAppropriate_BWD_EMoflonEdge_141__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isAppropriate_FWD_EMoflonEdge_848(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 848</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isAppropriate_FWD_EMoflonEdge_460(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 460</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 848</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isAppropriate_FWD_EMoflonEdge_848(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 460</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isAppropriate_FWD_EMoflonEdge_460(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__IsAppropriate_FWD_EMoflonEdge_848__EMoflonEdge();
+	EOperation getT2SAfterMerge__IsAppropriate_FWD_EMoflonEdge_460__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isAppropriate_FWD_EMoflonEdge_849(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 849</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isAppropriate_FWD_EMoflonEdge_461(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 461</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 849</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isAppropriate_FWD_EMoflonEdge_849(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 461</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isAppropriate_FWD_EMoflonEdge_461(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__IsAppropriate_FWD_EMoflonEdge_849__EMoflonEdge();
+	EOperation getT2SAfterMerge__IsAppropriate_FWD_EMoflonEdge_461__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isAppropriate_FWD_EMoflonEdge_850(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 850</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isAppropriate_FWD_EMoflonEdge_462(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 462</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 850</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isAppropriate_FWD_EMoflonEdge_850(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 462</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isAppropriate_FWD_EMoflonEdge_462(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__IsAppropriate_FWD_EMoflonEdge_850__EMoflonEdge();
+	EOperation getT2SAfterMerge__IsAppropriate_FWD_EMoflonEdge_462__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isAppropriate_FWD_EMoflonEdge_851(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 851</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isAppropriate_FWD_EMoflonEdge_463(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 463</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 851</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isAppropriate_FWD_EMoflonEdge_851(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 463</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isAppropriate_FWD_EMoflonEdge_463(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__IsAppropriate_FWD_EMoflonEdge_851__EMoflonEdge();
+	EOperation getT2SAfterMerge__IsAppropriate_FWD_EMoflonEdge_463__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isAppropriate_FWD_EMoflonEdge_852(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 852</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isAppropriate_FWD_EMoflonEdge_464(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 464</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 852</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isAppropriate_FWD_EMoflonEdge_852(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 464</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isAppropriate_FWD_EMoflonEdge_464(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__IsAppropriate_FWD_EMoflonEdge_852__EMoflonEdge();
+	EOperation getT2SAfterMerge__IsAppropriate_FWD_EMoflonEdge_464__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isAppropriate_FWD_EMoflonEdge_853(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 853</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isAppropriate_FWD_EMoflonEdge_465(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 465</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 853</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#isAppropriate_FWD_EMoflonEdge_853(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 465</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#isAppropriate_FWD_EMoflonEdge_465(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__IsAppropriate_FWD_EMoflonEdge_853__EMoflonEdge();
+	EOperation getT2SAfterMerge__IsAppropriate_FWD_EMoflonEdge_465__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Check Attributes FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#checkAttributes_FWD(TGGRuntime.TripleMatch)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#checkAttributes_FWD(TGGRuntime.TripleMatch)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__CheckAttributes_FWD__TripleMatch();
+	EOperation getT2SAfterMerge__CheckAttributes_FWD__TripleMatch();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#checkAttributes_BWD(TGGRuntime.TripleMatch) <em>Check Attributes BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#checkAttributes_BWD(TGGRuntime.TripleMatch) <em>Check Attributes BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Check Attributes BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterMerge#checkAttributes_BWD(TGGRuntime.TripleMatch)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterMerge#checkAttributes_BWD(TGGRuntime.TripleMatch)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterMerge__CheckAttributes_BWD__TripleMatch();
+	EOperation getT2SAfterMerge__CheckAttributes_BWD__TripleMatch();
 
 	/**
 	 * Returns the meta object for class '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq <em>Choice Seq</em>}'.
@@ -13329,104 +13340,104 @@ public interface RulesPackage extends EPackage {
 	EOperation getChoiceSeq__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_BWD_EMoflonEdge_262(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 262</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_BWD_EMoflonEdge_142(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 142</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 262</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_BWD_EMoflonEdge_262(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 142</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_BWD_EMoflonEdge_142(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceSeq__IsAppropriate_BWD_EMoflonEdge_262__EMoflonEdge();
+	EOperation getChoiceSeq__IsAppropriate_BWD_EMoflonEdge_142__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_BWD_EMoflonEdge_263(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 263</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_BWD_EMoflonEdge_143(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 143</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 263</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_BWD_EMoflonEdge_263(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 143</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_BWD_EMoflonEdge_143(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceSeq__IsAppropriate_BWD_EMoflonEdge_263__EMoflonEdge();
+	EOperation getChoiceSeq__IsAppropriate_BWD_EMoflonEdge_143__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_854(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 854</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_466(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 466</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 854</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_854(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 466</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_466(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceSeq__IsAppropriate_FWD_EMoflonEdge_854__EMoflonEdge();
+	EOperation getChoiceSeq__IsAppropriate_FWD_EMoflonEdge_466__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_855(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 855</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_467(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 467</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 855</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_855(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 467</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_467(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceSeq__IsAppropriate_FWD_EMoflonEdge_855__EMoflonEdge();
+	EOperation getChoiceSeq__IsAppropriate_FWD_EMoflonEdge_467__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_856(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 856</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_468(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 468</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 856</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_856(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 468</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_468(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceSeq__IsAppropriate_FWD_EMoflonEdge_856__EMoflonEdge();
+	EOperation getChoiceSeq__IsAppropriate_FWD_EMoflonEdge_468__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_857(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 857</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_469(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 469</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 857</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_857(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 469</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_469(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceSeq__IsAppropriate_FWD_EMoflonEdge_857__EMoflonEdge();
+	EOperation getChoiceSeq__IsAppropriate_FWD_EMoflonEdge_469__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_858(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 858</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_470(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 470</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 858</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_858(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 470</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_470(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceSeq__IsAppropriate_FWD_EMoflonEdge_858__EMoflonEdge();
+	EOperation getChoiceSeq__IsAppropriate_FWD_EMoflonEdge_470__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_859(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 859</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_471(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 471</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 859</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_859(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 471</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_471(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceSeq__IsAppropriate_FWD_EMoflonEdge_859__EMoflonEdge();
+	EOperation getChoiceSeq__IsAppropriate_FWD_EMoflonEdge_471__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_860(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 860</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_472(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 472</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 860</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_860(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 472</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_472(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceSeq__IsAppropriate_FWD_EMoflonEdge_860__EMoflonEdge();
+	EOperation getChoiceSeq__IsAppropriate_FWD_EMoflonEdge_472__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_861(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 861</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_473(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 473</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 861</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_861(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 473</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#isAppropriate_FWD_EMoflonEdge_473(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceSeq__IsAppropriate_FWD_EMoflonEdge_861__EMoflonEdge();
+	EOperation getChoiceSeq__IsAppropriate_FWD_EMoflonEdge_473__EMoflonEdge();
 
 	/**
 	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceSeq#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
@@ -13659,94 +13670,94 @@ public interface RulesPackage extends EPackage {
 	EOperation getChoiceFirst__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_BWD_EMoflonEdge_264(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 264</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_BWD_EMoflonEdge_144(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 144</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 264</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_BWD_EMoflonEdge_264(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 144</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_BWD_EMoflonEdge_144(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceFirst__IsAppropriate_BWD_EMoflonEdge_264__EMoflonEdge();
+	EOperation getChoiceFirst__IsAppropriate_BWD_EMoflonEdge_144__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_862(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 862</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_474(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 474</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 862</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_862(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 474</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_474(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceFirst__IsAppropriate_FWD_EMoflonEdge_862__EMoflonEdge();
+	EOperation getChoiceFirst__IsAppropriate_FWD_EMoflonEdge_474__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_863(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 863</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_475(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 475</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 863</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_863(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 475</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_475(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceFirst__IsAppropriate_FWD_EMoflonEdge_863__EMoflonEdge();
+	EOperation getChoiceFirst__IsAppropriate_FWD_EMoflonEdge_475__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_864(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 864</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_476(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 476</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 864</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_864(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 476</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_476(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceFirst__IsAppropriate_FWD_EMoflonEdge_864__EMoflonEdge();
+	EOperation getChoiceFirst__IsAppropriate_FWD_EMoflonEdge_476__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_865(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 865</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_477(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 477</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 865</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_865(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 477</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_477(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceFirst__IsAppropriate_FWD_EMoflonEdge_865__EMoflonEdge();
+	EOperation getChoiceFirst__IsAppropriate_FWD_EMoflonEdge_477__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_866(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 866</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_478(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 478</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 866</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_866(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 478</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_478(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceFirst__IsAppropriate_FWD_EMoflonEdge_866__EMoflonEdge();
+	EOperation getChoiceFirst__IsAppropriate_FWD_EMoflonEdge_478__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_867(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 867</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_479(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 479</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 867</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_867(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 479</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_479(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceFirst__IsAppropriate_FWD_EMoflonEdge_867__EMoflonEdge();
+	EOperation getChoiceFirst__IsAppropriate_FWD_EMoflonEdge_479__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_868(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 868</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_480(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 480</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 868</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_868(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 480</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_480(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceFirst__IsAppropriate_FWD_EMoflonEdge_868__EMoflonEdge();
+	EOperation getChoiceFirst__IsAppropriate_FWD_EMoflonEdge_480__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_869(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 869</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_481(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 481</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 869</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_869(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 481</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#isAppropriate_FWD_EMoflonEdge_481(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceFirst__IsAppropriate_FWD_EMoflonEdge_869__EMoflonEdge();
+	EOperation getChoiceFirst__IsAppropriate_FWD_EMoflonEdge_481__EMoflonEdge();
 
 	/**
 	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceFirst#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
@@ -13979,114 +13990,114 @@ public interface RulesPackage extends EPackage {
 	EOperation getChoiceAfterSplit__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_870(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 870</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_482(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 482</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 870</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_870(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 482</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_482(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterSplit__IsAppropriate_FWD_EMoflonEdge_870__EMoflonEdge();
+	EOperation getChoiceAfterSplit__IsAppropriate_FWD_EMoflonEdge_482__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_BWD_EMoflonEdge_265(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 265</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_BWD_EMoflonEdge_145(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 145</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 265</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_BWD_EMoflonEdge_265(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 145</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_BWD_EMoflonEdge_145(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterSplit__IsAppropriate_BWD_EMoflonEdge_265__EMoflonEdge();
+	EOperation getChoiceAfterSplit__IsAppropriate_BWD_EMoflonEdge_145__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_871(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 871</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_483(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 483</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 871</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_871(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 483</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_483(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterSplit__IsAppropriate_FWD_EMoflonEdge_871__EMoflonEdge();
+	EOperation getChoiceAfterSplit__IsAppropriate_FWD_EMoflonEdge_483__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_872(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 872</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_484(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 484</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 872</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_872(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 484</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_484(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterSplit__IsAppropriate_FWD_EMoflonEdge_872__EMoflonEdge();
+	EOperation getChoiceAfterSplit__IsAppropriate_FWD_EMoflonEdge_484__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_BWD_EMoflonEdge_266(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 266</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_BWD_EMoflonEdge_146(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 146</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 266</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_BWD_EMoflonEdge_266(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 146</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_BWD_EMoflonEdge_146(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterSplit__IsAppropriate_BWD_EMoflonEdge_266__EMoflonEdge();
+	EOperation getChoiceAfterSplit__IsAppropriate_BWD_EMoflonEdge_146__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_BWD_EMoflonEdge_267(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 267</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_BWD_EMoflonEdge_147(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 147</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 267</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_BWD_EMoflonEdge_267(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 147</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_BWD_EMoflonEdge_147(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterSplit__IsAppropriate_BWD_EMoflonEdge_267__EMoflonEdge();
+	EOperation getChoiceAfterSplit__IsAppropriate_BWD_EMoflonEdge_147__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_873(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 873</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_485(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 485</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 873</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_873(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 485</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_485(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterSplit__IsAppropriate_FWD_EMoflonEdge_873__EMoflonEdge();
+	EOperation getChoiceAfterSplit__IsAppropriate_FWD_EMoflonEdge_485__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_874(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 874</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_486(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 486</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 874</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_874(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 486</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_486(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterSplit__IsAppropriate_FWD_EMoflonEdge_874__EMoflonEdge();
+	EOperation getChoiceAfterSplit__IsAppropriate_FWD_EMoflonEdge_486__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_875(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 875</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_487(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 487</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 875</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_875(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 487</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_487(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterSplit__IsAppropriate_FWD_EMoflonEdge_875__EMoflonEdge();
+	EOperation getChoiceAfterSplit__IsAppropriate_FWD_EMoflonEdge_487__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_876(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 876</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_488(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 488</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 876</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_876(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 488</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_488(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterSplit__IsAppropriate_FWD_EMoflonEdge_876__EMoflonEdge();
+	EOperation getChoiceAfterSplit__IsAppropriate_FWD_EMoflonEdge_488__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_877(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 877</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_489(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 489</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 877</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_877(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 489</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#isAppropriate_FWD_EMoflonEdge_489(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterSplit__IsAppropriate_FWD_EMoflonEdge_877__EMoflonEdge();
+	EOperation getChoiceAfterSplit__IsAppropriate_FWD_EMoflonEdge_489__EMoflonEdge();
 
 	/**
 	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterSplit#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
@@ -14109,654 +14120,654 @@ public interface RulesPackage extends EPackage {
 	EOperation getChoiceAfterSplit__CheckAttributes_BWD__TripleMatch();
 
 	/**
-	 * Returns the meta object for class '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef <em>Task2 Step After Choice Def</em>}'.
+	 * Returns the meta object for class '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef <em>T2S After Choice Def</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Task2 Step After Choice Def</em>'.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef
+	 * @return the meta object for class '<em>T2S After Choice Def</em>'.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef
 	 * @generated
 	 */
-	EClass getTask2StepAfterChoiceDef();
+	EClass getT2SAfterChoiceDef();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task) <em>Is Appropriate FWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__IsAppropriate_FWD__Match_ExclusiveGateway_SequenceFlow_Process_Task();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#perform_FWD(TGGRuntime.IsApplicableMatch) <em>Perform FWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Perform FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#perform_FWD(TGGRuntime.IsApplicableMatch)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__Perform_FWD__IsApplicableMatch();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isApplicable_FWD(TGGRuntime.Match) <em>Is Applicable FWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Applicable FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isApplicable_FWD(TGGRuntime.Match)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__IsApplicable_FWD__Match();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task) <em>Register Objects To Match FWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Register Objects To Match FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__RegisterObjectsToMatch_FWD__Match_ExclusiveGateway_SequenceFlow_Process_Task();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task) <em>Is Appropriate solve Csp FWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate solve Csp FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__IsAppropriate_solveCsp_FWD__Match_ExclusiveGateway_SequenceFlow_Process_Task();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp FWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate check Csp FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__IsAppropriate_checkCsp_FWD__CSP();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.useCase.Flow, de.abilov.bpmn.ExclusiveGateway, de.abilov.useCase.ChoiceStep, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task) <em>Is Applicable solve Csp FWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Applicable solve Csp FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.useCase.Flow, de.abilov.bpmn.ExclusiveGateway, de.abilov.useCase.ChoiceStep, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__IsApplicable_solveCsp_FWD__IsApplicableMatch_Flow_ExclusiveGateway_ChoiceStep_GW2S_SequenceFlow_Process_Task();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp FWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Applicable check Csp FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__IsApplicable_checkCsp_FWD__CSP();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects FWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Register Objects FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#checkTypes_FWD(TGGRuntime.Match) <em>Check Types FWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Check Types FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#checkTypes_FWD(TGGRuntime.Match)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__CheckTypes_FWD__Match();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep) <em>Is Appropriate BWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__IsAppropriate_BWD__Match_NormalStep_Flow_ChoiceStep();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#perform_BWD(TGGRuntime.IsApplicableMatch) <em>Perform BWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Perform BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#perform_BWD(TGGRuntime.IsApplicableMatch)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__Perform_BWD__IsApplicableMatch();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isApplicable_BWD(TGGRuntime.Match) <em>Is Applicable BWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Applicable BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isApplicable_BWD(TGGRuntime.Match)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__IsApplicable_BWD__Match();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep) <em>Register Objects To Match BWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Register Objects To Match BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__RegisterObjectsToMatch_BWD__Match_NormalStep_Flow_ChoiceStep();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep) <em>Is Appropriate solve Csp BWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate solve Csp BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__IsAppropriate_solveCsp_BWD__Match_NormalStep_Flow_ChoiceStep();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp BWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate check Csp BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__IsAppropriate_checkCsp_BWD__CSP();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.bpmn.ExclusiveGateway, de.abilov.useCase.ChoiceStep, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.bpmn.Process) <em>Is Applicable solve Csp BWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Applicable solve Csp BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.bpmn.ExclusiveGateway, de.abilov.useCase.ChoiceStep, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.bpmn.Process)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__IsApplicable_solveCsp_BWD__IsApplicableMatch_NormalStep_Flow_ExclusiveGateway_ChoiceStep_GW2S_Process();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp BWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Applicable check Csp BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__IsApplicable_checkCsp_BWD__CSP();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects BWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Register Objects BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#checkTypes_BWD(TGGRuntime.Match) <em>Check Types BWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Check Types BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#checkTypes_BWD(TGGRuntime.Match)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__CheckTypes_BWD__Match();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_BWD_EMoflonEdge_268(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 268</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 268</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_BWD_EMoflonEdge_268(TGGRuntime.EMoflonEdge)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__IsAppropriate_BWD_EMoflonEdge_268__EMoflonEdge();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_878(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 878</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 878</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_878(TGGRuntime.EMoflonEdge)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_878__EMoflonEdge();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_879(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 879</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 879</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_879(TGGRuntime.EMoflonEdge)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_879__EMoflonEdge();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_880(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 880</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 880</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_880(TGGRuntime.EMoflonEdge)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_880__EMoflonEdge();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_BWD_EMoflonEdge_269(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 269</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 269</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_BWD_EMoflonEdge_269(TGGRuntime.EMoflonEdge)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__IsAppropriate_BWD_EMoflonEdge_269__EMoflonEdge();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_881(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 881</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 881</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_881(TGGRuntime.EMoflonEdge)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_881__EMoflonEdge();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_882(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 882</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 882</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_882(TGGRuntime.EMoflonEdge)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_882__EMoflonEdge();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_883(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 883</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 883</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_883(TGGRuntime.EMoflonEdge)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_883__EMoflonEdge();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_884(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 884</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 884</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_884(TGGRuntime.EMoflonEdge)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_884__EMoflonEdge();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Check Attributes FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#checkAttributes_FWD(TGGRuntime.TripleMatch)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__CheckAttributes_FWD__TripleMatch();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#checkAttributes_BWD(TGGRuntime.TripleMatch) <em>Check Attributes BWD</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Check Attributes BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoiceDef#checkAttributes_BWD(TGGRuntime.TripleMatch)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoiceDef__CheckAttributes_BWD__TripleMatch();
-
-	/**
-	 * Returns the meta object for class '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice <em>Task2 Step After Choice</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Task2 Step After Choice</em>'.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice
-	 * @generated
-	 */
-	EClass getTask2StepAfterChoice();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task) <em>Is Appropriate FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task) <em>Is Appropriate FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__IsAppropriate_FWD__Match_ExclusiveGateway_SequenceFlow_Process_Task();
+	EOperation getT2SAfterChoiceDef__IsAppropriate_FWD__Match_ExclusiveGateway_SequenceFlow_Process_Task();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#perform_FWD(TGGRuntime.IsApplicableMatch) <em>Perform FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#perform_FWD(TGGRuntime.IsApplicableMatch) <em>Perform FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Perform FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#perform_FWD(TGGRuntime.IsApplicableMatch)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#perform_FWD(TGGRuntime.IsApplicableMatch)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__Perform_FWD__IsApplicableMatch();
+	EOperation getT2SAfterChoiceDef__Perform_FWD__IsApplicableMatch();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isApplicable_FWD(TGGRuntime.Match) <em>Is Applicable FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isApplicable_FWD(TGGRuntime.Match) <em>Is Applicable FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isApplicable_FWD(TGGRuntime.Match)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isApplicable_FWD(TGGRuntime.Match)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__IsApplicable_FWD__Match();
+	EOperation getT2SAfterChoiceDef__IsApplicable_FWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task) <em>Register Objects To Match FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task) <em>Register Objects To Match FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Register Objects To Match FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__RegisterObjectsToMatch_FWD__Match_ExclusiveGateway_SequenceFlow_Process_Task();
+	EOperation getT2SAfterChoiceDef__RegisterObjectsToMatch_FWD__Match_ExclusiveGateway_SequenceFlow_Process_Task();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task) <em>Is Appropriate solve Csp FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task) <em>Is Appropriate solve Csp FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate solve Csp FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__IsAppropriate_solveCsp_FWD__Match_ExclusiveGateway_SequenceFlow_Process_Task();
+	EOperation getT2SAfterChoiceDef__IsAppropriate_solveCsp_FWD__Match_ExclusiveGateway_SequenceFlow_Process_Task();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate check Csp FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__IsAppropriate_checkCsp_FWD__CSP();
+	EOperation getT2SAfterChoiceDef__IsAppropriate_checkCsp_FWD__CSP();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.ExclusiveGateway, de.abilov.useCase.ChoiceStep, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.useCase.UseCase, de.abilov.tgg.bpmn2useCase.P2UC, de.abilov.useCase.Flow, de.abilov.bpmn.Task) <em>Is Applicable solve Csp FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.useCase.Flow, de.abilov.bpmn.ExclusiveGateway, de.abilov.useCase.ChoiceStep, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task) <em>Is Applicable solve Csp FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable solve Csp FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.ExclusiveGateway, de.abilov.useCase.ChoiceStep, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.useCase.UseCase, de.abilov.tgg.bpmn2useCase.P2UC, de.abilov.useCase.Flow, de.abilov.bpmn.Task)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.useCase.Flow, de.abilov.bpmn.ExclusiveGateway, de.abilov.useCase.ChoiceStep, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__IsApplicable_solveCsp_FWD__IsApplicableMatch_ExclusiveGateway_ChoiceStep_GW2S_SequenceFlow_Process_UseCase_P2UC_Flow_Task();
+	EOperation getT2SAfterChoiceDef__IsApplicable_solveCsp_FWD__IsApplicableMatch_Flow_ExclusiveGateway_ChoiceStep_GW2S_SequenceFlow_Process_Task();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable check Csp FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__IsApplicable_checkCsp_FWD__CSP();
+	EOperation getT2SAfterChoiceDef__IsApplicable_checkCsp_FWD__CSP();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Register Objects FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
+	EOperation getT2SAfterChoiceDef__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#checkTypes_FWD(TGGRuntime.Match) <em>Check Types FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#checkTypes_FWD(TGGRuntime.Match) <em>Check Types FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Check Types FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#checkTypes_FWD(TGGRuntime.Match)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#checkTypes_FWD(TGGRuntime.Match)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__CheckTypes_FWD__Match();
+	EOperation getT2SAfterChoiceDef__CheckTypes_FWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.ChoiceStep, de.abilov.useCase.NormalStep, de.abilov.useCase.AlternativeFlow, de.abilov.useCase.UseCase, de.abilov.useCase.StepAlternative, de.abilov.useCase.Flow) <em>Is Appropriate BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep) <em>Is Appropriate BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.ChoiceStep, de.abilov.useCase.NormalStep, de.abilov.useCase.AlternativeFlow, de.abilov.useCase.UseCase, de.abilov.useCase.StepAlternative, de.abilov.useCase.Flow)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__IsAppropriate_BWD__Match_ChoiceStep_NormalStep_AlternativeFlow_UseCase_StepAlternative_Flow();
+	EOperation getT2SAfterChoiceDef__IsAppropriate_BWD__Match_NormalStep_Flow_ChoiceStep();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#perform_BWD(TGGRuntime.IsApplicableMatch) <em>Perform BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#perform_BWD(TGGRuntime.IsApplicableMatch) <em>Perform BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Perform BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#perform_BWD(TGGRuntime.IsApplicableMatch)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#perform_BWD(TGGRuntime.IsApplicableMatch)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__Perform_BWD__IsApplicableMatch();
+	EOperation getT2SAfterChoiceDef__Perform_BWD__IsApplicableMatch();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isApplicable_BWD(TGGRuntime.Match) <em>Is Applicable BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isApplicable_BWD(TGGRuntime.Match) <em>Is Applicable BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isApplicable_BWD(TGGRuntime.Match)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isApplicable_BWD(TGGRuntime.Match)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__IsApplicable_BWD__Match();
+	EOperation getT2SAfterChoiceDef__IsApplicable_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.ChoiceStep, de.abilov.useCase.NormalStep, de.abilov.useCase.AlternativeFlow, de.abilov.useCase.UseCase, de.abilov.useCase.StepAlternative, de.abilov.useCase.Flow) <em>Register Objects To Match BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep) <em>Register Objects To Match BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Register Objects To Match BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.ChoiceStep, de.abilov.useCase.NormalStep, de.abilov.useCase.AlternativeFlow, de.abilov.useCase.UseCase, de.abilov.useCase.StepAlternative, de.abilov.useCase.Flow)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__RegisterObjectsToMatch_BWD__Match_ChoiceStep_NormalStep_AlternativeFlow_UseCase_StepAlternative_Flow();
+	EOperation getT2SAfterChoiceDef__RegisterObjectsToMatch_BWD__Match_NormalStep_Flow_ChoiceStep();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.ChoiceStep, de.abilov.useCase.NormalStep, de.abilov.useCase.AlternativeFlow, de.abilov.useCase.UseCase, de.abilov.useCase.StepAlternative, de.abilov.useCase.Flow) <em>Is Appropriate solve Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep) <em>Is Appropriate solve Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate solve Csp BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.ChoiceStep, de.abilov.useCase.NormalStep, de.abilov.useCase.AlternativeFlow, de.abilov.useCase.UseCase, de.abilov.useCase.StepAlternative, de.abilov.useCase.Flow)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__IsAppropriate_solveCsp_BWD__Match_ChoiceStep_NormalStep_AlternativeFlow_UseCase_StepAlternative_Flow();
+	EOperation getT2SAfterChoiceDef__IsAppropriate_solveCsp_BWD__Match_NormalStep_Flow_ChoiceStep();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate check Csp BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__IsAppropriate_checkCsp_BWD__CSP();
+	EOperation getT2SAfterChoiceDef__IsAppropriate_checkCsp_BWD__CSP();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.ExclusiveGateway, de.abilov.useCase.ChoiceStep, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.useCase.NormalStep, de.abilov.useCase.AlternativeFlow, de.abilov.bpmn.Process, de.abilov.useCase.UseCase, de.abilov.tgg.bpmn2useCase.P2UC, de.abilov.useCase.StepAlternative, de.abilov.useCase.Flow) <em>Is Applicable solve Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.bpmn.ExclusiveGateway, de.abilov.useCase.ChoiceStep, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.bpmn.Process) <em>Is Applicable solve Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable solve Csp BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.ExclusiveGateway, de.abilov.useCase.ChoiceStep, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.useCase.NormalStep, de.abilov.useCase.AlternativeFlow, de.abilov.bpmn.Process, de.abilov.useCase.UseCase, de.abilov.tgg.bpmn2useCase.P2UC, de.abilov.useCase.StepAlternative, de.abilov.useCase.Flow)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.bpmn.ExclusiveGateway, de.abilov.useCase.ChoiceStep, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.bpmn.Process)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__IsApplicable_solveCsp_BWD__IsApplicableMatch_ExclusiveGateway_ChoiceStep_GW2S_NormalStep_AlternativeFlow_Process_UseCase_P2UC_StepAlternative_Flow();
+	EOperation getT2SAfterChoiceDef__IsApplicable_solveCsp_BWD__IsApplicableMatch_NormalStep_Flow_ExclusiveGateway_ChoiceStep_GW2S_Process();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable check Csp BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__IsApplicable_checkCsp_BWD__CSP();
+	EOperation getT2SAfterChoiceDef__IsApplicable_checkCsp_BWD__CSP();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Register Objects BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
+	EOperation getT2SAfterChoiceDef__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#checkTypes_BWD(TGGRuntime.Match) <em>Check Types BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#checkTypes_BWD(TGGRuntime.Match) <em>Check Types BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Check Types BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#checkTypes_BWD(TGGRuntime.Match)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#checkTypes_BWD(TGGRuntime.Match)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__CheckTypes_BWD__Match();
+	EOperation getT2SAfterChoiceDef__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_FWD_EMoflonEdge_885(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 885</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_BWD_EMoflonEdge_148(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 148</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 885</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_FWD_EMoflonEdge_885(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 148</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_BWD_EMoflonEdge_148(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__IsAppropriate_FWD_EMoflonEdge_885__EMoflonEdge();
+	EOperation getT2SAfterChoiceDef__IsAppropriate_BWD_EMoflonEdge_148__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_FWD_EMoflonEdge_886(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 886</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_490(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 490</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 886</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_FWD_EMoflonEdge_886(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 490</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_490(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__IsAppropriate_FWD_EMoflonEdge_886__EMoflonEdge();
+	EOperation getT2SAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_490__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_BWD_EMoflonEdge_270(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 270</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_491(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 491</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 270</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_BWD_EMoflonEdge_270(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 491</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_491(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__IsAppropriate_BWD_EMoflonEdge_270__EMoflonEdge();
+	EOperation getT2SAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_491__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_BWD_EMoflonEdge_271(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 271</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_492(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 492</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 271</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_BWD_EMoflonEdge_271(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 492</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_492(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__IsAppropriate_BWD_EMoflonEdge_271__EMoflonEdge();
+	EOperation getT2SAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_492__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_FWD_EMoflonEdge_887(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 887</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_BWD_EMoflonEdge_149(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 149</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 887</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_FWD_EMoflonEdge_887(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 149</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_BWD_EMoflonEdge_149(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__IsAppropriate_FWD_EMoflonEdge_887__EMoflonEdge();
+	EOperation getT2SAfterChoiceDef__IsAppropriate_BWD_EMoflonEdge_149__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_BWD_EMoflonEdge_272(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 272</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_493(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 493</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 272</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_BWD_EMoflonEdge_272(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 493</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_493(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__IsAppropriate_BWD_EMoflonEdge_272__EMoflonEdge();
+	EOperation getT2SAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_493__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_BWD_EMoflonEdge_273(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 273</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_494(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 494</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 273</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_BWD_EMoflonEdge_273(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 494</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_494(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__IsAppropriate_BWD_EMoflonEdge_273__EMoflonEdge();
+	EOperation getT2SAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_494__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_FWD_EMoflonEdge_888(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 888</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_495(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 495</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 888</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_FWD_EMoflonEdge_888(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 495</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_495(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__IsAppropriate_FWD_EMoflonEdge_888__EMoflonEdge();
+	EOperation getT2SAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_495__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_FWD_EMoflonEdge_889(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 889</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_496(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 496</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 889</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_FWD_EMoflonEdge_889(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 496</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_496(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__IsAppropriate_FWD_EMoflonEdge_889__EMoflonEdge();
+	EOperation getT2SAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_496__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_FWD_EMoflonEdge_890(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 890</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 890</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#isAppropriate_FWD_EMoflonEdge_890(TGGRuntime.EMoflonEdge)
-	 * @generated
-	 */
-	EOperation getTask2StepAfterChoice__IsAppropriate_FWD_EMoflonEdge_890__EMoflonEdge();
-
-	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Check Attributes FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#checkAttributes_FWD(TGGRuntime.TripleMatch)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#checkAttributes_FWD(TGGRuntime.TripleMatch)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__CheckAttributes_FWD__TripleMatch();
+	EOperation getT2SAfterChoiceDef__CheckAttributes_FWD__TripleMatch();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#checkAttributes_BWD(TGGRuntime.TripleMatch) <em>Check Attributes BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#checkAttributes_BWD(TGGRuntime.TripleMatch) <em>Check Attributes BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Check Attributes BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterChoice#checkAttributes_BWD(TGGRuntime.TripleMatch)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoiceDef#checkAttributes_BWD(TGGRuntime.TripleMatch)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterChoice__CheckAttributes_BWD__TripleMatch();
+	EOperation getT2SAfterChoiceDef__CheckAttributes_BWD__TripleMatch();
+
+	/**
+	 * Returns the meta object for class '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice <em>T2S After Choice</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>T2S After Choice</em>'.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice
+	 * @generated
+	 */
+	EClass getT2SAfterChoice();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task) <em>Is Appropriate FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__IsAppropriate_FWD__Match_ExclusiveGateway_SequenceFlow_Process_Task();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#perform_FWD(TGGRuntime.IsApplicableMatch) <em>Perform FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Perform FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#perform_FWD(TGGRuntime.IsApplicableMatch)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__Perform_FWD__IsApplicableMatch();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isApplicable_FWD(TGGRuntime.Match) <em>Is Applicable FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Applicable FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isApplicable_FWD(TGGRuntime.Match)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__IsApplicable_FWD__Match();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task) <em>Register Objects To Match FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Register Objects To Match FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__RegisterObjectsToMatch_FWD__Match_ExclusiveGateway_SequenceFlow_Process_Task();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task) <em>Is Appropriate solve Csp FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate solve Csp FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.bpmn.Task)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__IsAppropriate_solveCsp_FWD__Match_ExclusiveGateway_SequenceFlow_Process_Task();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate check Csp FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__IsAppropriate_checkCsp_FWD__CSP();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.ExclusiveGateway, de.abilov.useCase.ChoiceStep, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.useCase.UseCase, de.abilov.tgg.bpmn2useCase.P2UC, de.abilov.useCase.Flow, de.abilov.bpmn.Task) <em>Is Applicable solve Csp FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Applicable solve Csp FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.ExclusiveGateway, de.abilov.useCase.ChoiceStep, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Process, de.abilov.useCase.UseCase, de.abilov.tgg.bpmn2useCase.P2UC, de.abilov.useCase.Flow, de.abilov.bpmn.Task)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__IsApplicable_solveCsp_FWD__IsApplicableMatch_ExclusiveGateway_ChoiceStep_GW2S_SequenceFlow_Process_UseCase_P2UC_Flow_Task();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Applicable check Csp FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__IsApplicable_checkCsp_FWD__CSP();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Register Objects FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#checkTypes_FWD(TGGRuntime.Match) <em>Check Types FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Check Types FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#checkTypes_FWD(TGGRuntime.Match)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__CheckTypes_FWD__Match();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.ChoiceStep, de.abilov.useCase.NormalStep, de.abilov.useCase.AlternativeFlow, de.abilov.useCase.UseCase, de.abilov.useCase.StepAlternative, de.abilov.useCase.Flow) <em>Is Appropriate BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.ChoiceStep, de.abilov.useCase.NormalStep, de.abilov.useCase.AlternativeFlow, de.abilov.useCase.UseCase, de.abilov.useCase.StepAlternative, de.abilov.useCase.Flow)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__IsAppropriate_BWD__Match_ChoiceStep_NormalStep_AlternativeFlow_UseCase_StepAlternative_Flow();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#perform_BWD(TGGRuntime.IsApplicableMatch) <em>Perform BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Perform BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#perform_BWD(TGGRuntime.IsApplicableMatch)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__Perform_BWD__IsApplicableMatch();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isApplicable_BWD(TGGRuntime.Match) <em>Is Applicable BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Applicable BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isApplicable_BWD(TGGRuntime.Match)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__IsApplicable_BWD__Match();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.ChoiceStep, de.abilov.useCase.NormalStep, de.abilov.useCase.AlternativeFlow, de.abilov.useCase.UseCase, de.abilov.useCase.StepAlternative, de.abilov.useCase.Flow) <em>Register Objects To Match BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Register Objects To Match BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.ChoiceStep, de.abilov.useCase.NormalStep, de.abilov.useCase.AlternativeFlow, de.abilov.useCase.UseCase, de.abilov.useCase.StepAlternative, de.abilov.useCase.Flow)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__RegisterObjectsToMatch_BWD__Match_ChoiceStep_NormalStep_AlternativeFlow_UseCase_StepAlternative_Flow();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.ChoiceStep, de.abilov.useCase.NormalStep, de.abilov.useCase.AlternativeFlow, de.abilov.useCase.UseCase, de.abilov.useCase.StepAlternative, de.abilov.useCase.Flow) <em>Is Appropriate solve Csp BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate solve Csp BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.ChoiceStep, de.abilov.useCase.NormalStep, de.abilov.useCase.AlternativeFlow, de.abilov.useCase.UseCase, de.abilov.useCase.StepAlternative, de.abilov.useCase.Flow)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__IsAppropriate_solveCsp_BWD__Match_ChoiceStep_NormalStep_AlternativeFlow_UseCase_StepAlternative_Flow();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate check Csp BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__IsAppropriate_checkCsp_BWD__CSP();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.ExclusiveGateway, de.abilov.useCase.ChoiceStep, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.useCase.NormalStep, de.abilov.useCase.AlternativeFlow, de.abilov.bpmn.Process, de.abilov.useCase.UseCase, de.abilov.tgg.bpmn2useCase.P2UC, de.abilov.useCase.StepAlternative, de.abilov.useCase.Flow) <em>Is Applicable solve Csp BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Applicable solve Csp BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.ExclusiveGateway, de.abilov.useCase.ChoiceStep, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.useCase.NormalStep, de.abilov.useCase.AlternativeFlow, de.abilov.bpmn.Process, de.abilov.useCase.UseCase, de.abilov.tgg.bpmn2useCase.P2UC, de.abilov.useCase.StepAlternative, de.abilov.useCase.Flow)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__IsApplicable_solveCsp_BWD__IsApplicableMatch_ExclusiveGateway_ChoiceStep_GW2S_NormalStep_AlternativeFlow_Process_UseCase_P2UC_StepAlternative_Flow();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Applicable check Csp BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__IsApplicable_checkCsp_BWD__CSP();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Register Objects BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#checkTypes_BWD(TGGRuntime.Match) <em>Check Types BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Check Types BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#checkTypes_BWD(TGGRuntime.Match)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__CheckTypes_BWD__Match();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_FWD_EMoflonEdge_497(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 497</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 497</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_FWD_EMoflonEdge_497(TGGRuntime.EMoflonEdge)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__IsAppropriate_FWD_EMoflonEdge_497__EMoflonEdge();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_FWD_EMoflonEdge_498(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 498</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 498</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_FWD_EMoflonEdge_498(TGGRuntime.EMoflonEdge)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__IsAppropriate_FWD_EMoflonEdge_498__EMoflonEdge();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_BWD_EMoflonEdge_150(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 150</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 150</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_BWD_EMoflonEdge_150(TGGRuntime.EMoflonEdge)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__IsAppropriate_BWD_EMoflonEdge_150__EMoflonEdge();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_BWD_EMoflonEdge_151(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 151</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 151</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_BWD_EMoflonEdge_151(TGGRuntime.EMoflonEdge)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__IsAppropriate_BWD_EMoflonEdge_151__EMoflonEdge();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_FWD_EMoflonEdge_499(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 499</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 499</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_FWD_EMoflonEdge_499(TGGRuntime.EMoflonEdge)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__IsAppropriate_FWD_EMoflonEdge_499__EMoflonEdge();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_BWD_EMoflonEdge_152(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 152</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 152</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_BWD_EMoflonEdge_152(TGGRuntime.EMoflonEdge)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__IsAppropriate_BWD_EMoflonEdge_152__EMoflonEdge();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_BWD_EMoflonEdge_153(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 153</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 153</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_BWD_EMoflonEdge_153(TGGRuntime.EMoflonEdge)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__IsAppropriate_BWD_EMoflonEdge_153__EMoflonEdge();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_FWD_EMoflonEdge_500(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 500</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 500</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_FWD_EMoflonEdge_500(TGGRuntime.EMoflonEdge)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__IsAppropriate_FWD_EMoflonEdge_500__EMoflonEdge();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_FWD_EMoflonEdge_501(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 501</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 501</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_FWD_EMoflonEdge_501(TGGRuntime.EMoflonEdge)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__IsAppropriate_FWD_EMoflonEdge_501__EMoflonEdge();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_FWD_EMoflonEdge_502(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 502</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 502</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#isAppropriate_FWD_EMoflonEdge_502(TGGRuntime.EMoflonEdge)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__IsAppropriate_FWD_EMoflonEdge_502__EMoflonEdge();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Check Attributes FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#checkAttributes_FWD(TGGRuntime.TripleMatch)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__CheckAttributes_FWD__TripleMatch();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#checkAttributes_BWD(TGGRuntime.TripleMatch) <em>Check Attributes BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Check Attributes BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterChoice#checkAttributes_BWD(TGGRuntime.TripleMatch)
+	 * @generated
+	 */
+	EOperation getT2SAfterChoice__CheckAttributes_BWD__TripleMatch();
 
 	/**
 	 * Returns the meta object for class '{@link de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow <em>Empty Defaul Flow</em>}'.
@@ -14969,74 +14980,74 @@ public interface RulesPackage extends EPackage {
 	EOperation getEmptyDefaulFlow__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow#isAppropriate_FWD_EMoflonEdge_891(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 891</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow#isAppropriate_FWD_EMoflonEdge_503(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 503</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 891</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow#isAppropriate_FWD_EMoflonEdge_891(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 503</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow#isAppropriate_FWD_EMoflonEdge_503(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getEmptyDefaulFlow__IsAppropriate_FWD_EMoflonEdge_891__EMoflonEdge();
+	EOperation getEmptyDefaulFlow__IsAppropriate_FWD_EMoflonEdge_503__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow#isAppropriate_FWD_EMoflonEdge_892(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 892</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow#isAppropriate_FWD_EMoflonEdge_504(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 504</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 892</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow#isAppropriate_FWD_EMoflonEdge_892(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 504</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow#isAppropriate_FWD_EMoflonEdge_504(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getEmptyDefaulFlow__IsAppropriate_FWD_EMoflonEdge_892__EMoflonEdge();
+	EOperation getEmptyDefaulFlow__IsAppropriate_FWD_EMoflonEdge_504__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow#isAppropriate_FWD_EMoflonEdge_893(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 893</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow#isAppropriate_FWD_EMoflonEdge_505(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 505</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 893</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow#isAppropriate_FWD_EMoflonEdge_893(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 505</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow#isAppropriate_FWD_EMoflonEdge_505(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getEmptyDefaulFlow__IsAppropriate_FWD_EMoflonEdge_893__EMoflonEdge();
+	EOperation getEmptyDefaulFlow__IsAppropriate_FWD_EMoflonEdge_505__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow#isAppropriate_BWD_EMoflonEdge_274(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 274</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow#isAppropriate_BWD_EMoflonEdge_154(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 154</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 274</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow#isAppropriate_BWD_EMoflonEdge_274(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 154</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow#isAppropriate_BWD_EMoflonEdge_154(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getEmptyDefaulFlow__IsAppropriate_BWD_EMoflonEdge_274__EMoflonEdge();
+	EOperation getEmptyDefaulFlow__IsAppropriate_BWD_EMoflonEdge_154__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow#isAppropriate_FWD_EMoflonEdge_894(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 894</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow#isAppropriate_FWD_EMoflonEdge_506(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 506</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 894</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow#isAppropriate_FWD_EMoflonEdge_894(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 506</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow#isAppropriate_FWD_EMoflonEdge_506(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getEmptyDefaulFlow__IsAppropriate_FWD_EMoflonEdge_894__EMoflonEdge();
+	EOperation getEmptyDefaulFlow__IsAppropriate_FWD_EMoflonEdge_506__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow#isAppropriate_FWD_EMoflonEdge_895(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 895</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow#isAppropriate_FWD_EMoflonEdge_507(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 507</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 895</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow#isAppropriate_FWD_EMoflonEdge_895(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 507</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow#isAppropriate_FWD_EMoflonEdge_507(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getEmptyDefaulFlow__IsAppropriate_FWD_EMoflonEdge_895__EMoflonEdge();
+	EOperation getEmptyDefaulFlow__IsAppropriate_FWD_EMoflonEdge_507__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow#isAppropriate_FWD_EMoflonEdge_896(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 896</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow#isAppropriate_FWD_EMoflonEdge_508(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 508</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 896</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow#isAppropriate_FWD_EMoflonEdge_896(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 508</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow#isAppropriate_FWD_EMoflonEdge_508(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getEmptyDefaulFlow__IsAppropriate_FWD_EMoflonEdge_896__EMoflonEdge();
+	EOperation getEmptyDefaulFlow__IsAppropriate_FWD_EMoflonEdge_508__EMoflonEdge();
 
 	/**
 	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.EmptyDefaulFlow#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
@@ -15269,64 +15280,64 @@ public interface RulesPackage extends EPackage {
 	EOperation getLastStepInDefaultFlow__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInDefaultFlow#isAppropriate_BWD_EMoflonEdge_275(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 275</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInDefaultFlow#isAppropriate_BWD_EMoflonEdge_155(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 155</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 275</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInDefaultFlow#isAppropriate_BWD_EMoflonEdge_275(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 155</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInDefaultFlow#isAppropriate_BWD_EMoflonEdge_155(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getLastStepInDefaultFlow__IsAppropriate_BWD_EMoflonEdge_275__EMoflonEdge();
+	EOperation getLastStepInDefaultFlow__IsAppropriate_BWD_EMoflonEdge_155__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInDefaultFlow#isAppropriate_FWD_EMoflonEdge_897(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 897</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInDefaultFlow#isAppropriate_FWD_EMoflonEdge_509(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 509</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 897</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInDefaultFlow#isAppropriate_FWD_EMoflonEdge_897(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 509</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInDefaultFlow#isAppropriate_FWD_EMoflonEdge_509(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getLastStepInDefaultFlow__IsAppropriate_FWD_EMoflonEdge_897__EMoflonEdge();
+	EOperation getLastStepInDefaultFlow__IsAppropriate_FWD_EMoflonEdge_509__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInDefaultFlow#isAppropriate_FWD_EMoflonEdge_898(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 898</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInDefaultFlow#isAppropriate_FWD_EMoflonEdge_510(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 510</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 898</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInDefaultFlow#isAppropriate_FWD_EMoflonEdge_898(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 510</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInDefaultFlow#isAppropriate_FWD_EMoflonEdge_510(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getLastStepInDefaultFlow__IsAppropriate_FWD_EMoflonEdge_898__EMoflonEdge();
+	EOperation getLastStepInDefaultFlow__IsAppropriate_FWD_EMoflonEdge_510__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInDefaultFlow#isAppropriate_FWD_EMoflonEdge_899(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 899</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInDefaultFlow#isAppropriate_FWD_EMoflonEdge_511(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 511</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 899</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInDefaultFlow#isAppropriate_FWD_EMoflonEdge_899(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 511</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInDefaultFlow#isAppropriate_FWD_EMoflonEdge_511(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getLastStepInDefaultFlow__IsAppropriate_FWD_EMoflonEdge_899__EMoflonEdge();
+	EOperation getLastStepInDefaultFlow__IsAppropriate_FWD_EMoflonEdge_511__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInDefaultFlow#isAppropriate_FWD_EMoflonEdge_900(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 900</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInDefaultFlow#isAppropriate_FWD_EMoflonEdge_512(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 512</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 900</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInDefaultFlow#isAppropriate_FWD_EMoflonEdge_900(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 512</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInDefaultFlow#isAppropriate_FWD_EMoflonEdge_512(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getLastStepInDefaultFlow__IsAppropriate_FWD_EMoflonEdge_900__EMoflonEdge();
+	EOperation getLastStepInDefaultFlow__IsAppropriate_FWD_EMoflonEdge_512__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInDefaultFlow#isAppropriate_FWD_EMoflonEdge_901(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 901</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInDefaultFlow#isAppropriate_FWD_EMoflonEdge_513(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 513</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 901</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInDefaultFlow#isAppropriate_FWD_EMoflonEdge_901(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 513</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInDefaultFlow#isAppropriate_FWD_EMoflonEdge_513(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getLastStepInDefaultFlow__IsAppropriate_FWD_EMoflonEdge_901__EMoflonEdge();
+	EOperation getLastStepInDefaultFlow__IsAppropriate_FWD_EMoflonEdge_513__EMoflonEdge();
 
 	/**
 	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInDefaultFlow#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
@@ -15559,104 +15570,104 @@ public interface RulesPackage extends EPackage {
 	EOperation getSplitAfterMerge__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_BWD_EMoflonEdge_276(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 276</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_BWD_EMoflonEdge_156(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 156</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 276</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_BWD_EMoflonEdge_276(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 156</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_BWD_EMoflonEdge_156(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterMerge__IsAppropriate_BWD_EMoflonEdge_276__EMoflonEdge();
+	EOperation getSplitAfterMerge__IsAppropriate_BWD_EMoflonEdge_156__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_BWD_EMoflonEdge_277(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 277</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_BWD_EMoflonEdge_157(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 157</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 277</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_BWD_EMoflonEdge_277(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 157</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_BWD_EMoflonEdge_157(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterMerge__IsAppropriate_BWD_EMoflonEdge_277__EMoflonEdge();
+	EOperation getSplitAfterMerge__IsAppropriate_BWD_EMoflonEdge_157__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_902(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 902</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_514(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 514</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 902</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_902(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 514</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_514(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterMerge__IsAppropriate_FWD_EMoflonEdge_902__EMoflonEdge();
+	EOperation getSplitAfterMerge__IsAppropriate_FWD_EMoflonEdge_514__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_903(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 903</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_515(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 515</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 903</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_903(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 515</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_515(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterMerge__IsAppropriate_FWD_EMoflonEdge_903__EMoflonEdge();
+	EOperation getSplitAfterMerge__IsAppropriate_FWD_EMoflonEdge_515__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_904(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 904</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_516(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 516</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 904</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_904(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 516</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_516(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterMerge__IsAppropriate_FWD_EMoflonEdge_904__EMoflonEdge();
+	EOperation getSplitAfterMerge__IsAppropriate_FWD_EMoflonEdge_516__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_905(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 905</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_517(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 517</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 905</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_905(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 517</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_517(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterMerge__IsAppropriate_FWD_EMoflonEdge_905__EMoflonEdge();
+	EOperation getSplitAfterMerge__IsAppropriate_FWD_EMoflonEdge_517__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_906(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 906</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_518(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 518</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 906</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_906(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 518</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_518(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterMerge__IsAppropriate_FWD_EMoflonEdge_906__EMoflonEdge();
+	EOperation getSplitAfterMerge__IsAppropriate_FWD_EMoflonEdge_518__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_907(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 907</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_519(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 519</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 907</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_907(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 519</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_519(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterMerge__IsAppropriate_FWD_EMoflonEdge_907__EMoflonEdge();
+	EOperation getSplitAfterMerge__IsAppropriate_FWD_EMoflonEdge_519__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_908(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 908</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_520(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 520</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 908</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_908(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 520</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_520(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterMerge__IsAppropriate_FWD_EMoflonEdge_908__EMoflonEdge();
+	EOperation getSplitAfterMerge__IsAppropriate_FWD_EMoflonEdge_520__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_909(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 909</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_521(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 521</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 909</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_909(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 521</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#isAppropriate_FWD_EMoflonEdge_521(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterMerge__IsAppropriate_FWD_EMoflonEdge_909__EMoflonEdge();
+	EOperation getSplitAfterMerge__IsAppropriate_FWD_EMoflonEdge_521__EMoflonEdge();
 
 	/**
 	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterMerge#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
@@ -15889,104 +15900,104 @@ public interface RulesPackage extends EPackage {
 	EOperation getChoiceAfterMerge__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_BWD_EMoflonEdge_278(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 278</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_BWD_EMoflonEdge_158(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 158</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 278</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_BWD_EMoflonEdge_278(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 158</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_BWD_EMoflonEdge_158(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterMerge__IsAppropriate_BWD_EMoflonEdge_278__EMoflonEdge();
+	EOperation getChoiceAfterMerge__IsAppropriate_BWD_EMoflonEdge_158__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_BWD_EMoflonEdge_279(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 279</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_BWD_EMoflonEdge_159(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 159</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 279</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_BWD_EMoflonEdge_279(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 159</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_BWD_EMoflonEdge_159(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterMerge__IsAppropriate_BWD_EMoflonEdge_279__EMoflonEdge();
+	EOperation getChoiceAfterMerge__IsAppropriate_BWD_EMoflonEdge_159__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_910(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 910</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_522(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 522</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 910</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_910(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 522</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_522(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterMerge__IsAppropriate_FWD_EMoflonEdge_910__EMoflonEdge();
+	EOperation getChoiceAfterMerge__IsAppropriate_FWD_EMoflonEdge_522__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_911(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 911</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_523(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 523</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 911</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_911(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 523</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_523(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterMerge__IsAppropriate_FWD_EMoflonEdge_911__EMoflonEdge();
+	EOperation getChoiceAfterMerge__IsAppropriate_FWD_EMoflonEdge_523__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_912(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 912</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_524(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 524</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 912</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_912(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 524</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_524(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterMerge__IsAppropriate_FWD_EMoflonEdge_912__EMoflonEdge();
+	EOperation getChoiceAfterMerge__IsAppropriate_FWD_EMoflonEdge_524__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_913(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 913</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_525(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 525</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 913</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_913(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 525</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_525(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterMerge__IsAppropriate_FWD_EMoflonEdge_913__EMoflonEdge();
+	EOperation getChoiceAfterMerge__IsAppropriate_FWD_EMoflonEdge_525__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_914(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 914</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_526(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 526</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 914</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_914(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 526</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_526(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterMerge__IsAppropriate_FWD_EMoflonEdge_914__EMoflonEdge();
+	EOperation getChoiceAfterMerge__IsAppropriate_FWD_EMoflonEdge_526__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_915(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 915</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_527(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 527</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 915</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_915(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 527</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_527(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterMerge__IsAppropriate_FWD_EMoflonEdge_915__EMoflonEdge();
+	EOperation getChoiceAfterMerge__IsAppropriate_FWD_EMoflonEdge_527__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_916(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 916</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_528(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 528</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 916</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_916(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 528</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_528(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterMerge__IsAppropriate_FWD_EMoflonEdge_916__EMoflonEdge();
+	EOperation getChoiceAfterMerge__IsAppropriate_FWD_EMoflonEdge_528__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_917(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 917</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_529(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 529</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 917</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_917(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 529</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#isAppropriate_FWD_EMoflonEdge_529(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterMerge__IsAppropriate_FWD_EMoflonEdge_917__EMoflonEdge();
+	EOperation getChoiceAfterMerge__IsAppropriate_FWD_EMoflonEdge_529__EMoflonEdge();
 
 	/**
 	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterMerge#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
@@ -16219,74 +16230,74 @@ public interface RulesPackage extends EPackage {
 	EOperation getLastStepInAltFlow__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInAltFlow#isAppropriate_BWD_EMoflonEdge_280(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 280</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInAltFlow#isAppropriate_BWD_EMoflonEdge_160(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 160</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 280</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInAltFlow#isAppropriate_BWD_EMoflonEdge_280(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 160</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInAltFlow#isAppropriate_BWD_EMoflonEdge_160(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getLastStepInAltFlow__IsAppropriate_BWD_EMoflonEdge_280__EMoflonEdge();
+	EOperation getLastStepInAltFlow__IsAppropriate_BWD_EMoflonEdge_160__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInAltFlow#isAppropriate_FWD_EMoflonEdge_918(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 918</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInAltFlow#isAppropriate_FWD_EMoflonEdge_530(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 530</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 918</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInAltFlow#isAppropriate_FWD_EMoflonEdge_918(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 530</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInAltFlow#isAppropriate_FWD_EMoflonEdge_530(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getLastStepInAltFlow__IsAppropriate_FWD_EMoflonEdge_918__EMoflonEdge();
+	EOperation getLastStepInAltFlow__IsAppropriate_FWD_EMoflonEdge_530__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInAltFlow#isAppropriate_FWD_EMoflonEdge_919(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 919</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInAltFlow#isAppropriate_FWD_EMoflonEdge_531(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 531</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 919</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInAltFlow#isAppropriate_FWD_EMoflonEdge_919(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 531</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInAltFlow#isAppropriate_FWD_EMoflonEdge_531(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getLastStepInAltFlow__IsAppropriate_FWD_EMoflonEdge_919__EMoflonEdge();
+	EOperation getLastStepInAltFlow__IsAppropriate_FWD_EMoflonEdge_531__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInAltFlow#isAppropriate_FWD_EMoflonEdge_920(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 920</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInAltFlow#isAppropriate_FWD_EMoflonEdge_532(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 532</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 920</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInAltFlow#isAppropriate_FWD_EMoflonEdge_920(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 532</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInAltFlow#isAppropriate_FWD_EMoflonEdge_532(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getLastStepInAltFlow__IsAppropriate_FWD_EMoflonEdge_920__EMoflonEdge();
+	EOperation getLastStepInAltFlow__IsAppropriate_FWD_EMoflonEdge_532__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInAltFlow#isAppropriate_FWD_EMoflonEdge_921(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 921</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInAltFlow#isAppropriate_FWD_EMoflonEdge_533(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 533</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 921</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInAltFlow#isAppropriate_FWD_EMoflonEdge_921(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 533</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInAltFlow#isAppropriate_FWD_EMoflonEdge_533(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getLastStepInAltFlow__IsAppropriate_FWD_EMoflonEdge_921__EMoflonEdge();
+	EOperation getLastStepInAltFlow__IsAppropriate_FWD_EMoflonEdge_533__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInAltFlow#isAppropriate_FWD_EMoflonEdge_922(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 922</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInAltFlow#isAppropriate_FWD_EMoflonEdge_534(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 534</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 922</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInAltFlow#isAppropriate_FWD_EMoflonEdge_922(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 534</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInAltFlow#isAppropriate_FWD_EMoflonEdge_534(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getLastStepInAltFlow__IsAppropriate_FWD_EMoflonEdge_922__EMoflonEdge();
+	EOperation getLastStepInAltFlow__IsAppropriate_FWD_EMoflonEdge_534__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInAltFlow#isAppropriate_BWD_EMoflonEdge_281(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 281</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInAltFlow#isAppropriate_BWD_EMoflonEdge_161(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 161</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 281</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInAltFlow#isAppropriate_BWD_EMoflonEdge_281(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 161</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.LastStepInAltFlow#isAppropriate_BWD_EMoflonEdge_161(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getLastStepInAltFlow__IsAppropriate_BWD_EMoflonEdge_281__EMoflonEdge();
+	EOperation getLastStepInAltFlow__IsAppropriate_BWD_EMoflonEdge_161__EMoflonEdge();
 
 	/**
 	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.LastStepInAltFlow#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
@@ -16519,114 +16530,114 @@ public interface RulesPackage extends EPackage {
 	EOperation getSplitAfterChoiceDef__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_923(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 923</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_535(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 535</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 923</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_923(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 535</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_535(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_923__EMoflonEdge();
+	EOperation getSplitAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_535__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_924(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 924</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_536(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 536</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 924</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_924(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 536</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_536(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_924__EMoflonEdge();
+	EOperation getSplitAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_536__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_925(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 925</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_537(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 537</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 925</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_925(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 537</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_537(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_925__EMoflonEdge();
+	EOperation getSplitAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_537__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_BWD_EMoflonEdge_282(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 282</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_BWD_EMoflonEdge_162(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 162</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 282</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_BWD_EMoflonEdge_282(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 162</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_BWD_EMoflonEdge_162(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterChoiceDef__IsAppropriate_BWD_EMoflonEdge_282__EMoflonEdge();
+	EOperation getSplitAfterChoiceDef__IsAppropriate_BWD_EMoflonEdge_162__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_BWD_EMoflonEdge_283(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 283</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_BWD_EMoflonEdge_163(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 163</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 283</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_BWD_EMoflonEdge_283(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 163</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_BWD_EMoflonEdge_163(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterChoiceDef__IsAppropriate_BWD_EMoflonEdge_283__EMoflonEdge();
+	EOperation getSplitAfterChoiceDef__IsAppropriate_BWD_EMoflonEdge_163__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_926(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 926</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_538(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 538</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 926</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_926(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 538</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_538(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_926__EMoflonEdge();
+	EOperation getSplitAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_538__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_927(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 927</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_539(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 539</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 927</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_927(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 539</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_539(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_927__EMoflonEdge();
+	EOperation getSplitAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_539__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_928(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 928</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_540(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 540</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 928</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_928(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 540</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_540(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_928__EMoflonEdge();
+	EOperation getSplitAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_540__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_929(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 929</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_541(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 541</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 929</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_929(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 541</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_541(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_929__EMoflonEdge();
+	EOperation getSplitAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_541__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_930(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 930</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_542(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 542</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 930</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_930(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 542</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_542(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_930__EMoflonEdge();
+	EOperation getSplitAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_542__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_931(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 931</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_543(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 543</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 931</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_931(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 543</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_543(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_931__EMoflonEdge();
+	EOperation getSplitAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_543__EMoflonEdge();
 
 	/**
 	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoiceDef#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
@@ -16859,124 +16870,124 @@ public interface RulesPackage extends EPackage {
 	EOperation getSplitAfterChoice__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_BWD_EMoflonEdge_284(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 284</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_BWD_EMoflonEdge_164(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 164</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 284</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_BWD_EMoflonEdge_284(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 164</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_BWD_EMoflonEdge_164(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterChoice__IsAppropriate_BWD_EMoflonEdge_284__EMoflonEdge();
+	EOperation getSplitAfterChoice__IsAppropriate_BWD_EMoflonEdge_164__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_932(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 932</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_544(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 544</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 932</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_932(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 544</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_544(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterChoice__IsAppropriate_FWD_EMoflonEdge_932__EMoflonEdge();
+	EOperation getSplitAfterChoice__IsAppropriate_FWD_EMoflonEdge_544__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_BWD_EMoflonEdge_285(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 285</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_BWD_EMoflonEdge_165(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 165</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 285</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_BWD_EMoflonEdge_285(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 165</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_BWD_EMoflonEdge_165(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterChoice__IsAppropriate_BWD_EMoflonEdge_285__EMoflonEdge();
+	EOperation getSplitAfterChoice__IsAppropriate_BWD_EMoflonEdge_165__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_933(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 933</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_545(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 545</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 933</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_933(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 545</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_545(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterChoice__IsAppropriate_FWD_EMoflonEdge_933__EMoflonEdge();
+	EOperation getSplitAfterChoice__IsAppropriate_FWD_EMoflonEdge_545__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_934(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 934</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_546(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 546</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 934</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_934(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 546</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_546(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterChoice__IsAppropriate_FWD_EMoflonEdge_934__EMoflonEdge();
+	EOperation getSplitAfterChoice__IsAppropriate_FWD_EMoflonEdge_546__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_BWD_EMoflonEdge_286(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 286</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_BWD_EMoflonEdge_166(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 166</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 286</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_BWD_EMoflonEdge_286(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 166</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_BWD_EMoflonEdge_166(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterChoice__IsAppropriate_BWD_EMoflonEdge_286__EMoflonEdge();
+	EOperation getSplitAfterChoice__IsAppropriate_BWD_EMoflonEdge_166__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_BWD_EMoflonEdge_287(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 287</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_BWD_EMoflonEdge_167(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 167</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 287</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_BWD_EMoflonEdge_287(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 167</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_BWD_EMoflonEdge_167(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterChoice__IsAppropriate_BWD_EMoflonEdge_287__EMoflonEdge();
+	EOperation getSplitAfterChoice__IsAppropriate_BWD_EMoflonEdge_167__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_935(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 935</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_547(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 547</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 935</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_935(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 547</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_547(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterChoice__IsAppropriate_FWD_EMoflonEdge_935__EMoflonEdge();
+	EOperation getSplitAfterChoice__IsAppropriate_FWD_EMoflonEdge_547__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_936(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 936</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_548(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 548</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 936</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_936(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 548</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_548(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterChoice__IsAppropriate_FWD_EMoflonEdge_936__EMoflonEdge();
+	EOperation getSplitAfterChoice__IsAppropriate_FWD_EMoflonEdge_548__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_937(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 937</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_549(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 549</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 937</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_937(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 549</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_549(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterChoice__IsAppropriate_FWD_EMoflonEdge_937__EMoflonEdge();
+	EOperation getSplitAfterChoice__IsAppropriate_FWD_EMoflonEdge_549__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_938(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 938</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_550(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 550</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 938</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_938(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 550</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_550(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterChoice__IsAppropriate_FWD_EMoflonEdge_938__EMoflonEdge();
+	EOperation getSplitAfterChoice__IsAppropriate_FWD_EMoflonEdge_550__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_939(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 939</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_551(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 551</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 939</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_939(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 551</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#isAppropriate_FWD_EMoflonEdge_551(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterChoice__IsAppropriate_FWD_EMoflonEdge_939__EMoflonEdge();
+	EOperation getSplitAfterChoice__IsAppropriate_FWD_EMoflonEdge_551__EMoflonEdge();
 
 	/**
 	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterChoice#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
@@ -17209,114 +17220,114 @@ public interface RulesPackage extends EPackage {
 	EOperation getChoiceAfterChoiceDef__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_940(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 940</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_552(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 552</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 940</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_940(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 552</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_552(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_940__EMoflonEdge();
+	EOperation getChoiceAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_552__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_941(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 941</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_553(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 553</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 941</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_941(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 553</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_553(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_941__EMoflonEdge();
+	EOperation getChoiceAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_553__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_942(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 942</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_554(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 554</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 942</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_942(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 554</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_554(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_942__EMoflonEdge();
+	EOperation getChoiceAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_554__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_BWD_EMoflonEdge_288(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 288</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_BWD_EMoflonEdge_168(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 168</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 288</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_BWD_EMoflonEdge_288(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 168</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_BWD_EMoflonEdge_168(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterChoiceDef__IsAppropriate_BWD_EMoflonEdge_288__EMoflonEdge();
+	EOperation getChoiceAfterChoiceDef__IsAppropriate_BWD_EMoflonEdge_168__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_BWD_EMoflonEdge_289(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 289</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_BWD_EMoflonEdge_169(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 169</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 289</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_BWD_EMoflonEdge_289(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 169</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_BWD_EMoflonEdge_169(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterChoiceDef__IsAppropriate_BWD_EMoflonEdge_289__EMoflonEdge();
+	EOperation getChoiceAfterChoiceDef__IsAppropriate_BWD_EMoflonEdge_169__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_943(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 943</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_555(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 555</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 943</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_943(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 555</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_555(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_943__EMoflonEdge();
+	EOperation getChoiceAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_555__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_944(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 944</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_556(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 556</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 944</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_944(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 556</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_556(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_944__EMoflonEdge();
+	EOperation getChoiceAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_556__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_945(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 945</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_557(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 557</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 945</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_945(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 557</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_557(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_945__EMoflonEdge();
+	EOperation getChoiceAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_557__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_946(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 946</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_558(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 558</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 946</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_946(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 558</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_558(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_946__EMoflonEdge();
+	EOperation getChoiceAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_558__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_947(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 947</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_559(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 559</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 947</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_947(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 559</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_559(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_947__EMoflonEdge();
+	EOperation getChoiceAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_559__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_948(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 948</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_560(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 560</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 948</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_948(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 560</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#isAppropriate_FWD_EMoflonEdge_560(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_948__EMoflonEdge();
+	EOperation getChoiceAfterChoiceDef__IsAppropriate_FWD_EMoflonEdge_560__EMoflonEdge();
 
 	/**
 	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoiceDef#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
@@ -17549,124 +17560,124 @@ public interface RulesPackage extends EPackage {
 	EOperation getChoiceAfterChoice__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_BWD_EMoflonEdge_290(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 290</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_BWD_EMoflonEdge_170(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 170</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 290</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_BWD_EMoflonEdge_290(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 170</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_BWD_EMoflonEdge_170(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterChoice__IsAppropriate_BWD_EMoflonEdge_290__EMoflonEdge();
+	EOperation getChoiceAfterChoice__IsAppropriate_BWD_EMoflonEdge_170__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_949(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 949</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_561(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 561</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 949</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_949(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 561</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_561(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterChoice__IsAppropriate_FWD_EMoflonEdge_949__EMoflonEdge();
+	EOperation getChoiceAfterChoice__IsAppropriate_FWD_EMoflonEdge_561__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_BWD_EMoflonEdge_291(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 291</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_BWD_EMoflonEdge_171(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 171</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 291</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_BWD_EMoflonEdge_291(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 171</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_BWD_EMoflonEdge_171(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterChoice__IsAppropriate_BWD_EMoflonEdge_291__EMoflonEdge();
+	EOperation getChoiceAfterChoice__IsAppropriate_BWD_EMoflonEdge_171__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_BWD_EMoflonEdge_292(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 292</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_BWD_EMoflonEdge_172(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 172</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 292</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_BWD_EMoflonEdge_292(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 172</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_BWD_EMoflonEdge_172(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterChoice__IsAppropriate_BWD_EMoflonEdge_292__EMoflonEdge();
+	EOperation getChoiceAfterChoice__IsAppropriate_BWD_EMoflonEdge_172__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_950(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 950</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_562(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 562</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 950</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_950(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 562</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_562(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterChoice__IsAppropriate_FWD_EMoflonEdge_950__EMoflonEdge();
+	EOperation getChoiceAfterChoice__IsAppropriate_FWD_EMoflonEdge_562__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_951(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 951</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_563(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 563</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 951</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_951(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 563</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_563(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterChoice__IsAppropriate_FWD_EMoflonEdge_951__EMoflonEdge();
+	EOperation getChoiceAfterChoice__IsAppropriate_FWD_EMoflonEdge_563__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_BWD_EMoflonEdge_293(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 293</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_BWD_EMoflonEdge_173(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 173</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 293</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_BWD_EMoflonEdge_293(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 173</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_BWD_EMoflonEdge_173(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterChoice__IsAppropriate_BWD_EMoflonEdge_293__EMoflonEdge();
+	EOperation getChoiceAfterChoice__IsAppropriate_BWD_EMoflonEdge_173__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_952(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 952</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_564(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 564</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 952</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_952(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 564</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_564(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterChoice__IsAppropriate_FWD_EMoflonEdge_952__EMoflonEdge();
+	EOperation getChoiceAfterChoice__IsAppropriate_FWD_EMoflonEdge_564__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_953(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 953</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_565(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 565</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 953</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_953(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 565</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_565(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterChoice__IsAppropriate_FWD_EMoflonEdge_953__EMoflonEdge();
+	EOperation getChoiceAfterChoice__IsAppropriate_FWD_EMoflonEdge_565__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_954(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 954</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_566(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 566</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 954</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_954(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 566</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_566(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterChoice__IsAppropriate_FWD_EMoflonEdge_954__EMoflonEdge();
+	EOperation getChoiceAfterChoice__IsAppropriate_FWD_EMoflonEdge_566__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_955(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 955</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_567(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 567</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 955</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_955(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 567</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_567(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterChoice__IsAppropriate_FWD_EMoflonEdge_955__EMoflonEdge();
+	EOperation getChoiceAfterChoice__IsAppropriate_FWD_EMoflonEdge_567__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_956(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 956</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_568(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 568</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 956</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_956(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 568</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#isAppropriate_FWD_EMoflonEdge_568(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterChoice__IsAppropriate_FWD_EMoflonEdge_956__EMoflonEdge();
+	EOperation getChoiceAfterChoice__IsAppropriate_FWD_EMoflonEdge_568__EMoflonEdge();
 
 	/**
 	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterChoice#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
@@ -17899,84 +17910,84 @@ public interface RulesPackage extends EPackage {
 	EOperation getTerminationAfterMerge__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_BWD_EMoflonEdge_294(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 294</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_BWD_EMoflonEdge_174(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 174</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 294</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_BWD_EMoflonEdge_294(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 174</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_BWD_EMoflonEdge_174(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTerminationAfterMerge__IsAppropriate_BWD_EMoflonEdge_294__EMoflonEdge();
+	EOperation getTerminationAfterMerge__IsAppropriate_BWD_EMoflonEdge_174__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_BWD_EMoflonEdge_295(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 295</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_BWD_EMoflonEdge_175(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 175</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 295</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_BWD_EMoflonEdge_295(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 175</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_BWD_EMoflonEdge_175(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTerminationAfterMerge__IsAppropriate_BWD_EMoflonEdge_295__EMoflonEdge();
+	EOperation getTerminationAfterMerge__IsAppropriate_BWD_EMoflonEdge_175__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_FWD_EMoflonEdge_957(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 957</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_FWD_EMoflonEdge_569(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 569</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 957</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_FWD_EMoflonEdge_957(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 569</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_FWD_EMoflonEdge_569(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTerminationAfterMerge__IsAppropriate_FWD_EMoflonEdge_957__EMoflonEdge();
+	EOperation getTerminationAfterMerge__IsAppropriate_FWD_EMoflonEdge_569__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_FWD_EMoflonEdge_958(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 958</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_FWD_EMoflonEdge_570(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 570</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 958</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_FWD_EMoflonEdge_958(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 570</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_FWD_EMoflonEdge_570(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTerminationAfterMerge__IsAppropriate_FWD_EMoflonEdge_958__EMoflonEdge();
+	EOperation getTerminationAfterMerge__IsAppropriate_FWD_EMoflonEdge_570__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_FWD_EMoflonEdge_959(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 959</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_FWD_EMoflonEdge_571(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 571</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 959</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_FWD_EMoflonEdge_959(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 571</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_FWD_EMoflonEdge_571(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTerminationAfterMerge__IsAppropriate_FWD_EMoflonEdge_959__EMoflonEdge();
+	EOperation getTerminationAfterMerge__IsAppropriate_FWD_EMoflonEdge_571__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_FWD_EMoflonEdge_960(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 960</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_FWD_EMoflonEdge_572(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 572</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 960</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_FWD_EMoflonEdge_960(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 572</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_FWD_EMoflonEdge_572(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTerminationAfterMerge__IsAppropriate_FWD_EMoflonEdge_960__EMoflonEdge();
+	EOperation getTerminationAfterMerge__IsAppropriate_FWD_EMoflonEdge_572__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_FWD_EMoflonEdge_961(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 961</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_FWD_EMoflonEdge_573(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 573</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 961</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_FWD_EMoflonEdge_961(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 573</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_FWD_EMoflonEdge_573(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTerminationAfterMerge__IsAppropriate_FWD_EMoflonEdge_961__EMoflonEdge();
+	EOperation getTerminationAfterMerge__IsAppropriate_FWD_EMoflonEdge_573__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_FWD_EMoflonEdge_962(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 962</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_FWD_EMoflonEdge_574(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 574</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 962</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_FWD_EMoflonEdge_962(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 574</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#isAppropriate_FWD_EMoflonEdge_574(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTerminationAfterMerge__IsAppropriate_FWD_EMoflonEdge_962__EMoflonEdge();
+	EOperation getTerminationAfterMerge__IsAppropriate_FWD_EMoflonEdge_574__EMoflonEdge();
 
 	/**
 	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.TerminationAfterMerge#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
@@ -17999,314 +18010,314 @@ public interface RulesPackage extends EPackage {
 	EOperation getTerminationAfterMerge__CheckAttributes_BWD__TripleMatch();
 
 	/**
-	 * Returns the meta object for class '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef <em>Task2 Step After Empty Def</em>}'.
+	 * Returns the meta object for class '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef <em>T2S After Empty Def</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Task2 Step After Empty Def</em>'.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef
+	 * @return the meta object for class '<em>T2S After Empty Def</em>'.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef
 	 * @generated
 	 */
-	EClass getTask2StepAfterEmptyDef();
+	EClass getT2SAfterEmptyDef();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Is Appropriate FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Is Appropriate FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__IsAppropriate_FWD__Match_SequenceFlow_ExclusiveGateway_ExclusiveGateway_Process_SequenceFlow_Task();
+	EOperation getT2SAfterEmptyDef__IsAppropriate_FWD__Match_SequenceFlow_ExclusiveGateway_ExclusiveGateway_Process_SequenceFlow_Task();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#perform_FWD(TGGRuntime.IsApplicableMatch) <em>Perform FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#perform_FWD(TGGRuntime.IsApplicableMatch) <em>Perform FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Perform FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#perform_FWD(TGGRuntime.IsApplicableMatch)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#perform_FWD(TGGRuntime.IsApplicableMatch)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__Perform_FWD__IsApplicableMatch();
+	EOperation getT2SAfterEmptyDef__Perform_FWD__IsApplicableMatch();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isApplicable_FWD(TGGRuntime.Match) <em>Is Applicable FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isApplicable_FWD(TGGRuntime.Match) <em>Is Applicable FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isApplicable_FWD(TGGRuntime.Match)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isApplicable_FWD(TGGRuntime.Match)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__IsApplicable_FWD__Match();
+	EOperation getT2SAfterEmptyDef__IsApplicable_FWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Register Objects To Match FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Register Objects To Match FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Register Objects To Match FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__RegisterObjectsToMatch_FWD__Match_SequenceFlow_ExclusiveGateway_ExclusiveGateway_Process_SequenceFlow_Task();
+	EOperation getT2SAfterEmptyDef__RegisterObjectsToMatch_FWD__Match_SequenceFlow_ExclusiveGateway_ExclusiveGateway_Process_SequenceFlow_Task();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Is Appropriate solve Csp FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Is Appropriate solve Csp FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate solve Csp FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__IsAppropriate_solveCsp_FWD__Match_SequenceFlow_ExclusiveGateway_ExclusiveGateway_Process_SequenceFlow_Task();
+	EOperation getT2SAfterEmptyDef__IsAppropriate_solveCsp_FWD__Match_SequenceFlow_ExclusiveGateway_ExclusiveGateway_Process_SequenceFlow_Task();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate check Csp FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__IsAppropriate_checkCsp_FWD__CSP();
+	EOperation getT2SAfterEmptyDef__IsAppropriate_checkCsp_FWD__CSP();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.ExclusiveGateway, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Is Applicable solve Csp FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.ExclusiveGateway, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Is Applicable solve Csp FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable solve Csp FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.ExclusiveGateway, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.ExclusiveGateway, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__IsApplicable_solveCsp_FWD__IsApplicableMatch_SequenceFlow_ExclusiveGateway_GW2S_Flow_ChoiceStep_ExclusiveGateway_Process_SequenceFlow_Task();
+	EOperation getT2SAfterEmptyDef__IsApplicable_solveCsp_FWD__IsApplicableMatch_SequenceFlow_ExclusiveGateway_GW2S_Flow_ChoiceStep_ExclusiveGateway_Process_SequenceFlow_Task();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable check Csp FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__IsApplicable_checkCsp_FWD__CSP();
+	EOperation getT2SAfterEmptyDef__IsApplicable_checkCsp_FWD__CSP();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Register Objects FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
+	EOperation getT2SAfterEmptyDef__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#checkTypes_FWD(TGGRuntime.Match) <em>Check Types FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#checkTypes_FWD(TGGRuntime.Match) <em>Check Types FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Check Types FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#checkTypes_FWD(TGGRuntime.Match)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#checkTypes_FWD(TGGRuntime.Match)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__CheckTypes_FWD__Match();
+	EOperation getT2SAfterEmptyDef__CheckTypes_FWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep) <em>Is Appropriate BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep) <em>Is Appropriate BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__IsAppropriate_BWD__Match_NormalStep_Flow_ChoiceStep();
+	EOperation getT2SAfterEmptyDef__IsAppropriate_BWD__Match_NormalStep_Flow_ChoiceStep();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#perform_BWD(TGGRuntime.IsApplicableMatch) <em>Perform BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#perform_BWD(TGGRuntime.IsApplicableMatch) <em>Perform BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Perform BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#perform_BWD(TGGRuntime.IsApplicableMatch)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#perform_BWD(TGGRuntime.IsApplicableMatch)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__Perform_BWD__IsApplicableMatch();
+	EOperation getT2SAfterEmptyDef__Perform_BWD__IsApplicableMatch();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isApplicable_BWD(TGGRuntime.Match) <em>Is Applicable BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isApplicable_BWD(TGGRuntime.Match) <em>Is Applicable BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isApplicable_BWD(TGGRuntime.Match)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isApplicable_BWD(TGGRuntime.Match)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__IsApplicable_BWD__Match();
+	EOperation getT2SAfterEmptyDef__IsApplicable_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep) <em>Register Objects To Match BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep) <em>Register Objects To Match BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Register Objects To Match BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__RegisterObjectsToMatch_BWD__Match_NormalStep_Flow_ChoiceStep();
+	EOperation getT2SAfterEmptyDef__RegisterObjectsToMatch_BWD__Match_NormalStep_Flow_ChoiceStep();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep) <em>Is Appropriate solve Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep) <em>Is Appropriate solve Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate solve Csp BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__IsAppropriate_solveCsp_BWD__Match_NormalStep_Flow_ChoiceStep();
+	EOperation getT2SAfterEmptyDef__IsAppropriate_solveCsp_BWD__Match_NormalStep_Flow_ChoiceStep();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate check Csp BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__IsAppropriate_checkCsp_BWD__CSP();
+	EOperation getT2SAfterEmptyDef__IsAppropriate_checkCsp_BWD__CSP();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.ExclusiveGateway, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.Process) <em>Is Applicable solve Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.ExclusiveGateway, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.Process) <em>Is Applicable solve Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable solve Csp BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.ExclusiveGateway, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.Process)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.ExclusiveGateway, de.abilov.tgg.bpmn2useCase.GW2S, de.abilov.useCase.NormalStep, de.abilov.useCase.Flow, de.abilov.useCase.ChoiceStep, de.abilov.bpmn.ExclusiveGateway, de.abilov.bpmn.Process)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__IsApplicable_solveCsp_BWD__IsApplicableMatch_SequenceFlow_ExclusiveGateway_GW2S_NormalStep_Flow_ChoiceStep_ExclusiveGateway_Process();
+	EOperation getT2SAfterEmptyDef__IsApplicable_solveCsp_BWD__IsApplicableMatch_SequenceFlow_ExclusiveGateway_GW2S_NormalStep_Flow_ChoiceStep_ExclusiveGateway_Process();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable check Csp BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__IsApplicable_checkCsp_BWD__CSP();
+	EOperation getT2SAfterEmptyDef__IsApplicable_checkCsp_BWD__CSP();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Register Objects BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
+	EOperation getT2SAfterEmptyDef__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#checkTypes_BWD(TGGRuntime.Match) <em>Check Types BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#checkTypes_BWD(TGGRuntime.Match) <em>Check Types BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Check Types BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#checkTypes_BWD(TGGRuntime.Match)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#checkTypes_BWD(TGGRuntime.Match)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__CheckTypes_BWD__Match();
+	EOperation getT2SAfterEmptyDef__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isAppropriate_BWD_EMoflonEdge_296(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 296</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isAppropriate_BWD_EMoflonEdge_176(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 176</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 296</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isAppropriate_BWD_EMoflonEdge_296(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 176</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isAppropriate_BWD_EMoflonEdge_176(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__IsAppropriate_BWD_EMoflonEdge_296__EMoflonEdge();
+	EOperation getT2SAfterEmptyDef__IsAppropriate_BWD_EMoflonEdge_176__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isAppropriate_BWD_EMoflonEdge_297(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 297</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isAppropriate_BWD_EMoflonEdge_177(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 177</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 297</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isAppropriate_BWD_EMoflonEdge_297(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 177</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isAppropriate_BWD_EMoflonEdge_177(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__IsAppropriate_BWD_EMoflonEdge_297__EMoflonEdge();
+	EOperation getT2SAfterEmptyDef__IsAppropriate_BWD_EMoflonEdge_177__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_963(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 963</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_575(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 575</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 963</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_963(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 575</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_575(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_963__EMoflonEdge();
+	EOperation getT2SAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_575__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_964(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 964</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_576(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 576</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 964</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_964(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 576</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_576(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_964__EMoflonEdge();
+	EOperation getT2SAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_576__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_965(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 965</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_577(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 577</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 965</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_965(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 577</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_577(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_965__EMoflonEdge();
+	EOperation getT2SAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_577__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_966(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 966</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_578(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 578</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 966</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_966(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 578</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_578(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_966__EMoflonEdge();
+	EOperation getT2SAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_578__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_967(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 967</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_579(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 579</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 967</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_967(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 579</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_579(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_967__EMoflonEdge();
+	EOperation getT2SAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_579__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_968(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 968</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_580(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 580</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 968</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_968(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 580</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_580(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_968__EMoflonEdge();
+	EOperation getT2SAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_580__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Check Attributes FWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#checkAttributes_FWD(TGGRuntime.TripleMatch)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#checkAttributes_FWD(TGGRuntime.TripleMatch)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__CheckAttributes_FWD__TripleMatch();
+	EOperation getT2SAfterEmptyDef__CheckAttributes_FWD__TripleMatch();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#checkAttributes_BWD(TGGRuntime.TripleMatch) <em>Check Attributes BWD</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#checkAttributes_BWD(TGGRuntime.TripleMatch) <em>Check Attributes BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Check Attributes BWD</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.Task2StepAfterEmptyDef#checkAttributes_BWD(TGGRuntime.TripleMatch)
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterEmptyDef#checkAttributes_BWD(TGGRuntime.TripleMatch)
 	 * @generated
 	 */
-	EOperation getTask2StepAfterEmptyDef__CheckAttributes_BWD__TripleMatch();
+	EOperation getT2SAfterEmptyDef__CheckAttributes_BWD__TripleMatch();
 
 	/**
 	 * Returns the meta object for class '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef <em>Split After Empty Def</em>}'.
@@ -18519,104 +18530,104 @@ public interface RulesPackage extends EPackage {
 	EOperation getSplitAfterEmptyDef__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_BWD_EMoflonEdge_298(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 298</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_BWD_EMoflonEdge_178(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 178</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 298</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_BWD_EMoflonEdge_298(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 178</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_BWD_EMoflonEdge_178(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterEmptyDef__IsAppropriate_BWD_EMoflonEdge_298__EMoflonEdge();
+	EOperation getSplitAfterEmptyDef__IsAppropriate_BWD_EMoflonEdge_178__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_BWD_EMoflonEdge_299(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 299</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_BWD_EMoflonEdge_179(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 179</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 299</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_BWD_EMoflonEdge_299(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 179</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_BWD_EMoflonEdge_179(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterEmptyDef__IsAppropriate_BWD_EMoflonEdge_299__EMoflonEdge();
+	EOperation getSplitAfterEmptyDef__IsAppropriate_BWD_EMoflonEdge_179__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_969(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 969</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_581(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 581</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 969</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_969(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 581</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_581(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_969__EMoflonEdge();
+	EOperation getSplitAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_581__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_970(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 970</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_582(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 582</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 970</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_970(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 582</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_582(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_970__EMoflonEdge();
+	EOperation getSplitAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_582__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_971(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 971</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_583(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 583</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 971</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_971(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 583</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_583(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_971__EMoflonEdge();
+	EOperation getSplitAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_583__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_972(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 972</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_584(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 584</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 972</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_972(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 584</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_584(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_972__EMoflonEdge();
+	EOperation getSplitAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_584__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_973(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 973</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_585(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 585</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 973</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_973(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 585</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_585(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_973__EMoflonEdge();
+	EOperation getSplitAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_585__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_974(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 974</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_586(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 586</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 974</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_974(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 586</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_586(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_974__EMoflonEdge();
+	EOperation getSplitAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_586__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_975(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 975</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_587(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 587</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 975</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_975(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 587</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_587(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_975__EMoflonEdge();
+	EOperation getSplitAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_587__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_976(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 976</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_588(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 588</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 976</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_976(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 588</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_588(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSplitAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_976__EMoflonEdge();
+	EOperation getSplitAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_588__EMoflonEdge();
 
 	/**
 	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.SplitAfterEmptyDef#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
@@ -18849,104 +18860,104 @@ public interface RulesPackage extends EPackage {
 	EOperation getChoiceAfterEmptyDef__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_BWD_EMoflonEdge_300(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 300</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_BWD_EMoflonEdge_180(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 180</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 300</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_BWD_EMoflonEdge_300(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 180</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_BWD_EMoflonEdge_180(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterEmptyDef__IsAppropriate_BWD_EMoflonEdge_300__EMoflonEdge();
+	EOperation getChoiceAfterEmptyDef__IsAppropriate_BWD_EMoflonEdge_180__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_BWD_EMoflonEdge_301(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 301</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_BWD_EMoflonEdge_181(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 181</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 301</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_BWD_EMoflonEdge_301(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 181</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_BWD_EMoflonEdge_181(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterEmptyDef__IsAppropriate_BWD_EMoflonEdge_301__EMoflonEdge();
+	EOperation getChoiceAfterEmptyDef__IsAppropriate_BWD_EMoflonEdge_181__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_977(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 977</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_589(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 589</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 977</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_977(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 589</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_589(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_977__EMoflonEdge();
+	EOperation getChoiceAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_589__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_978(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 978</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_590(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 590</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 978</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_978(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 590</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_590(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_978__EMoflonEdge();
+	EOperation getChoiceAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_590__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_979(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 979</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_591(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 591</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 979</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_979(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 591</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_591(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_979__EMoflonEdge();
+	EOperation getChoiceAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_591__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_980(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 980</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_592(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 592</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 980</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_980(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 592</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_592(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_980__EMoflonEdge();
+	EOperation getChoiceAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_592__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_981(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 981</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_593(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 593</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 981</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_981(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 593</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_593(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_981__EMoflonEdge();
+	EOperation getChoiceAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_593__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_982(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 982</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_594(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 594</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 982</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_982(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 594</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_594(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_982__EMoflonEdge();
+	EOperation getChoiceAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_594__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_983(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 983</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_595(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 595</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 983</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_983(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 595</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_595(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_983__EMoflonEdge();
+	EOperation getChoiceAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_595__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_984(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 984</em>}' operation.
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_596(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 596</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 984</em>' operation.
-	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_984(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 596</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#isAppropriate_FWD_EMoflonEdge_596(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getChoiceAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_984__EMoflonEdge();
+	EOperation getChoiceAfterEmptyDef__IsAppropriate_FWD_EMoflonEdge_596__EMoflonEdge();
 
 	/**
 	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.ChoiceAfterEmptyDef#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
@@ -18967,6 +18978,626 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getChoiceAfterEmptyDef__CheckAttributes_BWD__TripleMatch();
+
+	/**
+	 * Returns the meta object for class '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask <em>T2S After Task</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>T2S After Task</em>'.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask
+	 * @generated
+	 */
+	EClass getT2SAfterTask();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.Task, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Is Appropriate FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.Task, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__IsAppropriate_FWD__Match_Task_Process_SequenceFlow_Task();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#perform_FWD(TGGRuntime.IsApplicableMatch) <em>Perform FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Perform FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#perform_FWD(TGGRuntime.IsApplicableMatch)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__Perform_FWD__IsApplicableMatch();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isApplicable_FWD(TGGRuntime.Match) <em>Is Applicable FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Applicable FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isApplicable_FWD(TGGRuntime.Match)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__IsApplicable_FWD__Match();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.Task, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Register Objects To Match FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Register Objects To Match FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.Task, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__RegisterObjectsToMatch_FWD__Match_Task_Process_SequenceFlow_Task();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.Task, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Is Appropriate solve Csp FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate solve Csp FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.Task, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__IsAppropriate_solveCsp_FWD__Match_Task_Process_SequenceFlow_Task();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate check Csp FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__IsAppropriate_checkCsp_FWD__CSP();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.Task, de.abilov.tgg.bpmn2useCase.FN2S, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Is Applicable solve Csp FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Applicable solve Csp FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.Task, de.abilov.tgg.bpmn2useCase.FN2S, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__IsApplicable_solveCsp_FWD__IsApplicableMatch_Task_FN2S_Flow_Step_Process_SequenceFlow_Task();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Applicable check Csp FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__IsApplicable_checkCsp_FWD__CSP();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Register Objects FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#checkTypes_FWD(TGGRuntime.Match) <em>Check Types FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Check Types FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#checkTypes_FWD(TGGRuntime.Match)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__CheckTypes_FWD__Match();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.useCase.NormalStep) <em>Is Appropriate BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.useCase.NormalStep)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__IsAppropriate_BWD__Match_Flow_Step_NormalStep();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#perform_BWD(TGGRuntime.IsApplicableMatch) <em>Perform BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Perform BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#perform_BWD(TGGRuntime.IsApplicableMatch)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__Perform_BWD__IsApplicableMatch();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isApplicable_BWD(TGGRuntime.Match) <em>Is Applicable BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Applicable BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isApplicable_BWD(TGGRuntime.Match)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__IsApplicable_BWD__Match();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.useCase.NormalStep) <em>Register Objects To Match BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Register Objects To Match BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.useCase.NormalStep)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__RegisterObjectsToMatch_BWD__Match_Flow_Step_NormalStep();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.useCase.NormalStep) <em>Is Appropriate solve Csp BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate solve Csp BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.useCase.NormalStep)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__IsAppropriate_solveCsp_BWD__Match_Flow_Step_NormalStep();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate check Csp BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__IsAppropriate_checkCsp_BWD__CSP();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.Task, de.abilov.tgg.bpmn2useCase.FN2S, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.useCase.NormalStep, de.abilov.bpmn.Process) <em>Is Applicable solve Csp BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Applicable solve Csp BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.Task, de.abilov.tgg.bpmn2useCase.FN2S, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.useCase.NormalStep, de.abilov.bpmn.Process)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__IsApplicable_solveCsp_BWD__IsApplicableMatch_Task_FN2S_Flow_Step_NormalStep_Process();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Applicable check Csp BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__IsApplicable_checkCsp_BWD__CSP();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Register Objects BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#checkTypes_BWD(TGGRuntime.Match) <em>Check Types BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Check Types BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#checkTypes_BWD(TGGRuntime.Match)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__CheckTypes_BWD__Match();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isAppropriate_BWD_EMoflonEdge_182(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 182</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 182</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isAppropriate_BWD_EMoflonEdge_182(TGGRuntime.EMoflonEdge)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__IsAppropriate_BWD_EMoflonEdge_182__EMoflonEdge();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isAppropriate_BWD_EMoflonEdge_183(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 183</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 183</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isAppropriate_BWD_EMoflonEdge_183(TGGRuntime.EMoflonEdge)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__IsAppropriate_BWD_EMoflonEdge_183__EMoflonEdge();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isAppropriate_FWD_EMoflonEdge_597(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 597</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 597</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isAppropriate_FWD_EMoflonEdge_597(TGGRuntime.EMoflonEdge)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__IsAppropriate_FWD_EMoflonEdge_597__EMoflonEdge();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isAppropriate_FWD_EMoflonEdge_598(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 598</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 598</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isAppropriate_FWD_EMoflonEdge_598(TGGRuntime.EMoflonEdge)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__IsAppropriate_FWD_EMoflonEdge_598__EMoflonEdge();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isAppropriate_FWD_EMoflonEdge_599(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 599</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 599</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isAppropriate_FWD_EMoflonEdge_599(TGGRuntime.EMoflonEdge)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__IsAppropriate_FWD_EMoflonEdge_599__EMoflonEdge();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isAppropriate_FWD_EMoflonEdge_600(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 600</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 600</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isAppropriate_FWD_EMoflonEdge_600(TGGRuntime.EMoflonEdge)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__IsAppropriate_FWD_EMoflonEdge_600__EMoflonEdge();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isAppropriate_FWD_EMoflonEdge_601(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 601</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 601</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isAppropriate_FWD_EMoflonEdge_601(TGGRuntime.EMoflonEdge)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__IsAppropriate_FWD_EMoflonEdge_601__EMoflonEdge();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isAppropriate_FWD_EMoflonEdge_602(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 602</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 602</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#isAppropriate_FWD_EMoflonEdge_602(TGGRuntime.EMoflonEdge)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__IsAppropriate_FWD_EMoflonEdge_602__EMoflonEdge();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Check Attributes FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#checkAttributes_FWD(TGGRuntime.TripleMatch)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__CheckAttributes_FWD__TripleMatch();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#checkAttributes_BWD(TGGRuntime.TripleMatch) <em>Check Attributes BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Check Attributes BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterTask#checkAttributes_BWD(TGGRuntime.TripleMatch)
+	 * @generated
+	 */
+	EOperation getT2SAfterTask__CheckAttributes_BWD__TripleMatch();
+
+	/**
+	 * Returns the meta object for class '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync <em>T2S After Sync</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>T2S After Sync</em>'.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync
+	 * @generated
+	 */
+	EClass getT2SAfterSync();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.ParallelGateway, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Is Appropriate FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isAppropriate_FWD(TGGRuntime.Match, de.abilov.bpmn.ParallelGateway, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__IsAppropriate_FWD__Match_ParallelGateway_Process_SequenceFlow_Task();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#perform_FWD(TGGRuntime.IsApplicableMatch) <em>Perform FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Perform FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#perform_FWD(TGGRuntime.IsApplicableMatch)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__Perform_FWD__IsApplicableMatch();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isApplicable_FWD(TGGRuntime.Match) <em>Is Applicable FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Applicable FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isApplicable_FWD(TGGRuntime.Match)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__IsApplicable_FWD__Match();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.ParallelGateway, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Register Objects To Match FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Register Objects To Match FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#registerObjectsToMatch_FWD(TGGRuntime.Match, de.abilov.bpmn.ParallelGateway, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__RegisterObjectsToMatch_FWD__Match_ParallelGateway_Process_SequenceFlow_Task();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.ParallelGateway, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Is Appropriate solve Csp FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate solve Csp FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isAppropriate_solveCsp_FWD(TGGRuntime.Match, de.abilov.bpmn.ParallelGateway, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__IsAppropriate_solveCsp_FWD__Match_ParallelGateway_Process_SequenceFlow_Task();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate check Csp FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__IsAppropriate_checkCsp_FWD__CSP();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.ParallelGateway, de.abilov.tgg.bpmn2useCase.FN2S, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task) <em>Is Applicable solve Csp FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Applicable solve Csp FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.ParallelGateway, de.abilov.tgg.bpmn2useCase.FN2S, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.bpmn.Process, de.abilov.bpmn.SequenceFlow, de.abilov.bpmn.Task)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__IsApplicable_solveCsp_FWD__IsApplicableMatch_ParallelGateway_FN2S_Flow_Step_Process_SequenceFlow_Task();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Applicable check Csp FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__IsApplicable_checkCsp_FWD__CSP();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Register Objects FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#checkTypes_FWD(TGGRuntime.Match) <em>Check Types FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Check Types FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#checkTypes_FWD(TGGRuntime.Match)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__CheckTypes_FWD__Match();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.useCase.NormalStep) <em>Is Appropriate BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isAppropriate_BWD(TGGRuntime.Match, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.useCase.NormalStep)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__IsAppropriate_BWD__Match_Flow_Step_NormalStep();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#perform_BWD(TGGRuntime.IsApplicableMatch) <em>Perform BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Perform BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#perform_BWD(TGGRuntime.IsApplicableMatch)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__Perform_BWD__IsApplicableMatch();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isApplicable_BWD(TGGRuntime.Match) <em>Is Applicable BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Applicable BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isApplicable_BWD(TGGRuntime.Match)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__IsApplicable_BWD__Match();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.useCase.NormalStep) <em>Register Objects To Match BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Register Objects To Match BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#registerObjectsToMatch_BWD(TGGRuntime.Match, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.useCase.NormalStep)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__RegisterObjectsToMatch_BWD__Match_Flow_Step_NormalStep();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.useCase.NormalStep) <em>Is Appropriate solve Csp BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate solve Csp BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isAppropriate_solveCsp_BWD(TGGRuntime.Match, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.useCase.NormalStep)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__IsAppropriate_solveCsp_BWD__Match_Flow_Step_NormalStep();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate check Csp BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__IsAppropriate_checkCsp_BWD__CSP();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.ParallelGateway, de.abilov.tgg.bpmn2useCase.FN2S, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.useCase.NormalStep, de.abilov.bpmn.Process) <em>Is Applicable solve Csp BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Applicable solve Csp BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, de.abilov.bpmn.ParallelGateway, de.abilov.tgg.bpmn2useCase.FN2S, de.abilov.useCase.Flow, de.abilov.useCase.Step, de.abilov.useCase.NormalStep, de.abilov.bpmn.Process)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__IsApplicable_solveCsp_BWD__IsApplicableMatch_ParallelGateway_FN2S_Flow_Step_NormalStep_Process();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Applicable check Csp BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__IsApplicable_checkCsp_BWD__CSP();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Register Objects BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#checkTypes_BWD(TGGRuntime.Match) <em>Check Types BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Check Types BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#checkTypes_BWD(TGGRuntime.Match)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__CheckTypes_BWD__Match();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isAppropriate_BWD_EMoflonEdge_184(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 184</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 184</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isAppropriate_BWD_EMoflonEdge_184(TGGRuntime.EMoflonEdge)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__IsAppropriate_BWD_EMoflonEdge_184__EMoflonEdge();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isAppropriate_BWD_EMoflonEdge_185(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 185</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 185</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isAppropriate_BWD_EMoflonEdge_185(TGGRuntime.EMoflonEdge)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__IsAppropriate_BWD_EMoflonEdge_185__EMoflonEdge();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isAppropriate_FWD_EMoflonEdge_603(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 603</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 603</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isAppropriate_FWD_EMoflonEdge_603(TGGRuntime.EMoflonEdge)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__IsAppropriate_FWD_EMoflonEdge_603__EMoflonEdge();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isAppropriate_FWD_EMoflonEdge_604(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 604</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 604</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isAppropriate_FWD_EMoflonEdge_604(TGGRuntime.EMoflonEdge)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__IsAppropriate_FWD_EMoflonEdge_604__EMoflonEdge();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isAppropriate_FWD_EMoflonEdge_605(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 605</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 605</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isAppropriate_FWD_EMoflonEdge_605(TGGRuntime.EMoflonEdge)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__IsAppropriate_FWD_EMoflonEdge_605__EMoflonEdge();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isAppropriate_FWD_EMoflonEdge_606(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 606</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 606</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isAppropriate_FWD_EMoflonEdge_606(TGGRuntime.EMoflonEdge)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__IsAppropriate_FWD_EMoflonEdge_606__EMoflonEdge();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isAppropriate_FWD_EMoflonEdge_607(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 607</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 607</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isAppropriate_FWD_EMoflonEdge_607(TGGRuntime.EMoflonEdge)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__IsAppropriate_FWD_EMoflonEdge_607__EMoflonEdge();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isAppropriate_FWD_EMoflonEdge_608(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 608</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 608</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#isAppropriate_FWD_EMoflonEdge_608(TGGRuntime.EMoflonEdge)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__IsAppropriate_FWD_EMoflonEdge_608__EMoflonEdge();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Check Attributes FWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#checkAttributes_FWD(TGGRuntime.TripleMatch)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__CheckAttributes_FWD__TripleMatch();
+
+	/**
+	 * Returns the meta object for the '{@link de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#checkAttributes_BWD(TGGRuntime.TripleMatch) <em>Check Attributes BWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Check Attributes BWD</em>' operation.
+	 * @see de.abilov.tgg.bpmn2useCase.Rules.T2SAfterSync#checkAttributes_BWD(TGGRuntime.TripleMatch)
+	 * @generated
+	 */
+	EOperation getT2SAfterSync__CheckAttributes_BWD__TripleMatch();
 
 	/**
 	 * Returns the factory that creates the instances of the model.

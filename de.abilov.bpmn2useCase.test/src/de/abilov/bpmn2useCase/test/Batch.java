@@ -94,6 +94,16 @@ public class Batch extends IntegratorTest {
 	public void emptyDefaultBwd() {
 		integrate("EmptyDefaultFlow_BWD");
 	}
+	
+	@Test
+	public void taskAfterMergeFwd() {
+		integrate("TaskAfterMerge_FWD");
+	}
+	
+	@Test
+	public void taskAfterMergeBwd() {
+		integrate("TaskAfterMerge_BWD");
+	}
 
 	@Override
 	protected void setInputModel(ApplicationTypes direction, String testCaseName) {

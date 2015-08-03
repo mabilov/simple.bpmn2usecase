@@ -753,7 +753,7 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_294(EMoflonEdge _edge___last) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_174(EMoflonEdge _edge___last) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = TerminationAfterMergeImpl
 				.pattern_TerminationAfterMerge_20_1_bindingAndBlackFFB(this);
@@ -807,7 +807,7 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_295(EMoflonEdge _edge_finalState) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_175(EMoflonEdge _edge_finalState) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = TerminationAfterMergeImpl
 				.pattern_TerminationAfterMerge_21_1_bindingAndBlackFFB(this);
@@ -861,7 +861,7 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_957(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_569(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = TerminationAfterMergeImpl
 				.pattern_TerminationAfterMerge_22_1_bindingAndBlackFFB(this);
@@ -916,7 +916,7 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_958(EMoflonEdge _edge_flowElements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_570(EMoflonEdge _edge_flowElements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = TerminationAfterMergeImpl
 				.pattern_TerminationAfterMerge_23_1_bindingAndBlackFFB(this);
@@ -971,7 +971,7 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_959(EMoflonEdge _edge_targetRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_571(EMoflonEdge _edge_targetRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = TerminationAfterMergeImpl
 				.pattern_TerminationAfterMerge_24_1_bindingAndBlackFFB(this);
@@ -1026,7 +1026,7 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_960(EMoflonEdge _edge_incoming) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_572(EMoflonEdge _edge_incoming) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = TerminationAfterMergeImpl
 				.pattern_TerminationAfterMerge_25_1_bindingAndBlackFFB(this);
@@ -1081,7 +1081,7 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_961(EMoflonEdge _edge_sourceRef) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_573(EMoflonEdge _edge_sourceRef) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = TerminationAfterMergeImpl
 				.pattern_TerminationAfterMerge_26_1_bindingAndBlackFFB(this);
@@ -1136,7 +1136,7 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_962(EMoflonEdge _edge_outgoing) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_574(EMoflonEdge _edge_outgoing) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = TerminationAfterMergeImpl
 				.pattern_TerminationAfterMerge_27_1_bindingAndBlackFFB(this);
@@ -1420,22 +1420,22 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 			return null;
 		case RulesPackage.TERMINATION_AFTER_MERGE___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.TERMINATION_AFTER_MERGE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_294__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_294((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TERMINATION_AFTER_MERGE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_295__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_295((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TERMINATION_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_957__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_957((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TERMINATION_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_958__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_958((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TERMINATION_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_959__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_959((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TERMINATION_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_960__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_960((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TERMINATION_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_961__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_961((EMoflonEdge) arguments.get(0));
-		case RulesPackage.TERMINATION_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_962__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_962((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TERMINATION_AFTER_MERGE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_174__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_174((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TERMINATION_AFTER_MERGE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_175__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_175((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TERMINATION_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_569__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_569((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TERMINATION_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_570__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_570((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TERMINATION_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_571__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_571((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TERMINATION_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_572__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_572((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TERMINATION_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_573__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_573((EMoflonEdge) arguments.get(0));
+		case RulesPackage.TERMINATION_AFTER_MERGE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_574__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_574((EMoflonEdge) arguments.get(0));
 		case RulesPackage.TERMINATION_AFTER_MERGE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.TERMINATION_AFTER_MERGE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
@@ -2700,7 +2700,7 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 	}
 
 	public static final Object[] pattern_TerminationAfterMerge_20_2_black_nac_0B(UCCondition state) {
-		for (UseCase __DEC_state_precondition_413396 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (UseCase __DEC_state_precondition_762923 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(state, UseCase.class, "precondition")) {
 			return new Object[] { state };
 		}
@@ -2708,9 +2708,9 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 	}
 
 	public static final Object[] pattern_TerminationAfterMerge_20_2_black_nac_1BB(UCCondition state, Flow flow) {
-		for (Flow __DEC_state_finalState_507944 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (Flow __DEC_state_finalState_973747 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(state, Flow.class, "finalState")) {
-			if (!flow.equals(__DEC_state_finalState_507944)) {
+			if (!flow.equals(__DEC_state_finalState_973747)) {
 				return new Object[] { state, flow };
 			}
 		}
@@ -2719,9 +2719,9 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 
 	public static final Object[] pattern_TerminationAfterMerge_20_2_black_nac_2BB(UCCondition state,
 			ChoiceStep lastStep) {
-		for (Step __DEC_state___last_960965 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(state,
+		for (Step __DEC_state___last_153287 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(state,
 				Step.class, "__last")) {
-			if (!lastStep.equals(__DEC_state___last_960965)) {
+			if (!lastStep.equals(__DEC_state___last_153287)) {
 				return new Object[] { state, lastStep };
 			}
 		}
@@ -2841,7 +2841,7 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 	}
 
 	public static final Object[] pattern_TerminationAfterMerge_21_2_black_nac_0B(UCCondition state) {
-		for (UseCase __DEC_state_precondition_573698 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (UseCase __DEC_state_precondition_687062 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(state, UseCase.class, "precondition")) {
 			return new Object[] { state };
 		}
@@ -2849,9 +2849,9 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 	}
 
 	public static final Object[] pattern_TerminationAfterMerge_21_2_black_nac_1BB(UCCondition state, Flow flow) {
-		for (Flow __DEC_state_finalState_477809 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (Flow __DEC_state_finalState_439086 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(state, Flow.class, "finalState")) {
-			if (!flow.equals(__DEC_state_finalState_477809)) {
+			if (!flow.equals(__DEC_state_finalState_439086)) {
 				return new Object[] { state, flow };
 			}
 		}
@@ -2860,9 +2860,9 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 
 	public static final Object[] pattern_TerminationAfterMerge_21_2_black_nac_2BB(UCCondition state,
 			ChoiceStep lastStep) {
-		for (Step __DEC_state___last_9121 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(state,
+		for (Step __DEC_state___last_225378 : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(state,
 				Step.class, "__last")) {
-			if (!lastStep.equals(__DEC_state___last_9121)) {
+			if (!lastStep.equals(__DEC_state___last_225378)) {
 				return new Object[] { state, lastStep };
 			}
 		}
@@ -2985,9 +2985,9 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 
 	public static final Object[] pattern_TerminationAfterMerge_22_2_black_nac_0BB(SequenceFlow inFlow,
 			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_inFlow_default_794543 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_inFlow_default_966865 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(inFlow, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_inFlow_default_794543)) {
+			if (!prevNode.equals(__DEC_inFlow_default_966865)) {
 				return new Object[] { inFlow, prevNode };
 			}
 		}
@@ -2996,9 +2996,9 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 
 	public static final Object[] pattern_TerminationAfterMerge_22_2_black_nac_1BB(SequenceFlow inFlow,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_inFlow_flowElements_446234 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_inFlow_flowElements_230706 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(inFlow, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_inFlow_flowElements_446234)) {
+			if (!process.equals(__DEC_inFlow_flowElements_230706)) {
 				return new Object[] { inFlow, process };
 			}
 		}
@@ -3007,9 +3007,9 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 
 	public static final Object[] pattern_TerminationAfterMerge_22_2_black_nac_2BB(EndEvent event,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_event_flowElements_75897 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_event_flowElements_273310 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(event, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_event_flowElements_75897)) {
+			if (!process.equals(__DEC_event_flowElements_273310)) {
 				return new Object[] { event, process };
 			}
 		}
@@ -3159,9 +3159,9 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 
 	public static final Object[] pattern_TerminationAfterMerge_23_2_black_nac_0BB(SequenceFlow inFlow,
 			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_inFlow_default_16881 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_inFlow_default_790651 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(inFlow, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_inFlow_default_16881)) {
+			if (!prevNode.equals(__DEC_inFlow_default_790651)) {
 				return new Object[] { inFlow, prevNode };
 			}
 		}
@@ -3170,9 +3170,9 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 
 	public static final Object[] pattern_TerminationAfterMerge_23_2_black_nac_1BB(SequenceFlow inFlow,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_inFlow_flowElements_505548 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_inFlow_flowElements_991576 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(inFlow, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_inFlow_flowElements_505548)) {
+			if (!process.equals(__DEC_inFlow_flowElements_991576)) {
 				return new Object[] { inFlow, process };
 			}
 		}
@@ -3181,9 +3181,9 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 
 	public static final Object[] pattern_TerminationAfterMerge_23_2_black_nac_2BB(EndEvent event,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_event_flowElements_879148 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_event_flowElements_906989 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(event, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_event_flowElements_879148)) {
+			if (!process.equals(__DEC_event_flowElements_906989)) {
 				return new Object[] { event, process };
 			}
 		}
@@ -3333,9 +3333,9 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 
 	public static final Object[] pattern_TerminationAfterMerge_24_2_black_nac_0BB(SequenceFlow inFlow,
 			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_inFlow_default_379079 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_inFlow_default_613126 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(inFlow, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_inFlow_default_379079)) {
+			if (!prevNode.equals(__DEC_inFlow_default_613126)) {
 				return new Object[] { inFlow, prevNode };
 			}
 		}
@@ -3344,9 +3344,9 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 
 	public static final Object[] pattern_TerminationAfterMerge_24_2_black_nac_1BB(SequenceFlow inFlow,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_inFlow_flowElements_271304 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_inFlow_flowElements_576990 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(inFlow, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_inFlow_flowElements_271304)) {
+			if (!process.equals(__DEC_inFlow_flowElements_576990)) {
 				return new Object[] { inFlow, process };
 			}
 		}
@@ -3355,9 +3355,9 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 
 	public static final Object[] pattern_TerminationAfterMerge_24_2_black_nac_2BB(EndEvent event,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_event_flowElements_651713 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_event_flowElements_675801 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(event, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_event_flowElements_651713)) {
+			if (!process.equals(__DEC_event_flowElements_675801)) {
 				return new Object[] { event, process };
 			}
 		}
@@ -3504,9 +3504,9 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 
 	public static final Object[] pattern_TerminationAfterMerge_25_2_black_nac_0BB(SequenceFlow inFlow,
 			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_inFlow_default_860069 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_inFlow_default_17164 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(inFlow, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_inFlow_default_860069)) {
+			if (!prevNode.equals(__DEC_inFlow_default_17164)) {
 				return new Object[] { inFlow, prevNode };
 			}
 		}
@@ -3515,9 +3515,9 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 
 	public static final Object[] pattern_TerminationAfterMerge_25_2_black_nac_1BB(SequenceFlow inFlow,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_inFlow_flowElements_942919 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_inFlow_flowElements_484261 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(inFlow, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_inFlow_flowElements_942919)) {
+			if (!process.equals(__DEC_inFlow_flowElements_484261)) {
 				return new Object[] { inFlow, process };
 			}
 		}
@@ -3526,9 +3526,9 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 
 	public static final Object[] pattern_TerminationAfterMerge_25_2_black_nac_2BB(EndEvent event,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_event_flowElements_500638 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_event_flowElements_370659 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(event, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_event_flowElements_500638)) {
+			if (!process.equals(__DEC_event_flowElements_370659)) {
 				return new Object[] { event, process };
 			}
 		}
@@ -3675,9 +3675,9 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 
 	public static final Object[] pattern_TerminationAfterMerge_26_2_black_nac_0BB(SequenceFlow inFlow,
 			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_inFlow_default_484339 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_inFlow_default_229718 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(inFlow, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_inFlow_default_484339)) {
+			if (!prevNode.equals(__DEC_inFlow_default_229718)) {
 				return new Object[] { inFlow, prevNode };
 			}
 		}
@@ -3686,9 +3686,9 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 
 	public static final Object[] pattern_TerminationAfterMerge_26_2_black_nac_1BB(SequenceFlow inFlow,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_inFlow_flowElements_314128 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_inFlow_flowElements_749625 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(inFlow, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_inFlow_flowElements_314128)) {
+			if (!process.equals(__DEC_inFlow_flowElements_749625)) {
 				return new Object[] { inFlow, process };
 			}
 		}
@@ -3697,9 +3697,9 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 
 	public static final Object[] pattern_TerminationAfterMerge_26_2_black_nac_2BB(EndEvent event,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_event_flowElements_82021 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_event_flowElements_765403 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(event, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_event_flowElements_82021)) {
+			if (!process.equals(__DEC_event_flowElements_765403)) {
 				return new Object[] { event, process };
 			}
 		}
@@ -3846,9 +3846,9 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 
 	public static final Object[] pattern_TerminationAfterMerge_27_2_black_nac_0BB(SequenceFlow inFlow,
 			ExclusiveGateway prevNode) {
-		for (ExclusiveGateway __DEC_inFlow_default_699224 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (ExclusiveGateway __DEC_inFlow_default_521134 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(inFlow, ExclusiveGateway.class, "default")) {
-			if (!prevNode.equals(__DEC_inFlow_default_699224)) {
+			if (!prevNode.equals(__DEC_inFlow_default_521134)) {
 				return new Object[] { inFlow, prevNode };
 			}
 		}
@@ -3857,9 +3857,9 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 
 	public static final Object[] pattern_TerminationAfterMerge_27_2_black_nac_1BB(SequenceFlow inFlow,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_inFlow_flowElements_310479 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_inFlow_flowElements_918885 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(inFlow, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_inFlow_flowElements_310479)) {
+			if (!process.equals(__DEC_inFlow_flowElements_918885)) {
 				return new Object[] { inFlow, process };
 			}
 		}
@@ -3868,9 +3868,9 @@ public class TerminationAfterMergeImpl extends AbstractRuleImpl implements Termi
 
 	public static final Object[] pattern_TerminationAfterMerge_27_2_black_nac_2BB(EndEvent event,
 			de.abilov.bpmn.Process process) {
-		for (de.abilov.bpmn.Process __DEC_event_flowElements_529814 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (de.abilov.bpmn.Process __DEC_event_flowElements_526441 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(event, de.abilov.bpmn.Process.class, "flowElements")) {
-			if (!process.equals(__DEC_event_flowElements_529814)) {
+			if (!process.equals(__DEC_event_flowElements_526441)) {
 				return new Object[] { event, process };
 			}
 		}
