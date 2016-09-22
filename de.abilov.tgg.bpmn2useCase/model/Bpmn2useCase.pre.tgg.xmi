@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ASCII"?>
 <TGGLanguage:TripleGraphGrammar xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TGGLanguage="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore" xmlns:csp="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:expressions="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//expressions" xmlns:patternExpressions="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//patterns/patternExpressions" name="de.abilov.tgg.bpmn2useCase">
-  <domain name="Source" metamodel="//@metamodel.0" type="SOURCE"/>
-  <domain name="Target" metamodel="//@metamodel.1" type="TARGET"/>
-  <domain name="Correspondence" metamodel="//@metamodel.2"/>
+  <domain name="Source" metamodel="//@metamodel.1" type="SOURCE"/>
+  <domain name="Target" metamodel="//@metamodel.2" type="TARGET"/>
+  <domain name="Correspondence" metamodel="//@metamodel.0"/>
   <tggRule name="Process2UseCase" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
     <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="process" incomingLink="//@tggRule.0/@linkVariable.3" outgoingLink="//@tggRule.0/@linkVariable.0" bindingOperator="CREATE" domain="//@domain.0">
       <type xsi:type="ecore:EClass" href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#//Process"/>
@@ -2055,13 +2055,13 @@
     </objectVariable>
     <csp/>
   </tggRule>
+  <metamodel name="de.abilov.tgg.bpmn2useCase">
+    <outermostPackage href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#/"/>
+  </metamodel>
   <metamodel name="de.abilov.bpmn">
     <outermostPackage href="platform:/plugin/de.abilov.bpmn/model/Bpmn.ecore#/"/>
   </metamodel>
   <metamodel name="de.abilov.useCase">
     <outermostPackage href="platform:/plugin/de.abilov.useCase/model/UseCase.ecore#/"/>
-  </metamodel>
-  <metamodel name="de.abilov.tgg.bpmn2useCase">
-    <outermostPackage href="platform:/plugin/de.abilov.tgg.bpmn2useCase/model/Bpmn2useCase.ecore#/"/>
   </metamodel>
 </TGGLanguage:TripleGraphGrammar>
