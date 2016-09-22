@@ -2,10 +2,10 @@
 Simple BPMN to UseCase metamodels and synchronization, created to explore different problems and complications with addressing control flow patterns.
 
 ## Requirements:
-JDK 1.8
-Eclipse Mars or Neon
-Enterprise Architect (EA) 12 to see and edit rules
-eMoflon 1.7.18
+1. JDK 1.8
+2. Eclipse Mars or Neon
+3. Enterprise Architect (EA) 12 to see and edit rules
+4. eMoflon 1.7.18
 
 ## Installation:
 1. Download and install eclipse (mars or neon)
